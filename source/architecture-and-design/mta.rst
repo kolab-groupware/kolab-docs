@@ -164,7 +164,7 @@ a message.
         ``(&(|(mail=%s)(alias=%s))(objectclass=mailrecipient)(objectclass=inetorgperson)(mailforwardingaddress=*))``.
 
     *   Shared folders with mail delivery enabled, using filter
-        ``(&(|(mail=%s)(alias=%s))(objectclass=kolabsharedfolder))``.
+        ``(&(|(mail=%s)(alias=%s))(objectclass=kolabsharedfolder)(kolabFolderType=mail))``.
 
     *   Static distribution groups, using filter
         ``(&(|(mail=%s)(alias=%s))(objectclass=kolabgroupofuniquenames))``.
