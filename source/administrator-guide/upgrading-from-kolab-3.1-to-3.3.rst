@@ -290,7 +290,7 @@ Please update your filter with this new default configuration:
 
  .. parsed-literal::
 
-    query_filter = (&(|(mail=%%s)(alias=%%s))(objectclass=kolabsharedfolder)(kolabFolderType=mail))
+    query_filter = (&(|(mail=%s)(alias=%s))(objectclass=kolabsharedfolder)(kolabFolderType=mail))
 
 Restart the postfix daemon
 
