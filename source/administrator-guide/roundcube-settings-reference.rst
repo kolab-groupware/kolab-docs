@@ -407,6 +407,7 @@ The ``libkolab`` Plugin
 
 .. include:: roundcube-settings/kolab_cache.txt
 .. include:: roundcube-settings/kolab_messages_cache_bypass.txt
+.. include:: roundcube-settings/kolab_use_subscriptions.txt
 .. include:: roundcube-settings/libkolab.txt
 
 .. _admin_roundcube-settings-plugin_libcalendaring:

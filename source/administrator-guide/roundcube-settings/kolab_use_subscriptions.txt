@@ -1,0 +1,15 @@
+.. _admin_roundcube-settings-plugin_libkolab_kolab_use_subscriptions:
+
+``kolab_use_subscriptions``
+===============================
+
+.. versionadded:: roundcubemail-plugins-kolab-3.0.1
+
+When listing folders with groupware content available for display,
+should all folders to which the user has access be listed, or should
+only those folders to which the user is subscribed be included?
+
+The value ``false`` means all folders to which the user has access will
+be included.
+
+The default for a Kolab Groupware deployment is ``true``.
