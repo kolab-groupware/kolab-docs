@@ -10,7 +10,7 @@ There are a variety of reasons to run a private OBS instance, for which
 you could read on :ref:`dev-packaging-why_private_obs` if you are interested.
 
 *   Web Address: https://obs.kolabsys.com
-*   API Web Address: https://obs.kolabsys.com:444
+*   API Web Address: https://obs.kolabsys.com
 
 .. toctree::
     :maxdepth: 2
