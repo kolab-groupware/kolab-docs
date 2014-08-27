@@ -227,6 +227,13 @@ add 2 more $config entries
     $config['use_secure_urls'] = true;
     $config['assets_path'] = '/roundcubemail/assets/';
 
+.. ATTENTION::
+
+    Keep in mind that some of those configuration changes are requiring an
+    updated apache configuration. Roundcube 1.1 introduced a seperate public_html/
+    folder to seperate webroot and application files. Keep this in mind i
+    you've customized your webserver configuration.
+    
 
 /etc/roundcubemail/password.inc.php
 -----------------------------------
