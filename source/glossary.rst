@@ -95,6 +95,22 @@ Glossary
         entries altogether, and are solely therefore referred to as **child
         domain name spaces**.
 
+        .. seealso::
+
+            *   :term:`alias domain name space`
+            *   :term:`parent domain name space`
+
+    discretionary access control
+
+        `Discretionary access control`_ is a type of access control
+        where a subject with certain permissions on a particular
+        resource is at liberty to control the level of access any other
+        subject have to the given resource.
+
+        .. seealso::
+
+            *   :term:`mandatory access control`
+
     DN
     distinguished name
 
@@ -294,6 +310,18 @@ Glossary
 
         A management domain is (...)
 
+    mandatory access control
+
+        `Mandatory access control`_ is a type of access control where
+        a set of (static) rules controlled (centrally) by a security
+        policy administrator describe the level of access subjects to
+        objects. As such, no subject controls the level of access of
+        other subjects.
+
+        .. seealso::
+
+            *   :term:`discretionary access control`
+
     msa
     Mail Submission Agent
 
@@ -430,3 +458,6 @@ Glossary
         ``system.select_domain`` and his session would then be
         associated with the ``company.com`` domain -- now his
         :term:`working domain`.
+
+.. _Discretionary access control: http://en.wikipedia.org/wiki/Discretionary_access_control
+.. _Mandatory access control: http://en.wikipedia.org/wiki/Mandatory_access_control
