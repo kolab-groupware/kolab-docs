@@ -225,7 +225,7 @@ add 2 more $config entries
  .. parsed-literal::
 
     $config['use_secure_urls'] = true;
-    $config['assets_path'] = '/assets/';
+    $config['assets_path'] = '/roundcubemail/assets/';
 
 
 /etc/roundcubemail/password.inc.php
