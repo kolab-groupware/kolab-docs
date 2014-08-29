@@ -22,6 +22,13 @@ proven components and protocols.
     administrator-guide/index
     developer-guide/index
 
+.. rubric:: User Documentation
+
+.. toctree::
+    :maxdepth: 1
+
+    webmail-user-guide/index
+
 .. rubric:: HOWTOs
 
 .. toctree::
@@ -35,5 +42,36 @@ proven components and protocols.
     howtos/deploy-kolab-with-glusterfs-for-imap
     howtos/deploy-high-available-and-load-balanced-ldap
     howtos/kolab-webadmin-create-user
+
+..
+    The following are placeholders for documentation that is not to be
+    included in the toctree, for it is otherwise referred to.
+
+.. toctree::
+    :hidden:
+
+    architecture-and-design/ldap-intro
+    developer-guide/packaging/obs-for-kolab/why-private-obs
+    webmail-user-guide/roundcubemail/en_US/index
+
+..
+    The following are placeholders for documentation that is yet to be
+    included.
+
+.. toctree::
+    :hidden:
+
+    architecture-and-design/bonnie
+    architecture-and-design/calendaring
+    desktop-clients/index
+    howtos/dnssec
+    howtos/freeipa-integration
+    howtos/kerberos-authentication
+    howtos/logstash-and-elasticsearch
+    howtos/split-domains-multiple-groupware-deployments
+    introduction/index
+    kolab-enterprise-13
+    kolab-enterprise-14
+    reference-implementation-architecture/index
 
 .. todolist::
