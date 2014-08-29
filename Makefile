@@ -38,8 +38,23 @@ help:
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
+helpdocs:
+	@if [ ! -d "source/webmail-user-guide/roundcubemail/.git" ]; then \
+		if [ -x "$$(which git 2>/dev/null)" ]; then \
+			git submodule init ; \
+			git submodule update ; \
+		fi ; \
+	fi
+	@cd source/webmail-user-guide/roundcubemail/en_US/_plugins/ ; \
+	for docs in $$(find ../../../roundcubemail-plugins-kolab/ -type d -name "helpdocs"); do \
+		plugin=$$(basename $$(dirname $$docs)) ; \
+		ln -sf $$docs/en_US/ $$plugin ; \
+	done
+
 clean:
-	-rm -rf $(BUILDDIR)/*
+	@rm -rf $(BUILDDIR)/*
+	@rm -rf source/webmail-user-guide/roundcubemail/
+	@rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
