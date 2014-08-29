@@ -60,7 +60,7 @@ Kolab 3.3 compared to Kolab 3.1 ships the following additional components:
 
 #.  **IMAP ACL editor (kolab-webadmin)**
 
-    You can now create share folders within the kolab-webadmin and manage 
+    You can now create share folders within the kolab-webadmin and manage
     and enforce initial access control lists for those folders.
 
 #.  **Organizatioal Unit Editor (kolab-webadmin)**
@@ -124,7 +124,7 @@ Update and Upgrade the system
     # :command:`apt-get update`
     # :command:`apt-get dist-upgrade`
 
-.. WARNING:: 
+.. WARNING::
 
     You'll get ask if you want to replace your configuration files! DON'T overwrite them!
     You'll lose your configuration and credentials and end up with a broken frontend.
@@ -133,7 +133,7 @@ Update and Upgrade the system
 Update your configuration files
 ===============================
 
-If you want to check want configuration files have changed, the best way is to 
+If you want to check want configuration files have changed, the best way is to
 compare the previous and current version in the GIT repository.
 
 
@@ -153,7 +153,7 @@ depending on your installation and needs
     [ldap]
     sharedfolder_acl_entry_attribute = acl
     modifytimestamp_format = %Y%m%d%H%M%SZ
-    
+
     [kolab_smtp_access_policy]
     delegate_sender_header = True
     alias_sender_header = True
@@ -233,7 +233,7 @@ add 2 more $config entries
     updated apache configuration. Roundcube 1.1 introduced a seperate public_html/
     folder to seperate webroot and application files. Keep this in mind i
     you've customized your webserver configuration.
-    
+
 
 /etc/roundcubemail/password.inc.php
 -----------------------------------
@@ -291,17 +291,17 @@ For Debian
 -----------------------------------------------------
 
 To fix the handling of resource invitations you've to adjust your existing
-virtual alias maps, otherwise you end up with non-delivery-reports. 
+virtual alias maps, otherwise you end up with non-delivery-reports.
 
 Please update your filter with this new default configuration:
 
- .. parsed-literal::
+.. parsed-literal::
 
     query_filter = (&(|(mail=%s)(alias=%s))(objectclass=kolabsharedfolder)(kolabFolderType=mail))
 
 Restart the postfix daemon
 
- .. parsed-literal::
+.. parsed-literal::
 
     # :command:`service postfix restart`
 
@@ -314,7 +314,7 @@ You can see the configuration differences here:
     http://git.kolab.org/pykolab/diff/share/templates/master.cf.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10
 
 This will put wallace as the next content-filter after the mail has been
-returned from amavis to postfix. If you're don't want to make use of iTip 
+returned from amavis to postfix. If you're don't want to make use of iTip
 processing or resource management you can skip this section.
 
  .. parsed-literal::
@@ -356,9 +356,9 @@ You can find the full sql file here:
 #.  locally: :file:`/usr/share/doc/kolab-webadmin/kolab_wap.sql`
 
 The kolab-webadmin package doesn't provide auto updates or upgrade files
-for your database. Here's a summary of what has been changed. 
+for your database. Here's a summary of what has been changed.
 
-If you've made changes on the shared folder types you might want to 
+If you've made changes on the shared folder types you might want to
 change the types manually in the settings section of kolab-webadmin.
 
 Open the mysql cli:
@@ -376,7 +376,7 @@ them manually!
     --
     -- Table structure for table `ou_types`
     --
-    
+
     DROP TABLE IF EXISTS `ou_types`;
     /*!40101 SET @saved_cs_client     = @@character_set_client */;
     /*!40101 SET character_set_client = utf8 */;
@@ -390,22 +390,22 @@ them manually!
       UNIQUE KEY `name` (`name`)
     ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
     /*!40101 SET character_set_client = @saved_cs_client */;
-    
+
     --
     -- Dumping data for table `ou_types`
     --
-    
+
     LOCK TABLES `ou_types` WRITE;
     /*!40000 ALTER TABLE `ou_types` DISABLE KEYS */;
     INSERT INTO `ou_types` VALUES (1,'unit','Standard Organizational Unit','A standard organizational unit definition','{\"auto_form_fields\":[],\"fields\":{\"objectclass\":[\"top\",\"organizationalunit\"]},\"form_fields\":{\"ou\":[],\"description\":[],\"aci\":{\"optional\":true,\"type\":\"aci\"}}}');
     /*!40000 ALTER TABLE `ou_types` ENABLE KEYS */;
     UNLOCK TABLES;
-    
-    
+
+
     --
     -- Table structure for table `sharedfolder_types`
     --
-    
+
     DROP TABLE IF EXISTS `sharedfolder_types`;
     /*!40101 SET @saved_cs_client     = @@character_set_client */;
     /*!40101 SET character_set_client = utf8 */;
@@ -419,11 +419,11 @@ them manually!
       UNIQUE KEY `name` (`name`)
     ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
     /*!40101 SET character_set_client = @saved_cs_client */;
-    
+
     --
     -- Dumping data for table `sharedfolder_types`
     --
-    
+
     LOCK TABLES `sharedfolder_types` WRITE;
     /*!40000 ALTER TABLE `sharedfolder_types` DISABLE KEYS */;
     INSERT INTO `sharedfolder_types` VALUES (1,'addressbook','Shared Address Book','A shared address book','{\"auto_form_fields\":[],\"fields\":{\"kolabfoldertype\":[\"contact\"],\"objectclass\":[\"top\",\"kolabsharedfolder\"]},\"form_fields\":{\"acl\":{\"type\":\"imap_acl\",\"optional\":true,\"default\":\"anyone, lrs\"},\"cn\":[]}}'),(2,'calendar','Shared Calendar','A shared calendar','{\"auto_form_fields\":[],\"fields\":{\"kolabfoldertype\":[\"event\"],\"objectclass\":[\"top\",\"kolabsharedfolder\"]},\"form_fields\":{\"acl\":{\"type\":\"imap_acl\",\"optional\":true,\"default\":\"anyone, lrs\"},\"cn\":[]}}'),(3,'journal','Shared Journal','A shared journal','{\"auto_form_fields\":[],\"fields\":{\"kolabfoldertype\":[\"journal\"],\"objectclass\":[\"top\",\"kolabsharedfolder\"]},\"form_fields\":{\"acl\":{\"type\":\"imap_acl\",\"optional\":true,\"default\":\"anyone, lrs\"},\"cn\":[]}}'),(4,'task','Shared Tasks','A shared tasks folder','{\"auto_form_fields\":[],\"fields\":{\"kolabfoldertype\":[\"task\"],\"objectclass\":[\"top\",\"kolabsharedfolder\"]},\"form_fields\":{\"acl\":{\"type\":\"imap_acl\",\"optional\":true,\"default\":\"anyone, lrs\"},\"cn\":[]}}'),(5,'note','Shared Notes','A shared Notes folder','{\"auto_form_fields\":[],\"fields\":{\"kolabfoldertype\":[\"note\"],\"objectclass\":[\"top\",\"kolabsharedfolder\"]},\"form_fields\":{\"acl\":{\"type\":\"imap_acl\",\"optional\":true,\"default\":\"anyone, lrs\"},\"cn\":[]}}'),(6,'file','Shared Files','A shared Files folder','{\"auto_form_fields\":[],\"fields\":{\"kolabfoldertype\":[\"file\"],\"objectclass\":[\"top\",\"kolabsharedfolder\"]},\"form_fields\":{\"acl\":{\"type\":\"imap_acl\",\"optional\":true,\"default\":\"anyone, lrs\"},\"cn\":[]}}'),(7,'mail','Shared Mail Folder','A shared mail folder','{\"auto_form_fields\":[],\"fields\":{\"kolabfoldertype\":[\"mail\"],\"objectclass\":[\"top\",\"kolabsharedfolder\",\"mailrecipient\"]},\"form_fields\":{\"acl\":{\"type\":\"imap_acl\",\"optional\":true,\"default\":\"anyone, lrs\"},\"cn\":[],\"alias\":{\"type\":\"list\",\"optional\":true},\"kolabdelegate\":{\"type\":\"list\",\"autocomplete\":true,\"optional\":true},\"kolaballowsmtprecipient\":{\"type\":\"list\",\"optional\":true},\"kolaballowsmtpsender\":{\"type\":\"list\",\"optional\":true},\"kolabtargetfolder\":[],\"mail\":[]}}');
