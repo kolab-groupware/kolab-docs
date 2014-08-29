@@ -27,6 +27,7 @@ If things do not work as expected, please consider `contributing`_.
     debian
     fedora
     opensuse
+    rhel
     suse
     ubuntu
     ucs

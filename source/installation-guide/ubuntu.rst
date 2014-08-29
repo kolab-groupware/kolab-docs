@@ -11,20 +11,6 @@ Installation on Ubuntu
         deb http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_12.04/ ./
         deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_12.04/ ./
 
-    For Ubuntu 12.10:
-
-    .. parsed-literal::
-
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_12.10/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_12.10/ ./
-
-    For Ubuntu 13.04:
-
-    .. parsed-literal::
-
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_13.04/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_13.04/ ./
-
     For Ubuntu 13.10:
 
     .. parsed-literal::
@@ -39,42 +25,21 @@ Installation on Ubuntu
         deb http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_14.04/ ./
         deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_14.04/ ./
 
-2.  Obtain and install the GPG keys for the archives:
-
-    For Ubuntu 12.04:
+2.  Import the GPG key used to sign the packages:
 
     .. parsed-literal::
 
-        # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_12.04/Release.key | apt-key add -`
-        # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_12.04/Release.key | apt-key add -`
+        # :command:`gpg --search devel@lists.kolab.org`
+        gpg: searching for "devel@lists.kolab.org" from hkp server pgp.mit.edu
+        (1) Kolab Development Coordination Mailing List <devel@lists.kolab.org>
+            2048 bit RSA key 446D5A45, created: 2014-08-20
+        Keys 1-1 of 1 for "devel@lists.kolab.org".  Enter number(s), N)ext, or Q)uit > :command:`1`
 
-    For Ubuntu 12.10:
-
-    .. parsed-literal::
-
-        # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_12.10/Release.key | apt-key add -`
-        # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_12.10/Release.key | apt-key add -`
-
-    For Ubuntu 13.04:
+    The key's fingerprint is: ``79D8 6A05 FDE6 C9FB 4E43  A6C5 830C 2BCF 446D 5A45``
 
     .. parsed-literal::
 
-        # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_13.04/Release.key | apt-key add -`
-        # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_13.04/Release.key | apt-key add -`
-
-    For Ubuntu 13.10:
-
-    .. parsed-literal::
-
-        # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_13.10/Release.key | apt-key add -`
-        # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_13.10/Release.key | apt-key add -`
-
-    For Ubuntu 14.04:
-
-    .. parsed-literal::
-
-        # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_14.04/Release.key | apt-key add -`
-        # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_14.04/Release.key | apt-key add -`
+        # :command:`gpg --export --armor devel@lists.kolab.org | apt-key add -`
 
 3.  To ensure the Kolab packages have priority over the Ubuntu packages, such as
     must be the case for PHP as well as Cyrus IMAP, please make sure the APT

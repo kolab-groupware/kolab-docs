@@ -1,16 +1,18 @@
+.. _installation-rhel:
+
 ========================================
 Installation on Red Hat Enterprise Linux
 ========================================
 
 .. NOTE::
 
-    For the installation of the community edition on Red Hat Enterprise Linux,
-    follow the :ref:`installation-centos` guide.
+    For the installation of the community edition on Red Hat Enterprise
+    Linux, follow the :ref:`installation-centos` guide.
 
-The installation of Kolab Groupware on Red Hat Enterprise Linux installs a
-number of additional packages, from the Red Hat Enterprise Linux subscribed
-repositories, the :term:`EPEL` software repository, and the repositories for the
-Kolab Enterprise edition, provided by
+The installation of Kolab Groupware on Red Hat Enterprise Linux installs
+a number of additional packages, from the Red Hat Enterprise Linux
+subscribed repositories, the :term:`EPEL` software repository, and the
+repositories for the Kolab Enterprise edition, provided by
 `Kolab Systems AG <https://kolabsys.com>`_.
 
 =================  =====  ========  ========  =================  =======
@@ -20,21 +22,27 @@ Basic Server          71   48 [2]_   56 [3]_                173      548
 Minimal [1]_         197   48 [2]_   56 [3]_                299      548
 =================  =====  ========  ========  =================  =======
 
-These numbers may vary for your installation, as packages are updated over time,
-and are for indicative purposes only.
+These numbers may vary for your installation, as packages are updated
+over time, and are for indicative purposes only.
 
 Installation Procedure
 ======================
 
-1.  Ensure that the system is registered with the Red Hat Network, and is
-    entitled to receive updates and use the *Optional* software repository.
+1.  Ensure that the system is registered with the Red Hat Network, and
+    is entitled to receive updates and use the *Optional* software
+    repository.
 
-    For more information on registering systems with the Red Hat Network,
-    subscriptions, entitlements and support consult the vendor's product and
-    service documentation.
+    For more information on registering systems with the Red Hat
+    Network, subscriptions, entitlements and support consult the
+    vendor's product and service documentation.
 
     Kolab Systems provides a summary example to remind you, which is not
     supported by either party.
+
+    .. NOTE::
+
+        These examples refer to Red Hat Enterprise Linux 6, but equally
+        apply to Red Hat Enterprise Linux 7.
 
     **Registration Example**
 
@@ -85,8 +93,8 @@ Installation Procedure
     :file:`/etc/yum.repos.d/redhat.repo`, and set ``enabled = 1``.
 
 2.  Copy the client SSL certificate and key you have obtained from
-    `Kolab Systems AG <https://kolabsys.com>`_ as per the instructions listed on
-    [5]_, summarized here for your convenience:
+    `Kolab Systems AG <https://kolabsys.com>`_ as per the instructions
+    listed on [4]_, summarized here for your convenience:
 
     #.  Remove the passphrase from the SSL certificate key:
 
@@ -115,8 +123,11 @@ Installation Procedure
             # :command:`chmod 640 /etc/pki/tls/private/mirror.kolabsys.com.client.pem`
 
 3.  Install the `EPEL repository <http://fedoraproject.org/wiki/EPEL>`_
-    configuration using the RPM package linked to from
-    `this page <http://download.fedoraproject.org/pub/epel/6/i386/repoview/epel-release.html>`_.
+    configuration using the RPM package linked to from:
+
+    *   `EPEL for RHEL 7`_
+
+    *   `EPEL for RHEL 6`_
 
     .. parsed-literal::
 
@@ -124,17 +135,47 @@ Installation Procedure
 
 4.  Obtain a copy of the GPG signature used to sign packages:
 
+    For RHEL 7:
+
+    .. parsed-literal::
+
+        # :command:`wget https://ssl.kolabsys.com/maipo.asc`
+
+    For RHEL 6:
+
     .. parsed-literal::
 
         # :command:`wget https://ssl.kolabsys.com/santiago.asc`
 
 5.  Import this signature in to the RPM database:
 
+    For RHEL 7:
+
+    .. parsed-literal::
+
+        # :command:`rpm --import maipo.asc`
+
+    For RHEL 6:
+
     .. parsed-literal::
 
         # :command:`rpm --import santiago.asc`
 
-6.  Download the Kolab Enterprise 13 repository configuration package:
+6.  Download the Kolab Enterprise repository configuration package:
+
+    For Kolab Enterprise 14 on RHEL 7:
+
+    .. parsed-literal::
+
+        # :command:`wget https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`
+
+    For Kolab Enterprise 14 on RHEL 6:
+
+    .. parsed-literal::
+
+        # :command:`wget https://ssl.kolabsys.com/kolab-enterprise-14-for-el6.rpm`
+
+    For Kolab Enterprise 13 on RHEL 6:
 
     .. parsed-literal::
 
@@ -158,17 +199,11 @@ Installation Procedure
 
         # :command:`yum localinstall kolab-enterprise-13-for-el6.rpm`
 
-9.  Install Kolab Enterprise 13:
+9.  Install Kolab Enterprise:
 
     .. parsed-literal::
 
         # :command:`yum install kolab`
-
-    Or, as stated in Step #1:
-
-    .. parsed-literal::
-
-        # :command:`yum --enablerepo=rhel-6-server-optional-rpms install kolab`
 
 Continue to :ref:`install-setup-kolab`.
 
@@ -178,30 +213,33 @@ Continue to :ref:`install-setup-kolab`.
 
     Notes for Minimal installations
 
-    *   To use ``scp`` to copy over the certificates, you need to install the
-        ``openssh-clients`` package, which is not installed on minimal OS
-        installations by default.
+    *   To use ``scp`` to copy over the certificates, you need to
+        install the ``openssh-clients`` package, which is not installed
+        on minimal OS installations by default.
 
     *   To use wget to obtain the signature export file and repository
-        configuration RPM package(s), you need to install the ``wget`` package,
-        which is not installed on minimal OS installations by default.
+        configuration RPM package(s), you need to install the ``wget``
+        package, which is not installed on minimal OS installations by
+        default.
 
-        Alternatively, download the packages to a workstation and ``scp`` them
-        over to the Kolab Groupware server system.
+        Alternatively, download the packages to a workstation and
+        ``scp`` them over to the Kolab Groupware server system.
 
 .. [2]
 
-    Check the number of packages installed from the :term:`EPEL` repository
-    with the following command:
+    Check the number of packages installed from the :term:`EPEL`
+    repository with:
     :command:`rpm -qia | grep "Build Host" | grep "fedoraproject\.org" | wc -l`
 
 .. [3]
 
-    Check the number of packages installed from the Kolab Enterprise 13 software
-    repositories with the following command
+    Check the number of packages installed from the Kolab Enterprise 13
+    software repositories with:
     :command:`rpm -qva | grep kolab_13 | wc -l`
 
 .. [4]
 
     https://support.kolabsys.com/Obtaining,_Renewing_and_Using_a_Client_SSL_Certificate#Using_a_Customer_or_Partner_Client_SSL_Certificate.
 
+.. _EPEL for RHEL 6: http://download.fedoraproject.org/pub/epel/6/i386/repoview/epel-release.html
+.. _EPEL for RHEL 7: http://download.fedoraproject.org/pub/epel/beta/7/x86_64/repoview/epel-release.html
