@@ -27,6 +27,10 @@ Glossary
             *   :term:`child domain name space`
             *   :term:`parent domain name space`
 
+    assets
+
+        Assets are static contents (...)
+
     authorization realm
 
         The authorization realm is the target user authorization ID's namespace.
@@ -123,6 +127,10 @@ Glossary
         .. seealso::
 
             *   :term:`relative distinguished name`
+
+    domain_filter
+
+        The ``domain_filter`` (...)
 
     domain name space
     domain name spaces
@@ -261,6 +269,10 @@ Glossary
         including the *optional* software repository, such as **amavisd-new**
         and **clamav**.
 
+    event notifications
+
+        Event notifications (in Cyrus IMAP), lemonade architecture, (...)
+
     external email address
 
         An external email address is intended to be additional user information,
@@ -327,10 +339,21 @@ Glossary
 
         The Mail Submission Agent (*MSA*) (...)
 
+    mta
+    Mail Transfer Agent
+
+        The Mail Transfer Agent (*MTA*) (...)
+
     mua
     Mail User Agent
 
         The Mail User Agent (*MUA*) (...)
+
+    mydestination
+
+        ``mydestination`` is a setting in Postfix, commonly used to
+        refer to a list of :term:`domain name spaces` that the local
+        :term:`MTA` is considered the final destination for.
 
     pattern
 
@@ -368,6 +391,10 @@ Glossary
         ``mail`` is maintained) is within the domain name spaces associated with
         the parent domain (i.e. an :term:`alias domain name space` or
         :term:`child domain name space`).
+
+    partition
+
+        A partition in Cyrus IMAP (...)
 
     Perfect Forward Secrecy
 
@@ -410,6 +437,10 @@ Glossary
 
         A relative distinguished name (...)
 
+    relay_domains
+
+        (...)
+
     result attribute
 
         The result attribute is the name of the target attribute to use
@@ -435,6 +466,18 @@ Glossary
         offered by the system, but not the system itself. In other words, a
         Kolab Groupware user cannot normally login to a shell on the system and
         start poking around.
+
+    search base dn
+
+        The search base dn is the point in an LDAP hierarchy, at which
+        to start searching.
+
+    search scope
+
+        An LDAP search is executed against a scope, such as *base* for
+        the :term:`search base dn` entry itself only, *one* for all
+        entries one level below the :term:`search base dn` only, if any,
+        and *sub* for the entire hierarchy.
 
     secondary email address
 
