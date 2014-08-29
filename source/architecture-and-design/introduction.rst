@@ -5,34 +5,47 @@ Introduction
 ============
 
 Kolab Groupware is a scalable, flexible and :term:`made-to-measure`
-collaboration suite and groupware solution, designed with security, privacy and
-integrity in mind.
+collaboration suite and groupware solution, designed with security,
+privacy and integrity in mind.
 
-Kolab Groupware is Free Software, uses other Free Software, and stores and
-accesses information using Open Standards.
+Kolab Groupware is Free Software, uses other Free Software, and stores
+and accesses information using Open Standards.
 
-The design of Kolab distinguishes the following functional components to make up
-the groupware environment:
+The design of Kolab distinguishes the following functional components to
+make up the groupware environment:
 
-#. An (centralized) :ref:`and_intro_authentication-and-authorization` database.
-#. A :ref:`and_intro_mail-exchanger` for the exchange of messages.
-#. A :ref:`and_intro_data-storage-layer`.
-#. One or more (additional) :ref:`and_intro_storage-layer-access-protocols`.
-#. One or more :ref:`and_intro_desktop-clients`.
-#. One or more :ref:`and_intro_mobile-clients`.
-#. One or more :ref:`and_intro_web-interfaces`.
+#.  An :ref:`and_intro_authentication-and-authorization` database,
+    preferrably centralized,
 
-.. #. Instant Messaging
-.. #. Voice and Video (-Conferencing)
+#.  A :ref:`and_intro_mail-exchanger` for the exchange of messages.
 
-Furthermore, the Kolab Groupware environment offers functionality beyond the
-exchange of regular email messages, such as calendaring, maintaining address
-books, task management, journaling, and more.
+#.  A :ref:`and_intro_data-storage-layer`.
 
-All of this should be secure [#]_, scalable [#]_ and flexible [#]_. It must also
-use Open Standards for protocols and storage formats to provide the user the
-freedom to walk away with their data, respect the privacy of its users,
-meanwhile protect organizations' interests.
+#.  One or more (additional)
+    :ref:`and_intro_storage-layer-access-protocols`.
+
+#.  One or more :ref:`and_intro_desktop-clients`.
+
+#.  One or more :ref:`and_intro_mobile-clients`.
+
+#.  One or more :ref:`and_intro_web-interfaces`.
+
+#.  Multiple means for users to collaborate, such as via;
+
+    #.  :ref:`and_intro_instant_messaging`
+
+    #.  :ref:`and_intro_voice`
+
+    #.  :ref:`and_intro_video`
+
+Furthermore, the Kolab Groupware environment offers functionality beyond
+the exchange of regular email messages, such as calendaring, maintaining
+address books, task management, journaling, and more.
+
+All of this should be secure [#]_, scalable [#]_ and flexible [#]_. It
+must also use Open Standards for protocols and storage formats to
+provide the user the freedom to walk away with their data, respect the
+privacy of its users, meanwhile protect organizations' interests.
 
 Welcome to Kolab Groupware!
 
@@ -41,20 +54,32 @@ Welcome to Kolab Groupware!
 Authentication and Authorization
 ================================
 
-Kolab Groupware uses LDAP for authentication and authorization of users, while
-it also includes user and group membership information.
+Kolab Groupware uses LDAP for authentication and authorization of users,
+while it also includes user and group membership information.
 
-The use of LDAP allows the structuring of information in such a way that it
-enables the delegation of authority over its entries, can prevent users from
-accessing certain attributes or entries, and allows the groupware solution to
-scale to over several millions of users -- ideal for groupware environments.
+The use of LDAP allows the structuring of information in such a way that
+it enables the delegation of authority over its entries, can prevent
+users from accessing certain attributes or entries, and allows the
+groupware solution to scale to over several millions of users -- ideal
+for groupware environments.
 
-Please note that at the very core of the Kolab Groupware design is that Kolab
-**consumes** information in LDAP, but does not ship its own version of LDAP.
+Please note that at the very core of the Kolab Groupware design is that
+Kolab **consumes** information in LDAP, but does not ship its own
+version of LDAP. As such, any LDAP server implementation could be used,
+albeit Kolab Groupware supports those LDAP server implementations that
+ship either of the following supported controls, or alternatively falls
+back to regular searches -- which incur significant performance
+penalties and require significantly more resources:
 
-A default installation of Kolab Groupware includes LDAP schema extensions that
-provide additional functionality such as delegation and mandatory SMTP Access
-Policy enforcement, but does not require these extensions be loaded.
+*   Persistent Search (`Draft 03`_)
+*   LDAP Content Synchronization (`RFC 4533`_)
+*   Simple Paged Search Results (`RFC 2696`_)
+*   Virtual List View Control (`Draft 09`_)
+
+A default installation of Kolab Groupware includes LDAP schema
+extensions that provide additional functionality such as delegation and
+mandatory SMTP Access Policy enforcement, but does not require these
+extensions be loaded.
 
 It should also be noted that Kolab, in principle, runs on a
 :term:`sealed system`.
@@ -302,3 +327,8 @@ Legend:
     much more flexible -- this does require a good understanding of the intended
     architecture of the solution, and a well-defined deployment use-case to
     adapt to.
+
+.. _Draft 03: http://tools.ietf.org/html/draft-ietf-ldapext-psearch-03
+.. _Draft 09: http://tools.ietf.org/html/draft-ietf-ldapext-ldapv3-vlv-09
+.. _RFC 4533: http://tools.ietf.org/html/rfc4533
+.. _RFC 2696: http://tools.ietf.org/html/rfc2696
