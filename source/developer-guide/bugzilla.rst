@@ -36,8 +36,19 @@ In this status, a person looking at the ticket should confirm that;
     created is accurate, including the platform and operating system
     field(s).
 
+    .. TODO::
+
+        Document an inventory of products and components along with the
+        method of creating the inventory.
+
 *   The version of Kolab Groupware or the version of the Kolab Groupware
     software component is indeed accurate, and still supported.
+
+    .. TODO::
+
+        Document the inventory of package versions, product streams and
+        product versions that are supported, along with the methodology
+        of creating such inventory.
 
 *   The targeted version for the ticket to be resolved in is
     appropriate, in that we tend to not work backwards.
@@ -45,6 +56,18 @@ In this status, a person looking at the ticket should confirm that;
     As a rule of thumb, everything is first implemented and/or resolved
     in the future version of software, and only considered for
     backporting afterwards.
+
+    Note that an issue against a version ``1.0.1``, that needs to be
+    resolved in the next ``1.0`` version, would originally have a
+    milestone of ``1.0-next``.
+
+    If the upstream program however is further ahead (such as a ``1.1``
+    series), a clone of the original ticket should be created for the
+    ``1.0-next`` milestone, and depend on the original ticket which is
+    then set against the ``1.1-next`` milestone.
+
+    This is to aid release management in composing lists of tickets
+    resolved in certain releases or packaged versions of software.
 
 *   The necessary information needed to resolve the ticket is available,
     such as;
@@ -265,6 +288,16 @@ completed.
 NEEDSINFO
 ---------
 
+NEEDSINFO is a status that indicates the ticket needs additional
+information before it can move on to the next stage.
+
+.. TODO::
+
+    Install the NEEDSINFO extension, so that not only can the status be
+    set, one can explicitly supply from whom the additional information
+    is needed, said person is notified, and said person can "clear" the
+    NEEDSINFO state when the requested information is supplied.
+
 Status Workflow
 ---------------
 
@@ -337,6 +370,11 @@ Workflow Steps
 
 This section is a placeholder to document the individual steps outlined
 in the forementioned diagram.
+
+.. _bugzilla-requirements-for-backporting:
+
+Requirements for Backporting
+============================
 
 .. _bugzilla-triaging-bugzilla-tickets:
 
@@ -499,6 +537,9 @@ As a rule of thumb, tickets that qualify for a higher priority are:
 Effort Involved
 ===============
 
+Estimating and tracking the effort involved with a certain ticket is a
+feature used by and available to Kolab Systems employees exclusively.
+
 .. _bugzilla-release-management:
 
 Release Management
@@ -601,6 +642,19 @@ It is therefore not assigned to any one particular developer, but to
 someone who can track the progress of the full implementation of the
 functionality for all components involved.
 
+.. NOTE::
+
+    At the time of creation, `#3242`_ blocks a release tracker ticket
+    to indicate the ticket's resolution is, at that point, intended to
+    be included in the target release of the tracker ticket.
+
+    In this example case, the tracker ticket being blocked is `KE14`_
+    for Kolab Enterprise 14 -- this ticket is regrettably private and
+    visible to Kolab Systems employees only.
+
+    In other cases, the tracker ticket may be `K3.3`_, to indicate the
+    feature or fix is to be included in Kolab 3.3.
+
 This assignee is responsible for creating the additional tickets to
 each individual component involved, including:
 
@@ -609,7 +663,7 @@ each individual component involved, including:
     For the actual implementation of the Sieve Date Extension, Cyrus
     IMAP requires the enhancement first.
 
-#.  `#xxxx`_ for Roundcube
+#.  `#3437`_ for Roundcube
 
     For the functionality in Cyrus IMAP to be meaningful, Roundcube will
     need to expose the necessary UI components for users.
@@ -619,7 +673,7 @@ each individual component involved, including:
     For the functionality in Cyrus IMAP to be meaningful, Roundcube will
     need to expose the necessary UI components for users.
 
-#.  `#xxxx`_ for PyKolab
+#.  `#3529`_ for PyKolab
 
     The availability of the functionality depends on **pykolab** setting
     up Cyrus IMAP correctly (i.e. the setting ``sieve_extensions`` in
@@ -633,6 +687,10 @@ each individual component involved, including:
 
 .. _#3242: https://issues.kolab.org/show_bug.cgi?id=3242
 .. _#3243: https://issues.kolab.org/show_bug.cgi?id=3243
+.. _#3437: https://issues.kolab.org/show_bug.cgi?id=3437
+.. _#3529: https://issues.kolab.org/show_bug.cgi?id=3529
+.. _K3.3: https://issues.kolab.org/show_bug.cgi?id=K3.3
+.. _KE14: https://issues.kolab.org/show_bug.cgi?id=KE14
 .. _bugzilla: https://issues.kolab.org
 .. _KDE Bugzilla: https://bugs.kde.org
 .. _Cyrus IMAP Bugzilla: http://bugzilla.cyrusimap.org
