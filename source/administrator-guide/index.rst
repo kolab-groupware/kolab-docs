@@ -35,6 +35,7 @@ Administrator Guide
     dav-autodiscovery
 
     imap-access-rights-reference
+    kolab-freebusy-reference
     roundcube-settings-reference
 
     upgrading-from-kolab-2.3
