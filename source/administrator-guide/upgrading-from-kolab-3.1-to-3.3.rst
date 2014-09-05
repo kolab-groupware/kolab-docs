@@ -136,6 +136,10 @@ Update your configuration files
 If you want to check want configuration files have changed, the best way is to
 compare the previous and current version in the GIT repository.
 
+You can find most of the configuration file that have changed when you compare
+the templates of pykolab/setup-kolab.
+
+    http://git.kolab.org/pykolab/diff/share/templates/?id=pykolab-0.7.1&id2=pykolab-0.6.10
 
 /etc/kolab/kolab.conf
 ---------------------
