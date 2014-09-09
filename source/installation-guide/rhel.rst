@@ -31,8 +31,11 @@ over time, and are for indicative purposes only.
     RHEL 6**.
 
     Kolab Enterprise 14 for RHEL 7 and RHEL 6 are in alpha state, as is
-    Kolab Enterprise 13 for RHEL 7. You must not install either of these
-    versions unless you are specifically looking to contribute to them.
+    Kolab Enterprise 13 for RHEL 7, and they are provided exclusively as
+    a **technology preview** for integration partners and contributors.
+
+    You must not install either of these technology previews unless you
+    are specifically looking to contribute to them.
 
 Installation Procedure
 ======================
