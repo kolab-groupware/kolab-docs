@@ -25,6 +25,15 @@ Minimal [1]_         197   48 [2]_   56 [3]_                299      548
 These numbers may vary for your installation, as packages are updated
 over time, and are for indicative purposes only.
 
+.. WARNING::
+
+    Follow the instructions below to **install Kolab Enterprise 13 for
+    RHEL 6**.
+
+    Kolab Enterprise 14 for RHEL 7 and RHEL 6 are in alpha state, as is
+    Kolab Enterprise 13 for RHEL 7. You must not install either of these
+    versions unless you are specifically looking to contribute to them.
+
 Installation Procedure
 ======================
 
@@ -165,11 +174,23 @@ Installation Procedure
 
     For Kolab Enterprise 14 on RHEL 7:
 
+    .. WARNING::
+
+        Kolab Enterprise 14 for RHEL 7 is in alpha state, you must not
+        install this version unless you are specifically looking to
+        contribute to it.
+
     .. parsed-literal::
 
         # :command:`wget https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`
 
     For Kolab Enterprise 14 on RHEL 6:
+
+    .. WARNING::
+
+        Kolab Enterprise 14 for RHEL 6 is in alpha state, you must not
+        install this version unless you are specifically looking to
+        contribute to it.
 
     .. parsed-literal::
 
