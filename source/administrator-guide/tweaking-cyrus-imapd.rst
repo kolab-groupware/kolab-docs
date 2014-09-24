@@ -2,6 +2,8 @@
 Tweaking Cyrus IMAP
 ===================
 
+.. _admin-tweaking-cyrus-imapd-storage-tiering:
+
 Storage Tiering
 ===============
 
@@ -31,9 +33,9 @@ IMAP server:
     mail folders end up on the correct partition.
 
     You would have one partition mounted off of the fast storage contain
-    the *day-to-day* payload, while the partition mounted off of the
-    cheap storage holds less requently used data, such as archive
-    folders.
+    the *day-to-day* payload, such as user's INBOX folders, while the
+    partition mounted off of the slower, cheap storage holds less
+    frequently used data, such as archive folders.
 
     .. seealso::
 
