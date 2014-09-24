@@ -7,6 +7,18 @@ on GitHub and submitting a pull request:
 
     https://github.com/kolab-groupware/kolab-docs
 
+.. IMPORTANT::
+
+    The documentation is only as good as your willingness to contribute
+    to it.
+
+Other documentation included here:
+
+.. toctree::
+    :maxdepth: 1
+
+    writing-documentation
+
 Building the Documentation
 ==========================
 
@@ -59,7 +71,7 @@ the documentation is written in.
 
         *   `Working with Git Submodules`_
 
-Enjoy!
+Enjoy:
 
 .. _Sphinx: http://sphinx-doc.org/
 .. _reStructuredText: http://sphinx-doc.org/rest.html
