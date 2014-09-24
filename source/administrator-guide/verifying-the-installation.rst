@@ -30,9 +30,9 @@ and possibly others.
 
     .. NOTE::
 
-        Some deployments with only a single parent domain name space may have
-        elected to run the Cyrus SASL authentication daemon (the **saslauthd**
-        service).
+        Some deployments with only a single parent domain name space may
+        have elected to run the Cyrus SASL authentication daemon (the
+        **saslauthd** service).
 
 #.  Is it functional?
 
