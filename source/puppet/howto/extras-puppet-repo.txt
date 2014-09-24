@@ -1,0 +1,36 @@
+.. parsed-literal::
+
+    # :command:`cat > /etc/yum.repos.d/kolab-14-extras-puppet.repo << EOF`
+    [kolab-14-extras-puppet]
+    name = Enterprise Linux 6 Puppet Packages for Kolab Enterprise 14
+    baseurl = https://mirror.kolabsys.com/redhat/kolab-14/el6/extras-puppet/\\\$basearch
+    enabled = 1
+    priority = 60
+    gpgcheck = 1
+    gpgkey = https://mirror.kolabsys.com/santiago.asc
+    sslcacert = /etc/pki/tls/certs/mirror.kolabsys.com.ca.cert
+    sslverify = True
+    sslclientcert = /etc/pki/tls/private/mirror.kolabsys.com.client.pem
+
+    [kolab-14-extras-puppet-debuginfo]
+    name = Enterprise Linux 6 Puppet Packages for Kolab Enterprise 14 - Debug
+    baseurl = https://mirror.kolabsys.com/redhat/kolab-14/el6/extras-puppet/\\\$basearch/debug
+    enabled = 0
+    priority = 60
+    gpgcheck = 1
+    gpgkey = https://mirror.kolabsys.com/santiago.asc
+    sslcacert = /etc/pki/tls/certs/mirror.kolabsys.com.ca.cert
+    sslverify = True
+    sslclientcert = /etc/pki/tls/private/mirror.kolabsys.com.client.pem
+
+    [kolab-14-extras-puppet-source]
+    name = Enterprise Linux 6 Puppet Packages for Kolab Enterprise 14 - Sources
+    baseurl = https://mirror.kolabsys.com/redhat/kolab-14/el6/extras-puppet/SRPMS
+    enabled = 0
+    priority = 60
+    gpgcheck = 1
+    gpgkey = https://mirror.kolabsys.com/santiago.asc
+    sslcacert = /etc/pki/tls/certs/mirror.kolabsys.com.ca.cert
+    sslverify = True
+    sslclientcert = /etc/pki/tls/private/mirror.kolabsys.com.client.pem
+    EOF

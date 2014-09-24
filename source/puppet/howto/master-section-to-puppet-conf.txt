@@ -1,0 +1,16 @@
+.. parsed-literal::
+
+    # :command:`cat >> /etc/puppet/puppet.conf << EOF`
+    [master]
+        ca = true
+        certname = puppet.$(hostname -d)
+        dns_alt_names = puppet
+        ssl_client_header = SSL_CLIENT_S_DN
+        ssl_client_verify_header = SSL_CLIENT_VERIFY
+        autosign = false
+        reports = store
+        environmentpath = \\\$vardir/environments/
+        basemodulepath = /etc/puppet/modules:/usr/share/puppet/modules:/var/lib/puppet/modules
+        parser = future
+    EOF
+
