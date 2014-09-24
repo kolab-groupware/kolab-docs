@@ -115,6 +115,14 @@ Glossary
 
             *   :term:`mandatory access control`
 
+    disk volume
+    disk volumes
+
+        A disk volume is an entity that "can contain a filesystem". This
+        may be a complete disk, a set of disks, a disk partition, a
+        logical volume, a copy-on-write snapshot, a disk image (file),
+        a fiber-channel or iSCSI LUN, or any other such volume.
+
     DN
     distinguished name
 
@@ -393,6 +401,7 @@ Glossary
         :term:`child domain name space`).
 
     partition
+    partitions
 
         A partition in Cyrus IMAP (...)
 
@@ -481,13 +490,24 @@ Glossary
 
     secondary email address
 
-        A secondary email address (...)
+        A secondary email address is a recipient email address
+        associated with an object, such as a user or a distribution
+        group, but it is not the :term:`primary email address`.
 
         .. seealso::
 
             *   :term:`external email address`
             *   :term:`forwarding email address`
             *   :term:`primary email address`
+
+    staging environments
+
+        Staging environments (...)
+
+    storage volume level replication
+
+        Please see the generic section on
+        :ref:`deployment-storage-redundancy`.
 
     working domain
 
