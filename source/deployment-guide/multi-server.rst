@@ -105,8 +105,9 @@ power, load-balacing, redundancy and/or high-availability:
         }
 
 While the :ref:`and_intro` chapter in the :ref:`and` document included a
-high-level overview of functional components, in this chapter we can zoom in a
-little and define the functional components by their role:
+high-level overview of functional components, in this chapter we can
+zoom in a little and define the functional components by a role.
+Generically speaking this would include the following roles:
 
 *   LDAP
 
@@ -114,11 +115,19 @@ little and define the functional components by their role:
     *   (read) slave
     *   (read) proxy
 
+    .. seealso::
+
+        *   :ref:`deployment-multi-server-ldap-replication`
+
 *   Web services
 
     *   Application
     *   Asset
     *   Proxy
+
+    .. seealso::
+
+        *   :ref:`deployment-multi-server-web-services`
 
 *   Data Storage Layer
 *   Databases
@@ -128,58 +137,517 @@ little and define the functional components by their role:
 
 *   Mail Exchangers
 
+    *   Anti-Spam and Anti-Virus (AS/AV)
     *   Backend Mail Exchanger
-    *   External Mail Exchanger
+    *   External Mail Exchanger (inbound)
+    *   External Mail Exchanger (outbound)
     *   Internal Mail Exchanger
+    *   Submission Mail Exchanger
 
-.. To illustrate how this would look like when put into a diagram:
-..
-.. .. graphviz::
-..
-..     digraph {
-..
-..             "LDAP Master #1" -> "LDAP Master #2" [dir=both];
-..             "LDAP Master #1", "LDAP Master #2" -> "LDAP Slave #1", "LDAP Slave #2";
-..             "LDAP Slave #1", "LDAP Slave #2" -> "LDAP Proxy #1", "LDAP Proxy #2";
-..
-..             "LDAP Proxy #1", "LDAP Proxy #1" -> "External MX #1", "External MX #2", "Internal MX #1", "Internal MX #2", "Web Application #1", "Web Application #2", "IMAP Backend #1", "IMAP Backend #2", "IMAP Frontend #1", "IMAP Frontend #2", "IMAP Proxy #1", "IMAP Proxy #2";
-..
-..             "Web Application #1", "Web Application #2" -> "Database Master #1", "Database Master #2", "LDAP Master #1", "LDAP Master #2";
-..             "Web Application #1", "Web Application #2" -> "Database Slave #1", "Database Slave #2";
-..
-..             "Client" -> "IMAP Proxy #1", "IMAP Proxy #2", "Internal MX #1", "Internal MX #2", "Web Proxy #1", "Web Proxy #2", "LDAP Proxy #1", "LDAP Proxy #2";
-..
-..             "Web Proxy #1", "Web Proxy #2" -> "Web Asset #1", "Web Asset #2";
-..
-..             "IMAP Proxy #1", "IMAP Proxy #2" -> "IMAP Frontend #1", "IMAP Frontend #2";
-..
-..             "IMAP Frontend #1", "IMAP Frontend #2" -> "IMAP Backend #1", "IMAP Backend #2";
-..
-..             "IMAP Backend #1", "IMAP Backend #2" -> "Storage Node #1", "Storage Node #2", "Storage Node #3";
-..         }
+    .. seealso::
+
+        *   :ref:`deployment-multi-server-mail-exchangers`
+
+To illustrate how this could look like we put it into a diagram:
+
+.. graphviz::
+
+    digraph {
+            splines = true;
+            overlab = prism;
+
+            edge [color=gray50, fontname=Calibri, fontsize=11];
+            node [style=filled, shape=record, fontname=Calibri, fontsize=11];
+
+            subgraph cluster_db {
+                    color = "white";
+                    style = "filled";
+
+                    subgraph cluster_dbw {
+                            color = "white";
+                            style = "filled";
+
+                            "Database";
+                        }
+                }
+
+            subgraph cluster_imap {
+                    color = "white";
+                    style = "filled";
+
+                    subgraph cluster_imapb {
+                            color = "white";
+                            style = "filled";
+
+                            "IMAP Backend";
+                        }
+
+                    subgraph cluster_imapf {
+                            color = "white";
+                            style = "filled";
+
+                            "IMAP Frontend";
+                        }
+
+                    subgraph cluster_imapp {
+                            color = "white";
+                            style = "filled";
+
+                            "IMAP Proxy";
+                        }
+                }
+
+            subgraph cluster_ldap {
+                    color = "white";
+                    style = "filled";
+
+                    subgraph cluster_ldapw {
+                            color = "white";
+                            style = "filled";
+
+                            "LDAP Master";
+                        }
+
+                    subgraph cluster_ldapr {
+                            color = "white";
+                            style = "filled";
+
+                            "LDAP Slave";
+                        }
+
+                    subgraph cluster_ldapp {
+                            color = "white";
+                            style = "filled";
+
+                            "LDAP Proxy";
+                        }
+                }
+
+            subgraph cluster_memc {
+                    color = "white";
+                    style = "filled";
+
+                    "Memcached";
+                }
+
+            subgraph cluster_mx {
+                    color = "white";
+                    style = "filled";
+
+                    subgraph cluster_as {
+                            color = "white";
+                            style = "filled";
+
+                            "AS/AV";
+                        }
+
+                    subgraph cluster_emi {
+                            color = "white";
+                            style = "filled";
+
+                            "Ext. MX (in)";
+                        }
+
+                    subgraph cluster_emo {
+                            color = "white";
+                            style = "filled";
+
+                            "Ext. MX (out)";
+                        }
+
+                    subgraph cluster_im {
+                            color = "white";
+                            style = "filled";
+
+                            "Int. MX";
+                        }
+                }
+
+            subgraph cluster_web {
+                    color = "white";
+                    style = "filled";
+
+                    subgraph cluster_web1 {
+                            color = "white";
+                            style = "filled";
+
+                            "Webmail";
+                        }
+
+                    subgraph cluster_web2 {
+                            color = "white";
+                            style = "filled";
+
+                            "ActiveSync";
+                        }
+
+                    subgraph cluster_weba {
+                            color = "white";
+                            style = "filled";
+
+                            "Web Asset";
+                        }
+
+                    subgraph cluster_webp {
+                            color = "white";
+                            style = "filled";
+
+                            "Web Proxy";
+                        }
+                }
+
+            "External SMTP Servers" [color="#FFEEEE"];
+
+            "LDAP Master" -> "LDAP Slave" [dir=one];
+            "LDAP Slave" -> "LDAP Proxy" [dir=back];
+
+            "External SMTP Servers" -> "Ext. MX (in)";
+
+            "Ext. MX (in)" -> "LDAP Proxy";
+            "Ext. MX (in)" -> "AS/AV" [dir=both];
+
+            "Int. MX" -> "LDAP Proxy";
+            "Int. MX" -> "IMAP Backend";
+            "Int. MX" -> "Ext. MX (out)";
+            "Int. MX" -> "Ext. MX (in)" [dir=back];
+
+            "Ext. MX (out)" -> "External SMTP Servers";
+
+            "Web Proxy" -> "Webmail";
+            "Web Proxy" -> "ActiveSync";
+
+            "Webmail" -> "LDAP Proxy";
+            "Webmail" -> "Int. MX";
+            "Webmail" -> "Memcached" [dir=none];
+            "Webmail" -> "Database";
+            "Webmail" -> "IMAP Frontend";
+
+            "ActiveSync" -> "LDAP Proxy";
+            "ActiveSync" -> "Int. MX";
+            "ActiveSync" -> "Memcached" [dir=none];
+            "ActiveSync" -> "Database";
+            "ActiveSync" -> "IMAP Frontend";
+
+            "IMAP Proxy" -> "IMAP Frontend" [dir=none];
+            "IMAP Frontend" -> "IMAP Backend" [dir=none];
+
+            "Client (External)" -> "Ext. MX (in)";
+            "Client (External)" -> "IMAP Proxy";
+            "Client (External)" -> "Web Asset";
+            "Client (External)" -> "Web Proxy";
+
+            "IMAP Frontend" -> "Client (Internal)" [dir=back];
+            "Int. MX" -> "Client (Internal)" [dir=back];
+            "Web Asset" -> "Client (Internal)" [dir=back];
+            "Web Proxy" -> "Client (Internal)" [dir=back];
+        }
+
+
+.. graphviz::
+
+    digraph {
+            splines = true;
+            overlab = prism;
+
+            edge [color=gray50, fontname=Calibri, fontsize=11];
+            node [style=filled, shape=record, fontname=Calibri, fontsize=11];
+
+            subgraph cluster_db {
+                    color = "white";
+                    style = "filled";
+
+                    subgraph cluster_dbw {
+                            color = "white";
+                            style = "filled";
+
+                            "DB Master #1";
+                            "DB Master #2";
+                        }
+
+                    subgraph cluster_dbr {
+                            color = "white";
+                            style = "filled";
+
+                            "DB Slave #1";
+                            "DB Slave #2";
+                        }
+                }
+
+            subgraph cluster_imap {
+                    color = "white";
+                    style = "filled";
+
+                    subgraph cluster_imapb {
+                            color = "white";
+                            style = "filled";
+
+                            "IMAP Backend #1";
+                            "IMAP Backend #2";
+                        }
+
+                    subgraph cluster_imapf {
+                            color = "white";
+                            style = "filled";
+
+                            "IMAP Frontend #1";
+                            "IMAP Frontend #2";
+                        }
+
+                    subgraph cluster_imapp {
+                            color = "white";
+                            style = "filled";
+
+                            "IMAP Proxy #1";
+                            "IMAP Proxy #2";
+                        }
+                }
+
+            subgraph cluster_ldap {
+                    color = "white";
+                    style = "filled";
+
+                    subgraph cluster_ldapw {
+                            color = "white";
+                            style = "filled";
+
+                            "LDAP Master #1";
+                            "LDAP Master #2";
+                        }
+
+                    subgraph cluster_ldapr {
+                            color = "white";
+                            style = "filled";
+
+                            "LDAP Slave #1";
+                            "LDAP Slave #2";
+                        }
+
+                    subgraph cluster_ldapp {
+                            color = "white";
+                            style = "filled";
+
+                            "LDAP Proxy #1";
+                            "LDAP Proxy #2";
+                        }
+                }
+
+            subgraph cluster_memc {
+                    color = "white";
+                    style = "filled";
+
+                    "Memcached #1";
+                    "Memcached #2";
+                }
+
+            subgraph cluster_mx {
+                    color = "white";
+                    style = "filled";
+
+                    subgraph cluster_as {
+                            color = "white";
+                            style = "filled";
+
+                            "AS/AV #1";
+                            "AS/AV #2";
+                        }
+
+                    subgraph cluster_emi {
+                            color = "white";
+                            style = "filled";
+
+                            "Ext. MX (in) #1";
+                            "Ext. MX (in) #2";
+                        }
+
+                    subgraph cluster_emo {
+                            color = "white";
+                            style = "filled";
+
+                            "Ext. MX (out) #1";
+                            "Ext. MX (out) #2";
+                        }
+
+                    subgraph cluster_im {
+                            color = "white";
+                            style = "filled";
+
+                            "Int. MX #1";
+                            "Int. MX #2";
+                        }
+                }
+
+            subgraph cluster_web {
+                    color = "white";
+                    style = "filled";
+
+                    subgraph cluster_web1 {
+                            color = "white";
+                            style = "filled";
+
+                            "Webmail #1";
+                            "Webmail #2";
+                        }
+
+                    subgraph cluster_web2 {
+                            color = "white";
+                            style = "filled";
+
+                            "ActiveSync #1";
+                            "ActiveSync #2";
+                        }
+
+                    subgraph cluster_weba {
+                            color = "white";
+                            style = "filled";
+
+                            "Web Asset #1";
+                            "Web Asset #2";
+                        }
+
+                    subgraph cluster_webp {
+                            color = "white";
+                            style = "filled";
+
+                            "Web Proxy #1";
+                            "Web Proxy #2";
+                        }
+                }
+
+            "External SMTP Servers" [color="#FFEEEE"];
+
+            "LDAP Master #1", "LDAP Master #2" -> "LDAP Slave #1", "LDAP Slave #2" [dir=one];
+            "LDAP Slave #1", "LDAP Slave #2" -> "LDAP Proxy #1", "LDAP Proxy #2" [dir=back];
+
+            "External SMTP Servers" -> "Ext. MX (in) #1", "Ext. MX (in) #2";
+
+            "Ext. MX (in) #1", "Ext. MX (in) #2" -> "LDAP Proxy #1", "LDAP Proxy #2";
+            "Ext. MX (in) #1", "Ext. MX (in) #2" -> "AS/AV #1" [dir=both];
+            "Ext. MX (in) #1", "Ext. MX (in) #2" -> "AS/AV #2" [dir=both];
+            "Ext. MX (in) #1", "Ext. MX (in) #2" -> "Int. MX #1", "Int. MX #2";
+
+            "Int. MX #1", "Int. MX #2" -> "LDAP Proxy #1", "LDAP Proxy #2";
+            "Int. MX #1", "Int. MX #2" -> "IMAP Backend #1", "IMAP Backend #2";
+            "Int. MX #1", "Int. MX #2" -> "Ext. MX (out) #1", "Ext. MX (out) #2";
+
+            "Ext. MX (out) #1", "Ext. MX (out) #2" -> "External SMTP Servers";
+
+            "Web Proxy #1", "Web Proxy #2" -> "Webmail #1", "Webmail #2";
+            "Web Proxy #1", "Web Proxy #2" -> "ActiveSync #1", "ActiveSync #2";
+
+            "Webmail #1", "Webmail #2" -> "LDAP Proxy #1", "LDAP Proxy #2";
+            "Webmail #1", "Webmail #2" -> "Int. MX #1", "Int. MX #2";
+            "Webmail #1", "Webmail #2" -> "Memcached #1", "Memcached #2";
+            "Webmail #1", "Webmail #2" -> "DB Master #1", "DB Master #2";
+            "Webmail #1", "Webmail #2" -> "DB Slave #1", "DB Slave #2";
+            "Webmail #1", "Webmail #2" -> "IMAP Frontend #1", "IMAP Frontend #2";
+
+            "ActiveSync #1", "ActiveSync #2" -> "LDAP Proxy #1", "LDAP Proxy #2";
+            "ActiveSync #1", "ActiveSync #2" -> "Int. MX #1", "Int. MX #2";
+            "ActiveSync #1", "ActiveSync #2" -> "Memcached #1", "Memcached #2";
+            "ActiveSync #1", "ActiveSync #2" -> "DB Master #1", "DB Master #2";
+            "ActiveSync #1", "ActiveSync #2" -> "DB Slave #1", "DB Slave #2";
+            "ActiveSync #1", "ActiveSync #2" -> "IMAP Frontend #1", "IMAP Frontend #2";
+
+            "IMAP Proxy #1", "IMAP Proxy #2" -> "IMAP Frontend #1", "IMAP Frontend #2" [dir=none];
+            "IMAP Frontend #1", "IMAP Frontend #2" -> "IMAP Backend #1", "IMAP Backend #2" [dir=none];
+
+            "Client (External)" -> "Ext. MX (in) #1", "Ext. MX (in) #2";
+            "Client (External)" -> "IMAP Proxy #1", "IMAP Proxy #2";
+            "Client (External)" -> "Web Asset #1", "Web Asset #2";
+            "Client (External)" -> "Web Proxy #1", "Web Proxy #2";
+
+            "Client (Internal)" -> "IMAP Frontend #1", "IMAP Frontend #2";
+            "Client (Internal)" -> "Int. MX #1", "Int. MX #2";
+            "Client (Internal)" -> "Web Asset #1", "Web Asset #2";
+            "Client (Internal)" -> "Web Proxy #1", "Web Proxy #2";
+        }
 
 Scaling LDAP Servers
 ====================
 
+In a minimally distributed deployment topology, all components speak to
+a single LDAP server.
+
 .. graphviz::
 
     digraph {
-            "LDAP Write Master(s)" -> "LDAP Read Slave(s)";
-            "MUA" -> "LDAP Read Slave(s)";
-            "Mail Exchangers" -> "LDAP Read Slave(s)";
+            rankdir = LR;
+            splines = true;
+            overlab = prism;
+
+            edge [color=gray50, fontname=Calibri, fontsize=11];
+            node [style=filled, shape=record, fontname=Calibri, fontsize=11];
+
+            "LDAP Server" -> "MTA", "MUA", "IMAP" [dir=back];
         }
 
+This can be extended by replicating LDAP with the introduction of one or
+more replication slaves dedicated to read-only operations:
+
 .. graphviz::
 
     digraph {
-            "LDAP Write Master(s)" -> "LDAP Read Slave(s)";
-            "LDAP Read Slave(s)" -> "LDAP Caching Proxy(s)";
-            "MUA" -> "LDAP Caching Proxy(s)";
-            "Mail Exchangers" -> "LDAP Caching Proxy(s)";
+            rankdir = LR;
+            splines = true;
+            overlab = prism;
+
+            edge [color=gray50, fontname=Calibri, fontsize=11];
+            node [style=filled, shape=record, fontname=Calibri, fontsize=11];
+
+            "LDAP Write Master(s)" -> "LDAP Read Slave(s)" [dir=one];
+            "LDAP Read Slave(s)" -> "MTA", "MUA", "IMAP" [dir=back];
+        }
+
+And extended yet even further by the introduction of (caching) proxies:
+
+.. graphviz::
+
+    digraph {
+            rankdir = LR;
+            splines = true;
+            overlab = prism;
+
+            edge [color=gray50, fontname=Calibri, fontsize=11];
+            node [style=filled, shape=record, fontname=Calibri, fontsize=11];
+
+            "LDAP Write Master(s)" -> "LDAP Read Slave(s)" [dir=one];
+            "LDAP Read Slave(s)" -> "LDAP Proxies" [dir=back];
+            "LDAP Proxies" -> "MTA", "MUA", "IMAP" [dir=back];
         }
 
 Scaling Web Services
 ====================
+
+A single web server can not handle the requests of too many users, and
+even if it could, it would not be high-available. When web services are
+distributed, especially where it concerns a single web application being
+distributed, things such as sessions and also some caches must be stored
+outside the web server node.
+
+This is to prevent a loss of session validity when users turn (out) to
+hit another web server node for subsequent requests as part of their
+existing session, and should be taken in to account even when "sticky"
+load-balancing is employed.
+
+Since this session storage must be available to all web server nodes
+participating in serving an application, it makes sense to provide this
+session storage over the network.
+
+To do so in a SQL database however tends to put an unfair burden on the
+SQL infrastructure, especially when replication is involved.
+
+You could simply use memcached for the session storage, but this moves
+the single point of failure just one step further -- namely should the
+memcached server, fail, sessions are lost.
+
+To reduce the number of sessions lost, or to increase storage capacity
+horizontally, one can supply multiple memcached servers to the session
+storage driver, which will be used as a pool -- the sessions would be
+spread throughout the pool. Loss of a single memcached server is then
+limits to only a subset of the sessions.
+
+A much improved scenario is assisted by replicated memcached. Pairs of
+memcached servers replicate with one another so that either can fail.
 
 Role(s) for Mail Exchangers
 ===========================
