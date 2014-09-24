@@ -38,11 +38,13 @@ make up the groupware environment:
 
     #.  :ref:`and_intro_video`
 
+    #.  :ref:`and_collaborative_document_editing`
+
 Furthermore, the Kolab Groupware environment offers functionality beyond
 the exchange of regular email messages, such as calendaring, maintaining
 address books, task management, journaling, and more.
 
-All of this should be secure [#]_, scalable [#]_ and flexible [#]_. It
+All of this must remain secure [#]_, scalable [#]_ and flexible [#]_. It
 must also use Open Standards for protocols and storage formats to
 provide the user the freedom to walk away with their data, respect the
 privacy of its users, meanwhile protect organizations' interests.
@@ -78,38 +80,42 @@ penalties and require significantly more resources:
 
 A default installation of Kolab Groupware includes LDAP schema
 extensions that provide additional functionality such as delegation and
-mandatory SMTP Access Policy enforcement, but does not require these
-extensions be loaded.
+mandatory SMTP Access Policy enforcement, among other things, but Kolab
+does not strictly require these extensions be loaded.
 
 It should also be noted that Kolab, in principle, runs on a
-:term:`sealed system`.
+:term:`sealed system`. That is to say that users that are Kolab users
+are usually **not** system users.
 
 .. seealso::
 
-    For more information on LDAP integration in Kolab Groupware, please refer to:
+    For more information on LDAP integration in Kolab Groupware, please
+    refer to:
 
-    *   :ref:`and_ldap_389-directory-server`
-    *   :ref:`and_ldap_openldap`
+    *   :ref:`and-kolab-groupware-and-ldap`
 
 .. _and_intro_mail-exchanger:
 
 Mail Exchanger
 ==============
 
-Integrated with the :ref:`and_intro_authentication-and-authorization` database,
-the mail exchanger in Kolab Groupware is in charge of exchanging messages
-between Kolab Groupware users, mailing lists and distribution groups, third
-party groupware environments and the internet.
+Integrated with the :ref:`and_intro_authentication-and-authorization`
+database, the mail exchanger in Kolab Groupware is in charge of
+exchanging messages between Kolab Groupware users, mailing lists and
+distribution groups, third party groupware environments and the
+internet.
 
-The mail exchanger component is also responsible for anti-spam and anti-virus
-measures, protecting your environment against ill-intended distractions.
+The mail exchanger component is also responsible for anti-spam and
+anti-virus measures, protecting your environment against ill-intended
+distractions.
 
-Kolab Groupware integrates `Postfix <http://postfix.org>`_ by default, and
-provides it with additional security and integrity checks, such as the
+Kolab Groupware integrates `Postfix`_ by default, and provides it with
+additional security and integrity checks, such as the
 :ref:`and_mta_kolab-smtp-access-policy`.
 
-Kolab's default configuration of the mail exchanger includes the use of lookup
-ables against the :ref:`and_intro_authentication-and-authorization` database.
+Kolab's default configuration of the mail exchanger includes the use of
+lookup ables against the
+:ref:`and_intro_authentication-and-authorization` database.
 
 .. seealso::
 
@@ -124,31 +130,32 @@ Data Storage Layer & Primary Access Protocol
 A data storage layer for groupware environments must be fast, efficient,
 scalable and secure.
 
-A single system can only scale up as far as its local resources allow it to --
-called vertical scaling -- not unlike physical matter, there can only be a
-finite amount of resources in one place at any given one point in time.
+A single system can only scale up as far as its local resources allow it
+to -- called vertical scaling -- not unlike physical matter, there can
+only be a finite amount of resources in one place at any given one point
+in time.
 
 It is therefore a pre-requisite the storage layer can be spread out over
-multiple individual systems, while maintaining a transparent access methodology
-for users - whom do not know what data is where, and even if they did, tend to
-forget about it.
+multiple individual systems, while maintaining a transparent access
+methodology for users - whom do not know what data is where, and even if
+they did, tend to forget about it.
 
-The data storage layer must also be accessible remotely. For this purpose, you
-require a well defined, widely implemented network protocol that can deliver
-fast synchronization of large amounts of data with its clients, understands the
-concepts of folders and folder hierarchies, access control, quota, and can
-handle parallel access.
+The data storage layer must also be accessible remotely. For this
+purpose, you require a well defined, widely implemented network protocol
+that can deliver fast synchronization of large amounts of data with its
+clients, understands the concepts of folders and folder hierarchies,
+access control, quota, and can handle parallel access.
 
-In Kolab Groupware, this data storage layer is the IMAP spool, accessible by any
-client software that speaks the IMAP protocol.
+In Kolab Groupware, this data storage layer is the IMAP spool,
+accessible by any client software that speaks the IMAP protocol.
 
-Kolab Groupware ships `Cyrus IMAP <http://cyrusimap.org>`_ by default, which,
-with its so-called murder topology, provides the aforementioned transparent
+Kolab Groupware ships `Cyrus IMAP`_ by default, which, with its
+so-called murder topology, provides the aforementioned transparent
 access to IMAP spools spread out over multiple individual systems.
 
-This optional murder topology allows users of an environment to share groupware
-content amongst themselves, even though the content may reside on different
-backend systems.
+This optional murder topology allows users of an environment to share
+groupware content amongst themselves, even though the content may reside
+on different backend systems.
 
 .. seealso::
 
@@ -159,11 +166,11 @@ backend systems.
 Desktop Clients
 ===============
 
-Although the Kolab web client is powerful and fast, some users might want to use
-native Desktop clients. There is a variety of Desktop clients compatible with the
-Kolab Groupware solution. They include:
+Although the Kolab web client is powerful and fast, some users might
+want to use native Desktop clients. There is a variety of Desktop
+clients compatible with the Kolab Groupware solution. They include:
 
-*   The Kolab Client `Kontact <http://kontact.org>`_
+*   The Kolab Client `Kontact`_
 
     *   Available for Microsoft Windows, GNU/Linux and Apple Mac OS X
     *   With full Off-line support
@@ -183,7 +190,7 @@ Kolab Groupware solution. They include:
 
 .. versionadded:: Kolab 3.0
 
-    *   using `Bynari connector <http://www.bynari.com>`_
+    *   using the connector from `Bynari`_
 
 .. versionadded:: Kolab 3.1, Outlook 2013
 
@@ -196,14 +203,16 @@ Kolab Groupware solution. They include:
 Mobile Clients
 ==============
 
-All ActiveSync capable devices can be used to connect to Kolab and retrieve groupware data.
-This includes Android and Apple as well as the latest Blackberry devices.
+All ActiveSync capable devices can be used to connect to Kolab and
+retrieve groupware data. This includes Android and Apple as well as the
+latest Blackberry devices.
 
-Special security features for mobile clients such as policy enforcement, credential separation
-and remote wipe can be implemented with Kolab using ActiveSync.
+Special security features for mobile clients such as policy enforcement,
+credential separation and remote wipe can be implemented with Kolab
+using ActiveSync.
 
-If for some reason ActiveSync is not supported on the device, the CalDAV and CardDAV
-protocols can be used instead as a fall back.
+If for some reason ActiveSync is not supported on the device, the CalDAV
+and CardDAV protocols can be used instead as a fall back.
 
 
 .. _and_intro_storage-layer-access-protocols:
@@ -232,21 +241,42 @@ Groupware environment:
 Web Interfaces
 ==============
 
-* :ref:`and-kolab_wap_api`
-* Kolab Web Client
-* Hosted Kolab Customer Control Panel
-* Chwala File Management
-* Mobile Device Synchronization
+*   :ref:`and-kolab_wap_api`
+*   Kolab Web Client
+*   Hosted Kolab Customer Control Panel
+*   Chwala File Management
+*   Mobile Device Synchronization
+
+.. _and_intro_instant_messaging:
+
+Instant Messaging
+=================
+
+.. _and_intro_voice:
+
+Voice (over IP) & Voice Conferencing
+====================================
+
+.. _and_intro_video:
+
+Video & Video Conferencing
+==========================
+
+.. _and_collaborative_document_editing:
+
+Collaborative Document Editing
+==============================
 
 .. _and_intro_overview-functional-components:
 
 Overview of Functional Components
 =================================
 
-The following diagram provides a high-level overview of functional components
-and their connections and interactions with one another. For a fully detailed
-picture, we'll need to zoom in to the level of functional components themselves,
-and their individual interactions with other functional components.
+The following diagram provides a high-level overview of functional
+components and their connections and interactions with one another. For
+a fully detailed picture, we'll need to zoom in to the level of
+functional components themselves, and their individual interactions with
+other functional components.
 
 .. graphviz::
 
@@ -281,54 +311,61 @@ and their individual interactions with other functional components.
 
 Legend:
 
-*   The Red circles indicate components provided exclusively as part of Kolab
-    Groupware.
+*   The Red circles indicate components provided exclusively as part of
+    Kolab Groupware.
 
 *   Components in a Dark Green font color are server-side components.
 
 .. NOTE::
 
     The web client -- Roundcube, to which Kolab Systems contributes
-    substantially -- provides Kolab Groupware capabilities in addition to the
-    Roundcube core capabilities through plugins.
+    substantially -- provides Kolab Groupware capabilities in addition
+    to the Roundcube core capabilities through plugins.
 
 .. NOTE::
 
-    Desktop clients that Kolab Systems actively contributes to and supports
-    include Kontact (KDE PIM).
+    Desktop clients that Kolab Systems actively contributes to and
+    supports include `Kontact`_ (KDE PIM).
 
 .. rubric:: Footnotes
 
 .. [#] **Security**
 
-    **Beware of snake-oil vendors**, whom may tempt you to choose for a model
-    that encrypts data on the server using a fundamentally flawed model,
-    sometimes called *"the averting eyes promise"*, more clearly explained on
-    http://arstechnica.com/security/2013/11/op-ed-a-critique-of-lavabit/.
+    **Beware of snake-oil vendors**, whom may tempt you to choose for a
+    model that encrypts data on the server using a fundamentally flawed
+    model, sometimes called *"the averting eyes promise"*, more clearly
+    explained on `this arstechnica.com article`.
 
 .. [#] **Scalability**
 
-    Both vertical as well as horizontal scalability are features of an elastic
-    computing environment -- whether automatic (aka "cloud") or manual.
+    Both vertical as well as horizontal scalability are features of an
+    elastic computing environment -- whether automatic (aka "cloud") or
+    manual.
 
-    The scaling of a deployed solution is best applied to each individual
-    functional component separately, for the number of web servers your
-    deployment needs at any given point does not directly correspond with the
-    amount of mail exchangers your deployment needs (at that point or
-    otherwise).
+    The scaling of a deployed solution is best applied to each
+    individual functional component separately, for the number of web
+    servers your deployment needs at any given point does not directly
+    correspond with the amount of mail exchangers your deployment needs
+    (at that point or otherwise).
 
 .. [#] **Flexibility**
 
-    While, contrary to popular belief, most environments could run the majority
-    of their infrastructure on standard systems and with standard applications,
-    in contradiction not even two such standard environments are alike.
+    While, contrary to popular belief, most environments could run the
+    majority of their infrastructure on standard systems and with
+    standard applications, in contradiction not even two such standard
+    environments are alike.
 
-    A solution that is capable of adapting to the new environment is clearly
-    much more flexible -- this does require a good understanding of the intended
-    architecture of the solution, and a well-defined deployment use-case to
-    adapt to.
+    A solution that is capable of adapting to the new environment is
+    clearly much more flexible -- this does require a good understanding
+    of the intended architecture of the solution, and a well-defined
+    deployment use-case to adapt to.
 
 .. _Draft 03: http://tools.ietf.org/html/draft-ietf-ldapext-psearch-03
 .. _Draft 09: http://tools.ietf.org/html/draft-ietf-ldapext-ldapv3-vlv-09
 .. _RFC 4533: http://tools.ietf.org/html/rfc4533
 .. _RFC 2696: http://tools.ietf.org/html/rfc2696
+.. _Postfix: http://www.postfix.org
+.. _Cyrus IMAP: http://cyrusimap.org
+.. _Bynari: http://www.bynari.com
+.. _Kontact: http://kontact.org
+.. _this arstechnica.com article: http://arstechnica.com/security/2013/11/op-ed-a-critique-of-lavabit/
