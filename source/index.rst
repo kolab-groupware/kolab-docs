@@ -29,6 +29,13 @@ proven components and protocols.
 
     webmail-user-guide/index
 
+.. rubric:: Extras
+
+.. toctree::
+    :maxdepth: 1
+
+    puppet/index
+
 .. rubric:: HOWTOs
 
 .. toctree::
