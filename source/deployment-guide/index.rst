@@ -34,82 +34,98 @@ Generic Statements
 *   Larger numbers of users make it more important to ensure service
     availability.
 
-*   Larger numbers of users make load-balancing (and high-availability through
-    load-balancing) more attractive, more efficient and more cost-effective.
+*   Larger numbers of users make load-balancing (and high-availability
+    through load-balancing) more attractive, more efficient and more
+    cost-effective.
 
-*   Contrary to popular belief, larger numbers of users make capacity planning
-    more unpredictable, up to next to near impossible. Here, you require the
-    ability to scale up and down as *turns out to be needed*, and not be locked
-    into a certain scale with limited options to break out. You are likely
-    looking for :ref:`deployment_multi-server-for-each-service`.
+*   Contrary to popular belief, larger numbers of users make capacity
+    planning more unpredictable, up to next to near impossible. Here,
+    you require the ability to scale up and down as *turns out to be
+    needed*, and not be locked into a certain scale with limited options
+    to break out.
 
-*   The larger the (potential) data footprint, the more important it becomes to
-    consider your storage options.
+    Should running an extra couple of virtual machine be relatively
+    cheap, then you are likely looking for
+    :ref:`deployment_multi-server-for-each-service`.
+
+*   The larger the (potential) data footprint, the more important it
+    becomes to consider your storage options.
 
 *   The more flexibility you require in scaling;
 
     *   the more likely you run idle over-capacity, or
+
     *   under-performing services because of under-capacity, but
-    *   the easier it is to answer either of the aforementioned problems.
+
+    *   the easier it is to answer either of the aforementioned
+        problems.
+
+    *   the more you need means to adapt quickly, preferably automated,
+        by which we mean infrastructure services such as provisioning
+        and configuration management services.
 
 A Couple of Users
 -----------------
 
-In terms of capacity, for a family server, SOHO situation or micro-entity, it is
-probably more than sufficient to run :doc:`localhost`.
+In terms of capacity, for a family server, SOHO situation or micro-
+entity, it is probably more than sufficient to run :doc:`localhost`.
 
-If the data is really important, and you do not have data redundancy built into
-the single server (through RAID, or regular backups that are easy to restore),
-such an environment might want to opt for a :doc:`redundant-server`.
+If the data is really important, and you do not have data redundancy
+built into the single server (through RAID, or regular backups that are
+easy to restore), such an environment might want to opt for a
+:doc:`redundant-server`.
 
 Dozens of Users
 ---------------
 
-When a deployment seeks to serve groupware to dozens of users, :doc:`localhost`
-suffices unless the average user's usage pattern is extremely high.
+When a deployment seeks to serve groupware to dozens of users,
+:doc:`localhost` suffices unless the average user's usage pattern is
+extremely high.
 
-A Free Software ISV with employees working remotely, from home, for example,
-very much relies on electronic communications. Operating in the Free Software
-community, it's communication patterns are ever increasing, with its employees
-subscribing to upstream communities' mailing lists, and the organization itself
-possibly providing services to its community.
+A Free Software ISV with employees working remotely, from home, for
+example, very much relies on electronic communications. Operating in the
+Free Software community, it's communication patterns are ever
+increasing, with its employees subscribing to upstream communities'
+mailing lists, and the organization itself possibly providing services
+to its community.
 
-While servicing only a couple of dozen users, the number of messages exchanged
-easily exceeds thousands per day.
+While servicing only a couple of dozen users, the number of messages
+exchanged easily exceeds thousands per day.
 
-For this deployment, you may consider a deployment scenario as depicted in
-:ref:`deployment_multi-server-with-combined-services`.
+For this deployment, you may consider a deployment scenario as depicted
+in :ref:`deployment_multi-server-with-combined-services`.
 
-Scaling up from a single server deployment to a deployment with multiple servers
-is relatively straight-forward, but, depending on what service you choose to
-migrate off of the single host, possibly involves data migration and
-configuration changes.
+Scaling up from a single server deployment to a deployment with multiple
+servers is relatively straight-forward, but, depending on what service
+you choose to migrate off of the single host, possibly involves data
+migration and configuration changes.
 
 .. TODO::
 
-    Somewhere other than here, document the process of scaling up from one
-    single server on to multiple servers.
+    Somewhere other than here, document the process of scaling up from
+    one single server on to multiple servers.
 
 Hundreds of Users
 -----------------
 
-Providing Kolab Groupware to hundreds of users is an environment of scale. The
-starting point is likely
+Providing Kolab Groupware to hundreds of users is an environment of
+scale. The starting point is likely
 :ref:`deployment_multi-server-with-combined-services`, however;
 
 *   You may already have centralized authentication and authorization,
-*   You probably already have an existing infrastructure, possibly including a
-    perimeter network.
+
+*   You probably already have an existing infrastructure, possibly
+    including a perimeter network.
 
 To illustrate why this is important:
 
-    The Kolab web interfaces do not require a dedicated web server -- if you
-    have one already, then you may want to consider installing the Kolab web
-    interfaces on that, if not simply for the fact that public IP space is
-    limited.
+    The Kolab web interfaces do not require a dedicated web server --
+    if you have one already, then you may want to consider installing
+    the Kolab web interfaces on that, if not simply for the fact that
+    public IP space is limited.
 
-Other considerations come into play deploying Kolab Groupware, and those are
-included in the following sections:
+Other considerations come into play deploying Kolab Groupware, and those
+are included in the following sections:
 
 *   :ref:`deployment-hundreds-redundancy`
 *   :ref:`deployment-hundreds-high-availability`
@@ -121,22 +137,31 @@ included in the following sections:
 Redundancy
 ^^^^^^^^^^
 
-Redundancy -- with regards to data -- is a matter to be considered separate from
-high-availability.
+Redundancy -- with regards to data -- is a matter to be considered
+separate from high-availability.
 
-There are separate, distinct replication levels and scenarios one can consider:
+There are separate, distinct replication levels and scenarios one can
+consider, and storage devices types to be taken in to account.
+
+Generally, the largest volume of data is in IMAP spools. These are also
+very I/O intensive -- much more so than CPU- or memory-intensive.
+
+:ref:`deployment-storage-redundancy` in storage has it's own deployment
+guide section.
 
 .. _deployment-hundreds-high-availability:
 
 High-Availability
 ^^^^^^^^^^^^^^^^^
 
-Nothing overloads a helpdesk more than hundreds of users calling in at very much
-the same point in time, because a service is unavailable (and might, as a domino
-effect, render other services unavailable).
+Nothing overloads a helpdesk more than hundreds of users calling in at
+very much the same point in time, because a service is unavailable (and
+might, as a domino effect, render other services unavailable).
 
-The larger your userbase, the more important it is to ensure services remain
-available -- even during planned service windows.
+The larger your userbase, the more important it is to ensure services
+remain available -- even during planned service windows.
+
+A typical approach is to provide "two of each".
 
 .. _deployment-hundreds-load-balancing:
 
