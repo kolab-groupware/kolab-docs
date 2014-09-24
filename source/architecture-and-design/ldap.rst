@@ -1,3 +1,5 @@
+.. _and-kolab-groupware-and-ldap:
+
 ========================
 Kolab Groupware and LDAP
 ========================
