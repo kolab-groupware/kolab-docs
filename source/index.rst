@@ -58,7 +58,9 @@ proven components and protocols.
     :hidden:
 
     architecture-and-design/ldap-intro
+    authors
     developer-guide/packaging/obs-for-kolab/why-private-obs
+    puppet/module/kolab/why-multiple-parameterized-classes
     webmail-user-guide/roundcubemail/en_US/index
 
 ..
@@ -70,6 +72,7 @@ proven components and protocols.
 
     architecture-and-design/bonnie
     architecture-and-design/calendaring
+    architecture-and-design/environment-management
     desktop-clients/index
     howtos/dnssec
     howtos/freeipa-integration
