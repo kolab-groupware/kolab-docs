@@ -490,8 +490,8 @@ management repositories:
 
         mkdir -p /var/lib/puppet/environments/$environment/modules/
         cd /var/lib/puppet/environments/$environment/modules/
-        for module in git kolab puppet webserver yum; do
-            git clone -b $environment git://git.kolab.org/~vanmeeuwen/puppet/$module $module
+        for module in git kolab munin nagios puppet webserver yum; do
+            git clone -b $environment https://github.com/kolab-groupware/puppet-module-$module $module
         done
     done`
 
