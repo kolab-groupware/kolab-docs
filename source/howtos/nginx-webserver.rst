@@ -272,6 +272,7 @@ More Complex Installation
                 client_max_body_size 30M; # set maximum upload size for mail attachments
 
                 include fastcgi_params;
+                fastcgi_read_timeout 1200;
                 fastcgi_index index.php;
                 fastcgi_pass unix:/var/run/php-fpm/kolab.example.org_kolab-syncroton.sock;
                 fastcgi_param SCRIPT_FILENAME /usr/share/kolab-syncroton/index.php;
