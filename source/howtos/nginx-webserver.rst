@@ -34,7 +34,7 @@ Simple Installation
             error_log           /var/log/nginx/kolab.example.org-error_log;
 
             location /roundcubemail {
-                alias //usr/share/roundcubemail;
+                alias /usr/share/roundcubemail/public_html;
                 index index.php;
             }
 
@@ -225,22 +225,9 @@ More Complex Installation
 
             location /roundcubemail {
                 index index.php;
-                alias /usr/share/roundcubemail;
+                alias /usr/share/roundcubemail/public_html;
 
                 client_max_body_size 30M; # set maximum upload size for mail attachments
-
-                # Deny all attempts to access hidden files such as .htaccess, .htpasswd, .DS_Store (Mac).
-                location ~ ^/roundcubemail/(README(.md)?|INSTALL|LICENSE|CHANGELOG|UPGRADING)$ {
-                    deny all;
-                }
-
-                location ~ ^/roundcubemail/(bin|SQL|config|logs)/ {
-                    deny all;
-                }
-
-                location ~ ^/roundcubemail/program/(include|lib|localization|steps)/ {
-                    deny all;
-                }
 
                 # enable php
                 location ~ \\.php$ {
