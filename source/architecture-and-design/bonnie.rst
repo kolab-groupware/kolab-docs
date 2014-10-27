@@ -1007,6 +1007,21 @@ a simple object relation model between logs and metadata.
         }
 
 
+Accessing the Collected Data
+----------------------------
+
+Some of the collected data, primarily changelogs of groupware objects, shall
+be made available to Kolab clients to display the history of a certain object
+or creation/last-modification information including the according usernames
+which is not stored in the Kolab data format itself.
+
+A dedicated web service provides access to the archived data through an API
+and thereby translates the raw information from the storage backend into
+more concrete groupware object related data.
+
+See the :ref:`and-bonnie-client-api` for details.
+
+
 .. rubric:: Footnotes
 
 .. [#]
