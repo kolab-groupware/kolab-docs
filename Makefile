@@ -55,6 +55,7 @@ clean:
 	@rm -rf $(BUILDDIR)/*
 	@rm -rf source/webmail-user-guide/roundcubemail/
 	@rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/
+	@rm -rf source/*/_fancyfigures/
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html

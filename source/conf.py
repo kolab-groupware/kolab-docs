@@ -11,12 +11,13 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
+import sys, os, glob, imp
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+sys.path.append(os.path.abspath('../ext'))
+
 
 # -- General configuration -----------------------------------------------------
 
@@ -30,8 +31,15 @@ extensions = [
 #        'sphinx.ext.mathjax',
         'sphinx.ext.todo',
         'sphinx.ext.graphviz',
-        'sphinx.ext.ifconfig'
+        'sphinx.ext.ifconfig',
     ]
+
+# fancybox extension config
+fancybox_config = {
+    'helpers': {
+        'title': { 'type': 'inside' }
+    }
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -292,3 +300,38 @@ epub_copyright = u'2013, Jeroen van Meeuwen'
 #epub_tocdup = True
 
 todo_include_todos = True
+
+# -- Load variables for client configuration docs -----------------------------
+
+variables = {}
+
+config_files = glob.glob('./*/conf.py')
+
+if os.path.exists('./conf.local.py'):
+    config_files.append(os.path.relpath('./conf.local.py'))
+
+# collect variables from submodule configs
+for pathname in config_files:
+    try:
+        conf = imp.load_source('conf', pathname)
+        if hasattr(conf, 'variables'):
+            variables.update(conf.variables)
+        if hasattr(conf, 'tags'):
+            for tag in conf.tags:
+                tags.add(tag)
+        if hasattr(conf, 'extensions'):
+            extensions += conf.extensions
+        # TODO: merge other config options like rst_prolog, rst_epilog, etc.
+    except Exception, e:
+        print "Failed to open config file", pathname
+        print e
+
+# add variables as substitutions to the head of each page
+rst_prolog = ""
+for var,repl in variables.items():
+    rst_prolog += "    .. |%s| replace:: %s\n" % (var, repl)
+    rst_prolog += "    .. |**%s**| replace:: **%s**\n" % (var, repl)
+
+
+# forward variables for substitutions in fancyfigures
+fancyfigure_variables = variables
