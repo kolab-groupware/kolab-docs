@@ -17,12 +17,14 @@ variables = {
     'smtp_ssl':     'STARTTLS',
     'caldav_host':  '<kolab-host>/iRony/',
     'caldav_uri':   'https://<kolab-host>/iRony/',
-    'caldav_uri_long':   'https://<kolab-host>/iRony/calendars/<your-username>%40<your-domain>',
+    'caldav_uri_long':   'https://<kolab-host>/iRony/calendars/<your-username>%40<your-domain>/',
     'carddav_host':      '<kolab-host>/iRony/',
     'carddav_uri':       'https://<kolab-host>/iRony/',
-    'carddav_uri_long':  'https://<kolab-host>/iRony/addressbooks/<your-username>%40<your-domain>',
+    'carddav_uri_long':  'https://<kolab-host>/iRony/addressbooks/<your-username>%40<your-domain>/',
+    'webdav_host':       '<kolab-host>',
+    'webdav_uri':        'https://<kolab-host>',
     'activesync_host':   '<kolab-host>',
 }
 
 # remove tags in case your setup doesn't support all Kolab services/features
-tags = ['dav', 'tls', 'autoconf', 'activesync']
+tags = ['dav', 'webdav', 'tls', 'autoconf', 'activesync']

@@ -154,7 +154,8 @@ To set up an IMAP email account in Outlook follow these steps:
     Now you can click the Sync tab. In order to start a manual synchronization 
     of your events, contacts and tasks, click the sync button at the top. If 
     you encounter a problem you can see the errors in *Tools > Errors* window. 
-    Please report all problems to SurGate directly.
+    Please report all problems to `SurGATE <http://www.surgatelabs.com/support/>`_ 
+    directly.
 
     .. fancyfigure:: _static/outlookDAV-0.png
         :group: outlookDAV
@@ -194,5 +195,5 @@ To set up an IMAP email account in Outlook follow these steps:
             :size: 11
             :color: #ffffff
 
-            |caldav_uri| @275,278
+            |caldav_uri_long| @275,278 #28
 

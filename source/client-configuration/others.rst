@@ -78,3 +78,28 @@ Please use your **full and primary email address** as username here.
 
     or
         |**carddav_uri_long**|
+
+
+.. only:: webdav
+
+    .. index:: WenDAV
+    .. _settings-clientconfig-webdav-generic:
+
+    Files
+    -----
+
+    The easiest way to access your files is using the web client. In the top 
+    right corner, you can just choose 'Files'.
+
+    You can also use any `WebDAV <https://en.wikipedia.org/wiki/WebDAV#Clients>`_ 
+    capable client to get access to your files. 
+    Just point it to one of the following locations.
+
+    **https://**\ |**webdav_host**|
+
+    **webdavs://**\ |**webdav_host**|
+
+    **davs://**\ |**webdav_host**|
+
+    The first should work for most people. Try the others only if the first one 
+    does not work for you.

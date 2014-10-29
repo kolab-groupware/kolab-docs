@@ -82,8 +82,19 @@ Click *Done* to re-test the configuration and finish the setup.
     Network*, then click Next. On the next screen, please select the CalDAV 
     format and enter the following address:
 
-        |**caldav_uri**|\ **Calendar**
+        |**caldav_uri_long**|\ **Calendar**
 
+    .. fancyfigure:: _static/thunderbird-lightning-newcal.png
+        :group: thunderbirdcaldav
+        :width: 240
+        :height: 180
+        :alt: Thunderbird Calendar Setup Dialog
+
+        .. fancyrender::
+            :font: verdana
+            :size: 11
+
+            |caldav_uri_long|Calendar @344,262 #64
 
     The above URL will usually only work for the standard Calendar that is set 
     up initially. In order to add your other calendars, please repeat this 
@@ -110,7 +121,7 @@ Click *Done* to re-test the configuration and finish the setup.
     If you want to synchronize your tasks as well, you can add a second 
     "calendar" with the following address:
 
-        |**caldav_uri**|\ **Tasks**
+        |**caldav_uri_long**|\ **Tasks**
 
     Now your tasks should show up in Thunderbird as well.
 
@@ -124,8 +135,20 @@ Click *Done* to re-test the configuration and finish the setup.
     in the *Address Book* window, go to the menu, choose *File > New > Remote 
     Address Book*. On the next screen, please enter the following address:
 
-        |**carddav_uri**|\ **Contacts**
+        |**carddav_uri_long**|\ **Contacts**
 
     In order to add other address books, please repeat this procedure for each 
     address book. You can get the URL for the address books the same way as 
     described above in the :ref:`settings-clientconfig-thunderbird-lightning`.
+
+    .. fancyfigure:: _static/thunderbird-new-addressbook.png
+        :group: thunderbirdcarddav
+        :width: 240
+        :height: 180
+        :alt: Thunderbird CardDAV Addressbook Dialog
+
+        .. fancyrender::
+            :font: verdana
+            :size: 11
+
+            |carddav_uri_long|Contacts @93,355 #72
