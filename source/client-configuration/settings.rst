@@ -7,7 +7,7 @@ Client Configuration
 ********************
 
 The following instructions will show you how to configure client applications 
-to directly connect to the |service_name| email service. Choose your operating 
+to directly connect to |service_name|. Please choose your operating 
 system and client application:
 
 .. toctree::
