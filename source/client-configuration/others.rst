@@ -1,15 +1,19 @@
 Other Clients
 =============
 
-You can basically connect every standard email application with support for the 
-IMAP protocol with our service. Please use the following settings to connect:
-
+As long as your client application is following the standards,
+it can be used to connect to |service_name|.
+Below is an overview of the various protocols we support
+along with the settings you need to enter in your client.
 
 .. index:: IMAP Server
 .. _settings-clientconfig-imap-generic:
 
 IMAP Settings
 -------------
+
+You can basically connect every standard email application with support for the 
+IMAP protocol to |service_name|. Please use the following settings to connect.
 
 *Incoming server (IMAP):*
     |**imap_host**|
@@ -82,7 +86,7 @@ Please use your **full and primary email address** as username here.
 
 .. only:: webdav
 
-    .. index:: WenDAV
+    .. index:: WebDAV
     .. _settings-clientconfig-webdav-generic:
 
     Files
@@ -95,11 +99,25 @@ Please use your **full and primary email address** as username here.
     capable client to get access to your files. 
     Just point it to one of the following locations.
 
-    **https://**\ |**webdav_host**|
+        **https://**\ |**webdav_host**|
 
-    **webdavs://**\ |**webdav_host**|
+        **webdavs://**\ |**webdav_host**|
 
-    **davs://**\ |**webdav_host**|
+        **davs://**\ |**webdav_host**|
 
     The first should work for most people. Try the others only if the first one 
     does not work for you.
+
+.. only:: activesync
+
+    .. index:: ActiveSync
+    .. _settings-clientconfig-activesync-generic:
+
+    ActiveSync
+    ----------
+
+    Kolab also supports the proprietary ActiveSync protocol.
+    In order to connect your client to |service_name| via this protocol,
+    please use the following domain name.
+
+        |**activesync_host**|
