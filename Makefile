@@ -38,13 +38,15 @@ help:
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
-helpdocs:
-	@if [ ! -d "source/webmail-user-guide/roundcubemail/.git" ]; then \
+submodules:
+	@if [ ! -d "source/webmail-user-guide/roundcubemail/.git" -o ! -f "ext/kolab/fancyfigure/__init__.py" ]; then \
 		if [ -x "$$(which git 2>/dev/null)" ]; then \
 			git submodule init ; \
 			git submodule update ; \
 		fi ; \
 	fi
+
+helpdocs: submodules
 	@cd source/webmail-user-guide/roundcubemail/en_US/_plugins/ ; \
 	for docs in $$(find ../../../roundcubemail-plugins-kolab/ -type d -name "helpdocs"); do \
 		plugin=$$(basename $$(dirname $$docs)) ; \
@@ -57,7 +59,7 @@ clean:
 	@rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/
 	@rm -rf source/*/_fancyfigures/
 
-html:
+html: submodules
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
