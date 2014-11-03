@@ -544,6 +544,20 @@ Forge:
     rake db:migrate
     rake gems:refresh_specs
 
+.. IMPORTANT::
+
+    The dashboard report prune job does not eliminate records in other
+    tables, and it is therefore necessary to add to the database
+    schema:
+
+    .. parsed-literal::
+
+        ALTER TABLE resource_events ADD FOREIGN KEY (resource_status_id) REFERENCES resource_statuses(id) ON UPDATE CASCADE ON DELETE CASCADE;
+        ALTER TABLE resource_statuses ADD FOREIGN KEY (report_id) REFERENCES reports(id) ON UPDATE CASCADE ON DELETE CASCADE;
+        ALTER TABLE report_logs ADD FOREIGN KEY (report_id) REFERENCES reports(id) ON UPDATE CASCADE ON DELETE CASCADE;
+        ALTER TABLE metrics ADD FOREIGN KEY (report_id) REFERENCES reports(id) ON UPDATE CASCADE ON DELETE CASCADE;
+        ALTER TABLE reports ADD FOREIGN KEY (node_id) REFERENCES nodes(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
 The server can now be made its own client, and start managing Puppet by
 Puppet:
 
