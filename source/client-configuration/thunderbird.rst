@@ -4,6 +4,12 @@
 Mozilla Thunderbird
 -------------------
 
+Unfortunately, Mozilla Thunderbird can only handle email on its own.
+In order for it to also deal with your contacts, appointments and tasks,
+third party extensions are required.
+Therefore, you need to set up all of those separately.
+We show you how to do that below.
+
 E-Mail Setup
 ^^^^^^^^^^^^
 
@@ -75,7 +81,7 @@ Click *Done* to re-test the configuration and finish the setup.
     Network*, then click *Next*. On the next screen, please select the *CalDAV*
     format and enter the following address:
 
-        |**caldav_uri_long**|\ **Calendar**
+        |**caldav_uri_long**|/**Calendar**
 
     .. container:: screenshots
 
@@ -129,7 +135,8 @@ Click *Done* to re-test the configuration and finish the setup.
     Tasks Setup
     ^^^^^^^^^^^
 
-    If you want to synchronize your tasks with Thunderbird, you can follow the steps from the calendar setup above
+    If you want to synchronize your tasks with Thunderbird,
+    you can follow the steps from the :ref:`settings-clientconfig-thunderbird-lightning`
     and add a "calendar" with the following address:
 
         |**caldav_uri_long**|/**Tasks**
@@ -165,3 +172,25 @@ Click *Done* to re-test the configuration and finish the setup.
                 :size: 11
 
                 |carddav_uri_long|/Contacts @93,355 #72
+
+
+    Trick: Enable Multiple Accounts
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    By default, Mozilla Thunderbird just support one calendar and one address book account per server.
+    If you have more than one |service_name| account, you need to use the following trick:
+
+    #. Go to Edit → Preferences → Advanced → Config Editor…
+    #. Search for calendar.network.multirealm
+    #. Double-click to set the value to true
+
+    Then restart Thunderbird, add the second account and enjoy the full power of |service_name|!
+
+    .. container:: screenshots
+
+        .. fancyfigure:: _static/thunderbird-multirealm.png
+            :group: thunderbirdmulti
+            :width: 240
+            :alt: Thunderbird Lightning Multiple Accounts Trick
+
+

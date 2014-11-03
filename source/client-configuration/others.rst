@@ -99,7 +99,7 @@ Please use your **full and primary email address** as username here.
     capable client to get access to your files. 
     Just point it to one of the following locations.
 
-        **https://**\ |**webdav_host**|
+        |**webdav_uri**|
 
         **webdavs://**\ |**webdav_host**|
 
