@@ -8,5 +8,5 @@ Apple Mac OS X
 .. toctree::
    :maxdepth: 2
 
-   applemail
+   osx
    thunderbird
