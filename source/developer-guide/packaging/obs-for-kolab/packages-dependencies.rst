@@ -32,6 +32,7 @@ Dependency Packages
 .. include:: packages/python-ldap.txt
 .. include:: packages/python-pyasn1.txt
 .. include:: packages/python-pyasn1-modules.txt
+.. include:: packages/rubygem-passenger.txt
 .. include:: packages/svrcore.txt
 .. include:: packages/swig.txt
 .. include:: packages/xapian-core.txt
