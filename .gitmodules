@@ -1,9 +1,12 @@
 [submodule "source/webmail-user-guide/roundcubemail"]
 	path = source/webmail-user-guide/roundcubemail
 	url = https://github.com/roundcube/roundcubemail-helpdocs
+	ignore = dirty
 [submodule "source/webmail-user-guide/roundcubemail-plugins-kolab"]
 	path = source/webmail-user-guide/roundcubemail-plugins-kolab
 	url = git://git.kolab.org/git/roundcubemail-plugins-kolab
+	ignore = dirty
 [submodule "ext/kolab"]
 	path = ext/kolab
 	url = https://github.com/kolab-groupware/sphinx-ext.git
+	ignore = dirty
