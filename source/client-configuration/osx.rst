@@ -81,237 +81,240 @@ require the following manual steps:
 #. Please check the option **Use Secure Sockets Layer (SSL)** and use
    **Password** as authentication method.
 
+.. only:: dav
 
-.. _settings-clientconfig-osx-ical:
+    .. _settings-clientconfig-osx-ical:
 
-iCal
-^^^^
+    iCal
+    ^^^^
 
-In order to set up iCal, please open the preferences from the menu bar.
-Then choose  *Accounts* and add a new account by clicking the *+* Icon
-in the left bottom corner as indicated in the second screenshot below.
-Please enter the following information in the dialog.
+    In order to set up iCal, please open the preferences from the menu bar.
+    Then choose  *Accounts* and add a new account by clicking the *+* Icon
+    in the left bottom corner as indicated in the second screenshot below.
+    Please enter the following information in the dialog.
 
-* Account Type: **CalDAV**
-* User Name: Your full |service_name| email address like
-  |**useremail**|
-* Server Address: |**caldav_host**|
+    * Account Type: **CalDAV**
+    * User Name: Your full |service_name| email address like
+      |**useremail**|
+    * Server Address: |**caldav_host**|
 
-.. container:: screenshots
+    .. container:: screenshots
 
-    .. fancyfigure:: _static/osx-ical-1.png
-        :group: ical
-        :height: 200
-        :alt: iCal Accounts 
+        .. fancyfigure:: _static/osx-ical-1.png
+            :group: ical
+            :height: 200
+            :alt: iCal Accounts 
 
-    .. fancyfigure:: _static/osx-ical-2.png
-        :group: ical
-        :height: 200
-        :alt: iCal Add Account
+        .. fancyfigure:: _static/osx-ical-2.png
+            :group: ical
+            :height: 200
+            :alt: iCal Add Account
 
-    .. fancyfigure:: _static/osx-ical-3.png
-        :group: ical
-        :height: 200
-        :alt: iCal Add a CalDAV Account
+        .. fancyfigure:: _static/osx-ical-3.png
+            :group: ical
+            :height: 200
+            :alt: iCal Add a CalDAV Account
 
-        .. fancyrender::
-            :font: verdana
-            :size: 12
+            .. fancyrender::
+                :font: verdana
+                :size: 12
 
-            |username|    @224,189
-            |caldav_host| @224,243
+                |username|    @224,189
+                |caldav_host| @224,243
 
-    .. fancyfigure:: _static/osx-ical-4.png
-        :group: ical
-        :height: 200
-        :alt: iCal Accounts Overview
+        .. fancyfigure:: _static/osx-ical-4.png
+            :group: ical
+            :height: 200
+            :alt: iCal Accounts Overview
 
-        .. fancyrender::
-            :font: verdana-bold
-            :size: 12
-            :color: white
+            .. fancyrender::
+                :font: verdana-bold
+                :size: 12
+                :color: white
 
-            |service_name| @58,189
+                |service_name| @58,189
 
-        .. fancyrender::
-            :font: verdana
-            :size: 11
+            .. fancyrender::
+                :font: verdana
+                :size: 11
 
-            |service_name| @306,164
-            |useremail|    @306,191
-            |username|     @306,244
-
-
-Reminders
-^^^^^^^^^
-
-OS X 10.8 has a dedicated Reminders program which can show your tasks
-from |service_name|. You do not need to set it up separately. As soon as
-your :ref:`settings-clientconfig-osx-ical` is set up, Reminders will also be.
+                |service_name| @306,164
+                |useremail|    @306,191
+                |username|     @306,244
 
 
-Contacts
-^^^^^^^^
+    Reminders
+    ^^^^^^^^^
 
-In order to set up Contacts, please open the preferences from the menu
-bar. Then choose  *Accounts* and add a new account by clicking the *+*
-Icon in the left bottom corner as indicated in the second screenshot
-below. Please enter the following information in the dialog.
-
-* Account Type: **CardDAV**
-* User Name: Your full |service_name| email address like
-  |**useremail**|
-* Server Address: |**carddav_host**|
-
-.. container:: screenshots
-
-    .. fancyfigure:: _static/osx-contacts-1.png
-        :group: contacts
-        :height: 200
-        :alt: Contacts Add Accounts
-
-    .. fancyfigure:: _static/osx-contacts-2.png
-        :group: contacts
-        :height: 200
-        :alt: Contacts Add a CardDAV Account
-
-        .. fancyrender::
-            :font: verdana
-            :size: 12
-
-            |username|     @292,249
-            |carddav_host| @292,309
-
-    .. fancyfigure:: _static/osx-contacts-3.png
-        :group: contacts
-        :height: 200
-        :alt: Contacts Accounts Overview
-
-        .. fancyrender::
-            :font: verdana-bold
-            :size: 12
-            :color: white
-
-            |service_name| @54,151
-
-        .. fancyrender::
-            :font: verdana
-            :size: 11
-
-            |service_name| @296,165
-            |useremail|    @296,191
-
-Files
-^^^^^
-
-There is different possibilities to access your |service_name| files with
-your Mac. We show two of them below.
-
-Using Cyberduck
-"""""""""""""""
-
-`Cyberduck <http://cyberduck.ch/>`__ is a Swiss Free Software cloud
-storage browser for Mac. This is the recommended way to access your
-files. After you have installed it, add a new WebDAV connection as shown
-in the screenshots below. Please enter the following information:
-
-* Server Name: |**webdav_host**|
-* Port: **443**
-* Username: Your full |service_name| email address like |**useremail**|
-* Path: **/Files**
-
-.. container:: screenshots
-
-    .. fancyfigure:: _static/osx-cyberduck-1.png
-        :group: cyberduck
-        :height: 200
-        :alt: Cyberduck Add Storage
-
-        .. fancyrender::
-            :font: verdana
-            :size: 11
-            :color: blue
-
-            https://|useremail|@|webdav_host|/Files @151,103
-
-        .. fancyrender::
-            :font: verdana
-            :size: 11
-
-            |service_name| @156,79
-            |webdav_host|  @156,129
-            |username|     @156,156
-            /Files         @156,235
-
-    .. fancyfigure:: _static/osx-cyberduck-2.png
-        :group: cyberduck
-        :height: 200
-        :alt: Cyberduck Login
-
-        .. fancyrender::
-            :font: verdana
-            :size: 11
-
-            |username| @159,108
+    OS X 10.8 has a dedicated Reminders program which can show your tasks
+    from |service_name|. You do not need to set it up separately. As soon as
+    your :ref:`settings-clientconfig-osx-ical` is set up, Reminders will also be.
 
 
-Using Native OS X
-"""""""""""""""""
+    Contacts
+    ^^^^^^^^
 
-It is also possible to use no special program, but just your Mac OS X
-operating system to access your files. However, **we do not recommend** to do
-this, as this is implemented poorly by Apple and therefore very slow.
+    In order to set up Contacts, please open the preferences from the menu
+    bar. Then choose  *Accounts* and add a new account by clicking the *+*
+    Icon in the left bottom corner as indicated in the second screenshot
+    below. Please enter the following information in the dialog.
 
-If you still want to do this, please open the *Go* menu in your finder,
-and enter |**webdav_uri**|/**Files** as the *Server Address*. Then
-click *Connect* and enter your full email address and password.
-Afterwards, your |service_name| files will show up in your file browser as
-a shared resource.
+    * Account Type: **CardDAV**
+    * User Name: Your full |service_name| email address like
+      |**useremail**|
+    * Server Address: |**carddav_host**|
 
-.. container:: screenshots
+    .. container:: screenshots
 
-    .. fancyfigure:: _static/osx-webdav-1.png
-        :group: osxfiles
-        :height: 200
-        :alt: Mac OS X Files
+        .. fancyfigure:: _static/osx-contacts-1.png
+            :group: contacts
+            :height: 200
+            :alt: Contacts Add Accounts
 
-    .. fancyfigure:: _static/osx-webdav-2.png
-        :group: osxfiles
-        :height: 200
-        :alt: Mac OS X Files
+        .. fancyfigure:: _static/osx-contacts-2.png
+            :group: contacts
+            :height: 200
+            :alt: Contacts Add a CardDAV Account
 
-        .. fancyrender::
-            :font: verdana
-            :size: 11
+            .. fancyrender::
+                :font: verdana
+                :size: 12
 
-            |webdav_uri|/Files @24,57
+                |username|     @292,249
+                |carddav_host| @292,309
 
-    .. fancyfigure:: _static/osx-webdav-3.png
-        :group: osxfiles
-        :height: 200
-        :alt: Mac OS X Files
+        .. fancyfigure:: _static/osx-contacts-3.png
+            :group: contacts
+            :height: 200
+            :alt: Contacts Accounts Overview
 
-        .. fancyrender::
-            :font: verdana
-            :size: 11
+            .. fancyrender::
+                :font: verdana-bold
+                :size: 12
+                :color: white
 
-            |username| @184,154
+                |service_name| @54,151
 
-    .. fancyfigure:: _static/osx-webdav-4.png
-        :group: osxfiles
-        :height: 200
-        :alt: Mac OS X Files
+            .. fancyrender::
+                :font: verdana
+                :size: 11
 
-        .. fancyrender::
-            :font: verdana-bold
-            :size: 12
-            :color: white
+                |service_name| @296,165
+                |useremail|    @296,191
 
-            |webdav_host| @40,198
+.. only:: webdav
 
-        .. fancyrender::
-            :font: verdana
-            :size: 11
+    Files
+    ^^^^^
 
-            Files @276,98
+    There is different possibilities to access your |service_name| files with
+    your Mac. We show two of them below.
+
+    Using Cyberduck
+    """""""""""""""
+
+    `Cyberduck <http://cyberduck.ch/>`__ is a Swiss Free Software cloud
+    storage browser for Mac. This is the recommended way to access your
+    files. After you have installed it, add a new WebDAV connection as shown
+    in the screenshots below. Please enter the following information:
+
+    * Server Name: |**webdav_host**|
+    * Port: **443**
+    * Username: Your full |service_name| email address like |**useremail**|
+    * Path: **/Files**
+
+    .. container:: screenshots
+
+        .. fancyfigure:: _static/osx-cyberduck-1.png
+            :group: cyberduck
+            :height: 200
+            :alt: Cyberduck Add Storage
+
+            .. fancyrender::
+                :font: verdana
+                :size: 11
+                :color: blue
+
+                https://|useremail|@|webdav_host|/Files @151,103
+
+            .. fancyrender::
+                :font: verdana
+                :size: 11
+
+                |service_name| @156,79
+                |webdav_host|  @156,129
+                |username|     @156,156
+                /Files         @156,235
+
+        .. fancyfigure:: _static/osx-cyberduck-2.png
+            :group: cyberduck
+            :height: 200
+            :alt: Cyberduck Login
+
+            .. fancyrender::
+                :font: verdana
+                :size: 11
+
+                |username| @159,108
+
+
+    Using Native OS X
+    """""""""""""""""
+
+    It is also possible to use no special program, but just your Mac OS X
+    operating system to access your files. However, **we do not recommend** to do
+    this, as this is implemented poorly by Apple and therefore very slow.
+
+    If you still want to do this, please open the *Go* menu in your finder,
+    and enter |**webdav_uri**|/**Files** as the *Server Address*. Then
+    click *Connect* and enter your full email address and password.
+    Afterwards, your |service_name| files will show up in your file browser as
+    a shared resource.
+
+    .. container:: screenshots
+
+        .. fancyfigure:: _static/osx-webdav-1.png
+            :group: osxfiles
+            :height: 200
+            :alt: Mac OS X Files
+
+        .. fancyfigure:: _static/osx-webdav-2.png
+            :group: osxfiles
+            :height: 200
+            :alt: Mac OS X Files
+
+            .. fancyrender::
+                :font: verdana
+                :size: 11
+
+                |webdav_uri|/Files @24,57
+
+        .. fancyfigure:: _static/osx-webdav-3.png
+            :group: osxfiles
+            :height: 200
+            :alt: Mac OS X Files
+
+            .. fancyrender::
+                :font: verdana
+                :size: 11
+
+                |username| @184,154
+
+        .. fancyfigure:: _static/osx-webdav-4.png
+            :group: osxfiles
+            :height: 200
+            :alt: Mac OS X Files
+
+            .. fancyrender::
+                :font: verdana-bold
+                :size: 12
+                :color: white
+
+                |webdav_host| @40,198
+
+            .. fancyrender::
+                :font: verdana
+                :size: 11
+
+                Files @276,98
 
