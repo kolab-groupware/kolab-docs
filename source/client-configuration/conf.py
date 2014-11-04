@@ -26,5 +26,8 @@ variables = {
     'activesync_host':   '<kolab-host>',
 }
 
-# remove tags in case your setup doesn't support all Kolab services/features
-tags = ['dav', 'webdav', 'tls', 'autoconf', 'activesync']
+# default set of tags supported by a Kolab setup
+module_tags = ['dav', 'webdav', 'tls', 'autoconf', 'activesync']
+
+# specify a custom set of tags in case your setup doesn't support all Kolab services/features
+# tags = []
