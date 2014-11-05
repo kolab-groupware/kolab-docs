@@ -222,6 +222,8 @@ Then press next and enter the following information for the outgoing server sett
     #. In the server field, please enter: |**activesync_host**|
     #. Set the account options as you like.
        We recommend to use IMAP for email (see :ref:`settings-clientconfig-android-k9`), but you can activate email here as well.
+    #. After successful account creation,
+       you should select which data shall be synchronized in the webmail settings (see last screenshot).
 
     .. container:: screenshots
 
@@ -283,5 +285,16 @@ Then press next and enter the following information for the outgoing server sett
                 :size: 39
 
                 |useremail| @62,469
+
+        .. fancyfigure:: _static/roundcube-activesync-setup.png
+            :group: iosactivesync
+            :width: 200
+            :alt: Active Sync Setup
+
+            .. fancyrender::
+                :font: verdana
+                :size: 12
+
+                |useremail| @665,15
 
 
