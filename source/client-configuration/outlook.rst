@@ -4,6 +4,9 @@
 Microsoft Outlook
 -----------------
 
+.. image:: _static/outlook-logo.png
+    :align: right
+
 There are many different ways to connect your Microsoft Outlook client to |service_name|.
 Not every way is the right way for you.
 Please read each of the following sections carefully and then decide which connection option you prefer.

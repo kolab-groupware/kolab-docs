@@ -4,6 +4,9 @@
 Mozilla Thunderbird
 -------------------
 
+.. image:: _static/thunderbird-logo.png
+    :align: right
+
 Unfortunately, Mozilla Thunderbird can only handle email on its own.
 In order for it to also deal with your contacts, appointments and tasks,
 third party extensions are required.

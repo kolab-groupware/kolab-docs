@@ -3,6 +3,9 @@
 Kontact
 -------
 
+.. image:: _static/kontact-logo.png
+    :align: right
+
 `Kontact <http://kontact.org>`__ is the original client for
 `Kolab <http://kolab.org>`__, the software which is used by |service_name|.
 It is fully `Free

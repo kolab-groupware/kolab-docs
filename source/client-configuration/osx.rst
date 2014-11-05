@@ -3,6 +3,9 @@
 Mac OS X Native Applications
 ----------------------------
 
+.. image:: _static/osx-logo.png
+    :align: right
+
 Apple Mail
 ^^^^^^^^^^
 
