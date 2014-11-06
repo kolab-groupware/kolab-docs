@@ -196,5 +196,55 @@ Your |service_name| account is now set up on your iPhone or iPad.
     CardDAV/CalDAV for Contacts and Calendars
     -----------------------------------------
 
-    TBD.
+    After you have reached the *Add Account* screen
+    as described in :ref:`settings-clientconfig-ios-start`,
+    you can sync your data from |service_name|
+    by clicking on *Add CardDAV Account* and *Add CalDAV Account*.
+
+    For both account types, we provide the necessary configuration values below.
+
+    * Username: Your full and primary |service_name| email address
+    * Password: Your |service_name| password that belongs to your email address
+    * Description: |**service_name**|
+    * CardDAV Server: |**carddav_host**|
+    * CalDAV Server: |**caldav_host**|
+
+    .. container:: screenshots
+
+        .. fancyfigure:: _static/ios-carddav-1.png
+            :group: iosdav
+            :height: 200
+            :alt: Add CardDAV Account
+
+        .. fancyfigure:: _static/ios-carddav-2.png
+            :group: iosdav
+            :height: 200
+            :alt: CardDAV Settings
+
+            .. fancyrender::
+                :font: verdana
+                :size: 32
+
+                |carddav_host| @232,222
+                |username|     @232,310
+                |service_name| @232,486
+
+        .. fancyfigure:: _static/ios-caldav-1.png
+            :group: iosdav
+            :height: 200
+            :alt: Add CalDAV Account
+
+        .. fancyfigure:: _static/ios-caldav-2.png
+            :group: iosdav
+            :height: 200
+            :alt: CalDAV Settings
+
+            .. fancyrender::
+                :font: verdana
+                :size: 32
+
+                |caldav_host|  @232,222
+                |username|     @232,310
+                |service_name| @232,486
+
 
