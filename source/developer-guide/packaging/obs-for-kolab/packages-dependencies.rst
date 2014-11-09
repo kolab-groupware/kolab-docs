@@ -40,6 +40,7 @@ Dependency Packages
 .. include:: packages/php-pear-Net-URL2.txt
 .. include:: packages/php-Smarty.txt
 .. include:: packages/php-ZendFramework.txt
+.. include:: packages/postfix.txt
 .. include:: packages/python-augeas.txt
 .. include:: packages/python-cssmin.txt
 .. include:: packages/python-elasticsearch.txt

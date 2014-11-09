@@ -117,6 +117,11 @@ done
 
 echo -en "Listing packages for projects: $(printf %3d $(( ${current} * 100 / ${total} )))%\r"
 
+# Remove the exceptions to the rule
+sed -r -i \
+    -e '/^roundcubemail-skin-contargo$/d' \
+    osc-cache/*_packages.list
+
 cat osc-cache/*_packages.list | sort -u > osc-cache/packages.list
 
 for package in $(cat osc-cache/packages.list); do

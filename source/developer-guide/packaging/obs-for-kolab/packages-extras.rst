@@ -5,6 +5,8 @@ Extra Packages
 .. include:: packages/conntrack-tools.txt
 .. include:: packages/keepalived.txt
 .. include:: packages/memcached.txt
+.. include:: packages/mod_security.txt
+.. include:: packages/nginx.txt
 .. include:: packages/openssl.txt
 .. include:: packages/php.txt
 .. include:: packages/puppet.txt
