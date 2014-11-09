@@ -152,7 +152,7 @@ current=1
 cur_percentage=0
 
 # Temp
-if [ 0 -eq 1 ]; then
+#if [ 0 -eq 1 ]; then
 
 for package in ${packages}; do
     target="source/developer-guide/packaging/obs-for-kolab/packages/${package}.txt"
@@ -350,7 +350,7 @@ while [ ${x} -lt ${#kolab_projects[@]} ]; do
 done
 
 # Temp
-fi
+#fi
 
 # Projects page
 current=0
