@@ -13,7 +13,6 @@ Version Matrices per Target Platform
 *   :ref:`product-kolab-3.3-updates-fedora_19`
 *   :ref:`product-kolab-3.3-updates-fedora_20`
 *   :ref:`product-kolab-3.3-updates-ucs_3.2`
-*   :ref:`product-kolab-3.3-updates-ucs_4.0`
 *   :ref:`product-kolab-3.3-updates-ubuntu_12.04`
 *   :ref:`product-kolab-3.3-updates-ubuntu_13.10`
 *   :ref:`product-kolab-3.3-updates-ubuntu_14.04`

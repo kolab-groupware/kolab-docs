@@ -414,17 +414,30 @@ while [ ${current} -lt ${#kolab_projects[@]} ]; do
             )
     fi
 
+    packages=$(cat osc-cache/${project}_packages.list)
     if [ ! -z "${enabled_repositories}" ]; then
         echo "Version Matrices per Target Platform" >> ${target}
         echo "------------------------------------" >> ${target}
         echo "" >> ${target}
+
         for enabled_repository in ${enabled_repositories}; do
+            num_packages=0
+            for package in ${packages}; do
+                if [ -s "osc-cache/${project}_${enabled_repository}_${package}.version" ]; then
+                    num_packages=$(( ${num_packages} + 1 ))
+                fi
+            done
+
+            if [ ${num_packages} -lt 1 ]; then
+                continue
+            fi
+
             echo "*   :ref:\`product-${project_lc}-$(echo ${enabled_repository} | sed -e 's/:/-/g' | tr '[:upper:]' '[:lower:]')\`" >> ${target}
         done
+
         echo "" >> ${target}
     fi
 
-    packages=$(cat osc-cache/${project}_packages.list)
     for enabled_repository in ${enabled_repositories}; do
         num_packages=0
         for package in ${packages}; do

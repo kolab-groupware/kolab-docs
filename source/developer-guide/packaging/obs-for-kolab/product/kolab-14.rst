@@ -9,13 +9,8 @@ Version Matrices per Target Platform
 *   :ref:`product-kolab-14-centos_6`
 *   :ref:`product-kolab-14-centos_7`
 *   :ref:`product-kolab-14-debian_7.0`
-*   :ref:`product-kolab-14-debian_8.0`
-*   :ref:`product-kolab-14-fedora_19`
-*   :ref:`product-kolab-14-fedora_20`
 *   :ref:`product-kolab-14-ucs_3.2`
 *   :ref:`product-kolab-14-ucs_4.0`
-*   :ref:`product-kolab-14-ubuntu_12.04`
-*   :ref:`product-kolab-14-ubuntu_13.10`
 *   :ref:`product-kolab-14-ubuntu_14.04`
 *   :ref:`product-kolab-14-opensuse_12.3`
 *   :ref:`product-kolab-14-opensuse_13.1`
