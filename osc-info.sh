@@ -28,19 +28,21 @@ if [ ! -f "osc_cache/obs_projects.list" -o ${refresh} -eq 1 ]; then
     sed -r -i \
         -e '/^Kolab:3\.0/d' \
         -e '/^Kolab:3\.1/d' \
+        -e '/^Kolab:3\.2/d' \
         -e '/^Kolab:13:Updates/d' \
         osc-cache/obs_projects.list
 
     # Legacy target platforms do not need to be updated
-    sed -i \
-        -e '/^Debian:6.0/d' \
+    sed -r -i \
+        -e '/^Debian:6\.0/d' \
         -e '/^Fedora:17/d' \
         -e '/^Fedora:18/d' \
-        -e '/^openSUSE:12.1/d' \
-        -e '/^openSUSE:12.2/d' \
+        -e '/^openSUSE:12\.1/d' \
+        -e '/^openSUSE:12\.2/d' \
         -e '/^RHEL:7/d' \
-        -e '/^UCS:3.0/d' \
-        -e '/^UCS:3.1/d' \
+        -e '/^UCS:3\.0/d' \
+        -e '/^UCS:3\.1/d' \
+        -e '/^Kontact/d' \
         osc-cache/obs_projects.list
 fi
 echo " DONE"
@@ -57,6 +59,7 @@ declare -a target_repositories
 # - Either the table column header or any project names, and
 # - Either the table column header or any target platform name.
 
+package_column_width=0
 project_column_width=0
 target_column_width=0
 version_column_width=36
@@ -112,6 +115,22 @@ while [ ${current} -lt ${#kolab_projects[@]} ]; do
     let current++
 done
 
+echo -en "Listing packages for projects: $(printf %3d $(( ${current} * 100 / ${total} )))%\r"
+
+cat osc-cache/*_packages.list | sort -u > osc-cache/packages.list
+
+for package in $(cat osc-cache/packages.list); do
+    if [ $(echo -n "${package}" | wc -c) -gt ${package_column_width} ]; then
+        package_column_width=$(echo -n "${package}" | wc -c)
+    fi
+done
+
+package_column_width=$(( ${package_column_width} * 2 + $(echo -n ":ref:\`package-\'" | wc -c) ))
+
+if [ $(echo -n "Package Name(s)" | wc -c) -gt ${package_column_width} ]; then
+    package_column_width=$(echo -n "Package Name(s)" | wc -c)
+fi
+
 echo ""
 
 # To initialize the tables, first iterate over all unique packages (across all
@@ -126,6 +145,9 @@ fi
 total=$(cat osc-cache/*_packages.list | sort -u | wc -l)
 current=1
 cur_percentage=0
+
+# Temp
+if [ 0 -eq 1 ]; then
 
 for package in ${packages}; do
     target="source/developer-guide/packaging/obs-for-kolab/packages/${package}.txt"
@@ -145,13 +167,16 @@ for package in ${packages}; do
         let x++
     done
 
+    echo ".. _package-$(echo ${package} | tr '[:upper:]' '[:lower:]'):" >> ${target}
+    echo "" >> ${target}
+
     echo "${package}" >> ${target}
     echo "${package}" | sed -e 's/./=/g' >> ${target}
     echo "" >> ${target}
-    echo ".. parsed-literal::" >> ${target}
-    echo "" >> ${target}
-    cat osc-cache/${project}_${package}.meta | sed -e 's/^/\t/g' >> ${target}
-    echo "" >> ${target}
+    if [ -f "source/developer-guide/packaging/obs-for-kolab/packages/${package}.rst" ]; then
+        cat "source/developer-guide/packaging/obs-for-kolab/packages/${package}.rst" >> ${target}
+        echo "" >> ${target}
+    fi
     echo ".. table:: Version Table for ${package}" >> ${target}
     echo "" >> ${target}
     printf "%s" "    +-" >> ${target}
@@ -182,7 +207,7 @@ for package in ${packages}; do
     echo "" >> ${target}
 
     if [ $(( ${current} * 100 / ${total} )) -ne ${cur_percentage} ]; then
-        echo -en "Packages initialize tables: $(printf %3d $(( ${current} * 100 / ${total} )))%\r"
+        echo -en "Initialize package tables: $(printf %3d $(( ${current} * 100 / ${total} )))%\r"
         export cur_percentage=$(( ${current} * 100 / ${total} ))
     fi
 
@@ -318,3 +343,153 @@ while [ ${x} -lt ${#kolab_projects[@]} ]; do
     echo ""
     let x++
 done
+
+# Temp
+fi
+
+# Projects page
+current=0
+cur_percentage=0
+total=${#kolab_projects[@]}
+
+mkdir -p "source/developer-guide/packaging/obs-for-kolab/product/"
+
+while [ ${current} -lt ${#kolab_projects[@]} ]; do
+    project=${kolab_projects[${current}]}
+    project_lc=$(echo ${project} | sed -e 's/:/-/g' | tr '[:upper:]' '[:lower:]')
+    target="source/developer-guide/packaging/obs-for-kolab/product/${project_lc}.rst"
+    enabled_repositories=""
+
+    if [ -f "${target}" ]; then
+        rm -rf ${target}
+    fi
+
+    echo ".. _product-${project_lc}:" >> ${target}
+    echo "" >> ${target}
+    echo "${project}" >> ${target}
+    echo "${project}" | sed -r -e 's/./=/g' >> ${target}
+    echo "" >> ${target}
+
+    if [ ! -f "osc-cache/${project}.meta" -o ${refresh} -eq 1 ]; then
+        osc meta prj ${project} > osc-cache/${project}.meta 2>/dev/null
+    fi
+
+    if [ -s "osc-cache/${project}.meta" ]; then
+        disabled_default=$(awk '/<build>/,/<\/build>/' osc-cache/${project}.meta | grep -E "^\s*<disable/>$")
+    else
+        disabled_default="yes"
+    fi
+
+    if [ -z "${disabled_default}" ]; then
+        disabled_repositories=$(
+                awk '/<build>/,/<\/build>/' osc-cache/${project}.meta | \
+                grep -E "^\s*<disable repository.*" | \
+                sed -r -e 's/\s*<disable repository="(.*)"\/>/\1/g' | \
+                sort -u
+            )
+
+        y=0
+        while [ ${y} -lt ${#target_repositories[@]} ]; do
+            repo_disabled=0
+            for disabled_repository in ${disabled_repositories}; do
+                if [ "${target_repositories[${y}]}" == "${disabled_repository}" ]; then
+                    repo_disabled=1
+                fi
+            done
+
+            if [ ${repo_disabled} -eq 0 ]; then
+                enabled_repositories="${enabled_repositories} ${target_repositories[${y}]}"
+            fi
+
+            let y++
+        done
+    elif [ "${disabled_default}" == "yes" ]; then
+        enabled_repositories=""
+    else
+        enabled_repositories=$(
+                awk '/<build>/,/<\/build>/' osc-cache/${project}.meta | \
+                grep -E "^\s*<enable repository.*" | \
+                sed -r -e 's/\s*<enable repository="(.*)"\/>/\1/g' | \
+                sort -u
+            )
+    fi
+
+    if [ ! -z "${enabled_repositories}" ]; then
+        echo "Version Matrices per Target Platform" >> ${target}
+        echo "------------------------------------" >> ${target}
+        echo "" >> ${target}
+        for enabled_repository in ${enabled_repositories}; do
+            echo "*   :ref:\`product-${project_lc}-$(echo ${enabled_repository} | sed -e 's/:/-/g' | tr '[:upper:]' '[:lower:]')\`" >> ${target}
+        done
+        echo "" >> ${target}
+    fi
+
+    packages=$(cat osc-cache/${project}_packages.list)
+    for enabled_repository in ${enabled_repositories}; do
+        num_packages=0
+        for package in ${packages}; do
+            if [ -s "osc-cache/${project}_${enabled_repository}_${package}.version" ]; then
+                num_packages=$(( ${num_packages} + 1 ))
+            fi
+        done
+
+        if [ ${num_packages} -lt 1 ]; then
+            continue
+        fi
+
+        echo ".. _product-${project_lc}-$(echo ${enabled_repository} | sed -e 's/:/-/g' | tr '[:upper:]' '[:lower:]'):" >> ${target}
+        echo "" >> ${target}
+        echo "${enabled_repository}" >> ${target}
+        echo "${enabled_repository}" | sed -r -e 's/./^/g' >> ${target}
+        echo "" >> ${target}
+
+        echo ".. table:: Version Matrix for ${enabled_repository} " >> ${target}
+        echo "" >> ${target}
+        printf "%s" "    +-" >> ${target}
+        printf "%*.*s" 0 ${package_column_width} $(printf '%0.1s' "-"{1..120}) >> ${target}
+        printf "%s" "-+-" >> ${target}
+        printf "%*.*s" 0 ${version_column_width} $(printf '%0.1s' "-"{1..120}) >> ${target}
+        printf "%s" "-+" >> ${target}
+        echo "" >> ${target}
+
+        printf "%s" "    | " >> ${target}
+        printf "%-${package_column_width}s" "Package Name(s)" >> ${target}
+        printf "%s" " | " >> ${target}
+        printf "%-${version_column_width}s" "Version" >> ${target}
+        printf "%s" " |" >> ${target}
+        echo "" >> ${target}
+
+        printf "%s" "    +=" >> ${target}
+        printf "%*.*s" 0 ${package_column_width} $(printf '%0.1s' "="{1..120}) >> ${target}
+        printf "%s" "=+=" >> ${target}
+        printf "%*.*s" 0 ${version_column_width} $(printf '%0.1s' "="{1..120}) >> ${target}
+        printf "%s" "=+" >> ${target}
+        echo "" >> ${target}
+
+        for package in ${packages}; do
+            if [ -s "osc-cache/${project}_${enabled_repository}_${package}.version" ]; then
+                package_version=$(cat "osc-cache/${project}_${enabled_repository}_${package}.version")
+
+                printf "%s" "    | " >> ${target}
+                printf "%-${package_column_width}s | %-${version_column_width}s |" ":ref:\`package-$(echo ${package} | tr '[:upper:]' '[:lower:]')\`" ${package_version} >> ${target}
+                echo "" >> ${target}
+                printf "%s" "    +-" >> ${target}
+                printf "%*.*s" 0 ${package_column_width} $(printf '%0.1s' "-"{1..120}) >> ${target}
+                printf "%s" "-+-" >> ${target}
+                printf "%*.*s" 0 ${version_column_width} $(printf '%0.1s' "-"{1..120}) >> ${target}
+                printf "%s" "-+" >> ${target}
+                echo "" >> ${target}
+
+            fi
+        done
+
+        echo "" >> ${target}
+
+    done
+
+    let current++
+
+done
+
+echo ""
+
