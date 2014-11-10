@@ -142,7 +142,8 @@ Then press next and enter the following information for the outgoing server sett
     #. After installing, it will appear in your list of apps.
        Please open the app.
     #. On the welcome screen, please click the little key icon with the plus to set up your |service_name| account.
-    #. Choose DAVdroid in the next screen, then enter |**caldav_host**| in the server URL and make sure to use **https**.
+    #. Choose DAVdroid in the next screen and then click *Log in with email address*.
+    #. Provide your full and primary |service_name| address as well as your password.
     #. The next screen shows all your calendars and address books. Select those that you want
        to synchronize to your Android device.
        Please note that as of now, Android only allows one address book per account.
@@ -166,19 +167,17 @@ Then press next and enter the following information for the outgoing server sett
         .. fancyfigure:: _static/android-davdroid-3.png
             :group: davdroid
             :width: 150
-            :alt: DAVdroid - Settings
-
-            .. fancyrender::
-                :font: roboto
-                :size: 39
-
-                |caldav_host| @266,260
-                |username|    @266,360
+            :alt: Login
 
         .. fancyfigure:: _static/android-davdroid-4.png
             :group: davdroid
             :width: 150
-            :alt: DAVdroid - Settings
+            :alt: Enter email address
+
+        .. fancyfigure:: _static/android-davdroid-5.png
+            :group: davdroid
+            :width: 150
+            :alt: DAVdroid - Collections
 
             .. fancyrender::
                 :font: roboto
@@ -189,7 +188,7 @@ Then press next and enter the following information for the outgoing server sett
                 |carddav_uri_long| @95,655 #53
                 /395204a8eb31-af28467a53a-1248821a/ @95,700 #53
 
-        .. fancyfigure:: _static/android-davdroid-5.png
+        .. fancyfigure:: _static/android-davdroid-6.png
             :group: davdroid
             :width: 150
             :alt: DAVdroid - Account details
@@ -199,7 +198,32 @@ Then press next and enter the following information for the outgoing server sett
                 :size: 39
 
                 |useremail| @330,305
-                
+
+    If the auto-discovery at step 4 did not work,
+    then choose *Login with URL and user name* instead.
+    In the next screen enter |**caldav_host**| in the server URL and make sure to use **https**.
+    Afterwards, you can continue with step 6 above.
+
+    .. container:: screenshots
+
+        .. fancyfigure:: _static/android-davdroid-noauto-1.png
+            :group: davdroidnoauto
+            :width: 150
+            :alt: DAVdroid - Login
+
+        .. fancyfigure:: _static/android-davdroid-noauto-2.png
+            :group: davdroidnoauto
+            :width: 150
+            :alt: DAVdroid - Settings
+
+            .. fancyrender::
+                :font: roboto
+                :size: 39
+
+                |caldav_host| @266,260
+                |username|    @266,360
+
+
 .. only:: activesync
 
     .. _settings-clientconfig-android-activesync:
