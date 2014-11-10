@@ -10,5 +10,5 @@ GNU/Linux
    kontact
    thunderbird
    evolution
-
+   emacs
 
