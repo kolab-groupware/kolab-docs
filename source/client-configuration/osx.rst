@@ -146,6 +146,12 @@ require the following manual steps:
                 |username|     @306,244
 
 
+    .. warning::
+        In Mac OS X 10.10 (Yosemite), the Calendar does not send event invitations.
+        There is not much we can do at the moment, as Apple broke the behavior without announcement.
+        If you rely on invitations from iCal, please consider not to upgrade to Yosemite for the moment.
+        If you have already upgraded, please consider making your invitations from the webclient.
+
     Reminders
     ^^^^^^^^^
 
