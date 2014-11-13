@@ -1,0 +1,59 @@
+[main]
+host = https://www.transifex.com
+type = PO
+
+[kolab-documentation.developer-guide]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide.po
+source_file = build/locale/developer-guide.pot
+source_lang = en
+
+[kolab-documentation.installation-guide]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide.po
+source_file = build/locale/installation-guide.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide.po
+source_file = build/locale/administrator-guide.pot
+source_lang = en
+
+[kolab-documentation.index]
+file_filter = locale/<lang>/LC_MESSAGES/index.po
+source_file = build/locale/index.pot
+source_lang = en
+
+[kolab-documentation.glossary]
+file_filter = locale/<lang>/LC_MESSAGES/glossary.po
+source_file = build/locale/glossary.pot
+source_lang = en
+
+[kolab-documentation.deployment-guide]
+file_filter = locale/<lang>/LC_MESSAGES/deployment-guide.po
+source_file = build/locale/deployment-guide.pot
+source_lang = en
+
+[kolab-documentation.webmail-user-guide]
+file_filter = locale/<lang>/LC_MESSAGES/webmail-user-guide.po
+source_file = build/locale/webmail-user-guide.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design.po
+source_file = build/locale/architecture-and-design.pot
+source_lang = en
+
+[kolab-documentation.client-configuration]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration.po
+source_file = build/locale/client-configuration.pot
+source_lang = en
+
+[kolab-documentation.puppet]
+file_filter = locale/<lang>/LC_MESSAGES/puppet.po
+source_file = build/locale/puppet.pot
+source_lang = en
+
+[kolab-documentation.howtos]
+file_filter = locale/<lang>/LC_MESSAGES/howtos.po
+source_file = build/locale/howtos.pot
+source_lang = en
+

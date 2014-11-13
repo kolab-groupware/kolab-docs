@@ -1,0 +1,1957 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, Jeroen van Meeuwen
+# This file is distributed under the same license as the Kolab Groupware package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Documentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-13 15:26+1300\n"
+"PO-Revision-Date: 2014-11-13 02:39+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/kolab-documentation/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/howtos/build-kolab-from-source.rst:44
+msgid "HOWTO: Build Kolab From Sources"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:46
+msgid ""
+"This HOWTO uses an Enterprise Linux 6, default installation of Kolab "
+"Groupware. For the purpose of this HOWTO, setup-kolab should have been run "
+"already, either from the installed packages or using the command from source"
+" as outlined in :ref:`build-source_pykolab`."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:51
+msgid "Out of Mainstream"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:53
+msgid ""
+"Continuing with this HOWTO, running Kolab Groupware directly from source, "
+"brings you out of mainline supply streams for updates. We recommend that "
+"after going through the procedure(s) outlined in this document, you disable "
+"the Kolab YUM repositories, or package updates might overwrite the files you"
+" compiled from source."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:59
+msgid ""
+"We also recommend you subscribe to the following mailing lists to keep in "
+"touch with upstream, and be notified of important changes:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:62
+msgid "devel@lists.kolab.org"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:63
+msgid "commits@lists.kolab.org"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:66
+msgid "libkolabxml"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:68
+msgid ""
+"The libkolabxml libraries and modules for PHP and Python are used with :ref"
+":`build-source_libkolab`, :ref:`build-source_pykolab_wallace`, and the Kolab"
+" plugins for Roundcube :ref:`build-source_kolab-plugins`."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:73
+msgid "Building and Installing libkolabxml"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:75
+#: ../../source/howtos/build-kolab-from-source.rst:134
+#: ../../source/howtos/build-kolab-from-source.rst:195
+#: ../../source/howtos/build-kolab-from-source.rst:278
+#: ../../source/howtos/build-kolab-from-source.rst:559
+#: ../../source/howtos/build-kolab-from-source.rst:627
+msgid "Clone the GIT repository:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:87
+#: ../../source/howtos/build-kolab-from-source.rst:146
+#: ../../source/howtos/build-kolab-from-source.rst:207
+#: ../../source/howtos/build-kolab-from-source.rst:290
+#: ../../source/howtos/build-kolab-from-source.rst:621
+msgid "Install the build dependencies:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:93
+msgid "Build libkolabxml:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:109
+msgid "Install libkolabxml:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:116
+#: ../../source/howtos/build-kolab-from-source.rst:174
+#: ../../source/howtos/build-kolab-from-source.rst:259
+msgid "Testing Modifications"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:118
+msgid ""
+"Your modifications to libkolabxml should be complete before submitting a "
+"patch or making a commit. To test whether libkolabxml builds with your "
+"modifications, use the following command:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:127
+msgid "libcalendaring"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:129
+msgid ""
+"libcalendaring is only needed if the system packages do not include KDE >= "
+"4.8."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:132
+msgid "Building and Installing libcalendaring"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:152
+msgid "Build libcalendaring:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:167
+msgid "Install libcalendaring:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:176
+msgid ""
+"Your modifications to libcalendaring should be complete before submitting a "
+"patch or making a commit. To test whether libcalendaring builds with your "
+"modifications, use the following command:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:187
+msgid "libkolab"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:189
+msgid ""
+"Requires libkolabxml, and for systems that do not have KDE >= 4.8, "
+"libcalendaring."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:193
+msgid "Building and Installing libkolab"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:213
+msgid "Build libkolab"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:215
+msgid "Build libkolab with libcalendaring"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:234
+msgid "Build libkolab without libcalendaring"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:252
+msgid "Install libkolab:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:261
+msgid ""
+"Your modifications to libkolab should be complete before submitting a patch "
+"or making a commit. To test whether libkolab builds with your modifications,"
+" use the following command:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:272
+msgid "PyKolab"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:274
+msgid ""
+"This section outlines running PyKolab directly from source. This involves "
+"the Kolab daemon (kolabd), Wallace (wallaced), and the Kolab SASL "
+"Authentication daemon (kolab-saslauthd)."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:295
+msgid "Configure pykolab:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:304
+msgid "Kolab Setup / Bootstrap"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:306
+msgid ""
+"Running the Kolab setup procedure (setup-kolab) directly from source allows "
+"you to test fixes and enhancements otherwise not available, and develop your"
+" own."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:309
+msgid ""
+"You probably want some level of increased verbosity when running setup-kolab"
+" from source. Use the -d 9 command-line option for protocol level tracing, "
+"and -d 8 for program level step tracing."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:314
+msgid "Running setup-kolab.py from Source"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:320
+msgid "Kolab Daemon"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:322
+msgid ""
+"Running the Kolab daemon (kolabd) directly from source allows you to test "
+"fixes and enhancements otherwise not available, and develop your own."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:325
+msgid ""
+"You probably want some level of increased verbosity when running the Kolab "
+"daemon from source. Use the -d 9 command-line option for protocol level "
+"tracing, and -d 8 for program level step tracing."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:330
+msgid "Running kolabd.py from Source"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:331
+#: ../../source/howtos/build-kolab-from-source.rst:357
+msgid "Stop the system service and prevent it from starting on boot:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:337
+msgid "Run the Kolab daemon"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:346
+msgid "Wallace Daemon"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:348
+msgid ""
+"Running the Wallace daemon (wallaced) directly from source allows you to "
+"test fixes and enhancements otherwise not available, and develop your own."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:351
+#: ../../source/howtos/build-kolab-from-source.rst:376
+msgid ""
+"You probably want some level of increased verbosity when running the Wallace"
+" daemon from source. Use the -d 9 command-line option for protocol level "
+"tracing, and -d 8 for program level step tracing."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:356
+msgid "Running wallace.py from Source"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:364
+msgid "Run the Wallace daemon from source:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:371
+msgid "Kolab SMTP Access Policy"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:373
+msgid ""
+"Running the Kolab SMTP Access Policy directly from source allows you to test"
+" fixes and enhancements otherwise not available, and develop your own."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:381
+msgid "Running the Kolab SMTP Access Policy from Source"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:382
+msgid ""
+"Move the version of the Kolab SMTP Acccess Policy installed on the system "
+"out of the way:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:389
+msgid ""
+"Create a symbolic link to the GIT version of the Kolab SMTP Access Policy:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:397
+msgid ""
+"Edit /etc/postfix/master.cf to increase the verbosity the Kolab SMTP Access "
+"Policy logs interactions with. At the end of the file, replace the lines for"
+" the recipient_policy, recipient_policy_incoming, sender_policy, "
+"sender_policy_incoming and submission_policy with the following:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:404
+msgid ""
+"The '\\' at the end of these lines is supposed to indicate continuation of "
+"the line"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:432
+msgid "Roundcube and Kolab Plugins for Roundcube"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:434
+msgid ""
+"By default, the Roundcube web client interface is available at "
+"``/roundcubemail/``, and served from ``/usr/share/roundcubemail/``. To "
+"install Roundcube and Kolab plugins from source, you will have perform the "
+"following procedure:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:440
+msgid "Installing Roundcube and Kolab Plugins from Source"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:442
+msgid ""
+"Choose a location to install the GIT version of Roundcube. We suggest using "
+"``/var/www/html/``."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:450
+msgid "Clone the Roundcube GIT repository:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:462
+msgid "Use the configuration from the RPM Roundcube installation:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:470
+msgid "We create a new database for this Roundcube version."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:481
+msgid "Clone the GIT repository for the Kolab plugins:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:494
+msgid ""
+"Use the Kolab plugin configuration from the system directory "
+"``/etc/roundcubemail/`` as installed by the roundcubemail-plugins-kolab RPM "
+"package and configured using the setup-kolab utility:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:509
+msgid "The libkolab plugin is special:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:515
+msgid "Load the database schemas for the Kolab plugins:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:522
+msgid "Put the Kolab plugins into the Roundcube plugins/ directory:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:533
+msgid ""
+"Make sure Roundcube can write to its log files and directory for temporary "
+"files:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:540
+msgid "Kolab Web Administration Panel and API"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:542
+msgid ""
+"By default, the Kolab Web Administration Panel client interface and API are "
+"normally available at /kolab-webadmin/, and served from ``/usr/share/kolab-"
+"webadmin/``."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:546
+msgid ""
+"To install the Kolab Web Administration Panel client interface and API, "
+"execute the following procedure:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:550
+msgid "Installing the Kolab WAP Client and API from Source"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:552
+msgid "Remove the version installed by packaging:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:571
+msgid "Set the necessary file permissions:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:578
+msgid ""
+"Consider setting the following two options in :file:`/etc/kolab/kolab.conf`:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:586
+msgid "This will enable full debugging, and avoid the use of caching."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:589
+msgid "Hosted Kolab Customer Control Panel"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:0
+#: ../../source/howtos/build-kolab-from-source.rst:0
+#: ../../source/howtos/build-kolab-from-source.rst:0
+msgid "Todo"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:593
+msgid ""
+"Write the section on running the Hosted Kolab Customer Control Panel from "
+"source."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:597
+msgid "Chwala"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:601
+msgid "Write the section on running Chwala from source."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:604
+msgid "iRony"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:608
+msgid "Write the section on running iRony from source."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:612
+msgid "Kolab Utilities"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:614
+msgid ""
+"The Kolab utilities include Kolab Free/Busy, Migration, Format Upgrade."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:616
+msgid ""
+"The Kolab utilities require libkolab to be successfully built and installed."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:619
+msgid "Running Kolab Free/Busy from Source"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:633
+msgid "Build the Kolab utilities:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:641
+msgid "Free/Busy Generation and Aggregation"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:644
+msgid "Upgrading the Format Version"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:647
+msgid "Migration"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:650
+msgid "Kolab Free/Busy Web Application"
+msgstr ""
+
+#: ../../source/howtos/deploy-high-available-and-load-balanced-ldap.rst:43
+msgid "HOWTO: Deploy High-Available and Load-Balanced LDAP"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:44
+msgid "HOWTO: Use GlusterFS for IMAP Spools"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:46
+msgid ""
+"GlusterFS is a distributed filesystem with built-in redundancy and self-"
+"healing features, that allows individual storage volumes to be aggregated "
+"into larger storage volumes."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:50
+msgid ""
+"This HOWTO sets up a single Kolab server using an IMAP spool mounted over "
+"GlusterFS, as illustrated in :ref:`howto-glusterfs-replicated_volume`."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:53
+msgid ""
+"To illustrate the GlusterFS volume scaling, we expand this original "
+"GlusterFS volume in :ref:`howto-glusterfs-distributed_replicated_volume`."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:56
+msgid "The initial setup consists of the following systems:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:58
+msgid ""
+"System ``gfs1.example.org`` with a second disk volume *vdb* of *10GB* and IP"
+" address 192.168.122.11."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:60
+msgid ""
+"System ``gfs2.example.org`` with a second disk volume *vdb* of *10GB* and IP"
+" address 192.168.122.12."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:62
+msgid "System ``kolab.example.org``."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:64
+msgid ""
+"The ``IN A`` address for ``gfs.example.org`` is made to resolve to the .11 "
+"**and** .12 IP addresses."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:70
+msgid "GlusterFS Replicated Volume"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:72
+msgid "The initial setup looks as follows:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:91
+msgid ""
+"In this scenario, the Kolab server uses a GlusterFS volume mount for its "
+"IMAP spool, that is redundant as both bricks contain the same data."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:94
+msgid "Partition ``/dev/vdb`` on ``gfs1`` and ``gfs2`` as follows:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:110
+msgid ""
+"Create a physical volume, then a volume group, then a logical volume on both"
+" ``gfs1`` and ``gfs2``:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:121
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:248
+msgid ""
+"The logical volume ``lv_brick`` leaves 10% of the volume group unused for "
+"two purposes:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:124
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:251
+msgid ""
+"Filesystem checks can be performed on a logical volume snapshot, without "
+"interrupting the storage availability, and"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:127
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:254
+msgid ""
+"Backups can be made using logical volume snapshots without interrupting "
+"storage availability."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:130
+msgid ""
+"On both ``gfs1`` and ``gfs2``, create a filesystem on the new logical "
+"volume:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:137
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:264
+msgid "Create a mount point for the filesystem:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:143
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:270
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:374
+msgid "Configure the mount to be made on system startup and mount:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:151
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:278
+msgid "Create the directory to be exported as a brick:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:159
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:286
+msgid ""
+"Do not use the filesystem root directory ``/srv/gfs/`` as the brick to "
+"export, for its ``lost+found/`` directory will be rendered corrupt and "
+"useless."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:163
+msgid ""
+"Install the ``glusterfs``, ``glusterfs-fuse`` and ``glusterfs-server`` "
+"packages on ``gfs1`` and ``gfs2``:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:170
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:297
+msgid ""
+"Start the **glusterd** service and configure it to start when the system "
+"boots:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:178
+msgid "Use ``gfs1`` and probe the other GlusterFS node:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:184
+msgid "Create the GlusterFS volume to provide to ``kolab.example.org``:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:191
+msgid "Start the new volume:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:197
+msgid "Continue with :ref:`howto-glusterfs-configuring_the_glusterfs_client`."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:202
+msgid "GlusterFS Distributed Replicated Volume"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:204
+msgid ""
+"This part of the HOWTO assumes we are expanding a :ref:`howto-glusterfs-"
+"replicated_volume` and you already have followed :ref:`howto-glusterfs-"
+"configuring_the_glusterfs_client`."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:208
+msgid ""
+"We'll be expanding the GlusterFS storage volume from *10GB* to *20GB*, by "
+"configuring the GlusterFS volume to become a distributed volume (on top of "
+"being replicated)."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:212
+msgid ""
+"The number of nodes required for this is **4** -- distributing files over "
+"two bricks, each of which replicate with a replica brick. We will therefore "
+"add nodes:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:216
+msgid ""
+"System ``gfs3.example.org`` with a second disk volume *vdb* of *10GB* and IP"
+" address 192.168.122.13."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:218
+msgid ""
+"System ``gfs4.example.org`` with a second disk volume *vdb* of *10GB* and IP"
+" address 192.168.122.14."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:221
+msgid "Partition ``/dev/vdb`` on ``gfs3`` and ``gfs4`` as follows:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:237
+msgid ""
+"Create a physical volume, then a volume group, then a logical volume on both"
+" ``gfs3`` and ``gfs4``:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:257
+msgid ""
+"On both ``gfs3`` and ``gfs4``, create a filesystem on the new logical "
+"volume:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:290
+msgid ""
+"Install the ``glusterfs``, ``glusterfs-fuse`` and ``glusterfs-server`` "
+"packages on ``gfs3`` and ``gfs4``:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:305
+msgid "Use ``gfs1`` and probe the new GlusterFS nodes:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:312
+msgid "Add the new bricks to the existing volume:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:319
+msgid "Rebalance the bricks (use ``gfs1`` or ``gfs2``):"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:326
+msgid ""
+"When the rebalancing of the volume has been completed, remounting the volume"
+" on the GlusterFS client(s) makes it appreciate the change in storage "
+"volume."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:363
+msgid "Configuring the GlusterFS Client"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:365
+msgid ""
+"Using ``kolab.example.org``, this procedure configures the GlusterFS client "
+"to mount the ``imap0`` volume."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:368
+msgid "Install the ``glusterfs`` and ``glusterfs-fuse`` packages:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:381
+msgid "Change the directory ownership back to its original owner and group:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:389
+msgid "FAQ"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:392
+msgid "What happens when a GlusterFS node fails?"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:394
+msgid ""
+"In a replica *n* volume, *n*-1 nodes can fail. For each individual brick, at"
+" least one replica must stay alive."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:397
+msgid ""
+"In situations where you might expect or are required take into account the "
+"failure of multiple nodes (that are replicas) simultaneously, such as might "
+"be the case when using old desktop PCs for your storage, you should increase"
+" the number of replicas."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:402
+msgid ""
+"There is a significant initial performance hit for the GlusterFS client, as "
+"it merely starts to realize one of the volume's bricks is no longer "
+"available."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:405
+msgid ""
+"The write performance should not be impacted significantly, but the read "
+"performance is -- not unlike with RAID 1 replicated disk volume."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:408
+msgid "You can find peers that are unavailable as being disconnected:"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:427
+msgid ""
+"When the node comes back online, it will automatically repair itself before "
+"it is deemed connected. During the downtime, and during the repair, it is "
+"crucially important the other replica(s) does not fail as well."
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:432
+msgid "Replica *x*, Distribute *y* - how much storage, how many nodes?"
+msgstr ""
+
+#: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:434
+msgid ""
+"The total storage volume available is impacted most significantly by the "
+"number of replicas -- the distribution is a JBOD aggregation of volumes."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:46
+msgid "HOWTO: Create a User in the Kolab Web Administration Panel"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:48
+msgid ""
+"This is a quick walk-through guide on creating a user in the Kolab Web "
+"Administration Panel (WAP for short), based on a default Kolab installation."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:51
+msgid "For customization, please see the :ref:`admin`."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:53
+msgid ""
+"Navigate to the ``/kolab-webadmin`` URL on your webserver using HTTP. For "
+"example, a server set up on localhost would be at http://127.0.0.1/kolab-"
+"webadmin."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:59
+msgid ""
+"The address you use to connect to the web administration panel is also the "
+"address the server software uses itself."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:62
+msgid ""
+"If you navigate to the web administration panel using "
+"http://kolab.example.org/kolab-webadmin, then the software itself will "
+"(attempt to) connect to http://kolab.example.org/kolab-webadmin/api."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:66
+msgid ""
+"Make sure the server resolves the address you use (back to itself), or use "
+"the ``api_url`` setting in the ``kolab_wap`` section of "
+":manpage:`kolab.conf(5)`."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:70
+msgid ""
+"Login using the username ``cn=Directory Manager`` and the corresponding "
+"password you supplied during the setup process."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:75
+msgid ""
+"The screen that follows shows you the objects the web administration panel "
+"can manage:"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:80
+msgid "Choose \"Users\" to create your initial user account."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:82
+msgid ""
+"Please take a moment to familiarize yourself with the layout of our web "
+"administration panel:"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:85
+msgid "On the left-hand side is a list of existing user records,"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:86
+msgid "Quick links to other object types are provided at the top,"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:87
+msgid ""
+"At the right-hand side, near the top, under ``Logout`` and ``About`` is a "
+"link ``Add User``. :ref:`faq-no-add-user-button-or-link`?"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:89
+msgid "The main screen real estate is spent on the form area:"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:93
+msgid ""
+"The form is generated from configuration settings, among which a variety of "
+"types of individual users. A short overview of the types of users Kolab "
+"ships by default is available in the administrator guide."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:97
+msgid "For now we would like you to select the ``Kolab User`` type:"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:101
+msgid ""
+"The form updates itself once you select the ``Kolab User`` type, reflecting "
+"the configured as well as necessary form fields for this type of user, such "
+"as mail quota settings. The background color of the form fields indicates "
+"whether or not the form field requires you to provide input:"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:106
+msgid "light-blue fields are mandatory,"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:107
+msgid "white fields are optional,"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:108
+msgid "gray fields are disabled for custom entry."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:110
+msgid ""
+"Fields that are disabled are usually generated using values (that you "
+"supply) in other form fields."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:113
+msgid ""
+"Provide some of the required information, such as the ``Given Name`` and "
+"``Surname``."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:116
+msgid ""
+"As you leave each field, the information you typed is being sent back to the"
+" server (if the form field beared any relevance to any other form field), to"
+" obtain the values of generated form fields."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:120
+msgid ""
+"For example, supply the ``Given Name`` (and/or ``Surname``) of the user, and"
+" see the ``Common name`` and ``Display name`` are populated."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:125
+msgid ""
+"User information is being populated in other tabs of the form as well, such "
+"as the ``Primary Email Address`` and ``Secondary Email Address(es)`` fields "
+"in the ``Contact Information`` tab:"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:133
+msgid ""
+"Note that the primary email address form field is disabled for input, as the"
+" primary email address is generated by the :ref:`admin_rcpt-policy`."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:136
+msgid "Select the ``System`` tab."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:138
+msgid ""
+"If the user you are currently creating is to become a Kolab Administrator, "
+"start typing ``kolab-admin`` in the ``Role(s)`` field."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:145
+msgid ""
+"The ``Unique identity (UID)`` field is generated using the surname and "
+"preferred language of the user. A second user with a surname of \"Doe\" will"
+" have UID ``doe2``, a third ``doe3``, etc."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:151
+msgid ""
+"In the default configuration the password field is a cleartext field, so you"
+" can let the user know what password to use, while not having to make one up"
+" yourself first -- avoiding too many incidences of the *1234* and "
+"*Welcome123* passwords."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:156
+msgid ""
+"Adjusting this configuration is beyond the scope of this topic, but is "
+"described in the Administrator Guide."
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:159
+msgid ""
+"Additional Kolab related configuration is available in the *Other* tab:"
+msgstr ""
+
+#: ../../source/howtos/kolab-webadmin-create-user.rst:163
+msgid "Click the submit button to create the user:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:44
+msgid "HOWTO: Multi-Domain Support in Kolab"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:47
+msgid "Before You Start"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:49
+msgid ""
+"For environments that could possibly end up hosting a lot of domains, it is "
+"recommended to set up a **domain_base_dn** that is contained within a "
+"database, as opposed to the default *cn=kolab,cn=config*."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:53
+msgid ""
+"For environments seeking to host system administrator account information "
+"and group membership in a centralized fashion, the use of a "
+":term:`management domain` -- the use of the primary domain as a management "
+"domain -- is recommended. Note that such a management domain can hold an "
+"organizational unit to hold the domain name spaces hosted, such as "
+"``ou=Domains,$root_dn``."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:59
+msgid ""
+"Environments that seek to provide highly available (multi-master) replicated"
+" LDAP environments for many domains should realize the default maximum "
+"number of semaphore sets is 128."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:65
+msgid "A description of a typical :ref:`deployment_hosted-kolab`"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:66
+msgid ""
+"Deployment considerations for :ref:`deployment_organizations-with-multiple-"
+"domain-namespaces`, as they impact functionality"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:69
+msgid ""
+":ref:`admin_ldap_increasing-max-open-fds` so LDAP can continue to accept "
+"connections"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:71
+msgid ""
+":ref:`admin_ldap_7bit-password-check` to not confuse too many users at once"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:73
+msgid ""
+":ref:`admin_ldap_configure-vlv` and :ref:`admin_ldap_configure-sss` for "
+"larger LDAP trees"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:77
+msgid "Amavisd Changes"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:79
+msgid ""
+"Amavis wishes to determine whether the email passed to it (through it) is to"
+" be received by a local recipient. However, it does not support lookups "
+"against LDAP -- to see if domain name spaces are indeed locally hosted."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:83
+msgid ""
+"Only for (inbound or internal) traffic -- to domain name spaces considered "
+"locally hosted -- will Amavisd add the ``X-Spam-*`` headers. As such, it is "
+"necessary to tell Amavis what the local domain name spaces are, in order to "
+"retain any spam headers."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:88
+msgid "Edit ``/etc/amavisd/amavisd.conf``, setting ``@local_domains_maps``."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:90
+msgid "**For dynamic environments**, ..."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:92
+msgid "consider replacing the ``@local_domains_maps``, with a default of:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:98
+msgid "for the following wildcard expression:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:104
+msgid "This will simply match all domains, including outgoing traffic."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:106
+msgid "**For (relatively) static environments,** ..."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:108
+msgid ""
+"you can maintain a list of domain name spaces in ``@local_domains_maps``, "
+"noted that you'll have to restart the **amavisd** service after each change."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:112
+msgid "This would end up looking like:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:124
+msgid ""
+"You will need to add parent domain name spaces **as well as** alias domain "
+"name spaces to this list as separate items."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:127
+msgid "Restart the service:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:134
+msgid "Cyrus IMAP Changes"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:136
+msgid ""
+"Cyrus IMAP has, by default, been configured to allow users to login with a "
+"``uid``, ``mail`` or ``alias`` login username, translating that login "
+"username to the intended mailbox using a process called "
+":term:`canonification`."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:140
+msgid ""
+"For multi-domain deployments, additional configuration is added to make the "
+"process multi-domain aware (Kolab 3.2 and later), or avoid executing the "
+"process altogher (Kolab 3.1 and earlier)."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:144
+msgid "Cyrus IMAP 2.5 (Kolab 3.2 and later)"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:146
+msgid ""
+"Cyrus IMAP 2.5 ships with a patch created by Kolab Systems, and submitted "
+"and accepted upstream, that allows the parent domain DIT root dn to be "
+"discovered."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:150
+msgid ""
+"Add the following settings to :manpage:`imapd.conf(5)` as needed, and "
+"restart the ``cyrus-imapd`` service:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:153
+msgid "**ldap_domain_base_dn** ``\"\"``"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:155
+msgid ""
+"The base dn to search for domain name spaces. In a default Kolab Groupware "
+"setup, the appropriate default is ``cn=kolab,cn=config`` -- however we do "
+"not ship Cyrus IMAP with that as a default configuration value."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:159
+msgid ""
+"If this configuration option is not set, ptloader will not perform any "
+"discovery."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:162
+msgid ""
+"**ldap_domain_filter** "
+"``(&(objectclass=domainrelatedobject)(associateddomain=%s))``"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:164
+msgid "The filter to use when searching for a domain name space."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:166
+#: ../../source/howtos/multi-domain.rst:173
+#: ../../source/howtos/multi-domain.rst:180
+#: ../../source/howtos/multi-domain.rst:188
+msgid ""
+"For default Kolab Groupware setups, the default configuration value works as"
+" intended."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:169
+msgid "**ldap_domain_name_attribute** ``associatedDomain``"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:171
+msgid ""
+"The attribute to use when attempting to find the parent domain name space."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:176
+msgid "**ldap_domain_scope** ``sub``"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:178
+msgid "The scope to use when searching. One of \"sub\", \"one\", \"base\"."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:183
+msgid "**ldap_domain_result_attribute** ``inetdomainbasedn``"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:185
+msgid ""
+"The attribute name of which to use the value, if the attribute is at all "
+"present on entries found, that contains the domain name space DIT root dn."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:191
+msgid "Cyrus IMAP 2.4"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:193
+msgid ""
+"The following changes are needed only for Kolab Groupware product streams "
+"that ship Cyrus IMAP 2.4. At the time of this writing, that includes Kolab "
+"3.1 and earlier versions, and Kolab Enterprise 13 and earlier versions of "
+"the enterprise edition."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:198
+msgid "This is not (yet) available for multi-domain deployments."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:200
+msgid "Execute the following sequence to remove the canonification process:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:216
+msgid "Postfix Changes"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:218
+msgid ""
+"Postfix has originally been configured to use the primary domain's DIT root "
+"dn for LDAP lookups. So, for a system setup for ``example.org``, all LDAP "
+"lookup tables are configured to lookup entries in ``dc=example,dc=org``."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:222
+msgid ""
+"The relevant lookup tables have been written out to "
+":file:`/etc/postfix/ldap/`, and added to the relevant Postfix configuration "
+"settings (in order of application):"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:226
+msgid "**mydestination**"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:228
+msgid ""
+"Check if the SMTP server is supposed to be receiving email for the recipient"
+" domain."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:231
+msgid ""
+"This map (Kolab default: ``ldap:/etc/postfix/ldap/mydestination.cf``) can "
+"remain largely unchanged, but we need two copies of it:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:234
+msgid "Copy :file:`/etc/postfix/ldap/mydestination.cf` twice:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:244
+msgid ""
+"Edit :file:`/etc/postfix/ldap/hosted_duplet_mydestination.cf` and change the"
+" ``query_filter`` setting to:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:251
+msgid ""
+"This map will be used to look up whether a domain name is a duplet of "
+"components (i.e. ``example.org``, but not ``example.org.uk``). This is "
+"needed for the templated search base we are going to use in other maps."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:255
+msgid ""
+"Edit :file:`/etc/postfix/ldap/hosted_triplet_mydestination.cf` and change "
+"the ``query_filter`` setting to:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:262
+msgid ""
+"This map will be used to look up whether a domain name is a triplet of "
+"components (i.e. ``example.org.uk``, but not ``example.org``). This is "
+"needed for the templated search base we are going to use in other maps."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:266
+msgid "**local_recipient_maps**"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:268
+msgid "Check if the recipient is a valid local recipient."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:270
+msgid ""
+"The original map is at :file:`/etc/postfix/ldap/local_recipient_maps.cf`."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:272
+msgid "Copy :file:`/etc/postfix/ldap/local_recipient_maps.cf` twice:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:282
+msgid ""
+"Edit :file:`/etc/postfix/ldap/hosted_duplet_local_recipient_maps.cf`, and "
+"replace the following two settings:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:285
+#: ../../source/howtos/multi-domain.rst:296
+msgid "**search_base**::"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:289
+#: ../../source/howtos/multi-domain.rst:300
+msgid "**domain**::"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:293
+msgid ""
+"Edit :file:`/etc/postfix/ldap/hosted_triplet_local_recipient_maps.cf`, and "
+"replace the following two settings:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:304
+msgid ""
+"Adjust the Postfix **local_recipient_maps** setting to match the new lookup "
+"tables (line breaks for legibility):"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:313
+msgid "**virtual_alias_maps**"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:315
+msgid ""
+"Translate original recipient address in to one or more target recipient "
+"addresses."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:318
+msgid ""
+"This applies to, for example, a user john.doe@example.org with a secondary "
+"mail address of doe@example.org. **virtual_alias_maps** are responsible for "
+"making sure inbound traffic for doe@example.org ends up in the mailbox for "
+"john.doe@example.org."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:323
+msgid ""
+"The **virtual_alias_maps** lookup tables are configured such that individual"
+" users, mail addresses to be forwarded elsewhere [#]_, mail-enabled "
+"distribution groups (static and dynamic), shared folders and possibly "
+"catchall addresses [#]_ are delivered to the correct mailbox(es)."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:328
+msgid "Copy the original virtual alias maps lookup tables twice, each:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:359
+#: ../../source/howtos/multi-domain.rst:412
+msgid ""
+"Adjust the Postfix **virtual_alias_maps** setting to match the new lookup "
+"tables (line breaks for legibility):"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:378
+msgid "**transport_maps**"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:380
+msgid ""
+"Use the outcome of **virtual_alias_maps** to determine the final delivery "
+"protocol and target."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:383
+msgid ""
+"For local mailboxes, and in a default Kolab Groupware setup, this tends to "
+"be :file:`lmtp:unix:/var/lib/imap/socket/lmtp`."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:386
+msgid "Copy the original transport maps lookup table twice:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:396
+msgid "Replace the same settings **search_base** and **domain**:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:423
+msgid ""
+"Note that ``hash:/etc/postfix/transport`` is used to map shared@ email "
+"addresses to the LMTP socket for local delivery, while the default option "
+"for **local_transport** remains ``local:$myhostname`` (meaning local "
+"delivery to :file:`/var/spool/mail/$user`)."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:430
+msgid "Alias Domain Name Spaces for Hosted Kolab Domains"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:432
+msgid ""
+"For each parent domain that holds an alias domain name space, you are "
+"required to create a copy of each of the configured mydestination, "
+"local_recipient_maps, virtual_alias_maps and transport_maps lookup tables, "
+"and adjust its settings to match the parent domain name space and alias "
+"domain name spaces."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:437
+msgid ""
+"If you don't, a hosted_duplet lookup for ``example.org`` might succeed if "
+"the root dn for the organizations directory information tree is indeed "
+"``dc=example,dc=org``, but a lookup for alias domain name spaces that also "
+"need to be looked up against ``dc=example,dc=org`` will fail -- a lookup for"
+" a recipient in an alias domain name space of ``example.com`` would end up "
+"as occurring against ``dc=example,dc=com``, which may or may not exist, but "
+"is most definitely not the same tree as ``dc=example,dc=org``."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:447
+msgid ""
+"Please note that developments are underway to configure referrals for this "
+"type of setup."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:450
+msgid ""
+"A set of tables for a parent domain name space of ``example.org`` holding "
+"alias domain name spaces ``example.com`` and ``example.de`` for example "
+"would look as follows (three sample files included):"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:454
+msgid "``/etc/postfix/ldap/example.org/mydestination.cf``::"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:468
+msgid "``/etc/postfix/ldap/example.org/local_recipient_maps.cf``::"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:484
+msgid "``/etc/postfix/ldap/example.org/virtual_alias_maps.cf``::"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:501
+msgid "Roundcube Changes"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:503
+msgid ""
+"Roundcube too, by default, is configured to only operate against the primary"
+" domain."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:506
+msgid ""
+"The settings most relevant to allowing authentication to succeed is in "
+":file:`/etc/roundcubemail/kolab_auth.inc.php`. At or near line 11, the "
+"**base_dn** settings for the **kolab_auth_addressbook** needs to be "
+"configured such that it uses the ``%dc`` placeholder (that Roundcube will "
+"substitute for the correct root dn for the domain), using the added "
+"**domain_\\*** settings:"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:526
+msgid ""
+"You should perform the same for the **ldap_public** address book "
+"configuration in :file:`/etc/roundcubemail/config.inc.php`."
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:530
+msgid "Footnotes"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:533
+msgid "mail forwarding"
+msgstr ""
+
+#: ../../source/howtos/multi-domain.rst:537
+msgid "catchall addresses"
+msgstr ""
+
+#: ../../source/howtos/nginx-imap-proxy.rst:43
+msgid "HOWTO: Use NGINX as an IMAP Proxy"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:44
+msgid "HOWTO: Use NGINX as the Web Server"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:46
+msgid "This HOWTO consists of two separate approaches."
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:49
+msgid "Simple Installation"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:51
+#: ../../source/howtos/nginx-webserver.rst:133
+msgid "Install NGINX and PHP FPM:"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:57
+msgid "Configure **php-fpm** to listen on a local UNIX socket:"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:65
+#: ../../source/howtos/nginx-webserver.rst:162
+msgid "Replace the contents of :file:`/etc/nginx/conf.d/default.conf`:"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:100
+#: ../../source/howtos/nginx-webserver.rst:455
+msgid ""
+"Start the **php-fpm** service and configure the service to start on boot:"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:107
+#: ../../source/howtos/nginx-webserver.rst:462
+msgid ""
+"Start the **nginx** service and configure the service to start on boot:"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:115
+msgid "More Complex Installation"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:119
+msgid ""
+"This HOWTO uses ports 8080 and 8443 as it is intended to demonstrate running"
+" Kolab Groupware under NGINX. Because of the use of ports not the standard "
+"ports for the related protocols, more changes are required to various "
+"configuration files."
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:124
+msgid ""
+"This creates a conflict with some mod_nss configuration for httpd, which (by"
+" default) is also configured to listen on port 8443. To correct this "
+"problem, issue the following commands:"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:139
+msgid ""
+"Note that to get full WebDAV support, an additional module is needed for "
+"nginx. It's available from https://github.com/arut/nginx-dav-ext-module/, "
+"but requires a rebuild of nginx from source. Some clients work without it, "
+"others don't."
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:144
+msgid "Remove the default **php-fpm** configuration:"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:150
+msgid "Create and set ownership on the following directories:"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:152
+msgid ":file:`/var/lib/nginx/fastcgi/`"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:153
+msgid ":file:`/var/lib/nginx/fastcgi/tmp/`"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:336
+msgid "Create the PHP FPM Pools:"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:434
+msgid ""
+"For this demonstrative configuration, make sure the following setting is in "
+":file:`/etc/roundcubemail/config.inc.php`:"
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:441
+msgid ""
+"Ensure, if you are using HTTPS, that the Chwala URL (``kolab_files_url``) in"
+" :file:`/etc/roundcubemail/kolab_files.inc.php` is also set to ``https`` "
+"rather than ``http``,  or most browsers will be unable to access the files "
+"component in Roundcube."
+msgstr ""
+
+#: ../../source/howtos/nginx-webserver.rst:446
+msgid ""
+"For configurations that use SSL, make sure to work around a known issue in "
+"PHP pear module HTTP_Request2, and include in "
+":file:`/etc/roundcubemail/config.inc.php`:"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:44
+msgid "HOWTO: Secure all Kolab Services"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:46
+msgid "This HOWTO is based on Centos 6.4."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:48
+msgid ""
+"The configuration on Debian(-based distributions) is similar, but the base "
+"path for the certifcates storage is different, and Debian already has a "
+"group called ``ssl-cert`` to which the user accounts for applications like "
+"Cyrus IMAP or Postfix are added by default."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:53
+msgid "On CentOS, this group is called ``mail``."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:56
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:58
+msgid ""
+"Prepare your certificates! You'll need your certificate, your key, the CA "
+"and intermediate CA certificates. This tutorial is based on the StartCom SSL"
+" CA. Feel free to use any other Certificate Authority to your liking."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:62
+msgid ""
+"In this case the certificate is a wildcard \\*.example.org certificate, "
+"which makes it easier to cover various hostnames (like ``smtp.example.org``,"
+" ``imap.example.org`` and ``webmail.example.org``)."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:66
+msgid "Copy your personal SSL certificates on your new Kolab server."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:68
+msgid ""
+"On Debian the default location is :file:`/etc/ssl/` instead of "
+":file:`/etc/pki/tls/`."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:76
+msgid ""
+"On Debian: Make sure the files have the correct permissions: * "
+"`/etc/ssl/private/example.org.key`: owner root, group ssl-cert and mode 0640"
+" * `/etc/ssl/certs/example.org.crt`: owner root, group root and mode 0666"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:80
+msgid ""
+"You should have obtained a CA certificate or CA certificate chain from your "
+"SSL certificate issuer."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:83
+msgid ""
+"If you have not, obtain the root and chain certificates from your "
+"certification authority. Make sure the source of the certificate is "
+"verifiable and trusted."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:87
+msgid "For example:"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:97
+msgid "Lets build some bundle files we can use later"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:111
+msgid ""
+"Add an SSL group. Only members of this group should be able to access your "
+"private key, etc."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:114
+msgid "On Debian the usergroup is not needed."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:123
+msgid "Add the CA to system's CA bundle."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:125
+msgid ""
+"Other applications and scripts that want to communicate via SSL should point"
+" to the cabundle in case they want check if your own certificate is trusted."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:128
+msgid "For RedHat/Centos based systems:"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:134
+msgid ""
+"On Debian based systems it's even easier. The command update-ca-certificates"
+" takes care of the ca-bundle file."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:143
+msgid "Applications"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:146
+msgid "Cyrus IMAPD"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:148
+#: ../../source/howtos/secure-kolab-server.rst:171
+msgid "Configure SSL certificates"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:158
+msgid ""
+"On Debian: Change the paths according to the Debian file structure (replace "
+"`/etc/pki/tls` with `/etc/ssl`. Make sure that the user `cyrus` is part of "
+"the `ssl-certs` group."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:161
+#: ../../source/howtos/secure-kolab-server.rst:250
+msgid "Restart and verify"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:169
+msgid "Postfix"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:179
+msgid ""
+"On Debian: Change the paths according to the Debian file structure (replace "
+"`/etc/pki/tls` with `/etc/ssl`. Make sure that the user `postfix` is part of"
+" the `ssl-certs` group."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:182
+msgid "Restart"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:189
+msgid "Apache"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:191
+msgid ""
+"Apache offers 2 modules that provide SSL support. The wildly used "
+"**mod_ssl**, and **mod_nss**. Since **mod_nss** was already installed and "
+"loaded through some dependency I'll cover this. Feel free to use "
+"**mod_ssl**."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:196
+msgid "mod_nss"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:198
+msgid ""
+"I configures mod_nss because it was already installed. If you prefer mod_ssl"
+" nobody stops you."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:200
+msgid "Import your CA into NSS Cert Database for Apache"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:208
+msgid "Convert and import your personal certificate into NSS DB"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:222
+msgid "You should now be able to see all the imported certificates"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:229
+msgid ""
+"Move mod_nss from port 8443 to 443 and configure the certificate that "
+"mod_nss should use."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:238
+msgid "Create a vhost for http (:80) to redirect everything to https"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:258
+msgid "mod_ssl"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:260
+msgid ""
+"There're enough tutorials out there if you want to configure **mod_ssl** on "
+"your Apache. Maybe you want to take a look on the nginx configuration as "
+"well."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:264
+msgid "389 Directory Server"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:266
+msgid ""
+"If you really want/need you can also add SSL support to your LDAP Server"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:268
+msgid ""
+"First you must import your PEM File into the certutil certificate store "
+"(identical to Apache with **mod_nss**)"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:288
+msgid "Enable SSL Support"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:290
+msgid ""
+"Since all the configuration for 389ds is being done live, changing and "
+"adding SSL support will require some LDAP commands to modify the server "
+"configuration."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:332
+msgid "Next, restart the LDAP service:"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:338
+msgid ""
+"You can test if your LDAP over SSL is configured correctly via the ``openssl"
+" s_client -connect localhost:636`` command, or just making a query using "
+"``ldapsearch``:"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:342
+msgid "Test non-SSL connection"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:350
+msgid "Test SSL connection"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:359
+msgid "Kolab Components"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:362
+msgid "kolab-cli"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:364
+msgid ""
+"With the HTTP Service configured to force SSL communication you must "
+"add/update your kolab-cli API url."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:375
+msgid "Roundcube/Plugins"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:377
+msgid ""
+"Set correct SSL parameters for HTTP_Request2. This will ensure the "
+"``kolab_files`` plugin and Chwala can talk over HTTPS."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:380
+msgid "Remove old-style SSL configuration parameters"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:387
+msgid "Change freebusy API url in the ``libkolab`` plugin configuration:"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:393
+msgid "Change Chwala API url in the ``kolab_files`` plugin configuration:"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:399
+msgid ""
+"Lets remove the php-close tag line as a quick hack to make it easier for us "
+"to extend the :file:`/etc/roundcubemail/config.inc.php`:"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:406
+msgid "Enable SSL verification against our extended CA bundle."
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:418
+msgid "Tell the webclient the SSL iRony URLs for CalDAV and CardDAV:"
+msgstr ""
+
+#: ../../source/howtos/secure-kolab-server.rst:428
+msgid "Additionaly, you can redirect all http traffic to https:"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:44
+msgid "HOWTO: Split Domains Over Multiple Groupware Deployments"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:46
+msgid ""
+"This HOWTO addresses using Kolab Groupware in situations where multiple "
+"groupware environments exist."
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:49
+msgid ""
+"Such an environment can be heterogeneous, meaning different groupware "
+"technology could be used in the environment."
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:52
+msgid "In the scenario in this HOWTO, we'll have:"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:54
+msgid "A :term:`parent domain` of ``example.org``,"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:55
+msgid "A user ``john.doe@example.org`` using Kolab Groupware,"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:56
+msgid "A user ``joe.sixpack@example.org`` using Microsoft Exchange,"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:57
+msgid "A user ``min.imum@example.org`` using Novell Groupwise,"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:58
+msgid "A user ``lucy.meier@example.org`` using IBM Lotus Notes."
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:61
+msgid "The Smart Host"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:63
+msgid "Use one or more smart hosts to route traffic."
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:65
+msgid ""
+"Multiple smarthosts are only added for capacity -- they must all have the "
+"same configuration to determine which recipient address is to be routed "
+"where."
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:69
+msgid "Web Administration Panel"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:72
+msgid "Mail Delivery to Shared Folders"
+msgstr ""
