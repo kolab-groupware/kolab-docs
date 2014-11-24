@@ -19,6 +19,9 @@ Volunteers who want to help with documenting aspects of Kolab are encouraged to 
 and add their content or correct existing content.
 Once finished, please send us a [pull request][github-pull] via GitHub.
 
+We even have [documentation on how to contribute][contribdocs] to the documentation in this very same repository.
+You might find this helpful and are welcome to extend it as well.
+
 If you want to increase the chances of your pull request being accepted,
 you can write a short email to [Kolab's development list][kolab-devel] stating what you plan on doing.
 The members of the Kolab.org community will then either propose improvements,
@@ -77,3 +80,4 @@ Please make sure that your changes do not introduce new warnings or errors durin
 [transifex-guide]: http://docs.transifex.com/guides/translators
 [transifex-kolab]: https://www.transifex.com/projects/p/kolab-documentation
 [transifex-stats]: https://www.transifex.com/projects/p/kolab-documentation/chart/image_png
+[contribdocs]: http://docs.kolab.org/developer-guide/documentation/
