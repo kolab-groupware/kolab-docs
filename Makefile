@@ -48,7 +48,18 @@ submodules:
 		fi ; \
 	fi
 
-helpdocs: submodules
+helplocales:
+	@for lang in de_DE fr_FR; do \
+		destlang=$${lang:0:2} ; \
+		if [ -d "locale/$$destlang" ]; then \
+			mkdir -p locale/$$destlang/LC_MESSAGES/webmail-user-guide ; \
+			for file in $$(find source/webmail-user-guide/roundcubemail/locale/$$lang/LC_MESSAGES -name '*.po' -depth 1 -or -type d -depth 1); do \
+				ln -sf $$file locale/$$destlang/LC_MESSAGES/webmail-user-guide/ ; \
+			done ; \
+		fi ; \
+	done
+
+helpdocs: submodules helplocales
 	@cd source/webmail-user-guide/roundcubemail/en_US/_plugins/ ; \
 	for docs in $$(find ../../../roundcubemail-plugins-kolab/ -type d -name "helpdocs"); do \
 		plugin=$$(basename $$(dirname $$docs)) ; \
