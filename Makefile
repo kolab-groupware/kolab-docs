@@ -7,14 +7,14 @@ SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
 SPHINXINTL    = sphinx-intl
-
+INTL_LOCALES  = -l de -l fr -l zh_CN
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
-SPHINXINTL_LANGUAGE=de,fr
+HELPDOCS_LOCALES = de_DE:de fr_FR:fr zh_CN:zh_CN
 
 .PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
 
@@ -49,13 +49,13 @@ submodules:
 	fi
 
 helplocales:
-	@for lang in de_DE fr_FR; do \
-		destlang=$${lang:0:2} ; \
+	@for langmap in $(HELPDOCS_LOCALES); do \
+		lang=$${langmap:0:5} ; \
+		destlang=$${langmap#*:} ; \
+		echo $$lang "=>" $$destlang ; \
 		if [ -d "locale/$$destlang" ]; then \
-			mkdir -p locale/$$destlang/LC_MESSAGES/webmail-user-guide ; \
-			for file in $$(find source/webmail-user-guide/roundcubemail/locale/$$lang/LC_MESSAGES -name '*.po' -depth 1 -or -type d -depth 1); do \
-				ln -sf $$file locale/$$destlang/LC_MESSAGES/webmail-user-guide/ ; \
-			done ; \
+			mkdir -p locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail ; \
+			ln -sf ../../../../../source/webmail-user-guide/roundcubemail/locale/$$lang/LC_MESSAGES locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail/en_US ; \
 		fi ; \
 	done
 
@@ -162,9 +162,9 @@ info: clean
 	make -C $(BUILDDIR)/texinfo info
 	@echo "makeinfo finished; the Info files are in $(BUILDDIR)/texinfo."
 
-gettext: clean submodules
+gettext: clean helpdocs
 	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) $(BUILDDIR)/locale
-	$(SPHINXINTL) update -p $(BUILDDIR)/locale -d locale
+	$(SPHINXINTL) update -p $(BUILDDIR)/locale -d locale $(INTL_LOCALES)
 	@echo
 	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
 
