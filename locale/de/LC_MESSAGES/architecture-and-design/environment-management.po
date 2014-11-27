@@ -1,0 +1,443 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/architecture-and-design/environment-management.rst:44
+msgid "Environment Management"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:46
+msgid ""
+"The ability to manage one or more complete environments depends on at least "
+"one but more likely multiple of the following capabilities of the "
+"infrastructure as a whole, and IT processes associated with them;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:50
+msgid ":ref:`arch-system-life-cycle-management`"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:51
+msgid "Inventory"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:52
+msgid "Configuration Management"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:53
+msgid "Standard Operating Procedure Control"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:54
+msgid "Monitoring"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:55
+msgid "Trending"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:56
+msgid ":ref:`arch-log-centralization-analysis-and-storage`"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:59
+msgid "Industry-Standard Components for Environment Management"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:61
+msgid ""
+"Environments of a distributed nature will have found that determining the "
+"cause of a system or service failure, the analysis of an application's "
+"behaviour, and general monitoring of the environment's health is a critical "
+"element in reducing the effort spent in collecting and analyzing the "
+"information necessary to keep systems and services running, maintain audit "
+"trails and/or answer (support) questions on system and service performance."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:72
+msgid "System Life-Cycle Management"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:74
+msgid ""
+"Not unlike many other life-cycles, an individual system's life-cycle can be "
+"divided in to three main stages of *birth*, *life* and *death*. If you want "
+"or need to, you may include an additional stage of *retirement*, in which "
+"the system cannot yet be purged in full, and needs to stay around for a "
+"little while longer, but not participate."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:80
+msgid ""
+"The distinction between these stages of life can be construed as follows:"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:83
+msgid "**Birth**"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:85
+msgid ""
+"The node's container is provided, the operating system is installed, and the"
+" node is rebooted in to its newly provisioned operating system. Next, *life*"
+" begins."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:89
+msgid ""
+"This stage corresponds with the provisioning of a system. It is best "
+"practice to keep the provisioning stage to a minimal level, and only perform"
+" just enough tasks to allow the node to come back up after its operating "
+"system installation reboot with enough capacity to start *life*. Some such "
+"configuration may include networking configuration, for example, and perhaps"
+" also additional disk configuration."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:97
+msgid "**Life**"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:99
+msgid ""
+"During a system's life, it will need to be installed some software onto, "
+"which will need to be configured, of which the configuration may change "
+"during its lifetime. Software may be updated, and operational changes (of a "
+"temporary nature) may need to be applied."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:104
+msgid ""
+"This stage corresponds with two separate yet interconnected operations:"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:107
+msgid "Run-time Configuration Management"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:109
+msgid "Execution of Standard Operating Procedures"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:111
+msgid "**Death**"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:113
+msgid ""
+"Albeit the terminology being mostly self-explanatory, the death of a system "
+"includes replacement of the operating system (for it then becomes a "
+"different node in the same container) and the obsoletion of a node (by a "
+"\"better\" node)."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:121
+msgid "Log Centralization, Analysis & Storage"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:123
+msgid ""
+"This section outlines the functional components for an industry-standard "
+"infrastructure with common components used for log centralization, analysis "
+"and storage, providing environments with the capability to cope with many "
+"dozens of millions of relevant log messages daily."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:128
+msgid ""
+"**Without** the ability to centralize, analyze and store log messages and "
+"event notifications, the following scenarios are but a few examples of "
+"common, every day occurrences;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:132
+msgid "**A message's delivery is delayed**;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:134
+msgid ""
+"A question about the message's delay is raised and logged through the "
+"appropriate channels."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:137
+msgid ""
+"A system administrator with an appropriate level of authorization to do so "
+"is assigned the task of discovery."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:140
+msgid ""
+"The system administrator iterates over all systems, using ``grep`` on "
+"``/var/log/maillog`` to find all log lines mentioning the sender or intended"
+" recipient(s)."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:144
+msgid ""
+"This results in a large number of so-called Queue IDs, one of which is "
+"associated with the original message in question (the delayed one)."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:148
+msgid "Each Queue ID is associated with a number of other Queue IDs when;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:151
+msgid "The message is delivered remotely,"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:152
+msgid ""
+"The message passes Anti-Spam & Anti-Virus and is re-inserted in to the MTA,"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:154
+msgid "The message is finally delivered."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:156
+msgid ""
+"For each of the original Queue IDs, the system administrator searches for "
+"log messages also mentioning the Queue ID."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:159
+msgid ""
+"For each set of log messages related to each Queue ID, the system "
+"administrator determines whether the log messages are in fact about the "
+"original message in question."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:163
+msgid ""
+"The delay is determined to exist or have existed, and the original question "
+"can be answered, however likely not resolved."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:166
+msgid ""
+"The system administrator is prompted to address the cause of the delay."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:169
+msgid "**A user says never to have received a particular message**;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:171
+msgid ""
+"Steps #1, #2, #4 through #8 of the aforementioned process are repeated, with"
+" step #3 being substituted for the following:"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:174
+msgid ""
+"Because the nature of this question is one likely to occur later in time "
+"(i.e. far past the original events in question) rather than sooner, the "
+"local systems' log file retention policy may have already rotated, rotated "
+"and compressed, or even rotated, compressed and subsequently purged the "
+"relevant log file off of the local filesystem."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:181
+msgid ""
+"It must therefore first be determined *when* the original message was sent, "
+"*when* it should have been received -- standard settings put this period on "
+"5 times 24 hours --, and subsequently *where* the relevant log messages "
+"might still be available (ranging from local filesystem to off- site tape)."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:188
+msgid ""
+"In addition to the logs about MSA, MTA and MDA delivery statuses, the "
+"message may in fact have been;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:191
+msgid "received, read, deleted and purged from one's mailbox."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:193
+msgid "filtered in to a folder the user has forgotten to;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:195
+msgid "subscribe to,"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:197
+msgid "read messages from."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:199
+msgid ""
+"These situations require means that are beyond the capabilities of simple "
+"log centralization and analysis, however."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:203
+msgid "**Log messages go unnoticed**"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:205
+msgid ""
+"Bearing in mind there's dozens of millions of log messages, finding the "
+"errors, alerts and notices among them is a task you would rather see "
+"automated."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:209
+msgid ""
+"Error log messages, alerts, and notices will likely go unnoticed unless they"
+" are actively aggregated, analyzed and used as triggers for follow-up."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:213
+msgid ""
+"Open Source log analysis technology allow for the storing in to multiple "
+"storage systems, and add triggering certain actions such as pager duty / "
+"Nagios / email / etc."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:218
+msgid "Log Centralization at Minimum"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:220
+msgid ""
+"Required functional components for the minimal functionality in log "
+"centralization are as follows (pre-existing components grayed):"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:239
+msgid "This allows an environment to;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:241
+msgid ""
+"No longer depend on the individual system's local disk space for the "
+"retention of log messages, of which disk space consumed can grow beyond a "
+"reasonable size to be allocated to an individual system, and must be "
+"considered more appropriately spent on the runtime data for applications and"
+" services,"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:247
+msgid ""
+"No longer require the continued availability of the individual system -- "
+"with its local disk space -- for the purpose of log message retention, while"
+" the system may corrupt or be discarded,"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:251
+msgid ""
+"Perform manual analysis across the number of systems spent on centralization"
+" rather than the number of individual log sources."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:255
+msgid "Log Centralization with Analysis"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:257
+msgid ""
+"The environment's capabilities yet still insufficient, however, for no "
+"analysis is possible on the current *flat file* structure of the log "
+"messages written to disk. No two messages can be correlated, not "
+"automatically, and no oversight view can be created."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:262
+msgid ""
+"Introducing analysis in to the log infrastructure causes the former diagram "
+"to be extended as such (gray items already existed):"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:284
+msgid ""
+"Under these circumstances, the features offered by the centralized logging "
+"system now include, in addition to the former;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:287
+msgid ""
+"Log analysis to allow system administrators to query for correlated log "
+"messages."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:290
+msgid ""
+"However, the log messages can no longer be stored in to the same *flat file*"
+" storage as these effectively do not allow querying."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:294
+msgid "Log Centralization, Analysis & Storage with Redundancy"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:296
+msgid ""
+"The aforementioned diagrams are simplified overviews of functional "
+"components however, and it is crucial to appreciate;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:299
+msgid ""
+"The use of TCP to transmit syslog messages on to a centralized syslog server"
+" is lossless compared to the use of UDP, but manipulates message payload to "
+"fit TCP datagram sizes, potentially rendering syslog unavailable should the "
+"TCP connection not be established and responsive, potentially locking up the"
+" system/service issuing log messages."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:306
+msgid ""
+"The use of the UDP protocol ensures fast dismissal of individual log "
+"messages, but the receiving end MUST be available and responsive for the "
+"message is otherwise lost."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:310
+msgid ""
+"Not all log messages (of an application) are suitable for inclusion in a "
+"syslog stream, such as those that implement the `LEMONADE`_ architecture for"
+" groupware environments."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:314
+msgid ""
+"Avoidance of congestion is crucial to maintain the ability to continuously "
+"correlate log messages and event notifications, and maintain accurate "
+"statistics."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:318
+msgid "A practical implementation of an environment therefore features;"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:320
+msgid "Redundant paths for individual log messages,"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:322
+msgid "(optionally) load-balanced recipients of log messages,"
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:324
+msgid ""
+"Sufficient capacity and sufficient scalability for real-time and near real-"
+"time analysis of larger environments with greater volumes of traffic."
+msgstr ""
+
+#: ../../source/architecture-and-design/environment-management.rst:328
+msgid "And would look like the following diagram;"
+msgstr ""

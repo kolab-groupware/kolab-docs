@@ -1,0 +1,333 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:44
+msgid "Tweaking 389 Directory Server"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:49
+msgid "Controlling Indexes and Indexing"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:51
+msgid ""
+"Indexes are created for individual attributes, and may consist of one or "
+"more of the following three types:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:54
+msgid "Presence"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:56
+msgid ""
+"A presence index for attributes services queries with a filter such as "
+"\"``(cn=*)``\"."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:59
+msgid "Equality"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:61
+msgid ""
+"An equality index for an attribute services queries with a filter such as "
+"\"``(mail=john.doe@example.org)``\"."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:64
+msgid "Substring"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:66
+msgid ""
+"A substring index for an attribute services queries with a filter such as "
+"\"``(mail=*joh*)``\"."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:69
+msgid ""
+"Presence and substring indexes may be used with, for example, auto-"
+"completion, while equality indexes may be used in, for example, LDAP lookup "
+"tables for Postfix."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:73
+msgid ""
+"Listing the current indexes for a database could be done using a script such"
+" as:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:75
+msgid ""
+"https://git.kolab.org/kolab-scripts/plain/utils/list-attribute-indexes.sh"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:77
+msgid ""
+"Adding new attribute indexes for a database, and executing the task to "
+"create the index, could be done with a script such as:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:80
+msgid "https://git.kolab.org/kolab-scripts/plain/utils/add-attribute-index.sh"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:83
+msgid "Recommended Additional Indexes"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:85
+msgid "``alias``"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:87
+msgid ""
+"Kolab Groupware by default uses the ``alias`` attribute to store additional "
+"recipient email addresses for users. This attribute is not indexed by "
+"default."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:91
+msgid "``mailAlternateAddress``"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:93
+msgid ""
+"While the ``mailAlternateAddress`` is used, by default, as a container of "
+"any external email addresses for a user (such as a private or personal email"
+" address), you may find it is searched as part of auto-completion."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:97
+msgid ""
+"Especially when using VLV/SSS, should the ``mailAlternateAddress`` attribute"
+" index be a substring index, but it only contains an equality index by "
+"default."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:104
+msgid "Configuring Virtual List View Control"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:106
+msgid ""
+"On the side of the LDAP server, Virtual List Views consist of two separate "
+"configuration items:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:109
+msgid "The search, with a base dn, scope and filter."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:111
+msgid "The index that includes the Server-Side Sorting parameters."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:113
+msgid ""
+"For an LDAP client to successfully use Virtual List View controls, it is "
+"crucially important that:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:116
+msgid ""
+"The search base dn and scope match the configuration of the VLV search, and"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:118
+msgid ""
+"Any attributes searched in addition to the configured VLV search filter are "
+"appropriately indexed."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:121
+msgid ""
+"By default, the configuration of primarily the Kolab web client uses the "
+"following configuration parameters for browsing the LDAP address book:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:125
+msgid "For Individual Contact Entries"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:126
+msgid "**Search Base DN**: *ou=People,$root_dn*"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:128
+#: ../../source/administrator-guide/tweaking-389ds.rst:150
+msgid ""
+"where *$root_dn* is the relevant root suffix, such as ``dc=example,dc=org``."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:130
+#: ../../source/administrator-guide/tweaking-389ds.rst:152
+msgid "**Search Scope**: *sub*"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:131
+msgid "**Search Filter**: *(objectClass=inetOrgPerson)*"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:135
+msgid ""
+"The search parameters for address book entries are deliberately **not** "
+"limited to only include other Kolab user entries."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:138
+#: ../../source/administrator-guide/tweaking-389ds.rst:160
+msgid ""
+"The configuration for the LDAP address book also lists the order of "
+"attributes to use when sorting the entries:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:141
+msgid "displayname,"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:142
+msgid "sn,"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:143
+msgid "givenname,"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:144
+#: ../../source/administrator-guide/tweaking-389ds.rst:163
+msgid "cn"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:147
+msgid "For Groups"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:148
+msgid "**Search Base DN**: *ou=Groups,$root_dn*"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:153
+msgid ""
+"**Search Filter**: "
+"*(|(objectClass=groupOfUniqueNames)(objectClass=groupOfUrls))*"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:157
+msgid ""
+"For groups too, the search parameters for address book entries are "
+"deliberately **not** limited to only include other Kolab user entries."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:165
+msgid ""
+"Creating the VLV and SSS configuration objects in an LDAP server may be "
+"achieved using the following scripts, in order:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:168
+msgid "Creating the VLV Search configuration in LDAP:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:170
+msgid ""
+"https://git.kolab.org/kolab-scripts/plain/populate-ldap/10a-add-vlv-"
+"searches.sh"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:172
+msgid "Creating the VLV Indexes with Sorting configuration in LDAP:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:174
+msgid ""
+"https://git.kolab.org/kolab-scripts/plain/populate-ldap/10b-add-vlv-"
+"indexes.sh"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:176
+msgid "Subsquently, the index tasks should be executed:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:178
+msgid ""
+"https://git.kolab.org/kolab-scripts/plain/populate-ldap/10c-run-vlv-index-"
+"tasks.sh"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:183
+msgid "Configuring Server-side Sorting Control"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:188
+msgid "Increasing the Maximum Number of File Descriptors"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:190
+msgid ""
+"A 389 Directory Server is configured to open at most 1024 so-called file "
+"descriptors, which include database pointers and network sockets."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:193
+msgid "To increase this number to, for example, 8192:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:195
+msgid "Edit :file:`/etc/sysconfig/dirsrv`, adding a line:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:201
+msgid "Stop the directory server:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:207
+msgid ""
+"Edit :file:`/etc/dirsrv/slapd-*/dse.ldif` and replace the following line:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:213
+msgid "for:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:219
+msgid "Start the directory server back up:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:228
+msgid "Disabling the 7-bit Password Enforcement"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:230
+msgid ""
+"By default, 389 Directory Server has enabled a plugin to only allow "
+"passwords to consist of 7-bit characters."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:233
+msgid ""
+"Older systems and software applications do not support the use of 8-bit "
+"characters (i.e., non-ASCII) in passwords, and to prevent compatibility "
+"issues, this plugin is enabled by default."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:237
+msgid "To allow 8-bit characters, disable the **7-bit check** plugin:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-389ds.rst:250
+msgid ""
+"A restart of the directory service is required for this change the become "
+"active:"
+msgstr ""

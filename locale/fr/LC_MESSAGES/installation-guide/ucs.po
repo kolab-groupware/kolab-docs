@@ -1,0 +1,128 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/installation-guide/ucs.rst:46
+msgid "Installation on Univention Corporate Server"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:50
+msgid ""
+"There are **multiple versions** of Kolab for UCS. Make sure you choose the "
+"correct version for your requirements."
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:54
+msgid "Kolab Enterprise 13"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:56
+msgid ""
+"To install the Enterprise edition under Kolab Systems support, execute the "
+"following process:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:59
+msgid ""
+"Configure your UCS system to obtain the repository configuration packages:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:71
+msgid ""
+"Install the client certificate you have obtained from Kolab Systems in the "
+"following location:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:78
+msgid ""
+"If you do not have an SSL client certificate from Kolab Systems, contact "
+"sales@kolabsys.com."
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:81
+msgid "Install the repository configuration package:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:87
+msgid ""
+"When the installation complains the package cannot be verified, type [y] and"
+" [Enter] to continue:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:96
+msgid "Install kolab:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:103
+msgid "App Center Edition"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:105
+msgid ""
+"An evaluation version of Kolab is available in the Univention App Center. "
+"This edition does *not* provide you with bugfix, security or enhancement "
+"updates."
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:110
+msgid "Kolab Groupware from the OBS"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:114
+msgid ""
+"This is a community version of Kolab Groupware, and it is not recommended "
+"you run this version in production. Instead, for production systems, use "
+"Kolab Enterprise from Kolab Systems."
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:118
+msgid "Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:120
+msgid "For UCS 3.2:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:127
+msgid "Import the GPG key used to sign the packages:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:137
+msgid ""
+"The key's fingerprint is: ``79D8 6A05 FDE6 C9FB 4E43  A6C5 830C 2BCF 446D "
+"5A45``"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:143
+msgid ""
+"To ensure the Kolab packages have priority over the Debian packages, such as"
+" must be the case for PHP as well as Cyrus IMAP, please make sure the APT "
+"preferences pin the obs.kolabsys.com origin as a preferred source."
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:147
+msgid "Put the following in ``/etc/apt/preferences.d/kolab``:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:155
+msgid "Enable the unmaintained UCS software repositories:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:161
+msgid "Update the repository metadata and install Kolab:"
+msgstr ""
+
+#: ../../source/installation-guide/ucs.rst:169
+msgid ""
+"The Kolab Groupware packages for Univention Corporate Server are configured "
+"automatically. There is no need to run any setup."
+msgstr ""

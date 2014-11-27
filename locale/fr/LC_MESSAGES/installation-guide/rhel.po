@@ -1,0 +1,321 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/installation-guide/rhel.rst:46
+msgid "Installation on Red Hat Enterprise Linux"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:50
+msgid ""
+"For the installation of the community edition on Red Hat Enterprise Linux, "
+"follow the :ref:`installation-centos` guide."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:53
+msgid ""
+"The installation of Kolab Groupware on Red Hat Enterprise Linux installs a "
+"number of additional packages, from the Red Hat Enterprise Linux subscribed "
+"repositories, the :term:`EPEL` software repository, and the repositories for"
+" the Kolab Enterprise edition, provided by `Kolab Systems AG "
+"<https://kolabsys.com>`_."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:60
+msgid "Installation Type"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:60
+msgid "RHEL"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:60
+msgid "EPEL"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:60
+msgid "Kolab"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:60
+msgid "Total to Install"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:60
+msgid "Total"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:62
+msgid "Basic Server"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:62
+msgid "71"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:62
+#: ../../source/installation-guide/rhel.rst:63
+msgid "48 [2]_"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:62
+#: ../../source/installation-guide/rhel.rst:63
+msgid "56 [3]_"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:62
+msgid "173"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:62
+#: ../../source/installation-guide/rhel.rst:63
+msgid "548"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:63
+msgid "Minimal [1]_"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:63
+msgid "197"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:63
+msgid "299"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:66
+msgid ""
+"These numbers may vary for your installation, as packages are updated over "
+"time, and are for indicative purposes only."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:71
+msgid ""
+"Follow the instructions below to **install Kolab Enterprise 13 for RHEL 6**."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:74
+msgid ""
+"Kolab Enterprise 14 for RHEL 7 and RHEL 6 are in alpha state, as is Kolab "
+"Enterprise 13 for RHEL 7, and they are provided exclusively as a "
+"**technology preview** for integration partners and contributors."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:78
+msgid ""
+"You must not install either of these technology previews unless you are "
+"specifically looking to contribute to them."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:82
+msgid "Installation Procedure"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:84
+msgid ""
+"Ensure that the system is registered with the Red Hat Network, and is "
+"entitled to receive updates and use the *Optional* software repository."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:88
+msgid ""
+"For more information on registering systems with the Red Hat Network, "
+"subscriptions, entitlements and support consult the vendor's product and "
+"service documentation."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:92
+msgid ""
+"Kolab Systems provides a summary example to remind you, which is not "
+"supported by either party."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:97
+msgid ""
+"These examples refer to Red Hat Enterprise Linux 6, but equally apply to Red"
+" Hat Enterprise Linux 7."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:100
+msgid "**Registration Example**"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:109
+msgid "**List Available Subscription Entitlements Example**"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:113
+msgid "The results shown to you executing this command will differ."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:145
+msgid ""
+"Search for this repository configuration in "
+":file:`/etc/yum.repos.d/redhat.repo`, and set ``enabled = 1``."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:148
+msgid ""
+"Copy the client SSL certificate and key you have obtained from `Kolab "
+"Systems AG <https://kolabsys.com>`_ as per the instructions listed on [4]_, "
+"summarized here for your convenience:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:152
+msgid "Remove the passphrase from the SSL certificate key:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:159
+msgid ""
+"Concatenate the certificate file and the new key file without passphrase:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:167
+msgid ""
+"Place the file :file:`mirror.kolabsys.com.ca.cert` in "
+":file:`/etc/pki/tls/certs/`."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:170
+msgid ""
+"Place the file :file:`mirror.kolabsys.client.pem` in "
+":file:`/etc/pki/tls/private/`, and correct the permissions:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:178
+msgid ""
+"Install the `EPEL repository <http://fedoraproject.org/wiki/EPEL>`_ "
+"configuration using the RPM package linked to from:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:181
+msgid "`EPEL for RHEL 7`_"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:183
+msgid "`EPEL for RHEL 6`_"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:189
+msgid "Obtain a copy of the GPG signature used to sign packages:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:191
+#: ../../source/installation-guide/rhel.rst:205
+msgid "For RHEL 7:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:197
+#: ../../source/installation-guide/rhel.rst:211
+msgid "For RHEL 6:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:203
+msgid "Import this signature in to the RPM database:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:217
+msgid "Download the Kolab Enterprise repository configuration package:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:219
+msgid "For Kolab Enterprise 14 on RHEL 7:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:223
+msgid ""
+"Kolab Enterprise 14 for RHEL 7 is in alpha state, you must not install this "
+"version unless you are specifically looking to contribute to it."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:231
+msgid "For Kolab Enterprise 14 on RHEL 6:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:235
+msgid ""
+"Kolab Enterprise 14 for RHEL 6 is in alpha state, you must not install this "
+"version unless you are specifically looking to contribute to it."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:243
+msgid "For Kolab Enterprise 13 on RHEL 6:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:249
+msgid "Verify the signature on the downloaded RPM package:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:258
+msgid ""
+"Do NOT install the repository configuration for Kolab Enterprise 13 from "
+"this package, should the verification of the package fail."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:261
+msgid "Install the repository configuration:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:267
+msgid "Install Kolab Enterprise:"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:273
+msgid "Continue to :ref:`install-setup-kolab`."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:276
+msgid "Footnotes"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:279
+msgid "Notes for Minimal installations"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:281
+msgid ""
+"To use ``scp`` to copy over the certificates, you need to install the "
+"``openssh-clients`` package, which is not installed on minimal OS "
+"installations by default."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:285
+msgid ""
+"To use wget to obtain the signature export file and repository configuration"
+" RPM package(s), you need to install the ``wget`` package, which is not "
+"installed on minimal OS installations by default."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:290
+msgid ""
+"Alternatively, download the packages to a workstation and ``scp`` them over "
+"to the Kolab Groupware server system."
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:295
+msgid ""
+"Check the number of packages installed from the :term:`EPEL` repository "
+"with: :command:`rpm -qia | grep \"Build Host\" | grep "
+"\"fedoraproject\\.org\" | wc -l`"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:301
+msgid ""
+"Check the number of packages installed from the Kolab Enterprise 13 software"
+" repositories with: :command:`rpm -qva | grep kolab_13 | wc -l`"
+msgstr ""
+
+#: ../../source/installation-guide/rhel.rst:307
+msgid ""
+"https://support.kolabsys.com/Obtaining,_Renewing_and_Using_a_Client_SSL_Certificate#Using_a_Customer_or_Partner_Client_SSL_Certificate."
+msgstr ""

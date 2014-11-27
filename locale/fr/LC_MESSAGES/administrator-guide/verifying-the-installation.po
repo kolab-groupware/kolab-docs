@@ -1,0 +1,154 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:44
+msgid "Verifying the Installation & Troubleshooting"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:47
+msgid "Authentication Failures"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:49
+#: ../../source/administrator-guide/verifying-the-installation.rst:97
+msgid "Symptoms include:"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:51
+msgid "You are unable to login to Roundcube,"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:52
+msgid "Desktop client cannot connect to / authenticate against IMAP,"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:53
+msgid "You are unable to login to the web administration panel,"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:54
+msgid "Mail cannot be sent and is not being received."
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:56
+msgid "and possibly others."
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:58
+msgid "Does the following command work?"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:64
+msgid "This should give you a list of mailboxes."
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:66
+msgid "Is the **kolab-saslauthd** service running?"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:74
+msgid ""
+"Some deployments with only a single parent domain name space may have "
+"elected to run the Cyrus SASL authentication daemon (the **saslauthd** "
+"service)."
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:78
+msgid "Is it functional?"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:84
+msgid ""
+"You can obtain the value from *<password>* from "
+":file:`/etc/kolab/kolab.conf`, in the ``[cyrus-imap]`` section, setting "
+"``admin_password``."
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:88
+msgid "Is LDAP running?"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:95
+msgid "IMAP Connections Reset or Timeout"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:99
+msgid ""
+"A user, program or process seems to hang, and ultimately be disconnected,"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:100
+msgid ""
+":command:`kolab list-mailbox-metadata user/john.doe@example.org` may hang, "
+"and ultimately disconnect or be disconnected."
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:103
+msgid "Possible causes:"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:105
+msgid ""
+"Too many Cyrus IMAP processes hold locks on the mailbox index database."
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:107
+msgid "Troubleshooting steps:"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:109
+msgid "Determine the users' folder that may be held too many locks on:"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:116
+msgid ""
+"The folder that too many locks are being held on will result in an apparent "
+"freeze, with no timely response."
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:119
+msgid "Tail :file:`/var/log/maillog` and grep for the relevant username:"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:125
+msgid ""
+"In a new terminal, issue the ``kolab list-mailbox-metadata`` command again, "
+"and example the output of the tail command issued to determine the process "
+"ID:"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:133
+msgid "Use :command:`strace` to determine the state of this process:"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:141
+msgid "This command too will not yield any additional output."
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:143
+msgid ""
+"The PIDs of the processes holding an open file pointer to the mailbox tree "
+"can be found using the following command:"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:150
+msgid ""
+"At your discretion, opt to kill the processes that may be waiting for one "
+"another to release the lock:"
+msgstr ""
+
+#: ../../source/administrator-guide/verifying-the-installation.rst:160
+msgid ""
+"The \"No such process\" output comes from attempts to kill processes that "
+"have meanwhile already been ended."
+msgstr ""

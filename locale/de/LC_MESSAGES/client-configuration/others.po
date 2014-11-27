@@ -1,0 +1,189 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/client-configuration/others.rst:43
+msgid "Other Clients"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:45
+msgid ""
+"As long as your client application is following the standards, it can be "
+"used to connect to |service_name|. Below is an overview of the various "
+"protocols we support along with the settings you need to enter in your "
+"client."
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:54
+msgid "IMAP Settings"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:56
+msgid ""
+"You can basically connect every standard email application with support for "
+"the IMAP protocol to |service_name|. Please use the following settings to "
+"connect."
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:60
+msgid "*Incoming server (IMAP):*"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:60
+msgid "|**imap_host**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:63
+#: ../../source/client-configuration/others.rst:84
+msgid "*Port/Security:*"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:63
+msgid "|**imap_port**| + |**imap_ssl**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:66
+#: ../../source/client-configuration/others.rst:87
+msgid "*Authentication:*"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:66
+#: ../../source/client-configuration/others.rst:87
+msgid "**Password**"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:69
+#: ../../source/client-configuration/others.rst:90
+msgid "*Username:*"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:69
+#: ../../source/client-configuration/others.rst:90
+msgid "|**useremail**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:71
+#: ../../source/client-configuration/others.rst:92
+msgid "Please use your **full and primary email address** as username here."
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:78
+msgid "SMTP Settings"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:81
+msgid "*Outgoing server (SMTP):*"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:81
+msgid "|**smtp_host**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:84
+msgid "|**smtp_port**| + |**smtp_ssl**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:99
+msgid ""
+"We offer TLS  encryption for the connection to these services and advise  to"
+" always use it."
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:109
+msgid "CardDAV and CalDAV Settings"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:111
+msgid ""
+"Please point your `CalDAV <https://en.wikipedia.org/wiki/CalDAV>`_ and "
+"`CardDAV <https://en.wikipedia.org/wiki/CardDAV>`_ capable client to either "
+"one of these addresses:"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:116
+msgid "*For CalDAV:*"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:116
+msgid "|**caldav_uri**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:119
+#: ../../source/client-configuration/others.rst:124
+msgid "or"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:119
+msgid "|**caldav_uri_long**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:122
+msgid "*For CardDAV:*"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:122
+msgid "|**carddav_uri**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:125
+msgid "|**carddav_uri_long**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:134
+msgid "Files"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:136
+msgid ""
+"The easiest way to access your files is using the web client. In the top "
+"right corner, you can just choose 'Files'."
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:139
+msgid ""
+"You can also use any `WebDAV "
+"<https://en.wikipedia.org/wiki/WebDAV#Clients>`_ capable client to get "
+"access to your files. Just point it to one of the following locations."
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:143
+msgid "|**webdav_uri**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:145
+msgid "**webdavs://**\\ |**webdav_host**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:147
+msgid "**davs://**\\ |**webdav_host**|"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:149
+msgid ""
+"The first should work for most people. Try the others only if the first one "
+"does not work for you."
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:158
+msgid "ActiveSync"
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:160
+msgid ""
+"Kolab also supports the proprietary ActiveSync protocol. In order to connect"
+" your client to |service_name| via this protocol, please use the following "
+"domain name."
+msgstr ""
+
+#: ../../source/client-configuration/others.rst:164
+msgid "|**activesync_host**|"
+msgstr ""

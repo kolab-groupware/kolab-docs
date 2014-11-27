@@ -1,0 +1,312 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/installation-guide/preparing-the-system.rst:44
+msgid "Preparing the System"
+msgstr "系统准备"
+
+#: ../../source/installation-guide/preparing-the-system.rst:49
+msgid "Partitioning"
+msgstr "分区"
+
+#: ../../source/installation-guide/preparing-the-system.rst:51
+msgid ""
+"When installing the Kolab server, we recommend using LVM when partitioning "
+"the system. The following directories could benefit from being on separate "
+"logical volumes, leaving about 10% of raw disk space in the volume group "
+"unallocated:"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:63
+msgid ""
+"Partition and/or divide into logical volumes, configure the mount points and"
+" mount the filesystems prior to the installation of packages, as packages "
+"may deploy files into these directories."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:67
+msgid ""
+"Should you decide to partition only after the packages have already been "
+"installed, or after the deployment has already been used, first mount the "
+"filesystems somewhere else and synchronize the contents from the original "
+"directories over to the new filesystem hierarchy. Please note services "
+"should be stopped before doing so, or only corrupt data will be transfered. "
+"Remove the original contents of the filesystem after having synchronized, "
+"then mount the filesystems under their target mount points."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:75
+msgid ""
+"For large or multi-domain installations, we suggest moving "
+"``/var/lib/imap/`` and ``/var/spool/imap/`` to "
+"``/srv/imap/[$domain/]config/`` and ``/srv/imap/[$domain/]default/`` "
+"respectively. In allowing ``/srv/imap/`` to be one separate partition, "
+"backup using LVM snapshots is easier. Note that ``$domain`` in the "
+"aforementioned path is optional, and should only be used when multiple, but "
+"separate, isolated IMAP servers are to be started."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:84
+msgid ""
+"When partitions are mounted under the aforementioned directories, they do "
+"not necessarily have the correct filesystem permissions any longer. The "
+"following is a list of default permissions."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:97
+msgid "SELinux"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:99
+msgid ""
+"Not all components of Kolab Groupware are currently completely compatible "
+"with running under SELinux enforcing the targeted policy."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:102
+msgid ""
+"Please consider configuring SELinux to be permissive. Please let us know "
+"what AVC denials occur so we can work on fixing the issue."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:107
+msgid ""
+"The Kolab Web Administration Panel and Cyrus IMAP against the Kolab SASL "
+"authentication daemon currently require SELinux **NOT** enforcing the "
+"targeted policy."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:111
+msgid ""
+"To view the current mode SELinux operates in, execute the following "
+"command::"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:115
+msgid ""
+"To temporarily disable SELinux's enforcement of the targeted policy (without"
+" rebooting the system), issue the following command::"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:120
+msgid ""
+"To disable SELinux's enforcement of the targeted policy in a manner "
+"persistent across system restarts, edit ``/etc/selinux/config`` and set "
+"SELINUX to permissive rather than enforcing. Doing so also changes the Mode "
+"from ``config file:`` line in the output of sestatus."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:128
+msgid "System Firewall"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:130
+msgid ""
+"Kolab Groupware deliberately does not touch any firewall settings, perhaps "
+"wrongly assuming you know best. Before you continue, you should verify your "
+"firewall allows the standard ports used with Kolab Groupware. These ports "
+"include:"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:136
+msgid "Port"
+msgstr "端口"
+
+#: ../../source/installation-guide/preparing-the-system.rst:136
+msgid "Protocol"
+msgstr "协议"
+
+#: ../../source/installation-guide/preparing-the-system.rst:136
+msgid "Description"
+msgstr "描述"
+
+#: ../../source/installation-guide/preparing-the-system.rst:138
+msgid "25"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:138
+#: ../../source/installation-guide/preparing-the-system.rst:140
+#: ../../source/installation-guide/preparing-the-system.rst:142
+#: ../../source/installation-guide/preparing-the-system.rst:144
+#: ../../source/installation-guide/preparing-the-system.rst:146
+#: ../../source/installation-guide/preparing-the-system.rst:148
+#: ../../source/installation-guide/preparing-the-system.rst:150
+#: ../../source/installation-guide/preparing-the-system.rst:152
+#: ../../source/installation-guide/preparing-the-system.rst:154
+#: ../../source/installation-guide/preparing-the-system.rst:156
+#: ../../source/installation-guide/preparing-the-system.rst:158
+msgid "tcp"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:138
+msgid "Used to receive emails."
+msgstr "用于接收邮件。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:140
+msgid "80"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:140
+msgid "Used for web interfaces."
+msgstr "用于web界面。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:142
+msgid "110"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:142
+msgid "Used for POP."
+msgstr "用于POP。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:144
+msgid "143"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:144
+msgid "Used for IMAP."
+msgstr "用于IMAP。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:146
+msgid "389"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:146
+msgid "Used for LDAP directory services."
+msgstr "用于LDAP目录服务。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:148
+msgid "443"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:148
+msgid "Used for secure web interfaces."
+msgstr "用于安全的Web界面。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:150
+msgid "465"
+msgstr "465"
+
+#: ../../source/installation-guide/preparing-the-system.rst:150
+msgid "Used for secure mail transmission."
+msgstr "用于安全的邮件传输。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:152
+msgid "587"
+msgstr "587"
+
+#: ../../source/installation-guide/preparing-the-system.rst:152
+msgid "Used for secure mail submission."
+msgstr "用于安全的邮件发送。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:154
+msgid "636"
+msgstr "636"
+
+#: ../../source/installation-guide/preparing-the-system.rst:154
+msgid "Used for secure LDAP directory services."
+msgstr "用于安全的LDAP目录服务。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:156
+msgid "993"
+msgstr "993"
+
+#: ../../source/installation-guide/preparing-the-system.rst:156
+msgid "Used for secure IMAP."
+msgstr "用于安全的IMAP。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:158
+msgid "995"
+msgstr "995"
+
+#: ../../source/installation-guide/preparing-the-system.rst:158
+msgid "Used for secure POP."
+msgstr "用于安全的POP。"
+
+#: ../../source/installation-guide/preparing-the-system.rst:161
+msgid ""
+"Summarizing these changes into /etc/sysconfig/iptables, working off of an "
+"original, default installation of Centos 6, this file would look as follows:"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:191
+msgid "After changing /etc/sysconfig/iptables, execute a service restart::"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:196
+msgid "System Users"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:198
+msgid ""
+"No user or group with IDs 412, 413 or 414 may exist on the system prior to "
+"the installation of Kolab."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:200
+msgid ""
+"No user or group with the names kolab, kolab-n or kolab-r may exist on the "
+"system prior to the installation of Kolab."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:206
+msgid "The System Hostname and FQDN"
+msgstr "系统的主机名和完整域名"
+
+#: ../../source/installation-guide/preparing-the-system.rst:208
+msgid ""
+"The setup procedure of Kolab Groupware also requires that the Fully "
+"Qualified Domain Name (FQDN) for the system resolves back to the system. If "
+"the FQDN does not resolve back to the system itself, the Kolab Groupware "
+"server components will refer to the system by the configured or detected "
+"FQDN, but will fail to communicate with one another."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:214
+msgid ""
+"Should the FQDN of the system (found with hostname -f) be, for example, "
+"``kolab.example.org``, then ``kolab.example.org`` should resolve to the IP "
+"address configured on one of the network interfaces not the loopback "
+"interface, and the IP address configured on said network interface should "
+"have a reverse DNS entry resulting in at least ``kolab.example.org``."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:221
+msgid "Example Network and DNS Configuration"
+msgstr "网络和DNS设置示例"
+
+#: ../../source/installation-guide/preparing-the-system.rst:223
+msgid ""
+"The following lists an example network and DNS configuration for a Kolab "
+"Groupware server."
+msgstr "下面列出了针对Kolab Groupware服务所需的网络和DNS设置的一个示例"
+
+#: ../../source/installation-guide/preparing-the-system.rst:246
+msgid "LXC Containers"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:248
+msgid ""
+"LXC containers (\"chroots on steroids\") need ``/dev/shm/`` mounted "
+"read/write for user accounts."
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:251
+msgid "The permissions on /dev/shm/ need to be as follows:"
+msgstr ""
+
+#: ../../source/installation-guide/preparing-the-system.rst:258
+msgid ""
+"To make sure the permissions are correct even after a reboot, make sure "
+"``/etc/fstab`` contains a line similar to the following:"
+msgstr ""
+

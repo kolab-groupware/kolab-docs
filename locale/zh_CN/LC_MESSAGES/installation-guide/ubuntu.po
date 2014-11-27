@@ -1,0 +1,71 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/installation-guide/ubuntu.rst:44
+msgid "Installation on Ubuntu"
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:46
+msgid "Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:"
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:48
+msgid "For Ubuntu 12.04:"
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:55
+msgid "For Ubuntu 13.10:"
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:62
+msgid "For Ubuntu 14.04:"
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:69
+msgid "Import the GPG key used to sign the packages:"
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:79
+msgid ""
+"The key's fingerprint is: ``79D8 6A05 FDE6 C9FB 4E43  A6C5 830C 2BCF 446D "
+"5A45``"
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:85
+msgid ""
+"To ensure the Kolab packages have priority over the Ubuntu packages, such as"
+" must be the case for PHP as well as Cyrus IMAP, please make sure the APT "
+"preferences pin the obs.kolabsys.com origin as a preferred source."
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:89
+msgid "Put the following in ``/etc/apt/preferences.d/kolab``:"
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:97
+msgid "Update the repository metadata:"
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:103
+msgid "Start the installation of the base package as follows:"
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:109
+msgid ""
+"When asked to confirm you want to install the package and its dependencies, "
+"press Enter."
+msgstr ""
+
+#: ../../source/installation-guide/ubuntu.rst:111
+msgid "Continue to :ref:`install-setup-kolab`."
+msgstr ""

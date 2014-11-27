@@ -1,0 +1,163 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/client-configuration/ios.rst:46
+msgid "iOS (iPhone/iPad)"
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:51
+msgid ""
+"Below, we provide information for how to set up the native iOS 7 apps, so "
+"they can connect to |service_name|. Instructions for other iOS versions "
+"might differ, but should be very similar."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:59
+msgid "Start the Configuration"
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:61
+msgid ""
+"In order to configure your iOS device to use |service_name|, you have to "
+"open the *Settings* app and click *Mail, Contacts, Calenders* as in the "
+"screenshot below. In the next page, please click *Add Account...* and "
+"continue following the instructions below."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:86
+msgid "Mail"
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:88
+msgid ""
+"After you have reached the *Add Account* screen as described in :ref"
+":`settings-clientconfig-ios-start`, you can add an email account by clicking"
+" *Add Mail Account*."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:92
+msgid ""
+"In the next screen, please provide your name, your |service_name| email "
+"address and your password. If you want to add your alias addresses, come "
+"back to this screen later and tap the email address. You should see an *Add "
+"Another Email...* option. With older iOS versions, you can provide multiple "
+"email addresses separated by comma."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:97
+msgid "Please make sure that *IMAP* is selected."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:98
+msgid ""
+"Add |**imap_host**| as the *Host Name* and your full and primary email "
+"address as *User Name* in the *INCOMING MAIL SERVER* section."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:101
+msgid ""
+"Please provide |**smtp_host**| as *Host Name* in the *OUTGOING MAIL SERVER* "
+"section along with the same user name and password as above."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:104
+msgid "Your |service_name| account is now set up on your iPhone or iPad."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:159
+msgid "ActiveSync for Access to all Data"
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:161
+msgid ""
+"After you have reached the *Add Account* screen as described in :ref"
+":`settings-clientconfig-ios-start`, you can add your data from "
+"|service_name| using ActiveSync by creating an *Exchange* account. Please "
+"note that |service_name| is not actually running a Microsoft Exchange "
+"server, but a Free Software implementation of the ActiveSync protocol used "
+"by Exchange."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:168
+msgid "In the first screen, please provide your email address and password."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:169
+msgid ""
+"Then, please enter |**activesync_host**| as the *Server* like indicated in "
+"the screenshot below."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:170
+msgid ""
+"The *Domain* is optional, but might be required if you are not using one of "
+"the default domains provided by |service_name|."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:171
+msgid ""
+"In the last screen, you can define what kind of data you want to "
+"synchronize. We recommend to disable mail and instead use the instructions "
+"above (see :ref:`settings-clientconfig-ios-mail`) for mail."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:173
+msgid ""
+"After successful account creation, you should select which data shall be "
+"synchronized in the webmail settings (see last screenshot)."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:176
+msgid ""
+"Note: Depending on how much data you have in your |service_name| account, it"
+" might take a couple of minutes before everything has been downloaded to "
+"your device."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:238
+msgid "CardDAV/CalDAV for Contacts and Calendars"
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:240
+msgid ""
+"After you have reached the *Add Account* screen as described in :ref"
+":`settings-clientconfig-ios-start`, you can sync your data from "
+"|service_name| by clicking on *Add CardDAV Account* and *Add CalDAV "
+"Account*."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:245
+msgid ""
+"For both account types, we provide the necessary configuration values below."
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:247
+msgid "Username: Your full and primary |service_name| email address"
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:248
+msgid ""
+"Password: Your |service_name| password that belongs to your email address"
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:249
+msgid "Description: |**service_name**|"
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:250
+msgid "CardDAV Server: |**carddav_host**|"
+msgstr ""
+
+#: ../../source/client-configuration/ios.rst:251
+msgid "CalDAV Server: |**caldav_host**|"
+msgstr ""

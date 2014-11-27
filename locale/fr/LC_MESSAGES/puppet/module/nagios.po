@@ -1,0 +1,76 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/puppet/module/nagios.rst:46
+msgid "Puppet Module: ``nagios``"
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:48
+msgid ""
+"The Nagios module manages Nagios servers and clients, alongside plugins."
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:51
+msgid "Module Classes"
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:53
+msgid "``nagios::client::active``"
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:55
+msgid "Installs, configures and starts NSCA."
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:57
+msgid "``nagios::client::passive``"
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:59
+msgid ""
+"Installs, configures and starts NRPE and ensures all available plugins are "
+"installed."
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:62
+msgid "This module sub-class also includes:"
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:76
+msgid "``nagios::server``"
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:78
+msgid "Installs, configures and starts the Nagios service."
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:80
+msgid ""
+"At the configuration stage, this module sub-class also realizes exported "
+"resources Nagios_host and Nagios_service that are tagged with the NOC "
+"server's ``$domain``."
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:85
+msgid "Module Definitions"
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:87
+msgid "``nagios::plugin``"
+msgstr ""
+
+#: ../../source/puppet/module/nagios.rst:89
+msgid ""
+"Enable or disable a specific plugin. Intended to be used with plugins that "
+"are sourced from a central location."
+msgstr ""

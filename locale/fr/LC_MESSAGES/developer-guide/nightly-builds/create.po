@@ -1,0 +1,184 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/developer-guide/nightly-builds/create.rst:44
+msgid "Creating the nightly builds on OBS"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:46
+msgid ""
+"This chapter explains how to create a branch of the development project on "
+"the OBS server provided by `Kolab Systems <https://kolabsys.com>`_, and how "
+"to modify it to be able to build from the source tar.gz files from "
+"https://git.kolab.org."
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:49
+msgid "Creating a branch in OBS"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:51
+msgid ""
+"Please follow the instructions at :ref:`dev-packaging-howto_get_started` to "
+"create your own branch of the development packages."
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:53
+msgid ""
+"Some of the steps you can do in the web client as well, eg. to branch the "
+"package `kolab-syncroton <https://obs.kolabsys.com/package/show?package"
+"=kolab-syncroton&project=Kolab%3ADevelopment>`_ from project `Kolab "
+"Development "
+"<https://obs.kolabsys.com/project/show?project=Kolab%3ADevelopment>`_, you "
+"click on the link `Branch Package "
+"<https://obs.kolabsys.com/package/branch_dialog?package=kolab-"
+"syncroton&project=Kolab%3ADevelopment>`_ on the `page of the package kolab-"
+"syncroton <https://obs.kolabsys.com/package/show?package=kolab-"
+"syncroton&project=Kolab%3ADevelopment>`_."
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:55
+msgid ""
+"You should select the packages that you want to build in your nightly build,"
+" and create a branch for each of them. The result looks like this: `Project "
+"home:tpokorra:branches:Kolab:Development "
+"<https://obs.kolabsys.com/project/show?project=home%3Atpokorra%3Abranches%3AKolab%3ADevelopment>`_"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:58
+msgid "One-time adjustments for nightly builds"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:61
+msgid "Replace the source files"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:62
+msgid ""
+"On the command line with osc, you need once to remove the original tar.gz "
+"file, and download the latest tar.gz file from https://git.kolab.org."
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:64
+msgid "This is an example for the package kolab-syncroton:"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:72
+msgid ""
+"Furthermore you need to modify the build files to reference the new tar.gz "
+"file, and to find the extracted code in the right place."
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:74
+msgid "For **CentOS**, those changes are required in the .spec file:"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:83
+#: ../../source/developer-guide/nightly-builds/create.rst:105
+msgid "For **Debian**, you need to change the .dsc file:"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:90
+msgid "Adjust the release numbers"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:91
+msgid ""
+"One other issue: in order for the :ref:`installation of the nightly packages"
+" <dev-packaging-install_nightly>` to work properly, you need to adjust the "
+"release number of the packages."
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:93
+msgid ""
+"For **CentOS**, you need to add the following line to the top of your .spec "
+"file:"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:98
+msgid ""
+"And in the settings of your project, go to \"Advanced\" / \"Project "
+"Config\", and enter this line:"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:103
+msgid ""
+"For more details, see http://en.opensuse.org/openSUSE:Build_Service_prjconf"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:111
+msgid "And also the debian.changelog file:"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:119
+msgid ""
+"for Debian, the debian.changelog and the .dsc file need to be updated each "
+"time when a new release should be built! See below for the script that does "
+"the nightly builds."
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:122
+msgid "Commit the changes"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:124
+msgid ""
+"At last, you need to commit your changes, and the OBS will build your own "
+"packages:"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:132
+msgid "Nightly update"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:134
+msgid ""
+"You should create a cronjob on your system, where you run osc. This cronjob "
+"must fetch the latest tar.gz file from https://git.kolab.org, and then "
+"commit that to the OBS."
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:136
+msgid ""
+"Have a look at this script for an example: "
+"https://gist.github.com/tpokorra/5698249"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:138
+msgid ""
+"To regularly check that your nightly build works, you can use the command "
+"\"osc results\"."
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:140
+msgid "The following code is also part of the above gist:"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:152
+msgid "Trouble Shooting"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:155
+msgid "Link has errors: conflict in file"
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:156
+msgid ""
+"Your branch is linked to the original package, which means that OBS will try"
+" to merge updates to the source package into your branch. This sometimes "
+"leads to the error \"conflict in file\"."
+msgstr ""
+
+#: ../../source/developer-guide/nightly-builds/create.rst:158
+msgid "To resolve this, do this with osc on the command line:"
+msgstr ""

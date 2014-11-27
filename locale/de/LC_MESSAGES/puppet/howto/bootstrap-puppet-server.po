@@ -1,0 +1,259 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab Groupware 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-27 16:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:44
+msgid "HOWTO: Bootstrap the Puppet Master Server"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:46
+msgid ""
+"This HOWTO installs Puppet version 3.7.1 (at the time of this writing) on to"
+" a single vanilla Enterprise Linux 6 system."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:51
+msgid ""
+"The packages referred to in this document are available in the Puppet add-on"
+" channel to Kolab Enterprise 14."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:54
+msgid ""
+"If you do not have any Kolab Enterprise 14 configuration on the system yet, "
+"please see the guide for :ref:`installation-rhel` for the steps involved."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:60
+msgid ""
+"Bootstrapping the Puppet master server is the hardest thing to do in "
+"relation to running Puppet for your environments."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:63
+msgid ""
+"This HOWTO lists a large number of steps that need to be executed manually, "
+"but only need to be executed once."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:67
+msgid "Configure the System FQDN and Service DNS Entry"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:69
+msgid ""
+"Make sure that the system's FQDN is a sustainable value. We recommend using "
+"``puppet$x.$domain``, for example ``puppet01.example.org``."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:72
+msgid ""
+"The digits are in there, so that node manifests can match the system's "
+"common name against a node manifest for ``puppet\\d+\\.example\\.org``."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:75
+msgid ""
+"The FQDN of the system has to resolve back to the actual system's primary "
+"external interface's IP address."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:78
+msgid ""
+"To double-check whether this is the case, execute the following commands:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:90
+msgid ""
+"The service DNS entry is a default ``puppet.example.org``. Tinkering with "
+"this is obviously allowed, but not recommended."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:93
+msgid ""
+"If you may end up with multiple Puppet master servers, make sure that the "
+"``puppet.example.org`` DNS entry is a (collection of) IN A resource "
+"record(s), possibly pointing to service IP addresses rather than system IP "
+"addresses."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:99
+msgid "Configure the Puppet Add-on YUM Repository"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:101
+msgid ""
+"At the time of this writing, there is not a so-called ``-release`` package "
+"for the add-on repository for Puppet."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:104
+msgid ""
+"Put the following YUM repository configuration in "
+":file:`/etc/yum.repos.d/kolab-14-extras-puppet.repo`:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:110
+msgid "Install and Configure the Puppet Master Server Software"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:112
+msgid "Execute the following command to install the necessary software:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:119
+msgid ""
+"In case you have started from a base Enterprise Linux 6 installation, which "
+"is not a bad idea at all, ensure the following packages are up-to-date:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:127
+msgid ""
+"Next, adjust :file:`/etc/puppet/puppet.conf` to include configuration for "
+"the master, adding the following section:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:132
+msgid ""
+"Run the following command once to generate the certificates necessary to run"
+" the Puppet master server under the Apache HTTP server with Phusion "
+"Passenger:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:140
+msgid ""
+"At this point, executing :command:`httpd -t` should succeed without errors "
+"or warnings."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:143
+msgid "The fileserver configuration needs adjusting, too:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:157
+msgid ""
+"Next, create or adjust :file:`/etc/httpd/conf.d/puppet-server.conf` to "
+"contain the following:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:208
+msgid "And restart the Apache HTTP server:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:214
+msgid "Create the aforementioned DocumentRoot:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:224
+msgid "Initialize the Management Repositories"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:226
+msgid ""
+"Initialize the central GIT repositories for the domain name space to manage,"
+" on the Puppet master server:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:241
+msgid ""
+"To distinguish between permissions to each repository, optionally add the "
+"necessary groups:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:256
+msgid "And add users to said groups:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:269
+msgid ":ref:`delegation-for-domain-manifests`"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:270
+msgid ":ref:`hook-the-puppet-master-server-up-to-ldap`"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:273
+msgid "Provide Puppet with Something To Do"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:275
+msgid ""
+"From a workstation (that is presumably in the same domain name space), clone"
+" the (still empty) repositories:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:283
+msgid "And provide the initial populus:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:481
+msgid "Add the files to track, commit the changes and push it back out:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:493
+msgid "Next, to setup PuppetDB, adjust :file:`/etc/puppet/puppetdb.conf`:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:503
+msgid ""
+"Provide it the proper SSL certificates and CA from the Puppet installation:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:514
+msgid ""
+"Next, create the initial clones of the domain name space specific management"
+" repositories:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:543
+msgid ""
+"Additionally, install the following two required modules from the Puppet "
+"Forge:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:590
+msgid ""
+"The dashboard report prune job does not eliminate records in other tables, "
+"and it is therefore necessary to add to the database schema:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:602
+msgid ""
+"The server can now be made its own client, and start managing Puppet by "
+"Puppet:"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:611
+msgid ""
+"For yet undetermined reasons, the Puppet master server may hold a "
+"certificate signing request, yet be unable to sign the request (with a "
+"message \"Could not find certificate request for\"). Please see :ref"
+":`bootstrap-puppet-reinitialize-ca-and-certs` for more information."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:614
+msgid "Enabling the Inventory Service in the Puppet Dashboard"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:640
+msgid "Re-initializing the CA Certificate and Peer Certificates"
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:644
+msgid ""
+"This process resets the CA, Puppet master server certificate, and all Puppet"
+" agent certificates."
+msgstr ""
+
+#: ../../source/puppet/howto/bootstrap-puppet-server.rst:647
+msgid "On the Puppet master server, execute the following:"
+msgstr ""
