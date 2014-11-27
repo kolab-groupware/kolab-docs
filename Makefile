@@ -59,12 +59,14 @@ helplocales:
 		fi ; \
 	done
 
-helpdocs: submodules helplocales
+helpdocs: submodules
 	@cd source/webmail-user-guide/roundcubemail/en_US/_plugins/ ; \
 	for docs in $$(find ../../../roundcubemail-plugins-kolab/ -type d -name "helpdocs"); do \
 		plugin=$$(basename $$(dirname $$docs)) ; \
 		ln -sf $$docs/en_US/ $$plugin ; \
 	done
+
+locales: gettext helplocales
 
 clean:
 	@rm -rf $(BUILDDIR)/*
@@ -162,14 +164,14 @@ info: clean
 	make -C $(BUILDDIR)/texinfo info
 	@echo "makeinfo finished; the Info files are in $(BUILDDIR)/texinfo."
 
-gettext: clean helpdocs
+gettext: clean submodules
 	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) $(BUILDDIR)/locale
 	$(SPHINXINTL) update -p $(BUILDDIR)/locale -d locale $(INTL_LOCALES)
 	@echo
 	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
+	rm -rf locale/*/LC_MESSAGES/webmail-user-guide/roundcubemail
 
 update-txconfig-resources: gettext
-	rm -rf $(BUILDDIR)/locale/webmail-user-guide
 	$(SPHINXINTL) update-txconfig-resources --transifex-project-name kolab-documentation -p $(BUILDDIR)/locale -d locale
 	@echo
 	@echo "Transifex resources have been updated."
