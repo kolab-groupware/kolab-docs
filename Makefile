@@ -168,7 +168,8 @@ gettext: clean submodules
 	@echo
 	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
 
-update-txconfig-resources:
+update-txconfig-resources: gettext
+	rm -rf $(BUILDDIR)/locale/webmail-user-guide
 	$(SPHINXINTL) update-txconfig-resources --transifex-project-name kolab-documentation -p $(BUILDDIR)/locale -d locale
 	@echo
 	@echo "Transifex resources have been updated."

@@ -75,6 +75,12 @@ release = ''
 # for a list of supported languages.
 language = None
 
+# If true, a document’s text domain is its docname if it is a top-level project file
+# and its very base directory otherwise.
+# By default, the document markup/code.rst ends up in the markup text domain.
+# With this option set to False, it is markup/code.
+gettext_compact=False
+
 locale_dirs = ['../locale/']
 
 # There are two options for replacing |today|: either, you set today to some

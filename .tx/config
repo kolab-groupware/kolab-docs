@@ -1,21 +1,7 @@
 [main]
 host = https://www.transifex.com
+lang_map = fr_FR: fr
 type = PO
-
-[kolab-documentation.developer-guide]
-file_filter = locale/<lang>/LC_MESSAGES/developer-guide.po
-source_file = build/locale/developer-guide.pot
-source_lang = en
-
-[kolab-documentation.installation-guide]
-file_filter = locale/<lang>/LC_MESSAGES/installation-guide.po
-source_file = build/locale/installation-guide.pot
-source_lang = en
-
-[kolab-documentation.administrator-guide]
-file_filter = locale/<lang>/LC_MESSAGES/administrator-guide.po
-source_file = build/locale/administrator-guide.pot
-source_lang = en
 
 [kolab-documentation.index]
 file_filter = locale/<lang>/LC_MESSAGES/index.po
@@ -27,33 +13,603 @@ file_filter = locale/<lang>/LC_MESSAGES/glossary.po
 source_file = build/locale/glossary.pot
 source_lang = en
 
-[kolab-documentation.deployment-guide]
-file_filter = locale/<lang>/LC_MESSAGES/deployment-guide.po
-source_file = build/locale/deployment-guide.pot
+[kolab-documentation.howtos--deploy-high-available-and-load-balanced-ldap]
+file_filter = locale/<lang>/LC_MESSAGES/howtos/deploy-high-available-and-load-balanced-ldap.po
+source_file = build/locale/howtos/deploy-high-available-and-load-balanced-ldap.pot
 source_lang = en
 
-[kolab-documentation.webmail-user-guide]
-file_filter = locale/<lang>/LC_MESSAGES/webmail-user-guide.po
-source_file = build/locale/webmail-user-guide.pot
+[kolab-documentation.howtos--nginx-webserver]
+file_filter = locale/<lang>/LC_MESSAGES/howtos/nginx-webserver.po
+source_file = build/locale/howtos/nginx-webserver.pot
 source_lang = en
 
-[kolab-documentation.architecture-and-design]
-file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design.po
-source_file = build/locale/architecture-and-design.pot
+[kolab-documentation.howtos--secure-kolab-server]
+file_filter = locale/<lang>/LC_MESSAGES/howtos/secure-kolab-server.po
+source_file = build/locale/howtos/secure-kolab-server.pot
 source_lang = en
 
-[kolab-documentation.client-configuration]
-file_filter = locale/<lang>/LC_MESSAGES/client-configuration.po
-source_file = build/locale/client-configuration.pot
+[kolab-documentation.howtos--nginx-imap-proxy]
+file_filter = locale/<lang>/LC_MESSAGES/howtos/nginx-imap-proxy.po
+source_file = build/locale/howtos/nginx-imap-proxy.pot
 source_lang = en
 
-[kolab-documentation.puppet]
-file_filter = locale/<lang>/LC_MESSAGES/puppet.po
-source_file = build/locale/puppet.pot
+[kolab-documentation.howtos--multi-domain]
+file_filter = locale/<lang>/LC_MESSAGES/howtos/multi-domain.po
+source_file = build/locale/howtos/multi-domain.pot
 source_lang = en
 
-[kolab-documentation.howtos]
-file_filter = locale/<lang>/LC_MESSAGES/howtos.po
-source_file = build/locale/howtos.pot
+[kolab-documentation.howtos--deploy-kolab-with-glusterfs-for-imap]
+file_filter = locale/<lang>/LC_MESSAGES/howtos/deploy-kolab-with-glusterfs-for-imap.po
+source_file = build/locale/howtos/deploy-kolab-with-glusterfs-for-imap.pot
+source_lang = en
+
+[kolab-documentation.howtos--build-kolab-from-source]
+file_filter = locale/<lang>/LC_MESSAGES/howtos/build-kolab-from-source.po
+source_file = build/locale/howtos/build-kolab-from-source.pot
+source_lang = en
+
+[kolab-documentation.howtos--split-domains-multiple-groupware-deployments]
+file_filter = locale/<lang>/LC_MESSAGES/howtos/split-domains-multiple-groupware-deployments.po
+source_file = build/locale/howtos/split-domains-multiple-groupware-deployments.pot
+source_lang = en
+
+[kolab-documentation.howtos--kolab-webadmin-create-user]
+file_filter = locale/<lang>/LC_MESSAGES/howtos/kolab-webadmin-create-user.po
+source_file = build/locale/howtos/kolab-webadmin-create-user.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--debian]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/debian.po
+source_file = build/locale/installation-guide/debian.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--overview]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/overview.po
+source_file = build/locale/installation-guide/overview.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--setup-kolab]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/setup-kolab.po
+source_file = build/locale/installation-guide/setup-kolab.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--ubuntu]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/ubuntu.po
+source_file = build/locale/installation-guide/ubuntu.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--preparing-the-system]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/preparing-the-system.po
+source_file = build/locale/installation-guide/preparing-the-system.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--index]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/index.po
+source_file = build/locale/installation-guide/index.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--fedora]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/fedora.po
+source_file = build/locale/installation-guide/fedora.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--first-login]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/first-login.po
+source_file = build/locale/installation-guide/first-login.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--centos]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/centos.po
+source_file = build/locale/installation-guide/centos.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--opensuse]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/opensuse.po
+source_file = build/locale/installation-guide/opensuse.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--ucs]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/ucs.po
+source_file = build/locale/installation-guide/ucs.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--rhel]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/rhel.po
+source_file = build/locale/installation-guide/rhel.pot
+source_lang = en
+
+[kolab-documentation.installation-guide--suse]
+file_filter = locale/<lang>/LC_MESSAGES/installation-guide/suse.po
+source_file = build/locale/installation-guide/suse.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--bonnie-orm]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/bonnie-orm.po
+source_file = build/locale/architecture-and-design/bonnie-orm.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--kolab-daemon]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/kolab-daemon.po
+source_file = build/locale/architecture-and-design/kolab-daemon.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--ldap-intro]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/ldap-intro.po
+source_file = build/locale/architecture-and-design/ldap-intro.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--kolab-wap-api]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/kolab-wap-api.po
+source_file = build/locale/architecture-and-design/kolab-wap-api.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--environment-management]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/environment-management.po
+source_file = build/locale/architecture-and-design/environment-management.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--bonnie]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/bonnie.po
+source_file = build/locale/architecture-and-design/bonnie.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--index]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/index.po
+source_file = build/locale/architecture-and-design/index.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--introduction]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/introduction.po
+source_file = build/locale/architecture-and-design/introduction.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--mta]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/mta.po
+source_file = build/locale/architecture-and-design/mta.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--bonnie-api]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/bonnie-api.po
+source_file = build/locale/architecture-and-design/bonnie-api.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--ldap]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/ldap.po
+source_file = build/locale/architecture-and-design/ldap.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--kolab-hkccp]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/kolab-hkccp.po
+source_file = build/locale/architecture-and-design/kolab-hkccp.pot
+source_lang = en
+
+[kolab-documentation.architecture-and-design--kolab-freebusy]
+file_filter = locale/<lang>/LC_MESSAGES/architecture-and-design/kolab-freebusy.po
+source_file = build/locale/architecture-and-design/kolab-freebusy.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--android]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/android.po
+source_file = build/locale/client-configuration/android.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--settings]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/settings.po
+source_file = build/locale/client-configuration/settings.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--ios]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/ios.po
+source_file = build/locale/client-configuration/ios.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--toc]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/toc.po
+source_file = build/locale/client-configuration/toc.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--thunderbird]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/thunderbird.po
+source_file = build/locale/client-configuration/thunderbird.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--kontact]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/kontact.po
+source_file = build/locale/client-configuration/kontact.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--windows]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/windows.po
+source_file = build/locale/client-configuration/windows.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--others]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/others.po
+source_file = build/locale/client-configuration/others.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--osx]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/osx.po
+source_file = build/locale/client-configuration/osx.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--linux]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/linux.po
+source_file = build/locale/client-configuration/linux.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--emacs]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/emacs.po
+source_file = build/locale/client-configuration/emacs.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--macosx]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/macosx.po
+source_file = build/locale/client-configuration/macosx.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--evolution]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/evolution.po
+source_file = build/locale/client-configuration/evolution.pot
+source_lang = en
+
+[kolab-documentation.client-configuration--outlook]
+file_filter = locale/<lang>/LC_MESSAGES/client-configuration/outlook.po
+source_file = build/locale/client-configuration/outlook.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--index]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/index.po
+source_file = build/locale/developer-guide/index.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--bugzilla]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/bugzilla.po
+source_file = build/locale/developer-guide/bugzilla.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--documentation--writing-documentation]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/documentation/writing-documentation.po
+source_file = build/locale/developer-guide/documentation/writing-documentation.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--documentation--index]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/documentation/index.po
+source_file = build/locale/developer-guide/documentation/index.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--nightly-builds--create]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/nightly-builds/create.po
+source_file = build/locale/developer-guide/nightly-builds/create.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--nightly-builds--install]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/nightly-builds/install.po
+source_file = build/locale/developer-guide/nightly-builds/install.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--nightly-builds--index]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/nightly-builds/index.po
+source_file = build/locale/developer-guide/nightly-builds/index.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--index]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/index.po
+source_file = build/locale/developer-guide/packaging/index.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--packages]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/packages.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/packages.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--distributions]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/distributions.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/distributions.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--packages-extras]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/packages-extras.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/packages-extras.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--why-private-obs]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/why-private-obs.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/why-private-obs.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--introduction]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/introduction.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/introduction.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--howto-get-started]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/howto-get-started.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/howto-get-started.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--webserver-applications]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/webserver-applications.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/webserver-applications.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--packages-kolab]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/packages-kolab.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/packages-kolab.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--packages-dependencies]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/packages-dependencies.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/packages-dependencies.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--projects]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/projects.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/projects.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--generic-macros-and-conditions]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--packages--httpd]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/packages/httpd.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/packages/httpd.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--product--kolab-13]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/product/kolab-13.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/product/kolab-13.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--product--kolab-14]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/product/kolab-14.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/product/kolab-14.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--product--kolab-3_3-updates]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/product/kolab-3.3-updates.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/product/kolab-3.3-updates.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--product--kolab-development]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/product/kolab-development.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/product/kolab-development.pot
+source_lang = en
+
+[kolab-documentation.developer-guide--packaging--obs-for-kolab--product--kolab-3_3]
+file_filter = locale/<lang>/LC_MESSAGES/developer-guide/packaging/obs-for-kolab/product/kolab-3.3.po
+source_file = build/locale/developer-guide/packaging/obs-for-kolab/product/kolab-3.3.pot
+source_lang = en
+
+[kolab-documentation.deployment-guide--cyrus-imap-murder-topologies]
+file_filter = locale/<lang>/LC_MESSAGES/deployment-guide/cyrus-imap-murder-topologies.po
+source_file = build/locale/deployment-guide/cyrus-imap-murder-topologies.pot
+source_lang = en
+
+[kolab-documentation.deployment-guide--multi-server]
+file_filter = locale/<lang>/LC_MESSAGES/deployment-guide/multi-server.po
+source_file = build/locale/deployment-guide/multi-server.pot
+source_lang = en
+
+[kolab-documentation.deployment-guide--index]
+file_filter = locale/<lang>/LC_MESSAGES/deployment-guide/index.po
+source_file = build/locale/deployment-guide/index.pot
+source_lang = en
+
+[kolab-documentation.deployment-guide--hosted-kolab-groupware-deployment]
+file_filter = locale/<lang>/LC_MESSAGES/deployment-guide/hosted-kolab-groupware-deployment.po
+source_file = build/locale/deployment-guide/hosted-kolab-groupware-deployment.pot
+source_lang = en
+
+[kolab-documentation.deployment-guide--redundant-server]
+file_filter = locale/<lang>/LC_MESSAGES/deployment-guide/redundant-server.po
+source_file = build/locale/deployment-guide/redundant-server.pot
+source_lang = en
+
+[kolab-documentation.deployment-guide--storage]
+file_filter = locale/<lang>/LC_MESSAGES/deployment-guide/storage.po
+source_file = build/locale/deployment-guide/storage.pot
+source_lang = en
+
+[kolab-documentation.deployment-guide--localhost]
+file_filter = locale/<lang>/LC_MESSAGES/deployment-guide/localhost.po
+source_file = build/locale/deployment-guide/localhost.pot
+source_lang = en
+
+[kolab-documentation.puppet--index]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/index.po
+source_file = build/locale/puppet/index.pot
+source_lang = en
+
+[kolab-documentation.puppet--howto--bootstrap-puppet-server]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/howto/bootstrap-puppet-server.po
+source_file = build/locale/puppet/howto/bootstrap-puppet-server.pot
+source_lang = en
+
+[kolab-documentation.puppet--howto--working-with-staging-environments]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/howto/working-with-staging-environments.po
+source_file = build/locale/puppet/howto/working-with-staging-environments.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--git]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/git.po
+source_file = build/locale/puppet/module/git.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--selinux]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/selinux.po
+source_file = build/locale/puppet/module/selinux.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--stdlib]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/stdlib.po
+source_file = build/locale/puppet/module/stdlib.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--nagios]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/nagios.po
+source_file = build/locale/puppet/module/nagios.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--yum]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/yum.po
+source_file = build/locale/puppet/module/yum.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--munin]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/munin.po
+source_file = build/locale/puppet/module/munin.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--kolab]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/kolab.po
+source_file = build/locale/puppet/module/kolab.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--puppet]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/puppet.po
+source_file = build/locale/puppet/module/puppet.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--webserver]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/webserver.po
+source_file = build/locale/puppet/module/webserver.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--puppetdbquery]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/puppetdbquery.po
+source_file = build/locale/puppet/module/puppetdbquery.pot
+source_lang = en
+
+[kolab-documentation.puppet--module--kolab--why-multiple-parameterized-classes]
+file_filter = locale/<lang>/LC_MESSAGES/puppet/module/kolab/why-multiple-parameterized-classes.po
+source_file = build/locale/puppet/module/kolab/why-multiple-parameterized-classes.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--upgrading-from-kolab-3_1-to-3_3]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/upgrading-from-kolab-3.1-to-3.3.po
+source_file = build/locale/administrator-guide/upgrading-from-kolab-3.1-to-3.3.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--tweaking-roundcube]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/tweaking-roundcube.po
+source_file = build/locale/administrator-guide/tweaking-roundcube.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--monitoring-roundcube]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/monitoring-roundcube.po
+source_file = build/locale/administrator-guide/monitoring-roundcube.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--faq]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/faq.po
+source_file = build/locale/administrator-guide/faq.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--roundcube-settings-reference]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/roundcube-settings-reference.po
+source_file = build/locale/administrator-guide/roundcube-settings-reference.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--dav-autodiscovery]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/dav-autodiscovery.po
+source_file = build/locale/administrator-guide/dav-autodiscovery.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--verifying-the-installation]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/verifying-the-installation.po
+source_file = build/locale/administrator-guide/verifying-the-installation.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--configuring-the-kolab-server]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/configuring-the-kolab-server.po
+source_file = build/locale/administrator-guide/configuring-the-kolab-server.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--tweaking-389ds]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/tweaking-389ds.po
+source_file = build/locale/administrator-guide/tweaking-389ds.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--monitoring-389ds]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/monitoring-389ds.po
+source_file = build/locale/administrator-guide/monitoring-389ds.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--monitoring-postfix]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/monitoring-postfix.po
+source_file = build/locale/administrator-guide/monitoring-postfix.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--using-the-kolab-command-line]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/using-the-kolab-command-line.po
+source_file = build/locale/administrator-guide/using-the-kolab-command-line.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--index]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/index.po
+source_file = build/locale/administrator-guide/index.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--combating-spam]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/combating-spam.po
+source_file = build/locale/administrator-guide/combating-spam.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--upgrading-from-kolab-3_0]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/upgrading-from-kolab-3.0.po
+source_file = build/locale/administrator-guide/upgrading-from-kolab-3.0.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--tweaking-cyrus-imapd]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/tweaking-cyrus-imapd.po
+source_file = build/locale/administrator-guide/tweaking-cyrus-imapd.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--using-the-kolab-web-administration-panel]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/using-the-kolab-web-administration-panel.po
+source_file = build/locale/administrator-guide/using-the-kolab-web-administration-panel.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--backup-and-restore]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/backup-and-restore.po
+source_file = build/locale/administrator-guide/backup-and-restore.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--monitoring-cyrus-imapd]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/monitoring-cyrus-imapd.po
+source_file = build/locale/administrator-guide/monitoring-cyrus-imapd.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--upgrading-from-kolab-2_3]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/upgrading-from-kolab-2.3.po
+source_file = build/locale/administrator-guide/upgrading-from-kolab-2.3.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--securing-the-kolab-server]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/securing-the-kolab-server.po
+source_file = build/locale/administrator-guide/securing-the-kolab-server.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--kolab-freebusy-reference]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/kolab-freebusy-reference.po
+source_file = build/locale/administrator-guide/kolab-freebusy-reference.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--tweaking-postfix]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/tweaking-postfix.po
+source_file = build/locale/administrator-guide/tweaking-postfix.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--imap-access-rights-reference]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/imap-access-rights-reference.po
+source_file = build/locale/administrator-guide/imap-access-rights-reference.pot
+source_lang = en
+
+[kolab-documentation.administrator-guide--setup-kolab-cli-reference]
+file_filter = locale/<lang>/LC_MESSAGES/administrator-guide/setup-kolab-cli-reference.po
+source_file = build/locale/administrator-guide/setup-kolab-cli-reference.pot
 source_lang = en
 
