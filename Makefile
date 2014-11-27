@@ -57,6 +57,13 @@ helplocales:
 			mkdir -p locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail ; \
 			ln -sf ../../../../../source/webmail-user-guide/roundcubemail/locale/$$lang/LC_MESSAGES locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail/en_US ; \
 		fi ; \
+		for docs in $$(find source/webmail-user-guide/roundcubemail-plugins-kolab -type d -name "helpdocs"); do \
+			if [ -d "locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail/en_US" ]; then \
+				plugin=$$(basename $$(dirname $$docs)) ; \
+				mkdir -p locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail/en_US/_plugins ; \
+				ln -sf $$(pwd)/$$docs/locale/$$lang/LC_MESSAGES locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail/en_US/_plugins/$$plugin ; \
+			fi ; \
+		done ; \
 	done
 
 helpdocs: submodules
