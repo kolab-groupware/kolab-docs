@@ -80,6 +80,7 @@ clean:
 	@rm -rf source/webmail-user-guide/roundcubemail/
 	@rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/
 	@rm -rf source/*/_fancyfigures/
+	@rm -rf locale/*/LC_MESSAGES/webmail-user-guide/roundcubemail
 
 html: submodules
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
