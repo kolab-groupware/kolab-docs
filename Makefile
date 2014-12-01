@@ -180,6 +180,7 @@ gettext: clean submodules
 	rm -rf locale/*/LC_MESSAGES/webmail-user-guide/roundcubemail
 
 update-txconfig-resources: gettext
+	rm -rf $(BUILDDIR)/locale/webmail-user-guide
 	$(SPHINXINTL) update-txconfig-resources --transifex-project-name kolab-documentation -p $(BUILDDIR)/locale -d locale
 	@echo
 	@echo "Transifex resources have been updated."
