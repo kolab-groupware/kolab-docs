@@ -85,4 +85,3 @@ proven components and protocols.
     kolab-enterprise-14
     reference-implementation-architecture/index
 
-.. todolist::

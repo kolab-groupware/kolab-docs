@@ -18,6 +18,7 @@ Other documentation included here:
     :maxdepth: 1
 
     writing-documentation
+    todolist
 
 Building the Documentation
 ==========================
