@@ -1,19 +1,26 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, Jeroen van Meeuwen
+# This file is distributed under the same license as the Kolab Groupware package.
 # 
+# Translators:
+# winniewski <winniewski@kolabsys.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Kolab Groupware 3.3\n"
+"Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-27 16:52+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"PO-Revision-Date: 2014-12-08 12:44+0000\n"
+"Last-Translator: winniewski <winniewski@kolabsys.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/kolab-documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../../source/client-configuration/others.rst:43
 msgid "Other Clients"
-msgstr ""
+msgstr "Autre Clients"
 
 #: ../../source/client-configuration/others.rst:45
 msgid ""
@@ -21,169 +28,169 @@ msgid ""
 "used to connect to |service_name|. Below is an overview of the various "
 "protocols we support along with the settings you need to enter in your "
 "client."
-msgstr ""
+msgstr "Tant que votre application de client suit les norms, vous pouvez l'utiliser pour se connecter sur MyKolab.com. Vous trouverez ci-dessous un aperçu des divers protocoles que nous soutenons avec les paramètres que vous devez entrer dans votre client. "
 
 #: ../../source/client-configuration/others.rst:54
 msgid "IMAP Settings"
-msgstr ""
+msgstr "Paramètres IMAP"
 
 #: ../../source/client-configuration/others.rst:56
 msgid ""
 "You can basically connect every standard email application with support for "
 "the IMAP protocol to |service_name|. Please use the following settings to "
 "connect."
-msgstr ""
+msgstr "Vous pouvez en principe vous connecter à chaque application de messagerie standard qui à un support pour le protocole IMAP à MyKolab.com.  Veuillez utiliser les paramètres suivants pour vous connecter."
 
 #: ../../source/client-configuration/others.rst:60
 msgid "*Incoming server (IMAP):*"
-msgstr ""
+msgstr "Serveur entrant (IMAP):*"
 
 #: ../../source/client-configuration/others.rst:60
 msgid "|**imap_host**|"
-msgstr ""
+msgstr "|**imap_host**|"
 
 #: ../../source/client-configuration/others.rst:63
 #: ../../source/client-configuration/others.rst:84
 msgid "*Port/Security:*"
-msgstr ""
+msgstr "Port/Sécurité:"
 
 #: ../../source/client-configuration/others.rst:63
 msgid "|**imap_port**| + |**imap_ssl**|"
-msgstr ""
+msgstr "|**imap_port**| + |**imap_ssl**|"
 
 #: ../../source/client-configuration/others.rst:66
 #: ../../source/client-configuration/others.rst:87
 msgid "*Authentication:*"
-msgstr ""
+msgstr "*Authentification:*"
 
 #: ../../source/client-configuration/others.rst:66
 #: ../../source/client-configuration/others.rst:87
 msgid "**Password**"
-msgstr ""
+msgstr "**Password**"
 
 #: ../../source/client-configuration/others.rst:69
 #: ../../source/client-configuration/others.rst:90
 msgid "*Username:*"
-msgstr ""
+msgstr "*Nom d'utilisateur:*"
 
 #: ../../source/client-configuration/others.rst:69
 #: ../../source/client-configuration/others.rst:90
 msgid "|**useremail**|"
-msgstr ""
+msgstr "|**useremail**|"
 
 #: ../../source/client-configuration/others.rst:71
 #: ../../source/client-configuration/others.rst:92
 msgid "Please use your **full and primary email address** as username here."
-msgstr ""
+msgstr "Veuillez utiliser ici votre **full and primary email address** comme un nom d'utilisateur."
 
 #: ../../source/client-configuration/others.rst:78
 msgid "SMTP Settings"
-msgstr ""
+msgstr "Paramètres SMTP"
 
 #: ../../source/client-configuration/others.rst:81
 msgid "*Outgoing server (SMTP):*"
-msgstr ""
+msgstr "*Serveur sortant (SMTP):*"
 
 #: ../../source/client-configuration/others.rst:81
 msgid "|**smtp_host**|"
-msgstr ""
+msgstr "|**smtp_host**|"
 
 #: ../../source/client-configuration/others.rst:84
 msgid "|**smtp_port**| + |**smtp_ssl**|"
-msgstr ""
+msgstr "|**smtp_port**| + |**smtp_ssl**|"
 
 #: ../../source/client-configuration/others.rst:99
 msgid ""
 "We offer TLS  encryption for the connection to these services and advise  to"
 " always use it."
-msgstr ""
+msgstr "Nous offrons cryptage TLS pour la connexion aux services et vous conseillent de l'utiliser toujours . "
 
 #: ../../source/client-configuration/others.rst:109
 msgid "CardDAV and CalDAV Settings"
-msgstr ""
+msgstr "Paramétres CardDAV et CalDAV"
 
 #: ../../source/client-configuration/others.rst:111
 msgid ""
 "Please point your `CalDAV <https://en.wikipedia.org/wiki/CalDAV>`_ and "
 "`CardDAV <https://en.wikipedia.org/wiki/CardDAV>`_ capable client to either "
 "one of these addresses:"
-msgstr ""
+msgstr "Veuillez diriger votre `CalDAV <https://en.wikipedia.org/wiki/CalDAV>`_ et `CardDAV <https://en.wikipedia.org/wiki/CardDAV>`_ client capable à l'une de ces adresses: "
 
 #: ../../source/client-configuration/others.rst:116
 msgid "*For CalDAV:*"
-msgstr ""
+msgstr "*Pour CalDAV:* "
 
 #: ../../source/client-configuration/others.rst:116
 msgid "|**caldav_uri**|"
-msgstr ""
+msgstr "|**caldav_uri**|"
 
 #: ../../source/client-configuration/others.rst:119
 #: ../../source/client-configuration/others.rst:124
 msgid "or"
-msgstr ""
+msgstr "ou"
 
 #: ../../source/client-configuration/others.rst:119
 msgid "|**caldav_uri_long**|"
-msgstr ""
+msgstr "|**caldav_uri_long**|"
 
 #: ../../source/client-configuration/others.rst:122
 msgid "*For CardDAV:*"
-msgstr ""
+msgstr "*Pour CardDAV: *"
 
 #: ../../source/client-configuration/others.rst:122
 msgid "|**carddav_uri**|"
-msgstr ""
+msgstr "|**carddav_uri**|"
 
 #: ../../source/client-configuration/others.rst:125
 msgid "|**carddav_uri_long**|"
-msgstr ""
+msgstr "|**carddav_uri_long**|"
+
+#: ../../source/client-configuration/others.rst:134
+msgid "Files"
+msgstr "Fichiers"
 
 #: ../../source/client-configuration/others.rst:136
 msgid ""
 "The easiest way to access your files is using the web client. In the top "
 "right corner, you can just choose 'Files'."
-msgstr ""
+msgstr "Le moyenne plus facile d'accéder à vos fichier est de se servir de client web.  Dans le coin supérieur droit, vous pouvez choisir 'Fichier'."
 
 #: ../../source/client-configuration/others.rst:139
 msgid ""
 "You can also use any `WebDAV "
 "<https://en.wikipedia.org/wiki/WebDAV#Clients>`_ capable client to get "
 "access to your files. Just point it to one of the following locations."
-msgstr ""
+msgstr "Vous pouvez également utiliser tout `WebDAV <https://en.wikipedia.org/wiki/WebDAV#Clients>`_ client compatible pour accéder à vos fichiers. Il suffit juste de le diriger vers un des endroits suivants."
 
 #: ../../source/client-configuration/others.rst:143
 msgid "|**webdav_uri**|"
-msgstr ""
+msgstr "|**webdav_uri**|"
 
 #: ../../source/client-configuration/others.rst:145
 msgid "**webdavs://**\\ |**webdav_host**|"
-msgstr ""
+msgstr "**webdavs://**\\ |**webdav_host**|"
 
 #: ../../source/client-configuration/others.rst:147
 msgid "**davs://**\\ |**webdav_host**|"
-msgstr ""
+msgstr "**davs://**\\ |**webdav_host**|"
 
 #: ../../source/client-configuration/others.rst:149
 msgid ""
 "The first should work for most people. Try the others only if the first one "
 "does not work for you."
-msgstr ""
+msgstr "Le premier doit fonctionne pour majorité des gens. N'hesitez pas à essayer les autres  quand le premier  échoue."
 
 #: ../../source/client-configuration/others.rst:158
 msgid "ActiveSync"
-msgstr ""
+msgstr "ActiveSync"
 
 #: ../../source/client-configuration/others.rst:160
 msgid ""
 "Kolab also supports the proprietary ActiveSync protocol. In order to connect"
 " your client to |service_name| via this protocol, please use the following "
 "domain name."
-msgstr ""
+msgstr "Kolab soutien aussi son propre  protocole d'ActiveSync. Pour pouvoir connecter votre client 'à MyKolab.com via ce protocole. Veuillez utiliser le nom de domaine suivant."
 
 #: ../../source/client-configuration/others.rst:164
 msgid "|**activesync_host**|"
-msgstr ""
-
-#: ../../source/client-configuration/others.rst:134
-msgid "Files"
-msgstr ""
+msgstr "|**activesync_host**|"
