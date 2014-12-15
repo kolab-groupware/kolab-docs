@@ -118,3 +118,5 @@ Troubleshooting steps:
 
     The "No such process" output comes from attempts to kill processes that have
     meanwhile already been ended.
+
+.. include::  troubleshooting.rst
