@@ -2,7 +2,17 @@ Troubleshooting for HTTP-based services
 ========================================
 
 A good first start to troubleshoot an issue with a HTTP-based service is to check your webserver's error log.
-For Apache this usually resides in :file:`/var/log/apache2/`.
+For Apache this usually resides in :file:`/var/log/apache2/` or :file:`/var/log/httpd/`.
+
+Often, you will be able to find some useful information about your problem which enables you to fix it yourself.
+Doing an internet search for the error message is also a good idea.
+If you do not find anything about your problem,
+you might ask on the `Kolab users mailing list <https://lists.kolab.org/mailman/listinfo/users>`_ about it.
+Please include the version number of the package that is causing the issue.
+
+If you are sure that you have found something that needs fixing from Kolab's developers,
+you can as `file an issue <https://issues.kolab.org/enter_bug.cgi>`_ in the public tracker
+after checking that it has not been reported already.
 
 .. _troubleshooting_error-logging:
 
@@ -89,7 +99,7 @@ Additionally, you can enable the debug console
 that shows the internal function calls triggered by HTTP requests.
 
 .. parsed-literal::
-    $config['kolabdav_console'] = false;
+    $config['kolabdav_console'] = true;
 
 This will write debug log messages to :file:`/var/log/iRony/console`.
 
