@@ -119,7 +119,13 @@ In order to do this, add the following setting.
     // (bitmask of these values: 2 = HTTP Requests, 4 = HTTP Responses)
     $config['kolabdav_http_log'] = 6;
 
+In order to enable full HTTP payload logging for single users only,
+you can change the configuration as such:
 
+.. parsed-literal::
+    $config['kolabdav_user_debug'] = true;
+    $config['kolabdav_http_log'] = 0;
 
-
+Then create the file :file:`/var/log/iRony/<username>/httpraw` and make it writeable by the webserver user.
+The existence of this file will enable HTTP request/response logging for this user while it is disabled for all others.
 
