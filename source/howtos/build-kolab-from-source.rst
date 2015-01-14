@@ -495,6 +495,59 @@ Installing Roundcube and Kolab Plugins from Source
 
         # chmod 777 logs temp
 
+Kolab Theme for Roundcube
+=========================
+
+The Kolab groupware provides a custom skin for the web client. This can be added as follows:
+
+1.  Clone the GIT repository:
+
+    .. parsed-literal::
+
+        # cd /usr/share/
+        # git clone git://git.kolab.org/git/roundcubemail-skin-chameleon
+
+2.  Compile the CSS file using the `Less CSS pre-processor <http://lesscss.org/>`_:
+
+    .. parsed-literal::
+
+        # cd roundcubemail-skin-chameleon/skins/chameleon
+        # lessc styles.less > styles.css
+
+    .. NOTE::
+
+        Instead of compiling the CSS file on the server, you can enable development
+        mode in Roundcube and have it compiled on the client. This is recommended if
+        you intend to make changes to the style sheets and don't want to run ``lessc``
+        after every modification.
+
+        Enable development mode in :file:`<roundcube-source-dir>/config/config.inc.php`:
+
+        .. parsed-literal::
+
+            $config['devel_mode'] = true;
+
+3.  Synlink from the Roundcube skins directory
+
+    .. parsed-literal::
+
+        # cd <roundcube-source-dir>/skins
+        # ln -s /usr/share/roundcubemail-skin-chameleon/skins/chameleon chameleon
+
+4.  Set the Chameleon skin to be the default theme in :file:`<roundcube-source-dir>/config/config.inc.php`
+
+    .. parsed-literal::
+
+        $config['skin'] = 'chameleon'
+
+5.  Optionally disable the skin selection for the user. Set the following in
+    :file:`<roundcube-source-dir>/config/config.inc.php`:
+
+    .. parsed-literal::
+
+        $config['dont_override'] = array('skin');
+
+
 Kolab Web Administration Panel and API
 ======================================
 
@@ -607,3 +660,4 @@ Migration
 
 Kolab Free/Busy Web Application
 ===============================
+
