@@ -7,45 +7,50 @@ Preparing the System
 Partitioning
 ------------
 
-When installing the Kolab server, we recommend using LVM when partitioning the
-system. The following directories could benefit from being on separate logical
-volumes, leaving about 10% of raw disk space in the volume group unallocated:
+When installing the Kolab server, we recommend using LVM when
+partitioning the system. The following directories could benefit from
+being on separate logical volumes, leaving about 10% of raw disk space
+in the volume group unallocated:
 
-.. parsed-literal::
-
-    /var/lib/mysql/
-    /var/lib/imap/
-    /var/spool/imap/
+*   :file:`/var/lib/dirsrv/`
+*   :file:`/var/lib/mysql/`
+*   :file:`/var/lib/imap/`
+*   :file:`/var/spool/imap/`
 
 .. NOTE::
 
-    Partition and/or divide into logical volumes, configure the mount points and
-    mount the filesystems prior to the installation of packages, as packages may
-    deploy files into these directories.
+    Partition and/or divide into logical volumes, configure the mount
+    points and mount the filesystems prior to the installation of
+    packages, as packages may deploy files into these directories.
 
 Should you decide to partition only after the packages have already been
-installed, or after the deployment has already been used, first mount the
-filesystems somewhere else and synchronize the contents from the original
-directories over to the new filesystem hierarchy. Please note services should be
-stopped before doing so, or only corrupt data will be transfered. Remove the
-original contents of the filesystem after having synchronized, then mount the
-filesystems under their target mount points.
+installed, or after the deployment has already been used, first mount
+the filesystems somewhere else and synchronize the contents from the
+original directories over to the new filesystem hierarchy. Please note
+services should be stopped before doing so, or only corrupt data will be
+transfered. Remove the original contents of the filesystem after having
+synchronized, then mount the filesystems under their target mount
+points.
 
-For large or multi-domain installations, we suggest moving ``/var/lib/imap/``
-and ``/var/spool/imap/`` to ``/srv/imap/[$domain/]config/`` and
-``/srv/imap/[$domain/]default/`` respectively. In allowing ``/srv/imap/`` to be
-one separate partition, backup using LVM snapshots is easier. Note that
-``$domain`` in the aforementioned path is optional, and should only be used when
-multiple, but separate, isolated IMAP servers are to be started.
+For large or multi-domain installations, we suggest moving
+:file:`/var/lib/imap/` and :file:`/var/spool/imap/` to
+:file:`/srv/imap/[$domain/]config/` and
+:file:`/srv/imap/[$domain/]default/` respectively.
+
+In allowing :file:`/srv/imap/` to be one separate partition, backup
+using LVM snapshots is easier. Note that ``$domain`` in the
+aforementioned path is optional, and should only be used when multiple,
+but separate, isolated IMAP servers are to be started.
 
 .. NOTE::
 
-    When partitions are mounted under the aforementioned directories, they do
-    not necessarily have the correct filesystem permissions any longer. The
-    following is a list of default permissions.
+    When partitions are mounted under the aforementioned directories,
+    they do not necessarily have the correct filesystem permissions any
+    longer. The following is a list of default permissions.
 
     .. parsed-literal::
 
+        drwxr-xr-x.  3 root  root  4096 May 11 11:49 /var/lib/dirsrv/
         drwxr-xr-x. 7  mysql mysql 4096 May 11 15:34 /var/lib/mysql/
         drwxr-x---. 20 cyrus mail  4096 May 11 17:04 /var/lib/imap/
         drwx------. 3  cyrus mail  4096 May 11 15:36 /var/spool/imap/
@@ -55,41 +60,46 @@ multiple, but separate, isolated IMAP servers are to be started.
 SELinux
 -------
 
-Not all components of Kolab Groupware are currently completely compatible with
-running under SELinux enforcing the targeted policy.
+Not all components of Kolab Groupware are currently completely
+compatible with running under SELinux enforcing the targeted policy.
 
-Please consider configuring SELinux to be permissive. Please let us know what
-AVC denials occur so we can work on fixing the issue.
+Please consider configuring SELinux to be permissive. Please let us
+know what AVC denials occur so we can work on fixing the issue.
 
 .. WARNING::
 
-    The Kolab Web Administration Panel and Cyrus IMAP against the Kolab SASL
-    authentication daemon currently require SELinux **NOT** enforcing the
-    targeted policy.
+    The Kolab Web Administration Panel and Cyrus IMAP against the Kolab
+    SASL authentication daemon currently require SELinux **NOT**
+    enforcing the targeted policy.
 
-To view the current mode SELinux operates in, execute the following command::
+To view the current mode SELinux operates in, execute the following
+command:
 
-    # sestatus
+.. parsed-literal::
 
-To temporarily disable SELinux's enforcement of the targeted policy (without
-rebooting the system), issue the following command::
+    # :command:`sestatus`
 
-    # setenforce 0
+To temporarily disable SELinux's enforcement of the targeted policy
+(without rebooting the system), issue the following command:
 
-To disable SELinux's enforcement of the targeted policy in a manner persistent
-across system restarts, edit ``/etc/selinux/config`` and set SELINUX to
-permissive rather than enforcing. Doing so also changes the Mode from ``config
-file:`` line in the output of sestatus.
+.. parsed-literal::
+
+    # :command:`setenforce 0`
+
+To disable SELinux's enforcement of the targeted policy in a manner
+persistent across system restarts, edit ``/etc/selinux/config`` and set
+SELINUX to permissive rather than enforcing. Doing so also changes the
+Mode from ``config file:`` line in the output of sestatus.
 
 .. _install-preparing_the_system-firewall:
 
 System Firewall
 ---------------
 
-Kolab Groupware deliberately does not touch any firewall settings, perhaps
-wrongly assuming you know best. Before you continue, you should verify your
-firewall allows the standard ports used with Kolab Groupware. These ports
-include:
+Kolab Groupware deliberately does not touch any firewall settings,
+perhaps wrongly assuming you know best. Before you continue, you should
+verify your firewall allows the standard ports used with Kolab
+Groupware. These ports include:
 
 +------+-----------+------------------------------------------+
 | Port | Protocol  | Description                              |
@@ -117,8 +127,9 @@ include:
 | 995  | tcp       | Used for secure POP.                     |
 +------+-----------+------------------------------------------+
 
-Summarizing these changes into /etc/sysconfig/iptables, working off of an
-original, default installation of Centos 6, this file would look as follows:
+Summarizing these changes into /etc/sysconfig/iptables, working off of
+an original, default installation of Enterprise Linux 6, this file would
+look as follows:
 
 .. parsed-literal::
 
@@ -147,34 +158,38 @@ original, default installation of Centos 6, this file would look as follows:
     -A FORWARD -j REJECT --reject-with icmp-host-prohibited
     COMMIT
 
-After changing /etc/sysconfig/iptables, execute a service restart::
+After changing /etc/sysconfig/iptables, execute a service restart:
 
-    # service iptables restart
+.. parsed-literal::
+
+    # :command:`service iptables restart`
 
 System Users
 ------------
 
-*   No user or group with IDs 412, 413 or 414 may exist on the system prior to
-    the installation of Kolab.
-*   No user or group with the names kolab, kolab-n or kolab-r may exist on the
-    system prior to the installation of Kolab.
+*   No user or group with IDs 412, 413 or 414 may exist on the system
+    prior to the installation of Kolab.
+
+*   No user or group with the names kolab, kolab-n or kolab-r may exist
+    on the system prior to the installation of Kolab.
 
 .. _install-preparing-the-system_hostname-and-fqdn:
 
 The System Hostname and FQDN
 ----------------------------
 
-The setup procedure of Kolab Groupware also requires that the Fully Qualified
-Domain Name (FQDN) for the system resolves back to the system. If the FQDN does
-not resolve back to the system itself, the Kolab Groupware server components
-will refer to the system by the configured or detected FQDN, but will fail to
-communicate with one another.
+The setup procedure of Kolab Groupware also requires that the Fully
+Qualified Domain Name (FQDN) for the system resolves back to the system.
+If the FQDN does not resolve back to the system itself, the Kolab
+Groupware server components will refer to the system by the configured
+or detected FQDN, but will fail to communicate with one another.
 
 Should the FQDN of the system (found with hostname -f) be, for example,
-``kolab.example.org``, then ``kolab.example.org`` should resolve to the IP
-address configured on one of the network interfaces not the loopback interface,
-and the IP address configured on said network interface should have a reverse
-DNS entry resulting in at least ``kolab.example.org``.
+``kolab.example.org``, then ``kolab.example.org`` should resolve to the
+IP address configured on one of the network interfaces not the loopback
+interface, and the IP address configured on said network interface
+should have a reverse DNS entry resulting in at least
+``kolab.example.org``.
 
 Example Network and DNS Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -184,28 +199,41 @@ Groupware server.
 
 .. parsed-literal::
 
-    # hostname -f
+    # :command:`hostname -f`
     kolab.example.org
-    # ping -c 1 kolab.example.org
+    # :command:`ping -c 1 kolab.example.org`
     PING kolab.example.org (192.168.122.40) 56(84) bytes of data.
     64 bytes from kolab.example.org (192.168.122.40): icmp_seq=1 ttl=64 time=0.014 ms
 
     --- kolab.example.org ping statistics ---
     1 packets transmitted, 1 received, 0% packet loss, time 0ms
     rtt min/avg/max/mdev = 0.014/0.014/0.014/0.000 ms
-    # ip addr sh eth0
+    # :command:`ip addr sh eth0`
     2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
         link/ether 52:54:00:72:10:83 brd ff:ff:ff:ff:ff:ff
         inet 192.168.122.40/24 brd 192.168.122.255 scope global eth0
         inet6 fe80::5054:ff:fe72:1083/64 scope link
         valid_lft forever preferred_lft forever
 
+The following depicts what services like LDAP and others will be using:
+
+.. parsed-literal::
+
+    # :command:`python -c 'import socket; print socket.getfqdn();'`
+    kolab.example.org
+
+If you want to quickly fix your system's FQDN resolving back to your
+server, an entry in :file:`/etc/hosts` suffices for the time being:
+
+.. parsed-literal::
+
+    # :command:`echo "$(ip addr sh eth0 | grep 'inet ' | awk '{print $2}' | cut -d'/' -f 1) $(hostname -f)" >> /etc/hosts`
 
 LXC Containers
 --------------
 
-LXC containers ("chroots on steroids") need ``/dev/shm/`` mounted read/write for
-user accounts.
+LXC containers ("chroots on steroids") need ``/dev/shm/`` mounted
+read/write for user accounts.
 
 The permissions on /dev/shm/ need to be as follows:
 
@@ -220,4 +248,3 @@ To make sure the permissions are correct even after a reboot, make sure
 .. parsed-literal::
 
     none /dev/shm tmpfs rw,nosuid,nodev,noexec 0 0
-

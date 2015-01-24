@@ -16,18 +16,20 @@ Before you install Kolab Groupware
 Installing the Kolab.org Groupware Solution
 ===========================================
 
-Kolab.org is maintained by community volunteers in their spare time.
-It has a fast release cycle and is in steady movement.
-If things do not work as expected, please consider `contributing`_.
+The Kolab.org Groupware solution is maintained by community volunteers
+in their spare time.
+
+It has a fast release cycle and is in steady movement. If things do not
+work as expected, please consider `contributing`_.
 
 .. toctree::
     :maxdepth: 1
 
-    centos
+    centos-community
     debian
     fedora
     opensuse
-    rhel
+    rhel-community
     suse
     ubuntu
     ucs
@@ -35,17 +37,22 @@ If things do not work as expected, please consider `contributing`_.
 Installing Kolab Enterprise
 ===========================
 
-Kolab Enterprise is a quality-assured version of Kolab `available from Kolab Systems <https://kolabsys.com/products/kolab-enterprise>`_.
-It is professionally supported for up to 5 years and receives regular updates with priority on security updates & errata, with a delayed public disclosure.
+Kolab Enterprise is a quality-assured version of Kolab `available from
+Kolab Systems`_.
+
+It is professionally supported for up to 5 years and receives regular
+updates with priority on security updates & errata, with delayed public
+disclosure (where appropriate).
 
 .. toctree::
     :maxdepth: 1
 
-    rhel
+    centos-enterprise
+    rhel-enterprise
     ucs
 
-Configuring Kolab Groupware:
-============================
+Configuring Kolab Groupware
+===========================
 
 .. toctree::
     :maxdepth: 2
@@ -55,4 +62,5 @@ Configuring Kolab Groupware:
 
     ../glossary
 
+.. _available from Kolab Systems: https://kolabsys.com/products/kolab-enterprise
 .. _contributing: https://kolab.org/possible-contributions
