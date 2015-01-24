@@ -328,7 +328,11 @@ Glossary
 
     management domain
 
-        A management domain is (...)
+        A management domain is is a domain name space, usually also the
+        :term:`primary domain name space` that is reserved for managers
+        of a multi-domain deployment. Such managers may include support
+        staff, who could use these LDAP credentials to log in to other
+        services and servers (provided a POSIX account).
 
     mandatory access control
 
@@ -412,7 +416,12 @@ Glossary
     primary domain
     primary domain name space
 
-        A primary domain is (...)
+        A primary domain is the first :term:`parent domain name space`
+        you set up when you first install Kolab Groupware.
+
+        In deployments that service multiple (parent) domain name
+        spaces, the primary domain is usually also the
+        :term:`management domain`.
 
     primary email address
 
