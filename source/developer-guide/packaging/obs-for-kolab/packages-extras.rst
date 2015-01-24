@@ -3,6 +3,7 @@ Extra Packages
 ==============
 
 .. include:: packages/conntrack-tools.txt
+.. include:: packages/haproxy.txt
 .. include:: packages/keepalived.txt
 .. include:: packages/memcached.txt
 .. include:: packages/mod_security.txt

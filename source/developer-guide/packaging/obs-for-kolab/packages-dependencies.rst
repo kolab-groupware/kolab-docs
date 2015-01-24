@@ -12,6 +12,7 @@ Dependency Packages
 .. include:: packages/apr.txt
 .. include:: packages/apr-util.txt
 .. include:: packages/facter.txt
+.. include:: packages/gyp.txt
 .. include:: packages/httpd.txt
 .. include:: packages/idm-console-framework.txt
 .. include:: packages/jansson.txt
@@ -24,6 +25,8 @@ Dependency Packages
 .. include:: packages/mod_nss.txt
 .. include:: packages/mod_wsgi.txt
 .. include:: packages/mozldap.txt
+.. include:: packages/nodejs.txt
+.. include:: packages/nodejs-less.txt
 .. include:: packages/perl-Mozilla-LDAP.txt
 .. include:: packages/php-pear-Auth-SASL.txt
 .. include:: packages/php-pear-DB.txt
@@ -74,5 +77,6 @@ Dependency Packages
 .. include:: packages/svrcore.txt
 .. include:: packages/swig.txt
 .. include:: packages/thrift.txt
+.. include:: packages/v8.txt
 .. include:: packages/xapian-core.txt
 .. include:: packages/xsd.txt

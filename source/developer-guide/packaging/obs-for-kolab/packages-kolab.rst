@@ -23,4 +23,7 @@ Kolab Packages
 .. include:: packages/python-sievelib.txt
 .. include:: packages/roundcubemail.txt
 .. include:: packages/roundcubemail-plugins-kolab.txt
+.. include:: packages/roundcubemail-skin-chameleon.txt
+.. include:: packages/roundcubemail-skin-enterprise.txt
+.. include:: packages/roundcubemail-skin-now.txt
 .. include:: packages/roundcubemail-skin-kolab.txt

@@ -1,0 +1,21 @@
+.. _package-gyp:
+
+gyp
+===
+
+The **gyp** package is provided because it is a build-dependency for the
+:ref:`package-nodejs` package, which in turn is required for building
+:ref:`package-nodejs-less`, which in turn is required to build the
+:ref:`package-roundcubemail-skin-chameleon` package.
+
+.. table:: Version Table for gyp
+
+    +-------------------+---------------+--------------------------------------+
+    | Kolab Version(s)  | Platform(s)   | Version                              |
+    +===================+===============+======================================+
+    | Kolab:14          | Debian_7.0    | 0.1~svn1729-1                        |
+    +-------------------+---------------+--------------------------------------+
+    |                   | UCS_3.2       | N/A                                  |
+    +-------------------+---------------+--------------------------------------+
+    | Kolab:Development | Debian_7.0    | 0.1~svn1729-1                        |
+    +-------------------+---------------+--------------------------------------+
