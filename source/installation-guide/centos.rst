@@ -4,8 +4,16 @@
 Installation on CentOS
 ======================
 
-.. toctree::
-    :maxdepth: 1
+**Kolab.org Groupware Community Edition**
 
-    centos-community
-    centos-enterprise
+    .. toctree::
+        :maxdepth: 1
+
+        centos-community
+
+**Kolab Enterprise Editions**
+
+    .. toctree::
+        :maxdepth: 1
+
+        centos-enterprise

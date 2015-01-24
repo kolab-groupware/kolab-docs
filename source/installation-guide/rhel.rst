@@ -4,7 +4,16 @@
 Installation on Red Hat Enterprise Linux
 ========================================
 
-.. toctree::
-    :maxdepth: 1
+**Kolab.org Groupware Community Edition**
 
-    rhel-enterprise
+    .. toctree::
+        :maxdepth: 1
+
+        rhel-community
+
+**Kolab Enterprise Editions**
+
+    .. toctree::
+        :maxdepth: 1
+
+        rhel-enterprise
