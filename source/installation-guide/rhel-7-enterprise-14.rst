@@ -65,12 +65,6 @@ Installation Procedure
 
 5.  Download the Kolab Enterprise repository configuration package:
 
-    .. WARNING::
-
-        Kolab Enterprise 14 for Red Hat Enterprise Linux 7 is in alpha state, you must not
-        install this version unless you are specifically looking to
-        contribute to it.
-
     .. parsed-literal::
 
         # :command:`wget https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`

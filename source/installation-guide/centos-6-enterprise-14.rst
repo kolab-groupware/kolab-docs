@@ -67,11 +67,9 @@ Installation Procedure
 
     For Kolab Enterprise 14 on RHEL 6:
 
-    .. WARNING::
+    .. parsed-literal::
 
-        Kolab Enterprise 14 for RHEL 6 is in alpha state, you must not
-        install this version unless you are specifically looking to
-        contribute to it.
+        # :command:`wget https://ssl.kolabsys.com/kolab-enterprise-14-for-el6.rpm`
 
 6.  Verify the signature on the downloaded RPM package:
 
