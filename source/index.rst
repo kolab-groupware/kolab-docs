@@ -28,7 +28,7 @@ proven components and protocols.
     :maxdepth: 1
 
     webmail-user-guide/index
-    client-configuration/toc
+    client-configuration/index
 
 .. rubric:: Extras
 
