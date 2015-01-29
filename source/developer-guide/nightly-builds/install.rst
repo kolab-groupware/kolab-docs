@@ -20,15 +20,15 @@ First the usual steps, that you do for installing Kolab3 (see also :ref:`install
     wget http://ftp.uni-kl.de/pub/linux/fedora-epel/6/i386/epel-release-6-8.noarch.rpm
     yum -y localinstall --nogpgcheck epel-release-6-8.noarch.rpm
     cd /etc/yum.repos.d/
-    wget http://obs.kolabsys.com:82/Kolab:/3.2/CentOS_6/Kolab:3.2.repo
-    wget http://obs.kolabsys.com:82/Kolab:/3.2:/Updates/CentOS_6/Kolab:3.2:Updates.repo
+    wget http://obs.kolabsys.com/Kolab:/3.3/CentOS_6/Kolab:3.3.repo
+    wget http://obs.kolabsys.com/Kolab:/3.3:/Updates/CentOS_6/Kolab:3.3:Updates.repo
     cd -
 
 Now also install the repo for the `obs.kolabsys.com tpokorra Project <https://obs.kolabsys.com/project/show?project=home%3Atpokorra%3Abranches%3AKolab%3ADevelopment>`_:
 
 .. parsed-literal::
 
-    wget http://obs.kolabsys.com:82/home:/tpokorra:/branches:/Kolab:/Development/CentOS_6/home:tpokorra:branches:Kolab:Development.repo \\
+    wget http://obs.kolabsys.com/home:/tpokorra:/branches:/Kolab:/Development/CentOS_6/home:tpokorra:branches:Kolab:Development.repo \\
               -O /etc/yum.repos.d/obs-tpokorra-nightly-kolab.repo
 
 Now run:
@@ -46,16 +46,16 @@ See also the usual steps, that you do for installing Kolab3 (see also :ref:`inst
 .. parsed-literal::
     username=tpokorra
     cat > /etc/apt/sources.list.d/kolab.list <<FINISH
-    deb http://obs.kolabsys.com:82/Kolab:/3.2/Debian_7.0/ ./
-    deb http://obs.kolabsys.com:82/Kolab:/3.2:/Updates/Debian_7.0/ ./
-    deb http://obs.kolabsys.com:82/home:/$username:/branches:/Kolab:/Development/Debian_7.0/ ./
+    deb http://obs.kolabsys.com/Kolab:/3.3/Debian_7.0/ ./
+    deb http://obs.kolabsys.com/Kolab:/3.3:/Updates/Debian_7.0/ ./
+    deb http://obs.kolabsys.com/home:/$username:/branches:/Kolab:/Development/Debian_7.0/ ./
     FINISH
     
-    wget http://obs.kolabsys.com:82/Kolab:/3.2/Debian_7.0/Release.key
+    wget http://obs.kolabsys.com/Kolab:/3.3/Debian_7.0/Release.key
     apt-key add Release.key; rm -rf Release.key
-    wget http://obs.kolabsys.com:82/Kolab:/3.2:/Updates/Debian_7.0/Release.key
+    wget http://obs.kolabsys.com/Kolab:/3.3:/Updates/Debian_7.0/Release.key
     apt-key add Release.key; rm -rf Release.key
-    wget http://obs.kolabsys.com:82/home:/$username:/branches:/Kolab:/Development/Debian_7.0/Release.key
+    wget http://obs.kolabsys.com/home:/$username:/branches:/Kolab:/Development/Debian_7.0/Release.key
     apt-key add Release.key; rm -rf Release.key
     
     cat > /etc/apt/preferences.d/kolab <<FINISH
