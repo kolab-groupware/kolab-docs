@@ -79,6 +79,11 @@ General invitation policy settings
     but the invitation is being saved in the user's default calendar or tasklist
     respectively and the iTip message is not forwarded to the user's email inbox.
 
+*   ``ALL_SAVE_AND_FORWARD``
+
+    Same as ``ALL_SAVE_TO_FOLDER`` but forwarding the original iTip message
+    to the user's email inbox for notification purposes.
+
 
 Event-specific policy settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -112,6 +117,10 @@ Event-specific policy settings
 *   ``EVENT_SAVE_TO_FOLDER``
 
     Same as ``ALL_SAVE_TO_FOLDER`` but only applies for event invitations.
+
+*   ``EVENT_SAVE_AND_FORWARD``
+
+    Same as ``ALL_SAVE_AND_FORWARD`` but only applies for event invitations.
 
 
 Task-specific policy settings
