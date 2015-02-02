@@ -10,6 +10,8 @@ Administrator Guide
 
     configuring-the-kolab-server
 
+    smtp-content-filtering
+
     securing-the-kolab-server
 
     backup-and-restore

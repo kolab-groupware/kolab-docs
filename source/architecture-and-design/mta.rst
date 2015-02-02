@@ -448,113 +448,28 @@ automatically processed (e.g. accepting event invitations if available) or
 forwarded to the user's inbox or calendar for manual confirmation.
 
 iTip messages can hold invitations to events or assignments to tasks. The invitation
-policy module processes both according to the individual settings. This means that the
-invitation object type has to match the prefix (e.g. ``ALL_``, ``EVENT_``, ``TASK_``)
-of each invitation policy setting in order to be processed.
+policy module processes both according to the individual settings. One can specify
+policies for either all invitations or specific for event or task objects.
 
 A user's invitation policy settings are stored in LDAP using the
-``kolabInvitationPolicy`` which can contain multiple values which are processed
-from top to bottom until one matches the situation. A global default can be defined
-in ``/etc/kolab/kolab.conf`` with
+``kolabInvitationPolicy`` attribute which can contain multiple values which are processed
+from top to bottom until one matches the situation.
 
-.. code-block:: ini
-
-    [wallace]
-    (...)
-    kolab_invitation_policy = EVENT_ACCEPT_IF_NO_CONFLICT:example.org, ALL_UPDATE_AND_NOTIFY, ALL_MANUAL
-
-The following values can be used to compose the invitation policy set:
-
-.. _and_mta_wallace-invitation-policy-global-values:
-
-General invitation policy settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-(apply to all iTip object types)
-
-*   ``ALL_MANUAL``
-
-    Forwards the message to the user's inbox for manual processing in the client.
-
-*   ``ALL_ACCEPT``
-
-    Always accepts the event invitation or task assignment. This will reply to
-    the organizer with ``PARTSTAT=ACCEPTED`` and store the event in the user's
-    default calendar or tasklist respectively.
-
-*   ``ALL_REJECT``
-
-    Always rejects the invitation or assignment. This will also store a copy of the
-    rejected invitation in the user's default calendar for later reference.
-
-*   ``ALL_UPDATE``
-
-    When receiving an iTip REPLY, this policy automatically updates the copy of the
-    referring object in the user's personal folders with the updated participant status
-    of the replying user.
-
-*   ``ALL_UPDATE_AND_NOTIFY``
-
-    Same as ``ACT_UPDATE`` but with an additional notification email being sent to
-    the recipient reporting the updated participants status or object properties
-    which have changed.
-
-*   ``ALL_SAVE_TO_FOLDER``
-
-    No automatic accepting or rejecting is being done for iTip invitations here
-    but the invitation is being saved in the user's default calendar or tasklist
-    respectively and the iTip message is not forwarded to the user's email inbox.
+Find a reference of possible values to compose the invitation policy set in the
+:ref:`Administrator Guide <admin_wallace-invitation-policy>`.
 
 
-Event-specific policy settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Auto-updating all participant's calendars
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*   ``EVENT_ACCEPT``
+Along with the auto-update policy, wallace can also update copies of the referenced
+event in all the participant's calendars. With the regular iTip workflow, an iTip REPLY
+will only inform the organizer about the participation status of an individual. With
+:ref:`auto-updating <admin_wallace-invitation-policy-autoupdate-others>` enabled,
+the server will also automatically update the status of the replying attendee
+in the personal calendar of all other listed participants.
 
-    Same as ``ALL_ACCEPT`` but only applies for event invitations.
-
-*   ``EVENT_ACCEPT_IF_NO_CONFLICT``
-
-    Same as ``EVENT_ACCEPT`` but only if the invitation doesn't conflict with an
-    existing event in the user's calendar(s).
-
-*   ``EVENT_TENTATIVE``
-
-    Same as ``EVENT_ACCEPT`` but replying with ``PARTSTAT=TENTATIVE``.
-
-*   ``EVENT_TENTATIVE_IF_NO_CONFLICT``
-
-    Same as ``EVENT_TENTATIVE_IF_NO_CONFLICT`` but replying with ``PARTSTAT=TENTATIVE``.
-
-*   ``EVENT_REJECT``
-
-    Same as ``ALL_REJECT`` but only applies for event invitations.
-
-*   ``EVENT_REJECT_IF_CONFLICT``
-
-    Same as ``ACT_REJECT`` but only rejects invitations if they conflict with an
-    existing event in the user's calendar(s).
-
-*   ``EVENT_SAVE_TO_FOLDER``
-
-    Same as ``ALL_SAVE_TO_FOLDER`` but only applies for event invitations.
-
-
-Task-specific policy settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Basically all values from the :ref:`and_mta_wallace-invitation-policy-global-values`
-but with the ``TASK_`` prefix instead of ``ALL_``.
-
-
-Per sender domain invitation policies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Each policy identifier can have a domain filter appended with ``:domain.tld``. If present,
-the policy will only be applied if the sender of the iTip message matches the given
-domain. Otherwise the entry will be ignored and the process continues with the next
-entry in the list.
-
+.. _and_mta_wallace-resource-scheduling:
 
 Resource scheduling
 -------------------
