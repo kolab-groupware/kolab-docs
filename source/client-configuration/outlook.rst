@@ -10,6 +10,9 @@ Microsoft Outlook
 There are many different ways to connect your Microsoft Outlook client to |service_name|.
 Not every way is the right way for you.
 Please read each of the following sections carefully and then decide which connection option you prefer.
+We currently recommend to use :ref:`ActiveSync <settings-clientconfig-outlook-as>` if you use Outlook 2013 or later.
+Otherwise, you might want to try :ref:`OutlookDAV <settings-clientconfig-outlook-dav>`.
+
 
 .. _settings-clientconfig-outlook-imap:
 
@@ -91,6 +94,8 @@ To set up an email-only account in Outlook follow these steps:
  
 .. only:: activesync
 
+    .. _settings-clientconfig-outlook-as:
+    
     Outlook 2013 with ActiveSync
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -145,9 +150,84 @@ To set up an email-only account in Outlook follow these steps:
 
     .. note::
 
-        ActiveSync also syncronizes email folders to Outlook. You therefore 
-        don't need to set up the IMAP email account as described in the 
-        :ref:`settings-clientconfig-outlook-imap` above.
+        ActiveSync can also syncronize email folders to Outlook.
+        We hower recommend to use IMAP for email and ActiveSync for everything else. 
+
+
+.. only:: dav
+
+    .. _settings-clientconfig-outlook-dav:
+
+    Calendars and Contacts with OutlookDAV
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    One possibility to connect your |service_name| account with older Outlook 
+    versions is `OutlookDAV <http://www.outlookdav.com/>`_ by `SurGATE <http://www.surgatelabs.com/>`_.
+    It will automatically discover all of your calendars, tasks and contacts 
+    and sync with Outlook. It also allows you to backup Outlook or 
+    |service_name| folders on your computer and restore from previous backups.
+
+    To get started, first install OutlookDAV and open it. You should see 
+    something similar to the first screenshot below. Click *Start* in the basic 
+    configuration section. On the next page, type |**caldav_host**| and check 
+    *Use SSL*. Type your full |service_name| email address and password. Click 
+    *Remember Me* if you want OutlookDAV to remember your credentials, so you 
+    do not need to provide them all the time. Click *Connect* to continue.
+
+    In the next window, you will see all available folders. You don't need to 
+    select the type, as auto discovery usually finds the type. Select existing 
+    Outlook folder by clicking drop down menu or click *Create* to create a new 
+    folder in Outlook. Select two way sync as the transfer type for each folder 
+    you want to synchronize. Once you are done with all the settings, click 
+    *Save*.
+
+    Now you can click the Sync tab. In order to start a manual synchronization 
+    of your events, contacts and tasks, click the sync button at the top. If 
+    you encounter a problem you can see the errors in *Tools > Errors* window. 
+    Please report all problems to `SurGATE <http://www.surgatelabs.com/support/>`_ 
+    directly.
+
+    .. container:: screenshots
+
+        .. fancyfigure:: _static/outlookDAV-0.png
+            :group: outlookDAV
+            :height: 110
+            :alt: SurGATE OutlookDAV Main screen
+
+        .. fancyfigure:: _static/outlookDAV-1.png
+            :group: outlookDAV
+            :height: 110
+            :alt: SurGATE OutlookDAV Wizard Step 1
+
+            .. fancyrender::
+                :font: verdana-bold
+                :size: 14
+
+                |caldav_host| @253,335
+                |useremail| @253,402
+
+        .. fancyfigure:: _static/outlookDAV-2.png
+            :group: outlookDAV
+            :height: 110
+            :alt: SurGATE OutlookDAV Main screen
+
+        .. fancyfigure:: _static/outlookDAV-3.png
+            :group: outlookDAV
+            :height: 110
+            :alt: SurGATE OutlookDAV Main screen
+
+        .. fancyfigure:: _static/outlookDAV-4.png
+            :group: outlookDAV
+            :height: 110
+            :alt: SurGATE OutlookDAV Main screen
+
+            .. fancyrender::
+                :font: verdana
+                :size: 11
+                :color: #ffffff
+
+                |caldav_uri_long| @275,278 #28
+
 
 
 Outlook with Bynari Outlook Connector
@@ -232,77 +312,6 @@ The screenshots below provide all the values you need to fill in.
                 |smtp_port| @260,147
 
 .. only:: dav
-
-    Calendars and Contacts with OutlookDAV
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-    One possibility to connect your |service_name| account with older Outlook 
-    versions is `OutlookDAV <http://www.outlookdav.com/>`_ by `SurGATE <http://www.surgatelabs.com/>`_.
-    It will automatically discover all of your calendars, tasks and contacts 
-    and sync with Outlook. It also allows you to backup Outlook or 
-    |service_name| folders on your computer and restore from previous backups.
-
-    To get started, first install OutlookDAV and open it. You should see 
-    something similar to the first screenshot below. Click *Start* in the basic 
-    configuration section. On the next page, type |**caldav_host**| and check 
-    *Use SSL*. Type your full |service_name| email address and password. Click 
-    *Remember Me* if you want OutlookDAV to remember your credentials, so you 
-    do not need to provide them all the time. Click *Connect* to continue.
-
-    In the next window, you will see all available folders. You don't need to 
-    select the type, as auto discovery usually finds the type. Select existing 
-    Outlook folder by clicking drop down menu or click *Create* to create a new 
-    folder in Outlook. Select two way sync as the transfer type for each folder 
-    you want to synchronize. Once you are done with all the settings, click 
-    *Save*.
-
-    Now you can click the Sync tab. In order to start a manual synchronization 
-    of your events, contacts and tasks, click the sync button at the top. If 
-    you encounter a problem you can see the errors in *Tools > Errors* window. 
-    Please report all problems to `SurGATE <http://www.surgatelabs.com/support/>`_ 
-    directly.
-
-    .. container:: screenshots
-
-        .. fancyfigure:: _static/outlookDAV-0.png
-            :group: outlookDAV
-            :height: 110
-            :alt: SurGATE OutlookDAV Main screen
-
-        .. fancyfigure:: _static/outlookDAV-1.png
-            :group: outlookDAV
-            :height: 110
-            :alt: SurGATE OutlookDAV Wizard Step 1
-
-            .. fancyrender::
-                :font: verdana-bold
-                :size: 14
-
-                |caldav_host| @253,335
-                |useremail| @253,402
-
-        .. fancyfigure:: _static/outlookDAV-2.png
-            :group: outlookDAV
-            :height: 110
-            :alt: SurGATE OutlookDAV Main screen
-
-        .. fancyfigure:: _static/outlookDAV-3.png
-            :group: outlookDAV
-            :height: 110
-            :alt: SurGATE OutlookDAV Main screen
-
-        .. fancyfigure:: _static/outlookDAV-4.png
-            :group: outlookDAV
-            :height: 110
-            :alt: SurGATE OutlookDAV Main screen
-
-            .. fancyrender::
-                :font: verdana
-                :size: 11
-                :color: #ffffff
-
-                |caldav_uri_long| @275,278 #28
-
 
     Connect Outlook with Bynari WebDAV Collaborator
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

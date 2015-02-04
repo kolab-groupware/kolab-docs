@@ -8,4 +8,5 @@ Windows
    :maxdepth: 2
 
    outlook
+   kontact
    thunderbird
