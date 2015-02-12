@@ -118,6 +118,6 @@ Please use your **full and primary email address** as username here.
 
     Kolab also supports the proprietary ActiveSync protocol.
     In order to connect your client to |service_name| via this protocol,
-    please use the following domain name.
+    please use the following server address.
 
         |**activesync_host**|
