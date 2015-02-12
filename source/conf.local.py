@@ -1,0 +1,1 @@
+../ext/kolabnow/conf.local.py
