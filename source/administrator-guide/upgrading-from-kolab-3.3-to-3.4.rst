@@ -212,6 +212,31 @@ Turn of debugging and add 2 additional entries:
     $config['managesieve_kolab_master'] = true;
 
 
+/etc/iRony/dav.inc.php
+----------------------
+
+You can see the configuration differences here:
+
+    http://git.kolab.org/iRony/diff/config/dav.inc.php.sample?id=iRony-0.3.0&id2=iRony-0.2.8
+
+If you use the global addressbook <> CardDAV gateway you might want to
+take a look on the changes, otherwise you can just take the default
+configuration.
+
+For Redhat/CentOS
+
+ .. parsed-literal::
+
+    # :command:`cp /etc/iRony/dav.inc.php.rpmnew /etc/iRony/dav.inc.php`
+
+For Debian
+
+ .. parsed-literal::
+
+    # :command:`cp /etc/iRony/dav.inc.php.dpkg-dist /etc/iRony/dav.inc.php`
+
+
+
 mysql database: kolab
 ---------------------
 
