@@ -59,4 +59,4 @@ Installation on CentOS
 Continue to :ref:`install-setup-kolab`.
 
 .. _EPEL for CentOS 6: http://download.fedoraproject.org/pub/epel/6/i386/repoview/epel-release.html
-.. _EPEL for CentOS 7: http://download.fedoraproject.org/pub/epel/beta/7/x86_64/repoview/epel-release.html
+.. _EPEL for CentOS 7: http://download.fedoraproject.org/pub/epel/7/x86_64/repoview/epel-release.html
