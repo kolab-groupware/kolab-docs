@@ -94,6 +94,9 @@ You should create a cronjob on your system, where you run osc. This cronjob must
 
 Have a look at this script for an example: https://gist.github.com/tpokorra/5698249
 
+We have this now running every night on a LightBuildServer instance. See https://lbs.solidcharity.com/package/tbits.net/kolab-nightly-sync/updatecode.
+The source for this job is available here: https://github.com/TBits/lbs-kolab-nightly-sync/blob/master/updatecode/setup.sh
+
 To regularly check that your nightly build works, you can use the command "osc results".
 
 The following code is also part of the above gist:
