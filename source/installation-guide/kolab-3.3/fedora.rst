@@ -1,22 +1,16 @@
-========================
-Installation on openSUSE
-========================
+======================
+Installation on Fedora
+======================
 
-1.  Install the Kolab Groupware repositories:
+1.  Install the Kolab Groupware repository configuration:
 
-    For openSUSE 13.1:
-
-    .. parsed-literal::
-
-        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.4/openSUSE_13.1/Kolab:3.4.repo`
-        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/openSUSE_13.1/Kolab:3.4:Updates.repo`
-
-    For openSUSE 12.3:
+    For Fedora 20 (Heisenburg):
 
     .. parsed-literal::
 
-        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.4/openSUSE_12.3/Kolab:3.4.repo`
-        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/openSUSE_12.3/Kolab:3.4:Updates.repo`
+        # :command:`cd /etc/yum.repos.d/`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.3/Fedora_20/Kolab:3.3.repo`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Fedora_20/Kolab:3.3:Updates.repo`
 
 2.  Import the GPG key used to sign the packages:
 
@@ -39,6 +33,6 @@ Installation on openSUSE
 
     .. parsed-literal::
 
-        # :command:`zypper in kolab`
+        # :command:`yum install kolab`
 
 Continue to :ref:`install-setup-kolab`.

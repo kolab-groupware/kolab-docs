@@ -1,8 +1,8 @@
-.. _installation-rhel-community:
+.. _installation-centos-community:
 
-========================================
-Installation on Red Hat Enterprise Linux
-========================================
+======================
+Installation on CentOS
+======================
 
 1.  Install the `EPEL repository <http://fedoraproject.org/wiki/EPEL>`_
     configuration using the RPM package linked to from:
@@ -22,16 +22,16 @@ Installation on Red Hat Enterprise Linux
     .. parsed-literal::
 
         # :command:`cd /etc/yum.repos.d/`
-        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4/CentOS_7/Kolab:3.4.repo`
-        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/CentOS_7/Kolab:3.4:Updates.repo`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.3/CentOS_7/Kolab:3.3.repo`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/CentOS_7/Kolab:3.3:Updates.repo`
 
     For CentOS 6:
 
     .. parsed-literal::
 
         # :command:`cd /etc/yum.repos.d/`
-        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4/CentOS_6/Kolab:3.4.repo`
-        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/CentOS_6/Kolab:3.4:Updates.repo`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.3/CentOS_6/Kolab:3.3.repo`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/CentOS_6/Kolab:3.3:Updates.repo`
 
 3.  Import the GPG key used to sign the packages:
 

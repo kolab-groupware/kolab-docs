@@ -8,15 +8,15 @@ Installation on openSUSE
 
     .. parsed-literal::
 
-        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.4/openSUSE_13.1/Kolab:3.4.repo`
-        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/openSUSE_13.1/Kolab:3.4:Updates.repo`
+        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.3/openSUSE_13.1/Kolab:3.3.repo`
+        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/openSUSE_13.1/Kolab:3.3:Updates.repo`
 
     For openSUSE 12.3:
 
     .. parsed-literal::
 
-        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.4/openSUSE_12.3/Kolab:3.4.repo`
-        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/openSUSE_12.3/Kolab:3.4:Updates.repo`
+        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.3/openSUSE_12.3/Kolab:3.3.repo`
+        # :command:`zypper ar http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/openSUSE_12.3/Kolab:3.3:Updates.repo`
 
 2.  Import the GPG key used to sign the packages:
 

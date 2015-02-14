@@ -9,8 +9,8 @@ Installation on Fedora
     .. parsed-literal::
 
         # :command:`cd /etc/yum.repos.d/`
-        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.3/Fedora_20/Kolab:3.3.repo`
-        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Fedora_20/Kolab:3.3:Updates.repo`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4/Fedora_20/Kolab:3.4.repo`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Fedora_20/Kolab:3.4:Updates.repo`
 
 2.  Import the GPG key used to sign the packages:
 

@@ -34,6 +34,13 @@ work as expected, please consider `contributing`_.
     ubuntu
     ucs
 
+.. rubric:: Older versions of Kolab Groupware
+
+.. toctree::
+    :maxdepth: 1
+
+    kolab-3.3/index
+
 Installing Kolab Enterprise
 ===========================
 

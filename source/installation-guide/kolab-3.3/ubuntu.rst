@@ -8,22 +8,22 @@ Installation on Ubuntu
 
     .. parsed-literal::
 
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Ubuntu_12.04/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Ubuntu_12.04/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_12.04/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_12.04/ ./
 
     For Ubuntu 13.10:
 
     .. parsed-literal::
 
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Ubuntu_13.10/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Ubuntu_13.10/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_13.10/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_13.10/ ./
 
     For Ubuntu 14.04:
 
     .. parsed-literal::
 
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Ubuntu_14.04/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Ubuntu_14.04/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.3/Ubuntu_14.04/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Ubuntu_14.04/ ./
 
 2.  Import the GPG key used to sign the packages:
 

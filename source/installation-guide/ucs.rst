@@ -80,8 +80,8 @@ Kolab Groupware from the OBS
 
     .. parsed-literal::
 
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.3/UCS_3.2/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/UCS_3.2/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/UCS_3.2/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/UCS_3.2/ ./
 
 2.  Import the GPG key used to sign the packages:
 

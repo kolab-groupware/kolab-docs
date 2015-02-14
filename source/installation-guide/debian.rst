@@ -13,8 +13,8 @@ Debian Wheezy
 
     .. parsed-literal::
 
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.3/Debian_7.0/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Debian_7.0/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Debian_7.0/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Debian_7.0/ ./
 
     For Debian Jessie:
 
@@ -26,8 +26,8 @@ Debian Wheezy
 
     .. parsed-literal::
 
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.3/Debian_8.0/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Debian_8.0/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Debian_8.0/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Debian_8.0/ ./
 
 2.  Import the GPG key used to sign the packages:
 
