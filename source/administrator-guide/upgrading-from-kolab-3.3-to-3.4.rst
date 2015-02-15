@@ -172,7 +172,16 @@ You can see the configuration differences here:
 
     http://git.kolab.org/pykolab/diff/share/templates/roundcubemail/config.inc.php.tpl?id=pykolab-0.7.6&id2=pykolab-0.7.1
 
-Change the plugin load order the follwing way:
+The 'threading_as_default' no longer exists and therfore don't need to be
+loaded. So you can safely remove it.
+
+ .. parsed-literal::
+
+    $config['plugins'] = array(
+        ...
+        // 'threading_as_default',
+        ...
+    );
 
 add or update the following $config entries
 
