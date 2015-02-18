@@ -111,6 +111,31 @@ the flushseenstate option.
     # flushseenstate: 1
 
 
+/etc/postfix/ldap/virtual_alias_maps_sharedfolders.cf
+-----------------------------------------------------
+
+ .. note::
+
+    This fix applies to other sharedfolders.cf configuration files as well
+    (in a multidomain environment)
+
+Change the result_format to be enclosed by quotes otherwise you can't deliver
+mail messages to shared mailboxes that contains spaces in the mailbox name.
+
+ .. parsed-literal::
+
+    result_format = "shared+%s"
+
+**Background**
+
+There's a mailbox that's called ``The A Team`` with a delivery address of
+``team@example.org``. The resulting IMAP Folder would/should be ``shared/The A Team@example.org``.
+
+If you now send an email to ``team@example.org`` it will get remapped to
+``"shared+shared/The A Team@example.org"@example.org``. Without the quotes you
+get 3 non-delivery-reports because whitespace would be considered a delimiter.
+
+
 /etc/kolab/kolab.conf
 ---------------------
 
