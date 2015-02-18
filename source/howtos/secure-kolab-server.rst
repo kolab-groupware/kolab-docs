@@ -374,17 +374,14 @@ Set correct SSL parameters for HTTP_Request2. This will ensure the
         );
         EOF`
 
-#.  Tell the webclient the SSL iRony URLs for CalDAV and CardDAV:
+#.  Tell to the webclient the SSL iRony URLs to use for CalDAV and CardDAV:
 
     .. parsed-literal::
 
-        # :command:`cat >> /etc/roundcubemail/config.inc.php << EOF
-        # caldav/webdav
-        \\$config['calendar_caldav_url']             = "https://%h/iRony/calendars/%u/%i";
-        \\$config['kolab_addressbook_carddav_url']   = 'https://%h/iRony/addressbooks/%u/%i';
-        EOF`
+        # :command:`sed -i -e 's/http:/https:/' /etc/roundcubemail/calendar.inc.php`
+        # :command:`sed -i -e 's/http:/https:/' /etc/roundcubemail/kolab_addressbook.inc.php`
 
-#.  Additionaly, you can redirect all http traffic to https:
+#.  Additionaly, you can redirect all HTTP traffic to HTTPS:
 
     .. parsed-literal::
 
