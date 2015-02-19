@@ -32,7 +32,7 @@ work as expected, please consider `contributing`_.
     rhel-community
     suse
     ubuntu
-    ucs
+    ucs-community
 
 .. rubric:: Older versions of Kolab Groupware
 
@@ -56,7 +56,7 @@ disclosure (where appropriate).
 
     centos-enterprise
     rhel-enterprise
-    ucs
+    ucs-enterprise
 
 Configuring Kolab Groupware
 ===========================
