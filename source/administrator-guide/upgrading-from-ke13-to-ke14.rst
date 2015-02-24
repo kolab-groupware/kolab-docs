@@ -1,62 +1,56 @@
-====================================
-Upgrade Notes from Kolab 3.1 to 3.3
-====================================
+============================================
+Upgrade Guide from Kolab Enterprise 13 to 14
+============================================
 
-This chapter contains some upgrade notes for moving forward from Kolab 3.1 to
-Kolab 3.3. You can use this guide aswell for upgrading from Kolab 3.2 to 3.3.
-The differences aren't that many.
+This document guides you through the process of upgrading Kolab Enterprise 13 to Kolab Enterprise 14.
+We recommend to try this upgrade on a test system before upgrading your production installation
+to ensure that everything will work smoothly with your specific setup.
 
 ChangeLog
 =========
 
-While Kolab 3.2 mostly included backend and groundlaying changes for upcoming
-realases due to switching to Cyrus IMAPd 2.5, Kolab 3.3 now ships with couple
-new and updated frontend and admin modules.
-
-Kolab 3.3 compared to Kolab 3.1 ships the following additional components:
+Kolab Enterprise 14 compared to Kolab Enterprise 14 ships the following additional components:
 
 #.  **Birthday Calender**
 
-    This feature was already incuded in Kolab Groupware 3.2
+    Users may opt to show the birthdays of their contacts in the Kolab Web Application.
 
-#.  **New roundcube release**
+#.  **Web Application Paths**
 
-    The folder structure has changed. Roundcube has moved their public
+    The folder structure has changed. The web application has moved its public
     web content into a *public_html/* folder. While it tries to be backwards
-    compatible, you might want to check your virtual host configuration if
-    you've actually modified it.
+    compatible, you might want to check your virtual host configuration to match the new paths.
 
 #.  **E-Mail Tagging**
 
-    The roundcube plugin *kolab_tags* supports taggging of e-mails
+    The roundcube plugin *kolab_tags* supports tanging of e-mails
 
 #.  **Notes**
 
     The roundcube plugin *kolab_notes* supports writing and sharing notes.
-    Via syncroton these notes can be managed via the active sync protocol
-    as well.
+    Via syncroton these notes can be synchronised via the ActiveSync protocol.
 
-    You can also create shared notesfolders for groups.
+    You can also create shared Notes folders for groups.
 
 #.  **Resource Management**
 
     While managing resources was already included in the Kolab Webadmin GUI,
-    the roundcube frontend was missing a component to search, check and book
-    resources. This part makes use of freebusy informations to actually
-    show the availabilities.
+    the roundcube received a new component to search, check and book
+    resources. This part makes use of freebusy information to actually
+    show the available resources.
 
 #.  **Freebusy**
 
     The freebusy web daemon now supports caching of freebusy informations
-    and resources. You might want to update/replace your configuation to
+    and resources. You might want to update/replace your configuration to
     support resources, etc.
 
 #.  **Wallace**
 
     The wallace daemon now includes modules for checking iTip invitations
-    and resource booking requests. Wallace is now enabled by default in new
-    Kolab 3.3 installations. If you want to make use of it, you must integrate
-    it in the postfix mail flow.
+    and resource booking requests automatically.
+    Wallace is now enabled by default in new installations.
+    If you want to make use of it, you must integrate it in the postfix mail flow.
 
 #.  **IMAP ACL editor (kolab-webadmin)**
 
@@ -66,91 +60,46 @@ Kolab 3.3 compared to Kolab 3.1 ships the following additional components:
 #.  **Organizatioal Unit Editor (kolab-webadmin)**
 
     Those installations that make use of bigger LDAP Directories or
-    manage corporation addressbooks within LDAP can now make use of the OU
+    manage corporate address books within LDAP can now make use of the OU
     Editor instead of relying on external LDAP Editors. The ou management
     includes an ACL Editor for LDAP targets.
 
 
 
-Updating the system
-===================
+Updating Kolab Enterprise
+=========================
 
-These update procecures are just an example. They don't differ too much from
-a basic installation.
+These procedures are meant as an example to show you how an upgrade could work.
+They don't differ too much from a basic installation.
 
 
-CentOS 6
---------
+RHEL 6 & CentOS 6
+-----------------
 
-Update the repo to the new location
+Update the Kolab Enterprise repository to the new location:
 
  .. parsed-literal::
 
     # :command:`cd /etc/yum.repos.d/`
     # :command:`rm Kolab*.repo`
-    # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.3/CentOS_6/Kolab:3.3.repo`
-    # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/CentOS_6/Kolab:3.3:Updates.repo`
+    # :command:`wget https://ssl.kolabsys.com/kolab-enterprise-14-for-el6.rpm`
+    # :command:`yum localinstall kolab-enterprise-14-for-el6.rpm`
 
-run the upgrade process
+Run the upgrade process:
 
  .. parsed-literal::
 
     # :command:`yum update`
 
 
-Debian 7
---------
-
-Update the repo to the new location
-
- .. parsed-literal::
-
-    # :command:`echo "deb http://obs.kolabsys.com/repositories/Kolab:/3.3/Debian_7.0/ ./
-    deb http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Debian_7.0/ ./" > /etc/apt/sources.list.d/kolab.list`
-
-Import the new Release Keys
-
- .. parsed-literal::
-
-    # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3/Debian_7.0/Release.key | apt-key add -`
-    # :command:`wget -qO - http://obs.kolabsys.com/repositories/Kolab:/3.3:/Updates/Debian_7.0/Release.key | apt-key add -`
-
-If you've don't have set a correct apt-pinning, please check the Installation Guide.
-
-Update and Upgrade the system
-
- .. parsed-literal::
-
-    # :command:`apt-get update`
-    # :command:`apt-get dist-upgrade`
-
-.. WARNING::
-
-    You'll get ask if you want to replace your configuration files! DON'T overwrite them!
-    You'll lose your configuration and credentials and end up with a broken frontend.
-
-
-Update your configuration files
-===============================
-
-If you want to check want configuration files have changed, the best way is to
-compare the previous and current version in the GIT repository.
-
-You can find most of the configuration file that have changed when you compare
-the templates of pykolab/setup-kolab.
-
-    http://git.kolab.org/pykolab/diff/share/templates/?id=pykolab-0.7.1&id2=pykolab-0.6.10
+Updating Configuration Files
+============================
 
 /etc/kolab/kolab.conf
 ---------------------
 
-You can see the configuration differences here:
-
-    http://git.kolab.org/pykolab/diff/conf/kolab.conf?id=pykolab-0.7.1&id2=pykolab-0.6.10
-
-These are the values that have been updated. Please change them in your configuration
-depending on your installation and needs
-
+These values have been updated. Please change them in your configuration
+depending on your installation and needs:
 
  .. parsed-literal::
 
@@ -170,7 +119,7 @@ depending on your installation and needs
     kolab_invitation_policy = ACT_ACCEPT_IF_NO_CONFLICT:example.org, ACT_MANUAL
 
 If you're planning to make use of wallace please make sure wallace is enabled to start
-using :command:`chkconfig` on RHEL/Centos or :file:`/etc/default/wallace` on debian.
+using :command:`chkconfig` on RHEL/Centos.
 
 Restart the services
 
@@ -183,24 +132,14 @@ Restart the services
 /etc/kolab-freebusy/config.ini
 ------------------------------
 
-You can see the configuration differences here:
-
-    http://git.kolab.org/kolab-freebusy/diff/config/config.ini.sample?id=kolab-freebusy-1.0.5&id2=kolab-freebusy-1.0.3
-
-Instead of editing the configuration by hand it's easier to just recreate the
-configuration using the setup-kolab tool.
+Instead of editing the configuration by hand, it can be easier to just recreate the
+configuration using the setup-kolab tool if you have not a specific configuration.
 
 For Redhat/CentOS
 
  .. parsed-literal::
 
     # :command:`cp /etc/kolab-freebusy/config.ini.rpmnew /etc/kolab-freebusy/config.ini`
-
-For Debian
-
- .. parsed-literal::
-
-    # :command:`cp /etc/kolab-freebusy/config.ini.dpkg-dist /etc/kolab-freebusy/config.ini`
 
 Recreatae the configuation:
 
@@ -212,39 +151,33 @@ Recreatae the configuation:
 /etc/roundcubemail/config.inc.php
 ---------------------------------
 
-You can see the configuration differences here:
-
-    http://git.kolab.org/pykolab/diff/share/templates/roundcubemail/config.inc.php.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10
-    http://git.kolab.org/pykolab/commit/?id=57a48ed5e5fed38b4bbbb088fc9425a4b407c0b0
-
-Change the plugin load order the follwing way:
+Change the plugin load order the following way:
 
 #.  move *kolab_auth* to the top position
 #.  move *kolab_config* after *kolab_addressbook*
 #.  add *kolab_notes* after *kolab_folders*
 #.  add *kolab_tags* after *kolab_notes*
 
-add 2 more $config entries
+If you want to make use of the new secure URLs feature, add 2 more $config entries
 
  .. parsed-literal::
 
     $config['use_secure_urls'] = true;
     $config['assets_path'] = '/roundcubemail/assets/';
 
+And adjust the asset path to where your webserver makes the assets available.
+
 .. ATTENTION::
 
     Keep in mind that some of those configuration changes are requiring an
-    updated apache configuration. Roundcube 1.1 introduced a seperate public_html/
-    folder to seperate webroot and application files. Keep this in mind i
-    you've customized your webserver configuration.
+    updated apache configuration. Kolab Enterprise 14 introduced a seperate public_html/
+    folder to seperate webroot and application files. Keep this in mind if
+    you've customized your webserver configuration and adjust it accordingly.
+    Please pay special attention to the rewrite rules in place.
 
 
 /etc/roundcubemail/password.inc.php
 -----------------------------------
-
-You can see the configuration differences here:
-
-    http://git.kolab.org/pykolab/diff/share/templates/roundcubemail/password.inc.php.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10
 
 Change the password driver from **ldap** to **ldap_simple**.
 
@@ -256,10 +189,6 @@ Change the password driver from **ldap** to **ldap_simple**.
 /etc/roundcubemail/kolab_files.inc.php
 --------------------------------------
 
-You can see the configuration change here:
-
-    http://git.kolab.org/pykolab/commit/?id=172545ebeba5c73cbb502fcae859b27df7aafed2
-
 Update the kolab_files_url to /chwala/ to be protocol independent.
 
  .. parsed-literal::
@@ -270,10 +199,6 @@ Update the kolab_files_url to /chwala/ to be protocol independent.
 /etc/iRony/dav.inc.php
 ----------------------
 
-You can see the configuration differences here:
-
-    http://git.kolab.org/iRony/diff/config/dav.inc.php.sample?id=54802da29dd4e77ca8c716f6c24c1aabef3a3c1f&id2=iRony-0.2.4
-
 The iRony configuration doesn't have anything special configurations.
 You might want to consider just to take the new default config file
 or change it based on the differences between the previous version.
@@ -283,12 +208,6 @@ For Redhat/CentOS
  .. parsed-literal::
 
     # :command:`cp /etc/iRony/dav.inc.php.rpmnew /etc/iRony/dav.inc.php`
-
-For Debian
-
- .. parsed-literal::
-
-    # :command:`cp /etc/iRony/dav.inc.php.dpkg-dist /etc/iRony/dav.inc.php`
 
 
 /etc/postfix/ldap/virtual_alias_maps_sharedfolders.cf
@@ -313,10 +232,7 @@ Restart the postfix daemon
 /etc/postfix/master.cf
 ----------------------
 
-You can see the configuration differences here:
-
-    http://git.kolab.org/pykolab/diff/share/templates/master.cf.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10
-
+Here, you can optionally enable wallace if you want it to handle resource booking and invitations automatically.
 This will put wallace as the next content-filter after the mail has been
 returned from amavis to postfix. If you're don't want to make use of iTip
 processing or resource management you can skip this section.
@@ -359,7 +275,8 @@ You can find the full sql file here:
 #.  web: http://git.kolab.org/kolab-wap/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.1
 #.  locally: :file:`/usr/share/doc/kolab-webadmin/kolab_wap.sql`
 
-The kolab-webadmin package doesn't provide auto updates or upgrade files
+To not mess with your existing configuration,
+the kolab-webadmin package doesn't provide auto updates or upgrade files
 for your database. Here's a summary of what has been changed.
 
 If you've made changes on the shared folder types you might want to
@@ -371,7 +288,7 @@ Open the mysql cli:
 
     # :command:`mysql -u root -p -D kolab`
 
-and apply the followin changes: The tables will be deleted and recreated.
+and apply the following changes: The tables will be deleted and recreated.
 Don't forget: if you've made changes to shared folder types, please update
 them manually!
 
@@ -437,4 +354,5 @@ them manually!
 After the database update has been applied. Logout from the kolab-webadmin interface
 and login back in to load the new changes.
 
-
+Congratulations, your Kolab Enterprise 13 installation should now be upgraded sucessfully.
+If you encounter any problems during the upgrade, please `file a support ticket <https://kolabenterprise.com/support>`__.
