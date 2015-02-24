@@ -2,7 +2,7 @@
 HOWTO: Secure all Kolab Services
 ================================
 
-This HOWTO is based on Centos 6.4.
+This HOWTO is based on Centos 6 with some notes for Debian 7.
 
 The configuration on Debian(-based distributions) is similar, but the base path
 for the certifcates storage is different, and Debian already has a group called
@@ -10,6 +10,19 @@ for the certifcates storage is different, and Debian already has a group called
 Postfix are added by default.
 
 On CentOS, this group is called ``mail``.
+
+.. warning::
+
+    This guide provides general information about how to enable ssl/tls and
+    the majority of your kolab services. This guide is by no means 100%
+    complete nor will it get's updated everytime ciphers or protocols get
+    deprecated.If you want to know more get deeper knowledge about securing a
+    particular service please consult the corresponding software documentation
+    or other projects that take care about hardening your server.
+
+    Example:
+
+    *   https://bettercrypto.org
 
 Prerequisites
 =============
@@ -88,10 +101,11 @@ makes it easier to cover various hostnames (like ``smtp.example.org``,
 
     .. parsed-literal::
 
-        # :command:`cat /etc/pki/tls/certs/startcom-ca.pem >> /etc/pki/tls/certs/ca-bundle.crt`
+        # :command:`cp /etc/pki/tls/certs/startcom-ca.pem /etc/pki/ca-trust/source/anchors/startcom-ca.pem`
+        # :command:`update-ca-trust`
 
-    On Debian based systems it's even easier. The command update-ca-certificates takes
-    care of the ca-bundle file.
+    On Debian based systems you've a different location/command, but the
+    rest is the same.
 
     .. parsed-literal::
 
@@ -106,6 +120,18 @@ Cyrus IMAPD
 
 #.  Configure SSL certificates
 
+    **Cyris 2.5 (Kolab 3.2+):**
+
+    .. parsed-literal::
+
+        # :command:`sed -r -i \\
+              -e 's|^tls_server_cert.*|tls_server_cert /etc/pki/tls/certs/example.org.crt|g' \\
+              -e 's|^tls_server_key.*|tls_server_key /etc/pki/tls/private/example.org.key|g' \\
+              -e 's|^tls_server_ca_file.*|tls_server_ca_file /etc/pki/tls/certs/example.org.ca-chain.pem|g' \\
+              /etc/imapd.conf`
+
+    **Cyrus 2.4 (Kolab 3.0 + 3.1):**
+
     .. parsed-literal::
 
         # :command:`sed -r -i \\
@@ -117,11 +143,24 @@ Cyrus IMAPD
     On Debian: Change the paths according to the Debian file structure (replace `/etc/pki/tls` with
     `/etc/ssl`. Make sure that the user `cyrus` is part of the `ssl-certs` group.
 
+    **Bonus:**
+
+    You can get bonus points to disable weak ciphers like so:
+
+    .. parsed-literal::
+
+        # Cyrus 2.5 (imapd.conf)
+        tls_ciphers: EDH+CAMELLIA:EDH+aRSA:EECDH+aRSA+AESGCM:EECDH+aRSA+SHA384:EECDH+aRSA+SHA256:EECDH:+CAMELLIA256:+AES256:+CAMELLIA128:+AES128:+SSLv3:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!DSS:!RC4:!SEED:!ECDSA:CAMELLIA256-SHA:AES256-SHA:CAMELLIA128-SHA:AES128-SHA
+
+        # Cyrus 2.4 (imapd.conf)
+        tls_ciphers_list: EDH+CAMELLIA:EDH+aRSA:EECDH+aRSA+AESGCM:EECDH+aRSA+SHA384:EECDH+aRSA+SHA256:EECDH:+CAMELLIA256:+AES256:+CAMELLIA128:+AES128:+SSLv3:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!DSS:!RC4:!SEED:!ECDSA:CAMELLIA256-SHA:AES256-SHA:CAMELLIA128-SHA:AES128-SHA
+
 #.  Restart and verify
 
     .. parsed-literal::
 
         # :command:`service cyrus-imapd restart`
+        # :command:`sslscan --no-failed localhost:993`
         # :command:`openssl s_client -showcerts -connect localhost:993`
 
 Postfix
@@ -134,6 +173,14 @@ Postfix
         # :command:`postconf -e smtpd_tls_key_file=/etc/pki/tls/private/example.org.key`
         # :command:`postconf -e smtpd_tls_cert_file=/etc/pki/tls/certs/example.org.crt`
         # :command:`postconf -e smtpd_tls_CAfile=/etc/pki/tls/certs/example.org.ca-chain.pem`
+        # :command:`postconf -e smtp_tls_mandatory_protocols="!SSLv2,!SSLv3"`
+        # :command:`postconf -e smtp_tls_protocols="!SSLv2,!SSLv3"`
+        # :command:`postconf -e smtpd_tls_mandatory_protocols="!SSLv2,!SSLv3"`
+        # :command:`postconf -e smtpd_tls_protocols="!SSLv2,!SSLv3"`
+        # :command:`postconf -e smtpd_tls_mandatory_ciphers=high`
+        # :command:`postconf -e smtpd_tls_eecdh_grade = ultra`
+        # :command:`postconf -e tls_preempt_cipherlist = yes`
+        # :command:`postconf -e tls_high_cipherlist=EDH+CAMELLIA:EDH+aRSA:EECDH+aRSA+AESGCM:EECDH+aRSA+SHA384:EECDH+aRSA+SHA256:EECDH:+CAMELLIA256:+AES256:+CAMELLIA128:+AES128:+SSLv3:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!DSS:!RC4:!SEED:!ECDSA:CAMELLIA256-SHA:AES256-SHA:CAMELLIA128-SHA:AES128-SHA`
 
     On Debian: Change the paths according to the Debian file structure (replace `/etc/pki/tls` with
     `/etc/ssl`. Make sure that the user `postfix` is part of the `ssl-certs` group.
@@ -143,18 +190,68 @@ Postfix
     .. parsed-literal::
 
         # :command:`service postfix restart`
+        # :command:`sslscan --starttls --no-failed localhost:587`
 
-Apache
-------
+Apache2
+-------
 
-Apache offers 2 modules that provide SSL support. The wildly used **mod_ssl**,
-and **mod_nss**. Since **mod_nss** was already installed and loaded through some
-dependency I'll cover this. Feel free to use **mod_ssl**.
+Apache offers 2 modules that provide SSL support.
+
+The wildly used **mod_ssl** and **mod_nss**. Since **mod_nss** was already
+installed and loaded through some dependency I'll cover this.
+
+mod_ssl
+^^^^^^^
+
+This is the prefered way and it's easier to work with.
+
+#.  Install **mod_ssl**
+
+    .. parsed-literal::
+
+        # :command:`yum install mod_ssl`
+
+
+#.  Set your ssl certificates
+
+    .. parsed-literal::
+
+        # :command:`sed -i -e 's/^SSLCertificateFile.*/SSLCertificateFile /etc/pki/tls/certs/example.org.crt/' /etc/httpd/conf.d/ssl.conf`
+        # :command:`sed -i -e 's/^SSLCertificateKeyFile.*/SSLCertificateKeyFile /etc/pki/tls/private/example.org.key/' /etc/httpd/conf.d/ssl.conf`
+        # :command:`sed -i -e 's/^#?SSLCertificateChainFile.*/SSLCertificateChainFile /etc/pki/tls/certs/example.org.ca-chain.pem/' /etc/httpd/conf.d/ssl.conf`
+
+#.  Fine tune your ssl/tls ciphers and protocols
+
+    .. parsed-literal::
+
+        # :command:`sed -i -e 's/^SSLProtocol.*/SSLProtocol All -SSLv2 -SSLv3/' /etc/httpd/conf.d/ssl.conf`
+        # :command:`sed -i -e "s/^SSLProtocol/SSLHonorCipherOrder on\nSSLProtocol/" /etc/httpd/conf.d/ssl.conf`
+        # :command:`sed -i -e 's/^SSLCipherSuite.*/SSLCipherSuite "EDH+CAMELLIA:EDH+aRSA:EECDH+aRSA+AESGCM:EECDH+aRSA+SHA384:EECDH+aRSA+SHA256:EECDH:+CAMELLIA256:+AES256:+CAMELLIA128:+AES128:+SSLv3:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!DSS:!RC4:!SEED:!ECDSA:CAMELLIA256-SHA:AES256-SHA:CAMELLIA128-SHA:AES128-SHA"/' /etc/httpd/conf.d/ssl.conf`
+
+
+#.  Create a vhost for http (:80) to redirect everything to https
+
+    .. parsed-literal::
+
+        # :command:`cat >> /etc/httpd/conf/httpd.conf << EOF
+
+        <VirtualHost _default_:80>
+            RewriteEngine On
+            RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+        </VirtualHost>
+        EOF`
+
+#.  Restart and verify
+
+    .. parsed-literal::
+
+        # :command:`service httpd restart`
+        # :command:`openssl s_client -showcerts -connect localhost:443`
 
 mod_nss
 ^^^^^^^
 
-I configures mod_nss because it was already installed. If you prefer mod_ssl nobody stops you.
+This is an alternative to **mod_ssl**.
 
 #.  Import your CA into NSS Cert Database for Apache
 
@@ -213,11 +310,6 @@ I configures mod_nss because it was already installed. If you prefer mod_ssl nob
         # :command:`service httpd restart`
         # :command:`openssl s_client -showcerts -connect localhost:443`
 
-mod_ssl
-^^^^^^^
-
-There're enough tutorials out there if you want to configure **mod_ssl** on your
-Apache. Maybe you want to take a look on the nginx configuration as well.
 
 389 Directory Server
 --------------------
@@ -255,17 +347,17 @@ If you really want/need you can also add SSL support to your LDAP Server
             -D "cn=Directory Manager" -w "${passwd}" << EOF
         dn: cn=encryption,cn=config
         changetype: modify
+        replace: nsSSL2
+        nsSSL2: off
+        -
         replace: nsSSL3
-        nsSSL3: on
+        nsSSL3: off
+        -
+        replace: nsTLS1
+        nsTLS1 on
         -
         replace: nsSSLClientAuth
         nsSSLClientAuth: allowed
-        -
-        add: nsSSL3Ciphers
-        nsSSL3Ciphers: -rsa_null_md5,+rsa_rc4_128_md5,+rsa_rc4_40_md5,+rsa_rc2_40_md5,
-         +rsa_des_sha,+rsa_fips_des_sha,+rsa_3des_sha,+rsa_fips_3des_sha,+fortezza,
-         +fortezza_rc4_128_sha,+fortezza_null,+tls_rsa_export1024_with_rc4_56_sha,
-         +tls_rsa_export1024_with_des_cbc_sha
 
         dn: cn=config
         changetype: modify
@@ -293,6 +385,7 @@ If you really want/need you can also add SSL support to your LDAP Server
     .. parsed-literal::
 
         # :command:`service dirsrv restart`
+        # :command:`openssl s_client -connect localhost:636`
 
 #.  You can test if your LDAP over SSL is configured correctly via the
     ``openssl s_client -connect localhost:636`` command, or just making a query
