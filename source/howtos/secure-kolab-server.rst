@@ -429,12 +429,6 @@ Roundcube/Plugins
 Set correct SSL parameters for HTTP_Request2. This will ensure the
 ``kolab_files`` plugin and Chwala can talk over HTTPS.
 
-#.  Remove old-style SSL configuration parameters
-
-    .. parsed-literal::
-
-        # :command:`sed -i -e '/kolab_ssl/d' /etc/roundcubemail/libkolab.inc.php`
-
 
 #.  Change freebusy API url in the ``libkolab`` plugin configuration:
 
@@ -455,18 +449,6 @@ Set correct SSL parameters for HTTP_Request2. This will ensure the
 
         # :command:`sed -i -e '/^\?>/d' /etc/roundcubemail/config.inc.php`
 
-#.  Enable SSL verification against our extended CA bundle.
-
-    .. parsed-literal::
-
-        # :command:`cat >> /etc/roundcubemail/config.inc.php << EOF
-        \\$config['kolab_http_request'] = array(
-                'ssl_verify_peer'       => true,
-                'ssl_verify_host'       => true,
-                'ssl_cafile'            => '/etc/pki/tls/certs/ca-bundle.crt'
-        );
-        EOF`
-
 #.  Tell the webclient the SSL iRony URLs for CalDAV and CardDAV:
 
     .. parsed-literal::
@@ -485,3 +467,32 @@ Set correct SSL parameters for HTTP_Request2. This will ensure the
         # Force https redirect for http requests
         \\$config['force_https'] = true;
         EOF`
+
+#.  **Optional**: Switch to verified ssl connections
+
+    This will enable the ssl-verification for internal api calls between
+    kolab php components (like roundcube <> chwala). If you care about this
+    you're free to do so, but don't forget the parts of python/kolab.conf as
+    well.
+
+    Usually these calls are internal (on localhost) and therefore don't really
+    need to to trust the ssl endpoint.
+
+    #.  Remove old-style SSL configuration parameters
+
+        .. parsed-literal::
+
+            # :command:`sed -i -e '/kolab_ssl/d' /etc/roundcubemail/libkolab.inc.php`
+
+    #.  Enable SSL verification against our extended CA bundle.
+
+        .. parsed-literal::
+
+            # :command:`cat >> /etc/roundcubemail/config.inc.php << EOF
+            \\$config['kolab_http_request'] = array(
+                    'ssl_verify_peer'       => true,
+                    'ssl_verify_host'       => true,
+                    'ssl_cafile'            => '/etc/pki/tls/certs/ca-bundle.crt'
+            );
+            EOF`
+
