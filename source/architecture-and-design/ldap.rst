@@ -142,6 +142,8 @@ sure Kolab Groupware daemons and applications do not have unrestricted access to
 your entire system (or your data, for that matter), additional system accounts
 are created on your system.
 
+.. _parent_alias_and_child_domain_namespaces:
+
 Parent, Alias and Child Domain Namespaces
 =========================================
 

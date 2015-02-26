@@ -2,6 +2,65 @@
 HOWTO: Multi-Domain Support in Kolab
 ====================================
 
+Different Types of Multi-Domain Support
+=======================================
+
+Kolab Groupware supports two different ways of providing supporting the use of
+multiple domains. To choose your right way you must know the difference between
+**multi-domain** and **domain-aliasing** or **parent/child domains**.
+
+If you want some more background knowledge about Kolab, Domains and LDAP please 
+follow this introduction: :ref:`parent_alias_and_child_domain_namespaces`.
+
+Alias/Child Domains
+-------------------
+
+You're responsible for several domains where you want to have multiple alias
+mail addresses assigned to you and/or your users. Everything happens within
+the same LDAP directory and usually you or your admins are taking care of
+managing the accounts.
+
+A usual scenario would be:
+
+    You've a cool project/company domain like ``mydomain.com`` (which will be
+    your *primary domain*) and you want to be able to receive/send emails for
+    (other *child/alias domains*) ``mydomain.net``, ``mydomain.org`` and
+    ``myproject.com`` as well.
+
+    You then can add mail addresses/aliases to your user account and everything
+    ends up in the users single mailbox.
+
+Adding additional domains to your primary domain is fairely easy and doesn't
+require to modify any configuration file at all.
+
+#.  Log Into the Kolab-Webadmin
+#.  Select "Domains" in the top navigation panel
+#.  Select "mydomain.org" on the left domain list panel (the domain list should
+    only contains one single domain)
+#.  In the section "Domainname(s)" click ``[+]`` somewhere in the domain
+    listing and fill in your ``myotherdomain.org``
+#.  Press save & use it.
+
+
+Parent Domains/Multi-Domain
+---------------------------
+
+You run seperated LDAP directories which have absolutely nothing in common. No
+shared mail addresses, no shared users. Think about 2 different companies
+(``microsoft.com`` and ``apple.com``) that want to use the same kolab
+infrastructure but having everything seperated, don't share anything at all and
+therefore manage their own accounts, mail addresses, folders, resources, etc.
+Every one of those seperated domains can have child/alias domains as well.
+
+Here comes the multidomain howto into play which requires some background
+knowledge. Especially about postfix, ldap services, etc.
+
+**PLEASE** do yourself a favor and read the next section :ref:`multidomain-before-you-start`
+and all their references to fully understand the scenario.
+
+
+.. _multidomain-before-you-start:
+
 Before You Start
 ================
 
