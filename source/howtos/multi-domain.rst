@@ -515,6 +515,21 @@ look as follows (three sample files included):
     query_filter = (&(|(mail=%s)(alias=%s))(objectclass=kolabinetorgperson))
     result_attribute = mail
 
+**Shared Folders Transport Maps**
+
+If you plan to use shared folders for hosted domains you currently have to add
+a transport rule for each parent domain (no alias/child domain) manually to
+:file:`/etc/postfix/transport` call :command:`postmap /etc/postfix/transport`
+afterwords and reload postfix.
+
+.. parsed-literal::
+
+    shared@example.org      lmtp:unix:/var/lib/imap/socket/lmtp
+    shared@apple.com        lmtp:unix:/var/lib/imap/socket/lmtp
+    shared@microsoft.com    lmtp:unix:/var/lib/imap/socket/lmtp
+
+Currently there's no automated process or ldap equivalent configuration for it.
+
 Roundcube Changes
 =================
 
