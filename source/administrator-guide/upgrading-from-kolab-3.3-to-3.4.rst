@@ -246,6 +246,16 @@ Turn of debugging and add 2 additional entries:
     $config['managesieve_kolab_master'] = true;
 
 
+/etc/roundcubemail/libkolab.inc.php
+-----------------------------------
+
+You can savely switch to a relative url for freebusy.
+
+ .. parsed-literal::
+
+    $config['kolab_freebusy_server'] = '/freebusy';
+
+
 /etc/iRony/dav.inc.php
 ----------------------
 
@@ -336,7 +346,7 @@ A new field got introduced to mark the default type (for example 'Kolab User').
     ALTER TABLE `sharedfolder_types` ADD `is_default` tinyint(1) DEFAULT 0;
     ALTER TABLE `user_types` ADD `is_default` tinyint(1) DEFAULT 0;
 
-    UPDATE `user_types` SET `is_default` = 1 WHERE `name` = 'kolab';
+    UPDATE `user_types` SET `is_default` = 1 WHERE `key` = 'kolab';
 
 After the database update has been applied. Logout from the kolab-webadmin interface
 and login back in to load the new changes.
