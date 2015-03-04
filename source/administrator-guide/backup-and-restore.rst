@@ -253,18 +253,18 @@ To restore a complete folder that got deleted you can make use of the
 
     .. note::
 
-        the 529F39E5 name is hex-⁠encoded unixtimestam
+        the 54EBC651 part is an hex-encoded unixtimestamp
 
         .. parsed-literal::
 
-            :command:`# perl -⁠le 'print scalar(localtime(hex("54EBC651")));`
+            :command:`# perl -ke 'print scalar(localtime(hex("54EBC651")));`
             Thu Feb 24 01:31:13 2015
 
 #.  Undelete the whole folder
 
     .. parsed-literal::
 
-        :command:`# kolab undelete-⁠mailboxDELETED/user/john.doe/Calendar/54EBC651@example.ogr`
+        :command:`# kolab undelete mailbox DELETED/user/john.doe/Calendar/54EBC651@example.org`
 
 #.  If you encounter problems think about clearing the cache (see above).
 
