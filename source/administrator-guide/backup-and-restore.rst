@@ -164,6 +164,111 @@ Cyrus IMAP include:
 Restore
 -------
 
+Restore Single Messages (unexpunge)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To undelete a message it helps to have some of the following informations
+available under your fingertips. This will help you to speed up the search
+and ensure you're undeleting the correct message.
+
+* Sender (mail address)
+* Date Sent/Receive/Deleted
+* Folder where the email was stored!
+* Message Subject
+
+With those information you can easily identify the message.
+
+#.  You must know the exact folder name in which the message was located before
+    it got deleted.
+
+    You can find get a listing of the folders belonging the a user using the
+    :command:`kolab` cli tools.
+
+    .. parsed-literal::
+
+        :command:`# kolab lm user/john.doe*@example.org`
+        user/john.doe@example.org
+        user/john.doe/Archive@example.org
+        user/john.doe/Calendar@example.org
+        [...]
+
+
+#.  Get a listing of all the deleted/expunged messages in a specific folder,
+    search for the right message and write down the message UID.
+
+    .. parsed-literal::
+
+        :command:`# su - cyrus -c "/usr/lib/cyrus-imapd/unexpunge -l user/john.doe/Archive@example.org"`
+        UID: 1
+                Size: 634
+                Sent: Wed Mar  4 12:00:00 2015
+                Recv: Wed Mar  4 00:17:33 2015
+                Expg: Wed Mar  4 00:22:47 2015
+                From: Doe, Jane <jane.doe@example.org>
+                To  : Doe, John <john.doe@example.org>
+                Cc  :
+                Bcc :
+                Subj: "Important notes for the next trip!"
+
+#.  Restore the message (single message)
+
+    .. parsed-literal::
+
+        :command:`# su - cyrus -c "/usr/lib/cyrus-imapd/unexpunge -u -d -v user/john.doe/Archive@example.org 1"`
+        restoring expunged messages in mailbox 'example/org!user/john.doe/Archive'
+        Unexpunged example/org!user/john.doe/Archive: 1 => 2
+        restored 1 expunged messages
+
+#.  (Alternative) Restore all message from this folder (double check before!)
+
+    .. parsed-literal::
+
+        :command:`# su - cyrus -c "/usr/lib/cyrus-imapd/unexpunge -a -d -v user/john.doe/Archive@example.org"`
+        restoring all expunged messages in mailbox 'example/org!user/john.doe/Archive'
+        Unexpunged example/org!user/john.doe/Archive: 2 => 3
+        restored 1 expunged messages
+
+#.  When working and the storage layer it sometimes can be useful to reset the
+    caches for a specific user. Kolab componants like iRony are heavy taking
+    use of cache.
+
+    .. parsed-literal::
+
+        :command:`# cd /usr/share/roundcubemail/`
+        :command:`# plugins/libkolab/bin/modcache.sh clear -u john.doe@example.org -h localhost`
+        4 records deleted from 'kolab_folders'
+
+Restore a Deleted Folder
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+To restore a complete folder that got deleted you can make use of the
+:command:`kolab` cli tools.
+
+#.  Identify the folder that needs to get restored:
+
+    .. parsed-literal::
+
+        :command:`# kolab list-deleted-mailboxes`
+        DELETED/user/john.doe/Calendar/54EBC651@example.org (Deleted at 2015-02-24 01:31:13)
+
+    .. note::
+
+        the 529F39E5 name is hex-⁠encoded unixtimestam
+
+        .. parsed-literal::
+
+            :command:`# perl -⁠le 'print scalar(localtime(hex("54EBC651")));`
+            Thu Feb 24 01:31:13 2015
+
+#.  Undelete the whole folder
+
+    .. parsed-literal::
+
+        :command:`# kolab undelete-⁠mailboxDELETED/user/john.doe/Calendar/54EBC651@example.ogr`
+
+#.  If you encounter problems think about clearing the cache (see above).
+
+
 MySQL
 =====
 
