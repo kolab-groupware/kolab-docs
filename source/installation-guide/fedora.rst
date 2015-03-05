@@ -4,7 +4,7 @@ Installation on Fedora
 
 1.  Install the Kolab Groupware repository configuration:
 
-    For Fedora 21:
+    For Fedora 21 (Twenty One):
 
     .. parsed-literal::
 
