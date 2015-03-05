@@ -4,6 +4,14 @@ Installation on Fedora
 
 1.  Install the Kolab Groupware repository configuration:
 
+    For Fedora 21:
+
+    .. parsed-literal::
+
+        # :command:`cd /etc/yum.repos.d/`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4/Fedora_21/Kolab:3.4.repo`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Fedora_21/Kolab:3.4:Updates.repo`
+
     For Fedora 20 (Heisenburg):
 
     .. parsed-literal::
