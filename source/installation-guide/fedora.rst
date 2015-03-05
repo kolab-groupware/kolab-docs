@@ -20,7 +20,16 @@ Installation on Fedora
         # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4/Fedora_20/Kolab:3.4.repo`
         # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Fedora_20/Kolab:3.4:Updates.repo`
 
-2.  Import the GPG key used to sign the packages:
+2.  Make sure that the Kolab repositories get a higher priority, eg. we need roundcubemail to be installed from Kolab rather than from Fedora:
+
+    .. parsed-literal::
+
+        # :command: `for f in /etc/yum.repos.d/Kolab*.repo`
+        # :command: `do`
+        # :command:     `sed -i "s#enabled=1#enabled=1\\npriority=0#g" $f`
+        # :command: `done`
+        
+3.  Import the GPG key used to sign the packages:
 
     .. parsed-literal::
 
@@ -37,7 +46,7 @@ Installation on Fedora
         # :command:`gpg --export --armor devel@lists.kolab.org > devel.asc`
         # :command:`rpm --import devel.asc`
 
-3.  Install Kolab Groupware:
+4.  Install Kolab Groupware:
 
     .. parsed-literal::
 
