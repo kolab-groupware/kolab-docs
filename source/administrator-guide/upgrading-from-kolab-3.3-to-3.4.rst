@@ -143,8 +143,9 @@ You can see the configuration differences here:
 
     http://git.kolab.org/pykolab/diff/conf/kolab.conf?id=pykolab-0.7.6&id2=pykolab-0.7.1
 
-We only have on new option for wallace, which can be ignored if you don't use
-wallace for resource management.
+We only have one new option for wallace, which can be ignored if you don't use
+wallace for resource management. Restart wallace and kolab-server after upgrading
+all python modules should be done anyway.
 
 
  .. parsed-literal::
@@ -154,9 +155,19 @@ wallace for resource management.
 
 Don't forget to restart the wallace service
 
+**On Debian**
+
  .. parsed-literal::
 
     # :command:`service wallace restart`
+    # :command:`service kolab-server restart`
+
+**On CentOS**
+
+ .. parsed-literal::
+
+    # :command:`service wallace restart`
+    # :command:`service kolabd restart`
 
 
 /etc/kolab-freebusy/config.ini
