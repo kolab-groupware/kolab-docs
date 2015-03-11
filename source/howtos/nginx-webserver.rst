@@ -110,7 +110,7 @@ and filenames according to their defaults.
 
         # :command:`rm -rf /etc/php-fpm.d/www.conf`
 
-#.  Create the PHP FPM Pools[#fpm_pools]_:
+#.  Create the PHP FPM Pools [#fpm_pools]_:
 
     .. parsed-literal::
 
@@ -214,21 +214,21 @@ and filenames according to their defaults.
 
         # :command:`cat > /etc/nginx/conf.d/default.conf` << EOF
         server {
-            listen                      8080 default_server;
-            server_name                 kolab.example.org;
-            rewrite			^ https://$server_name:8443$uri permanent; # enforce https redirect
+            listen		8080 default_server;
+            server_name		kolab.example.org;
+            rewrite		^ https://$server_name:8443$uri permanent; # enforce https redirect
         }
 
         server {
-            listen                      8443 ssl;
-            server_name                 kolab.example.org;
+            listen		8443 ssl;
+            server_name		kolab.example.org;
 
-            access_log                  /var/log/nginx/kolab.example.org-access_log;
-            error_log                   /var/log/nginx/kolab.example.org-error_log;
+            access_log		/var/log/nginx/kolab.example.org-access_log;
+            error_log		/var/log/nginx/kolab.example.org-error_log;
 
-            ssl                         on;
-            ssl_certificate             /etc/pki/tls/certs/localhost.pem;
-            ssl_certificate_key         /etc/pki/tls/certs/localhost.pem;
+            ssl			on;
+            ssl_certificate	/etc/pki/tls/certs/localhost.pem;
+            ssl_certificate_key	/etc/pki/tls/certs/localhost.pem;
 
             # Tell supporting clients to always connect over HTTPS
             add_header Strict-Transport-Security "max-age=15768000;includeSubDomains";
@@ -413,10 +413,12 @@ To ensure Perfect Forward Secrecy is enabled when possible
             # enabled when possible.
             ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
             ssl_prefer_server_ciphers on;
+	    
             ssl_ciphers "EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM
 	    EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384
 	    EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA RC4 !aNULL
 	    !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS";
+	    
 	    ssl_session_cache shared:SSL:10m;
 
 #.  Restart the **nginx** service:
@@ -476,19 +478,11 @@ Adding fastcgi_cache to nginx
 
         fastcgi_cache_path /var/lib/nginx/fastcgi/ levels=1:2 keys_zone=key-zone-name:16m max_size=256m inactive=1d;
 
-#.  Add the following into :file:`/etc/nginx/conf.d/default.conf`:
+#.  Add the following into **ssl server** section of :file:`/etc/nginx/conf.d/default.conf`:
 	    
    .. parsed-literal::
 
 	    fastcgi_cache key-zone-name;
-	    
-inside section
-
-   .. parsed-literal::
-
-        server {
-            listen                      8443 ssl;
-	    ...
 	    
 #.  Restart the **nginx** service:
 
@@ -515,7 +509,7 @@ servers in multitude of server configurations.
        ...
        # End common Kolab config
 
-move it into separate file (eg. :file:`/etc/nginx/kolab_common.conf`)
+    move it into separate file (eg. :file:`/etc/nginx/kolab_common.conf`)
 
 #. Use ``include`` directive to include the new file into configuration:
 
@@ -532,22 +526,22 @@ So your server configuration file can look like similar to this:
 
         fastcgi_cache_path /var/lib/nginx/fastcgi/ levels=1:2 keys_zone=kolab1-key-zone-name:16m max_size=256m inactive=1d;
 
-	server {
-            listen                      8080 default_server;
-            server_name                 kolab1.example.org;
-            rewrite			^ https://$server_name:8443$uri permanent; # enforce https redirect
+        server {
+            listen		8080 default_server;
+            server_name		kolab1.example.org;
+            rewrite		^ https://$server_name:8443$uri permanent; # enforce https redirect
         }
 
         server {
-            listen                      8443 ssl;
-            server_name                 kolab1.example.org;
+            listen		8443 ssl;
+            server_name		kolab1.example.org;
 
-            access_log                  /var/log/nginx/kolab1.example.org-access_log;
-            error_log                   /var/log/nginx/kolab1.example.org-error_log;
+            access_log		/var/log/nginx/kolab1.example.org-access_log;
+            error_log		/var/log/nginx/kolab1.example.org-error_log;
 
-            ssl                         on;
-            ssl_certificate             /etc/pki/tls/certs/kolab1.example.org.pem;
-            ssl_certificate_key         /etc/pki/tls/certs/kolab1.example.org.pem;
+            ssl			on;
+            ssl_certificate	/etc/pki/tls/certs/kolab1.example.org.pem;
+            ssl_certificate_key	/etc/pki/tls/certs/kolab1.example.org.pem;
 
 	    fastcgi_cache kolab1-key-zone-name;
 
