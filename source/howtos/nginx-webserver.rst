@@ -230,21 +230,12 @@ and filenames according to their defaults.
             ssl_certificate             /etc/pki/tls/certs/localhost.pem;
             ssl_certificate_key         /etc/pki/tls/certs/localhost.pem;
 
-            # These cipher settings should ensure Perfect Forward Secrecy is
-            # enabled when possible.
-            ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-            ssl_prefer_server_ciphers on;
-            ssl_ciphers "EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM
-	    EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384
-	    EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA RC4 !aNULL
-	    !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS";
-	    ssl_session_cache shared:SSL:10m;
-
             # Tell supporting clients to always connect over HTTPS
             add_header Strict-Transport-Security "max-age=15768000;includeSubDomains";
 
             fastcgi_param HTTPS on;
-	    
+
+	    # Start common Kolab config
 	    ##
 	    ## Chwala
 	    ##
@@ -367,6 +358,7 @@ and filenames according to their defaults.
 		fastcgi_pass unix:/var/run/php-fpm/kolab_freebusy.sock;
 		fastcgi_param SCRIPT_FILENAME /usr/share/kolab-freebusy/public_html/index.php;
 	    }
+	# End common Kolab config
         }
         EOF
 
@@ -405,6 +397,176 @@ and filenames according to their defaults.
         # :command:`service nginx start`
         # :command:`chkconfig nginx on`
 
+Tips, tweaks and optimizations
+==============================
+
+Tweaking ssl cipher settings
+----------------------------
+
+To ensure Perfect Forward Secrecy is enabled when possible
+
+#. Add the following into **http** section of :file:`/etc/nginx/nginx.conf`:
+
+    .. parsed-literal::
+
+            # These cipher settings should ensure Perfect Forward Secrecy is
+            # enabled when possible.
+            ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+            ssl_prefer_server_ciphers on;
+            ssl_ciphers "EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM
+	    EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384
+	    EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA RC4 !aNULL
+	    !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS";
+	    ssl_session_cache shared:SSL:10m;
+
+#.  Restart the **nginx** service:
+
+    .. parsed-literal::
+
+        # :command:`service nginx restart`
+
+
+Adding open file cache to nginx
+-------------------------------
+
+Open file cache will make nginx cache static files, that were accessed
+``open_file_cache_min_uses`` times.
+
+#.  Add the following into **http** section of :file:`/etc/nginx/nginx.conf`:
+
+    .. parsed-literal::
+
+       open_file_cache             max=16384 inactive=5m;
+       open_file_cache_valid       90s;
+       open_file_cache_min_uses    2;
+       open_file_cache_errors      on;
+
+#.  Restart the **nginx** service:
+
+    .. parsed-literal::
+
+        # :command:`service nginx restart`
+
+Adding fastcgi_cache to nginx
+-----------------------------
+
+#.  Create and set ownership on the following directories:
+
+    *   :file:`/var/lib/nginx/fastcgi/`
+
+    .. parsed-literal::
+
+        # :command:`mkdir -p /var/lib/nginx/fastcgi/`
+        # :command:`chown -R nginx:nginx /var/lib/nginx/fastcgi/`
+        # :command:`chmod -R 700 /var/lib/nginx/fastcgi/`
+
+#.  Add the following into **http** section of :file:`/etc/nginx/nginx.conf`:
+
+    .. parsed-literal::
+
+        fastcgi_cache_key "$scheme$request_method$host$request_uri";
+        fastcgi_cache_use_stale error timeout invalid_header http_500;
+	fastcgi_cache_valid 200 302 304 10m;
+	fastcgi_cache_valid 301 1h;
+	fastcgi_cache_min_uses 2;
+
+#.  Edit your config file :file:`/etc/nginx/conf.d/default.conf`:
+
+Add the following
+    
+    .. parsed-literal::
+
+        fastcgi_cache_path /var/lib/nginx/fastcgi/ levels=1:2 keys_zone=key-zone-name:16m max_size=256m inactive=1d;
+
+at the beginning of file, before
+
+    .. parsed-literal::
+
+        server {
+            listen                      8080 default_server;
+	    ...
+	    
+add the line
+
+   .. parsed-literal::
+
+	    fastcgi_cache key-zone-name;
+	    
+inside block
+
+   .. parsed-literal::
+
+        server {
+            listen                      8443 ssl;
+	    ...
+	    
+#.  Restart the **nginx** service:
+
+    .. parsed-literal::
+
+        # :command:`service nginx restart`
+
+Splitting Kolab nginx config for use with multi-domain
+------------------------------------------------------
+
+You can put common Kolab config into separate file and include it into
+server configurations, if you need different settings for
+different domains in a multi-domain setup (eg. different ssl
+certificates).
+
+This way you wount have to keep up to date lines common to all Kolab
+servers in multitude of server configurations.
+
+#. Common Kolab config is between lines:
+
+    .. parsed-literal::
+
+       # Start common Kolab config
+
+       # End common Kolab config
+
+move it into separate file (eg. :file:`/etc/nginx/kolab_common.conf`)
+
+#. Use ``include`` directive to include the new file into configuration:
+
+       .. parsed-literal::
+	  
+	  # Start common Kolab config
+	  include /etc/nginx/kolab_common.conf
+	  # End common Kolab config
+
+
+So your server configuration file can look like similar to this:
+
+    .. parsed-literal::
+
+        fastcgi_cache_path /var/lib/nginx/fastcgi/ levels=1:2 keys_zone=kolab1-key-zone-name:16m max_size=256m inactive=1d;
+
+	server {
+            listen                      8080 default_server;
+            server_name                 kolab1.example.org;
+            rewrite			^ https://$server_name:8443$uri permanent; # enforce https redirect
+        }
+
+        server {
+            listen                      8443 ssl;
+            server_name                 kolab.example.org;
+
+            access_log                  /var/log/nginx/kolab1.example.org-access_log;
+            error_log                   /var/log/nginx/kolab1.example.org-error_log;
+
+            ssl                         on;
+            ssl_certificate             /etc/pki/tls/certs/localhost.pem;
+            ssl_certificate_key         /etc/pki/tls/certs/localhost.pem;
+
+	    fastcgi_cache kolab1-key-zone-name;
+
+	    # Start common Kolab config
+	    include /etc/nginx/kolab_common.conf
+	    # End common Kolab config
+	}
+
+       
 .. rubric:: Footnotes
 
    .. [#fpm-pools] Values for fpm servers are taken from a
