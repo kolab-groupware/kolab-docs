@@ -214,21 +214,21 @@ and filenames according to their defaults.
 
         # :command:`cat > /etc/nginx/conf.d/default.conf` << EOF
         server {
-            listen		8080 default_server;
-            server_name		kolab.example.org;
-            rewrite		^ https://$server_name:8443$uri permanent; # enforce https redirect
+            listen 8080 default_server;
+            server_name kolab.example.org;
+            rewrite ^ https://$server_name:8443$uri permanent; # enforce https redirect
         }
 
         server {
-            listen		8443 ssl;
-            server_name		kolab.example.org;
+            listen 8443 ssl;
+            server_name kolab.example.org;
 
-            access_log		/var/log/nginx/kolab.example.org-access_log;
-            error_log		/var/log/nginx/kolab.example.org-error_log;
+            access_log /var/log/nginx/kolab.example.org-access_log;
+            error_log /var/log/nginx/kolab.example.org-error_log;
 
-            ssl			on;
-            ssl_certificate	/etc/pki/tls/certs/localhost.pem;
-            ssl_certificate_key	/etc/pki/tls/certs/localhost.pem;
+            ssl on;
+            ssl_certificate /etc/pki/tls/certs/localhost.pem;
+            ssl_certificate_key /etc/pki/tls/certs/localhost.pem;
 
             # Tell supporting clients to always connect over HTTPS
             add_header Strict-Transport-Security "max-age=15768000;includeSubDomains";
@@ -438,10 +438,10 @@ Open file cache will make nginx cache static files, that were accessed
 
     .. parsed-literal::
 
-       open_file_cache             max=16384 inactive=5m;
-       open_file_cache_valid       90s;
-       open_file_cache_min_uses    2;
-       open_file_cache_errors      on;
+       open_file_cache max=16384 inactive=5m;
+       open_file_cache_valid 90s;
+       open_file_cache_min_uses 2;
+       open_file_cache_errors on;
 
 #.  Restart the **nginx** service:
 
@@ -527,21 +527,21 @@ So your server configuration file can look like similar to this:
         fastcgi_cache_path /var/lib/nginx/fastcgi/ levels=1:2 keys_zone=kolab1-key-zone-name:16m max_size=256m inactive=1d;
 
         server {
-            listen		8080 default_server;
-            server_name		kolab1.example.org;
-            rewrite		^ https://$server_name:8443$uri permanent; # enforce https redirect
+            listen 8080 default_server;
+            server_name kolab1.example.org;
+            rewrite ^ https://$server_name:8443$uri permanent; # enforce https redirect
         }
 
         server {
-            listen		8443 ssl;
-            server_name		kolab1.example.org;
+            listen 8443 ssl;
+            server_name kolab1.example.org;
 
-            access_log		/var/log/nginx/kolab1.example.org-access_log;
-            error_log		/var/log/nginx/kolab1.example.org-error_log;
+            access_log /var/log/nginx/kolab1.example.org-access_log;
+            error_log /var/log/nginx/kolab1.example.org-error_log;
 
-            ssl			on;
-            ssl_certificate	/etc/pki/tls/certs/kolab1.example.org.pem;
-            ssl_certificate_key	/etc/pki/tls/certs/kolab1.example.org.pem;
+            ssl on;
+            ssl_certificate /etc/pki/tls/certs/kolab1.example.org.pem;
+            ssl_certificate_key /etc/pki/tls/certs/kolab1.example.org.pem;
 
 	    fastcgi_cache kolab1-key-zone-name;
 
@@ -553,7 +553,7 @@ So your server configuration file can look like similar to this:
        
 .. rubric:: Footnotes
 
-   .. [#fpm-pools] Values for fpm servers are taken from a
+   .. [#fpm_pools] Values for fpm servers are taken from a
 		   moderately loaded virtual server with 4x3.5GHz CPU
 		   and 4GB RAM, feel free to adjust them according to
 		   your setup.
