@@ -520,7 +520,7 @@ servers in multitude of server configurations.
 	  # End common Kolab config
 
 
-So your server configuration file can look like similar to this:
+   So your server configuration file can look like similar to this:
 
     .. parsed-literal::
 
@@ -553,7 +553,7 @@ So your server configuration file can look like similar to this:
        
 .. rubric:: Footnotes
 
-   .. [#fpm_pools] Values for fpm servers are taken from a
+.. [#fpm_pools] Values for fpm servers are taken from a
 		   moderately loaded virtual server with 4x3.5GHz CPU
 		   and 4GB RAM, feel free to adjust them according to
 		   your setup.
