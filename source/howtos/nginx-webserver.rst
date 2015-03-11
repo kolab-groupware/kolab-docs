@@ -470,29 +470,19 @@ Adding fastcgi_cache to nginx
 	fastcgi_cache_valid 301 1h;
 	fastcgi_cache_min_uses 2;
 
-#.  Edit your config file :file:`/etc/nginx/conf.d/default.conf`:
+#.  Add the following outside **server** sections of :file:`/etc/nginx/conf.d/default.conf`:
 
-Add the following
-    
     .. parsed-literal::
 
         fastcgi_cache_path /var/lib/nginx/fastcgi/ levels=1:2 keys_zone=key-zone-name:16m max_size=256m inactive=1d;
 
-at the beginning of file, before
-
-    .. parsed-literal::
-
-        server {
-            listen                      8080 default_server;
-	    ...
+#.  Add the following into :file:`/etc/nginx/conf.d/default.conf`:
 	    
-add the line
-
    .. parsed-literal::
 
 	    fastcgi_cache key-zone-name;
 	    
-inside block
+inside section
 
    .. parsed-literal::
 
@@ -522,7 +512,7 @@ servers in multitude of server configurations.
     .. parsed-literal::
 
        # Start common Kolab config
-
+       ...
        # End common Kolab config
 
 move it into separate file (eg. :file:`/etc/nginx/kolab_common.conf`)
@@ -550,14 +540,14 @@ So your server configuration file can look like similar to this:
 
         server {
             listen                      8443 ssl;
-            server_name                 kolab.example.org;
+            server_name                 kolab1.example.org;
 
             access_log                  /var/log/nginx/kolab1.example.org-access_log;
             error_log                   /var/log/nginx/kolab1.example.org-error_log;
 
             ssl                         on;
-            ssl_certificate             /etc/pki/tls/certs/localhost.pem;
-            ssl_certificate_key         /etc/pki/tls/certs/localhost.pem;
+            ssl_certificate             /etc/pki/tls/certs/kolab1.example.org.pem;
+            ssl_certificate_key         /etc/pki/tls/certs/kolab1.example.org.pem;
 
 	    fastcgi_cache kolab1-key-zone-name;
 
