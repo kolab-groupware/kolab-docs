@@ -73,6 +73,10 @@ Simple Installation
 More Complex Installation
 =========================
 
+The following configuration is tested for Kolab 3.4 on CentOS6. It
+should also work under Debian and Ubuntu, provided you adjust paths
+and filenames according to their defaults.
+
 .. WARNING::
 
     This HOWTO uses ports 8080 and 8443 as it is intended to demonstrate running
@@ -106,193 +110,7 @@ More Complex Installation
 
         # :command:`rm -rf /etc/php-fpm.d/www.conf`
 
-#.  Create and set ownership on the following directories:
-
-    *   :file:`/var/lib/nginx/fastcgi/`
-    *   :file:`/var/lib/nginx/fastcgi/tmp/`
-
-    .. parsed-literal::
-
-        # :command:`mkdir -p /var/lib/nginx/fastcgi/tmp/`
-        # :command:`chown -R nginx:nginx /var/lib/nginx/fastcgi/`
-        # :command:`chmod 700 /var/lib/nginx/fastcgi/ \\
-            /var/lib/nginx/fastcgi/tmp/`
-
-#.  Replace the contents of :file:`/etc/nginx/conf.d/default.conf`:
-
-    .. parsed-literal::
-
-        # :command:`cat > /etc/nginx/conf.d/default.conf` << EOF
-        fastcgi_cache_path /var/lib/nginx/fastcgi/ levels=1:2 keys_zone=kolab.example.org:16m max_size=256m inactive=1d;
-        fastcgi_temp_path /var/lib/nginx/fastcgi/tmp 1 2;
-        fastcgi_cache_key "$scheme$request_method$host$request_uri";
-        fastcgi_cache_use_stale error timeout invalid_header http_500;
-
-        server {
-            listen                      8080 default_server;
-            server_name                 kolab.example.org;
-            return                      301 https://$host:8443$request_uri; # enforce https
-        }
-
-        server {
-            listen                      8443 ssl;
-            server_name                 kolab.example.org;
-
-            access_log                  /var/log/nginx/kolab.example.org-access_log;
-            error_log                   /var/log/nginx/kolab.example.org-error_log;
-
-            ssl                         on;
-            ssl_certificate             /etc/pki/tls/certs/localhost.pem;
-            ssl_certificate_key         /etc/pki/tls/certs/localhost.pem;
-
-            # These cipher settings should ensure Perfect Forward Secrecy is
-            # enabled when possible.
-            ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-            ssl_prefer_server_ciphers on;
-            ssl_ciphers "EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384 EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA RC4 !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS";
-
-            # Tell supporting clients to always connect over HTTPS
-            add_header Strict-Transport-Security "max-age=15768000;includeSubDomains";
-
-            open_file_cache             max=1024 inactive=1m;
-            open_file_cache_valid       90s;
-            open_file_cache_min_uses    2;
-
-            fastcgi_param HTTPS on;
-            fastcgi_keep_conn on;
-            fastcgi_cache kolab.example.org;
-            fastcgi_cache_valid 200 302 304 10m;
-            fastcgi_cache_valid 301 1h;
-            fastcgi_cache_min_uses 2;
-            fastcgi_buffers 256 4k;
-            fastcgi_busy_buffers_size 8k;
-            fastcgi_temp_file_write_size 8k;
-
-            ##
-            ## Chwala
-            ##
-            location /chwala {
-                index index.php;
-                alias /usr/share/chwala/public_html;
-
-                client_max_body_size 30M; # set maximum upload size
-
-                # enable php
-                location ~ \\.php$ {
-                    include fastcgi_params;
-                    fastcgi_pass unix:/var/run/php-fpm/kolab.example.org_chwala.sock;
-                    fastcgi_param SCRIPT_FILENAME $request_filename;
-                    # Without this, PHPSESSION is replaced by webadmin-api X-Session-Token
-                    fastcgi_param PHP_VALUE "session.auto_start=0
-                        session.use_cookies=0";
-                    fastcgi_pass_header X-Session-Token;
-                }
-            }
-
-            ##
-            ## iRony
-            ##
-            location /iRony {
-                alias  /usr/share/iRony/public_html/index.php;
-
-                client_max_body_size 30M; # set maximum upload size
-
-                # Make Apple Calendar.app and Contacts.app happy:
-                rewrite ^/.well-known/caldav / last;
-                rewrite ^/.well-known/carddav / last;
-
-                # If Nginx was built with http_dav_module:
-                dav_methods  PUT DELETE MKCOL COPY MOVE; # PROPFIND;
-                # Required Nginx to be built with nginx-dav-ext-module:
-                dav_ext_methods PROPFIND OPTIONS;
-
-                include fastcgi_params;
-                fastcgi_index index.php;
-                fastcgi_pass unix:/var/run/php-fpm/kolab.example.org_iRony.sock;
-                fastcgi_split_path_info ^(.+\.php)(/.*)$;
-                fastcgi_param SCRIPT_FILENAME /usr/share/iRony/public_html/index.php;
-                fastcgi_param PATH_INFO $fastcgi_path_info;
-                # Enable this if you want to be able to browse iRony with a web browser.
-                #fastcgi_param DAVBROWSER 1;
-            }
-
-            ##
-            ## Kolab Webclient
-            ##
-
-            # For roundcube CSRF token support.
-            rewrite "^/roundcubemail/[a-f0-9]{16}/(.*)" /roundcubemail/$1 last;
-
-            location /roundcubemail {
-                index index.php;
-                alias /usr/share/roundcubemail/public_html;
-
-                client_max_body_size 30M; # set maximum upload size for mail attachments
-
-                # enable php
-                location ~ \\.php$ {
-                    include fastcgi_params;
-                    fastcgi_split_path_info ^(.+\\.php)(/.*)$;
-                    fastcgi_pass unix:/var/run/php-fpm/kolab.example.org_roundcubemail.sock;
-                    fastcgi_param SCRIPT_FILENAME $request_filename;
-                }
-            }
-
-            ##
-            ## Kolab Web Administration Panel (WAP) and API
-            ##
-            location /kolab-webadmin {
-                index index.php;
-                alias /usr/share/kolab-webadmin/public_html;
-                try_files $uri $uri/ @kolab-wapapi;
-
-                # enable php
-                location ~ \\.php$ {
-                    include fastcgi_params;
-                    fastcgi_pass unix:/var/run/php-fpm/kolab.example.org_kolab-webadmin.sock;
-                    fastcgi_param SCRIPT_FILENAME $request_filename;
-                    # Without this, PHPSESSION is replaced by webadmin-api X-Session-Token
-                    fastcgi_param PHP_VALUE "session.auto_start=0
-                        session.use_cookies=0";
-                    fastcgi_pass_header X-Session-Token;
-                }
-            }
-
-            # kolab-webadmin api
-            location @kolab-wapapi {
-                rewrite ^/kolab-webadmin/api/(.*)\\.(.*)$ /kolab-webadmin/api/index.php?service=$1&method=$2 last;
-            }
-
-            ##
-            ## Kolab syncroton ActiveSync
-            ##
-            location /Microsoft-Server-ActiveSync {
-                alias  /usr/share/kolab-syncroton/index.php;
-
-                client_max_body_size 30M; # set maximum upload size for mail attachments
-
-                include fastcgi_params;
-                fastcgi_read_timeout 1200;
-                fastcgi_index index.php;
-                fastcgi_pass unix:/var/run/php-fpm/kolab.example.org_kolab-syncroton.sock;
-                fastcgi_param SCRIPT_FILENAME /usr/share/kolab-syncroton/index.php;
-            }
-
-            ##
-            ## Kolab Free/Busy
-            ##
-            location /freebusy {
-                alias  /usr/share/kolab-freebusy/public_html/index.php;
-
-                include fastcgi_params;
-                fastcgi_index index.php;
-                fastcgi_pass unix:/var/run/php-fpm/kolab.example.org_kolab-freebusy.sock;
-                fastcgi_param SCRIPT_FILENAME /usr/share/kolab-freebusy/public_html/index.php;
-            }
-        }
-        EOF
-
-#.  Create the PHP FPM Pools:
+#.  Create the PHP FPM Pools[#fpm_pools]_:
 
     .. parsed-literal::
 
@@ -390,6 +208,168 @@ More Complex Installation
         php_value[mbstring.func_overload] = 0
         EOF
 
+#.  Replace the contents of :file:`/etc/nginx/conf.d/default.conf`:
+
+    .. parsed-literal::
+
+        # :command:`cat > /etc/nginx/conf.d/default.conf` << EOF
+        server {
+            listen                      8080 default_server;
+            server_name                 kolab.example.org;
+            rewrite			^ https://$server_name:8443$uri permanent; # enforce https redirect
+        }
+
+        server {
+            listen                      8443 ssl;
+            server_name                 kolab.example.org;
+
+            access_log                  /var/log/nginx/kolab.example.org-access_log;
+            error_log                   /var/log/nginx/kolab.example.org-error_log;
+
+            ssl                         on;
+            ssl_certificate             /etc/pki/tls/certs/localhost.pem;
+            ssl_certificate_key         /etc/pki/tls/certs/localhost.pem;
+
+            # These cipher settings should ensure Perfect Forward Secrecy is
+            # enabled when possible.
+            ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+            ssl_prefer_server_ciphers on;
+            ssl_ciphers "EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM
+	    EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384
+	    EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA RC4 !aNULL
+	    !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS";
+	    ssl_session_cache shared:SSL:10m;
+
+            # Tell supporting clients to always connect over HTTPS
+            add_header Strict-Transport-Security "max-age=15768000;includeSubDomains";
+
+            fastcgi_param HTTPS on;
+	    
+	    ##
+	    ## Chwala
+	    ##
+	    location /chwala {
+		index index.php;
+		alias /usr/share/chwala/public_html;
+
+		client_max_body_size 1000M; # set maximum upload size
+
+		# enable php
+		location ~ \.php$ {
+		    include fastcgi_params;
+		    fastcgi_pass unix:/var/run/php-fpm/kolab_chwala.sock;
+		    fastcgi_param SCRIPT_FILENAME $request_filename;
+		    # Without this, PHPSESSION is replaced by webadmin-api X-Session-Token
+		    fastcgi_param PHP_VALUE "session.auto_start=0
+		    session.use_cookies=0";
+		    fastcgi_pass_header X-Session-Token;
+		}
+	    }
+
+	    ##
+	    ## iRony
+	    ##
+	    location /iRony {
+		alias  /usr/share/iRony/public_html/index.php;
+
+		client_max_body_size 1000M; # set maximum upload size for webdav
+		# adjust along with upload_max_filesize and post_max_size in /etc/php.ini
+
+		# If Nginx was built with http_dav_module:
+		dav_methods  PUT DELETE MKCOL COPY MOVE;
+		# Required Nginx to be built with nginx-dav-ext-module:
+		# dav_ext_methods PROPFIND OPTIONS;
+
+		include fastcgi_params;
+		fastcgi_index index.php;
+		fastcgi_pass unix:/var/run/php-fpm/kolab_iRony.sock;
+		fastcgi_param SCRIPT_FILENAME $request_filename;
+	    }
+	    location ~* /.well-known/(cal|card)dav {
+		rewrite ^ /iRony/ permanent;
+	    }
+
+	    ##
+	    ## Kolab Webclient
+	    ##
+	    location / {
+		index index.php;
+		root /usr/share/roundcubemail/public_html;
+
+		client_max_body_size 30M; # maximum upload size for mail attachments
+
+		# Deny all attempts to access hidden files such as .htaccess, .htpasswd, .DS_Store (Mac).
+		location ~ /(README(.md)?|INSTALL|LICENSE|CHANGELOG|UPGRADING)$ {
+		    deny all;
+		}
+		location ~ /(bin|SQL|config|logs)/ {
+		    deny all;
+		}
+		location ~ /program/(include|lib|localization|steps)/ {
+		    deny all;
+		}
+
+		# enable php
+		location ~ \.php$ {
+		    include fastcgi_params;
+		    fastcgi_split_path_info ^(.+\.php)(/.*)$;
+		    fastcgi_pass unix:/var/run/php-fpm/kolab_roundcubemail.sock;
+		    fastcgi_param SCRIPT_FILENAME $request_filename;
+		}
+	    }
+
+	    ##
+	    ## Kolab Web Administration Panel (WAP) and API
+	    ##
+	    location /kolab-webadmin {
+		index index.php;
+		alias /usr/share/kolab-webadmin/public_html;
+		try_files $uri $uri/ @kolab-wapapi;
+
+		# enable php
+		location ~ \.php$ {
+		    include fastcgi_params;
+		    fastcgi_pass unix:/var/run/php-fpm/kolab_webadmin.sock;
+		    fastcgi_param SCRIPT_FILENAME $request_filename;
+		    # Without this, PHPSESSION is replaced by webadmin-api X-Session-Token
+		    fastcgi_param PHP_VALUE "session.auto_start=0
+		    session.use_cookies=0";
+		    fastcgi_pass_header X-Session-Token;
+		}
+	    }
+	    # kolab-webadmin api
+	    location @kolab-wapapi {
+		rewrite ^/kolab-webadmin/api/(.*)\.(.*)$ /kolab-webadmin/api/index.php?service=$1&method=$2;
+	    }
+
+	    ##
+	    ## Kolab syncroton ActiveSync
+	    ##
+	    location /Microsoft-Server-ActiveSync {
+		alias  /usr/share/kolab-syncroton/index.php;
+
+		client_max_body_size 30M; # maximum upload size for mail attachments
+
+		include fastcgi_params;
+		fastcgi_index index.php;
+		fastcgi_pass unix:/var/run/php-fpm/kolab_syncroton.sock;
+		fastcgi_param SCRIPT_FILENAME /usr/share/kolab-syncroton/index.php;
+	    }
+
+	    ##
+	    ## Kolab Free/Busy
+	    ##
+	    location /freebusy {
+		alias  /usr/share/kolab-freebusy/public_html/index.php;
+
+		include fastcgi_params;
+		fastcgi_index index.php;
+		fastcgi_pass unix:/var/run/php-fpm/kolab_freebusy.sock;
+		fastcgi_param SCRIPT_FILENAME /usr/share/kolab-freebusy/public_html/index.php;
+	    }
+        }
+        EOF
+
 #.  For this demonstrative configuration, make sure the following setting is in
     :file:`/etc/roundcubemail/config.inc.php`:
 
@@ -399,7 +379,7 @@ More Complex Installation
 
 #.  Ensure, if you are using HTTPS, that the Chwala URL (``kolab_files_url``)
     in :file:`/etc/roundcubemail/kolab_files.inc.php` is also set to
-    ``https`` rather than ``http``,  or most browsers will be unable to access
+    ``https`` rather than ``http``, and port set to 8443,  or most browsers will be unable to access
     the files component in Roundcube.
 
 #.  For configurations that use SSL, make sure to work around a known issue in
@@ -424,3 +404,10 @@ More Complex Installation
 
         # :command:`service nginx start`
         # :command:`chkconfig nginx on`
+
+.. rubric:: Footnotes
+
+   .. [#fpm-pools] Values for fpm servers are taken from a
+		   moderately loaded virtual server with 4x3.5GHz CPU
+		   and 4GB RAM, feel free to adjust them according to
+		   your setup.
