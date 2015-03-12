@@ -225,7 +225,7 @@ This is the prefered way and it's easier to work with.
     .. parsed-literal::
 
         # :command:`sed -i -e 's/^SSLProtocol.*/SSLProtocol All -SSLv2 -SSLv3/' /etc/httpd/conf.d/ssl.conf`
-        # :command:`sed -i -e "s/^SSLProtocol/SSLHonorCipherOrder on\nSSLProtocol/" /etc/httpd/conf.d/ssl.conf`
+        # :command:`sed -i -e "s/^SSLProtocol/SSLHonorCipherOrder on\\nSSLProtocol/" /etc/httpd/conf.d/ssl.conf`
         # :command:`sed -i -e 's/^SSLCipherSuite.*/SSLCipherSuite "EDH+CAMELLIA:EDH+aRSA:EECDH+aRSA+AESGCM:EECDH+aRSA+SHA384:EECDH+aRSA+SHA256:EECDH:+CAMELLIA256:+AES256:+CAMELLIA128:+AES128:+SSLv3:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!DSS:!RC4:!SEED:!ECDSA:CAMELLIA256-SHA:AES256-SHA:CAMELLIA128-SHA:AES128-SHA"/' /etc/httpd/conf.d/ssl.conf`
 
 
