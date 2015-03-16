@@ -65,7 +65,8 @@ General invitation policy settings
 
     When receiving an iTip REPLY, this policy automatically updates the copy of the
     referring object in the user's personal folders with the updated participant status
-    of the replying user.
+    of the replying user. This also reacts on iTip CANCEL messages by updating
+    the object's status to CANCELLED and the transparency to TRANSPARENT.
 
 *   ``ALL_UPDATE_AND_NOTIFY``
 
@@ -83,6 +84,16 @@ General invitation policy settings
 
     Same as ``ALL_SAVE_TO_FOLDER`` but forwarding the original iTip message
     to the user's email inbox for notification purposes.
+
+*   ``ALL_CANCEL_DELETE``
+
+    When receiving an iTip CANCEL message, this policy removes the copy of the
+    referring object from the user's personal folders.
+
+*   ``ALL_CANCEL_DELETE_AND_NOTIFY``
+
+    Same as ``ALL_CANCEL_DELETE`` but with an additional notification email being sent to
+    the recipient reporting removal of the referred object.
 
 
 Event-specific policy settings
