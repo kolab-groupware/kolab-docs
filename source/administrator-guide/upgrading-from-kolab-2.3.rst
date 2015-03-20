@@ -366,7 +366,7 @@ Login to kolab3.example.org to execute the steps in this procedure.
     .. parsed-literal::
 
         # kolab lm "user/%@example.org" | \\
-           sed -e 's/user\///g' | \\
+           sed -e 's/user\\///g' | \\
            while read user; do
                kolab-formatupgrade \\
                    --user "${user}" \\
