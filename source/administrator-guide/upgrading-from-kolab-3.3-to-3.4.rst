@@ -362,4 +362,12 @@ A new field got introduced to mark the default type (for example 'Kolab User').
 After the database update has been applied. Logout from the kolab-webadmin interface
 and login back in to load the new changes.
 
+mysql database: roundcube
+-------------------------
+
+The libkolab plugin had some changes. Apply them using the following command:
+
+ .. parsed-literal::
+
+    # :command:`/usr/share/roundcubemail/bin/updatedb.sh --dir /usr/share/roundcubemail/plugins/libkolab/SQL --package libkolab`
 
