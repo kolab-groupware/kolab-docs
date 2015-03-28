@@ -26,6 +26,7 @@ if [ ! -f "osc_cache/obs_projects.list" -o ${refresh} -eq 1 ]; then
 
     # Legacy Kolab releases do not need to be updated
     sed -r -i \
+        -e '/^cyrus-imapd/d' \
         -e '/^Kolab:3\.0/d' \
         -e '/^Kolab:3\.1/d' \
         -e '/^Kolab:3\.2/d' \
