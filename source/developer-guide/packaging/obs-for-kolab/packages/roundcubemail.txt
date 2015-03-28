@@ -4,11 +4,33 @@ roundcubemail
 =============
 
 The **roundcubemail** package contains the upstream web-application used
-for webmail.
+for the webmail interface in Kolab Groupware.
 
-Among its sources are the following five categories:
+It's packaging is rather complex, with one tarball resulting in some 100
+sub-packages.
 
-**Core Roundcube Library**
+The generic package **roundcubemail** is a so-called meta-package, that
+depends on a set of sub-packages. As such, a
+:command:`yum install roundcubemail` results in a fully function,
+minimal installation of Roundcube (with only the core, few required
+plugins, and one skin).
+
+Among the Roundcube sources are three generic categories of source code
+that are packaged separately -- the core, the plugins and the skins.
+
+The core program and each plugin may contain static files (assets) for
+the core program or the plugin to function, that are independent of the
+skin being used, but may also contain static files (assets) that are
+specific to a particular skin being used.
+
+Program code, skins and assets are all packaged separately, so that
+a particular server system can be made to serve only static contents.
+
+.. seealso::
+
+    *   :ref:`article-what-goes-in-to-a-documentroot-and-what-does-not-belong-there`
+
+**Core Roundcube Library and Program**
 
     The core Roundcube library contains generic program code shared
     between applications such as :ref:`package-chwala`,
@@ -20,63 +42,61 @@ Among its sources are the following five categories:
     configured using :file:`/etc/roundcubemail/config.inc.php` and
     :file:`/etc/roundcubemail/defaults.inc.php`.
 
-**Core Roundcube Program**
-
     The core Roundcube program wraps up the core library, required
     plugins and the available skins in to the full webmail interface.
 
-Both these categories are packaged as **roundcubemail-core**, providing
-a virtual capability of *roundcubemail(core) = %{version}-%{release}*
-that other packages depend on.
+    The core is packaged as **roundcubemail-core**, providing a virtual
+    capability of *roundcubemail(core) = %{version}-%{release}* that other
+    packages depend on.
 
-This package also depends on the plugins that are required, and at
-least one skin (referred to by the virtual provides
-*roundcubemail(skin)*).
+    This package also depends on the plugins that are required, and at
+    least one skin (referred to by the virtual provides
+    *roundcubemail(skin)*).
 
 **Required Plugins**
 
-Required plugins are packaged separately, and include:
+    Required plugins are packaged separately, and include:
 
-*   ``filesystem_attachments``
-*   ``jqueryui``
+    *   ``filesystem_attachments``
+    *   ``jqueryui``
 
 **Additional Plugins**
 
-*   ``acl``
-*   ``additional_message_headers``
-*   ``archive``
-*   ``attachment_reminder``
-*   ``autologon``
-*   ``database_attachments``
-*   ``debug_logger``
-*   ``emoticons``
-*   ``enigma``
-*   ``example_addressbook``
-*   ``help``
-*   ``hide_blockquote``
-*   ``http_authentication``
-*   ``identity_select``
-*   ``legacy_browser``
-*   ``managesieve``
-*   ``markasjunk``
-*   ``new_user_dialog``
-*   ``new_user_identity``
-*   ``newmail_notifier``
-*   ``password``
-*   ``redundant_attachments``
-*   ``show_additional_headers``
-*   ``squirrelmail_usercopy``
-*   ``subscriptions_option``
-*   ``userinfo``
-*   ``vcard_attachments``
-*   ``virtuser_file``
-*   ``virtuser_query``
-*   ``zipdownload``
+    *   ``acl``
+    *   ``additional_message_headers``
+    *   ``archive``
+    *   ``attachment_reminder``
+    *   ``autologon``
+    *   ``database_attachments``
+    *   ``debug_logger``
+    *   ``emoticons``
+    *   ``enigma``
+    *   ``example_addressbook``
+    *   ``help``
+    *   ``hide_blockquote``
+    *   ``http_authentication``
+    *   ``identity_select``
+    *   ``legacy_browser``
+    *   ``managesieve``
+    *   ``markasjunk``
+    *   ``new_user_dialog``
+    *   ``new_user_identity``
+    *   ``newmail_notifier``
+    *   ``password``
+    *   ``redundant_attachments``
+    *   ``show_additional_headers``
+    *   ``squirrelmail_usercopy``
+    *   ``subscriptions_option``
+    *   ``userinfo``
+    *   ``vcard_attachments``
+    *   ``virtuser_file``
+    *   ``virtuser_query``
+    *   ``zipdownload``
 
 **Skins**
 
-*   ``classic``
-*   ``larry``
+    *   ``classic``
+    *   ``larry``
 
 .. table:: Version Table for roundcubemail
 
@@ -111,11 +131,11 @@ Required plugins are packaged separately, and include:
     +-------------------+---------------+--------------------------------------+
     |                   | openSUSE_13.1 | 1.0.4-3                              |
     +-------------------+---------------+--------------------------------------+
-    | Kolab:14          | CentOS_6      | 1.1-25.17                            |
+    | Kolab:14          | CentOS_6      | 1.1.1.3-1                            |
     +-------------------+---------------+--------------------------------------+
-    |                   | CentOS_7      | 1.1-25.17                            |
+    |                   | CentOS_7      | 1.1.1.3-1                            |
     +-------------------+---------------+--------------------------------------+
-    |                   | Debian_7.0    | 1:1.1~dev20150123-25.17              |
+    |                   | Debian_7.0    | 1:1.1.1.3-1                          |
     +-------------------+---------------+--------------------------------------+
     |                   | Debian_8.0    | N/A                                  |
     +-------------------+---------------+--------------------------------------+
@@ -127,17 +147,17 @@ Required plugins are packaged separately, and include:
     +-------------------+---------------+--------------------------------------+
     |                   | UCS_3.2       | N/A                                  |
     +-------------------+---------------+--------------------------------------+
-    |                   | UCS_4.0       | 1:1.1~dev20150123-25.17              |
+    |                   | UCS_4.0       | 1:1.1.1.3-1                          |
     +-------------------+---------------+--------------------------------------+
     |                   | Ubuntu_12.04  | N/A                                  |
     +-------------------+---------------+--------------------------------------+
     |                   | Ubuntu_13.10  | N/A                                  |
     +-------------------+---------------+--------------------------------------+
-    |                   | Ubuntu_14.04  | 1:1.1~dev20150123-25.17              |
+    |                   | Ubuntu_14.04  | 1:1.1.1.3-1                          |
     +-------------------+---------------+--------------------------------------+
-    |                   | openSUSE_12.3 | 1.1-25.17                            |
+    |                   | openSUSE_12.3 | 1.1.1.3-1                            |
     +-------------------+---------------+--------------------------------------+
-    |                   | openSUSE_13.1 | 1.1-25.17                            |
+    |                   | openSUSE_13.1 | 1.1.1.3-1                            |
     +-------------------+---------------+--------------------------------------+
     | Kolab:3.3         | CentOS_6      | 1.1-20.1                             |
     +-------------------+---------------+--------------------------------------+
@@ -167,59 +187,115 @@ Required plugins are packaged separately, and include:
     +-------------------+---------------+--------------------------------------+
     |                   | openSUSE_13.1 | 1.1-20.1                             |
     +-------------------+---------------+--------------------------------------+
-    | Kolab:3.3:Updates | CentOS_6      | 1.1-20.8                             |
+    | Kolab:3.3:Updates | CentOS_6      | 1.1-20.9                             |
     +-------------------+---------------+--------------------------------------+
-    |                   | CentOS_7      | 1.1-20.8                             |
+    |                   | CentOS_7      | 1.1-20.9                             |
     +-------------------+---------------+--------------------------------------+
-    |                   | Debian_7.0    | 1:1.1~dev20140404-20.8               |
+    |                   | Debian_7.0    | 1:1.1~dev20140404-20.9               |
     +-------------------+---------------+--------------------------------------+
-    |                   | Debian_8.0    | 1:1.1~dev20140404-20.8               |
+    |                   | Debian_8.0    | 1:1.1~dev20140404-20.9               |
     +-------------------+---------------+--------------------------------------+
-    |                   | Fedora_19     | 1.1-20.8                             |
+    |                   | Fedora_19     | 1.1-20.9                             |
     +-------------------+---------------+--------------------------------------+
-    |                   | Fedora_20     | 1.1-20.8                             |
+    |                   | Fedora_20     | 1.1-20.9                             |
     +-------------------+---------------+--------------------------------------+
     |                   | Fedora_21     | N/A                                  |
     +-------------------+---------------+--------------------------------------+
-    |                   | UCS_3.2       | 1:1.1~dev20140404-20.8               |
+    |                   | UCS_3.2       | 1:1.1~dev20140404-20.9               |
     +-------------------+---------------+--------------------------------------+
     |                   | UCS_4.0       | N/A                                  |
     +-------------------+---------------+--------------------------------------+
-    |                   | Ubuntu_12.04  | 1:1.1~dev20140404-20.8               |
+    |                   | Ubuntu_12.04  | 1:1.1~dev20140404-20.9               |
     +-------------------+---------------+--------------------------------------+
-    |                   | Ubuntu_13.10  | 1:1.1~dev20140404-20.8               |
+    |                   | Ubuntu_13.10  | 1:1.1~dev20140404-20.9               |
     +-------------------+---------------+--------------------------------------+
-    |                   | Ubuntu_14.04  | 1:1.1~dev20140404-20.8               |
+    |                   | Ubuntu_14.04  | 1:1.1~dev20140404-20.9               |
     +-------------------+---------------+--------------------------------------+
-    |                   | openSUSE_12.3 | 1.1-20.8                             |
+    |                   | openSUSE_12.3 | 1.1-20.9                             |
     +-------------------+---------------+--------------------------------------+
-    |                   | openSUSE_13.1 | 1.1-20.8                             |
+    |                   | openSUSE_13.1 | 1.1-20.9                             |
     +-------------------+---------------+--------------------------------------+
-    | Kolab:Development | CentOS_6      | 1.1-84                               |
+    | Kolab:3.4         | CentOS_6      | 1.1.0-4.4                            |
     +-------------------+---------------+--------------------------------------+
-    |                   | CentOS_7      | 1.1-84                               |
+    |                   | CentOS_7      | 1.1.0-4.4                            |
     +-------------------+---------------+--------------------------------------+
-    |                   | Debian_7.0    | 1:1.1~dev20150123-84                 |
+    |                   | Debian_7.0    | 1:1.1.0-4.4                          |
     +-------------------+---------------+--------------------------------------+
-    |                   | Debian_8.0    | 1:1.1~dev20150123-84                 |
+    |                   | Debian_8.0    | 1:1.1.0-4.4                          |
     +-------------------+---------------+--------------------------------------+
-    |                   | Fedora_19     | 1.1-84                               |
+    |                   | Fedora_19     | N/A                                  |
     +-------------------+---------------+--------------------------------------+
-    |                   | Fedora_20     | 1.1-84                               |
+    |                   | Fedora_20     | 1.1.0-4.4                            |
     +-------------------+---------------+--------------------------------------+
-    |                   | Fedora_21     | 1.1-84                               |
+    |                   | Fedora_21     | 1.1.0-4.4                            |
     +-------------------+---------------+--------------------------------------+
-    |                   | UCS_3.2       | 1:1.1~dev20150123-84                 |
+    |                   | UCS_3.2       | 1:1.1.0-4.4                          |
     +-------------------+---------------+--------------------------------------+
-    |                   | UCS_4.0       | 1:1.1~dev20150123-84                 |
+    |                   | UCS_4.0       | 1:1.1.0-4.4                          |
     +-------------------+---------------+--------------------------------------+
-    |                   | Ubuntu_12.04  | 1:1.1~dev20150123-84                 |
+    |                   | Ubuntu_12.04  | 1:1.1.0-4.4                          |
     +-------------------+---------------+--------------------------------------+
-    |                   | Ubuntu_13.10  | 1:1.1~dev20150123-84                 |
+    |                   | Ubuntu_13.10  | 1:1.1.0-4.4                          |
     +-------------------+---------------+--------------------------------------+
-    |                   | Ubuntu_14.04  | 1:1.1~dev20150123-84                 |
+    |                   | Ubuntu_14.04  | 1:1.1.0-4.4                          |
     +-------------------+---------------+--------------------------------------+
-    |                   | openSUSE_12.3 | 1.1-84                               |
+    |                   | openSUSE_12.3 | 1.1.0-4.4                            |
     +-------------------+---------------+--------------------------------------+
-    |                   | openSUSE_13.1 | 1.1-84                               |
+    |                   | openSUSE_13.1 | 1.1.0-4.4                            |
+    +-------------------+---------------+--------------------------------------+
+    | Kolab:3.4:Updates | CentOS_6      | 1.1.0-4.4                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | CentOS_7      | 1.1.0-4.4                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Debian_7.0    | 1:1.1.0-4.4                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Debian_8.0    | 1:1.1.0-4.4                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Fedora_19     | N/A                                  |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Fedora_20     | 1.1.0-4.4                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Fedora_21     | 1.1.0-4.4                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | UCS_3.2       | 1:1.1.0-4.4                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | UCS_4.0       | N/A                                  |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Ubuntu_12.04  | 1:1.1.0-4.4                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Ubuntu_13.10  | 1:1.1.0-4.4                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Ubuntu_14.04  | 1:1.1.0-4.4                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | openSUSE_12.3 | 1.1.0-4.4                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | openSUSE_13.1 | 1.1.0-4.4                            |
+    +-------------------+---------------+--------------------------------------+
+    | Kolab:Development | CentOS_6      | 1.1.1.3-1                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | CentOS_7      | 1.1.1.3-1                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Debian_7.0    | 1:1.1.1.3-1                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Debian_8.0    | 1:1.1.1.3-1                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Fedora_19     | 1.1.1.3-1                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Fedora_20     | 1.1.1.3-1                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Fedora_21     | 1.1.1.3-1                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | UCS_3.2       | 1:1.1.1.3-1                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | UCS_4.0       | 1:1.1.1.3-1                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Ubuntu_12.04  | 1:1.1.1.3-1                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Ubuntu_13.10  | 1:1.1.1.3-1                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | Ubuntu_14.04  | 1:1.1.1.3-1                          |
+    +-------------------+---------------+--------------------------------------+
+    |                   | openSUSE_12.3 | 1.1.1.3-1                            |
+    +-------------------+---------------+--------------------------------------+
+    |                   | openSUSE_13.1 | 1.1.1.3-1                            |
     +-------------------+---------------+--------------------------------------+
