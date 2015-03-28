@@ -5,6 +5,7 @@ Kolab Packages
 .. include:: packages/bonnie.txt
 .. include:: packages/chwala.txt
 .. include:: packages/cyrus-imapd.txt
+.. include:: packages/egara.txt
 .. include:: packages/iRony.txt
 .. include:: packages/kolab.txt
 .. include:: packages/kolab-community-release.txt
