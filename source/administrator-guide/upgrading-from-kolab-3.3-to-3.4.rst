@@ -369,9 +369,25 @@ and login back in to load the new changes.
 mysql database: roundcube
 -------------------------
 
-The libkolab plugin had some changes. Apply them using the following command:
+The libkolab plugin had some changes. Apply them using the following command
+and verify the result:
 
  .. parsed-literal::
 
     # :command:`/usr/share/roundcubemail/bin/updatedb.sh --dir /usr/share/roundcubemail/plugins/libkolab/SQL --package libkolab`
+
+    # :command:`mysql -u root -p -D roundcube -e 'SELECT * FROM system WHERE name LIKE "libkolab%"'`
+    +------------------+------------+
+    | name             | value      |
+    +------------------+------------+
+    | libkolab-version | 2015020600 |
+    +------------------+------------+
+
+If you still have problems or the sql upgrade didn't went through as expected.
+It is save to recreate the libkolab tables (kolab_folders, kolab_cache_*) as
+they're only used to cache items from the imap storage.
+
+ .. parsed-literal::
+
+    # :command:`mysql -u root -p -D roundcube < /usr/share/roundcubemail/plugins/libkolab/SQL/mysql.initial.sql`
 
