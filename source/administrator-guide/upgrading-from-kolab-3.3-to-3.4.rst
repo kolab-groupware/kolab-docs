@@ -369,8 +369,14 @@ and login back in to load the new changes.
 mysql database: roundcube
 -------------------------
 
-The libkolab plugin had some changes. Apply them using the following command
-and verify the result:
+The libkolab plugin had some changes. Usually those upgrades are being run
+during the package installation of the roundcube-kolab-plugins package (during
+postinst). Under some circumstances it can be possible that his upgrade
+couldn't be applied as expected.
+
+If you experience probems with your mysql database check if the database was
+updated correctly and apply the pathces using the following command and verify
+the result:
 
  .. parsed-literal::
 
