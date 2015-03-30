@@ -100,7 +100,11 @@ The following parameters have been renamed:
 
     tls_cert_file --> tls_server_cert
     tls_key_file --> tls_server_key
-    tls_ca_file --> tls_server_ca_file
+    tls_ca_file --> tls_server_ca_file || tls_client_ca_file
+
+If you don't use server or client certificate validation feel free to remove
+the ``tls_ca_file`` parameter and/or consult the cyrus-imapd 2.5 documentation
+for clarification.
 
 Additionally we can enable 2 more sieve_extensions (date + index) and remove
 the flushseenstate option.
