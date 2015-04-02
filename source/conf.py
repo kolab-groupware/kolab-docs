@@ -358,3 +358,11 @@ for var,repl in variables.items():
 
 # forward variables for substitutions in fancyfigures
 fancyfigure_variables = variables
+
+
+templates_path = ['_templates', '../ext/kolabnow']
+html_theme = 'kolabnow'
+html_theme_options = {"nosidebar" : True}
+html_theme_path = ['../ext/']
+html_title = "Kolab Now Documentation"
+html_copy_source=False
