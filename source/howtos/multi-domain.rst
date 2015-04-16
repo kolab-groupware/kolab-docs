@@ -530,6 +530,14 @@ afterwords and reload postfix.
 
 Currently there's no automated process or ldap equivalent configuration for it.
 
+**Primary Domain Delivery**
+
+If your primary domain needs to accept mail, the original setup-kolab command used
+to create the initial setup will have created multiple aliases under the primary domain. 
+This will cause mail to no longer be deliverable to the primary domain. Depending on 
+your requirements you may need to remove them. Login to kola-webadmin and remove the 
+domains aliases with more than three components.
+
 Roundcube Changes
 =================
 
