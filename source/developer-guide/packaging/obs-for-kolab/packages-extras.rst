@@ -2,6 +2,7 @@
 Extra Packages
 ==============
 
+.. include:: packages/arcanist.txt
 .. include:: packages/conntrack-tools.txt
 .. include:: packages/haproxy.txt
 .. include:: packages/keepalived.txt
