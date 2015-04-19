@@ -68,13 +68,14 @@ proven components and protocols.
     howtos/use-seafile-with-chwala
     howtos/kolab-webadmin-create-user
 
-.. rubric:: Articles
+..
+    .. rubric:: Articles
 
-.. toctree::
-    :maxdepth: 1
-    :glob:
+    .. toctree::
+        :maxdepth: 1
+        :glob:
 
-    articles/*/index
+        articles/*/index
 
 ..
     The following are placeholders for documentation that is not to be
@@ -88,6 +89,7 @@ proven components and protocols.
     architecture-and-design/bonnie-api
     architecture-and-design/bonnie-extra
     architecture-and-design/bonnie-orm
+    articles/*/index
     articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/example-drupal-configuration
     authors
     client-configuration/settings
