@@ -12,3 +12,4 @@ Upgrade Guide
     :hidden:
 
     kolab-2.3
+    kolab-3.1
