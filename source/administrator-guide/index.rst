@@ -43,6 +43,7 @@ Administrator Guide
     upgrading-from-kolab-2.3
     upgrading-from-kolab-3.0
     upgrading-from-kolab-3.1-to-3.3
+    upgrading-from-kolab-3.3-to-3.4
 
     ../glossary
 
