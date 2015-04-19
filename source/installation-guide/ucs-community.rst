@@ -4,6 +4,13 @@
 Installation on Univention Corporate Server
 ===========================================
 
+Kolab Groupware is available in the App Center included with Univention
+Corporate Server. The edition in the Univention Corporate Server App
+Center is the recommended edition of Kolab Groupware unless you have a
+support contract with `Kolab Systems`_ -- in which case you will want to
+install the enterprise edition as documented in
+:ref:`installation-ucs-enterprise`.
+
 .. IMPORTANT::
 
     There are **multiple versions** of Kolab for UCS. Make sure you
@@ -19,6 +26,13 @@ Kolab Groupware from the OBS
     production systems, use Kolab Enterprise from Kolab Systems.
 
 1.  Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:
+
+    For UCS 4.0:
+
+    .. parsed-literal::
+
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/UCS_4.0/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/UCS_4.0/ ./
 
     For UCS 3.2:
 

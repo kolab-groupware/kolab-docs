@@ -58,6 +58,16 @@ disclosure (where appropriate).
     rhel-enterprise
     ucs-enterprise
 
+..
+    These contents are old and should be hidden
+
+.. toctree:: 1
+    :hidden:
+
+    centos
+    rhel
+    ucs
+
 Configuring Kolab Groupware
 ===========================
 
@@ -69,5 +79,5 @@ Configuring Kolab Groupware
 
     ../glossary
 
-.. _available from Kolab Systems: https://kolabsys.com/products/kolab-enterprise
+.. _available from Kolab Systems: https://kolabenterprise.com
 .. _contributing: https://kolab.org/possible-contributions
