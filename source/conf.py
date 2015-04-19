@@ -33,11 +33,7 @@ sys.path = [
 extensions = [
         'sphinx.ext.autodoc',
         'sphinx.ext.extlinks',
-<<<<<<< 51462f36d83370daaf89893a24ce5187df5e2015
-        #'sphinx.ext.mathjax',
-=======
 #        'sphinx.ext.mathjax',
->>>>>>> Add extlinks extension and provide links to Phabricator
         'sphinx.ext.todo',
         'sphinx.ext.graphviz',
         'sphinx.ext.ifconfig',
@@ -449,3 +445,4 @@ html_theme_options = {"nosidebar" : True}
 html_theme_path = ['../ext/']
 html_title = "Kolab Now Documentation"
 html_copy_source=False
+
