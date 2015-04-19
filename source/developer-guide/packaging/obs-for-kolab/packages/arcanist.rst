@@ -4,4 +4,4 @@ The **arcanist** package is a utility to operate against the
 .. seealso::
 
     *   :ref:`developer-guide-process`
-    *   :ref:`develoepr-guide-using-arcanist`
+    *   :ref:`developer-guide-using-arcanist`
