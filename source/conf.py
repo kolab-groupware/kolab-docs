@@ -34,10 +34,12 @@ sys.path = [
 extensions = [
         'sphinx.ext.autodoc',
         'sphinx.ext.extlinks',
-#        'sphinx.ext.mathjax',
+        #'sphinx.ext.mathjax',
         'sphinx.ext.todo',
         'sphinx.ext.graphviz',
         'sphinx.ext.ifconfig',
+        'kolab.fancyfigure',
+        #'kolab.phabricator',
     ]
 
 # fancybox extension config
@@ -365,10 +367,14 @@ extlinks = {
         'task': ('https://git.kolab.org/T%s', 'Task #'),
     }
 
-rst_prolog = """
+rst_prolog += """
 .. _Architecture & Design: https://git.kolab.org/tag/architecture_design/
-.. _Product Owners: https://git.kolab.org/tag/product_owners
-.. _Quality Assurance: https://git.kolab.org/tag/quality_assurance
+.. _Phabricator: https://git.kolab.org/
+.. _Process Managers: https://git.kolab.org/tag/process_managers/
+.. _Product Owners: https://git.kolab.org/tag/product_owners/
+.. _Projects: https://git.kolab.org/projects/
+.. _Quality Assurance: https://git.kolab.org/tag/quality_assurance/
+.. _Scrum Masters: https://git.kolab.org/tag/process_managers/
 .. _Sprints: https://git.kolab.org/project/sprint/
 """
 
