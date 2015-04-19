@@ -311,7 +311,7 @@ them.
 
  .. parsed-literal::
 
-    # :command:`find /etc/apache2/ -type f -name "*.dpkg"
+    # :command:`find /etc/apache2/ -type f -name "*.dpkg*"
 
 
 If you're running a different webserver configuration (like nginx) please check
