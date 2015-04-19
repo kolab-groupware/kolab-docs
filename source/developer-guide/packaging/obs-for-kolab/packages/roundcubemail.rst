@@ -29,7 +29,7 @@ a particular server system can be made to serve only static contents.
 
     The core Roundcube library contains generic program code shared
     between applications such as :ref:`package-chwala`,
-    :ref:`pacage-irony`, :ref:`package-kolab-freebusy` and
+    :ref:`package-irony`, :ref:`package-kolab-freebusy` and
     :ref:`package-kolab-syncroton`.
 
     In packaging, the core Roundcube library is deployed to
