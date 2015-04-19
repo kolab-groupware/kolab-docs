@@ -295,6 +295,32 @@ For Debian
     # :command:`cp /etc/iRony/dav.inc.php.dpkg-dist /etc/iRony/dav.inc.php`
 
 
+Webserver
+=========
+
+Check for new versions of the apache configuration files (in case you modified)
+them.
+
+**For Centos / RHEL**
+
+ .. parsed-literal::
+
+    # :command:`find /etc/httpd/ -type f -name "*.rpm*"
+
+**For Debian / Ubuntu**
+
+ .. parsed-literal::
+
+    # :command:`find /etc/apache2/ -type f -name "*.dpkg"
+
+
+If you're running a different webserver configuration (like nginx) please check
+the howto or the configuration files for any changes and apply them to your
+setup accordingly.
+
+
+Database
+========
 
 mysql database: kolab
 ---------------------
@@ -369,14 +395,30 @@ and login back in to load the new changes.
 mysql database: roundcube
 -------------------------
 
-The libkolab plugin had some changes. Usually those upgrades are being run
-during the package installation of the roundcube-kolab-plugins package (during
-postinst). Under some circumstances it can be possible that his upgrade
-couldn't be applied as expected.
+The libkolab plugin had some changes. These changes are effecting the
+``kolab_cache*`` tables. SQL upgrades are usually run during the package
+installation.
 
-If you experience probems with your mysql database check if the database was
-updated correctly and apply the pathces using the following command and verify
-the result:
+Please verify that we the tables have been upgraded to the lastest version.
+
+ .. parsed-literal::
+
+    # :command:`mysql -u root -p -D roundcube -e 'SELECT * FROM system WHERE name LIKE "libkolab%"'`
+    +------------------+------------+
+    | name             | value      |
+    +------------------+------------+
+    | libkolab-version | 2015020600 |
+    +------------------+------------+
+
+ .. note::
+
+    The initial Kolab 3.4 roundcubemail-plugins-kolab rpm packages had this
+    upgrade database procedure missing.
+
+Under some circumstances it can be possible that his upgrade couldn't be
+applied as expected. If you experience probems with your mysql database check
+if the database was updated correctly and apply the pathces using the following
+command and verify the result:
 
  .. parsed-literal::
 
@@ -396,4 +438,3 @@ they're only used to cache items from the imap storage.
  .. parsed-literal::
 
     # :command:`mysql -u root -p -D roundcube < /usr/share/roundcubemail/plugins/libkolab/SQL/mysql.initial.sql`
-
