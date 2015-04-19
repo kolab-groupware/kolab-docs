@@ -1,5 +1,3 @@
-.. _installation-centos-community:
-
 ======================
 Installation on CentOS
 ======================

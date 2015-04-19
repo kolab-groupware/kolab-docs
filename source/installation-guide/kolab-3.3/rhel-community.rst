@@ -1,5 +1,3 @@
-.. _installation-rhel-community:
-
 ========================================
 Installation on Red Hat Enterprise Linux
 ========================================
