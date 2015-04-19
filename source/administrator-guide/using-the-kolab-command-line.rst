@@ -2,17 +2,20 @@
 Using the Kolab Command-Line
 ============================
 
+The **kolab** command-line is a powerful administration utility allowing
+you to quickly execute standard administrative tasks.
+
 acl-cleanup
 -----------
 
-Iterate over all mailboxes and clean up the ACL. Useful in deployments where
-any ACI may be used with setting the ACE, because identifier verification is
-disabled or otherwise unavailable.
+Iterate over all mailboxes and clean up the ACL. Useful in deployments
+where any ACI may be used with setting the ACE, because identifier
+verification is disabled or otherwise unavailable.
 
-It is important to appreciate that an ACE for 'doe@example.org' is not removed
-when the user 'doe@example.org' is removed -- when a new user is created with a
-:term:`result attribute` value of 'doe@example.org', this user implicitly has
-the access specified by the ACE.
+It is important to appreciate that an ACE for 'doe@example.org' is not
+removed when the user 'doe@example.org' is removed -- when a new user is
+created with a :term:`result attribute` value of 'doe@example.org', this
+user implicitly has the access specified by the ACE.
 
 add-domain
 ----------
@@ -458,6 +461,23 @@ Summarize all quota allocation for all mailboxes.
 
     Connect to the IMAP server at address <SERVER> instead of the configured
     IMAP server.
+
+sync
+----
+
+Synchronize IMAP.
+
+.. rubric:: Command-Line Options
+
+.. program:: sync
+
+.. option:: --resync
+
+    Resync.
+
+.. option:: --threads THREADS
+
+    Number of threads.
 
 transfer-mailbox
 ----------------
