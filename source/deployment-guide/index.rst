@@ -92,13 +92,21 @@ to its community.
 While servicing only a couple of dozen users, the number of messages
 exchanged easily exceeds thousands per day.
 
-For this deployment, you may consider a deployment scenario as depicted
-in :ref:`deployment_multi-server-with-combined-services`.
+For such a deployment, you may consider a deployment scenario as
+depicted in :ref:`deployment_multi-server-with-combined-services`.
+
+In contrast, if your dozens of users are actually plumbers, carpenters,
+firemen, airline pilots or otherwise regularly distracted from the
+keyboard and monitor, :doc:`localhost` may suffice -- although your
+users may in this case be synchronizing their mobile devices,
+significantly increasing the usage pattern outside of their presence at
+the keyboard.
 
 Scaling up from a single server deployment to a deployment with multiple
 servers is relatively straight-forward, but, depending on what service
 you choose to migrate off of the single host, possibly involves data
-migration and configuration changes.
+migration, some down-time, and configuration changes. As such, such
+migrations require sufficient preparation and planning.
 
 .. TODO::
 
@@ -174,12 +182,13 @@ Scalability
 ^^^^^^^^^^^
 
 With a quota of 1GB, a total data footprint of 100GB - 900GB is still
-manageable, but should your users (be allowed to) have larger mailboxes and/or
-use the File Storage features in Kolab, you are more likely speaking to the tune
-of several terabytes (if not right from the start, you'll get there over time).
+manageable, but should your users (be allowed to) have larger mailboxes
+and/or use the File Storage features in Kolab, you are more likely
+speaking to the tune of several terabytes (if not right from the start,
+you'll get there over time).
 
-**This** is were scalability comes into play. One could start with a single
-Cyrus IMAP server, like so:
+**This** is were scalability comes into play. One could start with a
+single Cyrus IMAP server, like so:
 
 .. graphviz::
 
@@ -188,13 +197,13 @@ Cyrus IMAP server, like so:
             "MUA" -> "IMAP Backend" -> "1 TB Storage Volume";
         }
 
-You will want to make sure your users' desktop applications, and the rest of the
-Kolab software uses a DNS entry to connect to IMAP (for example,
-``imap.example.org``), so that it is easier for you to change what it is they
-actually end up connecting to.
+You will want to make sure your users' desktop applications, and the
+rest of the Kolab software uses a DNS entry to connect to IMAP (for
+example, ``imap.example.org``), so that it is easier for you to change
+what it is they actually end up connecting to.
 
-With several terabytes of data, *when* you get there, the desired scenario might
-look like:
+With several terabytes of data, *when* you get there, the desired
+scenario might look like:
 
 .. graphviz::
 
@@ -212,20 +221,21 @@ look like:
             "New IMAP Frontend" -> "Additional IMAP Backend" -> "Additional 1 TB";
         }
 
-This is a simple change that can be prepared ahead of time, and implemented
-during a service window, if and/or when it is needed.
+This is a simple change that can be prepared ahead of time, and
+implemented during a service window, if and/or when it is needed.
 
 .. NOTE::
 
-    You have options with regards to the target topology of the Cyrus IMAP
-    Murder. Please refer to :ref:`deployment_imap_cyrus-imap-murder`.
+    You have options with regards to the target topology of the Cyrus
+    IMAP Murder. Please refer to
+    :ref:`deployment_imap_cyrus-imap-murder`.
 
 A Thousand Users
 ----------------
 
-The magical boundary of a thousand users depicts each individual user's usage
-pattern becomes unpredictable, as for one the number of mobile devices they
-synchronize are not necessarily under control any longer.
+The magical boundary of a thousand users depicts each individual user's
+usage pattern becomes unpredictable, as for one the number of mobile
+devices they synchronize are not necessarily under control any longer.
 
 Several Thousands of Users
 --------------------------
@@ -239,32 +249,33 @@ Tens of Thousands of Users
 Hundreds of Thousands of Users
 ------------------------------
 
-When an enterprise with 350.000 employees plans for a Kolab deployment, it is
-unlikely all of the users will be migrated over the course of a single service
-window, and despite what other groupware vendors might tell you, it is near to
-impossible to accurately plan for the capacity required.
+When an enterprise with 350.000 employees plans for a Kolab deployment,
+it is unlikely all of the users will be migrated over the course of a
+single service window, and despite what other groupware vendors might
+tell you, it is near to impossible to accurately plan for the capacity
+required.
 
-It is also important to appreciate any existing infrastructure and network
-topology, and for Kolab to integrate into that environment.
+It is also important to appreciate any existing infrastructure and
+network topology, and for Kolab to integrate into that environment.
 
-Ranging from small and medium-sized business, large enterprise and service
-provider deployments, the number of users involved ranges from 50 to anywhere in
-the hundreds of thousands or millions.
+Ranging from small and medium-sized business, large enterprise and
+service provider deployments, the number of users involved ranges from
+50 to anywhere in the hundreds of thousands or millions.
 
 .. _deployment_organizations-with-multiple-domain-namespaces:
 
 Organizations with Multiple Domain Namespaces
 ---------------------------------------------
 
-When the people throughout an organization use different email domains, but need
-to maintain the ability to share groupware data with everyone else in the
-organization, it is important to appreciate the effects of using the primary
-recipient email address (*mail*) of the user as the authorization ID
-(*result_attribute*).
+When the people throughout an organization use different email domains,
+but need to maintain the ability to share groupware data with everyone
+else in the organization, it is important to appreciate the effects of
+using the primary recipient email address (*mail*) of the user as the
+authorization ID (*result_attribute*).
 
-This might be the case in a holding with multiple subsidiaries. To illustrate,
-an example holding corporation **Holding, Inc.**, with subsidiaries *Foo, Inc.*
-and *Bar, Inc.*:
+This might be the case in a holding with multiple subsidiaries. To
+illustrate, an example holding corporation **Holding, Inc.**, with
+subsidiaries *Foo, Inc.* and *Bar, Inc.*:
 
 .. graphviz::
 
@@ -275,24 +286,28 @@ and *Bar, Inc.*:
 
 .. NOTE::
 
-    This is not considered a case for ISPs or providers of Hosted Kolab, but may
-    be applicable to **customers** of ISPs and **consumers** of Hosted Kolab.
-    ISPs and Hosted Kolab providers should refer to dedicated sections:
+    This is not considered a case for ISPs or providers of Hosted Kolab,
+    but may be applicable to **customers** of ISPs and **consumers** of
+    Hosted Kolab. ISPs and Hosted Kolab providers should refer to
+    dedicated sections:
 
     * :ref:`deployment_hosted-kolab`
 
 Let's suppose that:
 
-*   People working for Holding, Inc. use email addresses ``@holding.inc``.
-*   People working for Foo, Inc. use email addresses ``@foo.inc``.
-*   People working for Bar, Inc. use email addresses ``@bar.inc``.
+*   People working for *Holding, Inc.* use email addresses
+    ``@holding.inc``.
+
+*   People working for *Foo, Inc.* use email addresses ``@foo.inc``.
+
+*   People working for *Bar, Inc.* use email addresses ``@bar.inc``.
 
 And:
 
 *   All people are contained within a single LDAP tree (for, perhaps,
-    Human Resources is a department within the holding, providing services to
-    the holding as well as its subsidiaries, like it is providing Kolab
-    Groupware services in this example):
+    Human Resources is a department within the holding, providing
+    services to the holding as well as its subsidiaries, like it is
+    providing Kolab Groupware services in this example):
 
     .. graphviz::
 
@@ -304,45 +319,48 @@ And:
                 "ou=Foo" -> "uid=average" [dir=none];
             }
 
-In a default Kolab Groupware installation, the following mailboxes might be
-created:
+In a default Kolab Groupware installation, the following mailboxes might
+be created:
 
 *   user/john.doe@holding.inc
 *   user/jim.smith@holding.inc
 *   user/joe.average@foo.inc
 *   user/jane.roe@bar.inc
 
-Because Cyrus IMAP uses the email domain as an authorization realm, and no
-cross-realm authorization is allowed, in this scenario, John, Joe and Jane
-cannot share mailboxes - though John and Jim can.
+Because Cyrus IMAP uses the email domain as an authorization realm, and
+no cross-realm authorization is allowed, in this scenario, John, Joe and
+Jane cannot share mailboxes - though John and Jim can.
 
-This may be the desired effect, and if it is, you can skip reading the rest of
-this topic.
+This may be the desired effect, and if it is, you can skip reading the
+rest of this topic.
 
-If it is not the intended effect however, and you seek to allow all people to
-share groupware data with all other users, you must consider the following:
+If it is not the intended effect however, and you seek to allow all
+people to share groupware data with all other users, you must consider
+the following:
 
 *   Should all people be given a primary recipient email address of
     ``@holding.inc``, in an attempt to make all users end up in the same
-    authorization realm, then they are implicitly allowed to send using that
-    email address.
+    authorization realm, then they are implicitly allowed to send using
+    that email address.
 
     This in itself may not be desirable.
 
-To enable users to share groupware data while their primary recipient email
-addresses make them end up in different authorization realms, you should set the
-``result_attribute`` setting in **kolab.conf(5)** to the name of an attribute
-that does not contain a realm identifier (i.e., something without an '@' in it),
-such as the ``uid`` attribute, which by default does not include a domain name
-space. This would create the following mailboxes:
+To enable users to share groupware data while their primary recipient
+email addresses make them end up in different authorization realms, you
+should set the ``result_attribute`` setting in **kolab.conf(5)** to the
+name of an attribute that does not contain a realm identifier (i.e.
+something without an '@' in it), such as the ``uid`` attribute, which by
+default does not include a domain name space. This would create the
+following mailboxes (if the surname is used for the uid attribute):
 
 *   user/average
 *   user/doe
 *   user/roe
 *   user/smith
 
-You may also consider setting ``virtdomains`` to ``off`` in **imapd.conf(5)**,
-although this implies only the null realm is ever going to be used.
+You may also consider setting ``virtdomains`` to ``off`` in
+**imapd.conf(5)**, although this implies only the null realm is ever
+going to be used.
 
 For larger deployments, we also recommend reading about
 :ref:`deployment_imap_cyrus-imap-murder`.
