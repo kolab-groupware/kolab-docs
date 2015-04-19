@@ -376,8 +376,6 @@ rst_prolog += """
 .. _Projects: https://git.kolab.org/projects/
 .. _Quality Assurance: https://git.kolab.org/tag/quality_assurance/
 .. _Scrum Masters: https://git.kolab.org/tag/process_managers/
-.. _Sprints: https://git.kolab.org/project/sprint/
-"""
 
 templates_path = ['_templates', '../ext/kolabnow']
 html_theme = 'kolabnow'
