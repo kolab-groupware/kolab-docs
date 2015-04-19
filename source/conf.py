@@ -34,7 +34,7 @@ sys.path = [
 extensions = [
         'sphinx.ext.autodoc',
         'sphinx.ext.extlinks',
-        #'sphinx.ext.mathjax',
+#        'sphinx.ext.mathjax',
         'sphinx.ext.todo',
         'sphinx.ext.graphviz',
         'sphinx.ext.ifconfig',
@@ -384,3 +384,4 @@ html_theme_options = {"nosidebar" : True}
 html_theme_path = ['../ext/']
 html_title = "Kolab Now Documentation"
 html_copy_source=False
+
