@@ -1,4 +1,4 @@
-.. _installation-centos-6-enterprise-14:
+.. _installation-rhel-6-enterprise-14:
 
 =================================================================
 Installation of Kolab Enterprise 14 on Red Hat Enterprise Linux 6

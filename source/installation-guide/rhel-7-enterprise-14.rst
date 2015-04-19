@@ -1,4 +1,4 @@
-.. _installation-centos-7-enterprise-14:
+.. _installation-rhel-7-enterprise-14:
 
 =================================================================
 Installation of Kolab Enterprise 14 on Red Hat Enterprise Linux 7
