@@ -11,6 +11,7 @@ Dependency Packages
 .. include:: packages/389-dsgw.txt
 .. include:: packages/apr.txt
 .. include:: packages/apr-util.txt
+.. include:: packages/cunit.txt
 .. include:: packages/facter.txt
 .. include:: packages/gyp.txt
 .. include:: packages/httpd.txt
@@ -22,6 +23,7 @@ Dependency Packages
 .. include:: packages/libmnl.txt
 .. include:: packages/libnetfilter_conntrack.txt
 .. include:: packages/libnfnetlink.txt
+.. include:: packages/libphutil.txt
 .. include:: packages/mod_nss.txt
 .. include:: packages/mod_wsgi.txt
 .. include:: packages/mozldap.txt
