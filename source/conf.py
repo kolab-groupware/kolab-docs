@@ -33,6 +33,7 @@ sys.path = [
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
         'sphinx.ext.autodoc',
+        'sphinx.ext.extlinks',
 #        'sphinx.ext.mathjax',
         'sphinx.ext.todo',
         'sphinx.ext.graphviz',
@@ -359,6 +360,18 @@ for var,repl in variables.items():
 # forward variables for substitutions in fancyfigures
 fancyfigure_variables = variables
 
+extlinks = {
+        'rfc': ('http://tools.ietf.org/html/rfc%s', 'RFC '),
+        'mock': ('https://git.kolab.org/T%s', 'Mock #'),
+        'task': ('https://git.kolab.org/T%s', 'Task #'),
+    }
+
+rst_prolog = """
+.. _Architecture & Design: https://git.kolab.org/tag/architecture_design/
+.. _Product Owners: https://git.kolab.org/tag/product_owners
+.. _Quality Assurance: https://git.kolab.org/tag/quality_assurance
+.. _Sprints: https://git.kolab.org/project/sprint/
+"""
 
 templates_path = ['_templates', '../ext/kolabnow']
 html_theme = 'kolabnow'
