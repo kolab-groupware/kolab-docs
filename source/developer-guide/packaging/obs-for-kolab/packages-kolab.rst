@@ -3,6 +3,7 @@ Kolab Packages
 ==============
 
 .. include:: packages/bonnie.txt
+.. include:: packages/bonnie-flask.txt
 .. include:: packages/chwala.txt
 .. include:: packages/cyrus-imapd.txt
 .. include:: packages/egara.txt
