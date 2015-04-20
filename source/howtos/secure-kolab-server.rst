@@ -314,7 +314,18 @@ This is an alternative to **mod_ssl**.
 389 Directory Server
 --------------------
 
-If you really want/need you can also add SSL support to your LDAP Server
+.. note::
+
+    Unless you want to make your LDAP Service available to other services on
+    other servers you can safely skip this section. There's no need to enable
+    SSL/TLS if you only use LDAP on ``localhost``.
+
+If you've more question please refer the the documentation of the 389 directory
+server.
+
+*   http://directory.fedoraproject.org/docs/389ds/howto/howto-ssl.html
+
+Enable SSL/TLS
 
 #.  First you must import your PEM File into the certutil certificate store
     (identical to Apache with **mod_nss**)
@@ -354,7 +365,7 @@ If you really want/need you can also add SSL support to your LDAP Server
         nsSSL3: off
         -
         replace: nsTLS1
-        nsTLS1 on
+        nsTLS1: on
         -
         replace: nsSSLClientAuth
         nsSSLClientAuth: allowed
