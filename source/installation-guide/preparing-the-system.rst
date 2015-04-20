@@ -127,6 +127,9 @@ Groupware. These ports include:
 | 995  | tcp       | Used for secure POP.                     |
 +------+-----------+------------------------------------------+
 
+CentOS / RHEL 6
+^^^^^^^^^^^^^^^^^
+
 Summarizing these changes into /etc/sysconfig/iptables, working off of
 an original, default installation of Enterprise Linux 6, this file would
 look as follows:
@@ -164,10 +167,32 @@ After changing /etc/sysconfig/iptables, execute a service restart:
 
     # :command:`service iptables restart`
 
-System Users
-------------
+CentOS / RHEL 7
+^^^^^^^^^^^^^^^
 
-*   No user or group with IDs 412, 413 or 414 may exist on the system
+CentOS / RHEL 6 is using the ``firewalld`` to manage the kernel firewall.
+You've to make use of the ``firewall-cmd`` command to add new rules to open the
+required ports.
+
+This script will open the required ports/services and make this changes
+permanent and reboot-save.
+
+.. parsed-literal::
+
+    for s in ssh http https pop3s imaps smtp ldap ldaps
+    do
+        firewall-cmd --permanent --add-service=$s
+    done
+    for p in 110/tcp 143/tcp 587/tcp
+    do
+        firewall-cmd --permanent --add-port=$p
+    done
+    firewall-cmd --reload
+
+System Users
+----------
+submission
+----------
     prior to the installation of Kolab.
 
 *   No user or group with the names kolab, kolab-n or kolab-r may exist
