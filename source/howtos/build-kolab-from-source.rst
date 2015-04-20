@@ -35,7 +35,7 @@ Building and Installing libkolabxml
 
     .. parsed-literal::
 
-        # git clone git://git.kolab.org/git/libkolabxml libkolabxml.git
+        # git clone https://git.kolab.org/diffusion/LKX/libkolabxml.git libkolabxml.git
         Initialized empty Git repository in /root/libkolabxml.git/.git/
         remote: Counting objects: 3566, done.
         remote: Compressing objects: 100% (1782/1782), done.
@@ -94,7 +94,7 @@ Building and Installing libcalendaring
 
     .. parsed-literal::
 
-        # git clone git://git.kolab.org/git/libcalendaring libcalendaring.git
+        # git clone https://git.kolab.org/diffusion/LC/libcalendaring.git libcalendaring.git
         Initialized empty Git repository in /root/libcalendaring.git/.git/
         remote: Counting objects: 2624, done.
         remote: Compressing objects: 100% (1830/1830), done.
@@ -155,7 +155,7 @@ Building and Installing libkolab
 
     .. parsed-literal::
 
-        # git clone git://git.kolab.org/git/libkolab libkolab.git
+        # git clone https://git.kolab.org/diffusion/LK/libkolab.git libkolab.git
         Initialized empty Git repository in /root/libkolab.git/.git/
         remote: Counting objects: 2021, done.
         remote: Compressing objects: 100% (1925/1925), done.
@@ -238,7 +238,7 @@ daemon (kolab-saslauthd).
 
     .. parsed-literal::
 
-        # git clone git://git.kolab.org/git/pykolab.git pykolab.git
+        # git clone https://git.kolab.org/diffusion/P/pykolab.git pykolab.git
         Initialized empty Git repository in /root/pykolab.git/.git/
         remote: Counting objects: 6938, done.
         remote: Compressing objects: 100% (5467/5467), done.
@@ -442,7 +442,7 @@ Installing Roundcube and Kolab Plugins from Source
     .. parsed-literal::
 
         # cd /usr/share/
-        # git clone git://git.kolab.org/git/roundcubemail-plugins-kolab
+        # git clone https://git.kolab.org/diffusion/RPK/roundcubemail-plugins-kolab.git
         Cloning into 'roundcubemail-plugins-kolab'...
         remote: Counting objects: 11172, done.
         remote: Compressing objects: 100% (4664/4664), done.
@@ -505,7 +505,7 @@ The Kolab groupware provides a custom skin for the web client. This can be added
     .. parsed-literal::
 
         # cd /usr/share/
-        # git clone git://git.kolab.org/git/roundcubemail-skin-chameleon
+        # git clone https://git.kolab.org/diffusion/RSC/roundcubemail-skin-chameleon.git
 
 2.  Compile the CSS file using the `Less CSS pre-processor <http://lesscss.org/>`_:
 
@@ -572,7 +572,7 @@ Installing the Kolab WAP Client and API from Source
 
     .. parsed-literal::
 
-        # git clone git://git.kolab.org/git/kolab-wap kolab-webadmin
+        # git clone https://git.kolab.org/diffusion/WAP/webadmin.git kolab-webadmin
         Initialized empty Git repository in /usr/share/kolab-webadmin/.git/
         remote: Counting objects: 6086, done.
         remote: Compressing objects: 100% (4140/4140), done.
@@ -623,7 +623,7 @@ iRony
 Kolab Utilities
 ===============
 
-The Kolab utilities include Kolab Free/Busy, Migration, Format Upgrade.
+The Kolab utilities include Kolab Free/Busy Daemon, Migration, Format Upgrade.
 
 The Kolab utilities require libkolab to be successfully built and installed.
 
@@ -640,7 +640,7 @@ Running Kolab Free/Busy from Source
 
     .. parsed-literal::
 
-        # git clone git://git.kolab.org/git/kolab-utils kolab-utils.git
+        # git clone https://git.kolab.org/diffusion/U/utils.git kolab-utils.git
 
 3.  Build the Kolab utilities:
 
