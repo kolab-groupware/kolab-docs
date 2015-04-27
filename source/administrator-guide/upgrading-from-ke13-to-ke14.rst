@@ -195,6 +195,14 @@ Update the kolab_files_url to /chwala/ to be protocol independent.
 
     $config['kolab_files_url'] = '/chwala/';
 
+/etc/roundcubemail/managesieve.inc.php
+--------------------------------------
+
+If you want to include the dedicated vacation settings, please add this setting:
+
+ .. parsed-literal::
+
+    $config['managesieve_vacation'] = 1;
 
 /etc/iRony/dav.inc.php
 ----------------------
@@ -209,6 +217,13 @@ For Redhat/CentOS
 
     # :command:`cp /etc/iRony/dav.inc.php.rpmnew /etc/iRony/dav.inc.php`
 
+.. NOTE::
+
+    You can now expose the global address list via CalDAV
+    by defining $config['kolabdav_ldap_directory'] for your installation.
+    The URL for users to access this address book is
+    https://<kolab-server>/iRony/addressbooks/<user-email>/ldap-directory
+    while specifics depend on your web server configuration.
 
 /etc/postfix/ldap/virtual_alias_maps_sharedfolders.cf
 -----------------------------------------------------
