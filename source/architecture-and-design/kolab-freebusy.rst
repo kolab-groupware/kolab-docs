@@ -115,6 +115,12 @@ With :ref:`and_kolab-freebusyd` running in daemon mode, this source connects
 to the freebusyd and starts a job to aggregate and deliver freebusy data for a
 user or a resource.
 
+``aggregate``
+^^^^^^^^^^^^^
+
+Aggregates Freebusy data from all members of a group into one data block that
+only shows slots as busy if they're unavailable for all members.
+
 
 Formatters
 ==========
@@ -130,7 +136,7 @@ Configuration Options
 =====================
 
 The `config.ini.sample <http://git.kolab.org/kolab-freebusy/tree/config/config.ini.sample>`_
-file provides a full overview of possible configuration options with several examples.
+file provides an overview of possible configuration options with several examples.
 
-The full documentation of the Kolab Freebusy Service configuration will be added to the
-:ref:`admin`.
+The full documentation of the Kolab Freebusy Service configuration can be found in the
+:ref:`admin_kolab-freebusy-settings`.
