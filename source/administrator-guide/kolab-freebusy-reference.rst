@@ -118,6 +118,7 @@ The general log level. Possible values are:
 * 500 = Critical
 
 
+.. _admin_kolab-freebusy-settings-directories:
 
 Directories and Sources
 =======================
@@ -147,8 +148,11 @@ the linked source. This type uses the following configuration options:
 * bind_pw
 * base_dn
 * filter
+* primary_domain
 * attributes
 * attributes_lc (optional)
+* domain_filter (optional)
+* domain_base_dn (optional)
 
 
 ``filter``
@@ -167,6 +171,7 @@ Fully qualified URI to the LDAP server, including protocol and port.
 
 Example: ``ldap://localhost:389``
 
+
 ``bind_dn``
 -----------
 
@@ -175,16 +180,36 @@ user with read-only access.
 
 Example: ``uid=kolab-service,ou=Special Users,dc=example,dc=org``
 
+
 ``bind_pw``
 -----------
 
 Password for binding to the LDAP service. 
 
+
 ``filter``
 ----------
-Filter used to find the given user in LDAP. ``%s`` is replaced by the user name.
 
-Example: ``"(&(objectClass=kolabInetOrgPerson)(|(uid=%s)(mail=%s)(alias=%s)))"``
+Filter used to find the given user in LDAP. ``%s`` is replaced by the full user name,
+``%u`` by the local part of the user name.
+
+Example: ``"(&(objectClass=kolabInetOrgPerson)(|(uid=%u)(mail=%s)(alias=%s)))"``
+
+
+``base_dn``
+----------
+
+Base DN used for the user query to LDAP. ``%dc`` is replaced by the DN matching
+the user name domain.
+
+Example: ``"ou=People,%dc"``
+
+
+``primary_domain``
+------------------
+
+Fall-back domain name used for queries without fully qualified email addresses.
+
 
 ``attributes``
 --------------
@@ -194,11 +219,29 @@ These will then replace placeholders in the ``fbsource`` URI.
 
 Example: ``mail, sn``
 
+
 ``lc_attributes``
 -----------------
 
 List of entry attributes which are read form LDAP and are converted into lower-case
 characters.
+
+
+``domain_filter``
+-----------------
+
+Filter used to resolve the root DN (``%dc``) for the the given user name domain.
+``%s`` is replaced by the domain part of the user name.
+
+Example: ``"(&(objectclass=domainrelatedobject)(associateddomain=%s))"``
+
+
+``domain_base_dn``
+------------------
+
+Base DN used for resolving the domain root DN with LDAP
+
+Example: ``"cn=kolab,cn=config"``
 
 
 ``mail_attributes``
@@ -283,6 +326,36 @@ this user has access to.
 The ``folder`` parameter instructs the daemon to collect event data from the given
 IMAP mailbox.
 
+
+``aggregate``
+^^^^^^^^^^^^^
+
+In Kolab, resource collections are basically a group of recources without having calendar data
+assigned to the group directly. But we nevertheless want to show the availability for a collection
+and this is where the aggregate source type is used.
+
+.. code-block:: ini
+
+    ;; LDAP filter to find a group record to aggregate data for all its members
+    filter = "(&(objectClass=kolabgroupofuniquenames)(mail=%s))"
+    attributes = uniquemember, mail
+    resolve_dn = uniquemember
+    resolve_attribute = mail
+
+    ;; the 'aggregate' source takes one parameter denoting the attribute holding all member email addresses
+    fbsource = "aggregate://%uniquemember"
+
+    ;; consider these directories for getting the member's free/busy data
+    directories = kolab-resources
+
+``resolve_dn`` specifies the attribute of the group record that holds DNs for members
+that need to be resolved into valid user names/email addresses to then aggregate data for.
+``resolve_attribute`` denotes the attribute of the member records that should replace the DN value.
+
+Once the members of a collection are resolved, freebusy data for each of them is fetched from the
+sources specified in ``directories`` and finally aggregated.
+
+
 .. seealso::
 
     *   Architecture & Design, Kolab Freebusy Service, :ref:`and_kolab-freebusy-directory-types`
@@ -312,6 +385,7 @@ Log level for this directory. See :ref:`admin_kolab-freebusy-settings-log`
 for possible values.
 
 
+.. _admin_kolab-freebusy-settings-examples:
 
 Examples
 ========
@@ -328,10 +402,10 @@ Sample Directory for Kolab Users
     [directory "kolab-users"]
     type = ldap
     host = ldap://localhost:389
-    bind_dn = "uid=kolab-service,ou=Special Users,dc=example,dc=org"
+    bind_dn = "uid=kolab-service,ou=Special Users,dc=yourdomain,dc=com"
     bind_pw = "<service-bind-pw>"
-    base_dn = "ou=People,dc=example,dc=org"
-    filter = "(&(objectClass=kolabInetOrgPerson)(|(uid=%s)(mail=%s)(alias=%s)))"
+    base_dn = "ou=People,dc=yourdomain,dc=com"
+    filter = "(&(objectClass=kolabInetOrgPerson)(|(uid=%u)(mail=%s)(alias=%s)))"
     attributes = mail
     lc_attributes = mail
     fbsource = file:/var/lib/kolab-freebusy/%mail.ifb
@@ -356,3 +430,25 @@ Sample Directory for Resources
     expires = 10m
     loglevel = 100  ; Debug
 
+
+Sample Directory for Resource Collections
+-----------------------------------------
+
+.. code-block:: ini
+
+    [directory "kolab-resource-collections"]
+    type = ldap
+    host = ldap://localhost:389
+    bind_dn = "uid=kolab-service,ou=Special Users,dc=yourdomain,dc=com"
+    bind_pw = "<service-bind-pw>"
+    base_dn = "ou=Resources,dc=yourdomain,dc=com"
+    filter = "(&(objectClass=kolabgroupofuniquenames)(mail=%s))"
+    attributes = uniquemember
+    resolve_dn = uniquemember
+    resolve_attribute = mail
+    fbsource = "aggregate://%uniquemember"
+    directories = kolab-resources
+    timeout = 10    ; abort after 10 seconds
+    cacheto = /var/cache/kolab-freebusy/%mail.ifb
+    expires = 10m
+    loglevel = 100  ; Debug
