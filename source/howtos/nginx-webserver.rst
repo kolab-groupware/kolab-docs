@@ -7,6 +7,10 @@ This HOWTO consists of two separate approaches.
 Simple Installation
 ===================
 
+The simple configuration is supposed to provide only the webclient. If you look
+for a more complete setup including webadmin, irony, etc. take a look on the
+complex setup.
+
 #.  Install NGINX and PHP FPM:
 
     .. parsed-literal::
@@ -28,33 +32,32 @@ Simple Installation
         # :command:`cat > /etc/nginx/conf.d/default.conf` << EOF
         server {
             listen              8080 default_server;
-
             server_name         localhost:8080;
-            access_log          /var/log/nginx/kolab.example.org-access_log;
-            error_log           /var/log/nginx/kolab.example.org-error_log;
 
+            # support roundcubemail secure urls
+            rewrite "^/roundcubemail/[a-f0-9]{16}/(.*)" /roundcubemail/$1;
+
+            # roundcube
             location /roundcubemail {
                 alias /usr/share/roundcubemail/public_html;
                 index index.php;
-            }
 
-            location ~ /roundcubemail/.*\\.php$ {
-                if ($fastcgi_script_name ~ /roundcubemail(/.*\\.php)$) {
-                    set $valid_fastcgi_script_name $1;
+                location ~ \\.php$ {
+                    include fastcgi_params;
+                    fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+                    fastcgi_split_path_info ^(.+.php)(/.*)$;
+                    fastcgi_index index.php;
+                    fastcgi_param SCRIPT_FILENAME $request_filename;
                 }
-                fastcgi_pass    unix:/var/run/php-fpm/php-fpm.sock;
-                fastcgi_index   index.php;
-                fastcgi_param   SCRIPT_FILENAME    /usr/share/roundcubemail\\$valid_fastcgi_script_name;
-                include         fastcgi_params;
             }
-
-            location /kolab-webadmin {
-                alias //usr/share/kolab-webadmin/public_html;
-                index index.php;
-            }
-
         }
         EOF
+
+    .. note::
+
+        On debian based systems you might want to take a look at the
+        configuration :file:`/etc/nginx/sites-enabled/default` and a the
+        the default php-fpm socket: :file:`/var/run/php5-fpm.sock`
 
 #.  Start the **php-fpm** service and configure the service to start on boot:
 
