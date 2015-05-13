@@ -41,7 +41,7 @@ A directory information tree is usually represented as follows:
 
     This is an example, and **NOT** how you should structure your tree.
 
-The exact same diagram though, flipped up side down, much better represents a
+The exact same diagram though, flipped up side down, much better represents an
 actual tree:
 
 .. graphviz::
