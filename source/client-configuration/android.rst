@@ -143,6 +143,7 @@ Then press next and enter the following information for the outgoing server sett
        Please open the app.
     #. On the welcome screen, please click the little key icon with the plus to set up your |service_name| account.
     #. Choose DAVdroid in the next screen and then click *Log in with email address*.
+       Note: If you have your own domain, you might need to choose the other option if this one does not work.
     #. Provide your full and primary |service_name| address as well as your password.
     #. The next screen shows all your calendars and address books. Select those that you want
        to synchronize to your Android device.
@@ -199,7 +200,7 @@ Then press next and enter the following information for the outgoing server sett
 
                 |useremail| @330,305
 
-    If the auto-discovery at step 4 did not work,
+    If the auto-discovery at step 4 did not work, because you are using your own domain that does not have the DNS entries set for auto-discovery,
     then choose *Login with URL and user name* instead.
     In the next screen enter |**caldav_host**| in the server URL and make sure to use **https**.
     Afterwards, you can continue with step 6 above.
