@@ -2,6 +2,9 @@
 Upgrade Notes from Kolab 3.4 to 3.5
 ====================================
 
+.. attention::
+    This is work in progress! Kolab 3.5 has not been released yet...
+
 ChangeLog
 =========
 
