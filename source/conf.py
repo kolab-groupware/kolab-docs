@@ -369,6 +369,7 @@ extlinks = {
 
 rst_prolog += """
 .. _Architecture & Design: https://git.kolab.org/tag/architecture_design/
+.. _Maniphest: https://git.kolab.org/maniphest
 .. _Phabricator: https://git.kolab.org/
 .. _Process Managers: https://git.kolab.org/tag/process_managers/
 .. _Product Owners: https://git.kolab.org/tag/product_owners/
