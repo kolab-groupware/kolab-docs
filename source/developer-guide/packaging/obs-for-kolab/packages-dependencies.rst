@@ -132,6 +132,7 @@ Dependency Packages
 .. include:: packages/samba.txt
 .. include:: packages/svrcore.txt
 .. include:: packages/swig.txt
+.. include:: packages/systemd.txt
 .. include:: packages/thrift.txt
 .. include:: packages/v8.txt
 .. include:: packages/xapian-core.txt
