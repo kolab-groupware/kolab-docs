@@ -1,3 +1,5 @@
+.. _howto-multi-domain:
+
 ====================================
 HOWTO: Multi-Domain Support in Kolab
 ====================================
