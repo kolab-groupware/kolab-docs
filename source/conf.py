@@ -317,7 +317,6 @@ epub_copyright = u'2013, Jeroen van Meeuwen'
 todo_include_todos = True
 
 # -- Load variables for client configuration docs -----------------------------
-tags = ['dav', 'webdav', 'tls', 'autoconf', 'activesync']
 
 variables = {}
 default_tags = []
