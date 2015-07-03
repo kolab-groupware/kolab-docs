@@ -30,5 +30,5 @@ variables = {
 module_tags = ['dav', 'webdav', 'tls', 'autoconf', 'activesync']
 
 # specify a custom set of tags in case your setup doesn't support all Kolab services/features
-tags = ['dav', 'webdav', 'tls', 'autoconf', 'activesync']
+#tags = ['dav', 'webdav', 'tls', 'autoconf', 'activesync']
 # tags = []
