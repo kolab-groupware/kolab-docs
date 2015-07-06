@@ -10,6 +10,7 @@ Kolab Packages
 .. include:: packages/egara.txt
 .. include:: packages/iRony.txt
 .. include:: packages/kolab.txt
+.. include:: packages/kolab-autoconf.txt
 .. include:: packages/kolab-autodiscover.txt
 .. include:: packages/kolab-community-release.txt
 .. include:: packages/kolab-enterprise-release.txt
