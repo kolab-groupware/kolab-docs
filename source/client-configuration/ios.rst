@@ -117,6 +117,9 @@ Your |service_name| account is now set up on your iPhone or iPad.
     ActiveSync for Access to all Data
     ---------------------------------
 
+    Although, we recommend using IMAP for email as described above,
+    it is also possible to sync all your |service_name| data via the ActiveSync protocol as described below.
+
     After you have reached the *Add Account* screen
     as described in :ref:`settings-clientconfig-ios-start`,
     you can add your data from |service_name| using
@@ -193,8 +196,11 @@ Your |service_name| account is now set up on your iPhone or iPad.
 
 .. only:: dav
 
-    CardDAV/CalDAV for Contacts and Calendars
-    -----------------------------------------
+    CardDAV/CalDAV for Contacts, Calendars and Tasks
+    ------------------------------------------------
+
+    Contacts, Calendars and Tasks can also be synced using the CardDAV and CalDAV protocols.
+    Please note that setting this up is not necessary if you have already set up ActiveSync.
 
     After you have reached the *Add Account* screen
     as described in :ref:`settings-clientconfig-ios-start`,
