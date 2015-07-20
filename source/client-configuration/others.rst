@@ -68,21 +68,22 @@ Please use your **full and primary email address** as username here.
     ---------------------------
 
     Please point your `CalDAV <https://en.wikipedia.org/wiki/CalDAV>`_ and 
-    `CardDAV <https://en.wikipedia.org/wiki/CardDAV>`_ capable client to either 
-    one of these addresses:
+    `CardDAV <https://en.wikipedia.org/wiki/CardDAV>`_ capable client to these addresses:
 
     *For CalDAV:*
         |**caldav_uri**|
 
-    or
+    or if that did not work:
         |**caldav_uri_long**|
 
     *For CardDAV:*
         |**carddav_uri**|
 
-    or
+    or if that did not work:
         |**carddav_uri_long**|
 
+    When using the alternative address, please make sure to replace the last part (|**username**| and domain) with your actual username
+    or switch to a client that is able to auto-discover the correct addresses based on the short address.
 
 .. only:: webdav
 
