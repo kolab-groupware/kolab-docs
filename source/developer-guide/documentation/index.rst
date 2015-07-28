@@ -2,10 +2,11 @@
 Contributing to the Documentation
 =================================
 
-This documentation can easily be contributed to by forking our project
-on GitHub and submitting a pull request:
+This documentation can easily be contributed to by cloning the following git repository.
 
-    https://github.com/kolab-groupware/kolab-docs
+    https://git.kolab.org/diffusion/D/
+
+https://kolab.org/blog/timotheus-pokorra/2015/07/01/submitting-patches-kolab-phabricator
 
 .. IMPORTANT::
 
@@ -32,24 +33,9 @@ the documentation is written in.
 
 #.  Naturally, first clone the git repository.
 
-    For anonymous users;
-
     .. parsed-literal::
 
-        $ :command:`git clone https://github.com/kolab-groupware/kolab-docs`
-
-    For GitHub users that have created a fork;
-
-    .. parsed-literal::
-
-        $ :command:`git clone git@github.com:YOURUSERNAME/kolab-docs`
-
-    For existing Kolab contributors with permissions to push back
-    directly;
-
-    .. parsed-literal::
-
-        $ :command:`git clone git@github.com:kolab-groupware/kolab-docs`
+        $ :command:`git clone https://git.kolab.org/diffusion/D/docs.git`
 
 #.  Navigate in to the fresh clone:
 
@@ -71,6 +57,15 @@ the documentation is written in.
     .. seealso::
 
         *   `Working with Git Submodules`_
+
+#.  Make your changes and then commit them:
+
+    .. parsed-literal::
+
+        $ :command:`git commit -a`
+
+#.  Push your changes back into our Phabricator instance.
+    Timotheus wrote `a good tutorial on how to do that <https://kolab.org/blog/timotheus-pokorra/2015/07/01/submitting-patches-kolab-phabricator>`__.
 
 Enjoy:
 
