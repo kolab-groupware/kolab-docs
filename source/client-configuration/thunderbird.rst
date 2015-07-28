@@ -82,9 +82,7 @@ Click *Done* to re-test the configuration and finish the setup.
     calendar. A context menu will pop up where you can select *New 
     Calendar...*. In the following dialog you say that your calendar is *On the 
     Network*, then click *Next*. On the next screen, please select the *CalDAV*
-    format and enter the following address:
-
-        |**caldav_uri_long**|/**Calendar**
+    format and enter your calendar address.
 
     .. container:: screenshots
 
@@ -100,11 +98,8 @@ Click *Done* to re-test the configuration and finish the setup.
 
                 |caldav_uri_long|/Calendar @344,262 #64
 
-    The above URL will usually only work for the standard Calendar that is set 
-    up initially. In order to add your other calendars, please repeat this 
-    procedure and use the CalDAV URL that the option *Show Calendar URL* from 
-    the Webinterface will get you. To get this URL, please login to 
-    |service_uri| and then follow the following steps:
+    To find your calendar address, please use the *Show Calendar URL* from 
+    the Web Application. Please login to |service_uri| and then follow the following steps:
 
     #.  Select *Calendar* in the top right corner drop-down menu
 
@@ -135,15 +130,34 @@ Click *Done* to re-test the configuration and finish the setup.
 
                 |caldav_uri_long|/Calendar @275,245
 
+
     Tasks Setup
     ^^^^^^^^^^^
 
     If you want to synchronize your tasks with Thunderbird,
     you can follow the steps from the :ref:`settings-clientconfig-thunderbird-lightning`
-    and add a "calendar" with the following address:
+    as if you were to add a "calendar" with the following address:
 
         |**caldav_uri_long**|/**Tasks**
 
+    Please make sure to replace |useremail| with your email address.
+
+    .. container:: screenshots
+
+        .. fancyfigure:: _static/thunderbird-lightning-newcal.png
+            :group: thunderbirdcaldav
+            :width: 240
+            :height: 180
+            :alt: Thunderbird Tasks Setup Dialog
+
+            .. fancyrender::
+                :font: verdana
+                :size: 11
+
+                |caldav_uri_long|/Tasks @344,262 #64
+
+    The above URL will usually only work for the standard Tasks folder that is set 
+    up initially. You can guess others from the name.
     Now your tasks should show up in Thunderbird as well.
 
 
