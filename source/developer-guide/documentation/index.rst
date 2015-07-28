@@ -6,8 +6,6 @@ This documentation can easily be contributed to by cloning the following git rep
 
     https://git.kolab.org/diffusion/D/
 
-https://kolab.org/blog/timotheus-pokorra/2015/07/01/submitting-patches-kolab-phabricator
-
 .. IMPORTANT::
 
     The documentation is only as good as your willingness to contribute
@@ -67,7 +65,7 @@ the documentation is written in.
 #.  Push your changes back into our Phabricator instance.
     Timotheus wrote `a good tutorial on how to do that <https://kolab.org/blog/timotheus-pokorra/2015/07/01/submitting-patches-kolab-phabricator>`__.
 
-Enjoy:
+Enjoy and thanks for contributing to Kolab!
 
 .. _Sphinx: http://sphinx-doc.org/
 .. _reStructuredText: http://sphinx-doc.org/rest.html
