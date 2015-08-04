@@ -287,7 +287,7 @@ The shared folder have been extended to make use of the **acl** editor.
 
 You can find the full sql file here:
 
-#.  web: http://git.kolab.org/kolab-wap/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.1
+#.  web: https://git.kolab.org/diffusion/WAP/browse/master/doc/kolab_wap.sql;kolab-webadmin-3.2.1
 #.  locally: :file:`/usr/share/doc/kolab-webadmin/kolab_wap.sql`
 
 To not mess with your existing configuration,

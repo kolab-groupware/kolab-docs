@@ -390,7 +390,7 @@ for possible values.
 Examples
 ========
 
-The `config.ini.sample <http://git.kolab.org/kolab-freebusy/tree/config/config.ini.sample>`_
+The `config.ini.sample <https://git.kolab.org/diffusion/F/browse/master/config/config.ini.sample>`_
 file provides a full overview of possible configuration options.
 
 

@@ -139,14 +139,14 @@ compare the previous and current version in the GIT repository.
 You can find most of the configuration file that have changed when you compare
 the templates of pykolab/setup-kolab.
 
-    http://git.kolab.org/pykolab/diff/share/templates/?id=pykolab-0.7.1&id2=pykolab-0.6.10
+    http://cgit.kolab.org/pykolab/diff/share/templates/?id=pykolab-0.7.1&id2=pykolab-0.6.10
 
 /etc/kolab/kolab.conf
 ---------------------
 
 You can see the configuration differences here:
 
-    http://git.kolab.org/pykolab/diff/conf/kolab.conf?id=pykolab-0.7.1&id2=pykolab-0.6.10
+    http://cgit.kolab.org/pykolab/diff/conf/kolab.conf?id=pykolab-0.7.1&id2=pykolab-0.6.10
 
 These are the values that have been updated. Please change them in your configuration
 depending on your installation and needs
@@ -214,8 +214,8 @@ Recreatae the configuation:
 
 You can see the configuration differences here:
 
-    http://git.kolab.org/pykolab/diff/share/templates/roundcubemail/config.inc.php.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10
-    http://git.kolab.org/pykolab/commit/?id=57a48ed5e5fed38b4bbbb088fc9425a4b407c0b0
+    http://cgit.kolab.org/pykolab/diff/share/templates/roundcubemail/config.inc.php.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10
+    http://cgit.kolab.org/pykolab/commit/?id=57a48ed5e5fed38b4bbbb088fc9425a4b407c0b0
 
 Change the plugin load order the follwing way:
 
@@ -244,7 +244,7 @@ add 2 more $config entries
 
 You can see the configuration differences here:
 
-    http://git.kolab.org/pykolab/diff/share/templates/roundcubemail/password.inc.php.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10
+    http://cgit.kolab.org/pykolab/diff/share/templates/roundcubemail/password.inc.php.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10
 
 Change the password driver from **ldap** to **ldap_simple**.
 
@@ -258,7 +258,7 @@ Change the password driver from **ldap** to **ldap_simple**.
 
 You can see the configuration change here:
 
-    http://git.kolab.org/pykolab/commit/?id=172545ebeba5c73cbb502fcae859b27df7aafed2
+    http://cgit.kolab.org/pykolab/commit/?id=172545ebeba5c73cbb502fcae859b27df7aafed2
 
 Update the kolab_files_url to /chwala/ to be protocol independent.
 
@@ -272,7 +272,7 @@ Update the kolab_files_url to /chwala/ to be protocol independent.
 
 You can see the configuration differences here:
 
-    http://git.kolab.org/iRony/diff/config/dav.inc.php.sample?id=54802da29dd4e77ca8c716f6c24c1aabef3a3c1f&id2=iRony-0.2.4
+    http://cgit.kolab.org/iRony/diff/config/dav.inc.php.sample?id=54802da29dd4e77ca8c716f6c24c1aabef3a3c1f&id2=iRony-0.2.4
 
 The iRony configuration doesn't have anything special configurations.
 You might want to consider just to take the new default config file
@@ -315,7 +315,7 @@ Restart the postfix daemon
 
 You can see the configuration differences here:
 
-    http://git.kolab.org/pykolab/diff/share/templates/master.cf.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10
+    http://cgit.kolab.org/pykolab/diff/share/templates/master.cf.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10
 
 This will put wallace as the next content-filter after the mail has been
 returned from amavis to postfix. If you're don't want to make use of iTip
@@ -356,7 +356,7 @@ The shared folder have been extended to make use of the **acl** editor.
 
 You can find the full sql file here:
 
-#.  web: http://git.kolab.org/kolab-wap/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.1
+#.  web: http://cgit.kolab.org/webadmin/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.1
 #.  locally: :file:`/usr/share/doc/kolab-webadmin/kolab_wap.sql`
 
 The kolab-webadmin package doesn't provide auto updates or upgrade files

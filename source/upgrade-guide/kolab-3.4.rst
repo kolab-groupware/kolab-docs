@@ -92,7 +92,7 @@ compare the previous and current version in the GIT repository.
 With the most recent upstream cyrus-imapd version a few config parameters have
 changed.
 
-    http://git.kolab.org/pykolab/diff/share/templates/imapd.conf.tpl?id=pykolab-0.7.6&id2=pykolab-0.7.1
+    http://cgit.kolab.org/pykolab/diff/share/templates/imapd.conf.tpl?id=pykolab-0.7.6&id2=pykolab-0.7.1
 
 The following parameters have been renamed:
 
@@ -145,7 +145,7 @@ get 3 non-delivery-reports because whitespace would be considered a delimiter.
 
 You can see the configuration differences here:
 
-    http://git.kolab.org/pykolab/diff/conf/kolab.conf?id=pykolab-0.7.6&id2=pykolab-0.7.1
+    http://cgit.kolab.org/pykolab/diff/conf/kolab.conf?id=pykolab-0.7.6&id2=pykolab-0.7.1
 
 We only have one new option for wallace, which can be ignored if you don't use
 wallace for resource management. Restart wallace and kolab-server after upgrading
@@ -210,7 +210,7 @@ Recreate the configuation:
 
 You can see the configuration differences here:
 
-    http://git.kolab.org/pykolab/diff/share/templates/roundcubemail/config.inc.php.tpl?id=pykolab-0.7.6&id2=pykolab-0.7.1
+    http://cgit.kolab.org/pykolab/diff/share/templates/roundcubemail/config.inc.php.tpl?id=pykolab-0.7.6&id2=pykolab-0.7.1
 
 The 'threading_as_default' no longer exists and therfore don't need to be
 loaded. So you can safely remove it.
@@ -250,7 +250,7 @@ skin_logo configuration.
 
 You can see the configuration differences here:
 
-    http://git.kolab.org/pykolab/diff/share/templates/roundcubemail/managesieve.inc.php.tpl?id=HEAD&id2=pykolab-0.7.1
+    http://cgit.kolab.org/pykolab/diff/share/templates/roundcubemail/managesieve.inc.php.tpl?id=HEAD&id2=pykolab-0.7.1
 
 Turn of debugging and add 2 additional entries:
 
@@ -276,7 +276,7 @@ You can savely switch to a relative url for freebusy.
 
 You can see the configuration differences here:
 
-    http://git.kolab.org/iRony/diff/config/dav.inc.php.sample?id=iRony-0.3.0&id2=iRony-0.2.8
+    http://cgit.kolab.org/iRony/diff/config/dav.inc.php.sample?id=iRony-0.3.0&id2=iRony-0.2.8
 
 If you use the global addressbook <> CardDAV gateway you might want to
 take a look on the changes, otherwise you can just take the default
@@ -329,7 +329,7 @@ The admin database got a few minor updates:
 
 You can find the full sql file here:
 
-#.  web: http://git.kolab.org/kolab-wap/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.6
+#.  web: http://cgit.kolab.org/webadmin/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.6
 #.  locally: :file:`/usr/share/doc/kolab-webadmin/kolab_wap.sql`
 
 The kolab-webadmin package doesn't provide auto updates or upgrade files

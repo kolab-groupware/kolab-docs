@@ -135,7 +135,7 @@ Service can convert data from an Exchange 2010 service into the iCal Freebusy fo
 Configuration Options
 =====================
 
-The `config.ini.sample <http://git.kolab.org/kolab-freebusy/tree/config/config.ini.sample>`_
+The `config.ini.sample <https://git.kolab.org/diffusion/F/browse/master/config/config.ini.sample>`_
 file provides an overview of possible configuration options with several examples.
 
 The full documentation of the Kolab Freebusy Service configuration can be found in the
