@@ -57,6 +57,26 @@ Example for an API call from PHP
 
         ?>
 
+Example for an API call from Python
+===================================
+
+     .. parsed-literal::
+        import pykolab
+
+        from pykolab import wap_client
+
+        conf = pykolab.getConf()
+        login = conf.get('ldap', 'bind_dn')
+        password = conf.get('ldap', 'bind_pw')
+        domain = conf.get('kolab', 'primary_domain')
+
+        result = wap_client.authenticate(login, password, domain)
+
+        user_types = wap_client.user_types_list()
+
+        print(user_types)
+
+        print(wap_client.user_find({"mail": "john.doe@example.org"}))
 
 HTTP Method Convention
 ======================
