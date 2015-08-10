@@ -117,7 +117,7 @@ have the following rules;
 
     .. parsed-literal::
 
-        >>> print api.get('user.find', '{"mail": "john.doe@example.org"})
+        >>> print api.get('user.find', '{"mail": "john.doe@example.org"}')
         '{"status":"OK","result":(...)}'
 
 **Searching for objects**
