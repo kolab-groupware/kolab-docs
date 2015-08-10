@@ -709,9 +709,7 @@ The group.info API call accepts the following parameter:
 
 .. rubric:: Example Usage
 
-#.  Login to the API, using the
-    :ref:`and-kolab-wap-api-system-authenticate-method`. An example login
-    procedure is included in that section.
+#.  Login to the API, using the wap_client (see example above)
 
 #.  Issue a call against ``group.info``:
 
