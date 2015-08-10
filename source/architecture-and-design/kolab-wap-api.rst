@@ -647,6 +647,49 @@ The ``group`` Service
 ``group.add`` Method
 ---------------------
 
+This API call adds a new group.
+
+The group.add API call accepts the following parameters:
+
+**cn**
+
+    The Common Name of the group
+
+**ou**
+
+    The Organizational Unit of the group
+
+**objectClass**
+
+    The object classes for the group
+
+**type_id**
+
+    The type for this group: Kolab Distribution Group (Static) is 1, Kolab Distribution Group (Dynamic) is 2. See table group_types in WAP database.
+
+**mail**
+
+    The E-Mail address for this group
+
+**uniqueMember**
+
+    The accounts that should be part of this group
+
+.. rubric:: Example Usage
+
+#.  Login to the API, using the wap_client (see example above)
+
+#.  Issue a call against ``group.add``:
+
+    >>> print(wap_client.group_add(
+           { 'cn': 'new_test_group',
+             'ou': 'ou=Groups,dc=example,dc=org',
+             'objectClass': ['top', 'groupofuniquenames', 'kolabgroupofuniquenames'],
+             'type_id': 1,
+             'mail': 'new_test_group@example.org',
+             'uniqueMember' : { 'john.doe@example.org', 'jane.doe@example.org' }
+           }))
+
 ``group.delete`` Method
 ---------------------
 
@@ -655,6 +698,24 @@ The ``group`` Service
 
 ``group.info`` Method
 ---------------------
+
+This API call returns information about a group.
+
+The group.info API call accepts the following parameter:
+
+**dn**
+
+    The Distinguished Name of the group
+
+.. rubric:: Example Usage
+
+#.  Login to the API, using the
+    :ref:`and-kolab-wap-api-system-authenticate-method`. An example login
+    procedure is included in that section.
+
+#.  Issue a call against ``group.info``:
+
+    >>> print(wap_client.group_info('cn=mygroup,ou=Groups,dc=example,dc=org'))
 
 ``group.members_list`` Method
 -----------------------------
