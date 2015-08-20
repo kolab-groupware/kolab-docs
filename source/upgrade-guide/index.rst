@@ -2,6 +2,17 @@
 Upgrade Guide
 =============
 
+Kolab Enterprise
+================
+
+.. toctree::
+    :maxdepth: 1
+
+    ke14
+
+Kolab Community
+===============
+
 .. toctree::
     :maxdepth: 1
 
