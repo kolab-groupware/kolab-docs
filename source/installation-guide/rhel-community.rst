@@ -7,9 +7,9 @@ Installation on Red Hat Enterprise Linux
 1.  Install the `EPEL repository <http://fedoraproject.org/wiki/EPEL>`_
     configuration using the RPM package linked to from:
 
-    *   `EPEL for CentOS 7`_
+    *   `EPEL for Red Hat Enterprise Linux 7`_
 
-    *   `EPEL for CentOS 6`_
+    *   `EPEL for Red Hat Enterprise Linux 6`_
 
     .. parsed-literal::
 
@@ -17,7 +17,7 @@ Installation on Red Hat Enterprise Linux
 
 2.  Install the Kolab Groupware repository configuration:
 
-    For CentOS 7:
+    For Red Hat Enterprise Linux 7:
 
     .. parsed-literal::
 
@@ -25,7 +25,7 @@ Installation on Red Hat Enterprise Linux
         # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4/CentOS_7/Kolab:3.4.repo`
         # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/CentOS_7/Kolab:3.4:Updates.repo`
 
-    For CentOS 6:
+    For Red Hat Enterprise Linux 6:
 
     .. parsed-literal::
 
@@ -52,11 +52,24 @@ Installation on Red Hat Enterprise Linux
 
 4.  Install Kolab Groupware:
 
+    For Red Hat Enterprise Linux 7:
+
+    .. parsed-literal::
+
+        # :command:`yum --enablerepo=rhel-7-server-optional-rpms install kolab`
+
+    .. IMPORTANT::
+
+        To continue to receive updates for packages shipped through the
+        **rhel-7-server-optional-rpms** repository, enable it permanently:
+
+    For Red Hat Enterprise Linux 6:
+
     .. parsed-literal::
 
         # :command:`yum install kolab`
 
 Continue to :ref:`install-setup-kolab`.
 
-.. _EPEL for CentOS 6: http://download.fedoraproject.org/pub/epel/6/i386/repoview/epel-release.html
-.. _EPEL for CentOS 7: http://download.fedoraproject.org/pub/epel/beta/7/x86_64/repoview/epel-release.html
+.. _EPEL for Red Hat Enterprise Linux 6: http://download.fedoraproject.org/pub/epel/6/i386/repoview/epel-release.html
+.. _EPEL for Red Hat Enterprise Linux 7: http://download.fedoraproject.org/pub/epel/beta/7/x86_64/repoview/epel-release.html
