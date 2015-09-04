@@ -25,5 +25,3 @@ Red Hat Enterprise Linux 7
     :maxdepth: 1
 
     rhel-7-enterprise-14
-
-.. _Kolab Systems AG: https://kolabsys.com

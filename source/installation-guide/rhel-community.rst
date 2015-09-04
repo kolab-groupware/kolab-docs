@@ -7,9 +7,9 @@ Installation on Red Hat Enterprise Linux
 1.  Install the `EPEL repository <http://fedoraproject.org/wiki/EPEL>`_
     configuration using the RPM package linked to from:
 
-    *   `EPEL for Red Hat Enterprise Linux 7`_
+    *   `EPEL for Enterprise Linux 7`_
 
-    *   `EPEL for Red Hat Enterprise Linux 6`_
+    *   `EPEL for Enterprise Linux 6`_
 
     .. parsed-literal::
 
@@ -70,6 +70,3 @@ Installation on Red Hat Enterprise Linux
         # :command:`yum install kolab`
 
 Continue to :ref:`install-setup-kolab`.
-
-.. _EPEL for Red Hat Enterprise Linux 6: http://download.fedoraproject.org/pub/epel/6/i386/repoview/epel-release.html
-.. _EPEL for Red Hat Enterprise Linux 7: http://download.fedoraproject.org/pub/epel/beta/7/x86_64/repoview/epel-release.html

@@ -372,8 +372,11 @@ rst_prolog += """
 .. _Differential: https://git.kolab.org/differential/
 .. _Diffusion: https://git.kolab.org/diffusion/
 .. _Drydock: https://git.kolab.org/drydock/
+.. _EPEL for Enterprise Linux 6: http://download.fedoraproject.org/pub/epel/6/x86_64/repoview/epel-release.html
+.. _EPEL for Enterprise Linux 7: http://download.fedoraproject.org/pub/epel/7/x86_64/repoview/epel-release.html
 .. _Harbormaster: https://git.kolab.org/harbormaster/
 .. _Herald: https://git.kolab.org/herald/
+.. _Kolab Systems AG: https://kolabsystems.com
 .. _Maniphest: https://git.kolab.org/maniphest/
 .. _Phabricator: https://git.kolab.org/
 .. _Process Managers: https://git.kolab.org/tag/process_managers/

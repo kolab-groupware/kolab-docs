@@ -7,9 +7,9 @@ Installation on CentOS
 1.  Install the `EPEL repository <http://fedoraproject.org/wiki/EPEL>`_
     configuration using the RPM package linked to from:
 
-    *   `EPEL for CentOS 7`_
+    *   `EPEL for Enterprise Linux 7`_
 
-    *   `EPEL for CentOS 6`_
+    *   `EPEL for Enterprise Linux 6`_
 
     .. parsed-literal::
 
@@ -57,6 +57,3 @@ Installation on CentOS
         # :command:`yum install kolab`
 
 Continue to :ref:`install-setup-kolab`.
-
-.. _EPEL for CentOS 6: http://download.fedoraproject.org/pub/epel/6/i386/repoview/epel-release.html
-.. _EPEL for CentOS 7: http://download.fedoraproject.org/pub/epel/7/x86_64/repoview/epel-release.html

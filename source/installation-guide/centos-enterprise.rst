@@ -25,5 +25,3 @@ CentOS 7
     :maxdepth: 1
 
     centos-7-enterprise-14
-
-.. _Kolab Systems AG: https://kolabsys.com

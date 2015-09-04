@@ -55,6 +55,7 @@ disclosure (where appropriate).
     :maxdepth: 1
 
     centos-enterprise
+    debian-enterprise
     rhel-enterprise
     ucs-enterprise
 

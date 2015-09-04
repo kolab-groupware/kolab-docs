@@ -100,7 +100,4 @@ Continue to :ref:`install-setup-kolab`.
 
 .. [#]
 
-    https://support.kolabsys.com/Obtaining,_Renewing_and_Using_a_Client_SSL_Certificate#Using_a_Customer_or_Partner_Client_SSL_Certificate.
-
-.. _EPEL for Enterprise Linux 6: http://download.fedoraproject.org/pub/epel/6/i386/repoview/epel-release.html
-.. _Kolab Systems AG: https://kolabsys.com
+    https://support.kolabsys.com/Obtaining,_Renewing_and_Using_a_Client_SSL_Certificate#Using_a_Customer_or_Partner_Client_SSL_Certificate
