@@ -63,13 +63,19 @@ Installation Procedure
 
         # :command:`rpm --import maipo.asc`
 
-5.  Download the Kolab Enterprise repository configuration package:
+5.  Install the **yum-plugin-priorities** software package:
+
+    .. parsed-literal::
+
+        # :command:`yum -y install yum-plugin-priorities`
+
+6.  Download the Kolab Enterprise repository configuration package:
 
     .. parsed-literal::
 
         # :command:`wget https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`
 
-6.  Verify the signature on the downloaded RPM package:
+7.  Verify the signature on the downloaded RPM package:
 
     .. parsed-literal::
 
@@ -82,13 +88,13 @@ Installation Procedure
         14 from this package, should the verification of the package
         fail.
 
-7.  Install the repository configuration:
+8.  Install the repository configuration:
 
     .. parsed-literal::
 
         # :command:`yum localinstall kolab-enterprise-14-for-el7.rpm`
 
-8.  Install Kolab Enterprise:
+9.  Install Kolab Enterprise:
 
     .. parsed-literal::
 
