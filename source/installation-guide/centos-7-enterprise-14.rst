@@ -42,8 +42,7 @@ Installation Procedure
             # :command:`chown root:root /etc/pki/tls/private/mirror.kolabsys.com.client.pem`
             # :command:`chmod 640 /etc/pki/tls/private/mirror.kolabsys.com.client.pem`
 
-2.  Install the `EPEL repository <http://fedoraproject.org/wiki/EPEL>`_
-    repository configuration:
+2.  Install the :term:`EPEL` repository:
 
     .. parsed-literal::
 

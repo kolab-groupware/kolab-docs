@@ -42,32 +42,25 @@ Installation Procedure
             # :command:`chown root:root /etc/pki/tls/private/mirror.kolabsys.com.client.pem`
             # :command:`chmod 640 /etc/pki/tls/private/mirror.kolabsys.com.client.pem`
 
-2.  Install the `EPEL repository <http://fedoraproject.org/wiki/EPEL>`_
-    repository configuration:
+2.  Install the :term:`EPEL` repository"
 
     .. parsed-literal::
 
         # :command:`rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm`
 
-3.  Obtain a copy of the GPG signature used to sign packages:
+3.  Import this signature in to the RPM database:
 
     .. parsed-literal::
 
-        # :command:`wget https://ssl.kolabsys.com/maipo.asc`
+        # :command:`rpm --import https://ssl.kolabsys.com/maipo.asc`
 
-4.  Import this signature in to the RPM database:
-
-    .. parsed-literal::
-
-        # :command:`rpm --import maipo.asc`
-
-5.  Install the Kolab Enterprise repository configuration package:
+4.  Install the Kolab Enterprise repository configuration package:
 
     .. parsed-literal::
 
         # :command:`yum --enablerepo=rhel-7-server-optional-rpms https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`
 
-6.  Install Kolab Enterprise:
+5.  Install Kolab Enterprise:
 
     .. parsed-literal::
 
