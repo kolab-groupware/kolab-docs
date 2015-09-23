@@ -48,8 +48,6 @@ Installation Procedure
 
         # :command:`rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm`
 
-        # :command:`wget https://ssl.kolabsys.com/santiago.asc`
-
 3.  Import this signature in to the RPM database:
 
     .. parsed-literal::
@@ -67,6 +65,8 @@ Installation Procedure
     .. parsed-literal::
 
         # :command:`yum install kolab`
+
+6.  Do not forget to also execute 'yum update'.
 
 Continue to :ref:`install-setup-kolab`.
 
