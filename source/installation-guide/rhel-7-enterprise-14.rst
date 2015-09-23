@@ -43,59 +43,31 @@ Installation Procedure
             # :command:`chmod 640 /etc/pki/tls/private/mirror.kolabsys.com.client.pem`
 
 2.  Install the `EPEL repository <http://fedoraproject.org/wiki/EPEL>`_
-    configuration using the RPM package linked to from:
-
-    *   `EPEL for Enterprise Linux 7`_
+    repository configuration:
 
     .. parsed-literal::
 
-        # :command:`rpm -Uhv http://url/to/epel-release.rpm`
+        # :command:`rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm`
 
-3.  Install the **yum-plugin-priorities** package from the optional RPM packages
-    for RHEL 7:
-
-    .. parsed-literal::
-
-        # :command:`yum --enablerepo=rhel-7-server-optional-rpms install yum-plugin-priorities`
-
-4.  Obtain a copy of the GPG signature used to sign packages:
+3.  Obtain a copy of the GPG signature used to sign packages:
 
     .. parsed-literal::
 
         # :command:`wget https://ssl.kolabsys.com/maipo.asc`
 
-5.  Import this signature in to the RPM database:
+4.  Import this signature in to the RPM database:
 
     .. parsed-literal::
 
         # :command:`rpm --import maipo.asc`
 
-6.  Download the Kolab Enterprise repository configuration package:
+5.  Install the Kolab Enterprise repository configuration package:
 
     .. parsed-literal::
 
-        # :command:`wget https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`
+        # :command:`yum --enablerepo=rhel-7-server-optional-rpms https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`
 
-7.  Verify the signature on the downloaded RPM package:
-
-    .. parsed-literal::
-
-        # :command:`rpm -K kolab-enterprise-14-for-el7.rpm`
-        kolab-enterprise-14-for-el7.rpm: sha1 md5 OK
-
-    .. WARNING::
-
-        Do NOT install the repository configuration for Kolab Enterprise
-        14 from this package, should the verification of the package
-        fail.
-
-8.  Install the repository configuration:
-
-    .. parsed-literal::
-
-        # :command:`yum localinstall kolab-enterprise-14-for-el7.rpm`
-
-9.  Install Kolab Enterprise:
+6.  Install Kolab Enterprise:
 
     .. parsed-literal::
 
