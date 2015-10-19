@@ -24,13 +24,19 @@ Installation on CentOS
 
         # :command:`yum install yum-plugin-priorities`
 
-4.  Import the GPG key used to sign the packages:
+4.  Make sure that the packages from the Kolab repositories have a higher priority than eg. the Epel packages:
+
+    .. parsed-literal::
+
+        # :command:`for f in /etc/yum.repos.d/Kolab*.repo; do sed -i "s#enabled=1#enabled=1\npriority=1#g" $f; done`
+
+5.  Import the GPG key used to sign the packages:
 
     .. parsed-literal::
 
         # :command:`rpm --import https://ssl.kolabsys.com/community.asc`
 
-5.  Install Kolab Groupware:
+6.  Install Kolab Groupware:
 
     .. parsed-literal::
 
