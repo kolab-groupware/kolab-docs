@@ -467,7 +467,7 @@ most definitely not the same tree as ``dc=example,dc=org``.
 
 A set of tables for a parent domain name space of ``example.org`` holding
 alias domain name spaces ``example.com`` and ``example.de`` for example would
-look as follows (three sample files included):
+look as follows (four sample files included):
 
 ``/etc/postfix/ldap/example.org/mydestination.cf``::
 
@@ -514,6 +514,22 @@ look as follows (three sample files included):
 
     query_filter = (&(|(mail=%s)(alias=%s))(objectclass=kolabinetorgperson))
     result_attribute = mail
+
+``/etc/postfix/ldap/example.org/transport_maps.cf``::
+    server_host = localhost
+    server_port = 389
+    version = 3
+    search_base = dc=example,dc=org
+    scope = sub
+
+    domain = ldap:/etc/postfix/ldap/example.org/mydestination.cf
+
+    bind_dn = uid=kolab-service,ou=Special Users,dc=example,dc=org
+    bind_pw = Welcome2KolabSystems
+
+    query_filter = (&(|(mailAlternateAddress=%s)(alias=%s)(mail=%s))(objectclass=kolabinetorgperson))
+    result_attribute = mail
+    result_format = lmtp:unix:/srv/imap/config/socket/lmtp
 
 **Shared Folders Transport Maps**
 
