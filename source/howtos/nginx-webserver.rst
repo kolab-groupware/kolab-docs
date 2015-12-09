@@ -38,7 +38,7 @@ look on the complex setup.
             server_name         localhost:8080;
 
             # support roundcubemail secure urls
-            rewrite "^/roundcubemail/[a-f0-9]{16}/(.*)" /roundcubemail/$1;
+            rewrite "^/roundcubemail/[a-zA-Z0-9]{16}/(.*)" /roundcubemail/$1;
 
             # roundcube
             location /roundcubemail {
@@ -377,7 +377,7 @@ automatically.
                 root /usr/share/roundcubemail/public_html;
 
                 # support for csrf token
-                rewrite "^/[a-f0-9]{16}/(.*)" /$1 break;
+                rewrite "^/[a-zA-Z0-9]{16}/(.*)" /$1 break;
 
                 # maximum upload size for mail attachments
                 client_max_body_size 30M;
@@ -572,7 +572,7 @@ But this all depends on you and your communication with your end users.
             root /usr/share/roundcubemail/public_html;
 
             # support for csrf token
-            rewrite "^/[a-f0-9]{16}/(.*)" /$1 break;
+            rewrite "^/[a-zA-Z0-9]{16}/(.*)" /$1 break;
 
             # maximum upload size for mail attachments
             client_max_body_size 30M;
