@@ -4,6 +4,10 @@
 Installation on CentOS
 ======================
 
+.. NOTE::
+    Please note that currently the packages will not install for CentOS 7.2. The OBS at Kolab Systems still builds against CentOS 7.1 which causes a conflict with the newer version of libical that comes with CentOS 7.2.
+    As an alternative, you can use the Kolab packages provided in a Copr repository, see instructions at: https://github.com/TBits/KolabScripts/tree/Kolab3.4/copr#installing-kolab-from-the-copr-repositories
+
 1.  Install the :term:`EPEL` repository:
 
     .. parsed-literal::
