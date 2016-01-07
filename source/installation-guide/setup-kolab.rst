@@ -12,6 +12,8 @@ Kolab Groupware Setup
     and refer to the :ref:`install-preparing-the-system_hostname-and-fqdn`
     section of the installation guide.
 
-1.  Run the following command to set up Kolab Groupware::
+1.  Run the following command to set up Kolab Groupware:
 
-    # setup-kolab
+    .. parsed-literal::
+
+        # :command:`setup-kolab`

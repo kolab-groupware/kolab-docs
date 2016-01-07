@@ -66,7 +66,7 @@ Installation Procedure
 
         # :command:`yum install kolab`
 
-6.  Do not forget to also execute 'yum update'.
+6.  Do not forget to also execute :command:`yum update`.
 
 Continue to :ref:`install-setup-kolab`.
 

@@ -19,5 +19,3 @@ UCS 4.0
     :maxdepth: 1
 
     ucs-4-enterprise-14
-
-.. _Kolab Systems AG: https://kolabsys.com
