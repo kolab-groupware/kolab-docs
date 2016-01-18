@@ -7,7 +7,8 @@ Puppet Module: ``kolab``
 ========================
 
 The Kolab module for Puppet allows the continued management of a Kolab
-Groupware environment, by defining nodes as having a certain role.
+Groupware environment, by defining nodes as having a certain role within
+the Kolab Groupware environment.
 
 To configure the exact way an included ``kolab`` module class behaves,
 the ``kolab`` module uses multiple parameterized classes.
