@@ -346,6 +346,11 @@ Glossary
 
             *   :term:`discretionary access control`
 
+    MBTF
+
+        Mean time between Failure -- a statistical determination of the
+        time between failures.
+
     msa
     Mail Submission Agent
 
@@ -367,25 +372,13 @@ Glossary
         refer to a list of :term:`domain name spaces` that the local
         :term:`MTA` is considered the final destination for.
 
-    pattern
+    operating system disks
 
-        A pattern for mailboxes can be specified using ``%`` and ``*``
-        wildcards.
+        Storage used for the operating system installation.
 
-        The ``%`` wildcard matches mailboxes on a single level only, while the
-        ``*`` wildcard matches mailboxes in all depth levels.
+        .. seealso::
 
-        To list INBOX folders for users in the example.org domain, use:
-
-        .. parsed-literal::
-
-            # :command:`kolab lm user/%@example.org`
-
-        but to list all user folders in the example.org domain:
-
-        .. parsed-literal::
-
-            # :command:`kolab lm user/*@example.org`
+            *   :term:`payload disks`
 
     parent domain
     parent domain name space
@@ -409,9 +402,42 @@ Glossary
 
         A partition in Cyrus IMAP (...)
 
+    pattern
+
+        A pattern for mailboxes can be specified using ``%`` and ``*``
+        wildcards.
+
+        The ``%`` wildcard matches mailboxes on a single level only, while the
+        ``*`` wildcard matches mailboxes in all depth levels.
+
+        To list INBOX folders for users in the example.org domain, use:
+
+        .. parsed-literal::
+
+            # :command:`kolab lm user/%@example.org`
+
+        but to list all user folders in the example.org domain:
+
+        .. parsed-literal::
+
+            # :command:`kolab lm user/*@example.org`
+
+    payload disks
+
+        Storage used for information.
+
     Perfect Forward Secrecy
 
         *Perfect Forward Secrecy* or PFS (...)
+
+    policy enforcement point
+
+        A policy enforcement point is a point in an environment or
+        infrastructure, that allows a policy to be enforced.
+
+        Such points include a patch-point (including virtualized
+        networking), a communication boundary (gateway, firewall,
+        sending node, receiving node, ...), and more.
 
     primary domain
     primary domain name space
