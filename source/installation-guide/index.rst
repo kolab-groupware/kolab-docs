@@ -80,5 +80,13 @@ Configuring Kolab Groupware
 
     ../glossary
 
+Installing the Kolab Desktop Client
+===================================
+
+.. toctree::
+    :maxdepth: 1
+
+    kontact-fedora
+
 .. _available from Kolab Systems: https://kolabenterprise.com
 .. _contributing: https://kolab.org/possible-contributions
