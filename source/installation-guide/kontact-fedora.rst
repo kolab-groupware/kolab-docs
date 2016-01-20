@@ -22,10 +22,10 @@ Installation on Fedora
 
     .. parsed-literal::
 
-        # :command: `for f in /etc/yum.repos.d/Kontact*.repo`
-        # :command: `do`
-        # :command:     `sed -i "s#enabled=1#enabled=1\\npriority=0#g" $f`
-        # :command: `done`
+        # :command:`for f in /etc/yum.repos.d/Kontact*.repo`
+        # :command:`do`
+        # :command:    `sed -i "s#enabled=1#enabled=1\\npriority=0#g" $f`
+        # :command:`done`
 
 3.  Import the GPG key used to sign the packages:
 
