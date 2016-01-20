@@ -4,19 +4,15 @@ Installation on Windows
 
 The Windows version of Kontact is depending on the two tools:
 
-- MSVC2013 Redistributable x86 (http://www.microsoft.com/en-us/download/details.aspx?id=40784)
-- GPG4Win 2.2.0 Vanilla (http://files.gpg4win.org/gpg4win-vanilla-2.2.0.exe)
+- `MSVC2013 Redistributable x86`_
+- `GPG4Win 2.2.0 Vanilla`_
 
 The installer is interactively offering to install these two dependencies (point 8. and 9.).
 
 Installation
 ------------
 
-1.   Download the file:
-
-    .. parsed-literal::
-
-        # :command:`http://mirror.kolabsys.com/pub/upload/windows/Kontact-E14-LATEST.exe`
+1.   Download the latest installer_.
 
 2.   Navigate to the file in the file browser. Double click the file, or Right click and select "Run".
 
@@ -50,3 +46,7 @@ Installation
     .. figure:: images/first-run.png
 
 13.  Proceed to "First
+
+.. _installer: http://mirror.kolabsys.com/pub/upload/windows/Kontact-E14-LATEST.exe
+.. _MSVC2013 Redistributable x86: http://www.microsoft.com/en-us/download/details.aspx?id=40784
+.. _GPG4Win 2.2.0 Vanilla: http://files.gpg4win.org/gpg4win-vanilla-2.2.0.exe
