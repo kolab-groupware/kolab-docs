@@ -83,10 +83,17 @@ Configuring Kolab Groupware
 Installing the Kolab Desktop Client
 ===================================
 
+The Kolab Desktop Client is maintained by community volunteers
+in their spare time.
+
+It has a fast release cycle and is in steady movement. If things do not
+work as expected, please consider `contributing`_.
+
 .. toctree::
     :maxdepth: 1
 
     kontact-fedora
+    kontact-windows
 
 .. _available from Kolab Systems: https://kolabenterprise.com
 .. _contributing: https://kolab.org/possible-contributions
