@@ -45,7 +45,7 @@ Installation
 12.  With the first start of the tool, the account setup wizard is starting to guide the user through the setup of the first account.
     .. figure:: images/first-run.png
 
-13.  Proceed to "First
+13.  Proceed to "First".
 
 .. _installer: http://mirror.kolabsys.com/pub/upload/windows/Kontact-E14-LATEST.exe
 .. _MSVC2013 Redistributable x86: http://www.microsoft.com/en-us/download/details.aspx?id=40784
