@@ -42,7 +42,7 @@ Installation
 11.  When the Completion Screen is showing up, the installation is finished. Click "Finish".
     .. figure:: images/complete-screen.png
 
-12.  With the first start of the tool, the account setup wizzard is starting to guid the user through the setup of the first account.
+12.  With the first start of the tool, the account setup wizard is starting to guide the user through the setup of the first account.
     .. figure:: images/first-run.png
 
 13.  Proceed to "First
