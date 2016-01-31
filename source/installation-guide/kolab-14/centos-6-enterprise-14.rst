@@ -1,4 +1,4 @@
-.. _installation-centos-6-enterprise-14:
+.. _installation-guide-centos-6-enterprise-14:
 
 ===============================================
 Installation of Kolab Enterprise 14 on CentOS 6

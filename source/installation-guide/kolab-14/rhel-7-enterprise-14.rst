@@ -1,10 +1,10 @@
-.. _installation-centos-7-enterprise-14:
+.. _installation-guide-rhel-7-enterprise-14:
 
-===============================================
-Installation of Kolab Enterprise 14 on CentOS 7
-===============================================
+=================================================================
+Installation of Kolab Enterprise 14 on Red Hat Enterprise Linux 7
+=================================================================
 
-The installation of Kolab Groupware on CentOS installs
+The installation of Kolab Groupware on Red Hat Enterprise Linux installs
 a number of additional packages, from the :term:`EPEL` software
 repository, and the repositories for the Kolab Enterprise edition,
 provided by `Kolab Systems AG`_.
@@ -42,7 +42,7 @@ Installation Procedure
             # :command:`chown root:root /etc/pki/tls/private/mirror.kolabsys.com.client.pem`
             # :command:`chmod 640 /etc/pki/tls/private/mirror.kolabsys.com.client.pem`
 
-2.  Install the :term:`EPEL` repository:
+2.  Install the :term:`EPEL` repository"
 
     .. parsed-literal::
 
@@ -58,7 +58,7 @@ Installation Procedure
 
     .. parsed-literal::
 
-        # :command:`yum install https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`
+        # :command:`yum --enablerepo=rhel-7-server-optional-rpms https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`
 
 5.  Install Kolab Enterprise:
 
@@ -74,4 +74,4 @@ Continue to :ref:`install-setup-kolab`.
 
 .. [#]
 
-    https://support.kolabsys.com/Obtaining,_Renewing_and_Using_a_Client_SSL_Certificate#Using_a_Customer_or_Partner_Client_SSL_Certificate
+    https://support.kolabsys.com/Obtaining,_Renewing_and_Using_a_Client_SSL_Certificate#Using_a_Customer_or_Partner_Client_SSL_Certificate.

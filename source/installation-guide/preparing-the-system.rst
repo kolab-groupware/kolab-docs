@@ -87,9 +87,9 @@ To temporarily disable SELinux's enforcement of the targeted policy
     # :command:`setenforce 0`
 
 To disable SELinux's enforcement of the targeted policy in a manner
-persistent across system restarts, edit ``/etc/selinux/config`` and set
+persistent across system restarts, edit :file:`/etc/selinux/config` and set
 SELINUX to permissive rather than enforcing. Doing so also changes the
-Mode from ``config file:`` line in the output of sestatus.
+``Mode from config file:`` line in the output of :command:`sestatus`.
 
 .. _install-preparing_the_system-firewall:
 
@@ -125,6 +125,8 @@ Groupware. These ports include:
 | 993  | tcp       | Used for secure IMAP.                    |
 +------+-----------+------------------------------------------+
 | 995  | tcp       | Used for secure POP.                     |
++------+-----------+------------------------------------------+
+| 8080 | tcp       | Used for Manticore.                      |
 +------+-----------+------------------------------------------+
 
 CentOS / RHEL 6
@@ -190,10 +192,7 @@ permanent and reboot-save.
     firewall-cmd --reload
 
 System Users
-----------
-submission
-----------
-    prior to the installation of Kolab.
+------------
 
 *   No user or group with the names kolab, kolab-n or kolab-r may exist
     on the system prior to the installation of Kolab.

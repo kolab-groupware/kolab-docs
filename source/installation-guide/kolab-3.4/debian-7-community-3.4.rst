@@ -1,24 +1,15 @@
-.. _installation-debian-community:
+.. _installation-guide-debian-7-community-3.4:
 
-======================
-Installation on Debian
-======================
+=====================================
+Installation of Kolab 3.4 on Debian 7
+=====================================
 
 1.  Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:
-
-    For Debian Wheezy:
 
     .. parsed-literal::
 
         deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Debian_7.0/ ./
         deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Debian_7.0/ ./
-
-    For Debian Jessie:
-
-    .. parsed-literal::
-
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Debian_8.0/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Debian_8.0/ ./
 
 2.  Import the GPG key used to sign the packages:
 
@@ -56,18 +47,8 @@ Installation on Debian
 
 5. Start the installation of the base package as follows:
 
-    For Debian Wheezy:
-
     .. parsed-literal::
 
-        # :command:`aptitude install kolab`
-
-    For Debian Jessie:
-
-    .. parsed-literal::
-
-        # :command:`# workaround: first install apache2 from Jessie, we don't want apache2 from the Kolab repos which was needed for Wheezy`
-        # :command:`apt-get install apache2 -t stable`
         # :command:`aptitude install kolab`
 
 6.  When asked to confirm you want to install the package and its dependencies, press Enter.

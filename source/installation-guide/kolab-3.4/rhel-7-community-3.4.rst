@@ -1,8 +1,8 @@
-.. _installation-rhel-community:
+.. _installation-rhel-7-community-3.4:
 
-========================================
-Installation on Red Hat Enterprise Linux
-========================================
+=======================================================
+Installation of Kolab 3.4 on Red Hat Enterprise Linux 7
+=======================================================
 
 1.  Install the :term:`EPEL`_ repository:
 
@@ -24,13 +24,19 @@ Installation on Red Hat Enterprise Linux
 
         # :command:`rpm --import https://ssl.kolabsys.com/community.asc`
 
-4.  Install the **yum-plugin-priorities** package:
+4.  Make sure that the packages from the Kolab repositories have a higher priority than eg. the Epel packages:
 
     .. parsed-literal::
 
-        # :command:`yum --enablerepo=rhel-7-server-optional-rpms install kolab`
+        # :command:`for f in /etc/yum.repos.d/Kolab*.repo; do echo "priority = 60" >> $f; done`
 
-5.  Install Kolab Groupware:
+5.  Install the **yum-plugin-priorities** package:
+
+    .. parsed-literal::
+
+        # :command:`yum --enablerepo=rhel-7-server-optional-rpms install yum-plugin-priorities`
+
+6.  Install Kolab Groupware:
 
     .. parsed-literal::
 

@@ -1,8 +1,8 @@
-.. _installation-ucs-community:
+.. _installation-ucs-4-community-3.4:
 
-===========================================
-Installation on Univention Corporate Server
-===========================================
+==========================================================
+Installation of Kolab 3.4 on Univention Corporate Server 4
+==========================================================
 
 Kolab Groupware is available in the App Center included with Univention
 Corporate Server. The edition in the Univention Corporate Server App
@@ -27,19 +27,10 @@ Kolab Groupware from the OBS
 
 1.  Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:
 
-    For UCS 4.0:
-
     .. parsed-literal::
 
         deb http://obs.kolabsys.com/repositories/Kolab:/3.4/UCS_4.0/ ./
         deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/UCS_4.0/ ./
-
-    For UCS 3.2:
-
-    .. parsed-literal::
-
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/UCS_3.2/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/UCS_3.2/ ./
 
 2.  Import the GPG key used to sign the packages:
 

@@ -1,4 +1,4 @@
-.. _installation-debian-7-enterprise-14:
+.. _installation-guide-debian-7-enterprise-14:
 
 ========================================================
 Installation of Kolab Enterprise 14 on Debian 7 (Wheezy)

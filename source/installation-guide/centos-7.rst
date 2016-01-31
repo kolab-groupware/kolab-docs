@@ -1,7 +1,14 @@
-.. _installation-centos-community:
+.. _installation-guide-centos-7:
 
-======================
-Installation on CentOS
+====================================
+Installation of Kolab 16 on CentOS 7
+====================================
+
+The installation of Kolab Groupware on CentOS installs
+a number of additional packages, from the :term:`EPEL` software
+repository.
+
+Installation Procedure
 ======================
 
 1.  Install the :term:`EPEL` repository:
@@ -15,8 +22,7 @@ Installation on CentOS
     .. parsed-literal::
 
         # :command:`cd /etc/yum.repos.d/`
-        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4/CentOS_7/Kolab:3.4.repo`
-        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/CentOS_7/Kolab:3.4:Updates.repo`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/16/CentOS_7/Kolab:16.repo`
 
 3.  Install the **yum-plugin-priorities** package:
 
@@ -24,11 +30,11 @@ Installation on CentOS
 
         # :command:`yum install yum-plugin-priorities`
 
-4.  Make sure that the packages from the Kolab repositories have a higher priority than eg. the Epel packages:
+4.  Make sure that the packages from the Kolab repositories have a higher priority than eg. the :term:`EPEL` packages:
 
     .. parsed-literal::
 
-        # :command:`for f in /etc/yum.repos.d/Kolab*.repo; do echo "priority=1" >> $f; done`
+        # :command:`for f in /etc/yum.repos.d/Kolab*.repo; do echo "priority = 60" >> $f; done`
 
 5.  Import the GPG key used to sign the packages:
 
@@ -43,3 +49,4 @@ Installation on CentOS
         # :command:`yum install kolab`
 
 Continue to :ref:`install-setup-kolab`.
+

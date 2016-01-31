@@ -1,8 +1,8 @@
-.. _installation-ucs-3-enterprise-13:
+.. _installation-guide-ucs-4-enterprise-14:
 
-===========================================
-Installation on Univention Corporate Server
-===========================================
+====================================================================
+Installation of Kolab Enterprise 14 on Univention Corporate Server 4
+====================================================================
 
 .. IMPORTANT::
 
@@ -16,7 +16,7 @@ An evaluation version of Kolab is available in the Univention App
 Center. This edition does *not* provide you with bugfix, security or
 enhancement updates.
 
-Kolab Enterprise 13
+Kolab Enterprise 14
 ===================
 
 To install the Enterprise edition under Kolab Systems support, execute
@@ -27,12 +27,12 @@ the following process:
     .. parsed-literal::
 
         # :command:`ucr set \\
-            repository/online/component/kolab-13=enabled \\
-            repository/online/component/kolab-13/description="Kolab Enterprise 13 Installation Repository" \\
-            repository/online/component/kolab-13/server="mirror.kolabsys.com" \\
-            repository/online/component/kolab-13/prefix="pub/ucs" \\
-            repository/online/component/kolab-13/version="current" \\
-            repository/online/component/kolab-13/parts="maintained"`
+            repository/online/component/kolab-14=enabled \\
+            repository/online/component/kolab-14/description="Kolab Enterprise 14 Installation Repository" \\
+            repository/online/component/kolab-14/server="mirror.kolabsys.com" \\
+            repository/online/component/kolab-14/prefix="pub/ucs" \\
+            repository/online/component/kolab-14/version="current" \\
+            repository/online/component/kolab-14/parts="maintained"`
 
 #.  Install the client certificate you have obtained from Kolab Systems in the
     following location:
@@ -48,7 +48,7 @@ the following process:
 
     .. parsed-literal::
 
-        # :command:`univention-install kolab-13-enterprise-release`
+        # :command:`univention-install kolab-14-enterprise-release`
 
     When the installation complains the package cannot be verified, type [y] and
     [Enter] to continue:
@@ -56,7 +56,7 @@ the following process:
     .. parsed-literal::
 
         WARNING: The following packages cannot be authenticated!
-          kolab-13-enterprise-release
+          kolab-14-enterprise-release
         Install these packages without verification [y/N]? y
 
 #.  Install kolab:

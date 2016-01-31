@@ -1,29 +1,15 @@
-======================
-Installation on Ubuntu
-======================
+.. _installation-debian-8-community-3.4:
+
+=====================================
+Installation of Kolab 3.4 on Debian 8
+=====================================
 
 1.  Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:
 
-    For Ubuntu 12.04:
-
     .. parsed-literal::
 
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Ubuntu_12.04/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Ubuntu_12.04/ ./
-
-    For Ubuntu 13.10:
-
-    .. parsed-literal::
-
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Ubuntu_13.10/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Ubuntu_13.10/ ./
-
-    For Ubuntu 14.04:
-
-    .. parsed-literal::
-
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Ubuntu_14.04/ ./
-        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Ubuntu_14.04/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.4/Debian_8.0/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/3.4:/Updates/Debian_8.0/ ./
 
 2.  Import the GPG key used to sign the packages:
 
@@ -41,7 +27,7 @@ Installation on Ubuntu
 
         # :command:`gpg --export --armor devel@lists.kolab.org | apt-key add -`
 
-3.  To ensure the Kolab packages have priority over the Ubuntu packages, such as
+3.  To ensure the Kolab packages have priority over the Debian packages, such as
     must be the case for PHP as well as Cyrus IMAP, please make sure the APT
     preferences pin the obs.kolabsys.com origin as a preferred source.
 
