@@ -475,12 +475,12 @@ Disabling the Recipient Policy
                 "optional" => true
             ),
 
-.. IMPORTANT::
+    .. IMPORTANT::
 
-    Remember to remove the aforementioned
-    ``$attributes['auto_form_fields']`` and add or chance the
-    ``$attributes['form_fields']` for all user types that have mail
-    attributes.
+        Remember to remove the aforementioned
+        ``$attributes['auto_form_fields']`` and add or chance the
+        ``$attributes['form_fields']` for all user types that have mail
+        attributes.
 
 #.  Exit the editor, saving your changes, and check the PHP syntax:
 
