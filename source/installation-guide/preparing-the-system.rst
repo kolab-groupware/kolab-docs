@@ -5,7 +5,7 @@ Preparing the System
 .. _install-preparing_the_system-partitioning:
 
 Partitioning
-------------
+============
 
 When installing the Kolab server, we recommend using LVM when
 partitioning the system. The following directories could benefit from
@@ -58,7 +58,7 @@ but separate, isolated IMAP servers are to be started.
 .. _install-preparing_the_system-selinux:
 
 SELinux
--------
+=======
 
 Not all components of Kolab Groupware are currently completely
 compatible with running under SELinux enforcing the targeted policy.
@@ -94,7 +94,7 @@ SELINUX to permissive rather than enforcing. Doing so also changes the
 .. _install-preparing_the_system-firewall:
 
 System Firewall
----------------
+===============
 
 Kolab Groupware deliberately does not touch any firewall settings,
 perhaps wrongly assuming you know best. Before you continue, you should
@@ -126,11 +126,13 @@ Groupware. These ports include:
 +------+-----------+------------------------------------------+
 | 995  | tcp       | Used for secure POP.                     |
 +------+-----------+------------------------------------------+
+| 4190 | tcp       | Used for Managesieve.                    |
++------+-----------+------------------------------------------+
 | 8080 | tcp       | Used for Manticore.                      |
 +------+-----------+------------------------------------------+
 
 CentOS / RHEL 6
-^^^^^^^^^^^^^^^^^
+---------------
 
 Summarizing these changes into /etc/sysconfig/iptables, working off of
 an original, default installation of Enterprise Linux 6, this file would
@@ -159,6 +161,8 @@ look as follows:
     -A INPUT -m state --state NEW -m tcp -p tcp --dport 636 -j ACCEPT
     -A INPUT -m state --state NEW -m tcp -p tcp --dport 993 -j ACCEPT
     -A INPUT -m state --state NEW -m tcp -p tcp --dport 995 -j ACCEPT
+    -A INPUT -m state --state NEW -m tcp -p tcp --dport 4190 -j ACCEPT
+    -A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
     -A INPUT -j REJECT --reject-with icmp-host-prohibited
     -A FORWARD -j REJECT --reject-with icmp-host-prohibited
     COMMIT
@@ -170,7 +174,7 @@ After changing /etc/sysconfig/iptables, execute a service restart:
     # :command:`service iptables restart`
 
 CentOS / RHEL 7
-^^^^^^^^^^^^^^^
+---------------
 
 CentOS / RHEL 6 is using the ``firewalld`` to manage the kernel firewall.
 You've to make use of the ``firewall-cmd`` command to add new rules to open the
@@ -192,7 +196,10 @@ permanent and reboot-save.
     firewall-cmd --reload
 
 System Users
-------------
+============
+ 
+*   No user or group with IDs 412, 413 or 414 may exist on the system
+    prior to the installation of Kolab.
 
 *   No user or group with the names kolab, kolab-n or kolab-r may exist
     on the system prior to the installation of Kolab.
@@ -200,7 +207,7 @@ System Users
 .. _install-preparing-the-system_hostname-and-fqdn:
 
 The System Hostname and FQDN
-----------------------------
+============================
 
 The setup procedure of Kolab Groupware also requires that the Fully
 Qualified Domain Name (FQDN) for the system resolves back to the system.
@@ -216,7 +223,7 @@ should have a reverse DNS entry resulting in at least
 ``kolab.example.org``.
 
 Example Network and DNS Configuration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
 The following lists an example network and DNS configuration for a Kolab
 Groupware server.
@@ -254,7 +261,7 @@ server, an entry in :file:`/etc/hosts` suffices for the time being:
     # :command:`echo "$(ip addr sh eth0 | grep 'inet ' | awk '{print $2}' | cut -d'/' -f 1) $(hostname -f)" >> /etc/hosts`
 
 LXC Containers
---------------
+==============
 
 LXC containers ("chroots on steroids") need ``/dev/shm/`` mounted
 read/write for user accounts.
@@ -272,3 +279,7 @@ To make sure the permissions are correct even after a reboot, make sure
 .. parsed-literal::
 
     none /dev/shm tmpfs rw,nosuid,nodev,noexec 0 0
+
+Note that alongside ``/dev/shm`` problems, resolving hostnames (especially
+``localhost`` to ``127.0.0.1``, or inversely, ``127.0.0.1`` to
+``localhost``) have also been reported.
