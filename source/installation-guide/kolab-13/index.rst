@@ -1,5 +1,8 @@
-Installation Instructions for Kolab 13
-======================================
+.. _installation-guide-kolab-enterprise-13:
+
+=================================================
+Installation Instructions for Kolab Enterprise 13
+=================================================
 
 .. warning::
 

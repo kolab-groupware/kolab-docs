@@ -1,6 +1,8 @@
-======================================
-Installation Instructions for Kolab 14
-======================================
+.. _installation-guide-kolab-enterprise-14:
+
+=================================================
+Installation Instructions for Kolab Enterprise 14
+=================================================
 
 .. WARNING::
 
