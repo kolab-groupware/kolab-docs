@@ -45,15 +45,20 @@ proven components and protocols.
     architecture-and-design/index
     developer-guide/index
 
-.. rubric:: Extras
+..
+    These are still here, but may be ignored for the docs' index.
 
-.. toctree::
-    :maxdepth: 1
+    .. rubric:: Extras
 
-    docker/index
-    puppet/index
+    .. toctree::
+        :maxdepth: 1
+
+        docker/index
+        puppet/index
 
 .. rubric:: HOWTOs
+
+The following HOWTOs have been contributed by fellow community members
 
 .. toctree::
     :maxdepth: 1
@@ -61,13 +66,16 @@ proven components and protocols.
     howtos/multi-domain
     howtos/secure-kolab-server
     howtos/nginx-webserver
-    howtos/nginx-imap-proxy
     howtos/build-kolab-from-source
     howtos/deploy-kolab-with-glusterfs-for-imap
-    howtos/deploy-high-available-and-load-balanced-ldap
     howtos/use-seafile-with-chwala
     howtos/kolab-webadmin-create-user
 
+..
+    The following HOWTOs are empty :/
+
+    howtos/nginx-imap-proxy
+    howtos/deploy-high-available-and-load-balanced-ldap
 ..
     .. rubric:: Articles
 
