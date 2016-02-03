@@ -23,6 +23,7 @@ platforms:
     :maxdepth: 1
 
     centos-7
+    rhel-7
 
 .. rubric:: Older versions of Kolab Groupware
 

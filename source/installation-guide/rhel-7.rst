@@ -1,10 +1,10 @@
-.. _installation-guide-centos-7:
+.. _installation-guide-rhel-7:
 
-====================================
-Installation of Kolab 16 on CentOS 7
-====================================
+======================================================
+Installation of Kolab 16 on Red Hat Enterprise Linux 7
+======================================================
 
-The installation of Kolab Groupware on CentOS installs
+The installation of Kolab Groupware on Red Hat Enterprise Linux installs
 a number of additional packages, from the :term:`EPEL` software
 repository.
 
@@ -22,7 +22,7 @@ Installation Procedure
     .. parsed-literal::
 
         # :command:`cd /etc/yum.repos.d/`
-        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/16/CentOS_7/Kolab:16.repo`
+        # :command:`wget http://obs.kolabsys.com/repositories/Kolab:/16/RHEL_7/Kolab:16.repo`
 
 3.  Import the GPG key used to sign the packages:
 
