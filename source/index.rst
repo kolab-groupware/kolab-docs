@@ -12,6 +12,8 @@ Kolab clients. What makes Kolab a unique groupware solution is its focus
 on security, scalability, data ownership (aka privacy) and the use of
 proven components and protocols.
 
+Read more in our :ref:`introduction`.
+
 .. rubric:: Planning Your Kolab Groupware Deployment
 
 .. toctree::
@@ -104,8 +106,6 @@ The following HOWTOs have been contributed by fellow community members
     developer-guide/packaging/obs-for-kolab/why-private-obs
     developer-guide/packaging/obs-for-kolab/packages/*
     developer-guide/packaging/obs-for-kolab/product/*
-    installation-guide/centos
-    installation-guide/rhel
     puppet/module/kolab/why-multiple-parameterized-classes
     webmail-user-guide/roundcubemail/en_US/index
 
@@ -125,6 +125,10 @@ The following HOWTOs have been contributed by fellow community members
     howtos/kerberos-authentication
     howtos/logstash-and-elasticsearch
     howtos/split-domains-multiple-groupware-deployments
+    installation-guide/first-login
+    installation-guide/kolab-3.3/index
+    installation-guide/kolab-3.4/index
+    installation-guide/setup-kolab
     introduction/index
     kolab-enterprise-13
     kolab-enterprise-14
