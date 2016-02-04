@@ -64,21 +64,18 @@ Kolab Enterprise 14 compared to Kolab Enterprise 14 ships the following addition
     Editor instead of relying on external LDAP Editors. The ou management
     includes an ACL Editor for LDAP targets.
 
-
-
 Updating Kolab Enterprise
 =========================
 
 These procedures are meant as an example to show you how an upgrade could work.
 They don't differ too much from a basic installation.
 
-
 RHEL 6 & CentOS 6
 -----------------
 
 Update the Kolab Enterprise repository to the new location:
 
- .. parsed-literal::
+.. parsed-literal::
 
     # :command:`cd /etc/yum.repos.d/`
     # :command:`rm Kolab*.repo`
@@ -87,7 +84,7 @@ Update the Kolab Enterprise repository to the new location:
 
 Run the upgrade process:
 
- .. parsed-literal::
+.. parsed-literal::
 
     # :command:`yum update`
 
@@ -101,7 +98,7 @@ Updating Configuration Files
 These values have been updated. Please change them in your configuration
 depending on your installation and needs:
 
- .. parsed-literal::
+.. parsed-literal::
 
     [ldap]
     sharedfolder_acl_entry_attribute = acl
@@ -123,11 +120,10 @@ using :command:`chkconfig` on RHEL/Centos.
 
 Restart the services
 
- .. parsed-literal::
+.. parsed-literal::
 
     # :command:`service kolab-server restart`
     # :command:`service wallace restart`
-
 
 /etc/kolab-freebusy/config.ini
 ------------------------------
@@ -137,16 +133,15 @@ configuration using the setup-kolab tool if you have not a specific configuratio
 
 For Redhat/CentOS
 
- .. parsed-literal::
+.. parsed-literal::
 
     # :command:`cp /etc/kolab-freebusy/config.ini.rpmnew /etc/kolab-freebusy/config.ini`
 
 Recreatae the configuation:
 
- .. parsed-literal::
+.. parsed-literal::
 
-   # :command:`setup-kolab freebusy`
-
+    # :command:`setup-kolab freebusy`
 
 /etc/roundcubemail/config.inc.php
 ---------------------------------
@@ -160,7 +155,7 @@ Change the plugin load order the following way:
 
 If you want to make use of the new secure URLs feature, add 2 more $config entries
 
- .. parsed-literal::
+.. parsed-literal::
 
     $config['use_secure_urls'] = true;
     $config['assets_path'] = '/roundcubemail/assets/';
@@ -181,7 +176,7 @@ And adjust the asset path to where your webserver makes the assets available.
 
 Change the password driver from **ldap** to **ldap_simple**.
 
- .. parsed-literal::
+.. parsed-literal::
 
     $config['password_driver'] = 'ldap_simple';
 
@@ -191,7 +186,7 @@ Change the password driver from **ldap** to **ldap_simple**.
 
 Update the kolab_files_url to /chwala/ to be protocol independent.
 
- .. parsed-literal::
+.. parsed-literal::
 
     $config['kolab_files_url'] = '/chwala/';
 
@@ -235,14 +230,13 @@ Please update your filter with this new default configuration:
 
 .. parsed-literal::
 
-    query_filter = (&(|(mail=%s)(alias=%s))(objectclass=kolabsharedfolder)(kolabFolderType=mail))
+    query_filter = (&(\|(mail=%s)(alias=%s))(objectclass=kolabsharedfolder)(kolabFolderType=mail))
 
 Restart the postfix daemon
 
 .. parsed-literal::
 
     # :command:`service postfix restart`
-
 
 /etc/postfix/master.cf
 ----------------------
@@ -252,7 +246,7 @@ This will put wallace as the next content-filter after the mail has been
 returned from amavis to postfix. If you're don't want to make use of iTip
 processing or resource management you can skip this section.
 
- .. parsed-literal::
+.. parsed-literal::
 
     [...]
     127.0.0.1:10025     inet        n       -       n       -       100     smtpd
@@ -263,7 +257,7 @@ processing or resource management you can skip this section.
 
 Restart the postfix daemon
 
- .. parsed-literal::
+.. parsed-literal::
 
     # :command:`service postfix restart`
 
@@ -299,7 +293,7 @@ change the types manually in the settings section of kolab-webadmin.
 
 Open the mysql cli:
 
- .. parsed-literal::
+.. parsed-literal::
 
     # :command:`mysql -u root -p -D kolab`
 
@@ -307,7 +301,7 @@ and apply the following changes: The tables will be deleted and recreated.
 Don't forget: if you've made changes to shared folder types, please update
 them manually!
 
- .. code-block:: sql
+.. code-block:: sql
 
     --
     -- Table structure for table `ou_types`
