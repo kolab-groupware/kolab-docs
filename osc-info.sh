@@ -31,22 +31,29 @@ if [ ! -f "osc_cache/obs_projects.list" -o ${refresh} -eq 1 ]; then
         -e '/^Kolab:3\.1/d' \
         -e '/^Kolab:3\.2/d' \
         -e '/^Kolab:3\.3/d' \
-        -e '/^Kolab:13:Updates/d' \
+        -e '/^Kolab:3\.4/d' \
+        -e '/^Kolab:13/d' \
+        -e '/^Kolab:14/d' \
+        -e '/^Kolab:Development/d' \
         osc-cache/obs_projects.list
 
     # Legacy target platforms do not need to be updated
     sed -r -i \
         -e '/^Debian:6\.0/d' \
+        -e '/^Debian:7\.0/d' \
         -e '/^Fedora:17/d' \
         -e '/^Fedora:18/d' \
         -e '/^Fedora:19/d' \
         -e '/^Fedora:20/d' \
+        -e '/^Fedora:21/d' \
         -e '/^openSUSE:12\.1/d' \
         -e '/^openSUSE:12\.2/d' \
-        -e '/^RHEL:7/d' \
+        -e '/^openSUSE:12\.3/d' \
+        -e '/^openSUSE:13\.1/d' \
         -e '/^UCS:3\.0/d' \
         -e '/^UCS:3\.1/d' \
         -e '/^UCS:3\.2/d' \
+        -e '/^UCS:4\.0/d' \
         -e '/^Kontact/d' \
         osc-cache/obs_projects.list
 fi
