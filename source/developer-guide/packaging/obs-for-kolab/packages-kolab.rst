@@ -8,6 +8,8 @@ Kolab Packages
 .. include:: packages/copenhagen.txt
 .. include:: packages/cyrus-imapd.txt
 .. include:: packages/egara.txt
+.. include:: packages/erlang-eimap.txt
+.. include:: packages/guam.txt
 .. include:: packages/iRony.txt
 .. include:: packages/kolab.txt
 .. include:: packages/kolab-autoconf.txt
@@ -16,6 +18,7 @@ Kolab Packages
 .. include:: packages/kolab-enterprise-release.txt
 .. include:: packages/kolab-freebusy.txt
 .. include:: packages/kolab-hkccp.txt
+.. include:: packages/kolab-release.txt
 .. include:: packages/kolab-schema.txt
 .. include:: packages/kolab-syncroton.txt
 .. include:: packages/kolab-utils.txt

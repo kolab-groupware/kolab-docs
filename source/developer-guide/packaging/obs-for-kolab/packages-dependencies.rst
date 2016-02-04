@@ -29,6 +29,7 @@ Dependency Packages
 .. include:: packages/erlang-eunit_formatters.txt
 .. include:: packages/erlang-exometer_core.txt
 .. include:: packages/erlang-folsom.txt
+.. include:: packages/erlang-getopt.txt
 .. include:: packages/erlang-gettext.txt
 .. include:: packages/erlang-goldrush.txt
 .. include:: packages/erlang-gtknode.txt
@@ -101,6 +102,7 @@ Dependency Packages
 .. include:: packages/obs-worker.txt
 .. include:: packages/openchange.txt
 .. include:: packages/perl-Mozilla-LDAP.txt
+.. include:: packages/phantomjs.txt
 .. include:: packages/php-christianriesen-base32.txt
 .. include:: packages/php-endroid-qrcode.txt
 .. include:: packages/php-enygma-yubikey.txt
@@ -120,6 +122,7 @@ Dependency Packages
 .. include:: packages/php-pear-Net-URL2.txt
 .. include:: packages/php-pecl-apc.txt
 .. include:: packages/php-pecl-apcu.txt
+.. include:: packages/php-pecl-krb5.txt
 .. include:: packages/php-pecl-memcache.txt
 .. include:: packages/php-pecl-xdebug.txt
 .. include:: packages/php-sabre-dav.txt
@@ -162,6 +165,7 @@ Dependency Packages
 .. include:: packages/python-six.txt
 .. include:: packages/python-sqlalchemy.txt
 .. include:: packages/python-werkzeug.txt
+.. include:: packages/pytz.txt
 .. include:: packages/riak.txt
 .. include:: packages/riak_pb.txt
 .. include:: packages/rubygem-activemodel.txt
