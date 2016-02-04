@@ -1,3 +1,5 @@
+.. _deployment-guide:
+
 ================
 Deployment Guide
 ================
@@ -21,8 +23,8 @@ Standard Deployment Scenarios
 General Deployment Considerations
 =================================
 
-It is important to appreciate the use-case to which you wish to deploy
-Kolab, and map that to the appropriate deployment scenario.
+It is important to appreciate the use-case or use-cases for which you
+wish to deploy Kolab, and map that to the appropriate deployment scenario.
 
 After all, Kolab Groupware is Made To Measure, and supremely flexible.
 It is best deployed after you articulate what you seek to get out of it
@@ -87,7 +89,7 @@ example, very much relies on electronic communications. Operating in the
 Free Software community, it's communication patterns are ever
 increasing, with its employees subscribing to upstream communities'
 mailing lists, and the organization itself possibly providing services
-to its community.
+to its community. These would be considered *keyboard-bound users*.
 
 While servicing only a couple of dozen users, the number of messages
 exchanged easily exceeds thousands per day.
@@ -108,16 +110,22 @@ you choose to migrate off of the single host, possibly involves data
 migration, some down-time, and configuration changes. As such, such
 migrations require sufficient preparation and planning.
 
+Suffice it to say that also, should you find the deployment type you
+choose initially underperforms, user acceptance of the solution may
+very well be negatively impacted -- sometimes beyond repair.
+
 .. TODO::
 
     Somewhere other than here, document the process of scaling up from
     one single server on to multiple servers.
 
+.. _deployment-guide-hundreds-of-users:
+
 Hundreds of Users
 -----------------
 
 Providing Kolab Groupware to hundreds of users is an environment of
-scale. The starting point is likely
+some scale. The starting point is likely
 :ref:`deployment_multi-server-with-combined-services`, however;
 
 *   You may already have centralized authentication and authorization,
@@ -176,6 +184,17 @@ A typical approach is to provide "two of each".
 Load-Balancing
 ^^^^^^^^^^^^^^
 
+To use the term load-balancing is to describe the act of providing
+enough instances of each service to supply enough capacity to deal with
+the demand on said service. This is separate from the time-window of
+such demand, however -- the time-window demands scaling, scaling
+demands load-balancing.
+
+Load-balacing is where Kolab Groupware shines, since any of the service
+components can be split up in such many roles as well. Therefore, each
+quantitively meaningful difference in demand for a given service in a
+particular role can be scaled up and down as is needed.
+
 .. _deployment-hundreds-scalability:
 
 Scalability
@@ -185,15 +204,21 @@ With a quota of 1GB, a total data footprint of 100GB - 900GB is still
 manageable, but should your users (be allowed to) have larger mailboxes
 and/or use the File Storage features in Kolab, you are more likely
 speaking to the tune of several terabytes (if not right from the start,
-you'll get there over time).
+you'll likely get there over time).
 
-**This** is were scalability comes into play. One could start with a
-single Cyrus IMAP server, like so:
+**This** is yet another area were scalability comes into play. One could
+start with a single Cyrus IMAP server, like so:
 
 .. graphviz::
 
     digraph {
-            rankdir=LR;
+            rankdir = LR;
+            splines = true;
+            overlab = prism;
+
+            edge [color=gray50, fontname=Calibri, fontsize=11];
+            node [shape=record, fontname=Calibri, fontsize=11];
+
             "MUA" -> "IMAP Backend" -> "1 TB Storage Volume";
         }
 
@@ -208,7 +233,13 @@ scenario might look like:
 .. graphviz::
 
     digraph {
-            rankdir=LR;
+            rankdir = LR;
+            splines = true;
+            overlab = prism;
+
+            edge [color=gray50, fontname=Calibri, fontsize=11];
+            node [shape=record, fontname=Calibri, fontsize=11];
+
             subgraph cluster_murder {
                     label="Cyrus IMAP Murder";
                     "New IMAP Frontend";
@@ -237,14 +268,52 @@ The magical boundary of a thousand users depicts each individual user's
 usage pattern becomes unpredictable, as for one the number of mobile
 devices they synchronize are not necessarily under control any longer.
 
+Generally, the same facets apply as they do for
+:ref:`deployment-guide-hundreds-of-users`, just with higher load, more
+storage, more stringent requirements, likely resulting in the need for
+:ref:`deployment_multi-server-for-each-service`, at least partly -- some
+services may still be combined.
+
+Despite a number of users that is likely larger than the majority of
+Kolab installations, it is still well within the boundaries of normal
+operations, and should not require any specialist attention.
+
+Yet, environments of this size and over will want to perform a Proof-
+of-Concept environment to familiarize themselves with the inner
+workings of Kolab Groupware, assess the viability of Kolab particulars
+for large numbers of users stuck with particular work-flows and their
+system administrator's ability to effectively maintain the
+infrastructure with this new technology (monitoring, alerting,
+trending, configuration management, reporting, etc.).
+
 Several Thousands of Users
 --------------------------
 
 The larger the enterprise (or: the larger the number of users), the more
 significant capacity planning becomes in relation to deploying Kolab.
 
+We have mentioned before that provided a larger number of users,
+capacity planning becomes a more volatile subject and can be less
+accurately determined. However, with larger numbers of users, laws of
+averages come in to play, and the ability to scale with demand can be
+facilitated -- a margin of error becomes manageable.
+
+Several thousands of users are typically deployed using a
+:ref:`deployment_multi-server-for-each-service` scenario. Organizations
+are strongly encouraged to contact `Kolab Systems AG`_ for their
+services.
+
 Tens of Thousands of Users
 --------------------------
+
+The differences between "tens" and "hundreds" of thousands of users are
+negligible with regards to the general deployment scenario.
+
+A clear distinction is often having spread various areas of
+responsibily for the infrastructure across multiple teams or
+departments, each of them eligible to resist change making their jobs
+more involved, and/or not all of them as familiar or comfortable with
+the introduction of new technology in their respective stacks.
 
 Hundreds of Thousands of Users
 ------------------------------
