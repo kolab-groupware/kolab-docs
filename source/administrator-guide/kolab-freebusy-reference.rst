@@ -197,7 +197,7 @@ Example: ``"(&(objectClass=kolabInetOrgPerson)(|(uid=%u)(mail=%s)(alias=%s)))"``
 
 
 ``base_dn``
-----------
+-----------
 
 Base DN used for the user query to LDAP. ``%dc`` is replaced by the DN matching
 the user name domain.

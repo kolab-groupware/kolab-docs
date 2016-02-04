@@ -33,11 +33,11 @@ Example:
 
 .. code-block:: php
 
-   $config['kolab_skip_namespace'] =  array('other');
+    $config['kolab_skip_namespace'] =  array('other');
 
 .. seealso::
 
-    *  :ref:`admin_roundcube-settings-plugin_libkolab_kolab_users_directory`
+    *   :ref:`admin_roundcube-settings-plugin_libkolab_kolab_users_directory`
 
 
 ``kolab_http_request``
@@ -50,9 +50,8 @@ with key-value pairs.
 
 .. _admin_roundcube-settings-plugin_libkolab_kolab_users_directory:
 
-
 ``kolab_users_directory``
-========================
+=========================
 
 LDAP directory to find avilable users for folder sharing. This is used when searching
 for groupware folders shared by other users. The web client will perform an LDAP search
@@ -75,8 +74,8 @@ plugin.
 
 .. seealso::
 
-    *  :ref:`admin_roundcube-settings-plugin_libkolab_kolab_users_directory`
-    *  :ref:`admin_roundcube-settings-plugin_kolab_auth`
+    *   :ref:`admin_roundcube-settings-plugin_libkolab_kolab_users_directory`
+    *   :ref:`admin_roundcube-settings-plugin_kolab_auth`
 
 
 ``kolab_users_id_attrib``
@@ -89,8 +88,8 @@ plugin.
 
 .. seealso::
 
-    *  :ref:`admin_roundcube-settings-plugin_libkolab_kolab_users_directory`
-    *  :ref:`admin_roundcube-settings-plugin_kolab_auth`
+    *   :ref:`admin_roundcube-settings-plugin_libkolab_kolab_users_directory`
+    *   :ref:`admin_roundcube-settings-plugin_kolab_auth`
 
 
 ``kolab_users_search_attrib``
@@ -102,5 +101,5 @@ Defaults to ``array('cn','mail','alias')``
 
 .. seealso::
 
-    *  :ref:`admin_roundcube-settings-plugin_libkolab_kolab_users_directory`
+    *   :ref:`admin_roundcube-settings-plugin_libkolab_kolab_users_directory`
 

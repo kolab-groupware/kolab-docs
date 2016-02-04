@@ -8,14 +8,15 @@ you to quickly execute standard administrative tasks.
 acl-cleanup
 -----------
 
-Iterate over all mailboxes and clean up the ACL. Useful in deployments
+Iterate over all mailboxes and cleans up the ACL. Useful in deployments
 where any ACI may be used with setting the ACE, because identifier
 verification is disabled or otherwise unavailable.
 
-It is important to appreciate that an ACE for 'doe@example.org' is not
-removed when the user 'doe@example.org' is removed -- when a new user is
-created with a :term:`result attribute` value of 'doe@example.org', this
-user implicitly has the access specified by the ACE.
+It is important to appreciate that an ACE for ``doe@example.org`` is
+not removed when the user ``doe@example.org`` is removed -- when a new
+user is created with a :term:`result attribute` value of
+``doe@example.org``, this user implicitly has the access specified by
+the ACE.
 
 add-domain
 ----------
@@ -41,6 +42,9 @@ This command adds a new domain name space to Kolab Groupware.
     Add the domain as an alias for the domain specified as ``--alias``.
 
 .. seealso::
+
+    *   :ref:`howto-multi-domain`
+    *   :ref:`article-standard-multi-domain-and-hosted-kolab`
 
 .. add-group-admin
 .. ---------------
@@ -266,9 +270,9 @@ list-mailbox-acls
 
 .. seealso::
 
-*   :ref:`admin_cli_delete-mailbox-acl`
-*   :ref:`admin_cli_set-mailbox-acl`
-*   :ref:`admin_imap-access-rights-reference`
+    *   :ref:`admin_cli_delete-mailbox-acl`
+    *   :ref:`admin_cli_set-mailbox-acl`
+    *   :ref:`admin_imap-access-rights-reference`
 
 list-mailbox-metadata
 ---------------------

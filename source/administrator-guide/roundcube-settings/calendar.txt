@@ -1,5 +1,5 @@
 ``calendar_driver``
-==========================
+===================
 
 Calendar backend type.
 
@@ -7,24 +7,34 @@ Possible values: 'kolab' or 'database'
 
 
 ``calendar_caldav_url``
-================================
+=======================
 
 Base URL to build fully qualified URIs to access calendars via CALDAV.
 Primarily used in a Kolab environment where CalDAV access is provided by the iRony service.
 
-The following replacement variables are supported
+The following replacement variables are supported:
 
-``%h`` - Current HTTP host
-``%u`` - Current webmail user name
-``%n`` - Calendar name
-``%i` - Calendar UUID
+``%h``
+
+    Current HTTP host
+
+``%u``
+
+    Current webmail user name
+
+``%n``
+
+    Calendar name
+
+``%i`
+
+    Calendar UUID
 
 Example:
 
 .. code-block:: php
 
-   $config['calendar_caldav_url'] = 'http://%h/iRony/calendars/%u/%i';
-
+    $config['calendar_caldav_url'] = 'http://%h/iRony/calendars/%u/%i';
 
 ``calendar_contact_birthdays``
 ==============================
@@ -40,7 +50,7 @@ which were created/organized by others.
 
 
 ``calendar_allow_itip_uninvited``
-================================
+=================================
 
 Boolean. Allow users to accecpt iTip invitations who are no explicitly listed
 as an attendee in the invitation message. This can be the case if invitations
@@ -56,13 +66,13 @@ Possible values: 'agendaDay', 'agendaWeek', 'month', 'table'.
 
 
 ``calendar_default_alarm_type``
-=========================
+===============================
 
 Undocumented.
 
 
 ``calendar_default_alarm_offset``
-====================
+=================================
 
 Undocumented.
 
@@ -98,7 +108,7 @@ Undocumented.
 
 
 ``calendar_timeslots``
-=====================
+======================
 
 Undocumented.
 
@@ -116,7 +126,7 @@ Undocumented.
 
 
 ``calendar_work_end``
-===================
+=====================
 
 Undocumented.
 
@@ -184,7 +194,7 @@ Some special considerations apply for the LDAP filter and other properties:
     $config['calendar_resources_directory'] = array(
         (...snip...)
         'base_dn'        => 'ou=Resources,dc=example,dc=org',
-        'filter'         => '(|(objectclass=kolabgroupofuniquenames)(objectclass=kolabsharedfolder))',
+        'filter'         => '(\|(objectclass=kolabgroupofuniquenames)(objectclass=kolabsharedfolder))',
         (...snip...)
         'search_fields'  => array('cn'),
         'sort'           => array('cn'),
