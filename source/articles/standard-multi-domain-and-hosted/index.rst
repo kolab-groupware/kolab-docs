@@ -1,3 +1,5 @@
+.. _article-standard-multi-domain-and-hosted-kolab:
+
 =======================================
 Standard, Multi-Domain and Hosted Kolab
 =======================================
@@ -22,7 +24,7 @@ multi-domain, and a hosted deployments is as follows:
     :term:`alias domain name spaces`, meaning that a setup for a
     domain name space of ``example.org`` can let its users have
     additional recipient email addresses in an alias domain name space
-    of ``example.de`` and/or ``example.ch``.
+    of ``beispiel.de``, ``voorbeeld.nl`` and/or ``exemple.ch``.
 
 **Multi-Domain**
 
