@@ -11,7 +11,7 @@ infrastructure, in any of three default :term:`staging environments`.
     The packages referred to in this document are available in the
     Puppet add-on software repository to Kolab Enterprise 14.
 
-.. rubric:: HOWTO Arcticles
+.. rubric:: HOWTO Articles
 
 .. toctree::
     :maxdepth: 2
@@ -34,3 +34,8 @@ infrastructure, in any of three default :term:`staging environments`.
     module/stdlib
     module/webserver
     module/yum
+
+.. toctree::
+    :hidden:
+
+    howto/scale-puppet-environments 

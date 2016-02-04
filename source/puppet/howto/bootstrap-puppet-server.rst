@@ -11,8 +11,8 @@ on to a single vanilla Enterprise Linux 6 system.
     Puppet add-on channel to Kolab Enterprise 14.
 
 If you do not have any Kolab Enterprise 14 configuration on the system
-yet, please see the guide for :ref:`installation-rhel` for the steps
-involved.
+yet, please see the guide for
+:ref:`installation-guide-rhel-6-enterprise-14` for the steps involved.
 
 .. IMPORTANT::
 
