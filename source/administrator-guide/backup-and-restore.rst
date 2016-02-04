@@ -137,8 +137,8 @@ Backup
 ------
 
 If you have read the :ref:`install-preparing_the_system-partitioning`
-section of the :ref:`install`, you can consider using LVM snapshots to
-backup the Cyrus IMAP config and spool directories.
+section of the :ref:`installation-guide`, you can consider using LVM
+snapshots to backup the Cyrus IMAP config and spool directories.
 
 Files and directories to include (or not include) in the backup of
 Cyrus IMAP include:
