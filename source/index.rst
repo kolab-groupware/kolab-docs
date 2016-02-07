@@ -95,13 +95,13 @@ The following HOWTOs have been contributed by fellow community members
     :glob:
     :hidden:
 
+    about/index
+    about/*/*
     architecture-and-design/ldap-intro
     architecture-and-design/bonnie-api
     architecture-and-design/bonnie-extra
     architecture-and-design/bonnie-orm
-    articles/*/index
-    articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/example-drupal-configuration
-    authors
+    articles/*/*
     client-configuration/settings
     developer-guide/packaging/obs-for-kolab/why-private-obs
     developer-guide/packaging/obs-for-kolab/packages/*
