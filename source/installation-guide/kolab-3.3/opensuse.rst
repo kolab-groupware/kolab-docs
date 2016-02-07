@@ -41,4 +41,4 @@ Installation on openSUSE
 
         # :command:`zypper in kolab`
 
-Continue to :ref:`install-setup-kolab`.
+Continue to :ref:`installation-guide-setup-kolab`.

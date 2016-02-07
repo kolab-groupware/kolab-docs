@@ -42,4 +42,4 @@ Installation of Kolab 3.4 on Red Hat Enterprise Linux 7
 
         # :command:`yum --enablerepo=rhel-7-server-optional-rpms install kolab`
 
-Continue to :ref:`install-setup-kolab`.
+Continue to :ref:`installation-guide-setup-kolab`.

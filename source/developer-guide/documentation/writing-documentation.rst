@@ -39,7 +39,7 @@ it:
 .. [#]
 
     This means to confirm the default settings (other than perhaps the
-    passwords) during :ref:`install-setup-kolab`, including but not
+    passwords) during :ref:`installation-guide-setup-kolab`, including but not
     limited to the characters used in the passwords chosen -- while we
     have learned of issues when using passwords with special characters,
     which relate to third party application defaults.

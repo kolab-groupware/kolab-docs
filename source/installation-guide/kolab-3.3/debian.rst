@@ -69,4 +69,4 @@ Debian Wheezy
 
 6.  When asked to confirm you want to install the package and its dependencies, press Enter.
 
-Continue to :ref:`install-setup-kolab`.
+Continue to :ref:`installation-guide-setup-kolab`.

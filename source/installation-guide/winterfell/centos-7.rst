@@ -45,4 +45,4 @@ Installation of Kolab Winterfell on CentOS 7
 
         # :command:`yum install kolab`
 
-Continue to :ref:`install-setup-kolab`.
+Continue to :ref:`installation-guide-setup-kolab`.

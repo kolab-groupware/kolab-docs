@@ -1,8 +1,10 @@
+.. _installation-guide-preparing-the-system:
+
 ====================
 Preparing the System
 ====================
 
-.. _install-preparing_the_system-partitioning:
+.. _installation-guide-preparing-the-system-partitioning:
 
 Partitioning
 ============
@@ -55,7 +57,7 @@ but separate, isolated IMAP servers are to be started.
         drwxr-x---. 20 cyrus mail  4096 May 11 17:04 /var/lib/imap/
         drwx------. 3  cyrus mail  4096 May 11 15:36 /var/spool/imap/
 
-.. _install-preparing_the_system-selinux:
+.. _installation-guide-preparing-the-system-selinux:
 
 SELinux
 =======
@@ -91,7 +93,7 @@ persistent across system restarts, edit :file:`/etc/selinux/config` and set
 SELINUX to permissive rather than enforcing. Doing so also changes the
 ``Mode from config file:`` line in the output of :command:`sestatus`.
 
-.. _install-preparing_the_system-firewall:
+.. _installation-guide-preparing-the-system-firewall:
 
 System Firewall
 ===============
@@ -204,7 +206,7 @@ System Users
 *   No user or group with the names kolab, kolab-n or kolab-r may exist
     on the system prior to the installation of Kolab.
 
-.. _install-preparing-the-system_hostname-and-fqdn:
+.. _installation-guide-preparing-the-system-hostname-and-fqdn:
 
 The System Hostname and FQDN
 ============================
@@ -214,6 +216,11 @@ Qualified Domain Name (FQDN) for the system resolves back to the system.
 If the FQDN does not resolve back to the system itself, the Kolab
 Groupware server components will refer to the system by the configured
 or detected FQDN, but will fail to communicate with one another.
+
+.. NOTE::
+
+    Please see `Why Your System Should Have a Proper FQDN`_ for more
+    information.
 
 Should the FQDN of the system (found with hostname -f) be, for example,
 ``kolab.example.org``, then ``kolab.example.org`` should resolve to the

@@ -45,4 +45,4 @@ Installation of Kolab Winterfell on Debian 8
 
         # :command:`aptitude -y install kolab`
 
-Continue to :ref:`install-setup-kolab`.
+Continue to :ref:`installation-guide-setup-kolab`.

@@ -6,4 +6,4 @@ Installation on SUSE Linux Enterprise Server
 
     The installation chapter for SUSE Linux Enterprise Server should be written.
 
-Continue to :ref:`install-setup-kolab`.
+Continue to :ref:`installation-guide-setup-kolab`.

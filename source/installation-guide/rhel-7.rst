@@ -48,5 +48,5 @@ Installation Procedure
 
         # :command:`yum install --enablerepo=rhel-7-server-optional-rpms kolab`
 
-Continue to :ref:`install-setup-kolab`.
+Continue to :ref:`installation-guide-setup-kolab`.
 

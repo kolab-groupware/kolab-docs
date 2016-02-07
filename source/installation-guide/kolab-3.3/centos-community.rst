@@ -29,7 +29,7 @@ Installation on CentOS
 
         # :command:`yum install kolab`
 
-Continue to :ref:`install-setup-kolab`.
+Continue to :ref:`installation-guide-setup-kolab`.
 
 .. _EPEL for CentOS 6: http://download.fedoraproject.org/pub/epel/6/i386/repoview/epel-release.html
 .. _EPEL for CentOS 7: http://download.fedoraproject.org/pub/epel/beta/7/x86_64/repoview/epel-release.html

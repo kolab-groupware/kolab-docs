@@ -45,4 +45,4 @@ Installation of Kolab Winterfell on Ubuntu 16.04
 
         # :command:`aptitude -y install kolab`
 
-Continue to :ref:`install-setup-kolab`.
+Continue to :ref:`installation-guide-setup-kolab`.
