@@ -317,6 +317,10 @@ Glossary
         (.), even if a domain (system environment) is comprised of a single
         system.
 
+        .. seealso::
+
+            *   `Why Your System Should Have a Proper FQDN`_
+
     made-to-measure
 
         A Made-to-Measure solution is designed to be altered and adjusted to
