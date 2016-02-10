@@ -8,6 +8,7 @@ Kolab Enterprise
 .. toctree::
     :maxdepth: 1
 
+    kolab-16
     kolab-enterprise-14
 
 .. toctree::
