@@ -2,8 +2,14 @@
 Upgrade Guide
 =============
 
-Kolab Enterprise
-================
+The following upgrade guides are contributed to by community
+volunteers.
+
+They certainly offer you some guidance, but do not provide you with
+guarantees.
+
+Do not just execute commands unless you know what you are doing, or
+where to find someone who does.
 
 .. toctree::
     :maxdepth: 1
