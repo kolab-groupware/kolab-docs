@@ -57,5 +57,6 @@ work as expected, please consider contributing.
     :maxdepth: 1
 
     kontact-fedora
+    kontact-centos
     kontact-windows
 
