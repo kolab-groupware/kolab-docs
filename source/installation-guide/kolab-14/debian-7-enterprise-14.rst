@@ -14,8 +14,8 @@ Installation of Kolab Enterprise 14 on Debian 7 (Wheezy)
 
     .. parsed-literal::
 
-        deb https://mirror.kolabsys.com/debian/kolab-14/ wheezy release updates
-        deb-src https://mirror.kolabsys.com/debian/kolab-14/ wheezy release updates
+        deb https://mirror.kolabenterprise.com/debian/kolab-14/ wheezy release updates
+        deb-src https://mirror.kolabenterprise.com/debian/kolab-14/ wheezy release updates
 
 3.  To ensure the Kolab packages have priority over the Debian packages, such as
     must be the case for PHP as well as Cyrus IMAP, please make sure the APT
@@ -26,10 +26,42 @@ Installation of Kolab Enterprise 14 on Debian 7 (Wheezy)
     .. parsed-literal::
 
         Package: *
-        Pin: origin mirror.kolabsys.com
+        Pin: origin mirror.kolabenterprise.com
         Pin-Priority: 501
 
 4.  Install the client certificate and certificate authority files:
+
+    A.  Remove the passphrase from the SSL certificate key:
+
+        .. parsed-literal::
+
+            # :command:`openssl rsa -in /path/to/private.key \\
+                -out /path/to/private.key.nopass`
+
+    B.  Concatenate the certificate file and the new key file without
+        passphrase:
+
+        .. parsed-literal::
+
+            # :command:`cat /path/to/public.crt /path/to/private.key.nopass \\
+                > /path/to/mirror.kolabsys.com.client.pem`
+
+    C.  Place the file :file:`mirror.kolabsys.client.pem` in
+        :file:`/etc/apt/certs/`.
+
+    D. Download the kolabenterprice mirror certificate:
+
+        .. parsed-literal::
+
+            # :command:`cd /etc/apt/certs/`
+            # :command:`wget https://ssl.kolabsys.com/mirror.kolabenterprise.com.ca.cert`
+
+    E. Correct the permissions on the private key:
+
+        .. parsed-literal::
+
+            # :command:`chown root:root /etc/apt/certs/mirror.kolabsys.com.client.pem`
+            # :command:`chmod 640 /etc/apt/certs/mirror.kolabsys.com.client.pem`
 
 5.  Configure **APT** to use the certificates installed in step 4 by
     creating a file ``/etc/apt/apt.conf.d/71kolab`` with the following
@@ -39,10 +71,10 @@ Installation of Kolab Enterprise 14 on Debian 7 (Wheezy)
 
         Acquire {
             https {
-                mirror.kolabsys.com {
-                    Verify-Peer "false";
-                    Verify-Host "false";
-                    CaInfo "/etc/apt/certs/mirror.kolabsys.com.ca.cert";
+                mirror.kolabenterprise.com {
+                    Verify-Peer "true";
+                    Verify-Host "true";
+                    CaInfo "/etc/apt/certs/mirror.kolabenterprise.com.ca.cert";
 
                     SslCert "/etc/apt/certs/mirror.kolabsys.com.client.pem";
                     SslKey "/etc/apt/certs/mirror.kolabsys.com.client.pem";
