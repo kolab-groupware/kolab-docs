@@ -2,7 +2,8 @@
 Contributing to the Documentation
 =================================
 
-This documentation can easily be contributed to by cloning the following git repository.
+This documentation can easily be contributed to by cloning the following git
+repository.
 
     https://git.kolab.org/diffusion/D/
 
@@ -39,28 +40,27 @@ the documentation is written in.
 
     .. parsed-literal::
 
-        $ :command:`cd kolab-docs`
+        $ :command:`cd docs`
 
-#.  To build for real, and possibly also publish the results, pull in
-    the sub-projects we include in to our builds.
-
-    Executing this step is not necessary, but gives you the complete set
-    of documentation as is published on `docs.kolab.org`_.
+#.  To build the documentation, issue the following command:
 
     .. parsed-literal::
 
-        $ :command:`git submodule init`
-        $ :command:`git submodule update`
+        $ :command:`make html`
 
-    .. seealso::
+#.  Make some changes, and build and view the result:
 
-        *   `Working with Git Submodules`_
+    .. parsed-literal::
 
-#.  Make your changes and then commit them:
+        $ :command:`make html`
+        $ :command:`xdg-open build/html/index.html`
+
+#.  When you are satisfied, commit the results and submit a `Differential`_:
 
     .. parsed-literal::
 
         $ :command:`git commit -a`
+        $ :command:`arc diff`
 
 #.  Push your changes back into our Phabricator instance.
     Timotheus wrote `a good tutorial on how to do that <https://kolab.org/blog/timotheus-pokorra/2015/07/01/submitting-patches-kolab-phabricator>`__.
