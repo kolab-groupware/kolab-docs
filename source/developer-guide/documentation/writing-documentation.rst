@@ -6,11 +6,11 @@ Writing Documentation
 
 The Kolab community has a reference implementation of its releases,
 which can best be described as a **next-next-finish** installation [#]_
-of a **single node** [#]_ running **Enterprise Linux 6** [#]_.
+of a **single node** [#]_ running **Enterprise Linux 7** [#]_.
 
 For writing documentation, this means that all documented commands and
 file paths mentioned need to match that specific implementation [#]_ of
-Kolab installed on Enterprise Linux 6, and that every HOWTO needs to
+Kolab installed on Enterprise Linux 7, and that every HOWTO needs to
 start at the aforementioned *null* situation.
 
 This sounds harsh, and it probably is, but here's how you can work with
@@ -51,7 +51,7 @@ it:
 
 .. [#]
 
-    In the family of Enterprise Linux 6 distributions that we provide
+    In the family of Enterprise Linux 7 distributions that we provide
     packages for are Red Hat Enterprise Linux and CentOS.
 
 .. [#]
