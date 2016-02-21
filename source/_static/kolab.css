@@ -131,6 +131,14 @@ p.caption {
     font-style: italic;
 }
 
+table.highlighttable {
+    width: 100%;
+}
+
+table.highlighttable td.linenos {
+    width: 1%;
+}
+
 /* For bold-italic and italic inside other formatting styles */
 /* ``command line `` :italic:`with italics`
  */
