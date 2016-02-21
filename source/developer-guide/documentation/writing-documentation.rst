@@ -26,7 +26,7 @@ it:
 
         .. parsed-literal::
 
-            # :command:`service postfix restart`
+            # :command:`systemctl restart postfix`
 
         On Debian Wheezy, execute the following instead:
 
