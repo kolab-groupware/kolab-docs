@@ -173,10 +173,10 @@ Postfix
         # :command:`postconf -e smtpd_tls_key_file=/etc/pki/tls/private/example.org.key`
         # :command:`postconf -e smtpd_tls_cert_file=/etc/pki/tls/certs/example.org.crt`
         # :command:`postconf -e smtpd_tls_CAfile=/etc/pki/tls/certs/example.org.ca-chain.pem`
-        # :command:`postconf -e smtp_tls_mandatory_protocols="!SSLv2,!SSLv3"`
-        # :command:`postconf -e smtp_tls_protocols="!SSLv2,!SSLv3"`
-        # :command:`postconf -e smtpd_tls_mandatory_protocols="!SSLv2,!SSLv3"`
-        # :command:`postconf -e smtpd_tls_protocols="!SSLv2,!SSLv3"`
+        # :command:`postconf -e smtp_tls_mandatory_protocols='!SSLv2,!SSLv3'`
+        # :command:`postconf -e smtp_tls_protocols='!SSLv2,!SSLv3'`
+        # :command:`postconf -e smtpd_tls_mandatory_protocols='!SSLv2,!SSLv3'`
+        # :command:`postconf -e smtpd_tls_protocols='!SSLv2,!SSLv3'`
         # :command:`postconf -e smtpd_tls_mandatory_ciphers=high`
         # :command:`postconf -e smtpd_tls_eecdh_grade=ultra`
         # :command:`postconf -e tls_preempt_cipherlist=yes`
