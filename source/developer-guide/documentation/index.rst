@@ -63,7 +63,7 @@ the documentation is written in.
         $ :command:`arc diff`
 
 #.  Push your changes back into our Phabricator instance.
-    Timotheus wrote `a good tutorial on how to do that <https://kolab.org/blog/timotheus-pokorra/2015/07/01/submitting-patches-kolab-phabricator>`__.
+    Timotheus wrote `a good tutorial on how to do that <http://www.pokorra.de/2015/07/submitting-patches-to-kolab-via-phabricator/>`_.
 
 Enjoy and thanks for contributing to Kolab!
 
