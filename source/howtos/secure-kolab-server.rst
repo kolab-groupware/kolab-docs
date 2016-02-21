@@ -178,8 +178,8 @@ Postfix
         # :command:`postconf -e smtpd_tls_mandatory_protocols="!SSLv2,!SSLv3"`
         # :command:`postconf -e smtpd_tls_protocols="!SSLv2,!SSLv3"`
         # :command:`postconf -e smtpd_tls_mandatory_ciphers=high`
-        # :command:`postconf -e smtpd_tls_eecdh_grade = ultra`
-        # :command:`postconf -e tls_preempt_cipherlist = yes`
+        # :command:`postconf -e smtpd_tls_eecdh_grade=ultra`
+        # :command:`postconf -e tls_preempt_cipherlist=yes`
         # :command:`postconf -e tls_high_cipherlist=EDH+CAMELLIA:EDH+aRSA:EECDH+aRSA+AESGCM:EECDH+aRSA+SHA384:EECDH+aRSA+SHA256:EECDH:+CAMELLIA256:+AES256:+CAMELLIA128:+AES128:+SSLv3:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!DSS:!RC4:!SEED:!ECDSA:CAMELLIA256-SHA:AES256-SHA:CAMELLIA128-SHA:AES128-SHA`
 
     On Debian: Change the paths according to the Debian file structure (replace `/etc/pki/tls` with
