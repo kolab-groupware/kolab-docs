@@ -58,13 +58,13 @@ Installation Procedure
 
     .. parsed-literal::
 
-        # :command:`yum --enablerepo=rhel-7-server-optional-rpms https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`
+        # :command:`yum install https://ssl.kolabsys.com/kolab-enterprise-14-for-el7.rpm`
 
 5.  Install Kolab Enterprise:
 
     .. parsed-literal::
 
-        # :command:`yum install kolab`
+        # :command:`yum --enablerepo=rhel-7-server-optional-rpms install kolab`
 
 6.  Do not forget to also execute :command:`yum update`.
 
