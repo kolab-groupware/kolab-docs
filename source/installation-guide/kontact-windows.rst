@@ -47,6 +47,6 @@ Installation
 
 13.  Proceed to "First".
 
-.. _installer: http://mirror.kolabsys.com/pub/upload/windows/Kontact-E14-LATEST.exe
+.. _installer: https://mirror.kolabenterprise.com/pub/upload/windows/Kontact-E14-LATEST.exe
 .. _MSVC2013 Redistributable x86: http://www.microsoft.com/en-us/download/details.aspx?id=40784
 .. _GPG4Win 2.2.0 Vanilla: http://files.gpg4win.org/gpg4win-vanilla-2.2.0.exe
