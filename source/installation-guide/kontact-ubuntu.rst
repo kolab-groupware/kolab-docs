@@ -16,30 +16,28 @@ Installation on Ubuntu 14.04
 
         # :command:`wget http://obs.kolabsys.com/repositories/Kontact:/4.13/Ubuntu_14.04/Release.key`
 
-#.    Add key to valid keys:
+#.  Add key to valid keys:
 
     .. parsed-literal::
 
-        # :command:`sudo apt-key add Release.key`
+        # :command:`apt-key add Release.key`
 
-#.    Update the sources:
-
-    .. parsed-literal::
-
-        # :command:`sudo apt-get update`
-
-#.    Install kolab-desktop-client:
+#.  Update the sources:
 
     .. parsed-literal::
 
-        # :command:`sudo apt-get install kolab-desktop-client`
+        # :command:`apt-get update`
 
-#.    Start the Kolab Desktop Client:
+#.  Install kolab-desktop-client:
+
+    .. parsed-literal::
+
+        # :command:`apt-get install kolab-desktop-client`
+
+#.  Start the Kolab Desktop Client:
 
     .. parsed-literal::
 
         # :command:`kontact`
-
-
 
 Continue to :ref:`_settings-clientconfig-kontact`.
