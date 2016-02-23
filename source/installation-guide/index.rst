@@ -59,4 +59,5 @@ work as expected, please consider contributing.
     kontact-fedora
     kontact-centos
     kontact-windows
+    kontact-ubuntu
 
