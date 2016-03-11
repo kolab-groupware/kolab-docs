@@ -128,8 +128,8 @@ This makes your shell navigating in to a GIT repository appear as follows:
 
     .. parsed-literal::
 
-        [kanarip\@dws06 ~]$ :command:`cd ~/devel/puppet/domains/kolabsys.com`
-        [kanarip\@dws06 kolabsys.com (development u=)]$
+        [kanarip\@dws06 ~]$ :command:`cd ~/devel/src/kolab/pykolab.git`
+        [kanarip\@dws06 pykolab.git (master u=)]$
 
     This means a clean working copy.
 
@@ -137,8 +137,8 @@ This makes your shell navigating in to a GIT repository appear as follows:
 
     .. parsed-literal::
 
-        [kanarip\@dws06 kolabsys.com (development u=)]$ :command:`touch something`
-        [kanarip\@dws06 kolabsys.com (development % u=)]$
+        [kanarip\@dws06 pykolab.git (master u=)]$ :command:`touch something`
+        [kanarip\@dws06 pykolab.git (master % u=)]$
 
     THe `%` means untracked files exist in the directory hierarchy.
 
@@ -146,8 +146,8 @@ This makes your shell navigating in to a GIT repository appear as follows:
 
     .. parsed-literal::
 
-        [kanarip\@dws06 kolabsys.com (development % u=)]$ :command:`git add something`
-        [kanarip\@dws06 kolabsys.com (development + u=)]$
+        [kanarip\@dws06 pykolab.git (master % u=)]$ :command:`git add something`
+        [kanarip\@dws06 pykolab.git (master + u=)]$
 
     The `+` means tracked, uncommitted files exist in the directory hierarchy.
 
@@ -155,8 +155,8 @@ This makes your shell navigating in to a GIT repository appear as follows:
 
     .. parsed-literal::
 
-        [kanarip\@dws06 kolabsys.com (development + u=)]$ :command:`echo 1 > something`
-        [kanarip\@dws06 kolabsys.com (development \*+ u=)]$
+        [kanarip\@dws06 pykolab.git (master + u=)]$ :command:`echo 1 > something`
+        [kanarip\@dws06 pykolab.git (master \*+ u=)]$
 
     The `*` means uncommitted changes to tracked files exist. The `+` still
     indicates a tracked file is not yet committed.
@@ -166,13 +166,13 @@ This makes your shell navigating in to a GIT repository appear as follows:
 
     .. parsed-literal::
 
-        [kanarip\@dws06 kolabsys.com (development \*+ u=)]$ :command:`git checkout testing`
+        [kanarip\@dws06 pykolab.git (master \*+ u=)]$ :command:`git checkout pykolab-0.7`
         A   something
-        Switched to branch 'testing'
-        Your branch and 'origin/testing' have diverged,
+        Switched to branch 'pykolab-0.7'
+        Your branch and 'origin/pykolab-0.7' have diverged,
         and have 4 and 65 different commits each, respectively.
           (use "git pull" to merge the remote branch into yours)
-        [kanarip\@dws06 kolabsys.com (testing \*+ u+4-65)]$
+        [kanarip\@dws06 pykolab.git (pykolab-0.7 \*+ u+4-65)]$
 
     This means we have 4 commits to our local working copy not yet in the
     remote tracked, and 65 commits in the remote tracked not yet in our local
@@ -182,86 +182,37 @@ This makes your shell navigating in to a GIT repository appear as follows:
 
     .. parsed-literal::
 
-        [kanarip\@dws06 kolabsys.com (testing \*+ u+4-65)]$ :command:`git rebase origin/testing --autostash`
+        [kanarip\@dws06 pykolab.git (pykolab-0.7 \*+ u+4-65)]$ :command:`git rebase origin/pykolab-0.7 --autostash`
         Created autostash: 49f31f4
         HEAD is now at a6fb106 Ensure docker runs on atomic hosts
         First, rewinding head to replay your work on top of it...
         Applied autostash.
-        [kanarip\@dws06 kolabsys.com (testing + u=)]$
+        [kanarip\@dws06 pykolab.git (pykolab-0.7 + u=)]$
 
     You'll notice the `+` again stands for the tracked, not yet committed file
     :file:`something`.
 
-Pushing Changes
-===============
-
-There is virtually no need to push only to the development branch, but merging
-and cherry-picking individual changes should be avoided:
-
-.. parsed-literal::
-
-    $ :command:`cd ~/devel/puppet/domains/kolabsys.net`
-    (...make some changes...)
-    $ :command:`git commit -a -m "Make some changes"`
-
-Attempt a push if you feel so inclined:
-
-.. parsed-literal::
-
-    $ :command:`git push origin development`
-
-This may be refused as a non-fast forward attempt, so fetch the origin first.
-
-.. IMPORTANT::
-
-    Do **NOT** just issue a :command:`git pull` if your prompt shows your
-    current local working copy is not clean -- this can still result in a merge
-    commit and those will not be allowed when pushing them back.
-
-.. parsed-literal::
-
-    $ :command:`git fetch origin`
-    $ :command:`git rebase origin/development --autostash`
-
-Your prompt should now show something like:
-
-.. parsed-literal::
-
-    [kanarip\@dws06 kolabsys.com (development u+1)]$
-
-To push your changes:
-
-.. parsed-literal::
-
-    $ :command:`git push origin development`
-    $ :command:`git push origin development:testing`
-    $ :command:`git push origin development:production`
-
 Creating a Differential for Review
 ==================================
 
-A standard repository comes with three branches: development, testing,
-production.
+Your development takes place against the **master** branch, unless you find
+yourself running in circles, interrupted by a support request.
 
-Make sure you have **development** checked out, and for the sake of preventing
+Thus, make sure you have **master** checked out, and for the sake of preventing
 superfluous merge and rebase exercises, ensure it's in sync with upstream:
 
 .. parsed-literal::
 
-    $ :command:`git checkout development`
+    $ :command:`git checkout master`
     $ :command:`git fetch origin`
-    $ :command:`git rebase origin/development --autostash`
+    $ :command:`git rebase origin/master --autostash`
 
-Make sure you have a ticket for `Engineering`_ for your work and
-`Operations`_ for the final application to production systems.
-
-Given such a ticket, such as :task:`144`, you can branch off the GIT
-repository;
+Provided a ticket, such as :task:`1037`, you can branch off the GIT repository;
 
 .. parsed-literal::
 
-    [kanarip\@dws06 kolabsys.com (development u=)]$ :command:`git checkout -b T144`
-    [kanarip\@dws06 kolabsys.com (T144)]$
+    [kanarip\@dws06 docs.git (master u=)]$ :command:`git checkout -b dev/T1037`
+    [kanarip\@dws06 docs.git (dev/T1037)]$
 
 Make your changes, and commit them in however many commits you think is
 reasonable.
@@ -270,26 +221,21 @@ Then, create the `Differential`_:
 
 .. parsed-literal::
 
-    [kanarip\@dws06 kolabsys.net (T125 %)]$ arc diff
+    [kanarip\@dws06 docs.git (dev/T1037 %)]$ arc diff
     You have untracked files in this working copy.
 
-      Working copy: /home/kanarip/devel/puppet/domains/kolabsys.net/
+      Working copy: /home/kanarip/devel/src/kolab/docs.git/
 
       Untracked changes in working copy:
       (To ignore these changes, add them to ".git/info/exclude".)
-        bin/reroute-vpn
-        files/haproxy/haproxy.cfg.transparent
-        haproxy.patch
-        nodes
-        puppet/manifests/classes/puppet.pp~HEAD
-        puppet/manifests/classes/yum.pp.rej
+        quick-notes.txt
 
         Ignore these untracked files and continue? [y/N] :command:`y`
 
 You will now be requested to provide some information about your proposed
 changes.
 
-Set the first ``Summary:`` line to ``Resolves T345678``, so that your
+Set the first ``Summary:`` line to ``Resolves T1037``, so that your
 differential will be associated with the ticket automatically, and an accepted
 differential also closes the ticket you refer to.
 
@@ -301,9 +247,10 @@ differential also closes the ticket you refer to.
     No unit test engine is configured for this project.
     Updating commit message...
     Created a new Differential revision:
-            Revision URI: https://noc.kolabsys.net/D8
+            Revision URI: https://git.kolab.org/D89
 
     Included changes:
-      M       puppet/manifests/classes/puppet.pp
+      M       source/index.rst
+      A       source/contributor-guide/index.rst
 
 And that's it.
