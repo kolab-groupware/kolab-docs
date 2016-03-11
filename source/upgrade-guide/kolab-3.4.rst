@@ -412,7 +412,7 @@ Please verify that we the tables have been upgraded to the lastest version.
 
  .. note::
 
-    The initial Kolab 3.4 roundcubemail-plugins-kolab rpm packages had this
+    The initial Kolab 3.4 |roundcubemail-plugins-kolab| rpm packages had this
     upgrade database procedure missing.
 
 Under some circumstances it can be possible that his upgrade couldn't be

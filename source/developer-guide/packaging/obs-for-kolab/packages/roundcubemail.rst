@@ -1,10 +1,10 @@
-The **roundcubemail** package contains the upstream web-application used
+The |roundcubemail| package contains the upstream web-application used
 for the webmail interface in Kolab Groupware.
 
 It's packaging is rather complex, with one tarball resulting in some 100
 sub-packages.
 
-The generic package **roundcubemail** is a so-called meta-package, that
+The generic package |roundcubemail| is a so-called meta-package, that
 depends on a set of sub-packages. As such, a
 :command:`yum install roundcubemail` results in a fully function,
 minimal installation of Roundcube (with only the core, few required

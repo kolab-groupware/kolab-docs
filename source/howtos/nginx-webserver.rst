@@ -37,7 +37,7 @@ look on the complex setup.
             listen              8080 default_server;
             server_name         localhost:8080;
 
-            # support roundcubemail secure urls
+            # support |roundcubemail| secure urls
             rewrite "^/roundcubemail/[a-zA-Z0-9]{16}/(.*)" /roundcubemail/$1;
 
             # roundcube

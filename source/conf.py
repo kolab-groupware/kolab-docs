@@ -126,17 +126,11 @@ pygments_style = 'sphinx'
 
 
 # -- Options for HTML output ---------------------------------------------------
+#import sphinx_rtd_theme
+#html_theme = "sphinx_rtd_theme"
+#html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
 html_theme = 'sphinxdoc'
-
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-#html_theme_options = {}
-
-# Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
@@ -361,7 +355,7 @@ if not custom_tags:
 
 # add variables as substitutions to the head of each page
 rst_prolog = ""
-for var,repl in variables.items():
+for var, repl in variables.items():
     rst_prolog += "    .. |%s| replace:: %s\n" % (var, repl)
     rst_prolog += "    .. |**%s**| replace:: **%s**\n" % (var, repl)
 
@@ -377,6 +371,9 @@ extlinks = {
 
 rst_prolog += """
 .. _Architecture & Design: https://git.kolab.org/tag/architecture_design/
+.. _bugzilla: https://issues.kolab.org/
+.. _current sprint: https://git.kolab.org/tag/sprint_current/
+.. _next sprint: https://git.kolab.org/tag/sprint_next/
 .. _Differential: https://git.kolab.org/differential/
 .. _Diffusion: https://git.kolab.org/diffusion/
 .. _Drydock: https://git.kolab.org/drydock/
@@ -391,7 +388,43 @@ rst_prolog += """
 .. _Product Owners: https://git.kolab.org/tag/product_owners/
 .. _Projects: https://git.kolab.org/projects/
 .. _Quality Assurance: https://git.kolab.org/tag/quality_assurance/
+.. _Report a bug: https://git.kolab.org/maniphest/task/edit/form/9/
+.. _Scrum: http://en.wikipedia.org/wiki/Scrum_%28software_development%29
 .. _Scrum Masters: https://git.kolab.org/tag/process_managers/
 .. _Sprints: https://git.kolab.org/project/sprint/
 .. _Why Your System Should Have a Proper FQDN: https://kanarip.wordpress.com/2016/02/04/why-your-system-requires-a-proper-fqdn/
+"""
+
+#
+# Releases
+#
+rst_prolog += """
+.. |Winterfell| replace:: :orange:`Winterfell`
+.. |K16| replace:: :orange:`Kolab 16`
+.. |KE14| replace:: :orange:`Kolab Enterprise 14`
+.. |KE13| replace:: :orange:`Kolab Enterprise 13`
+"""
+
+#
+# Target platforms
+#
+rst_prolog += """
+.. |maipo| replace:: :gray:`Maipo`
+.. |santiago| replace:: :gray:`Santiago`
+"""
+
+#
+# Packages
+#
+rst_prolog += """
+.. |roundcubemail| replace:: :blue:`roundcubemail`
+.. |roundcubemail-plugins-kolab| replace:: :blue:`roundcubemail-plugins-kolab`
+"""
+
+rst_prolog += """
+.. role:: blue
+.. role:: gray
+.. role:: green
+.. role:: orange
+.. role:: red
 """

@@ -14,6 +14,13 @@ proven components and protocols.
 
 Read more in our :ref:`introduction`.
 
+.. rubric:: The Currency of Kudo is Beer
+
+.. toctree::
+    :maxdepth: 1
+
+    contributor-guide/index
+
 .. rubric:: Planning Your Kolab Groupware Deployment
 
 .. toctree::

@@ -22,7 +22,7 @@ Kolab 3.1 compared to Kolab 3.0 ships the following additional components:
     UI component builder functions (JavaScript) obtaining information from its
     own API.
 
-#.  ``kolab_files`` for **roundcubemail-plugins-kolab**
+#.  ``kolab_files`` for |roundcubemail-plugins-kolab|
 
     One implementation of the integration of **chwala** into the Roundcube
     web client.

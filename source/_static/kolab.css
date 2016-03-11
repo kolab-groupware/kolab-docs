@@ -131,6 +131,59 @@ p.caption {
     font-style: italic;
 }
 
+span.blue {
+    background: #dee7f8 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-color: #cfdbe3;
+    border-radius: 3px;
+    color: #464c5c;
+/*     font-size: 12px; */
+    padding: 0 4px;
+}
+
+/*
+ *  span.blue::before {
+ *      content: " ";
+ *      font-family: FontAwesome;
+ *  }
+ */
+
+span.gray {
+    background: #edeef2 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-color: #e3e4e8;
+    border-radius: 3px;
+    color: #555;
+    padding: 0 4px;
+}
+
+span.green {
+    background: #ddefdd none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-color: #c6e6c7;
+    border-radius: 3px;
+    color: #326d34;
+    padding: 0 4px;
+}
+
+span.orange {
+    background: #fbede1 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-color: #f8dcc3;
+    color: #ba6016;
+    border-radius: 3px;
+    padding: 0 4px;
+}
+
+span.red {
+    background: #f7e6e6 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-color: #efcfcf;
+    border-radius: 3px;
+    color: #a53737;
+    padding: 0 4px;
+}
+
 table.highlighttable {
     width: 100%;
 }

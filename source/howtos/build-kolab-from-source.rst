@@ -451,7 +451,7 @@ Installing Roundcube and Kolab Plugins from Source
         Resolving deltas: 100% (6696/6696), done.
 
 6.  Use the Kolab plugin configuration from the system directory
-    ``/etc/roundcubemail/`` as installed by the roundcubemail-plugins-kolab RPM
+    ``/etc/roundcubemail/`` as installed by the |roundcubemail-plugins-kolab| RPM
     package and configured using the setup-kolab utility:
 
     .. parsed-literal::
