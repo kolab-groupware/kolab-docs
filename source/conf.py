@@ -445,4 +445,3 @@ html_theme_options = {"nosidebar" : True}
 html_theme_path = ['../ext/']
 html_title = "Kolab Now Documentation"
 html_copy_source=False
-
