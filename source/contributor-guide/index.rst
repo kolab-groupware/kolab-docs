@@ -47,13 +47,9 @@ such as continued development and participation in sprints.
     getting-started
     setup-development-environment
     peer-review
+    bug-reporting-structured
     docker-containers
     continuous-integration
     packaging
-    bug-reporting-structured
-
-.. toctree::
-    :hidden:
-    :maxdepth: 1
-
     scrum
+
