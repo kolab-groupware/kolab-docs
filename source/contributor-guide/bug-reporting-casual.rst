@@ -9,18 +9,21 @@ the development version).
 At the time of this writing, this can be |K16| (stable) or |winterfell|
 (development).
 
-Therefore, `report a bug`_ against Kolab in Phabricator. You'll describe what
-it is you did, what the expected results are, what results you got, and how
-those results do not meet your expectations.
+Therefore, `report a bug`_ against Kolab in `Phabricator`_. You'll describe
+what it is you did, what the expected results are, what results you got, and
+how those results do not meet your expectations.
 
 It is assumed all bugs are issues in the development of Kolab, for two main
 reasons:
 
-*   Development teams need to ensure the software is tested for the issue you
-    find.
+*   Development teams need to ensure the next version of the software is tested
+    for the issue you find.
 
 *   The bug zappers are able to assist you with troubleshooting, suggesting
     work-arounds, configuration, and providing the necessary information.
+
+    They are also aware of the software projects involved, such that a single
+    bug may include up to as many as 6 individual software projects.
 
 .. seealso::
 
