@@ -22,15 +22,18 @@ Android version that you might be using.
 K-9 Mail
 --------
 
-We recommend to use the IMAP protocol for email. The standard email app                                                                                                 
-on Android supports it, so do most other apps. However, we found that                                                                                                   
-`K-9 Mail <https://play.google.com/store/apps/details?id=com.fsck.k9>`__                                                                                                
+We recommend to use the IMAP protocol for email. The standard email app
+on Android supports it, so do most other apps. However, we found that
+`K-9 Mail <https://play.google.com/store/apps/details?id=com.fsck.k9>`__
 works best and therefore provide the instructions below for that.
-You can still use any other IMAP capable app like the default email application.
+You can still use any other IMAP capable app like the default email
+application.
 
-In order to set up your K-9 Mail,
-just add a new account and provide your |service_name| email address as well as your password.
-It will disover all necessary settings automatically as shown in the screenshots below.
+In order to set up your K-9 Mail, just add a new account and provide your
+|service_name| email address as well as your password.
+
+It will disover all necessary settings automatically as shown in the
+screenshots below.
 
 .. container:: screenshots
 
@@ -66,19 +69,30 @@ Your account is now set up!
 If the settings could **not** be discovered automatically for some reason,
 please choose *Manual Setup* and follow the instructions below.
 
-#. Choose *IMAP* as account type.
-#. Username: Provide your primary and full email address here, e.g. |**useremail**|
-#. IMAP server: |**imap_host**|
-#. Security: |**imap_ssl**|
-#. Authentication: **Normal pasword**
-#. Port: |**imap_port**|
+#.  Choose *IMAP* as account type.
 
-Then press next and enter the following information for the outgoing server settings:
+#.  Username: Provide your primary and full email address here, e.g.
+    |**useremail**|
 
-#. SMTP server: |**smtp_host**|
-#. Security: |**smtp_ssl**|
-#. Port: |**smtp_port**|
-#. Username: Provide your primary and full email address here, e.g. |**useremail**|
+#.  IMAP server: |**imap_host**|
+
+#.  Security: |**imap_ssl**|
+
+#.  Authentication: **Normal pasword**
+
+#.  Port: |**imap_port**|
+
+Then press next and enter the following information for the outgoing server
+settings:
+
+#.  SMTP server: |**smtp_host**|
+
+#.  Security: |**smtp_ssl**|
+
+#.  Port: |**smtp_port**|
+
+#.  Username: Provide your primary and full email address here, e.g.
+    |**useremail**|
 
 .. container:: screenshots
 
@@ -129,29 +143,52 @@ Then press next and enter the following information for the outgoing server sett
     -----------------------------------
 
     This section describes how you can get your calendars and contacts from
-    |service_name| on your Android device using the Free Software `DAVdroid
-    app <http://davdroid.bitfire.at/what-is-davdroid>`__.
+    |service_name| on your Android device using the Free Software `DAVdroid`_
+    app.
+
     You can also use other apps that can do CalDAV/CardDAV like
     the non-free `CaldDAV-sync and CardDAV-Sync apps <http://dmfs.org/>`__.
+
     But we generally recommend to use software that respects your
     freedom. Another possibility is using the built-in Active Sync support.
-    Please see :ref:`settings-clientconfig-android-activesync` for more information.
 
-    #. You can get DAVdroid from `Google Play <https://play.google.com/store/apps/details?id=at.bitfire.davdroid>`__
-       or the `F-Droid app repository <https://f-droid.org/repository/browse/?fdid=at.bitfire.davdroid>`__.
-    #. After installing, it will appear in your list of apps.
-       Please open the app.
-    #. On the welcome screen, please click the little key icon with the plus to set up your |service_name| account.
-    #. Choose DAVdroid in the next screen and then click *Log in with email address*.
-       Note: If you have your own domain, you might need to choose the other option if this one does not work.
-    #. Provide your full and primary |service_name| address as well as your password.
-    #. The next screen shows all your calendars and address books. Select those that you want
-       to synchronize to your Android device.
-       Please note that as of now, Android only allows one address book per account.
-       You can add more by just adding the same account again later.
-    #. On the next screen, please provide the email address you use for calendar invitations with this account.
-    #. After clicking *Add Account* in the top right corner,
-       your account is created and will now synchronize your contacts and events.
+    Please see :ref:`settings-clientconfig-android-activesync` for more
+    information.
+
+    #.  You can get `DAVdroid from Google Play`_, or the
+        `F-Droid app repository`_.
+
+    #.  After installing, it will appear in your list of apps.
+
+        Please open the app.
+
+    #.  On the welcome screen, please click the little key icon with the plus
+        to set up your |service_name| account.
+
+    #.  Choose DAVdroid in the next screen and then click
+        *Log in with email address*.
+
+        .. NOTE::
+
+            If you have your own domain, you might need to choose the other
+            option if this one does not work.
+
+    #.  Provide your full and primary |service_name| address as well as your
+        password.
+
+    #.  The next screen shows all your calendars and address books. Select
+        those that you want to synchronize to your Android device.
+
+        Please note that as of now, Android only allows one address book per
+        account.
+
+        You can add more by just adding the same account again later.
+
+    #.  On the next screen, please provide the email address you use for
+        calendar invitations with this account.
+
+    #.  After clicking *Add Account* in the top right corner, your account is
+        created and will now synchronize your contacts and events.
 
     .. container:: screenshots
 
@@ -200,10 +237,12 @@ Then press next and enter the following information for the outgoing server sett
 
                 |useremail| @330,305
 
-    If the auto-discovery at step 4 did not work, because you are using your own domain that does not have the DNS entries set for auto-discovery,
-    then choose *Login with URL and user name* instead.
-    In the next screen enter |**caldav_host**| in the server URL and make sure to use **https**.
-    Afterwards, you can continue with step 6 above.
+    If the auto-discovery at step 4 did not work, because you are using your
+    own domain that does not have the DNS entries set for auto-discovery, then
+    choose *Login with URL and user name* instead.
+
+    In the next screen enter |**caldav_host**| in the server URL and make sure
+    to use **https**. Afterwards, you can continue with step 6 above.
 
     .. container:: screenshots
 
@@ -236,19 +275,34 @@ Then press next and enter the following information for the outgoing server sett
     |service_name| on your Android device. It assumes that you will use Mobile
     Synchronization with *ActiveSync* which will integrate nicely into your
     default Android apps. Another possibility is using CalDAV/CardDAV.
-    Please see :ref:`settings-clientconfig-android-davdroid` for more information.
 
-    #. Please go to *Settings* -> *Account* -> *Add Account*
-    #. Then choose either *Exchange* or *Corporate*.
-    #. Afterwards, please provider your primary and full email address, e.g. |**useremail**| 
-    #. When asked for incoming server settings, please also give your full email address as username.
-       Older versions of Android might require you to provide the username in the form of **domain.tld\\user**
-       where **user@domain.tld** is your primary email address.
-    #. In the server field, please enter: |**activesync_host**|
-    #. Set the account options as you like.
-       We recommend to use IMAP for email (see :ref:`settings-clientconfig-android-k9`), but you can activate email here as well.
-    #. After successful account creation,
-       you should select which data shall be synchronized in the webmail settings (see last screenshot).
+    Please see :ref:`settings-clientconfig-android-davdroid` for more
+    information.
+
+    #.  Please go to *Settings* -> *Account* -> *Add Account*
+
+    #.  Then choose either *Exchange* or *Corporate*.
+
+    #.  Afterwards, please provider your primary and full email address, e.g.
+        |**useremail**|
+
+    #.  When asked for incoming server settings, please also give your full
+        email address as username.
+
+        Older versions of Android might require you to provide the username in
+        the form of **domain.tld\\user**, where **user@domain.tld** is your
+        primary email address.
+
+    #.  In the server field, please enter: |**activesync_host**|
+
+    #.  Set the account options as you like.
+
+        We recommend to use IMAP for email (see
+        :ref:`settings-clientconfig-android-k9`), but you can activate email
+        here as well.
+
+    #.  After successful account creation, you should select which data shall
+        be synchronized in the webmail settings (see last screenshot).
 
     .. container:: screenshots
 
@@ -321,5 +375,4 @@ Then press next and enter the following information for the outgoing server sett
                 :size: 12
 
                 |useremail| @665,15
-
 

@@ -374,11 +374,14 @@ rst_prolog += """
 .. _bugzilla: https://issues.kolab.org/
 .. _current sprint: https://git.kolab.org/tag/sprint_current/
 .. _next sprint: https://git.kolab.org/tag/sprint_next/
+.. _DAVDroid: http://davdroid.bitfire.at/what-is-davdroid
+.. _DAVDroid from Google Play: https://play.google.com/store/apps/details?id=at.bitfire.davdroid
 .. _Differential: https://git.kolab.org/differential/
 .. _Diffusion: https://git.kolab.org/diffusion/
 .. _Drydock: https://git.kolab.org/drydock/
 .. _EPEL for Enterprise Linux 6: http://download.fedoraproject.org/pub/epel/6/x86_64/repoview/epel-release.html
 .. _EPEL for Enterprise Linux 7: http://download.fedoraproject.org/pub/epel/7/x86_64/repoview/epel-release.html
+.. _F-Droid app repository: https://f-droid.org/repository/browse/?fdid=at.bitfire.davdroid
 .. _Harbormaster: https://git.kolab.org/harbormaster/
 .. _Herald: https://git.kolab.org/herald/
 .. _Kolab Systems AG: https://kolabsystems.com
