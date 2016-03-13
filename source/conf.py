@@ -102,7 +102,10 @@ locale_dirs = ['../locale/']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = [ 'webmail-user-guide/roundcubemail-plugins-kolab/*' ]
+exclude_patterns = [
+        'about/.template/*',
+        'webmail-user-guide/roundcubemail-plugins-kolab/*'
+    ]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
