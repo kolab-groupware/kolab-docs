@@ -27,14 +27,15 @@ if [ ! -f "osc_cache/obs_projects.list" -o ${refresh} -eq 1 ]; then
     # Legacy Kolab releases do not need to be updated
     sed -r -i \
         -e '/^cyrus-imapd/d' \
+        -e '/^Infrastructure/d' \
         -e '/^Kolab:3\.0/d' \
         -e '/^Kolab:3\.1/d' \
         -e '/^Kolab:3\.2/d' \
         -e '/^Kolab:3\.3/d' \
         -e '/^Kolab:3\.4/d' \
-        -e '/^Kolab:13/d' \
-        -e '/^Kolab:14/d' \
         -e '/^Kolab:Development/d' \
+        -e '/^Kube/d' \
+        -e '/^Tools/d' \
         osc-cache/obs_projects.list
 
     # Legacy target platforms do not need to be updated
@@ -59,7 +60,7 @@ if [ ! -f "osc_cache/obs_projects.list" -o ${refresh} -eq 1 ]; then
 fi
 echo " DONE"
 
-obs_projects=$(cat osc-cache/obs_projects.list)
+obs_projects=$(cat osc-cache/obs_projects.list | sort --version-sort -r)
 
 # Placeholder for Kolab projects
 declare -a kolab_projects
@@ -132,6 +133,7 @@ echo -en "Listing packages for projects: $(printf %3d $(( ${current} * 100 / ${t
 # Remove the exceptions to the rule
 sed -r -i \
     -e '/^roundcubemail-skin-contargo$/d' \
+    -e '/^roundcubemail-skin-ssd$/d' \
     osc-cache/*_packages.list
 
 cat osc-cache/*_packages.list | sort -u > osc-cache/packages.list
@@ -142,7 +144,7 @@ for package in $(cat osc-cache/packages.list); do
     fi
 done
 
-package_column_width=$(( ${package_column_width} * 2 + $(echo -n ":ref:\`package-\'" | wc -c) ))
+package_column_width=$(( ${package_column_width} * 2 + $(echo -n ":ref:\`about-\'" | wc -c) ))
 
 if [ $(echo -n "Package Name(s)" | wc -c) -gt ${package_column_width} ]; then
     package_column_width=$(echo -n "Package Name(s)" | wc -c)
@@ -167,7 +169,21 @@ cur_percentage=0
 #if [ 0 -eq 1 ]; then
 
 for package in ${packages}; do
-    target="source/developer-guide/packaging/obs-for-kolab/packages/${package}.txt"
+    if [ -f "osc-info.stop" ]; then
+        echo "Stop issued."
+        exit 1
+    fi
+
+    target="source/about/${package}/version-matrix.rst"
+
+    if [ ! -d "$(dirname ${target})" ]; then
+        cp -a source/about/.template/ $(dirname ${target})
+        sed -i -e "s/template/${package}/g" $(find source/about/${package}/ -type f)
+    fi
+
+    sed -i -r -e "s/^[=]+$/$(echo ${package} | sed -e 's/./=/g')/g" source/about/${package}/index.rst
+
+    sed -i -r -e '0,/^[=]+$/{/^[=]+$/d}' $(find source/about/${package}/ -type f ! -name "index.rst")
 
     if [ -f "${target}" ]; then
         rm -rf ${target}
@@ -184,14 +200,14 @@ for package in ${packages}; do
         let x++
     done
 
-    echo ".. _package-$(echo ${package} | tr '[:upper:]' '[:lower:]'):" >> ${target}
+    echo ".. _about-$(echo ${package} | tr '[:upper:]' '[:lower:]')-version-matrix:" >> ${target}
     echo "" >> ${target}
 
-    echo "${package}" >> ${target}
-    echo "${package}" | sed -e 's/./=/g' >> ${target}
+    echo "Version Matrix" >> ${target}
+    echo "==============" >> ${target}
     echo "" >> ${target}
-    if [ -f "source/developer-guide/packaging/obs-for-kolab/packages/${package}.rst" ]; then
-        cat "source/developer-guide/packaging/obs-for-kolab/packages/${package}.rst" >> ${target}
+    if [ -f "source/about/${package}/notes.txt" ]; then
+        cat "source/about/${package}/notex.txt" >> ${target}
         echo "" >> ${target}
     fi
     echo ".. table:: Version Table for ${package}" >> ${target}
@@ -261,7 +277,7 @@ while [ ${x} -lt ${#kolab_projects[@]} ]; do
         fi
 
         enabled_repositories=""
-        target="source/developer-guide/packaging/obs-for-kolab/packages/${package}.txt"
+        target="source/about/${package}/version-matrix.rst"
 
         if [ -s "osc-cache/${project}_${package}.meta" ]; then
             disabled_default=$(awk '/<build>/,/<\/build>/' osc-cache/${project}_${package}.meta | grep -E "^\s*<disable/>$")
@@ -277,8 +293,8 @@ while [ ${x} -lt ${#kolab_projects[@]} ]; do
                     sort -u
                 )
 
-            y=0
-            while [ ${y} -lt ${#target_repositories[@]} ]; do
+            y=$(( ${#target_repositories[@]} - 1 ))
+            while [ ${y} -ge 0 ]; do
                 repo_disabled=0
                 for disabled_repository in ${disabled_repositories}; do
                     if [ "${target_repositories[${y}]}" == "${disabled_repository}" ]; then
@@ -290,7 +306,7 @@ while [ ${x} -lt ${#kolab_projects[@]} ]; do
                     enabled_repositories="${enabled_repositories} ${target_repositories[${y}]}"
                 fi
 
-                let y++
+                let y--
             done
         elif [ "${disabled_default}" == "yes" ]; then
             enabled_repositories=""
@@ -304,8 +320,6 @@ while [ ${x} -lt ${#kolab_projects[@]} ]; do
         fi
 
         if [ ! -z "${enabled_repositories}" ]; then
-            printf "    | %-${project_column_width}s |" ${project} >> ${target}
-
             have_had_first=0
             for enabled_repository in ${enabled_repositories}; do
                 # Here be version magic.
@@ -316,10 +330,11 @@ while [ ${x} -lt ${#kolab_projects[@]} ]; do
 
                 version=$(cat osc-cache/${project}_${enabled_repository}_${package}.version)
                 if [ -z "${version}" ]; then
-                    version="N/A"
+                    continue
                 fi
 
                 if [ ${have_had_first} -eq 0 ]; then
+                    printf "    | %-${project_column_width}s |" ${project} >> ${target}
                     printf " %-${target_column_width}s | %-${version_column_width}s |" ${enabled_repository} ${version} >> ${target}
                     echo "" >> ${target}
                     printf "%s" "    +-" >> ${target}
@@ -369,12 +384,10 @@ current=0
 cur_percentage=0
 total=${#kolab_projects[@]}
 
-mkdir -p "source/developer-guide/packaging/obs-for-kolab/product/"
-
 while [ ${current} -lt ${#kolab_projects[@]} ]; do
     project=${kolab_projects[${current}]}
     project_lc=$(echo ${project} | sed -e 's/:/-/g' | tr '[:upper:]' '[:lower:]')
-    target="source/developer-guide/packaging/obs-for-kolab/product/${project_lc}.rst"
+    target="source/about/${project_lc}.rst"
     enabled_repositories=""
 
     if [ -f "${target}" ]; then
@@ -405,8 +418,8 @@ while [ ${current} -lt ${#kolab_projects[@]} ]; do
                 sort -u
             )
 
-        y=0
-        while [ ${y} -lt ${#target_repositories[@]} ]; do
+        y=$(( ${#target_repositories[@]} - 1 ))
+        while [ ${y} -ge 0 ]; do
             repo_disabled=0
             for disabled_repository in ${disabled_repositories}; do
                 if [ "${target_repositories[${y}]}" == "${disabled_repository}" ]; then
@@ -418,7 +431,7 @@ while [ ${current} -lt ${#kolab_projects[@]} ]; do
                 enabled_repositories="${enabled_repositories} ${target_repositories[${y}]}"
             fi
 
-            let y++
+            let y--
         done
     elif [ "${disabled_default}" == "yes" ]; then
         enabled_repositories=""
@@ -449,7 +462,7 @@ while [ ${current} -lt ${#kolab_projects[@]} ]; do
                 continue
             fi
 
-            echo "*   :ref:\`product-${project_lc}-$(echo ${enabled_repository} | sed -e 's/:/-/g' | tr '[:upper:]' '[:lower:]')\`" >> ${target}
+            echo "*   :ref:\`about-${project_lc}-$(echo ${enabled_repository} | sed -e 's/_/-/g' -e 's/:/-/g' | tr '[:upper:]' '[:lower:]')\`" >> ${target}
         done
 
         echo "" >> ${target}
@@ -467,13 +480,13 @@ while [ ${current} -lt ${#kolab_projects[@]} ]; do
             continue
         fi
 
-        echo ".. _product-${project_lc}-$(echo ${enabled_repository} | sed -e 's/:/-/g' | tr '[:upper:]' '[:lower:]'):" >> ${target}
+        echo ".. _about-${project_lc}-$(echo ${enabled_repository} | sed -e 's/_/-/g' -e 's/:/-/g' | tr '[:upper:]' '[:lower:]'):" >> ${target}
         echo "" >> ${target}
         echo "${enabled_repository}" >> ${target}
         echo "${enabled_repository}" | sed -r -e 's/./^/g' >> ${target}
         echo "" >> ${target}
 
-        echo ".. table:: Version Matrix for ${enabled_repository} " >> ${target}
+        echo ".. table:: Version Matrix for ${enabled_repository}" >> ${target}
         echo "" >> ${target}
         printf "%s" "    +-" >> ${target}
         printf "%*.*s" 0 ${package_column_width} $(printf '%0.1s' "-"{1..120}) >> ${target}
@@ -501,7 +514,7 @@ while [ ${current} -lt ${#kolab_projects[@]} ]; do
                 package_version=$(cat "osc-cache/${project}_${enabled_repository}_${package}.version")
 
                 printf "%s" "    | " >> ${target}
-                printf "%-${package_column_width}s | %-${version_column_width}s |" ":ref:\`package-$(echo ${package} | tr '[:upper:]' '[:lower:]')\`" ${package_version} >> ${target}
+                printf "%-${package_column_width}s | %-${version_column_width}s |" ":ref:\`about-$(echo ${package} | tr '[:upper:]' '[:lower:]')\`" ${package_version} >> ${target}
                 echo "" >> ${target}
                 printf "%s" "    +-" >> ${target}
                 printf "%*.*s" 0 ${package_column_width} $(printf '%0.1s' "-"{1..120}) >> ${target}
