@@ -401,6 +401,14 @@ rst_prolog += """
 .. _Why Your System Should Have a Proper FQDN: https://kanarip.wordpress.com/2016/02/04/why-your-system-requires-a-proper-fqdn/
 """
 
+rst_prolog += """
+.. role:: blue
+.. role:: gray
+.. role:: green
+.. role:: orange
+.. role:: red
+"""
+
 #
 # Releases
 #
@@ -425,12 +433,4 @@ rst_prolog += """
 rst_prolog += """
 .. |roundcubemail| replace:: :blue:`roundcubemail`
 .. |roundcubemail-plugins-kolab| replace:: :blue:`roundcubemail-plugins-kolab`
-"""
-
-rst_prolog += """
-.. role:: blue
-.. role:: gray
-.. role:: green
-.. role:: orange
-.. role:: red
 """
