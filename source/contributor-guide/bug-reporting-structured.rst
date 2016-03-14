@@ -40,19 +40,21 @@ Stability requirements for |KE13| demand the following:
 *   The version of |roundcubemail| shipped to the product stream is one of
     the **1.0 series** of upstream releases,
 
-*   Upstream maintains a **stable** 1.0 series for roundcubemail,
+*   Upstream maintains a **stable** 1.0 series for |roundcubemail|,
 
 *   The version of |roundcubemail-plugins-kolab| shipped to the product
     stream is one of the **3.1 series** of upstream releases,
 
-*   Upstream maintains a **stable** 3.1 series for roundcubemail-plugins-kolab,
+*   Upstream maintains a **stable** 3.1 series for
+    |roundcubemail-plugins-kolab|,
 
 *   Future versions of |roundcubemail| in the 1.0 series remain backward
     compatibility for consumers of its API (such as
     |roundcubemail-plugins-kolab|),
 
 *   Added functionality in |roundcubemail-plugins-kolab|, if any, does not
-    require any changes in |roundcubemail| that would break other compatibility,
+    require any changes in |roundcubemail| that would break other
+    compatibility,
 
 *   The aforementioned conditions all last for up to 5 years,
 
@@ -116,7 +118,7 @@ Let's assume "yay" fails on all versions of Roundcube.
 
 #.  Issue:
 
-    *Yay fails on Roundcube 1.0.1 on* :gray:`Enterprise Linux 6`
+    *Yay fails on Roundcube 1.0.1 on* |santiago|
 
     This is an original ticket. The intended milestone for the resolution is
     `1.0-next`.

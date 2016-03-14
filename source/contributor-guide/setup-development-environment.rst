@@ -58,6 +58,15 @@ Install the Tools
 
         # :command:`yum -y install arcanist`
 
+#.  Hook up arcanist to Phabricator:
+
+    .. parsed-literal::
+
+        # :command:`arc set-config default https://git.kolab.org/`
+        # :command:`arc install-certificate`
+
+    And follow the instructions.
+
 .. _contributor-guide-setup-recommended-configuration:
 
 Recommended Configuration
@@ -192,65 +201,3 @@ This makes your shell navigating in to a GIT repository appear as follows:
     You'll notice the `+` again stands for the tracked, not yet committed file
     :file:`something`.
 
-Creating a Differential for Review
-==================================
-
-Your development takes place against the **master** branch, unless you find
-yourself running in circles, interrupted by a support request.
-
-Thus, make sure you have **master** checked out, and for the sake of preventing
-superfluous merge and rebase exercises, ensure it's in sync with upstream:
-
-.. parsed-literal::
-
-    $ :command:`git checkout master`
-    $ :command:`git fetch origin`
-    $ :command:`git rebase origin/master --autostash`
-
-Provided a ticket, such as :task:`1037`, you can branch off the GIT repository;
-
-.. parsed-literal::
-
-    [kanarip\@dws06 docs.git (master u=)]$ :command:`git checkout -b dev/T1037`
-    [kanarip\@dws06 docs.git (dev/T1037)]$
-
-Make your changes, and commit them in however many commits you think is
-reasonable.
-
-Then, create the `Differential`_:
-
-.. parsed-literal::
-
-    [kanarip\@dws06 docs.git (dev/T1037 %)]$ arc diff
-    You have untracked files in this working copy.
-
-      Working copy: /home/kanarip/devel/src/kolab/docs.git/
-
-      Untracked changes in working copy:
-      (To ignore these changes, add them to ".git/info/exclude".)
-        quick-notes.txt
-
-        Ignore these untracked files and continue? [y/N] :command:`y`
-
-You will now be requested to provide some information about your proposed
-changes.
-
-Set the first ``Summary:`` line to ``Resolves T1037``, so that your
-differential will be associated with the ticket automatically, and an accepted
-differential also closes the ticket you refer to.
-
-.. parsed-literal::
-
-    Linting...
-    No lint engine configured for this project.
-    Running unit tests...
-    No unit test engine is configured for this project.
-    Updating commit message...
-    Created a new Differential revision:
-            Revision URI: https://git.kolab.org/D89
-
-    Included changes:
-      M       source/index.rst
-      A       source/contributor-guide/index.rst
-
-And that's it.
