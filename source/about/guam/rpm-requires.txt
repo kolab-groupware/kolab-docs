@@ -1,0 +1,50 @@
+..
+    repoquery --requires guam.x86_64 | while read req; do
+        repoquery --whatprovides "${req}" --queryformat="%{NAME}"
+    done | sort -u | while read pkg; do
+        if [ -d "../${pkg}" ]; then
+            echo "#.  :ref:\`about-${pkg}\`"
+        else
+            echo "#.  ${pkg}"
+        fi
+    done
+
+    repoquery --requires guam.x86_64 | while read req; do
+        pkgnames=$(repoquery --whatprovides "${req}" --queryformat="%{NAME}")
+        for pkgname in ${pkgnames}; do
+            if [ -d "../${pkgname}" ]; then
+                if [ $(echo ${req} | wc -w) -gt 1 ]; then
+                    echo "#.  :ref:\`about-${pkgname}\` $(echo ${req} | cut -d' ' -f2-)"
+                else
+                    echo "#.  :ref:\`about-${pkgname}\`"
+                fi
+            else
+                if [ $(echo ${req} | wc -w) -gt 1 ]; then
+                    echo "#.  ${pkgname} $(echo ${req} | cut -d' ' -f2-)"
+                else
+                    echo "#.  ${pkgname}"
+                fi
+            fi
+        done
+    done | sort -u
+
+#.  :ref:`about-erlang-eimap` >= 0.1.2
+#.  :ref:`about-erlang-goldrush`
+#.  :ref:`about-erlang-lager` >= 2.1.0
+#.  :ref:`about-erlang` >= 17.4
+#.  bash
+#.  coreutils
+#.  glibc
+#.  libgcc
+#.  libstdc++
+#.  mesa-libGL
+#.  mesa-libGLU
+#.  ncurses-libs
+#.  openssl-libs
+#.  shadow-utils
+#.  systemd
+#.  systemd-libs
+#.  wxBase
+#.  wxGTK
+#.  wxGTK-gl
+#.  zlib

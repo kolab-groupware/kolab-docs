@@ -8,7 +8,7 @@ Guam
 commands, command results and payload, provided context.
 
 Current features include filtering groupware folders from IMAP folder
-operations, such that IMAP clients who do not understand Kolab Groupware
+operations, such that IMAP clients that do not understand Kolab Groupware
 folders are not shown those folders.
 
 Future features include Data-Loss Prevention (DLP) capabilities and Audit

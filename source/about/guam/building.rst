@@ -1,16 +1,15 @@
-========
 Building
 ========
 
 Build Requirements
-==================
+------------------
 
 The following requirements need to be fulfilled to build Guam:
 
 .. include:: rpm-buildrequires.txt
 
 Build Instructions
-==================
+------------------
 
 .. parsed-literal::
 

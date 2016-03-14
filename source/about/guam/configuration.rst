@@ -1,4 +1,3 @@
-=============
 Configuration
 =============
 
@@ -19,7 +18,7 @@ IMAP server (the backend "imap_servers"), and it needs to be configured to
 receive client connections (the "listeners").
 
 IMAP (backend) Server Configuration
-===================================
+-----------------------------------
 
 The default configuration for **imap_servers** looks as follows:
 
@@ -35,7 +34,7 @@ The default configuration for **imap_servers** looks as follows:
                             { tls, starttls }
                         ]
                     },
-                    {   
+                    {
                         imaps, [
                             { host, "127.0.0.1" },
                             { port, 993 },
@@ -62,7 +61,7 @@ The *imaps* backend however connects to host `127.0.0.1` on port `993` and is
 configured to use implicit SSL/TLS.
 
 Listener Configuration
-======================
+----------------------
 
 The following **listeners** are configured by default:
 
@@ -128,7 +127,7 @@ of the backend IMAP server configuration to use.
     backend IMAP server (configured in the **imap_servers** section).
 
 Configuration in a Kolab Groupware Setup
-========================================
+----------------------------------------
 
 In a Kolab Groupware setup, **Guam** is configured with **listeners** on ports
 `143` and `993`, against an **imaps** IMAP server on `localhost` port `9993`.
