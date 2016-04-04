@@ -130,17 +130,25 @@ people you wish to be notified when the differential changes. Here too,
 Review Process
 ==============
 
-A reviewer must code changes are verifiable, and validate unit, functional and
-integration tests for the code changes before accepting the differential.
+A reviewer must ensure code changes are verifiable, and validate unit,
+functional and integration tests for the code changes before accepting the
+differential.
 
 A reviewer will want these tests to be automated, or ends up spending a lot of
 time and effort on verifying the changes made.
 
+.. IMPORTANT::
+
+    Exceptions to this rule should only be made in extreme cases, and require
+    even more pairs of eyeballs.
+
+A reviewer must also verify there is a ticket associated with the differential,
+and that the ticket associated with the differential will be closed
+automatically, should the differential be accepted and merged.
+
 Accepting the differential does not mean the code changes are automatically
 merged, however. Acceptance of a differential outside of the merge window is
 therefore allowed.
-
-The changes submitted are reviewed on Thursday afternoons at the latest.
 
 Your changes need to be reviewed by at least one other person, who is a
 software development project member.
@@ -148,3 +156,43 @@ software development project member.
 In :ref:`contributor-guide-test-driven-development`, the submission of the
 differential associated with your review process aides in the staging of the
 code changes.
+
+The changes submitted should be reviewed on Thursday afternoons at the latest,
+at which point of the :red:`Release Managers` team can pick them up and merge
+the proposed changes with all the applicable branches.
+
+The combined code changes and test should make the lives of
+:red:`Release Managers` a lot easier -- the functionality of the backported
+changes should be available for automated verification.
+
+Landing a Differential Revision
+-------------------------------
+
+.. NOTE::
+
+    This documentation applies to :red:`Release Managers` only.
+
+#.  Take the review column of the `current sprint`_.
+
+#.  Examine the tickets and their associated differentials.
+
+#.  Move the tickets and differentials that have code changes depending on code
+    changes to other projects that have not yet made it on to the next sprint,
+    however, attempt to not negatively impact the team's velocity in doing so;
+
+    You could close the current ticket in review and move it to the Done
+    column, and create a ticket for the next sprint associated with your own
+    team, at about 1-2 story points.
+
+#.  Merge the code changes in order of the differential numbers, in a best
+    effort to merge stacked changes as easily as possible. Those that fail to
+    be applied need to be merged manually, or otherwise reassigned to the
+    developer in question for the next sprint (the task is rebase). Again, do
+    not impact the team's velocity too much, and consider splitting the
+    original development effort with the rebase/merge attempt.
+
+#.  Congratulate each developer on a job well done.
+
+#.  Ensure merged code is available in |Winterfell|.
+
+#.  Congratulate yourself on a job well done.
