@@ -17,3 +17,7 @@ Kolab Groupware Setup
     .. parsed-literal::
 
         # :command:`setup-kolab`
+
+.. seealso::
+
+    Now have a look at the :ref:`installation-guide-first-login` into your installed Kolab Groupware!

@@ -1,3 +1,5 @@
+.. _installation-guide-first-login:
+
 ===========
 First Login
 ===========
