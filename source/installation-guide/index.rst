@@ -26,7 +26,7 @@ production readiness by using |ReleaseCurrent|, keeping it up to date, and
 The current recommended version for production deployment is |ReleaseProduction|.
 
 The release of Kolab 16.1 will occur in Q2 of 2016, at which point Kolab 16 will be
-upgraded to "gold" status and become the recomended release for production installations.
+upgraded to "gold" status and become the recommended release for production installations.
 Subscription-based support from `Kolab Systems AG`_ will also be available for Kolab 16.1.
 
 For subscription-based support of Kolab installations, please visit
