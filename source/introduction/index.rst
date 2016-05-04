@@ -19,3 +19,4 @@ so please dive right in.
     what-is-kolab-groupware
     do-it-yourself-or-kolab
     what-is-the-recommended-distribution
+    advantages-of-subscription 

@@ -283,7 +283,7 @@ texinfo_documents = [
 epub_title = u'Kolab Groupware'
 epub_author = u'Jeroen van Meeuwen'
 epub_publisher = u'Jeroen van Meeuwen'
-epub_copyright = u'2013, Jeroen van Meeuwen'
+epub_copyright = u'2013-2016, Jeroen van Meeuwen'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
@@ -417,6 +417,8 @@ rst_prolog += """
 .. |K16| replace:: :orange:`Kolab 16`
 .. |KE14| replace:: :orange:`Kolab Enterprise 14`
 .. |KE13| replace:: :orange:`Kolab Enterprise 13`
+.. |ReleaseProduction| replace:: :orange:`Kolab Enterprise 14`
+.. |ReleaseCurrent| replace:: :orange:`Kolab 16.0`
 """
 
 #
