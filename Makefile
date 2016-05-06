@@ -53,7 +53,7 @@ submodules:
 					-e 's|source/webmail-user-guide/roundcubemail-plugins-kolab/plugins/||g' \
 					-e 's|/helpdocs/en_US||g' \
 			) ; \
-		ln -sfv ../../../roundcubemail-plugins-kolab/plugins/$${plugin}/helpdocs/en_US/ source/webmail-user-guide/roundcubemail/en_US/_plugins/$${plugin} ; \
+		ln -sfv ../../../roundcubemail-plugins-kolab/plugins/$${plugin}/helpdocs/en_US/ source/webmail-user-guide/roundcubemail/en_US/_plugins/$${plugin} || : ; \
 	done
 
 helplocales:
