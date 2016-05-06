@@ -41,12 +41,20 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
 submodules:
-	@if [ ! -d "source/webmail-user-guide/roundcubemail/.git" -o ! -f "ext/kolab/fancyfigure/__init__.py" ]; then \
+	@if [ ! -d "source/webmail-user-guide/roundcubemail/.git" -o ! -f "ext/kolab/fancyfigure/__init__.py" -o ! -d "source/webmail-user-guide/roundcubemail-plugins-kolab/.git" ]; then \
 		if [ -x "$$(which git 2>/dev/null)" ]; then \
 			git submodule init ; \
 			git submodule update ; \
 		fi ; \
 	fi
+	for plugin in $$(find source/webmail-user-guide/roundcubemail-plugins-kolab/plugins/ -type d -name "en_US"); do \
+		plugin=$$(echo $${plugin} | \
+				sed \
+					-e 's|source/webmail-user-guide/roundcubemail-plugins-kolab/plugins/||g' \
+					-e 's|/helpdocs/en_US||g' \
+			) ; \
+		ln -sfv ../../../roundcubemail-plugins-kolab/plugins/$${plugin}/helpdocs/en_US/ source/webmail-user-guide/roundcubemail/en_US/_plugins/$${plugin} ; \
+	done
 
 helplocales:
 	@for langmap in $(HELPDOCS_LOCALES); do \
