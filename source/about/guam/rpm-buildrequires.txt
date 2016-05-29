@@ -1,19 +1,7 @@
-..
-    Generate this information with:
-
-    $ repoquery --requires guam.src | while read req; do
-        pkgnames=$(repoquery --whatprovides "${req}" --queryformat="%{NAME}" | sort -u)
-        for pkgname in ${pkgnames}; do
-            if [ -d "../${pkgname}/" ]; then
-                echo "#.  :ref:\`about-${pkgname}\` $(echo ${req} | cut -d' ' -f2-)"
-            else
-                echo "#.  ${req}"
-            fi
-        done
-    done
-
-#.   erlang
-#.   erlang-eimap >= 0.1.5
-#.   erlang-goldrush
-#.   erlang-lager >= 2.1.0
-#.   erlang-rebar >= 2.5.1
+^[[A#.  erlang >= 17.4
+#.  erlang-eimap >= 0.1.5
+#.  erlang-goldrush
+#.  erlang-lager >= 2.1.0
+#.  erlang-lager_syslog >= 2.0.3
+#.  erlang-rebar >= 2.5.1
+#.  erlang-syslog >= 1.0.3
