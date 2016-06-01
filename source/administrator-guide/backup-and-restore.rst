@@ -199,7 +199,7 @@ With those information you can easily identify the message.
 
     .. parsed-literal::
 
-        :command:`# su - cyrus -c "/usr/lib/cyrus-imapd/unexpunge -l user/john.doe/Archive@example.org"`
+        :command:`# su - -s /bin/bash cyrus -c "/usr/lib/cyrus-imapd/unexpunge -l user/john.doe/Archive@example.org"`
         UID: 1
                 Size: 634
                 Sent: Wed Mar  4 12:00:00 2015
@@ -215,7 +215,7 @@ With those information you can easily identify the message.
 
     .. parsed-literal::
 
-        :command:`# su - cyrus -c "/usr/lib/cyrus-imapd/unexpunge -u -d -v user/john.doe/Archive@example.org 1"`
+        :command:`# su - -s /bin/bash cyrus -c "/usr/lib/cyrus-imapd/unexpunge -u -d -v user/john.doe/Archive@example.org 1"`
         restoring expunged messages in mailbox 'example/org!user/john.doe/Archive'
         Unexpunged example/org!user/john.doe/Archive: 1 => 2
         restored 1 expunged messages
@@ -224,7 +224,7 @@ With those information you can easily identify the message.
 
     .. parsed-literal::
 
-        :command:`# su - cyrus -c "/usr/lib/cyrus-imapd/unexpunge -a -d -v user/john.doe/Archive@example.org"`
+        :command:`# su - -s /bin/bash cyrus -c "/usr/lib/cyrus-imapd/unexpunge -a -d -v user/john.doe/Archive@example.org"`
         restoring all expunged messages in mailbox 'example/org!user/john.doe/Archive'
         Unexpunged example/org!user/john.doe/Archive: 2 => 3
         restored 1 expunged messages
