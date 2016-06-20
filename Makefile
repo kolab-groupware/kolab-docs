@@ -41,7 +41,7 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
 submodules:
-	@if [ ! -d "source/webmail-user-guide/roundcubemail/.git" -o ! -f "ext/kolab/fancyfigure/__init__.py" -o ! -d "source/webmail-user-guide/roundcubemail-plugins-kolab/.git" ]; then \
+	@if [ ! -d "source/webmail-user-guide/roundcubemail/.git" -o ! -f "ext/kolab/fancyfigure/__init__.py" -o ! -d "source/webmail-user-guide/roundcubemail-plugins-kolab/.git" -o ! -d "source/webmail-user-guide/roundcubemail-plugins/.git" ]; then \
 		if [ -x "$$(which git 2>/dev/null)" ]; then \
 			git submodule init ; \
 			git submodule update ; \
@@ -53,7 +53,17 @@ submodules:
 					-e 's|source/webmail-user-guide/roundcubemail-plugins-kolab/plugins/||g' \
 					-e 's|/helpdocs/en_US||g' \
 			) ; \
+		echo "Plugin: $$plugin" ; \
 		ln -sfv ../../../roundcubemail-plugins-kolab/plugins/$${plugin}/helpdocs/en_US/ source/webmail-user-guide/roundcubemail/en_US/_plugins/$${plugin} || : ; \
+	done
+	for plugin in $$(find source/webmail-user-guide/roundcubemail-plugins/plugins/ -type d -name "en_US"); do \
+		plugin=$$(echo $${plugin} | \
+				sed \
+					-e 's|source/webmail-user-guide/roundcubemail-plugins/plugins/||g' \
+					-e 's|/helpdocs/en_US||g' \
+			) ; \
+		echo "Plugin: $$plugin" ; \
+		ln -sfv ../../../roundcubemail-plugins/plugins/$${plugin}/helpdocs/en_US/ source/webmail-user-guide/roundcubemail/en_US/_plugins/$${plugin} || : ; \
 	done
 
 helplocales:
@@ -76,9 +86,14 @@ helplocales:
 
 helpdocs: submodules
 	@cd source/webmail-user-guide/roundcubemail/en_US/_plugins/ ; \
-	for docs in $$(find ../../../roundcubemail-plugins-kolab/ -type d -name "helpdocs"); do \
+	for docs in $$(find ../../../roundcubemail-plugins-kolab/plugins/ -type d -name "helpdocs"); do \
 		plugin=$$(basename $$(dirname $$docs)) ; \
-		ln -sf $$docs/en_US/ $$plugin ; \
+		ln -svf $$docs/en_US/ $$plugin ; \
+	done
+	@cd source/webmail-user-guide/roundcubemail/en_US/_plugins/ ; \
+	for docs in $$(find ../../../roundcubemail-plugins/plugins/ -type d -name "helpdocs"); do \
+		plugin=$$(basename $$(dirname $$docs)) ; \
+		ln -svf $$docs/en_US/ $$plugin ; \
 	done
 
 locales: gettext helplocales
