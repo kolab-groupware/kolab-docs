@@ -10,4 +10,3 @@ Kolab Developer Guide
     bugzilla
     troubleshooting-101
     packaging/index
-    nightly-builds/index
