@@ -200,7 +200,7 @@ gettext: clean submodules
 	$(SPHINXINTL) update -p $(BUILDDIR)/locale -d locale $(INTL_LOCALES)
 	@echo
 	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
-	rm -rf locale/*/LC_MESSAGES/webmail-user-guide/roundcubemail
+	rm -rf locale/*/LC_MESSAGES/webmail-user-guide/roundcubemail-plugins
 
 update-txconfig-resources: gettext
 	rm -rf $(BUILDDIR)/locale/webmail-user-guide
