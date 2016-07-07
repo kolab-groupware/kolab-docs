@@ -327,6 +327,8 @@ variables = {}
 default_tags = []
 custom_tags = False
 
+tags = set()
+
 config_files = glob.glob('./*/conf.py')
 
 if os.path.exists('./conf.local.py'):
