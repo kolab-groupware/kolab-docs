@@ -1,240 +1,384 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
-# This file is distributed under the same license as the Kolab Groupware package.
-# 
+# This file is distributed under the same license as the Kolab Groupware
+# package.
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-12-09 05:27+0000\n"
 "Last-Translator: Torsten Grote <grote@kolabsys.com>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/kolab-documentation/language/fr/)\n"
+"Language-Team: French (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../source/client-configuration/android.rst:46
+#: ../../source/client-configuration/android.rst:92
 msgid "Android"
 msgstr "Androïde"
 
-#: ../../source/client-configuration/android.rst:51
+#: ../../source/client-configuration/android.rst:97
+#, python-format
 msgid ""
-"This page describes how you can access your data from your |service_name| "
-"account with your `Android "
+"This page describes how you can access your data from your |service_name|"
+" account with your `Android "
 "<https://en.wikipedia.org/wiki/Android_%28operating_system%29>`__ mobile "
 "phone or tablet. Everything will be synchronized and keep the same state "
 "across all your devices."
-msgstr "Cette page décrit comment vous pouvez accéder à vos données depuis votre |service_name| compte avec votre `Androïde <https://en.wikipedia.org/wiki/Android_%28operating_system%29>`__ téléphone mobile ou  tablette. Tous sera synchronisé et maintiendra le même état sur tous les appareils."
+msgstr ""
+"Cette page décrit comment vous pouvez accéder à vos données depuis votre "
+"|service_name| compte avec votre `Androïde "
+"<https://en.wikipedia.org/wiki/Android_%28operating_system%29>`__ "
+"téléphone mobile ou  tablette. Tous sera synchronisé et maintiendra le "
+"même état sur tous les appareils."
 
-#: ../../source/client-configuration/android.rst:57
+#: ../../source/client-configuration/android.rst:103
 msgid ""
-"Please follow the instructions below closely and keep in mind that we have "
-"no influence over the specific app or Android version that you might be "
-"using."
-msgstr "Veuillez bien suivre les instructions ci-dessous et assurez-vous que nous n'avons aucune influence sur le app spécifique ou la version d’Androïde que vous utiliser."
+"Please follow the instructions below closely and keep in mind that we "
+"have no influence over the specific app or Android version that you might"
+" be using."
+msgstr ""
+"Veuillez bien suivre les instructions ci-dessous et assurez-vous que nous"
+" n'avons aucune influence sur le app spécifique ou la version d’Androïde "
+"que vous utiliser."
 
-#: ../../source/client-configuration/android.rst:64
+#: ../../source/client-configuration/android.rst:110
 msgid "K-9 Mail"
 msgstr "K-9 Mail"
 
-#: ../../source/client-configuration/android.rst:66
+#: ../../source/client-configuration/android.rst:112
 msgid ""
-"We recommend to use the IMAP protocol for email. The standard email app on "
-"Android supports it, so do most other apps. However, we found that `K-9 Mail"
-" <https://play.google.com/store/apps/details?id=com.fsck.k9>`__ works best "
-"and therefore provide the instructions below for that. You can still use any"
-" other IMAP capable app like the default email application."
-msgstr "Nous recommandons l'utilisation de protocol IMAP pour e-mail. L'app standard de mail sur Androïde soutien ceci, ainsi que plupart d'autres apps. Néanmoins, nous avons remarque que `K-9 Mail <https://play.google.com/store/apps/details?id=com.fsck.k9>`__ est plus efficace et donc fourni les instructions ci-dessous pour cela. Vous pouvez tout de même utiliser tout autre app qui est compatible avec IMAP comme l'application émail par défaut."
+"We recommend to use the IMAP protocol for email. The standard email app "
+"on Android supports it, so do most other apps. However, we found that "
+"`K-9 Mail <https://play.google.com/store/apps/details?id=com.fsck.k9>`__ "
+"works best and therefore provide the instructions below for that. You can"
+" still use any other IMAP capable app like the default email application."
+msgstr ""
+"Nous recommandons l'utilisation de protocol IMAP pour e-mail. L'app "
+"standard de mail sur Androïde soutien ceci, ainsi que plupart d'autres "
+"apps. Néanmoins, nous avons remarque que `K-9 Mail "
+"<https://play.google.com/store/apps/details?id=com.fsck.k9>`__ est plus "
+"efficace et donc fourni les instructions ci-dessous pour cela. Vous "
+"pouvez tout de même utiliser tout autre app qui est compatible avec IMAP "
+"comme l'application émail par défaut."
 
-#: ../../source/client-configuration/android.rst:72
+#: ../../source/client-configuration/android.rst:119
+#, fuzzy
 msgid ""
-"In order to set up your K-9 Mail, just add a new account and provide your "
-"|service_name| email address as well as your password. It will disover all "
-"necessary settings automatically as shown in the screenshots below."
-msgstr "Pour pouvoir configurer votre K-9 Mail, il suffit juste d'ajouter un nouvel compte et fournir votre  |service_nom| adresse émail et votre mot de passe. Ceci découvrira automatiquement toutes les paramètres nécessaires comme montré dans les captures d'écran ci-dessous."
+"In order to set up your K-9 Mail, just add a new account and provide your"
+" |service_name| email address as well as your password."
+msgstr ""
+"Pour pouvoir configurer votre K-9 Mail, il suffit juste d'ajouter un "
+"nouvel compte et fournir votre  |service_nom| adresse émail et votre mot "
+"de passe. Ceci découvrira automatiquement toutes les paramètres "
+"nécessaires comme montré dans les captures d'écran ci-dessous."
 
-#: ../../source/client-configuration/android.rst:105
+#: ../../source/client-configuration/android.rst:122
+msgid ""
+"It will disover all necessary settings automatically as shown in the "
+"screenshots below."
+msgstr ""
+
+#: ../../source/client-configuration/android.rst:154
 msgid "Your account is now set up!"
 msgstr "Votre compte est désormais configuré!"
 
-#: ../../source/client-configuration/android.rst:107
+#: ../../source/client-configuration/android.rst:156
 msgid ""
-"If the settings could **not** be discovered automatically for some reason, "
-"please choose *Manual Setup* and follow the instructions below."
-msgstr "Si les paramètres **not** pas pu être découvrir automatiquement pour une raison ou l'autre, veuillez choisir *Configuration Manuelle* et suivre les instructions ci-dessous."
+"If the settings could **not** be discovered automatically for some "
+"reason, please choose *Manual Setup* and follow the instructions below."
+msgstr ""
+"Si les paramètres **not** pas pu être découvrir automatiquement pour une "
+"raison ou l'autre, veuillez choisir *Configuration Manuelle* et suivre "
+"les instructions ci-dessous."
 
-#: ../../source/client-configuration/android.rst:110
+#: ../../source/client-configuration/android.rst:159
 msgid "Choose *IMAP* as account type."
 msgstr "Choisissez *IMAP* comme type de compte"
 
-#: ../../source/client-configuration/android.rst:111
-#: ../../source/client-configuration/android.rst:122
+#: ../../source/client-configuration/android.rst:161
+#: ../../source/client-configuration/android.rst:181
 msgid ""
 "Username: Provide your primary and full email address here, e.g. "
 "|**useremail**|"
-msgstr "Nom d'utilisateur: Entrez  votre adresse e-mail principale et complète ici, par exemple |**useremail**|"
+msgstr ""
+"Nom d'utilisateur: Entrez  votre adresse e-mail principale et complète "
+"ici, par exemple |**useremail**|"
 
-#: ../../source/client-configuration/android.rst:112
+#: ../../source/client-configuration/android.rst:164
 msgid "IMAP server: |**imap_host**|"
 msgstr "Serveur IMAP: |**imap_host**|"
 
-#: ../../source/client-configuration/android.rst:113
+#: ../../source/client-configuration/android.rst:166
 msgid "Security: |**imap_ssl**|"
 msgstr "Sécurité: |**imap_ssl**|"
 
-#: ../../source/client-configuration/android.rst:114
+#: ../../source/client-configuration/android.rst:168
 msgid "Authentication: **Normal pasword**"
 msgstr "Authentification: **Mot de passe normal**"
 
-#: ../../source/client-configuration/android.rst:115
+#: ../../source/client-configuration/android.rst:170
 msgid "Port: |**imap_port**|"
 msgstr "Port: |**imap_port**|"
 
-#: ../../source/client-configuration/android.rst:117
+#: ../../source/client-configuration/android.rst:172
 msgid ""
-"Then press next and enter the following information for the outgoing server "
-"settings:"
-msgstr "Puis appuyer sur suivant et entrer l'information suivant pour les paramètres du serveur sortant."
+"Then press next and enter the following information for the outgoing "
+"server settings:"
+msgstr ""
+"Puis appuyer sur suivant et entrer l'information suivant pour les "
+"paramètres du serveur sortant."
 
-#: ../../source/client-configuration/android.rst:119
+#: ../../source/client-configuration/android.rst:175
 msgid "SMTP server: |**smtp_host**|"
 msgstr "Serveur SMTP:  |**smtp_host**|"
 
-#: ../../source/client-configuration/android.rst:120
+#: ../../source/client-configuration/android.rst:177
 msgid "Security: |**smtp_ssl**|"
 msgstr "Sécurité: |**smtp_ssl**|"
 
-#: ../../source/client-configuration/android.rst:121
+#: ../../source/client-configuration/android.rst:179
 msgid "Port: |**smtp_port**|"
 msgstr "Port: |**smtp_port**|"
 
-#: ../../source/client-configuration/android.rst:170
-msgid "DAVdroid for Calendars and Contacts"
-msgstr "DAVdroid pour Calendriers et les Contacts"
+#~ msgid "DAVdroid for Calendars and Contacts"
+#~ msgstr "DAVdroid pour Calendriers et les Contacts"
 
-#: ../../source/client-configuration/android.rst:172
-msgid ""
-"This section describes how you can get your calendars and contacts from "
-"|service_name| on your Android device using the Free Software `DAVdroid app "
-"<http://davdroid.bitfire.at/what-is-davdroid>`__. You can also use other "
-"apps that can do CalDAV/CardDAV like the non-free `CaldDAV-sync and CardDAV-"
-"Sync apps <http://dmfs.org/>`__. But we generally recommend to use software "
-"that respects your freedom. Another possibility is using the built-in Active"
-" Sync support. Please see :ref:`settings-clientconfig-android-activesync` "
-"for more information."
-msgstr "Cette section décrit comment vous pouvez avoir vos calendries et contacts de |service_name| sur votre appareil Androïde  en utilisant le Logiciel Libre `DAVdroid app <http://davdroid.bitfire.at/what-is-davdroid>`__.  Vous pouvez également utiliser les autres apps gratuites qui soutiennent CalDAV/CardDAV comme le `CaldDAV-sync et CardDAV-Sync apps <http://dmfs.org/>`__. Mais en générale nous recommandons l'utilisation d'un logiciel qui respect votre liberté.  Une autre possibilité est d'utiliser le support d'Active Sync intégré. Veuillez voir :ref:`settings-clientconfig-android-activesync` pour plus d'information."
+#~ msgid ""
+#~ "This section describes how you can "
+#~ "get your calendars and contacts from "
+#~ "|service_name| on your Android device "
+#~ "using the Free Software `DAVdroid app"
+#~ " <http://davdroid.bitfire.at/what-is-davdroid>`__. "
+#~ "You can also use other apps that"
+#~ " can do CalDAV/CardDAV like the "
+#~ "non-free `CaldDAV-sync and CardDAV-"
+#~ "Sync apps <http://dmfs.org/>`__. But we "
+#~ "generally recommend to use software that"
+#~ " respects your freedom. Another possibility"
+#~ " is using the built-in Active "
+#~ "Sync support. Please see :ref:`settings-"
+#~ "clientconfig-android-activesync` for more "
+#~ "information."
+#~ msgstr ""
+#~ "Cette section décrit comment vous pouvez"
+#~ " avoir vos calendries et contacts de"
+#~ " |service_name| sur votre appareil Androïde"
+#~ "  en utilisant le Logiciel Libre "
+#~ "`DAVdroid app <http://davdroid.bitfire.at/what-"
+#~ "is-davdroid>`__.  Vous pouvez également "
+#~ "utiliser les autres apps gratuites qui"
+#~ " soutiennent CalDAV/CardDAV comme le "
+#~ "`CaldDAV-sync et CardDAV-Sync apps "
+#~ "<http://dmfs.org/>`__. Mais en générale nous"
+#~ " recommandons l'utilisation d'un logiciel "
+#~ "qui respect votre liberté.  Une autre"
+#~ " possibilité est d'utiliser le support "
+#~ "d'Active Sync intégré. Veuillez voir "
+#~ ":ref:`settings-clientconfig-android-activesync` "
+#~ "pour plus d'information."
 
-#: ../../source/client-configuration/android.rst:181
-msgid ""
-"You can get DAVdroid from `Google Play "
-"<https://play.google.com/store/apps/details?id=at.bitfire.davdroid>`__ or "
-"the `F-Droid app repository "
-"<https://f-droid.org/repository/browse/?fdid=at.bitfire.davdroid>`__."
-msgstr "Vous pouvez obtenir DAVdroid de `Google Play <https://play.google.com/store/apps/details?id=at.bitfire.davdroid>`__ ou le `F-Droid app repositoire <https://f-droid.org/repository/browse/?fdid=at.bitfire.davdroid>`__."
+#~ msgid ""
+#~ "You can get DAVdroid from `Google "
+#~ "Play "
+#~ "<https://play.google.com/store/apps/details?id=at.bitfire.davdroid>`__"
+#~ " or the `F-Droid app repository "
+#~ "<https://f-droid.org/repository/browse/?fdid=at.bitfire.davdroid>`__."
+#~ msgstr ""
+#~ "Vous pouvez obtenir DAVdroid de `Google"
+#~ " Play "
+#~ "<https://play.google.com/store/apps/details?id=at.bitfire.davdroid>`__"
+#~ " ou le `F-Droid app repositoire "
+#~ "<https://f-droid.org/repository/browse/?fdid=at.bitfire.davdroid>`__."
 
-#: ../../source/client-configuration/android.rst:183
-msgid ""
-"After installing, it will appear in your list of apps. Please open the app."
-msgstr "Après avoir installé, cela apparaîtra  dans votre liste d'apps. Veuillez ouvrir l'app."
+#~ msgid ""
+#~ "After installing, it will appear in "
+#~ "your list of apps. Please open the"
+#~ " app."
+#~ msgstr ""
+#~ "Après avoir installé, cela apparaîtra  "
+#~ "dans votre liste d'apps. Veuillez ouvrir"
+#~ " l'app."
 
-#: ../../source/client-configuration/android.rst:185
-msgid ""
-"On the welcome screen, please click the little key icon with the plus to set"
-" up your |service_name| account."
-msgstr "Sur l'écran d'accueil, veuillez cliquez sur la petite icône en forme de clé avec le signe plus pour configurer votre  |service_name| compte."
+#~ msgid ""
+#~ "On the welcome screen, please click "
+#~ "the little key icon with the plus"
+#~ " to set up your |service_name| "
+#~ "account."
+#~ msgstr ""
+#~ "Sur l'écran d'accueil, veuillez cliquez "
+#~ "sur la petite icône en forme de"
+#~ " clé avec le signe plus pour "
+#~ "configurer votre  |service_name| compte."
 
-#: ../../source/client-configuration/android.rst:186
-msgid ""
-"Choose DAVdroid in the next screen and then click *Log in with email "
-"address*."
-msgstr "Sélectionnez DAVdroid dans l'écran prochain et cliquez après sur *Log in with email address*."
+#~ msgid ""
+#~ "Choose DAVdroid in the next screen "
+#~ "and then click *Log in with email"
+#~ " address*."
+#~ msgstr ""
+#~ "Sélectionnez DAVdroid dans l'écran prochain"
+#~ " et cliquez après sur *Log in "
+#~ "with email address*."
 
-#: ../../source/client-configuration/android.rst:187
-msgid ""
-"Provide your full and primary |service_name| address as well as your "
-"password."
-msgstr "Donnez votre adresse principale et complète |service_name| ainsi que votre mot de passe."
+#~ msgid ""
+#~ "Provide your full and primary "
+#~ "|service_name| address as well as your"
+#~ " password."
+#~ msgstr ""
+#~ "Donnez votre adresse principale et "
+#~ "complète |service_name| ainsi que votre "
+#~ "mot de passe."
 
-#: ../../source/client-configuration/android.rst:188
-msgid ""
-"The next screen shows all your calendars and address books. Select those "
-"that you want to synchronize to your Android device. Please note that as of "
-"now, Android only allows one address book per account. You can add more by "
-"just adding the same account again later."
-msgstr "L'écran prochain montre tout vos calendriers et carnet d'adresses. Sélectionnez ceux que vous aimerais synchroniser vers votre appareil Androïde.  Veuillez noter que pour l'instant, Androïde permet un seul carnet d'adresse par compte.  Vous pouvez en ajouter plus si vous ajouter encore le même compte plus tard. "
+#~ msgid ""
+#~ "The next screen shows all your "
+#~ "calendars and address books. Select "
+#~ "those that you want to synchronize "
+#~ "to your Android device. Please note "
+#~ "that as of now, Android only "
+#~ "allows one address book per account. "
+#~ "You can add more by just adding"
+#~ " the same account again later."
+#~ msgstr ""
+#~ "L'écran prochain montre tout vos "
+#~ "calendriers et carnet d'adresses. Sélectionnez"
+#~ " ceux que vous aimerais synchroniser "
+#~ "vers votre appareil Androïde.  Veuillez "
+#~ "noter que pour l'instant, Androïde "
+#~ "permet un seul carnet d'adresse par "
+#~ "compte.  Vous pouvez en ajouter plus "
+#~ "si vous ajouter encore le même "
+#~ "compte plus tard. "
 
-#: ../../source/client-configuration/android.rst:192
-msgid ""
-"On the next screen, please provide the email address you use for calendar "
-"invitations with this account."
-msgstr "Sur l'écran prochain,  veuillez fournir l'adresse émail que vous avez utiliser pour l'invitation du calendrier avec ce compte."
+#~ msgid ""
+#~ "On the next screen, please provide "
+#~ "the email address you use for "
+#~ "calendar invitations with this account."
+#~ msgstr ""
+#~ "Sur l'écran prochain,  veuillez fournir "
+#~ "l'adresse émail que vous avez utiliser"
+#~ " pour l'invitation du calendrier avec "
+#~ "ce compte."
 
-#: ../../source/client-configuration/android.rst:193
-msgid ""
-"After clicking *Add Account* in the top right corner, your account is "
-"created and will now synchronize your contacts and events."
-msgstr "Après avoir cliqué *Add Account* dans le coin droit en haut, votre compte est crée et synchronisera maintenant vos contacts et événements."
+#~ msgid ""
+#~ "After clicking *Add Account* in the "
+#~ "top right corner, your account is "
+#~ "created and will now synchronize your"
+#~ " contacts and events."
+#~ msgstr ""
+#~ "Après avoir cliqué *Add Account* dans"
+#~ " le coin droit en haut, votre "
+#~ "compte est crée et synchronisera "
+#~ "maintenant vos contacts et événements."
 
-#: ../../source/client-configuration/android.rst:243
-msgid ""
-"If the auto-discovery at step 4 did not work, then choose *Login with URL "
-"and user name* instead. In the next screen enter |**caldav_host**| in the "
-"server URL and make sure to use **https**. Afterwards, you can continue with"
-" step 6 above."
-msgstr "Si l'auto-détection à l'étape 4 n'a pas marche, choisissez *Login with URL and user name* à la place. Sur le prochain écran entrez |**caldav_host**| dans le serveur URL et assurez d'utiliser **https**.  Vous pouvez ensuite continuer avec l'étape 6 ci-dessus."
+#~ msgid ""
+#~ "If the auto-discovery at step 4"
+#~ " did not work, then choose *Login "
+#~ "with URL and user name* instead. "
+#~ "In the next screen enter "
+#~ "|**caldav_host**| in the server URL and"
+#~ " make sure to use **https**. "
+#~ "Afterwards, you can continue with step"
+#~ " 6 above."
+#~ msgstr ""
+#~ "Si l'auto-détection à l'étape 4 n'a "
+#~ "pas marche, choisissez *Login with URL"
+#~ " and user name* à la place. Sur"
+#~ " le prochain écran entrez |**caldav_host**|"
+#~ " dans le serveur URL et assurez "
+#~ "d'utiliser **https**.  Vous pouvez ensuite "
+#~ "continuer avec l'étape 6 ci-dessus."
 
-#: ../../source/client-configuration/android.rst:273
-msgid "ActiveSync for Calendars and Contacts"
-msgstr "ActiveSnyc pour Calendriers et les Contacts"
+#~ msgid "ActiveSync for Calendars and Contacts"
+#~ msgstr "ActiveSnyc pour Calendriers et les Contacts"
 
-#: ../../source/client-configuration/android.rst:275
-msgid ""
-"This section describes how you can get your calendars and contacts from "
-"|service_name| on your Android device. It assumes that you will use Mobile "
-"Synchronization with *ActiveSync* which will integrate nicely into your "
-"default Android apps. Another possibility is using CalDAV/CardDAV. Please "
-"see :ref:`settings-clientconfig-android-davdroid` for more information."
-msgstr "Cette section décrit comment vous pouvez avoir vos calendries et contacts de |service_nom| sur votre appareil Androïde.  Il présume que vous utilisera Synchronisation Mobile avec *ActiveSync* qui s’intégra parfaitement dans vos app d'Androide par défault.  Une autre possibilité est l'utilisation de CalDAV/CardDAV.   Veuillez voir :ref:`settings-clientconfig-android` pour plus d'information."
+#~ msgid ""
+#~ "This section describes how you can "
+#~ "get your calendars and contacts from "
+#~ "|service_name| on your Android device. "
+#~ "It assumes that you will use "
+#~ "Mobile Synchronization with *ActiveSync* which"
+#~ " will integrate nicely into your "
+#~ "default Android apps. Another possibility "
+#~ "is using CalDAV/CardDAV. Please see :ref"
+#~ ":`settings-clientconfig-android-davdroid` for "
+#~ "more information."
+#~ msgstr ""
+#~ "Cette section décrit comment vous pouvez"
+#~ " avoir vos calendries et contacts de"
+#~ " |service_nom| sur votre appareil Androïde."
+#~ "  Il présume que vous utilisera "
+#~ "Synchronisation Mobile avec *ActiveSync* qui"
+#~ " s’intégra parfaitement dans vos app "
+#~ "d'Androide par défault.  Une autre "
+#~ "possibilité est l'utilisation de "
+#~ "CalDAV/CardDAV.   Veuillez voir :ref:`settings-"
+#~ "clientconfig-android` pour plus d'information."
 
-#: ../../source/client-configuration/android.rst:281
-msgid "Please go to *Settings* -> *Account* -> *Add Account*"
-msgstr "Allez dans *Settings* -> *Account* -> *Add Account*"
+#~ msgid "Please go to *Settings* -> *Account* -> *Add Account*"
+#~ msgstr "Allez dans *Settings* -> *Account* -> *Add Account*"
 
-#: ../../source/client-configuration/android.rst:282
-msgid "Then choose either *Exchange* or *Corporate*."
-msgstr "Puis choisissez soit *Exchange* ou *Corporate*."
+#~ msgid "Then choose either *Exchange* or *Corporate*."
+#~ msgstr "Puis choisissez soit *Exchange* ou *Corporate*."
 
-#: ../../source/client-configuration/android.rst:283
-msgid ""
-"Afterwards, please provider your primary and full email address, e.g. "
-"|**useremail**|"
-msgstr "Ensuite, fournissez s'il vous plaît votre adresse e-mail principale et complète par exemple |**useremail**|"
+#~ msgid ""
+#~ "Afterwards, please provider your primary "
+#~ "and full email address, e.g. "
+#~ "|**useremail**|"
+#~ msgstr ""
+#~ "Ensuite, fournissez s'il vous plaît "
+#~ "votre adresse e-mail principale et "
+#~ "complète par exemple |**useremail**|"
 
-#: ../../source/client-configuration/android.rst:284
-msgid ""
-"When asked for incoming server settings, please also give your full email "
-"address as username. Older versions of Android might require you to provide "
-"the username in the form of **domain.tld\\\\user** where **user@domain.tld**"
-" is your primary email address."
-msgstr "Quand les paramètres du serveur entrant sont demandés, veuillez donner également votre adresse e-mail principale et complète comme nom d'utilisateur. L'ancienne version d’Androïde peut vous demander de fournir le nom d'utilisateur en forme de **domain.tld\\\\user** où **user@domain.tld**  est votre adresse émail principale."
+#~ msgid ""
+#~ "When asked for incoming server settings,"
+#~ " please also give your full email "
+#~ "address as username. Older versions of"
+#~ " Android might require you to provide"
+#~ " the username in the form of "
+#~ "**domain.tld\\\\user** where **user@domain.tld** is"
+#~ " your primary email address."
+#~ msgstr ""
+#~ "Quand les paramètres du serveur entrant"
+#~ " sont demandés, veuillez donner également"
+#~ " votre adresse e-mail principale et "
+#~ "complète comme nom d'utilisateur. L'ancienne"
+#~ " version d’Androïde peut vous demander "
+#~ "de fournir le nom d'utilisateur en "
+#~ "forme de **domain.tld\\\\user** où "
+#~ "**user@domain.tld**  est votre adresse émail"
+#~ " principale."
 
-#: ../../source/client-configuration/android.rst:287
-msgid "In the server field, please enter: |**activesync_host**|"
-msgstr "Dans le champ serveur, veuillez entrer:  |**activesync_host**|"
+#~ msgid "In the server field, please enter: |**activesync_host**|"
+#~ msgstr "Dans le champ serveur, veuillez entrer:  |**activesync_host**|"
 
-#: ../../source/client-configuration/android.rst:288
-msgid ""
-"Set the account options as you like. We recommend to use IMAP for email (see"
-" :ref:`settings-clientconfig-android-k9`), but you can activate email here "
-"as well."
-msgstr "Configurez les options de compte comme vous les désirer. Nous recommandons l'utilisation de protocol IMAP pour e-mail. (voir :ref:`settings-clientconfig-android-k9`), mais vous pouvez également activer e-mail ici."
+#~ msgid ""
+#~ "Set the account options as you "
+#~ "like. We recommend to use IMAP for"
+#~ " email (see :ref:`settings-clientconfig-"
+#~ "android-k9`), but you can activate email"
+#~ " here as well."
+#~ msgstr ""
+#~ "Configurez les options de compte comme"
+#~ " vous les désirer. Nous recommandons "
+#~ "l'utilisation de protocol IMAP pour "
+#~ "e-mail. (voir :ref:`settings-clientconfig-"
+#~ "android-k9`), mais vous pouvez également "
+#~ "activer e-mail ici."
 
-#: ../../source/client-configuration/android.rst:290
-msgid ""
-"After successful account creation, you should select which data shall be "
-"synchronized in the webmail settings (see last screenshot)."
-msgstr "Après avoir créé votre compte avec succès, vous devez sélectionner les données qui doivent être synchronisées dans les paramètres webmail (voir la dernière capture d'écran). "
+#~ msgid ""
+#~ "After successful account creation, you "
+#~ "should select which data shall be "
+#~ "synchronized in the webmail settings "
+#~ "(see last screenshot)."
+#~ msgstr ""
+#~ "Après avoir créé votre compte avec "
+#~ "succès, vous devez sélectionner les "
+#~ "données qui doivent être synchronisées "
+#~ "dans les paramètres webmail (voir la "
+#~ "dernière capture d'écran). "
+

@@ -1,116 +1,125 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
-# This file is distributed under the same license as the Kolab Groupware package.
-# 
+# This file is distributed under the same license as the Kolab Groupware
+# package.
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:42+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/kolab-documentation/language/de/)\n"
+"Language-Team: German (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../source/administrator-guide/faq.rst:44
+#: ../../source/administrator-guide/faq.rst:90
 msgid "Frequently Answered Questions"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:49
+#: ../../source/administrator-guide/faq.rst:95
 msgid "No \"Add User\" Button or Link"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:51
+#: ../../source/administrator-guide/faq.rst:97
 msgid ""
 "If this link is not there (you would also not have been presented with a "
-"form), you do not have permissions, you did not configure SELinux the way it"
-" was documented, firewall, DNS."
+"form), you do not have permissions, you did not configure SELinux the way"
+" it was documented, firewall, DNS."
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:56
+#: ../../source/administrator-guide/faq.rst:102
 msgid "Log Messages"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:60
+#: ../../source/administrator-guide/faq.rst:106
 msgid ":ref:`admin_faq_email-blocked-spamhaus`"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:63
+#: ../../source/administrator-guide/faq.rst:109
 msgid "Unable to open /etc/sasldb2"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:66
+#: ../../source/administrator-guide/faq.rst:112
 msgid "No :file:`user_deny.db`"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:73
+#: ../../source/administrator-guide/faq.rst:119
 msgid "No authentication"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:79
+#: ../../source/administrator-guide/faq.rst:125
 msgid ""
-"Debug level information, can be ignored. You can reduce verbosity by setting"
-" ``debug: 0`` in :man:`imapd.conf(5)`, or by not including debug messages on"
-" the mail facility in syslog."
+"Debug level information, can be ignored. You can reduce verbosity by "
+"setting ``debug: 0`` in :manpage:`imapd.conf(5)`, or by not including "
+"debug messages on the mail facility in syslog."
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:84
+#: ../../source/administrator-guide/faq.rst:130
 msgid "Unable to setsocketopt"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:90
+#: ../../source/administrator-guide/faq.rst:136
 msgid "Informational message issued on startup. Not critical."
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:93
+#: ../../source/administrator-guide/faq.rst:139
 msgid "Anti-Spam"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:96
+#: ../../source/administrator-guide/faq.rst:142
 msgid "No ``X-Spam`` Headers"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:101
+#: ../../source/administrator-guide/faq.rst:147
 msgid "Email Blocked Using zen.spamhaus.org"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:103
+#: ../../source/administrator-guide/faq.rst:149
 msgid ""
-"You are seeing the following in :file:`/var/log/maillog` (line breaks added "
-"for legibility):"
+"You are seeing the following in :file:`/var/log/maillog` (line breaks "
+"added for legibility):"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:112
+#: ../../source/administrator-guide/faq.rst:158
 msgid ""
 "This message indicates your SMTP server, receiving a message from the "
 "Internet, has refused the message."
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:115
+#: ../../source/administrator-guide/faq.rst:161
 msgid ""
 "The sending host (at IP address 3.2.1.0) is blocked using a centralized, "
-"external service (spamhaus.org), that keeps track of hosts and networks on "
-"the Internet with a reputation of spamming."
+"external service (spamhaus.org), that keeps track of hosts and networks "
+"on the Internet with a reputation of spamming."
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:119
-msgid ""
-"For more information on this service, see http://www.spamhaus.org/zen/."
+#: ../../source/administrator-guide/faq.rst:165
+msgid "For more information on this service, see http://www.spamhaus.org/zen/."
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:121
+#: ../../source/administrator-guide/faq.rst:167
 msgid ""
-"You will want to continue performing these checks, but just in case you do "
-"not want to, the relevant setting in Postfix is:"
+"You will want to continue performing these checks, but just in case you "
+"do not want to, the relevant setting in Postfix is:"
 msgstr ""
 
-#: ../../source/administrator-guide/faq.rst:128
+#: ../../source/administrator-guide/faq.rst:174
 msgid ""
-"It is the responsibility of the sending host to notify the original sender "
-"the message was not delivered."
+"It is the responsibility of the sending host to notify the original "
+"sender the message was not delivered."
 msgstr ""
+
+#~ msgid ""
+#~ "Debug level information, can be ignored."
+#~ " You can reduce verbosity by setting"
+#~ " ``debug: 0`` in :man:`imapd.conf(5)`, or"
+#~ " by not including debug messages on"
+#~ " the mail facility in syslog."
+#~ msgstr ""
+

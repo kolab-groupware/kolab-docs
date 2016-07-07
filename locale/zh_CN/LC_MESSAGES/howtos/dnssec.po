@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/howtos/dnssec.rst:90
+msgid "HOWTO: Implement DNSSEC"
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:92
+msgid ""
+"This HOWTO outlines the implementation of DNSSEC, for both inbound and "
+"outbound queries."
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:96
+msgid "About DNSSEC"
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:98
+msgid ""
+"DNSSEC (*Domain Name System Security Extensions*) provides a means to "
+"sign DNS *Resource Records* (RRs), in turn providing DNS clients to "
+"verify the authenticity of the results to their queries."
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:102
+msgid ""
+"The keys with which the records are signed can be published via either of"
+" the following two ways;"
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:105
+msgid "The TLD owner publishes the key for your domain,"
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:107
+msgid "The ISC DLV look-aside repository."
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:110
+msgid "Hidden Master Topology"
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:112
+msgid ""
+"A so-called *hidden master* is a Start of Authority (*SOA*) name server, "
+"that is not available for querying -- as such, it is not mentioned in the"
+" list of name server records (NS RRs) for a zone."
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:116
+msgid ""
+"Imagine your domain name is ``example.org``, and you wish to implement a "
+"hidden master topology."
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:138
+msgid ""
+"Your zones would list ``ns.example.org`` as the start of authority, and "
+"``ns.example.org`` would not resolve to any IP address."
+msgstr ""
+
+#: ../../source/howtos/dnssec.rst:142
+msgid "Generating the KSK and ZSK Keys"
+msgstr ""
+

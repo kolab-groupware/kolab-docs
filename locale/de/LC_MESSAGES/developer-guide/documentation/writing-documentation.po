@@ -1,83 +1,124 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
-# This file is distributed under the same license as the Kolab Groupware package.
-# 
+# This file is distributed under the same license as the Kolab Groupware
+# package.
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:38+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/kolab-documentation/language/de/)\n"
+"Language-Team: German (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:46
+#: ../../source/developer-guide/documentation/writing-documentation.rst:92
 msgid "Writing Documentation"
 msgstr ""
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:48
+#: ../../source/developer-guide/documentation/writing-documentation.rst:94
 msgid ""
-"The Kolab community has a reference implementation of its releases, which "
-"can best be described as a **next-next-finish** installation [#]_ of a "
-"**single node** [#]_ running **Enterprise Linux 6** [#]_."
+"The Kolab community has a reference implementation of its releases, which"
+" can best be described as a **next-next-finish** installation [#]_ of a "
+"**single node** [#]_ running **Enterprise Linux 7** [#]_."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:52
+#: ../../source/developer-guide/documentation/writing-documentation.rst:98
 msgid ""
-"For writing documentation, this means that all documented commands and file "
-"paths mentioned need to match that specific implementation [#]_ of Kolab "
-"installed on Enterprise Linux 6, and that every HOWTO needs to start at the "
-"aforementioned *null* situation."
+"For writing documentation, this means that all documented commands and "
+"file paths mentioned need to match that specific implementation [#]_ of "
+"Kolab installed on Enterprise Linux 7, and that every HOWTO needs to "
+"start at the aforementioned *null* situation."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:57
+#: ../../source/developer-guide/documentation/writing-documentation.rst:103
 msgid ""
-"This sounds harsh, and it probably is, but here's how you can work with it:"
+"This sounds harsh, and it probably is, but here's how you can work with "
+"it:"
 msgstr ""
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:60
+#: ../../source/developer-guide/documentation/writing-documentation.rst:106
 msgid ""
-"When you create a HOWTO for something on Debian, your HOWTO should probably "
-"be titled: *HOWTO: Achieve Greatness (on Debian Wheezy)*."
+"When you create a HOWTO for something on Debian, your HOWTO should "
+"probably be titled: *HOWTO: Achieve Greatness (on Debian Wheezy)*."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:63
+#: ../../source/developer-guide/documentation/writing-documentation.rst:109
 msgid ""
-"When you do write a generic HOWTO, you can re-iterate the commands issued "
-"for different distributions::"
+"When you do write a generic HOWTO, you can re-iterate the commands issued"
+" for different distributions::"
 msgstr ""
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:79
+#: ../../source/developer-guide/documentation/writing-documentation.rst:125
 msgid "Footnotes"
 msgstr ""
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:82
+#: ../../source/developer-guide/documentation/writing-documentation.rst:128
 msgid ""
 "This means to confirm the default settings (other than perhaps the "
-"passwords) during :ref:`install-setup-kolab`, including but not limited to "
-"the characters used in the passwords chosen -- while we have learned of "
-"issues when using passwords with special characters, which relate to third "
-"party application defaults."
+"passwords) during :ref:`installation-guide-setup-kolab`, including but "
+"not limited to the characters used in the passwords chosen -- while we "
+"have learned of issues when using passwords with special characters, "
+"which relate to third party application defaults."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:90
+#: ../../source/developer-guide/documentation/writing-documentation.rst:136
 msgid ""
 "A single node is a single operating system instance; physical, virtual, "
 "docked or contained."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:95
+#: ../../source/developer-guide/documentation/writing-documentation.rst:141
 msgid ""
-"In the family of Enterprise Linux 6 distributions that we provide packages "
-"for are Red Hat Enterprise Linux and CentOS."
+"In the family of Enterprise Linux 7 distributions that we provide "
+"packages for are Red Hat Enterprise Linux and CentOS."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/writing-documentation.rst:100
+#: ../../source/developer-guide/documentation/writing-documentation.rst:146
 msgid "The specific implementation is a single-node deployment topology."
 msgstr ""
+
+#~ msgid ""
+#~ "The Kolab community has a reference "
+#~ "implementation of its releases, which "
+#~ "can best be described as a "
+#~ "**next-next-finish** installation [#]_ of"
+#~ " a **single node** [#]_ running "
+#~ "**Enterprise Linux 6** [#]_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For writing documentation, this means "
+#~ "that all documented commands and file"
+#~ " paths mentioned need to match that"
+#~ " specific implementation [#]_ of Kolab "
+#~ "installed on Enterprise Linux 6, and "
+#~ "that every HOWTO needs to start at"
+#~ " the aforementioned *null* situation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This means to confirm the default "
+#~ "settings (other than perhaps the "
+#~ "passwords) during :ref:`install-setup-kolab`,"
+#~ " including but not limited to the "
+#~ "characters used in the passwords chosen"
+#~ " -- while we have learned of "
+#~ "issues when using passwords with special"
+#~ " characters, which relate to third "
+#~ "party application defaults."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the family of Enterprise Linux "
+#~ "6 distributions that we provide packages"
+#~ " for are Red Hat Enterprise Linux "
+#~ "and CentOS."
+#~ msgstr ""
+

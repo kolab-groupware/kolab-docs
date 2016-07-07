@@ -1,713 +1,1180 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
-# This file is distributed under the same license as the Kolab Groupware package.
-# 
+# This file is distributed under the same license as the Kolab Groupware
+# package.
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:38+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-documentation/language/fr_FR/)\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p"
+"/kolab-documentation/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr_FR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../source/developer-guide/bugzilla.rst:44
+#: ../../source/developer-guide/bugzilla.rst:90
 msgid "Bugzilla"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:46
+#: ../../source/developer-guide/bugzilla.rst:92
 msgid ""
 "Our `bugzilla`_ is our primary tracker for tickets that involve our "
 "development, release, planning, and project- and product-management "
 "processes."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:50
+#: ../../source/developer-guide/bugzilla.rst:96
 msgid "This document describes how you should consider working with Bugzilla."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:53
+#: ../../source/developer-guide/bugzilla.rst:101
+msgid "Cloning Tickets"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:103
+msgid "Cloning tickets is a means to allow different target streams, such as;"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:105
+msgid ""
+"A fix for version ``1.0`` versus a fix for a version ``2.0`` to be worked"
+" on with different priority, different timelines and possibly result in a"
+" different implementation of the resolution."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:109
+msgid ""
+"In this case, the ticket should be cloned in to its two parts, when the "
+"ticket is initially assigned to a developer."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:112
+msgid ""
+"A typical scenario in which this sort of multi-version ticket is "
+"prevelant is with product streams supported for longer periods of time."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:118
+msgid ""
+"Note that a ticket clone normally causes the clone to depend on the "
+"original ticket. The dependency should be evaluated separately, in that "
+"the ticket for the later version should probably block the ticket for the"
+" earlier version of the software, and not the other way around."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:124
+msgid ""
+"It is normal to simply remove the dependency, however, and instead add a "
+":ref:`bugzilla-see-also` link."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:127
+msgid ""
+"A fix for versions ``1.0`` and ``1.1``, which are two versions likely "
+"less different from one another than ``1.0`` and ``2.0``, could in fact "
+"be the same fix applied to both branches."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:131
+msgid ""
+"In this case, a developer does not need two versions of what is otherwise"
+" the same ticket. However when the ticket is :ref:`bugzilla-status-"
+"resolved`, further actions on the ticket would require cloned tickets."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:136
+msgid ""
+"It is recommended that a developer clone the ticket as many times as "
+"necessary, since it is typically the developer who knows best what "
+"branches the fix has been applied to, and what (other) branches still "
+"need work. Splitting the ticket at this point allows the product to which"
+" the ticket's resolution is successfully applied to continue with the "
+"rest of their respective processes, while one or more branches for which "
+"more work may be needed, can be held back and/or continued to be worked "
+"on."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:145
+msgid ""
+"Failing that, a developer should at least mention the commit IDs and "
+"branches to which such commit IDs have been committed and pushed (if all "
+"relevant branches have resolutions applied successfully). It will enable "
+"a release manager to take the appropriate actions."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:151
+msgid "Different People's Overview"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:154
+msgid "Developer Overview"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:156
+msgid ""
+"So what would a developer be looking at for a list of tickets that have "
+"some level of significance for a developer?"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:159
+msgid "The following items should be of interest:"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:161
+msgid "Naturally, tickets assigned to you are considered of interest to you."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:164
+msgid ""
+"As to the relevant states in which these tickets may be, we consider the "
+"following states of interest:"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:167
+msgid ":ref:`bugzilla-status-new`"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:169
+msgid ""
+"Tickets with status :ref:`bugzilla-status-new` assigned to you may "
+"include a request to provide an estimate."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:172
+msgid ":ref:`bugzilla-status-assigned`"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:174
+msgid "New tickets in your queue, freshly assigned."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:176
+msgid ":ref:`bugzilla-status-in_progress`"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:178
+msgid "Tickets you are working on currently."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:180
+msgid ":ref:`bugzilla-status-reopened`"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:182
+msgid ""
+"Tickets you have (presumably) already worked on, that have failed Quality"
+" Assurance."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:185
+msgid ":ref:`bugzilla-status-needsinfo`"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:187
+msgid ""
+"Though it is not clear whether additional information is requested of or "
+"by you, this list should be relatively short anyway."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:192
+msgid "Quality Assurance Engineer Overview"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:194
+msgid ""
+"From the perspective of a Quality Assurance engineer, all tickets in "
+"state :ref:`bugzilla-status-in_testing` are interesting."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:198
 msgid "Bugzilla Status"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:55
+#: ../../source/developer-guide/bugzilla.rst:200
 msgid ""
 "The following is a description of each state used in Bugzilla, just to "
-"clarify any ambiguity in the terminology used, and to make sure everyone is "
-"up-to-date on the expectations created from a certain ticket being in a "
-"certain status, and what is expected before it moves on to the next status."
+"clarify any ambiguity in the terminology used, and to make sure everyone "
+"is up-to-date on the expectations created from a certain ticket being in "
+"a certain status, and what is expected before it moves on to the next "
+"status."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:64
+#: ../../source/developer-guide/bugzilla.rst:209
 msgid "UNCONFIRMED"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:66
+#: ../../source/developer-guide/bugzilla.rst:211
 msgid ""
-"A ticket starts in status UNCONFIRMED to indicate it has not yet been "
-"\"triaged\" -- see :ref:`bugzilla-triaging-bugzilla-tickets`."
+"A ticket starts in status :ref:`bugzilla-status-unconfirmed` to indicate "
+"it has not yet been \"triaged\" -- see :ref:`bugzilla-triaging-bugzilla-"
+"tickets`."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:69
+#: ../../source/developer-guide/bugzilla.rst:215
 msgid ""
-"In our Bugzilla, the assignee at this point may be devel@lists.kolab.org (as"
-" in: *\"Nobody's working on this\"*), or the assignee may be one particular "
-"person or multiple people that is/are deemed suitable for triaging."
+"In our Bugzilla, the assignee at this point may be devel@lists.kolab.org "
+"(as in: *\"Nobody's working on this\"*), or the assignee may be one "
+"particular person or multiple people that is/are deemed suitable for "
+"triaging."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:74
+#: ../../source/developer-guide/bugzilla.rst:220
 msgid "In this status, a person looking at the ticket should confirm that;"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:76
+#: ../../source/developer-guide/bugzilla.rst:222
 msgid ""
 "The product and product component against which the ticket is created is "
 "accurate, including the platform and operating system field(s)."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:0
-#: ../../source/developer-guide/bugzilla.rst:0
-#: ../../source/developer-guide/bugzilla.rst:0
+#: ../../source/developer-guide/bugzilla.rst
 msgid "Todo"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:82
+#: ../../source/developer-guide/bugzilla.rst:228
 msgid ""
-"Document an inventory of products and components along with the method of "
-"creating the inventory."
+"Document an inventory of products and components along with the method of"
+" creating the inventory."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:85
+#: ../../source/developer-guide/bugzilla.rst:231
 msgid ""
 "The version of Kolab Groupware or the version of the Kolab Groupware "
 "software component is indeed accurate, and still supported."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:90
+#: ../../source/developer-guide/bugzilla.rst:236
 msgid ""
 "Document the inventory of package versions, product streams and product "
 "versions that are supported, along with the methodology of creating such "
 "inventory."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:94
+#: ../../source/developer-guide/bugzilla.rst:240
 msgid ""
 "The targeted version for the ticket to be resolved in is appropriate, in "
 "that we tend to not work backwards."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:97
+#: ../../source/developer-guide/bugzilla.rst:243
 msgid ""
-"As a rule of thumb, everything is first implemented and/or resolved in the "
-"future version of software, and only considered for backporting afterwards."
+"As a rule of thumb, everything is first implemented and/or resolved in "
+"the future version of software, and only considered for backporting "
+"afterwards."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:101
+#: ../../source/developer-guide/bugzilla.rst:247
 msgid ""
-"Note that an issue against a version ``1.0.1``, that needs to be resolved in"
-" the next ``1.0`` version, would originally have a milestone of "
+"Note that an issue against a version ``1.0.1``, that needs to be resolved"
+" in the next ``1.0`` version, would originally have a milestone of "
 "``1.0-next``."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:105
+#: ../../source/developer-guide/bugzilla.rst:251
 msgid ""
-"If the upstream program however is further ahead (such as a ``1.1`` series),"
-" a clone of the original ticket should be created for the ``1.0-next`` "
-"milestone, and depend on the original ticket which is then set against the "
-"``1.1-next`` milestone."
+"If the upstream program however is further ahead (such as a ``1.1`` "
+"series), a clone of the original ticket should be created for the "
+"``1.0-next`` milestone, and depend on the original ticket which is then "
+"set against the ``1.1-next`` milestone."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:110
+#: ../../source/developer-guide/bugzilla.rst:256
 msgid ""
-"This is to aid release management in composing lists of tickets resolved in "
-"certain releases or packaged versions of software."
+"This is to aid release management in composing lists of tickets resolved "
+"in certain releases or packaged versions of software."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:113
+#: ../../source/developer-guide/bugzilla.rst:259
 msgid ""
-"The necessary information needed to resolve the ticket is available, such "
-"as;"
+"The necessary information needed to resolve the ticket is available, such"
+" as;"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:116
+#: ../../source/developer-guide/bugzilla.rst:262
 msgid "For tickets of type *bug*:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:118
+#: ../../source/developer-guide/bugzilla.rst:264
 msgid "issue symptoms,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:120
+#: ../../source/developer-guide/bugzilla.rst:266
 msgid "related software versions,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:122
+#: ../../source/developer-guide/bugzilla.rst:268
 msgid "platform, and platform version,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:124
+#: ../../source/developer-guide/bugzilla.rst:270
 msgid ""
-"configuration of the software, and the environment (including the type of "
-"deployment architecture),"
+"configuration of the software, and the environment (including the type of"
+" deployment architecture),"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:127
+#: ../../source/developer-guide/bugzilla.rst:273
 msgid ""
-"and other information that allow the next person to receive the ticket to "
-"reproduce the original issue."
+"and other information that allow the next person to receive the ticket to"
+" reproduce the original issue."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:130
+#: ../../source/developer-guide/bugzilla.rst:276
 msgid "For tickets of type *enhancement*:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:132
+#: ../../source/developer-guide/bugzilla.rst:278
 msgid ""
-"A genuine, accurate, unambiguous description of the requested functionality "
-"is supplied, i.e. NOT \"wish I could do $x\"."
+"A genuine, accurate, unambiguous description of the requested "
+"functionality is supplied, i.e. NOT \"wish I could do $x\"."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:135
+#: ../../source/developer-guide/bugzilla.rst:281
 msgid ""
-"When the necessary information is provided, the ticket can move forward to "
-"status :ref:`bugzilla-status-new`."
+"When the necessary information is provided, the ticket can move forward "
+"to status :ref:`bugzilla-status-new`."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:138
+#: ../../source/developer-guide/bugzilla.rst:284
 msgid ""
-"When a ticket is not yet complete, it may be set to :ref:`bugzilla-status-"
-"needsinfo`."
+"When a ticket is not yet complete, it may be set to :ref:`bugzilla-"
+"status-needsinfo`."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:141
+#: ../../source/developer-guide/bugzilla.rst:287
 msgid ""
-"In rare circumstances, an UNCONFIRMED ticket may be directly moved to status"
-" CLOSED -- usually along with a resolution of WONTFIX, DEFERRED or NOTABUG."
+"In rare circumstances, an :ref:`bugzilla-status-unconfirmed` ticket may "
+"be directly moved to status :ref:`bugzilla-status-closed` -- usually "
+"along with a resolution of DUPLICATE, WONTFIX, DEFERRED or NOTABUG."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:148
+#: ../../source/developer-guide/bugzilla.rst:294
 msgid "NEW"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:150
+#: ../../source/developer-guide/bugzilla.rst:296
 msgid ""
-"A ticket in status NEW is waiting to be assigned to a developer, and may as "
-"such be taken on by a product manager instead."
+"A ticket in status :ref:`bugzilla-status-new` is waiting to be assigned "
+"to a developer, and may as such be taken on by a product manager instead."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:153
+#: ../../source/developer-guide/bugzilla.rst:299
 msgid ""
 "This status is a placeholder for all inbound tickets; bugs, tasks and "
 "enhancements alike. At this stage, the ticket is deemed sufficiently "
 "detailed and feasible to result in resolution."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:157
+#: ../../source/developer-guide/bugzilla.rst:303
 msgid ""
-"Before the ticket is assigned to an actual developer, the following items "
-"need to be verified;"
+"Before the ticket is assigned to an actual developer, the following items"
+" need to be verified;"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:160
+#: ../../source/developer-guide/bugzilla.rst:306
 msgid "The :ref:`bugzilla-priority-and-severity` of the ticket,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:162
+#: ../../source/developer-guide/bugzilla.rst:308
 msgid "The appropriate :ref:`bugzilla-assignee` for the ticket,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:164
+#: ../../source/developer-guide/bugzilla.rst:310
 msgid "and possibly also (for product management and/or project management);"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:166
+#: ../../source/developer-guide/bugzilla.rst:312
 msgid "An estimation of the :ref:`bugzilla-effort-involved`,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:168
+#: ../../source/developer-guide/bugzilla.rst:314
 msgid ""
 "The target milestone, or target milestones for all products and product "
 "components involved,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:171
+#: ../../source/developer-guide/bugzilla.rst:317
 msgid ""
 "Any ticket(s) to which the ticket is related (see: :ref:`bugzilla-see-"
-"also`), or in to which the request splits out (see :ref:`bugzilla-example-"
-"cyrus-imapd-sieve-date-extension-support`)."
+"also`), or in to which the request splits out (see :ref:`bugzilla-"
+"example-cyrus-imapd-sieve-date-extension-support`)."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:179
+#: ../../source/developer-guide/bugzilla.rst:325
 msgid "ASSIGNED"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:181
+#: ../../source/developer-guide/bugzilla.rst:327
 msgid ""
 "The ticket has been assigned, hopefully by someone sufficiently "
-"knowledgeable and otherwise someone eligible to allocate community and/or "
-"corporate resources to the resolution of the ticket."
+"knowledgeable and otherwise someone eligible to allocate community and/or"
+" corporate resources to the resolution of the ticket."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:185
+#: ../../source/developer-guide/bugzilla.rst:333
 msgid ""
-"When a ticket is assigned, all its dependencies should be in order, and the "
-"assignee may find the ticket blocking other tickets."
+"If a ticket had originally requested an estimate of the :ref:`bugzilla-"
+"effort-involved`, the assignee should verify the ticket state has been "
+"changed by someone in a position to acknowledge the :ref:`bugzilla-"
+"effort-involved` is accepted."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:188
+#: ../../source/developer-guide/bugzilla.rst:338
+msgid ""
+"When a ticket is assigned, all its dependencies should be in order, and "
+"the assignee may find the ticket blocking other tickets."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:341
 msgid "It is now up to the assignee to;"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:190
+#: ../../source/developer-guide/bugzilla.rst:343
 msgid "Verify the ticket, so that it is understood;"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:192
+#: ../../source/developer-guide/bugzilla.rst:345
 msgid ""
-"The target milestone indicated in the ticket is the version of the software "
-"to which the resolution should apply,"
+"The target milestone indicated in the ticket is the earliest version of "
+"the software to which the resolution should apply,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:195
+#: ../../source/developer-guide/bugzilla.rst:348
 msgid ""
-"The issue resolution should first be created for and applied to the latest "
-"and greatest (i.e. \"next\") version of the software,"
+"The issue resolution should first be created for and applied to the "
+"latest and greatest (i.e. \"next\") version of the software,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:198
+#: ../../source/developer-guide/bugzilla.rst:351
 msgid ""
-"The issue's resolution can indeed be backported to the targeted branch of "
-"software. See :ref:`bugzilla-requirements-for-backporting`."
+"The issue's resolution can indeed be backported to the targeted branch of"
+" software. See :ref:`bugzilla-requirements-for-backporting`."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:202
+#: ../../source/developer-guide/bugzilla.rst:355
 msgid ""
-"Should the former conditions or validation steps not be complete, such as "
-"when an issue's resolution can be created for and applied to the \"next\" "
-"version of the software, but not the \"current stable\" version thereof, "
-"then it is the developer's responsibility to contact product management."
+"Should the former conditions or validation steps not be complete, such as"
+" when an issue's resolution can be created for and applied to the "
+"\"next\" version of the software, but not the \"current stable\" version "
+"of the software, then it is the developer's responsibility to contact "
+"product management."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:208
+#: ../../source/developer-guide/bugzilla.rst:363
+msgid ""
+"Supported versions of software have a corresponding milestone available. "
+"See also :ref:`bugzilla-supported-versions-of-software`."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:367
 msgid ""
 "Start work on the ticket (and change the status to :ref:`bugzilla-status-"
 "in_progress`). This will indicate acceptance of the ticket."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:215
+#: ../../source/developer-guide/bugzilla.rst:371
+msgid "Set the status back to :ref:`bugzilla-status-new` to refuse the ticket."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:377
 msgid "IN_PROGRESS"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:217
+#: ../../source/developer-guide/bugzilla.rst:379
 msgid ""
-"While a ticket is in status IN_PROGRESS, a developer is actually working on "
-"the ticket."
+"While a ticket is in status :ref:`bugzilla-status-in_progress`, a "
+"developer is actually working on the ticket."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:220
+#: ../../source/developer-guide/bugzilla.rst:382
 msgid ""
-"While in this status ticket's assignee field **MUST** be set to the physical"
-" human being performing the work."
+"While in this status ticket's assignee field **MUST** be set to the "
+"physical human being performing the work."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:223
+#: ../../source/developer-guide/bugzilla.rst:385
 msgid ""
-"A developer will ultimately have a patch or result of labour to be committed"
-" and pushed out some place."
+"A developer will ultimately have a patch or result of labour to be "
+"committed and pushed out some place."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:226
+#: ../../source/developer-guide/bugzilla.rst:388
 msgid ""
 "When the work is completed, and the issue's resolution has been made "
-"available, the status of the ticket is to be moved to :ref:`bugzilla-status-"
-"resolved`."
+"available, the status of the ticket is to be moved to :ref:`bugzilla-"
+"status-resolved`, usually with a resolution of FIXED."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:233
+#: ../../source/developer-guide/bugzilla.rst:392
+msgid ""
+"It is the developer's responsibility to re-iterate the branches to which "
+"any revisions or commit IDs related to the resolution have been committed"
+" and pushed."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:398
+msgid ":ref:`bugzilla-cloning-tickets`"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:403
 msgid "RESOLVED"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:235
+#: ../../source/developer-guide/bugzilla.rst:405
 msgid ""
-"The RESOLVED status indicates that a commit has been made and pushed, that "
-"is believed to resolve the issue (i.e. \"fix the bug\" or \"implement the "
-"enhancement\")."
+"The RESOLVED status indicates that a commit has been made and pushed, "
+"that is believed to resolve the issue (i.e. \"fix the bug\" or "
+"\"implement the enhancement\")."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:239
-msgid ""
-"It is the developer's responsibility to set a ticket to status RESOLVED."
+#: ../../source/developer-guide/bugzilla.rst:409
+msgid "It is the developer's responsibility to set a ticket to status RESOLVED."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:241
+#: ../../source/developer-guide/bugzilla.rst:411
 msgid ""
 "Release engineering and project management are now responsible for the "
-"ticket, however the assignee **SHOULD NOT** be changed from this point on "
-"forward."
+"ticket, however the assignee **SHOULD NOT** be changed from this point on"
+" forward."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:245
+#: ../../source/developer-guide/bugzilla.rst:415
 msgid ""
 "An extra ticket should be created for each target milestone in which the "
 "resolution to this ticket is to be included (by creating a clone of this "
 "ticket)."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:249
-msgid ""
-"As the next status for the ticket could be either of the two following:"
+#: ../../source/developer-guide/bugzilla.rst:419
+msgid "As the next status for the ticket could be either of the two following:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:251
+#: ../../source/developer-guide/bugzilla.rst:421
 msgid ""
-":ref:`bugzilla-status-pending_release`, which tends to be the status used to"
-" indicate the availability of the resolution can wait until the software is "
-"properly released,"
+":ref:`bugzilla-status-pending_release`, which tends to be the status used"
+" to indicate the availability of the resolution can wait until the "
+"software is properly released,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:255
+#: ../../source/developer-guide/bugzilla.rst:425
 msgid ""
-":ref:`bugzilla-status-in_packaging`, which tends to indicate the resolution "
-"is packaged in the form of a patch or even a source code management "
-"repository snapshot."
+":ref:`bugzilla-status-in_packaging`, which tends to indicate the "
+"resolution is packaged in the form of a patch or even a source code "
+"management repository snapshot."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:262
+#: ../../source/developer-guide/bugzilla.rst:432
 msgid "PENDING_RELEASE"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:264
+#: ../../source/developer-guide/bugzilla.rst:434
 msgid ""
 "A ticket set to PENDING_RELEASE is awaiting the upstream release of a "
-"versioned piece of the software that includes the resolution to this ticket."
+"versioned piece of the software that includes the resolution to this "
+"ticket."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:268
+#: ../../source/developer-guide/bugzilla.rst:438
 msgid ""
-"When a ticket is changed to PENDING_RELEASE it is apparent the availability "
-"of the ticket's resolution can wait for the upstream release of the next "
-"version of the software."
+"When a ticket is changed to PENDING_RELEASE it is apparent the "
+"availability of the ticket's resolution can wait for the upstream release"
+" of the next version of the software."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:272
+#: ../../source/developer-guide/bugzilla.rst:442
 msgid "When a ticket is changed to IN_PACKAGING it is implicitly requesting;"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:274
+#: ../../source/developer-guide/bugzilla.rst:444
 msgid ""
-"the ticket's resolution is included in to the packaging as a patch on top of"
-" the current -- otherwise stable -- release(d package)."
+"the ticket's resolution is included in to the packaging as a patch on top"
+" of the current -- otherwise stable -- release(d package)."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:277
+#: ../../source/developer-guide/bugzilla.rst:447
 msgid ""
 "a new release is created to subsequently result in a new package -- this "
 "includes snapshot releases."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:280
+#: ../../source/developer-guide/bugzilla.rst:450
 msgid ""
-"Tickets that move from PENDING_RELEASE (on to the next status IN_PACKAGING) "
-"imply that a variety of other aspects of our Bugzilla have also been "
-"updated, including versions, milestones and **Fixed in Version** fields."
+"Tickets that move from PENDING_RELEASE (on to the next status "
+"IN_PACKAGING) imply that a variety of other aspects of our Bugzilla have "
+"also been updated, including versions, milestones and **Fixed in "
+"Version** fields."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:288
+#: ../../source/developer-guide/bugzilla.rst:458
 msgid "IN_PACKAGING"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:290
+#: ../../source/developer-guide/bugzilla.rst:460
 msgid "Somebody is to package the ticket's resolution."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:292
+#: ../../source/developer-guide/bugzilla.rst:462
 msgid ""
 "After the status IN_PACKAGING is completed, the ticket is to move in to "
-"IN_TESTING, provided the details about which product stream the new package "
-"has been made available in (i.e. target platform, product version, edition, "
-"repository stage, package NEVRA)."
+"IN_TESTING, provided the details about which product stream the new "
+"package has been made available in (i.e. target platform, product "
+"version, edition, repository stage, package NEVRA)."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:297
+#: ../../source/developer-guide/bugzilla.rst:467
 msgid ""
-"Before a ticket can be moved to IN_TESTING, a draft errata should be made "
-"available, especially where additional instructions are to be included (to "
-"facilitate upgrades, and/or new configuration items)."
+"Before a ticket can be moved to IN_TESTING, a draft errata should be made"
+" available, especially where additional instructions are to be included "
+"(to facilitate upgrades, and/or new configuration items)."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:304
+#: ../../source/developer-guide/bugzilla.rst:474
 msgid "IN_TESTING"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:306
+#: ../../source/developer-guide/bugzilla.rst:476
 msgid "Tickets in testing are pending verification by Quality Assurance."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:311
+#: ../../source/developer-guide/bugzilla.rst:481
 msgid "VERIFIED"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:313
+#: ../../source/developer-guide/bugzilla.rst:483
 msgid ""
 "Quality Assurance has successfully verified the upgrade path to the new "
 "software as well as the issue's resolution."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:316
+#: ../../source/developer-guide/bugzilla.rst:486
 msgid ""
-"This opens up the path for release engineering and/or product management to "
-"release the update as stable."
+"This opens up the path for release engineering and/or product management "
+"to release the update as stable."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:322
+#: ../../source/developer-guide/bugzilla.rst:492
 msgid "CLOSED"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:324
+#: ../../source/developer-guide/bugzilla.rst:494
 msgid ""
-"The ticket has been resolved, and all subsequent tasks have been completed."
+"The ticket has been resolved, and all subsequent tasks have been "
+"completed."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:330
+#: ../../source/developer-guide/bugzilla.rst:500
+msgid "REOPENED"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:505
 msgid "NEEDSINFO"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:332
+#: ../../source/developer-guide/bugzilla.rst:507
 msgid ""
-"NEEDSINFO is a status that indicates the ticket needs additional information"
-" before it can move on to the next stage."
+":ref:`bugzilla-status-needsinfo` is a status that indicates the ticket "
+"needs additional information before it can move on to the next stage."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:337
+#: ../../source/developer-guide/bugzilla.rst:512
 msgid ""
-"Install the NEEDSINFO extension, so that not only can the status be set, one"
-" can explicitly supply from whom the additional information is needed, said "
-"person is notified, and said person can \"clear\" the NEEDSINFO state when "
-"the requested information is supplied."
+"Install the :ref:`bugzilla-status-needsinfo` extension, so that not only "
+"can the status be set, one can explicitly supply from whom the additional"
+" information is needed, said person is notified, and said person can "
+"\"clear\" the :ref:`bugzilla-status-needsinfo` state when the requested "
+"information is supplied."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:343
+#: ../../source/developer-guide/bugzilla.rst:519
 msgid "Status Workflow"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:345
+#: ../../source/developer-guide/bugzilla.rst:521
 msgid ""
-"You need administrative privileges to view the actual configuration of the "
-"status workflow in Bugzilla, but we can provide you with a screenshot "
-"(Sunday, August 3rd, 2014):"
+"You need administrative privileges to view the actual configuration of "
+"the status workflow in Bugzilla, but we can provide you with a screenshot"
+" (Sunday, August 3rd, 2014):"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:354
+#: ../../source/developer-guide/bugzilla.rst:530
 msgid ""
-"All statuses that are in red are considered closed tickets. All statuses in "
-"green are considered open tickets."
+"All statuses that are in red are considered closed tickets. All statuses "
+"in green are considered open tickets."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:357
+#: ../../source/developer-guide/bugzilla.rst:533
 msgid "Here is a more dynamic diagram:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:410
+#: ../../source/developer-guide/bugzilla.rst:594
 msgid "Workflow Steps"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:412
+#: ../../source/developer-guide/bugzilla.rst:596
 msgid ""
-"This section is a placeholder to document the individual steps outlined in "
-"the forementioned diagram."
+"When a ticket is entered, it starts in an :ref:`bugzilla-status-"
+"unconfirmed` state. From here:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:418
+#: ../../source/developer-guide/bugzilla.rst:599
+msgid ""
+"A ticket is set to :ref:`bugzilla-status-new` from :ref:`bugzilla-status-"
+"unconfirmed`, if the ticket is valid, accepted and contains sufficient "
+"information."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:603
+msgid ""
+"A :ref:`bugzilla-status-new` ticket is generally :ref:`bugzilla-status-"
+"assigned` to an individual developer by project, release and/or product "
+"management, but could be assigned to anyone by anyone."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:608
+msgid ""
+"If an :ref:`bugzilla-status-assigned` ticket is set back to status :ref"
+":`bugzilla-status-new`, the assignee in question has \"bounced\" the "
+"ticket, with hopefully a comment that clarifies why."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:612
+msgid ""
+"An :ref:`bugzilla-status-assigned` ticket that is set to :ref:`bugzilla-"
+"status-in_progress` is a ticket being worked on by the assignee."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:618
+msgid ""
+"Before the assignee sets the ticket to :ref:`bugzilla-status-"
+"in_progress`, the assignee should consider :ref:`bugzilla-cloning-"
+"tickets`, if it is already clear that the work on different versions of "
+"the software is likely not to be the same work."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:624
+msgid ""
+"The assignee of a ticket sets the status of a ticket to :ref:`bugzilla-"
+"status-resolved` when the work is complete."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:629
+msgid "The assignee should consider :ref:`bugzilla-cloning-tickets` if;"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:631
+msgid ""
+"the ticket's resolution applies to multiple versions of the software, "
+"and/or"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:634
+msgid ""
+"the resolution applies to one or more versions of the software, but not "
+"to other versions where the resolution is also required or requested "
+"(according to the original ticket's target milestone)."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:639
+msgid ""
+"From the :ref:`bugzilla-status-resolved` state of a ticket, two possible "
+"paths are available:"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:642
+msgid ""
+"Setting the :ref:`bugzilla-status-resolved` ticket to state :ref"
+":`bugzilla-status-pending_release` means to indicate that shipping the "
+"fix is waiting for an actual upstream release of a new version of the "
+"software."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:647
+msgid ""
+"This tends to occur for low-priority tickets and tickets for low-priority"
+" product streams such as Kolab Development."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:650
+msgid "Continue with step 10."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:652
+msgid ""
+"Setting the ticket (from state :ref:`bugzilla-status-resolved`) to state "
+":ref:`bugzilla-status-in_packaging` means to indicate that the fix is "
+"being shipped as a patch to the currently packaged version of the "
+"software."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:657
+msgid ""
+"This tends to occur for high-priority tickets, likely with fixes "
+"relatively easily patched in the current packaging, relatively easily "
+"tested and otherwise (such as with an actual release of the software) "
+"significantly harder to release as a stable update, in that;"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:663
+msgid ""
+"It is harder to quickly release an update for a piece of software that "
+"may have a couple of dozen of changes, compared to fixing (and testing) "
+"one single fix."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:667
+msgid ""
+"Shipping a patch for a particular issue short-circuits the high- priority"
+" ticket and buys time to test the full update."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:672
+msgid ""
+"From the :ref:`bugzilla-status-in_packaging` state, the ticket **MUST** "
+"be cloned;"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:675
+msgid ""
+"the original will move forward to :ref:`bugzilla-status-in_testing` (step"
+" 9)."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:678
+msgid "the clone can be set to :ref:`bugzilla-status-pending_release` (step 8)."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:681
+msgid ""
+"A ticket that has been in state :ref:`bugzilla-status-in_packaging` could"
+" be set back to :ref:`bugzilla-status-pending_release`, but this should "
+"only be performed when the patch in step 7 can not be individually "
+"applied."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:686
+msgid ""
+"A red flag should be raised with project/product management to raise "
+"awareness of the impending delay in the availability of the resolution to"
+" the (high-priority) ticket."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:690
+msgid ""
+"When a ticket is set to state :ref:`bugzilla-status-in_packaging` from a "
+"previous state of :ref:`bugzilla-status-pending_release`, the upstream "
+"release has actually occurred, and release management has created the "
+"necessary *version*, and set relevant tickets to the appropriate "
+"*milestone* that corresponds with that release."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:696
+msgid "Logically, the next step is step 10."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:700
+msgid ":ref:`bugzilla-release-management`"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:702
+msgid ""
+"When a ticket is set to state :ref:`bugzilla-status-in_testing`, a "
+"packaged version of the resolution is available through the product "
+"stream supply channels that Quality Assurance consumes."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:708
+msgid ""
+"A stable version of software may be targeted for inclusion with multiple "
+"product streams, such as perhaps the package **cyrus-imapd**."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:712
+msgid ""
+"We employ tables such as :ref:`package-cyrus-imapd` to maintain an "
+"overview of version series available to product streams."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:715
+msgid "This part of the process typically continues with step 12 or 13."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:717
+msgid "PENDING_RELEASE -> IN_TESTING"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:719
+msgid "To be honest, we're not sure why this change is allowed."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:721
+msgid ""
+"From the state :ref:`bugzilla-status-in_testing`, should Quality "
+"Assurance have failed, the status of the ticket should be set to :ref"
+":`bugzilla-status-reopened`."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:725
+msgid ""
+"It is worthwhile noting that simply changing the status may not "
+"necessarily spawn the appropriate amount of attention to the testing of "
+"the software having failed. In case the test having failed forms a "
+"blocker for the update being released as stable, the sooner someone's "
+"attention can be drawn to the issue at hand, the better it is."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:732
+msgid ""
+"Quality Assurance has succeeded, and the update is therefore eligible for"
+" release."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:735
+msgid "After the update is made available, the process continues with step 14."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:738
+msgid "VERIFIED -> CLOSED"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:740
+msgid "CLOSED -> :ref:`bugzilla-status-reopened`"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:742
+msgid ":ref:`bugzilla-status-reopened` -> :ref:`bugzilla-status-assigned`"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:744
+msgid ":ref:`bugzilla-status-reopened` -> RESOLVED"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:746
+msgid ""
+":ref:`bugzilla-status-assigned`, :ref:`bugzilla-status-in_progress`, :ref"
+":`bugzilla-status-new`, :ref:`bugzilla-status-unconfirmed` <-> :ref"
+":`bugzilla-status-needsinfo`"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:748
+msgid ""
+":ref:`bugzilla-status-assigned`, :ref:`bugzilla-status-in_progress`, :ref"
+":`bugzilla-status-new`, :ref:`bugzilla-status-unconfirmed`, RESOLVED, "
+"VERIFIED -> CLOSED"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:750
+msgid "IN_PACKAGING -> CLOSED"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:752
+msgid "PENDING_RELEASE -> CLOSED"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:754
+msgid "IN_TESTING -> CLOSED"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:759
 msgid "Requirements for Backporting"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:423
+#: ../../source/developer-guide/bugzilla.rst:764
 msgid "Triaging Bugzilla Tickets"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:425
+#: ../../source/developer-guide/bugzilla.rst:766
 msgid ""
 "Triaging tickets is the exercise of ensuring tickets are complete and "
 "accurate, such that;"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:428
+#: ../../source/developer-guide/bugzilla.rst:769
 msgid ""
-"the ticket type field accurately reflects the type of issue raised in the "
-"ticket."
+"the ticket type field accurately reflects the type of issue raised in the"
+" ticket."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:431
+#: ../../source/developer-guide/bugzilla.rst:772
 msgid ""
-"While the type of ticket is unknown, uncertain or simply not yet determined,"
-" the ticket types should remain ``---``."
+"While the type of ticket is unknown, uncertain or simply not yet "
+"determined, the ticket types should remain ``---``."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:434
+#: ../../source/developer-guide/bugzilla.rst:775
 msgid ""
 "when a **bug** is reported, a sufficiently accurate description of the "
 "symptoms is supplied."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:437
+#: ../../source/developer-guide/bugzilla.rst:778
 msgid ""
 "This tends to include things like, *\"Steps to reproduce\"* and where "
 "applicable, any configuration settings and deployment architecture."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:440
+#: ../../source/developer-guide/bugzilla.rst:781
 msgid ""
 "the version field is set to the earliest version known to exhibit the "
 "symptoms, or to have the enhancement be applicable to."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:445
+#: ../../source/developer-guide/bugzilla.rst:786
 msgid ""
-"The version field is usually set to the actual version installed, and needs "
-"to be at most the actual version of the software installed."
+"The version field is usually set to the actual version installed, and "
+"needs to be at most the actual version of the software installed."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:449
+#: ../../source/developer-guide/bugzilla.rst:790
 msgid "the version of software used is actually still supported."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:451
+#: ../../source/developer-guide/bugzilla.rst:792
 msgid ""
 "A software's currently supported versions have those versions (and only "
-"those versions) listed in the version field, and corresponding milestones "
-"available to them."
+"those versions) listed in the version field, and corresponding milestones"
+" available to them."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:455
+#: ../../source/developer-guide/bugzilla.rst:796
 msgid ""
 "If a version turns out to be outdated, the ticket can be CLOSED with a "
-"resolution of WONTFIX, with the version field set to ``unspecified`` and the"
-" milestone set to ``---``."
+"resolution of WONTFIX, with the version field set to ``unspecified`` and "
+"the milestone set to ``---``."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:459
+#: ../../source/developer-guide/bugzilla.rst:800
 msgid ""
-"where appropriate, an attempt is made to resolve the issue without requiring"
-" the involvement of developers."
+"where appropriate, an attempt is made to resolve the issue without "
+"requiring the involvement of developers."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:462
+#: ../../source/developer-guide/bugzilla.rst:803
 msgid ""
 "This usually includes searching other tickets for the same symptoms, "
-"ensuring the latest available version of the software -- available to the "
-"product stream consumed -- is used."
+"ensuring the latest available version of the software -- available to the"
+" product stream consumed -- is used."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:467
+#: ../../source/developer-guide/bugzilla.rst:808
 msgid "Choosing a Version and Milestone"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:469
+#: ../../source/developer-guide/bugzilla.rst:810
 msgid ""
-"Milestones represent the target branch or tag (in source code management) to"
-" which the ticket's resolution is expected to be applied."
+"Milestones represent the target branch or tag (in source code management)"
+" to which the ticket's resolution is expected to be applied."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:472
+#: ../../source/developer-guide/bugzilla.rst:813
 msgid ""
-"For consistency across the various software components that make up Kolab, "
-"which commonly apply an $x.$y.$z versioning scheme, we have the following "
-"\"special\" milestone notations:"
+"For consistency across the various software components that make up "
+"Kolab, which commonly apply an $x.$y.$z versioning scheme, we have the "
+"following \"special\" milestone notations:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:476
+#: ../../source/developer-guide/bugzilla.rst:817
 msgid "``$x.$y-next``"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:478
+#: ../../source/developer-guide/bugzilla.rst:819
 msgid ""
-"The '-next' suffix to the major and minor version of the software is meant "
-"to indicate that the target of the ticket's resolution is the current stable"
-" branch versioned $x.$y, and HEAD thereof -- with one exception, see below."
+"The '-next' suffix to the major and minor version of the software is "
+"meant to indicate that the target of the ticket's resolution is the "
+"current stable branch versioned $x.$y, and HEAD thereof -- with one "
+"exception, see below."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:483
+#: ../../source/developer-guide/bugzilla.rst:824
 msgid ""
-"An example milestone is ``1.0-next`` for **libkolabxml**, which is HEAD of "
-"the libkolabxml-1.0 branch."
+"An example milestone is ``1.0-next`` for **libkolabxml**, which is HEAD "
+"of the libkolabxml-1.0 branch."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:486
+#: ../../source/developer-guide/bugzilla.rst:827
 msgid "``$x.($y+1)-next``"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:488
+#: ../../source/developer-guide/bugzilla.rst:829
 msgid ""
-"It is wrong to refer to a milestone as 'master', which is what this special "
-"milestone represents, because 'master' is not a qualified point in the "
-"source code management history and release history -- or future, for that "
-"matter."
+"It is wrong to refer to a milestone as 'master', which is what this "
+"special milestone represents, because 'master' is not a qualified point "
+"in the source code management history and release history -- or future, "
+"for that matter."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:493
+#: ../../source/developer-guide/bugzilla.rst:834
 msgid ""
-"An example milestone is ``1.1-next`` for **libkolabxml**, which is HEAD of "
-"the master branch."
+"An example milestone is ``1.1-next`` for **libkolabxml**, which is HEAD "
+"of the master branch."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:496
+#: ../../source/developer-guide/bugzilla.rst:837
+msgid ""
+"Packaged versions of this type tend to occur in publically available, "
+"short-term supported releases only, and will typically have a ``$x.$y`` "
+"version, since a package with version ``$x.$y.0`` is considered an update"
+" to version ``$x.$y`` by package managers."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:842
 msgid "``$x.$y.($z+1)`` or ``$x.($y+1).0``"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:498
+#: ../../source/developer-guide/bugzilla.rst:844
 msgid ""
-"The milestone that is one step beyond what is currently released is used in "
-":ref:`bugzilla-release-management`."
+"The milestone that is one step beyond what is currently released is used "
+"in :ref:`bugzilla-release-management`."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:501
+#: ../../source/developer-guide/bugzilla.rst:847
 msgid ""
-"As such, milestones relate directly to the source code management repository"
-" branches, and ultimately also tags (releases)."
+"As such, milestones relate directly to the source code management "
+"repository branches, and ultimately also tags (releases)."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:504
+#: ../../source/developer-guide/bugzilla.rst:850
 msgid ""
 "This brings us to versions -- they too have ``$x.$y-next`` as valid "
 "versions, again representing HEAD of a particular branch, but compiled "
 "directly from said HEAD -- and not a released version."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:508
+#: ../../source/developer-guide/bugzilla.rst:854
 msgid ""
-"These special versions should continue to be available for all supported "
-"branches."
+"These special versions should continue to be available for all branches "
+"currently under some form of support (see also :ref:`bugzilla-supported-"
+"versions-of-software`)."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:512
+#: ../../source/developer-guide/bugzilla.rst:859
 msgid "Assigning a Bugzilla Ticket"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:517
+#: ../../source/developer-guide/bugzilla.rst:864
 msgid "Assignee"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:519
+#: ../../source/developer-guide/bugzilla.rst:866
 msgid ""
-"The assignee of a ticket is the person or the group of persons responsible "
-"for the ticket."
+"The assignee of a ticket is the person or the group of persons "
+"responsible for the ticket."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:522
+#: ../../source/developer-guide/bugzilla.rst:869
 msgid ""
 "A single person being the assignee of a ticket does not mean that ticket "
-"also has to be resolved by that person (unless the ticket has status "
-"IN_PROGRESS). It is, however, the assignee's responsibility to \"bounce\" a "
-"ticket."
+"also has to be resolved by that person (unless the ticket has status :ref"
+":`bugzilla-status-in_progress`). It is, however, the assignee's "
+"responsibility to \"bounce\" a ticket."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:527
+#: ../../source/developer-guide/bugzilla.rst:874
 msgid ""
 "A group of persons being the assignee(s), such as devel@lists.kolab.org, "
 "puts the responsibility on to no one person in particular. Tickets with "
@@ -715,309 +1182,552 @@ msgid ""
 "feels responsible for it."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:535
+#: ../../source/developer-guide/bugzilla.rst:882
 msgid "CC List"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:537
+#: ../../source/developer-guide/bugzilla.rst:884
 msgid ""
 "The CC list of a ticket is a list of people generally interested in its "
 "progress."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:543
+#: ../../source/developer-guide/bugzilla.rst:890
 msgid "QA Contact"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:545
+#: ../../source/developer-guide/bugzilla.rst:892
 msgid ""
-"The QA contact of a ticket is the person or group of persons to contact when"
-" the assignee wants to verify and/or coordinate how the validation of the "
-"ticket's resolution is to be performed."
+"The QA contact of a ticket is the person or group of persons to contact "
+"when the assignee wants to verify and/or coordinate how the validation of"
+" the ticket's resolution is to be performed."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:552
+#: ../../source/developer-guide/bugzilla.rst:899
 msgid "See Also"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:554
+#: ../../source/developer-guide/bugzilla.rst:901
 msgid ""
-"The **See Also** field can be used to refer to external Bugzilla entries, "
-"such as those on the `KDE Bugzilla` or `Cyrus IMAP Bugzilla`."
+"The **See Also** field can be used to refer to external Bugzilla entries,"
+" such as those on the `KDE Bugzilla` or `Cyrus IMAP Bugzilla`."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:560
+#: ../../source/developer-guide/bugzilla.rst:907
 msgid "Priority & Severity"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:562
+#: ../../source/developer-guide/bugzilla.rst:909
 msgid ""
-"The priority field in a Bugzilla ticket establishes (between tickets) the "
-"order in which tickets should be worked on (highest priority first)."
+"The priority field in a Bugzilla ticket establishes (between tickets) the"
+" order in which tickets should be worked on (highest priority first)."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:565
+#: ../../source/developer-guide/bugzilla.rst:912
 msgid "As a rule of thumb, tickets that qualify for a higher priority are:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:567
+#: ../../source/developer-guide/bugzilla.rst:914
 msgid "Blocking a number of other tickets,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:569
+#: ../../source/developer-guide/bugzilla.rst:916
 msgid "Have gone unanswered and/or unresolved for too long,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:571
+#: ../../source/developer-guide/bugzilla.rst:918
 msgid ""
-"Potentially have great impact, such as security issues and/or actual loss of"
-" data,"
+"Potentially have great impact, such as security issues and/or actual loss"
+" of data,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:574
+#: ../../source/developer-guide/bugzilla.rst:921
 msgid "Generally need to be resolved sooner rather than later."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:579
+#: ../../source/developer-guide/bugzilla.rst:926
 msgid "Effort Involved"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:581
+#: ../../source/developer-guide/bugzilla.rst:928
 msgid ""
 "Estimating and tracking the effort involved with a certain ticket is a "
 "feature used by and available to Kolab Systems employees exclusively."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:587
+#: ../../source/developer-guide/bugzilla.rst:934
+msgid "Supported Versions of Software"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:936
+msgid ""
+"Supported products have a corresponding classification and product in "
+"Bugzilla. Supported versions of product have one or more corresponding "
+"milestones."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:940
+msgid ""
+"In addition to supported versions of products having milestones, there is"
+" also the *version* field."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:943
+msgid "Here's how they work together."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:945
+msgid ""
+"Past releases of software called ``foo`` include versions ``0.1.0``, "
+"``0.1.1``, ``1.0.0``, ``1.0.1``, ``2.0.0``, ``2.1.0``."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:948
+msgid ""
+"The ``0.1`` branch [#]_ had been used for the alpha development stage, "
+"and had been included in a product stream made available to the community"
+" 2 years ago."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:952
+msgid ""
+"Since the community does not support Kolab product streams that long, "
+"versions ``0.1.0`` and ``0.1.1`` are therefore no longer supported. The "
+"general answer to any ticket against these versions is *\"Please upgrade "
+"to a supported version\"*, and these tickets are CLOSED - WONTFIX."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:958
+msgid ""
+"The versions should remain available in *version* field, however, so that"
+" people can indicate they do in fact run that old a version of the "
+"software."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:962
+msgid ""
+"However, **no milestones** for the ``0.1`` branch are available any "
+"longer, indicating the version stream is no longer supported. This would "
+"include, for example, the following milestones:"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:966
+msgid "``0.1.0`` -- already released and therefore not a valid target milestone."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:969
+msgid "``0.1.1`` -- already released and therefore not a valid target milestone."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:972
+msgid ""
+"``0.1-next`` -- further development as well as support on the ``0.1`` "
+"series has been suspended."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:975
+msgid ""
+"An issue reported against ``1.0.0`` may have already been resolved in "
+"``1.0.1``."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:978
+msgid ""
+"In such cases, there should be a ticket for the issue, to which a new "
+"ticket can be closed as a duplicate. In this scenario, the milestone has "
+"become irrelevant."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:982
+msgid ""
+"An issue reported against ``1.0.0`` may not yet have been resolved at "
+"all, and would therefore need to be resolved in a later ``1.0``- series "
+"release. The milestone to use is therefore ``1.0-next``, even though "
+"there may already a version available that is more recent than ``1.0.0``,"
+" namely ``1.0.1``."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:990
+msgid ""
+"Note that the resolution for this ticket may need to be applied to the "
+"following branches (in order):"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:993
+msgid "master"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:994
+msgid "foo-2.1"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:995
+msgid "foo-2.0"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:996
+msgid "foo-1.0"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:998
+msgid "See also :ref:`bugzilla-cloning-tickets`."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:1000
+msgid ""
+"Further note that an issue in one version of the software may simply not "
+"exist in other versions of the software (and may again pop up in yet "
+"later versions)."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:1004
+msgid ""
+"It's recommended to clone such tickets as quickly as possible, so they "
+"may function as a reminder to check whether or not the issue exists in a "
+"version of the software you're not currently prioritizing."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:1012
 msgid "Release Management"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:589
+#: ../../source/developer-guide/bugzilla.rst:1014
 msgid "Release Management includes the following steps:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:591
+#: ../../source/developer-guide/bugzilla.rst:1016
 msgid ""
-"When a release is planned, a milestone ``$x.$y.($z+1)`` or ``$x.($y+1).0`` "
-"is created (exceptions apply to pre-releases, which have a format of "
-"``$x.$y-{alpha,beta,rc}[0-9]+``)."
+"When a release is planned, a milestone ``$x.$y.($z+1)`` or "
+"``$x.($y+1).0`` is created (exceptions apply to pre-releases, which have "
+"a format of ``$x.$y-{alpha,beta,rc}[0-9]+``)."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:595
+#: ../../source/developer-guide/bugzilla.rst:1020
 msgid ""
 "For example, when a release is planned for the stable *1.0* series of "
-"**libkolabxml**, a milestone **1.0.2** is created, as *1.0.1* had once been "
-"released."
+"**libkolabxml**, a milestone **1.0.2** is created, as *1.0.1* had once "
+"been released."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:599
+#: ../../source/developer-guide/bugzilla.rst:1024
 msgid ""
 "All tickets with milestones ``$x.$y-next`` (for a teeny release) or all "
 "tickets with milestones ``$x.($y+1)-next`` (for a minor release) are now "
 "evaluated."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:603
+#: ../../source/developer-guide/bugzilla.rst:1028
 msgid "What actually happens with the tickets depends on their status:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:605
-msgid ""
-"All tickets with status PENDING_RELEASE are set against the new milestone."
+#: ../../source/developer-guide/bugzilla.rst:1030
+msgid "All tickets with status PENDING_RELEASE are set against the new milestone."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:608
+#: ../../source/developer-guide/bugzilla.rst:1033
 msgid ""
 "After verifying the related modifications are available in the correct "
-"branch, all tickets with status RESOLVED are set against the new milestone, "
+"branch, all tickets with status RESOLVED are set against the new "
+"milestone, and set to PENDING_RELEASE."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:1039
+msgid ""
+"For a 1.0 version issue resolved in a 1.1 release, should the targeted "
+"release include a backported version of the 1.1 resolution, then the "
+"ticket should be cloned."
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:1043
+msgid ""
+"All tickets with status IN_PACKAGING are set against the new milestone, "
 "and set to PENDING_RELEASE."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:614
+#: ../../source/developer-guide/bugzilla.rst:1046
 msgid ""
-"For a 1.0 version issue resolved in a 1.1 release, should the targeted "
-"release include a backported version of the 1.1 resolution, then the ticket "
-"should be cloned."
+"All tickets with status :ref:`bugzilla-status-assigned` and :ref"
+":`bugzilla-status-in_progress` are set against the new milestone."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:618
+#: ../../source/developer-guide/bugzilla.rst:1050
 msgid ""
-"All tickets with status IN_PACKAGING are set against the new milestone, and "
-"set to PENDING_RELEASE."
+"Doing so ensures tickets are assessed before a release button is "
+"triggered, and do not linger against a ``-next`` milestone indefinitely."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:621
-msgid ""
-"All tickets with status ASSIGNED and IN_PROGRESS are set against the new "
-"milestone."
-msgstr ""
-
-#: ../../source/developer-guide/bugzilla.rst:624
-msgid ""
-"Doing so ensures tickets are assessed before a release button is triggered, "
-"and do not linger against a ``-next`` milestone indefinitely."
-msgstr ""
-
-#: ../../source/developer-guide/bugzilla.rst:628
+#: ../../source/developer-guide/bugzilla.rst:1054
 msgid ""
 "It is at this moment that assignees are encouraged to review the tickets "
-"against the new milestone, and determine which ones they might be able to "
-"include resolutions for, without necessarily delaying the release "
+"against the new milestone, and determine which ones they might be able to"
+" include resolutions for, without necessarily delaying the release "
 "significantly."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:633
+#: ../../source/developer-guide/bugzilla.rst:1059
 msgid ""
-"The tickets that cannot be resolved within a reasonable timeframe are to be "
-"re-scheduled against a new appriopriate milestone."
+"The tickets that cannot be resolved within a reasonable timeframe are to "
+"be re-scheduled against a new appriopriate milestone."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:637
+#: ../../source/developer-guide/bugzilla.rst:1063
 msgid ""
 "Bugzilla versions and milestones are up-to-date, including their active "
 "state."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:640
+#: ../../source/developer-guide/bugzilla.rst:1066
 msgid "New milestones are created when a release is planned,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:642
+#: ../../source/developer-guide/bugzilla.rst:1068
 msgid "New milestones are created when software is branched off,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:644
+#: ../../source/developer-guide/bugzilla.rst:1070
 msgid "The versioning policy is consistent,"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:646
+#: ../../source/developer-guide/bugzilla.rst:1072
 msgid ""
 "The new milestone includes an assessment on each ticket of type *bug* "
 "possibly relevant to the upcoming release."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:652
+#: ../../source/developer-guide/bugzilla.rst:1078
 msgid "Example Ticket: Sieve Date Extension Support for Cyrus IMAP"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:654
+#: ../../source/developer-guide/bugzilla.rst:1080
 msgid ""
 "The Sieve Date extension is targeted to be used as a means to clause "
 "vacation actions to be applied during a window of time in the future."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:657
+#: ../../source/developer-guide/bugzilla.rst:1083
 msgid ""
 "For example, a user could configure to be on holiday next week (today is "
 "Sunday, August 3rd, 2014):"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:671
+#: ../../source/developer-guide/bugzilla.rst:1097
 msgid "This is a coordinated effort between the following products:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:673
+#: ../../source/developer-guide/bugzilla.rst:1099
 msgid "Cyrus IMAP"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:674
+#: ../../source/developer-guide/bugzilla.rst:1100
 msgid "Roundcube"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:675
+#: ../../source/developer-guide/bugzilla.rst:1101
 msgid "Kontact"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:676
+#: ../../source/developer-guide/bugzilla.rst:1102
 msgid "PyKolab"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:677
+#: ../../source/developer-guide/bugzilla.rst:1103
 msgid "Sievelib"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:679
+#: ../../source/developer-guide/bugzilla.rst:1105
 msgid ""
 "An original ticket is created: `#3242`_. This is the generic feature "
 "enhancement request for the Kolab Groupware server as a whole."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:682
+#: ../../source/developer-guide/bugzilla.rst:1108
 msgid ""
-"It is therefore not assigned to any one particular developer, but to someone"
-" who can track the progress of the full implementation of the functionality "
-"for all components involved."
+"It is therefore not assigned to any one particular developer, but to "
+"someone who can track the progress of the full implementation of the "
+"functionality for all components involved."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:688
+#: ../../source/developer-guide/bugzilla.rst:1114
 msgid ""
 "At the time of creation, `#3242`_ blocks a release tracker ticket to "
-"indicate the ticket's resolution is, at that point, intended to be included "
-"in the target release of the tracker ticket."
+"indicate the ticket's resolution is, at that point, intended to be "
+"included in the target release of the tracker ticket."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:692
+#: ../../source/developer-guide/bugzilla.rst:1118
 msgid ""
-"In this example case, the tracker ticket being blocked is `KE14`_ for Kolab "
-"Enterprise 14 -- this ticket is regrettably private and visible to Kolab "
-"Systems employees only."
+"In this example case, the tracker ticket being blocked is `KE14`_ for "
+"Kolab Enterprise 14 -- this ticket is regrettably private and visible to "
+"Kolab Systems employees only."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:696
+#: ../../source/developer-guide/bugzilla.rst:1122
 msgid ""
-"In other cases, the tracker ticket may be `K3.3`_, to indicate the feature "
-"or fix is to be included in Kolab 3.3."
+"In other cases, the tracker ticket may be `K3.3`_, to indicate the "
+"feature or fix is to be included in Kolab 3.3."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:699
+#: ../../source/developer-guide/bugzilla.rst:1125
 msgid ""
 "This assignee is responsible for creating the additional tickets to each "
 "individual component involved, including:"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:702
+#: ../../source/developer-guide/bugzilla.rst:1128
 msgid "`#3243`_ for Cyrus IMAP"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:704
+#: ../../source/developer-guide/bugzilla.rst:1130
 msgid ""
 "For the actual implementation of the Sieve Date Extension, Cyrus IMAP "
 "requires the enhancement first."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:707
+#: ../../source/developer-guide/bugzilla.rst:1133
 msgid "`#3437`_ for Roundcube"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:709
-#: ../../source/developer-guide/bugzilla.rst:714
+#: ../../source/developer-guide/bugzilla.rst:1135
+#: ../../source/developer-guide/bugzilla.rst:1140
 msgid ""
-"For the functionality in Cyrus IMAP to be meaningful, Roundcube will need to"
-" expose the necessary UI components for users."
+"For the functionality in Cyrus IMAP to be meaningful, Roundcube will need"
+" to expose the necessary UI components for users."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:712
+#: ../../source/developer-guide/bugzilla.rst:1138
 msgid "`#xxxx`_ for Kontact"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:717
+#: ../../source/developer-guide/bugzilla.rst:1143
 msgid "`#3529`_ for PyKolab"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:719
+#: ../../source/developer-guide/bugzilla.rst:1145
 msgid ""
 "The availability of the functionality depends on **pykolab** setting up "
 "Cyrus IMAP correctly (i.e. the setting ``sieve_extensions`` in "
-":manpage:`imapd.conf(5)` needs the new extension name), and using sievelib, "
-"the Kolab daemon may use settings from LDAP."
+":manpage:`imapd.conf(5)` needs the new extension name), and using "
+"sievelib, the Kolab daemon may use settings from LDAP."
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:724
+#: ../../source/developer-guide/bugzilla.rst:1150
 msgid "`#xxxx`_ for Sievelib"
 msgstr ""
 
-#: ../../source/developer-guide/bugzilla.rst:726
+#: ../../source/developer-guide/bugzilla.rst:1152
 msgid ""
-"The Python Sieve management library does not have a module to handle the new"
-" date extension, and may need amending."
+"The Python Sieve management library does not have a module to handle the "
+"new date extension, and may need amending."
 msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:1156
+msgid "Footnotes"
+msgstr ""
+
+#: ../../source/developer-guide/bugzilla.rst:1159
+msgid ""
+"The \"0.1 branch\" may have in fact not ever been a branch as such, as "
+"initial development may simply have moved the master branch forward fast."
+msgstr ""
+
+#~ msgid ""
+#~ "A ticket starts in status UNCONFIRMED"
+#~ " to indicate it has not yet "
+#~ "been \"triaged\" -- see :ref:`bugzilla-"
+#~ "triaging-bugzilla-tickets`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In rare circumstances, an UNCONFIRMED "
+#~ "ticket may be directly moved to "
+#~ "status CLOSED -- usually along with "
+#~ "a resolution of WONTFIX, DEFERRED or "
+#~ "NOTABUG."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A ticket in status NEW is waiting"
+#~ " to be assigned to a developer, "
+#~ "and may as such be taken on "
+#~ "by a product manager instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The target milestone indicated in the"
+#~ " ticket is the version of the "
+#~ "software to which the resolution should"
+#~ " apply,"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Should the former conditions or "
+#~ "validation steps not be complete, such"
+#~ " as when an issue's resolution can"
+#~ " be created for and applied to "
+#~ "the \"next\" version of the software,"
+#~ " but not the \"current stable\" "
+#~ "version thereof, then it is the "
+#~ "developer's responsibility to contact product"
+#~ " management."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "While a ticket is in status "
+#~ "IN_PROGRESS, a developer is actually "
+#~ "working on the ticket."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the work is completed, and "
+#~ "the issue's resolution has been made "
+#~ "available, the status of the ticket "
+#~ "is to be moved to :ref:`bugzilla-"
+#~ "status-resolved`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NEEDSINFO is a status that indicates "
+#~ "the ticket needs additional information "
+#~ "before it can move on to the "
+#~ "next stage."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Install the NEEDSINFO extension, so that"
+#~ " not only can the status be "
+#~ "set, one can explicitly supply from "
+#~ "whom the additional information is "
+#~ "needed, said person is notified, and "
+#~ "said person can \"clear\" the NEEDSINFO"
+#~ " state when the requested information "
+#~ "is supplied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This section is a placeholder to "
+#~ "document the individual steps outlined "
+#~ "in the forementioned diagram."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "These special versions should continue "
+#~ "to be available for all supported "
+#~ "branches."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A single person being the assignee "
+#~ "of a ticket does not mean that "
+#~ "ticket also has to be resolved by"
+#~ " that person (unless the ticket has"
+#~ " status IN_PROGRESS). It is, however, "
+#~ "the assignee's responsibility to \"bounce\""
+#~ " a ticket."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All tickets with status ASSIGNED and "
+#~ "IN_PROGRESS are set against the new "
+#~ "milestone."
+#~ msgstr ""
+

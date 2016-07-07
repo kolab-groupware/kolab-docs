@@ -1,195 +1,206 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
-# This file is distributed under the same license as the Kolab Groupware package.
-# 
+# This file is distributed under the same license as the Kolab Groupware
+# package.
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:37+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/kolab-documentation/language/de/)\n"
+"Language-Team: German (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../source/client-configuration/osx.rst:45
+#: ../../source/client-configuration/osx.rst:91
 msgid "Mac OS X Native Applications"
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:51
+#: ../../source/client-configuration/osx.rst:97
 msgid "Apple Mail"
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:53
+#: ../../source/client-configuration/osx.rst:99
 msgid ""
-"When you start Apple Mail the first time, it will ask you to provide your "
-"name, your email address and your password. Please provide your "
-"|service_name| credentials there. In the following screens, please give this"
-" information:"
+"When you start Apple Mail the first time, it will ask you to provide your"
+" name, your email address and your password. Please provide your "
+"|service_name| credentials there. In the following screens, please give "
+"this information:"
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:58
-#: ../../source/client-configuration/osx.rst:141
-#: ../../source/client-configuration/osx.rst:213
+#: ../../source/client-configuration/osx.rst:104
 msgid "User Name: Your full |service_name| email address like |**useremail**|"
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:59
+#: ../../source/client-configuration/osx.rst:105
 msgid "Incoming Mail Server: |**imap_host**|"
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:60
+#: ../../source/client-configuration/osx.rst:106
 msgid "Outgoing Mail Server: |**smtp_host**|"
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:62
+#: ../../source/client-configuration/osx.rst:108
 msgid "Please see the screenshots below for details."
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:118
+#: ../../source/client-configuration/osx.rst:164
 msgid ""
 "Some versions of OS X fail at auto-detecting the correct settings and "
 "require the following manual steps:"
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:121
+#: ../../source/client-configuration/osx.rst:167
 msgid "Go to *Accounts* -> *Account Information*"
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:122
+#: ../../source/client-configuration/osx.rst:168
 msgid "Select *Outgoing Mail Server (SMTP)* -> *Edit SMTP Server list...*"
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:123
+#: ../../source/client-configuration/osx.rst:169
 msgid ""
 "In the *Advanced* tab, select *Use custom port* and set the port to "
 "|**smtp_port**|."
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:125
+#: ../../source/client-configuration/osx.rst:171
 msgid ""
 "Please check the option **Use Secure Sockets Layer (SSL)** and use "
 "**Password** as authentication method."
 msgstr ""
 
-#: ../../source/client-configuration/osx.rst:133
-msgid "iCal"
-msgstr ""
+#~ msgid "iCal"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:135
-msgid ""
-"In order to set up iCal, please open the preferences from the menu bar. Then"
-" choose  *Accounts* and add a new account by clicking the *+* Icon in the "
-"left bottom corner as indicated in the second screenshot below. Please enter"
-" the following information in the dialog."
-msgstr ""
+#~ msgid ""
+#~ "In order to set up iCal, please"
+#~ " open the preferences from the menu"
+#~ " bar. Then choose  *Accounts* and add"
+#~ " a new account by clicking the "
+#~ "*+* Icon in the left bottom corner"
+#~ " as indicated in the second "
+#~ "screenshot below. Please enter the "
+#~ "following information in the dialog."
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:140
-msgid "Account Type: **CalDAV**"
-msgstr ""
+#~ msgid "Account Type: **CalDAV**"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:143
-msgid "Server Address: |**caldav_host**|"
-msgstr ""
+#~ msgid "Server Address: |**caldav_host**|"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:191
-msgid ""
-"In Mac OS X 10.10 (Yosemite), the Calendar does not send event invitations. "
-"There is not much we can do at the moment, as Apple broke the behavior "
-"without announcement. If you rely on invitations from iCal, please consider "
-"not to upgrade to Yosemite for the moment. If you have already upgraded, "
-"please consider making your invitations from the webclient."
-msgstr ""
+#~ msgid ""
+#~ "In Mac OS X 10.10 (Yosemite), the"
+#~ " Calendar does not send event "
+#~ "invitations. There is not much we "
+#~ "can do at the moment, as Apple "
+#~ "broke the behavior without announcement. "
+#~ "If you rely on invitations from "
+#~ "iCal, please consider not to upgrade "
+#~ "to Yosemite for the moment. If you"
+#~ " have already upgraded, please consider "
+#~ "making your invitations from the "
+#~ "webclient."
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:197
-msgid "Reminders"
-msgstr ""
+#~ msgid "Reminders"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:199
-msgid ""
-"OS X 10.8 has a dedicated Reminders program which can show your tasks from "
-"|service_name|. You do not need to set it up separately. As soon as your "
-":ref:`settings-clientconfig-osx-ical` is set up, Reminders will also be."
-msgstr ""
+#~ msgid ""
+#~ "OS X 10.8 has a dedicated "
+#~ "Reminders program which can show your"
+#~ " tasks from |service_name|. You do "
+#~ "not need to set it up separately."
+#~ " As soon as your :ref:`settings-"
+#~ "clientconfig-osx-ical` is set up, "
+#~ "Reminders will also be."
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:205
-msgid "Contacts"
-msgstr ""
+#~ msgid "Contacts"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:207
-msgid ""
-"In order to set up Contacts, please open the preferences from the menu bar. "
-"Then choose  *Accounts* and add a new account by clicking the *+* Icon in "
-"the left bottom corner as indicated in the second screenshot below. Please "
-"enter the following information in the dialog."
-msgstr ""
+#~ msgid ""
+#~ "In order to set up Contacts, "
+#~ "please open the preferences from the "
+#~ "menu bar. Then choose  *Accounts* and"
+#~ " add a new account by clicking "
+#~ "the *+* Icon in the left bottom"
+#~ " corner as indicated in the second"
+#~ " screenshot below. Please enter the "
+#~ "following information in the dialog."
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:212
-msgid "Account Type: **CardDAV**"
-msgstr ""
+#~ msgid "Account Type: **CardDAV**"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:215
-msgid "Server Address: |**carddav_host**|"
-msgstr ""
+#~ msgid "Server Address: |**carddav_host**|"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:258
-msgid "Files"
-msgstr ""
+#~ msgid "Files"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:260
-msgid ""
-"There is different possibilities to access your |service_name| files with "
-"your Mac. We show two of them below."
-msgstr ""
+#~ msgid ""
+#~ "There is different possibilities to "
+#~ "access your |service_name| files with "
+#~ "your Mac. We show two of them "
+#~ "below."
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:264
-msgid "Using Cyberduck"
-msgstr ""
+#~ msgid "Using Cyberduck"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:266
-msgid ""
-"`Cyberduck <http://cyberduck.ch/>`__ is a Swiss Free Software cloud storage "
-"browser for Mac. This is the recommended way to access your files. After you"
-" have installed it, add a new WebDAV connection as shown in the screenshots "
-"below. Please enter the following information:"
-msgstr ""
+#~ msgid ""
+#~ "`Cyberduck <http://cyberduck.ch/>`__ is a "
+#~ "Swiss Free Software cloud storage "
+#~ "browser for Mac. This is the "
+#~ "recommended way to access your files."
+#~ " After you have installed it, add "
+#~ "a new WebDAV connection as shown "
+#~ "in the screenshots below. Please enter"
+#~ " the following information:"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:271
-msgid "Server Name: |**webdav_host**|"
-msgstr ""
+#~ msgid "Server Name: |**webdav_host**|"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:272
-msgid "Port: **443**"
-msgstr ""
+#~ msgid "Port: **443**"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:273
-msgid "Username: Your full |service_name| email address like |**useremail**|"
-msgstr ""
+#~ msgid "Username: Your full |service_name| email address like |**useremail**|"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:274
-msgid "Path: **/Files**"
-msgstr ""
+#~ msgid "Path: **/Files**"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:312
-msgid "Using Native OS X"
-msgstr ""
+#~ msgid "Using Native OS X"
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:314
-msgid ""
-"It is also possible to use no special program, but just your Mac OS X "
-"operating system to access your files. However, **we do not recommend** to "
-"do this, as this is implemented poorly by Apple and therefore very slow."
-msgstr ""
+#~ msgid ""
+#~ "It is also possible to use no "
+#~ "special program, but just your Mac "
+#~ "OS X operating system to access "
+#~ "your files. However, **we do not "
+#~ "recommend** to do this, as this is"
+#~ " implemented poorly by Apple and "
+#~ "therefore very slow."
+#~ msgstr ""
 
-#: ../../source/client-configuration/osx.rst:318
-msgid ""
-"If you still want to do this, please open the *Go* menu in your finder, and "
-"enter |**webdav_uri**|/**Files** as the *Server Address*. Then click "
-"*Connect* and enter your full email address and password. Afterwards, your "
-"|service_name| files will show up in your file browser as a shared resource."
-msgstr ""
+#~ msgid ""
+#~ "If you still want to do this, "
+#~ "please open the *Go* menu in your"
+#~ " finder, and enter |**webdav_uri**|/**Files** "
+#~ "as the *Server Address*. Then click "
+#~ "*Connect* and enter your full email "
+#~ "address and password. Afterwards, your "
+#~ "|service_name| files will show up in "
+#~ "your file browser as a shared "
+#~ "resource."
+#~ msgstr ""
+

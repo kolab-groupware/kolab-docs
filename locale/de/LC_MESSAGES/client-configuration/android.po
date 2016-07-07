@@ -1,240 +1,276 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
-# This file is distributed under the same license as the Kolab Groupware package.
-# 
+# This file is distributed under the same license as the Kolab Groupware
+# package.
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:37+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/kolab-documentation/language/de/)\n"
+"Language-Team: German (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../source/client-configuration/android.rst:46
+#: ../../source/client-configuration/android.rst:92
 msgid "Android"
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:51
+#: ../../source/client-configuration/android.rst:97
+#, python-format
 msgid ""
-"This page describes how you can access your data from your |service_name| "
-"account with your `Android "
+"This page describes how you can access your data from your |service_name|"
+" account with your `Android "
 "<https://en.wikipedia.org/wiki/Android_%28operating_system%29>`__ mobile "
 "phone or tablet. Everything will be synchronized and keep the same state "
 "across all your devices."
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:57
+#: ../../source/client-configuration/android.rst:103
 msgid ""
-"Please follow the instructions below closely and keep in mind that we have "
-"no influence over the specific app or Android version that you might be "
-"using."
-msgstr ""
-
-#: ../../source/client-configuration/android.rst:64
-msgid "K-9 Mail"
-msgstr ""
-
-#: ../../source/client-configuration/android.rst:66
-msgid ""
-"We recommend to use the IMAP protocol for email. The standard email app on "
-"Android supports it, so do most other apps. However, we found that `K-9 Mail"
-" <https://play.google.com/store/apps/details?id=com.fsck.k9>`__ works best "
-"and therefore provide the instructions below for that. You can still use any"
-" other IMAP capable app like the default email application."
-msgstr ""
-
-#: ../../source/client-configuration/android.rst:72
-msgid ""
-"In order to set up your K-9 Mail, just add a new account and provide your "
-"|service_name| email address as well as your password. It will disover all "
-"necessary settings automatically as shown in the screenshots below."
-msgstr ""
-
-#: ../../source/client-configuration/android.rst:105
-msgid "Your account is now set up!"
-msgstr ""
-
-#: ../../source/client-configuration/android.rst:107
-msgid ""
-"If the settings could **not** be discovered automatically for some reason, "
-"please choose *Manual Setup* and follow the instructions below."
+"Please follow the instructions below closely and keep in mind that we "
+"have no influence over the specific app or Android version that you might"
+" be using."
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:110
+msgid "K-9 Mail"
+msgstr ""
+
+#: ../../source/client-configuration/android.rst:112
+msgid ""
+"We recommend to use the IMAP protocol for email. The standard email app "
+"on Android supports it, so do most other apps. However, we found that "
+"`K-9 Mail <https://play.google.com/store/apps/details?id=com.fsck.k9>`__ "
+"works best and therefore provide the instructions below for that. You can"
+" still use any other IMAP capable app like the default email application."
+msgstr ""
+
+#: ../../source/client-configuration/android.rst:119
+msgid ""
+"In order to set up your K-9 Mail, just add a new account and provide your"
+" |service_name| email address as well as your password."
+msgstr ""
+
+#: ../../source/client-configuration/android.rst:122
+msgid ""
+"It will disover all necessary settings automatically as shown in the "
+"screenshots below."
+msgstr ""
+
+#: ../../source/client-configuration/android.rst:154
+msgid "Your account is now set up!"
+msgstr ""
+
+#: ../../source/client-configuration/android.rst:156
+msgid ""
+"If the settings could **not** be discovered automatically for some "
+"reason, please choose *Manual Setup* and follow the instructions below."
+msgstr ""
+
+#: ../../source/client-configuration/android.rst:159
 msgid "Choose *IMAP* as account type."
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:111
-#: ../../source/client-configuration/android.rst:122
+#: ../../source/client-configuration/android.rst:161
+#: ../../source/client-configuration/android.rst:181
 msgid ""
 "Username: Provide your primary and full email address here, e.g. "
 "|**useremail**|"
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:112
+#: ../../source/client-configuration/android.rst:164
 msgid "IMAP server: |**imap_host**|"
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:113
+#: ../../source/client-configuration/android.rst:166
 msgid "Security: |**imap_ssl**|"
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:114
+#: ../../source/client-configuration/android.rst:168
 msgid "Authentication: **Normal pasword**"
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:115
-msgid "Port: |**imap_port**|"
-msgstr ""
-
-#: ../../source/client-configuration/android.rst:117
-msgid ""
-"Then press next and enter the following information for the outgoing server "
-"settings:"
-msgstr ""
-
-#: ../../source/client-configuration/android.rst:119
-msgid "SMTP server: |**smtp_host**|"
-msgstr ""
-
-#: ../../source/client-configuration/android.rst:120
-msgid "Security: |**smtp_ssl**|"
-msgstr ""
-
-#: ../../source/client-configuration/android.rst:121
-msgid "Port: |**smtp_port**|"
-msgstr ""
-
 #: ../../source/client-configuration/android.rst:170
-msgid "DAVdroid for Calendars and Contacts"
+msgid "Port: |**imap_port**|"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:172
 msgid ""
-"This section describes how you can get your calendars and contacts from "
-"|service_name| on your Android device using the Free Software `DAVdroid app "
-"<http://davdroid.bitfire.at/what-is-davdroid>`__. You can also use other "
-"apps that can do CalDAV/CardDAV like the non-free `CaldDAV-sync and CardDAV-"
-"Sync apps <http://dmfs.org/>`__. But we generally recommend to use software "
-"that respects your freedom. Another possibility is using the built-in Active"
-" Sync support. Please see :ref:`settings-clientconfig-android-activesync` "
-"for more information."
+"Then press next and enter the following information for the outgoing "
+"server settings:"
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:181
-msgid ""
-"You can get DAVdroid from `Google Play "
-"<https://play.google.com/store/apps/details?id=at.bitfire.davdroid>`__ or "
-"the `F-Droid app repository "
-"<https://f-droid.org/repository/browse/?fdid=at.bitfire.davdroid>`__."
+#: ../../source/client-configuration/android.rst:175
+msgid "SMTP server: |**smtp_host**|"
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:183
-msgid ""
-"After installing, it will appear in your list of apps. Please open the app."
+#: ../../source/client-configuration/android.rst:177
+msgid "Security: |**smtp_ssl**|"
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:185
-msgid ""
-"On the welcome screen, please click the little key icon with the plus to set"
-" up your |service_name| account."
+#: ../../source/client-configuration/android.rst:179
+msgid "Port: |**smtp_port**|"
 msgstr ""
 
-#: ../../source/client-configuration/android.rst:186
-msgid ""
-"Choose DAVdroid in the next screen and then click *Log in with email "
-"address*."
-msgstr ""
+#~ msgid ""
+#~ "In order to set up your K-9 "
+#~ "Mail, just add a new account and"
+#~ " provide your |service_name| email address"
+#~ " as well as your password. It "
+#~ "will disover all necessary settings "
+#~ "automatically as shown in the "
+#~ "screenshots below."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:187
-msgid ""
-"Provide your full and primary |service_name| address as well as your "
-"password."
-msgstr ""
+#~ msgid "DAVdroid for Calendars and Contacts"
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:188
-msgid ""
-"The next screen shows all your calendars and address books. Select those "
-"that you want to synchronize to your Android device. Please note that as of "
-"now, Android only allows one address book per account. You can add more by "
-"just adding the same account again later."
-msgstr ""
+#~ msgid ""
+#~ "This section describes how you can "
+#~ "get your calendars and contacts from "
+#~ "|service_name| on your Android device "
+#~ "using the Free Software `DAVdroid app"
+#~ " <http://davdroid.bitfire.at/what-is-davdroid>`__. "
+#~ "You can also use other apps that"
+#~ " can do CalDAV/CardDAV like the "
+#~ "non-free `CaldDAV-sync and CardDAV-"
+#~ "Sync apps <http://dmfs.org/>`__. But we "
+#~ "generally recommend to use software that"
+#~ " respects your freedom. Another possibility"
+#~ " is using the built-in Active "
+#~ "Sync support. Please see :ref:`settings-"
+#~ "clientconfig-android-activesync` for more "
+#~ "information."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:192
-msgid ""
-"On the next screen, please provide the email address you use for calendar "
-"invitations with this account."
-msgstr ""
+#~ msgid ""
+#~ "You can get DAVdroid from `Google "
+#~ "Play "
+#~ "<https://play.google.com/store/apps/details?id=at.bitfire.davdroid>`__"
+#~ " or the `F-Droid app repository "
+#~ "<https://f-droid.org/repository/browse/?fdid=at.bitfire.davdroid>`__."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:193
-msgid ""
-"After clicking *Add Account* in the top right corner, your account is "
-"created and will now synchronize your contacts and events."
-msgstr ""
+#~ msgid ""
+#~ "After installing, it will appear in "
+#~ "your list of apps. Please open the"
+#~ " app."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:243
-msgid ""
-"If the auto-discovery at step 4 did not work, then choose *Login with URL "
-"and user name* instead. In the next screen enter |**caldav_host**| in the "
-"server URL and make sure to use **https**. Afterwards, you can continue with"
-" step 6 above."
-msgstr ""
+#~ msgid ""
+#~ "On the welcome screen, please click "
+#~ "the little key icon with the plus"
+#~ " to set up your |service_name| "
+#~ "account."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:273
-msgid "ActiveSync for Calendars and Contacts"
-msgstr ""
+#~ msgid ""
+#~ "Choose DAVdroid in the next screen "
+#~ "and then click *Log in with email"
+#~ " address*."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:275
-msgid ""
-"This section describes how you can get your calendars and contacts from "
-"|service_name| on your Android device. It assumes that you will use Mobile "
-"Synchronization with *ActiveSync* which will integrate nicely into your "
-"default Android apps. Another possibility is using CalDAV/CardDAV. Please "
-"see :ref:`settings-clientconfig-android-davdroid` for more information."
-msgstr ""
+#~ msgid ""
+#~ "Provide your full and primary "
+#~ "|service_name| address as well as your"
+#~ " password."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:281
-msgid "Please go to *Settings* -> *Account* -> *Add Account*"
-msgstr ""
+#~ msgid ""
+#~ "The next screen shows all your "
+#~ "calendars and address books. Select "
+#~ "those that you want to synchronize "
+#~ "to your Android device. Please note "
+#~ "that as of now, Android only "
+#~ "allows one address book per account. "
+#~ "You can add more by just adding"
+#~ " the same account again later."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:282
-msgid "Then choose either *Exchange* or *Corporate*."
-msgstr ""
+#~ msgid ""
+#~ "On the next screen, please provide "
+#~ "the email address you use for "
+#~ "calendar invitations with this account."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:283
-msgid ""
-"Afterwards, please provider your primary and full email address, e.g. "
-"|**useremail**|"
-msgstr ""
+#~ msgid ""
+#~ "After clicking *Add Account* in the "
+#~ "top right corner, your account is "
+#~ "created and will now synchronize your"
+#~ " contacts and events."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:284
-msgid ""
-"When asked for incoming server settings, please also give your full email "
-"address as username. Older versions of Android might require you to provide "
-"the username in the form of **domain.tld\\\\user** where **user@domain.tld**"
-" is your primary email address."
-msgstr ""
+#~ msgid ""
+#~ "If the auto-discovery at step 4"
+#~ " did not work, then choose *Login "
+#~ "with URL and user name* instead. "
+#~ "In the next screen enter "
+#~ "|**caldav_host**| in the server URL and"
+#~ " make sure to use **https**. "
+#~ "Afterwards, you can continue with step"
+#~ " 6 above."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:287
-msgid "In the server field, please enter: |**activesync_host**|"
-msgstr ""
+#~ msgid "ActiveSync for Calendars and Contacts"
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:288
-msgid ""
-"Set the account options as you like. We recommend to use IMAP for email (see"
-" :ref:`settings-clientconfig-android-k9`), but you can activate email here "
-"as well."
-msgstr ""
+#~ msgid ""
+#~ "This section describes how you can "
+#~ "get your calendars and contacts from "
+#~ "|service_name| on your Android device. "
+#~ "It assumes that you will use "
+#~ "Mobile Synchronization with *ActiveSync* which"
+#~ " will integrate nicely into your "
+#~ "default Android apps. Another possibility "
+#~ "is using CalDAV/CardDAV. Please see :ref"
+#~ ":`settings-clientconfig-android-davdroid` for "
+#~ "more information."
+#~ msgstr ""
 
-#: ../../source/client-configuration/android.rst:290
-msgid ""
-"After successful account creation, you should select which data shall be "
-"synchronized in the webmail settings (see last screenshot)."
-msgstr ""
+#~ msgid "Please go to *Settings* -> *Account* -> *Add Account*"
+#~ msgstr ""
+
+#~ msgid "Then choose either *Exchange* or *Corporate*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Afterwards, please provider your primary "
+#~ "and full email address, e.g. "
+#~ "|**useremail**|"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When asked for incoming server settings,"
+#~ " please also give your full email "
+#~ "address as username. Older versions of"
+#~ " Android might require you to provide"
+#~ " the username in the form of "
+#~ "**domain.tld\\\\user** where **user@domain.tld** is"
+#~ " your primary email address."
+#~ msgstr ""
+
+#~ msgid "In the server field, please enter: |**activesync_host**|"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Set the account options as you "
+#~ "like. We recommend to use IMAP for"
+#~ " email (see :ref:`settings-clientconfig-"
+#~ "android-k9`), but you can activate email"
+#~ " here as well."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After successful account creation, you "
+#~ "should select which data shall be "
+#~ "synchronized in the webmail settings "
+#~ "(see last screenshot)."
+#~ msgstr ""
+

@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:90
+msgid "Upgrading from Kolab 3.0"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:92
+msgid ""
+"This chapter contains the upgrade notes for moving forward from Kolab 3.0"
+" to Kolab 3.1."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:96
+msgid "ChangeLog"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:98
+msgid "Kolab 3.1 compared to Kolab 3.0 ships the following additional components:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:100
+msgid "**iRony**"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:102
+msgid ""
+"A DAV access provider for groupware, including WebDAV with help of the "
+"**chwala** API, and CardDAV and CalDAV."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:105
+msgid "**chwala**"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:107
+msgid ""
+"A properly designed and integrated file storage management layer, "
+"primarily for integration into other web applications through it's self-"
+"reliant UI component builder functions (JavaScript) obtaining information"
+" from its own API."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:112
+msgid "``kolab_files`` for |roundcubemail-plugins-kolab|"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:114
+msgid ""
+"One implementation of the integration of **chwala** into the Roundcube "
+"web client."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:117
+msgid "Further software updates address the following issues:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:119
+msgid ""
+"The Kolab Web Administration Panel has been enhanced to address duplicate"
+" surname issues, which in Kolab 3.0 would generate duplicate ``uid`` "
+"attributes."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:123
+msgid ""
+"The way the ``uid`` is composed can now be configured with the "
+"introduction of a ``policy_uid`` setting in the ``[kolab_wap]`` section "
+"of :manpage:`kolab.conf(5)`."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:127
+msgid ""
+"The **postfix** MTA is now configured to strip the ``Received from:`` "
+"headers that could otherwise disclose a user's geographical location."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:130
+msgid ""
+"The **postfix** MTA is now configured to reject inbound email traffic "
+"that already has headers set to indicate a spam message."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:133
+msgid ""
+"The **postfix** MTA is now configured to strip additional ``Received "
+"from: localhost [127.0.0.1] headers`` from emails that pass through "
+"Amavis."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:136
+msgid ""
+"A new annotation ``/vendor/kolab/displayname`` was introduced to provide "
+"a compatibility layer with CardDAV and CalDAV access layers, neither of "
+"which understand IMAP folder hierarchy."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:140
+msgid ""
+"A new annotation ``/vendor/kolab/uniqueid`` was introducted to provide a "
+"compatibility layer with CardDAV and CalDAV access layers, neither of "
+"which would have otherwise allowed an IMAP folder to be renamed or "
+"relocated in the IMAP folder hierarchy."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:147
+msgid ""
+"This annotation is only used if ``/vendor/cmu/cyrus-imapd/uniqueid`` is "
+"not available. This Cyrus IMAP annotation became available in Cyrus IMAP "
+"2.5."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:151
+#, python-format
+msgid ""
+"The ``kolab_auth`` plugin for Roundcube was enhanced to allow the use of "
+"a placeholder ``%dc`` to be substituted by the root dn for a supplied "
+"domain name."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:155
+msgid ""
+"This enhances the Hosted Kolab Groupware deployment capabilities "
+"significantly."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:158
+msgid ""
+"The **kolab-webadmin** software was enhanced to allow input of *KB*, *MB*"
+" and *GB* input for ``mailQuota``."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:161
+msgid ""
+"The **kolab-webadmin** software was enhanced to allow *Shared Folders* to"
+" be created through the web administration panel."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:164
+msgid ""
+"The **kolab-webadmin** software was enhanced to allow the configuration "
+"of *Dynamic Mail-enabled Distribution Groups*."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:168
+msgid "Updates to Cyrus IMAP"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:170
+msgid ""
+"Updates to the Cyrus IMAP configuration can be applied automatically, by "
+"executing:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:179
+msgid ""
+"Executing the aforementioned command assumes you had not made any changes"
+" to :manpage:`cyrus.conf(5)` nor :manpage:`imapd.conf(5)`."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:182
+msgid ""
+"If you had, either read the sections for "
+":ref:`admin_upgrade-3.0_cyrus.conf` and "
+":ref:`admin_upgrade-3.0_imapd.conf` or re-apply the changes you need "
+"after executing the aforementioned setup command."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:190
+msgid ":manpage:`cyrus.conf(5)` (at :file:`/etc/cyrus.conf`)"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:193
+msgid "Underscores in START, SERVICES and EVENTS Item Names"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:195
+msgid ""
+"The version of Cyrus IMAP shipped with Kolab 3.1 is incompatible with the"
+" use of underscore ('_') characters in the names for the START, SERVICES "
+"and EVENTS items."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:199
+msgid "The EVENTS section in **cyrus.conf(5)** may have looked as follows:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:225
+msgid "This will need to become:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:252
+msgid "The Use of Squatter"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:254
+msgid ""
+"Squatter is used to periodically create full-text indexes for messages in"
+" mailboxes."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:257
+msgid ""
+"At the time of this writing, however, headers that are relevant for Kolab"
+" Groupware data searches are not included in such indexes."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:260
+msgid ""
+"To circumvent this problem, remove running squatter from the EVENTS "
+"section in :file:`/etc/cyrus.conf`."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:263
+msgid ""
+"To prevent existing squatter indexes from getting in the way, remove all "
+"files named **cyrus.squat** from your IMAP spools:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:275
+msgid ":manpage:`imapd.conf(5)` (at :file:`/etc/imapd.conf`)"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:277
+msgid ""
+"A few additional settings are needed for Cyrus IMAP to feature message "
+"traffic directly into shared folders."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:280
+msgid "If not already set, add the following setting to :file:`/etc/imapd.conf`:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:287
+msgid "New Features in Cyrus IMAP"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:289
+msgid "Event notifications. See the architecture and design document on Bonnie."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:290
+msgid "Multi-master replication"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:293
+msgid "Removing old and Adding new Plugins for Roundcube"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:295
+msgid "The following plugins are no longer included:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:297
+msgid "``kolab_core``"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst
+msgid "Todo"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:301
+#: ../../source/upgrade-guide/kolab-3.1.rst:309
+msgid "Is this list complete?"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:303
+msgid "The following plugins are new:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.1.rst:305
+msgid "``kolab_files``"
+msgstr ""
+

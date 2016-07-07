@@ -1,190 +1,203 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
-# This file is distributed under the same license as the Kolab Groupware package.
-# 
+# This file is distributed under the same license as the Kolab Groupware
+# package.
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:37+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-documentation/language/zh_CN/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p"
+"/kolab-documentation/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../source/client-configuration/thunderbird.rst:46
+#: ../../source/client-configuration/thunderbird.rst:92
 msgid "Mozilla Thunderbird"
 msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:51
+#: ../../source/client-configuration/thunderbird.rst:97
 msgid ""
 "Unfortunately, Mozilla Thunderbird can only handle email on its own. In "
-"order for it to also deal with your contacts, appointments and tasks, third "
-"party extensions are required. Therefore, you need to set up all of those "
-"separately. We show you how to do that below."
+"order for it to also deal with your contacts, appointments and tasks, "
+"third party extensions are required. Therefore, you need to set up all of"
+" those separately. We show you how to do that below."
 msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:58
+#: ../../source/client-configuration/thunderbird.rst:104
 msgid "E-Mail Setup"
 msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:60
+#: ../../source/client-configuration/thunderbird.rst:106
 msgid ""
-"When you start Thunderbird for the first time, it will ask you to create an "
-"account. Please say that you want to use an existing email address."
+"When you start Thunderbird for the first time, it will ask you to create "
+"an account. Please say that you want to use an existing email address."
 msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:64
+#: ../../source/client-configuration/thunderbird.rst:110
 msgid ""
 "The following dialog should appear where you can enter your account "
 "credentials. Click *Continue* and Thunderbird will attempt to find the "
 "correct settings automatically."
 msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:84
+#: ../../source/client-configuration/thunderbird.rst:130
 msgid ""
-"If the automatic configuration detection fails, enter the credentials for "
-"incoming and outgoing servers as depicted below:"
+"If the automatic configuration detection fails, enter the credentials for"
+" incoming and outgoing servers as depicted below:"
 msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:108
+#: ../../source/client-configuration/thunderbird.rst:154
 msgid "Click *Done* to re-test the configuration and finish the setup."
 msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:117
-msgid "Calendar Setup"
-msgstr ""
+#~ msgid "Calendar Setup"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:119
-msgid ""
-"In order to use calendars with Thunderbird, you need to first install the "
-"`Lightning Add-on <https://www.mozilla.org/projects/calendar/lightning/>`_, "
-"if you do not have it already. Then switch to the Calendar tab and in the "
-"bottom left corner right click below your local *Home* calendar. A context "
-"menu will pop up where you can select *New Calendar...*. In the following "
-"dialog you say that your calendar is *On the Network*, then click *Next*. On"
-" the next screen, please select the *CalDAV* format and enter the following "
-"address:"
-msgstr ""
+#~ msgid ""
+#~ "In order to use calendars with "
+#~ "Thunderbird, you need to first install"
+#~ " the `Lightning Add-on "
+#~ "<https://www.mozilla.org/projects/calendar/lightning/>`_, if "
+#~ "you do not have it already. Then"
+#~ " switch to the Calendar tab and "
+#~ "in the bottom left corner right "
+#~ "click below your local *Home* calendar."
+#~ " A context menu will pop up "
+#~ "where you can select *New Calendar...*."
+#~ " In the following dialog you say "
+#~ "that your calendar is *On the "
+#~ "Network*, then click *Next*. On the "
+#~ "next screen, please select the *CalDAV*"
+#~ " format and enter the following "
+#~ "address:"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:128
-msgid "|**caldav_uri_long**|/**Calendar**"
-msgstr ""
+#~ msgid "|**caldav_uri_long**|/**Calendar**"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:144
-msgid ""
-"The above URL will usually only work for the standard Calendar that is set "
-"up initially. In order to add your other calendars, please repeat this "
-"procedure and use the CalDAV URL that the option *Show Calendar URL* from "
-"the Webinterface will get you. To get this URL, please login to "
-"|service_uri| and then follow the following steps:"
-msgstr ""
+#~ msgid ""
+#~ "The above URL will usually only "
+#~ "work for the standard Calendar that "
+#~ "is set up initially. In order to"
+#~ " add your other calendars, please "
+#~ "repeat this procedure and use the "
+#~ "CalDAV URL that the option *Show "
+#~ "Calendar URL* from the Webinterface will"
+#~ " get you. To get this URL, "
+#~ "please login to |service_uri| and then"
+#~ " follow the following steps:"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:150
-msgid "Select *Calendar* in the top right corner drop-down menu"
-msgstr ""
+#~ msgid "Select *Calendar* in the top right corner drop-down menu"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:152
-msgid ""
-"Select the calendar you wish to add to Thunderbird/Lightning with a single "
-"left click in the lower left corner. The selected calendar should visibly "
-"highlight."
-msgstr ""
+#~ msgid ""
+#~ "Select the calendar you wish to "
+#~ "add to Thunderbird/Lightning with a "
+#~ "single left click in the lower "
+#~ "left corner. The selected calendar "
+#~ "should visibly highlight."
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:156
-msgid "Next click on the small gear symbol below"
-msgstr ""
+#~ msgid "Next click on the small gear symbol below"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:158
-msgid "From the menu you'll see, please select *Show Calendar URL*"
-msgstr ""
+#~ msgid "From the menu you'll see, please select *Show Calendar URL*"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:160
-msgid ""
-"In the window that will appear please copy the second URL (where it says "
-"CalDAV)"
-msgstr ""
+#~ msgid ""
+#~ "In the window that will appear "
+#~ "please copy the second URL (where "
+#~ "it says CalDAV)"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:163
-msgid ""
-"This is the CalDAV URL you have to use in the above procedure in order to "
-"add any calendar to Thunderbird/Lightning."
-msgstr ""
+#~ msgid ""
+#~ "This is the CalDAV URL you have"
+#~ " to use in the above procedure "
+#~ "in order to add any calendar to"
+#~ " Thunderbird/Lightning."
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:180
-msgid "Tasks Setup"
-msgstr ""
+#~ msgid "Tasks Setup"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:182
-msgid ""
-"If you want to synchronize your tasks with Thunderbird, you can follow the "
-"steps from the :ref:`settings-clientconfig-thunderbird-lightning` and add a "
-"\"calendar\" with the following address:"
-msgstr ""
+#~ msgid ""
+#~ "If you want to synchronize your "
+#~ "tasks with Thunderbird, you can follow"
+#~ " the steps from the :ref:`settings-"
+#~ "clientconfig-thunderbird-lightning` and add "
+#~ "a \"calendar\" with the following "
+#~ "address:"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:186
-msgid "|**caldav_uri_long**|/**Tasks**"
-msgstr ""
+#~ msgid "|**caldav_uri_long**|/**Tasks**"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:188
-msgid "Now your tasks should show up in Thunderbird as well."
-msgstr ""
+#~ msgid "Now your tasks should show up in Thunderbird as well."
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:192
-msgid "Address Book Setup"
-msgstr ""
+#~ msgid "Address Book Setup"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:194
-msgid ""
-"In order to use your |service_name| address books with Thunderbird, you need"
-" to first install the `SOGo Connector Thunderbird extension "
-"<http://www.sogo.nu/fr/downloads/frontends.html>`_, if you do not have it "
-"already. Then click the *Address Book* button and in the *Address Book* "
-"window, go to the menu, choose *File > New > Remote Address Book*. On the "
-"next screen, please enter the following address:"
-msgstr ""
+#~ msgid ""
+#~ "In order to use your |service_name| "
+#~ "address books with Thunderbird, you need"
+#~ " to first install the `SOGo Connector"
+#~ " Thunderbird extension "
+#~ "<http://www.sogo.nu/fr/downloads/frontends.html>`_, if you"
+#~ " do not have it already. Then "
+#~ "click the *Address Book* button and "
+#~ "in the *Address Book* window, go "
+#~ "to the menu, choose *File > New"
+#~ " > Remote Address Book*. On the "
+#~ "next screen, please enter the following"
+#~ " address:"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:200
-msgid "|**carddav_uri_long**|/**Contacts**"
-msgstr ""
+#~ msgid "|**carddav_uri_long**|/**Contacts**"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:202
-msgid ""
-"In order to add other address books, please repeat this procedure for each "
-"address book. You can get the URL for the address books the same way as "
-"described above in the :ref:`settings-clientconfig-thunderbird-lightning`."
-msgstr ""
+#~ msgid ""
+#~ "In order to add other address "
+#~ "books, please repeat this procedure for"
+#~ " each address book. You can get "
+#~ "the URL for the address books the"
+#~ " same way as described above in "
+#~ "the :ref:`settings-clientconfig-thunderbird-"
+#~ "lightning`."
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:222
-msgid "Trick: Enable Multiple Accounts"
-msgstr ""
+#~ msgid "Trick: Enable Multiple Accounts"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:224
-msgid ""
-"By default, Mozilla Thunderbird just support one calendar and one address "
-"book account per server. If you have more than one |service_name| account, "
-"you need to use the following trick:"
-msgstr ""
+#~ msgid ""
+#~ "By default, Mozilla Thunderbird just "
+#~ "support one calendar and one address "
+#~ "book account per server. If you "
+#~ "have more than one |service_name| "
+#~ "account, you need to use the "
+#~ "following trick:"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:227
-msgid "Go to Edit → Preferences → Advanced → Config Editor…"
-msgstr ""
+#~ msgid "Go to Edit → Preferences → Advanced → Config Editor…"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:228
-msgid "Search for calendar.network.multirealm"
-msgstr ""
+#~ msgid "Search for calendar.network.multirealm"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:229
-msgid "Double-click to set the value to true"
-msgstr ""
+#~ msgid "Double-click to set the value to true"
+#~ msgstr ""
 
-#: ../../source/client-configuration/thunderbird.rst:231
-msgid ""
-"Then restart Thunderbird, add the second account and enjoy the full power of"
-" |service_name|!"
-msgstr ""
+#~ msgid ""
+#~ "Then restart Thunderbird, add the second"
+#~ " account and enjoy the full power "
+#~ "of |service_name|!"
+#~ msgstr ""
+

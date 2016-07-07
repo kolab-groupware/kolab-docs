@@ -1,479 +1,542 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
-# This file is distributed under the same license as the Kolab Groupware package.
-# 
+# This file is distributed under the same license as the Kolab Groupware
+# package.
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:35+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-documentation/language/fr_FR/)\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p"
+"/kolab-documentation/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr_FR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../source/howtos/build-kolab-from-source.rst:44
+#: ../../source/howtos/build-kolab-from-source.rst:90
 msgid "HOWTO: Build Kolab From Sources"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:46
+#: ../../source/howtos/build-kolab-from-source.rst:92
 msgid ""
 "This HOWTO uses an Enterprise Linux 6, default installation of Kolab "
-"Groupware. For the purpose of this HOWTO, setup-kolab should have been run "
-"already, either from the installed packages or using the command from source"
-" as outlined in :ref:`build-source_pykolab`."
+"Groupware. For the purpose of this HOWTO, setup-kolab should have been "
+"run already, either from the installed packages or using the command from"
+" source as outlined in :ref:`build-source_pykolab`."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:51
+#: ../../source/howtos/build-kolab-from-source.rst:97
 msgid "Out of Mainstream"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:53
+#: ../../source/howtos/build-kolab-from-source.rst:99
 msgid ""
-"Continuing with this HOWTO, running Kolab Groupware directly from source, "
-"brings you out of mainline supply streams for updates. We recommend that "
-"after going through the procedure(s) outlined in this document, you disable "
-"the Kolab YUM repositories, or package updates might overwrite the files you"
-" compiled from source."
+"Continuing with this HOWTO, running Kolab Groupware directly from source,"
+" brings you out of mainline supply streams for updates. We recommend that"
+" after going through the procedure(s) outlined in this document, you "
+"disable the Kolab YUM repositories, or package updates might overwrite "
+"the files you compiled from source."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:59
+#: ../../source/howtos/build-kolab-from-source.rst:105
 msgid ""
-"We also recommend you subscribe to the following mailing lists to keep in "
-"touch with upstream, and be notified of important changes:"
+"We also recommend you subscribe to the following mailing lists to keep in"
+" touch with upstream, and be notified of important changes:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:62
+#: ../../source/howtos/build-kolab-from-source.rst:108
 msgid "devel@lists.kolab.org"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:63
+#: ../../source/howtos/build-kolab-from-source.rst:109
 msgid "commits@lists.kolab.org"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:66
+#: ../../source/howtos/build-kolab-from-source.rst:112
 msgid "libkolabxml"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:68
+#: ../../source/howtos/build-kolab-from-source.rst:114
 msgid ""
-"The libkolabxml libraries and modules for PHP and Python are used with :ref"
-":`build-source_libkolab`, :ref:`build-source_pykolab_wallace`, and the Kolab"
-" plugins for Roundcube :ref:`build-source_kolab-plugins`."
+"The libkolabxml libraries and modules for PHP and Python are used with "
+":ref:`build-source_libkolab`, :ref:`build-source_pykolab_wallace`, and "
+"the Kolab plugins for Roundcube :ref:`build-source_kolab-plugins`."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:73
+#: ../../source/howtos/build-kolab-from-source.rst:119
 msgid "Building and Installing libkolabxml"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:75
-#: ../../source/howtos/build-kolab-from-source.rst:134
-#: ../../source/howtos/build-kolab-from-source.rst:195
-#: ../../source/howtos/build-kolab-from-source.rst:278
-#: ../../source/howtos/build-kolab-from-source.rst:559
-#: ../../source/howtos/build-kolab-from-source.rst:627
+#: ../../source/howtos/build-kolab-from-source.rst:121
+#: ../../source/howtos/build-kolab-from-source.rst:180
+#: ../../source/howtos/build-kolab-from-source.rst:241
+#: ../../source/howtos/build-kolab-from-source.rst:324
+#: ../../source/howtos/build-kolab-from-source.rst:590
+#: ../../source/howtos/build-kolab-from-source.rst:658
+#: ../../source/howtos/build-kolab-from-source.rst:726
 msgid "Clone the GIT repository:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:87
-#: ../../source/howtos/build-kolab-from-source.rst:146
-#: ../../source/howtos/build-kolab-from-source.rst:207
-#: ../../source/howtos/build-kolab-from-source.rst:290
-#: ../../source/howtos/build-kolab-from-source.rst:621
+#: ../../source/howtos/build-kolab-from-source.rst:133
+#: ../../source/howtos/build-kolab-from-source.rst:192
+#: ../../source/howtos/build-kolab-from-source.rst:253
+#: ../../source/howtos/build-kolab-from-source.rst:336
+#: ../../source/howtos/build-kolab-from-source.rst:720
 msgid "Install the build dependencies:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:93
+#: ../../source/howtos/build-kolab-from-source.rst:139
 msgid "Build libkolabxml:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:109
+#: ../../source/howtos/build-kolab-from-source.rst:155
 msgid "Install libkolabxml:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:116
-#: ../../source/howtos/build-kolab-from-source.rst:174
-#: ../../source/howtos/build-kolab-from-source.rst:259
+#: ../../source/howtos/build-kolab-from-source.rst:162
+#: ../../source/howtos/build-kolab-from-source.rst:220
+#: ../../source/howtos/build-kolab-from-source.rst:305
 msgid "Testing Modifications"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:118
+#: ../../source/howtos/build-kolab-from-source.rst:164
 msgid ""
 "Your modifications to libkolabxml should be complete before submitting a "
 "patch or making a commit. To test whether libkolabxml builds with your "
 "modifications, use the following command:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:127
+#: ../../source/howtos/build-kolab-from-source.rst:173
 msgid "libcalendaring"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:129
+#: ../../source/howtos/build-kolab-from-source.rst:175
 msgid ""
-"libcalendaring is only needed if the system packages do not include KDE >= "
-"4.8."
+"libcalendaring is only needed if the system packages do not include KDE "
+">= 4.8."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:132
+#: ../../source/howtos/build-kolab-from-source.rst:178
 msgid "Building and Installing libcalendaring"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:152
+#: ../../source/howtos/build-kolab-from-source.rst:198
 msgid "Build libcalendaring:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:167
+#: ../../source/howtos/build-kolab-from-source.rst:213
 msgid "Install libcalendaring:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:176
+#: ../../source/howtos/build-kolab-from-source.rst:222
 msgid ""
-"Your modifications to libcalendaring should be complete before submitting a "
-"patch or making a commit. To test whether libcalendaring builds with your "
-"modifications, use the following command:"
+"Your modifications to libcalendaring should be complete before submitting"
+" a patch or making a commit. To test whether libcalendaring builds with "
+"your modifications, use the following command:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:187
+#: ../../source/howtos/build-kolab-from-source.rst:233
 msgid "libkolab"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:189
+#: ../../source/howtos/build-kolab-from-source.rst:235
 msgid ""
 "Requires libkolabxml, and for systems that do not have KDE >= 4.8, "
 "libcalendaring."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:193
+#: ../../source/howtos/build-kolab-from-source.rst:239
 msgid "Building and Installing libkolab"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:213
+#: ../../source/howtos/build-kolab-from-source.rst:259
 msgid "Build libkolab"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:215
+#: ../../source/howtos/build-kolab-from-source.rst:261
 msgid "Build libkolab with libcalendaring"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:234
+#: ../../source/howtos/build-kolab-from-source.rst:280
 msgid "Build libkolab without libcalendaring"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:252
+#: ../../source/howtos/build-kolab-from-source.rst:298
 msgid "Install libkolab:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:261
+#: ../../source/howtos/build-kolab-from-source.rst:307
 msgid ""
-"Your modifications to libkolab should be complete before submitting a patch "
-"or making a commit. To test whether libkolab builds with your modifications,"
-" use the following command:"
+"Your modifications to libkolab should be complete before submitting a "
+"patch or making a commit. To test whether libkolab builds with your "
+"modifications, use the following command:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:272
+#: ../../source/howtos/build-kolab-from-source.rst:318
 msgid "PyKolab"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:274
+#: ../../source/howtos/build-kolab-from-source.rst:320
 msgid ""
-"This section outlines running PyKolab directly from source. This involves "
-"the Kolab daemon (kolabd), Wallace (wallaced), and the Kolab SASL "
+"This section outlines running PyKolab directly from source. This involves"
+" the Kolab daemon (kolabd), Wallace (wallaced), and the Kolab SASL "
 "Authentication daemon (kolab-saslauthd)."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:295
+#: ../../source/howtos/build-kolab-from-source.rst:341
 msgid "Configure pykolab:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:304
+#: ../../source/howtos/build-kolab-from-source.rst:350
 msgid "Kolab Setup / Bootstrap"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:306
+#: ../../source/howtos/build-kolab-from-source.rst:352
 msgid ""
-"Running the Kolab setup procedure (setup-kolab) directly from source allows "
-"you to test fixes and enhancements otherwise not available, and develop your"
-" own."
+"Running the Kolab setup procedure (setup-kolab) directly from source "
+"allows you to test fixes and enhancements otherwise not available, and "
+"develop your own."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:309
+#: ../../source/howtos/build-kolab-from-source.rst:355
 msgid ""
-"You probably want some level of increased verbosity when running setup-kolab"
-" from source. Use the -d 9 command-line option for protocol level tracing, "
-"and -d 8 for program level step tracing."
+"You probably want some level of increased verbosity when running setup-"
+"kolab from source. Use the -d 9 command-line option for protocol level "
+"tracing, and -d 8 for program level step tracing."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:314
+#: ../../source/howtos/build-kolab-from-source.rst:360
 msgid "Running setup-kolab.py from Source"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:320
+#: ../../source/howtos/build-kolab-from-source.rst:366
 msgid "Kolab Daemon"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:322
+#: ../../source/howtos/build-kolab-from-source.rst:368
 msgid ""
-"Running the Kolab daemon (kolabd) directly from source allows you to test "
-"fixes and enhancements otherwise not available, and develop your own."
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:325
-msgid ""
-"You probably want some level of increased verbosity when running the Kolab "
-"daemon from source. Use the -d 9 command-line option for protocol level "
-"tracing, and -d 8 for program level step tracing."
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:330
-msgid "Running kolabd.py from Source"
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:331
-#: ../../source/howtos/build-kolab-from-source.rst:357
-msgid "Stop the system service and prevent it from starting on boot:"
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:337
-msgid "Run the Kolab daemon"
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:346
-msgid "Wallace Daemon"
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:348
-msgid ""
-"Running the Wallace daemon (wallaced) directly from source allows you to "
-"test fixes and enhancements otherwise not available, and develop your own."
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:351
-#: ../../source/howtos/build-kolab-from-source.rst:376
-msgid ""
-"You probably want some level of increased verbosity when running the Wallace"
-" daemon from source. Use the -d 9 command-line option for protocol level "
-"tracing, and -d 8 for program level step tracing."
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:356
-msgid "Running wallace.py from Source"
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:364
-msgid "Run the Wallace daemon from source:"
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:371
-msgid "Kolab SMTP Access Policy"
-msgstr ""
-
-#: ../../source/howtos/build-kolab-from-source.rst:373
-msgid ""
-"Running the Kolab SMTP Access Policy directly from source allows you to test"
+"Running the Kolab daemon (kolabd) directly from source allows you to test"
 " fixes and enhancements otherwise not available, and develop your own."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:381
-msgid "Running the Kolab SMTP Access Policy from Source"
+#: ../../source/howtos/build-kolab-from-source.rst:371
+msgid ""
+"You probably want some level of increased verbosity when running the "
+"Kolab daemon from source. Use the -d 9 command-line option for protocol "
+"level tracing, and -d 8 for program level step tracing."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:382
-msgid ""
-"Move the version of the Kolab SMTP Acccess Policy installed on the system "
-"out of the way:"
+#: ../../source/howtos/build-kolab-from-source.rst:376
+msgid "Running kolabd.py from Source"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:389
+#: ../../source/howtos/build-kolab-from-source.rst:377
+#: ../../source/howtos/build-kolab-from-source.rst:403
+msgid "Stop the system service and prevent it from starting on boot:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:383
+msgid "Run the Kolab daemon"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:392
+msgid "Wallace Daemon"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:394
 msgid ""
-"Create a symbolic link to the GIT version of the Kolab SMTP Access Policy:"
+"Running the Wallace daemon (wallaced) directly from source allows you to "
+"test fixes and enhancements otherwise not available, and develop your "
+"own."
 msgstr ""
 
 #: ../../source/howtos/build-kolab-from-source.rst:397
+#: ../../source/howtos/build-kolab-from-source.rst:422
 msgid ""
-"Edit /etc/postfix/master.cf to increase the verbosity the Kolab SMTP Access "
-"Policy logs interactions with. At the end of the file, replace the lines for"
-" the recipient_policy, recipient_policy_incoming, sender_policy, "
-"sender_policy_incoming and submission_policy with the following:"
+"You probably want some level of increased verbosity when running the "
+"Wallace daemon from source. Use the -d 9 command-line option for protocol"
+" level tracing, and -d 8 for program level step tracing."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:404
+#: ../../source/howtos/build-kolab-from-source.rst:402
+msgid "Running wallace.py from Source"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:410
+msgid "Run the Wallace daemon from source:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:417
+msgid "Kolab SMTP Access Policy"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:419
 msgid ""
-"The '\\' at the end of these lines is supposed to indicate continuation of "
-"the line"
+"Running the Kolab SMTP Access Policy directly from source allows you to "
+"test fixes and enhancements otherwise not available, and develop your "
+"own."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:432
-msgid "Roundcube and Kolab Plugins for Roundcube"
+#: ../../source/howtos/build-kolab-from-source.rst:427
+msgid "Running the Kolab SMTP Access Policy from Source"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:434
+#: ../../source/howtos/build-kolab-from-source.rst:428
 msgid ""
-"By default, the Roundcube web client interface is available at "
-"``/roundcubemail/``, and served from ``/usr/share/roundcubemail/``. To "
-"install Roundcube and Kolab plugins from source, you will have perform the "
-"following procedure:"
+"Move the version of the Kolab SMTP Acccess Policy installed on the system"
+" out of the way:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:440
-msgid "Installing Roundcube and Kolab Plugins from Source"
+#: ../../source/howtos/build-kolab-from-source.rst:435
+msgid "Create a symbolic link to the GIT version of the Kolab SMTP Access Policy:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:442
+#: ../../source/howtos/build-kolab-from-source.rst:443
 msgid ""
-"Choose a location to install the GIT version of Roundcube. We suggest using "
-"``/var/www/html/``."
+"Edit /etc/postfix/master.cf to increase the verbosity the Kolab SMTP "
+"Access Policy logs interactions with. At the end of the file, replace the"
+" lines for the recipient_policy, recipient_policy_incoming, "
+"sender_policy, sender_policy_incoming and submission_policy with the "
+"following:"
 msgstr ""
 
 #: ../../source/howtos/build-kolab-from-source.rst:450
+msgid ""
+"The '\\' at the end of these lines is supposed to indicate continuation "
+"of the line"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:478
+msgid "Roundcube and Kolab Plugins for Roundcube"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:480
+msgid ""
+"By default, the Roundcube web client interface is available at "
+"``/roundcubemail/``, and served from ``/usr/share/roundcubemail/``. To "
+"install Roundcube and Kolab plugins from source, you will have perform "
+"the following procedure:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:486
+msgid "Installing Roundcube and Kolab Plugins from Source"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:488
+msgid ""
+"Choose a location to install the GIT version of Roundcube. We suggest "
+"using ``/var/www/html/``."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:496
 msgid "Clone the Roundcube GIT repository:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:462
+#: ../../source/howtos/build-kolab-from-source.rst:508
 msgid "Use the configuration from the RPM Roundcube installation:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:470
+#: ../../source/howtos/build-kolab-from-source.rst:516
 msgid "We create a new database for this Roundcube version."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:481
+#: ../../source/howtos/build-kolab-from-source.rst:527
 msgid "Clone the GIT repository for the Kolab plugins:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:494
+#: ../../source/howtos/build-kolab-from-source.rst:540
 msgid ""
 "Use the Kolab plugin configuration from the system directory "
-"``/etc/roundcubemail/`` as installed by the roundcubemail-plugins-kolab RPM "
-"package and configured using the setup-kolab utility:"
+"``/etc/roundcubemail/`` as installed by the |roundcubemail-plugins-kolab|"
+" RPM package and configured using the setup-kolab utility:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:509
+#: ../../source/howtos/build-kolab-from-source.rst:555
 msgid "The libkolab plugin is special:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:515
+#: ../../source/howtos/build-kolab-from-source.rst:561
 msgid "Load the database schemas for the Kolab plugins:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:522
+#: ../../source/howtos/build-kolab-from-source.rst:568
 msgid "Put the Kolab plugins into the Roundcube plugins/ directory:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:533
+#: ../../source/howtos/build-kolab-from-source.rst:579
 msgid ""
-"Make sure Roundcube can write to its log files and directory for temporary "
-"files:"
+"Make sure Roundcube can write to its log files and directory for "
+"temporary files:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:540
+#: ../../source/howtos/build-kolab-from-source.rst:586
+msgid "Kolab Theme for Roundcube"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:588
+msgid ""
+"The Kolab groupware provides a custom skin for the web client. This can "
+"be added as follows:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:597
+msgid ""
+"Compile the CSS file using the `Less CSS pre-processor "
+"<http://lesscss.org/>`_:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:606
+msgid ""
+"Instead of compiling the CSS file on the server, you can enable "
+"development mode in Roundcube and have it compiled on the client. This is"
+" recommended if you intend to make changes to the style sheets and don't "
+"want to run ``lessc`` after every modification."
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:611
+msgid ""
+"Enable development mode in :file:`<roundcube-source-"
+"dir>/config/config.inc.php`:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:617
+msgid "Synlink from the Roundcube skins directory"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:624
+msgid ""
+"Set the Chameleon skin to be the default theme in :file:`<roundcube-"
+"source-dir>/config/config.inc.php`"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:630
+msgid ""
+"Optionally disable the skin selection for the user. Set the following in "
+":file:`<roundcube-source-dir>/config/config.inc.php`:"
+msgstr ""
+
+#: ../../source/howtos/build-kolab-from-source.rst:639
 msgid "Kolab Web Administration Panel and API"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:542
+#: ../../source/howtos/build-kolab-from-source.rst:641
 msgid ""
-"By default, the Kolab Web Administration Panel client interface and API are "
-"normally available at /kolab-webadmin/, and served from ``/usr/share/kolab-"
-"webadmin/``."
+"By default, the Kolab Web Administration Panel client interface and API "
+"are normally available at /kolab-webadmin/, and served from ``/usr/share"
+"/kolab-webadmin/``."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:546
+#: ../../source/howtos/build-kolab-from-source.rst:645
 msgid ""
 "To install the Kolab Web Administration Panel client interface and API, "
 "execute the following procedure:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:550
+#: ../../source/howtos/build-kolab-from-source.rst:649
 msgid "Installing the Kolab WAP Client and API from Source"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:552
+#: ../../source/howtos/build-kolab-from-source.rst:651
 msgid "Remove the version installed by packaging:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:571
+#: ../../source/howtos/build-kolab-from-source.rst:670
 msgid "Set the necessary file permissions:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:578
+#: ../../source/howtos/build-kolab-from-source.rst:677
 msgid ""
-"Consider setting the following two options in :file:`/etc/kolab/kolab.conf`:"
+"Consider setting the following two options in "
+":file:`/etc/kolab/kolab.conf`:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:586
+#: ../../source/howtos/build-kolab-from-source.rst:685
 msgid "This will enable full debugging, and avoid the use of caching."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:589
+#: ../../source/howtos/build-kolab-from-source.rst:688
 msgid "Hosted Kolab Customer Control Panel"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:0
-#: ../../source/howtos/build-kolab-from-source.rst:0
-#: ../../source/howtos/build-kolab-from-source.rst:0
+#: ../../source/howtos/build-kolab-from-source.rst
 msgid "Todo"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:593
+#: ../../source/howtos/build-kolab-from-source.rst:692
 msgid ""
-"Write the section on running the Hosted Kolab Customer Control Panel from "
-"source."
+"Write the section on running the Hosted Kolab Customer Control Panel from"
+" source."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:597
+#: ../../source/howtos/build-kolab-from-source.rst:696
 msgid "Chwala"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:601
+#: ../../source/howtos/build-kolab-from-source.rst:700
 msgid "Write the section on running Chwala from source."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:604
+#: ../../source/howtos/build-kolab-from-source.rst:703
 msgid "iRony"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:608
+#: ../../source/howtos/build-kolab-from-source.rst:707
 msgid "Write the section on running iRony from source."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:612
+#: ../../source/howtos/build-kolab-from-source.rst:711
 msgid "Kolab Utilities"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:614
+#: ../../source/howtos/build-kolab-from-source.rst:713
 msgid ""
-"The Kolab utilities include Kolab Free/Busy, Migration, Format Upgrade."
+"The Kolab utilities include Kolab Free/Busy Daemon, Migration, Format "
+"Upgrade."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:616
+#: ../../source/howtos/build-kolab-from-source.rst:715
 msgid ""
-"The Kolab utilities require libkolab to be successfully built and installed."
+"The Kolab utilities require libkolab to be successfully built and "
+"installed."
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:619
+#: ../../source/howtos/build-kolab-from-source.rst:718
 msgid "Running Kolab Free/Busy from Source"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:633
+#: ../../source/howtos/build-kolab-from-source.rst:732
 msgid "Build the Kolab utilities:"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:641
+#: ../../source/howtos/build-kolab-from-source.rst:740
 msgid "Free/Busy Generation and Aggregation"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:644
+#: ../../source/howtos/build-kolab-from-source.rst:743
 msgid "Upgrading the Format Version"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:647
+#: ../../source/howtos/build-kolab-from-source.rst:746
 msgid "Migration"
 msgstr ""
 
-#: ../../source/howtos/build-kolab-from-source.rst:650
+#: ../../source/howtos/build-kolab-from-source.rst:749
 msgid "Kolab Free/Busy Web Application"
 msgstr ""
+
+#~ msgid ""
+#~ "Use the Kolab plugin configuration from"
+#~ " the system directory ``/etc/roundcubemail/`` "
+#~ "as installed by the roundcubemail-"
+#~ "plugins-kolab RPM package and configured"
+#~ " using the setup-kolab utility:"
+#~ msgstr ""
+
+#~ msgid "The Kolab utilities include Kolab Free/Busy, Migration, Format Upgrade."
+#~ msgstr ""
+

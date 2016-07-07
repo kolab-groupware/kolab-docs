@@ -1,96 +1,126 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
-# This file is distributed under the same license as the Kolab Groupware package.
-# 
+# This file is distributed under the same license as the Kolab Groupware
+# package.
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:38+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-documentation/language/fr_FR/)\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p"
+"/kolab-documentation/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr_FR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../source/developer-guide/documentation/index.rst:44
+#: ../../source/developer-guide/documentation/index.rst:90
 msgid "Contributing to the Documentation"
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:46
+#: ../../source/developer-guide/documentation/index.rst:92
 msgid ""
-"This documentation can easily be contributed to by forking our project on "
-"GitHub and submitting a pull request:"
+"This documentation can easily be contributed to by cloning the following "
+"git repository."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:49
-msgid "https://github.com/kolab-groupware/kolab-docs"
+#: ../../source/developer-guide/documentation/index.rst:95
+msgid "https://git.kolab.org/diffusion/D/"
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:53
-msgid ""
-"The documentation is only as good as your willingness to contribute to it."
+#: ../../source/developer-guide/documentation/index.rst:99
+msgid "The documentation is only as good as your willingness to contribute to it."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:56
+#: ../../source/developer-guide/documentation/index.rst:102
 msgid "Other documentation included here:"
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:64
+#: ../../source/developer-guide/documentation/index.rst:111
 msgid "Building the Documentation"
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:66
+#: ../../source/developer-guide/documentation/index.rst:113
 msgid ""
-"Most of our more regular contributors clone the repository to their local "
-"workstation, and then build the documentation before pushing back changes to"
-" their fork of kolab-docs. To build the documentation, you need to have "
-"`Sphinx`_ installed. You can also find some hints, tips and tricks on their "
-"website, with regards to the `reStructuredText`_ format the documentation is"
-" written in."
+"Most of our more regular contributors clone the repository to their local"
+" workstation, and then build the documentation before pushing back "
+"changes to their fork of kolab-docs. To build the documentation, you need"
+" to have `Sphinx`_ installed. You can also find some hints, tips and "
+"tricks on their website, with regards to the `reStructuredText`_ format "
+"the documentation is written in."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:73
+#: ../../source/developer-guide/documentation/index.rst:120
 msgid "Naturally, first clone the git repository."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:75
-msgid "For anonymous users;"
-msgstr ""
-
-#: ../../source/developer-guide/documentation/index.rst:81
-msgid "For GitHub users that have created a fork;"
-msgstr ""
-
-#: ../../source/developer-guide/documentation/index.rst:87
-msgid ""
-"For existing Kolab contributors with permissions to push back directly;"
-msgstr ""
-
-#: ../../source/developer-guide/documentation/index.rst:94
+#: ../../source/developer-guide/documentation/index.rst:126
 msgid "Navigate in to the fresh clone:"
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:100
+#: ../../source/developer-guide/documentation/index.rst:132
+msgid "To build the documentation, issue the following command:"
+msgstr ""
+
+#: ../../source/developer-guide/documentation/index.rst:138
+msgid "Make some changes, and build and view the result:"
+msgstr ""
+
+#: ../../source/developer-guide/documentation/index.rst:145
+msgid "When you are satisfied, commit the results and submit a `Differential`_:"
+msgstr ""
+
+#: ../../source/developer-guide/documentation/index.rst:152
 msgid ""
-"To build for real, and possibly also publish the results, pull in the sub-"
-"projects we include in to our builds."
+"Push your changes back into our Phabricator instance. Timotheus wrote `a "
+"good tutorial on how to do that <http://www.pokorra.de/2015/07"
+"/submitting-patches-to-kolab-via-phabricator/>`_."
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:103
-msgid ""
-"Executing this step is not necessary, but gives you the complete set of "
-"documentation as is published on `docs.kolab.org`_."
+#: ../../source/developer-guide/documentation/index.rst:155
+msgid "Enjoy and thanks for contributing to Kolab!"
 msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:113
-msgid "`Working with Git Submodules`_"
-msgstr ""
+#~ msgid ""
+#~ "This documentation can easily be "
+#~ "contributed to by forking our project"
+#~ " on GitHub and submitting a pull "
+#~ "request:"
+#~ msgstr ""
 
-#: ../../source/developer-guide/documentation/index.rst:115
-msgid "Enjoy:"
-msgstr ""
+#~ msgid "https://github.com/kolab-groupware/kolab-docs"
+#~ msgstr ""
+
+#~ msgid "For anonymous users;"
+#~ msgstr ""
+
+#~ msgid "For GitHub users that have created a fork;"
+#~ msgstr ""
+
+#~ msgid "For existing Kolab contributors with permissions to push back directly;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To build for real, and possibly "
+#~ "also publish the results, pull in "
+#~ "the sub-projects we include in to"
+#~ " our builds."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Executing this step is not necessary,"
+#~ " but gives you the complete set "
+#~ "of documentation as is published on "
+#~ "`docs.kolab.org`_."
+#~ msgstr ""
+
+#~ msgid "`Working with Git Submodules`_"
+#~ msgstr ""
+
+#~ msgid "Enjoy:"
+#~ msgstr ""
+

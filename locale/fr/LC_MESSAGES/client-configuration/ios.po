@@ -1,170 +1,253 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
-# This file is distributed under the same license as the Kolab Groupware package.
-# 
+# This file is distributed under the same license as the Kolab Groupware
+# package.
+#
 # Translators:
 # winniewski <winniewski@kolabsys.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 13:30+1300\n"
+"POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-12-10 09:12+0000\n"
 "Last-Translator: winniewski <winniewski@kolabsys.com>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/kolab-documentation/language/fr/)\n"
+"Language-Team: French (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/fr/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../source/client-configuration/ios.rst:46
+#: ../../source/client-configuration/ios.rst:92
 msgid "iOS (iPhone/iPad)"
 msgstr "iOS (iPhone/iPad)"
 
-#: ../../source/client-configuration/ios.rst:51
+#: ../../source/client-configuration/ios.rst:97
 msgid ""
-"Below, we provide information for how to set up the native iOS 7 apps, so "
-"they can connect to |service_name|. Instructions for other iOS versions "
+"Below, we provide information for how to set up the native iOS 7 apps, so"
+" they can connect to |service_name|. Instructions for other iOS versions "
 "might differ, but should be very similar."
-msgstr "Ci-dessous, nous avons fourni une information pour savoir  comment configurer les apps iOS 7, pourque ils peuvent se connecter au |service_name|. Les instructions pour d'autre versions iOS peuvent différé, mais devrait être très similaire."
+msgstr ""
+"Ci-dessous, nous avons fourni une information pour savoir  comment "
+"configurer les apps iOS 7, pourque ils peuvent se connecter au "
+"|service_name|. Les instructions pour d'autre versions iOS peuvent "
+"différé, mais devrait être très similaire."
 
-#: ../../source/client-configuration/ios.rst:59
+#: ../../source/client-configuration/ios.rst:105
 msgid "Start the Configuration"
 msgstr "Commencez la Configuratiion"
 
-#: ../../source/client-configuration/ios.rst:61
+#: ../../source/client-configuration/ios.rst:107
 msgid ""
 "In order to configure your iOS device to use |service_name|, you have to "
 "open the *Settings* app and click *Mail, Contacts, Calenders* as in the "
 "screenshot below. In the next page, please click *Add Account...* and "
 "continue following the instructions below."
-msgstr "Pourque vous puissiez configurer votre appareil iOS à utiliser |service_name|, vous devez ouvrir l'app de *Settings* et cliquez *Mail, Contacts, Calenders* comme montré dans la capture d'écran ci-dessous. Sur la prochaine page, veuillez cliquer *Add Account...* et continuez de suivre les instructions en bas. "
+msgstr ""
+"Pourque vous puissiez configurer votre appareil iOS à utiliser "
+"|service_name|, vous devez ouvrir l'app de *Settings* et cliquez *Mail, "
+"Contacts, Calenders* comme montré dans la capture d'écran ci-dessous. Sur"
+" la prochaine page, veuillez cliquer *Add Account...* et continuez de "
+"suivre les instructions en bas. "
 
-#: ../../source/client-configuration/ios.rst:86
+#: ../../source/client-configuration/ios.rst:132
 msgid "Mail"
 msgstr "Mail"
 
-#: ../../source/client-configuration/ios.rst:88
+#: ../../source/client-configuration/ios.rst:134
 msgid ""
 "After you have reached the *Add Account* screen as described in :ref"
-":`settings-clientconfig-ios-start`, you can add an email account by clicking"
-" *Add Mail Account*."
-msgstr "Après avoir atteint l'écran  *Add Account* comme décrit dans :ref:`settings-clientconfig-ios-start`, vous pouvez ajouter un compte email en cliquant sur *Add Mail Account*."
+":`settings-clientconfig-ios-start`, you can add an email account by "
+"clicking *Add Mail Account*."
+msgstr ""
+"Après avoir atteint l'écran  *Add Account* comme décrit dans :ref"
+":`settings-clientconfig-ios-start`, vous pouvez ajouter un compte email "
+"en cliquant sur *Add Mail Account*."
 
-#: ../../source/client-configuration/ios.rst:92
+#: ../../source/client-configuration/ios.rst:138
 msgid ""
 "In the next screen, please provide your name, your |service_name| email "
 "address and your password. If you want to add your alias addresses, come "
-"back to this screen later and tap the email address. You should see an *Add "
-"Another Email...* option. With older iOS versions, you can provide multiple "
-"email addresses separated by comma."
-msgstr "Sur le prochain écran, veuillez fournir votre nom, votre |service_name| adresse email et votre mot de passe. Si vous désirez ajouter vos adresses d'alias, veuillez retournez ultérieurement sur cet écran et entrez l'adresse email. Vous devez voir une option *Add Another Email...*. Avec les anciennes versions d'iOS, vous pouvez rentrer des adresses email multiples séparé par une virgule."
+"back to this screen later and tap the email address. You should see an "
+"*Add Another Email...* option. With older iOS versions, you can provide "
+"multiple email addresses separated by comma."
+msgstr ""
+"Sur le prochain écran, veuillez fournir votre nom, votre |service_name| "
+"adresse email et votre mot de passe. Si vous désirez ajouter vos adresses"
+" d'alias, veuillez retournez ultérieurement sur cet écran et entrez "
+"l'adresse email. Vous devez voir une option *Add Another Email...*. Avec "
+"les anciennes versions d'iOS, vous pouvez rentrer des adresses email "
+"multiples séparé par une virgule."
 
-#: ../../source/client-configuration/ios.rst:97
+#: ../../source/client-configuration/ios.rst:143
 msgid "Please make sure that *IMAP* is selected."
 msgstr "Veuillez assurer que '*IMAP* est sélectionné."
 
-#: ../../source/client-configuration/ios.rst:98
+#: ../../source/client-configuration/ios.rst:144
 msgid ""
 "Add |**imap_host**| as the *Host Name* and your full and primary email "
 "address as *User Name* in the *INCOMING MAIL SERVER* section."
-msgstr "Ajoutez |**imap_host**| comme le *Host Name* et votre adresse email principale et complète comme  *User Name* dans la section *INCOMING MAIL SERVER*."
+msgstr ""
+"Ajoutez |**imap_host**| comme le *Host Name* et votre adresse email "
+"principale et complète comme  *User Name* dans la section *INCOMING MAIL "
+"SERVER*."
 
-#: ../../source/client-configuration/ios.rst:101
+#: ../../source/client-configuration/ios.rst:147
 msgid ""
-"Please provide |**smtp_host**| as *Host Name* in the *OUTGOING MAIL SERVER* "
-"section along with the same user name and password as above."
-msgstr "Veuillez fournir |**smtp_host**| comme *Host Name* dans la  section *OUTGOING MAIL SERVER* avec le même nom utilisateur et mot de passe comme ci-dessus."
+"Please provide |**smtp_host**| as *Host Name* in the *OUTGOING MAIL "
+"SERVER* section along with the same user name and password as above."
+msgstr ""
+"Veuillez fournir |**smtp_host**| comme *Host Name* dans la  section "
+"*OUTGOING MAIL SERVER* avec le même nom utilisateur et mot de passe comme"
+" ci-dessus."
 
-#: ../../source/client-configuration/ios.rst:104
+#: ../../source/client-configuration/ios.rst:150
 msgid "Your |service_name| account is now set up on your iPhone or iPad."
-msgstr "Votre |service_name| compte est désormais configurer sur votre iPone or iPad."
+msgstr ""
+"Votre |service_name| compte est désormais configurer sur votre iPone or "
+"iPad."
 
-#: ../../source/client-configuration/ios.rst:159
-msgid "ActiveSync for Access to all Data"
-msgstr "ActiveSync pour Accès à toutes Données"
+#~ msgid "ActiveSync for Access to all Data"
+#~ msgstr "ActiveSync pour Accès à toutes Données"
 
-#: ../../source/client-configuration/ios.rst:161
-msgid ""
-"After you have reached the *Add Account* screen as described in :ref"
-":`settings-clientconfig-ios-start`, you can add your data from "
-"|service_name| using ActiveSync by creating an *Exchange* account. Please "
-"note that |service_name| is not actually running a Microsoft Exchange "
-"server, but a Free Software implementation of the ActiveSync protocol used "
-"by Exchange."
-msgstr "Quand vous êtes arrivé sur l'écran *Add Account* comme décrit en :ref:`settings-clientconfig-ios-start`, vous pouvez ajouter vos données de |service_name| utilisant ActiveSync  pour créer un compte *Exchange*.  Veuillez noter que |service_name| n'est pas en cours d'éxécution d'un serveur Microsoft Exchange, mais une implémentation d'un Logiciel Libre du protocole ActiveSync utilisé par Exchange."
+#~ msgid ""
+#~ "After you have reached the *Add "
+#~ "Account* screen as described in :ref"
+#~ ":`settings-clientconfig-ios-start`, you can"
+#~ " add your data from |service_name| "
+#~ "using ActiveSync by creating an "
+#~ "*Exchange* account. Please note that "
+#~ "|service_name| is not actually running a"
+#~ " Microsoft Exchange server, but a "
+#~ "Free Software implementation of the "
+#~ "ActiveSync protocol used by Exchange."
+#~ msgstr ""
+#~ "Quand vous êtes arrivé sur l'écran "
+#~ "*Add Account* comme décrit en :ref"
+#~ ":`settings-clientconfig-ios-start`, vous "
+#~ "pouvez ajouter vos données de "
+#~ "|service_name| utilisant ActiveSync  pour "
+#~ "créer un compte *Exchange*.  Veuillez "
+#~ "noter que |service_name| n'est pas en"
+#~ " cours d'éxécution d'un serveur Microsoft"
+#~ " Exchange, mais une implémentation d'un "
+#~ "Logiciel Libre du protocole ActiveSync "
+#~ "utilisé par Exchange."
 
-#: ../../source/client-configuration/ios.rst:168
-msgid "In the first screen, please provide your email address and password."
-msgstr "Sur le premier écran, veuillez fournir votre adresse émail et mot de passe."
+#~ msgid "In the first screen, please provide your email address and password."
+#~ msgstr ""
+#~ "Sur le premier écran, veuillez fournir"
+#~ " votre adresse émail et mot de "
+#~ "passe."
 
-#: ../../source/client-configuration/ios.rst:169
-msgid ""
-"Then, please enter |**activesync_host**| as the *Server* like indicated in "
-"the screenshot below."
-msgstr "Ensuite, veuillez entrer |**activesync_host**| comme le *Server* exactement comme indiqué dans la capture d'écran ci-dessous."
+#~ msgid ""
+#~ "Then, please enter |**activesync_host**| as"
+#~ " the *Server* like indicated in the"
+#~ " screenshot below."
+#~ msgstr ""
+#~ "Ensuite, veuillez entrer |**activesync_host**| "
+#~ "comme le *Server* exactement comme "
+#~ "indiqué dans la capture d'écran ci-"
+#~ "dessous."
 
-#: ../../source/client-configuration/ios.rst:170
-msgid ""
-"The *Domain* is optional, but might be required if you are not using one of "
-"the default domains provided by |service_name|."
-msgstr "Le *Domain* est facultatif, mais cela sera demandé si vous n'utilisez pas l'un des domaines par défaut fournis par |service_name|."
+#~ msgid ""
+#~ "The *Domain* is optional, but might "
+#~ "be required if you are not using"
+#~ " one of the default domains provided"
+#~ " by |service_name|."
+#~ msgstr ""
+#~ "Le *Domain* est facultatif, mais cela"
+#~ " sera demandé si vous n'utilisez pas"
+#~ " l'un des domaines par défaut fournis"
+#~ " par |service_name|."
 
-#: ../../source/client-configuration/ios.rst:171
-msgid ""
-"In the last screen, you can define what kind of data you want to "
-"synchronize. We recommend to disable mail and instead use the instructions "
-"above (see :ref:`settings-clientconfig-ios-mail`) for mail."
-msgstr "Sur le dernier écran, vous pouvez définir les données que vous aimerez synchroniser. Nous recommandons de déactiver mail et d'utiliser à la place les instructions ci-dessus (voyez :ref:`settings-clientconfig-ios-mail`) pour mail."
+#~ msgid ""
+#~ "In the last screen, you can define"
+#~ " what kind of data you want to"
+#~ " synchronize. We recommend to disable "
+#~ "mail and instead use the instructions"
+#~ " above (see :ref:`settings-clientconfig-"
+#~ "ios-mail`) for mail."
+#~ msgstr ""
+#~ "Sur le dernier écran, vous pouvez "
+#~ "définir les données que vous aimerez "
+#~ "synchroniser. Nous recommandons de déactiver"
+#~ " mail et d'utiliser à la place "
+#~ "les instructions ci-dessus (voyez :ref"
+#~ ":`settings-clientconfig-ios-mail`) pour "
+#~ "mail."
 
-#: ../../source/client-configuration/ios.rst:173
-msgid ""
-"After successful account creation, you should select which data shall be "
-"synchronized in the webmail settings (see last screenshot)."
-msgstr "Après avoir créé votre compte avec succès, vous devez sélectionner les données qui doivent être synchronisées dans les paramètres webmail (voyez la dernière capture d'écran)."
+#~ msgid ""
+#~ "After successful account creation, you "
+#~ "should select which data shall be "
+#~ "synchronized in the webmail settings "
+#~ "(see last screenshot)."
+#~ msgstr ""
+#~ "Après avoir créé votre compte avec "
+#~ "succès, vous devez sélectionner les "
+#~ "données qui doivent être synchronisées "
+#~ "dans les paramètres webmail (voyez la"
+#~ " dernière capture d'écran)."
 
-#: ../../source/client-configuration/ios.rst:176
-msgid ""
-"Note: Depending on how much data you have in your |service_name| account, it"
-" might take a couple of minutes before everything has been downloaded to "
-"your device."
-msgstr "Notez: En fonction de la quantité de données que vous avez  dans votre |service_name| compte, cela peut prendre quelques minutes avant que tout soit télécharger sur votre appareil."
+#~ msgid ""
+#~ "Note: Depending on how much data "
+#~ "you have in your |service_name| account,"
+#~ " it might take a couple of "
+#~ "minutes before everything has been "
+#~ "downloaded to your device."
+#~ msgstr ""
+#~ "Notez: En fonction de la quantité "
+#~ "de données que vous avez  dans "
+#~ "votre |service_name| compte, cela peut "
+#~ "prendre quelques minutes avant que tout"
+#~ " soit télécharger sur votre appareil."
 
-#: ../../source/client-configuration/ios.rst:238
-msgid "CardDAV/CalDAV for Contacts and Calendars"
-msgstr "CardDAV/CalDAV pour Contacts et Calendriers"
+#~ msgid "CardDAV/CalDAV for Contacts and Calendars"
+#~ msgstr "CardDAV/CalDAV pour Contacts et Calendriers"
 
-#: ../../source/client-configuration/ios.rst:240
-msgid ""
-"After you have reached the *Add Account* screen as described in :ref"
-":`settings-clientconfig-ios-start`, you can sync your data from "
-"|service_name| by clicking on *Add CardDAV Account* and *Add CalDAV "
-"Account*."
-msgstr "Après avoir atteint l'écran *Add Account* comme décrit dans :ref:`settings-clientconfig-ios-start`, vous pouvez synchroniser vos données depuis |service_name| en cliquant sur  *Add CardDAV Account* et *Add CalDAV Account*."
+#~ msgid ""
+#~ "After you have reached the *Add "
+#~ "Account* screen as described in :ref"
+#~ ":`settings-clientconfig-ios-start`, you can"
+#~ " sync your data from |service_name| "
+#~ "by clicking on *Add CardDAV Account* "
+#~ "and *Add CalDAV Account*."
+#~ msgstr ""
+#~ "Après avoir atteint l'écran *Add "
+#~ "Account* comme décrit dans :ref:`settings-"
+#~ "clientconfig-ios-start`, vous pouvez "
+#~ "synchroniser vos données depuis |service_name|"
+#~ " en cliquant sur  *Add CardDAV "
+#~ "Account* et *Add CalDAV Account*."
 
-#: ../../source/client-configuration/ios.rst:245
-msgid ""
-"For both account types, we provide the necessary configuration values below."
-msgstr "Pour les deux types de compte, nous  fournissons des valeurs de configuration nécessaires ci-dessous."
+#~ msgid ""
+#~ "For both account types, we provide "
+#~ "the necessary configuration values below."
+#~ msgstr ""
+#~ "Pour les deux types de compte, "
+#~ "nous  fournissons des valeurs de "
+#~ "configuration nécessaires ci-dessous."
 
-#: ../../source/client-configuration/ios.rst:247
-msgid "Username: Your full and primary |service_name| email address"
-msgstr "Nom d'Utilisateur: Votre |service_name| adresse émail principale et complète"
+#~ msgid "Username: Your full and primary |service_name| email address"
+#~ msgstr ""
+#~ "Nom d'Utilisateur: Votre |service_name| "
+#~ "adresse émail principale et complète"
 
-#: ../../source/client-configuration/ios.rst:248
-msgid ""
-"Password: Your |service_name| password that belongs to your email address"
-msgstr "Mot de passe: Votre |service_name| mot de passe qui appartient à votre adresse émail"
+#~ msgid ""
+#~ "Password: Your |service_name| password that"
+#~ " belongs to your email address"
+#~ msgstr ""
+#~ "Mot de passe: Votre |service_name| mot"
+#~ " de passe qui appartient à votre "
+#~ "adresse émail"
 
-#: ../../source/client-configuration/ios.rst:249
-msgid "Description: |**service_name**|"
-msgstr "Description: |**service_"
+#~ msgid "Description: |**service_name**|"
+#~ msgstr "Description: |**service_"
 
-#: ../../source/client-configuration/ios.rst:250
-msgid "CardDAV Server: |**carddav_host**|"
-msgstr "Serveur CardDAV: |**carddav_host**|"
+#~ msgid "CardDAV Server: |**carddav_host**|"
+#~ msgstr "Serveur CardDAV: |**carddav_host**|"
 
-#: ../../source/client-configuration/ios.rst:251
-msgid "CalDAV Server: |**caldav_host**|"
-msgstr "Serveur CalDAV : |**caldav_host**|"
+#~ msgid "CalDAV Server: |**caldav_host**|"
+#~ msgstr "Serveur CalDAV : |**caldav_host**|"
+
