@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/client-configuration/kontact.rst:91
+# d303ddb3d8d7440e82fac4738e8d2030
+msgid "Kontact"
+msgstr ""
+
+#: ../../source/client-configuration/kontact.rst:96
+# 0fdb4c37ba734f63b0bd4fcc245b41d8
+msgid "`Kontact <http://kontact.org>`__ is the original client for `Kolab <http://kolab.org>`__, the software which is used by |service_name|. It is fully `Free Software <https://fsfe.org/freesoftware>`__ and supports end-to-end encryption with `GnuPG <http://gnupg.org>`__ out of the box. It is available for GNU/Linux and Windows. Kolab Systems sponsors the `Windows installer <http://mirror.kolabsys.com/pub/upload/windows/K3-Kontact-Beta-latest.exe>`__ and maintains the Windows version."
+msgstr ""
+
+#: ../../source/client-configuration/kontact.rst:106
+# e23ceebd40a04781b350ef4227b439de
+msgid "If you want to set up Kontact with your |service_name| account, please follow the instructions below."
+msgstr ""
+
+#: ../../source/client-configuration/kontact.rst:109
+# ec0a363b93064b4598f27882fa070a05
+msgid "There is extensive documentation available for `Kontact <http://docs.kde.org/stable/en/kdepim/kontact/index.html>`__, its `Calendar <http://docs.kde.org/stable/en/kdepim/korganizer/index.html>`__ and its `Email <http://docs.kde.org/stable/en/kdepim/kmail/index.html>`__ program."
+msgstr ""
+
+#: ../../source/client-configuration/kontact.rst:118
+# acbaf8582d424ab2a5683cfb708b2666
+msgid "Set up a Kolab Account"
+msgstr ""
+
+#: ../../source/client-configuration/kontact.rst:120
+# 3b99c7a5338f46a580ddba40ce35728c
+msgid "In order to add a new account to your Kontact, please open the Account Assistant and select *Kolab Groupware Server* as the account type. Fill out the Personal Settings while making sure that the Server Address is set to |**imap_host**| and the Kolab Version to *v3*."
+msgstr ""
+
+#: ../../source/client-configuration/kontact.rst:150
+# 76d6c23b3aa54b938885f05179104932
+msgid "IMAP Configuration"
+msgstr ""
+
+#: ../../source/client-configuration/kontact.rst:152
+# fafc1540bdd84cfdb004d3d521f22a23
+msgid "If you followed the above instructions using the Account Assistant, your IMAP account should already have been set up properly. However, you can verify your settings based on the screenshots below. In order to do so, please go to *Settings* in the menu bar and choose *Configure Kontact*. Then go to *Mail* and *Accounts*."
+msgstr ""
+
+#: ../../source/client-configuration/kontact.rst:158
+# 9c34c52125334640af699cfddbd90506
+msgid "Please make sure that the IMAP Server is |**imap_host**| and that it uses port |**imap_port**| with |**imap_ssl**| encryption. Please also use your full and primary |service_name| address such as |**useremail**| as a user name."
+msgstr ""
+
+#: ../../source/client-configuration/kontact.rst:190
+# 6d3c032f9da74fd585995ccfe427f99a
+msgid "SMTP Configuration"
+msgstr ""
+
+#: ../../source/client-configuration/kontact.rst:192
+# eb053afbb5ae4c31a366b5c7353b5960
+msgid "Unfortunately, the SMTP settings need to be corrected after account setup. In order to do so, please go to *Settings* in the menu bar and choose *Configure Kontact*. Then go to *Mail*, *Accounts* and then click on the *Sending* tab. The server should be |**smtp_host**| with port |**smtp_port**| and TLS encryption. Please use your full and primary |service_name| address such as |**useremail**| as a user name and also see the screenshots below."
+msgstr ""
+

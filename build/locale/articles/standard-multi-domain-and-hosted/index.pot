@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:92
+# 71e5013350d54451b55de3097f3367a8
+msgid "Standard, Multi-Domain and Hosted Kolab"
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:94
+# 5145765d3fc34d758aab8974885d82ec
+msgid "Kolab Groupware is a flexible collaboration suite and in addition to its standard deployment, also supports both *multi-domain* and *hosted* deployments."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:98
+# 3d656881dfaa45e4b31e5793d87ae7d5
+msgid "The difference between a standard Kolab Groupware environment, a multi-domain, and a hosted deployments is as follows:"
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:101
+# 6ddd40c62448468798c67cec78346a4a
+msgid "**Standard**"
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:103
+# 7b8b8f9d7cb44734895ca2161ccc37e7
+msgid "A standard deployment of Kolab Groupware is designed to serve a single organization's collaboration needs."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:106
+# 4056a43b50be44f2a06c3e3bf7a91620
+msgid "This includes features such as Shared Folders and Resource Management, Invitation Policies and Delegation, and Recipient Policies and Distribution Groups."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:110
+# 2bd083ac84df4c7e83f23680a4b8cb8d
+msgid "A *standard* Kolab Groupware deployment also supports :term:`alias domain name spaces`, meaning that a setup for a domain name space of ``example.org`` can let its users have additional recipient email addresses in an alias domain name space of ``beispiel.de``, ``voorbeeld.nl`` and/or ``exemple.ch``."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:116
+# 4329dc2123e84113898e081bab355c12
+msgid "**Multi-Domain**"
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:118
+# bfe5a0b131ae4ffc9df46ad9848a6612
+msgid "A multi-domain deployment of Kolab Groupware is designed to serve multiple organizations' collaboration needs based on a single deployment of Kolab Groupware."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:122
+# 76a2849c09ff44fb80669d10d1541d06
+msgid "This is to say that an organization such as **Business, Inc.** with a primary domain name space of ``business.co.uk`` can use the same infrastructure as an organization **Competitor, Ltd.** with a primary domain name space of ``competitor.de``."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:127
+# b97ad1d4640041d1a659796479763bf4
+msgid "Each of these organizations may, aside from their primary domain name space, hold one or more alias domain name spaces (rendering the primary domain name space a :term:`parent domain name space`)."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:131
+# bb0d11583a36462882a5262d6eda5b78
+msgid "While the two organizations use the same deployment and the same infrastructure, information of neither organization may become available to the other organization -- accidentally nor otherwise."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:135
+# 4468a237b7c149e5a18bd9e1954db71c
+msgid "**Multi-domain** deployments are designed specifically such that there is a clear boundary between the spaces in which the users of each organization collaborate."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:139
+# 2e38541642724edf8d73ed0b27f8fd33
+msgid "However, not all of the most recent features added to Kolab Groupware are immediately also available to multi-domain environments. Resource Management for example is one of such recent features. This is why a default setup is not already configured to be or become a multi-domain setup, and the HOWTO for multi-domain is community-contributed."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:146
+# f35c45c5aee643ce9d0cf9b0a6bf6432
+msgid "**Hosted Kolab**"
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:148
+# cf63234595d14e45a8b2852ad5c197d2
+msgid "A hosted Kolab Groupware deployment is very similar to a *multi-domain* deployment, but allows users (customers) to register accounts and domains themselves, and adds revenue to the deployment by invoicing the customers."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:153
+# 4d48c677f59744f0a3460cfab5872a58
+msgid "Allowing customers to create accounts brings with it a set of additional requirements, such as new users confirming either one of the identifying pieces of information (a phone number, an email address or even just a physical address), which in your jurisdiction you may or may not be required to request."
+msgstr ""
+
+#: ../../source/articles/standard-multi-domain-and-hosted/index.rst:159
+# 97fc07646d3a48ebbcab0c42311833ad
+msgid "Furthermore, for customers that register a domain name space, you'll need to be able to confirm the customer's ownership of that domain name space."
+msgstr ""
+

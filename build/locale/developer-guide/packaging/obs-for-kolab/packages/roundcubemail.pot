@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:88
+# 10e2edf33e8b4140a98c6a555598a9e0
+msgid "The |roundcubemail| package contains the upstream web-application used for the webmail interface in Kolab Groupware."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:91
+# 5851548b7444409f86e20674a04cbf61
+msgid "It's packaging is rather complex, with one tarball resulting in some 100 sub-packages."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:94
+# 465eb92077534921b4f4c165a6b3da36
+msgid "The generic package |roundcubemail| is a so-called meta-package, that depends on a set of sub-packages. As such, a :command:`yum install roundcubemail` results in a fully function, minimal installation of Roundcube (with only the core, few required plugins, and one skin)."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:100
+# 7ab3d1915855463dbe51fc0be1edd9a8
+msgid "Among the Roundcube sources are three generic categories of source code that are packaged separately -- the core, the plugins and the skins."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:103
+# 072831bc9c42432cad24780556d7ce11
+msgid "The core program and each plugin may contain static files (assets) for the core program or the plugin to function, that are independent of the skin being used, but may also contain static files (assets) that are specific to a particular skin being used."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:108
+# 6382d0300f814c06bfeb99ae5f240a11
+msgid "Program code, skins and assets are all packaged separately, so that a particular server system can be made to serve only static contents."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:113
+# 0eb3cce42585448798f2ade3f67e15e3
+msgid ":ref:`article-what-goes-in-to-a-documentroot-and-what-does-not-belong-there`"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:115
+# c44105e029984f5aa99059a1d45afd48
+msgid "**Core Roundcube Library and Program**"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:117
+# 4b69185f1f004a62999a87c570c1ea2f
+msgid "The core Roundcube library contains generic program code shared between applications such as :ref:`package-chwala`, :ref:`package-irony`, :ref:`package-kolab-freebusy` and :ref:`package-kolab-syncroton`."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:122
+# d7d9df41f1b64606bd6887c520249048
+msgid "In packaging, the core Roundcube library is deployed to :file:`/usr/share/roundcubemail/program/lib/Roundcube/`, and configured using :file:`/etc/roundcubemail/config.inc.php` and :file:`/etc/roundcubemail/defaults.inc.php`."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:127
+# baca07d9c59d475ca0a0ac0a5f21c8a2
+msgid "The core Roundcube program wraps up the core library, required plugins and the available skins in to the full webmail interface."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:130
+# c9e8ca2fa97447ea9b71d69317030724
+msgid "The core is packaged as **roundcubemail-core**, providing a virtual capability of *roundcubemail(core) = %{version}-%{release}* that other packages depend on."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:134
+# 44d449b131db4a46ba0d198ce4798590
+msgid "This package also depends on the plugins that are required, and at least one skin (referred to by the virtual provides *roundcubemail(skin)*)."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:138
+# 92cb8616c46c4d78b71cb4a3c57c4fd7
+msgid "**Required Plugins**"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:140
+# 0ab9caae8ed84d9180769d0f1d1007f2
+msgid "Required plugins are packaged separately, and include:"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:142
+# 9c85ded1d62c4429a1490a3ef22dee62
+msgid "``filesystem_attachments``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:143
+# e904e04a383c486e8a9bee50971ac3d9
+msgid "``jqueryui``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:145
+# 9bba58c126ad4cbdb6a7fd6545b7b73a
+msgid "**Additional Plugins**"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:147
+# 93d55ffa0d3f4a67a6fc1cf00a5ca52a
+msgid "``acl``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:148
+# 8566317866e641218cb034edfe7e349d
+msgid "``additional_message_headers``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:149
+# 81d962edd582464ea9f0946c6b791a8e
+msgid "``archive``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:150
+# 92db45a4c11d43a396cad6971b8bae21
+msgid "``attachment_reminder``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:151
+# 4534ad3ee8c048e0966a0f179201804a
+msgid "``autologon``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:152
+# a6dc32c7cc124c80922f4e2c04c59af2
+msgid "``database_attachments``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:153
+# 7632de446e8d4f2483d520d878459aa4
+msgid "``debug_logger``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:154
+# 507f52cae451458cb1775204fcac3095
+msgid "``emoticons``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:155
+# 15a5ed6f9b1c483c941fd8a570986c9a
+msgid "``enigma``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:156
+# 7a291f70b9d347b6ba100ddabe995309
+msgid "``example_addressbook``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:157
+# c8a8b1dbfcaa47b999adb068a56548e8
+msgid "``help``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:158
+# c35387993167493dabc86ec1e225b5c8
+msgid "``hide_blockquote``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:159
+# 8754b6ea02284ade8b13dab39a5fb54b
+msgid "``http_authentication``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:160
+# ee12e80ede9f4f21af90c02f064a96e0
+msgid "``identity_select``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:161
+# 70751d6b651740bbac9fea6d6d6f51c1
+msgid "``legacy_browser``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:162
+# ece66ec0a40848e29c37290931ca927d
+msgid "``managesieve``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:163
+# f2ce12e39e7b4651a921791a815feaf0
+msgid "``markasjunk``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:164
+# ea13ed0445454b0aa6fa8b5f8fad127c
+msgid "``new_user_dialog``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:165
+# f586e9b07e5a4e98a3a2252eb1d36e12
+msgid "``new_user_identity``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:166
+# ed08354c3eda47078eebd42ed2f1d8a6
+msgid "``newmail_notifier``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:167
+# ee83feed0b174b0bbaacc2b4d6cf45f7
+msgid "``password``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:168
+# 49e5577fecd147bc939a9ce66995c79e
+msgid "``redundant_attachments``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:169
+# 020d77a447064c1ab589e59a5279535f
+msgid "``show_additional_headers``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:170
+# 19f2f83888344f1a8c1b1508819a4a19
+msgid "``squirrelmail_usercopy``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:171
+# ad90aaff76e0406e80ba4a11c25a0161
+msgid "``subscriptions_option``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:172
+# 63715c79ed7a4695ad842fb85bb00d49
+msgid "``userinfo``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:173
+# 7af8b7e8f80d481bbdabd6a5dc6437d5
+msgid "``vcard_attachments``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:174
+# d081ecdc9cd847bb8fbb179b6e771ecd
+msgid "``virtuser_file``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:175
+# 2549fce500b14675a9088d7c1e4769be
+msgid "``virtuser_query``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:176
+# 73daa405d0324096a5a51e3a18a252fe
+msgid "``zipdownload``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:178
+# 17aacb9c3fad41819108516457af5fae
+msgid "**Skins**"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:180
+# 03d5e7e5a3c3475b8c5ec4465bf14e71
+msgid "``classic``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:181
+# db2b5cb3670d43bb9de5769f9c0c4e73
+msgid "``larry``"
+msgstr ""
+

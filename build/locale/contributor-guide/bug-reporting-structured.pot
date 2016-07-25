@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:92
+# ba72ccd5b135473a9d28fd5ada02599f
+msgid "Reporting Bugs Against (Long-Term) Supported Kolab Versions"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:94
+# 597801355e4c441b96befefe99e82b9f
+msgid "Long-term support versions of Kolab maintain larger sets of different versions of software, and it becomes important to ensure that the fix for an issue in `foo-1.0` does not require a properly entitled customer to upgrade to a later version of Kolab, or even a later version of `foo`."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:99
+# e5d55cdf72d84d38ac6f2730a98cd0d3
+msgid "The stability requirements imply that support be able to track issues with specific versions of the software, targets these issues to be resolved in certain newer versions of the software, and trusts the resolution of the issue to be verifiable against multiple versions of the software collection."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:105
+#: ../../source/contributor-guide/bug-reporting-structured.rst:202
+# 5b548ce7d8954accb4df0bebc5342e84
+# f190dd377cbd4eb985bcd9209fb781a9
+msgid "Example"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:107
+# b97ff7385107471da10038390c9f514d
+msgid "The following table depicts the versions of the |roundcubemail| package, and the |roundcubemail-plugins-kolab| package, as distributed for each product stream."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:0
+# 68301e39d9164c90a6f4476612935b6c
+msgid "Version table for Roundcubemail and Kolab Plugins"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:114
+# 0294cd8591014e2b92308a4c883f99e0
+msgid "|roundcubemail|"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:114
+# 2e9daca757664e12b86d616ce5a779cb
+msgid "|roundcubemail-plugins-kolab|"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:116
+# c68a5ee265714d9090b0832d746374c3
+msgid "|KE13|"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:116
+# eb0bb895c1aa4c1cb31f275453352e96
+msgid "`1.0.4`"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:116
+# 1343cfea8b2541cb93b5dc68701c6a9b
+msgid "`3.1.16`"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:118
+# 9abce77878a94896bb0cf2077f629b19
+msgid "|KE14|"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:118
+# d7ecdb9d03954722956fed8e9ae0b822
+msgid "`1.1.4`"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:118
+# 90bd31c051fe40599ade6f9ce70d467b
+msgid "`3.2.11`"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:120
+# 187cc4cab70541b49462bf2fa98a75be
+msgid "|K16|"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:120
+#: ../../source/contributor-guide/bug-reporting-structured.rst:122
+# 48670fee84d44dbb95a3045fc6df0b8d
+# 693866529d7f49ceaef9cee5d7ffa419
+msgid "`1.2`"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:120
+#: ../../source/contributor-guide/bug-reporting-structured.rst:122
+# 2bca0874a22b49fda003738d59e90ad5
+# 2c0fa27da3d4459b9a976f4c76044bb8
+msgid "`3.3`"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:122
+# 3b2622f824ba487b839d953619b2d736
+msgid "|Winterfell|"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:125
+# ae50b2abc7be4bc59f20032a7718d393
+msgid "Stability requirements for |KE13| demand the following:"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:127
+# a083dde35afe4f6cbe1a32c05b40ea69
+msgid "The version of |roundcubemail| shipped to the product stream is one of the **1.0 series** of upstream releases,"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:130
+# 630cbbc305284d1987f70271b42a4f34
+msgid "Upstream maintains a **stable** 1.0 series for |roundcubemail|,"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:132
+# f4e693552b6c45ddb0023a2e17c36a89
+msgid "The version of |roundcubemail-plugins-kolab| shipped to the product stream is one of the **3.1 series** of upstream releases,"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:135
+# a53da0b767b7423480c2b52faa7b8f25
+msgid "Upstream maintains a **stable** 3.1 series for |roundcubemail-plugins-kolab|,"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:138
+# b3b0f8097de44d149a7b7a0a90568dbe
+msgid "Future versions of |roundcubemail| in the 1.0 series remain backward compatibility for consumers of its API (such as |roundcubemail-plugins-kolab|),"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:142
+# 68cdce74fe1549c19f76bff922bb0f8d
+msgid "Added functionality in |roundcubemail-plugins-kolab|, if any, does not require any changes in |roundcubemail| that would break other compatibility,"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:146
+# f48ce7bdb8b54eeea8778ff3fe7f658b
+msgid "The aforementioned conditions all last for up to 5 years,"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:148
+# 57cd5e8082304708a8ed29788990b7f7
+msgid "For a large number of target platforms."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:150
+# 5908acc6e1df45f8824b4e5b0af88554
+msgid "The same conditions apply to |KE14| and |K16| -- with different version series, different timelines and sometimes different stacks."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:153
+# 15400bffd6724a0b93073ad874d37369
+msgid "Further down the dependency stack, this includes maintenance for **libkolabxml**, **libkolab** and **libcalendaring**."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:156
+# 189c255b92f74da08741f1532244f0db
+msgid "In the future, this will extend up to 6 product streams that will need to be maintained."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:159
+# ab3f9d5b58c346a787533c929fbd3304
+msgid "It is therefore important that an issue logged against a version 1.0.1, with the current version in the 1.0 series perhaps being 1.0.10, needs to go through the following stages:"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:163
+# 7c77b36f4ced4d539212531bfe7a04c2
+msgid "Is the issue reproducible in the unstable development version of the software suite?"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:166
+# 1d3b39dc363d4e26b26b3a114078c452
+msgid "If it is, it is a development issue; `report a bug`_ in Phabricator."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:168
+# 240d7bfee03f4fb683e8804c769c9ba3
+msgid "Developer teams become responsible for testing the resolution of the issue first, and fixing the issue second (see :ref:`contributor-guide-test-driven-development`)."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:172
+# 07604d02dcf34cf5a4cd01af6ce02404
+msgid "For each of the product streams in between current development and the original issue report, create a ticket in `bugzilla`_."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:177
+# b62cf032746248068cc7038f0633d07d
+msgid "Something about backporting with the verification included."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:179
+# 0be1172baa0d46e1b74cda3a387b9654
+msgid "If it is not, in what product stream can the issue still be reproduced?"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:181
+# 92b2d8348d5a44e3bd2ace00ced71a80
+msgid "This process can be a very costly lather-rinse-repeat exercise, and therefore needs to be covered ahead of time, through :ref:`contributor-guide-test-driven-development`."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:185
+# 2c5f0d1d2a4c475e8114912ad2ba90c8
+msgid "Create a `bugzilla`_ ticket for the appropriate"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:189
+# 6c412c7987bd4447b58e20ee40556550
+msgid "Something about constructive troubleshooting efforts"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:191
+# 2bfdd4e1c025449eafab3df11119c56d
+msgid "Using the input of 1) and outcome of 1a) or 1b), describe the range of targets;"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:194
+# 8213e76ac5c8415fac597b2289a0d81c
+msgid "branch 1.2 for |K16|: yes or no?"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:195
+# 715df775de654046b04f1f1ed704fb37
+msgid "branch 1.1 for |KE14|: yes or no?"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:196
+# 9c155ca95dc44938a9edab9c4b67a5e2
+msgid "etc."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:198
+# 472fe74e997d40d7b049756fcf99e83a
+msgid "Each becomes a separate `bugzilla`_ ticket, each of them depending on the resolution of the more recent product stream('s software version)."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:204
+# 70dbf6d2b20c434097a3f848bf47a7a3
+msgid "Let's assume \"yay\" fails on all versions of Roundcube."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:206
+# ce8e6586478f46cba796ff94dc004672
+msgid "Issue:"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:208
+# 37dfa33f0db14776a06aff6ae010a6b4
+msgid "*Yay fails on Roundcube 1.0.1 on* |santiago|"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:210
+# 4e17534ec9d1475f928027dedfcbf749
+msgid "This is an original ticket. The intended milestone for the resolution is `1.0-next`."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:213
+# 7710afbc1ab74f79adeaa41a3684f585
+msgid "Support:"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:215
+# 916e8e9848494006b03eefc05a9be04d
+msgid "*Does yay fail in* |Winterfell| *on* |maipo| *?*"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:217
+# 9ac04a661a6643208ac5884c4b4a4ee6
+msgid "Yes, this is a new development issue; `Report a bug`_. Add a project tag for :orange:`Winterfell`"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:220
+# c2feb11834464ad9824dd5a89db3001a
+msgid "*Does yay fail in* |K16| *on* |maipo| *?*"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:222
+# 4871e59e6c2f4cbabfe5f61e250a7d32
+msgid "Yes, and |K16| is on the same software version series as |Winterfell|;"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:224
+# 23b868a60bc543548afadc5bc0346a09
+msgid "It is thus a new development issue; `Report a bug`_ and have it blocked by the bug created in 2.1)."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:227
+# 62b1fd78c1134fb7bd56cceb99e5d61b
+msgid "Associate the |K16| release target with the bug."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:229
+# afc94e4ab66b44b0a860627a2561102c
+msgid "Also create a `bugzilla`_ ticket. The milestone here is `1.2-next`. Refer to the task created in Phabricator."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:232
+# 89a52ac997264399814e11a0277dfec2
+msgid "*Does yay fail in* |KE14| *on* |santiago| *?*"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:234
+# c2a098cd261e414fb6415466b7887dba
+msgid "Yes, create a `bugzilla`_ ticket and block it with the ticket created in 2.2). The milestone here is `1.1-next`."
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:237
+# 85f60d62150a4d4d94e17e253694f47a
+msgid "*Does yay fail in* |KE13| *on* |santiago| *using version 1.0.4?*"
+msgstr ""
+
+#: ../../source/contributor-guide/bug-reporting-structured.rst:239
+# e8b33c07853c4883a12f01b2469144c3
+msgid "Yes, block the original ticket in 1) with the ticket from 2.3)."
+msgstr ""
+

@@ -1,0 +1,629 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:92
+# 49c987c76b544ce292fffcbe2b4d250e
+msgid "Kolab Freebusy Service Settings Reference"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:94
+# be3e71ec4f3e4b1dba58b691828c744c
+msgid "The web service is configured using a single settings file in .ini format located in ``/etc/kolab-freebusy/config.ini``."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:97
+# a50414742de94bf6b39816b4895b64d7
+msgid "The configuration is divided into the following static sections and a list **directory** sections defining the list of directories used to search for freebusy for the requested user or resource. The directories are iterated from to to bottom in the order as they appear in the config file. The iteration stops once a directory can provide valid freebusy data."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:105
+# e1bf4b0d7fbe446db3403da1842e3b7c
+msgid "Basic Configuration"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:108
+# 18cdeca8065d41d1b7e761b28f1d9a29
+msgid "[httpauth]"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:110
+# b6ec73bf08b4406482255d9a0634d5c0
+msgid "Access to the web service can be protected with basic HTTP authentication. This section controls the authentication with the following options:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:114
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:222
+# 8c235dd95f574116aa2c43ae021934a9
+# 5308680d87b34f87a40dc93dde3e6d4e
+msgid "``type``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:115
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:224
+# 543e19a1b1ae4bfd8f95cfd50e7b97c1
+# 8b48939b376c4ad58521218b67418586
+msgid "Either one of 'static' or 'ldap'."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:117
+# 95fafa2cece14bd58652c2dc69632e7e
+msgid "'static' provides a simple authentication with a static username/password pair."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:119
+# d2f6ce1e3cd247d7bb4dcd3e163c898b
+msgid "'ldap' will perform an LDAP login with the provided username and password. Only users who can authenticate on LDAP will be granted access to the service."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:123
+# e3d5a21dd38b48da81002c89ce748eff
+msgid "``username``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:124
+# 25c43a621c5347a6b65c8652d74cc103
+msgid "Static username used with type 'static'."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:127
+# 42d81ab2784d4fb69676f50c8badd45b
+msgid "``password``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:128
+# 0b6bf563cabb4149bef1ddbe182feba9
+msgid "Static password used with type 'static'."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:131
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:255
+# 7e0c1a76dfc3402c8b84e019fbb9cea2
+# 5cc1a3580ff24e9c9b81cb16f4d97868
+msgid "``host``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:132
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:257
+# d6ef2e98a40f40afad50b456dbe7e1aa
+# e792ed007b7a4ddda68998ff398716bd
+msgid "Fully qualified URI to the LDAP server, including protocol and port."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:134
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:259
+# ecff0de5d1cb4ca39da934b605f0e4b6
+# b925db6e40c849549d30396a66771cdf
+msgid "Example: ``ldap://localhost:389``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:137
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:263
+# 1d18f01f2af94811911ffaabef791b75
+# 05f1365ed0484e568edef2cab747c51d
+msgid "``bind_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:138
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:265
+# f0d4c56673d844579978df68d686e2e7
+# 643bc4401a4740a082e93fa0a0c05850
+msgid "DN for binding to the LDAP service. Should be an unprivileged user with read-only access."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:141
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:268
+# eebb931f7d394de2b3bcddd29b791d73
+# 03e836f1022e4e879d72c20140c153ae
+msgid "Example: ``uid=kolab-service,ou=Special Users,dc=example,dc=org``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:144
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:272
+# 7f9ab37772e443b2b66f43b2aa9b167b
+# 82f2688396094d918755b78168844077
+msgid "``bind_pw``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:145
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:274
+# 249eb35d2f324c9a8773863fc5e43e40
+# c2d07e1a11564af9bf58bed7eafb6943
+msgid "Password for binding to the LDAP service."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:148
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:246
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:278
+# e5f9c878b99349d68b459baa94d96ca1
+# d5e60beece764ccbaea21a22554780a2
+# 28034b1b3c62477db7260dbdb2785bfc
+msgid "``filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:149
+# 9bf6a991bb3e4063a1feaf007b4c16f0
+msgid "Optional. Filter used to first resolve the username against LDAP. ``%s`` is replaced by the username."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:152
+# d7502992449042b7bb1129b041b90e4c
+msgid "Example: ``(&(|(mail=%s)(alias=%s)(uid=%s))(objectclass=inetorgperson))``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:156
+# 65f0be213351412ea7c6ece935e30a3a
+msgid "[trustednetworks]"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:158
+# 05cb87f0ab24479aa5037ea13ac341cf
+msgid "Allow privileged access from these IPs and skip HTTP authentication in case httpauth is configured."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:161
+# 98526aecbdac4e1a8db4171184825a77
+msgid "Privileged access means that instead of a dummy freebusy data block, a 404 error is returned if a user or resource could not be resolved."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:165
+# be72b36190974912981366b738281c88
+msgid "``allow``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:167
+# acdc73a9173f4ca58aadb6b98abff3fc
+msgid "A list of IPs, subnets or patterns which are considered trusted."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:169
+# 97cb35aa63d54694ab75a9d0c746cee5
+msgid "Examples:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:181
+# 0821f6bde7634558ab5e85e3378ecefe
+msgid "[log]"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:183
+# 4b7871c4d16f4cf6b6c1a73f73ef100c
+msgid "Logging configuration."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:186
+# 7fa3f630844a49afbde0b7f32acc7e1d
+msgid "``driver``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:187
+# c534a98e4b6f43368acc27adfd34f9b4
+msgid "Supported drivers are 'file' and 'syslog'"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:190
+# 059d7a7ae22145d48f33dbf5e9894f6b
+msgid "``path``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:191
+# 128e93f3941e408da06e1eb807ff7ac6
+msgid "Local filesystem path to a directory where log files will be created."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:194
+# 752fb093af1d41e9881fbdc038b2d15a
+msgid "``name``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:195
+# 469c886726c449238a1ba518e4a02745
+msgid "Filename or syslog identifier."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:198
+# e62fd490403f40f4afbf8df697fd20e9
+msgid "``level``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:199
+# 2307d8686959430b9cf5770d023c2067
+msgid "The general log level. Possible values are:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:201
+# fcfcd903c8f04a9f95e9de9ed128cbea
+msgid "100 = Debug"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:202
+# 7a48bc7eb5264a86a10b615536e0cf0b
+msgid "200 = Info"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:203
+# ed6eda9c7f1f43789033008131212c0c
+msgid "300 = Warn"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:204
+# 4e0e757768b144faaecdc701069c5a11
+msgid "400 = Error"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:205
+# b4a396cefb1044808b4871c8f85b35a1
+msgid "500 = Critical"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:211
+# 912a5ef0a8394a5988e383da7197d4f0
+msgid "Directories and Sources"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:213
+# 99b849335e4b49fe825cac565de6fe59
+msgid "Directories are defined as named sections like"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:219
+# 1fc42818492c4e619a8dbd16d15d942e
+msgid "and use the following options depending on the specified type:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:226
+# be18053a6dd84f8caf5cec9faeca1961
+msgid "'static' denotes a simple directory with an optional ``filter`` option providing a regular expression to matching the requested user name."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:229
+# 22574fe9b0514bc3959cb8c31cae73a7
+msgid "'ldap' directories perform an LDAP query to validate the requested user name and to provide additional attributes used for retrieving freebusy data from the linked source. This type uses the following configuration options:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:233
+# b544e9ff29c6446c9921266028ef798b
+msgid "host"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:234
+# 76aa78f15d2e433786591747ea964414
+msgid "bind_dn"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:235
+# 46a7509fe2654b1ca26a6df7ab655c88
+msgid "bind_pw"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:236
+# be2287edaab04af693bd4e6f91cbe03c
+msgid "base_dn"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:237
+# c42f36ca96a44fde89b50ac570ffa606
+msgid "filter"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:238
+# f92f1f599589467db6aa74fcdb20e657
+msgid "primary_domain"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:239
+# 87214837941b44d980be3f3c1e64bc49
+msgid "attributes"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:240
+# 123116fd88dc4e03bbec4d84be0f7f25
+msgid "attributes_lc (optional)"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:241
+# 2567406cc6bb4e2eb37b0ac0e3efc9ba
+msgid "domain_filter (optional)"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:242
+# 3942b67d37da4470896b204834630615
+msgid "domain_base_dn (optional)"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:248
+# c24443ad7b0844b6810482b28aa88182
+msgid "Optional. String denoting a regular expression matched against the user name."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:250
+# f6f60d8dd4ec42e4b1b08a6242c58666
+msgid "See `PHP PCRE Manual <http://php.net/manual/en/reference.pcre.pattern.syntax.php>`_ for the allowed regex syntax."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:280
+# 5efa494796e84bc2aef3b11a88ce2f2d
+msgid "Filter used to find the given user in LDAP. ``%s`` is replaced by the full user name, ``%u`` by the local part of the user name."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:283
+# 92cba8ae3aab46ac827b2cdea25be2b5
+msgid "Example: ``\"(&(objectClass=kolabInetOrgPerson)(|(uid=%u)(mail=%s)(alias=%s)))\"``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:287
+# fcf213f25e5a4dffb2f275b4e52c28e9
+msgid "``base_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:289
+# 26f1365a32f14073bb037729b51ee582
+msgid "Base DN used for the user query to LDAP. ``%dc`` is replaced by the DN matching the user name domain."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:292
+# 17579d2691ad44aca37eee19ec3c1ac1
+msgid "Example: ``\"ou=People,%dc\"``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:296
+# 6a8cded5772c4614924cbd861911a8b8
+msgid "``primary_domain``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:298
+# 1bb8fd9534454300a3bf4f1615799527
+msgid "Fall-back domain name used for queries without fully qualified email addresses."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:302
+# f643f5641bc242f48f7126e4bf736983
+msgid "``attributes``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:304
+# 613b4ee72fea4987931da0844b5635ca
+msgid "List of attributes which should be fetched from the matching LDAP entry. These will then replace placeholders in the ``fbsource`` URI."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:307
+# f83fc3dbabc84589ab44b5d737c03977
+msgid "Example: ``mail, sn``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:311
+# 13103d501b9a4140813d3e7bcd817501
+msgid "``lc_attributes``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:313
+# 38803d2ca5bc473d8bd9a97009687486
+msgid "List of entry attributes which are read form LDAP and are converted into lower-case characters."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:318
+# f33a10eb3dc0460db6a26dffcff48b8a
+msgid "``domain_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:320
+# 76525882e03c41b6ab3867f25c1f2efa
+msgid "Filter used to resolve the root DN (``%dc``) for the the given user name domain. ``%s`` is replaced by the domain part of the user name."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:323
+# 944d42c01f1942ae893b0f6dc339cd6d
+msgid "Example: ``\"(&(objectclass=domainrelatedobject)(associateddomain=%s))\"``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:327
+# c77dd50017594cfc9e9cc9f32565ab8a
+msgid "``domain_base_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:329
+# 0852e7a0ae8e4b4b8ecfcb35fc0304ad
+msgid "Base DN used for resolving the domain root DN with LDAP"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:331
+# 6272e1bbd0ac46b5a84831e9258ad7b9
+msgid "Example: ``\"cn=kolab,cn=config\"``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:335
+# 4f6b618615c34eb4bcb528b951ed0b56
+msgid "``mail_attributes``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:337
+# 239db4172c684e8088e389a03a6d16fa
+msgid "List of entry attributes which denote the user's email address(es)."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:339
+# 26259dbd0b954e85a311a8ee399603ca
+msgid "Only used in conjunction with an 'imap' source."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:341
+# 603012a474b042488c505b821783b48b
+msgid "These attributes are used to determine whether events from shared calendars affect the user's availability. Email addresses from all these attributes are matched against the list of event attendees."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:347
+# 101ae01f681149b180e73d1aa680f1e0
+msgid "``fbsource``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:349
+# 46508609d5924236880bdf1b20b4a170
+msgid "This option defines the **Source** where freebusy data for the matching user is fetched from. The value is a fully qualified URI with the protocol identifier denoting the type of the source."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:353
+# 8c5f1ee102a849ddbdcfcaf913b36044
+msgid "Example: ``file:/var/lib/kolab-freebusy/%mail.ifb``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:355
+# 6e4a20963c844abaa01fd43488cbac25
+msgid "The follwing source types are supported:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:358
+# 49762a6c56374469b271e0e5b1e72e17
+msgid "``file``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:364
+# 08d2a23d9c9c46d3b77768c9d62ffbc1
+msgid "``%mail`` is a placeholder for the ``mail`` attribute from LDAP."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:368
+# 717916691c6347d2ae481341c48cebd8
+msgid "``http(s)``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:374
+# eafeab7da0cd4b6a80d211ed354b1f33
+msgid "``%s`` is replaced with the user name from the request."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:377
+# 352625a2d4174299a575f5c58c207199
+msgid "``imap``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:387
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:407
+# 3e4580d224ea408080a870fc4a70ab84
+# 7e011d1df0304a24ad80ecf0b3dc4bd8
+msgid "``%mail`` and ``%kolabtargetfolder`` are placeholders for attributes from LDAP."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:389
+# 83f57f928c2d4b66bec36e417fa4a0c6
+msgid "The ``proxy_auth`` URL parameter performs a proxy authentication using the given admin username (parameter value) and the admin password."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:392
+# d0bb2f946ef84227857be20cd9a593e5
+msgid "The ``acl`` URL parameter will set the defined ACLs to the target IMAP folder in order to let the admin user read its contents."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:397
+# 2b27d38004414bb7bc8d7947333f6215
+msgid "``fbdaemon``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:409
+# 916149fefb5a4aa18b440f1ed518c03f
+msgid "The ``user`` URL parameter specifies the command for accessing IMAP on behalf of this user (proxy authentication) and to collect data from all the calendar folders this user has access to."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:413
+# 84ca818a73f340ed9af54de4763c427d
+msgid "The ``folder`` parameter instructs the daemon to collect event data from the given IMAP mailbox."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:418
+# ac36d7a87fe54d559af760dd4dd9b599
+msgid "``aggregate``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:420
+# f11f0a393bf544d5b0f4a964d106c677
+msgid "In Kolab, resource collections are basically a group of recources without having calendar data assigned to the group directly. But we nevertheless want to show the availability for a collection and this is where the aggregate source type is used."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:438
+# 4b88ddc14eb84c6882cd14dfb080de73
+msgid "``resolve_dn`` specifies the attribute of the group record that holds DNs for members that need to be resolved into valid user names/email addresses to then aggregate data for. ``resolve_attribute`` denotes the attribute of the member records that should replace the DN value."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:442
+# 4e98771905064f57a1ac6433d5f84fd6
+msgid "Once the members of a collection are resolved, freebusy data for each of them is fetched from the sources specified in ``directories`` and finally aggregated."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:448
+# 3be4564f36a24db6895461f07a392fdf
+msgid "Architecture & Design, Kolab Freebusy Service, :ref:`and_kolab-freebusy-directory-types`"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:452
+# d9901cfc22ec42ae9a18d134265d4c4f
+msgid "``cacheto``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:454
+# afc58554c02b4bdabccd7c5c9c9a3bec
+msgid "An absolute path to the local file system where freebusy data collected from the configured fbsource is cached for future requests. Can contain placeholders for LDAP attributes or ``%s`` for the requested user name."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:460
+# 9a257d9d01454ebc8381c7625ad23df7
+msgid "``expires``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:462
+# 0fdf660da7f54f9d8bee8fee2a815c81
+msgid "Defines the cache expiration time. Can contain numeric values with a unit indicator such as ``h``, ``m``, or ``s``."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:465
+# e31dd3b7090a480f9289977ac623221f
+msgid "Example: ``10m`` for 10 minutes"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:469
+# c16a3e6677c942099bf395f7b271ab60
+msgid "``loglevel``"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:471
+# 5d2fc1aa91e64e81ac65b7e8c8fa56a6
+msgid "Log level for this directory. See :ref:`admin_kolab-freebusy-settings-log` for possible values."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:478
+# cc7a88bb6cc146dd86f2e92e4319787f
+msgid "Examples"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:480
+# f8e168074d7b40a68f59a4e4c933e7ae
+msgid "The `config.ini.sample <https://git.kolab.org/diffusion/F/browse/master/config/config.ini.sample>`_ file provides a full overview of possible configuration options."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:485
+# b846c44482ec48278e863cb900a20390
+msgid "Sample Directory for Kolab Users"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:502
+# f6b5ee1e52084dea98e7de9693592f52
+msgid "Sample Directory for Resources"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-freebusy-reference.rst:522
+# 1ecb9c644a2247b1a0215b5a89ce0efb
+msgid "Sample Directory for Resource Collections"
+msgstr ""
+

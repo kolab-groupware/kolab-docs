@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:90
+# 4e07a503559949f8bab5c6238d59ff0a
+msgid "Tweaking Cyrus IMAP"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:95
+# ddec65ba5a494324bfdf99f4eb162d5f
+msgid "Storage Tiering"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:97
+# 4486227d314845f5bd1086ad6278c690
+msgid "Various opportunities exist to tier storage. But first; with storage tiering, we mean to distribute payload over different levels of storage, where levels mean to refer to storage cost, performance and capacity, in a way that makes optimal use of the storage solution(s) -- with an eye on excellent performance yet remain cost-effective."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:103
+# 698863df597a498eb6f1603d85a2be02
+msgid "Imagine, if you will, that you have the following levels of storage:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:105
+# d9ea5b5edc4049ad9a1e855439aec786
+msgid "A **low-cost** solution with large capacity,"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:107
+# 1f3d1f008ae0447f8daf6a9ed4799a99
+msgid "such as, for example, many consumer-grade 4 TB HDDs,"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:109
+# 0d9487fcec954341af457123da93bf52
+msgid "A **high-cost** solution with little capacity,"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:111
+# 370c1a89cd2b4c0ca9ba1f5cb00d01d6
+msgid "such as, for example, a few business-grade 512 GB SSDs."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:113
+# a47eb94468fe4063bdba290f6a731bfd
+msgid "The following options are available to split up the payload for a Cyrus IMAP server:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:116
+# 6bf79af4257642539c7064a9bda1d379
+msgid "Partitioning the mail spool;"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:118
+# ee97e8dd10f942489baf3f037e73471c
+msgid "where you divide a single backend server's mail spool in to multiple :term:`partitions`, presumably at least two, and make sure that mail folders end up on the correct partition."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:122
+# 3967d9fa5f6e4360b6fa401e87aa59a3
+msgid "You would have one partition mounted off of the fast storage contain the *day-to-day* payload, such as user's INBOX folders, while the partition mounted off of the slower, cheap storage holds less frequently used data, such as archive folders."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:129
+# a5f1fd20bfe6463492e185a73621df58
+msgid ":ref:`admin-tweaking-cyrus-imap-storage-tiering-partitioning`"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:131
+# e006c451f1924f2c880e83e548251a64
+msgid "Distributing the mail spool;"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:133
+# caec17f3ab1148059024596e9471fbe7
+msgid "where you would have one server hold *day-to-day* payload, and other servers hold less frequently used data, such as archive folders."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:136
+# 2c8a26fe885a406fa8c89bda764c431a
+msgid "Note that distribution of the mail spool requires a Cyrus IMAP Murder topology, so that access to the mailboxes remains transparent."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:140
+# 0d43d6c25a4145bc8895a3a60c43ca26
+msgid "Also note that such archive folders may be hosted using not only a low-cost storage tier, but perhaps also using a less resourceful compute node."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:146
+# a0114f8dd6de43c69f67f3297b2a7354
+msgid ":ref:`admin-tweaking-cyrus-imap-storage-tiering-distributing`"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:148
+# 50d4cd8dbbee4258b4f0e41d3c20d340
+msgid "Caching I/O using `dm-cache`_;"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:150
+# 126ac43d34bb4c7287364db704a6075e
+msgid "This mechanism is a feature of Linux distributions that ship a kernel version of 3.9 or later, called `dm-cache`_, and allows multiple disk volumes to be used as tiered caching storage."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:154
+# 374dcee968964990931b180f2a323404
+msgid "Using this technology, frequently accessed data can automatically be promoted to the fast storage, while less frequently accessed data can automatically be demoted to the cheaper storage."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:158
+# a0b49c12c20041719ce2c45eed144b67
+msgid "Using metadata partitions;"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:160
+# 0b3c58896a904561be778018036a2f8c
+msgid "While the access patterns for data and metadata are different, so could their storage locations be."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:163
+# 48d1bd33c97b49f59436d633f7302b28
+msgid "In this scenario, you would distinguish between a mail folder's message content and metadata -- the metadata consists of mail headers, indexes created for the purpose of searching, and such, while mail messages are stored in separate files."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:168
+# d33579ca98a2420ca5355d4c360fd353
+msgid "When a mail folder is opened, and the messages in the folder are listed, no mail message content is touched -- the results come entirely from metadata."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:172
+# fa68840604b449a497e281332fef12f4
+msgid "It is only when the individual mail message is being fetched, that the message file is opened."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:178
+# 2ef4331e130548e690dec30a06b7694a
+msgid "Partitioning the Mail Spool"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:183
+# a818f888b0ae43e19950ec43662392b1
+msgid "Distributing the Mail Spool"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:188
+# e0ae4f57e638446f8cfc765abd7e809f
+msgid "Using Metadata Partitions"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:191
+# ac9a81b092da42e1a8681cea97b25fa8
+msgid "Synchronous File Operations"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:193
+# 400f0e89751247c38f643e8d5c8dcc20
+msgid "A default Kolab Groupware installation comes with a set of settings suitable for the vast majority of our users -- mostly home users and other small(er) deployments."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:197
+# 0a4e6ac5901948258e5eae97029f0fe3
+msgid "It is typical for these installations to **not** have battery-backed I/O controllers, and/or some other form of enterprise-level storage."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:200
+# e1b16812a77646dc8036dc77f72f73e6
+msgid "To prevent data from being corrupted during a power outage, the default for our Cyrus IMAP packages is to ensure the mail spool (:file:`/var/spool/imap/`) and configuration directory (:file:`/var/lib/imap/`) and all files contained therein have the *synchronous* filesystem flag set."
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:206
+# e1f043b109474ceba2ad8881228e3ef5
+msgid "To gain performance, execute the following:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:208
+# 73e6ccceb26c46afa079bac4d105d7b5
+msgid "Remove the synchronous flag from the directories and files:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:214
+# 42e2e43fba574de8a52d5bfd49f9ab58
+msgid "In :file:`/etc/sysconfig/cyrus-imapd` (or :file:`/etc/default/cyrus-imapd`), change the following:"
+msgstr ""
+
+#: ../../source/administrator-guide/tweaking-cyrus-imapd.rst:221
+# 4f60a14da3d4448db16c65a0ff17db88
+msgid "to:"
+msgstr ""
+

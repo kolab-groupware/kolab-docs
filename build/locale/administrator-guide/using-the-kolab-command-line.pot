@@ -1,0 +1,620 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:90
+# 2537e76d2a3249c1ac6edb569e6b043d
+msgid "Using the Kolab Command-Line"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:92
+# 2aa64613aefd4a66a67b7c36bc6b3d16
+msgid "The **kolab** command-line is a powerful administration utility allowing you to quickly execute standard administrative tasks."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:96
+# cc633103bd7e464cbbc7ad9af9dd6e96
+msgid "acl-cleanup"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:98
+# 085e7d8ae28044ba9ccc898ecdd1fa98
+msgid "Iterate over all mailboxes and cleans up the ACL. Useful in deployments where any ACI may be used with setting the ACE, because identifier verification is disabled or otherwise unavailable."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:102
+# db5fd7ab34674e338630b189dbfd8ce0
+msgid "It is important to appreciate that an ACE for ``doe@example.org`` is not removed when the user ``doe@example.org`` is removed -- when a new user is created with a :term:`result attribute` value of ``doe@example.org``, this user implicitly has the access specified by the ACE."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:109
+# c20861caa0c9438aa0aca53994dbcf73
+msgid "add-domain"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:111
+# c6073f96b3d14e13957912d742fdcdc4
+msgid "This command adds a new domain name space to Kolab Groupware."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:114
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:164
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:252
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:327
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:419
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:519
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:590
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:633
+# 3554a3afd2bd48b1b9d56b53bf688564
+# 074732d5066a4da48fe75a66e20ee851
+# 3a9ef23e06c744fb865c96724a5593dc
+# 8a6d0eaaca9745b88aad0ec55d5b586b
+# f6b1473795d94a5e8cdb0841c2d2843d
+# 3bb44ee9337b412790d92ec6d95812d9
+# 9e4663f84c3f4b2988dfb56dff7cfea0
+# 638e36ba25e64b7c87f4d78ef053f40b
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:120
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:170
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:258
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:287
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:333
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:351
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:368
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:380
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:392
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:425
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:505
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:525
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:548
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:562
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:596
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:639
+# 60e77f5ebd12437aaa36f8b93ef5948a
+# b7afd2f6378846e6b0ac562380b08ff4
+# e99010dbd36c436ba6810dc1d0fb1851
+# 675b88080eb9442cb29a27edc79043f1
+# e68954430718468486ca9167ee790c8d
+# 4d47ff40ed5e455fb5c83ef7502e8b31
+# 0549559a4a054d14ad5b334f37e4d2f1
+# 20d8796a13b44d5fb3a5c1804f2aa2b5
+# 33bbfb2af4604186a2e95bb57cf7b2a4
+# 7ea3eab4c68f4a9993c8978a1481d9a9
+# 7e373e8ae06b4de8966ddd4dfdb7596a
+# 4a6e40e987394c6f9c8c54ec4515e8bf
+# 3f4647f6049744e6a649a1e0bb5e1c94
+# ce8a9a47b55343d5aa7ead7e71934f92
+# 1772bbb7721f4ea593267e3c9e8400d5
+# 5c1307c8bc16458690d88c59f3bb3c1a
+msgid "Command-Line Options"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:125
+# 26018deebd6f416d9e26a7b01c6862b9
+msgid "The domain to add."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:129
+# 849b3b4f2430416499aad8050ef76714
+msgid "Add the domain as an alias for the domain specified as ``--alias``."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:133
+# 812d2c8a23bb4254b8e36786f8106848
+msgid ":ref:`howto-multi-domain`"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:134
+# a7ad3499acb4459fb1290964cd904755
+msgid ":ref:`article-standard-multi-domain-and-hosted-kolab`"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:152
+# b0a4f3e5d62649799824e41b2c7dcc50
+msgid "cm"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:154
+# 4114310f7d5642428124531139452077
+msgid "Short-hand for :ref:`admin_cli_create-mailbox`."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:159
+# 9e412a9f7d984beaa4fefe130148e0be
+msgid "create-mailbox"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:161
+# e64f1a46c3d94d888231771976f67ac0
+msgid "Create a mailbox or mail folder."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:175
+# 97913af62814476a952a17a6a6f7c253
+msgid "The mailbox to create."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:179
+# e419853cfa2f4b599104ac852d997f03
+msgid "Set the metadata KEY for the mailbox or mail folder to VALUE. Specify once for each pair of KEY=VALUE."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:182
+# d515d782a037472f860a65c1198350c5
+msgid "See :file:`/etc/imapd.annotations.conf` for valid KEYs, the permissions required to set them, namespaces and the format of the VALUE."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:189
+# 23eed6f4305a4a47a81ff038bb286478
+msgid "Specify the Cyrus IMAP partition on which to create the mailbox. If not specified, uses the ``defaultpartition`` configured in :manpage:`imapd.conf(5)`."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:194
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:266
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:480
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:608
+# f1823298118b447d9f66d3ede794e34c
+# c34b9705708e41d0989f824944672c0f
+# 0331336475b7481cb3d05c4d26237999
+# f4b55a1f98d14c1d9b3ed9bf92d3472f
+msgid "Example Usage"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:195
+# 4392381dcec24fc79bc5fbbb73889456
+msgid "Create a new mail folder for user John Doe:"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:201
+# 1ad56d995b1b4ffc928791ac82282956
+msgid "Create a new calendar for user John Doe:"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:209
+# 69607c92bc9f4d22b2e7c12ff4b6cecf
+msgid "Create a new default calendar folder for user John Doe."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:213
+# 7d170cc643a94b4e822762428f215fcb
+msgid "Only one default calendar folder may exist."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:224
+# 93592cde30af4b7dbbf2b55c08cb60a2
+msgid ":ref:`admin_cli_subscribe-user`"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:227
+# 5ab5041e311a4df1b5e955f5f04b068f
+msgid "dam"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:229
+# d747e5abb726470da33b2f0fcf3fc8f1
+msgid "Short-hand for :ref:`admin_cli_delete-mailbox-acl`"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:247
+# 175afcbc0d624489871d9f5e44e0a9be
+msgid "delete-mailbox (dm)"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:249
+# 73b1f95fd5bc497d8e4b512c419e7460
+msgid "Delete a mailbox."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:263
+# 3c93cf1f13d14e4ba5e4834f7c311dec
+msgid "Delete all mailboxes matching :term:`pattern`."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:267
+# 06311fcce49e4b8e8bdf00249d951dcf
+msgid "Delete a mail folder for user John Doe:"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:273
+# d98c4b2002d644849a196e0365dc8675
+msgid "Delete all non-INBOX folders for user John Doe:"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:282
+# 04f76e979cb64cde84ff7a1462bf1c75
+msgid "delete-mailbox-acl"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:284
+# aa5e0ed8b71442c5b468828de3791ddf
+msgid "Delete an ACE for a mailbox."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:292
+# aa00ddf02d8a4105aa1e3d0df0425c66
+msgid "Delete the ACE from mailboxes matching the specified :term:`pattern`."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:296
+# 4db745408d564a87bb1dac88c69c7e0d
+msgid "Delete the ACE for this subject."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:300
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:497
+# 58517b4bc5f34262bd54ed3a6953d131
+# 6030458b965c4b1f9152fa12a196081a
+msgid ":ref:`admin_cli_list-mailbox-acls`"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:301
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:361
+# e440984a98544d44b81706f49b8d6d28
+# 31e279d139814583a50ffc8a30c3d516
+msgid ":ref:`admin_cli_set-mailbox-acl`"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:319
+# d3bc84d453de44f385b56a8c35eb6818
+msgid "lam"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:321
+# 3e78105183f84bd1ab61efa1c441fcd0
+msgid "Short-hand for :ref:`admin_cli_list-mailbox-acls`"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:324
+# 7c5931a8e5224bb9a943a82f1974aa70
+msgid "list-deleted-mailboxes"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:338
+# 663105be3f384eb2babe7bfe750fd49b
+msgid "List deleted mailboxes matching the specified :term:`pattern`."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:342
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:385
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:553
+# aadb40371d7648d0b977b71194bf02c6
+# 8b0ac73d5dec4eb091b70ac9dd2022a1
+# 4ebf8ce556dc43d1ab113e8dba4ad683
+msgid "Connect to the IMAP server at address <SERVER> instead of the configured IMAP server."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:348
+# a29710ff5af14742a8326237ffd284f4
+msgid "list-mailbox-acls"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:356
+# 91c7138a481c4b6dbd338a4996c52433
+msgid "List the ACL for mailboxes matching the specified :term:`pattern`."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:360
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:498
+# e3c7ab37546745f0a31fd8c45106e26f
+# d788cf33eb124c1089140661a1345cb0
+msgid ":ref:`admin_cli_delete-mailbox-acl`"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:362
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:499
+# a75f01c8037e40d39421c45746e0964c
+# c1c4dee31d1f4e87af2e5065ea16dd41
+msgid ":ref:`admin_imap-access-rights-reference`"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:365
+# 4e3a9cb307e945ee9d873a4cdb067b68
+msgid "list-mailbox-metadata"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:373
+# f7381819924340b0838babfc15b12352
+msgid "List the mailbox metadata logged in as the user, enabling the examination of the /private metadata namespace in addition to the /shared namespace."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:377
+# 14730c30ce5a45f5932315dff02210d6
+msgid "list-mailboxes (lm)"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:389
+# 054dcbdd91ab40aba64f94b9c9a44abc
+msgid "list-user-subscriptions"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:397
+# fd1fcad1feab4efea3e670b9a56d8ec6
+msgid "The user identifier to list the (un)subscribed folders for."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:401
+# 5afd8b6cd9fe46de8c8037b74b6fe895
+msgid "List folders the user is not subscribed to, instead of subscribed folders."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:404
+# ec7b33fe7a55455f8287b9ba5b99f8f2
+msgid "rename-mailbox"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:407
+# b476d099c82846838c368c958859d114
+msgid "sam"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:409
+# fc153554a6b14350a3546c5722c54a7e
+msgid "Short-hand for :ref:`admin_cli_set-mailbox-acl`"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:414
+# 69050f01b419463aacc3bf0b00de194c
+msgid "set-mailbox-acl"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:416
+# c2c90bedb3d044b29c1ea84c80fc777b
+msgid "Sets an access control entry (ACE) for a given subject."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:430
+# 2163345d29d64f6781664ea14a9fd671
+msgid "Apply the ACE to mailboxes matching the specified :term:`pattern`."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:434
+# 579f0a50f08e456b8f5d234872b1b22d
+msgid "Set the ACE for the subject specified."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:438
+# 47dd74e3c29144c399a6826960deedc0
+msgid "The ACE subject is getting these rights."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:440
+# 513bb2e908b84c0ea019ef81aded7546
+msgid "In addition to the regular IMAP access right identifiers, the kolab command- line takes the following rights:"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:443
+# 0410a818e9ef445ca5830e1450dbad68
+msgid "**all**"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:445
+# b3f59a16611943d9b087f35dc4e4d640
+msgid "Full rights, including administration. The IMAP equivalent is ``lrswipkxtecda``."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:448
+# b19b4fa66cf5409aab65261554d1b881
+msgid "**read-only**"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:450
+# fc174491e37a4f69b6b99d696fb6f457
+msgid "Read-only rights, with the IMAP equivalent being ``lrs``."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:452
+# b5092f785265478e9fef244af3d53b0d
+msgid "**read-write**"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:454
+# 4afb3bb3b9ac42258ae2c66184980616
+msgid "Permissions most suitable for access to a (shared) groupware folder."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:456
+# 8531f89f01c543fcbb33b7da6901d74d
+msgid "The rights allow a subject to modify groupware contents, such as marking tasks as completed."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:459
+# ca449a4b2d714a52b803b974432a4290
+msgid "The IMAP equivalent is ``lrswited``."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:461
+# aa7146d9755b4a4793613e2b6446f7ed
+msgid "**semi-full**"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:463
+# f4cec2028ac443d8a8eefca5ff777c27
+msgid "Allow the subject to insert new message (copies), such as groupware content, and flag current messages as deleted."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:466
+# 67b94b30c8834ebeb233f15e2d4edd86
+msgid "Also allow the subject to maintain flags other than the system flags ``\\Seen`` and ``\\Deleted`` (such as ``\\Flagged``)."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:469
+# 04ee4ee387f44c4c9e091606b458b2d0
+msgid "Note that the rights do not include the right to EXPUNGE the folder, meaning that messages therein remain available."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:472
+# 8fcf20d0a9e1450a80f04dc060537d0e
+msgid "The IMAP equivalent is ``lrswit``."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:474
+# 9b1412ef1df845248a928ba5cdb7c6e1
+msgid "**full**"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:476
+# d2ea6fc6e42c4047b935fbef0bb3d05a
+msgid "Everything but administrator rights, so that the subject cannot modify the access control on the folder."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:481
+# b8f830e14b5c4998b1a5f925dcce61b0
+msgid "Set the access rights for ``john.doe@example.org`` to administer a folder ``shared/contacts@example.org``:"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:488
+# 63fd85b74b3948a8bd24f8b959a4ec11
+msgid "Give access to ``jane.doe@example.org`` to read and write contacts in a folder ``shared/contacts@example.org``:"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:502
+# 5e7c8dda952244c288b489a0b6380f65
+msgid "set-mailbox-metadata"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:510
+# de3954666e6c4da09b4cf30e9bd04af2
+msgid "Set the mailbox metadata logged in as the user, enabling the modification of the /private metadata namespace annotation values."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:516
+# 2bc6e87e6b6746cd95421da9dd8d7e5e
+msgid "subscribe-user"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:530
+# 6a3f228a9c294cfcbb21e98617dfa39f
+msgid "Subscribe the specified user."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:534
+# bd64d1de850a4e909bf0af125b22d9db
+msgid "The user will be subscribed only of the user also has rights to the folder."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:539
+# 0d3bb81dd7224cd5a128c586abd017f6
+msgid "Subscribe the user specified to mailboxes matching the specified :term:`pattern`."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:543
+# cff453d90e354f99ae20e40e481f8389
+msgid "summarize-quota-allocation (sqa)"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:545
+# c3c093e02a9d4cd78a1cf94c9368c166
+msgid "Summarize all quota allocation for all mailboxes."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:557
+# 8fa763668a4b43e2a05718a89b812de5
+msgid "sync"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:559
+# 26ca86bb94664257a2cda918dcbd93bb
+msgid "Synchronize IMAP."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:567
+# 06961cf327264cb3a4cf8be85a3f2579
+msgid "Resync."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:571
+# b01d8a1cba52488f935c52db3e52855f
+msgid "Number of threads."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:574
+# 8876c00c438c41b886fe89555634d00b
+msgid "transfer-mailbox"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:576
+# bad2ef56f8eb4ad1ab810d233d49694e
+msgid "Transfer a mailbox from the server it is currently on, to the server you specify."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:581
+# 3ecfadf5e8ab40d29ff85755492ca598
+msgid "Transferring mailboxes may take quite a bit of time, depending on the connection speed between the two IMAP servers, and the size of a mailbox (tree)."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:585
+# e4968e7ed8064c99b118f9d00503cb71
+msgid "Make sure that despite your workstation's session possibly being interrupted, the command can continue, by using :manpage:`screen(1)` for example."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:601
+# 4adda9de5f134976b6a6d202d8d03522
+msgid "Transfer the mailbox specified, such as ``user/john.doe@example.org``."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:605
+# 7650dcec50594bb381dc2dd0fc2662a7
+msgid "Transfer the mailboxes to the server specified."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:609
+# 584697bd23954b22a6ac6e001bff9674
+msgid "Transfer mailbox ``user/john.doe@example.org`` currently on IMAP server ``imap1.example.org`` over to IMAP server ``imap2.example.org``:"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:623
+# 07cdf6f0b4bb41d7927c26eda5c3e35c
+msgid "undelete-mailbox"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:626
+# c54f2635c8b740f78ad988f92c8eda69
+msgid "user-info"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:628
+# 2f48ae29241844e88128b3ab428b3305
+msgid "This command retrieves information about a user from the Web Administration Panel API (places a ``user.info`` API call), and prints all attributes for the corresponding user type."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:644
+# 0e222721893f46849892e624d6c8460a
+msgid "The primary or secondary recipient email address for the user, that is globally unique, such as ``john.doe@example.org``."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:648
+# 3122b8daa44542cabc4dcbfa6f0f3017
+msgid "Sieve Operations"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:651
+# ad48b17f14fe443583b35d629975a70b
+msgid "list"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:654
+# 369680b4ec804e85a670a184729d4495
+msgid "put"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-command-line.rst:657
+# 65e324110a044cd599c0c0a9732aa3d2
+msgid "refresh"
+msgstr ""
+

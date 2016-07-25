@@ -1,0 +1,4484 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:92
+# b8bfd915f8d34c9dacee1f6d95b011dd
+msgid "Roundcube Settings Reference Guide"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:94
+# b246683f7a6d46ac8cee977a4ad11844
+msgid "Roundcube is configured using a default settings file, a settings file for site-specific configuration, host-specific configuration files, and configuration files specific to plugins."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:98
+# fdc8e557176b46c7ac1d4b09d059faa2
+msgid "The configuration inheritance model looks as follows:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:100
+# 4c58689dc9b24fedb05d086721c4c1ff
+msgid "``config/defaults.inc.php``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:102
+# ffebbbdc4e27429ea6eefb7e6873a58c
+msgid "This configuration file ships the default settings for Roundcube."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:106
+# 3f144d57eb894df38b3681ca4516c4f1
+msgid "On the expanded sources (from tarball releases), this file is at :file:`your/install/path/config/defaults.inc.php`. On packaged distributions however, this path is a symbolic link to :file:`/etc/roundcubemail/defaults.inc.php`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:111
+# 2986b20ee0304e2ea205cc517e341a49
+msgid "``config/config.inc.php``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:113
+# 77ad9c87599e49c78e25227b53c27188
+msgid "Site-specific global settings are in this configuration file."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:117
+# 33d7d0eb0d2849b8b82bbb9729811d38
+msgid "On the expanded sources (from tarball releases), this file starts out as :file:`your/install/path/config/config.inc.php.dist`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:121
+# c4d4c41d4d2447cfa264e430f31b72d4
+msgid "You would rename this original ``.dist`` file to :file:`your/install/path/config/config.inc.php`, but on packaged distributions, this is already done by the packaging. Similar to ``defaults.inc.php``, this configuration file also lives in :file:`/etc/roundcubemail/`, at :file:`/etc/roundcubemail/config.inc.php` to be precise, and a symbolic link is created from to original file location to this location."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:130
+# 348f0e9077b148c991b2eeb29691e2f5
+msgid "``config/<site>.inc.php``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:132
+# de37dd62aebe4b3bbed6faef8af12610
+msgid "``<site>`` being a placeholder for an arbitrary site name, Roundcube allows the inclusion of additional configuration using the :ref:`admin_roundcube-settings_include_host_config` setting."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:136
+# 757077ea2bea40619f27d7b8bafef4a7
+msgid "This is, however, NOT the recommended solution."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:138
+# d086779fb46a42b890a23e025cfd3527
+msgid "``plugins/<plugin_name>/config.inc.php``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:140
+# 950c98e1a92e43efacec721acb99174d
+msgid "Each plugin that requires configuration ships a :file:`config.inc.php.dist`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:143
+# 5addf7d853344ef18c9eb54dcba44269
+msgid "As you may have suspected, these configuration files too are created symbolic links for, to :file:`/etc/roundcubemail/<plugin_name>.inc.php`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:147
+# 2d08957deb1c4e639938de6756dfae27
+msgid "Since the configuration files are PHP code that is being executed while the configuration loads, one might add include statements such that configured condititions load additional configuration files on top of the aforementioned four (types)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:152
+# 8478b81814504b6d86a807cd0bce52ee
+msgid "For example, :file:`/etc/roundcubemail/config.inc.php` might have a segment to establish defaults at the start, then include a site specific configuration file:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:163
+# 5a5b55be474f4cbcbd8f67f4bb87793a
+msgid "and then re-apply mandatory defaults:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:184
+# 073299eab02a43e690f11243659909cf
+msgid "Database Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:188
+# b3c17733d5a44244bb4b68d2ac91d471
+msgid ":ref:`admin_roundcube-settings_database-configuration-hints`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnr.txt:4
+# efc3717279dc4df8b35dff4b7e1f1331
+msgid "``db_dsnr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnr.txt:6
+# ad7ef10e7ded4ccb84d33ac91a0f1a88
+msgid "The database URI read-only operations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnr.txt:8
+# 166cb20e0b5648f39e9fde062ad88397
+msgid "Read operations are executed against this URI, but -- by default -- only if there is no penalty requiring Roundcube to reconnect or separately connect to this DSN after one or more write operations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnr.txt:12
+# db89475e092e4548a92a36d722d08ef4
+msgid "In a replicated database environment, the write vs. read operations might be balanced unfairly -- see :ref:`admin_roundcube-settings_db_dsnw_noread`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw.txt:4
+# fd35615d0f634b97b2461972c7873868
+msgid "``db_dsnw``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw.txt:6
+# 31da4241b45a4a1d9679cabd7c4d8b3c
+msgid "The write DSN to the database."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw.txt:8
+# b450dabe43694081ae4a8ba655c03f23
+msgid "If specified exclusively, meaning :ref:`admin_roundcube-settings_db_dsnr` is an empty value, or the same value, the write DSN becomes the database URI for both write and read operations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:4
+# 21fe89a42d3141149f32df8f4be2fa2d
+msgid "``db_dsnw_noread``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:6
+# 1a581edfcce94922a38fafa80267dc34
+msgid "Only applicable if :ref:`admin_roundcube-settings_db_dsnr` is set to a non-empty value not equal to :ref:`admin_roundcube-settings_db_dsnw`, this setting adjusts the default behaviour of Roundcube with regards to database read operations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:11
+# b63dcd57c6d5400b9806283bd924ac66
+msgid "By default, when Roundcube writes out to a database, subsequent read operations are executed over the same database connection."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:14
+# 5dab0e97542a41dabe40e1f85266cab4
+msgid "This may not be desirable in a replicated database environment, for most page hits (by far) include one or more write operations against the database -- such as an update to the session -- resulting in write vs. read operations being unfairly balanced between the write master(s) and read-only slave(s)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:20
+# b6aecc30bc3b4bfda30453f81612bdcd
+msgid "Set ``db_dsnw_noread`` to ``true`` to ensure all read operations are executed against read slave(s) rather then write master(s), despite the potential overhead in needing to create a new database connection, and regardless of the read slave(s) potentially lagging in replication."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:27
+# 28de5462308148889d9d3bb16cf3f0d3
+msgid "Setting ``db_dsnw_noread`` to ``true`` implies you have your database replication sorted out, and monitored continuously."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:30
+# 5829d2c780064fa2b66b69d6da1c8cfb
+msgid "There is great benefit in enabling this setting when you have multiple read slaves with optimal query cache settings, versus limited numbers of write masters."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_persistent.txt:4
+# 6fdfcd19f1f14760927c71dbe02cab71
+msgid "``db_persistent``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_persistent.txt:6
+# a00d6769bfba46c6a6cfb2a2e70042e4
+msgid "Whether or not ``pconnect()`` or simply ``connect()`` capabilities should be used if at all available."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_persistent.txt:9
+# 723fb6b1f822407588148ea009ed268e
+msgid "Persistent connections, as the name suggests, are not closed when the processing of a request ends. When using persistent connections, you're trusting the verification routines that PHP applies to make sure a connection that was around already, and is being re-used, is not suddenly privileged more or less than it should be, and is the right database server and database."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_persistent.txt:15
+# 48b7968fb84b4b8ba61723f74d7f8cc9
+msgid "You enable persistent connections to reduce the overhead of needing to build new database connections on every request."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_persistent.txt:20
+# c6bb9ff38fcf43ee8be4baeca1d85bac
+msgid "http://www.php.net/manual/en/features.persistent-connections.php"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_prefix.txt:4
+# 5b009b439a204372b3d3f1c1ac235e6f
+msgid "``db_prefix``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_prefix.txt:6
+# 7d1e8ce135604fb599af91518f0c5d64
+msgid "Prefix Roundcube's table names with the prefix configured here."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_prefix.txt:8
+# fd1bb70eab83449cb42f46719c1d1889
+msgid "When, for example, only a single database is available to you, should multiple applications you wish to run both have a table named ``users``, than specify a ``db_prefix`` to make sure the Roundcube table for users can be created next to an existing table ``users``, and avoid the conflict in the schema definitions for the tables."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_prefix.txt:15
+# 03c12ad2b97b49a9a254f4d8863254c2
+msgid "Example Configuration"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_table_dsn.txt:4
+# 8efa22ea094b4d8988713e084997d7e7
+msgid "``db_table_dsn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+# 03ec6b84dc9c477d9e8d88c8ff550071
+# a41eb0c31a2d4a3f8d57d8a7b1d38117
+# 60d0562bd63d4822b9d89770d38451f1
+# b284eaf0d28144a68195f14afbd50d96
+# ca035873bffb4ee0ad0675fd1fc1fe26
+# 93e565b6f3ca42c3b23f38c7dabdffe9
+# 41440183513949b98dd005a0809dd9de
+# 07f4737ae8f244b9ac185187f7d2c64d
+# ccb57511d8204669b9bd35d575d50e76
+# c38f7ee4184c4592a5f85da533852fc0
+# 70433ac171f041c68b118b865b351c7c
+# 70b06cc9c78b400eb156f92b32391777
+# e185c8eac5ec4ebba8bfd85a970425e9
+# 0d39504c7ce0444eae630c065877f144
+# 7f1e7bb0b115478ab75c5a1264e72c89
+# 83060fbeb12f4253a940914d6c60d575
+# c56f76bce41e426b9fd178989e1d870a
+# 610d6c3f15a5491894d55a1a5cfa1065
+# e81060293a084c03b8d34a27d1f6a9bc
+# 17e36c43d67b4f3ab746f90ada14997a
+# 2ad1e501700b4ce6a123b005fe322272
+# 468313e561744ffdb799336e21254eff
+# 5fafc00ec5a84dbb995666bfcf8586eb
+# bc1da5d2f663410d9c5939f96839cea8
+# da332f05efa54ecf8a19660f6acf4a03
+# 19eb3abbfb434b0eb3f4d312413259e6
+# fb07bc759583407389e63ba1edfdc151
+# a257732430b5410c84e4e30549c727a3
+# f963795145dc4b039ec796dae8437f12
+# 01d350cd9f2c47dd97a0b2bedee4e314
+# 4c516fa9942d4489ae85838841204211
+# e3cc907d10cd44abba2aefd686d71248
+# 1fddf2191bdc455c8513a47289dc394c
+# 29c4a3a9520345c7b6f152e1bc335ecd
+# de4374a88c29445fa5697dfe92d5f517
+# 8fddd470ac0e431caea1e238c2289f80
+# ff6df5680eb443e0af1b2fce917882d3
+# 96bd7cdd5b844badad5ecd228bcd0569
+# 81aa3e56af90453dba9cb9ebbe04d06e
+# 68916799305d4c47bc2c69090b165532
+# 01d194761ddd4b00869d844a378efd03
+# 4c4d544283ea4ce189d3577b1432bc1a
+# 9e179f55b1fe413dbe3fd0b56709a57f
+# 2fff53cc922846ba9d6de84809d9e881
+# abaae5aeee6e4d8ba5154c8526a414b4
+# 7fcbee4c74dc4420b89ff58eb315340f
+# d4edbf09d10b4e80b7aa45acab2f3df8
+# 0ad7751ddeb44c43a01a0d9dac00df82
+# 0192c8d237e24c7d9edfbc8552c65622
+# 1ea59fd7976f435f81b7f3af014a82da
+# df23e2490b494f1391ee13fb962270cc
+# d4eec44b44d64d809984282c0165da4e
+# 162b2c29f1ce4617bd32dfd9ba01c240
+# d8a64ff0e5274adb83d6967b429676ca
+# 2983551fd6f64744a5663aea5ac1246d
+# 8e897da56e8947c592a89df5a79d6914
+# ea5575d663e744cbbe365746dd684390
+# 56975818041e4e8bacb3692296b799eb
+# 31b152058c2c42a5baa9e5a009e8d1a9
+# 617b329177d9479aa96760d8d3275f61
+# 9d62f1d2725e4c7390421f5e9c208876
+# 9a9e3031e23c4ccf924dc39a22fc8de4
+# ead4d31091934b23bf42283fbbb92ddd
+# e034c7f44ae24495873e14fbd4651c40
+# bf62ec7d0ffe4226871988253e66596f
+# b4aeee49ebb64debabde9323c2e0c2d5
+# da4b834eb64d41efb7fd0b47818807ce
+# cd03e5438fdf41b99b3e020350de9d16
+# 801f784ee6bc452fa2f0a39f26a659dd
+# 587e2927e4074fdc9700d24da6cff630
+# 7b205019ebc64121bb92b111da647497
+# 28f02e8379ed42bba0e2f8e7201849a2
+# 76bafbf509064d579f9eaa82ede3de6a
+# 028b9d5cacbd4948a65ed3c775616ba3
+# 3b73cf1e50cf4506b5f72e6b716980ff
+# 8707bd2d8ded4fb280c3a6cc12351b7b
+# 807e4665636841f5a9e531160e411593
+# dd2af555591948b08a58f9d7aa1f05f1
+# efbad868b44849789cf7774286a3e72a
+# 2a69e59c639543c9b6599ebe7b5d74f7
+# 163c328103c6417684efbacf8ad7a3a2
+# b04079d25c714c43bb6bea2b2c65f743
+# 54f3413c37bf4817ba093147ac93e639
+# c3fd947fa787422a9603ae410c445a81
+# 47ac500689ae480293195e9bcf5a440e
+# ea4d947c89fa4a319ac80670283206c1
+# a9b92115c210435091cda09ebd04e2b0
+# 26d9898d6e3c4ae393d55be8974e12a1
+# ba19726496474a529e85a501c3aadb9b
+# 7c3a7bc363c94cbc883215ac90eafa73
+# 7f9c25e155e2491eb0564a986289336a
+# ac9c0be5f55c46208ca3fb98eaed13cd
+# b34e8993a8144cbd9a06361c55fa0e97
+# a26eed1aa24c4b428628034ccf9a6542
+# fa0a1877e9454e3e828f13ee128ba302
+# c8db016650f94b589c88163c9fe5a2c8
+# 31ba7a57a6f34d119ef5c4c3684fe78a
+# f7c29d507e534ef090735d55c44e55bd
+# 8af90515bf5f49dc890e832cccef9927
+# ca96b47605eb4bc4be579e41c45f2840
+# 60a846934a0b4f62b39462ec68323a4f
+# 023b6256f3314302bb19f45c1d7b83e9
+# ec7be0519de241f0bef6c2d4518118c5
+# 40f1d6db11f04f89ae3bb7c765ae9770
+# f47551a78f2d475ab9e0e04f733226c6
+# 714b461854db4e9d985ca9ee438fd2aa
+# d5671517b13b4620b3901f5c60091308
+# ae448d9e053f46a588b53b20a630951d
+# 89d41d93d8734d49b898640ddbc3a18c
+# 44e61f35223543e5a35096f14a3da52e
+# 6df32a73c45c4602aea09d096b435fa2
+# b6817b98662f4e86b9ca12d3c4e5cae8
+# 45bacb08343140cda8930b50bcab26d7
+# adc8e301b01d497ab57466664c12bdee
+# c1bcf1300e994cf9aba8c2d84e24ee99
+# e2afc2f3d6e044f88fae1905d8c167f8
+# 74e2698d89b0491aa83e17db03b72e9b
+# 8e7a6ce4eac24236ad7170100a70f37d
+# 70f604941da449afa5e0021907b42f74
+# e8adbd877bd143c9a0c62672f7f17030
+# 629a38fd74e34d7a88129f6d8170ea48
+# 46db751c96794a249cf44c1bb2e927ef
+# dd3bae700ad24ec0bffd23ef8561485f
+# 0e7b54f7d2fa4df6832504967c19e300
+# c02b10631fa74c19981d584c1bc8eab6
+# 676e4fa00fc345d388343d586c5f888b
+# ce0d8d504210478bb3b1a213b344e7ef
+# b31121a0934344428e96c4a5783d0650
+# 106317f059d64d949f985c64014d84cc
+# 80aaa2c2c8014d4ebba9fee2ec5f7c41
+# 0e38749e96eb4d6d99812eadcc45a0b9
+# 62456ac20c2f4724aa0d03c4651a4e6a
+# 9008b4e1244c4a01810434f332b06257
+# c041a09f00d7428d96ec52068d65a36c
+# 64179f5469ed4a79866e4af7e231e4a7
+# f6719d38ff9c4a0a8459f73a0db2129f
+# 02e90bdefdba4fe1956918ef0742b02a
+# c8b798f4cb3d416b806330f782fec4c3
+# 7c18378b258b43aa8dcfb85bc865d7e0
+# 2f085eba69c84576a6984ce53a1cf692
+# abf6a86b85214e59927a74a29dfccaa8
+# e0222f5c374e41e4a7f1edaf556ab772
+# afe6c1d39ac6449ba2bceed3444156e4
+# cccc60a154e1404a909e879cbc2a13b8
+# 8de7524ec3fe4cc19f48bc355889c4cb
+# c2e1bbd3c4554c25b7fc918032ae2a43
+# e828efa92fcb40dead6ad19e8a928d65
+# 2b45191429254f6ab31f7f2e4bd51f7e
+# 076082c7559f4b598e83b42d7a718540
+# b3f3b1da9398406d848692d7dff07ebd
+# 596f2815419e4e3ab7b8eca03f313c74
+# d67b1f7af43e4704b86115679ead8287
+# 4539d9ad2199426f91d5d46bd64efc5b
+# c881bca175234e15b84f18c31fbfadbd
+# a686d6bdfb2a4f16ad4fe7a51546d4a6
+# 721f5667ab8447858286cb8c0a4edaff
+# 98b74bb5f4dc484eb5a77e352a1e6d1a
+# 88dc3f35e72b45ef97fe2c8d2cb1c493
+# 7279f3bc193343158103f9bdf0340976
+# b929399b5cff4d1ab06a03ae1faf64ef
+# ba2659e932404c6086c749c8a6a96546
+# 195174eeeeeb474580669bbc538568ea
+# ae2f2703f922446081ccd392972b2853
+# 8c0b33cfce3a49d2bb2f3e454cc074ca
+# 88536ef8688e4a13b049804c6a83e1ea
+# 56e20422961d49739dbc93b037ec2e0e
+# c570f6c849b24fc0b8801d509088bfa1
+msgid "This section needs you!"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+# ceef32432ca848398a40674d9b703d70
+# 58b7a08ad3bf40d591105066b485f096
+# e0b678577fdb42508bbaa5a638a5fc8f
+# f0c29ec2f59b43c794dbea5a2a92b66b
+# 47694e90ce2242b78f866c5e41ab092e
+# 17e2bb9c211c48a88341aff8d2aaa3dd
+# 7bae28be8bb84157a82a34ad3aaa93f1
+# 184d57e2dfbf42b3aae0badc315ae84d
+# 4bf6612028694c0cb0984379d40660a6
+# b4b5d77e55c743a3a880863a5f6b6823
+# ab18b8ff57a941ddbff0eb9876605a47
+# ff2b9b456fad4a128f68ce72b882e469
+# b6b401f835dd437c98420b93603a198a
+# 087f99dd7bb94ca486a0f59680252355
+# 0001fa98e79e4e659e68466655d3433d
+# 1f89a89558484d1dbcc8c032f7071c91
+# a960744d821142d6a75104275809d7c4
+# 35fff175056a4741bc9037d06fdd033e
+# d08da695b81d4eac881a4b91ea5bcf45
+# e27f299163b645988df8c43dc503eeea
+# 293819a3c4af43e78550779e407798e9
+# 316e281123f945cb9a77aa656213a271
+# 88f9b80303e3438497742beb820765d5
+# 6275810bdbf9447da5313e45c1e01c13
+# ecfb1975da764768952df416e1369cfc
+# d406cc2df82d442281cdaceecd75a00b
+# ff51f4abcb854ecb9a5c4abf3cad0d6c
+# 2ac4776cc66649d9be097adb34d9bac0
+# ffd3dae977454cacb6a3f3863a0d6d4b
+# 2ec8c0b02c7346989f23354bdcb4a33b
+# 7072d1f6ebae4ba2ae24e53a0f35141b
+# b717c4e13b0a442693c3a03ac5244637
+# f8e4b7883d8d49ad8f2bd9061aad9e47
+# 5a017ae4e5f94494b55b30096e8d46df
+# 4a50ef91c6c14836a5e414b3b7bad7f8
+# cefbe1dd5daf415695ed86dfceffff92
+# 5a80777ae4334c27b1466623545ca9a4
+# 9d25b715916b42a297817bac85034974
+# 3da0fb7e80c943f5974801582f3e287f
+# 7f58972ff66846e0952c1fc17b49a04a
+# 69f831dcb38c4195b956d4aa49c1b426
+# 45ad50987daa4ba799d3a7fa141f1340
+# 61c7a5c43a434e3981a138ec71cf5185
+# 887f0274817b42dfa4746b68787365f4
+# dbde8cca50e7420fb175e062f9b51193
+# 3a191634c1b84f22a9dd949e8118bcd6
+# ce84c911fd86416481bcfb81f7e93fa4
+# cd436512567e40b6adaacb69e595cee8
+# 36f78102aace4cc08fad39cb0d79698e
+# 12c72298335e4568b51253c7a77f19f9
+# f743e933e6b14a5b858c6c995d39c22a
+# 783ea8024e6944a3ae4507b2dffc2d35
+# 02b99d572c3f425a927105c2ffcf0900
+# bf4956b9ee144c59a19ecdccfc3ff559
+# 3a156510529e40e2bbe10a6dfaf22b02
+# 351e4786488b4e549d4cb574a7fb8b46
+# c6bcefe3f8a2402ca6f6b02862162232
+# 1702e3471bde43b08cb08569dfed2de3
+# f792fc0dcd9e4ae4865f6a2f39bcad91
+# 574f08d59a06491a9682e7f20514e4ec
+# 36c4d82e1274413d893740cde05a0c41
+# d6d2af8e1f894ce68023eb5256edf926
+# a0ee4260bafd48d995c6ecbe0183465e
+# a08af7c78eb1476f978328db377e8591
+# 4dcc954c2d024f12bbb094f77bd68a2e
+# ceb6643144734d87a42ca44409071a18
+# c5f02e217bbc4f43a47056e2675eada9
+# 5b7e1f0a23444863a9923678ab109b48
+# b56d31c91bc24292a341b9fd8655edaa
+# e20c8a7982ca4b909376116727a7a6d2
+# 62ef9a76f1554fd8b46dfd0e955b48c1
+# 911a352b5d6347d9a2ba0cff39697533
+# 14b3ac58bf3c4dae8fe2b2236c8802b2
+# c6c01831766f41ceb62cb18ca2e9d2a7
+# c26fed0494544501a7f757958af02db1
+# 21b336ac79de43faa95ce4a9b0b6be83
+# 1ce4c63424fc4d378e3396aa4e800532
+# db4b89d453374e419b4b921f7c31dd9c
+# ded164a1ae8248d6ba24f7d4a14ca4cb
+# d23c668a386944f58be4b43c7c3908b7
+# a7c8b438c1b344279abd13176d57ed4a
+# ef3aa8b56cb946d98130062e5da984bb
+# 51801806bb4b4e5caffdee8165f57b1e
+# 9ee0b8f53f474f9eb337c66fe3ca7798
+# a2fe631432074663a3cb01bdf8d28560
+# 3af160d7de404e6aa8ed321ad32f6455
+# 2acbff0edfbd4e8685f9f2a721299484
+# 04ed2170c82b4994b92065badf8bb8e1
+# f339e4eaad8e44d0ab5476785c7e5f6e
+# 933b987b541d48aa9465174f4e8dc3f2
+# 9d9fface569b4f01b15ee27e9e815574
+# b01fc449dee8444ca8a80234fc991686
+# 14b92df4481e4ee9beb0321a387236af
+# 9001a9a2085248e28aa678a7adb233c6
+# 2cf71ed04a6b478790fec891ee93e68a
+# e9cbc88ac58044cabf46412f49fbcdbc
+# d96a1461ecda4c41b2adde096e046509
+# 5bb0760af29645c58acffc4a858b5081
+# ffd115b33e4a459385ed4229b4b4b99e
+# b1788f2e493e4f9da1d62637a1187c09
+# 95a8c8befaa3476bb3e01d4ba109a336
+# 74e5c490148f4582ab1245439206b112
+# ec65e0369b4f46c18754178b387b72c0
+# 7a7c66991e4a46a980e460de33b7dba9
+# c308c1dbd3be4b49b66427cf29d6ca62
+# 60ad15468c98422c86d9e57b19aa0e15
+# a4467331cb494ffbae713c0dae9057d9
+# 51e14062e14a4f4b9c3be6a5584282a7
+# 0509b92902c64a05b63749e80bc0208a
+# a4e438525471422a8567c7db33309f67
+# cddeb63e0b5d48f0a0f10d464eb3ab02
+# 4d98936500714099a3df4233b5f9ae4a
+# c548e7e065b648728d8ae03b33e66c7e
+# 2b5257c83df9497d92282228ec1ffe06
+# 0e7ff0e7f3d4456892acc44b1476afdd
+# 24b492f9004845689704a9a40afbb8ef
+# ebaa3328831a44c3976a78ab9890bdbd
+# 75012074ec394cef8b331490d78e9e46
+# 5590a8b48718411d9137d9e2a1a1ec8d
+# f065c93e99904bf699ec65ef14afb6ac
+# 6dc666d0468841aa95179e5c1d6b7043
+# 8fe2b3db019b403f98b686167be0eae4
+# b23fcbc4098141d09e48493e798bc2d2
+# ba600d83b5c14bc0a85a959985149ad0
+# 8c77ae10fe1549f981a9d3f7a76363e7
+# 3f6bbff597e548c9b109c8922da488dc
+# de398423a7ce428283cf652a05e727e5
+# b1a39e04e0ba4459bd2b046bc1119547
+# 43001d07c7f748b8945f4b64e2a7c793
+# de865277a99b41d99a2f060782ed8a82
+# c0b7b0e661ed4408a30d081e3fb0ffb4
+# c0af5009448844cc8854c3ce5bfb41f4
+# 5a2d2b1fea7f43a88bf650cf75805012
+# 8d4192f81edb496fbe0fbda212d2afe2
+# b75d0f7a18b34041a61e214652400983
+# 75434dac023f4b7c8bd48d4865fef6bf
+# 9668055369ba4d2db6119b98ab46ab62
+# 991c4bd4471e4f459b5084cdf4e4b854
+# a042c1799027426795c35adb3f9a2f60
+# 0327b06b404d4f228376b13df6203930
+# 4df6c145d8934f0cace26ed3c788314a
+# f9eaab8142564db4be895577d4b1071c
+# 21d74a9bc1564456b715a6e6de584ac6
+# 786dea2740f34f21a462ad3360f78996
+# 8d34bf7d098146e28c53df1cdf30593b
+# f1e67b587c1d403bb14bab62a00bc86f
+# 1e5e904d09ee4e9298810cc3e5201134
+# a483484b15dc49c69fc14b770ed2da94
+# c0c1c2c534c4487587ae6ed3251b18b3
+# 083a0c7ac8694bd48647904ba36b5e66
+# d2d4c880049d4d2b93eb7cb353635737
+# 391358b2443b4889bf63cb4d35db6d7d
+# f8222cfd6f7a46df8f2492f194cf2fb5
+# 02cf6b33f06a4676a2cca2aa991082b0
+# fc6fd6528a0040e1b976c8d277fdf153
+# 3e15c0958a1a47499d6ee3b5732cbad6
+# 09d41af237bc46bfbfb19adc10dd0807
+# 29b9078b927c43dbbea8d111f740d974
+# 5518ae59bc7145f4981d120841fe955a
+# fae13af23634417da6ff884a3e01191b
+# 90ee3d76751943ddb4049591de30ea50
+# a8b2e3df60054b9b9ebeb7dcc57a677f
+# 43bed531963140189a03f9d10d3ec012
+# e6b1f3e908c04ab78a8582e5a0fbc5e3
+# 435c290f8ff34dc79f4f19212b6513f6
+# a30729eb410c4adc8d079cd8e6a327bb
+# 0667ba5807104d449c50fda410d7e508
+msgid "This section of the documentation is a work in progress, and could use your help."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_table_dsn.txt:8
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:8
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:11
+#: ../../source/administrator-guide/roundcube-settings/check_all_folders.txt:8
+#: ../../source/administrator-guide/roundcube-settings/default_port.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_cid.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_pw.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_type.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_force_caps.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_force_ns.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_other.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_personal.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_shared.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_timeout.txt:8
+#: ../../source/administrator-guide/roundcube-settings/min_refresh_interval.txt:8
+#: ../../source/administrator-guide/roundcube-settings/no_save_sent_messages.txt:8
+#: ../../source/administrator-guide/roundcube-settings/quota_zero_as_unlimited.txt:8
+#: ../../source/administrator-guide/roundcube-settings/refresh_interval.txt:8
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:8
+#: ../../source/administrator-guide/roundcube-settings/skip_deleted.txt:8
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:8
+#: ../../source/administrator-guide/roundcube-settings/ldap_cache.txt:8
+#: ../../source/administrator-guide/roundcube-settings/ldap_cache_ttl.txt:8
+#: ../../source/administrator-guide/roundcube-settings/log_logins.txt:8
+#: ../../source/administrator-guide/roundcube-settings/log_session.txt:8
+#: ../../source/administrator-guide/roundcube-settings/session_auth_name.txt:8
+#: ../../source/administrator-guide/roundcube-settings/session_domain.txt:8
+#: ../../source/administrator-guide/roundcube-settings/session_lifetime.txt:8
+#: ../../source/administrator-guide/roundcube-settings/session_name.txt:8
+#: ../../source/administrator-guide/roundcube-settings/session_path.txt:8
+#: ../../source/administrator-guide/roundcube-settings/session_storage.txt:8
+#: ../../source/administrator-guide/roundcube-settings/user_aliases.txt:8
+#: ../../source/administrator-guide/roundcube-settings/mail_domain.txt:8
+#: ../../source/administrator-guide/roundcube-settings/referer_check.txt:8
+#: ../../source/administrator-guide/roundcube-settings/username_domain_forced.txt:8
+#: ../../source/administrator-guide/roundcube-settings/username_domain.txt:8
+#: ../../source/administrator-guide/roundcube-settings/debug_level.txt:8
+#: ../../source/administrator-guide/roundcube-settings/ldap_debug.txt:8
+#: ../../source/administrator-guide/roundcube-settings/log_date_format.txt:8
+#: ../../source/administrator-guide/roundcube-settings/log_dir.txt:8
+#: ../../source/administrator-guide/roundcube-settings/log_driver.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_debug.txt:8
+#: ../../source/administrator-guide/roundcube-settings/sql_debug.txt:8
+#: ../../source/administrator-guide/roundcube-settings/syslog_facility.txt:8
+#: ../../source/administrator-guide/roundcube-settings/syslog_id.txt:8
+#: ../../source/administrator-guide/roundcube-settings/addressbook_name_listing.txt:8
+#: ../../source/administrator-guide/roundcube-settings/addressbook_pagesize.txt:8
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mode.txt:8
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mods.txt:8
+#: ../../source/administrator-guide/roundcube-settings/addressbook_sort_col.txt:8
+#: ../../source/administrator-guide/roundcube-settings/address_book_type.txt:8
+#: ../../source/administrator-guide/roundcube-settings/address_template.txt:8
+#: ../../source/administrator-guide/roundcube-settings/advanced_prefs.txt:8
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_max.txt:8
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_min_length.txt:8
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_single.txt:8
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_threads.txt:8
+#: ../../source/administrator-guide/roundcube-settings/auto_create_user.txt:8
+#: ../../source/administrator-guide/roundcube-settings/autoexpand_threads.txt:8
+#: ../../source/administrator-guide/roundcube-settings/client_mimetypes.txt:8
+#: ../../source/administrator-guide/roundcube-settings/compose_extwin.txt:8
+#: ../../source/administrator-guide/roundcube-settings/compose_responses_static.txt:8
+#: ../../source/administrator-guide/roundcube-settings/contact_photo_size.txt:8
+#: ../../source/administrator-guide/roundcube-settings/date_formats.txt:8
+#: ../../source/administrator-guide/roundcube-settings/date_format.txt:8
+#: ../../source/administrator-guide/roundcube-settings/date_long.txt:8
+#: ../../source/administrator-guide/roundcube-settings/date_short.txt:8
+#: ../../source/administrator-guide/roundcube-settings/default_addressbook.txt:8
+#: ../../source/administrator-guide/roundcube-settings/default_charset.txt:8
+#: ../../source/administrator-guide/roundcube-settings/default_font_size.txt:8
+#: ../../source/administrator-guide/roundcube-settings/default_font.txt:8
+#: ../../source/administrator-guide/roundcube-settings/des_key.txt:8
+#: ../../source/administrator-guide/roundcube-settings/display_next.txt:8
+#: ../../source/administrator-guide/roundcube-settings/display_version.txt:8
+#: ../../source/administrator-guide/roundcube-settings/dont_override.txt:8
+#: ../../source/administrator-guide/roundcube-settings/draft_autosave.txt:8
+#: ../../source/administrator-guide/roundcube-settings/drafts_mbox.txt:8
+#: ../../source/administrator-guide/roundcube-settings/dsn_default.txt:8
+#: ../../source/administrator-guide/roundcube-settings/email_dns_check.txt:8
+#: ../../source/administrator-guide/roundcube-settings/enable_installer.txt:8
+#: ../../source/administrator-guide/roundcube-settings/enable_spellcheck.txt:8
+#: ../../source/administrator-guide/roundcube-settings/force_7bit.txt:8
+#: ../../source/administrator-guide/roundcube-settings/force_https.txt:8
+#: ../../source/administrator-guide/roundcube-settings/forward_attachment.txt:8
+#: ../../source/administrator-guide/roundcube-settings/generic_message_footer_html.txt:8
+#: ../../source/administrator-guide/roundcube-settings/generic_message_footer.txt:8
+#: ../../source/administrator-guide/roundcube-settings/htmleditor.txt:8
+#: ../../source/administrator-guide/roundcube-settings/http_received_header_encrypt.txt:8
+#: ../../source/administrator-guide/roundcube-settings/http_received_header.txt:8
+#: ../../source/administrator-guide/roundcube-settings/identities_level.txt:8
+#: ../../source/administrator-guide/roundcube-settings/image_thumbnail_size.txt:8
+#: ../../source/administrator-guide/roundcube-settings/im_convert_path.txt:8
+#: ../../source/administrator-guide/roundcube-settings/im_identify_path.txt:8
+#: ../../source/administrator-guide/roundcube-settings/include_host_config.txt:8
+#: ../../source/administrator-guide/roundcube-settings/inline_images.txt:8
+#: ../../source/administrator-guide/roundcube-settings/language.txt:8
+#: ../../source/administrator-guide/roundcube-settings/line_length.txt:8
+#: ../../source/administrator-guide/roundcube-settings/list_cols.txt:8
+#: ../../source/administrator-guide/roundcube-settings/mail_header_delimiter.txt:8
+#: ../../source/administrator-guide/roundcube-settings/max_group_members.txt:8
+#: ../../source/administrator-guide/roundcube-settings/max_pagesize.txt:8
+#: ../../source/administrator-guide/roundcube-settings/max_recipients.txt:8
+#: ../../source/administrator-guide/roundcube-settings/mdn_default.txt:8
+#: ../../source/administrator-guide/roundcube-settings/mdn_requests.txt:8
+#: ../../source/administrator-guide/roundcube-settings/mdn_use_from.txt:8
+#: ../../source/administrator-guide/roundcube-settings/message_extwin.txt:8
+#: ../../source/administrator-guide/roundcube-settings/message_show_email.txt:8
+#: ../../source/administrator-guide/roundcube-settings/message_sort_col.txt:8
+#: ../../source/administrator-guide/roundcube-settings/message_sort_order.txt:8
+#: ../../source/administrator-guide/roundcube-settings/mime_magic.txt:8
+#: ../../source/administrator-guide/roundcube-settings/mime_param_folding.txt:8
+#: ../../source/administrator-guide/roundcube-settings/mime_types.txt:8
+#: ../../source/administrator-guide/roundcube-settings/password_charset.txt:8
+#: ../../source/administrator-guide/roundcube-settings/plugins.txt:8
+#: ../../source/administrator-guide/roundcube-settings/prefer_html.txt:8
+#: ../../source/administrator-guide/roundcube-settings/prettydate.txt:8
+#: ../../source/administrator-guide/roundcube-settings/preview_pane_mark_read.txt:8
+#: ../../source/administrator-guide/roundcube-settings/preview_pane.txt:8
+#: ../../source/administrator-guide/roundcube-settings/product_name.txt:8
+#: ../../source/administrator-guide/roundcube-settings/read_when_deleted.txt:8
+#: ../../source/administrator-guide/roundcube-settings/recipients_separator.txt:8
+#: ../../source/administrator-guide/roundcube-settings/reply_all_mode.txt:8
+#: ../../source/administrator-guide/roundcube-settings/reply_mode.txt:8
+#: ../../source/administrator-guide/roundcube-settings/reply_same_folder.txt:8
+#: ../../source/administrator-guide/roundcube-settings/search_mods.txt:8
+#: ../../source/administrator-guide/roundcube-settings/send_format_flowed.txt:8
+#: ../../source/administrator-guide/roundcube-settings/sendmail_delay.txt:8
+#: ../../source/administrator-guide/roundcube-settings/show_images.txt:8
+#: ../../source/administrator-guide/roundcube-settings/show_real_foldernames.txt:8
+#: ../../source/administrator-guide/roundcube-settings/show_sig.txt:8
+#: ../../source/administrator-guide/roundcube-settings/skin_include_php.txt:8
+#: ../../source/administrator-guide/roundcube-settings/skin_logo.txt:8
+#: ../../source/administrator-guide/roundcube-settings/skin.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_cid.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_pw.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_type.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_conn_options.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_helo_host.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_log.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_pass.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_port.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_server.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_timeout.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_user.txt:8
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_before_send.txt:8
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_dictionary.txt:8
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_engine.txt:8
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_caps.txt:8
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_nums.txt:8
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_syms.txt:8
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_languages.txt:8
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_uri.txt:8
+#: ../../source/administrator-guide/roundcube-settings/standard_windows.txt:8
+#: ../../source/administrator-guide/roundcube-settings/strip_existing_sig.txt:8
+#: ../../source/administrator-guide/roundcube-settings/support_url.txt:8
+#: ../../source/administrator-guide/roundcube-settings/temp_dir_ttl.txt:8
+#: ../../source/administrator-guide/roundcube-settings/temp_dir.txt:8
+#: ../../source/administrator-guide/roundcube-settings/time_formats.txt:8
+#: ../../source/administrator-guide/roundcube-settings/time_format.txt:8
+#: ../../source/administrator-guide/roundcube-settings/timezone.txt:8
+#: ../../source/administrator-guide/roundcube-settings/undo_timeout.txt:8
+#: ../../source/administrator-guide/roundcube-settings/upload_progress.txt:8
+#: ../../source/administrator-guide/roundcube-settings/use_https.txt:8
+#: ../../source/administrator-guide/roundcube-settings/useragent.txt:8
+#: ../../source/administrator-guide/roundcube-settings/x_frame_options.txt:8
+#: ../../source/administrator-guide/roundcube-settings/activesync_debug.txt:8
+#: ../../source/administrator-guide/roundcube-settings/activesync_user_log.txt:8
+# 19c84940cb2b4fe3a842cd0f3b3c90d3
+# 9bd9616620d449f2bdc9851859d8a4e6
+# c94e0a50fb5345718e6948c4a96e0eff
+# c94295fcec0443318cad49593907eb43
+# abb5599f48f844578019061e1d0c730b
+# 2ddb8c1906bc4082a2f0fe40f63eb59c
+# 8f14fc50c29b4f97822076ed6e4c34ef
+# 92374d7d14ab498b854b213c998ff94c
+# a78dcff27562446eb0a1174d77fe25de
+# 7da771a3651f422bbc135421df9bd9e9
+# a2cc3328d9674849a30f11805104e357
+# 74b8c2be11054bc38c3ad4dde0fbc788
+# bf45a59ae8d044e6ab98ddf7374a6967
+# 90edaee344484089a80d87641b8f467e
+# 7f9a5f77d68a437cbc74d1534b583827
+# 8386a4def89a408d8977abff88ea5599
+# f3bac285b89a4c6d8ecd6df45fbba0ad
+# 9345242828bc44c3af87ab560a5720b1
+# b8edf1a2928547519dea0d382c4d9e23
+# 920054dea878425da7caf2c4a2ddbc4b
+# d4797a5ef9c5467093f3420ea8f88503
+# 7795ae677bce4cc49e81231c69adbe57
+# b68de711f9d44649b2c2bd4ddf5860c5
+# cc92fe577d444543a9523b73c08eb1ba
+# f5b14d71f6c3473dbd7ef69584f39589
+# c0698f24be6f45678a811978cda71400
+# 843f24014ec54c35935b9a703493ce28
+# b851e589fb1e46a4ac2034c0948d9352
+# 948ff65d04674e0789cadab740f6a192
+# 3ca11237bc734362b15a457df81790d9
+# e4d214cb3f374e6c9c229c64bcf521e9
+# 1b9d0f8f27484c0cb1eb6ea9f968ae22
+# 37b1941b04b34eaf90ee60231ce4b612
+# 7ce4be271f7a45a7a25489e6d064fa54
+# 56e80df5244a463b9478e05e6ebf70b3
+# cd79abbb03274135af35231f40603fb8
+# 3799bb76f2764f7ca149edf9e55f1185
+# 5f34b8f487c14ae5a21da60f40ca4abf
+# 3cec57c134794b468bbc484c49ed7ae4
+# 252cac63caab44b4a37cd00779150138
+# 7bf4459a74fc4fbf9059ef74ec548cad
+# ea4f0018ebe34e2c824bce477fc17980
+# e55acd09d6614d18b685ef83559d0973
+# 3fd93a84e89045a0b49744c60bee0ef9
+# 63591ab7cb4f4843a80efc845b55e081
+# fb161e6bcbb748d697256c5a2e19e517
+# 349ad210e9a040a5b8f71ac6d4866ac7
+# ccfd95e0af754c02a3d5f92d9d152bc5
+# 3a2693e65c4a49b09892eaf62acc16b9
+# 24ee153b8b9c46c1b29a3cb515fb67f3
+# 9ce1f2064be94879994d6f96f9d5ee46
+# b861e25c0de149b5915a7d5873cea1c5
+# 7dd14a88812c4b6eaa358fd5da024fc9
+# 98cf9dcf04994eacb5175a81779388bc
+# e4f3e3f158b341689edc5e991623e970
+# 7e643ae1487f40e39a2a1cecbda098f9
+# ad5b319c80b14a828f9de6a78ec9515c
+# 6669794e29ba4626b3004512c6221b7e
+# 105f4f0a43b54956a933a08478249c83
+# dc3fdc6aa04d4b0f9ddb2b3cab8c3a14
+# edcda081328b48ca8a10dec1af9dba8e
+# 5f650264fba3490e87c671d7b97e41b0
+# 5a978bf0eba641cf9e8b1538a2e24582
+# d79363e7dd034619ae176b28c142e581
+# d45bb69bd7ae43d3b83f4e6367d1214b
+# 10f4cb42b8f24d4a824909283872b2a9
+# 772fe21c2b6b45b2a157e17316834e24
+# d3b62de235634c13a909463588f917dc
+# 43f2132399a84d868a5b564c98402197
+# 8a7f9547d213436c8e91dde521c7819c
+# d0ef7db66fa94b5cbb021ce3d4864fdb
+# 0507a4b2296c4d85803014821f1f4687
+# fdffce0cad9d4a28910afdc7825d01c6
+# fb49528d46b54afe91ca3f47f762f28c
+# d20589b9fb2c43b98acdbf2fbab8df4c
+# 00e58afa75834220a96838ac051f0bdf
+# c18dd2315a1a4d2daf03013258abe885
+# 4d83a546d9414f99bd382ab445d2e992
+# 25fe3f2d9c9a4822a271b3f47c2c608e
+# b4701ac0e7f04d4fb7311885fbc1eb36
+# efb0c6b246c84a16a5b4e21423f20189
+# 31f1151fc7004afebe46783a9675b416
+# 2aad493f504242058dad639c52c10272
+# 9bd0316723cf439faea7e1e4382d6e68
+# b6629322e8054e30ac443bc53e1ecebc
+# 9a57d085248c415c9be2e627b2dc7423
+# 0c58cbfe8c3640979f1bd1e2c41fa306
+# 577a222ca42e498096449f89c59a393e
+# 7cdedb9ad54d4173973acfaa7c1800ed
+# 0c0c231e28814f3eb4da3bc6881faf9e
+# d64639b238c743d0b0fd430302c4dead
+# a12ecfb700da448eb6a652e7be9d0c5b
+# a38cd5732b39491b9c9e3b9a5da22980
+# 8a0bac50f9af42efb5784c0065e8e6fb
+# 571865060ef74d86afd1f8846cd663b1
+# c7b9afed64b743db82ab356ba774ecd3
+# 12a71b8e01cf4913a2a79980e9db17b3
+# c256947d5d1f4cdc9c2e13a1912db8f7
+# cfe5a8b9a6f5473aa15c1981151cfe7e
+# 87d5701d8c304c4dbc964f685e8beedf
+# bc076499c0d14b2fbe8ce932de112a4c
+# 6cbbbebe74104b89a02d2a9eddc28b51
+# 68feee38b8004203884059187762f3a0
+# 7c6ef1ed588d40b08f217249482139ba
+# feba6552da1846e78fa61401dc5c54b9
+# 6d7177789c9c422eadba1bb07d94ee7f
+# 7147507f828144fea3049e3e47996cb9
+# 0b6c593bc4b4417c8704a6c9efe18363
+# 7b6e022354ab4b7bb5bbc8d8da115f38
+# fa0f5dc5094c4ad1bec88028eba2b386
+# 9457709addac4a1ab4b948c124873cad
+# 6b072417b98d44c5b81df93a15fa08c6
+# 00b1ea0a2a38413aa3af7a6c90baa844
+# 59922e48f0454401b00a735a8cb00f60
+# 43043decc7114b0b9929fc64e35d979f
+# cf9298e7e6b64ceaa1b9d296c386cf45
+# 93e1c2cc9caa4367b6cdcd19df674fb9
+# 2207a50bf26c4935aa3a295038f9cfd2
+# 07be8f228e79400cbb8bbfd408ed88b4
+# d94bf705bb5a476fb8c8adbcb1ffa571
+# c7a3ea03b44f45f9bd0032e65e5ec977
+# b5cde28003834b9da23b682864d44427
+# e909698d88294d3a80a1bd5d1f8320c7
+# 2c1c55b4553e4b9f9c460f455a40673d
+# 378259f0ab4a4641b0e625711f34953b
+# b2ae6e056d8244d5bfdc47700cd10635
+# 74ef2294d30546289b74c745defc5734
+# 2e21fce0de12421b906bfbb8e5d7687f
+# 7491a1616e364ab1893dec0b3d54f403
+# c1dd4194699341f0b37ada98aaccce7f
+# a3f3b6471edc4bac99fd5cfc3d3245b1
+# f95a85f3406640f9ad9a3e5359170392
+# 0d9efdf1ea9e4a0fb4ee00b34e9a931a
+# 02b196ee7d7041418fd838e68bda4236
+# 197ca632730943e5b0ef76bf70b568ec
+# 29057a04b36b4690b08709cde0203a53
+# 2a81c4b5e9454100969770bb6fd3185d
+# 92e3236f9b5d44aea5d7962d64fc590b
+# add21ad7457d49ecb1c561c1214f1824
+# 4d7d98ed10bc4b6bb443cd86f1d16b44
+# ce591f55c4154cbf913d7c224244cde1
+# 706f28fa39f74062b9bbb727a1625ba7
+# 19dcb37c2faa44e4916676c6e9c8feed
+# 1a2f88e6e8564cbca5ad1708cb6704e1
+# 16fef1e822a44ac5a0a12bf7e4bc6041
+# 60fedc4591a7442d98ad194b8afc261c
+# 3e8c81d139b743778dbe98a3af9564a5
+# fb784e456d6747b4987cf328400d4e42
+# 67a0c1ea19404e8d8cc39cb182d23328
+# 6e78bdce296247c19c4a4edca0d58dd0
+# c887d9e1578a47bf935c181ad1e6bbcb
+# 2a0170365ade469ab9791da8ec4bb9ec
+# a0583035f05c4123938deb8e2e1ab465
+# d40a9edacf3a4d6d8cc24d8a80522886
+# 15efe374115d4228b8f197891db39baa
+# 53f75a86b2b54f9abb0737a1d5df10fd
+# 4b43846e38ab40c0a461b4acbe5d392f
+# 6f0de3b106b444e4bce3efd26c1e8d26
+# 71315a8926504f78b682d6fc560c9c6b
+# 08e57c592cee42fdb5dbd47304ef23a3
+# df8a162ff57a441c90ba31a7e8325fe0
+# 373d8e5ebc4f447595507d929074de7f
+# 42870edf39c9460e858198b253b2c3d4
+# 5c6af7be693b481a8a723eb8abd7b593
+# 4b9b9238ea5642658557d1e69bca5b50
+# 126851065bbf4a99922efeecadd1addf
+# 333d69a8092f4d17afcf042d3e4ca6f3
+msgid "Sadly, this setting has not yet been documented."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:200
+# e9821c612b4744e090eaacbad5f8c88e
+msgid "For more database related settings, see also:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:202
+# 872a491192ee4e0e95444baedcc65821
+msgid ":ref:`admin_roundcube-settings_imap_cache`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:203
+# 04fe4ddce84546c5b1940c772674a7e0
+msgid ":ref:`admin_roundcube-settings_ldap_cache`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:204
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:32
+# fc2a1c145dd54c2ab474d9b3de583f1a
+# 130053b1981c443b9c0b4c2627922da8
+msgid ":ref:`admin_roundcube-settings_messages_cache`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:205
+# bad841f21cc14a0d8e5fb0ea558118f1
+msgid ":ref:`admin_roundcube-settings_session_storage`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:209
+# 81f2bb91d54e4c31a46514998f2cd9d4
+msgid "IMAP Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:4
+# ada1b0e0c34643b6ab12fe07fc8945c2
+msgid "``imap_cache``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:6
+# 99dc7ce10aff4cbe9ec914b080a79856
+msgid "Cache generic IMAP metadata, such as lists of mailboxes, and the last known status of each mailbox in that list."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:9
+# a773b2884a454d569277889b564b7097
+msgid "The default for Roundcube is set to ``null``, meaning not cache anything. In Kolab Groupware, the default is ``db`` (see below)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:12
+# 1491ed02a06b4c9791055e6dcee3899e
+msgid "In many deployments, disk I/O on the IMAP server is a major concern and possibly a bottleneck, so it is recommended to turn on caching."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:15
+# 543b82b02b024b6581c78a313fbf3974
+msgid "If caching is not enabled, Roundcube will address IMAP directly every time it needs metadata about IMAP folders."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:18
+# 74685dc855a144fb9ae2e34516251e0c
+msgid "Valid values include one of:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:20
+# 971d4d12493044e1a9c0594dd94896bf
+msgid "**db**"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:22
+# 2e20db2c437842c9a95c00b5065e1b68
+msgid "Store IMAP caches in the database configured with :ref:`admin_roundcube-settings_db_dsnw`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:25
+# 771ac6ad29bf4feebcee0ce2d6d7b8d3
+msgid "In Kolab Groupware, this is made the default, as it does not introduce any additional requirements to the environment."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:28
+# 463ea7dd33d9403b956672e3a07dac18
+msgid "Using the database for IMAP caches however does introduce a little bit of overhead, for connections need to be made, authenticated, databases selected, connections authorized, queries be executed, authorized and awaited the answer for. That said, IMAP caches make little use of the relational capabilities of such database."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:34
+# 4d290ee1f7e14a65ab898e25673097fd
+msgid "**apc**"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:36
+# 23334b2719d747bdb8a5dd3ed0b5fad4
+msgid "Store IMAP caches in the *Alternative PHP Cache* (or \"APC) -- the memory segment(s) for PHP originally intended to store already binary compiled PHP code, so that PHP does not need to read from disk, interpret, compile and execute the PHP code every time a user hits a page."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:44
+# 951b70ee130740119bf3b2d0fb83e15a
+msgid "It is recommended to use APC for caching binary compiled PHP code, but it is **not recommended** to use APC for IMAP caches."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:47
+# 846af18fdd3d4c96bf8547d682989c6a
+msgid "**memcache**"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:49
+# b22e483bcde6440fb6cade5009f1ae9e
+msgid "Store the IMAP caches in memcache, configured using :ref:`admin_roundcube-settings_memcache_hosts`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:52
+# 0dfb8c1afb8645bea34f702c18d3ec95
+msgid "Memcache introduces far less overhead compared to a relational database, and does not require authentication and authorization."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:55
+# 97a82cfda2f243e584c00398c14f1870
+msgid "For larger deployments, this is the recommended setting. However, you would need to configure memcache hosts, and making those highly available is possible with replicated memcached daemons available and supported only as part of Kolab Enterprise 13 and later enterprise editions."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache_ttl.txt:4
+# 7fbda8ade63e45f98a4ee946b739f7a1
+msgid "``imap_cache_ttl``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache_ttl.txt:6
+# ef6714c559924f8992c8b382d43a8db7
+msgid "The Time To Live (TTL) for the IMAP caches -- the time it should be considered valid, or expunged from the current caches at the first opportunity."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache_ttl.txt:9
+# 6fa5d4e914cb4d66b7ef09910651a1d0
+msgid "Really applicable when used alongside a caching technology that allows the retention to be specified upon entry, and purges caches automatically."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache_ttl.txt:12
+# 371597aebade4f7b93284d2a77e674af
+msgid "This setting controls, for example, how long folder lists are retained in cache."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache_ttl.txt:14
+# c87aaeef1b874236937d78784e0bc926
+msgid "With the folder list being cached, should the user create a folder and subscribe the folder (using a different client), than the web client session will have to wait for as long as the :ref:`admin_roundcube-settings_imap_cache` is within its defined TTL before it is made visible automatically, or, alternatively, the user might look in his Settings > Folders to bypass caches and refresh the folder list."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:4
+# f7943bbbf59b4bfe904cbd76a79f63e7
+msgid "``messages_cache``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:6
+# c5be8dc2db4f4e6b9a78d37308a26156
+msgid "Controls whether or not to cache messages."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:8
+# 50709b7176644d7eab3d479ea988c03d
+msgid "Valid configuration values are limited to ``db`` only, for message caching makes extensive use of the relational capabilities of the database."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:11
+# facb710e9a3a4c0e96213f2528bf8dbe
+msgid "Store cached messages in the database configured with :ref:`admin_roundcube-settings_db_dsnw`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:16
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:33
+# f4f0ae0110e34616b15a8d3908603dad
+# aaa8886deb054315aaa7fdefc884faee
+msgid ":ref:`admin_roundcube-settings_messages_cache_threshold`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:17
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:34
+# 3feb3db88e6645869d866ab13392cea7
+# 7aad22a054634b73bdbeb27c48686076
+msgid ":ref:`admin_roundcube-settings_messages_cache_ttl`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:18
+#: ../../source/administrator-guide/roundcube-settings/kolab_cache.txt:14
+# 1c0e39b145cb47629383a0344906a243
+# 302a8c356d4b4bb1869b7fc0649abaa2
+msgid ":ref:`admin_roundcube-settings-plugin_libkolab_kolab_messages_cache_bypass`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:19
+# a0e17242c9784805bf7eeb953fcdf72f
+msgid ":ref:`admin_roundcube-settings-plugin_threading_as_default`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_threshold.txt:4
+# 8f3222c4d1c346b082e60bc9b7d67443
+msgid "``messages_cache_threshold``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_threshold.txt:6
+# 13bb3b1b3b8146f9b8761fb6a33b5545
+msgid "Messages with a size over the configured threshold are not cached."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_threshold.txt:8
+# 5b98b71c67fb46a1bcc2b7d1957bd5b9
+msgid "This allows an administrator to make sure no cheap 30 MB videos of cats wearing a custome end up in the expensive database."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:4
+# 84f0e10408234ced97d73bc98589eeff
+msgid "``messages_cache_ttl``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:6
+# 15d645f856f54319b4ab3b88f58d441e
+msgid "Messages are usually displayed ordered by date (of submission or arrival), with the most recent few first."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:9
+# 8ccafdd43f8141f59adcc80bbf21de21
+msgid "In effect, this tends to result in a view that does underappreciate older messages -- they are not regularly displayed in the user's mail (list) views."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:12
+# 5fac49ca09334bc69f4f87312ce88e6f
+msgid "Since these messages are only retrieved occasionally, it makes sense to not spend too much cache capacity on these messages."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:15
+# 23c3bc8c1f1746ca9664e2fb41ba2222
+msgid "Set ``messages_cache_ttl`` to the maximum amount of time that may have passed since the message became available, during which caching is still considered appropriate."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:21
+# c11f7e9af3da41099c7e72b2b86d0a3a
+msgid "A rule of thumb for establishing the appropriate TTL for the messages cache would be to cache 2 times a single :ref:`admin_roundcube-settings_mail_pagesize` for any one mail folder (using the default, that would amount to 80 messages)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:27
+# f2e7731f55ba4fefb4f199602077d22f
+msgid "Example: Low-turnover Sites"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:28
+# a0005286c5874c8eac58313a8ee9617d
+msgid "Example settings with only a few mails per week per mail folder, and not too many users."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:36
+# eee514fae72f461ab1d6e85c74d76752
+msgid "Example: High-turnover Sites"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:43
+# 94a27683c9aa4e81b844503319fe2cd7
+msgid "The ``messages_cache_ttl`` does not impact the :ref:`admin_roundcube-settings-plugin_libkolab_kolab_cache`, but may impact the applicability of :ref:`admin_roundcube-settings-plugin_libkolab_kolab_messages_cache_bypass` being set to ``0``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:4
+# 507008b4b2a24448bdec58f4af05e950
+msgid "``memcache_hosts``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:6
+# b82c6d215f5f4ceda60fbf1b3dce699a
+msgid "Configure a list of memcached hosts to use for caches and/or storage."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:8
+# 2c8b46db33e145369070f2122b5d5a53
+msgid "Usually, it is sufficient to use one memcached host address in this list, and this one memcached host address might be a load-balanced, high-availability replicated memcached cluster."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:12
+# 7e5bfd3a3ec54679a7f2e7a8ece8a6ef
+msgid "Replicated memcached is available and supported only as part of Kolab Enterprise 13, and later, however."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:15
+# 323c230c2e8d490fadbc246c5e98779c
+msgid "Use multiple addresses in case the size of all information stored exceeds the capacity of one (replicated) memcached host."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:19
+# 983d799ba6c5412ea5dab4d1cfa4aa1f
+msgid "Example Configuration for a Replicated Memcached Cluster"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:27
+# 9752c21322c14fe0860d7ab69fd04544
+msgid "Example Configuration for Multiple Memcached Hosts"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_always.txt:4
+# 875dd0a6498242b8b73385749118bc62
+msgid "``delete_always``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_always.txt:6
+# dac31c5f7fd3434ea2fda1ed691e741d
+msgid "This setting controls whether mail should be deleted, even when moving the mail to the Trash folder fails."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_always.txt:11
+# d293ba7c83174c7188dd5c1cb955551b
+msgid "This setting has no effect in a default Kolab Groupware installation, which does not attempt to move the mail to the Trash folder in the first place."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_always.txt:17
+# 918582a171dd4f9d8ebec72d272be211
+msgid ":ref:`admin_roundcube-settings_flag_for_deletion`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_always.txt:18
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:25
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:16
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:14
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:19
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:17
+# 79872ec05a0b4e92b7a13ca39561febe
+# c92d365cfd67430d89b0bd95cc516d5d
+# 6d7104b0820741bea1bd114227c316b8
+# 6bafe34b9064409fa65b9f74b8d76f68
+# d93134b66dd74a759a50b758f764cff7
+# dc93110a9deb44a69cbd343cdb935406
+msgid ":ref:`admin_roundcube-settings_trash_mbox`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_junk.txt:4
+# 62627da818c6452aaeaf446a87cd687f
+msgid "``delete_junk``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_junk.txt:6
+# da20ab4a65ee4592b1affec0a3673c2f
+msgid "Delete messages marked as junk right-away, and do not move them to the Trash folder."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/logout_expunge.txt:4
+# 9524979fcb88485a8e0c6f011d2ee7e4
+msgid "``logout_expunge``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/logout_expunge.txt:6
+# fab2ca6683bb423ca102860b1c938310
+msgid "Expunge a user's INBOX upon logout. To expunge a user's INBOX means to issue an *EXPUNGE* command to the IMAP server, deleting all messages from the mailbox that have previously been flagged as \\Deleted."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/logout_expunge.txt:12
+#: ../../source/administrator-guide/roundcube-settings/logout_purge.txt:10
+# 31538bb4b70a4883a538c1ca40635938
+# 04bf95d7c2c5466787fee0e2db45022f
+msgid "Note that this requires a successful logout, and does not kick in when the browser (tab) is simply closed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/logout_purge.txt:4
+# 815c606f3062467cabd97a8da9458bb0
+msgid "``logout_purge``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/logout_purge.txt:6
+# 585166c898854a96997a496a43eddd8c
+msgid "Purge the Trash folder upon successful logout."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:4
+# d551d256023542cbb982e185791e7788
+msgid "``flag_for_deletion``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:6
+# c2eafd13da7d4c98ba103eaefce401f6
+msgid "When a user deletes a message, should Roundcube flag the message as deleted in IMAP, or move the message to the Trash folder?"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:9
+# 909ec4a1839b41868a0b924e8078864a
+msgid "The default in Kolab Groupware is to flag a message as deleted."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:13
+# 44d67cab68464af9942321e1d847eb10
+msgid ":ref:`admin_roundcube-settings_delete_always`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:14
+# c8b8fb7e7f9443b6a317f6e5a36419df
+msgid ":ref:`admin_roundcube-settings_logout_expunge`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:15
+# 024c0c8171c34909924c095b46fbde3f
+msgid ":ref:`admin_roundcube-settings_logout_purge`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:4
+# 4d9c99527a6244aaa43d51395dfc0350
+msgid "``create_default_folders``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:6
+# 830f9810e27e4e3f861bac15ceb2bec3
+msgid "Whether or not Roundcube should create the default folders configured for the user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:9
+# b84ea4686e7e41ad86e942be3223ce25
+msgid "This includes, for example, the folders for sent items and the trash folder."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:14
+# ef332e796d2140cfaaa6f7c6e480b6de
+msgid "In a Kolab Groupware environment, a set of default folders is usually created by the Kolab daemon. Which folders are created is controlled through the ``autocreate_folders`` setting in :manpage:`kolab.conf(5)`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:21
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:11
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:16
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:13
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:13
+# f32632a726fb41218f48e114b923aea6
+# 1c2a165fba2a4226a6194f88c0853451
+# b9a63577ba624549af61cc8cba86870e
+# 24d54cb9abe74f8d9a25f179fea28511
+# 4d54b69ed8e4448db95733875edb9fce
+msgid ":ref:`admin_roundcube-settings_default_folders`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:22
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:13
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:17
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:14
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:14
+# 7c21f35e7f984345bba4ce1ffe49670a
+# b41146295102438185d3d79c4b381e7d
+# e0263db02a89450195b64ce682416d5d
+# 912be3a776d3455abc791b0c0395dc1c
+# 09af3db7f7344493983ff36b0e65a3ef
+msgid ":ref:`admin_roundcube-settings_junk_mbox`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:23
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:14
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:12
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:16
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:15
+# 3a75fc121d8740028597d320243b538f
+# ae24721f54dc487ca30c6640820de640
+# ce25cb0cdeef46cb9ccc3633d2e55da4
+# c22e82d050024d5694ba449bca8152f3
+# 19a6d3b5ca834e40b5ebf321e0b2b395
+msgid ":ref:`admin_roundcube-settings_protect_default_folders`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:24
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:15
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:13
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:18
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:16
+#: ../../source/administrator-guide/roundcube-settings/reply_same_folder.txt:12
+# 6d0759394b764b54932b5d4e648ce244
+# 524800e942ba47bca22fca6da37b1284
+# d08ca75fd9d34f0da6f28a9a71c2f453
+# e0e57c292c0d4de5a53d0e6197b9a58c
+# 3b88007a554c4237b14851cd88e9ab63
+# 8b1c7bd2f745489eb11c5bb4dfa4eb59
+msgid ":ref:`admin_roundcube-settings_sent_mbox`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:4
+# bbcd6ac43111498eb68040ebbe58a92b
+msgid "``default_folders``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:12
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:10
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:15
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:12
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:12
+# 21dc55059e4d4efd9af678c2fbe67398
+# 9bf17151c0c548c8989c22fcf7147e0e
+# 121b07d5246245fea3ba4819c47162d7
+# d013ff0dadaf419a9fbce10e552d8d6a
+# 784652a5a9804d8aab92d37c850dad0c
+msgid ":ref:`admin_roundcube-settings_create_default_folders`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:4
+# 7d1688d565cc4ad8ba4feff03d936a13
+msgid "``junk_mbox``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:6
+# faac3e9ffc9e4538ba21436eb58c57cb
+msgid "The name of the folder to use as the Junk folder."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:4
+# 0b6419ae4e9344e29c1d34e22b5d7833
+msgid "``protect_default_folders``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:6
+# d5ee8e15dca14e2f96acf05c9efcd582
+msgid "Protect the configured :ref:`admin_roundcube-settings_create_default_folders` from being unsubscribed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/check_all_folders.txt:4
+# 057e8e177b7f4046a5bbf26c64979d81
+msgid "``check_all_folders``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:4
+# dcbba6adb0c94ad3a905204b247e5f35
+msgid "``default_host``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:6
+# 55d92ad62c1f49858ccd15fb43ee944f
+msgid "The ``default_host`` setting configures the IMAP server address to connect to, and if omitted, allows the user to specify the IMAP server address."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:9
+# 446efcc985014af09e989b70598ab0bc
+msgid "A drop-down select list could be provided by configuring ``default_host`` as follows:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:20
+# 8205abcea23b4d6ba0dcd8219946e95d
+msgid "To show user-friendly, legible labels instead of server addresses, give each of the items in the list a value:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:31
+# 51ee93b5484c4016b7ac316c2fa347a9
+msgid "Neither of these options is used by Kolab Groupware. By default, the ``default_host`` is set to ``tls://localhost``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:34
+# 15f486fc678b4a00bf087eaa0356a02a
+msgid "For environments with multiple parent or alias domains, and hosted environments, and co-located service providers, we recommend using the file inclusion method outlined at the very start of the :ref:`admin_roundcube-settings`, for the flexibility required in such environments is likely to exceed just the IMAP server address to use."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:40
+# 43e35677342840d88b41bd5c61393c79
+msgid "Furthermore, Kolab Groupware really likes the Cyrus IMAP Murder topology, where the IMAP server address used to connect to matters less."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:45
+# 77e503af67564d75b6dc05fde7834db1
+msgid "http://trac.roundcube.net/wiki/Howto_Config#IMAPserverconnection"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_port.txt:4
+# 3b90702188454ea88a57ea5133338d7c
+msgid "``default_port``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_cid.txt:4
+# a7304f3bbfe046f996df2be82340c92c
+msgid "``imap_auth_cid``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_pw.txt:4
+# 6f34eef1ac7941d6bfd9c83d2ff9b91f
+msgid "``imap_auth_pw``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_type.txt:4
+# 1fe43e543a234613bd66000696f8c745
+msgid "``imap_auth_type``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_delimiter.txt:4
+# 55b007560fea46269f9aa9980896f668
+msgid "``imap_delimiter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_delimiter.txt:6
+# 570115562d6d49b8b62552d6deac4618
+msgid "Set the delimiter to use in IMAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_delimiter.txt:8
+# 923569387f9841448b8ea6adfc0e7d57
+msgid "Be warned that the delimiter is a hierarchy element (i.e., for nested folders), and often has implications if configured incorrectly."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_delimiter.txt:11
+# 4fb89ec9d32f4943b2fed6d087e8cd9a
+msgid "The default is not configured, so that the results of the IMAP command NAMESPACE are interpreted. This is the recommended setting, and we suggest you only fiddle with this setting should your IMAP server not support the NAMESPACE command."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_disabled_caps.txt:4
+# 39e2b38c3c284c61bb52606b89391f9f
+msgid "``imap_disabled_caps``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_disabled_caps.txt:6
+# 70e498bcba294448822b8237b6a232e4
+msgid "Specify a list of capabilities to filter from the capabilities advertised by the server."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_disabled_caps.txt:9
+# c8bf8ed49412412d98e895d01e558291
+msgid "Useful if you do not have control over the server, so useless for Kolab Groupware deployments in production (but useful again in testing and development)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_disabled_caps.txt:13
+# a5fb4854709745cf909fcafa4f941551
+msgid "Examples of capabilities advertised by a server that you may want to disable include ESEARCH for UW-IMAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_disabled_caps.txt:16
+# bd3beaf082c74fe89bc90dd9724b7cc3
+msgid "Default: ``Array()``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_caps.txt:4
+# 5193c1a71faf4ca9bd0e97e84cf5e67c
+msgid "``imap_force_caps``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_lsub.txt:4
+# 5be8e33fbfa44c5e8b08c0b2a3124bc0
+msgid "``imap_force_lsub``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_lsub.txt:6
+# 34c623ab55494aa1a26fb9db1ca5e7d5
+msgid "Force the use of the LSUB command over the LIST-EXTENDED command to list folders."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_lsub.txt:9
+# 1cc2989bc65a461985ab3ce089884553
+msgid "Some IMAP servers (including Dovecot 1.x) return wrong results when using LIST-EXTENDED."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_ns.txt:4
+# b295460ac634466e88bcbfce7987f0ec
+msgid "``imap_force_ns``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_other.txt:4
+# f4e90938e3c84319adf27eca3ab31a42
+msgid "``imap_ns_other``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_personal.txt:4
+# e93009b41fa149d8939c19f82fbb64ea
+msgid "``imap_ns_personal``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_shared.txt:4
+# 2109b03c7f884a0e8f8f7cfac502f8e7
+msgid "``imap_ns_shared``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_timeout.txt:4
+# c2b327b09dc443da8f54b0f10d7c61e4
+msgid "``imap_timeout``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/min_refresh_interval.txt:4
+# 3ae7351c908d4932af267164d5020caf
+msgid "``min_refresh_interval``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/no_save_sent_messages.txt:4
+# ff7df180912a45f199f49b87f15ad54b
+msgid "``no_save_sent_messages``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/quota_zero_as_unlimited.txt:4
+# e444c43802e140c2886d1fc683be9750
+msgid "``quota_zero_as_unlimited``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/refresh_interval.txt:4
+# 6070e9b75b2143fba266df0f5f0a35c3
+msgid "``refresh_interval``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:4
+# 5fec52f773374b33bbb2abf6775b2fa1
+msgid "``sent_mbox``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:15
+# a299ac9508244f879ff2b06dc8aa82c1
+msgid ":ref:`admin_roundcube-settings_reply_same_folder`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skip_deleted.txt:4
+# f01be4c963d848fdb2c4dfea05284582
+msgid "``skip_deleted``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:4
+# d2e441b644584a069c745ca19d1fffc4
+msgid "``trash_mbox``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:251
+# 15ffacda5de14bd58050ac18fc14c6cb
+msgid "LDAP Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:4
+# 6fc4748c78c84896a143b15cf7a1c212
+msgid "``ldap_public``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:6
+# 2d88a2ec8e144ba2b4433bebf545c686
+msgid "A list of so-called Global Address Books, or Global Address Lists, useful for auto-completion of addresses being typed in to the To, CC and BCC fields when composing an email, when using the ACL plugin, and for searches from mobile devices and desktop clients using ActiveSync (through Syncroton) and/or CardDAV (through iRony)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:12
+# 732b8f9b4fd04dc6b350415529b9b756
+msgid "The first item configured here is the identifier of the address book. That being said, an example would look as follows:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:27
+# aa883d16b77d4f7e9b9f364568d49e4c
+msgid "While it is not very common to have multiple global address books, some organizations put one address book in the list of address books to use for auto-completion, and use another address book to store a copy of the local phone book -- you know, with residents and businesses in the area -- or address books of partner organizations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:33
+# 22840176e8ed4806ac85122bde45de74
+msgid "Using the :ref:`admin_roundcube-settings_autocomplete_addressbooks` setting, one address book can be used for auto-completion, while the other address book is available for searching in the web client, on mobile devices and using desktop clients using ActiveSync (through Syncroton) and/or CardDAV (through iRony)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:39
+# c79fc06f4da742c5a5770d42e3804ae1
+msgid "A large amount of settings are available for the global address books. By default, Kolab Groupware configures the organization's address book to use a set of configuration options that is designed to provide an easy growth-path to beyond 1.000 entries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:45
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:588
+# 45f30e1ad8974cd59bd0636cdc693119
+# 7276594e54ff45379ce1562790556713
+msgid "``name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:47
+# 4b7a5e98516a4d66bc5f4bc5d1055a52
+msgid "The name of the address book as it is presented in Roundcube."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:49
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:33
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:32
+# 868192cd63b946cebb4159cba8e9c00f
+# 18c5ac2bc3db49ed9c18672298979a6c
+# 20b7776ae7b84c95beb783d11f29f8f7
+msgid "Example:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:61
+# a62baf06fb1d4e1b8b6313eba81ab351
+msgid "The label used here is not available for localization."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:66
+# 4c3e006d18b644138c3eed9db00f609c
+msgid "``hosts``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:68
+# d15f527801624160ae3a1076ab1e7b61
+msgid "A list of LDAP server addresses to use to connect to."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:70
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:235
+# 8b2fcc47246044c2bd018b45f895cefb
+# 9905b585efda40b4b6a9f77bb04374a8
+msgid "Magic configuration values are available:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:72
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:17
+# 6645752b5b7e45a399bc2eb5c49dcdba
+# 11fd3d290b574e6a8a19d72c6f4b5473
+msgid "``%h``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:74
+# 4c0af637fae14edd9aa9740d467edc78
+msgid "The user's IMAP hostname."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:76
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:25
+# b8687cb134a8439b9c0cd36bfbf76c9c
+# 3983ae376732455c8d030ab78a0d1a52
+msgid "``%n``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:78
+# 9abeddf76e224347a59e40622df8fb51
+msgid "The value of ``$_SERVER['SERVER_NAME']``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:82
+# 14d4bf353be5413296b5783ba256e21f
+msgid "The ``$_SERVER['SERVER_NAME']`` value is not the same as the ``$_SERVER['HTTP_HOST']`` value."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:85
+# 3324379e1cbd4a4c956bff94a7eac6be
+msgid "``$_SERVER['SERVER_NAME']`` is a server-side configuration item, ``$_SERVER['HTTP_HOST']`` is an item specified by the client."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:89
+# 0a14abdda5a34f70a21230f48ae75059
+msgid "``%t``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:91
+# 309ac21189c04c90aea69ed8386f6de2
+msgid "The value of ``$_SERVER['SERVER_NAME']`` but without the hostname -- ergo, this is the domain name space that ``$_SERVER['SERVER_NAME']`` resides in."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:95
+# c9fb4bb05d0e4fe2b728908a2d6e3192
+msgid "For a webserver virtualhost named ``webmail.example.org``, ``%t`` is ``example.org``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:98
+# a29e5cc7644d469c956a8d07f82d7462
+msgid "For a webserver virtualhost named ``webmail.someone.somewhere.tld``, ``%t`` is ``someone.somewhere.tld``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:104
+# e20cf05b75284147a96ec4a54a0af323
+msgid "``port``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:106
+# 8428adb8f01a482bb8bb8d50b04d32ba
+msgid "The port to use to connect to LDAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:110
+# 0f5628fb61c4401385ff66ba08c5eab2
+msgid "Note that the port number specified here is used for all server addresses configured in :ref:`admin_roundcube-settings_ldap_public_hosts`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:115
+# ac99a88b3a654abaa3a68cbb241f5306
+msgid "``use_tls``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:117
+# 6c026b1663c945b49ff9a77e8fbd2699
+msgid "Whether or not to encrypt the connection. Useful with :ref:`admin_roundcube-settings_ldap_public_port` set to 389 (explicit SSL through STARTTLS), not so much with the port set to 636 (implicit SSL)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:123
+# ca3c42b19cb241dfab0c1a71a22445b6
+msgid "``ldap_version``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:125
+# 2de3739247c14e2380e5a8affe2c98e1
+msgid "The LDAP protocol version to use. Set this to 3 or be prepared to be (unpleasantly) surprised."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:129
+# adb192fc73704a16aca47efcf98438fc
+msgid "``network_timeout``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:131
+# ef5e1082837c4432bf00893c69e35ec0
+msgid "The timeout."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:134
+# 53e535837cef41449872711f29c5b965
+msgid "``user_specific``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:136
+# 6b9fb9da48704676a0d5af47dc7e9464
+msgid "Whether or not to bind to LDAP with the user's credentials, as opposed to global credentials, allowing for organizations to hide or show parts of the Directory Information Tree hierarchy, and/or hide or show certain attributes of certain entries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:141
+# 8bcda2b0fecf4fd485f82b96385f62be
+msgid "Set this to ``true`` -- the default in Kolab Groupware -- and configure :ref:`admin_roundcube-settings_ldap_public_search_base_dn` and :ref:`admin_roundcube-settings_ldap_public_search_filter`, and if anonymous binding is not allowed -- the default in Kolab Groupware -- or anonymous searches are not allowed -- the default in Kolab Groupware -- also configure :ref:`admin_roundcube-settings_ldap_public_search_bind_dn` and :ref:`admin_roundcube-settings_ldap_public_search_bind_pw`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:152
+# 37be340cc35a42e486f89db0fe147d41
+msgid "There is no setting for the search scope."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:157
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:530
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:598
+# 756877bf214446da9c2a820492b2911b
+# 33625eefc8a74b42afe9ea7f381c2165
+# d810d2c4749d4e4f9c2bc466d265a5d2
+msgid "``base_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:159
+# dd2be63844414c7a982a4a86e18b4a17
+msgid "The base DN to use for searching entries to be presented in the global address book, such as ``ou=Employees,ou=People,dc=example,dc=org``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:162
+# f572c2f6effd40f2889211f5946cf38d
+msgid "See :ref:`admin_roundcube-settings_ldap_public_group_filters` for more examples on what else this allows you to do."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:166
+# b8e8f816fbef4dc19e6ca0b0cd7fa07c
+msgid "``bind_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:168
+# 03555efebf7e43beb907c7494356f6c1
+msgid "The bind dn to use for displaying the address book. Kolab Groupware sets this to ``%dn`` by default, to have the connection be bound with the user's credentials."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:173
+# d1cfa2c369c44295b94b7e6f97b51132
+msgid "``bind_pass``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:175
+# dc55dc5d89c04cf693ded74e31435880
+msgid "The password, which when ``bind_dn`` is set to ``%dn`` (the default), better be ``%p``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:181
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:502
+# ce340efcdb3440ebade145e7c04a2f64
+# b6e08a21d0cb4324a952ed272e8ff314
+msgid "``config_root_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:183
+# ba909128e5de431e9814931173e179bc
+msgid "Use ``config_root_dn`` to search for VLV and SSS settings."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:188
+# f28490c0309c43c19d7b378abbbfd12c
+msgid "``domain_base_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:193
+# fa04948b21ad4a28adb1c925b1408d2e
+msgid "``domain_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:198
+# 22d7f976343245a998c957a181eae98d
+msgid "``domain_name_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:203
+# c831e400351c43cc8ec2e427f654f6eb
+msgid "``domain_result_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:208
+# f1dfc09086454950b9573313fdad1a8a
+msgid "``search_base_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:210
+# 1173a366cb1c4bf48cfc8fedbed002e8
+msgid "When searching for object entries that match the logged in user, start searching at this base DN."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:213
+# 48c007de3fc54fbabc9fda48cf7debe9
+msgid "Useful when you want to limit who can use the address book with their own credentials, versus 'anonymously', and/or when attribute values searched for are not globally unique."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:217
+# 6a15bd28ff314a5485d7029a554dbacd
+msgid "One could set ``base_dn`` to ``ou=People,dc=example,dc=org``, while setting ``search_base_dn`` to ``ou=Management,ou=Employees,ou=People,dc=example,dc=org``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:221
+# 3fb8193558a5408fb87c5559c64728dc
+msgid "One could then set an ACL on ``ou=Employees,ou=People,dc=example,dc=org``, that does not permit the credentials configured in ``search_dn_default`` to read certain attributes of entries, such as ``street``, ``mobile``, and other such information that might be personal in nature."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:230
+# afabb9af66de40a29eede8e92b964302
+msgid "``search_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:232
+# 75695fc6b0174babba46d80dafdcfdc7
+msgid "When searching for object entries that match the logged in user, use the search filter configured with this setting."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:237
+# 45dbfe74e9314847affccfb2e2adfb08
+msgid "``%fu``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:239
+# 60f6bea1051e4069961e6bd777997507
+msgid "The full username, usually also the user's primary email address, though possibly of the form ``<username>@<imaphostname>``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:242
+# 1b8f391fef8747bc826e62b44ac49568
+msgid "The full extent of possibilities (which depend on configuration and plugins interacting with the authentication process) is beyond the scope of this document, so suffice it to say that :ref:`admin_roundcube-settings-plugin_kolab_auth` applies a process called :term:`canonification` that makes ``%fu`` be substituted by the fully qualified primary recipient email address of the Kolab user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:250
+# 7b9dfc5aba7d4ab08b31eb1951af5790
+msgid "In Kolab Groupware, by default, the attribute value of ``mail`` is used."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:253
+# 4f667f75ef094e73b02e914580128424
+msgid "This is also the user's mailbox name (``user/<mail>`` or ``user/john.doe@example.org`` for user ``john.doe@example.org``) and is globally unique."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:257
+# 2732474605fc4567aa397df5f6b22e56
+msgid "Example: ``(&(objectclass=kolabinetorgperson)(mail=%fu))``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:259
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:21
+# 8f9375eed41b45aba1c3ea56e2168ec2
+# c5277421750744c99992a98c6c56c898
+msgid "``%u``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:261
+# 08ae29f50e6243baa0a851518de5f861
+msgid "The username local part, or \"everything before the '@'\"."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:263
+# 761f257e5fad40a1a86255071826ea6d
+msgid "In ``john.doe@example.org``, this would become ``john.doe``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:265
+# dfd1adbdb9f24fdcb08168955594d0e8
+msgid "To allow users to log in with their ``uid`` attribute value, one could specify ``(&(objectclass=kolabinetorgperson)(uid=%u))``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:268
+# 3692c5b1c765492abdd887fcb094b870
+msgid "``%d``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:270
+# 78d7138bb25c4eb899fdc75780d2abe9
+msgid "The domain name space of the username, or \"everything after the '@'\"."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:273
+# 42d470f4d7d847f8be30613cda61373c
+msgid "In ``john.doe@example.org``, this would become ``example.org``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:275
+# 0ef67d3e42ea4ef2a20662c21a62b6cd
+msgid "``%dc``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:277
+# 483c60005aca407da6c36bd9f85ea789
+msgid "The root dn that corresponds with the domain name space used to login."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:280
+# b6de33b1a86e49bf908a58c64952c9c9
+msgid "When ``john.doe@example.org`` logs in, the domain name space of ``example.org`` would typically correspond with a root dn of ``dc=example,dc=org`` -- if ``example.org`` is a :term:`parent domain name space` and no :term:`domain_result_attribute` is available for the ``domainrelatedobject`` entry."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:289
+# 90340b3b66214948a29cc274db5d35bc
+msgid "Using ``%dc`` requires :ref:`admin_roundcube-settings_ldap_public_domain_base_dn`, :ref:`admin_roundcube-settings_ldap_public_domain_filter`, :ref:`admin_roundcube-settings_ldap_public_domain_name_attr`, and :ref:`admin_roundcube-settings_ldap_public_domain_result_attr`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:299
+# 9e435ab55a364dc6a2046ebc30498f91
+msgid "``search_bind_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:301
+# eab2e33ad70349e2b8127bccbfa948e4
+msgid "The bind dn to use when searching for object entries that match the user currently logged in."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:304
+# 2a0049f964a64d01aa4444fac82d90ea
+msgid "This should be a privileged entity that is allowed to search throughout the tree configured in ``search_base_dn``, but has no privileges other than to read the relevant attributes of entries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:308
+# 98702894e02648e2ad1808314ad95ec0
+msgid "By default, Kolab Groupware configures this setting to be the same setting used for Postfix lookup tables, namely ``uid=kolab-service,ou=Special Users,dc=example,dc=org``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:312
+# be27810bebc84b7a8ebaf6bd40f6992f
+msgid "This entry has specific search, time and lookthrough limitations configured, allowing it to search throughout the entire Directory Information Tree hierarchy."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:319
+# 5eefe189dd604da2840be04fe28ab26b
+msgid "``search_bind_pw``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:321
+# 7dd62276dce940f69b2c7baed2bb76fa
+msgid "The bind password to use alongside :ref:`admin_roundcube-settings_ldap_public_search_bind_dn`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:325
+# c28aaf46b7804676a26b96bdcd745a1e
+msgid "``search_bind_attrib``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:327
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:332
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:421
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:426
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:466
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:512
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:517
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:522
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:527
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:532
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:537
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:542
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:547
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:552
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:557
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:562
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:567
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:572
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:577
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:590
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:595
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:600
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:605
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:610
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:71
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:77
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:83
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:89
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:95
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:101
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:107
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:113
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:119
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:125
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:131
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:137
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:30
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:36
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:42
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:48
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:54
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:60
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:66
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:72
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:78
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:84
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:90
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:96
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:102
+# 2cb74c6c56754c858c9f0fa4cb0c5379
+# 78bec32c87d34e218d3f31cbd58c8986
+# 129c217a3ecb460395571ae1f4b89136
+# afa382c40bc14c8c8dbaa8d4ebe7418a
+# a381304291004f2cb86dcff39c474bcb
+# 24398b7f48df4053a295772c91ea766a
+# f00cae29c6c64213ac34c04feb2d06b3
+# d92647e792e44e409344cac754ae75c4
+# 3695c231c8524b33a01e3863ff3a71a3
+# 794c52b1b187444aaa56dc642ecd3bd4
+# 136c9a537a2e4506836bc136eaf609b3
+# 64b391aadb3a4f01b268c2715851f3a3
+# 410ef816b1d84e72a63fe6c0002d69fb
+# d1c00b72bb9d40f09464c2b09ebe79ae
+# 6898decf3ee8427b873021ccedf50c13
+# a4928275847945a5812ee7174eaf4a97
+# fb31ccf555c34f38a3bf901237d4c6ce
+# a082aebb50e14f1e8c78b90d75c146f9
+# 9f8f4b084e8d4847b66d01fd08c86e19
+# ac9d696a42ed4b6d9ac0455560b05660
+# 3a384af7b5e14cc8bae5104944ef93c2
+# 59389096ec634df5bf5d051422d3b7ff
+# 96bfbb399abf476eaab3937a6fcfdc45
+# 9da8da4fa1d8448fb04e4221e1093f5f
+# f692da33866a4e36ab2d106e85c64a38
+# f7c5acc39445414f9657e7e955d46374
+# 8b946247185c4e389a5e19a3bc041e2a
+# f4499468cb1841d79f3b690fc2e7484a
+# e40fa37bd8c54bc78a29ee64971c3ff9
+# b6caa3f9aa524b58a8c014ae5f632e64
+# ff24efcb2b734fcbb876097108e3b93f
+# 64866312c460435daa8d4bff84e1a172
+# 58d2666901b74711ac4a6579c0c1a41c
+# 340eca339809471c8f5c1571484416fb
+# 2e46c053788344e89a9b9134e4134f32
+# 954fd33dfe274661a5cc4627f680e599
+# 42ca39b21c994f488e7466172bde7d54
+# 8c8c8fddccb5410b8abff52bd85e7488
+# 1e2972d9b0ec43a3a9186ea8ee0d8106
+# 487bebfd066344daabccb7cb7045034b
+# 0e252c8dc0af4fdc836c52b7f72c55ab
+# ecff014ccf364659900761d9fc9e5298
+# ff46b7d7b3624ece8a466913c4153350
+# 7ee0f6b2a2df40609ed64aa1ac22cbf6
+# c4135d6814b946b790c016d8ef864c3a
+# 6b8dd2e8916e47ae939f0d032c3ccbb9
+# 66b16984aecc43beb1aea48dfdc53d6e
+# 1aaf6e34087b4f09bc84042635196462
+# 2631466b7fb44430ba89091f67b79dac
+msgid "Undocumented."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:330
+# 7faba52b20ba45f9b6f06c04450acbdf
+msgid "``search_dn_default``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:335
+# b06356c4cc9d4ce78eaf78141380dbf7
+msgid "``auth_cid``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:337
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:342
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:359
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:364
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:369
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:374
+# 92ad6c8a0d4f4d339ce70b6039adf927
+# 2ac0a3e6fc17456faca0ae2b28362475
+# 6a42499f7c3e4c958c57b7c17b5f9694
+# 1576f82faa254611af12a2e5d5b19888
+# eac120dd334a44a791ad01740b4ec3b3
+# 690d4354c7d343c486181b77bee71c40
+msgid "Not used in Kolab Groupware."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:340
+# 1ce0fcce5829414da73afc22846fcd44
+msgid "``auth_method``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:345
+# 8bed2bf3eba4442285678d41fa9bf73b
+msgid "``hidden``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:347
+# 436c1fb02b634f459fb32af97abde99b
+msgid "A boolean, this configuration option allows you to hide this address book from the address book task view. Default: ``false``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:351
+# 4ce6172d0a524f328f9aa81a756d1e9e
+msgid "``searchonly``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:353
+# 53cefe77bc8c47e7ab29de109f944640
+msgid "Renders the address book searchable only -- meaning, its contents cannot be browsed. Default: ``false``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:357
+# c918d654624c4888a88398a4bc29b5c8
+msgid "``writable``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:362
+# cd8992d1b4354dd3b9105c1d26ada1aa
+msgid "``LDAP_Object_Classes``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:367
+# f4ab2cf0761c4138ae967d1f5eb7319a
+msgid "``LDAP_rdn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:372
+# 25acca3e799c4763b24807cbbf8d3476
+msgid "``required_fields``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:377
+# 5cb957148ded46ccac171d25a76b13e5
+msgid "``search_fields``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:379
+# b7b2cdc74e68441dbc07f5622b3f276b
+msgid "A list of attribute names to search values for, when searching is executed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:381
+# 689878c4be8c4d1c914e20a798143d12
+msgid "Default: ``displayName``, ``mail``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:385
+# 86b82d638fe44380bebbd7c0fb7a6dd1
+msgid "Only list attribute names for which the appropriate indexes have been created. In the context of searching, presence and equality indexes are insufficient."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:391
+# 9917f52fd6b84c2db95e3296b0ba5602
+msgid "The attribute ``alias`` is not included by default, because the attribute does not -- by default -- have an index created on it. See :ref:`admin_ldap_controlling_indexes_and_indexing` for information on indexes."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:397
+# 2081c7ffb70542af9667cddd6b59cbb5
+msgid "``fieldmap``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:399
+# 930870199eaf49b3b32bfbb49e2a3d62
+msgid "The fieldmap maps LDAP attribute names to Roundcube placeholder names."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:402
+# 04b65a3de2d94d77a87aa819fd8d3e24
+msgid "Example"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:419
+# 415ad16bf8a84be7a26307f674f2c31f
+msgid "``sub_fields``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:424
+# 019acd2a88c24fba870e4c4cd2bd454c
+msgid "``autovalues``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:429
+# 2ffbdfb1a4ff41299e5f883444f1ebc9
+msgid "``sort``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:431
+# e2d78d41f43745f395d2cecc3d2b3f54
+msgid "A list of attribute names to sort entries by."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:433
+# 7521f042486043efa921b4152d2c0e2f
+msgid "Kolab Groupware uses a default of ``displayname``, ``sn``, ``givenname``, ``cn``, in that order, which very much corresponds with the default Server-Side Sorting configuration we recommend you use when your Directory Information Tree is likely to contain over 1.000 entries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:440
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:483
+# d00504b59c024690aee8279fe8c71ce5
+# 975331a710e44415a297ba4b1515fab5
+msgid "Administrator Guide, Tweaking LDAP, :ref:`admin_ldap_configure-sss`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:441
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:484
+# 13f2d62d76e74bd9ad50d257b0b01f95
+# 12586d688b3045ac94560d835e5052ac
+msgid "Administrator Guide, Tweaking LDAP, :ref:`admin_ldap_configure-vlv`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:444
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:535
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:593
+# 84f62bcd9dbc48cb87e3209b98d150d9
+# 070c2b6b75274fd0b116015ccbf75c18
+# 92d6212e2f314a4c9434de89908443bb
+msgid "``scope``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:446
+# 7a9b51a9eaab419287c95220e058f6e6
+msgid "The :term:`search scope` to use when looking for address book entries, starting at the :ref:`admin_roundcube-settings_ldap_public_base_dn`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:450
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:540
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:603
+# 848b8cfa01734928ba6ae556881ba6d7
+# 39cf2bb6530b47c4aeefc908b4151d58
+# 5c0bd3f401874b9f9345b744a80db377
+msgid "``filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:452
+# 62287175ddeb410f843d351bff40ed40
+msgid "The filter to use when searching for entries to display in the address book."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:454
+# 43df6511f90b40029b4fdd1487d0a522
+msgid "By default, Kolab Groupware sets this to ``(objectclass=inetorgperson)``, so that not only Kolab users (``(objectclass=kolabinetorgperson)``) are a part of the address book, but any non-Kolab users in LDAP, and any non-Groupware users (such as external contacts) are part of the address book too."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:461
+# b6d4c9c1a5a74ffbb53d5cc86b242ae4
+msgid ":ref:`admin_roundcube-settings_ldap_public_vlv`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:464
+# ecb5991e559f47f69cb1d76c4fc75935
+msgid "``fuzzy_search``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:471
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:570
+# c57104bd48e44542a4bf31acd59dac21
+# 9660a65b521349f08df9465e6fdf898a
+msgid "``vlv``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:473
+# 62ee444e0ee74299a5d1d275ce4ff428
+msgid "``true`` or ``false`` (default), the ``vlv`` boolean configures Roundcube to use the server-side Virtual List View control, ideal for sorting, pagination and -- a particular feature of Kolab Groupware's ``Net/LDAP3`` -- responsive, fuzzy searching capabilities regardless of the size of the Directory Information Tree."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:478
+# a95e15f094244145af35426b7e84ec33
+msgid "In order to automatically delect available VLV indexes, the option ``config_root_dn`` needs to be set as well."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:487
+# 77d699f474634b8f8e3badcae41af3ab
+msgid "``vlv_search``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:489
+# 13cd8d96cb0f402ca9dc9a0191b1105f
+msgid "DEPRECATED. Use Virtual List View functions for autocompletion searches. This option is obsolete when ``vlv`` is enabled."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:493
+# af79507465724eb98f77f678869afbe6
+msgid "``numsub_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:495
+# ee991b2fdf094d3babd575163b501f86
+msgid "With ``vlv`` enabled, we also use numSubOrdinates to query the total number of records. Set this filter to get all numSubOrdinates attributes for counting."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:498
+# 74c5b0e966384b0a9f04442023528f7b
+msgid "Only set this option if your php-ldap module doesn't support the ``ldap_parse_virtuallist_control()`` function which is part of an unofficial patch to php-ldap."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:504
+# 33f8829e792f4214a7c84b33195330de
+msgid "The base DN to be used for searching LDAP configuration sesstings such as VLV indexes. Set to ``cn=config`` as the default value for standard Kolab setups."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:507
+# 6de6c1fc686743a68412250fc8fc4661
+msgid "Without this option, no VLV will be used for LDAP queries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:510
+# 223b546b159a44fcbf2c4519317d38a6
+msgid "``sizelimit``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:515
+# 8141ace747094578b3a7915a17f2f94b
+msgid "``timelimit``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:520
+# 3c7092e4c1be47a2b5012db76f9f1266
+msgid "``referrals``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:525
+# 700f2f315ede4ebd83c4d90f76acc71d
+msgid "``groups``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:545
+# d16a8c841f7845d083e446ad0b674085
+msgid "``object_classes``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:550
+# 5583ced61e1a41e193b8d431c65cc502
+msgid "``member_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:555
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:608
+# 6f7f570939ad4fcdbcfe221fd2cb695c
+# 860c5fa78af84c97a155c163dedf701f
+msgid "``name_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:560
+# 00c1c2d8edfb49388603ad1cfd711083
+msgid "``email_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:565
+# 77a242eadb824898907ae12e52f017f8
+msgid "``member_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:575
+# 6d3a0eff63054bf7b4cc938aa2bb7cfb
+msgid "``class_member_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:582
+# 5eaf29925b2347f598188c1a2c72bfff
+msgid "``group_filters``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:584
+# a73bb2965aed4bb99f355fa2423b2908
+msgid "Group filters are used for advanced navigation of LDAP hierarchies, using the web client's address book pages."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_cache.txt:4
+# 64f36564413e4748aaa936a051e5d390
+msgid "``ldap_cache``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_cache_ttl.txt:4
+# 6f1ddd9b2bfc4336aa47b1b39557734e
+msgid "``ldap_cache_ttl``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_addressbooks.txt:4
+# 29c0d75bb6814768973f8db07c0f0733
+msgid "``autocomplete_addressbooks``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_addressbooks.txt:6
+# 3f7d111e84844970bc1143de43ff8491
+msgid "Specify a list of address books to search for auto-completion."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_addressbooks.txt:8
+# c308c91f80284c0691a7abb7689d5409
+msgid "The list includes the names of address books as they are defined in :ref:`admin_roundcube-settings_ldap_public` -- i.e. we start that section by naming 'addressbook1' and 'addressbook2', and those are the names you use here."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_addressbooks.txt:14
+# c3c3b1ed7c95431c804ee93f3324fc5f
+msgid "Names of Kolab address books do not need to be included in the list of address books to use for autocompletion."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_addressbooks.txt:19
+# 6edacf74653b4b2dbc49fb500c895ccb
+msgid ":ref:`admin_roundcube-settings-plugin_kolab_addressbook`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:261
+# 90cba4f0cdfc4cbc97dbd875b5ef41d7
+msgid "Session & Login Configuration"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:4
+# c60ac49c8072489e894d0a78c291cc78
+msgid "``assets_path``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:6
+# d929a67e6ffe4c679749eb8cef937deb
+msgid "The ``assets_path`` setting controls where Roundcube (and also plugins) point the user's browser to to obtain static content such as skin markup files (Cascaded Style Sheets or CSS files) and JavaScript files, commonly referred to as :term:`assets`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:11
+# 14abe9fff1c0494eb212116a33f514f1
+msgid "In combination with :ref:`admin_roundcube-settings-use_secure_urls`, which enforces a dynamic base URL to Roundcube, this helps the browsers retain their cached assets and prevents page load times from increasing."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:15
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:22
+# b6eebf62e45f436484e66a186647ef93
+# f61679355ddc44cc81c122b68ccdf914
+msgid "Available for Kolab Enterprise 13"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:18
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:25
+# 134682fb39cd4a5e8da192ec18d4b592
+# 26a21a55aabe4f329bda00a2f2fcc3fd
+msgid "Available with Kolab 3.3"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:23
+# c0438e3ef56a432e8cbf51e8243abcf9
+msgid ":ref:`admin_roundcube-settings-use_secure_urls`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ip_check.txt:4
+# c417685bf6c740fe97f810d8755f08f4
+msgid "``ip_check``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ip_check.txt:6
+# c0b86f4ddc1b420d8bfd0ab0e3ff0795
+msgid "Enforce a session may only come from one source IP address."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ip_check.txt:8
+# ce04b18b99bd40dbb88751696f640826
+msgid "Should a user be a roaming user -- for example, connect from one source IP address that is one Wifi network, and later connect from another source IP address that is another Wifi network -- then enabling the IP check using this setting will force the existing session to be invalidated, and require the user to login again."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ip_check.txt:14
+# 366f78ebf911453990e94e45ea7ef051
+msgid "This is useful for paranoid tracking of user's session validity with as many parameters as possible, but also has major caveats."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ip_check.txt:17
+# 4f10808f283949ca8639e31b815e3d34
+msgid "To have to login again is not user-friendly, and some networks employ load-balanced outgoing connections (with help of proxies) -- meaning that the user may appear to come from two or more separate source IP addresses, while in fact the user has not been roaming."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:4
+# 06fb3d4c0ff64fe685ab2b21ffc04901
+msgid "``login_autocomplete``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:6
+# 80412372920245f394085807af741670
+msgid "Enable or disable parts of the login form to allow for auto-completion."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:8
+# 374aa3c8545c425fb28828c89d0d409c
+msgid "This setting knows three distinct values:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:10
+# f5c61c7cb2ab4f40a18035979f58f389
+msgid "``0``, meaning no parts of the login form should be remembered by the browser."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:13
+# 76077d305e16412cb7ede9b75daf0fd8
+msgid "``1``, meaning the login username may be remembered."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:17
+# 0509474cbe33455783838fc41de13668
+msgid "Note that the login username is a regular form field, and as such it may be difficult for the user to opt-out of remembering the form field value."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:21
+# ddbd3189501d4eb69290f91cc5139429
+msgid "``2``, meaning the login username and password may both be remembered."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:26
+# cd4d417bdbc141da8170a73d57016ae4
+msgid "This leaves the user to choose whether or not to store the password using the browser, but still implies the login username is remembered -- without too many options to opt-out of that."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:30
+# 1102af6604f7418ea995d219d05ca374
+msgid "As such, this setting should only be set to ``2``, if the users are known to only use private and personal computers."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:33
+# 8f203ef33d9a4d8593992df42b3c8be5
+msgid "The default in Kolab Groupware is to indicate to the browser no form field values should be remembered (``0``)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_lc.txt:4
+# fb1fac0c88df482bb99714c1e29c75dd
+msgid "``login_lc``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_lc.txt:6
+# 2e8c79cceb514b32b291d2a88c240896
+msgid "Should Roundcube lower-case the login username? A boolean, the default in Kolab Groupware is set to ``true`` -- exploiting case-sensitivity in email addresses, which are the default logins and result attributes, is prohibited."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_logins.txt:4
+# a8491bf5cf5e4752b63935f4b86a835a
+msgid "``log_logins``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_session.txt:4
+# 04e5a91178f3435e82bc857e1ad19524
+msgid "``log_session``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_auth_name.txt:4
+# a9f19468ffcd437b981bbcea31e4e20e
+msgid "``session_auth_name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_domain.txt:4
+# cc632224fd304eb3be522fe72722f549
+msgid "``session_domain``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_lifetime.txt:4
+# 55ab1e51ee27444ca4c0434d1e343969
+msgid "``session_lifetime``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_name.txt:4
+# df21568ce938497d81388c8bcb3f5122
+msgid "``session_name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_path.txt:4
+# 5e7d43f51aa7455fb269540719063864
+msgid "``session_path``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_storage.txt:4
+# 9e64d7769c34408aa949b871e2bccb32
+msgid "``session_storage``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/user_aliases.txt:4
+# af47c8b3eea04477a857fda0f1a904bb
+msgid "``user_aliases``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_domain.txt:4
+# 7ba140f06b754ba18c9e75b2a1182da8
+msgid "``mail_domain``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/referer_check.txt:4
+# 7ca693cfba0a4a43b4df7b66b3541bb1
+msgid "``referer_check``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:4
+# 889765387d7a4a3c82a10991d316ee52
+msgid "``use_secure_urls``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:6
+# f30d92942f9049ce93e14172372e94be
+msgid "Improve the system's security by enabling the use of secure URLs."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:8
+# e5279af8a9c449a4baecb8ec34e7931c
+msgid "Using secure URLs is to say that once a user's session is authenticated, the session is directly correlated with a unique URL that is very hard to guess. This way, so-called Cross-Site Rquest Forgery attacks can be prevented."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:15
+# 61070ef84ac7413581541dac07120d0d
+msgid "Using this setting, which is enabled in Kolab by default, requires the use of a mod_rewrite ruleset such as the following:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:30
+# 34477530c3724945be36556347327a9e
+msgid ":ref:`admin_roundcube-settings-assets_path`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/username_domain_forced.txt:4
+# 3526ceceda63432085469d22652857ce
+msgid "``username_domain_forced``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/username_domain.txt:4
+# 5399ec6b6cbd407090aaac8aa111c6f6
+msgid "``username_domain``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:284
+# c617a86015154940bd87705df5866bf2
+msgid "Log Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/debug_level.txt:4
+# 190d5d4749004ab898538605dfa1f1da
+msgid "``debug_level``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_debug.txt:4
+# 55fa212ae7384e9794f1d77c34005638
+msgid "``imap_debug``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_debug.txt:6
+# 7c2b4c48fedd4f97aad271b1f1f51c14
+msgid "To debug, or not do debug IMAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_debug.txt:8
+# 4a2fa74ca7f648c6a4fde86edd8a20ff
+msgid "When enabled, provides a near protocol level dump of events in the :file:`imap` file in the log directory specified by :ref:`admin_roundcube-settings_log_dir`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_debug.txt:14
+# c44c105ab09c4c7c86f07562a369ece4
+msgid ":ref:`admin_roundcube-settings_per_user_logging`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_debug.txt:4
+# 8d907fc0c76e4323aea0a34d67b5253c
+msgid "``ldap_debug``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_date_format.txt:4
+# b38dd850309e419aa1090b5f0b6cb3f6
+msgid "``log_date_format``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_dir.txt:4
+# e15b9d038c2f40e199ebf9508c9632b5
+msgid "``log_dir``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_driver.txt:4
+# 68ca745177294e4b98d92fcf9a0d6ca4
+msgid "``log_driver``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:4
+# 8d6a8105b80d4eb5a76d27b529f29e71
+msgid "``per_user_logging``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:6
+# 8236662b44b6452292e8039f8025f3b4
+msgid "Extremely useful for production sites with a lot of traffic, that want to debug a particular user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:9
+# 3f2b56fc347e45419cf0afc225ffd880
+msgid "Normally, debugging is enabled on a global level -- this is not feasible for two reasons:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:12
+# 123ef55423834bebb99333f5c4c86843
+msgid "Your disk I/O for logging and incurred latency in processing requests goes through the proverbial roof (though more likely literally)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:15
+# 42b09c74f3d34e7e928a7bb9f20be9f4
+msgid "The way logging is implemented does not make a user session, or the log items related to a given user, very recognizable. An insurmountable heap of log messages would require analysis, and you could probably throw away 99.9% of the logs you collected."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:20
+# ac1c911ff3124d55b7a4313f78525b0e
+msgid "This setting, when turned on, enables an administrator to make a user-specific directory writeable for the webserver user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:23
+# 7e13d6332a3145c4b70daf840779f26a
+msgid "If this option is enabled, and the directory for a particular exists, only then is all debugging turned on, and only for the relevant user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:27
+# af68b7ec010c497e9a6267053183ef0d
+msgid "Example Usage"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:28
+# 0578a209766a4efabf4cb26edad5cfe2
+msgid "User \"John Doe <john.doe@example.org>\" has a problem."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:30
+# a6675af3c0024540bdf6bdb8a125c2c4
+msgid "Enable ``per_user_logging``, and create the directory for the user:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:37
+# 14ba4bcff87447d9b607f6a42ec6a49a
+msgid "Get a cup of coffee while John reproduces his problem."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:39
+# edbbdf6ea0294c4294fff715964e2df9
+msgid "Disable ``per_user_logging``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:43
+# ab5a3ebd0e9b4b6dba145ad91bceddc7
+msgid "Do not \"just\" enable ``per_user_logging`` for the sake of it. The amount of stat() calls executed are, for busy sites, causing your production to run far from optimally."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_debug.txt:4
+# dc4007906b1a43509068e6be24619275
+msgid "``smtp_debug``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sql_debug.txt:4
+# f8d61952b8b24ebab863855d17d75855
+msgid "``sql_debug``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/syslog_facility.txt:4
+# 8adbdb77bca6421dab171daa329b1a08
+msgid "``syslog_facility``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/syslog_id.txt:4
+# 6317295059f845fb9bc9616cfa460a6a
+msgid "``syslog_id``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:300
+# 0a47a64de7a84d6aaa0f5a1989b8267f
+msgid ":ref:`admin_roundcube-settings-plugin_kolab_activesync_activesync_debug`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:301
+# 1ea08d01b67f4d80968161b556d42d2e
+msgid ":ref:`admin_roundcube-settings-plugin_kolab_activesync_activesync_user_log`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:305
+# a64bd3ad44d54abd94eceba05467ef4d
+msgid "Other Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_name_listing.txt:4
+# 416094b4e42044bf87b67dc7deae563a
+msgid "``addressbook_name_listing``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_pagesize.txt:4
+# 26396f8efab14cfdbe791be41f8679af
+msgid "``addressbook_pagesize``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mode.txt:4
+# b3a76bad8ecd464cb6e92e1b8ada5b42
+msgid "``addressbook_search_mode``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mods.txt:4
+# bf5d5308aa324ea694a066965fe54bd2
+msgid "``addressbook_search_mods``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_sort_col.txt:4
+# 0dbb3164bb704de288bfe200c0eb6a18
+msgid "``addressbook_sort_col``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/address_book_type.txt:4
+# c3a43b5a45084bee95c746ca54f6dd3f
+msgid "``address_book_type``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/address_template.txt:4
+# 28d64aab05de498d911c37de0358856e
+msgid "``address_template``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/advanced_prefs.txt:4
+# 0e3a698a31024ec393a0fb68b893f92c
+msgid "``advanced_prefs``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_max.txt:4
+# 1d9d29a102ca48d989540cada2fab64a
+msgid "``autocomplete_max``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_min_length.txt:4
+# da7f81d2d6f844b8a5ddc79e8c1d00d1
+msgid "``autocomplete_min_length``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_single.txt:4
+# ccd2d9857ad349dbbe75380977c539fb
+msgid "``autocomplete_single``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_threads.txt:4
+# 79d62313b39a4b73b5f048cdbfcbaefe
+msgid "``autocomplete_threads``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/auto_create_user.txt:4
+# 441473dcf61d4e6286fb6a120dc0f08f
+msgid "``auto_create_user``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autoexpand_threads.txt:4
+# fef2e9132b6046069e10c65e83f071f8
+msgid "``autoexpand_threads``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/client_mimetypes.txt:4
+# 085c651351ff49e2adcc942b1a4d48d4
+msgid "``client_mimetypes``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/compose_extwin.txt:4
+# 7acd1b64548f4207bdb40f6470ec9025
+msgid "``compose_extwin``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/compose_responses_static.txt:4
+# c53efe847dd84abcb87f73123860485d
+msgid "``compose_responses_static``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/contact_photo_size.txt:4
+# 21a96be2f8014074be866e66a61198bb
+msgid "``contact_photo_size``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_formats.txt:4
+# aec2776b80d24ecd93013362ef4e0306
+msgid "``date_formats``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_format.txt:4
+# cb1212c9f61a49cbaf51688cb8dadc03
+msgid "``date_format``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_long.txt:4
+# e1fb587539fb4e2dba6b6a1d29a5777c
+msgid "``date_long``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_short.txt:4
+# 946e723a6561467b83508cbcb5e78d2d
+msgid "``date_short``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_addressbook.txt:4
+# c1fd2d8c234c48c3b19f69ba31a4cb8c
+msgid "``default_addressbook``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_charset.txt:4
+# dd62632cba284fe19c9b620a5c44bf3c
+msgid "``default_charset``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_font_size.txt:4
+# 1072ca388aec4e2ba49f3e87d28a1479
+msgid "``default_font_size``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_font.txt:4
+# 05fb685fcf9d4a4cba69b67754083045
+msgid "``default_font``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/des_key.txt:4
+# 118b95a7e31e4ccb81d2cf78aef4b3a6
+msgid "``des_key``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/display_next.txt:4
+# 5b75c0f1bc4748c380d924e2c7c6bbb6
+msgid "``display_next``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/display_version.txt:4
+# e11cda70d6df405bb37914dc2166b662
+msgid "``display_version``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/dont_override.txt:4
+# 3cc8379524e547438e65f4c95bab3ee6
+msgid "``dont_override``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/draft_autosave.txt:4
+# b434869127eb43afb225170e81999ebd
+msgid "``draft_autosave``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/drafts_mbox.txt:4
+# f4468c38338742dc83580032961aa440
+msgid "``drafts_mbox``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/dsn_default.txt:4
+# 22a9744cb9a748ad81fa92c2dfe97c3e
+msgid "``dsn_default``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/email_dns_check.txt:4
+# f0126d35cd2a42869c12a0e15d8b48a1
+msgid "``email_dns_check``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/enable_installer.txt:4
+# b834e91d366a4402b2b115926e787c70
+msgid "``enable_installer``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/enable_spellcheck.txt:4
+# 31467345995546d692da519fd8b68534
+msgid "``enable_spellcheck``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/force_7bit.txt:4
+# 5dd42e248a9a4124ab84cd756ee458cf
+msgid "``force_7bit``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/force_https.txt:4
+# a81dd3a990344c6fbe0185a8bc5f046f
+msgid "``force_https``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/forward_attachment.txt:4
+# 03141e0201d54b3b93d7b640e8309593
+msgid "``forward_attachment``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/generic_message_footer_html.txt:4
+# c38f4e59ccfd400c999fbb506512fac6
+msgid "``generic_message_footer_html``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/generic_message_footer.txt:4
+# 88886114d23d45a992fbdf178e1d9aed
+msgid "``generic_message_footer``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/htmleditor.txt:4
+# 851343289aea4c38ab6ac2a00c40fc31
+msgid "``htmleditor``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/http_received_header_encrypt.txt:4
+# c34ca296a3e34103a1080a518d2f9135
+msgid "``http_received_header_encrypt``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/http_received_header.txt:4
+# 255dbd7f483d442b8c884e742061f3ea
+msgid "``http_received_header``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/identities_level.txt:4
+# 1348402801ae49d498041da6254990d1
+msgid "``identities_level``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/image_thumbnail_size.txt:4
+# d7f635a22c7543e29493e06da89ff4bd
+msgid "``image_thumbnail_size``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/im_convert_path.txt:4
+# 21db4320e5ac4ba692c7b2c2e387fc24
+msgid "``im_convert_path``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/im_identify_path.txt:4
+# 894c5b6ac6914ac4b1e0a4501a40024c
+msgid "``im_identify_path``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/include_host_config.txt:4
+# 581e9e5ff387428681ec6bf247a74f5a
+msgid "``include_host_config``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/inline_images.txt:4
+# 2966f74040234776ac818cf0f6e3caca
+msgid "``inline_images``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/language.txt:4
+# bb3768b3e0e841698b5787b738945718
+msgid "``language``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/line_length.txt:4
+# ed4c18c5890d4e3497edcc086c614a0b
+msgid "``line_length``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/list_cols.txt:4
+# ef2d0f3d8efd4f8f9b754fcfce6942fa
+msgid "``list_cols``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_header_delimiter.txt:4
+# 57ba4bcffab444669326208254c99178
+msgid "``mail_header_delimiter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:4
+# fb5270c865254fdb8f648a730e23957c
+msgid "``mail_pagesize``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:6
+# 9fe4da66a91a49919ba82d09c245225e
+msgid "The ``mail_pagesize`` setting is a user preference default, meaning users can normally edit this preference in their settings."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:9
+# 3f9babc5015f44b3b2e468be314e8459
+msgid "The user's preferred ``mail_pagesize`` causes the mail view to list as many individual messages (list view) or as many threads (thread view) to be displayed in message lists."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:13
+# a2e6bc97d4e34a84b854f46d11ecca17
+msgid "To lock down the ``mail_pagesize`` to a value and not allow users to indicate and configure their own preference, use :ref:`admin_roundcube-settings_dont_override`:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:21
+# 1f5f3dfcca804033a00f0d458eaf703b
+msgid "To establish a maximum page size users may select, see :ref:`admin_roundcube-settings_max_pagesize`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:26
+# 40b14ccbb4fc4f2f8b43a310b1f42118
+msgid ":ref:`admin_roundcube-settings_dont_override`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:27
+# e54ca8d47f0f42d78458351ef77a4214
+msgid ":ref:`admin_roundcube-settings_max_pagesize`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/max_group_members.txt:4
+# 903bc131997a40349c50ed8a9ae1b134
+msgid "``max_group_members``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/max_pagesize.txt:4
+# 2c31d4329d0348f99612c1c7c97d09f3
+msgid "``max_pagesize``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/max_recipients.txt:4
+# 13cb0e285ed3489d896a9275de55bbb1
+msgid "``max_recipients``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mdn_default.txt:4
+# 8e2b0fcd68294865ac5ecfbe10891151
+msgid "``mdn_default``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mdn_requests.txt:4
+# 103f61310af341f3a09fc53c73fefafd
+msgid "``mdn_requests``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mdn_use_from.txt:4
+# 149a97eef8814ac9bd8fa85b7230e6b0
+msgid "``mdn_use_from``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_extwin.txt:4
+# 43fd530d95ad439098d080999f080bee
+msgid "``message_extwin``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_show_email.txt:4
+# 65b3022697524d409c33b8dc7d2e704a
+msgid "``message_show_email``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_sort_col.txt:4
+# c1fb63d2233d49e99000729536623af0
+msgid "``message_sort_col``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_sort_order.txt:4
+# 242c5bef205c466cb74547b40a55eb15
+msgid "``message_sort_order``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mime_magic.txt:4
+# aec47650436e42e89b840688a9a70da7
+msgid "``mime_magic``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mime_param_folding.txt:4
+# 699153d9670a46a3879641ae0f67e817
+msgid "``mime_param_folding``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mime_types.txt:4
+# 1eca9880742a4597af997ceea7e65348
+msgid "``mime_types``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password_charset.txt:4
+# ac2a2b3d757f4d9faafb860be6b30377
+msgid "``password_charset``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/plugins.txt:4
+# 7a250d599aba410db60fd0c2dc63873a
+msgid "``plugins``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/prefer_html.txt:4
+# cedea964810f49a4a916d19c61036046
+msgid "``prefer_html``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/prettydate.txt:4
+# 7f026ed47a1940cb85600ae9e5092586
+msgid "``prettydate``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/preview_pane_mark_read.txt:4
+# 3545d861e2c540d681415dc76402b77b
+msgid "``preview_pane_mark_read``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/preview_pane.txt:4
+# 72f8b9b2b5d14a749e4d8a27c87609e1
+msgid "``preview_pane``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/product_name.txt:4
+# 947f9821b56a46bda7c05ad5879796d2
+msgid "``product_name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/read_when_deleted.txt:4
+# b6ea3d8c974e4c2190c2e514694a03a3
+msgid "``read_when_deleted``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/recipients_separator.txt:4
+# e6b02e4f0d1542de9f574d6cff56eae6
+msgid "``recipients_separator``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/reply_all_mode.txt:4
+# 564820c752954ccd8330ef038de6fc2a
+msgid "``reply_all_mode``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/reply_mode.txt:4
+# 80260038cc7447858e82956581b5ada3
+msgid "``reply_mode``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/reply_same_folder.txt:4
+# 196712d9f3ed4c99ab653a69105416ae
+msgid "``reply_same_folder``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/search_mods.txt:4
+# 226fd3ce98194c24a4a82bed4a8a3296
+msgid "``search_mods``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/send_format_flowed.txt:4
+# 7690f4a0dde2443fb41662d0140aba66
+msgid "``send_format_flowed``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sendmail_delay.txt:4
+# 11498ddcc5d448dcaab1b5c1b8746c17
+msgid "``sendmail_delay``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_images.txt:4
+# d0fa5f179b0b473997601451abebbde1
+msgid "``show_images``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_real_foldernames.txt:4
+# 731d5edccafc4d2b925f435e9d809691
+msgid "``show_real_foldernames``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_sig.txt:4
+# d1657a7db9634f9c80aac800f0b04a0f
+msgid "``show_sig``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skin_include_php.txt:4
+# 63f5e200d3954e7daddba00e553b39ac
+msgid "``skin_include_php``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skin_logo.txt:4
+# 313b665c269d45528ca0cef767d0a322
+msgid "``skin_logo``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skin.txt:4
+# 47e70a365f084338a31e28a20dd9c735
+msgid "``skin``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_cid.txt:4
+# 50ac30327d3e467ca9767ccc4dec8dce
+msgid "``smtp_auth_cid``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_pw.txt:4
+# 8c0840150b814fd0bd7778bfcc5ec2f5
+msgid "``smtp_auth_pw``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_type.txt:4
+# 8f1d4d2526e140c2aa32e3ec1a2eb817
+msgid "``smtp_auth_type``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_conn_options.txt:4
+# 91bfa318942f422bbb469ab23a8e061d
+msgid "``smtp_conn_options``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_helo_host.txt:4
+# f799da7b9174482597273cd7c08002ac
+msgid "``smtp_helo_host``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_log.txt:4
+# f66ff85b37904392a13b28141dc83049
+msgid "``smtp_log``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_pass.txt:4
+# f9c003bfd51a40b2a226339c5bc06c1c
+msgid "``smtp_pass``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_port.txt:4
+# 2b929ce7188647428f71dd7f7c1a4ef4
+msgid "``smtp_port``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_server.txt:4
+# e68c995b303641669f163b89320dd4fc
+msgid "``smtp_server``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_timeout.txt:4
+# eeeb0f989e25420d822400edf3945ade
+msgid "``smtp_timeout``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_user.txt:4
+# f93cd671e61f47dcb79a2ba1edcf8626
+msgid "``smtp_user``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_before_send.txt:4
+# 708780b02ab0441aa2d319935a559288
+msgid "``spellcheck_before_send``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_dictionary.txt:4
+# 17cc8a8f5ecd47d78644372d11e0705e
+msgid "``spellcheck_dictionary``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_engine.txt:4
+# 99e6038286824c649ceb3189ec3b113e
+msgid "``spellcheck_engine``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_caps.txt:4
+# 53d8d906b5264a95b4bee0c02b3cee8c
+msgid "``spellcheck_ignore_caps``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_nums.txt:4
+# b3335bb6f64d49f3bdb24369fe5a23ce
+msgid "``spellcheck_ignore_nums``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_syms.txt:4
+# 27b3437a4cb046b8ad29f93b060e8a3e
+msgid "``spellcheck_ignore_syms``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_languages.txt:4
+# a2abc1c4f33443399cb3094447adf746
+msgid "``spellcheck_languages``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_uri.txt:4
+# 8e20b2c5c2de42cc83541bdaef586993
+msgid "``spellcheck_uri``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/standard_windows.txt:4
+# d7397be32eac43d6b7606f1b4ba80996
+msgid "``standard_windows``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/strip_existing_sig.txt:4
+# 350ab6345e7645bcb8fda37bb45641bf
+msgid "``strip_existing_sig``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/support_url.txt:4
+# 2b0e806ee47b45069b71fedad815cfa4
+msgid "``support_url``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/temp_dir_ttl.txt:4
+# 808d4a2ea7ff4ec2aac4aa175b1c8f76
+msgid "``temp_dir_ttl``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/temp_dir.txt:4
+# 95371b54136849b588be810da4c3a123
+msgid "``temp_dir``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/time_formats.txt:4
+# 128e73b71df14248a89423d0060e9c67
+msgid "``time_formats``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/time_format.txt:4
+# a5f1d654f9fe4f8091ee4d2871880ee4
+msgid "``time_format``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/timezone.txt:4
+# b35c13b6447c46eab51cb31b45bd87e9
+msgid "``timezone``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/undo_timeout.txt:4
+# 8b6519ee93e0476994c5e6891af60c34
+msgid "``undo_timeout``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/upload_progress.txt:4
+# d3bf224dedc04ad38b6ddd6823e46ca4
+msgid "``upload_progress``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_https.txt:4
+# e514e053836249a28b07b05c8a0bc5a0
+msgid "``use_https``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/useragent.txt:4
+# 66aa5e75b1724f0dbe8eff53c0ad8901
+msgid "``useragent``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/x_frame_options.txt:4
+# 14ee6a045daa4a87b5b2c3d086104748
+msgid "``x_frame_options``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:431
+# 27977d44cb5d4279980e584708e84bfa
+msgid "Plugin Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:436
+# 268fd672c14541db86a0bde56c71e8b2
+msgid "The ``acl`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:441
+# 9c105594506e42c1b7a1ef03f9781c7d
+msgid "The ``archive`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:446
+# a50d57b84e714f4aaec904ea80fb39cd
+msgid "The ``calendar`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:2
+# 32cfb4cddd884077ad916d8811ff30e9
+msgid "``calendar_driver``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:4
+# fe23a3dd1b824b268106640ad0fbc046
+msgid "Calendar backend type."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:6
+# 1c81062cc8374120bf58a1b124203be9
+msgid "Possible values: 'kolab' or 'database'"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:10
+# 39ef67d17f2247e7bd724a69fcdaa6bb
+msgid "``calendar_caldav_url``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:12
+# 46c9c7bcb8f84328a55cbf6ededcbf7b
+msgid "Base URL to build fully qualified URIs to access calendars via CALDAV. Primarily used in a Kolab environment where CalDAV access is provided by the iRony service."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:15
+# c0ff66358fca4c519ab7e2a849d34c3b
+msgid "The following replacement variables are supported:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:19
+# ad672225db9f49639919bdc08e2ba8f2
+msgid "Current HTTP host"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:23
+# 31e3f9380282444f88fac61c2efe2ede
+msgid "Current webmail user name"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:27
+# 200356a987ac4327abe1e2d3845081dc
+msgid "Calendar name"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:29
+# a3988703c867490d8c5ce8377558fd0d
+msgid "``%i`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:31
+# 0e0b005df94c40918d66f6521c94f313
+msgid "Calendar UUID"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:40
+# 3ddbcb911f7a4c1ab7717854169a61de
+msgid "``calendar_contact_birthdays``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:42
+# 18708654333a47c9959f153d4f0beffe
+msgid "Boolean. Enables a read-only birthdays calendar from the user's address book(s)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:46
+# 4c627675ccd949728b72401c8647236a
+msgid "``calendar_allow_invite_shared``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:48
+# 11a704d721a64628a741668346d2cfa0
+msgid "Boolean. Allows users to invite/edit attendees for events in shared folders which were created/organized by others."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:53
+# ec4352f6c064401ca25b5f6db0b0b831
+msgid "``calendar_allow_itip_uninvited``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:55
+# 834599313ee34e5c884f43203abebabc
+msgid "Boolean. Allow users to accecpt iTip invitations who are no explicitly listed as an attendee in the invitation message. This can be the case if invitations are sent to mailing lists or alias email addresses."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:61
+# fe54ae0f51534862a51deeec240cf9d7
+msgid "``calendar_default_view``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:63
+# 6f3f8d57c2994785914c42243783cb15
+msgid "Default view shown when entering the calendar screen."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:65
+# 3141513d3f8c4f429d9e19db725cd3be
+msgid "Possible values: 'agendaDay', 'agendaWeek', 'month', 'table'."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:69
+# 15c80a09b5e246589e711eb3f31f1383
+msgid "``calendar_default_alarm_type``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:75
+# ed41e1eb764d42559a247f5ca723bcba
+msgid "``calendar_default_alarm_offset``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:81
+# 140aa0b9f76b4277a60581d785610c6d
+msgid "``calendar_date_format_sets``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:87
+# 629d041362fa4ec7a4daa8929ffac7ec
+msgid "``calendar_event_coloring``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:93
+# 4ea935b1e0ec455081d782fcd1253770
+msgid "``calendar_agenda_range``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:99
+# bb7caba815ed433faeb0efb725ce3f4b
+msgid "``calendar_first_day``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:105
+# 1884a2a95d234bafa30e85e9d4fbcc7c
+msgid "``calendar_first_hour``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:111
+# bdbfc03bb5514a68a7661d30fb00508e
+msgid "``calendar_timeslots``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:117
+# 20e37221dc434fb58c160645a94f7357
+msgid "``calendar_time_indicator``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:123
+# 36726660900748849102fe7414478bf2
+msgid "``calendar_work_start``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:129
+# c1f9abca3581400bba4a32537a09cb2a
+msgid "``calendar_work_end``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:135
+# ab561911f29e4c1bbd4514f19a91797d
+msgid "``calendar_itip_after_action``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:141
+# 2989a15e6d2849df847e2a8a349bb69c
+msgid "``calendar_itip_smtp_server``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:143
+# b9b25dca86154555b604ed74f6caed35
+msgid "SMTP host to used for send iTip replies from the unauthenticated web view where external users can accept or decline invitations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:146
+# 2366e03f23fa4dd08097a7a6572394aa
+msgid "Set to '' in order to use PHP's mail() function for email delivery. To override the SMTP port or connection method, provide a full URL like ``tls://somehost:587``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:151
+# 803244e6370542b9a20ae45b7e2f8062
+msgid "``calendar_itip_smtp_user``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:153
+# 95c7e43abcbe4e099faa008f563d765a
+msgid "SMTP username used to send unauthenticated itip replies."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:155
+# 25790b8a2e44463e8e44a8ff365b22c0
+msgid "Explicity set to '' for overriding the default configuration from ``smtp_user``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:159
+# 813a33285ca74790a2b847b6fe2c222c
+msgid "``calendar_itip_smtp_pass``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:161
+# dbcd0d8163b8499db39fe1736ad3580c
+msgid "SMTP password used to send unauthenticated itip replies."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:163
+# aca56095e3aa41e1887a0809e0433524
+msgid "Explicity set to '' for overriding the default configuration from ``smtp_pass``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:167
+# 1164e6286be54314bd810560f71b8b8a
+msgid "``kolab_invitation_calendars``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:169
+# ebab653e093a4cf791daabd7c5b9ca4e
+msgid "Boolean. Show virtual calendars with pending or declined event invitations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:171
+# 589fbf46e9d34621af57ff7e73af70d3
+msgid "This option only has an effect with the Kolab backend."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:175
+# 2d6991254156474ab62375387e40df92
+msgid "``calendar_resources_driver``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:177
+# bbfd3eeb29fb475b906c27d163fe746d
+msgid "Driver to provide a directory for resource booking. Leave empty or commented out to disable resources support."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:180
+# 52e9ef1a05a54db08fb6dfeb3a39cc7f
+msgid "'ldap' is the only implementation and possible value yet."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:184
+# e781b319f89d4bcba59692241e62fe3d
+msgid "``calendar_resources_directory``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:186
+# 92c0a1f33f87493a9d5d44fd20307a84
+msgid "LDAP directory configuration to find available resources for events."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:188
+# c952e1c2f16144c0a3f9d6fbdffc68a1
+msgid "Specify a full LDAP directory as described for :ref:`admin_roundcube-settings_ldap_public`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:190
+# a4d5eaac10bb44d49aa6c9a3198a8993
+msgid "Some special considerations apply for the LDAP filter and other properties:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:453
+# 199a33dde65b4962974c982a1589939e
+msgid "The ``kolab_activesync`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/activesync_debug.txt:4
+# 76b3bcb7b1c84b37a91ebdd112705b22
+msgid "``activesync_debug``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/activesync_user_log.txt:4
+# 52bb9527e29640e18d099793df24fe89
+msgid "``activesync_user_log``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:461
+# f430d7ce61574c67a5187cc0042241c8
+msgid "The ``kolab_auth`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:2
+# 4b335a2b406a4ba0a12ba28a072ccc36
+msgid "``kolab_auth_addressbook``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:4
+# 7a2efe58e6a643759b505394af354a8a
+msgid "The ID of the LDAP address book (which refers to a entry in ``ldap_public``) or a complete addressbook definition hash array."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:9
+# 3f48abedb34049f79f0e803dd881d843
+msgid ":ref:`admin_roundcube-settings_ldap_public`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:13
+# 153f4671193f41779a11ea185f3ae316
+msgid "``kolab_auth_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:15
+# 3ae26e7328314593b496b4ab2dad3200
+msgid "This will overwrite filter property defined in the ``kolab_auth_addressbook``. Use the same placeholders as in the :ref:`admin_roundcube-settings_ldap_public_search_filter` property."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:21
+# 7182479664e84c339621c2c7332e75ac
+msgid "``kolab_auth_login``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:23
+# fb24dd38065b4771b132aad4b572d7a0
+msgid "Use this field (from the ``kolab_auth_addressbook`` ``fieldmap`` configuration) to get authentication ID for the logged in user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:28
+# f8874340369c4f47947e04ad442c0c8a
+msgid "``kolab_auth_name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:34
+# c8ff2324ecc74dafb0e693ccd9e615d1
+msgid "``kolab_auth_email``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:40
+# 2646626b56734d04901bd1588559f570
+msgid "``kolab_auth_organization``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:46
+# 7b1f350bba1646358e004813cf681575
+msgid "``kolab_auth_admin_login``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:52
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:70
+# 82bc5b3ae8ec4264836d040ee3eb142f
+# 191631729fb145b59f9a5a776b650f1d
+msgid "``kolab_auth_admin_password``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:58
+# e381fe94af5842abb090a504924c39d6
+msgid "``kolab_auth_auditlog``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:64
+# d2927c7a9b4443ed86ca353e53fed627
+msgid "``kolab_auth_role``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:76
+# 992f8c7c7d2345cbb8fe203603881ef2
+msgid "``kolab_auth_role_value``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:82
+# 49d0d9d7bc15492a8b1a188653beaffb
+msgid "``kolab_auth_group``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:88
+# a03fcb67642f4a19bd09be72bee8e182
+msgid "``kolab_auth_role_plugins``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:94
+# 8f8a837f7e8d405e8fdc43bad2612f88
+msgid "``kolab_auth_role_settings``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:100
+# a8cfaeb6bb31427b9832a13a8136f03c
+msgid "``kolab_auth_ldap_addressbooks``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:468
+# bb55b64b6ee14c1f8e1eaed3c6c9d35c
+msgid "The ``kolab_addressbook`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:473
+# 48cec80c3d7341eda009408ea0167365
+msgid "The ``kolab_config`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:478
+# 79253ba1721f46a6aa8862aba6446e6d
+msgid "The ``kolab_delegation`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:483
+# 06e245e67949463c991961f77775349b
+msgid "The ``kolab_files`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:488
+# 42d43dc67f2e4abbb491a1b2370fa5c2
+msgid "The ``kolab_folders`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:493
+# 717f72517c3e4d2387f68006fe60167a
+msgid "The ``libkolab`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_cache.txt:4
+# fb14ad88bc78460782210c6dd11e5ff0
+msgid "``kolab_cache``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_cache.txt:6
+# da2ded213502405b828bf50df0a845cb
+msgid "This setting controls whether Kolab Groupware data and metadata is being cached."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_cache.txt:8
+# 7a1b76e5f78649738299c431bce9f800
+msgid "Caching helps, especially since the data is stored in a relation database. The structure of how information is cached accelerates views such as \"this week\", or \"this month\" in the Calendar, and sorting and pagination for address books."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:4
+# 7a06cd06814a4c76ba7cf976e29d5141
+msgid "``kolab_messages_cache_bypass``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:8
+# ec3311a5943f4939bc4a1dace18df78d
+msgid "This option is only relevant when :ref:`admin_roundcube-settings-plugin_libkolab_kolab_cache` is enabled."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:11
+# 52690b7db62849158064260cec65563c
+msgid "Three valid settings are available for ``kolab_messages_cache_bypass``:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:13
+# b7aad4244c4041b4a8964f65ec3cf352
+msgid "Setting ``kolab_messages_cache_bypass`` to ``0`` does not bypass the messages cache at all."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:16
+# fb0cb11d87c44108ad84900e7cff599b
+msgid "Setting ``kolab_messages_cache_bypass`` to ``1`` bypasses only the message content (i.e. payload) of the core messages cache, but uses the index cache."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:19
+# b390bbfc98dd4994936e1d492c354ab8
+msgid "Setting ``kolab_messages_cache_bypass`` to ``2`` bypasses the core messages cache completely."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:24
+# c0aa99cc27544f868601febab9792d3a
+msgid "With :ref:`admin_roundcube-settings-plugin_libkolab_kolab_cache` enabled, a set of Kolab specific database tables already cache payload. For larger environments, it is certainly recommended to consider setting ``kolab_messages_cache_bypass`` to at least ``1``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:31
+# d52035c3448145a48e1064d835aa4971
+msgid ":ref:`admin_roundcube-settings-plugin_libkolab_kolab_cache`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_use_subscriptions.txt:4
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:18
+# 9976d4df7f014f4cbe4b99cbcf86651e
+# 9725acb2e6f142ac8ad3b107eeef3b87
+msgid "``kolab_use_subscriptions``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_use_subscriptions.txt:8
+# 430cda91b1094910af760ddcdb73902d
+msgid "When listing folders with groupware content available for display, should all folders to which the user has access be listed, or should only those folders to which the user is subscribed be included?"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_use_subscriptions.txt:12
+# fa1eb27f5b994952998bdf61851683e8
+msgid "The value ``false`` means all folders to which the user has access will be included."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_use_subscriptions.txt:15
+# dd81daeceb9c4f5ab3b8b87e1ac76bd0
+msgid "The default for a Kolab Groupware deployment is ``true``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:2
+# b6ed31078fa74b39b569e1a82fca53b6
+msgid "``kolab_format_version``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:4
+# 678e803bacf740e4af656c5b234f768e
+msgid "Specify format version to write Kolab objects. Defaults to '3.0' but can be set to '2.0' for using the old Kolab v2 format for storing groupware objects."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:9
+# 1c87e74b707a4eedac1bc7e2f24c9834
+msgid "``kolab_freebusy_server``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:11
+# a81b92ec8cb944759b1b4001a24b02e4
+msgid "Optional override of the base URL to read Free/Busy information of Kolab users from."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:14
+# 867df5d3878a4848a20f74de4ed4dc41
+msgid "Defaults to ``https://<imap-server->/freebusy``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:20
+# cd5689b26d1a4dac819d0431ef334bd9
+msgid "Lists only subscribed groupware folders in the web client (e.g. calendar view or address books)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:25
+# 08eaeef5dc96483289305e0b3397f67f
+msgid "``kolab_skip_namespace``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:27
+# 41e2f5a93f314c15a0ef5883d69ebf51
+msgid "A list with any of 'personal','shared','other' namespaces to be excluded from groupware folder listing. With the new folder searching features in Kolab 3.3, this setting can be used to exclude shared folders from e.g. the 'other' namespace in regular folder listings and searches."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:40
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:77
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:91
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:104
+# bc02c6791a7d4107955a4a8ba7abca98
+# 845eebaf304a43398e4a00cae5fa8600
+# 4ca5fec2849742d0a0c6b9db161712a9
+# cf008bb58b844e3c9777e56cd193c11d
+msgid ":ref:`admin_roundcube-settings-plugin_libkolab_kolab_users_directory`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:44
+# 86825fa2a98e4ce39c653713f027bc6e
+msgid "``kolab_http_request``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:46
+# f82836f8f3bc4a38bfbb15d8c4477549
+msgid "Configuration options of HTTP requests sent from the server to external systems (e.g. for Free/Busy) data fetching. See `HTTP_Request2 Docs <http://pear.php.net/manual/en/package.http.http-request2.config.php>`_ or list of supported configuration options. Provide the options as hash array with key-value pairs."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:54
+# 546bc9515f764199a9f61f4e93514569
+msgid "``kolab_users_directory``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:56
+# afc27b46f6024015a5b5ac504b65441c
+msgid "LDAP directory to find avilable users for folder sharing. This is used when searching for groupware folders shared by other users. The web client will perform an LDAP search with the given search term and resolve the matches to shared folders in the 'other' namespace."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:61
+# 32a92362916f45a0b049e0c328cd3670
+msgid "Either contains an array with a full LDAP addressbook configuration or a string value which refers to an entry in :ref:`admin_roundcube-settings_ldap_public`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:64
+# cb26259e757940c1a584021479718326
+msgid "If not specified, the configuration from ``kolab_auth_addressbook`` will be used."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:68
+# b55a3bf81eed4d7a884d2b549d50c881
+msgid "``kolab_users_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:70
+# 03c446c5583b4c85b36e553c33c01b5d
+msgid "Filter to be used for resolving user folders in LDAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:72
+# 7b9dbfccebd14ea8b5087edd659b8745
+msgid "Defaults to the ``kolab_auth_filter`` configuration option from the ``kolab_auth`` plugin."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:78
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:92
+# 8d87485a63294454a219dcf2deaea1cc
+# 4ae57e6dff8840b4ad8b91840806606b
+msgid ":ref:`admin_roundcube-settings-plugin_kolab_auth`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:82
+# bef7004b030d4230b00c3bef4828c7e9
+msgid "``kolab_users_id_attrib``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:84
+# 12d8db6de0fe4c5d8261b4c97abf8d9a
+msgid "Which property of the LDAP user record to use for user folder mapping in IMAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:86
+# 9f859d3ee990487fa970f64d31d09c64
+msgid "Defaults to the ``kolab_auth_login`` configuration option from the ``kolab_auth`` plugin."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:96
+# 2770328fedf147a5a3cc05907179612a
+msgid "``kolab_users_search_attrib``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:98
+# 2c7dd3f14c844f1785d350549b47663f
+msgid "List of LDAP attributes to be used when searching users in folder search queries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:100
+# 03a43403b54b4f439048506bfccbe709
+msgid "Defaults to ``array('cn','mail','alias')``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:503
+# 6c2b2f955a6544229ec8957c5c72bcb7
+msgid "The ``libcalendaring`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:508
+# b9f073c3404a4bb1b4e3780dd680a245
+msgid "The ``managesieve`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:513
+# 104d2708e63e412eae298d02fbe8e74a
+msgid "The ``password`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:518
+# 8c767ae66881420a8e0621ce2271397f
+msgid "The ``redundant_attachments`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:523
+# e1dee3ae8f6a494a84f4b1b8ebd797a1
+msgid "The ``tasklist`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:528
+# 013e5da8c69a4bcf8c1ac0a2f58d50b0
+msgid "The ``threading_as_default`` Plugin"
+msgstr ""
+

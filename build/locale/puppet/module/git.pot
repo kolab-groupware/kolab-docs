@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/puppet/module/git.rst:92
+# 70e35d6f18af4f5f82a4b8358b80e8e4
+msgid "Puppet Module: ``git``"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:94
+# 0840f98dd8a24977a64c173e6b1a5a2c
+msgid "The ``git`` module for Puppet can manage central GIT repository hosts along with the GIT repositories on that host, and can maintain clones of GIT repositories."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:98
+# a0c9cbf491164bde96d7d4de615558a7
+msgid "Both these parts are used by the :ref:`puppet-module-puppet`."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:101
+# 2496d8e574a04ccb92bf5453eb7abe09
+msgid "Creating a GIT Repository"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:103
+# dc3a59f7d71a4497b6f05067526f558a
+msgid "Creating a repository is performed by the ``git::repository`` resource definition, with the following parameters:"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:106
+# 2e037b6dcf3c4d6cbfdb78b3e2246b9e
+msgid "**description** (``false``)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:108
+# 639afbc561a44be1894b32f9ecdeaa34
+msgid "A description for the GIT repository, which ends up in :file:`.git/description`."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:111
+# 8e16673f0cde46da9ce69ee24be83f5c
+msgid "If not set, or set to ``false``, the :file:`.git/description` is left untouched."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:114
+# 0d0ed74e54dc4d9cad5372238af50060
+msgid "**group** (``root``)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:116
+# 32c25ff37ef746f88ee65b2b56cc211f
+msgid "The name of the (POSIX) group owner."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:118
+# d56135b57bff46dd81f79d17f6391e65
+msgid "**localtree** (:file:`/srv/git/`)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:120
+# ca0f1e3b987b48f396210d2dad505c0d
+msgid "The parent directory of the new GIT repository, with a default of :file:`/srv/git/`."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:123
+# d96a13bfc1e24825bc4989abed494d7c
+msgid "**owner** (``root``)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:125
+# 32df64809bbc441e80671650a0792e10
+msgid "The name of the (POSIX) owner."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:127
+# 163f98110b0a4715901abed054705259
+msgid "**prefix** (``false``)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:129
+# 667b39dff03240ba94ed30c4bb9ab522
+msgid "Set a prefix to the actual GIT repository location, such that a the filesystem path to the repository is unique."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:132
+# f0636015b4f04d5990ae3c13fa41688b
+msgid "**public** (``false``)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:134
+# c3913d340fc749279784b08504dc60c7
+msgid "If the repository is public, the permissions are set such that the xinetd ``git-daemon`` running under the unprivileged ``nobody`` account can read the contents of the repository."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:138
+# 3e1d4ff2df2e4bf889fe658b1e3be31a
+msgid "Set this to ``false`` to disallow the ``nobody`` account to read any contents of the repository, therefore effectively disallowing anonymous access over the ``git://`` protocol."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:142
+# 10f11c113f2a4fa48729c148d51a3191
+msgid "**real_name** (``false``)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:144
+# 7264df58e5c14125bba83e21108128fe
+msgid "Because resources can only be instantiated with unique names or titles, you can set ``real_name`` to a value that, if used as the name or title, would otherwise cause a duplicate definition."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:148
+# 1c23d391bf6c4cc9a5683dd33e797f19
+msgid "**recipients** (``false``)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:150
+# 5a09f99692ac483c83018dd9651de3f4
+msgid "A list of recipient email addresses, that should be notified when a commit is made."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:153
+# 6261dd0e0ccb427b9d52069457a95bfd
+msgid "If not set, or set to ``false``, no notifications will be sent."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:155
+# b08ff1aee0f448e09f04822839da367f
+msgid "**shared** (``false``)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:157
+# 6c441c66c5e34ac987a85a67795c89f1
+msgid "A boolean value, this describes whether the GIT repository is shared (``true``) or private (``false``)."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:160
+# 69f92505881743409d45add2d9e99651
+msgid "The net result of setting this to true is the equivalent of executing the following commands:"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:168
+# 2c548f0cd57347308f25debf82cae010
+msgid "The xinetd ``git-daemon`` service runs under the ``nobody`` account, and this boolean controls whether the ``nobody`` account should be allowed read access to the GIT repository."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:172
+# a6245ae9147f48b4b1237d7b607ae713
+msgid "**symlink_prefix** (``false``)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:174
+# 56058848e28e4d43a9eebcbd2d26d538
+msgid "The symbolic link in :file:`/git/`, a flat directory hierarchy, should be prefixed with the ``symlink_prefix``."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:177
+# 9fbc6a8320bd47ef98fb3df3ec391435
+msgid "**symbolic_link** (``true``)"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:179
+# 00f08a2319394f4fba2ee70da7f2a197
+msgid "Provide a symbolic link in :file:`/git/` to the new GIT repository (in ``$localtree``), so that users that use the SSH protocol do not have to use ``/srv/git/`` to get to the repository."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:183
+# 93c8cd50e6414d99a4227647de48690a
+msgid "Example GIT repository for libkolabxml::"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:197
+# 1608992b662645b9b83fad941b13b02f
+msgid "Example set of GIT repositories for Puppet modules::"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:219
+# 4f96a5ccd5ed4cb5a9e3ac257e3c8dde
+msgid "Cloning a GIT Repository"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:221
+# 511c52e663e84faebdc94d5407dd4dca
+msgid "To create a clone of a GIT repository, use the ``git::clone`` resource definition."
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:224
+# 13071244e3ec4aeea170be308110061c
+msgid "The following parameters are available:"
+msgstr ""
+
+#: ../../source/puppet/module/git.rst:226
+# 40c064e8be46421b8e8fb5d0cc214928
+msgid "**source**"
+msgstr ""
+

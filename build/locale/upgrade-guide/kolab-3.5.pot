@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:90
+# 0c2ecdd69b6746e594c6580266db880d
+msgid "Upgrade Notes from Kolab 3.4 to 3.5"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:93
+# 908b72c6562b4a3986da5dbdc23274dd
+msgid "This is work in progress! Kolab 3.5 has not been released yet..."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:96
+# 808dbac67a7144faadd4150224207053
+msgid "ChangeLog"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:98
+# 721721d4208f48e5bf73d8cedfa2dcdf
+msgid "**empty**"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:100
+# 63b1b9f3dc6b4255bc219b3848fa2f65
+msgid "**Lots Of Bugfixes**"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:103
+# 241c3f7b61e8424fbbe9cc7ce01489ef
+msgid "Updating the system"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:105
+# c3f75604caf245ebbb4b78d07fc5efa4
+msgid "These update procecures are just an example. They don't differ too much from a basic installation."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:110
+# b6b0c57a90e24a5199fd83dcc00e0649
+msgid "CentOS 6"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:112
+#: ../../source/upgrade-guide/kolab-3.5.rst:131
+# d044def3442b4b5688a08f3664ed498d
+# dadbdd6df16e449da85f7ae696143d41
+msgid "Update the repo to the new location"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:121
+# 93322519b1034d46be5f40c9b6f5efeb
+msgid "run the upgrade process"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:129
+# 0aa638e825a046ec89bde0888cb20575
+msgid "Debian 7"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:138
+# c4b00c3f3ac8464db914249695db2253
+msgid "If you've don't have set a correct apt-pinning or release keys, please check the Installation Guide."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:140
+# 9922a7ea25d643e0b428f2ad696a0624
+msgid "Update and Upgrade the system"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:149
+# a6e728f9568f4b8682a7957c60b12f26
+msgid "You'll get ask if you want to replace your configuration files! DON'T overwrite them! You'll lose your configuration and credentials and end up with a broken frontend."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:154
+# fed53fafa392414a9792eb04bae11a40
+msgid "Database"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:157
+# ca9a4a6969374b7bb04025eca5da3953
+msgid "mysql database: kolab"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:159
+# 70a03aa76e3c48508c505e85530da62d
+msgid "The admin database got a few minor updates:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:161
+# a4be09f2e6a64e8d8f140133ae191a30
+msgid "You can find the full sql file here:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:163
+# d0744b66b1f645c583c275208396aad9
+msgid "XXX FIXME #.  web: http://git.kolab.org/kolab-wap/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.6 #.  locally: :file:`/usr/share/doc/kolab-webadmin/kolab_wap.sql`"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:169
+# 687ffd63fea44245b8eaf91f3bdd9a3f
+msgid "Don't forget to make **backups** of your database before applying the changes!"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:173
+# 941da06e23654783ab956b14798b2d7e
+msgid "The kolab-webadmin package doesn't provide auto updates or upgrade files for your database. Here's a summary of what has been changed."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:176
+# bdd71a7ced1e40a19f38843362adfafd
+msgid "Field for mail.alias is not a list for Mail-enabled POSIX user in kolab-webadmin (#2219) https://issues.kolab.org/show_bug.cgi?id=2219 http://cgit.kolab.org/webadmin/commit/?id=47653cb71fc68c083ef2cc95a97790f64f0b590e http://cgit.kolab.org/webadmin/commit/?id=250f5938c1bd0cf021d01125e01eebe7e212ed0c http://cgit.kolab.org/webadmin/commit/?id=d8dc3e2f241d66fb36126416c44f8303df36ba41"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:183
+# 2f03694fe98d46ff888c8a6ba2b75e21
+msgid "Warn when two Users have the same secondary mail address (#2983) https://issues.kolab.org/show_bug.cgi?id=2983 http://cgit.kolab.org/webadmin/commit/?id=e484198c037a919a42d9c5a52dec107def982d27"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:187
+# 812dcc6743cc4a12afe2f92080914d0a
+msgid "If you've made changes on the user types you might want to change the types manually in the settings section of kolab-webadmin (see below for details).  Otherwise you can refresh the user_types table:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:191
+# 3726d192d8f74e98b0f1c63c546fc8ff
+msgid "You can find the sample php script here:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:193
+# 5604df9f9c6c4e2bbe9de215f0a3b03c
+msgid "XXX FIXME #.  web: http://git.kolab.org/kolab-wap/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.6 #.  locally: :file:`/usr/share/doc/kolab-webadmin/sample-insert-user_types.php.gz`"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:204
+# 5bb4b14218fc4b9babe8ed3441eb398b
+msgid "Manually changing the user_types in the kolab-webadmin interface"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:206
+# 61c485eb1725481d9c5b058ddd69dd88
+msgid "Log on to the kolab-webadmin interface using \"cn=Directory Manager\". Select \"Settings\" (Einstellungen) and select object type \"User\" (Benutzer). You need to apply the following changes to each of \"Kolab User\" and \"Mail enabled POSIX User\"."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:211
+# bceba26b98d94f84b891ae3e808474c3
+msgid "Switch to the tab \"attributes\", search the line \"alias\" and click the pencil symbol to edit. Apply the following changes:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:214
+# defa5a5af2c14bf98f27d37c225f562c
+msgid "field_type select \"list\""
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:215
+# b0f222fe0d2a43ba886cdacafa48f166
+msgid "validate select \"extended\""
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:216
+# 00a4c0fc81634a5e8230564c3c6bf82a
+msgid "tick \"optional\""
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:218
+# 5c383230740d4095b0b3d0ab67d192a8
+msgid "To save your changes press \"save\", scroll to the bottom of the page, and press \"send\"."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-3.5.rst:221
+# 14da8282d9e941b9b768d72d9d13478e
+msgid "After the database update has been applied. Logout from the kolab-webadmin interface and login back in to load the new changes."
+msgstr ""
+

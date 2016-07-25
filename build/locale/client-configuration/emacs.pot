@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/client-configuration/emacs.rst:91
+# 2e3d3f71fdf947fe8fa19ac6f3bf4a66
+msgid "Emacs"
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:96
+# 22058e86466544eca04ec7038a23b211
+msgid "Many IT professionals use `Emacs <https://www.gnu.org/software/emacs/>`__ to handle most of their everyday computer tasks. Some people even consider emacs an entire operating system. Please see below for the instructions on setting up emacs with |service_name|."
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:102
+# 56e91a62fd8344208b3c92f46c25437e
+msgid "org-mode Calendar"
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:104
+# 6f10e14724294f5d96bb41542392356c
+msgid "In order to sync your Emacs org-mode calendar with |service_name|, you have to setup `*org-caldav mode* <https://github.com/dengste/org-caldav>`__. Just install that and add the following to your Emacs configuration:"
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:128
+# 9b8d6da4afc3489e8f6d4e7d1941214e
+msgid "Please note that you need to change your username and the timezone. Review this configuration carefully and adapt it to your needs. Then you should be set. Just run *org-caldav-sync* and wait a bit, the first time takes a good while."
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:133
+# cbd77b0de7684e64a814700a099b9b16
+msgid "If your calendar has a different name, you can find out the Calendar ID for it by using the option *Show Calendar URL* from the |service_name| webclient. To get this URL, please login to |service_uri| and then follow the following steps:"
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:137
+# d414eb986df54f24bd9b0b4f08339b97
+msgid "Select *Calendar* in the top right corner drop-down menu"
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:139
+# f5f695ce6ff846f9b95fdcae34759ea0
+msgid "Select the calendar you wish to add to Emacs with a single left click in the lower left corner. The selected calendar should visibly highlight."
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:143
+# 30ba862a00cf49eaa24767b9a943ac0b
+msgid "Next click on the small gear symbol below"
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:145
+# 124e9dd57c774ff2883e06350a1391ca
+msgid "From the menu you'll see, please select *Show Calendar URL*"
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:147
+# ae5dedbd4aeb41d98431bcc34b6905b2
+msgid "In the window that will appear please copy the end of the second URL (where it says CalDAV)"
+msgstr ""
+
+#: ../../source/client-configuration/emacs.rst:150
+# 6a137015ae244719b3ae749f0ca9da29
+msgid "The Calendar ID is the text and numbers (e.g. Calendar) after the last */*."
+msgstr ""
+

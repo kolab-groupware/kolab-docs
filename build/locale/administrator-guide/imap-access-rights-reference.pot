@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:91
+# 42fbccad95204643b87613b05957fb93
+msgid "IMAP Access Rights Reference"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:93
+# ecfeaf6df7914761a8b24e7fe9ace9bf
+msgid "**l**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:95
+# b1b2ae1a6a8c49b9a44e226c4319660f
+msgid "Stands for **lookup**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:97
+# ce356ae6fc634ae6895b95ae820603ab
+msgid "The ACE subject can lookup this folder, and see that the folder exists, meaning the folder will appear in a `LIST \"\" \"*\"`."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:100
+# b18df861f8d84e98b73ed3ba5d171522
+msgid "Folders to which the ACE subject has no lookup rights may still be subscribed to. The lookup right is only required if Cyrus IMAP has been configured with the allowallsubscribe setting to false (0)."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:104
+# 9e103f0cc6e54984a54a5235d9e98733
+msgid "In Cyrus IMAP 2.5, this setting defaults to false (0)."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:106
+# d1f22ec0e35849e4b418c0b6ae96aac7
+msgid "In a Cyrus IMAP Murder, this setting is typically set to true (1)."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:108
+# 580d83f120134ea99d7df4182740df1e
+msgid "The **l** can be assigned to a folder, without the **l** right having been given out for the parent folder. Cyrus IMAP will pretend the parent folder does not exist;"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:112
+# 5e8aa835c02645f98a5c2742d58b5a6f
+msgid "RFC 4314, section 4., page 13, states the following example:"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:114
+# 9a87b8df706a4a1fb8721c546858fa5c
+msgid "Note that if the user has the **l** right to a mailbox ``A/B``, but not to its parent mailbox ``A``, the LIST command should behave as if the mailbox ``A`` doesn't exist, for example:"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:127
+# b5432345c0df49eca02ac5083ff95fa8
+msgid "**r**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:129
+# 98a84c2f460644bbb58ac6b94dcdcd2c
+msgid "Stands for **read**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:131
+# 38ee7feeaaaa4e4a9e945e031634a20b
+msgid "The ACE subject can read the contents of this folder, meaning that the ACE subject is allowed to SELECT or EXAMINE the folder, query its STATUS, FETCH data, SEARCH the contents, and COPY contents from the folder."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:136
+# 34675c086b79482894ed763799ba20bd
+msgid "The **r** right also allows the user to GETMETADATA when used in conjunction with the **l** right, as defined in RFC 5464."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:139
+# bb32ec9f60dc4661b4556ce8e4380d09
+msgid "**s**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:141
+# a82f4735bb914a1eb08ccde25edff1ae
+msgid "Stands for **seen**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:143
+# 0f27c0a99820488f9d1aff953b248641
+msgid "The ACE subject is permitted to maintain the ACE subject's seen state for this folder, or the shared seen state in case the ``/vendor/cmu/cyrus-imapd/sharedseen`` has been set to true. Additionally, the \\Recent flags are preserved for the ACE subject."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:148
+# e9308fec24f84861b0a97dea844d432f
+msgid "**w**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:150
+# a94d316b559d4692bcff10edf162fd71
+msgid "Stands for **write**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:152
+# 388a409f0a9041b1867d6caf9318d987
+msgid "The ACE subject is permitted to write to the folder, actually meaning the ACE subject is permitted to maintain flags and keywords other then \\Seen and \\Deleted, which are controlled using the **s**and **t** rights respectively."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:157
+# 723ec55db32e40ce8459725f5c4a259d
+msgid "The **w** right also allows the user to SETMETADATA when used in conjunction with the **l** and **r** rights, as defined in RFC 5464."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:160
+# b4b9391afe8f457ab659ffe8a53e7f15
+msgid "IMAP clients may expect to be able to set flags other then \\Seen and \\Deleted and attempt to set those flags immediately along with a \"Mark as read\" action, without the ACE subject actually being permitted to set some of those flags through the **w** right."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:165
+# 0cd6773e332846349435a291c92c44fd
+msgid "RFC 4314, section 4., page 15, states that the server SHOULD NOT fail, as the tagged NO response is not handled very will by deployed clients. In order to comply, we have Bug #3488, as Cyrus IMAP currently does seem to issue a tagged NO response."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:170
+# 6169be3fe297410fb2de327336f5dbf7
+msgid "**i**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:172
+# 7d8b271cdcf14e7d96affd0f9bcdaa79
+msgid "Stands for **insert**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:174
+# 424545ddf786400d97438985085b115a
+msgid "The ACE subject is permitted to insert content into a folder, meaning the ACE subject may COPY messages with this folder as the target folder, and may APPEND messages to this folder."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:178
+# c4d4ce011d6c4c7db8382bfc76a6244a
+msgid "**p**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:180
+# 37d3008a21c644e3a9a5914aafd854e9
+msgid "Stands for **post**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:182
+# 1999d1df10054d1a80ba4f513a8d8012
+msgid "The post right currently is exclusive to Cyrus IMAP, and allows the ACE subject to send email to the submission address for the mailbox."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:185
+# 756d2cd105c641b8a63e438dcee3f0d0
+msgid "This right differs from the **i** right in that the delivery system inserts trace information into submitted messages."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:188
+# 443e84dc02d5449bb6c4a244884d4b6f
+msgid "Example implementations using the **p** right include shared folders to which specific recipient addresses are delivered through LMTP pre- authorized as the postuser, which must then also have the **p** right on the target folder."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:193
+# 07747aaad61a452481702df1d0db8194
+msgid "**c**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:195
+# 4a359e5eda7b4b2aa2352b16d51b60df
+msgid "Stands for **create**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:197
+# 283d8b725cd2428fb877750e4787217e
+msgid "The create right is a right introduced with RFC 2086 (IMAP4 ACL extension), indicating the ACE subject's right to create new sub-folders in the parent folder on which this right has been assigned, but also to delete the same folder."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:202
+# bbec94e59269410497ff31cad20c6f6d
+msgid "Since RFC 4314, the **c** right has been replaced with the **k** right to CREATE folders with, the **x** right to DELETE folders with."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:205
+# f20484af2cf14c918786949f377582e2
+msgid "The **c** right should no longer be used"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:207
+# 26f783a70e9641f5b34cd5c55aeaa4c2
+msgid "Even though Cyrus IMAP is backwards compatible when it comes to the **c** right, which it implements as implying as the **k** right, implementations should not count on the **c** right backwards compability to be around forever, and to fully implement the legacy **c** right, use **kx**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:213
+# b2a80de36de042d8a23730538c656c30
+msgid "**k**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:215
+# 77942ee7b031414d8f61094d0593fee6
+msgid "The ACE subject has the right to CREATE a new folder if the **k** exists on the parent folder of the folder created."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:218
+# 19ef6288e38b4024b7aa3dfcc9adeaa5
+msgid "The rights required for a RENAME to be successful could be illustrated by describing a RENAME as a CREATE of the new folder, not exactly followed by a COPY on the old folder's contents, but more like a move like on a filesystem, and finally a DELETE on the old folder."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:223
+# 63c0fd3a594a4b46a458b9590083cd63
+msgid "As such, the **k** is the right required on the parent folder of the target folder, and the **x** right on the source folder. To further illustrate;"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:227
+# 8b4c66f8465a4f05a081b03be35c121d
+msgid "Suppose the ACE subject has the **k** right on folder \"C/\", and the **x** right on folder \"A/B\", then a RENAME A/B C/B would succeed."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:231
+# 396fb8c2323f44e8b6fd5659c5832cbb
+msgid "**a**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:233
+# da157e8d1716443b82b1689543c4d520
+msgid "Stands for **administer**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:235
+# b7a1f02e28eb4c79b0ec858d3453931c
+msgid "The ACE subject is allowed to administer the folder, meaning the ACE subject is allowed to perform administrative operations on the folder. The **a** right is needed to successfully execute SETACL, DELETEACL (short for SETACL \"\") and to execute GETACL or LISTRIGHTS."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:240
+# 57618372c9ee48d5ae9d8317f8f1b301
+msgid "IMAP clients may issue a GETACL in order to obtain the ACE subject's rights on the folder, where they should be using MYRIGHTS, as GETACL or LISTRIGHTS return the full Access Control List, including other ACE subject's identifiers."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:245
+# 526aa91149314e7fa28a3aec48d23be1
+msgid "Unless the ACE subject has the **a** right on a folder, issuing a GETACL or LISTRIGHTS will cause Cyrus IMAP to send a tagged \"NO: Permission denied\" response if the ACE subject has the **l** (lookup) right on the folder, and a \"NO: No Such Mailbox\" response otherwise, as per section 8. of RFC 2086 and section 6. of RFC 4314 – both conveniently called \"Security Considerations\"."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:252
+# f3b5cdb21b60495c8121b1ab06f2e0c4
+msgid "**x**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:254
+# e0b493a6238e49cb9e313b36213bceb7
+msgid "Use this to indicate the ACE subject has the right to delete the mailbox, as opposed to the **c** or **d** rights."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:257
+# ad5546f027ce42099eccabb0756e40e7
+msgid "**t**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:259
+# 5262375a51f54bcaa2ef6d647594aa49
+msgid "The ACE subject is allowed to delete messages from this folder, meaning that the ACE subject is allowed to flag messages as deleted."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:262
+# 61ae837f0b61463aa6bdc7ef4d34994a
+msgid "In IMAP, messages are only actually deleted in a way that at least makes them invisible to the folder's users need to be expunged. For the corresponding EXPUNGE however, the **x** right is required."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:266
+# f82fb539bc4c4c46b0a17348200c5ef8
+msgid "**n**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:268
+# 1200aef275c94ddba1df1effbdf10850
+msgid "The ACE subject is allowed to annotate individual messages in this folder, in compliance with RFC 5257."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:271
+# 87741ef911224d8da6d5a30ec294ca48
+msgid "Please note that the ACE subject must also have the **r** right, or the subject won't know which messages are available to annotate, however the **r** right is not implied (nor is the **l** right)."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:275
+# 2465011d1ed643859e9c2b72b83b9bc1
+msgid "**e**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:277
+# 7b9d1a168d8245a78c45e5fe3da790ae
+msgid "Stands for **expunge**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:279
+# 9ca04adfb39c41ddb2c902dee64f3b80
+msgid "The ACE subject is allowed to expunge messages in this folder, meaning the ACE subject has the right to remove all messages that have been flagged as deleted from all visibility."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:283
+# ed7c7edd341441a7800741ffe73e4edf
+msgid "In IMAP, expunging messages only applies to messages flagged as deleted. For the ACE subject to be able to flag messages as deleted however, the **t** right is required."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:287
+# 60e0758a48c843cabce7e4e08e5d94a3
+msgid "We say \"remove from all visibility\", because the implementation of expunging messages in Cyrus IMAP is ACE subject to the expunge_mode in /etc/imapd.conf, which when set to delayed only causes the reference to the expunged messages to be deleted from the folder index database -- effectively removing the expunged message(s) from all visibility, while they remain in place on the Cyrus IMAP server filesystem."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:294
+# 591f9758017e4bdfa19f986cea3e222b
+msgid "IMAP clients may expect to be able to EXPUNGE a folder regardless of the availability of this right."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:297
+# 32bf06accdc7445b83cd8418999cd0ed
+msgid "**d**"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:299
+# 31f8df3b918c4e8085d99aa788fe72f1
+msgid "Stands for **delete**."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:301
+# 16120cc5dc2e4db0921f40e92b0e8230
+msgid "This is the legacy, RFC 2086 access control right for the delete right. In versions of Cyrus IMAP implementing only this right, ACE subjects were allowed to flag messages as deleted and expunge folders."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:305
+# 9c25683a0bfb48a4a535b24cca6396c2
+msgid "The delete right has been split in to three separate rights, **t** (flag messages as deleted), **e** (expunge folder) and **k** (delete folder)."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:308
+# f982d48453364d5dbfe433eecc1ca4d7
+msgid "The deleteright setting in /etc/imapd.conf controls the RFC 2086 right which controls whether or not the ACE subject may delete a folder. However, this setting (as the original specification for the delete right was considered ambiguous) is ignored, and if it is set to **c**, is automatically converted to the **x** right."
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:314
+# 9e8b04463b464197a12b807c2b0cdd26
+msgid "The **d** right should no longer be used"
+msgstr ""
+
+#: ../../source/administrator-guide/imap-access-rights-reference.rst:316
+# 5acdaa21d26b46a0bdfd216720582578
+msgid "Even though Cyrus IMAP is backwards compatible when it comes to the **d** right, which it implements as implying as the **e** and **t** rights, implementations should not count on the **d** right backwards compability to be around forever, instead use **te** rights."
+msgstr ""
+

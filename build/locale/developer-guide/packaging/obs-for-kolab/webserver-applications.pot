@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:90
+# b1751ba9c12940e5b668a5a7f0e9460f
+msgid "Packaging Webserver Applications"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:92
+# 4c976eae1fe8471aa408a170ded9034b
+msgid "In principle, Kolab Groupware applications depend on **httpd** from the Apache foundation."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:95
+# 4c7b57709ef844fb9f67ff9318d296a3
+msgid "To re-use ``Requires:``, commands to install initial application configuration for the webserver, ``%post`` and ``%pre`` commands, we seek to use the following snippets of macro definitions:"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:99
+# 5ece1100e43541728be2b93786ef3c8d
+msgid "**Define the httpd package name**"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:109
+# ba3137c94b324501bbf940a4c2a3f341
+msgid "**Define the dependency**"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:115
+# f2fe120f4c8d464d8268bb2179de092e
+msgid "**Define the configuration directory**"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:117
+# 52c4c7364f584ba48bf14309d95c417c
+msgid "Defining the **httpd** configuration directory for individual web applications helps address differences between distributions just once, to further avoid making ``%install`` and ``%files`` conditionals unnecessary."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:125
+# 0fc61f24c33f4682940655144466ca52
+msgid "**Define your** ``%{php_inidir}``"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:127
+# 80bd69162b784c649c7485524e2bd199
+msgid "Define the PHP .ini configuration dir for additional extensions such as APC, for applications that are being updated should reload the webserver, but only if APC is enabled."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:135
+# c67303fe18ef4f9cbf97a5fef1ec6dd7
+msgid "The combination of the aforementioned can now be used to:"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:151
+# ffaa737ac7f74ef6bdf95a8e3ae0143a
+msgid "Possible Future Enhancements"
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:153
+# ab4f9af12ea649f4b336d9038ddb5bc3
+msgid "Package to depend on a capability provided by **httpd** / **apache2**, **nginx**, **lighttpd** and other alternatives, which may be *webserver*."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:156
+# 4084f61643e94e14b1c6904667e0c0d8
+msgid "Consider providing the default configuration to install along with the packages, and where to put them on various platforms."
+msgstr ""
+
+#: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:159
+# 8cddaeef115b4c2887d49b46f212498b
+msgid "In Fedora, this may not be done in ``%post``."
+msgstr ""
+

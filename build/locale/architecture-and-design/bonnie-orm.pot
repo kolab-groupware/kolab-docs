@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:89
+# 7c77def036f94a51ad6a0d3339b12cde
+msgid "Application Logic and Database Design Considerations"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:92
+# 89b18710c6e04049a7c2fa098e234ba7
+msgid "Database Technology"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:94
+# 3590621d35b54603be4cdadb1a30a9a1
+msgid "NoSQL storing key value pairs, trick is to store as many keys as is necessary to get to the related value."
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:97
+# 0da0afe2c7b54030acd3b83b25c46b35
+msgid "Relationships problematic. Possibly for data only, use ORM for relationships."
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:100
+# 337a8a2426994c0bba4f688a89e64843
+msgid "Object Relationship Manager"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:102
+# a4172d685a894b478d04e0669c554f9f
+msgid "User"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:104
+# 78b801a09bf746369e07aaaa4a6520e5
+msgid "An individual human being with physical presence (in the here and now, past and/or future)."
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:107
+# f88d5a5036344a448c746059d1f8f252
+msgid "Group"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:109
+# 0dc4e96adfd24126b43c551d569b4235
+msgid "A group of individual User objects."
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:111
+# 3d51bd0efa0a4c449c3dd77b32b456f0
+msgid "Role"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:113
+# d8f10de343d840ab841885c4455dcc9d
+msgid "A role attached to one or more User objects, functionally the inverse of a Group."
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:116
+# 75cd588cea0b4251a5a685a031a5e85f
+msgid "IMAP Folder"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:118
+# e7819dcbaa4045859308cc3696838cc1
+msgid "METADATA, including:"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:120
+# 328306646ff04c97b00d7949777c051c
+msgid "Unique ID (persistent)"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:121
+# bf3c49bf9d284c57a75823876b7b6f71
+msgid "Shared seen, important to Read/Unread status tracking,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:124
+# aae1ab052b47403eba7a4e89c166feae
+msgid "ACL"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:125
+# 1f91a65108144786a3610b67329d6d41
+msgid "Payload"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:128
+# 928e747ade8e494ca16fd15ba24892f5
+msgid "Change Recording in ORM"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:130
+# 845fe85e6028443390c77ebe791ffb1a
+msgid "Rather than recording the changes to objects explicitly, it is more effective to define the objects themselves as volatile objects, in such a way that updates to them imply a changelog record be created."
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:134
+# de9aacebaa074b06a95f4bcc4c7af01b
+msgid "In summary, it is better to reduce the processor's workload and code base from:"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:156
+# 89a2b6dc39e6425ead71db2a1a1744d7
+msgid "to:"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:178
+# 0f349a3a95dc426f8bfeee3381524293
+msgid "The basis of this implementation is simple (in Python):"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:180
+# c917a90ec5664f4fbd341ed5ffb60f92
+msgid "Declare a class for individual change records,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:181
+# e1636f4a31d244feafaecc8cff41b1b5
+msgid "Declare a declarative class inherited by individual object table definitions,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:183
+# a7d35e0fbe924ce2b21bbecdce65694e
+msgid "Use the declarative class in addition to the declarative base class in the definition of the individual object table class,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:185
+# 1040ee6c64ea452291fc666e86f21be1
+msgid "Use ``__setattr__()`` to catch any changes to existing objects,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:186
+# adc4f61abd1b4766bcba1f1ed7febe3b
+msgid "Process the current value of the object that is being changed, if any,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:187
+# a2dc9acb624b43a1b2982b32f6b8b621
+msgid "Record the object name, object id, current value (if any), and the value it is about to change to,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:189
+# 56880dd40ae6470188dbbcca414cb428
+msgid "Insert the new changelog record in to the current transaction."
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:264
+# 380fc6501cd9465cb70886e8b712ad15
+msgid "Users are Volatile and Groups do not Exist"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:266
+# f39ee821f0164d16aac2a072df5fd0ef
+msgid "Usernames as issued by Cyrus IMAP 2.5 notifications are volatile, in that the same physical human being (jane.gi@example.org) could change email addresses for any of many unrelated causes (jane.doe@example.org)."
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:270
+# 5c922571ea104d2c8db898c4dcae2f3c
+msgid "It is therefore mandatory to:"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:272
+# 05334a4235404900a39c41b0354c7c8e
+msgid "resolve IMAP login usernames to canonified IMAP login usernames,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:274
+# cee03a7c05864e61b3d6583cd56c729f
+msgid "User ``jdoe2`` could in fact be the same physical human being as ``j.doe2@example.org`` and ``jane.doe@example.org``."
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:277
+# 8f23545c5cfe4fe791877838ffebf88b
+msgid "relate canonified IMAP login usernames to persistent user attribute values,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:278
+# c9b4baf45bf04706a5df22d5e5775708
+msgid "relate mail folder names, paths and URIs in personal namespaces to persistent user attribute values,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:280
+# a8da8f7f8a904fe69c86cafc90df9bba
+msgid "resolve IMAP ACE subject entries to their persistent attribute values, for both users and groups,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:282
+# a89282b34e7e41c4aae07972ad3a0b46
+msgid "store membership information about groups at the time of an event,"
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:283
+# 021bb177c33446328bb80787649e4de0
+msgid "store roles attached to users."
+msgstr ""
+
+#: ../../source/architecture-and-design/bonnie-orm.rst:285
+# ecc4f110eb7f45de8b748590094181ea
+msgid "This needs to happen in a timely fashion, for intermediate changes to the authoritative, canonical user and group information database, in the period of time between the event notification and the collection of information, could invalidate the permanent record."
+msgstr ""
+

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:90
+# a75bd91c203a4e2c958095a555b79d6f
+msgid "Configuring Auto-Discovery for CalDAV and CardDAV"
+msgstr ""
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:92
+# 1f285016b47349f18452dc04c53df3e9
+msgid "In order to simplify the configuration of CalDAV and CalDAV clients, service discovery can be configured according to `RFC 6764 <http://www.rfc-editor.org/rfc/rfc6764.txt>`_ which suggests means of adding DNS records and well-known URIs to the primary domain."
+msgstr ""
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:98
+# af0b6678d82d4e7bb4a8fb7c3ed65cb6
+msgid "Defining well-known URIs for iRony"
+msgstr ""
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:100
+# fc084bf2cda443bc9a3f15313a0bdea2
+msgid "Well-known URIs are used when setting up CalDAV and CardDAV clients to automatically detect the service configuration, mainly the server URI. So when configuring a CalDAV client for the account ``sample@example.org``, the client will take the domain part of the account name and send a HTTP(S) request to ``https://example.org/.well-known/caldav`` which is expected to redirect to the service URL using a HTTP mechanisms, e.g. with a *301 Moved Permanently* response."
+msgstr ""
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:105
+# 25040f6e4351495e9ad6803431c21d38
+msgid "The sample Apache config file packaged with iRony already contains rewrite rules pointing to the /iRony/ path. If the service is installed at a different path, adjust the two rewrite rules accordingly:"
+msgstr ""
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:115
+# b34f1d9af4f949a48806c7f31ba93941
+msgid "There are good reasons to run the CalDAV and CardDAV service at root level of your web server. Especially to make it work with the Mac OS X 10.6 Addressbook this is a must [#]_."
+msgstr ""
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:118
+# a73f92d185324805a21fae45e97d2255
+msgid "Assuming iRony is set up at root on ``dav.example.org`` the well-known URIs have to be configured for the host serving ``example.org`` and redirecting to the fully qualified location of the iRony service."
+msgstr ""
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:131
+# a926e932b38540ed993d4ddb66895f34
+msgid "SRV Service Labels and Service TXT Records"
+msgstr ""
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:133
+# b20add42ad1f40318ad0f2e5475c163b
+msgid "Beside the well-known URIs, it's also recommended to add DNS entries for the service discovery protocol as described in `RFC 6764 <http://www.rfc-editor.org/rfc/rfc6764.txt>`_, Chapters 3. and 4."
+msgstr ""
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:138
+# 010cac5ac43248738d05035d9f6b7518
+msgid "Footnotes"
+msgstr ""
+
+#: ../../source/administrator-guide/dav-autodiscovery.rst:139
+# d8aa147d6179440c89b4681966ec4fef
+msgid "https://code.google.com/p/sabredav/wiki/OSXAddressbook"
+msgstr ""
+

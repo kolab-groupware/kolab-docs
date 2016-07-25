@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/faq.rst:90
+# 131b3078f12d4effad6834f1c30abf7a
+msgid "Frequently Answered Questions"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:95
+# 98affd255509499d8863afa5b9490e42
+msgid "No \"Add User\" Button or Link"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:97
+# ed18d7d335e441279e72c2f2e5df93c3
+msgid "If this link is not there (you would also not have been presented with a form), you do not have permissions, you did not configure SELinux the way it was documented, firewall, DNS."
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:102
+# adb31dadd6b649f992274d8f24afebf3
+msgid "Log Messages"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:106
+# cee7f3f8a4ef44a891a93c2cbf02464d
+msgid ":ref:`admin_faq_email-blocked-spamhaus`"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:109
+# 43b4b8db64984a32ad0d34566f71b018
+msgid "Unable to open /etc/sasldb2"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:112
+# 62e1619425b84f00ab5d9dcec2a84421
+msgid "No :file:`user_deny.db`"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:119
+# 43708ea635814dc2843e9cc2a15bd723
+msgid "No authentication"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:125
+# 40ddb41ec59b4970a52ac85f4cd609df
+msgid "Debug level information, can be ignored. You can reduce verbosity by setting ``debug: 0`` in :manpage:`imapd.conf(5)`, or by not including debug messages on the mail facility in syslog."
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:130
+# bc228182060f487ea80763092241be44
+msgid "Unable to setsocketopt"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:136
+# 7d83355fbea84f4cb5cfc56e56cba05a
+msgid "Informational message issued on startup. Not critical."
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:139
+# eca9b20655a1443e9490e974fbebcb03
+msgid "Anti-Spam"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:142
+# 5930633ab125476ba0b23d21e9d1b5e2
+msgid "No ``X-Spam`` Headers"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:147
+# d4bfc8f4ba2a4100bb0efd97cec20774
+msgid "Email Blocked Using zen.spamhaus.org"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:149
+# ffe75f29f0c84b6cae3fc33547c3cc3c
+msgid "You are seeing the following in :file:`/var/log/maillog` (line breaks added for legibility):"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:158
+# 72713b33e2254f50af75161f37ae8350
+msgid "This message indicates your SMTP server, receiving a message from the Internet, has refused the message."
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:161
+# 90a521ca9c814b958ba0c65e2f3e4e10
+msgid "The sending host (at IP address 3.2.1.0) is blocked using a centralized, external service (spamhaus.org), that keeps track of hosts and networks on the Internet with a reputation of spamming."
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:165
+# 1b3041988fab4050ab2d18f4be65d26c
+msgid "For more information on this service, see http://www.spamhaus.org/zen/."
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:167
+# e54d2171f4dc4f5d9833bb056491b816
+msgid "You will want to continue performing these checks, but just in case you do not want to, the relevant setting in Postfix is:"
+msgstr ""
+
+#: ../../source/administrator-guide/faq.rst:174
+# cc64d7b55a0b42aea900165bddd9688e
+msgid "It is the responsibility of the sending host to notify the original sender the message was not delivered."
+msgstr ""
+

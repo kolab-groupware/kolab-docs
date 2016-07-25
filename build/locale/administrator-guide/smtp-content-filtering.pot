@@ -1,0 +1,323 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:91
+# cd626f27b72a42c69af100365c89002c
+msgid "Enabling SMTP Content Filters"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:93
+# 2a6172f1237d4604a9e1c7c4c7a856e3
+msgid ":ref:`and_mta_wallace` is a Kolab Groupware content-filter, adding functionality to the SMTP message pipeline like resource scheduling, enforcement of invitation policies, appending of footers and signatures, etc."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:101
+# 7bbd839d0da14d6cbcbc26db7b6f3da1
+msgid "Invitation policies"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:103
+# e8301b0435b440228fdd45e10cbc2387
+msgid "The :ref:`invitationpolicy module <and_mta_wallace-invitation-policy>` of Wallace processes incoming iTip invitations or replies which address a local user. Depending on the recipient's invitation policy settings or the global default, the iTip message is either automatically processed or forwarded to the user's inbox or calendar for manual confirmation."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:108
+# 373011ac1db0450baed222911eaf95d9
+msgid "To enable the resource scheduling module, add ``invitationpolicy`` to the list of active wallace modules in ``/etc/kolab/kolab.conf``:"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:116
+# 69326ff25f36466f88b9e1b1fc530e26
+msgid "A user's invitation policy settings are stored in LDAP using the ``kolabInvitationPolicy`` which can contain multiple values which are processed from top to bottom until one matches the situation. A global default can be defined in ``/etc/kolab/kolab.conf`` with"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:127
+# 5d3aafdb61ec49d99e9cd5ad6d2aa098
+msgid "The following values can be used to compose the invitation policy set:"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:132
+# c7ea4b67ac7f42f9bf45683fbb2a9641
+msgid "General invitation policy settings"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:134
+# b92981378c7a46ebaa9e7513776951c0
+msgid "(apply to all iTip object types)"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:136
+# 6ea28ddd881b4e7baf91809da36143d4
+msgid "``ALL_MANUAL``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:138
+# 4508c655a23049449b30727bf4f37809
+msgid "Forwards the message to the user's inbox for manual processing in the client."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:140
+# 9cf084007fd243ef945939f4ffc57481
+msgid "``ALL_ACCEPT``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:142
+# d326f77c78214760bfdc4e0916ba84c9
+msgid "Always accepts the event invitation or task assignment. This will reply to the organizer with ``PARTSTAT=ACCEPTED`` and store the event in the user's default calendar or tasklist respectively."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:146
+# 5d6cb60edb8146e7bf5fe99960a381f3
+msgid "``ALL_REJECT``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:148
+# b491b260fb554a9da25ad194557e32e2
+msgid "Always rejects the invitation or assignment. This will also store a copy of the rejected invitation in the user's default calendar for later reference."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:151
+# 03c387b4e0744da39887940e1e3ddb05
+msgid "``ALL_UPDATE``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:153
+# af66250eb1234777a32936f1ac42a732
+msgid "When receiving an iTip REPLY, this policy automatically updates the copy of the referring object in the user's personal folders with the updated participant status of the replying user. This also reacts on iTip CANCEL messages by updating the object's status to CANCELLED and the transparency to TRANSPARENT."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:158
+# 25c615c6b7dd472eab4edd19fd10ad58
+msgid "``ALL_UPDATE_AND_NOTIFY``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:160
+# 0faaa103c9de45ad9ff7d6290e4b016a
+msgid "Same as ``ACT_UPDATE`` but with an additional notification email being sent to the recipient reporting the updated participants status or object properties which have changed."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:164
+# 2237aa01b7c54718b648a981d17ae963
+msgid "``ALL_SAVE_TO_FOLDER``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:166
+# 2c4c2e0d3af44e6f82ac7a56707baac7
+msgid "No automatic accepting or rejecting is being done for iTip invitations here but the invitation is being saved in the user's default calendar or tasklist respectively and the iTip message is not forwarded to the user's email inbox."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:170
+# c8126b3bae8e4871a2b9832eeb8f2f6e
+msgid "``ALL_SAVE_AND_FORWARD``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:172
+# b90c0ed00ede4487ae3edc7b85ce66a1
+msgid "Same as ``ALL_SAVE_TO_FOLDER`` but forwarding the original iTip message to the user's email inbox for notification purposes."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:175
+# 6eba62be837f4a79bc2d400966ddb6fc
+msgid "``ALL_CANCEL_DELETE``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:177
+# 9f351d2df91d4278a754c3d3d8b3d7a0
+msgid "When receiving an iTip CANCEL message, this policy removes the copy of the referring object from the user's personal folders."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:180
+# 87e149ae39d7422f99130c75a860a28e
+msgid "``ALL_CANCEL_DELETE_AND_NOTIFY``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:182
+# bfc0f04110e841d4a71399613891ffef
+msgid "Same as ``ALL_CANCEL_DELETE`` but with an additional notification email being sent to the recipient reporting removal of the referred object."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:187
+# d6d0555484ad456f91f4f69765e8ce46
+msgid "Event-specific policy settings"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:189
+# 53090589cae545dab8199acc1cb220ce
+msgid "``EVENT_ACCEPT``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:191
+# afdaf76e6b9f43948dac294c36d158c4
+msgid "Same as ``ALL_ACCEPT`` but only applies for event invitations."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:193
+# c38f17134b2d459e9633247e2256d792
+msgid "``EVENT_ACCEPT_IF_NO_CONFLICT``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:195
+# 592746ac00df43488b5dc2301543891f
+msgid "Same as ``EVENT_ACCEPT`` but only if the invitation doesn't conflict with an existing event in the user's calendar(s)."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:198
+# e9be730aa4a6479a8f30b4c7183d8548
+msgid "``EVENT_TENTATIVE``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:200
+# 827acadb2f1b448388d6236f515c7cd4
+msgid "Same as ``EVENT_ACCEPT`` but replying with ``PARTSTAT=TENTATIVE``."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:202
+# 08231b0ad1ac44a38dc72341f826d70c
+msgid "``EVENT_TENTATIVE_IF_NO_CONFLICT``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:204
+# 02a437382479417d8be5e2dbe749d65c
+msgid "Same as ``EVENT_TENTATIVE_IF_NO_CONFLICT`` but replying with ``PARTSTAT=TENTATIVE``."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:206
+# 021120e4ddd1493e818216d51ef91390
+msgid "``EVENT_REJECT``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:208
+# 48dffc65290545c88fc256e627ceed8f
+msgid "Same as ``ALL_REJECT`` but only applies for event invitations."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:210
+# 616b1de32e2c4ae3b1c917b584224fa3
+msgid "``EVENT_REJECT_IF_CONFLICT``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:212
+# 5a879c2142f64052adfe761727480c49
+msgid "Same as ``ACT_REJECT`` but only rejects invitations if they conflict with an existing event in the user's calendar(s)."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:215
+# 2676f1b5ed934c1ebbba49fad4a324b3
+msgid "``EVENT_SAVE_TO_FOLDER``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:217
+# 41e406aacf83477e8025a5035201307c
+msgid "Same as ``ALL_SAVE_TO_FOLDER`` but only applies for event invitations."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:219
+# f6281fb682224689bd9df90e5109eacb
+msgid "``EVENT_SAVE_AND_FORWARD``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:221
+# c37cf09c6e304035a1d8c5e919344b45
+msgid "Same as ``ALL_SAVE_AND_FORWARD`` but only applies for event invitations."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:225
+# c653c84bd3004745bc166d82057ffe8f
+msgid "Task-specific policy settings"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:227
+# 56f12def7a4f4b3690a5d43abbf588a4
+msgid "Basically all values from the :ref:`admin_wallace-invitation-policy-global-values` but with the ``TASK_`` prefix instead of ``ALL_``."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:232
+# c6d002ff058f40d28f472e00c5bc3b3f
+msgid "Per sender invitation policies"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:234
+# 5ffd0f40ae8d41f89516fcb01af3b7c5
+msgid "Each policy identifier can have a sender filter appended with ``:[sender@]domain.tld``. If present, the policy will only be applied if the sender of the iTip message matches the given domain or email address substring. Otherwise the entry will be ignored and the process continues with the next entry in the list."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:242
+# 773c4dac6b4e4507b92843dcc301bd7f
+msgid "Auto-updating all participant's calendars"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:244
+# 2753a64a00d64fbf9344847dc703b40e
+msgid "Along with the ``ALL_UPDATE`` policy, :ref:`Wallace <and_mta_wallace>` can also update copies of the referenced event in all the participant's calendars. With the regular iTip workflow, an iTip REPLY will only inform the organizer about the participation status of an individual. Enabling the following config option in ``/etc/kolab/kolab.conf`` will instruct the server to automatically update the status in the personal calendars of each listed participant."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:259
+# e8694b9ad99a4a6bbcf57d965c5e1a4d
+msgid "Auto-updating of all event copies is only executed if the event organizer receiving the iTip reply has activated the ``ALL_UPDATE`` invitation policy."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:264
+# eaf01857c8e44d968763bce2aab84948
+msgid "Resource scheduling"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:266
+# 858e30dd798640bf804b149543cfe80d
+msgid "The :ref:`resource scheduling <and_mta_wallace-resource-scheduling>` module of Wallace can pick up incoming messages and identify iTip invitations which address a resource. The invited resource's calendar is then consulted and the invitation is either accepted or declined depending on the resource's availability for the requested time."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:271
+# 25e99767d0ca41ac97d6b80b1d457d7e
+msgid "To enable the resource scheduling module, add ``resources`` to the list of active wallace modules in ``/etc/kolab/kolab.conf``:"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:283
+# d4faf6c0c8704ba89c07a0340e3a77b8
+msgid "Footers and signatures"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:285
+# 8ff21629c8f64d63878f271c74d414a6
+msgid "Another Wallace module can append footers or signatures to outgoing messages. Enable this module by adding ``footer`` to the list of active wallace modules in ``/etc/kolab/kolab.conf``:"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:295
+# c5d944a486cc41f1a4bf7903d2834e59
+msgid "The module requires the following additional config options:"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:297
+# d403156ac4bf43deaa5d2763ecbb5ba1
+msgid "``footer_text``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:299
+# c645ea87082c46b2a5de5ba74aca3d6c
+msgid "Absolute path to a text file holding the contents of the footer to be added to plain text messages."
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:302
+# 90679ed7ba1446ac8970b3ffdc2dd970
+msgid "``footer_html``"
+msgstr ""
+
+#: ../../source/administrator-guide/smtp-content-filtering.rst:304
+# 5f05b65db5f741599ecb8ba5660c266d
+msgid "Absolute path to a text file holding the HTML formatted contents of the footer to be added to outgoing HTML messages."
+msgstr ""
+

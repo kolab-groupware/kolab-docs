@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:92
+# 47712d2dfda749758639d189d5c26ec3
+msgid "Do It Yourself, or Kolab?"
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:96
+# 719dfd26e17d4dd38898907361a63c1c
+msgid "While we put an emphasis on the benefits of using Kolab Groupware rather than you DIY groupware server, please do not feel discouraged to pursue a DIY groupware server on your own -- we believe that once you have, you may appreciate Kolab Groupware more, rather than less."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:102
+# 9dcf3de1b3ad44b790e146479effe025
+msgid "Should you choose to DIY a groupware server, you would typically start with choosing a series of components that are available to you that could be made to provide you with the set of features you desire. A suggested set of such components might include:"
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:107
+# 2ab4325ae75f470196c1c861ede2c23e
+msgid "A Mail Transfer Agent (MTA) such as **Postfix**,"
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:109
+# 7d8a6c22e6ed47bf80cec0728dfa40ce
+msgid "An IMAP server such as **Cyrus IMAP**,"
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:111
+# f3e1c0742efd443aaea702a3cb2c9241
+msgid "A web client such as **Roundcube**,"
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:113
+# 1e08a876f4e24d85aebb22eeabcc5764
+msgid "An LDAP server such as **389 Directory Server**."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:115
+# 3a8c3e54acf7430d8211f3fec8deb4f6
+msgid "You would be able to hook up Postfix to Cyrus IMAP, hook up Postfix to LDAP for recipient email address verification and authentication, hook up Cyrus IMAP to LDAP for authentication and authorization, and hook up the web client to Postfix, Cyrus IMAP and LDAP, providing you with a basic infrastructure to exchange emails."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:121
+# 0200906240d64bc7b55cb19fbb1830f3
+msgid "Even just the initial setup can appear quite daunting -- something as seemingly straight-forward as SMTP turns out to become quite complex when you keep security and integrity in mind, but you want to enable your users to send using an envelope sender address that is not their authorization ID (i.e. their login username)."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:127
+# 06299d7336754d67bd9050ac439f6582
+msgid "Additional configuration could be applied to provide the web client with a Global Address Book for auto-completion and distribution groups, and probably also a few other features of the software. However it could not be set up to include additional user identities, alias sender email addresses, delegation nor managed shared folders."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:133
+# 86ee9a3575224513bf76a85faf1f0b39
+msgid "This may leave some items to be desired, but perhaps not all of them are equally important to you personally;"
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:136
+# 6620bb553a8242e69a47c89deb8929a4
+msgid "In the category of **automation**:"
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:138
+# 03169a71646747539586d92d643c99c7
+msgid "The initial setup may lead you to read many, very many HOWTOs and more (or less) detailed documentation spread across the web, to see what components to use/prefer/choose for the set of functionality you desire, and how to configure the individual components in such a way they function together."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:144
+# 314ea19b96064d449dcec11f03963ad6
+msgid "After you create a user in LDAP, you may still need to create a mailbox."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:147
+# a67c242783804b86b2f61643419e99d5
+msgid "When you change a user's name or email address, those changes may still need to be reflected elsewhere, such as access control lists on IMAP folders, the user's INBOX path, the user's web client profile name, etc."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:152
+# 5dd1fff209e3473986e22f481d316f7b
+msgid "You may have to update your configuration each time you add a new domain."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:155
+# a6880f376bd7479ba84747ba8636f335
+msgid "When you're done, you may still only have a mail server and not a groupware server."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:158
+# c300e08150954ded94ad23677a1920ad
+msgid "As such, a DIY groupware server might benefit from a little **glue** to tie together the various components -- Kolab Groupware is that glue."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:161
+# 4ec6b45e989343b6893957f9a5de8d20
+msgid "In the category of **features**:"
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:163
+# e1909f0b6470410c991796bcd7abe33d
+msgid "You may wish to be able to provide calendaring, address books, task lists, and other such nifty groupware features to your users,"
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:166
+# 795c32ca6e1444c39f2cd54d042a937a
+msgid "You may then also wish to be able to provide this content to various desktop clients, that may speak IMAP, CardDAV and/or CalDAV,"
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:170
+# 3ca355872cf34c4cab4f0be4a2782f09
+msgid "You may desire mobile device synchronization, such as your phone, phablet or tablet."
+msgstr ""
+
+#: ../../source/introduction/do-it-yourself-or-kolab.rst:173
+# aa0696afad9e4d06854667d353af9b05
+msgid "As such, to wrangle a full-featured groupware server yourself could become cumbersome. An enjoyable learning experience perhaps, but cumbersome nonetheless. Kolab Groupware provides these features, among many others, out of the box."
+msgstr ""
+

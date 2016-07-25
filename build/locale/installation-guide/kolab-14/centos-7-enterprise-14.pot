@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:92
+# 39c244c9fdc94d6b8099e8c3980f11dc
+msgid "Installation of Kolab Enterprise 14 on CentOS 7"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:94
+# 24c854ae1be94ccea14d496acf0e2f3a
+msgid "The installation of Kolab Groupware on CentOS installs a number of additional packages, from the :term:`EPEL` software repository, and the repositories for the Kolab Enterprise edition, provided by `Kolab Systems AG`_."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:100
+# 8ae6bb58c341440c99d79f6d651c12da
+msgid "Installation Procedure"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:102
+# acdd5fce51e64682a1b475bbae842e9e
+msgid "Copy the client SSL certificate and key you have obtained from `Kolab Systems AG`_ as per the instructions listed on [#]_, summarized here for your convenience:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:106
+# f3d6941b93214601af913defc30248ef
+msgid "Remove the passphrase from the SSL certificate key:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:113
+# 0f674c36e22946e6bd1743c9181e9ae0
+msgid "Concatenate the certificate file and the new key file without passphrase:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:121
+# 974cdbcca2274cb98d3f1b1dc577a1ca
+msgid "Place the file :file:`mirror.kolabsys.com.ca.cert` in :file:`/etc/pki/tls/certs/`."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:124
+# 41a268c1d6de4927bf9de490fc612d7c
+msgid "Place the file :file:`mirror.kolabsys.client.pem` in :file:`/etc/pki/tls/private/`, and correct the permissions:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:132
+# dd4560fe9c1e4959a1bb65d7b07f0819
+msgid "Install the :term:`EPEL` repository:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:138
+# 2bdd6ea41bdd41729c429014feac2ee7
+msgid "Import this signature in to the RPM database:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:144
+# fa2cb62691fa4ba0adb8564a3106069b
+msgid "Install the Kolab Enterprise repository configuration package:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:150
+# 2c36a68483f246e6860d5bb21008aef7
+msgid "Install Kolab Enterprise:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:156
+# 6f602fd347844241811d64a97ee54ad8
+msgid "Do not forget to also execute :command:`yum update`."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:158
+# cb187741024d4bd79657efe5f50e8bb6
+msgid "Continue to :ref:`installation-guide-setup-kolab`."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:161
+# 8e3e368afd284aea8b01e118cd31e8ea
+msgid "Footnotes"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:164
+# 3f110d07e2d24dff94fad75c2ab88a09
+msgid "https://support.kolabsys.com/Obtaining,_Renewing_and_Using_a_Client_SSL_Certificate#Using_a_Customer_or_Partner_Client_SSL_Certificate"
+msgstr ""
+

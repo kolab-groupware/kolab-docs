@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/sender-bcc-maps.rst:90
+# 9b0deb826a3b41bfaf1011b56efa5b3c
+msgid "Sender BCC Maps"
+msgstr ""
+
+#: ../../source/administrator-guide/sender-bcc-maps.rst:92
+# 3ad7d035457740dd9b040eba82c1e7c9
+msgid "When a shared folder is used by a number of people, each of them individually sending new messages and responding to existing threads, it is important to be able to let the other people be aware of the contents of the entire thread."
+msgstr ""
+
+#: ../../source/administrator-guide/sender-bcc-maps.rst:96
+# 73ed7a70145b49639f5bdcf529ed522e
+msgid "Suppose John and Jane are both responsible for the shared mail folder `shared/info@example.org` -- the recipient for all `info@example.org` traffic."
+msgstr ""
+
+#: ../../source/administrator-guide/sender-bcc-maps.rst:99
+# c6667e055d1745e8909c8cd24e8b4bb1
+msgid "Now suppose that John and Jane both have been delegated the authority to submit messages with an envelope sender address of `info@example.org`."
+msgstr ""
+
+#: ../../source/administrator-guide/sender-bcc-maps.rst:102
+# 775800337e1540ff8533b10080a8cbe1
+msgid "The following configuration will enable responses and new messages that John or Jane send, using the `info@example.org` identity they have been delegated authority for, to be stored as part of the ongoing conversation in `shared/info@example.org`."
+msgstr ""
+
+#: ../../source/administrator-guide/sender-bcc-maps.rst:107
+# bb3fd3de6e1148259cb2f404815fc560
+msgid "Add a lookup table :file:`/etc/postfix/ldap/sender_bcc_maps_sharedfolders.cf`:"
+msgstr ""
+
+#: ../../source/administrator-guide/sender-bcc-maps.rst:125
+# 11ff610377ea4dfca0b227e8db7915ee
+msgid "Configure **postfix** to use this lookup table:"
+msgstr ""
+

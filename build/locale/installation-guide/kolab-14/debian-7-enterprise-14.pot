@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:92
+# 31cc1af589ca4b68b39cbf40bad487a9
+msgid "Installation of Kolab Enterprise 14 on Debian 7 (Wheezy)"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:94
+# 01fb8f8768b84c63b754c23818dfd4a0
+msgid "Install the **apt-transport-https** package:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:100
+# b6f5594cc44e4cf3a098e0f9324c22ef
+msgid "Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:107
+# 9886788973374740ba57f5b45b45e841
+msgid "To ensure the Kolab packages have priority over the Debian packages, such as must be the case for PHP as well as Cyrus IMAP, please make sure the APT preferences pin the mirror.kolabsys.com origin as a preferred source."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:111
+# 2d5327540b8e4dcd9f0b4e7d5dc44f55
+msgid "Put the following in ``/etc/apt/preferences.d/kolab``:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:119
+# c5a832418e0b407d85c631f67eef2c73
+msgid "Install the client certificate and certificate authority files:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:121
+# 58d9420b134b4bdb8ed3bb29595b7080
+msgid "Remove the passphrase from the SSL certificate key:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:128
+# f1cb8cb4a2cf4befb7336870c514d489
+msgid "Concatenate the certificate file and the new key file without passphrase:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:136
+# 7fb49eae43204204a474902409c4f91d
+msgid "Place the file :file:`mirror.kolabsys.client.pem` in :file:`/etc/apt/certs/`."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:139
+# 542d67b695454df193b3e5b7e9bcf0c9
+msgid "Download the kolabenterprice mirror certificate:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:146
+# 68cca666bb0a4db3aeafb07d97b0bc88
+msgid "Correct the permissions on the private key:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:153
+# a11c52442dff4c91904cb04c9b27da2d
+msgid "Configure **APT** to use the certificates installed in step 4 by creating a file ``/etc/apt/apt.conf.d/71kolab`` with the following contents:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:172
+# d2b145df9c514caa9fcbb94657c43d02
+msgid "Update the repository metadata:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:178
+# 33657712ee964521bcaba522e17ab418
+msgid "Start the installation of the base package as follows:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:184
+# 61e5f0018f3c48809494d27896aa21e3
+msgid "When asked to confirm you want to install the package and its dependencies, press Enter."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:186
+# e89fb0ec6920413b85c140f381bd390b
+msgid "Continue to :ref:`installation-guide-setup-kolab`."
+msgstr ""
+

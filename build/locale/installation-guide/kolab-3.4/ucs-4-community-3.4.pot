@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:92
+# 78b96013f7404f2894f0ac0cb5344cfd
+msgid "Installation of Kolab 3.4 on Univention Corporate Server 4"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:94
+# b1e738979f2647649f86a97462a131ef
+msgid "Kolab Groupware is available in the App Center included with Univention Corporate Server. The edition in the Univention Corporate Server App Center is the recommended edition of Kolab Groupware unless you have a support contract with `Kolab Systems`_ -- in which case you will want to install the enterprise edition as documented in :ref:`installation-ucs-enterprise`."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:103
+# d5590ed9c3b44f69aa5f57bce1a26316
+msgid "There are **multiple versions** of Kolab for UCS. Make sure you choose the correct version for your requirements."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:107
+# 846c2c33ccdc427497487ee4afef26b0
+msgid "Kolab Groupware from the OBS"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:111
+# e6fe664516394dc0b4c4cd6193308e43
+msgid "This is a community version of Kolab Groupware, and it is not recommended you run this version in production. Instead, for production systems, use Kolab Enterprise from Kolab Systems."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:115
+# c8c657eed26c44149221f6933fc2a559
+msgid "Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:122
+# baed26e723164961b4671c8f5764f2ce
+msgid "Import the GPG key used to sign the packages:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:132
+# 6039240908bf45f88ec16fba0ecf2fad
+msgid "The key's fingerprint is: ``79D8 6A05 FDE6 C9FB 4E43  A6C5 830C 2BCF 446D 5A45``"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:138
+# 837a01b2fb394692a64e4f56e79b5aee
+msgid "To ensure the Kolab packages have priority over the Debian packages, such as must be the case for PHP as well as Cyrus IMAP, please make sure the APT preferences pin the obs.kolabsys.com origin as a preferred source."
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:142
+# ffad86f57eca41659af6d4b2b5bd29ae
+msgid "Put the following in ``/etc/apt/preferences.d/kolab``:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:150
+# 6842baf7af3c4b6bbd53a5431b3dd903
+msgid "Enable the unmaintained UCS software repositories:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:156
+# d1695bed0231460995f6eee8a51108dd
+msgid "Update the repository metadata and install Kolab:"
+msgstr ""
+
+#: ../../source/installation-guide/kolab-3.4/ucs-4-community-3.4.rst:164
+# 77b225da60d54e79be19109d25f5904d
+msgid "The Kolab Groupware packages for Univention Corporate Server are configured automatically. There is no need to run any setup."
+msgstr ""
+
