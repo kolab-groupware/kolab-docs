@@ -1,16 +1,16 @@
-[submodule "source/webmail-user-guide/roundcubemail"]
-	path = source/webmail-user-guide/roundcubemail
+[submodule "ext/kolab"]
+	path = ext/kolab
+	url = https://git.kolab.org/diffusion/DS/docs-sphinx-ext.git
+    branch = master
+[submodule "source/webmail-user-guide/roundcubemail-core"]
+	path = source/webmail-user-guide/roundcubemail-core
+	url = https://github.com/roundcube/roundcubemail
+    branch = master
+[submodule "source/webmail-user-guide/roundcubemail-helpdocs"]
+	path = source/webmail-user-guide/roundcubemail-helpdocs
 	url = https://github.com/roundcube/roundcubemail-helpdocs
     branch = master
 [submodule "source/webmail-user-guide/roundcubemail-plugins-kolab"]
 	path = source/webmail-user-guide/roundcubemail-plugins-kolab
 	url = https://git.kolab.org/diffusion/RPK/roundcubemail-plugins-kolab.git
-    branch = master
-[submodule "ext/kolab"]
-	path = ext/kolab
-	url = https://git.kolab.org/diffusion/DS/docs-sphinx-ext.git
-    branch = master
-[submodule "source/webmail-user-guide/roundcubemail-plugins"]
-	path = source/webmail-user-guide/roundcubemail-plugins
-	url = https://github.com/roundcube/roundcubemail
     branch = master
