@@ -2,6 +2,7 @@
 #
 
 # You can set these variables from the command line.
+SOURCEDIR     = $$(pwd)/source
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
@@ -41,59 +42,34 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
 submodules:
-	@if [ ! -d "source/webmail-user-guide/roundcubemail/.git" -o ! -f "ext/kolab/fancyfigure/__init__.py" -o ! -d "source/webmail-user-guide/roundcubemail-plugins-kolab/.git" -o ! -d "source/webmail-user-guide/roundcubemail-plugins/.git" ]; then \
-		if [ -x "$$(which git 2>/dev/null)" ]; then \
-			git submodule init ; \
-			git submodule update ; \
-		fi ; \
+	if [ -d "source/webmail-user-guide/roundcubemail/.git" ]; then \
+		rm -rf source/webmail-user-guide/roundcubemail/ ; \
 	fi
-	for plugin in $$(find source/webmail-user-guide/roundcubemail-plugins-kolab/plugins/ -type d -name "en_US"); do \
-		plugin=$$(echo $${plugin} | \
-				sed \
-					-e 's|source/webmail-user-guide/roundcubemail-plugins-kolab/plugins/||g' \
-					-e 's|/helpdocs/en_US||g' \
-			) ; \
-		echo "Plugin: $$plugin" ; \
-		ln -sfv ../../../roundcubemail-plugins-kolab/plugins/$${plugin}/helpdocs/en_US/ source/webmail-user-guide/roundcubemail/en_US/_plugins/$${plugin} || : ; \
-	done
-	for plugin in $$(find source/webmail-user-guide/roundcubemail-plugins/plugins/ -type d -name "en_US"); do \
-		plugin=$$(echo $${plugin} | \
-				sed \
-					-e 's|source/webmail-user-guide/roundcubemail-plugins/plugins/||g' \
-					-e 's|/helpdocs/en_US||g' \
-			) ; \
-		echo "Plugin: $$plugin" ; \
-		ln -sfv ../../../roundcubemail-plugins/plugins/$${plugin}/helpdocs/en_US/ source/webmail-user-guide/roundcubemail/en_US/_plugins/$${plugin} || : ; \
-	done
-
-helplocales:
-	@for langmap in $(HELPDOCS_LOCALES); do \
-		lang=$${langmap:0:5} ; \
-		destlang=$${langmap#*:} ; \
-		echo $$lang "=>" $$destlang ; \
-		if [ -d "locale/$$destlang" ]; then \
-			mkdir -p locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail ; \
-			ln -sf ../../../../../source/webmail-user-guide/roundcubemail/locale/$$lang/LC_MESSAGES locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail/en_US ; \
-		fi ; \
-		for docs in $$(find source/webmail-user-guide/roundcubemail-plugins-kolab -type d -name "helpdocs"); do \
-			if [ -d "locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail/en_US" ]; then \
-				plugin=$$(basename $$(dirname $$docs)) ; \
-				mkdir -p locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail/en_US/_plugins ; \
-				ln -sf $$(pwd)/$$docs/locale/$$lang/LC_MESSAGES locale/$$destlang/LC_MESSAGES/webmail-user-guide/roundcubemail/en_US/_plugins/$$plugin ; \
-			fi ; \
-		done ; \
-	done
+	if [ -d "source/webmail-user-guide/roundcubemail-core/.git" ]; then \
+		rm -rf source/webmail-user-guide/roundcubemail-core/ ; \
+	fi
+	if [ -d "source/webmail-user-guide/roundcubemail-helpdocs/.git" ]; then \
+		rm -rf source/webmail-user-guide/roundcubemail-helpdocs/.git ; \
+	fi
+	if [ -d "source/webmail-user-guide/roundcubemail-plugins-kolab/.git" ]; then \
+		rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/ ; \
+	fi
+	if [ -x "$$(which git 2>/dev/null)" ]; then \
+		git submodule init ; \
+		git submodule update ; \
+	fi
 
 helpdocs: submodules
-	@cd source/webmail-user-guide/roundcubemail/en_US/_plugins/ ; \
-	for docs in $$(find ../../../roundcubemail-plugins-kolab/plugins/ -type d -name "helpdocs"); do \
-		plugin=$$(basename $$(dirname $$docs)) ; \
-		ln -svf $$docs/en_US/ $$plugin ; \
-	done
-	@cd source/webmail-user-guide/roundcubemail/en_US/_plugins/ ; \
-	for docs in $$(find ../../../roundcubemail-plugins/plugins/ -type d -name "helpdocs"); do \
-		plugin=$$(basename $$(dirname $$docs)) ; \
-		ln -svf $$docs/en_US/ $$plugin ; \
+	if [ -d "$(SOURCEDIR)/webmail-user-guide/roundcubemail/" ]; then \
+		rm -rf "$(SOURCEDIR)/webmail-user-guide/roundcubemail/" ; \
+	fi
+	for lang in en_US de_DE; do \
+		mkdir -p $(SOURCEDIR)/webmail-user-guide/roundcubemail/$${lang}/_plugins/ ; \
+		cd $(SOURCEDIR)/webmail-user-guide/roundcubemail/$${lang}/_plugins/ ; \
+		for docs in $$(find ../../../roundcubemail-plugins-kolab/plugins/ -type d -name "helpdocs"); do \
+			plugin=$$(basename $$(dirname $${docs})) ; \
+			ln -svf $${docs}/$${lang}/ $${plugin} ; \
+		done ; \
 	done
 
 locales: gettext helplocales
@@ -101,9 +77,9 @@ locales: gettext helplocales
 clean:
 	@rm -rf $(BUILDDIR)/*
 	@rm -rf source/webmail-user-guide/roundcubemail/
+	@rm -rf source/webmail-user-guide/roundcubemail-plugins/
 	@rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/
 	@rm -rf source/*/_fancyfigures/
-	@rm -rf locale/*/LC_MESSAGES/webmail-user-guide/roundcubemail
 
 html: submodules
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
