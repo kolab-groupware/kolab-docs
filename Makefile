@@ -91,17 +91,19 @@ locales: gettext helplocales
 
 clean:
 	@rm -rf $(BUILDDIR)/*
-	@rm -rf source/webmail-user-guide/roundcubemail/
-	@rm -rf source/webmail-user-guide/roundcubemail-plugins/
+	@rm -rf source/webmail-user-guide/roundcubemail-core/
+	@rm -rf source/webmail-user-guide/roundcubemail-helpdocs/
 	@rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/
 	@rm -rf source/*/_fancyfigures/
 
 html: submodules helpdocs
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	for file in $$(find locale -type f -name "*.po"); do \
+		msguniq $${file} -u --use-first -o $$(echo $${file} | sed -r -e 's/\.po$$/\.po-uniq/g') ; \
+		mv $$(echo $${file} | sed -r -e 's/\.po$$/\.po-uniq/g') $${file} ; \
 		msgfmt $${file} -o $$(echo $${file} | sed -r -e 's/\.po$$/\.mo/g') ; \
 	done
-	for lang in $(INTL_LOCALES); do
+	for lang in $(INTL_LOCALES); do \
 		$(SPHINXBUILD) -b html -D language='$${lang}' $(ALLSPHINXOPTS) $(BUILDDIR)/html-$${lang} ; \
 	done
 	@echo
@@ -193,6 +195,9 @@ info: clean
 	@echo "makeinfo finished; the Info files are in $(BUILDDIR)/texinfo."
 
 gettext: clean helpdocs
+	rm -rf $(SOURCEDIR)/webmail-user-guide/roundcubemail-core/
+	rm -rf $(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/
+	rm -rf $(SOURCEDIR)/webmail-user-guide/roundcubemail-plugins-kolab/
 	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) $(BUILDDIR)/locale
 	$(SPHINXINTL) update -p $(BUILDDIR)/locale -d locale $(INTL_LOCALES)
 	@echo
