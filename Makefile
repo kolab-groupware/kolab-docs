@@ -98,6 +98,12 @@ clean:
 
 html: submodules helpdocs
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	for file in $$(find locale -type f -name "*.po"); do \
+		msgfmt $${file} -o $$(echo $${file} | sed -r -e 's/\.po$$/\.mo/g') ; \
+	done
+	for lang in $(INTL_LOCALES); do
+		$(SPHINXBUILD) -b html -D language='$${lang}' $(ALLSPHINXOPTS) $(BUILDDIR)/html-$${lang} ; \
+	done
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
