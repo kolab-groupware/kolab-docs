@@ -80,11 +80,11 @@ helpdocs: submodules
 	cd $(SOURCEDIR)/webmail-user-guide/roundcubemail/_plugins/ && \
 		for docs in $$(find ../../roundcubemail-core/plugins/ -type d -name "helpdocs"); do \
 			plugin=$$(basename $$(dirname $${docs})) ; \
-			ln -svf $${docs}/en_US/ $${plugin} ; \
+			cp -av $${docs}/en_US/ $${plugin} ; \
 		done && \
 		for docs in $$(find ../../roundcubemail-plugins-kolab/plugins/ -type d -name "helpdocs"); do \
 			plugin=$$(basename $$(dirname $${docs})) ; \
-			ln -svf $${docs}/en_US/ $${plugin} ; \
+			cp -av $${docs}/en_US/ $${plugin} ; \
 		done
 
 locales: gettext helplocales
@@ -186,12 +186,11 @@ info: clean
 	make -C $(BUILDDIR)/texinfo info
 	@echo "makeinfo finished; the Info files are in $(BUILDDIR)/texinfo."
 
-gettext: clean submodules
+gettext: clean helpdocs
 	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) $(BUILDDIR)/locale
 	$(SPHINXINTL) update -p $(BUILDDIR)/locale -d locale $(INTL_LOCALES)
 	@echo
 	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
-	rm -rf locale/*/LC_MESSAGES/webmail-user-guide/roundcubemail-plugins
 
 update-txconfig-resources: gettext
 	rm -rf $(BUILDDIR)/locale/webmail-user-guide
