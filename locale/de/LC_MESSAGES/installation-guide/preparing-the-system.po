@@ -29,10 +29,10 @@ msgstr ""
 #: ../../source/installation-guide/preparing-the-system.rst:99
 #, python-format
 msgid ""
-"When installing the Kolab server, we recommend using LVM when "
-"partitioning the system. The following directories could benefit from "
-"being on separate logical volumes, leaving about 10% of raw disk space in"
-" the volume group unallocated:"
+"When installing the Kolab server, we recommend using LVM when partitioning "
+"the system. The following directories could benefit from being on separate "
+"logical volumes, leaving about 10% of raw disk space in the volume group "
+"unallocated:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:104
@@ -53,42 +53,41 @@ msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:111
 msgid ""
-"Partition and/or divide into logical volumes, configure the mount points "
-"and mount the filesystems prior to the installation of packages, as "
-"packages may deploy files into these directories."
+"Partition and/or divide into logical volumes, configure the mount points and "
+"mount the filesystems prior to the installation of packages, as packages may "
+"deploy files into these directories."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:115
 msgid ""
 "Should you decide to partition only after the packages have already been "
-"installed, or after the deployment has already been used, first mount the"
-" filesystems somewhere else and synchronize the contents from the "
-"original directories over to the new filesystem hierarchy. Please note "
-"services should be stopped before doing so, or only corrupt data will be "
-"transfered. Remove the original contents of the filesystem after having "
-"synchronized, then mount the filesystems under their target mount points."
+"installed, or after the deployment has already been used, first mount the "
+"filesystems somewhere else and synchronize the contents from the original "
+"directories over to the new filesystem hierarchy. Please note services "
+"should be stopped before doing so, or only corrupt data will be transfered. "
+"Remove the original contents of the filesystem after having synchronized, "
+"then mount the filesystems under their target mount points."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:124
 msgid ""
-"For large or multi-domain installations, we suggest moving "
-":file:`/var/lib/imap/` and :file:`/var/spool/imap/` to "
-":file:`/srv/imap/[$domain/]config/` and "
-":file:`/srv/imap/[$domain/]default/` respectively."
+"For large or multi-domain installations, we suggest moving :file:`/var/lib/"
+"imap/` and :file:`/var/spool/imap/` to :file:`/srv/imap/[$domain/]config/` "
+"and :file:`/srv/imap/[$domain/]default/` respectively."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:129
 msgid ""
-"In allowing :file:`/srv/imap/` to be one separate partition, backup using"
-" LVM snapshots is easier. Note that ``$domain`` in the aforementioned "
-"path is optional, and should only be used when multiple, but separate, "
-"isolated IMAP servers are to be started."
+"In allowing :file:`/srv/imap/` to be one separate partition, backup using "
+"LVM snapshots is easier. Note that ``$domain`` in the aforementioned path is "
+"optional, and should only be used when multiple, but separate, isolated IMAP "
+"servers are to be started."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:136
 msgid ""
-"When partitions are mounted under the aforementioned directories, they do"
-" not necessarily have the correct filesystem permissions any longer. The "
+"When partitions are mounted under the aforementioned directories, they do "
+"not necessarily have the correct filesystem permissions any longer. The "
 "following is a list of default permissions."
 msgstr ""
 
@@ -98,8 +97,8 @@ msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:152
 msgid ""
-"Not all components of Kolab Groupware are currently completely compatible"
-" with running under SELinux enforcing the targeted policy."
+"Not all components of Kolab Groupware are currently completely compatible "
+"with running under SELinux enforcing the targeted policy."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:155
@@ -117,22 +116,21 @@ msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:164
 msgid ""
-"To view the current mode SELinux operates in, execute the following "
-"command:"
+"To view the current mode SELinux operates in, execute the following command:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:171
 msgid ""
-"To temporarily disable SELinux's enforcement of the targeted policy "
-"(without rebooting the system), issue the following command:"
+"To temporarily disable SELinux's enforcement of the targeted policy (without "
+"rebooting the system), issue the following command:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:178
 msgid ""
 "To disable SELinux's enforcement of the targeted policy in a manner "
-"persistent across system restarts, edit :file:`/etc/selinux/config` and "
-"set SELINUX to permissive rather than enforcing. Doing so also changes "
-"the ``Mode from config file:`` line in the output of :command:`sestatus`."
+"persistent across system restarts, edit :file:`/etc/selinux/config` and set "
+"SELINUX to permissive rather than enforcing. Doing so also changes the "
+"``Mode from config file:`` line in the output of :command:`sestatus`."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:186
@@ -141,10 +139,10 @@ msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:188
 msgid ""
-"Kolab Groupware deliberately does not touch any firewall settings, "
-"perhaps wrongly assuming you know best. Before you continue, you should "
-"verify your firewall allows the standard ports used with Kolab Groupware."
-" These ports include:"
+"Kolab Groupware deliberately does not touch any firewall settings, perhaps "
+"wrongly assuming you know best. Before you continue, you should verify your "
+"firewall allows the standard ports used with Kolab Groupware. These ports "
+"include:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:194
@@ -285,9 +283,9 @@ msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:226
 msgid ""
-"Summarizing these changes into /etc/sysconfig/iptables, working off of an"
-" original, default installation of Enterprise Linux 6, this file would "
-"look as follows:"
+"Summarizing these changes into /etc/sysconfig/iptables, working off of an "
+"original, default installation of Enterprise Linux 6, this file would look "
+"as follows:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:259
@@ -300,9 +298,9 @@ msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:268
 msgid ""
-"CentOS / RHEL 6 is using the ``firewalld`` to manage the kernel firewall."
-" You've to make use of the ``firewall-cmd`` command to add new rules to "
-"open the required ports."
+"CentOS / RHEL 6 is using the ``firewalld`` to manage the kernel firewall. "
+"You've to make use of the ``firewall-cmd`` command to add new rules to open "
+"the required ports."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:272
@@ -317,14 +315,14 @@ msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:290
 msgid ""
-"No user or group with IDs 412, 413 or 414 may exist on the system prior "
-"to the installation of Kolab."
+"No user or group with IDs 412, 413 or 414 may exist on the system prior to "
+"the installation of Kolab."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:293
 msgid ""
-"No user or group with the names kolab, kolab-n or kolab-r may exist on "
-"the system prior to the installation of Kolab."
+"No user or group with the names kolab, kolab-n or kolab-r may exist on the "
+"system prior to the installation of Kolab."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:299
@@ -334,25 +332,24 @@ msgstr ""
 #: ../../source/installation-guide/preparing-the-system.rst:301
 msgid ""
 "The setup procedure of Kolab Groupware also requires that the Fully "
-"Qualified Domain Name (FQDN) for the system resolves back to the system. "
-"If the FQDN does not resolve back to the system itself, the Kolab "
-"Groupware server components will refer to the system by the configured or"
-" detected FQDN, but will fail to communicate with one another."
+"Qualified Domain Name (FQDN) for the system resolves back to the system. If "
+"the FQDN does not resolve back to the system itself, the Kolab Groupware "
+"server components will refer to the system by the configured or detected "
+"FQDN, but will fail to communicate with one another."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:309
 msgid ""
-"Please see `Why Your System Should Have a Proper FQDN`_ for more "
-"information."
+"Please see `Why Your System Should Have a Proper FQDN`_ for more information."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:312
 msgid ""
 "Should the FQDN of the system (found with hostname -f) be, for example, "
-"``kolab.example.org``, then ``kolab.example.org`` should resolve to the "
-"IP address configured on one of the network interfaces not the loopback "
-"interface, and the IP address configured on said network interface should"
-" have a reverse DNS entry resulting in at least ``kolab.example.org``."
+"``kolab.example.org``, then ``kolab.example.org`` should resolve to the IP "
+"address configured on one of the network interfaces not the loopback "
+"interface, and the IP address configured on said network interface should "
+"have a reverse DNS entry resulting in at least ``kolab.example.org``."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:320
@@ -371,8 +368,8 @@ msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:350
 msgid ""
-"If you want to quickly fix your system's FQDN resolving back to your "
-"server, an entry in :file:`/etc/hosts` suffices for the time being:"
+"If you want to quickly fix your system's FQDN resolving back to your server, "
+"an entry in :file:`/etc/hosts` suffices for the time being:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:358
@@ -381,8 +378,8 @@ msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:360
 msgid ""
-"LXC containers (\"chroots on steroids\") need ``/dev/shm/`` mounted "
-"read/write for user accounts."
+"LXC containers (\"chroots on steroids\") need ``/dev/shm/`` mounted read/"
+"write for user accounts."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:363
@@ -391,65 +388,13 @@ msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:370
 msgid ""
-"To make sure the permissions are correct even after a reboot, make sure "
-"``/etc/fstab`` contains a line similar to the following:"
+"To make sure the permissions are correct even after a reboot, make sure ``/"
+"etc/fstab`` contains a line similar to the following:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:377
 msgid ""
-"Note that alongside ``/dev/shm`` problems, resolving hostnames "
-"(especially ``localhost`` to ``127.0.0.1``, or inversely, ``127.0.0.1`` "
-"to ``localhost``) have also been reported."
+"Note that alongside ``/dev/shm`` problems, resolving hostnames (especially "
+"``localhost`` to ``127.0.0.1``, or inversely, ``127.0.0.1`` to "
+"``localhost``) have also been reported."
 msgstr ""
-
-#~ msgid ""
-#~ "For large or multi-domain installations,"
-#~ " we suggest moving ``/var/lib/imap/`` and"
-#~ " ``/var/spool/imap/`` to "
-#~ "``/srv/imap/[$domain/]config/`` and "
-#~ "``/srv/imap/[$domain/]default/`` respectively. In "
-#~ "allowing ``/srv/imap/`` to be one "
-#~ "separate partition, backup using LVM "
-#~ "snapshots is easier. Note that "
-#~ "``$domain`` in the aforementioned path "
-#~ "is optional, and should only be "
-#~ "used when multiple, but separate, "
-#~ "isolated IMAP servers are to be "
-#~ "started."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "To view the current mode SELinux "
-#~ "operates in, execute the following "
-#~ "command::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "To temporarily disable SELinux's enforcement"
-#~ " of the targeted policy (without "
-#~ "rebooting the system), issue the "
-#~ "following command::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "To disable SELinux's enforcement of the"
-#~ " targeted policy in a manner "
-#~ "persistent across system restarts, edit "
-#~ "``/etc/selinux/config`` and set SELINUX to "
-#~ "permissive rather than enforcing. Doing "
-#~ "so also changes the Mode from "
-#~ "``config file:`` line in the output "
-#~ "of sestatus."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Summarizing these changes into "
-#~ "/etc/sysconfig/iptables, working off of an "
-#~ "original, default installation of Centos "
-#~ "6, this file would look as "
-#~ "follows:"
-#~ msgstr ""
-
-#~ msgid "After changing /etc/sysconfig/iptables, execute a service restart::"
-#~ msgstr ""
-

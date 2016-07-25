@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:36+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-documentation/language/fr_FR/)\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -93,9 +94,9 @@ msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:84
 msgid ""
-"Furthermore, the Kolab Groupware environment offers functionality beyond the"
-" exchange of regular email messages, such as calendaring, maintaining "
-"address books, task management, journaling, and more."
+"Furthermore, the Kolab Groupware environment offers functionality beyond the "
+"exchange of regular email messages, such as calendaring, maintaining address "
+"books, task management, journaling, and more."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:88
@@ -123,8 +124,8 @@ msgstr ""
 #: ../../source/architecture-and-design/introduction.rst:103
 msgid ""
 "The use of LDAP allows the structuring of information in such a way that it "
-"enables the delegation of authority over its entries, can prevent users from"
-" accessing certain attributes or entries, and allows the groupware solution "
+"enables the delegation of authority over its entries, can prevent users from "
+"accessing certain attributes or entries, and allows the groupware solution "
 "to scale to over several millions of users -- ideal for groupware "
 "environments."
 msgstr ""
@@ -132,10 +133,10 @@ msgstr ""
 #: ../../source/architecture-and-design/introduction.rst:109
 msgid ""
 "Please note that at the very core of the Kolab Groupware design is that "
-"Kolab **consumes** information in LDAP, but does not ship its own version of"
-" LDAP. As such, any LDAP server implementation could be used, albeit Kolab "
-"Groupware supports those LDAP server implementations that ship either of the"
-" following supported controls, or alternatively falls back to regular "
+"Kolab **consumes** information in LDAP, but does not ship its own version of "
+"LDAP. As such, any LDAP server implementation could be used, albeit Kolab "
+"Groupware supports those LDAP server implementations that ship either of the "
+"following supported controls, or alternatively falls back to regular "
 "searches -- which incur significant performance penalties and require "
 "significantly more resources:"
 msgstr ""
@@ -173,8 +174,7 @@ msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:133
 msgid ""
-"For more information on LDAP integration in Kolab Groupware, please refer "
-"to:"
+"For more information on LDAP integration in Kolab Groupware, please refer to:"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:136
@@ -258,8 +258,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:190
 msgid ""
-"In Kolab Groupware, this data storage layer is the IMAP spool, accessible by"
-" any client software that speaks the IMAP protocol."
+"In Kolab Groupware, this data storage layer is the IMAP spool, accessible by "
+"any client software that speaks the IMAP protocol."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:193
@@ -286,9 +286,9 @@ msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:210
 msgid ""
-"Although the Kolab web client is powerful and fast, some users might want to"
-" use native Desktop clients. There is a variety of Desktop clients "
-"compatible with the Kolab Groupware solution. They include:"
+"Although the Kolab web client is powerful and fast, some users might want to "
+"use native Desktop clients. There is a variety of Desktop clients compatible "
+"with the Kolab Groupware solution. They include:"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:214
@@ -378,8 +378,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:255
 msgid ""
-"If for some reason ActiveSync is not supported on the device, the CalDAV and"
-" CardDAV protocols can be used instead as a fall back."
+"If for some reason ActiveSync is not supported on the device, the CalDAV and "
+"CardDAV protocols can be used instead as a fall back."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:262
@@ -523,8 +523,7 @@ msgid ""
 "The scaling of a deployed solution is best applied to each individual "
 "functional component separately, for the number of web servers your "
 "deployment needs at any given point does not directly correspond with the "
-"amount of mail exchangers your deployment needs (at that point or "
-"otherwise)."
+"amount of mail exchangers your deployment needs (at that point or otherwise)."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:392
@@ -541,7 +540,7 @@ msgstr ""
 #: ../../source/architecture-and-design/introduction.rst:399
 msgid ""
 "A solution that is capable of adapting to the new environment is clearly "
-"much more flexible -- this does require a good understanding of the intended"
-" architecture of the solution, and a well-defined deployment use-case to "
+"much more flexible -- this does require a good understanding of the intended "
+"architecture of the solution, and a well-defined deployment use-case to "
 "adapt to."
 msgstr ""

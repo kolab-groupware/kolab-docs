@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:34+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p"
-"/kolab-documentation/language/zh_CN/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,10 +28,10 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:94
 msgid ""
-"The configuration on Debian(-based distributions) is similar, but the "
-"base path for the certifcates storage is different, and Debian already "
-"has a group called ``ssl-cert`` to which the user accounts for "
-"applications like Cyrus IMAP or Postfix are added by default."
+"The configuration on Debian(-based distributions) is similar, but the base "
+"path for the certifcates storage is different, and Debian already has a "
+"group called ``ssl-cert`` to which the user accounts for applications like "
+"Cyrus IMAP or Postfix are added by default."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:99
@@ -41,13 +41,12 @@ msgstr ""
 #: ../../source/howtos/secure-kolab-server.rst:103
 #, python-format
 msgid ""
-"This guide provides general information about how to enable ssl/tls and "
-"the majority of your kolab services. This guide is by no means 100% "
-"complete nor will it get's updated everytime ciphers or protocols get "
-"deprecated.If you want to know more get deeper knowledge about securing a"
-" particular service please consult the corresponding software "
-"documentation or other projects that take care about hardening your "
-"server."
+"This guide provides general information about how to enable ssl/tls and the "
+"majority of your kolab services. This guide is by no means 100% complete nor "
+"will it get's updated everytime ciphers or protocols get deprecated.If you "
+"want to know more get deeper knowledge about securing a particular service "
+"please consult the corresponding software documentation or other projects "
+"that take care about hardening your server."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:110
@@ -64,16 +63,16 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:117
 msgid ""
-"Prepare your certificates! You'll need your certificate, your key, the CA"
-" and intermediate CA certificates. This tutorial is based on the StartCom"
-" SSL CA. Feel free to use any other Certificate Authority to your liking."
+"Prepare your certificates! You'll need your certificate, your key, the CA "
+"and intermediate CA certificates. This tutorial is based on the StartCom SSL "
+"CA. Feel free to use any other Certificate Authority to your liking."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:121
 msgid ""
 "In this case the certificate is a wildcard \\*.example.org certificate, "
-"which makes it easier to cover various hostnames (like "
-"``smtp.example.org``, ``imap.example.org`` and ``webmail.example.org``)."
+"which makes it easier to cover various hostnames (like ``smtp.example.org``, "
+"``imap.example.org`` and ``webmail.example.org``)."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:125
@@ -82,22 +81,21 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:127
 msgid ""
-"On Debian the default location is :file:`/etc/ssl/` instead of "
-":file:`/etc/pki/tls/`."
+"On Debian the default location is :file:`/etc/ssl/` instead of :file:`/etc/"
+"pki/tls/`."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:135
 msgid ""
-"On Debian: Make sure the files have the correct permissions: * "
-"`/etc/ssl/private/example.org.key`: owner root, group ssl-cert and mode "
-"0640 * `/etc/ssl/certs/example.org.crt`: owner root, group root and mode "
-"0666"
+"On Debian: Make sure the files have the correct permissions: * `/etc/ssl/"
+"private/example.org.key`: owner root, group ssl-cert and mode 0640 * `/etc/"
+"ssl/certs/example.org.crt`: owner root, group root and mode 0666"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:139
 msgid ""
-"You should have obtained a CA certificate or CA certificate chain from "
-"your SSL certificate issuer."
+"You should have obtained a CA certificate or CA certificate chain from your "
+"SSL certificate issuer."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:142
@@ -117,8 +115,8 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:170
 msgid ""
-"Add an SSL group. Only members of this group should be able to access "
-"your private key, etc."
+"Add an SSL group. Only members of this group should be able to access your "
+"private key, etc."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:173
@@ -131,9 +129,8 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:184
 msgid ""
-"Other applications and scripts that want to communicate via SSL should "
-"point to the cabundle in case they want check if your own certificate is "
-"trusted."
+"Other applications and scripts that want to communicate via SSL should point "
+"to the cabundle in case they want check if your own certificate is trusted."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:187
@@ -142,8 +139,8 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:194
 msgid ""
-"On Debian based systems you've a different location/command, but the rest"
-" is the same."
+"On Debian based systems you've a different location/command, but the rest is "
+"the same."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:203
@@ -169,9 +166,9 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:230
 msgid ""
-"On Debian: Change the paths according to the Debian file structure "
-"(replace `/etc/pki/tls` with `/etc/ssl`. Make sure that the user `cyrus` "
-"is part of the `ssl-certs` group."
+"On Debian: Change the paths according to the Debian file structure (replace "
+"`/etc/pki/tls` with `/etc/ssl`. Make sure that the user `cyrus` is part of "
+"the `ssl-certs` group."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:233
@@ -194,9 +191,9 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:272
 msgid ""
-"On Debian: Change the paths according to the Debian file structure "
-"(replace `/etc/pki/tls` with `/etc/ssl`. Make sure that the user "
-"`postfix` is part of the `ssl-certs` group."
+"On Debian: Change the paths according to the Debian file structure (replace "
+"`/etc/pki/tls` with `/etc/ssl`. Make sure that the user `postfix` is part of "
+"the `ssl-certs` group."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:275
@@ -213,8 +210,8 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:287
 msgid ""
-"The wildly used **mod_ssl** and **mod_nss**. Since **mod_nss** was "
-"already installed and loaded through some dependency I'll cover this."
+"The wildly used **mod_ssl** and **mod_nss**. Since **mod_nss** was already "
+"installed and loaded through some dependency I'll cover this."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:291
@@ -275,8 +272,8 @@ msgstr ""
 #: ../../source/howtos/secure-kolab-server.rst:406
 msgid ""
 "Unless you want to make your LDAP Service available to other services on "
-"other servers you can safely skip this section. There's no need to enable"
-" SSL/TLS if you only use LDAP on ``localhost``."
+"other servers you can safely skip this section. There's no need to enable "
+"SSL/TLS if you only use LDAP on ``localhost``."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:410
@@ -316,9 +313,9 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:488
 msgid ""
-"You can test if your LDAP over SSL is configured correctly via the "
-"``openssl s_client -connect localhost:636`` command, or just making a "
-"query using ``ldapsearch``:"
+"You can test if your LDAP over SSL is configured correctly via the ``openssl "
+"s_client -connect localhost:636`` command, or just making a query using "
+"``ldapsearch``:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:492
@@ -339,8 +336,8 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:514
 msgid ""
-"With the HTTP Service configured to force SSL communication you must "
-"add/update your kolab-cli API url."
+"With the HTTP Service configured to force SSL communication you must add/"
+"update your kolab-cli API url."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:525
@@ -363,8 +360,8 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:543
 msgid ""
-"Lets remove the php-close tag line as a quick hack to make it easier for "
-"us to extend the :file:`/etc/roundcubemail/config.inc.php`:"
+"Lets remove the php-close tag line as a quick hack to make it easier for us "
+"to extend the :file:`/etc/roundcubemail/config.inc.php`:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:550
@@ -381,16 +378,15 @@ msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:571
 msgid ""
-"This will enable the ssl-verification for internal api calls between "
-"kolab php components (like roundcube <> chwala). If you care about this "
-"you're free to do so, but don't forget the parts of python/kolab.conf as "
-"well."
+"This will enable the ssl-verification for internal api calls between kolab "
+"php components (like roundcube <> chwala). If you care about this you're "
+"free to do so, but don't forget the parts of python/kolab.conf as well."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:576
 msgid ""
-"Usually these calls are internal (on localhost) and therefore don't "
-"really need to to trust the ssl endpoint."
+"Usually these calls are internal (on localhost) and therefore don't really "
+"need to to trust the ssl endpoint."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:579
@@ -400,47 +396,3 @@ msgstr ""
 #: ../../source/howtos/secure-kolab-server.rst:585
 msgid "Enable SSL verification against our extended CA bundle."
 msgstr ""
-
-#~ msgid "This HOWTO is based on Centos 6.4."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "On Debian based systems it's even "
-#~ "easier. The command update-ca-"
-#~ "certificates takes care of the ca-"
-#~ "bundle file."
-#~ msgstr ""
-
-#~ msgid "Apache"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Apache offers 2 modules that provide "
-#~ "SSL support. The wildly used "
-#~ "**mod_ssl**, and **mod_nss**. Since "
-#~ "**mod_nss** was already installed and "
-#~ "loaded through some dependency I'll "
-#~ "cover this. Feel free to use "
-#~ "**mod_ssl**."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "I configures mod_nss because it was "
-#~ "already installed. If you prefer mod_ssl"
-#~ " nobody stops you."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "There're enough tutorials out there if"
-#~ " you want to configure **mod_ssl** on"
-#~ " your Apache. Maybe you want to "
-#~ "take a look on the nginx "
-#~ "configuration as well."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you really want/need you can "
-#~ "also add SSL support to your LDAP"
-#~ " Server"
-#~ msgstr ""
-

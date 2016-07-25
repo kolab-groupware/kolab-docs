@@ -24,18 +24,17 @@ msgstr ""
 #: ../../source/contributor-guide/bug-reporting-structured.rst:94
 msgid ""
 "Long-term support versions of Kolab maintain larger sets of different "
-"versions of software, and it becomes important to ensure that the fix for"
-" an issue in `foo-1.0` does not require a properly entitled customer to "
-"upgrade to a later version of Kolab, or even a later version of `foo`."
+"versions of software, and it becomes important to ensure that the fix for an "
+"issue in `foo-1.0` does not require a properly entitled customer to upgrade "
+"to a later version of Kolab, or even a later version of `foo`."
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:99
 msgid ""
-"The stability requirements imply that support be able to track issues "
-"with specific versions of the software, targets these issues to be "
-"resolved in certain newer versions of the software, and trusts the "
-"resolution of the issue to be verifiable against multiple versions of the"
-" software collection."
+"The stability requirements imply that support be able to track issues with "
+"specific versions of the software, targets these issues to be resolved in "
+"certain newer versions of the software, and trusts the resolution of the "
+"issue to be verifiable against multiple versions of the software collection."
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:105
@@ -45,9 +44,9 @@ msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:107
 msgid ""
-"The following table depicts the versions of the |roundcubemail| package, "
-"and the |roundcubemail-plugins-kolab| package, as distributed for each "
-"product stream."
+"The following table depicts the versions of the |roundcubemail| package, and "
+"the |roundcubemail-plugins-kolab| package, as distributed for each product "
+"stream."
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst
@@ -110,8 +109,8 @@ msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:127
 msgid ""
-"The version of |roundcubemail| shipped to the product stream is one of "
-"the **1.0 series** of upstream releases,"
+"The version of |roundcubemail| shipped to the product stream is one of the "
+"**1.0 series** of upstream releases,"
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:130
@@ -120,14 +119,13 @@ msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:132
 msgid ""
-"The version of |roundcubemail-plugins-kolab| shipped to the product "
-"stream is one of the **3.1 series** of upstream releases,"
+"The version of |roundcubemail-plugins-kolab| shipped to the product stream "
+"is one of the **3.1 series** of upstream releases,"
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:135
 msgid ""
-"Upstream maintains a **stable** 3.1 series for |roundcubemail-plugins-"
-"kolab|,"
+"Upstream maintains a **stable** 3.1 series for |roundcubemail-plugins-kolab|,"
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:138
@@ -140,8 +138,7 @@ msgstr ""
 #: ../../source/contributor-guide/bug-reporting-structured.rst:142
 msgid ""
 "Added functionality in |roundcubemail-plugins-kolab|, if any, does not "
-"require any changes in |roundcubemail| that would break other "
-"compatibility,"
+"require any changes in |roundcubemail| that would break other compatibility,"
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:146
@@ -166,15 +163,15 @@ msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:156
 msgid ""
-"In the future, this will extend up to 6 product streams that will need to"
-" be maintained."
+"In the future, this will extend up to 6 product streams that will need to be "
+"maintained."
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:159
 msgid ""
-"It is therefore important that an issue logged against a version 1.0.1, "
-"with the current version in the 1.0 series perhaps being 1.0.10, needs to"
-" go through the following stages:"
+"It is therefore important that an issue logged against a version 1.0.1, with "
+"the current version in the 1.0 series perhaps being 1.0.10, needs to go "
+"through the following stages:"
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:163
@@ -189,9 +186,9 @@ msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:168
 msgid ""
-"Developer teams become responsible for testing the resolution of the "
-"issue first, and fixing the issue second (see :ref:`contributor-guide-"
-"test-driven-development`)."
+"Developer teams become responsible for testing the resolution of the issue "
+"first, and fixing the issue second (see :ref:`contributor-guide-test-driven-"
+"development`)."
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:172
@@ -211,8 +208,8 @@ msgstr ""
 #: ../../source/contributor-guide/bug-reporting-structured.rst:181
 msgid ""
 "This process can be a very costly lather-rinse-repeat exercise, and "
-"therefore needs to be covered ahead of time, through :ref:`contributor-"
-"guide-test-driven-development`."
+"therefore needs to be covered ahead of time, through :ref:`contributor-guide-"
+"test-driven-development`."
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:185
@@ -243,8 +240,8 @@ msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:198
 msgid ""
-"Each becomes a separate `bugzilla`_ ticket, each of them depending on the"
-" resolution of the more recent product stream('s software version)."
+"Each becomes a separate `bugzilla`_ ticket, each of them depending on the "
+"resolution of the more recent product stream('s software version)."
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:204
@@ -289,8 +286,8 @@ msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:224
 msgid ""
-"It is thus a new development issue; `Report a bug`_ and have it blocked "
-"by the bug created in 2.1)."
+"It is thus a new development issue; `Report a bug`_ and have it blocked by "
+"the bug created in 2.1)."
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:227
@@ -299,8 +296,8 @@ msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:229
 msgid ""
-"Also create a `bugzilla`_ ticket. The milestone here is `1.2-next`. Refer"
-" to the task created in Phabricator."
+"Also create a `bugzilla`_ ticket. The milestone here is `1.2-next`. Refer to "
+"the task created in Phabricator."
 msgstr ""
 
 #: ../../source/contributor-guide/bug-reporting-structured.rst:232
@@ -320,4 +317,3 @@ msgstr ""
 #: ../../source/contributor-guide/bug-reporting-structured.rst:239
 msgid "Yes, block the original ticket in 1) with the ticket from 2.3)."
 msgstr ""
-

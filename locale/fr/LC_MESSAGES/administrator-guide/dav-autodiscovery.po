@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:42+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-documentation/language/fr_FR/)\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,10 +24,10 @@ msgstr ""
 
 #: ../../source/administrator-guide/dav-autodiscovery.rst:46
 msgid ""
-"In order to simplify the configuration of CalDAV and CalDAV clients, service"
-" discovery can be configured according to `RFC 6764 <http://www.rfc-"
-"editor.org/rfc/rfc6764.txt>`_ which suggests means of adding DNS records and"
-" well-known URIs to the primary domain."
+"In order to simplify the configuration of CalDAV and CalDAV clients, service "
+"discovery can be configured according to `RFC 6764 <http://www.rfc-editor."
+"org/rfc/rfc6764.txt>`_ which suggests means of adding DNS records and well-"
+"known URIs to the primary domain."
 msgstr ""
 
 #: ../../source/administrator-guide/dav-autodiscovery.rst:52
@@ -37,8 +38,8 @@ msgstr ""
 msgid ""
 "Well-known URIs are used when setting up CalDAV and CardDAV clients to "
 "automatically detect the service configuration, mainly the server URI. So "
-"when configuring a CalDAV client for the account ``sample@example.org``, the"
-" client will take the domain part of the account name and send a HTTP(S) "
+"when configuring a CalDAV client for the account ``sample@example.org``, the "
+"client will take the domain part of the account name and send a HTTP(S) "
 "request to ``https://example.org/.well-known/caldav`` which is expected to "
 "redirect to the service URL using a HTTP mechanisms, e.g. with a *301 Moved "
 "Permanently* response."
@@ -71,9 +72,9 @@ msgstr ""
 
 #: ../../source/administrator-guide/dav-autodiscovery.rst:87
 msgid ""
-"Beside the well-known URIs, it's also recommended to add DNS entries for the"
-" service discovery protocol as described in `RFC 6764 <http://www.rfc-"
-"editor.org/rfc/rfc6764.txt>`_, Chapters 3. and 4."
+"Beside the well-known URIs, it's also recommended to add DNS entries for the "
+"service discovery protocol as described in `RFC 6764 <http://www.rfc-editor."
+"org/rfc/rfc6764.txt>`_, Chapters 3. and 4."
 msgstr ""
 
 #: ../../source/administrator-guide/dav-autodiscovery.rst:92

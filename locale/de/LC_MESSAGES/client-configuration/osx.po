@@ -28,10 +28,10 @@ msgstr ""
 
 #: ../../source/client-configuration/osx.rst:99
 msgid ""
-"When you start Apple Mail the first time, it will ask you to provide your"
-" name, your email address and your password. Please provide your "
-"|service_name| credentials there. In the following screens, please give "
-"this information:"
+"When you start Apple Mail the first time, it will ask you to provide your "
+"name, your email address and your password. Please provide your |"
+"service_name| credentials there. In the following screens, please give this "
+"information:"
 msgstr ""
 
 #: ../../source/client-configuration/osx.rst:104
@@ -66,8 +66,8 @@ msgstr ""
 
 #: ../../source/client-configuration/osx.rst:169
 msgid ""
-"In the *Advanced* tab, select *Use custom port* and set the port to "
-"|**smtp_port**|."
+"In the *Advanced* tab, select *Use custom port* and set the port to |"
+"**smtp_port**|."
 msgstr ""
 
 #: ../../source/client-configuration/osx.rst:171
@@ -75,132 +75,3 @@ msgid ""
 "Please check the option **Use Secure Sockets Layer (SSL)** and use "
 "**Password** as authentication method."
 msgstr ""
-
-#~ msgid "iCal"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "In order to set up iCal, please"
-#~ " open the preferences from the menu"
-#~ " bar. Then choose  *Accounts* and add"
-#~ " a new account by clicking the "
-#~ "*+* Icon in the left bottom corner"
-#~ " as indicated in the second "
-#~ "screenshot below. Please enter the "
-#~ "following information in the dialog."
-#~ msgstr ""
-
-#~ msgid "Account Type: **CalDAV**"
-#~ msgstr ""
-
-#~ msgid "Server Address: |**caldav_host**|"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "In Mac OS X 10.10 (Yosemite), the"
-#~ " Calendar does not send event "
-#~ "invitations. There is not much we "
-#~ "can do at the moment, as Apple "
-#~ "broke the behavior without announcement. "
-#~ "If you rely on invitations from "
-#~ "iCal, please consider not to upgrade "
-#~ "to Yosemite for the moment. If you"
-#~ " have already upgraded, please consider "
-#~ "making your invitations from the "
-#~ "webclient."
-#~ msgstr ""
-
-#~ msgid "Reminders"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "OS X 10.8 has a dedicated "
-#~ "Reminders program which can show your"
-#~ " tasks from |service_name|. You do "
-#~ "not need to set it up separately."
-#~ " As soon as your :ref:`settings-"
-#~ "clientconfig-osx-ical` is set up, "
-#~ "Reminders will also be."
-#~ msgstr ""
-
-#~ msgid "Contacts"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "In order to set up Contacts, "
-#~ "please open the preferences from the "
-#~ "menu bar. Then choose  *Accounts* and"
-#~ " add a new account by clicking "
-#~ "the *+* Icon in the left bottom"
-#~ " corner as indicated in the second"
-#~ " screenshot below. Please enter the "
-#~ "following information in the dialog."
-#~ msgstr ""
-
-#~ msgid "Account Type: **CardDAV**"
-#~ msgstr ""
-
-#~ msgid "Server Address: |**carddav_host**|"
-#~ msgstr ""
-
-#~ msgid "Files"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "There is different possibilities to "
-#~ "access your |service_name| files with "
-#~ "your Mac. We show two of them "
-#~ "below."
-#~ msgstr ""
-
-#~ msgid "Using Cyberduck"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "`Cyberduck <http://cyberduck.ch/>`__ is a "
-#~ "Swiss Free Software cloud storage "
-#~ "browser for Mac. This is the "
-#~ "recommended way to access your files."
-#~ " After you have installed it, add "
-#~ "a new WebDAV connection as shown "
-#~ "in the screenshots below. Please enter"
-#~ " the following information:"
-#~ msgstr ""
-
-#~ msgid "Server Name: |**webdav_host**|"
-#~ msgstr ""
-
-#~ msgid "Port: **443**"
-#~ msgstr ""
-
-#~ msgid "Username: Your full |service_name| email address like |**useremail**|"
-#~ msgstr ""
-
-#~ msgid "Path: **/Files**"
-#~ msgstr ""
-
-#~ msgid "Using Native OS X"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "It is also possible to use no "
-#~ "special program, but just your Mac "
-#~ "OS X operating system to access "
-#~ "your files. However, **we do not "
-#~ "recommend** to do this, as this is"
-#~ " implemented poorly by Apple and "
-#~ "therefore very slow."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you still want to do this, "
-#~ "please open the *Go* menu in your"
-#~ " finder, and enter |**webdav_uri**|/**Files** "
-#~ "as the *Server Address*. Then click "
-#~ "*Connect* and enter your full email "
-#~ "address and password. Afterwards, your "
-#~ "|service_name| files will show up in "
-#~ "your file browser as a shared "
-#~ "resource."
-#~ msgstr ""
-

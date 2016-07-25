@@ -23,27 +23,27 @@ msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:91
 msgid ""
-"A good first start to troubleshoot an issue with a HTTP-based service is "
-"to check your webserver's error log. For Apache this usually resides in "
-":file:`/var/log/apache2/` or :file:`/var/log/httpd/`."
+"A good first start to troubleshoot an issue with a HTTP-based service is to "
+"check your webserver's error log. For Apache this usually resides in :file:`/"
+"var/log/apache2/` or :file:`/var/log/httpd/`."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:94
 msgid ""
-"Often, you will be able to find some useful information about your "
-"problem which enables you to fix it yourself. Doing an internet search "
-"for the error message is also a good idea. If you do not find anything "
-"about your problem, you might ask on the `Kolab users mailing list "
-"<https://lists.kolab.org/mailman/listinfo/users>`_ about it. Please "
-"include the version number of the package that is causing the issue."
+"Often, you will be able to find some useful information about your problem "
+"which enables you to fix it yourself. Doing an internet search for the error "
+"message is also a good idea. If you do not find anything about your problem, "
+"you might ask on the `Kolab users mailing list <https://lists.kolab.org/"
+"mailman/listinfo/users>`_ about it. Please include the version number of the "
+"package that is causing the issue."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:100
 msgid ""
-"If you are sure that you have found something that needs fixing from "
-"Kolab's developers, you can as `file an issue "
-"<https://issues.kolab.org/enter_bug.cgi>`_ in the public tracker after "
-"checking that it has not been reported already."
+"If you are sure that you have found something that needs fixing from Kolab's "
+"developers, you can as `file an issue <https://issues.kolab.org/enter_bug."
+"cgi>`_ in the public tracker after checking that it has not been reported "
+"already."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:107
@@ -52,21 +52,21 @@ msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:109
 msgid ""
-"Before you start to debug your problem, please make sure that you "
-"actually have error logging enabled."
+"Before you start to debug your problem, please make sure that you actually "
+"have error logging enabled."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:112
 msgid ""
-"You would edit the file :file:`/etc/roundcubemail/config.inc.php` and "
-"verify that the debug level is set correctly."
+"You would edit the file :file:`/etc/roundcubemail/config.inc.php` and verify "
+"that the debug level is set correctly."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:119
 msgid ""
 "The :command:`tail -f` command can be helpful in identifying the right "
-"message during incoming requests. It displays changes to the log file on "
-"the screen as the log messages come in."
+"message during incoming requests. It displays changes to the log file on the "
+"screen as the log messages come in."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:123
@@ -76,22 +76,21 @@ msgstr ""
 #: ../../source/administrator-guide/troubleshooting.rst:125
 #: ../../source/administrator-guide/troubleshooting.rst:182
 msgid ""
-"After :ref:`enabling general error logging <troubleshooting_error-"
-"logging>`, you should already find some messages in your webserver's "
-"error log."
+"After :ref:`enabling general error logging <troubleshooting_error-logging>`, "
+"you should already find some messages in your webserver's error log."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:128
 msgid ""
-"Additionally, the following configuration options are available for "
-"specific debugging."
+"Additionally, the following configuration options are available for specific "
+"debugging."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:149
 msgid ""
-"It is also possible to debug the Kolab Webclient for individual users "
-"only by creating a :file:`/var/log/roundcubemail/<username>/` folder and "
-"setting the following configuration parameter."
+"It is also possible to debug the Kolab Webclient for individual users only "
+"by creating a :file:`/var/log/roundcubemail/<username>/` folder and setting "
+"the following configuration parameter."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:156
@@ -106,22 +105,22 @@ msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:161
 msgid ""
-"For debugging ActiveSync issues, you would add the following to "
-":file:`/etc/roundcubemail/config.inc.php`:"
+"For debugging ActiveSync issues, you would add the following to :file:`/etc/"
+"roundcubemail/config.inc.php`:"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:167
 msgid ""
-"Useful messages should then appear in the :file:`/var/log/kolab-"
-"syncroton/console` file. If there is no such file, please make sure that "
-"your webserver actually has the rights to create this file."
+"Useful messages should then appear in the :file:`/var/log/kolab-syncroton/"
+"console` file. If there is no such file, please make sure that your "
+"webserver actually has the rights to create this file."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:170
 msgid ""
-"It is also possible to debug ActiveSync sessions of individual users only"
-" by creating a :file:`/var/log/syncroton/<username>/` folder and setting "
-"the following configuration parameter."
+"It is also possible to debug ActiveSync sessions of individual users only by "
+"creating a :file:`/var/log/syncroton/<username>/` folder and setting the "
+"following configuration parameter."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:180
@@ -147,21 +146,19 @@ msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:202
 msgid ""
-"Sometimes it can be useful to track the full HTTP payload of DAV "
-"requests. In order to do this, add the following setting."
+"Sometimes it can be useful to track the full HTTP payload of DAV requests. "
+"In order to do this, add the following setting."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:209
 msgid ""
-"In order to enable full HTTP payload logging for single users only, you "
-"can change the configuration as such:"
+"In order to enable full HTTP payload logging for single users only, you can "
+"change the configuration as such:"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:216
 msgid ""
-"Then create the file :file:`/var/log/iRony/<username>/httpraw` and make "
-"it writeable by the webserver user. The existence of this file will "
-"enable HTTP request/response logging for this user while it is disabled "
-"for all others."
+"Then create the file :file:`/var/log/iRony/<username>/httpraw` and make it "
+"writeable by the webserver user. The existence of this file will enable HTTP "
+"request/response logging for this user while it is disabled for all others."
 msgstr ""
-

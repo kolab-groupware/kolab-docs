@@ -23,9 +23,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:92
 msgid ""
-"Different challenges could potentially be resolved by implementing a "
-"single solution, providing each of the functional aspects in an "
-"integrated fashion."
+"Different challenges could potentially be resolved by implementing a single "
+"solution, providing each of the functional aspects in an integrated fashion."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:96
@@ -38,14 +37,14 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:100
 msgid ""
-"Archival is the retention of business records, in a fashion that allows "
-"them to be used as evidence."
+"Archival is the retention of business records, in a fashion that allows them "
+"to be used as evidence."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:103
 msgid ""
-"Many archival solutions only include actual communications that descend "
-"over an SMTP server that can keep the archival solution in the loop."
+"Many archival solutions only include actual communications that descend over "
+"an SMTP server that can keep the archival solution in the loop."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:107
@@ -54,14 +53,14 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:109
 msgid ""
-"Backup is the lesser part to the ability to restore, a frequently "
-"occuring, everyday event."
+"Backup is the lesser part to the ability to restore, a frequently occuring, "
+"everyday event."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:112
 msgid ""
-"It is often requested backup happens on a per-mailbox or even per-message"
-" level."
+"It is often requested backup happens on a per-mailbox or even per-message "
+"level."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:115
@@ -74,8 +73,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:119
 msgid ""
-"Maintenance of a changelog on object entries that can change state (email"
-" read/deleted), or are volatile (changes to an appointment)."
+"Maintenance of a changelog on object entries that can change state (email "
+"read/deleted), or are volatile (changes to an appointment)."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:123
@@ -112,8 +111,7 @@ msgstr ""
 msgid ""
 "The integration of standard components already in use for centralized "
 "logging, log analysis and storage allows Bonnie to be supplemental to a "
-"standard infrastructure with the thinnest footprint and the least "
-"overhead."
+"standard infrastructure with the thinnest footprint and the least overhead."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:145
@@ -127,27 +125,27 @@ msgstr ""
 #: ../../source/architecture-and-design/bonnie-extra.rst:150
 msgid ""
 "The following diagram outlines the functional components for an industry-"
-"standard infrastructure with common components used for log "
-"centralization, analysis and storage."
+"standard infrastructure with common components used for log centralization, "
+"analysis and storage."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:170
 msgid ""
-"Under these circumstances, the features offered by the centralized "
-"logging system include;"
+"Under these circumstances, the features offered by the centralized logging "
+"system include;"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:173
 msgid ""
-"Prevention of the loss of valuable log messages should individual systems"
-" be lost or discarded,"
+"Prevention of the loss of valuable log messages should individual systems be "
+"lost or discarded,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:176
 msgid ""
-"Centralized availability of log messages, so iterating over systems to "
-"find out which one may have participated in an application's flow is no "
-"longer necessary,"
+"Centralized availability of log messages, so iterating over systems to find "
+"out which one may have participated in an application's flow is no longer "
+"necessary,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:180
@@ -172,8 +170,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:216
 msgid ""
-"The event notification is put in to a persistent queue, awaiting workers "
-"to become ready for handling the event notification."
+"The event notification is put in to a persistent queue, awaiting workers to "
+"become ready for handling the event notification."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:219
@@ -182,9 +180,9 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:221
 msgid ""
-"The collector daemon is an optional component subscribing to requests for"
-" additional information that can only reliably be obtained from a Cyrus "
-"IMAP backend spool directory."
+"The collector daemon is an optional component subscribing to requests for "
+"additional information that can only reliably be obtained from a Cyrus IMAP "
+"backend spool directory."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:225
@@ -194,8 +192,8 @@ msgstr ""
 #: ../../source/architecture-and-design/bonnie-extra.rst:227
 msgid ""
 "A dealer is a script executed once for each event notification, used to "
-"receive the initial event notification from Cyrus IMAP 2.5, and broadcast"
-" the event on to the message bus or queue."
+"receive the initial event notification from Cyrus IMAP 2.5, and broadcast "
+"the event on to the message bus or queue."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:231
@@ -210,20 +208,20 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:236
 msgid ""
-"The worker is where the processing happens -- one can have as many "
-"workers as necessary, or as few as required."
+"The worker is where the processing happens -- one can have as many workers "
+"as necessary, or as few as required."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:239
 msgid ""
-"The worker announces its presence to the broker, which subsequently "
-"assigns jobs to the worker [#]_."
+"The worker announces its presence to the broker, which subsequently assigns "
+"jobs to the worker [#]_."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:242
 msgid ""
-"The worker may require additional information to be obtained, such as the"
-" message payload [#]_."
+"The worker may require additional information to be obtained, such as the "
+"message payload [#]_."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:245
@@ -232,10 +230,10 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:247
 msgid ""
-"The centralization of system log files such as :file:`/var/log/maillog` "
-"aids in tracing the exchange of messages as they descend across "
-"infrastructure, and helps in associating, for example, a Login event to "
-"an IMAP frontend with the corresponding web server session [#]_."
+"The centralization of system log files such as :file:`/var/log/maillog` aids "
+"in tracing the exchange of messages as they descend across infrastructure, "
+"and helps in associating, for example, a Login event to an IMAP frontend "
+"with the corresponding web server session [#]_."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:254
@@ -276,14 +274,14 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:325
 msgid ""
-"When the worker starts, it connects to both the control router and worker"
-" router."
+"When the worker starts, it connects to both the control router and worker "
+"router."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:328
 msgid ""
-"Using the controller channel, the worker let's the broker know it is "
-"ready to receive a job."
+"Using the controller channel, the worker let's the broker know it is ready "
+"to receive a job."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:344
@@ -292,8 +290,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:346
 msgid ""
-"The broker will continue to receive occasional messages from the worker "
-"to allow it to determine whether or not it is still available."
+"The broker will continue to receive occasional messages from the worker to "
+"allow it to determine whether or not it is still available."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:350
@@ -310,9 +308,9 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:382
 msgid ""
-"The worker is now in state BUSY and must respond within a set interval or"
-" the broker will set the job back in to PENDING state, and mark the "
-"worker as unavailable."
+"The worker is now in state BUSY and must respond within a set interval or "
+"the broker will set the job back in to PENDING state, and mark the worker as "
+"unavailable."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:389
@@ -321,15 +319,15 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:391
 msgid ""
-"The worker is built out of plugins, that subscribe to an event type, "
-"where event types available are listed in :ref:`and-bonnie-event-"
-"notification-types`."
+"The worker is built out of plugins, that subscribe to an event type, where "
+"event types available are listed in :ref:`and-bonnie-event-notification-"
+"types`."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:395
 msgid ""
-"Each event type individually may require handling -- for example, a "
-"logout event is associated with the corresponding login event."
+"Each event type individually may require handling -- for example, a logout "
+"event is associated with the corresponding login event."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:398
@@ -338,8 +336,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:400
 msgid ""
-"subscribing to a message bus or queue, as ``inputs``, initially including"
-" only ``zmq``."
+"subscribing to a message bus or queue, as ``inputs``, initially including "
+"only ``zmq``."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:403
@@ -349,13 +347,14 @@ msgid ""
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:407
-msgid "result output, as ``output``, initially including only ``elasticsearch``."
+msgid ""
+"result output, as ``output``, initially including only ``elasticsearch``."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:410
 msgid ""
-"storage for transactions pending, as ``storage``, initialy including only"
-" ``elasticsearch``."
+"storage for transactions pending, as ``storage``, initialy including only "
+"``elasticsearch``."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:413
@@ -381,16 +380,16 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:437
 msgid ""
-"The initial event is handled by the base handler for the event "
-"notification type."
+"The initial event is handled by the base handler for the event notification "
+"type."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:440
 msgid ""
 "Passing this event right through to the changelog handler would make it "
-"require obtaining the ``/shared/vendor/kolab/folder-type`` and/or "
-"``/private/vendor/kolab/folder-type`` metadata value(s) in order to "
-"determine whether the folder indeed is an event folder."
+"require obtaining the ``/shared/vendor/kolab/folder-type`` and/or ``/private/"
+"vendor/kolab/folder-type`` metadata value(s) in order to determine whether "
+"the folder indeed is an event folder."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:445
@@ -431,8 +430,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:464
 msgid ""
-"Only applicable to event folders, this depicts a new or updated version "
-"of an existing event has been appended."
+"Only applicable to event folders, this depicts a new or updated version of "
+"an existing event has been appended."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:467
@@ -442,8 +441,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:469
 msgid ""
-"One or more events may have been copied from an event folder into another"
-" event folder."
+"One or more events may have been copied from an event folder into another "
+"event folder."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:472
@@ -453,16 +452,16 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:474
 msgid ""
-"One or more events may have been moved from one event folder into another"
-" event folder."
+"One or more events may have been moved from one event folder into another "
+"event folder."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:479
 msgid ""
 "Plugins that are interested in the vendor/kolab/folder-type METADATA "
-"value(s) of a folder should register a hook into the various mailbox "
-"related event handlers, which can then be made responsible of retrieving "
-"the associated information and issuing a callback."
+"value(s) of a folder should register a hook into the various mailbox related "
+"event handlers, which can then be made responsible of retrieving the "
+"associated information and issuing a callback."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:501
@@ -471,9 +470,9 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:503
 msgid ""
-"The following diagram depicts an architectural overview of a Bonnie- "
-"based environment, with functional components split up in such matter, "
-"that they can be made redundant, high-available, and also balance load."
+"The following diagram depicts an architectural overview of a Bonnie- based "
+"environment, with functional components split up in such matter, that they "
+"can be made redundant, high-available, and also balance load."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:507
@@ -482,15 +481,14 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:509
 msgid ""
-"Least risk at congestion at any point messages pass through, with "
-"congestion potentially resulting loss of messages and therefore "
-"corruption of the audit trail,"
+"Least risk at congestion at any point messages pass through, with congestion "
+"potentially resulting loss of messages and therefore corruption of the audit "
+"trail,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:513
 msgid ""
-"Least risk of component failure and loss of data through component "
-"failure,"
+"Least risk of component failure and loss of data through component failure,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:516
@@ -573,8 +571,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:731
 msgid ""
-"Flags having been cleared may include ``\\Seen``, but also ``\\Deleted``,"
-" and any custom other flag on an IMAP message."
+"Flags having been cleared may include ``\\Seen``, but also ``\\Deleted``, "
+"and any custom other flag on an IMAP message."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:734
@@ -622,8 +620,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:761
 msgid ""
-"This event needs to be stored until it can be associated with a :ref"
-":`and-bonnie-event-logout` event notification type."
+"This event needs to be stored until it can be associated with a :ref:`and-"
+"bonnie-event-logout` event notification type."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:771
@@ -719,35 +717,35 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:905
 msgid ""
-"In this picture, IMAP (using Cyrus IMAP 2.5) issues so-called "
-":term:`event notifications` to a message bus, that can be picked up by "
-"the appropriate subscribers."
+"In this picture, IMAP (using Cyrus IMAP 2.5) issues so-called :term:`event "
+"notifications` to a message bus, that can be picked up by the appropriate "
+"subscribers."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:909
 msgid ""
-"Note that the subscribers are different components to plug in and enable,"
-" or leave out -- not everyone has a need for Archival and e-Discovery "
+"Note that the subscribers are different components to plug in and enable, or "
+"leave out -- not everyone has a need for Archival and e-Discovery "
 "capabilities."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:912
 msgid ""
 "As such, a component plugged in could announce its presence, and start "
-"working backwards as well as start collecting the relevant subsets of "
-"data in a retro- active manner."
+"working backwards as well as start collecting the relevant subsets of data "
+"in a retro- active manner."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:938
 msgid ""
-"To allow scaling, the intermediate medium is likely a message bus such as"
-" ActiveMQ, AMQP, ZeroMQ, etc."
+"To allow scaling, the intermediate medium is likely a message bus such as "
+"ActiveMQ, AMQP, ZeroMQ, etc."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:941
 msgid ""
-"Between Cyrus IMAP 2.5 and the message bus must be a thin application "
-"that is capable of:"
+"Between Cyrus IMAP 2.5 and the message bus must be a thin application that "
+"is capable of:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:944
@@ -770,8 +768,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:952
 msgid ""
-"the size of the message payload is likely to exceed the maximum size of "
-"an event notification datagram [#]_."
+"the size of the message payload is likely to exceed the maximum size of an "
+"event notification datagram [#]_."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:955
@@ -782,8 +780,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:958
 msgid ""
-"e-Discovery requires post-processing to sufficiently associate the "
-"message in its context, and contains an audit trail."
+"e-Discovery requires post-processing to sufficiently associate the message "
+"in its context, and contains an audit trail."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:961
@@ -816,10 +814,9 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1016
 msgid ""
-"It is possible to run Cyrus IMAP 2.5 notifications in a blocking fashion,"
-" allowing the (post-)processing operation(s) to complete in full before "
-"the IMAP session is allowed to continue / confirms the "
-"modification/mutation."
+"It is possible to run Cyrus IMAP 2.5 notifications in a blocking fashion, "
+"allowing the (post-)processing operation(s) to complete in full before the "
+"IMAP session is allowed to continue / confirms the modification/mutation."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1021
@@ -838,8 +835,7 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1029
 msgid ""
-"Relationships problematic. Possibly for data only, use ORM for "
-"relationships."
+"Relationships problematic. Possibly for data only, use ORM for relationships."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1032
@@ -852,8 +848,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1036
 msgid ""
-"An individual human being with physical presence (in the here and now, "
-"past and/or future)."
+"An individual human being with physical presence (in the here and now, past "
+"and/or future)."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1039
@@ -870,8 +866,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1045
 msgid ""
-"A role attached to one or more User objects, functionally the inverse of "
-"a Group."
+"A role attached to one or more User objects, functionally the inverse of a "
+"Group."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1048
@@ -905,14 +901,14 @@ msgstr ""
 #: ../../source/architecture-and-design/bonnie-extra.rst:1062
 msgid ""
 "Rather than recording the changes to objects explicitly, it is more "
-"effective to define the objects themselves as volatile objects, in such a"
-" way that updates to them imply a changelog record be created."
+"effective to define the objects themselves as volatile objects, in such a "
+"way that updates to them imply a changelog record be created."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1066
 msgid ""
-"In summary, it is better to reduce the processor's workload and code base"
-" from:"
+"In summary, it is better to reduce the processor's workload and code base "
+"from:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1088
@@ -929,14 +925,13 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1113
 msgid ""
-"Declare a declarative class inherited by individual object table "
-"definitions,"
+"Declare a declarative class inherited by individual object table definitions,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1115
 msgid ""
-"Use the declarative class in addition to the declarative base class in "
-"the definition of the individual object table class,"
+"Use the declarative class in addition to the declarative base class in the "
+"definition of the individual object table class,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1117
@@ -949,8 +944,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1119
 msgid ""
-"Record the object name, object id, current value (if any), and the value "
-"it is about to change to,"
+"Record the object name, object id, current value (if any), and the value it "
+"is about to change to,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1121
@@ -963,8 +958,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1198
 msgid ""
-"Usernames as issued by Cyrus IMAP 2.5 notifications are volatile, in that"
-" the same physical human being (jane.gi@example.org) could change email "
+"Usernames as issued by Cyrus IMAP 2.5 notifications are volatile, in that "
+"the same physical human being (jane.gi@example.org) could change email "
 "addresses for any of many unrelated causes (jane.doe@example.org)."
 msgstr ""
 
@@ -978,14 +973,13 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1206
 msgid ""
-"User ``jdoe2`` could in fact be the same physical human being as "
-"``j.doe2@example.org`` and ``jane.doe@example.org``."
+"User ``jdoe2`` could in fact be the same physical human being as ``j."
+"doe2@example.org`` and ``jane.doe@example.org``."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1209
 msgid ""
-"relate canonified IMAP login usernames to persistent user attribute "
-"values,"
+"relate canonified IMAP login usernames to persistent user attribute values,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1210
@@ -996,8 +990,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1212
 msgid ""
-"resolve IMAP ACE subject entries to their persistent attribute values, "
-"for both users and groups,"
+"resolve IMAP ACE subject entries to their persistent attribute values, for "
+"both users and groups,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1214
@@ -1010,10 +1004,10 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1217
 msgid ""
-"This needs to happen in a timely fashion, for intermediate changes to the"
-" authoritative, canonical user and group information database, in the "
-"period of time between the event notification and the collection of "
-"information, could invalidate the permanent record."
+"This needs to happen in a timely fashion, for intermediate changes to the "
+"authoritative, canonical user and group information database, in the period "
+"of time between the event notification and the collection of information, "
+"could invalidate the permanent record."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1254
@@ -1030,8 +1024,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1283
 msgid ""
-"Modelled after an article about tracking worker status at "
-"http://rfc.zeromq.org/spec:14"
+"Modelled after an article about tracking worker status at http://rfc.zeromq."
+"org/spec:14"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1315
@@ -1047,15 +1041,15 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1321
 msgid ""
-"The client is not awaiting confirmation in the sense that it will replay "
-"the submission if needed, such as after the client has been restarted. "
-"This too could introduce a loss of notifications."
+"The client is not awaiting confirmation in the sense that it will replay the "
+"submission if needed, such as after the client has been restarted. This too "
+"could introduce a loss of notifications."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1325
 msgid ""
-"The client is certainly not awaiting confirmation from any worker that "
-"the notification had been submitted to for handling."
+"The client is certainly not awaiting confirmation from any worker that the "
+"notification had been submitted to for handling."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1328
@@ -1078,8 +1072,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1421
 msgid ""
-"The worker shall be a multi-threaded daemon (using multiprocessing.Pool),"
-" that is a pluggable application."
+"The worker shall be a multi-threaded daemon (using multiprocessing.Pool), "
+"that is a pluggable application."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1426
@@ -1098,20 +1092,20 @@ msgid ""
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1437
-msgid "It is assumed we'll be working with RSyslog, Logstash and Elastic Search."
+msgid ""
+"It is assumed we'll be working with RSyslog, Logstash and Elastic Search."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1442
 msgid ""
-"http://git.cyrusimap.org/cyrus-"
-"imapd/tree/notifyd?id=8bdaeae3f891ba2a748ba91a4c324ee11346e292"
+"http://git.cyrusimap.org/cyrus-imapd/tree/notifyd?"
+"id=8bdaeae3f891ba2a748ba91a4c324ee11346e292"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-extra.rst:1446
 msgid ""
-"Needs further investigation, for the actual maximum size of a datagram "
-"may have ceased to be hard-coded. Yet, to submit a large message through "
-"the notification daemon while the notification target is eligible to pick"
-" up the message contents from the filesystem seems like duplication."
+"Needs further investigation, for the actual maximum size of a datagram may "
+"have ceased to be hard-coded. Yet, to submit a large message through the "
+"notification daemon while the notification target is eligible to pick up the "
+"message contents from the filesystem seems like duplication."
 msgstr ""
-

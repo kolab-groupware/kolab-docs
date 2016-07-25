@@ -23,15 +23,15 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:92
 msgid ""
-"This is the reference implementation architecture documentation for Kolab"
-" Groupware."
+"This is the reference implementation architecture documentation for Kolab "
+"Groupware."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:95
 msgid ""
-"It consists of a certain network topology on top of a completely "
-"virtualized environment, with an opportunity to create a :term:`Policy "
-"Enforcement Point` between all separate functional components."
+"It consists of a certain network topology on top of a completely virtualized "
+"environment, with an opportunity to create a :term:`Policy Enforcement "
+"Point` between all separate functional components."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:101
@@ -39,7 +39,8 @@ msgid "Environment Outline"
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:103
-msgid "At least two KVM hypervisors running Red Hat Enterprise Linux 6 or above,"
+msgid ""
+"At least two KVM hypervisors running Red Hat Enterprise Linux 6 or above,"
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:106
@@ -185,16 +186,16 @@ msgstr ""
 #: ../../source/reference-implementation-architecture/index.rst:164
 msgid ""
 "This would make a single client (semi-)randomly hit either of the one "
-"inbound IP address. When using an **iptables** firewall with PAT toward a"
-" range of IP addresses, using multiple inbound addresses randomizes the "
+"inbound IP address. When using an **iptables** firewall with PAT toward a "
+"range of IP addresses, using multiple inbound addresses randomizes the "
 "access patterns of the client -- while normally the PAT forwarding of a "
 "single client IP session is :term:`sticky`."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:170
 msgid ""
-"A distincively different set of IP addresses -- IP addresses in different"
-" address ranges."
+"A distincively different set of IP addresses -- IP addresses in different "
+"address ranges."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:173
@@ -203,9 +204,9 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:176
 msgid ""
-"However, all IP addresses are *routable*; Consider a single web server "
-"with the Roundcube web client installed; This webserver addresses IMAP, "
-"LDAP, SQL, SMTP and other web applications."
+"However, all IP addresses are *routable*; Consider a single web server with "
+"the Roundcube web client installed; This webserver addresses IMAP, LDAP, "
+"SQL, SMTP and other web applications."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:180
@@ -217,20 +218,20 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:184
 msgid ""
-"A few other considerations in favor of using a split horizon DNS topology"
-" are, that the internal use of services can be directed and balanced "
-"differently, that the update policies per *view* can be different, and "
-"that the environment can work on the principle of disclosing the least "
-"amount of information to individual systems."
+"A few other considerations in favor of using a split horizon DNS topology "
+"are, that the internal use of services can be directed and balanced "
+"differently, that the update policies per *view* can be different, and that "
+"the environment can work on the principle of disclosing the least amount of "
+"information to individual systems."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:190
 msgid ""
 "For example, when the application running on ``webmail.example.org`` "
-"connects to ``imap.example.org``, the IP address(es) that "
-"``imap.example.org`` resolves to -- and thus the systems that the "
-"application connects to -- can be a different (set of) IP address(es) "
-"from what the web application on ``activesync.example.org`` connects to."
+"connects to ``imap.example.org``, the IP address(es) that ``imap.example."
+"org`` resolves to -- and thus the systems that the application connects to "
+"-- can be a different (set of) IP address(es) from what the web application "
+"on ``activesync.example.org`` connects to."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:196
@@ -263,10 +264,9 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:211
 msgid ""
-"A separate channel is created for each log type. It is critically "
-"important to allow the environment to scale. Some mere 30 completely idle"
-" nodes are generally expected to easily generate over a million log "
-"entries per day."
+"A separate channel is created for each log type. It is critically important "
+"to allow the environment to scale. Some mere 30 completely idle nodes are "
+"generally expected to easily generate over a million log entries per day."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:216
@@ -275,15 +275,14 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:218
 msgid ""
-"Eliminate the need for **logrotate** by adjusting the "
-":manpage:`rsyslog.conf(5)` configuration."
+"Eliminate the need for **logrotate** by adjusting the :manpage:`rsyslog."
+"conf(5)` configuration."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:221
 msgid ""
-"Forward logs to a central (set of) server(s) using UDP, and use one or "
-"more load-balanced and highly available listener addresses to prevent "
-"losses."
+"Forward logs to a central (set of) server(s) using UDP, and use one or more "
+"load-balanced and highly available listener addresses to prevent losses."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:227
@@ -300,8 +299,8 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:235
 msgid ""
-"Find a write-only medium to transfer httpd logfiles from the individual "
-"web server to a central (buffer) location."
+"Find a write-only medium to transfer httpd logfiles from the individual web "
+"server to a central (buffer) location."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:259
@@ -326,8 +325,8 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:267
 msgid ""
-"Make sure the rsyslog compability level is *5*, by adjusting "
-":file:`/etc/sysconfig/rsyslog`:"
+"Make sure the rsyslog compability level is *5*, by adjusting :file:`/etc/"
+"sysconfig/rsyslog`:"
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:274
@@ -338,9 +337,9 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:282
 msgid ""
-"Make sure log files are \"rotated\" automatically, by setting the "
-"following filename templates -- this only replaces the defaults for "
-"default facilities and severities to end up in dated files:"
+"Make sure log files are \"rotated\" automatically, by setting the following "
+"filename templates -- this only replaces the defaults for default facilities "
+"and severities to end up in dated files:"
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:303
@@ -349,10 +348,9 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:309
 msgid ""
-"Eliminate **logrotate** from rotating the system log files by removing "
-"the contents of :file:`/etc/logrotate.d/syslog`. Do NOT remove this file,"
-" for it will be written out again by a subsequent update to the "
-"**rsyslog** package."
+"Eliminate **logrotate** from rotating the system log files by removing the "
+"contents of :file:`/etc/logrotate.d/syslog`. Do NOT remove this file, for it "
+"will be written out again by a subsequent update to the **rsyslog** package."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:315
@@ -361,8 +359,8 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:317
 msgid ""
-"The Apache **httpd** webserver is configured to use **rotatelogs** to log"
-" to \"daily\" logfiles. This;"
+"The Apache **httpd** webserver is configured to use **rotatelogs** to log to "
+"\"daily\" logfiles. This;"
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:320
@@ -371,8 +369,8 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:321
 msgid ""
-"therefore prevents **httpd** from being restarted/reloaded needlessly, "
-"when :file:`/etc/logrotate.d/httpd` is emptied out [#]_,"
+"therefore prevents **httpd** from being restarted/reloaded needlessly, when :"
+"file:`/etc/logrotate.d/httpd` is emptied out [#]_,"
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:323
@@ -381,8 +379,7 @@ msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:324
 msgid ""
-"ensures the log entries end up in log files with the correct datestamp "
-"[#]_."
+"ensures the log entries end up in log files with the correct datestamp [#]_."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:327
@@ -406,7 +403,8 @@ msgid "Notes on Using Multiple Redis Input with Batch Counts"
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:357
-msgid "A single batch_count can saturate the number of filter workers configured."
+msgid ""
+"A single batch_count can saturate the number of filter workers configured."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:360
@@ -425,37 +423,34 @@ msgstr ""
 msgid ""
 "Use UDP to ensure one packet consists of one message, and avoid the "
 "uncontrollable TCP buffer. Use load-balancing and high-availability "
-"techniques to ensure one or more nodes are on the receiving end of "
-"messages."
+"techniques to ensure one or more nodes are on the receiving end of messages."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:926
 msgid ""
-"Even though rsyslog may have an output module for Redis, the node "
-"forwarding its logs should not be allowed to read from the output "
-"channel."
+"Even though rsyslog may have an output module for Redis, the node forwarding "
+"its logs should not be allowed to read from the output channel."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:932
 msgid ""
-"You must not remove :file:`/etc/logrotate.d/httpd`, for it will be "
-"written out upon updating the **httpd** package."
+"You must not remove :file:`/etc/logrotate.d/httpd`, for it will be written "
+"out upon updating the **httpd** package."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:935
 msgid ""
-"This file is marked as a configuration file, with a parameter of "
-"\"noreplace\", meaning that an empty :file:`/etc/logrotate.d/httpd` file "
-"will not be overwritten, and instead a new file "
-":file:`/etc/logrotate.d/httpd.rpmnew` will be created."
+"This file is marked as a configuration file, with a parameter of \"noreplace"
+"\", meaning that an empty :file:`/etc/logrotate.d/httpd` file will not be "
+"overwritten, and instead a new file :file:`/etc/logrotate.d/httpd.rpmnew` "
+"will be created."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:942
 msgid ""
-"The **logrotate** job never runs at midnight precisely, and it is "
-"generally recommended to not run logrotate across all of the "
-"environment's computing nodes at the same time -- but instead use a "
-"randomized pattern."
+"The **logrotate** job never runs at midnight precisely, and it is generally "
+"recommended to not run logrotate across all of the environment's computing "
+"nodes at the same time -- but instead use a randomized pattern."
 msgstr ""
 
 #: ../../source/reference-implementation-architecture/index.rst:949
@@ -463,4 +458,3 @@ msgid ""
 "Non-SSL virtual hosts are expected to redirect all traffic to the SSL "
 "virtual hosts."
 msgstr ""
-

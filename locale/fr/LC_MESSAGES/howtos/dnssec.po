@@ -33,15 +33,15 @@ msgstr ""
 
 #: ../../source/howtos/dnssec.rst:98
 msgid ""
-"DNSSEC (*Domain Name System Security Extensions*) provides a means to "
-"sign DNS *Resource Records* (RRs), in turn providing DNS clients to "
-"verify the authenticity of the results to their queries."
+"DNSSEC (*Domain Name System Security Extensions*) provides a means to sign "
+"DNS *Resource Records* (RRs), in turn providing DNS clients to verify the "
+"authenticity of the results to their queries."
 msgstr ""
 
 #: ../../source/howtos/dnssec.rst:102
 msgid ""
-"The keys with which the records are signed can be published via either of"
-" the following two ways;"
+"The keys with which the records are signed can be published via either of "
+"the following two ways;"
 msgstr ""
 
 #: ../../source/howtos/dnssec.rst:105
@@ -59,8 +59,8 @@ msgstr ""
 #: ../../source/howtos/dnssec.rst:112
 msgid ""
 "A so-called *hidden master* is a Start of Authority (*SOA*) name server, "
-"that is not available for querying -- as such, it is not mentioned in the"
-" list of name server records (NS RRs) for a zone."
+"that is not available for querying -- as such, it is not mentioned in the "
+"list of name server records (NS RRs) for a zone."
 msgstr ""
 
 #: ../../source/howtos/dnssec.rst:116
@@ -71,11 +71,10 @@ msgstr ""
 
 #: ../../source/howtos/dnssec.rst:138
 msgid ""
-"Your zones would list ``ns.example.org`` as the start of authority, and "
-"``ns.example.org`` would not resolve to any IP address."
+"Your zones would list ``ns.example.org`` as the start of authority, and ``ns."
+"example.org`` would not resolve to any IP address."
 msgstr ""
 
 #: ../../source/howtos/dnssec.rst:142
 msgid "Generating the KSK and ZSK Keys"
 msgstr ""
-

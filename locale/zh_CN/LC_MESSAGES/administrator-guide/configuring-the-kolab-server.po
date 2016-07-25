@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:42+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-documentation/language/zh_CN/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,8 +28,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:53
 msgid ""
-"Kolab Groupware features the automated application of user metadata, such as"
-" a user's given-, surname and user ID, to form :term:`recipient email "
+"Kolab Groupware features the automated application of user metadata, such as "
+"a user's given-, surname and user ID, to form :term:`recipient email "
 "addresses` for the user."
 msgstr ""
 
@@ -71,8 +72,8 @@ msgstr ""
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:79
 msgid ""
 "Consistency is important when considering global address book listings and "
-"searches in different contexts, and when anticipating what a valid recipient"
-" address for a given user may be -- noted that most email users do not have "
+"searches in different contexts, and when anticipating what a valid recipient "
+"address for a given user may be -- noted that most email users do not have "
 "access to your global address book to verify a recipient address is valid, "
 "and it is likely that most communications will take place with those users."
 msgstr ""
@@ -84,8 +85,8 @@ msgstr ""
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:91
 msgid ""
 "Names can contain non-ASCII characters -- for example *Marie Möller* --, "
-"while recipient email addresses may not contain such characters (i.e. "
-"*marie.möller@example.org* is an invalid email address)."
+"while recipient email addresses may not contain such characters (i.e. *marie."
+"möller@example.org* is an invalid email address)."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:95
@@ -107,9 +108,9 @@ msgstr ""
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:105
 msgid ""
 "The recipient policy takes the value(s) of a number of attributes from an "
-"entry, and executes the recipient policy for primary and secondary recipient"
-" email addresses with help of the attribute names (referred to in the "
-"policy) and their values."
+"entry, and executes the recipient policy for primary and secondary recipient "
+"email addresses with help of the attribute names (referred to in the policy) "
+"and their values."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:110
@@ -131,23 +132,23 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:122
 msgid ""
-"Furthermore, the recipient policy allows these automatically recipient email"
-" addresses to be globally unique."
+"Furthermore, the recipient policy allows these automatically recipient email "
+"addresses to be globally unique."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:125
 msgid ""
 "The primary email address attribute value is, by default, used to determine "
 "a user's mailbox name. Further using the previous example, user *Marie "
-"Möller <marie.moeller@example.org>* would get a user mailbox of "
-"``user/marie.moeller@example.org``."
+"Möller <marie.moeller@example.org>* would get a user mailbox of ``user/marie."
+"moeller@example.org``."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:130
 msgid ""
-"It is important to realize that, should a second user also receive a primary"
-" email address attribute value of *marie.moeller@example.org*, two important"
-" things would happen:"
+"It is important to realize that, should a second user also receive a primary "
+"email address attribute value of *marie.moeller@example.org*, two important "
+"things would happen:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:134
@@ -171,8 +172,8 @@ msgstr ""
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:143
 msgid ""
 "To this end, for each generated value of either primary or secondary mail "
-"address attributes, a check is performed and -- if the address is already in"
-" use -- an integer is appended and incremented if necessary."
+"address attributes, a check is performed and -- if the address is already in "
+"use -- an integer is appended and incremented if necessary."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:147
@@ -204,8 +205,8 @@ msgstr ""
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:159
 msgid ""
 "The optional Kolab Web Administration Panel, often used for inputting new "
-"users and editing existing ones, so that this interface reflects the results"
-" to be expected,"
+"users and editing existing ones, so that this interface reflects the results "
+"to be expected,"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:163
@@ -256,15 +257,15 @@ msgstr ""
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:194
 msgid ""
 "If an example.org user is created with given name John and surname Doe, the "
-"default recipient policy will set the primary email address to "
-"john.doe@example.org and the secondary email addresses to j.doe@example.org "
-"and doe@example.org."
+"default recipient policy will set the primary email address to john."
+"doe@example.org and the secondary email addresses to j.doe@example.org and "
+"doe@example.org."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:201
 msgid ""
-"By default, the primary recipient email address is used as a globally unique"
-" identifier involving authentication (allowing login by email address), the "
+"By default, the primary recipient email address is used as a globally unique "
+"identifier involving authentication (allowing login by email address), the "
 "user's mailbox name, mail delivery configuration, access control and the "
 "storage of user profiles."
 msgstr ""
@@ -338,8 +339,8 @@ msgstr ""
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:294
 msgid ""
 "This return value is checked against the existing user database for global "
-"uniqueness, and appended an integer to, which start at 2, and is incremented"
-" by 1 for each recipient address that would not be globally unique."
+"uniqueness, and appended an integer to, which start at 2, and is incremented "
+"by 1 for each recipient address that would not be globally unique."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:300
@@ -415,11 +416,10 @@ msgstr ""
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:402
 msgid ""
 "Edit the user types for any user that matches the filter used by the kolab "
-"daemon to determine which users are kolab users. For example, \"Kolab "
-"Users\" and \"Mail-enabled POSIX users\" both include "
+"daemon to determine which users are kolab users. For example, \"Kolab Users"
+"\" and \"Mail-enabled POSIX users\" both include "
 "\"objectclass=kolabinetorgperson\" (the default ``kolab_user_filter``) and "
-"therefore the Kolab daemon would apply the recipient policy to these "
-"objects."
+"therefore the Kolab daemon would apply the recipient policy to these objects."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:378
@@ -431,11 +431,11 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:382
 msgid ""
-"If, for example, you seek to apply a recipient policy containing "
-"``%(initials)s``, so that a user *John Frank Doe* may have an email address "
-"of ``john.f.doe@example.org``, the ``initials`` attribute will need to be "
-"added to the ``data`` list in the ``auto_form_field`` definition for the "
-"``mail`` attribute."
+"If, for example, you seek to apply a recipient policy containing ``"
+"%(initials)s``, so that a user *John Frank Doe* may have an email address of "
+"``john.f.doe@example.org``, the ``initials`` attribute will need to be added "
+"to the ``data`` list in the ``auto_form_field`` definition for the ``mail`` "
+"attribute."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:389
@@ -545,8 +545,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:462
 msgid ""
-"Copy :file:`/usr/share/doc/kolab-webadmin-*/sample-insert-user_types.php` to"
-" :file:`/usr/share/kolab-webadmin/`:"
+"Copy :file:`/usr/share/doc/kolab-webadmin-*/sample-insert-user_types.php` "
+"to :file:`/usr/share/kolab-webadmin/`:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:471
@@ -557,8 +557,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:474
 msgid ""
-"Remove the values of ``$attributes['auto_form_fields']['mail']`` and "
-"``$attributes['auto_form_fields']['alias']``."
+"Remove the values of ``$attributes['auto_form_fields']['mail']`` and ``"
+"$attributes['auto_form_fields']['alias']``."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:477
@@ -571,8 +571,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:502
 msgid ""
-"Edit the value of ``$attributes['form_fields']['alias']`` and add "
-"``$attributes['form_fields']['alias']['type'] => \"list\"``:"
+"Edit the value of ``$attributes['form_fields']['alias']`` and add ``"
+"$attributes['form_fields']['alias']['type'] => \"list\"``:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:512
@@ -652,8 +652,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:592
 msgid ""
-"Kolab Groupware allows a single-domain setup to easily become a multi-domain"
-" setup, by adding additional domain name spaces through the web "
+"Kolab Groupware allows a single-domain setup to easily become a multi-domain "
+"setup, by adding additional domain name spaces through the web "
 "administration panel."
 msgstr ""
 
@@ -677,8 +677,8 @@ msgstr ""
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:605
 msgid ""
 "For example, a company with domain name space \"example.us\" as its primary "
-"domain may want to allow email addresses for the domain name space "
-"\"example.com\" (alias) to be used as well."
+"domain may want to allow email addresses for the domain name space \"example."
+"com\" (alias) to be used as well."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:609
@@ -692,8 +692,8 @@ msgid ""
 "This type of domain name space creates a new, isolated space in which the "
 "accounts for the domain name space(s) are to exist. It is isolated in the "
 "sense that none of the accounts in the new domain name space will "
-"(typically) ever know about any of the accounts in any of the other isolated"
-" domain name spaces (unless you make it specifically so)."
+"(typically) ever know about any of the accounts in any of the other isolated "
+"domain name spaces (unless you make it specifically so)."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:619
@@ -721,14 +721,14 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:632
 msgid ""
-"From the left-hand pane -- the list of current parent domain name spaces --,"
-" select the domain to add an alias domain name space to."
+"From the left-hand pane -- the list of current parent domain name spaces --, "
+"select the domain to add an alias domain name space to."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:635
 msgid ""
-"In the \"Domain name(s)\" field, click the \"[+]\" to append a form field to"
-" the list."
+"In the \"Domain name(s)\" field, click the \"[+]\" to append a form field to "
+"the list."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:638
@@ -817,8 +817,8 @@ msgstr ""
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:720
 msgid ""
 "Using the Postfix LDAP lookup tables configured by default, all recipient "
-"addresses in these domain namespaces are validated against "
-"``dc=holding,dc=inc``."
+"addresses in these domain namespaces are validated against ``dc=holding,"
+"dc=inc``."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:724
@@ -830,8 +830,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:766
 msgid ""
-"While the LDAP lookup table for domain name spaces will succeed as expected,"
-" local recipient maps will not, as they have initially been configured to "
+"While the LDAP lookup table for domain name spaces will succeed as expected, "
+"local recipient maps will not, as they have initially been configured to "
 "query the primary domain (and the primary domain only)."
 msgstr ""
 
@@ -868,18 +868,18 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:808
 msgid ""
-"The ``example.org`` domain name space can be resolved to "
-"``dc=example,dc=org`` using a search base template of ``dc=%2,dc=%1``, but "
-"``example.org.uk`` can not be resolved to ``dc=example,dc=org,dc=uk`` using "
-"that same template."
+"The ``example.org`` domain name space can be resolved to ``dc=example,"
+"dc=org`` using a search base template of ``dc=%2,dc=%1``, but ``example.org."
+"uk`` can not be resolved to ``dc=example,dc=org,dc=uk`` using that same "
+"template."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:813
 msgid ""
 "The search base template sets a standard format for root dns, that will "
 "therefore need to apply to all domains throughout the environment. If, for "
-"example, an organization **Plumbers, Inc.** wants you (the service provider)"
-" to synchronize their in-house LDAP tree with root dn ``o=plumbers,c=de``, "
+"example, an organization **Plumbers, Inc.** wants you (the service provider) "
+"to synchronize their in-house LDAP tree with root dn ``o=plumbers,c=de``, "
 "you will need to provide an extra set of custom lookup tables."
 msgstr ""
 
@@ -901,14 +901,14 @@ msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:831
 msgid ""
-"The following depicts an example "
-":file:`/etc/postfix/ldap/hosted_triplet_local_recipient_maps.cf`:"
+"The following depicts an example :file:`/etc/postfix/ldap/"
+"hosted_triplet_local_recipient_maps.cf`:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:850
 msgid ""
-"The following depicts an example "
-":file:`/etc/postfix/ldap/hosted_duplet_local_recipient_maps.cf`:"
+"The following depicts an example :file:`/etc/postfix/ldap/"
+"hosted_duplet_local_recipient_maps.cf`:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:870

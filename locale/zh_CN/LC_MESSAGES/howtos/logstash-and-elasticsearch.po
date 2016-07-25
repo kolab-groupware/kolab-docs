@@ -23,25 +23,24 @@ msgstr ""
 
 #: ../../source/howtos/logstash-and-elasticsearch.rst:93
 msgid ""
-"It is expensive to, in distributed deployment topologies, analyze logs "
-"since they too are distributed."
+"It is expensive to, in distributed deployment topologies, analyze logs since "
+"they too are distributed."
 msgstr ""
 
 #: ../../source/howtos/logstash-and-elasticsearch.rst:96
 msgid ""
-"Even in an environment where session persistence is used (i.e. one user's"
-" request has a greater likelihood to end up on the same application "
-"server, as the previous or next request from that same user), collecting "
-"logs from across distributed systems is essential -- one user may have "
-"multiple devices, and may simply therefore be hitting multiple "
-"application servers."
+"Even in an environment where session persistence is used (i.e. one user's "
+"request has a greater likelihood to end up on the same application server, "
+"as the previous or next request from that same user), collecting logs from "
+"across distributed systems is essential -- one user may have multiple "
+"devices, and may simply therefore be hitting multiple application servers."
 msgstr ""
 
 #: ../../source/howtos/logstash-and-elasticsearch.rst:103
 msgid ""
-"Furthermore, self-referring applications (such as the ``kolab_files`` "
-"plugin referring back to ``webmail.example.org/chwala``) can cause a "
-"single user to hit any or all application servers."
+"Furthermore, self-referring applications (such as the ``kolab_files`` plugin "
+"referring back to ``webmail.example.org/chwala``) can cause a single user to "
+"hit any or all application servers."
 msgstr ""
 
 #: ../../source/howtos/logstash-and-elasticsearch.rst:109
@@ -50,7 +49,6 @@ msgstr ""
 
 #: ../../source/howtos/logstash-and-elasticsearch.rst:111
 msgid ""
-"Provide a light-weight means to forward the logs from the local "
-"application server for central analysis."
+"Provide a light-weight means to forward the logs from the local application "
+"server for central analysis."
 msgstr ""
-

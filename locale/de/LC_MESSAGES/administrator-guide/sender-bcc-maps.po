@@ -24,9 +24,9 @@ msgstr ""
 #: ../../source/administrator-guide/sender-bcc-maps.rst:92
 msgid ""
 "When a shared folder is used by a number of people, each of them "
-"individually sending new messages and responding to existing threads, it "
-"is important to be able to let the other people be aware of the contents "
-"of the entire thread."
+"individually sending new messages and responding to existing threads, it is "
+"important to be able to let the other people be aware of the contents of the "
+"entire thread."
 msgstr ""
 
 #: ../../source/administrator-guide/sender-bcc-maps.rst:96
@@ -44,19 +44,18 @@ msgstr ""
 
 #: ../../source/administrator-guide/sender-bcc-maps.rst:102
 msgid ""
-"The following configuration will enable responses and new messages that "
-"John or Jane send, using the `info@example.org` identity they have been "
-"delegated authority for, to be stored as part of the ongoing conversation"
-" in `shared/info@example.org`."
+"The following configuration will enable responses and new messages that John "
+"or Jane send, using the `info@example.org` identity they have been delegated "
+"authority for, to be stored as part of the ongoing conversation in `shared/"
+"info@example.org`."
 msgstr ""
 
 #: ../../source/administrator-guide/sender-bcc-maps.rst:107
 msgid ""
-"Add a lookup table "
-":file:`/etc/postfix/ldap/sender_bcc_maps_sharedfolders.cf`:"
+"Add a lookup table :file:`/etc/postfix/ldap/sender_bcc_maps_sharedfolders."
+"cf`:"
 msgstr ""
 
 #: ../../source/administrator-guide/sender-bcc-maps.rst:125
 msgid "Configure **postfix** to use this lookup table:"
 msgstr ""
-

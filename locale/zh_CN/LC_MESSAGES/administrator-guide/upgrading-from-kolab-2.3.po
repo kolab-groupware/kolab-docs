@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:43+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-documentation/language/zh_CN/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -72,8 +73,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:78
 msgid ""
-"Update the settings related to the recipient policy in "
-"/etc/kolab/kolab.conf. The following settings are important:"
+"Update the settings related to the recipient policy in /etc/kolab/kolab."
+"conf. The following settings are important:"
 msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:80
@@ -90,8 +91,8 @@ msgstr ""
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:85
 msgid ""
 "In case the recipient policy is not to be applied, consider updating the "
-"user_types as per the instructions in Section 5.1, “Editing user_types”. The"
-" secondary_mail setting in the [$domain] section."
+"user_types as per the instructions in Section 5.1, “Editing user_types”. The "
+"secondary_mail setting in the [$domain] section."
 msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:88
@@ -125,8 +126,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:105
 msgid ""
-"Now, users that are created will get a mail attribute value of "
-"\"surname\"@example.org assigned."
+"Now, users that are created will get a mail attribute value of \"surname"
+"\"@example.org assigned."
 msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:107
@@ -158,20 +159,19 @@ msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:122
 msgid ""
-"Copy mailboxes.db and annotations.db. These files are located in "
-"/kolab/var/imapd/ on your Kolab 2 server."
+"Copy mailboxes.db and annotations.db. These files are located in /kolab/var/"
+"imapd/ on your Kolab 2 server."
 msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:133
 msgid ""
-"If cyrus can't start with these files with a message like the following, you"
-" need to convert the files instead of copying."
+"If cyrus can't start with these files with a message like the following, you "
+"need to convert the files instead of copying."
 msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:142
 msgid ""
-"Use the following commands to convert the files from Berkeley DB to "
-"skiplist:"
+"Use the following commands to convert the files from Berkeley DB to skiplist:"
 msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:149
@@ -292,9 +292,9 @@ msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:421
 msgid ""
-"The second part upgrades the contents of shared folders. Shared folders have"
-" no designated owners, and we can therefore not login as a designated user "
-"to upgrade the format."
+"The second part upgrades the contents of shared folders. Shared folders have "
+"no designated owners, and we can therefore not login as a designated user to "
+"upgrade the format."
 msgstr ""
 
 #: ../../source/administrator-guide/upgrading-from-kolab-2.3.rst:423

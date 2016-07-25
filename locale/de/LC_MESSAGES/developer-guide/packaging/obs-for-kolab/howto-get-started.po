@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:39+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/kolab-documentation/language/de/)\n"
+"Language-Team: German (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -59,22 +60,22 @@ msgstr ""
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:69
 msgid ""
 "The openSUSE Build System does not include updates to packages for the "
-"distributions it builds packages for. As such, sometimes the **osc** package"
-" might depend on, or be built, or have been built against old packages in a "
+"distributions it builds packages for. As such, sometimes the **osc** package "
+"might depend on, or be built, or have been built against old packages in a "
 "way that is incompatible with the current state of your system."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:74
 msgid ""
 "Initial configuration for the **osc** command-line utility would be created "
-"when you first run it, but the configuration defaults to using "
-"build.opensuse.org rather than obs.kolabsys.com."
+"when you first run it, but the configuration defaults to using build."
+"opensuse.org rather than obs.kolabsys.com."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:78
 msgid ""
-"Consider seeding your configuration by putting the following in "
-":file:`~/.oscrc`, changing of course your username and password:"
+"Consider seeding your configuration by putting the following in :file:`~/."
+"oscrc`, changing of course your username and password:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:91
@@ -83,8 +84,8 @@ msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:93
 msgid ""
-"To be able to submit updates for review and approval, we recommend you first"
-" create your home project, which will function as the parent, and hold the "
+"To be able to submit updates for review and approval, we recommend you first "
+"create your home project, which will function as the parent, and hold the "
 "repository configuration."
 msgstr ""
 
@@ -99,8 +100,8 @@ msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:103
 msgid ""
-"Taking the **home:vanmeeuwen** project as an example, pull the configuration"
-" of it to your own home project:"
+"Taking the **home:vanmeeuwen** project as an example, pull the configuration "
+"of it to your own home project:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:113
@@ -120,8 +121,8 @@ msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:221
 msgid ""
-"At the time of this writing, the Kolab Groupware OBS maintains the following"
-" projects:"
+"At the time of this writing, the Kolab Groupware OBS maintains the following "
+"projects:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:224
@@ -130,8 +131,8 @@ msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:226
 msgid ""
-"This repository contains the latest and greatest releases upstream, possibly"
-" including builds of software that is gravely unstable, does not work and "
+"This repository contains the latest and greatest releases upstream, possibly "
+"including builds of software that is gravely unstable, does not work and "
 "break your system."
 msgstr ""
 
@@ -196,8 +197,7 @@ msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:300
 msgid ""
-"is one of the target repository names, such as *Debian_6.0*, *CentOS_6*, "
-"etc."
+"is one of the target repository names, such as *Debian_6.0*, *CentOS_6*, etc."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:303
@@ -206,8 +206,8 @@ msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:305
 msgid ""
-"is one of the local package specifications, i.e. either the :file:`.dsc` or "
-":file:`.spec` of the package."
+"is one of the local package specifications, i.e. either the :file:`.dsc` or :"
+"file:`.spec` of the package."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:309

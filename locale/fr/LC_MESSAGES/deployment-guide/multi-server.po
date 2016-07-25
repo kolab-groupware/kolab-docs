@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:40+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-documentation/language/fr_FR/)\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,8 +25,7 @@ msgstr ""
 #: ../../source/deployment-guide/multi-server.rst:46
 msgid ""
 "This deployment scenario spreads components over multiple servers for the "
-"purpose of load-balancing, implicitly including a level of high-"
-"availability."
+"purpose of load-balancing, implicitly including a level of high-availability."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:49
@@ -69,8 +69,8 @@ msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:75
 msgid ""
-"Alternatively, some services can run on one server, while other services run"
-" on another:"
+"Alternatively, some services can run on one server, while other services run "
+"on another:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:99
@@ -86,8 +86,8 @@ msgstr ""
 #: ../../source/deployment-guide/multi-server.rst:148
 msgid ""
 "While the :ref:`and_intro` chapter in the :ref:`and` document included a "
-"high-level overview of functional components, in this chapter we can zoom in"
-" a little and define the functional components by a role. Generically "
+"high-level overview of functional components, in this chapter we can zoom in "
+"a little and define the functional components by a role. Generically "
 "speaking this would include the following roles:"
 msgstr ""
 
@@ -192,8 +192,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:642
-msgid ""
-"And extended yet even further by the introduction of (caching) proxies:"
+msgid "And extended yet even further by the introduction of (caching) proxies:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:660
@@ -233,16 +232,16 @@ msgstr ""
 #: ../../source/deployment-guide/multi-server.rst:680
 msgid ""
 "You could simply use memcached for the session storage, but this moves the "
-"single point of failure just one step further -- namely should the memcached"
-" server, fail, sessions are lost."
+"single point of failure just one step further -- namely should the memcached "
+"server, fail, sessions are lost."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:684
 msgid ""
 "To reduce the number of sessions lost, or to increase storage capacity "
 "horizontally, one can supply multiple memcached servers to the session "
-"storage driver, which will be used as a pool -- the sessions would be spread"
-" throughout the pool. Loss of a single memcached server is then limits to "
+"storage driver, which will be used as a pool -- the sessions would be spread "
+"throughout the pool. Loss of a single memcached server is then limits to "
 "only a subset of the sessions."
 msgstr ""
 
@@ -262,8 +261,8 @@ msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:700
 msgid ""
-"Internal mail exchangers use LDAP to look up which Cyrus IMAP backend server"
-" system the user's mailbox or shared folder resides on. They then relay the "
+"Internal mail exchangers use LDAP to look up which Cyrus IMAP backend server "
+"system the user's mailbox or shared folder resides on. They then relay the "
 "message to the backend mail exchanger for final delivery, using SMTP."
 msgstr ""
 
@@ -278,8 +277,7 @@ msgid "Todo"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:709
-msgid ""
-"We probably need to explain why we choose to use SMTP rather than LMTP."
+msgid "We probably need to explain why we choose to use SMTP rather than LMTP."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:711
@@ -343,8 +341,8 @@ msgstr ""
 #: ../../source/deployment-guide/multi-server.rst:753
 msgid ""
 "In this deployment scenario, each of the roles can be fulfilled by one or "
-"more servers. To illustrate, here's a diagram for a deployment scenario that"
-" expects to be hammered by probably illegitimate or unsollicited mail, and "
+"more servers. To illustrate, here's a diagram for a deployment scenario that "
+"expects to be hammered by probably illegitimate or unsollicited mail, and "
 "does not expect that much traffic internally:"
 msgstr ""
 
@@ -411,8 +409,8 @@ msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:799
 msgid ""
-"Use different bind credentials on the external mail exchanger, and make sure"
-" no internal service accounts are replicated."
+"Use different bind credentials on the external mail exchanger, and make sure "
+"no internal service accounts are replicated."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:802
@@ -512,8 +510,8 @@ msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:867
 msgid ""
-"Which server this connection ends up with depends on the health of Server #1"
-" and #2."
+"Which server this connection ends up with depends on the health of Server #1 "
+"and #2."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:870

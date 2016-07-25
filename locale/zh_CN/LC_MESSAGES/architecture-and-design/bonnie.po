@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:36+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-documentation/language/zh_CN/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,14 +38,14 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:54
 msgid ""
-"Archival is the retention of business records, in a fashion that allows them"
-" to be used as evidence."
+"Archival is the retention of business records, in a fashion that allows them "
+"to be used as evidence."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:57
 msgid ""
-"Many archival solutions only include actual communications that descend over"
-" an SMTP server that can keep the archival solution in the loop."
+"Many archival solutions only include actual communications that descend over "
+"an SMTP server that can keep the archival solution in the loop."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:61
@@ -183,8 +184,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:133
 msgid ""
-"The centralization of system log files such as :file:`/var/log/maillog` aids"
-" in tracing the exchange of messages as they descend across infrastructure, "
+"The centralization of system log files such as :file:`/var/log/maillog` aids "
+"in tracing the exchange of messages as they descend across infrastructure, "
 "and helps in associating, for example, a Login event to an IMAP frontend "
 "with the corresponding web server session [#]_."
 msgstr ""
@@ -216,8 +217,7 @@ msgid "A worker router,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:205
-msgid ""
-"used to exchange job information and notification payload with workers."
+msgid "used to exchange job information and notification payload with workers."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:207
@@ -253,8 +253,7 @@ msgstr ""
 #: ../../source/architecture-and-design/bonnie.rst:236
 msgid ""
 "The broker, maintaining a queue of jobs to assign to workers, lets the "
-"worker know about a newly assigned job -- again using the controller "
-"channel."
+"worker know about a newly assigned job -- again using the controller channel."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:252
@@ -266,8 +265,8 @@ msgstr ""
 #: ../../source/architecture-and-design/bonnie.rst:269
 msgid ""
 "The worker is now in state BUSY and must respond within a set interval or "
-"the broker will set the job back in to PENDING state, and mark the worker as"
-" unavailable."
+"the broker will set the job back in to PENDING state, and mark the worker as "
+"unavailable."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:276
@@ -345,9 +344,9 @@ msgstr ""
 #: ../../source/architecture-and-design/bonnie.rst:329
 msgid ""
 "Passing this event right through to the changelog handler would make it "
-"require obtaining the ``/shared/vendor/kolab/folder-type`` and/or "
-"``/private/vendor/kolab/folder-type`` metadata value(s) in order to "
-"determine whether the folder indeed is an event folder."
+"require obtaining the ``/shared/vendor/kolab/folder-type`` and/or ``/private/"
+"vendor/kolab/folder-type`` metadata value(s) in order to determine whether "
+"the folder indeed is an event folder."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:334
@@ -652,8 +651,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:589
 msgid ""
-"Note that the subscribers are different components to plug in and enable, or"
-" leave out -- not everyone has a need for Archival and e-Discovery "
+"Note that the subscribers are different components to plug in and enable, or "
+"leave out -- not everyone has a need for Archival and e-Discovery "
 "capabilities."
 msgstr ""
 
@@ -761,8 +760,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:735
 msgid ""
-"Modelled after an article about tracking worker status at "
-"http://rfc.zeromq.org/spec:14"
+"Modelled after an article about tracking worker status at http://rfc.zeromq."
+"org/spec:14"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:767
@@ -778,9 +777,9 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:773
 msgid ""
-"The dealer is not awaiting confirmation in the sense that it will replay the"
-" submission if needed, such as after the dealer has been restarted. This too"
-" could introduce a loss of notifications."
+"The dealer is not awaiting confirmation in the sense that it will replay the "
+"submission if needed, such as after the dealer has been restarted. This too "
+"could introduce a loss of notifications."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:777
@@ -801,8 +800,7 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:785
 msgid ""
-"The broker is keeping the job queue in memory for fast updates and "
-"responses."
+"The broker is keeping the job queue in memory for fast updates and responses."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:788
@@ -876,8 +874,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:920
 msgid ""
-"``folder_uniqueid``: The gobally unique folder identifer of a mailbox folder"
-" from IMAP."
+"``folder_uniqueid``: The gobally unique folder identifer of a mailbox folder "
+"from IMAP."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:922
@@ -948,9 +946,9 @@ msgid ""
 "In order to compute the folder identifier, the complete set of folder "
 "information like metadata and acl has to be pulled from IMAP using a "
 "collector job on every single event notification. Once Cyrus IMAP supports "
-"notifications for metadata changes (`#3698 "
-"<https://issues.kolab.org/show_bug.cgi?id=3698>`_), this could be skipped "
-"and the folder metadata records can be updated on specific events only."
+"notifications for metadata changes (`#3698 <https://issues.kolab.org/"
+"show_bug.cgi?id=3698>`_), this could be skipped and the folder metadata "
+"records can be updated on specific events only."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1009
@@ -959,8 +957,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1011
 msgid ""
-"Although elasticsearch isn't a relational database, the Bonnie storage model"
-" implies a simple object relation model between logs and metadata."
+"Although elasticsearch isn't a relational database, the Bonnie storage model "
+"implies a simple object relation model between logs and metadata."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1052
@@ -969,8 +967,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1054
 msgid ""
-"Some of the collected data, primarily changelogs of groupware objects, shall"
-" be made available to Kolab clients to display the history of a certain "
+"Some of the collected data, primarily changelogs of groupware objects, shall "
+"be made available to Kolab clients to display the history of a certain "
 "object or creation/last-modification information including the according "
 "usernames which is not stored in the Kolab data format itself."
 msgstr ""
@@ -1018,14 +1016,14 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1091
 msgid ""
-"http://git.cyrusimap.org/cyrus-"
-"imapd/tree/notifyd?id=8bdaeae3f891ba2a748ba91a4c324ee11346e292"
+"http://git.cyrusimap.org/cyrus-imapd/tree/notifyd?"
+"id=8bdaeae3f891ba2a748ba91a4c324ee11346e292"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1095
 msgid ""
 "Needs further investigation, for the actual maximum size of a datagram may "
 "have ceased to be hard-coded. Yet, to submit a large message through the "
-"notification daemon while the notification target is eligible to pick up the"
-" message contents from the filesystem seems like duplication."
+"notification daemon while the notification target is eligible to pick up the "
+"message contents from the filesystem seems like duplication."
 msgstr ""

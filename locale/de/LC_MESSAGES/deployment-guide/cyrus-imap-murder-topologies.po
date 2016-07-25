@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:40+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/kolab-documentation/language/de/)\n"
+"Language-Team: German (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,8 +30,8 @@ msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:51
 msgid ""
-"For the purpose of this documentation, the following terminology needs to be"
-" outlined:"
+"For the purpose of this documentation, the following terminology needs to be "
+"outlined:"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:54
@@ -40,16 +41,16 @@ msgstr ""
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:56
 msgid ""
 "A Cyrus IMAP frontend is a functional component that receives connections "
-"from clients, and proxies those to the backend on which the relevant mailbox"
-" resides."
+"from clients, and proxies those to the backend on which the relevant mailbox "
+"resides."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:62
 msgid ""
 "Please note that a frontend proxies the connection on a per-mailbox level "
-"(as needed). As such, the client connection is *terminated* at the frontend,"
-" the frontend *interprets* the protocol, and decides what backend to create "
-"a *new* connection to (if needed)."
+"(as needed). As such, the client connection is *terminated* at the frontend, "
+"the frontend *interprets* the protocol, and decides what backend to create a "
+"*new* connection to (if needed)."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:67
@@ -124,26 +125,26 @@ msgstr ""
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:175
 msgid ""
 "The *MTA (Internal)* can use a lookup table for local recipients (valid "
-"recipient addresses in any of the :term:`mydestination` or "
-":term:`relay_domains` domain name spaces), that routes (instead of delivers)"
-" the message through to the correct backend (called a *transport map*), "
-"using the LDAP ``mailHost`` attribute value for entries."
+"recipient addresses in any of the :term:`mydestination` or :term:"
+"`relay_domains` domain name spaces), that routes (instead of delivers) the "
+"message through to the correct backend (called a *transport map*), using the "
+"LDAP ``mailHost`` attribute value for entries."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:181
 msgid ""
 "To configure such transport map lookup table, adjust the contents of the "
-"following snippet to suite your deployment and save it to "
-":file:`/etc/postfix/ldap/transport_maps.cf` -- this file could exist "
-"already, likely with a ``result_attribute`` value of ``mail``, and a "
-"``result_format`` value of ``lmtp:unix:/var/lib/imap/socket/lmtp``:"
+"following snippet to suite your deployment and save it to :file:`/etc/"
+"postfix/ldap/transport_maps.cf` -- this file could exist already, likely "
+"with a ``result_attribute`` value of ``mail``, and a ``result_format`` value "
+"of ``lmtp:unix:/var/lib/imap/socket/lmtp``:"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:203
 msgid ""
 "By the time the *MTA (Internal)* queries the transport map, any secondary "
-"email address should have already been translated to a final recipient email"
-" address (primary email address), for which Kolab uses *virtual alias maps* "
+"email address should have already been translated to a final recipient email "
+"address (primary email address), for which Kolab uses *virtual alias maps* "
 "by default."
 msgstr ""
 
@@ -154,15 +155,15 @@ msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:215
 msgid ""
-"The *MTA (Internal)* will now attempt delivery for John to backend1, and for"
-" Jane to backend2."
+"The *MTA (Internal)* will now attempt delivery for John to backend1, and for "
+"Jane to backend2."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:218
 msgid ""
-"The backends' MTA now needs to be configured to consider part of "
-":term:`mydestination` local -- the local mailboxes -- and part of "
-":term:`mydestination` remote -- the mailboxes on the other backend(s). This "
+"The backends' MTA now needs to be configured to consider part of :term:"
+"`mydestination` local -- the local mailboxes -- and part of :term:"
+"`mydestination` remote -- the mailboxes on the other backend(s). This "
 "consists of three parts:"
 msgstr ""
 
@@ -179,8 +180,8 @@ msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:250
 msgid ""
-"Setting the **transport_maps**, in (for example) "
-":file:`/etc/postfix/ldap/transport_maps.cf`:"
+"Setting the **transport_maps**, in (for example) :file:`/etc/postfix/ldap/"
+"transport_maps.cf`:"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:268
@@ -214,8 +215,7 @@ msgstr ""
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:301
 msgid ""
 "It is actually not the FQDN of the system the mailbox is hosted on, but the "
-"value of the ``servername`` setting in :manpage:`imapd.conf(5)` that is "
-"used."
+"value of the ``servername`` setting in :manpage:`imapd.conf(5)` that is used."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:307

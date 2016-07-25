@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:43+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-documentation/language/zh_CN/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -85,8 +86,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:90
 msgid ""
-"The **r** right also allows the user to GETMETADATA when used in conjunction"
-" with the **l** right, as defined in RFC 5464."
+"The **r** right also allows the user to GETMETADATA when used in conjunction "
+"with the **l** right, as defined in RFC 5464."
 msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:93
@@ -100,9 +101,9 @@ msgstr ""
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:97
 msgid ""
 "The ACE subject is permitted to maintain the ACE subject's seen state for "
-"this folder, or the shared seen state in case the ``/vendor/cmu/cyrus-"
-"imapd/sharedseen`` has been set to true. Additionally, the \\Recent flags "
-"are preserved for the ACE subject."
+"this folder, or the shared seen state in case the ``/vendor/cmu/cyrus-imapd/"
+"sharedseen`` has been set to true. Additionally, the \\Recent flags are "
+"preserved for the ACE subject."
 msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:102
@@ -123,8 +124,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:111
 msgid ""
-"The **w** right also allows the user to SETMETADATA when used in conjunction"
-" with the **l** and **r** rights, as defined in RFC 5464."
+"The **w** right also allows the user to SETMETADATA when used in conjunction "
+"with the **l** and **r** rights, as defined in RFC 5464."
 msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:114
@@ -154,8 +155,8 @@ msgstr ""
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:128
 msgid ""
 "The ACE subject is permitted to insert content into a folder, meaning the "
-"ACE subject may COPY messages with this folder as the target folder, and may"
-" APPEND messages to this folder."
+"ACE subject may COPY messages with this folder as the target folder, and may "
+"APPEND messages to this folder."
 msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:132
@@ -182,8 +183,8 @@ msgstr ""
 msgid ""
 "Example implementations using the **p** right include shared folders to "
 "which specific recipient addresses are delivered through LMTP pre- "
-"authorized as the postuser, which must then also have the **p** right on the"
-" target folder."
+"authorized as the postuser, which must then also have the **p** right on the "
+"target folder."
 msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:147
@@ -233,8 +234,8 @@ msgstr ""
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:172
 msgid ""
 "The rights required for a RENAME to be successful could be illustrated by "
-"describing a RENAME as a CREATE of the new folder, not exactly followed by a"
-" COPY on the old folder's contents, but more like a move like on a "
+"describing a RENAME as a CREATE of the new folder, not exactly followed by a "
+"COPY on the old folder's contents, but more like a move like on a "
 "filesystem, and finally a DELETE on the old folder."
 msgstr ""
 
@@ -260,8 +261,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:189
 msgid ""
-"The ACE subject is allowed to administer the folder, meaning the ACE subject"
-" is allowed to perform administrative operations on the folder. The **a** "
+"The ACE subject is allowed to administer the folder, meaning the ACE subject "
+"is allowed to perform administrative operations on the folder. The **a** "
 "right is needed to successfully execute SETACL, DELETEACL (short for SETACL "
 "\"\") and to execute GETACL or LISTRIGHTS."
 msgstr ""
@@ -290,8 +291,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:208
 msgid ""
-"Use this to indicate the ACE subject has the right to delete the mailbox, as"
-" opposed to the **c** or **d** rights."
+"Use this to indicate the ACE subject has the right to delete the mailbox, as "
+"opposed to the **c** or **d** rights."
 msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:211
@@ -300,8 +301,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:213
 msgid ""
-"The ACE subject is allowed to delete messages from this folder, meaning that"
-" the ACE subject is allowed to flag messages as deleted."
+"The ACE subject is allowed to delete messages from this folder, meaning that "
+"the ACE subject is allowed to flag messages as deleted."
 msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:216
@@ -345,19 +346,19 @@ msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:237
 msgid ""
-"In IMAP, expunging messages only applies to messages flagged as deleted. For"
-" the ACE subject to be able to flag messages as deleted however, the **t** "
+"In IMAP, expunging messages only applies to messages flagged as deleted. For "
+"the ACE subject to be able to flag messages as deleted however, the **t** "
 "right is required."
 msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:241
 msgid ""
 "We say \"remove from all visibility\", because the implementation of "
-"expunging messages in Cyrus IMAP is ACE subject to the expunge_mode in "
-"/etc/imapd.conf, which when set to delayed only causes the reference to the "
+"expunging messages in Cyrus IMAP is ACE subject to the expunge_mode in /etc/"
+"imapd.conf, which when set to delayed only causes the reference to the "
 "expunged messages to be deleted from the folder index database -- "
-"effectively removing the expunged message(s) from all visibility, while they"
-" remain in place on the Cyrus IMAP server filesystem."
+"effectively removing the expunged message(s) from all visibility, while they "
+"remain in place on the Cyrus IMAP server filesystem."
 msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:248
@@ -389,11 +390,11 @@ msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:262
 msgid ""
-"The deleteright setting in /etc/imapd.conf controls the RFC 2086 right which"
-" controls whether or not the ACE subject may delete a folder. However, this "
+"The deleteright setting in /etc/imapd.conf controls the RFC 2086 right which "
+"controls whether or not the ACE subject may delete a folder. However, this "
 "setting (as the original specification for the delete right was considered "
-"ambiguous) is ignored, and if it is set to **c**, is automatically converted"
-" to the **x** right."
+"ambiguous) is ignored, and if it is set to **c**, is automatically converted "
+"to the **x** right."
 msgstr ""
 
 #: ../../source/administrator-guide/imap-access-rights-reference.rst:268
@@ -404,6 +405,6 @@ msgstr ""
 msgid ""
 "Even though Cyrus IMAP is backwards compatible when it comes to the **d** "
 "right, which it implements as implying as the **e** and **t** rights, "
-"implementations should not count on the **d** right backwards compability to"
-" be around forever, instead use **te** rights."
+"implementations should not count on the **d** right backwards compability to "
+"be around forever, instead use **te** rights."
 msgstr ""

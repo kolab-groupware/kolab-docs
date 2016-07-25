@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:42+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (France) (http://www.transifex.com/projects/p"
-"/kolab-documentation/language/fr_FR/)\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,8 +24,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:92
 msgid ""
-"The **kolab** command-line is a powerful administration utility allowing "
-"you to quickly execute standard administrative tasks."
+"The **kolab** command-line is a powerful administration utility allowing you "
+"to quickly execute standard administrative tasks."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:96
@@ -42,9 +42,9 @@ msgstr ""
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:102
 msgid ""
 "It is important to appreciate that an ACE for ``doe@example.org`` is not "
-"removed when the user ``doe@example.org`` is removed -- when a new user "
-"is created with a :term:`result attribute` value of ``doe@example.org``, "
-"this user implicitly has the access specified by the ACE."
+"removed when the user ``doe@example.org`` is removed -- when a new user is "
+"created with a :term:`result attribute` value of ``doe@example.org``, this "
+"user implicitly has the access specified by the ACE."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:109
@@ -123,8 +123,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:179
 msgid ""
-"Set the metadata KEY for the mailbox or mail folder to VALUE. Specify "
-"once for each pair of KEY=VALUE."
+"Set the metadata KEY for the mailbox or mail folder to VALUE. Specify once "
+"for each pair of KEY=VALUE."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:182
@@ -136,8 +136,8 @@ msgstr ""
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:189
 msgid ""
 "Specify the Cyrus IMAP partition on which to create the mailbox. If not "
-"specified, uses the ``defaultpartition`` configured in "
-":manpage:`imapd.conf(5)`."
+"specified, uses the ``defaultpartition`` configured in :manpage:`imapd."
+"conf(5)`."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:194
@@ -269,8 +269,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:373
 msgid ""
-"List the mailbox metadata logged in as the user, enabling the examination"
-" of the /private metadata namespace in addition to the /shared namespace."
+"List the mailbox metadata logged in as the user, enabling the examination of "
+"the /private metadata namespace in addition to the /shared namespace."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:377
@@ -286,7 +286,8 @@ msgid "The user identifier to list the (un)subscribed folders for."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:401
-msgid "List folders the user is not subscribed to, instead of subscribed folders."
+msgid ""
+"List folders the user is not subscribed to, instead of subscribed folders."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:404
@@ -323,8 +324,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:440
 msgid ""
-"In addition to the regular IMAP access right identifiers, the kolab "
-"command- line takes the following rights:"
+"In addition to the regular IMAP access right identifiers, the kolab command- "
+"line takes the following rights:"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:443
@@ -369,20 +370,20 @@ msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:463
 msgid ""
-"Allow the subject to insert new message (copies), such as groupware "
-"content, and flag current messages as deleted."
+"Allow the subject to insert new message (copies), such as groupware content, "
+"and flag current messages as deleted."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:466
 msgid ""
-"Also allow the subject to maintain flags other than the system flags "
-"``\\Seen`` and ``\\Deleted`` (such as ``\\Flagged``)."
+"Also allow the subject to maintain flags other than the system flags ``"
+"\\Seen`` and ``\\Deleted`` (such as ``\\Flagged``)."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:469
 msgid ""
-"Note that the rights do not include the right to EXPUNGE the folder, "
-"meaning that messages therein remain available."
+"Note that the rights do not include the right to EXPUNGE the folder, meaning "
+"that messages therein remain available."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:472
@@ -395,14 +396,14 @@ msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:476
 msgid ""
-"Everything but administrator rights, so that the subject cannot modify "
-"the access control on the folder."
+"Everything but administrator rights, so that the subject cannot modify the "
+"access control on the folder."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:481
 msgid ""
-"Set the access rights for ``john.doe@example.org`` to administer a folder"
-" ``shared/contacts@example.org``:"
+"Set the access rights for ``john.doe@example.org`` to administer a folder "
+"``shared/contacts@example.org``:"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:488
@@ -417,8 +418,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:510
 msgid ""
-"Set the mailbox metadata logged in as the user, enabling the modification"
-" of the /private metadata namespace annotation values."
+"Set the mailbox metadata logged in as the user, enabling the modification of "
+"the /private metadata namespace annotation values."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:516
@@ -431,14 +432,13 @@ msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:534
 msgid ""
-"The user will be subscribed only of the user also has rights to the "
-"folder."
+"The user will be subscribed only of the user also has rights to the folder."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:539
 msgid ""
-"Subscribe the user specified to mailboxes matching the specified "
-":term:`pattern`."
+"Subscribe the user specified to mailboxes matching the specified :term:"
+"`pattern`."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:543
@@ -513,9 +513,9 @@ msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:628
 msgid ""
-"This command retrieves information about a user from the Web "
-"Administration Panel API (places a ``user.info`` API call), and prints "
-"all attributes for the corresponding user type."
+"This command retrieves information about a user from the Web Administration "
+"Panel API (places a ``user.info`` API call), and prints all attributes for "
+"the corresponding user type."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:644
@@ -539,24 +539,3 @@ msgstr ""
 #: ../../source/administrator-guide/using-the-kolab-command-line.rst:657
 msgid "refresh"
 msgstr ""
-
-#~ msgid ""
-#~ "Iterate over all mailboxes and clean "
-#~ "up the ACL. Useful in deployments "
-#~ "where any ACI may be used with "
-#~ "setting the ACE, because identifier "
-#~ "verification is disabled or otherwise "
-#~ "unavailable."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "It is important to appreciate that "
-#~ "an ACE for 'doe@example.org' is not "
-#~ "removed when the user 'doe@example.org' "
-#~ "is removed -- when a new user "
-#~ "is created with a :term:`result "
-#~ "attribute` value of 'doe@example.org', this"
-#~ " user implicitly has the access "
-#~ "specified by the ACE."
-#~ msgstr ""
-

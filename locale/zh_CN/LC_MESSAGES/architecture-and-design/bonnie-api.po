@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:36+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-documentation/language/zh_CN/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,9 +29,9 @@ msgstr ""
 #: ../../source/architecture-and-design/bonnie-api.rst:52
 msgid ""
 "While initially the Bonnie API will serve as a read-only service to respond "
-"on concrete requests from clients to deliver object changelogs, the protocol"
-" should remain capable of allowing a bi-directional communication between "
-"the participating end-points."
+"on concrete requests from clients to deliver object changelogs, the protocol "
+"should remain capable of allowing a bi-directional communication between the "
+"participating end-points."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:58
@@ -128,8 +129,8 @@ msgstr ""
 msgid ""
 "With every request to an API method, the client shall supply the fully-"
 "qualified identifier of the requesting user together with a hashed value "
-"acting as a signature to prove the authenticity of the request. These values"
-" are provided as custom headers in the HTTP request to the API:"
+"acting as a signature to prove the authenticity of the request. These values "
+"are provided as custom headers in the HTTP request to the API:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:128
@@ -155,8 +156,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:138
 msgid ""
-"Generate the hash value with the HMAC method using the SHA-256 algorithm and"
-" the ``client-secret`` value."
+"Generate the hash value with the HMAC method using the SHA-256 algorithm and "
+"the ``client-secret`` value."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:140
@@ -167,8 +168,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:143
 msgid ""
-"Before processing the RPC command, the web service provider shall verify the"
-" request signature and in case the signature doesn't match the payload, "
+"Before processing the RPC command, the web service provider shall verify the "
+"request signature and in case the signature doesn't match the payload, "
 "reject the request with a JSON-RPC error code ``-32600`` indicating an "
 "*invalid request*."
 msgstr ""
@@ -270,13 +271,13 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:293
 msgid ""
-"Generating and applying diffs in XML documents is not a trivial topic and if"
-" we'd decide to go down the full diff route, we should use existing tools to"
-" generate those diffs. But the benefit of a real XML diff is limited in "
-"terms of displaying changes to groupware objects because in order to "
-"generate a meaningful diff view, the semantics of the individual XML nodes "
-"within a certain groupware object are important and pure xml-level "
-"differences don't simplify the work of a client."
+"Generating and applying diffs in XML documents is not a trivial topic and if "
+"we'd decide to go down the full diff route, we should use existing tools to "
+"generate those diffs. But the benefit of a real XML diff is limited in terms "
+"of displaying changes to groupware objects because in order to generate a "
+"meaningful diff view, the semantics of the individual XML nodes within a "
+"certain groupware object are important and pure xml-level differences don't "
+"simplify the work of a client."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:295
@@ -302,8 +303,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:356
 msgid ""
-"If a property is a struct, the ``new`` parameter only denotes the attributes"
-" which differ from the ``old`` value. If an attribute was removed, it shall "
+"If a property is a struct, the ``new`` parameter only denotes the attributes "
+"which differ from the ``old`` value. If an attribute was removed, it shall "
 "be represented as an empty string."
 msgstr ""
 

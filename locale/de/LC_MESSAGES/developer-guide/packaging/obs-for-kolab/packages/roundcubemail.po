@@ -19,14 +19,14 @@ msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:88
 msgid ""
-"The |roundcubemail| package contains the upstream web-application used "
-"for the webmail interface in Kolab Groupware."
+"The |roundcubemail| package contains the upstream web-application used for "
+"the webmail interface in Kolab Groupware."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:91
 msgid ""
-"It's packaging is rather complex, with one tarball resulting in some 100 "
-"sub-packages."
+"It's packaging is rather complex, with one tarball resulting in some 100 sub-"
+"packages."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:94
@@ -39,16 +39,16 @@ msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:100
 msgid ""
-"Among the Roundcube sources are three generic categories of source code "
-"that are packaged separately -- the core, the plugins and the skins."
+"Among the Roundcube sources are three generic categories of source code that "
+"are packaged separately -- the core, the plugins and the skins."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:103
 msgid ""
-"The core program and each plugin may contain static files (assets) for "
-"the core program or the plugin to function, that are independent of the "
-"skin being used, but may also contain static files (assets) that are "
-"specific to a particular skin being used."
+"The core program and each plugin may contain static files (assets) for the "
+"core program or the plugin to function, that are independent of the skin "
+"being used, but may also contain static files (assets) that are specific to "
+"a particular skin being used."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:108
@@ -59,8 +59,7 @@ msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:113
 msgid ""
-":ref:`article-what-goes-in-to-a-documentroot-and-what-does-not-belong-"
-"there`"
+":ref:`article-what-goes-in-to-a-documentroot-and-what-does-not-belong-there`"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:115
@@ -70,22 +69,22 @@ msgstr ""
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:117
 msgid ""
 "The core Roundcube library contains generic program code shared between "
-"applications such as :ref:`package-chwala`, :ref:`package-irony`, :ref"
-":`package-kolab-freebusy` and :ref:`package-kolab-syncroton`."
+"applications such as :ref:`package-chwala`, :ref:`package-irony`, :ref:"
+"`package-kolab-freebusy` and :ref:`package-kolab-syncroton`."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:122
 msgid ""
-"In packaging, the core Roundcube library is deployed to "
-":file:`/usr/share/roundcubemail/program/lib/Roundcube/`, and configured "
-"using :file:`/etc/roundcubemail/config.inc.php` and "
-":file:`/etc/roundcubemail/defaults.inc.php`."
+"In packaging, the core Roundcube library is deployed to :file:`/usr/share/"
+"roundcubemail/program/lib/Roundcube/`, and configured using :file:`/etc/"
+"roundcubemail/config.inc.php` and :file:`/etc/roundcubemail/defaults.inc."
+"php`."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:127
 msgid ""
-"The core Roundcube program wraps up the core library, required plugins "
-"and the available skins in to the full webmail interface."
+"The core Roundcube program wraps up the core library, required plugins and "
+"the available skins in to the full webmail interface."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:130
@@ -97,8 +96,8 @@ msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:134
 msgid ""
-"This package also depends on the plugins that are required, and at least "
-"one skin (referred to by the virtual provides *roundcubemail(skin)*)."
+"This package also depends on the plugins that are required, and at least one "
+"skin (referred to by the virtual provides *roundcubemail(skin)*)."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:138
@@ -252,4 +251,3 @@ msgstr ""
 #: ../../source/developer-guide/packaging/obs-for-kolab/packages/roundcubemail.rst:181
 msgid "``larry``"
 msgstr ""
-

@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:36+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-documentation/language/zh_CN/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -94,19 +95,19 @@ msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:85
 msgid ""
-"The node's container is provided, the operating system is installed, and the"
-" node is rebooted in to its newly provisioned operating system. Next, *life*"
-" begins."
+"The node's container is provided, the operating system is installed, and the "
+"node is rebooted in to its newly provisioned operating system. Next, *life* "
+"begins."
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:89
 msgid ""
 "This stage corresponds with the provisioning of a system. It is best "
-"practice to keep the provisioning stage to a minimal level, and only perform"
-" just enough tasks to allow the node to come back up after its operating "
+"practice to keep the provisioning stage to a minimal level, and only perform "
+"just enough tasks to allow the node to come back up after its operating "
 "system installation reboot with enough capacity to start *life*. Some such "
-"configuration may include networking configuration, for example, and perhaps"
-" also additional disk configuration."
+"configuration may include networking configuration, for example, and perhaps "
+"also additional disk configuration."
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:97
@@ -122,8 +123,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:104
-msgid ""
-"This stage corresponds with two separate yet interconnected operations:"
+msgid "This stage corresponds with two separate yet interconnected operations:"
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:107
@@ -183,9 +183,9 @@ msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:140
 msgid ""
-"The system administrator iterates over all systems, using ``grep`` on "
-"``/var/log/maillog`` to find all log lines mentioning the sender or intended"
-" recipient(s)."
+"The system administrator iterates over all systems, using ``grep`` on ``/var/"
+"log/maillog`` to find all log lines mentioning the sender or intended "
+"recipient(s)."
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:144
@@ -231,8 +231,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:166
-msgid ""
-"The system administrator is prompted to address the cause of the delay."
+msgid "The system administrator is prompted to address the cause of the delay."
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:169
@@ -241,17 +240,17 @@ msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:171
 msgid ""
-"Steps #1, #2, #4 through #8 of the aforementioned process are repeated, with"
-" step #3 being substituted for the following:"
+"Steps #1, #2, #4 through #8 of the aforementioned process are repeated, with "
+"step #3 being substituted for the following:"
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:174
 msgid ""
-"Because the nature of this question is one likely to occur later in time "
-"(i.e. far past the original events in question) rather than sooner, the "
-"local systems' log file retention policy may have already rotated, rotated "
-"and compressed, or even rotated, compressed and subsequently purged the "
-"relevant log file off of the local filesystem."
+"Because the nature of this question is one likely to occur later in time (i."
+"e. far past the original events in question) rather than sooner, the local "
+"systems' log file retention policy may have already rotated, rotated and "
+"compressed, or even rotated, compressed and subsequently purged the relevant "
+"log file off of the local filesystem."
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:181
@@ -303,8 +302,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:209
 msgid ""
-"Error log messages, alerts, and notices will likely go unnoticed unless they"
-" are actively aggregated, analyzed and used as triggers for follow-up."
+"Error log messages, alerts, and notices will likely go unnoticed unless they "
+"are actively aggregated, analyzed and used as triggers for follow-up."
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:213
@@ -333,21 +332,21 @@ msgid ""
 "No longer depend on the individual system's local disk space for the "
 "retention of log messages, of which disk space consumed can grow beyond a "
 "reasonable size to be allocated to an individual system, and must be "
-"considered more appropriately spent on the runtime data for applications and"
-" services,"
+"considered more appropriately spent on the runtime data for applications and "
+"services,"
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:247
 msgid ""
 "No longer require the continued availability of the individual system -- "
-"with its local disk space -- for the purpose of log message retention, while"
-" the system may corrupt or be discarded,"
+"with its local disk space -- for the purpose of log message retention, while "
+"the system may corrupt or be discarded,"
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:251
 msgid ""
-"Perform manual analysis across the number of systems spent on centralization"
-" rather than the number of individual log sources."
+"Perform manual analysis across the number of systems spent on centralization "
+"rather than the number of individual log sources."
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:255
@@ -382,8 +381,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:290
 msgid ""
-"However, the log messages can no longer be stored in to the same *flat file*"
-" storage as these effectively do not allow querying."
+"However, the log messages can no longer be stored in to the same *flat file* "
+"storage as these effectively do not allow querying."
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:294
@@ -398,11 +397,11 @@ msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:299
 msgid ""
-"The use of TCP to transmit syslog messages on to a centralized syslog server"
-" is lossless compared to the use of UDP, but manipulates message payload to "
+"The use of TCP to transmit syslog messages on to a centralized syslog server "
+"is lossless compared to the use of UDP, but manipulates message payload to "
 "fit TCP datagram sizes, potentially rendering syslog unavailable should the "
-"TCP connection not be established and responsive, potentially locking up the"
-" system/service issuing log messages."
+"TCP connection not be established and responsive, potentially locking up the "
+"system/service issuing log messages."
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:306
@@ -415,8 +414,8 @@ msgstr ""
 #: ../../source/architecture-and-design/environment-management.rst:310
 msgid ""
 "Not all log messages (of an application) are suitable for inclusion in a "
-"syslog stream, such as those that implement the `LEMONADE`_ architecture for"
-" groupware environments."
+"syslog stream, such as those that implement the `LEMONADE`_ architecture for "
+"groupware environments."
 msgstr ""
 
 #: ../../source/architecture-and-design/environment-management.rst:314

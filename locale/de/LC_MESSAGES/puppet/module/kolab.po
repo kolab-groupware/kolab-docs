@@ -29,14 +29,14 @@ msgstr ""
 #: ../../source/puppet/module/kolab.rst:96
 msgid ""
 "The Kolab module for Puppet allows the continued management of a Kolab "
-"Groupware environment, by defining nodes as having a certain role within "
-"the Kolab Groupware environment."
+"Groupware environment, by defining nodes as having a certain role within the "
+"Kolab Groupware environment."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:100
 msgid ""
-"To configure the exact way an included ``kolab`` module class behaves, "
-"the ``kolab`` module uses multiple parameterized classes."
+"To configure the exact way an included ``kolab`` module class behaves, the "
+"``kolab`` module uses multiple parameterized classes."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:105
@@ -64,14 +64,14 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:116
 msgid ""
-"For Nagios, exported resources are used to allow a NOC system to "
-"aggregate the associated resources and realize them."
+"For Nagios, exported resources are used to allow a NOC system to aggregate "
+"the associated resources and realize them."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:119
 msgid ""
-"For Munin, the inclusion of the classes in this module allow the "
-"aggregation of graphs on the NOC server."
+"For Munin, the inclusion of the classes in this module allow the aggregation "
+"of graphs on the NOC server."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:125
@@ -84,8 +84,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:129
 msgid ""
-"A class defining virtual resources to be realized by individual sub-"
-"classes, and resources shared between all IMAP servers."
+"A class defining virtual resources to be realized by individual sub-classes, "
+"and resources shared between all IMAP servers."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:132
@@ -143,8 +143,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:158
 msgid ""
-"A Cyrus IMAP Master Update (mupdate) server in a discrete Cyrus IMAP "
-"Murder topology."
+"A Cyrus IMAP Master Update (mupdate) server in a discrete Cyrus IMAP Murder "
+"topology."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:163
@@ -271,8 +271,7 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:224
 msgid ""
-"A webserver dediciated to providing CalDAV, CardDAV and WebDAV "
-"functionality."
+"A webserver dediciated to providing CalDAV, CardDAV and WebDAV functionality."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:229
@@ -293,8 +292,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:244
 msgid ""
-"A webserver dedicated to providing the Kolab Web Administration Panel "
-"user interface and API."
+"A webserver dedicated to providing the Kolab Web Administration Panel user "
+"interface and API."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:249
@@ -313,8 +312,7 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:256
 msgid ""
-"A class to maintain the YUM repository configuration for staged "
-"environments."
+"A class to maintain the YUM repository configuration for staged environments."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:262
@@ -325,10 +323,9 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:265
 msgid ""
-"It includes *Class[\"webserver\"]* from :ref:`puppet-module-webserver`, "
-"and configures commonly used virtual resources so that each individual "
-"component can realize them, preventing collisions between duplicate "
-"definitions."
+"It includes *Class[\"webserver\"]* from :ref:`puppet-module-webserver`, and "
+"configures commonly used virtual resources so that each individual component "
+"can realize them, preventing collisions between duplicate definitions."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:271
@@ -364,8 +361,8 @@ msgstr ""
 #: ../../source/puppet/module/kolab.rst:290
 msgid ""
 "A separate set of credentials should be supplied for wallace, freebusy, "
-"replication and proxy for the purposes of maintaining a more well-"
-"informed audit trail."
+"replication and proxy for the purposes of maintaining a more well-informed "
+"audit trail."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:294
@@ -464,8 +461,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:347
 msgid ""
-"If defined, ``imap_storage_meta_base_path`` must be set to an absolute "
-"path that exists with 0750 permissions for the cyrus user and mail group."
+"If defined, ``imap_storage_meta_base_path`` must be set to an absolute path "
+"that exists with 0750 permissions for the cyrus user and mail group."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:351
@@ -503,15 +500,15 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:383
 msgid ""
-"This directory normally contains databases among which ``mailboxes.db`` "
-"and ``annotations.db``."
+"This directory normally contains databases among which ``mailboxes.db`` and "
+"``annotations.db``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:386
 msgid ""
-"Because of backup processes, it may be desirable to have the default "
-"spool partition and ``configdir`` located under the same directory "
-"hierarchy off of the same logical volume mount."
+"Because of backup processes, it may be desirable to have the default spool "
+"partition and ``configdir`` located under the same directory hierarchy off "
+"of the same logical volume mount."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:397
@@ -527,15 +524,15 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:403
 msgid ""
-"However, it is not critical for operations and may simply be discarded in"
-" case of a system reboot."
+"However, it is not critical for operations and may simply be discarded in "
+"case of a system reboot."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:406
 msgid ""
-"If performance of message delivery is more important than the suppression"
-" of duplicates (which are a rather rare occurrence), then this file may "
-"be located under a directory hierarchy mounted off of ``tmpfs``."
+"If performance of message delivery is more important than the suppression of "
+"duplicates (which are a rather rare occurrence), then this file may be "
+"located under a directory hierarchy mounted off of ``tmpfs``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:411
@@ -544,17 +541,17 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:413
 msgid ""
-"The ``ptscache.db`` database file caches information related to LDAP "
-"queries performed to find target result attributes for the process of "
-"canonification, and additional authorization information such as a user's"
-" group memberships or roles."
+"The ``ptscache.db`` database file caches information related to LDAP queries "
+"performed to find target result attributes for the process of "
+"canonification, and additional authorization information such as a user's "
+"group memberships or roles."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:418
 #: ../../source/puppet/module/kolab.rst:446
 msgid ""
-"This database can be discarded when a node reboots, and might therefore "
-"also live in a directory hierarchy mounted off of ``tmpfs``."
+"This database can be discarded when a node reboots, and might therefore also "
+"live in a directory hierarchy mounted off of ``tmpfs``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:422
@@ -563,8 +560,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:424
 msgid ""
-"Unless specifically required, keep this to a default value of "
-"``${configdir}/sieve``."
+"Unless specifically required, keep this to a default value of ``${configdir}/"
+"sieve``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:427
@@ -589,8 +586,7 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:437
 msgid ""
-"The absolute path to a location Cyrus IMAP can use to store temporary "
-"files."
+"The absolute path to a location Cyrus IMAP can use to store temporary files."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:440
@@ -600,8 +596,8 @@ msgstr ""
 #: ../../source/puppet/module/kolab.rst:442
 msgid ""
 "The ``tls_sessions.db`` is a database file that maintains previously "
-"negotiated TLS sessions, allowing those sessions to be resumed at a later"
-" time."
+"negotiated TLS sessions, allowing those sessions to be resumed at a later "
+"time."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:450
@@ -638,8 +634,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:464
 msgid ""
-"Corresponds to the ``primary_domain`` setting in the ``[kolab]`` section "
-"of :manpage:`kolab.conf(5)`."
+"Corresponds to the ``primary_domain`` setting in the ``[kolab]`` section of :"
+"manpage:`kolab.conf(5)`."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:467
@@ -652,8 +648,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:471
 msgid ""
-"Corresponds to the setting ``default_locale`` in the ``[kolab]`` section "
-"of :manpage:`kolab.conf(5)`."
+"Corresponds to the setting ``default_locale`` in the ``[kolab]`` section of :"
+"manpage:`kolab.conf(5)`."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:474
@@ -667,8 +663,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:478
 msgid ""
-"Corresponds to the setting ``policy_uid`` in the ``[kolab]`` section of "
-":manpage:`kolab.conf(5)`."
+"Corresponds to the setting ``policy_uid`` in the ``[kolab]`` section of :"
+"manpage:`kolab.conf(5)`."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:481
@@ -677,9 +673,9 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:483
 msgid ""
-"An array of hosts that serve **memcached** to be used for memcache- "
-"capable software applications unless specific memcached host addresses "
-"are defined for that service."
+"An array of hosts that serve **memcached** to be used for memcache- capable "
+"software applications unless specific memcached host addresses are defined "
+"for that service."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:487
@@ -688,8 +684,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:489
 msgid ""
-"An array of hosts that serve **memcached** to be used solely for the "
-"webmail client software."
+"An array of hosts that serve **memcached** to be used solely for the webmail "
+"client software."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:492
@@ -740,8 +736,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:515
 msgid ""
-"**roundcubemail_db_dsnw** "
-"(``mysqli://roundcube:password@localhost/roundcube``)"
+"**roundcubemail_db_dsnw** (``mysqli://roundcube:password@localhost/"
+"roundcube``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:517
@@ -753,15 +749,16 @@ msgid "**ldap_bind_dn** (``cn=Directory Manager``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:521
-msgid "The login for the administrative credentials to use when binding to LDAP."
+msgid ""
+"The login for the administrative credentials to use when binding to LDAP."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:526
 msgid ""
-"Note that you are encouraged to provide the Kolab Groupware environment "
-"with credentials lesser privileged than \"cn=Directory Manager\", but "
-"that certain functionality we have to make available in a standard "
-"deployment requires the use of these superuser credentials."
+"Note that you are encouraged to provide the Kolab Groupware environment with "
+"credentials lesser privileged than \"cn=Directory Manager\", but that "
+"certain functionality we have to make available in a standard deployment "
+"requires the use of these superuser credentials."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:532
@@ -786,8 +783,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:543
 msgid ""
-"The bind DN for services, normally ``uid=kolab-service,ou=Special "
-"Users,${ldap_root_dn}``"
+"The bind DN for services, normally ``uid=kolab-service,ou=Special Users,"
+"${ldap_root_dn}``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:546
@@ -800,8 +797,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:550
 msgid ""
-"**kolab_cache_sql_uri** "
-"(``mysql://kolab:Welcome2KolabSystems@localhost/kolab``)"
+"**kolab_cache_sql_uri** (``mysql://kolab:Welcome2KolabSystems@localhost/"
+"kolab``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:552
@@ -810,8 +807,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:554
 msgid ""
-"**kolab_webadmin_sql_uri** "
-"(``mysql://kolab:Welcome2KolabSystems@localhost/kolab``)"
+"**kolab_webadmin_sql_uri** (``mysql://kolab:Welcome2KolabSystems@localhost/"
+"kolab``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:556
@@ -826,8 +823,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:561
 msgid ""
-"The DES key used by the Roundcube webmail program to encrypt session-"
-"related information."
+"The DES key used by the Roundcube webmail program to encrypt session-related "
+"information."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:564
@@ -859,7 +856,8 @@ msgid "``kolab::params::imap``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:579
-msgid "**imap_storage_partitions** (``$kolab::params::imap_storage_partitions``)"
+msgid ""
+"**imap_storage_partitions** (``$kolab::params::imap_storage_partitions``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:581
@@ -868,8 +866,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:583
 msgid ""
-"**imap_storage_meta_base_path** "
-"(``$kolab::params::imap_storage_meta_base_path``)"
+"**imap_storage_meta_base_path** (``$kolab::params::"
+"imap_storage_meta_base_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:585
@@ -878,8 +876,8 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:587
 msgid ""
-"**imap_storage_spool_base_path** "
-"(``$kolab::params::imap_storage_spool_base_path``)"
+"**imap_storage_spool_base_path** (``$kolab::params::"
+"imap_storage_spool_base_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:589
@@ -930,14 +928,13 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:614
 msgid ""
-"Override the directory used to store socket files set using "
-"``kolab::params``."
+"Override the directory used to store socket files set using ``kolab::"
+"params``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:617
 msgid ""
-"**imap_statuscache_db_path** "
-"(``$kolab::params::imap_statuscache_db_path``)"
+"**imap_statuscache_db_path** (``$kolab::params::imap_statuscache_db_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:619
@@ -966,29 +963,29 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:634
 msgid ""
-"We strongly encourage you wrap the individual ``kolab`` module classes "
-"with some of your own, in order to share certain configuration "
-"information between multiple nodes, but not share all information with "
-"all of them, and in order to allow divergence (in terms of development)."
+"We strongly encourage you wrap the individual ``kolab`` module classes with "
+"some of your own, in order to share certain configuration information "
+"between multiple nodes, but not share all information with all of them, and "
+"in order to allow divergence (in terms of development)."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:639
 msgid ""
-"In the simplest form, going with all defaults, the class structure you "
-"might want to use looks as follows:"
+"In the simplest form, going with all defaults, the class structure you might "
+"want to use looks as follows:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:694
 msgid ""
-"You might wonder why the green parts (yours) need to be so large, so lets"
-" look under the hood and apply some differentiation between IMAP "
-"frontends and backends."
+"You might wonder why the green parts (yours) need to be so large, so lets "
+"look under the hood and apply some differentiation between IMAP frontends "
+"and backends."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:698
 msgid ""
-"Suppose that, for example, both types of IMAP servers require a different"
-" ``configdir`` setting in :manpage:`imapd.conf(5)`."
+"Suppose that, for example, both types of IMAP servers require a different "
+"``configdir`` setting in :manpage:`imapd.conf(5)`."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:701
@@ -1000,20 +997,20 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:705
 msgid ""
-"The frontend-, backend- and mupdate-specific classes would need to break "
-"the inheritance of the common class, and each instantiate "
-"``kolab::params`` themselves, individually. Because your other functional"
-" components would still use the common class, this duplicates "
-"instantiating ``kolab::params`` times 4, for 3 environments each."
+"The frontend-, backend- and mupdate-specific classes would need to break the "
+"inheritance of the common class, and each instantiate ``kolab::params`` "
+"themselves, individually. Because your other functional components would "
+"still use the common class, this duplicates instantiating ``kolab::params`` "
+"times 4, for 3 environments each."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:711
 msgid ""
 "Therefore each ``example_org_kolab::imap`` sub-class is to instantiate a "
-"parameterized sub-class of ``kolab::params``, called "
-"``kolab::params::imap``. This sub-class inherits ``kolab::params``, so "
-"that you still have to configure those settings only once, but allow you "
-"to configure some additional, IMAP-server specific settings."
+"parameterized sub-class of ``kolab::params``, called ``kolab::params::"
+"imap``. This sub-class inherits ``kolab::params``, so that you still have to "
+"configure those settings only once, but allow you to configure some "
+"additional, IMAP-server specific settings."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:717
@@ -1026,51 +1023,50 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:777
 msgid ""
-"A deployment does not necessarily consist of homogeneous operating "
-"systems and operating system versions."
+"A deployment does not necessarily consist of homogeneous operating systems "
+"and operating system versions."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:780
 msgid ""
-"Some systems may run CentOS 6, others RHEL 6, and perhaps yet some others"
-" RHEL 7."
+"Some systems may run CentOS 6, others RHEL 6, and perhaps yet some others "
+"RHEL 7."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:783
 msgid ""
-"Even if this is not the day-to-day, each deployment will transition, "
-"sooner or later, therefore creating a hybrid environment (or worse)."
+"Even if this is not the day-to-day, each deployment will transition, sooner "
+"or later, therefore creating a hybrid environment (or worse)."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:786
 msgid ""
-"A deployment is not necessarily comprised of systems all running the "
-"exact same Kolab Enterprise version. Some systems may happily continue to"
-" run a functional component based on Kolab Enterprise 13, while perhaps "
-"the web- or IMAP servers have moved on to run Kolab Enterprise 14."
+"A deployment is not necessarily comprised of systems all running the exact "
+"same Kolab Enterprise version. Some systems may happily continue to run a "
+"functional component based on Kolab Enterprise 13, while perhaps the web- or "
+"IMAP servers have moved on to run Kolab Enterprise 14."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:792
 msgid ""
-"Again even if this is not the day-to-day, each deployment will "
-"transition, sooner or later."
+"Again even if this is not the day-to-day, each deployment will transition, "
+"sooner or later."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:795
 msgid ""
-"The reproducibility of a system you have in production today, whether for"
-" the purposes of recovery or capacity increase, depends on your ability "
-"to not only produce a system, but have that system be maintained using "
-"the exact same package versions as the other systems in production."
+"The reproducibility of a system you have in production today, whether for "
+"the purposes of recovery or capacity increase, depends on your ability to "
+"not only produce a system, but have that system be maintained using the "
+"exact same package versions as the other systems in production."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:801
 msgid ""
-"While Puppet is intended to describe the desired state of individual "
-"nodes, and the desired state of so many nodes across and even within "
-"deployments may differ so much, the picture of the internals of the "
-"``kolab`` module look yet again a little different from the previous "
-"diagram:"
+"While Puppet is intended to describe the desired state of individual nodes, "
+"and the desired state of so many nodes across and even within deployments "
+"may differ so much, the picture of the internals of the ``kolab`` module "
+"look yet again a little different from the previous diagram:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:906
@@ -1093,8 +1089,7 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:944
 msgid ""
-"This gives us a base structure so that a node manifest might look as "
-"follows:"
+"This gives us a base structure so that a node manifest might look as follows:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:953
@@ -1115,25 +1110,18 @@ msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:1014
 msgid ""
-"Instead of defining ``Class['kolab::params']``, include a class that "
-"comes from a file external to ``example_org_kolab`` class definition (and"
-" hide the actual value from prying eyes)."
+"Instead of defining ``Class['kolab::params']``, include a class that comes "
+"from a file external to ``example_org_kolab`` class definition (and hide the "
+"actual value from prying eyes)."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:1018
-msgid "Not all environment stages need to contain all values for all parameters."
+msgid ""
+"Not all environment stages need to contain all values for all parameters."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:1021
 msgid ""
-"Sub-classing ``example_org_kolab`` further, to wrap individual more "
-"specific roles might give you something like this:"
+"Sub-classing ``example_org_kolab`` further, to wrap individual more specific "
+"roles might give you something like this:"
 msgstr ""
-
-#~ msgid ""
-#~ "The Kolab module for Puppet allows "
-#~ "the continued management of a Kolab "
-#~ "Groupware environment, by defining nodes "
-#~ "as having a certain role."
-#~ msgstr ""
-

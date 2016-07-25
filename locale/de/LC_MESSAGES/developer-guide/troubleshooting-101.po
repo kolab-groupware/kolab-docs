@@ -27,26 +27,25 @@ msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:94
 msgid ""
-"The first step in troubleshooting is to attempt to get to a most complete"
-" description of the symptoms. See also the :ref:`troubleshooting-101"
-"-example-case-no-calendars`."
+"The first step in troubleshooting is to attempt to get to a most complete "
+"description of the symptoms. See also the :ref:`troubleshooting-101-example-"
+"case-no-calendars`."
 msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:98
 msgid ""
-"The second step is to attempt to assess where a certain set of symptoms "
-"of an issue **might** be caused. Note that the list of components needs "
-"to be *inclusive*, rather than exclusive, so that you include all "
-"possible suspect components however unlikely you think they are the "
-"cause."
+"The second step is to attempt to assess where a certain set of symptoms of "
+"an issue **might** be caused. Note that the list of components needs to be "
+"*inclusive*, rather than exclusive, so that you include all possible suspect "
+"components however unlikely you think they are the cause."
 msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:104
 msgid ""
-"Next, from the list of all components involved, you build an ordered list"
-" of suspects more likely to cause the problem, vs. those that are less "
-"likely, taking in to account that some of the suspects may be really easy"
-" to eliminate than others, that may be extremely difficult to eliminate."
+"Next, from the list of all components involved, you build an ordered list of "
+"suspects more likely to cause the problem, vs. those that are less likely, "
+"taking in to account that some of the suspects may be really easy to "
+"eliminate than others, that may be extremely difficult to eliminate."
 msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:113
@@ -55,9 +54,9 @@ msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:115
 msgid ""
-"While the symptoms might describe no calendars are available in "
-"Roundcube, this may just be the initial thought of a user, and therefore "
-"not necessarily amount to the full set of symptoms."
+"While the symptoms might describe no calendars are available in Roundcube, "
+"this may just be the initial thought of a user, and therefore not "
+"necessarily amount to the full set of symptoms."
 msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:119
@@ -100,15 +99,15 @@ msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:132
 msgid ""
-"However an unlikely suspect, naturally using ``lynx`` won't work. You "
-"will want to completely eliminate this suspect first, because it is (by "
-"far) the easiest."
+"However an unlikely suspect, naturally using ``lynx`` won't work. You will "
+"want to completely eliminate this suspect first, because it is (by far) the "
+"easiest."
 msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:138
 msgid ""
-"Its handling of configuration settings, such as using ``LSUB`` or "
-"``LIST``, but also the list of plugins,"
+"Its handling of configuration settings, such as using ``LSUB`` or ``LIST``, "
+"but also the list of plugins,"
 msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:141
@@ -117,8 +116,8 @@ msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:143
 msgid ""
-"Its compatibility with the server-side implementation of ANNOTATEMORE "
-"and/or METADATA,"
+"Its compatibility with the server-side implementation of ANNOTATEMORE and/or "
+"METADATA,"
 msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:146
@@ -127,8 +126,8 @@ msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:151
 msgid ""
-"Its compatibility with the client-side implementation of ANNOTATEMORE "
-"and/or METADATA,"
+"Its compatibility with the client-side implementation of ANNOTATEMORE and/or "
+"METADATA,"
 msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:154
@@ -141,8 +140,8 @@ msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:163
 msgid ""
-"In :file:`/etc/cyrus.conf`, to each of the programs listed in the *START*"
-" and *SERVICE* sections, add the ``-D`` flag:"
+"In :file:`/etc/cyrus.conf`, to each of the programs listed in the *START* "
+"and *SERVICE* sections, add the ``-D`` flag:"
 msgstr ""
 
 #: ../../source/developer-guide/troubleshooting-101.rst:172
@@ -184,4 +183,3 @@ msgstr ""
 #: ../../source/developer-guide/troubleshooting-101.rst:229
 msgid "Should the program have failed, get a backtrace:"
 msgstr ""
-

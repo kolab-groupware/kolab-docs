@@ -23,9 +23,9 @@ msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:94
 msgid ""
-"Peer review is a process in which code changes are submitted to a staging"
-" environment, so that fellow developers have the opportunity to review "
-"the work before the code changes are submitted back to the source code "
+"Peer review is a process in which code changes are submitted to a staging "
+"environment, so that fellow developers have the opportunity to review the "
+"work before the code changes are submitted back to the source code "
 "management repository."
 msgstr ""
 
@@ -42,14 +42,14 @@ msgstr ""
 #: ../../source/contributor-guide/peer-review.rst:106
 msgid ""
 "For structured contributions, and for sprint participants, the use of "
-"`Differential`_ is obligatory, and further facilitates the process of "
-":ref:`contributor-guide-test-driven-development`."
+"`Differential`_ is obligatory, and further facilitates the process of :ref:"
+"`contributor-guide-test-driven-development`."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:110
 msgid ""
-"Post-poning destabilizing changes stabilizes the day-to-day use of "
-"|Winterfell|, and allows multiple changesets to land at once (enabling a "
+"Post-poning destabilizing changes stabilizes the day-to-day use of |"
+"Winterfell|, and allows multiple changesets to land at once (enabling a "
 "single feature to span multiple software projects)."
 msgstr ""
 
@@ -59,22 +59,20 @@ msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:117
 msgid ""
-"A task in a sprint should consist of a bite-size chunk of development "
-"work."
+"A task in a sprint should consist of a bite-size chunk of development work."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:119
 msgid ""
-"When you start work on the task, you write the tests first (and those "
-"tests would fail, because they have not been backed by code changes)."
+"When you start work on the task, you write the tests first (and those tests "
+"would fail, because they have not been backed by code changes)."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:122
 msgid ""
-"You submit your differential at the earliest opportunity, however "
-"incomplete your coverage may be at that point. This ensures peers can "
-"participate in feedback cycles early, and shows progress being made as it"
-" is made."
+"You submit your differential at the earliest opportunity, however incomplete "
+"your coverage may be at that point. This ensures peers can participate in "
+"feedback cycles early, and shows progress being made as it is made."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:127
@@ -83,15 +81,15 @@ msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:129
 msgid ""
-"Your development takes place against the **master** branch, unless you "
-"find yourself running in circles, interrupted by a support request."
+"Your development takes place against the **master** branch, unless you find "
+"yourself running in circles, interrupted by a support request."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:132
 msgid ""
 "Thus, make sure you have **master** checked out, and for the sake of "
-"preventing superfluous merge and rebase exercises, ensure it's in sync "
-"with upstream:"
+"preventing superfluous merge and rebase exercises, ensure it's in sync with "
+"upstream:"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:141
@@ -102,9 +100,9 @@ msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:149
 msgid ""
-"This will allow you to keep your changes out of a tracking working copy, "
-"and allows you to switch back over to other work without stacking the "
-"changes on top of one another."
+"This will allow you to keep your changes out of a tracking working copy, and "
+"allows you to switch back over to other work without stacking the changes on "
+"top of one another."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:153
@@ -119,8 +117,8 @@ msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:171
 msgid ""
-"You will now be requested to provide some information about your proposed"
-" changes."
+"You will now be requested to provide some information about your proposed "
+"changes."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:174
@@ -132,37 +130,37 @@ msgstr ""
 #: ../../source/contributor-guide/peer-review.rst:177
 msgid ""
 "The template offers a ``Summary:`` line, and you are to make that line "
-"include the phrase ``Resolves T1037``. This causes the differential to be"
-" associated with the ticket, and will cause the ticket to change status "
-"to resolved when the differential is accepted, merged and pushed back."
+"include the phrase ``Resolves T1037``. This causes the differential to be "
+"associated with the ticket, and will cause the ticket to change status to "
+"resolved when the differential is accepted, merged and pushed back."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:182
 msgid ""
-"Use the remainder of the space under ``Summary: Resolves T1037`` to spout"
-" any thoughts or comments."
+"Use the remainder of the space under ``Summary: Resolves T1037`` to spout "
+"any thoughts or comments."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:185
 msgid ""
-"In ``Test Plan:``, you list the steps needed to verify the work. This "
-"could be:"
+"In ``Test Plan:``, you list the steps needed to verify the work. This could "
+"be:"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:193
 msgid ""
-"In ``Reviewers:``, you list the development team associated with the "
-"project (such as :red:`PyKolab Developers` or :red:`Documentation "
-"Authors`). You are to use hashtags here, so they would be "
-"``#pykolab_developers`` or ``#documentation_authors``. **arcanist** will "
-"validate the entries and prompt you if they do not exist."
+"In ``Reviewers:``, you list the development team associated with the project "
+"(such as :red:`PyKolab Developers` or :red:`Documentation Authors`). You are "
+"to use hashtags here, so they would be ``#pykolab_developers`` or "
+"``#documentation_authors``. **arcanist** will validate the entries and "
+"prompt you if they do not exist."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:199
 msgid ""
-"In ``Subscribers:``, you may either not list anyone, or list the "
-"username(s) of people you wish to be notified when the differential "
-"changes. Here too, **arcanist** validates the input."
+"In ``Subscribers:``, you may either not list anyone, or list the username(s) "
+"of people you wish to be notified when the differential changes. Here too, "
+"**arcanist** validates the input."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:218
@@ -172,34 +170,34 @@ msgstr ""
 #: ../../source/contributor-guide/peer-review.rst:220
 msgid ""
 "A reviewer must ensure code changes are verifiable, and validate unit, "
-"functional and integration tests for the code changes before accepting "
-"the differential."
+"functional and integration tests for the code changes before accepting the "
+"differential."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:224
 msgid ""
-"A reviewer will want these tests to be automated, or ends up spending a "
-"lot of time and effort on verifying the changes made."
+"A reviewer will want these tests to be automated, or ends up spending a lot "
+"of time and effort on verifying the changes made."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:229
 msgid ""
-"Exceptions to this rule should only be made in extreme cases, and require"
-" even more pairs of eyeballs."
+"Exceptions to this rule should only be made in extreme cases, and require "
+"even more pairs of eyeballs."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:232
 msgid ""
 "A reviewer must also verify there is a ticket associated with the "
-"differential, and that the ticket associated with the differential will "
-"be closed automatically, should the differential be accepted and merged."
+"differential, and that the ticket associated with the differential will be "
+"closed automatically, should the differential be accepted and merged."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:236
 msgid ""
-"Accepting the differential does not mean the code changes are "
-"automatically merged, however. Acceptance of a differential outside of "
-"the merge window is therefore allowed."
+"Accepting the differential does not mean the code changes are automatically "
+"merged, however. Acceptance of a differential outside of the merge window is "
+"therefore allowed."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:240
@@ -210,23 +208,23 @@ msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:243
 msgid ""
-"In :ref:`contributor-guide-test-driven-development`, the submission of "
-"the differential associated with your review process aides in the staging"
-" of the code changes."
+"In :ref:`contributor-guide-test-driven-development`, the submission of the "
+"differential associated with your review process aides in the staging of the "
+"code changes."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:247
 msgid ""
 "The changes submitted should be reviewed on Thursday afternoons at the "
-"latest, at which point of the :red:`Release Managers` team can pick them "
-"up and merge the proposed changes with all the applicable branches."
+"latest, at which point of the :red:`Release Managers` team can pick them up "
+"and merge the proposed changes with all the applicable branches."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:251
 msgid ""
-"The combined code changes and test should make the lives of :red:`Release"
-" Managers` a lot easier -- the functionality of the backported changes "
-"should be available for automated verification."
+"The combined code changes and test should make the lives of :red:`Release "
+"Managers` a lot easier -- the functionality of the backported changes should "
+"be available for automated verification."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:256
@@ -247,27 +245,26 @@ msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:266
 msgid ""
-"Move the tickets and differentials that have code changes depending on "
-"code changes to other projects that have not yet made it on to the next "
-"sprint, however, attempt to not negatively impact the team's velocity in "
-"doing so;"
+"Move the tickets and differentials that have code changes depending on code "
+"changes to other projects that have not yet made it on to the next sprint, "
+"however, attempt to not negatively impact the team's velocity in doing so;"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:270
 msgid ""
-"You could close the current ticket in review and move it to the Done "
-"column, and create a ticket for the next sprint associated with your own "
-"team, at about 1-2 story points."
+"You could close the current ticket in review and move it to the Done column, "
+"and create a ticket for the next sprint associated with your own team, at "
+"about 1-2 story points."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:274
 msgid ""
 "Merge the code changes in order of the differential numbers, in a best "
-"effort to merge stacked changes as easily as possible. Those that fail to"
-" be applied need to be merged manually, or otherwise reassigned to the "
-"developer in question for the next sprint (the task is rebase). Again, do"
-" not impact the team's velocity too much, and consider splitting the "
-"original development effort with the rebase/merge attempt."
+"effort to merge stacked changes as easily as possible. Those that fail to be "
+"applied need to be merged manually, or otherwise reassigned to the developer "
+"in question for the next sprint (the task is rebase). Again, do not impact "
+"the team's velocity too much, and consider splitting the original "
+"development effort with the rebase/merge attempt."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:281
@@ -281,4 +278,3 @@ msgstr ""
 #: ../../source/contributor-guide/peer-review.rst:285
 msgid "Congratulate yourself on a job well done."
 msgstr ""
-

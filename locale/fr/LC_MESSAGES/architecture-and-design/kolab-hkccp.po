@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, Jeroen van Meeuwen
 # This file is distributed under the same license as the Kolab Groupware package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2014-11-28 13:30+1300\n"
 "PO-Revision-Date: 2014-11-28 00:37+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-documentation/language/fr_FR/)\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -91,13 +92,12 @@ msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:133
 msgid ""
-"The user type that corresponds with the configured ID defines (in part) what"
-" the form for signup will look like."
+"The user type that corresponds with the configured ID defines (in part) what "
+"the form for signup will look like."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:138
-msgid ""
-"Form fields marked as optional in the user type definition are skipped."
+msgid "Form fields marked as optional in the user type definition are skipped."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:141
@@ -109,8 +109,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:145
 msgid ""
-"For an account type \"user account\" to register for an email address in the"
-" primary hosted domain for example, the user type is set to '5', which "
+"For an account type \"user account\" to register for an email address in the "
+"primary hosted domain for example, the user type is set to '5', which "
 "results in the following fields being requested input for:"
 msgstr ""
 
@@ -157,8 +157,7 @@ msgid "**description** [string]"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:165
-msgid ""
-"The label used in localization for the description of the account type."
+msgid "The label used in localization for the description of the account type."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:167
@@ -167,8 +166,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:169
 msgid ""
-"Setting ``email`` to ``true`` indicates this user type is to register for an"
-" email address."
+"Setting ``email`` to ``true`` indicates this user type is to register for an "
+"email address."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:172
@@ -176,8 +175,8 @@ msgid ""
 "The form will morph the ``uid`` field into a ``uid`` form field and an "
 "appended select list of available domains. Upon submission of the form, the "
 "``uid`` attribute value is extracted directly from the corresponding form "
-"field, and the ``mail`` attribute value is composed from the ``uid`` and the"
-" selected domain name space."
+"field, and the ``mail`` attribute value is composed from the ``uid`` and the "
+"selected domain name space."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:178
@@ -367,8 +366,7 @@ msgstr ""
 #: ../../source/architecture-and-design/kolab-hkccp.rst:378
 msgid ""
 "As such, a customer could choose to commit to a contract for a minimum "
-"period of a year, but choose for monthly invoicing for increased "
-"flexibility."
+"period of a year, but choose for monthly invoicing for increased flexibility."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:381
@@ -392,14 +390,14 @@ msgstr ""
 #: ../../source/architecture-and-design/kolab-hkccp.rst:389
 msgid ""
 "For a **group manager** account, the required *option* to register one or "
-"more domain name spaces to manage is the factor that causes the first domain"
-" name space registered to incur the setup costs."
+"more domain name spaces to manage is the factor that causes the first domain "
+"name space registered to incur the setup costs."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:395
 msgid ""
-"The setup costs should probably be incurred on the *domain account* the user"
-" registered."
+"The setup costs should probably be incurred on the *domain account* the user "
+"registered."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:398
@@ -512,8 +510,8 @@ msgstr ""
 #: ../../source/architecture-and-design/kolab-hkccp.rst:476
 msgid ""
 "A billing account corresponds to one or more Kolab User accounts. Billing "
-"accounts are the origin for account invoice calculations, and thus where the"
-" iteration over indvidual items and each item's options originates."
+"accounts are the origin for account invoice calculations, and thus where the "
+"iteration over indvidual items and each item's options originates."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:480
@@ -581,8 +579,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:537
 msgid ""
-"The increased price for the account against a new payment period starting on"
-" the date the option was originally increased,"
+"The increased price for the account against a new payment period starting on "
+"the date the option was originally increased,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:540
@@ -635,8 +633,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:611
 msgid ""
-"Doing the basic reasoning rather than the more accurate math leads us to, in"
-" an example situation an original 1GB user account being increased to 2GB "
+"Doing the basic reasoning rather than the more accurate math leads us to, in "
+"an example situation an original 1GB user account being increased to 2GB "
 "quota 14 days after a payment period has started:"
 msgstr ""
 
@@ -720,8 +718,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:673
 msgid ""
-"i need to be accredited: (30.4375 - 14) * old daily price - (30.4375 - 14) *"
-" new daily price"
+"i need to be accredited: (30.4375 - 14) * old daily price - (30.4375 - 14) * "
+"new daily price"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:675
@@ -794,8 +792,8 @@ msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:728
 msgid ""
-"Otherwise, the accreditation awaits the invoice for the next payment period,"
-" or the additional cost awaits the invoice for the next payment period."
+"Otherwise, the accreditation awaits the invoice for the next payment period, "
+"or the additional cost awaits the invoice for the next payment period."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-hkccp.rst:732

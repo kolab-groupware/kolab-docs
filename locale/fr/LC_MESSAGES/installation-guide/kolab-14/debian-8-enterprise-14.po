@@ -31,9 +31,9 @@ msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-8-enterprise-14.rst:107
 msgid ""
-"To ensure the Kolab packages have priority over the Debian packages, such"
-" as must be the case for PHP as well as Cyrus IMAP, please make sure the "
-"APT preferences pin the mirror.kolabsys.com origin as a preferred source."
+"To ensure the Kolab packages have priority over the Debian packages, such as "
+"must be the case for PHP as well as Cyrus IMAP, please make sure the APT "
+"preferences pin the mirror.kolabsys.com origin as a preferred source."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-8-enterprise-14.rst:111
@@ -49,13 +49,13 @@ msgid "Remove the passphrase from the SSL certificate key:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-8-enterprise-14.rst:128
-msgid "Concatenate the certificate file and the new key file without passphrase:"
+msgid ""
+"Concatenate the certificate file and the new key file without passphrase:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-8-enterprise-14.rst:136
 msgid ""
-"Place the file :file:`mirror.kolabsys.client.pem` in "
-":file:`/etc/apt/certs/`."
+"Place the file :file:`mirror.kolabsys.client.pem` in :file:`/etc/apt/certs/`."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-8-enterprise-14.rst:139
@@ -68,8 +68,8 @@ msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-8-enterprise-14.rst:153
 msgid ""
-"Configure **APT** to use the certificates installed in step 4 by creating"
-" a file ``/etc/apt/apt.conf.d/81kolab`` with the following contents:"
+"Configure **APT** to use the certificates installed in step 4 by creating a "
+"file ``/etc/apt/apt.conf.d/81kolab`` with the following contents:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-8-enterprise-14.rst:172
@@ -82,11 +82,10 @@ msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-8-enterprise-14.rst:184
 msgid ""
-"When asked to confirm you want to install the package and its "
-"dependencies, press Enter."
+"When asked to confirm you want to install the package and its dependencies, "
+"press Enter."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-8-enterprise-14.rst:186
 msgid "Continue to :ref:`installation-guide-setup-kolab`."
 msgstr ""
-

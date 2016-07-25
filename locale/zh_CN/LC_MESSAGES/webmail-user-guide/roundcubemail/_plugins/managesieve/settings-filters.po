@@ -27,26 +27,26 @@ msgstr ""
 # 1b863869579341b5b309eec007602a0b
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:95
 msgid ""
-"Incoming mail is automatically processed by the server and "
-"handled/organized according to defined criteria. For example you can tell"
-" the server to move the message to specified folder, redirect it to "
-"another account, send a reply, discard, delete, etc."
+"Incoming mail is automatically processed by the server and handled/organized "
+"according to defined criteria. For example you can tell the server to move "
+"the message to specified folder, redirect it to another account, send a "
+"reply, discard, delete, etc."
 msgstr ""
 
 # a0ed455a753e46b98aef4b6d5f5a3725
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:99
 msgid ""
 "Filtering is based on `Sieve <https://www.rfc-editor.org/info/rfc5228>`_ "
-"language, which means that under the hood all filters are stored as a "
-"Sieve script on the server. This interface allows you to define rules in "
-"easy way without the need to know the language."
+"language, which means that under the hood all filters are stored as a Sieve "
+"script on the server. This interface allows you to define rules in easy way "
+"without the need to know the language."
 msgstr ""
 
 # dc432fa8a2a74a529be2853fe9e277df
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:103
 msgid ""
-"Each filter definition has a name and set of rules and actions. Usually "
-"the number of definitions is unlimited and they can be grouped into sets "
+"Each filter definition has a name and set of rules and actions. Usually the "
+"number of definitions is unlimited and they can be grouped into sets "
 "(scripts) for convenience."
 msgstr ""
 
@@ -59,17 +59,17 @@ msgstr ""
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:111
 msgid ""
 "Filter definitions can be grouped into sets. These can be activated or "
-"disactivated. Depending on server configuration there can be none, one or"
-" more active sets at the same time. They need to have a unique name."
+"disactivated. Depending on server configuration there can be none, one or "
+"more active sets at the same time. They need to have a unique name."
 msgstr ""
 
 # fc104f43105c46d1b7a6887db3f51a02
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:115
 msgid ""
-"New sets can be created as empty or as a copy of an existing set. It is "
-"also possible to import them from a text file containing Sieve script. "
-"Sets in form of a script can be also downloaded e.g. for backup or "
-"migration purposes."
+"New sets can be created as empty or as a copy of an existing set. It is also "
+"possible to import them from a text file containing Sieve script. Sets in "
+"form of a script can be also downloaded e.g. for backup or migration "
+"purposes."
 msgstr ""
 
 # 2d5d6cc72369417a90c42917cd72a496
@@ -80,31 +80,30 @@ msgstr ""
 # d85175e8397244f7abf7f97d766156fd
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:123
 msgid ""
-"Every filter can be active or inactive, which is convenient if you want "
-"to disable some actions temporarily."
+"Every filter can be active or inactive, which is convenient if you want to "
+"disable some actions temporarily."
 msgstr ""
 
 # 9b75db663d894c2fb25bb118020d3a33
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:126
 msgid ""
-"Because filters are executed in specified order (from top to bottom as "
-"you see them on the list) you can use drag-and-drop technique to rearange"
-" filters on the list."
+"Because filters are executed in specified order (from top to bottom as you "
+"see them on the list) you can use drag-and-drop technique to rearange "
+"filters on the list."
 msgstr ""
 
 # e2d650be016f480dac9b74e8eee31dea
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:129
 msgid ""
-"Every filter definition contains at least one rule and one action. "
-"Depending on server capabilities a rule can be based e.g. on message "
-"headers, body, date or size."
+"Every filter definition contains at least one rule and one action. Depending "
+"on server capabilities a rule can be based e.g. on message headers, body, "
+"date or size."
 msgstr ""
 
 # 8cd60a56453646259ee3766711497907
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:132
 msgid ""
-"A set of actions also depends on server capabilities. Most servers "
-"support:"
+"A set of actions also depends on server capabilities. Most servers support:"
 msgstr ""
 
 # 605731b9be384cf69f7e9fa90eb7ab35
@@ -140,8 +139,6 @@ msgstr ""
 # 5d7666f45e6942f3bda5d282027d2d52
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:141
 msgid ""
-"Note: Some actions stop filtering process, some do not. Use *Stop "
-"evaluating rules* and *Keep message in Inbox* actions to have more "
-"control on this."
+"Note: Some actions stop filtering process, some do not. Use *Stop evaluating "
+"rules* and *Keep message in Inbox* actions to have more control on this."
 msgstr ""
-

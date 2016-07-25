@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2016-07-07 13:58+0200\n"
 "PO-Revision-Date: 2014-11-28 00:42+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p"
-"/kolab-documentation/language/zh_CN/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/kolab-"
+"documentation/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,10 +24,9 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:92
 msgid ""
-"The 389 Directory Server is one of the most important parts of your Kolab"
-" deployment, as it is the sole authoritative source of all user, group, "
-"role, resource, shared folder and mail routing information and "
-"configuration."
+"The 389 Directory Server is one of the most important parts of your Kolab "
+"deployment, as it is the sole authoritative source of all user, group, role, "
+"resource, shared folder and mail routing information and configuration."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:111
@@ -56,8 +55,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:123
 msgid ""
-"An equality index for an attribute services queries with a filter such as"
-" \"``(mail=john.doe@example.org)``\"."
+"An equality index for an attribute services queries with a filter such as "
+"\"``(mail=john.doe@example.org)``\"."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:126
@@ -66,25 +65,26 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:128
 msgid ""
-"A substring index for an attribute services queries with a filter such as"
-" \"``(mail=*joh*)``\"."
+"A substring index for an attribute services queries with a filter such as "
+"\"``(mail=*joh*)``\"."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:131
 msgid ""
 "Presence and substring indexes may be used with, for example, auto- "
-"completion, while equality indexes may be used in, for example, LDAP "
-"lookup tables for Postfix."
+"completion, while equality indexes may be used in, for example, LDAP lookup "
+"tables for Postfix."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:135
 msgid ""
-"Listing the current indexes for a database could be done using a script "
-"such as:"
+"Listing the current indexes for a database could be done using a script such "
+"as:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:138
-msgid "https://git.kolab.org/kolab-scripts/plain/utils/list-attribute-indexes.sh"
+msgid ""
+"https://git.kolab.org/kolab-scripts/plain/utils/list-attribute-indexes.sh"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:140
@@ -107,9 +107,9 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:150
 msgid ""
-"Kolab Groupware by default uses the ``alias`` attribute to store "
-"additional recipient email addresses for users. This attribute is not "
-"indexed by default."
+"Kolab Groupware by default uses the ``alias`` attribute to store additional "
+"recipient email addresses for users. This attribute is not indexed by "
+"default."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:154
@@ -118,16 +118,16 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:156
 msgid ""
-"While the ``mailAlternateAddress`` is used, by default, as a container of"
-" any external email addresses for a user (such as a private or personal "
-"email address), you may find it is searched as part of auto-completion."
+"While the ``mailAlternateAddress`` is used, by default, as a container of "
+"any external email addresses for a user (such as a private or personal email "
+"address), you may find it is searched as part of auto-completion."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:161
 msgid ""
-"Especially when using VLV/SSS, should the ``mailAlternateAddress`` "
-"attribute index be a substring index, but it only contains an equality "
-"index by default."
+"Especially when using VLV/SSS, should the ``mailAlternateAddress`` attribute "
+"index be a substring index, but it only contains an equality index by "
+"default."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:168
@@ -136,17 +136,17 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:170
 msgid ""
-"Virtual List View features in the LDAP server aid in listing pre-indexed "
-"and pre-sorted LDAP entries in a paginated fashion, and is a required "
+"Virtual List View features in the LDAP server aid in listing pre-indexed and "
+"pre-sorted LDAP entries in a paginated fashion, and is a required "
 "configuration item for deployments with over 1.000 entries in their LDAP "
-"hierarchies [#]_, when also using an address book, auto-completion and/or"
-" the Web Administration Panel."
+"hierarchies [#]_, when also using an address book, auto-completion and/or "
+"the Web Administration Panel."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:176
 msgid ""
-"On the side of the LDAP server, Virtual List Views consist of two "
-"separate configuration items:"
+"On the side of the LDAP server, Virtual List Views consist of two separate "
+"configuration items:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:179
@@ -165,14 +165,13 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:186
 msgid ""
-"The search base dn and scope match the configuration of the VLV search, "
-"and"
+"The search base dn and scope match the configuration of the VLV search, and"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:189
 msgid ""
-"Any attributes searched in addition to the configured VLV search filter "
-"are appropriately indexed."
+"Any attributes searched in addition to the configured VLV search filter are "
+"appropriately indexed."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:192
@@ -192,8 +191,7 @@ msgstr ""
 #: ../../source/administrator-guide/tweaking-389ds.rst:199
 #: ../../source/administrator-guide/tweaking-389ds.rst:236
 msgid ""
-"where *$root_dn* is the relevant root suffix, such as "
-"``dc=example,dc=org``."
+"where *$root_dn* is the relevant root suffix, such as ``dc=example,dc=org``."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:202
@@ -237,28 +235,28 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:218
 msgid ""
-"This configures the LDAP server to first attempt sorting by "
-"``displayname`` attribute value, then ``sn``, then ``givenname``, etc."
+"This configures the LDAP server to first attempt sorting by ``displayname`` "
+"attribute value, then ``sn``, then ``givenname``, etc."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:221
 msgid ""
-"When two entries hold the same value for an attribute used with sorting, "
-"the next attribute configured for sorting is used, if any."
+"When two entries hold the same value for an attribute used with sorting, the "
+"next attribute configured for sorting is used, if any."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:224
 msgid ""
-"When configuring the sorting attributes, only use combinations of "
-"meaningful attributes, and preferrably as few as possible at a time."
+"When configuring the sorting attributes, only use combinations of meaningful "
+"attributes, and preferrably as few as possible at a time."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:227
 msgid ""
 "When, for example, you want one list to be sorted by user's names, and "
-"another list sorted by phone number, do not combine the two different "
-"lists in to one sorting configuration. Instead, use multiple values for "
-"the ``vlvSort`` attribute."
+"another list sorted by phone number, do not combine the two different lists "
+"in to one sorting configuration. Instead, use multiple values for the "
+"``vlvSort`` attribute."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:233
@@ -271,8 +269,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:240
 msgid ""
-"**Search Filter**: "
-"*(|(objectClass=groupOfUniqueNames)(objectClass=groupOfUrls))*"
+"**Search Filter**: *(|(objectClass=groupOfUniqueNames)"
+"(objectClass=groupOfUrls))*"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:244
@@ -293,8 +291,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:258
 msgid ""
-"https://git.kolab.org/kolab-scripts/plain/populate-ldap/10a-add-vlv-"
-"searches.sh"
+"https://git.kolab.org/kolab-scripts/plain/populate-ldap/10a-add-vlv-searches."
+"sh"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:260
@@ -303,8 +301,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:262
 msgid ""
-"https://git.kolab.org/kolab-scripts/plain/populate-ldap/10b-add-vlv-"
-"indexes.sh"
+"https://git.kolab.org/kolab-scripts/plain/populate-ldap/10b-add-vlv-indexes."
+"sh"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:264
@@ -313,8 +311,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:266
 msgid ""
-"https://git.kolab.org/kolab-scripts/plain/populate-ldap/10c-run-vlv-"
-"index-tasks.sh"
+"https://git.kolab.org/kolab-scripts/plain/populate-ldap/10c-run-vlv-index-"
+"tasks.sh"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:271
@@ -323,14 +321,13 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:273
 msgid ""
-"Server-side Sorting control is a pre-requisite for Virtual List View "
-"control."
+"Server-side Sorting control is a pre-requisite for Virtual List View control."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:276
 msgid ""
-"If you are using Virtual List View (see :ref:`admin_ldap_configure-vlv`),"
-" you are also already using Server-Side Sorting."
+"If you are using Virtual List View (see :ref:`admin_ldap_configure-vlv`), "
+"you are also already using Server-Side Sorting."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:283
@@ -340,8 +337,8 @@ msgstr ""
 #: ../../source/administrator-guide/tweaking-389ds.rst:285
 msgid ""
 "A 389 Directory Server is configured to open at most 1024 so-called file "
-"descriptors, which include database pointers, logs, replicas, statistics "
-"and (client) network sockets."
+"descriptors, which include database pointers, logs, replicas, statistics and "
+"(client) network sockets."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:289
@@ -358,9 +355,9 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:301
 msgid ""
-"Note that your operating system may have other security limitations, and "
-"may have a system-wide limitation on the number of files as well. See "
-":command:`sysctl fs.file-max` for your current limit."
+"Note that your operating system may have other security limitations, and may "
+"have a system-wide limitation on the number of files as well. See :command:"
+"`sysctl fs.file-max` for your current limit."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:306
@@ -368,7 +365,8 @@ msgid "Stop the directory server:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:312
-msgid "Edit :file:`/etc/dirsrv/slapd-*/dse.ldif` and replace the following line:"
+msgid ""
+"Edit :file:`/etc/dirsrv/slapd-*/dse.ldif` and replace the following line:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:319
@@ -402,8 +400,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:356
 msgid ""
-"A restart of the directory service is required for this change the become"
-" active:"
+"A restart of the directory service is required for this change the become "
+"active:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:366
@@ -419,8 +417,8 @@ msgstr ""
 #: ../../source/administrator-guide/tweaking-389ds.rst:371
 msgid ""
 "In larger environments, this log can grow very large, very quickly, and "
-"while disk space consumption is the lesser concern, the related disk I/O "
-"may be more relevant."
+"while disk space consumption is the lesser concern, the related disk I/O may "
+"be more relevant."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:375
@@ -437,8 +435,8 @@ msgstr ""
 #: ../../source/administrator-guide/tweaking-389ds.rst:392
 #: ../../source/administrator-guide/tweaking-389ds.rst:422
 msgid ""
-"The directory server does not need to be restarted for this setting to "
-"take effect."
+"The directory server does not need to be restarted for this setting to take "
+"effect."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:398
@@ -454,10 +452,10 @@ msgstr ""
 #: ../../source/administrator-guide/tweaking-389ds.rst:403
 msgid ""
 "Audit logs include diffs of LDAP entries being modified, along with a "
-"timestamp and the credentials used. As such, despite explicitly lacking "
-"the source of the modification, provided a set of differentiated bind "
-"credentials per service allowed to modify LDAP entries this can still be "
-"a complete audit trail."
+"timestamp and the credentials used. As such, despite explicitly lacking the "
+"source of the modification, provided a set of differentiated bind "
+"credentials per service allowed to modify LDAP entries this can still be a "
+"complete audit trail."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:409
@@ -470,37 +468,8 @@ msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:429
 msgid ""
-"VLV/SSS is not strictly required, and one alternative is to disable the "
-"look-through, search and time limits for all users. Doing so however "
-"allows any user to unfairly load the LDAP server with the heavy operation"
-" of searching large numbers of entries."
+"VLV/SSS is not strictly required, and one alternative is to disable the look-"
+"through, search and time limits for all users. Doing so however allows any "
+"user to unfairly load the LDAP server with the heavy operation of searching "
+"large numbers of entries."
 msgstr ""
-
-#~ msgid ""
-#~ "Presence and substring indexes may be"
-#~ " used with, for example, auto-"
-#~ "completion, while equality indexes may "
-#~ "be used in, for example, LDAP "
-#~ "lookup tables for Postfix."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Creating the VLV and SSS configuration"
-#~ " objects in an LDAP server may "
-#~ "be achieved using the following scripts,"
-#~ " in order:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "A 389 Directory Server is configured "
-#~ "to open at most 1024 so-called "
-#~ "file descriptors, which include database "
-#~ "pointers and network sockets."
-#~ msgstr ""
-
-#~ msgid "To increase this number to, for example, 8192:"
-#~ msgstr ""
-
-#~ msgid "for:"
-#~ msgstr ""
-
