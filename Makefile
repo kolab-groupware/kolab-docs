@@ -42,9 +42,6 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
 submodules:
-	if [ -d "source/webmail-user-guide/roundcubemail/.git" ]; then \
-		rm -rf source/webmail-user-guide/roundcubemail/ ; \
-	fi
 	if [ -d "source/webmail-user-guide/roundcubemail-core/.git" ]; then \
 		rm -rf source/webmail-user-guide/roundcubemail-core/ ; \
 	fi
@@ -98,13 +95,16 @@ clean:
 
 html: submodules helpdocs
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	for file in $$(find locale -type f -name "*.po"); do \
-		msguniq $${file} -u --use-first -o $$(echo $${file} | sed -r -e 's/\.po$$/\.po-uniq/g') ; \
-		mv $$(echo $${file} | sed -r -e 's/\.po$$/\.po-uniq/g') $${file} ; \
-		msgfmt $${file} -o $$(echo $${file} | sed -r -e 's/\.po$$/\.mo/g') ; \
+	find locale/ -type f -name "*.po" | while read file; do \
+		sed -i -e '/#, fuzzy/d' "$${file}" ; \
+	done
+	find locale -type f -name "*.po" | while read file; do \
+		msguniq "$${file}" -u --use-first -o "$$(echo $${file} | sed -r -e 's/\.po$$/\.po-uniq/g')" && \
+			mv "$$(echo $${file} | sed -r -e 's/\.po$$/\.po-uniq/g')" $${file} && \
+			msgfmt $${file} -o "$$(echo $${file} | sed -r -e 's/\.po$$/\.mo/g')" ; \
 	done
 	for lang in $(HELPDOCS_LOCALES); do \
-		$(SPHINXBUILD) -b html -D language='$${lang}' $(ALLSPHINXOPTS) $(BUILDDIR)/html-$${lang} ; \
+		$(SPHINXBUILD) -b html -D language=$${lang} $(ALLSPHINXOPTS) $(BUILDDIR)/html/$${lang} ; \
 	done
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
