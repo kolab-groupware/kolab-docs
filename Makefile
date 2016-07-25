@@ -15,7 +15,7 @@ PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
-HELPDOCS_LOCALES = de_DE:de fr_FR:fr zh_CN:zh_CN
+HELPDOCS_LOCALES = de
 
 .PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
 
@@ -103,7 +103,7 @@ html: submodules helpdocs
 		mv $$(echo $${file} | sed -r -e 's/\.po$$/\.po-uniq/g') $${file} ; \
 		msgfmt $${file} -o $$(echo $${file} | sed -r -e 's/\.po$$/\.mo/g') ; \
 	done
-	for lang in $(INTL_LOCALES); do \
+	for lang in $(HELPDOCS_LOCALES); do \
 		$(SPHINXBUILD) -b html -D language='$${lang}' $(ALLSPHINXOPTS) $(BUILDDIR)/html-$${lang} ; \
 	done
 	@echo
