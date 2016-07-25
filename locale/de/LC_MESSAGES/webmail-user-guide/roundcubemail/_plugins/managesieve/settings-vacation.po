@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-07 14:36+0200\n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,133 +16,218 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:93
+# b0e7c15c9a194d52b9b1407c8cbeff21
+# a3a667fe88dd482693b3eb903c978f25
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:88
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:93
 msgid "Vacation"
 msgstr "Urlaub"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:95
+# dfb772fcd6724d499992d4068bb225db
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:95
 msgid ""
 "The vacation autoresponder's purpose is to provide correspondents with "
 "notification that the user is away for an extended period of time and "
 "that they should not expect quick responses."
-msgstr "Der Zweck der automatischen Urlaubs-Antwortfunktion ist es, Mail-Partnern eine Benachrichtigung zu geben, dass der Benutzer für einen längeren Zeitraum fort sein wird und sie keine schnellen Antworten erwarten sollten."
+msgstr ""
+"Der Zweck der automatischen Urlaubs-Antwortfunktion ist es, Mail-Partnern"
+" eine Benachrichtigung zu geben, dass der Benutzer für einen längeren "
+"Zeitraum fort sein wird und sie keine schnellen Antworten erwarten "
+"sollten."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:99
+# e60bd806154d43e7bb75e9ed46c8699e
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:99
 msgid ""
 "**Vacation** is used to respond to an incoming message with another "
 "message."
-msgstr "**Urlaub** wird benutzt, um auf eine ankommende Nachricht mit einer anderen Nachricht zu antworten."
+msgstr ""
+"**Urlaub** wird benutzt, um auf eine ankommende Nachricht mit einer "
+"anderen Nachricht zu antworten."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:101
+# 06fa43200a40419c8f5ad0488e3551c0
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:101
 msgid ""
 "This interface is part of :ref:`settings-managesieve-filters` "
 "functionality and provides a simple way to manage vacation responses."
-msgstr "Diese Schnittstelle ist Teil der :ref:„Sieve-Filtereinstellungen <settings-managesieve-filters>\"-Funktion und bietet eine einfache Möglichkeit, Urlaubs-Antworten zu verwalten."
+msgstr ""
+"Diese Schnittstelle ist Teil der :ref:„Sieve-Filtereinstellungen "
+"<settings-managesieve-filters>\"-Funktion und bietet eine einfache "
+"Möglichkeit, Urlaubs-Antworten zu verwalten."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:106
+# 9f5f5ad5d7024a039d2b36c66a59f0fb
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:106
 msgid "Vacation message"
 msgstr "Urlaubs-Nachricht"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:108
+# a936eee7e7d24902a69ecb676b73d609
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:108
 msgid ""
 "To enable the autoresponder you have to set at least the response body "
 "and change the status to *On*."
-msgstr "Um die automatische Antwortfunktion zu aktivieren, müsse Sie mindestens den Textkörper der Antwort eingestellt haben und den Status auf *An* ändern. "
+msgstr ""
+"Um die automatische Antwortfunktion zu aktivieren, müsse Sie mindestens "
+"den Textkörper der Antwort eingestellt haben und den Status auf *An* "
+"ändern. "
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:113
+# 06ef6bfb9acc45a6b357e246fbd84328
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:113
 msgid "**Subject**"
 msgstr "**Betreff**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:112
-msgid "Response subject is optional. "
-msgid_plural ""
-"By default the reply subject will be set to"
+# 0e52fff8d2a844c69e70d6e5473bace3
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:112
+msgid ""
+"Response subject is optional. By default the reply subject will be set to"
 " *Auto: <original subject>*"
-msgstr[0] "Der Betreff der Antwort ist optional. "
-msgstr[1] "Standardmäßig ist der Betreff der Antwort auf *Auto: <ursprünglicher Betreff>* eingestellt. "
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:117
+# 5523b6fdb08847eba148632acb477a55
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:117
 msgid "**Body**"
 msgstr "**Textkörper**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:116
+# bb60cd9b76a64bdf8adb415fb1235352
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:116
 msgid ""
 "Response body. Here you put the reason of your absence or any other text "
 "that will be send to sender."
-msgstr "Textkörper der Antwort; hier können Sie den Grund Ihrer Abwesenheit oder jeglichen anderen Text eingeben, der der Absenderin gesendet wird."
+msgstr ""
+"Textkörper der Antwort; hier können Sie den Grund Ihrer Abwesenheit oder "
+"jeglichen anderen Text eingeben, der der Absenderin gesendet wird."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:120
+# a4a125512bb34e3d95787afd0f464d85
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:120
 msgid "**Vacation start/end**"
 msgstr "**Anfang/Ende des Urlaubs**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:120
+# 622d77722b404e7b98897bc0c32cbfa2
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:120
 msgid "These fields define when the vacation rule is active and are optional."
-msgstr "Diese Felder legen fest, wann die Urlaubsregel aktiv ist und sind optional."
+msgstr ""
+"Diese Felder legen fest, wann die Urlaubsregel aktiv ist und sind "
+"optional."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:125
+# fc96a7daf964458ba456b4ce90697a31
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:125
 msgid "**Status**"
 msgstr "**Status**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:123
-msgid "This field activates the rule. "
-msgid_plural ""
-"If you always use the same response body "
+# 2723c9de9f124cb78098ea318b451a46
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:123
+msgid ""
+"This field activates the rule. If you always use the same response body "
 "it is convenient to disable the vacation rule when it's not needed and "
 "enable again another time."
-msgstr[0] "Dieses Feld aktiviert die Regel. "
-msgstr[1] "Wenn Sie immer denselben Antwort-Textkörper benutzen, ist es praktisch die Urlaubsregel zu deaktivieren, wenn sie nicht benötigt wird und zu anderer Zeit wieder zu aktivieren."
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:128
+# f7b30809e50844dfbdc6bd0434690bb4
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:128
 msgid "Advanced settings"
 msgstr "Erweiterte Einstellungen"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:131
+# 153eb3e4ad694dc49061ae11868f4041
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:131
 msgid "**Reply sender address**"
 msgstr "**Antwort-Absenderadresse**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:131
+# ee0489482fba40a69582a6146f183456
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:131
 msgid ""
 "This is an email address that will be used as sender of the vacation "
 "reply."
-msgstr "Dies ist eine E-Mail-Adresse, die als Absender der Urlaubsantwort benutzt wird."
+msgstr ""
+"Dies ist eine E-Mail-Adresse, die als Absender der Urlaubsantwort benutzt"
+" wird."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:136
+# 61aed2c29f4d45289c876d87f847b8f5
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:136
 msgid "**My email addresses**"
 msgstr "**Meine E-Mail-Adressen**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:134
+# 335f24cb8ef54ea69e933c7fecb71f1f
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:134
+#, fuzzy
 msgid ""
 "Normally the vacation response is send if recipient address of the "
-"incoming message is one of your addresses known to the server. "
-msgid_plural ""
-"Here you "
+"incoming message is one of your addresses known to the server. Here you "
 "can add more addresses."
-msgstr[0] "Normalerweise wird die Urlaubsantwort versendet, wenn die Empfängeradresse der ankommenden Nachricht eine der dem Server bekannten Adressen ist. "
-msgstr[1] "Hier können Sie mehr Adressen hinzufügen."
+msgstr ""
+"Normalerweise wird die Urlaubsantwort versendet, wenn die "
+"Empfängeradresse der ankommenden Nachricht eine der dem Server bekannten "
+"Adressen ist. "
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:141
+# 425de48736524bb19165ddaaf9ba715c
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:141
 msgid "**Reply interval**"
 msgstr "**Antworthäufigkeit**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:139
+# af26a4ad83c34659a5e325fa01977b3a
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:139
 msgid ""
 "This parameter defines how often the reply to the same sender is "
-"generated. "
-msgid_plural ""
-"By default "
+"generated. When you receive a lot of messages from the same sender in "
+"short time, usually you don't want to reply to all of them. By default "
 "reply is send once a day."
-msgstr[0] "Dieser Parameter legt fest, wie oft die Antwort an die Absenderin versendet wird. "
-msgstr[1] "Standardmäßig wird die Antwort einmal am Tag versendet."
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:144
+# 7403474ef0a349958575f0028afe85ec
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:144
 msgid "**Incoming message action**"
 msgstr "** Tätigkeit bei eingehender Nachricht**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-vacation.rst:144
-msgid "This field defines an action taken on the incoming message. "
-msgid_plural ""
-"You can "
+# d6194c2badb64d1abfef75a665f0f941
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:144
+msgid ""
+"This field defines an action taken on the incoming message. You can "
 "discard or keep it or redirect/copy to another account (so it can be "
 "handled by another person)."
-msgstr[0] "Dieses Feld legt eine bei ankommenden Nachrichten vorzunehmende Tätigkeit fest. "
-msgstr[1] "Sie können sie verwerfen, behalten oder an ein anderes Konto umleiten/kopieren (damit sie von einer anderen Person bearbeitet werden können)."
+msgstr ""
+
+#~ msgid "Response subject is optional. "
+#~ msgid_plural "By default the reply subject will be set to *Auto: <original subject>*"
+#~ msgstr[0] "Der Betreff der Antwort ist optional. "
+#~ msgstr[1] ""
+#~ "Standardmäßig ist der Betreff der "
+#~ "Antwort auf *Auto: <ursprünglicher Betreff>*"
+#~ " eingestellt. "
+
+#~ msgid "This field activates the rule. "
+#~ msgid_plural ""
+#~ "If you always use the same "
+#~ "response body it is convenient to "
+#~ "disable the vacation rule when it's "
+#~ "not needed and enable again another "
+#~ "time."
+#~ msgstr[0] "Dieses Feld aktiviert die Regel. "
+#~ msgstr[1] ""
+#~ "Wenn Sie immer denselben Antwort-"
+#~ "Textkörper benutzen, ist es praktisch "
+#~ "die Urlaubsregel zu deaktivieren, wenn "
+#~ "sie nicht benötigt wird und zu "
+#~ "anderer Zeit wieder zu aktivieren."
+
+#~ msgid ""
+#~ "This parameter defines how often the "
+#~ "reply to the same sender is "
+#~ "generated. "
+#~ msgid_plural "By default reply is send once a day."
+#~ msgstr[0] ""
+#~ "Dieser Parameter legt fest, wie oft "
+#~ "die Antwort an die Absenderin versendet"
+#~ " wird. "
+#~ msgstr[1] "Standardmäßig wird die Antwort einmal am Tag versendet."
+
+#~ msgid "This field defines an action taken on the incoming message. "
+#~ msgid_plural ""
+#~ "You can discard or keep it or "
+#~ "redirect/copy to another account (so it"
+#~ " can be handled by another person)."
+#~ msgstr[0] ""
+#~ "Dieses Feld legt eine bei ankommenden"
+#~ " Nachrichten vorzunehmende Tätigkeit fest. "
+#~ msgstr[1] ""
+#~ "Sie können sie verwerfen, behalten oder"
+#~ " an ein anderes Konto umleiten/kopieren "
+#~ "(damit sie von einer anderen Person "
+#~ "bearbeitet werden können)."
+

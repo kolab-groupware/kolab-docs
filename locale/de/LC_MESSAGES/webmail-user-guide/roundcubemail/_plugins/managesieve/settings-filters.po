@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-07 14:36+0200\n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,120 +16,224 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:93
+# 1a71895cb3a743b19dc4e60ce180fc78
+# 1790cc0547274ea384c80d5d5b057d89
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:88
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:93
 msgid "Filters"
 msgstr "Filter"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:95
+# 6f7f77d7682f45e8b7981013ffbd2075
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:95
 msgid ""
 "Incoming mail is automatically processed by the server and "
-"handled/organized according to defined criteria. "
-msgid_plural ""
-"For example you can tell"
+"handled/organized according to defined criteria. For example you can tell"
 " the server to move the message to specified folder, redirect it to "
 "another account, send a reply, discard, delete, etc."
-msgstr[0] "Eingehende Mails werden automatisch vom Server verarbeitet und entsprechend festgelegter Kriterien bearbeitet / organisiert. "
-msgstr[1] "Z. B. können können Sie dem Server sagen, dass die Nachricht in einen bestimmten Ordner verschoben, zu einem anderen Konto umgeleitet, beantwortet, verworfen, gelöscht usw. werden soll. "
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:99
+# c8c087b1c40b42a9a65c30976e858b11
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:99
+#, fuzzy
 msgid ""
 "Filtering is based on `Sieve <https://www.rfc-editor.org/info/rfc5228>`_ "
 "language, which means that under the hood all filters are stored as a "
-"Sieve script on the server. "
-msgid_plural ""
-"This interface allows you to define rules in "
+"Sieve script on the server. This interface allows you to define rules in "
 "easy way without the need to know the language."
-msgstr[0] "Es wird auf Grundlage der „Sieve <https://www.rfc-editor.org/info/rfc5228>\"_-Sprache gefiltert, was bedeutet, dass alle Filter unter einer Haube als Sieve-Skript auf dem Server gespeichert werden. "
-msgstr[1] "Mit dieser Schnittstelle können Sie auf einfache Weise Regeln festlegen, ohne die Sprache zu kennen."
+msgstr ""
+"Es wird auf Grundlage der „Sieve <https://www.rfc-"
+"editor.org/info/rfc5228>\"_-Sprache gefiltert, was bedeutet, dass alle "
+"Filter unter einer Haube als Sieve-Skript auf dem Server gespeichert "
+"werden. "
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:103
-msgid "Each filter definition has a name and set of rules and actions. "
-msgid_plural ""
-"Usually "
+# 2fe3891428ee4dd8bb716576a5c0827e
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:103
+msgid ""
+"Each filter definition has a name and set of rules and actions. Usually "
 "the number of definitions is unlimited and they can be grouped into sets "
 "(scripts) for convenience."
-msgstr[0] "Jede Filterdefinition hat einen Name und einen Satz von Regeln und Tätigkeiten. "
-msgstr[1] "Normalerweise ist die Anzahl von Definitionen unbegrenzt und sie können der Einfachheit halber zu Sätzen (Skripten) gruppiert werden."
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:109
+# 0edf8f58b8af4028bff9e172ad62e0ba
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:109
 msgid "Filter sets"
 msgstr "Filtersätze"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:111
-msgid "Filter definitions can be grouped into sets. "
-msgid_plural "They need to have a unique name."
-msgstr[0] "Filterdefinitionen können zu Sätzen gruppiert werden. "
-msgstr[1] "Sie müssen einen einmaligen Name haben."
+# 91f68af36ba24c1a9872b762fb72cf3e
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:111
+msgid ""
+"Filter definitions can be grouped into sets. These can be activated or "
+"disactivated. Depending on server configuration there can be none, one or"
+" more active sets at the same time. They need to have a unique name."
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:115
-msgid "New sets can be created as empty or as a copy of an existing set. "
-msgid_plural ""
+# 706014a088b34fb78337df0da815b2ee
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:115
+msgid ""
+"New sets can be created as empty or as a copy of an existing set. It is "
+"also possible to import them from a text file containing Sieve script. "
 "Sets in form of a script can be also downloaded e.g. for backup or "
 "migration purposes."
-msgstr[0] "Neue Sätze können leer oder als Kopie eines bestehenden Satzes erstellt werden. "
-msgstr[1] "Sätze in Form eines Skripts können auch heruntergeladen werden, z. B. als Sicherungskopie oder zu Migrierungszwecken."
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:121
+# 4f135d11ba7047918751f9229cc53bae
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:121
 msgid "Filter definition"
 msgstr "Filterdefinition"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:123
+# 8fb3ab7ec82d45068074fccbe36dc522
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:123
 msgid ""
 "Every filter can be active or inactive, which is convenient if you want "
 "to disable some actions temporarily."
-msgstr "Jeder Filter kann aktiv oder inaktiv sein, was praktisch ist, wenn Sie einige Tätigkeiten vorübergehend deaktivieren wollen."
+msgstr ""
+"Jeder Filter kann aktiv oder inaktiv sein, was praktisch ist, wenn Sie "
+"einige Tätigkeiten vorübergehend deaktivieren wollen."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:126
+# 449902ac6dcd4d63a2e1b22b9160bff5
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:126
 msgid ""
 "Because filters are executed in specified order (from top to bottom as "
 "you see them on the list) you can use drag-and-drop technique to rearange"
 " filters on the list."
-msgstr "Da Filter in einer bestimmten Reihenfolge ausgeführt werden (von oben nach unten, wie Sie sie in der Liste sehen) können Sie Filter durch Ziehen in der Liste neu ordnen."
+msgstr ""
+"Da Filter in einer bestimmten Reihenfolge ausgeführt werden (von oben "
+"nach unten, wie Sie sie in der Liste sehen) können Sie Filter durch "
+"Ziehen in der Liste neu ordnen."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:129
-msgid "Every filter definition contains at least one rule and one action. "
-msgid_plural ""
+# 0014ce55fa2745daa537db2db454de4f
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:129
+msgid ""
+"Every filter definition contains at least one rule and one action. "
 "Depending on server capabilities a rule can be based e.g. on message "
 "headers, body, date or size."
-msgstr[0] "Jede Filterdefinition enthält mindestens eine Regel und eine Tätigkeit. "
-msgstr[1] "Je nach den Fähigkeiten des Servers, kann eine Regel z. B. auf Nachrichten-Kopfzeilen, -Textkörper, -Datum oder -Größe basieren."
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:132
-msgid "A set of actions also depends on server capabilities. "
-msgid_plural ""
-"Most servers "
+# b8086ed6e391476aa7aafdf05a37031c
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:132
+#, fuzzy
+msgid ""
+"A set of actions also depends on server capabilities. Most servers "
 "support:"
-msgstr[0] "Ein Satz Tätigkeiten hängt auch von den Fähigkeiten des Servers ab. "
-msgstr[1] "Die meisten Server unterstützen:"
+msgstr "Ein Satz Tätigkeiten hängt auch von den Fähigkeiten des Servers ab. "
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:134
+# c08069173d154f20bb969456ecd0f3de
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:134
 msgid "moving/copying messages to specified folder"
 msgstr "Verschieben/Kopieren von Nachrichten in bestimmte Ordner"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:135
+# 458add3919574badb7abea694b54ffe9
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:135
 msgid "redirecting/copying messages to another account"
 msgstr "Umleiten/Kopieren von Nachrichten zu einem anderen Konto"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:136
+# c4f7d3efdd974f848216390c5e020d0c
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:136
 msgid "discarding messages with specified error message"
 msgstr "Verwerfen von Nachrichten mit einer bestimmten Fehlermeldung"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:137
+# 4f83d3a1e37b423180d786ac8d77291a
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:137
 msgid "replying (vacation)"
 msgstr "Antworten (Urlaub)"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:138
+# 4af92ad08db0411ca1b89cbd5f902817
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:138
 msgid "deleting (ignoring) messages"
 msgstr "Löschen (Ignorieren) von Nachrichten"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:139
+# 4286116735df4653a71f3f202c0c1c4f
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:139
 msgid "setting flags (e.g. marking as Read)"
 msgstr "Markieren (z. B. als gelesen)"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/_plugins/managesieve/settings-filters.rst:141
-msgid "Note: Some actions stop filtering process, some do not. "
-msgid_plural ""
-"Use *Stop evaluating rules* and *Keep message in Inbox* actions to have more "
+# 1893592772ab4189af56309b19756856
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:141
+msgid ""
+"Note: Some actions stop filtering process, some do not. Use *Stop "
+"evaluating rules* and *Keep message in Inbox* actions to have more "
 "control on this."
-msgstr[0] "Hinweis: Einige Tätigkeiten halten das Filtern an, einige nicht. "
-msgstr[1] "Benutzen Sie die *Regeln Bewerten anhalten* und *Nachricht im Eingang behalten*-Tätigkeiten, um mehr Kontrolle hierüber zu haben. "
+msgstr ""
+
+#~ msgid ""
+#~ "Incoming mail is automatically processed "
+#~ "by the server and handled/organized "
+#~ "according to defined criteria. "
+#~ msgid_plural ""
+#~ "For example you can tell the "
+#~ "server to move the message to "
+#~ "specified folder, redirect it to another"
+#~ " account, send a reply, discard, "
+#~ "delete, etc."
+#~ msgstr[0] ""
+#~ "Eingehende Mails werden automatisch vom "
+#~ "Server verarbeitet und entsprechend "
+#~ "festgelegter Kriterien bearbeitet / "
+#~ "organisiert. "
+#~ msgstr[1] ""
+#~ "Z. B. können können Sie dem Server"
+#~ " sagen, dass die Nachricht in einen"
+#~ " bestimmten Ordner verschoben, zu einem "
+#~ "anderen Konto umgeleitet, beantwortet, "
+#~ "verworfen, gelöscht usw. werden soll. "
+
+#~ msgid "Each filter definition has a name and set of rules and actions. "
+#~ msgid_plural ""
+#~ "Usually the number of definitions is "
+#~ "unlimited and they can be grouped "
+#~ "into sets (scripts) for convenience."
+#~ msgstr[0] ""
+#~ "Jede Filterdefinition hat einen Name und"
+#~ " einen Satz von Regeln und "
+#~ "Tätigkeiten. "
+#~ msgstr[1] ""
+#~ "Normalerweise ist die Anzahl von "
+#~ "Definitionen unbegrenzt und sie können "
+#~ "der Einfachheit halber zu Sätzen "
+#~ "(Skripten) gruppiert werden."
+
+#~ msgid "Filter definitions can be grouped into sets. "
+#~ msgid_plural "They need to have a unique name."
+#~ msgstr[0] "Filterdefinitionen können zu Sätzen gruppiert werden. "
+#~ msgstr[1] "Sie müssen einen einmaligen Name haben."
+
+#~ msgid "New sets can be created as empty or as a copy of an existing set. "
+#~ msgid_plural ""
+#~ "Sets in form of a script can "
+#~ "be also downloaded e.g. for backup "
+#~ "or migration purposes."
+#~ msgstr[0] ""
+#~ "Neue Sätze können leer oder als "
+#~ "Kopie eines bestehenden Satzes erstellt "
+#~ "werden. "
+#~ msgstr[1] ""
+#~ "Sätze in Form eines Skripts können "
+#~ "auch heruntergeladen werden, z. B. als"
+#~ " Sicherungskopie oder zu Migrierungszwecken."
+
+#~ msgid "Every filter definition contains at least one rule and one action. "
+#~ msgid_plural ""
+#~ "Depending on server capabilities a rule"
+#~ " can be based e.g. on message "
+#~ "headers, body, date or size."
+#~ msgstr[0] ""
+#~ "Jede Filterdefinition enthält mindestens eine"
+#~ " Regel und eine Tätigkeit. "
+#~ msgstr[1] ""
+#~ "Je nach den Fähigkeiten des Servers, "
+#~ "kann eine Regel z. B. auf "
+#~ "Nachrichten-Kopfzeilen, -Textkörper, -Datum oder"
+#~ " -Größe basieren."
+
+#~ msgid "Note: Some actions stop filtering process, some do not. "
+#~ msgid_plural ""
+#~ "Use *Stop evaluating rules* and *Keep"
+#~ " message in Inbox* actions to have"
+#~ " more control on this."
+#~ msgstr[0] "Hinweis: Einige Tätigkeiten halten das Filtern an, einige nicht. "
+#~ msgstr[1] ""
+#~ "Benutzen Sie die *Regeln Bewerten "
+#~ "anhalten* und *Nachricht im Eingang "
+#~ "behalten*-Tätigkeiten, um mehr Kontrolle "
+#~ "hierüber zu haben. "
+

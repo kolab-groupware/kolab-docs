@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-07 14:36+0200\n"
+"POT-Creation-Date: 2016-07-25 17:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,193 +16,320 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:93
+# beec587afe564d848186b081d65c5662
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:93
 msgid "Sender Identities"
 msgstr "Absenderidentitäten"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:95
+# d3c1a0cce602409ba00f626fe7b87956
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:95
+#, fuzzy
 msgid ""
 "The settings here control the name(s) and email address(es) stated as "
-"sender when you send out email messages. "
-msgid_plural ""
-"Depending on the server "
+"sender when you send out email messages. Depending on the server "
 "configuration, you can define multiple sender identities or only adjust "
 "the name and other control fields."
-msgstr[0] "Diese Einstellungen kontrollieren Namen und E-Mail-Adresse(n), die als Absender beim Versenden von E-Mail-Nachrichten angegeben werden. "
-msgstr[1] "Je nach Serverkonfigurierung können mehrere Absenderidentitäten festgelegt oder nur der Name und andere Kontrollfelder angepasst werden."
+msgstr ""
+"Diese Einstellungen kontrollieren Namen und E-Mail-Adresse(n), die als "
+"Absender beim Versenden von E-Mail-Nachrichten angegeben werden. "
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:101
+# 6be2358cad5c4f748cfc5b5bab8387b7
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:101
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:103
+# b35309995aba40cbae2f60f25816ccd5
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:103
 msgid ""
 "This first block contains general properties for the selected sender "
 "identity:"
-msgstr "Der erste Block enthält allgemeine Eigenschaften der ausgewählten Absenderidentität:"
+msgstr ""
+"Der erste Block enthält allgemeine Eigenschaften der ausgewählten "
+"Absenderidentität:"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:106
+# 477fe7d0037b4ce482f08f4a9a932588
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:106
 msgid "**Display name**"
 msgstr "**Anzeigename**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:106
+# 6b8131da48fb4e7e80f0f801a825538c
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:106
 msgid ""
 "The full name displayed in the recipient's email program upon receiving "
 "your message"
-msgstr "Der vollständige Name, der im E-Mail-Programm der Empfängerin angezeigt wird, wenn sie Ihre Nachricht erhält. "
+msgstr ""
+"Der vollständige Name, der im E-Mail-Programm der Empfängerin angezeigt "
+"wird, wenn sie Ihre Nachricht erhält. "
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:111
+# 1a8e6b99031b4ce88b03f1cd6b7fa8bc
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:111
 msgid "**Email**"
 msgstr "**E-Mail**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:109
+# 4545a00f52df453188f12e0389af3249
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:109
 msgid ""
 "The email address stated as sender of email messages you send with this "
-"identity. "
-msgid_plural ""
-"Otherwise message sending might fail because of "
+"identity. Please enter a valid email address that is handled by your "
+"Roundcube email account. Otherwise message sending might fail because of "
 "an invalid sender address."
-msgstr[0] "Die als Absender von E-Mail-Nachrichten, die Sie mit dieser Identität versenden, angegebene E-Mail-Adresse; "
-msgstr[1] "Ansonsten kann das Senden von Nachrichten aufgrund einer ungültigen Absenderadresse fehlschlagen."
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:113
-msgid "The Email field might not be visible or editable. "
-msgid_plural ""
-"This is no malfunction "
+# 7959ab749f0e4118a7bae8effeafa99b
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:113
+msgid ""
+"The Email field might not be visible or editable. This is no malfunction "
 "but a restriction set by the server administrator to prevent users from "
 "sending email with faked sender addresses."
-msgstr[0] "Das E-Mai-Feld könnte nicht sichtbar oder bearbeitbar sein. "
-msgstr[1] "Das ist keine Fehlfunktion, sondern eine Beschränkung vom Serveradministrator, um zu verhindern, dass Benutzer E-Mails mit gefälschten Absenderadressen verschicken."
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:119
+# 9d3338b6f248462693e2359e4b24ec01
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:119
 msgid "**Organization**"
 msgstr "**Organisation**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:118
+# ffd42f5f29094caeacd7c2f0af45be63
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:118
 msgid ""
 "Some email programs display the organization field when receiving "
 "messages from you with this filled out."
-msgstr "Einige E-Mail-Programme zeigen ein Organisationsfeld an, wenn Nachrichten von Ihnen empfangen werden, in denen es ausgefüllt ist."
+msgstr ""
+"Einige E-Mail-Programme zeigen ein Organisationsfeld an, wenn Nachrichten"
+" von Ihnen empfangen werden, in denen es ausgefüllt ist."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:123
+# fe767f9685bb491cbd8238a823cb0aa0
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:123
 msgid "**Reply-to**"
 msgstr "**Antworten an**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:122
+# d6d4e23d60804ab6906c78a4707f94c4
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:122
 msgid ""
 "Enter an email address that differs from the identity's email address "
 "here in order to force recipients to send answers to that address instead"
 " of the sender email address."
-msgstr "Geben Sie hier eine E-Mail-Adresse ein, die von der E-Mail-Adresse der Identität abweicht, um Empfängerinnen zu zwingen, Antworten an diese Adresse statt der Absender-E-Mail-Adresse zu schicken."
+msgstr ""
+"Geben Sie hier eine E-Mail-Adresse ein, die von der E-Mail-Adresse der "
+"Identität abweicht, um Empfängerinnen zu zwingen, Antworten an diese "
+"Adresse statt der Absender-E-Mail-Adresse zu schicken."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:127
+# 45238eb75713440d8005eb6e53866b25
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:127
 msgid "**Bcc**"
 msgstr "**Bcc**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:126
+# 23eacccfdd784270a0a75704317e3a61
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:126
 msgid ""
 "Specify an email address here that will receive blind copies of every "
 "message you send with this identity."
-msgstr "Geben Sie hier eine E-Mail-Adresse an, die Blindkopien jeder Nachricht, die Sie mit dieser Identität verschicken, erhalten soll."
+msgstr ""
+"Geben Sie hier eine E-Mail-Adresse an, die Blindkopien jeder Nachricht, "
+"die Sie mit dieser Identität verschicken, erhalten soll."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:132
+# c052d6402e2c408f8bbc8fcb4a27fd9a
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:132
 msgid "**Set default**"
 msgstr "**Als Standard setzen**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:130
+# 047999a4877345f19a70424c38c3ea9d
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:130
+#, fuzzy
 msgid ""
 "Check this box to make the current identity the default selection when "
-"writing new messages. "
-msgid_plural ""
-"You can still chose another sender identity while "
+"writing new messages. You can still chose another sender identity while "
 "composing a message, though."
-msgstr[0] "Setzen Sie hier ein Häkchen, um die aktuelle Identität zur Standardauswahl beim Schreiben neuer Nachrichten zu machen. "
-msgstr[1] "Sie können jedoch immernoch eine andere Absenderidentität beim Verfassen einer Nachricht wählen."
+msgstr ""
+"Setzen Sie hier ein Häkchen, um die aktuelle Identität zur "
+"Standardauswahl beim Schreiben neuer Nachrichten zu machen. "
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:137
+# c5f9b6c7660a448e99bca223398ecff4
+# d64e12e3c18744e6bbe10cfba8730cc1
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:134
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:137
 msgid "Signature"
 msgstr "Signatur"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:139
+# 0c1c422644494194a4ee8bc99e876c70
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:139
+#, fuzzy
 msgid ""
 "Every sender identity can have its own signature text which will be "
 "appended to the message text when you start writing a new email message. "
-msgid_plural ""
 "Visit :ref:`Settings > Preferences > Composing Messages <settings-prefs-"
 "compose>` to configure when and how signatures are inserted."
-msgstr[0] "Jede Absenderidentität kann seinen eigenen Signaturtext haben, der dem Nachrichtentext angehängt wird, wenn Sie beginnen eine neue E-Mail-Nachricht zu schreiben. "
-msgstr[1] ""
-"Gehen Sie zu :ref:„Einstellungen > Voreinstellungen > Nachrichten verfassen <settings-prefs-"
-"compose>\", um einzustellen, wann und wie Signaturen eingefügt werden."
+msgstr ""
+"Jede Absenderidentität kann seinen eigenen Signaturtext haben, der dem "
+"Nachrichtentext angehängt wird, wenn Sie beginnen eine neue E-Mail-"
+"Nachricht zu schreiben. "
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:144
+# 31a4e0da2bab464197497378f3f9407d
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:144
 msgid "**Signature**"
 msgstr "**Signatur**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:144
+# 0a3673778b2147218b8e1093d26179ab
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:144
 msgid "Enter the signature text here."
 msgstr "Geben Sie hier einen Signaturtext ein."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:148
+# eab8ef0e72674af38ff8a23c3dc7e808
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:148
 msgid "**HTML signature**"
 msgstr "**HTML-Signatur**"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:147
+# 13731cc36a914cef8c59cfade7802af5
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:147
+#, fuzzy
 msgid ""
 "Check this option if you mainly send formatted (HTML) messages and to "
-"enable formatting of your signature."
-msgid_plural ""
-"The text box above will then show a "
+"enable formatting of your signature. The text box above will then show a "
 "toolbar to adjust formatting."
-msgstr[0] "Setzen Sie bei dieser Option ein Häkchen, wenn Sie vor allem formatierte (HTML-) Nachrichten versenden und die Formatierung Ihrer Signatur zu aktivieren."
-msgstr[1] "Das Textfeld darüber wird dann eine Werkzeugleiste zeigen, um die Formatierung anzupassen."
+msgstr ""
+"Setzen Sie bei dieser Option ein Häkchen, wenn Sie vor allem formatierte "
+"(HTML-) Nachrichten versenden und die Formatierung Ihrer Signatur zu "
+"aktivieren."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:153
+# 1cc82d53c8a044d49ffa93a96fdc1131
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:153
 msgid "Adding Images to a Signature"
 msgstr "Einer Signatur Bilder hinzufügen"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:155
+# 8767100452ad42bd97d47825bad4e786
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:155
 msgid ""
 "HTML formatted signatures also allow to embed images which are sent with "
-"outgoing messages. "
-msgid_plural ""
-"The image can be moved around or resized"
+"outgoing messages. To add an image to your signature, first check the "
+"*HTML signature* box. Then find an image file on your computer and drag &"
+" drop it into the signature box. The image can be moved around or resized"
 " within the editor box using the mouse."
-msgstr[0] "HTML-formatiert Signaturen erlauben auch das Einbinden von Bildern in abgehende Nachrichten. "
-msgstr[1] "Das Bild kann innerhalb des Editors mit der Maus herumgeschoben oder in seiner Größe angepasst werden."
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:162
+# a8ff0a43c61f44478e63812d9dd57fbf
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:162
 msgid ""
 "Instead of dragging an image file into the editor, you can also paste an "
 "image from your clipboard after copying it from another application or "
 "browser window."
-msgstr "Statt eine Bilddatei in den Editor zu ziehen, können Sie auch ein Bild aus der Zwischenablage einfügen, nachdem Sie es aus einer anderen Anwendung oder einem andere Browserfenster kopiert haben."
+msgstr ""
+"Statt eine Bilddatei in den Editor zu ziehen, können Sie auch ein Bild "
+"aus der Zwischenablage einfügen, nachdem Sie es aus einer anderen "
+"Anwendung oder einem andere Browserfenster kopiert haben."
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:165
+# 16bc27d7963343778689866e1b1792cf
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:165
 msgid ""
 "Open the image in an image viewer or browser window, then press *Ctrl+C* "
 "to copy it, click into the signature text box at the position where you "
 "want the image to appear and press *Ctrl+V* to insert it from the "
 "clipboard."
-msgstr "Öffnen Sie das Bild in einem Bildbetrachtungsprogramm oder Browserfenster und drücken Sie dann *Strg+C*, um es zu kopieren, klicken Sie an der Position in das Signatur-Textfeld, an der das Bild erscheinen soll, und drücken Sie *Strg+V*, um es aus der Zwischenablage einzufügen. "
+msgstr ""
+"Öffnen Sie das Bild in einem Bildbetrachtungsprogramm oder Browserfenster"
+" und drücken Sie dann *Strg+C*, um es zu kopieren, klicken Sie an der "
+"Position in das Signatur-Textfeld, an der das Bild erscheinen soll, und "
+"drücken Sie *Strg+V*, um es aus der Zwischenablage einzufügen. "
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:171
+# e46f0ec39870444a9703f9c1d2dff872
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:171
 msgid "Managing Multiple Sender Identities"
 msgstr "Mehrere Absenderidentitäten verwalten"
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:173
+# 5ee4b22076424158b247b9e8f5aae036
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:173
 msgid ""
 "Unless restricted by the server administrator, the identity list has "
-"control buttons for adding and deleting sender identities. "
-msgid_plural ""
-"The new identity is now "
+"control buttons for adding and deleting sender identities. If present, "
+"click the + icon in the identity list footer to create a new identity. "
+"Fill out the form and click *Save* to create it. The new identity is now "
 "added to the list and can be edited or deleted from there."
-msgstr[0] "Wenn nicht vom Serveradministrator eingeschränkt, hat die Identitätenliste Kontroll-Schaltflächen zum Hinzufügen und Löschen von Absenderidentitäten. "
-msgstr[1] "Die neue Identität wurde der Liste hinzugefügt und kann von dort bearbeitet oder gelöscht werden."
+msgstr ""
 
-#: ../../source/webmail-user-guide/roundcubemail/en_US/settings/identities.rst:178
+# 5b452b1d4dbd4ed58a2d875165503dd5
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:178
 msgid ""
 "The *Delete* button also located in the identities list footer will "
 "delete the currently selected identity after displaying a confirmation "
 "dialog."
-msgstr "Die *Löschen*-Schaltfläche, die sich auch in der Fußzeile der Identitätenliste befindet, löscht die derzeitig ausgewählte Identität nach dem Anzeigen eines Bestätigungsdialogs."
+msgstr ""
+"Die *Löschen*-Schaltfläche, die sich auch in der Fußzeile der "
+"Identitätenliste befindet, löscht die derzeitig ausgewählte Identität "
+"nach dem Anzeigen eines Bestätigungsdialogs."
+
+# e74f189196e744a380c8df3bd30c6211
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:88
+#, fuzzy
+msgid "Identities"
+msgstr "Absenderidentitäten"
+
+# e74f189196e744a380c8df3bd30c6211
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:88
+#, fuzzy
+msgid "Sender Identity"
+msgstr "Absenderidentitäten"
+
+#~ msgid ""
+#~ "The email address stated as sender "
+#~ "of email messages you send with "
+#~ "this identity. "
+#~ msgid_plural ""
+#~ "Otherwise message sending might fail "
+#~ "because of an invalid sender address."
+#~ msgstr[0] ""
+#~ "Die als Absender von E-Mail-Nachrichten,"
+#~ " die Sie mit dieser Identität "
+#~ "versenden, angegebene E-Mail-Adresse; "
+#~ msgstr[1] ""
+#~ "Ansonsten kann das Senden von "
+#~ "Nachrichten aufgrund einer ungültigen "
+#~ "Absenderadresse fehlschlagen."
+
+#~ msgid "The Email field might not be visible or editable. "
+#~ msgid_plural ""
+#~ "This is no malfunction but a "
+#~ "restriction set by the server "
+#~ "administrator to prevent users from "
+#~ "sending email with faked sender "
+#~ "addresses."
+#~ msgstr[0] "Das E-Mai-Feld könnte nicht sichtbar oder bearbeitbar sein. "
+#~ msgstr[1] ""
+#~ "Das ist keine Fehlfunktion, sondern eine"
+#~ " Beschränkung vom Serveradministrator, um "
+#~ "zu verhindern, dass Benutzer E-Mails mit"
+#~ " gefälschten Absenderadressen verschicken."
+
+#~ msgid ""
+#~ "HTML formatted signatures also allow to"
+#~ " embed images which are sent with "
+#~ "outgoing messages. "
+#~ msgid_plural ""
+#~ "The image can be moved around or"
+#~ " resized within the editor box using"
+#~ " the mouse."
+#~ msgstr[0] ""
+#~ "HTML-formatiert Signaturen erlauben auch "
+#~ "das Einbinden von Bildern in abgehende"
+#~ " Nachrichten. "
+#~ msgstr[1] ""
+#~ "Das Bild kann innerhalb des Editors "
+#~ "mit der Maus herumgeschoben oder in "
+#~ "seiner Größe angepasst werden."
+
+#~ msgid ""
+#~ "Unless restricted by the server "
+#~ "administrator, the identity list has "
+#~ "control buttons for adding and deleting"
+#~ " sender identities. "
+#~ msgid_plural ""
+#~ "The new identity is now added to"
+#~ " the list and can be edited or"
+#~ " deleted from there."
+#~ msgstr[0] ""
+#~ "Wenn nicht vom Serveradministrator "
+#~ "eingeschränkt, hat die Identitätenliste "
+#~ "Kontroll-Schaltflächen zum Hinzufügen und "
+#~ "Löschen von Absenderidentitäten. "
+#~ msgstr[1] ""
+#~ "Die neue Identität wurde der Liste "
+#~ "hinzugefügt und kann von dort bearbeitet"
+#~ " oder gelöscht werden."
+
