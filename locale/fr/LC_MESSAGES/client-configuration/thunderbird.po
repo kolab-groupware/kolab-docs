@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-07 13:58+0200\n"
+"POT-Creation-Date: 2016-07-25 16:34+0200\n"
 "PO-Revision-Date: 2014-11-28 00:37+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p"
@@ -16,12 +16,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 1.3\n"
 
+# 6cfb2f47a50f4a9cbb9ec215ac77d7c2
 #: ../../source/client-configuration/thunderbird.rst:92
 msgid "Mozilla Thunderbird"
 msgstr ""
 
+# 6ec172d109fd40e8b210d85377e137d9
 #: ../../source/client-configuration/thunderbird.rst:97
 msgid ""
 "Unfortunately, Mozilla Thunderbird can only handle email on its own. In "
@@ -30,16 +32,19 @@ msgid ""
 " those separately. We show you how to do that below."
 msgstr ""
 
+# 47997fed8d084a54ad5261ea809ad113
 #: ../../source/client-configuration/thunderbird.rst:104
 msgid "E-Mail Setup"
 msgstr ""
 
+# 1bec7277fede4b2bb70a7f612725041c
 #: ../../source/client-configuration/thunderbird.rst:106
 msgid ""
 "When you start Thunderbird for the first time, it will ask you to create "
 "an account. Please say that you want to use an existing email address."
 msgstr ""
 
+# 99c0760765e14d16aeb27d158bacc669
 #: ../../source/client-configuration/thunderbird.rst:110
 msgid ""
 "The following dialog should appear where you can enter your account "
@@ -47,63 +52,33 @@ msgid ""
 "correct settings automatically."
 msgstr ""
 
+# 995b96b24f5a4c4283d66a051bab9042
 #: ../../source/client-configuration/thunderbird.rst:130
 msgid ""
 "If the automatic configuration detection fails, enter the credentials for"
 " incoming and outgoing servers as depicted below:"
 msgstr ""
 
+# fe1475908dac48bb8027d1cb43341774
 #: ../../source/client-configuration/thunderbird.rst:154
 msgid "Click *Done* to re-test the configuration and finish the setup."
+msgstr ""
+
+# 5202d50ccd7440c0a1fa6a0c47b17237
+#: ../../source/client-configuration/thunderbird.rst:88
+msgid "Thunderbird"
 msgstr ""
 
 #~ msgid "Calendar Setup"
 #~ msgstr ""
 
 #~ msgid ""
-#~ "In order to use calendars with "
-#~ "Thunderbird, you need to first install"
-#~ " the `Lightning Add-on "
-#~ "<https://www.mozilla.org/projects/calendar/lightning/>`_, if "
-#~ "you do not have it already. Then"
-#~ " switch to the Calendar tab and "
-#~ "in the bottom left corner right "
-#~ "click below your local *Home* calendar."
-#~ " A context menu will pop up "
-#~ "where you can select *New Calendar...*."
-#~ " In the following dialog you say "
-#~ "that your calendar is *On the "
-#~ "Network*, then click *Next*. On the "
-#~ "next screen, please select the *CalDAV*"
-#~ " format and enter the following "
-#~ "address:"
 #~ msgstr ""
 
 #~ msgid "|**caldav_uri_long**|/**Calendar**"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "The above URL will usually only "
-#~ "work for the standard Calendar that "
-#~ "is set up initially. In order to"
-#~ " add your other calendars, please "
-#~ "repeat this procedure and use the "
-#~ "CalDAV URL that the option *Show "
-#~ "Calendar URL* from the Webinterface will"
-#~ " get you. To get this URL, "
-#~ "please login to |service_uri| and then"
-#~ " follow the following steps:"
-#~ msgstr ""
-
 #~ msgid "Select *Calendar* in the top right corner drop-down menu"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Select the calendar you wish to "
-#~ "add to Thunderbird/Lightning with a "
-#~ "single left click in the lower "
-#~ "left corner. The selected calendar "
-#~ "should visibly highlight."
 #~ msgstr ""
 
 #~ msgid "Next click on the small gear symbol below"
@@ -112,29 +87,7 @@ msgstr ""
 #~ msgid "From the menu you'll see, please select *Show Calendar URL*"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "In the window that will appear "
-#~ "please copy the second URL (where "
-#~ "it says CalDAV)"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "This is the CalDAV URL you have"
-#~ " to use in the above procedure "
-#~ "in order to add any calendar to"
-#~ " Thunderbird/Lightning."
-#~ msgstr ""
-
 #~ msgid "Tasks Setup"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you want to synchronize your "
-#~ "tasks with Thunderbird, you can follow"
-#~ " the steps from the :ref:`settings-"
-#~ "clientconfig-thunderbird-lightning` and add "
-#~ "a \"calendar\" with the following "
-#~ "address:"
 #~ msgstr ""
 
 #~ msgid "|**caldav_uri_long**|/**Tasks**"
@@ -146,44 +99,10 @@ msgstr ""
 #~ msgid "Address Book Setup"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "In order to use your |service_name| "
-#~ "address books with Thunderbird, you need"
-#~ " to first install the `SOGo Connector"
-#~ " Thunderbird extension "
-#~ "<http://www.sogo.nu/fr/downloads/frontends.html>`_, if you"
-#~ " do not have it already. Then "
-#~ "click the *Address Book* button and "
-#~ "in the *Address Book* window, go "
-#~ "to the menu, choose *File > New"
-#~ " > Remote Address Book*. On the "
-#~ "next screen, please enter the following"
-#~ " address:"
-#~ msgstr ""
-
 #~ msgid "|**carddav_uri_long**|/**Contacts**"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "In order to add other address "
-#~ "books, please repeat this procedure for"
-#~ " each address book. You can get "
-#~ "the URL for the address books the"
-#~ " same way as described above in "
-#~ "the :ref:`settings-clientconfig-thunderbird-"
-#~ "lightning`."
-#~ msgstr ""
-
 #~ msgid "Trick: Enable Multiple Accounts"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "By default, Mozilla Thunderbird just "
-#~ "support one calendar and one address "
-#~ "book account per server. If you "
-#~ "have more than one |service_name| "
-#~ "account, you need to use the "
-#~ "following trick:"
 #~ msgstr ""
 
 #~ msgid "Go to Edit → Preferences → Advanced → Config Editor…"
@@ -193,11 +112,5 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Double-click to set the value to true"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Then restart Thunderbird, add the second"
-#~ " account and enjoy the full power "
-#~ "of |service_name|!"
 #~ msgstr ""
 
