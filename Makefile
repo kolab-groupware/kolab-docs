@@ -2,7 +2,7 @@
 #
 
 # You can set these variables from the command line.
-SOURCEDIR     = $$(pwd)/source
+SOURCEDIR     = $(shell pwd)/source
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
@@ -63,14 +63,29 @@ helpdocs: submodules
 	if [ -d "$(SOURCEDIR)/webmail-user-guide/roundcubemail/" ]; then \
 		rm -rf "$(SOURCEDIR)/webmail-user-guide/roundcubemail/" ; \
 	fi
-	for lang in en_US de_DE; do \
-		mkdir -p $(SOURCEDIR)/webmail-user-guide/roundcubemail/$${lang}/_plugins/ ; \
-		cd $(SOURCEDIR)/webmail-user-guide/roundcubemail/$${lang}/_plugins/ ; \
-		for docs in $$(find ../../../roundcubemail-plugins-kolab/plugins/ -type d -name "helpdocs"); do \
-			plugin=$$(basename $$(dirname $${docs})) ; \
-			ln -svf $${docs}/$${lang}/ $${plugin} ; \
+	mkdir -p "$(SOURCEDIR)/webmail-user-guide/roundcubemail/" ; \
+	for dir in _static _templates; do \
+		cp -a "$(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/$${dir}" \
+			"$(SOURCEDIR)/webmail-user-guide/roundcubemail/." ; \
+	done ; \
+	cd "$(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/en_US/" && \
+		for file in $$(find . -type f); do \
+			dir=$$(dirname $${file}) ; \
+			if [ ! -d "../../roundcubemail/$${dir}" ]; then \
+				mkdir -p "../../roundcubemail/$${dir}" ; \
+			fi ; \
+			cp -av $${file} "../../roundcubemail/$${file}" ; \
 		done ; \
-	done
+	mkdir -p $(SOURCEDIR)/webmail-user-guide/roundcubemail/_plugins/ ; \
+	cd $(SOURCEDIR)/webmail-user-guide/roundcubemail/_plugins/ && \
+		for docs in $$(find ../../roundcubemail-core/plugins/ -type d -name "helpdocs"); do \
+			plugin=$$(basename $$(dirname $${docs})) ; \
+			ln -svf $${docs}/en_US/ $${plugin} ; \
+		done && \
+		for docs in $$(find ../../roundcubemail-plugins-kolab/plugins/ -type d -name "helpdocs"); do \
+			plugin=$$(basename $$(dirname $${docs})) ; \
+			ln -svf $${docs}/en_US/ $${plugin} ; \
+		done
 
 locales: gettext helplocales
 
@@ -81,7 +96,7 @@ clean:
 	@rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/
 	@rm -rf source/*/_fancyfigures/
 
-html: submodules
+html: submodules helpdocs
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
