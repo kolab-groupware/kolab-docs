@@ -93,7 +93,7 @@ clean:
 	@rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/
 	@rm -rf source/*/_fancyfigures/
 
-html: submodules helpdocs
+html: clean submodules helpdocs
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	find locale/ -type f -name "*.po" | while read file; do \
 		sed -i -e '/#, fuzzy/d' "$${file}" ; \
