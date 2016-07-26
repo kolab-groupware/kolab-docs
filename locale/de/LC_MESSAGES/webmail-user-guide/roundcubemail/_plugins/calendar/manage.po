@@ -49,9 +49,9 @@ msgid ""
 "date/time, reminders, etc. Click *Save* to finally add it to the selected "
 "calendar."
 msgstr ""
-"Klicken Sie auf die *Neues Ereignis*-Schaltfläche in der Werkzeugleiste, um "
-"einen leeren Dialog zu erhalten, in den Sie die :ref:`Ereigniseigenschaften "
-"<Kalender-bearbeiten-Ereignis>` wie Zusammenfassung, Datum/Zeit, "
+"Klicken Sie auf die *Neues Termin*-Schaltfläche in der Werkzeugleiste, um "
+"einen leeren Dialog zu erhalten, in den Sie die :ref:`Termineigenschaften "
+"<Kalender-bearbeiten-Termin>` wie Zusammenfassung, Datum/Zeit, "
 "Erinnerungen, usw. eingeben. "
 
 # fb1f49315c4549a98cb57d2a452b0884
@@ -68,9 +68,9 @@ msgid ""
 "it finishes. This will open the :ref:`event dialog <calendar-edit-event>` "
 "with the selected date/time range already filled in."
 msgstr ""
-"Gehen Sie in der Kalenderansicht zu dem Datum, an dem Sie ein Ereignis "
-"hinzufügen wollen. Dies öffnet den :ref:`Ereignisdialog <Kalender-bearbeiten-"
-"Ereignis>`, der den ausgewählten Zeitraum schon eingetragen hat."
+"Gehen Sie in der Kalenderansicht zu dem Datum, an dem Sie ein Termin "
+"hinzufügen wollen. Dies öffnet den :ref:`Termindialog <Kalender-bearbeiten-"
+"Termin>`, der den ausgewählten Zeitraum schon eingetragen hat."
 
 # 21ad1145210d47efb255b33440f765e8
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:110
@@ -89,7 +89,7 @@ msgstr "Termine bearbeiten und verschieben"
 # de2d3274c7984cb8ae3603b231249fa3
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:120
 msgid "The Event Dialog"
-msgstr "Der Ereignisdialog"
+msgstr "Der Termindialog"
 
 # 1d53d1a58a1c4083a7220d2a300163a6
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:122
@@ -98,7 +98,7 @@ msgid ""
 "displayed. Clicking the *Edit* button in that dialog opens the form to edit "
 "all properties of the selected event."
 msgstr ""
-"Wenn Sie ein Ereignis in der Kalenderansicht anklicken, wird ein Dialog mit "
+"Wenn Sie ein Termin in der Kalenderansicht anklicken, wird ein Dialog mit "
 "seinen Details angezeigt. "
 
 # e4de4b373c364f20a24a48a485524863
@@ -136,33 +136,33 @@ msgstr ""
 # dd71b1d917a540cfa2f7b9780e5e6f58
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:134
 msgid "``Location``: Where the event will be taking place."
-msgstr "„Standort\": wo das Ereignis stattfindet"
+msgstr "„Standort\": wo das Termin stattfindet"
 
 # ec8ee90802224c28b7fcecfbde23fba3
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:135
 msgid "``Description``: Any text that describes the event."
-msgstr "„Beschreibung\": Text, der das Ereignis beschreibt "
+msgstr "„Beschreibung\": Text, der das Termin beschreibt "
 
 # da54f358a7954aab96e6d084e39381b8
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:136
 msgid "``URL``: A link to more information about this event."
-msgstr "„URL\": ein Link zu mehr Informationen über das Ereignis"
+msgstr "„URL\": ein Link zu mehr Informationen über das Termin"
 
 # c10e30679ec14913894f2b721c43fd55
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:137
 msgid "``Start``: Date and time when the event starts."
-msgstr "„Beginn\": Datum und Zeit, zu dem ein Ereignis beginnt"
+msgstr "„Beginn\": Datum und Zeit, zu dem ein Termin beginnt"
 
 # 961df6962af346d2ac13687eb89ff7dd
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:138
 msgid "``End``: Date and time when the event starts."
-msgstr "„Ende\": Datum und Zeit, zu dem Ereignis endet"
+msgstr "„Ende\": Datum und Zeit, zu dem Termin endet"
 
 # 4610767f28d041d8a168530b912bf854
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:139
 msgid "``all-day``: Check this if the event has no start/end time."
 msgstr ""
-"„ganztägig\": Setzen Sie hier ein Häkchen, wenn das Ereignis keinen Beginn "
+"„ganztägig\": Setzen Sie hier ein Häkchen, wenn das Termin keinen Beginn "
 "oder Ende hat."
 
 # 335e7f02ef2c4154967f9ee572c327b1
@@ -173,7 +173,7 @@ msgid ""
 "Sound is selected, a sound will be played at the selected time. This setting "
 "requires the host to be able to play sounds."
 msgstr ""
-"„Erinnerung\": wird zu einer vorbestimmten Zeit vor dem Ereignis mit einer "
+"„Erinnerung\": wird zu einer vorbestimmten Zeit vor dem Termin mit einer "
 "Benachrichtigung erscheinen. Diese Einstellung erfordert, dass der Host in "
 "der Lage ist, Klänge abzuspielen."
 
@@ -183,8 +183,8 @@ msgid ""
 "``Calendar``: The calendar the event is saved in. Change it to move an event "
 "from one calendar to another."
 msgstr ""
-"„Kalender\": Der Kalender, in dem das Ereignis gespeichert ist; ändern Sie "
-"dies, um ein Ereignis von einem Kalender in einen anderen zu verschieben."
+"„Kalender\": Der Kalender, in dem das Termin gespeichert ist; ändern Sie "
+"dies, um ein Termin von einem Kalender in einen anderen zu verschieben."
 
 # e551e2c0d03146ca96608bf7a8bc9888
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:142
@@ -215,7 +215,7 @@ msgid ""
 "``Privacy``: Flag an event as \"private\" or \"confidential\" when sharing "
 "your calendar with others."
 msgstr ""
-"„Privatsphäre\": Markieren Sie ein Ereignis als „privat\" oder „vertraulich"
+"„Privatsphäre\": Markieren Sie ein Termin als „privat\" oder „vertraulich"
 "\", wenn Sie Ihren Kalender mit Anderen teilen."
 
 # 3a4cac907c6b4c7b8f522b279149c628
@@ -230,7 +230,7 @@ msgid ""
 "event is repeated over time."
 msgstr ""
 "Bei einer Serie regelmäßig wiederkehrender Termine, hält dieser Reiter "
-"die Einstellungen, wie ein Ereignis sich über eine Zeit hinweg wiederholt."
+"die Einstellungen, wie ein Termin sich über eine Zeit hinweg wiederholt."
 
 # b4b8d0ea98f244e68c7e6c0ffdb2343d
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:152
@@ -249,7 +249,7 @@ msgid ""
 msgstr ""
 "„Jede(n)\": Die Art des Intervalls; Wenn Sie ein wöchentliches oder "
 "monatliches Intervall wählen, können Sie wählen, an welchen Tagen in der "
-"Woche oder im Monat ein Ereignis vorkommt. "
+"Woche oder im Monat ein Termin vorkommt. "
 
 # d689dc5219a34d0fa4a89a50d70377ce
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:155
@@ -292,7 +292,7 @@ msgid ""
 "for the current event."
 msgstr ""
 "Wie bei Teilnehmern ist es möglich, die gegebenen Hilfsmittel, die für ein "
-"Ereignis benötigt werden, zu verwalten. "
+"Termin benötigt werden, zu verwalten. "
 
 # 398d079f9ff14b8e9133b8ccd75b5e70
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:167
@@ -334,7 +334,7 @@ msgid ""
 "a file from your local disk and click *Upload* in order to attach it."
 msgstr ""
 "Manchmal ist ein beschreibender Text nicht genug, um Informationen zu einem "
-"bestimmten Ereignis zu sammeln. Wählen Sie zuerst eine Datei von Ihrer "
+"bestimmten Termin zu sammeln. Wählen Sie zuerst eine Datei von Ihrer "
 "Festplatte aus und klicken Sie auf *Upload*, um sie anzuhängen."
 
 # a4aa87b51f724e498b0355640876db67
@@ -345,7 +345,7 @@ msgid ""
 "data."
 msgstr ""
 "Vergessen Sie nicht, abschließend die Änderungen zu speichern, indem Sie "
-"*Speichern* im Ereignis-bearbeiten-Dialog anklicken. "
+"*Speichern* im Termin-bearbeiten-Dialog anklicken. "
 
 # 992c7b1ba99b47c8b2db2570798400d2
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:184
@@ -360,7 +360,7 @@ msgid ""
 "edit form. Simply grab the event block with the mouse and move it to the new "
 "date or time. Release the mouse button to complete."
 msgstr ""
-"Wenn ein bestehendes Ereignis auf eine andere Zeit oder ein anderes Datum "
+"Wenn ein bestehendes Termin auf eine andere Zeit oder ein anderes Datum "
 "verschoben werden soll, ist es praktisch, dies direkt in der Kalenderansicht "
 "zu tun, ohne die Bearbeiten-Maske zu öffnen. "
 
@@ -371,7 +371,7 @@ msgid ""
 "bottom. Drag this with the mouse in order to resize the event meaning to "
 "adjust its duration."
 msgstr ""
-"In der *Monat*- und *Tag*-Ansicht haben die Ereignisblöcke unten einen "
+"In der *Monat*- und *Tag*-Ansicht haben die Terminblöcke unten einen "
 "kleinen Griff. "
 
 # bdd0abd331da4a49b4a054e13610639b
@@ -388,8 +388,8 @@ msgid ""
 "reminders in :ref:`Calendar Settings <calendar-edit-properties>` from the :"
 "ref:`calendar-lists`."
 msgstr ""
-"Während Sie beim Webmail-Dienst angemeldet sind werden Ereigniserinnerungen "
-"mit Überlagerungsfeldern zur festgelegten Zeit bevor das Ereignis beginnt "
+"Während Sie beim Webmail-Dienst angemeldet sind werden Terminerinnerungen "
+"mit Überlagerungsfeldern zur festgelegten Zeit bevor das Termin beginnt "
 "angezeigt. \n"
 "Aktivieren oder deaktivieren Sie Erinnerungen in den :ref:"
 "„Kalendereinstellungen <Kalender-bearbeiten-Eigenschaften>` aus den :ref:"
@@ -433,7 +433,7 @@ msgid ""
 "When creating a new event, switch to the *Participants* tab. You're already "
 "listed as the organizer of the event."
 msgstr ""
-"Wenn man ein neues Ereignis erstellt, wechseln Sie zum *Teilnehmer*-Reiter. "
+"Wenn man ein neues Termin erstellt, wechseln Sie zum *Teilnehmer*-Reiter. "
 
 # 645bd6baf60149969301fc1d37cf84dd
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:233
@@ -480,7 +480,7 @@ msgid ""
 "Invitations will be sent out when you click *Save* and the event is created."
 msgstr ""
 "Einladungen werden rausgeschickt, wenn Sie *Speichern* anklicken und das "
-"Ereignis erstellt worden ist."
+"Termin erstellt worden ist."
 
 # 144b34f63e2440fba594811d9bdc0f07
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/manage.rst:261
