@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Georg Greve <greve@kolabsys.com>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,14 +33,14 @@ msgid ""
 "settings are grouped by the following sections:"
 msgstr ""
 "Mit den Benutzer-Voreinstellungen können Sie verschiedene Optionen und "
-"Einstellungen anpassen, die das Verhalten und die Benutzeroberfläche des "
-"Webmail-Dienstes steuern. "
+"Einstellungen anpassen, die das Verhalten und die Benutzeroberfläche der "
+"Web-Anwendung steuern. "
 
 # 7ad679ccf3554006955d7a465db5dadf
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:98
 msgid ""
-"After changing preferences, don't forget to save them by clicking the *Save* "
-"button below the settings form."
+"After changing preferences, don't forget to save them by clicking the *Save*"
+" button below the settings form."
 msgstr ""
 "Vergessen Sie nicht, nach dem Ändern von Voreinstellungen zu speichern, "
 "indem Sie auf die *Speichern*-Schaltfläche unter der Einstellungen-Maske "
@@ -63,8 +64,8 @@ msgid ""
 "your computer's operating system language."
 msgstr ""
 "Der Webmail-Dienst ist in zahlreichen Sprachen verfügbar. Wenn Sie auf den "
-"Dienst zugreifen, wird die Sprache automatisch aus dem Betriebssystem Ihres "
-"Computer ausgewählt."
+"Dienst zugreifen, wird die Sprache automatisch gemäss der Voreinstellung des"
+" Betriebssystem Ihres Computer ausgewählt."
 
 # 8cd71ca1007f487f9350133a7725dc1d
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:112
@@ -74,8 +75,8 @@ msgstr "**Zeitzone**"
 # c76e672d5d90479aa0814a03a80d4f29
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:111
 msgid ""
-"Dates displayed anywhere (e.g. when a message is sent) will be automatically "
-"translated into your local time zone. Set this to *Auto* to let the system "
+"Dates displayed anywhere (e.g. when a message is sent) will be automatically"
+" translated into your local time zone. Set this to *Auto* to let the system "
 "use your computer's time zone settings or select a specific time zone from "
 "the list."
 msgstr ""
@@ -100,12 +101,12 @@ msgstr "**Datumsformat**"
 # af57d0c2fc914b0fa3c04df60c355d76
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:118
 msgid "Select the format how dates should be displayed."
-msgstr "Wählen Sie, in welchem Format Daten angezeigt werden sollen."
+msgstr "Wählen Sie, in welchem Format das Datum angezeigt werden soll."
 
 # 70a39b938ed64d929c4bf5f33f5a4720
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:121
 msgid "**Pretty dates**"
-msgstr "**Hübsche Daten**"
+msgstr "**Schönes Datum**"
 
 # 320755c6cb7f49d3b403e5b2de2af9fc
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:121
@@ -142,12 +143,12 @@ msgid ""
 "Choose the visual appearance of the user interface from a selection of "
 "themes."
 msgstr ""
-"Wählen Sie das Aussehen der Benutzeroberfläche aus einer Auswahl von Motiven"
+"Wählen Sie das Aussehen der Benutzeroberfläche aus einer Auswahl von Themes"
 
 # 55e803db639f4aa98df7856f1290278e
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:133
 msgid "**Handle popups as standard windows**"
-msgstr "**Popups als gewöhnlich Fenster behandeln**"
+msgstr "**Popups als gewöhnliche Fenster behandeln**"
 
 # c168dc3f860c43cd9ae6e82e8652ab71
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:130
@@ -158,10 +159,10 @@ msgid ""
 "anther tab in your current window. If enabled, all windows opened by the "
 "webmail application obey the settings of your browser."
 msgstr ""
-"Wenn Roundcube Nachrichten oder die Verfassen-Maske in einem neuen Fenster "
-"öffnet, kann dies entweder ein eigenes Fenster kleinerer Größe und ohne "
-"Werkzeugleisten-Schaltflächen sein oder, wenn diese Option aktiviert ist, "
-"ein normales Browserfenster oder sogar nur ein weiteres Tab in Ihrem "
+"Wenn die Anwendung Nachrichten oder die Verfassen-Maske in einem neuen "
+"Fenster öffnet, kann dies entweder ein eigenes Fenster kleinerer Größe und "
+"ohne Werkzeugleisten-Schaltflächen sein, oder, wenn diese Option aktiviert "
+"ist, ein normales Browserfenster oder sogar nur ein weiteres Tab in Ihrem "
 "aktuellen Fenster. "
 
 # 74049af58127461c8a1bd729bda1cd7d
@@ -175,8 +176,8 @@ msgid ""
 "You can register this webmail app to be opened when ever you click an email "
 "link somewhere on the web."
 msgstr ""
-"Sie können diesen Webmail-Dienst registrieren, damit er geöffnet wird, wenn "
-"Sie irgendwo im Netz einen E-Mail-Link anklicken."
+"Sie können diese Web-Anwendung registrieren, damit sie geöffnet wird, wenn "
+"Sie an diesem Computer einen E-Mail-Link anklicken."
 
 # e73b312b5f204296a4171f80c2794318
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:142
@@ -192,8 +193,8 @@ msgstr "**Vorschaubereich anzeigen**"
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:145
 msgid "This shows or hides the :ref:`mail-preview-pane` in the mail view."
 msgstr ""
-"Dies zeigt oder verbirgt das :ref:`Mail-Vorschaufeld <mail-preview-pane>` in "
-"der Mailansicht."
+"Dies zeigt oder verbirgt das :ref:`Mail-Vorschaufeld <mail-preview-pane>` in"
+" der Mailansicht."
 
 # ee1c255779a54989b1bac051ff1b7bb6
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:148
@@ -206,8 +207,8 @@ msgid ""
 "Select the delay to mark new messages as \"read\" when opening them in the "
 "preview pane."
 msgstr ""
-"Wählen Sie die Verzögerung, mit der neue Nachrichten als „gelesen\" markiert "
-"werden, wenn sie im Vorschaubereich geöffnet werden."
+"Wählen Sie die Verzögerung, mit der neue Nachrichten als „gelesen\" markiert"
+" werden, wenn sie im Vorschaubereich geöffnet werden."
 
 # b9406ccc5f744473a93c95dc87ae7487
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:151
@@ -247,9 +248,9 @@ msgstr "**Zeilen pro Seite**"
 # 2f2d722ce9fe4b1ab203120d2dc4aca4
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:158
 msgid ""
-"The messages list displays this number of messages at a time (aka a \"page"
-"\"). Increasing this number may result in longer loading times when opening "
-"a mailbox folder."
+"The messages list displays this number of messages at a time (aka a "
+"\"page\"). Increasing this number may result in longer loading times when "
+"opening a mailbox folder."
 msgstr ""
 "Die Nachrichtenliste zeigt diese Anzahl Nachrichten (bzw. eine „Seite\") "
 "gleichzeitig an. "
@@ -263,12 +264,12 @@ msgstr "**Alle Ordner auf neue Nachrichten überprüfen**"
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:162
 msgid ""
 "By default, only the Inbox is checked for new messages periodically. If you "
-"have server-side filters installed that will move incoming messages to other "
-"folders, you should check this option."
+"have server-side filters installed that will move incoming messages to other"
+" folders, you should check this option."
 msgstr ""
 "Standardmäßig wird nur der Eingang auf neue Nachrichten überprüft. Wenn Sie "
-"serverseitige Filter installiert haben, die eingehende Nachrichten in andere "
-"Ordner verschieben, sollten Sie diese Option mit einem Häkchen versehen."
+"serverseitige Filter installiert haben, die eingehende Nachrichten in andere"
+" Ordner verschieben, sollten Sie diese Option mit einem Häkchen versehen."
 
 # 1e8ee8734c104da1b1d1b6331f27a8bb
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:169
@@ -314,8 +315,8 @@ msgstr "**Eingebundene externe Bilder anzeigen**"
 msgid ""
 "Formatted (HTML) messages can contain references to images which have to be "
 "loaded from a remote server. This can harm your privacy and reveal to the "
-"sender that you opened the message. This technique is often used by spammers "
-"to verify that your email address works and you may receive more spam."
+"sender that you opened the message. This technique is often used by spammers"
+" to verify that your email address works and you may receive more spam."
 msgstr ""
 "Formatierte (HTML-) Nachrichten können Verweise auf Bilder enthalten, die "
 "von einem Remoteserver geladen werden müssen. Diese Technik wird häufig von "
@@ -344,8 +345,8 @@ msgstr "**Nach dem Löschen/Verschieben nächste Nachricht anzeigen**"
 # b733fcea3f174d9ba329a6d1740d779b
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:188
 msgid ""
-"Controls whether the screen should jump to the next message in the list when "
-"opening an email message (not in the preview pane) and then move or delete "
+"Controls whether the screen should jump to the next message in the list when"
+" opening an email message (not in the preview pane) and then move or delete "
 "it."
 msgstr ""
 "Regelt, ob die Anzeige zur nächsten Nachricht in der Liste wechseln soll, "
@@ -374,8 +375,8 @@ msgid ""
 "email correspondents use."
 msgstr ""
 "Einige E-Mail-Systeme legen keinen Zeichensatz fest, wenn sie Nachrichten "
-"versenden. Wählen Sie den Zeichensatz / die Sprache, den die meisten Ihrer E-"
-"Mail-Partner benutzen."
+"versenden. Wählen Sie den Zeichensatz / die Sprache, den die meisten Ihrer E"
+"-Mail-Partner benutzen."
 
 # 37198073e586454a8eda007eec6d6ae6
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:204
@@ -390,12 +391,12 @@ msgstr "**In einem neuen Fenster verfassen**"
 # 34e8b509325c4bd5bc5f401765fdbccd
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:207
 msgid ""
-"With this option checked, the message compose form will open in a new window "
-"instead of the current browser window/tab."
+"With this option checked, the message compose form will open in a new window"
+" instead of the current browser window/tab."
 msgstr ""
 "Wenn diese Option mit einem Häkchen versehen ist, öffnet sich die Nachricht-"
-"Verfassen-Maske in einem neuen Fenster statt des aktuellen Browserfensters/-"
-"tabs."
+"Verfassen-Maske in einem neuen Fenster statt des aktuellen "
+"Browserfensters/-tabs."
 
 # 162221a3c591405a8511faa51b75e68b
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:213
@@ -405,13 +406,13 @@ msgstr "**HTML-Nachrichten verfassen**"
 # d47d24a132a5498788ce055cc268442b
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:211
 msgid ""
-"Check this option to enable the rich text (HTML) editor when composing a new "
-"message. This is only the default setting for HTML message composing. It can "
-"be :ref:`toggled <mail-compose-html>` at any time while composing."
+"Check this option to enable the rich text (HTML) editor when composing a new"
+" message. This is only the default setting for HTML message composing. It "
+"can be :ref:`toggled <mail-compose-html>` at any time while composing."
 msgstr ""
 "Setzen Sie bei dieser Option ein Häkchen, um den Rich-Text (HTML)-Editor zu "
-"aktivieren, wenn Sie eine neue Nachricht verfassen. Sie kann jederzeit :ref:"
-"`umgeschaltet <mail-compose-html>` werden, während Sie eine Nachricht "
+"aktivieren, wenn Sie eine neue Nachricht verfassen. Sie kann jederzeit "
+":ref:`umgeschaltet <mail-compose-html>` werden, während Sie eine Nachricht "
 "verfassen."
 
 # eb5dd9e9e3f04ee0856407b0bcdb1b37
@@ -425,8 +426,8 @@ msgid ""
 "While you write a new message, a copy will be saved to the Drafts folder "
 "ever few minutes. Select the interval or disable the automatic saving here."
 msgstr ""
-"Während Sie eine neue Nachricht schreiben, wird alle paar Minuten eine Kopie "
-"im Entwürfe-Ordner gespeichert. "
+"Während Sie eine neue Nachricht schreiben, wird alle paar Minuten eine Kopie"
+" im Entwürfe-Ordner gespeichert. "
 
 # 27226906a26f4c319cfac1cc98560089
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:220
@@ -436,8 +437,8 @@ msgstr "**Immer eine Empfangsbestätigung anfordern**"
 # b1a585353bb648fd91c8ce8162c13de7
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:220
 msgid ""
-"Activate the \"Return receipt\" :ref:`sending option <mail-compose-options>` "
-"by default for new messages."
+"Activate the \"Return receipt\" :ref:`sending option <mail-compose-options>`"
+" by default for new messages."
 msgstr ""
 "Aktivieren Sie die :ref:`Sendeoption <mail-compose-options>` für "
 "„Empfangsbestätigungen\" standardmäßig für neue Nachrichten."
@@ -497,8 +498,9 @@ msgid ""
 "mode."
 msgstr ""
 "Dies regelt den :ref:`Modus <Mail-verfassen-weiterleiten>`, in dem "
-"Nachrichten standardmäßig weitergeleitet werden, wenn die *Weiterleiten*-"
-"Schaltfläche ohne Wahl eines Weiterleiten-Modus angeklickt wird."
+"Nachrichten standardmäßig weitergeleitet werden, wenn die "
+"*Weiterleiten*-Schaltfläche ohne Wahl eines Weiterleiten-Modus angeklickt "
+"wird."
 
 # 5aff98e0df494f06997ce17b53af21c2
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:236
@@ -508,8 +510,8 @@ msgstr "**Standardschriftart einer HTML-Nachricht**"
 # 2bbef7374e524ae7920cd68bc48905ab
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:236
 msgid ""
-"When writing a formatted (HTML) message, this font face and size is used for "
-"the default text formatting."
+"When writing a formatted (HTML) message, this font face and size is used for"
+" the default text formatting."
 msgstr ""
 "Wenn Sie eine formatierte (HTML-) Nachricht schreiben, werden diese "
 "Schriftart und -größe für die standardmäßige Textformatierung benutzt."
@@ -525,8 +527,8 @@ msgid ""
 "When replying to messages coming from mailing lists, this setting controls "
 "how to reply to them."
 msgstr ""
-"Wenn man auf Nachrichten von Verteilern antwortet, regelt diese Einstellung, "
-"wie man auf sie antwortet."
+"Wenn man auf Nachrichten von Verteilern antwortet, regelt diese Einstellung,"
+" wie man auf sie antwortet."
 
 # 4155475bee084c9f8ff112aed02d33d8
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:242
@@ -539,8 +541,8 @@ msgid ""
 "Select in which cases the signature text from your sender identity is added "
 "to a new message."
 msgstr ""
-"Wählen Sie, in welchen Fällen der Signaturtext Ihrer Absenderidentität einer "
-"neuen Nachricht hinzugefügt wird."
+"Wählen Sie, in welchen Fällen der Signaturtext Ihrer Absenderidentität einer"
+" neuen Nachricht hinzugefügt wird."
 
 # fc23bff3205b4e5a80bdb90cb22a6f7e
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:246
@@ -578,8 +580,8 @@ msgid ""
 "see the names of attached files. Adjust this setting in case you get "
 "complaints about garbled attachment names."
 msgstr ""
-"Manchmal haben Empfänger Ihrer E-Mail-Nachrichten Schwierigkeiten, die Namen "
-"der angehängten Dateien richtig zu sehen. "
+"Manchmal haben Empfänger Ihrer E-Mail-Nachrichten Schwierigkeiten, die Namen"
+" der angehängten Dateien richtig zu sehen. "
 
 # 3d0ef9e787374a67852137bb0ff59eca
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:261
@@ -632,7 +634,8 @@ msgstr "**Sortierspalte**"
 
 # 2aac426aa5304a549c161d7f0f980729
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:275
-msgid "Select the contact attribute used for sorting the contacts in the list."
+msgid ""
+"Select the contact attribute used for sorting the contacts in the list."
 msgstr ""
 "Wählen Sie das Kontaktattribut, das für die Sortierung der Kontakte in der "
 "Liste genutzt werden soll;"
@@ -794,11 +797,11 @@ msgstr "**Papierkorb beim Ausloggen leeren**"
 # 84c58ea9c53b478cb606885196da0574
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:337
 msgid ""
-"As the option name says, this will empty the Trash folder when you :ref:"
-"`terminate the session <logout>`."
+"As the option name says, this will empty the Trash folder when you "
+":ref:`terminate the session <logout>`."
 msgstr ""
-"Wie der Name der Option sagt, leert dies den Papierkorb, wenn Sie die :ref:"
-"„Sitzung beenden <logout>`."
+"Wie der Name der Option sagt, leert dies den Papierkorb, wenn Sie die "
+":ref:„Sitzung beenden <logout>`."
 
 # e70b3d1db75542798be619b19a3613c3
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:340
@@ -808,8 +811,8 @@ msgstr "**Eingang beim Ausloggen komprimieren**"
 # a529dc454fe4440caf16fd39b2584dfa
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:340
 msgid ""
-"This will remove all messages flagged for deletion from the Inbox when you :"
-"ref:`log-off <logout>`."
+"This will remove all messages flagged for deletion from the Inbox when you "
+":ref:`log-off <logout>`."
 msgstr ""
 "Dies entfernt alle Nachrichten, die zum Löschen markiert sind aus dem "
 "Eingang wenn Sie sich :ref:`ausloggen <logout>`."
