@@ -1,29 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-25 16:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 1a71895cb3a743b19dc4e60ce180fc78
-# 1790cc0547274ea384c80d5d5b057d89
-#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:88
+# 413e15e79f364a0f86c463c88ba6bb76
+# 23cc1f386088479fbeb3429ee5cb1bb5
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:93
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:88
 msgid "Filters"
 msgstr "Filter"
 
-# 6f7f77d7682f45e8b7981013ffbd2075
+# b1a171147fd64e77a801a142acde1c3c
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:95
 msgid ""
 "Incoming mail is automatically processed by the server and handled/organized "
@@ -37,7 +38,7 @@ msgstr ""
 "einem anderen Konto umgeleitet, beantwortet, verworfen, gelöscht usw. werden "
 "soll. "
 
-# c8c087b1c40b42a9a65c30976e858b11
+# e7893e2ba3574809ba416f5d59e45bd6
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:99
 msgid ""
 "Filtering is based on `Sieve <https://www.rfc-editor.org/info/rfc5228>`_ "
@@ -49,7 +50,7 @@ msgstr ""
 "\"_-Sprache gefiltert, was bedeutet, dass alle Filter unter einer Haube als "
 "Sieve-Skript auf dem Server gespeichert werden. "
 
-# 2fe3891428ee4dd8bb716576a5c0827e
+# 4246e0a1c4b64a74828a877159a88407
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:103
 msgid ""
 "Each filter definition has a name and set of rules and actions. Usually the "
@@ -60,12 +61,12 @@ msgstr ""
 "Tätigkeiten. Normalerweise ist die Anzahl von Definitionen unbegrenzt und "
 "sie können der Einfachheit halber zu Sätzen (Skripten) gruppiert werden."
 
-# 0edf8f58b8af4028bff9e172ad62e0ba
+# cfbb4962a29740ada667d792e0f2f9d6
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:109
 msgid "Filter sets"
 msgstr "Filtersätze"
 
-# 91f68af36ba24c1a9872b762fb72cf3e
+# a33a21db56e148a5baf68acde7463be3
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:111
 msgid ""
 "Filter definitions can be grouped into sets. These can be activated or "
@@ -75,7 +76,7 @@ msgstr ""
 "Filterdefinitionen können zu Sätzen gruppiert werden. Sie müssen einen "
 "einmaligen Name haben."
 
-# 706014a088b34fb78337df0da815b2ee
+# d823c4b6f19c442f9be20842d309c6e8
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:115
 msgid ""
 "New sets can be created as empty or as a copy of an existing set. It is also "
@@ -87,12 +88,12 @@ msgstr ""
 "werden. Sätze in Form eines Skripts können auch heruntergeladen werden, z. "
 "B. als Sicherungskopie oder zu Migrierungszwecken."
 
-# 4f135d11ba7047918751f9229cc53bae
+# 7076f805117843328602f944ebe10073
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:121
 msgid "Filter definition"
 msgstr "Filterdefinition"
 
-# 8fb3ab7ec82d45068074fccbe36dc522
+# cf198637533e4b6f80584dba8399a0af
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:123
 msgid ""
 "Every filter can be active or inactive, which is convenient if you want to "
@@ -101,7 +102,7 @@ msgstr ""
 "Jeder Filter kann aktiv oder inaktiv sein, was praktisch ist, wenn Sie "
 "einige Tätigkeiten vorübergehend deaktivieren wollen."
 
-# 449902ac6dcd4d63a2e1b22b9160bff5
+# 04ed3e964bc54ab3b414ed9e2d4b9133
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:126
 msgid ""
 "Because filters are executed in specified order (from top to bottom as you "
@@ -112,7 +113,7 @@ msgstr ""
 "unten, wie Sie sie in der Liste sehen) können Sie Filter durch Ziehen in der "
 "Liste neu ordnen."
 
-# 0014ce55fa2745daa537db2db454de4f
+# edcda0383e614d74b0372c12ccbc3743
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:129
 msgid ""
 "Every filter definition contains at least one rule and one action. Depending "
@@ -123,43 +124,43 @@ msgstr ""
 "nach den Fähigkeiten des Servers, kann eine Regel z. B. auf Nachrichten-"
 "Kopfzeilen, -Textkörper, -Datum oder -Größe basieren."
 
-# b8086ed6e391476aa7aafdf05a37031c
+# 7292161af07a42d297991379a5066f09
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:132
 msgid ""
 "A set of actions also depends on server capabilities. Most servers support:"
 msgstr "Ein Satz Tätigkeiten hängt auch von den Fähigkeiten des Servers ab. "
 
-# c08069173d154f20bb969456ecd0f3de
+# c188c04ddbaf4b57b9b7405707635d50
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:134
 msgid "moving/copying messages to specified folder"
 msgstr "Verschieben/Kopieren von Nachrichten in bestimmte Ordner"
 
-# 458add3919574badb7abea694b54ffe9
+# 48976ddc6f394c5f99da0467bb7c230b
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:135
 msgid "redirecting/copying messages to another account"
 msgstr "Umleiten/Kopieren von Nachrichten zu einem anderen Konto"
 
-# c4f7d3efdd974f848216390c5e020d0c
+# 2ae8be577ce242fa8602d4f0b366ab67
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:136
 msgid "discarding messages with specified error message"
 msgstr "Verwerfen von Nachrichten mit einer bestimmten Fehlermeldung"
 
-# 4f83d3a1e37b423180d786ac8d77291a
+# 507764e344254a089d347824fc9f1831
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:137
 msgid "replying (vacation)"
 msgstr "Antworten (Urlaub)"
 
-# 4af92ad08db0411ca1b89cbd5f902817
+# 6a73554097a840cbb4e9b04d8e4d9bb8
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:138
 msgid "deleting (ignoring) messages"
 msgstr "Löschen (Ignorieren) von Nachrichten"
 
-# 4286116735df4653a71f3f202c0c1c4f
+# 4f0bec774ee347bdab043b31a36b97ba
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:139
 msgid "setting flags (e.g. marking as Read)"
 msgstr "Markieren (z. B. als gelesen)"
 
-# 1893592772ab4189af56309b19756856
+# 4bfe180f6be4458885eef7b0054ec49b
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:141
 msgid ""
 "Note: Some actions stop filtering process, some do not. Use *Stop evaluating "
