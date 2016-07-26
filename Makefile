@@ -61,9 +61,9 @@ helpdocs: submodules
 		rm -rf "$(SOURCEDIR)/webmail-user-guide/roundcubemail/" ; \
 	fi
 	mkdir -p "$(SOURCEDIR)/webmail-user-guide/roundcubemail/" ; \
-	for dir in _static _templates; do \
-		cp -a "$(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/$${dir}" \
-			"$(SOURCEDIR)/webmail-user-guide/roundcubemail/." ; \
+	for dir in _static en_US/_static; do \
+		cp -a "$(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/$${dir}/*" \
+			"$(SOURCEDIR)/_static/." ; \
 	done ; \
 	cd "$(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/en_US/" && \
 		for file in $$(find . -type f); do \
@@ -93,7 +93,7 @@ clean:
 	@rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/
 	@rm -rf source/*/_fancyfigures/
 
-html: submodules helpdocs gettext
+html: submodules helpdocs
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	find locale/ -type f -name "*.po" | while read file; do \
 		sed -i -e '/#, fuzzy/d' "$${file}" ; \
