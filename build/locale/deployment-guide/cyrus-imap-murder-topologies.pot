@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,172 +17,172 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:92
-# 56d128336f1144dbb32bc1a2ca726f8e
+# ca4234465e0249cca138ce276cd1163f
 msgid "Cyrus IMAP Murder Topologies"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:94
-# f975f516a0284173a494a727c176994c
+# 23b6b686e74f49c69e1c6eba8cc4810a
 msgid "A Cyrus IMAP Murder is an aggregate of multiple Cyrus IMAP servers, providing transparent access to mailboxes throughout the murder."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:97
-# a131fd4901d74bccbcd96ef67606aeed
+# bb8229d4a14b464593a00b921df3a456
 msgid "For the purpose of this documentation, the following terminology needs to be outlined:"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:100
-# bf33929d591d447892233f0b4420a885
+# d1d1adb1112a48ecb8f1cf5b610a3f6a
 msgid "frontend"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:102
-# 920a7ac1adeb4be3b79417122738772a
+# 653e1375237249659de8349050b76110
 msgid "A Cyrus IMAP frontend is a functional component that receives connections from clients, and proxies those to the backend on which the relevant mailbox resides."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:108
-# f164cbe21ae345449ea73938f8de6280
+# f23bd0382fb6424b83fb45107a754bc8
 msgid "Please note that a frontend proxies the connection on a per-mailbox level (as needed). As such, the client connection is *terminated* at the frontend, the frontend *interprets* the protocol, and decides what backend to create a *new* connection to (if needed)."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:113
-# 143d791ef2a64fb191a0fc1981b1a2f5
+# e49e1ac918344d9891a0fcb2cf3f3437
 msgid "backend"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:115
-# 246d85ff4884468db0edcc4609dc175e
+# ef76d633adc14db9bec5642081283fb4
 msgid "A Cyrus IMAP backend is the functional component that actually holds and maintains a mail spool containing mailboxes and messages."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:118
-# cde3f9df69aa4f2daabb6bee175f4518
+# 70ad009f650f4eb8b0448dfd4ae49787
 msgid "mupdate"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:120
-# 1b79eddfd65241ddab2b443c0b812d0f
+# c56e6d3c8af349889dab264f4e14a3fa
 msgid "To aggregate various backends, compose a single authoritative list of mailboxes available throughout the murder, and communicate these to the frontends, a Cyrus IMAP murder requires a server to be the mupdate master."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:139
-# d350db74c8f549f3aad4fd36ae6639f5
+# d225e4cc0fb84ee0a0f3bd08ab666e80
 msgid "Discrete Murder"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:141
-# 90f4f4d9d4c04e60a0db3de09b0de576
+# b6a3410b2f9d4d06bbfa1fb01011b72c
 msgid "A Cyrus IMAP Discrete Murder topology separates frontends from backends."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:143
-# 74f25167b56241f69c929db9b83b0be9
+# eddf19bcdbe142ffbf1208f887c030c2
 msgid "As illustrated in the next diagram, the Mail User Agent (MUA) connects to a frontend, and is proxied to *backend1* for the user's own mailbox, or *backend2* for a shared mailbox that resides on that server."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:155
-# bd140357f5eb47e29e667d3804fe498e
+# 433956c0b4674d149ff1993b29e4117f
 msgid "In such a deployment scenario, the daemon responsible for synchronizing changes made to LDAP with IMAP, called **kolabd**, recognizes the topology of a murder and assures the LDAP ``mailHost`` attribute is set to the correct value -- the FQDN [#]_ of the backend system the mailbox is hosted on."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:162
-# 6564398745f347449efd615bc29be16b
+# b1ddd5928ee542aa8d6aa8b500673ba5
 msgid ":ref:`deployment_discrete-cyrus-imapd-considerations`"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:193
-# 7a7e05f6ad0b4c9188e0a80bfb6f418a
+# c83563e76fdd4ea0b442b5426209e5ce
 msgid "Deployment Considerations for a Discrete Cyrus IMAP Murder Topology"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:195
-# 2c610357b675401b9bb6382d27cf2d35
+# 9fd1deca5ef341188792fbe5bff06069
 msgid "In a Cyrus IMAP Discrete Murder topology, inbound as well as outbound [#]_ email messages need to be routed to and from the IMAP backend server, that hosts the mailbox to which the email is to be delivered."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:199
-# c8d4a3d4ec67414e8cac3d11dc6e1f47
+# 7c183ed10bda4170bc7dcc98db429fea
 msgid "Similarly, backends need to be configured such that they do not find themselves authoritative for the entire domain -- as part of the recipients is hosted on other backends -- and use the ''smart'' internal MTA to relay messages to."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:221
-# 216e497d42094c21be16969fd84bb693
+# fd6e3bc8d24f47f18f87b13b6ffe444c
 msgid "The *MTA (Internal)* can use a lookup table for local recipients (valid recipient addresses in any of the :term:`mydestination` or :term:`relay_domains` domain name spaces), that routes (instead of delivers) the message through to the correct backend (called a *transport map*), using the LDAP ``mailHost`` attribute value for entries."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:227
-# cd6ec2723ecf4c6b975f90ba537faa3c
+# 446c1e355d4d40e096af4fc3b4b20e4d
 msgid "To configure such transport map lookup table, adjust the contents of the following snippet to suite your deployment and save it to :file:`/etc/postfix/ldap/transport_maps.cf` -- this file could exist already, likely with a ``result_attribute`` value of ``mail``, and a ``result_format`` value of ``lmtp:unix:/var/lib/imap/socket/lmtp``:"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:249
-# afdf83b601f042ab92b65e2873c3dfd5
+# 142a1551005842b4992b08385c574e8d
 msgid "By the time the *MTA (Internal)* queries the transport map, any secondary email address should have already been translated to a final recipient email address (primary email address), for which Kolab uses *virtual alias maps* by default."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:254
-# 239248ee1f3247a2964c4f6dbbc6a692
+# 807d4c1c08fc45efbb016e60a610720e
 msgid "The *MTA (Internal)* now needs to be configured to use this transport map:"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:261
-# 2c94b4e788644faa91f5f5a892aad4e1
+# f7b6aa2cb5ba4425acce778e6a35279c
 msgid "The *MTA (Internal)* will now attempt delivery for John to backend1, and for Jane to backend2."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:264
-# ead2f6c27dba4d2b9eee83c966cac8f9
+# 93e9eb81db124b8da5afd9cd3b3753b3
 msgid "The backends' MTA now needs to be configured to consider part of :term:`mydestination` local -- the local mailboxes -- and part of :term:`mydestination` remote -- the mailboxes on the other backend(s). This consists of three parts:"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:269
-# 52623113ecdc4edc9de4ff904880f046
+# 73510b2c2c2245458b1078626c84c7a0
 msgid "Setting the **local_recipient_maps**, line-breaks for legibility:"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:292
-# d9e43740ea254943a734c780e22fe306
+# 5cc80e7105664717a5d94cdc5e18b727
 msgid "The most important to take away from this is to make local recipient maps for the backend only include those LDAP entries for which the ``mailHost`` attribute is the same value as the system's FQDN."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:296
-# ad499b1d3aee4044949c7969c06def83
+# 62cb987506384fab93429c565929c697
 msgid "Setting the **transport_maps**, in (for example) :file:`/etc/postfix/ldap/transport_maps.cf`:"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:314
-# cc130ac18f41463b809d4c91973a2a7a
+# 27861e8934fe4102a1189705c2c45427
 msgid "Here too the most important part is to only transfer over the local LMTP socket, only those messages intended for recipients with mailboxes locally hosted -- Those LDAP entries for which the ``mailHost`` attribute is the same value as the system's FQDN."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:319
-# eba4e430f0af41e6afcdee54167243f6
+# 5af3f8bd57984f92a3338a9f9de3ea21
 msgid "For delivery to shared folders, an additional lookup table for transport maps is needed (save as :file:`/etc/postfix/transport`):"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:326
-# 76cf26ab7bb74f92b250f0d51f6c46f4
+# bed6401f8a9c44248f1fe192d6118dc2
 msgid "Execute the following commands to activate:"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:334
-# 1013b7a7e12e43dcaa0a08fc0740ccce
+# b45d8e53ecb54c9686370d2146c124a9
 msgid "Setting the **relayhost**, and redirect all mailboxes for locally hosted domains not hosted on the local server to the smart host(s):"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:344
-# d04a9634e3984790a710b6365de6be83
+# ec8afca995094b7b90c1dad23af323ba
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:347
-# b7e9296422074f528a293cdd0f5c12b3
+# 863cfc8436cc4c87bf87530ae84198b6
 msgid "It is actually not the FQDN of the system the mailbox is hosted on, but the value of the ``servername`` setting in :manpage:`imapd.conf(5)` that is used."
 msgstr ""
 
 #: ../../source/deployment-guide/cyrus-imap-murder-topologies.rst:353
-# 7405f5d657cb4407860adf2c155689ec
+# 7d0baa3b01db4083aa7f05e93499c778
 msgid "*Outbound* messages in this context include vacation responses, forwards to colleagues, and such (automated) message traffic."
 msgstr ""
 

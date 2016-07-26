@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,199 +17,199 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:90
-# 2a1bcb9719ef496d94fdf725c3d5ed93
+# 0a369de3a6fe42f0b05310fcab6d3273
 msgid "Upgrade Notes from Kolab 3.1 to 3.3"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:92
-# 62d8c003f87847f085b8a63bb590aaf2
+# a7259439b27b49268f746af36532ffa5
 msgid "This chapter contains some upgrade notes for moving forward from Kolab 3.1 to Kolab 3.3. You can use this guide aswell for upgrading from Kolab 3.2 to 3.3. The differences aren't that many."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:97
-# b99ed7f0776448cea966c11a6e486b11
+# e115df9caf26484bb4bf2a638b0f7a13
 msgid "ChangeLog"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:99
-# 9f59881be6ff46718eb8dd50cc7b914b
+# 9922e4ea759c4630881bb6334af6ea3a
 msgid "While Kolab 3.2 mostly included backend and groundlaying changes for upcoming realases due to switching to Cyrus IMAPd 2.5, Kolab 3.3 now ships with couple new and updated frontend and admin modules."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:103
-# 06560be65e2e4831b0d7614cb0ae756a
+# 0731c4c2a3f94eabb61257064338842a
 msgid "Kolab 3.3 compared to Kolab 3.1 ships the following additional components:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:105
-# af5164adbf4241b5a421c9659fe21b59
+# 719a6dcc7a864805a33889bd971238b6
 msgid "**Birthday Calender**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:107
-# b0cde9919291411982298ec6078f7091
+# b2928355cfe3442fb3ac88b8d3b87f6a
 msgid "This feature was already incuded in Kolab Groupware 3.2"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:109
-# 20ae5e95d62c47b99f24b2a82cabc775
+# c260a5da5cfc4b8e8667d2f5a2c476a4
 msgid "**New roundcube release**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:111
-# 403bd407085b454c843480019a9c32f3
+# 8996172f47184110876cdac31519b8dc
 msgid "The folder structure has changed. Roundcube has moved their public web content into a *public_html/* folder. While it tries to be backwards compatible, you might want to check your virtual host configuration if you've actually modified it."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:116
-# a88a344045e34e44b845564505911d48
+# b3655914c7064ddbb5d21e9357c48757
 msgid "**E-Mail Tagging**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:118
-# d6ef6a4dee9441d38005e50a6755d37e
+# cfe92c2ac03342a58414c5b05a1e2172
 msgid "The roundcube plugin *kolab_tags* supports taggging of e-mails"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:120
-# e4867c1af2b748279975dc8a1539c5fa
+# a4b5f394149644fca12404da1580ee50
 msgid "**Notes**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:122
-# efec2a05e6c34084b2da29d4aa21f46d
+# 490fc676a38a4e5e8704fecbac074850
 msgid "The roundcube plugin *kolab_notes* supports writing and sharing notes. Via syncroton these notes can be managed via the active sync protocol as well."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:126
-# d37550d795434a69bec34accdf12b342
+# 08b167114c4b4546b8a0af89b224584f
 msgid "You can also create shared notesfolders for groups."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:128
-# 1fe4aa4fd24a41d18b64329c5d29c8ac
+# da5d4a5c839e4ae8a2ee1f82402fcf43
 msgid "**Resource Management**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:130
-# b070dc99ffa14e1d8e65767ce3a47869
+# 37ee9a8fb28c46a0aa53519af6aaf50c
 msgid "While managing resources was already included in the Kolab Webadmin GUI, the roundcube frontend was missing a component to search, check and book resources. This part makes use of freebusy informations to actually show the availabilities."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:135
-# 233f8048cc5d4a6285605eec67dfe30c
+# 668f75ba308a4e6abda7dfc4d7734668
 msgid "**Freebusy**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:137
-# 9a4d6fc0e76a4c4e888ace0a3182818b
+# a88e157c03d6425fbf7db26e81ca7755
 msgid "The freebusy web daemon now supports caching of freebusy informations and resources. You might want to update/replace your configuation to support resources, etc."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:141
-# cf58bdc776974dd4b9390c9a21dd51a4
+# db7080c1ab434fc0ba977087eea4f9ef
 msgid "**Wallace**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:143
-# c11280844bdd423186b387c680d43574
+# 2c6ec91db40a4c559594635c15ca520a
 msgid "The wallace daemon now includes modules for checking iTip invitations and resource booking requests. Wallace is now enabled by default in new Kolab 3.3 installations. If you want to make use of it, you must integrate it in the postfix mail flow."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:148
-# aa7a37a6a7d347d8965fa85428931753
+# dc0cd02ae9994918b3efe4fe83a06465
 msgid "**IMAP ACL editor (kolab-webadmin)**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:150
-# 9504f341f7a3497aa5f6d2caaabdd7df
+# d4d93ac88e914c8d9966acd7a497a5f4
 msgid "You can now create share folders within the kolab-webadmin and manage and enforce initial access control lists for those folders."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:153
-# 75ecf7ad8baa47f6bae941bbcb631690
+# 9d5b9867c90b417c9ce01a378550919b
 msgid "**Organizatioal Unit Editor (kolab-webadmin)**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:155
-# 5816069c2b1a415eb8cd3ec0b6635154
+# 48a468b586dc497492d984e44e527539
 msgid "Those installations that make use of bigger LDAP Directories or manage corporation addressbooks within LDAP can now make use of the OU Editor instead of relying on external LDAP Editors. The ou management includes an ACL Editor for LDAP targets."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:163
-# 0e7be8511b1f4504806640c6fe570fb9
+# b35ed35bdf1f474297099a2d4972a8e5
 msgid "Updating the system"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:165
-# 3cab141cb91d4eaa9519990b40e77825
+# d3e87a242d07409bad5d93b2006a1f59
 msgid "These update procecures are just an example. They don't differ too much from a basic installation."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:170
-# bafcbeb27eba4cd3b08e132ea98fb076
+# 1f415dc87543472fa00e7b9af63fc3a2
 msgid "CentOS 6"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:172
 #: ../../source/upgrade-guide/kolab-3.3.rst:191
-# 07e99286219441cfa824f6e6c0892b21
-# f22b8cfc51e94dbb98371481e410f28d
+# 00fccf841c894d0da9c95d0e7831c2a0
+# 4739f3ebfc954124ac15a5095deda6f0
 msgid "Update the repo to the new location"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:181
-# b4120c001eb441caa1c04b81e0e09f81
+# c16fbe6fea5041b3a67c9d2333600feb
 msgid "run the upgrade process"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:189
-# 4211ff78edff487192c4b80236eb0741
+# cbc0a902d32743d5a6b4d4742e3573d3
 msgid "Debian 7"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:198
-# aa19009d7fde46d88cdc789d12874ec9
+# 068abb63654d4daea2dfff14734b056b
 msgid "Import the new Release Keys"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:205
-# be7c3d470319481cb90e119ab08fb3bd
+# a44b682bf9bc408ead6a24dcfe14a445
 msgid "If you've don't have set a correct apt-pinning, please check the Installation Guide."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:207
-# ba49581decba4421a8dde810f1eb2719
+# d5a65ae8da8e432eb2bfcf44885ac7eb
 msgid "Update and Upgrade the system"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:216
-# fdf6d1e4c7ea44fba380d51f0adf2fcb
+# 99f2c08e74e84cf69e0fa9a7a1e76680
 msgid "You'll get ask if you want to replace your configuration files! DON'T overwrite them! You'll lose your configuration and credentials and end up with a broken frontend."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:221
-# 718bdf9ecd094e22947a97cda5770615
+# 34f7b93942e44efaae71cf9e272e6cf6
 msgid "Update your configuration files"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:223
-# 125d4d287a8a419b884d3cc1b4de4499
+# fffebf492e914d718873d27030e403d3
 msgid "If you want to check want configuration files have changed, the best way is to compare the previous and current version in the GIT repository."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:226
-# 15d8901af73e4ee69681ad783c295f09
+# cf8e1aa74b3c4a5a902a0daa4c7f06f5
 msgid "You can find most of the configuration file that have changed when you compare the templates of pykolab/setup-kolab."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:229
-# d9961f7614be48248a0bea15cde297db
+# 2309f60a54e147809a84035865f2550a
 msgid "http://cgit.kolab.org/pykolab/diff/share/templates/?id=pykolab-0.7.1&id2=pykolab-0.6.10"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:232
-# 28afe528bf1f4735ac9b00269857e0d7
+# 59f1ea6e77a34ac3891761126c066dc5
 msgid "/etc/kolab/kolab.conf"
 msgstr ""
 
@@ -219,293 +219,293 @@ msgstr ""
 #: ../../source/upgrade-guide/kolab-3.3.rst:332
 #: ../../source/upgrade-guide/kolab-3.3.rst:360
 #: ../../source/upgrade-guide/kolab-3.3.rst:403
-# eb0e5263ad5548e8adc14f883e2a48f0
-# e09cf98bf01e4b0189a44e0ee9770e88
-# 272f4c80e1664b1c9a9a095f8d8a38be
-# f742b40f25d3410694bd2cc62e7092bc
-# b216365854624f5d80c6cef4980dde8d
-# c08fb547eae646c4b3c5d2458e8e4109
+# 418832d3548846eba6e01dc00c5b28f1
+# 5ecae38e21434e659222469736d3b45d
+# df1fa55192a344b493eb6a8dd22ffc27
+# b64a0d05abca4b7a93320fc8f93587c0
+# 4c535b151f16465c9739ed87bcddcb29
+# 91d952a921554c8bad1178c5184c14bd
 msgid "You can see the configuration differences here:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:236
-# 19f581a8983e424c977fa43ca7abb541
+# 984772da46cc41e89cabff73702af74b
 msgid "http://cgit.kolab.org/pykolab/diff/conf/kolab.conf?id=pykolab-0.7.1&id2=pykolab-0.6.10"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:238
-# 2174a4dc5eeb4ab693f482e29b7b533d
+# a3868b02524f408bb6b13d139b4a705d
 msgid "These are the values that have been updated. Please change them in your configuration depending on your installation and needs"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:259
-# 53ac2518bb074202b65fb15de7583dda
+# 617e4cdeb795431d85f5befe55b50377
 msgid "If you're planning to make use of wallace please make sure wallace is enabled to start using :command:`chkconfig` on RHEL/Centos or :file:`/etc/default/wallace` on debian."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:262
-# aa4853dc7f044781955de5dce1d1380a
+# f69f524aab1d47b7be2299847bde6532
 msgid "Restart the services"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:271
-# 34232d031428477e8469386b43af58e7
+# 6a7cfb858d2f4a92b46719735d4195e6
 msgid "/etc/kolab-freebusy/config.ini"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:275
-# 1aa3988fc2184c54bb0a1276b0e95544
+# d562df7d929d467292ab08e137eca19e
 msgid "http://git.kolab.org/kolab-freebusy/diff/config/config.ini.sample?id=kolab-freebusy-1.0.5&id2=kolab-freebusy-1.0.3"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:277
-# fa528e1f15ef409d8090c0281ae20ea0
+# 7f59a8a5b4304320975ecb8aef3c6c69
 msgid "Instead of editing the configuration by hand it's easier to just recreate the configuration using the setup-kolab tool."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:280
 #: ../../source/upgrade-guide/kolab-3.3.rst:368
-# 24818e8f8d07475195a7f00da835d87b
-# 4798b579e07a473e93f9b507b29a9a40
+# f8f6f3ab9a324104812fb3debaf65678
+# c7a4364b91d5485480aa88b5eb926ed2
 msgid "For Redhat/CentOS"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:286
 #: ../../source/upgrade-guide/kolab-3.3.rst:374
-# d9a48bdadafb465c802d41364a638e8e
-# e1336271a333485d9295fd7f06304b72
+# acd4141adaed45e2acf8188f7ba38c8f
+# ebfa855265e24d448959166adb3dce94
 msgid "For Debian"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:292
-# 6caa5d2bc739472c90a62e4f3e29ca76
+# 87bd93dbc80d40fa93fb33586586f923
 msgid "Recreatae the configuation:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:300
-# 04558fc836eb4f55a2080041287de345
+# 5026905d8b2e4336a19c431d42cee775
 msgid "/etc/roundcubemail/config.inc.php"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:304
-# 9cd0c4cebede4c46a281e0384b7d3851
+# 9da6e6de45ad405c9a1fd8dd92a8c36e
 msgid "http://cgit.kolab.org/pykolab/diff/share/templates/roundcubemail/config.inc.php.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10 http://cgit.kolab.org/pykolab/commit/?id=57a48ed5e5fed38b4bbbb088fc9425a4b407c0b0"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:307
-# 3b619c1b0ecd472da2824f7e2d1dabc0
+# 1ec02894a4114f789d38db923311cb07
 msgid "Change the plugin load order the follwing way:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:309
-# 7bdcf4654dbb492196ab3894d53cdfbf
+# 6ebb22bac95242d0a53e0ebf35e57d9c
 msgid "move *kolab_auth* to the top position"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:310
-# 9322a5da7cb040afb7c458ab3116d245
+# c87e6bd885524ae6a29d968d5b017f4e
 msgid "move *kolab_config* after *kolab_addressbook*"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:311
-# 50f7624152554b19bc580aca1f19121a
+# 22b746fb33d44bf09431a1738a46248d
 msgid "add *kolab_notes* after *kolab_folders*"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:312
-# d7b8a6a204304496bba93b8482cd9bfa
+# 55b41715452943a1b76e7841c2152f5d
 msgid "add *kolab_tags* after *kolab_notes*"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:314
-# ed9d844439cc4f4cb7c484dec53ad8ef
+# 4763ed7186c34cb794b9caa105b990ef
 msgid "add 2 more $config entries"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:323
-# eb272eb695a24bf2a145ca9c57f8b4e0
+# e768b7ca037b420a9c7a9780a359983c
 msgid "Keep in mind that some of those configuration changes are requiring an updated apache configuration. Roundcube 1.1 introduced a seperate public_html/ folder to seperate webroot and application files. Keep this in mind i you've customized your webserver configuration."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:330
-# 3e75630adf324bf9bf2c537e8ad443e0
+# 8c5c275c816f4558bb9d2144e7edd8b1
 msgid "/etc/roundcubemail/password.inc.php"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:334
-# fe2ac96a00c448c2a9ddc90f1d20e811
+# 8e01cc4ed3044534aeaaeae74829a553
 msgid "http://cgit.kolab.org/pykolab/diff/share/templates/roundcubemail/password.inc.php.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:336
-# 86892b8c08704abd9730c573dbff120b
+# f2e49ecbfbe0447ba9f3cfc7cced105a
 msgid "Change the password driver from **ldap** to **ldap_simple**."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:344
-# 3166d00706fe495b846fbe8765e6606e
+# 4b10d24127454a15948ad0a7081e49b2
 msgid "/etc/roundcubemail/kolab_files.inc.php"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:346
-# d14330d29a2a4fe1a0e3fcb7a8672608
+# cdea3f28cb7a4704b330f6fc0b0c7fb9
 msgid "You can see the configuration change here:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:348
-# 0b12663fac9d4853abe16ff22939d49c
+# 63b63eadb85f48e7938ca2d4994ec738
 msgid "http://cgit.kolab.org/pykolab/commit/?id=172545ebeba5c73cbb502fcae859b27df7aafed2"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:350
-# 346561aac702431a82dafd0a1a2b40c8
+# f4a6de1655bc400082ad5e3d5a464518
 msgid "Update the kolab_files_url to /chwala/ to be protocol independent."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:358
-# 37d3c78f0322498aa3ea4032d776e0f8
+# 601de2f211da4130a9d158096031eb52
 msgid "/etc/iRony/dav.inc.php"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:362
-# 2d19a7ec17e54fabb22c8c4f5f697c4b
+# bf0fbeef1555438ca102ed436167cc83
 msgid "http://cgit.kolab.org/iRony/diff/config/dav.inc.php.sample?id=54802da29dd4e77ca8c716f6c24c1aabef3a3c1f&id2=iRony-0.2.4"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:364
-# 03acbcdfa7044bbbba5ef8d2cfc64442
+# 4f0c0d4a5e344ea290cec30aeeca8111
 msgid "The iRony configuration doesn't have anything special configurations. You might want to consider just to take the new default config file or change it based on the differences between the previous version."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:382
-# 6a948cdc89074686b7e24da4bac8607a
+# 2769f1f551a64dbfaea168ae57b7dddc
 msgid "/etc/postfix/ldap/virtual_alias_maps_sharedfolders.cf"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:384
-# 12d11266f0274909bfcd1bffcfbf0555
+# 7267f25ada594017b5898d6f74b51e74
 msgid "To fix the handling of resource invitations you've to adjust your existing virtual alias maps, otherwise you end up with non-delivery-reports."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:387
-# c8d0b099849b436daf3ad6a3e879201e
+# bdc3284a6a8043d282b9ba6ca28441bf
 msgid "Please update your filter with this new default configuration:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:393
 #: ../../source/upgrade-guide/kolab-3.3.rst:420
-# 31ece6a53d164e9cae09086526814fc8
-# 1bafadc36cb7463ea2d8a6e205450287
+# 28ebd648e6e9415182483dabda5c2025
+# 7548a626f04c4c68a64663105fec55d1
 msgid "Restart the postfix daemon"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:401
-# 32d221f6396d41c1bb6e2f1b2608395f
+# 06d3fc2dc0cf478c9994a63995e45fff
 msgid "/etc/postfix/master.cf"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:405
-# 6be0cc6a18bf47a5b21b6b7f6d953bf7
+# 0993e18c74294b71b8adc631030c3b9f
 msgid "http://cgit.kolab.org/pykolab/diff/share/templates/master.cf.tpl?id=pykolab-0.7.1&id2=pykolab-0.6.10"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:407
-# dd6bb5581d35496fa8bc9dcc0fd63246
+# 799890642b604728bc7a17c599ce6275
 msgid "This will put wallace as the next content-filter after the mail has been returned from amavis to postfix. If you're don't want to make use of iTip processing or resource management you can skip this section."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:426
-# 5d12cece37e348bda6d9caa78bebffd9
+# 146bb3d010834cf986030ac3790248b9
 msgid "The mail flow will be the following:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:428
-# 51fc5a804f034e259099bba481db7c5b
+# f9a08ddbf02a4d72a738ef828c0c71f8
 msgid "postfix receives mail (running on port :25 and port :587)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:429
-# 924d54a1a8b846dbbfe218eecc560379
+# 15945c5bd01a47a1ae4f761de7594743
 msgid "postfix sends mail to amavisd (running on port 127.0.0.1:10024)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:430
-# 0443ba242e9946389c71459bd65a7775
+# cbae23a9daf84d9db462a4f97b89cf5b
 msgid "amavisd checks mail"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:431
-# 254acd83039842f0bff3d4960feeb5a3
+# adb8881e834149d98c285efdc51b9497
 msgid "amavisd sends mail to postfix (running on port 127.0.0.1:10025)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:432
-# 9c63eddb9c0f43239611ba2a1ae22f51
+# d3bc6a877946443fa6a93276a7af7e1b
 msgid "postfix sends mail to wallace (running on port 127.0.0.1:10026)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:433
-# 94207cd03a65458fb62bcaae1053d83e
+# 1d06828ff5614fe6a4d8a526b4adca63
 msgid "wallace checks the message for itip, resources, etc"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:434
-# fbd494a8b0ae4cb48fe70536749b89cf
+# 0a797568a57a442bb85967b64823f2f6
 msgid "wallace sens mail to postfix (running on port 127.0.0.1:10026)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:435
-# c86dc9801a124de581dcc162b5e4c727
+# e65de8def65440548873212f7669e09b
 msgid "postfix will start delivering the mail (external or internal)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:439
-# d6853b9b28fe4e88a7d1ee8e24fe3f17
+# e345ea9ca72d4b8cb306110ce767735c
 msgid "mysql database: kolab"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:441
-# e071c8aab53d43fd9df9a2010cd4706d
+# 12c5a7bb3cfd492f9681a186fb5826d4
 msgid "A couple new features are relying new tables (organizational units). The shared folder have been extended to make use of the **acl** editor."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:444
-# 6feb3a0916984aaf81a8e0debd8568bf
+# d48e932caf454069b5b131db3041b77e
 msgid "You can find the full sql file here:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:446
-# ee76679de25b4bf8a5c345bec842ae4e
+# 42864ce725d0422c8ecc41a7154612b5
 msgid "web: http://cgit.kolab.org/webadmin/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.1"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:447
-# 47ba8a1d51ac442c8eac660caa5a0e2f
+# 3e6f23ff51174000b845971bf415f95b
 msgid "locally: :file:`/usr/share/doc/kolab-webadmin/kolab_wap.sql`"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:449
-# 2e884c6aec424e64a65cf0f24b682188
+# 6e1b98f4fee8422c889364d9cd61cb8f
 msgid "The kolab-webadmin package doesn't provide auto updates or upgrade files for your database. Here's a summary of what has been changed."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:452
-# 1d0bf9d54724407ea823e8f5e2f33acc
+# e282528ab9b04d6fa205ee60d6b9d110
 msgid "If you've made changes on the shared folder types you might want to change the types manually in the settings section of kolab-webadmin."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:455
-# 29b650e087924e5ea123df84cfe567b1
+# 86a0a78ad94c4087aa113d41398e34a4
 msgid "Open the mysql cli:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:461
-# bbcb7960b0f0428cb3de0af11f1624d9
+# 59d3a9c3a58e4568a43b6202e65b6485
 msgid "and apply the followin changes: The tables will be deleted and recreated. Don't forget: if you've made changes to shared folder types, please update them manually!"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.3.rst:524
-# 72d6f91d82984bb0abbe3530d1fe54ed
+# bbd1c474e8bd41e09529690df3e0280d
 msgid "After the database update has been applied. Logout from the kolab-webadmin interface and login back in to load the new changes."
 msgstr ""
 

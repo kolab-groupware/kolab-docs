@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,172 +17,172 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:92
-# 3ba3975aef6b4d52918fe05adeedf9b3
+# 018233bf81b94e378ad8891ab4606dba
 msgid "HOWTO: Create a User in the Kolab Web Administration Panel"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:94
-# 72ae347288c549c8b5a6e30e918682ef
+# 95e594b3db5b4a5da0ebb34f026aa766
 msgid "This is a quick walk-through guide on creating a user in the Kolab Web Administration Panel (WAP for short), based on a default Kolab installation."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:97
-# fd894730b73a4533b06c3aa12f764c1e
+# 93f6f5bfec7740a08e3b0e498263e960
 msgid "For customization, please see the :ref:`admin`."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:99
-# 801d6d9682bf4c91946288e06a75deff
+# eaccdd0cc1a044939c23692f3f0f8786
 msgid "Navigate to the ``/kolab-webadmin`` URL on your webserver using HTTP. For example, a server set up on localhost would be at http://127.0.0.1/kolab-webadmin."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:105
-# 16128e9975a14123a6932509ce07a089
+# a486062c4a444d42ac1ef9a0f0942bce
 msgid "The address you use to connect to the web administration panel is also the address the server software uses itself."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:108
-# 62a0db5d1a8d4819a4bf80944eaa556f
+# 8a3a0c0e1a63402985773fcfeee52a70
 msgid "If you navigate to the web administration panel using http://kolab.example.org/kolab-webadmin, then the software itself will (attempt to) connect to http://kolab.example.org/kolab-webadmin/api."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:112
-# b46f4a8528954162b09590c750ac8d4a
+# b228ee022e674a4984d63f6c434a6f9b
 msgid "Make sure the server resolves the address you use (back to itself), or use the ``api_url`` setting in the ``kolab_wap`` section of :manpage:`kolab.conf(5)`."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:116
-# 9f54b52f637746d38c3224ab05891837
+# 50f0943fc6be4056a7de58cadd142c74
 msgid "Login using the username ``cn=Directory Manager`` and the corresponding password you supplied during the setup process."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:121
-# e7d0e1c066bf45ab9fffeb989ecbf93e
+# 362828f623754ca3bdd6de1dc4f3a0c3
 msgid "The screen that follows shows you the objects the web administration panel can manage:"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:126
-# 87256ac3bcd64b418884d6cc74a98ce0
+# 1160294ac6034cf5b78c6d7f1bd8e5ba
 msgid "Choose \"Users\" to create your initial user account."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:128
-# b6f6111848484b01b1bb5bb73d52830a
+# 16de67f2b4be447a95f8c819a6167219
 msgid "Please take a moment to familiarize yourself with the layout of our web administration panel:"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:131
-# 598b9ba8b62c407f9a60d550147e0a8a
+# 3e3a2f8dff9b4866b6b44b035e6a2830
 msgid "On the left-hand side is a list of existing user records,"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:132
-# 738cb09798aa4b68b7f2aa259db25488
+# 4d03706ee57c40debf6d9a2d8dbc2a70
 msgid "Quick links to other object types are provided at the top,"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:133
-# 0edc61da0da24328a7115d4e629049f7
+# 2bc7a57c4548418e8fb7ffb05dc4df36
 msgid "At the right-hand side, near the top, under ``Logout`` and ``About`` is a link ``Add User``. :ref:`faq-no-add-user-button-or-link`?"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:135
-# 4b6daa544f874c698eb9fe65c7d9bf7a
+# ce76c7500a5f4a0ea5090ee9fc94d0ec
 msgid "The main screen real estate is spent on the form area:"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:139
-# 2acfda7608e842e58326134c38d9c2b3
+# d8fcaa0079304c788612d19f280ebc1a
 msgid "The form is generated from configuration settings, among which a variety of types of individual users. A short overview of the types of users Kolab ships by default is available in the administrator guide."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:143
-# bf1ae91e162641bd820dfdc650aeec3b
+# 7cabf7fbb7fe4aa892fb5825096c2c61
 msgid "For now we would like you to select the ``Kolab User`` type:"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:147
-# ab4b7016c1944fc9871bc05e1c44b093
+# 9b89fe8cd52e4b51bd1017fd924df55b
 msgid "The form updates itself once you select the ``Kolab User`` type, reflecting the configured as well as necessary form fields for this type of user, such as mail quota settings. The background color of the form fields indicates whether or not the form field requires you to provide input:"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:152
-# 0009c3f8fe0c4649a05b2f0e7fd5344e
+# 44d8e12ced9942b1b51f2aed91370e54
 msgid "light-blue fields are mandatory,"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:153
-# 0e20f74710b04be28b469de960562b42
+# a279375642134d7580a7c93f50812c92
 msgid "white fields are optional,"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:154
-# 2569d362ffb24499b0fbbaafa683ffec
+# b242df18df8a4d418d4928f83ad76b17
 msgid "gray fields are disabled for custom entry."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:156
-# cca8ad97362f446693f80ecf5ef69c18
+# 1c19ebb531074b77a8e0c02390c7dd8b
 msgid "Fields that are disabled are usually generated using values (that you supply) in other form fields."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:159
-# cd7c75bde3a94080ba986abe6e7d5fd9
+# cdb1c9bcfb41483886a9966078ece24e
 msgid "Provide some of the required information, such as the ``Given Name`` and ``Surname``."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:162
-# bb27dd48f525422cb7ffaf26f3e9de4f
+# c502ef6914c04076af45f2b586871c08
 msgid "As you leave each field, the information you typed is being sent back to the server (if the form field beared any relevance to any other form field), to obtain the values of generated form fields."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:166
-# 1424f352bb47456cb88c21ba5ca61e0e
+# 6c0489d995d34a14bf12483f175132fa
 msgid "For example, supply the ``Given Name`` (and/or ``Surname``) of the user, and see the ``Common name`` and ``Display name`` are populated."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:171
-# 0dc63446cdd848e48f8412c99bcd7542
+# 65628293b60c45f9b7a55099a6f611a0
 msgid "User information is being populated in other tabs of the form as well, such as the ``Primary Email Address`` and ``Secondary Email Address(es)`` fields in the ``Contact Information`` tab:"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:179
-# 0b28dca5bae34b0d981fb1daf0e4d726
+# 50aa843542e845bbb8ba54785cfd0fc8
 msgid "Note that the primary email address form field is disabled for input, as the primary email address is generated by the :ref:`admin_rcpt-policy`."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:182
-# d569c2342cc543d28e6701360dab4416
+# 7e74cd0f24724dffb3069188f73f34ce
 msgid "Select the ``System`` tab."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:184
-# 214d45079da2495390333ee25c6c2633
+# 66ed4950b9514cf5b67aaa73ebb9c1c4
 msgid "If the user you are currently creating is to become a Kolab Administrator, start typing ``kolab-admin`` in the ``Role(s)`` field."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:191
-# c4e50646020d41e99b49cfb70f98326b
+# 606ce13860f24f44a97cac7a29cf703c
 msgid "The ``Unique identity (UID)`` field is generated using the surname and preferred language of the user. A second user with a surname of \"Doe\" will have UID ``doe2``, a third ``doe3``, etc."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:197
-# 0ba1ebae41114a2c8b69685e80a3058a
+# 31bd00c215cb478684aa771b5be93fd4
 msgid "In the default configuration the password field is a cleartext field, so you can let the user know what password to use, while not having to make one up yourself first -- avoiding too many incidences of the *1234* and *Welcome123* passwords."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:202
-# aebb03e8185041da89d7487ebfcd23c1
+# 6768437aaa3d4118a45e73e69c1dc04c
 msgid "Adjusting this configuration is beyond the scope of this topic, but is described in the Administrator Guide."
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:205
-# d85f2493d37b4243aaa882c4d17cdb84
+# 2f26a27390ed47e9bb4ff71a785517a4
 msgid "Additional Kolab related configuration is available in the *Other* tab:"
 msgstr ""
 
 #: ../../source/howtos/kolab-webadmin-create-user.rst:209
-# fb9e51afa2ee4aa48907432026fc0c6a
+# be103ee9d3214481bc29cab5bd10665f
 msgid "Click the submit button to create the user:"
 msgstr ""
 

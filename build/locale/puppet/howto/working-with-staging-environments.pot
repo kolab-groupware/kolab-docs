@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,177 +17,177 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:90
-# 45aaee735e9c46128876fa3f3f0ee5b2
+# bf00c80b80334fd695106c8ed11a442e
 msgid "HOWTO: Working with Staging Environments"
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:92
-# 483b111af4724e8fbe55e290d1404825
+# 299d168233e54b4c97faf0b1e5c78cd5
 msgid "This HOWTO outlines what staging environments are, what you could be using them for, and to what purpose they are implemented in our default Puppet master server configuration, and the Puppet modules we provide."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:97
-# b5a9e15d72134b929c3d1b303eccd4aa
+# 3e9c1c5369f940c29f63b42322571692
 msgid "Why Stage Environments?"
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:99
-# 1c8dcd6cc0244d05a707122bb21bf927
+# 4f6f9dde629045859121c0a65eb2a18a
 msgid "Like in any development process, whether it be software, infrastructure or the combined article, it is generally beneficial to have one or more pre-production stages in which work can take place, of which the consequences are not necessarily clear."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:104
-# b0961084cfae4617bc365675aae41d14
+# b5aef6245eb64429aeeb68cee1caee3a
 msgid "For a variety of reasons, the exact structure of you environment's Puppet manifests and classes tends to be under continuous development."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:107
-# c71c96e19de3489a840781514391b964
+# f8b6ae61116a4c2293cedb4a6ba8b230
 msgid "Typos and syntax errors in Puppet manifests, classes and modules notwithstanding, you will likely want to avoid automatically applying any changes to your production environment -- the risk tends to be it stops making you money or costs you a bunch should it stop functioning."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:112
-# 7c84eddd43574542851ecfd1450f5ebc
+# 714a209b8dd141599a272d783c972ea2
 msgid "Should everything go through rather smoothly, however, then the result of the changes applied is still not necessarily the result actually desired. Multiple iterations of modifications may be required to get the desired state described well enough."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:117
-# e0b8e97f65ed4d9e98d27045feecb052
+# 92328b4bb0d241bbb530fc0805495b35
 msgid "When such changes (and their iterations) accumulate, the divergent nature of the development stage makes it harder to appreciate the consequences of applying any changes to the production environment. Furthermore, multiple topics may be in development in parallel, and some may be ready for promotion, while others may not."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:123
-# 52900b14e7e642ce94d530fe5efcab6e
+# b8078b2088ad47d49fe77f8e33a6e638
 msgid "Such risky, asynchronous development must converge in a controlled fashion, and verified the upgrade path for, in a stage between development and production -- *testing*, perhaps."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:128
-# a83d919cd799441cb20cb4842cc71b19
+# d06d690e6e544696ae1eebb7932f6786
 msgid "Description of Default Environment Stages"
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:130
-# aea97596b0164a038604c9a3470f4269
+# 51f55a57a46742a483294973739353b2
 msgid "The modules and usually also the domain's manifests tend to use a source code management repository for revision control, and in our case this is GIT."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:134
-# 54a0a5a1b2d44e5196d64909f41e70fb
+# 9c9cdbc8f1694b209d103be7509729c5
 msgid "GIT makes it easy to read logs, review commits and merge, cherry-pick or otherwise promote changes."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:137
-# 14e1ddbb5f9e45f4a243c9c248d0a2c2
+# e4c95130373a4913acf50404e4f9a15e
 msgid "**development**"
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:139
-# a37fe7228a2b45aca79180f11d8e1ae8
+# 25c0247d2f494fb1be1873372d62aaf9
 msgid "The development environment stage is intended for free-for-all, lather-rinse-repeat type of environments."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:142
-# 67799ca27e4243df919b53252afdd9a2
+# e940dab0239640b696b6bf1ba300be2f
 msgid "Several of many things are in development, including systems, services, infrastructure topology and applications."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:145
-# b06bba66e8d94b01b3dec19baf6d395b
+# b0d05382dcf94b7cb8c53a0aa9576f35
 msgid "Application developers typically have full access to the systems in this stage, software is not necessarily running based on packaged or released versions, packages such as ``git`` and other development utilities are installed, and the update policy might amount to as much as \"apply all of them as soon as they become available\"."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:151
-# 2f512ef70b5d496dabd104e7202dd39e
+# 6b91515f7b0b497e8e8f223ebd6dc4e2
 msgid "As such, the development environment is highly volatile, and because too many people can mess around with it too much, should be completely reproducible fast, cheaply and from scratch."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:155
-# 67979c4f3e6a493d93eb5cac5c7061c6
+# 613786bb050a46eda40e4a3b6b071d18
 msgid "As such, while monitoring and trending is useful -- for your developers to autonomously recognize the current state, rather than ask you -- but the alerting policy may be different."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:159
-# 9be084ba55f540189e661ee0889c86e3
+# d172fc0f845b4ea3947885dcadc6cc63
 msgid "**testing**"
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:161
-# cdee0aaa9f1e49e388d70be33cf00e27
+# 05b9a573f1b3448b86955af1d9530de3
 msgid "A pre-production staging environment, with intended uses of Quality Assurance (of applications developed) and verification of upgrade paths."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:165
-# 0193331309824d669374977f4a37b52b
+# 3b3fba339ab64a41bb56c0ce546ed728
 msgid "For each one of the pending updates to production, and often a combination of multiple pending updates and/or upgrades, one resets the testing environment to the equivalent state of the (then current) production environment, and attempt to complete the update successfully."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:171
-# ab5a74eeeac649f0b9f4d0db3c932caa
+# b6a3ec474ed04b4d892e0f014f3f5b6e
 msgid "**production**"
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:173
-# 8bcbdc5c8dd04c5d96bde0b3f3182dfd
+# 671255ed7e1c4fa2af53ce5ff34c8b10
 msgid "The production environment is your workhorse. This is a look-then- look-again-and-dont-touch environment."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:177
-# a76084d420894871af5c73e507733355
+# 82357bd1676049dc87ff7ebb5aabb64a
 msgid "System Administrator Workflow Diagram"
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:179
-# 615dd29fb23e410197c8db00d9fc6d59
+# ec43527d176f445486e3c4fd38007d5f
 msgid "The following diagram depicts the workflow for a System Administrator to apply changes, have the changes applied to each environment, and be provided with the required feedback on its success or failure."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:230
-# 7b592c026ed04ce5b04215e76f3e83bb
+# ed664e6b2b6c47ba9867684127c7d5db
 msgid "A system administrator commits a change to git, and pushes the changes back."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:235
-# 000dc9354d27471d8e8d7eb1158fa855
+# 9c95dbd5529643e08e5af7e584279baf
 msgid "Note that a commit happens on a branch, and your branches could be named *development*, *testing* and *production*, or you could have multiple *remotes* to differentiate write- and/or read- access authorization. Furthmore, you could put review utilities and continued integration facilities in."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:241
-# 599c35ebfe8c45648cef50fb092fb8ad
+# b73d349dff734319aba82b4283e281cd
 msgid "The Puppet server is itself managed by Puppet, and fetches new revisions of the configured git repositories during every run."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:244
-# 5fe78da1403b49a29b22c5ad29745088
+# dcc15b387534408bb9781822ee4f8b9e
 msgid "The run interval is normally 30 minutes, so it may take up to 30 minutes before the change is at all available to the Puppet master itself, and up to another 30 minutes before the changes are applied to relevant Puppet clients."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:249
-# 9e49c47fe21e4ceaa851b71fb3a98da9
+# 38d43faf1bda45a0af812dabed40ca82
 msgid "The *development* environment is configured to apply all changes automatically, except for resources that have specifically been supplied a ``noop => true`` meta-parameter -- this is Puppet-speak."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:253
-# cd4f73ba96234f71bf16d230b0c73aac
+# 4d3d2ed938c543a4adccab48cfee684e
 msgid "The *testing* environment still applies configuration changes automatically, and is supposed to be treated as such, in that it retains a state somewhat comparable to current production and few steps beyond that."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:258
-# 97b4aa82db384c62b26d829bd18ba200
+# f3a4c6b114ce4c839ede99ded8ee5efe
 msgid "The *production* environment does **not** apply **any** change automatically, except for resources that have specifically been supplied a ``noop => false`` meta-parameter -- again, Puppet speak."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:262
-# fea48d9ff4494c869a632d9cd7d08e99
+# ec512369a0d140b48c07357578d7028a
 msgid "Each of the systems in each of the environments reports back to the Puppet master server. This master server is configured to submit the report to a dashboard web interface."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:266
-# e202fea9fe4346beab4304949637cc64
+# 1f3a3f32a0894004ba3d7d9dcbe84390
 msgid "A system administrator can review the current and past states of the managed system resources."
 msgstr ""
 
 #: ../../source/puppet/howto/working-with-staging-environments.rst:269
-# 21b32f4155684b1ba3e25b8769b9d530
+# 71a73d86f50b45d591fc5fdf8a23aca6
 msgid "These steps bring the required feedback cycle full circle."
 msgstr ""
 

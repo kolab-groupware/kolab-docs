@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,82 +17,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:92
-# 31cc1af589ca4b68b39cbf40bad487a9
+# cf56d1eb0b8c43dc952f610f8d6fdbbe
 msgid "Installation of Kolab Enterprise 14 on Debian 7 (Wheezy)"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:94
-# 01fb8f8768b84c63b754c23818dfd4a0
+# e5fb3f3bc68b49aaa9968dfe898d500f
 msgid "Install the **apt-transport-https** package:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:100
-# b6f5594cc44e4cf3a098e0f9324c22ef
+# b002953d6dc045b69ac5010d6666981e
 msgid "Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:107
-# 9886788973374740ba57f5b45b45e841
+# 29ea808ebe0740a283fafe77e45d068c
 msgid "To ensure the Kolab packages have priority over the Debian packages, such as must be the case for PHP as well as Cyrus IMAP, please make sure the APT preferences pin the mirror.kolabsys.com origin as a preferred source."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:111
-# 2d5327540b8e4dcd9f0b4e7d5dc44f55
+# aa957fd80f264a159e4421406c70f0f6
 msgid "Put the following in ``/etc/apt/preferences.d/kolab``:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:119
-# c5a832418e0b407d85c631f67eef2c73
+# bd3096e4d78b463f9dd8589cbdb63dce
 msgid "Install the client certificate and certificate authority files:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:121
-# 58d9420b134b4bdb8ed3bb29595b7080
+# 597266c5caff4cf6b3217f667988a924
 msgid "Remove the passphrase from the SSL certificate key:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:128
-# f1cb8cb4a2cf4befb7336870c514d489
+# 93826dde19c24cc7b6e30aab4eb66382
 msgid "Concatenate the certificate file and the new key file without passphrase:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:136
-# 7fb49eae43204204a474902409c4f91d
+# 15b8edd61adb4bdfafc2c3d37027a546
 msgid "Place the file :file:`mirror.kolabsys.client.pem` in :file:`/etc/apt/certs/`."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:139
-# 542d67b695454df193b3e5b7e9bcf0c9
+# f6a4b092706f47309c7d3dc368bdd201
 msgid "Download the kolabenterprice mirror certificate:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:146
-# 68cca666bb0a4db3aeafb07d97b0bc88
+# 57fdcf049b294f689d711e18db3e1b53
 msgid "Correct the permissions on the private key:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:153
-# a11c52442dff4c91904cb04c9b27da2d
+# 7f6792cf9f184fe0a887eda2bb63b934
 msgid "Configure **APT** to use the certificates installed in step 4 by creating a file ``/etc/apt/apt.conf.d/71kolab`` with the following contents:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:172
-# d2b145df9c514caa9fcbb94657c43d02
+# 6c2abb2c6f834aebadb79a4aaf4a8d5c
 msgid "Update the repository metadata:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:178
-# 33657712ee964521bcaba522e17ab418
+# be7a694ee0bc4a5094aaeebf41461132
 msgid "Start the installation of the base package as follows:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:184
-# 61e5f0018f3c48809494d27896aa21e3
+# b28f15606ce44bcd879bd88f8abf1e4a
 msgid "When asked to confirm you want to install the package and its dependencies, press Enter."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/debian-7-enterprise-14.rst:186
-# e89fb0ec6920413b85c140f381bd390b
+# 7fda233ad3244c2f86288dc16a4bed46
 msgid "Continue to :ref:`installation-guide-setup-kolab`."
 msgstr ""
 

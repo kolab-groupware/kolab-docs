@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,52 +17,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.rst:90
-# 069cf5f4f6314d9a8c74d4fde86b0b64
+# d84395c5357640f0860f1d2394e42ff0
 msgid "Generic Macros and Conditions"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.rst:92
-# 3097cc57c7954ca1bb0702eec3d79416
+# 13c4b2b1309e4e0183fde47b8af7f89c
 msgid "**Always ship sources and patches**"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.rst:94
-# 319f841bb90148e48ec085d345aac259
+# a9bd10c4c6ef4b6fb80bbfecd55dcbb8
 msgid "RPM packages should always ship all sources and patches to all distributions."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.rst:97
-# d00bac4b8937411b8570b6c56de6ac1b
+# 6ec3d06902ff451987b1adcad8734a91
 msgid "In RPM ``.spec`` files, it is possible to create a construction like:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.rst:106
-# 9a1a97b2fdd24b1699a6361fbb96320a
+# be5ce69675334476b90346c6619f0884
 msgid "These lines describe what to include in the source RPM, and should therefore be avoided (as files may get excluded)."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.rst:109
-# 1ca886dc0be24fa0bb5d2b1e1cff4bdd
+# 92aebc5008664a468fb3b56d34dacb35
 msgid "Instead, use:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.rst:123
-# ebd5d3c55c1342798de0d4b86b09612d
+# 41de546bb6204360a88b834b0e6142cc
 msgid "**Define whether the system uses systemd or sysvinit**"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.rst:125
-# e44f9542fc8e40e3a3bd109c4a94ef6f
+# 83acd3b791514677bfe66380058569da
 msgid "Use ``%{suse_version}`` and ``%{rhel}`` to determine whether **systemd** or **SysVinit** is in use."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.rst:130
-# b92db92b2b8747e2bf1a610428471e7f
+# 997e0ac89c424b059888472a9c871b25
 msgid "All openSUSE versions supported use systemd, and all Fedora versions supported use systemd. This means that for as far as RPM packaging goes, basically only ``%{rhel}`` < 7 does not use systemd."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/generic-macros-and-conditions.rst:142
-# 85d1d727e93541168162c4c2b83b3de3
+# ac51732c696e4751b53028b0cc2cbd5e
 msgid "Note that the **SysVinit** to **systemd** change also affects the dependencies:"
 msgstr ""
 

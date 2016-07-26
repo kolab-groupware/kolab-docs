@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,72 +17,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:90
-# b1751ba9c12940e5b668a5a7f0e9460f
+# 52dad19d7f8d409cb10d2eb5341e47a0
 msgid "Packaging Webserver Applications"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:92
-# 4c976eae1fe8471aa408a170ded9034b
+# b322ccc51ddd47928ed8fc4618895d3e
 msgid "In principle, Kolab Groupware applications depend on **httpd** from the Apache foundation."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:95
-# 4c7b57709ef844fb9f67ff9318d296a3
+# 4d6e55f8d8cb45a0b2e81075c7b51c05
 msgid "To re-use ``Requires:``, commands to install initial application configuration for the webserver, ``%post`` and ``%pre`` commands, we seek to use the following snippets of macro definitions:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:99
-# 5ece1100e43541728be2b93786ef3c8d
+# 0702d39bc5f6456e99ef8dd283252535
 msgid "**Define the httpd package name**"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:109
-# ba3137c94b324501bbf940a4c2a3f341
+# e607eb5650da4bc0a984e4162d7d889b
 msgid "**Define the dependency**"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:115
-# f2fe120f4c8d464d8268bb2179de092e
+# 1b425e6cb2354bb9ae8a58c0876b98f7
 msgid "**Define the configuration directory**"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:117
-# 52c4c7364f584ba48bf14309d95c417c
+# 051bde0a7ed14cf8aa18f752496239b5
 msgid "Defining the **httpd** configuration directory for individual web applications helps address differences between distributions just once, to further avoid making ``%install`` and ``%files`` conditionals unnecessary."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:125
-# 0fc61f24c33f4682940655144466ca52
+# cf8567857ef340949e79220615821be6
 msgid "**Define your** ``%{php_inidir}``"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:127
-# 80bd69162b784c649c7485524e2bd199
+# f6b8966e5c7842bf9fe1b44ee63dfff5
 msgid "Define the PHP .ini configuration dir for additional extensions such as APC, for applications that are being updated should reload the webserver, but only if APC is enabled."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:135
-# c67303fe18ef4f9cbf97a5fef1ec6dd7
+# fb6a1ce23d554a76a2fb4d7223bee09f
 msgid "The combination of the aforementioned can now be used to:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:151
-# ffaa737ac7f74ef6bdf95a8e3ae0143a
+# 164c25473b974ee68033571ad8a7391e
 msgid "Possible Future Enhancements"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:153
-# ab4f9af12ea649f4b336d9038ddb5bc3
+# 12c5046deeec40219012484419228aa2
 msgid "Package to depend on a capability provided by **httpd** / **apache2**, **nginx**, **lighttpd** and other alternatives, which may be *webserver*."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:156
-# 4084f61643e94e14b1c6904667e0c0d8
+# 85525829577b474cb8e0b7127814c8b1
 msgid "Consider providing the default configuration to install along with the packages, and where to put them on various platforms."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/webserver-applications.rst:159
-# 8cddaeef115b4c2887d49b46f212498b
+# 43a03c190bff478c971ece9519b9a30b
 msgid "In Fedora, this may not be done in ``%post``."
 msgstr ""
 

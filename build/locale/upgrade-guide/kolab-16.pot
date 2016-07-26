@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,107 +17,107 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/upgrade-guide/kolab-16.rst:90
-# 1df60d87472149639365743a1a9afa39
+# f1cd6bb817764730bc4e12037d1cd249
 msgid "Upgrade Notes from Kolab 3.4 to 16"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:92
-# 7aeec0dbed0344199d444d4fa97cd1a5
+# 24a3ccc937814823bf02730e4fc9d543
 msgid "The purpose of this document is, to describe the procedure of upgrading a Kolab Goupware installation from a default installed Kolab 3.4 (last \"community verison\") to Kolab 16."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:96
-# 04cfa30018654b808998313380ef1672
+# 5d3689a56c26462ea9ee49cb760b73ed
 msgid "Upgrade Procedure"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:98
-# 29a77ee69a7d41e9936eca32d5a21303
+# 441007a6cdce4115b37d0cda015859e8
 msgid "Install the Kolab Groupware repository configuration:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:105
-# 388834c412994117a8b4354a2d645f21
+# 86e26835e33d4e71b65819e3afda6708
 msgid "Remove the existing Kolab 3.4 repositories:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:112
-# 8dcfd97fa0c24cc385dc0f4e5248d660
+# 8381c06be25c4da7addc766d4bb3585b
 msgid "Make sure that the packages from the Kolab repositories have a higher priority than eg. the :term:`EPEL` packages:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:119
-# 67ead69a3830432b943e2934f69c99b1
+# e85939efdd904e6a8274686410d1cc8f
 msgid "Replace php-mysql with php-mysqlnd:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:130
-# 8735382087da4a429b395d0e924f4f6c
+# 1702e9eef0a54a4ca68a33f186040287
 msgid "Update all:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:137
-# cc0f1aa1cbf14c0983d688bac53f7671
+# e1fa74d644b34d1f9fd6434a34bd84ef
 msgid "During the cleanup, you might see the message:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:147
-# 3133484b997b4b06ad731646f1df6030
+# ea8fb732e96845f6ab9ec5c23f3ccac8
 msgid "This is a warning, and the Cyrus-imapd package will be updated. This can be checked after the update with the command:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:156
-# 17dc0546427d47e288f5dfe76fcf6943
+# 1beca5e391eb43c09a8939f37baf0c56
 msgid "Updating the Configuration"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:158
-# c3aae64a717a4fa2bc219de5698a3762
+# 4e0fe1a656f94022b0b40b92a033da2d
 msgid "After upgrading the packages to Kolab 16 repository, the configuration needs to be updated."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:160
-# 5d3bd763dc934c09b37ad2e72c33c6a7
+# c6fabb31ed2342f1857fc25d28f7e7d7
 msgid "Configure the new module \"Guam\":"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:166
-# 54f0e1f4af564778aeb54647e21cb814
+# 67f05681fa7a4fc9bb6bd41a00b2f7af
 msgid "Configure the new module \"Manticore\":"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:174
-# a735d5657ea2487c8dd3d5375d1af58b
+# 3770bc9e820446ca9840a24c939f19aa
 msgid "If the Kolab 3.4 installation was a standard installation with no changes to the defaults, then the following 2 commands can be run at no risk (The correct password for the current roundcube database user is still needed for verification)."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:176
-# 978ddb7c808545ecbcd8e7bb90c2f26c
+# 752c723d8dd143608ff8339570f5e0aa
 msgid "However, if changes were made to the defaults, the original configuration should be copied off for later compare with the newly written configuration."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:178
-# 935d4f1ef2ca4ab2b67644fe16c31111
+# 2a3c0e762e6d467f9c7cf6b43ad1a6a8
 msgid "Update the roundcube configuration:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:182
-# 687fe240c8214141bc3274a23f3f58af
+# fbbc0e6b41584936836f850b0a49cdf6
 msgid "As setup-kolab is unable to write to the already existing mysql database, an error message will show:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:189
-# 39f08af796c94796bb9855295c888099
+# 05af3327c5b94064b81c5170556870ff
 msgid "The new and updated config file will however be written and restart the appropriate services."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:191
-# 2d56962a77c54d08972f9b5d94092b12
+# 256f032a2b104c12b6eae317ddd721ad
 msgid "The correct password for the current roundcube database user is still needed for verification."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-16.rst:199
-# 73cf518f4ce04cf1a5f418c3010a2e65
+# d5a748df9bfd44aeac8a9dc40112edb1
 msgid "Update the imap configuration:"
 msgstr ""
 

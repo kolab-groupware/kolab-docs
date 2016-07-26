@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,307 +17,307 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:92
-# 407427326ce34bd684a056c16bf6bdb5
+# 21f7d57abaea4defa8d7f08a52f96670
 msgid "Hosted Kolab Groupware Deployment"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:94
-# 6f3a09c0d3fc4554887a71f03479771f
+# 108d6eef31ee47b389bf41072f0ef338
 msgid "A Hosted Kolab Groupware Deployment consists of at least two separate parent domain name spaces."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:97
-# 065ae49985214e06a8bf815618d6b993
+# e96685f412a04290bc23704580edada5
 msgid "It's intended use case is to allow the sale of accounts, whether they be individual user accounts, or domain accounts, and whether they require payment (for example, `MyKolab.com <https://mykolab.com>`_) or not (for example, `Kolab.org Demo <https://kolabsys.com/try>`_)."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:102
-# 2504e3e5d5dc410e9c6b1968fd3bbd75
+# 3a14433c4a084265bb2d80faa487bf17
 msgid "The first :term:`parent domain name space` is referred to as the :term:`management domain`."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:105
-# 3a187be810704bb08361ee5da60bc584
+# e2b46bac20fd48dbbf28302df9b753a1
 msgid "This is typically the location for service users, and users servicing the systems (such as system administrators and support staff), as well as privilege and permission groups (for example, ``sysadmin-main`` group membership to allow the use of ``sudo``)."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:110
-# e9cfefc655c9459ebe23078e5a1f40fc
+# 0cfac56d41c04a319802f781aa273646
 msgid "The second :term:`parent domain name space` is either the first of many hosted domains, or the :term:`primary hosted domain`."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:113
-# c301b7d18f66454e9a1aa7f49efec159
+# c5e281903f0640e9a3013705bb4e7122
 msgid "A primary hosted domain is typically open for user self-registration, such as https://demo.kolab.org via https://kolabsys.com/try"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:136
-# 8a61ea564cec4d34a14bc5c93ab63485
+# 4a9addc9bd644a6db321f36f88b5843c
 msgid "Using this distinction allows a Hosted Kolab Groupware provider to;"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:138
-# e3265b9654b7459494717872e52d85c3
+# eae5943ff1e94650aaf5ab5433e37ea1
 msgid "Configure its systems to authenticate against LDAP, while maintaining a guarantee no customers are accidentally allowed to do so."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:141
-# 1bf7fc1e53bf46d2a592251cdf65fbaa
+# 715473ef5c6d4ebda0ad2ddf0a0e35c8
 msgid "Authorize a service or application user account to create new accounts in the primary hosted domain."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:144
-# 3ff00b40502b47caaccbffab5fcfef24
+# f6ad61e596294ef2827d2897e0dd7d36
 msgid "Authorize a service or application user account to read the information of selected domain name spaces."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:158
-# 782e68bbe47f43069ff51adbf533693a
+# 210b1d836d8f49259b26f29935263732
 msgid "Registration and Payment Processes"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:160
-# ffbbb2f644df4ca4967534439bbaa96e
+# 0bceab112d7441519c278729fd2f4c4e
 msgid "Registration of an email address (to one of the hosted domain name spaces open for user registration), would require some confirmation of ownership, and some means to contact the user."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:164
-# 7137978e51dc4a6493ede01a6cbe4b72
+# 61159b4d33e946e39fc52ac3c2783bf7
 msgid "It is deemed sufficient for a user to specify an external email address, and complete payment, to get an account activated."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:174
-# fe1f3b18ab7f482489520c21961d5e9f
+# 1a5ed3e99e7d4babaa08c6fc8233781c
 msgid "Subsequent Changes and Account Suspension"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:176
-# bea6974352984b848b7f370cafef8387
+# f35d8da6914747d2af36a6f3be54b2d8
 msgid "Payment is a regularly occuring process, and the amount is subject to changes in user subscriptions."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:179
-# 1c5edd13931a4a4a9d4108c7939f2e8f
+# 1ad00e46f3174982b67ec52630ab1811
 msgid "It is paramount to immediately activate new subscriptions, both in terms of user expectations and because activation of user subscription options during or after payment includes some potential attack vectors."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:183
-# 5d45133327664b4c9f004ab6bad6ff42
+# 1ca53b11af9b4f819a9d0a0ac0238162
 msgid "The account is degraded (some functionality is removed), or de-activated entirely, should payment become overdue."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:187
-# f33ba6fd8c2a4afab7c5d9a80f69deb9
+# 57086de85f9b4c618248111f4d704b0e
 msgid "Domain Registration Process"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:189
-# c926443f95b74f5fa12f673c5adccaf0
+# 1b87263334a7486f8a289eef24a71178
 msgid "A domain registration process is more complicated, since before the domain is active (even within the environment it is registered in), ownership of the domain needs to be confirmed."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:193
-# 94d5f98bb46240098801d25a369e4c4a
+# a1e8cfb04f534353bada75f645a822ce
 msgid "If this crucial step is not taken, the environment is subject to a variety of internal attack vectors, including phishing."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:204
-# dacca0b8257246f4803998aa5afb4411
+# bc461574a191451e998e46e26c7afea0
 msgid "User Registration"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:206
-# b2125cf06c09412d8e4e6fce92da1ad9
+# ca24573223ec47158ec79ad1802689ff
 msgid "If one or more domains are open for user registration,"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:209
-# fed0a412e53641e89000286fcd3a0cf2
+# 34651231f76c410697b5835da2bdd997
 msgid "Domain Registration"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:212
-# dec61c00d38348e18a299712841ff3ab
+# a746bf623cc94953951e38c1557fa768
 msgid "Differentiating Access Levels"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:214
-# 83591d2c7702401ea64f56ed340b0e5d
+# 7249e3378ea2452fb67464826204f528
 msgid "Establishing different access levels in a hosted Kolab Groupware environment allows a provider to associate different features with costs incurred to the customer."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:218
-# c1ea83d6d26b4c0f843e557bd8993525
+# 8c31e05f90f84061add77f5f89ebcc8e
 msgid "Among other levels, the following levels of access could be defined:"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:220
-# a76ba22feeb44671a63baf4e88fed6ca
+# 631c2cb96d874544ad5c40ad06449911
 msgid "Web client access,"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:221
-# aa9ee96a267147a49abd87ad4045da22
+# 91f62030c7e74e2cb0c8a1caa8e4e12f
 msgid "Plugins for the web client on a per-plugin basis,"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:222
-# 7ca0088e7ca04dc296847674db8d8b40
+# 14f6d76c8b294ffc8145e75eab8b46c7
 msgid "Settings-based features for the web client, on a per-setting basis,"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:223
-# 89eaf48a22944ceeb8346112d2b57937
+# 83b324e3f5d941a9ae9892d872604259
 msgid "Direct IMAP access (for desktop clients and other IMAP clients),"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:224
-# 5ebfd5708f4c4badbec6039b8c8c144f
+# eaef667fa92c48e09dcef858123d862e
 msgid "Server-side filtering (Manage Sieve),"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:225
-# e72b3c8fe79040fba25177aa80a2780d
+# b33eb6a86f0344d29a073db195381486
 msgid "Mobile device synchronization through ActiveSync,"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:226
-# a05693724d204519afd1dfe45161e3b9
+# 64668f2a6f90480a886f1ad3e5d16d84
 msgid "CalDAV/CardDAV access,"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:227
-# 0a2f9413172b49d79b92e8ab22b485ec
+# 2bb5cfec14f3428ba3b70916345e827a
 msgid "WebDAV access"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:229
-# 7c96ec7bf1ad4c0d9c86571ce45f94e1
+# d5ece623aeff400f8a407df651251b28
 msgid "The methodology to distinguish access levels is based on authorization parameters such as the roles associated with a user's account and/or group membership. Kolab Groupware recommends using roles, as they are far more scalable than group membership, to establish authorization to services."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:234
-# 082fce7de8b34667a3ee5daa5cbac1a2
+# c396f07b44ac4fd39421419e918cfce5
 msgid "An example scenario building a hosted Kolab Groupware environment could be to require additional payment for the use of ActiveSync to synchronize mobile devices, whereas all other services and access levels are included in a base price for the account."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:239
-# d993c30ff57044aa8478634140f1895e
+# aca5949e343247e5a874f6d34043ec1f
 msgid "The following roles would be defined, with their associated access levels:"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:241
-# 8fc73fa2555e407981976dc0a8963acc
+# 9c55c978a8b14e8b87c1554332f95c3d
 msgid "``cn=activesync-user,dc=mykolab,dc=com``,"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:243
-# d745625303b84c2988a85d70834e6cc7
+# 7e521537cd2449da9b823d2d8532eeb1
 msgid "A user of ActiveSync. This role is typically added when the user selects the option, and authorizes the user to use mobile device synchronization through ActiveSync."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:247
-# 0f69eef183fe4aa28af3717ffbde19ce
+# 81dc1f74a7a14cff9a592a96f7f7d904
 msgid "``cn=imap-user,dc=mykolab,dc=com``,"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:249
-# ec10938f27c54f32a46e999f49c11161
+# 3764cf81f0e74f108a49b340be2e2ca3
 msgid "A regular user account. This role is typically added after the user's account has received initial payment."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:252
-# 87a2f40368004d278d8a960bcae9c407
+# e9374ba903444ac5b645fc92a856f5f8
 msgid "``cn=suspended-user,dc=mykolab,dc=com``"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:254
-# 4dbf3bcef05240068294727662597d87
+# a69cede5180b4666a979f02b3c61acc2
 msgid "A suspended user has overdue payments, and could therefore not be allowed to send any email any longer."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:257
-# f750d95544c1468aa9488bf098ac36ad
+# e89ce252bd9a4ab2aaf5fd88b1275a4a
 msgid "It is generally considered prohibitively punitive to not allow the user to access his/her data any longer, and therefore this is considered an intermediate state for the account to allow timely recovery of full functionality."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:262
-# 6db8a429be1a4e8399b7cc8a8739400f
+# 2fce3bddc1a442dc824a36cce7213be1
 msgid "A deployment could opt to also suspend delivery to the account, but should bear in mind that delivery failure is likely considered data loss."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:266
-# 6d6cb36a1c474818b3fd8b5fe42da6f9
+# d0527e8559774a73b64af607bcea910c
 msgid "Multiple Parent Domain Root DNs and Access Levels"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:268
-# 9e197e22860d4058a6bf736b68003331
+# aecafa8e73ba4e8fa7dee79e8eac32a6
 msgid "When using roles to establish access to applications or features including the Kolab Web Client, any of its plugins, Chwala, iRony and/or Syncroton, an environment with multiple parent domain name spaces must take into account the names or roles are variable."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:273
-# c361d25e9b6a4148accf6cb1e496cad2
+# 87f1f2818508453f9dc71f0191243c33
 msgid "The **kolab_auth** plugin for the Kolab Web Client, responsible for using roles to determine additional plugins to enable, and settings to enforce, can use the following syntax to allow a single set of definitions to apply to multiple root dns:"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:282
-# b9594bda713544cabee0dd72a94f8379
+# 400009110d3349cd8ab25676e6321247
 msgid "``%dc`` is expanded to the domain root dn. See :ref:`and_ldap_mapping-a-domain-name-space-to-a-dit-root-dn` for more information."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:287
-# 15825fbff6ef449386caf19b21ec8a2a
+# edbaf5eadf3c4b349d83bc6ae06f5006
 msgid "Multi-Domain Hosted Environments and SSL Certificates"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:289
-# 4c20cf13316a4002a421fa4a295d8a4d
+# 34f1f046d4b34b38adec173971bb7c8b
 msgid "A hosted Kolab Groupware environment with customers registering their own domain name spaces instructs them to use addresses for services in the primary hosted domain by default. The primary hosted domain should have a valid SSL certificate signed by a publically trusted certificate authority."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:294
-# 2dcfdc8aad4b4064abd59d81f6e4d845
+# f40ee37e04304e69b54779e7f7fbe665
 msgid "For an example customer *example.org*, therefore, the location for the web client would be https://webmail.mykolab.com, and the IMAP server would be imaps://imap.mykolab.com. Users in the *example.org* domain would login using their full email address."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:299
-# 2040a051c1fd41d7bfcfba4b3a442038
+# c4766a0c6be3447a8fd4d53918e691b5
 msgid "Should a customer require a dedicated SSL certificate to their domain, so that the customer's users can use https://webmail.example.org and/or imaps://imap.example.org, it is important to take into account that therefore the domain name space needs to be associated with a dedicated public IP address."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:304
-# 9a498ee5dcfc4b4281f36a00b720aee1
+# 10259e90b96f4d79b6bdb63259e47b21
 msgid "While modern browsers can deal with the HTTP host header negotiation prior to encrypting the connection, most mobile devices can not."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:307
-# cc1d778d6e9d4a85a8f4319dc5d38a9e
+# ed248a657da247b1a5a6e615b64170ae
 msgid "In other words, while https://webmail.example.org (for modern browsers) does not strictly require a unique service IP address to be associated with it, you must consider that https://activesync.example.org/Microsoft-Server-ActiveSync does."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:311
-# b383138ef0ee4076bb2f55ea9d63c842
+# 69952f62c77c4a1e9f1b7c83e8cead49
 msgid "Furthermore, auto-discovery protocols often mistakenly assume addresses such as https://autodiscover.example.org and https://example.org contain valid automatic configuration, and sometimes fall back to, and sometimes do not even have implemented at all, the query for SRV records such as _autodiscover._tcp.example.org, which is eligible to contain a value pointing to another web server http host address (that an SSL certificate is available for)."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:318
-# 142039e986c849c28421c5fb1de5c1de
+# 47192805c5804e58aadefc0260e26501
 msgid "Using a dedicated service IP address resolves an issue with desktop clients as well; The use of addresses such as ``imap.example.org`` and ``smtp.example.org`` would trigger an alert about the validity of the SSL certificate used, if the service IP address for these DNS records pointed to the same service IP address as those DNS records used for the primary hosted domain."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:325
-# e0a61b3a57604e5f8cde006330869fcf
+# ec67ccbf860b49628483c2922b45b457
 msgid "Setting a Domain Base DN"
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:327
-# 9957fc916feb46b293c623523ddf3f71
+# 15cc705b0f8746b98bf7c77b2eb9ccc5
 msgid "Hosted Kolab Groupware deployments that choose to allow users to register domain names should consider setting the ``domain_base_dn`` setting in the ``[ldap]`` section of **kolab.conf(5)** to a location in a directory tree that is a database, and can therefore be indexed and replicated."
 msgstr ""
 
 #: ../../source/deployment-guide/hosted-kolab-groupware-deployment.rst:332
-# 2f75e4d94f854461be501eeda29b6168
+# 8b482d6f87ad4687b031784ddc148c71
 msgid "In the example referred to previously, this would look as follows:"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,117 +17,117 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/installation-guide/overview.rst:89
-# 47878df8c9e144cb9919ccd6cc499d19
+# 3ea431a48f8d490294eb000b949a25e9
 msgid "Overview"
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:91
-# 666b16c5a8a54d93b72b4a572b8a7705
+# 087118119b3d423b9676d81c7e4c8784
 msgid "The Kolab server is built out of the best available Free and Open Source software components, most if not all of which are available through the Linux distribution of your preference. However, such Linux distribution may not be as up-to-date as one might wish for the Kolab Groupware to provide the latest and greatest functionality, or may simply have a different update policy from what is typically acceptable for a Groupware environment."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:93
-# 246a38388bd44fc98dda78b99664d03b
+# 079ed104bd484226be7b40089437304c
 msgid "The Kolab server consist of the following 6 components, which can be distributed among several systems. Each of those components can be installed using the provided meta-package."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:96
-# d7b2b16f95364a198e4525aa723036af
+# 6c29a49dfbd24047a1dac19c1992de78
 msgid "Components"
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:98
-# ac4d92f0f9194dfca1c0a09c571be568
+# 87b9f1eafc824be182581b1e5538448f
 msgid "To install all components on a single system, a kolab meta-package is available, pulling in all other packages and dependencies."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:100
-# 45d20d0da64e4df289d66532aa055fd4
+# 157a314f116840048900663d077801ab
 msgid "IMAP"
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:102
-# d3d79ddd2e48419bb0de6606ae0153bd
+# a4a37ffa95f34774826c95d33134f539
 msgid "The IMAP server component of Kolab Groupware, including a daemon which synchronizes user accounts from LDAP with IMAP mailboxes."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:104
-# df3d5e6ed649446db3deb12bbfe2bde5
+# ec00ae18f7794180867a2fa7783eb590
 msgid "To install the IMAP component, use the kolab-imap meta-package. This meta-package pulls in cyrus-imapd and kolab-server."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:106
-# 76ad2a11cac3491a95b44a175ab85b10
+# 45fee806b39b47ed9ece1a744b1bb68f
 msgid "LDAP"
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:108
-# 3c35f27ea1a848528fa4ee84af4481f8
+# c4120e04629c47818dd0dc55ce24e19d
 msgid "The LDAP directory server component is used for user and group information, authentication and authorization."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:110
-# 4e3e37194dff46ce9a3430aba87e7c42
+# a97d4637ca4d4f2a9e0da582819b690d
 msgid "To install the LDAP component, use the kolab-ldap meta-package. This meta-package pulls in 389-ds and dependencies, and kolab-schema, the package containing the Kolab LDAP Schema extensions."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:112
-# d54ecf7493684545968c6d4cc6125a76
+# da569d9da38d4ed78003c89baff43bc6
 msgid "MTA"
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:114
-# ab273b87c32546209c1d85526c551479
+# 9c8b6dfcf538474b82aade6115557b6d
 msgid "The MTA, including spam-filter, virus-scanner, Kolab SMTP Access Policy and the Kolab content-filter."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:116
-# 61ddc2c14b504e42aef91d663e264cda
+# 7d35eee11ad74f69ac9bc17a0617064e
 msgid "To install the MTA component, use the kolab-mta meta-package, which installs Postfix, Amavisd, SpamAssassin, ClamAV, postfix-kolab and Wallace."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:118
-# 7a37a083010c4db0823119d908747f98
+# 10127079273e4463b0744fe4798291cf
 msgid "Web Administration Panel"
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:120
-# 26ff1c5bdc72481e9c46c3e440962dc1
+# 62027bb81a424b5e95b8bbc8dc074d54
 msgid "The Kolab web-based administration panel and API."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:122
-# 646695e3133c4994bf9236241a694467
+# dcb4e1e3987f4f3cb3c66db82a8f8cb7
 msgid "To install the Web Administration Panel and API, use the kolab-webadmin package."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:124
-# 74addde501d243339bf20610bd2a959c
+# b374e20393b54dcb844929239cf03535
 msgid "Web Client"
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:126
-# e8bf292c5c33447c8cb2826d2a37a894
+# ba0d2d875db04eb4bc2f5f0e94c5f97c
 msgid "The web-based client for Kolab, based on Roundcube."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:128
-# f56393345ecd45c1870aaa2ee14ff8d5
+# fe8f311440be477ebe701f13159da4f3
 msgid "To install the Kolab web-client, use the kolab-webclient meta-package. This meta-package pulls in Roundcube, the default MySQL database driver packages, and the Kolab plugins for Roundcube."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:130
-# c11948c29d1445b7a599f63941bd5362
+# c4dec877a1634257953059723874131d
 msgid "Databases"
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:132
-# b96de53b7bca42e48566c8280c4782c6
+# 9268e5a1fa78472b9a9eaf0fa512cfac
 msgid "The database component, shared between the Kolab Web Administration Panel, the Web Client, and the MTAs."
 msgstr ""
 
 #: ../../source/installation-guide/overview.rst:134
-# 35c29b8434f144f18947ae554cc37bdc
+# d27da5b621a644809753f83e6ff661cc
 msgid "No meta-package for this component exists, as the default choice for a MySQL server is contained within a single package throughout the supported platforms."
 msgstr ""
 

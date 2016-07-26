@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,549 +17,549 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/architecture-and-design/ldap.rst:92
-# b7f347b0605d46598f818b12e48f53b7
+# 239fc86214bf4b82ad079ec8c282ca4b
 msgid "Kolab Groupware and LDAP"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:94
-# 5b1319d4b44540cc85f9307d3ecc4479
+# 9e0fba045b89457093d0ef1b14e2cef6
 msgid "Kolab Groupware makes extensive use of LDAP, and has unique capabilities that, should you choose to use them, may require the use of a particular LDAP server implementation as a result."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:98
-# 2d8c2a39f9f64d40931bcd579c337c07
+# a7fe359955154cd9b9c350fe8d2434c8
 msgid "To allow you the greatest flexibility (you do not have to decide today), Kolab ships the community version of **Red Hat Directory Server**, called **389 Directory Server** (formerly known as *Fedora Directory Server*)."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:104
-# 280dce87da3b49a39dd7aed2d5cca884
+# 50a5f800fc7c4f2c963ff53fb0a6ad12
 msgid "If you are new to LDAP, we suggest reading the :ref:`and_ldap_intro`."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:106
-# daa6e7c67df64e7dadbf7aa9bf4d9e81
+# a9d64b504b0445ae831c2d745bda377a
 msgid "Kolab Groupware uses LDAP for, among other things:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:108
-# 6671d7d145cc4bf29384c6e8154d2709
+# b937ac5cd55b4854805c9cbec0697ce7
 msgid "Authentication of users and services, through :ref:`and_ldap_kolab-saslauthd`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:111
-# bae8149e83734c23b633c1b37999b90e
+# 8c3f68bca44b47909436cb1c7d8d9998
 msgid "Mail Exchangers to decide whether to accept or reject messages, and how to route accepted messages based on information contained in LDAP,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:114
-# dce4ee55cf5f48649f29e9f5e03c7705
+# 8a0717938bb54d1aa031147278aa13dd
 msgid "the authoritative list of mailboxes to be maintained in IMAP, through :ref:`and_ldap_kolabd`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:117
-# 0805874e1e694042af85c9bc597e9333
+# 49be9b1fb55e474b9011419f23dab031
 msgid "the Global Address Book for users, distribution groups, contacts, shared folders and resources,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:120
-# 0695f6c052044bc794a0195128919009
+# 5f123341657343769d77fbd7ec7ccd0b
 msgid "In Kolab 3.0, for single parent domain deployments only, translation of the authentication ID into the authorization ID (a process called canonification)."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:124
-# 9fc8e7c2976140f68d8463543cbb03a5
+# 3cc0526935334ac18bec9515b94d0d17
 msgid "In Kolab 3.1 and later, for multi- parent domain deployments, translation of the authentication ID into the authorization ID (a process called canonification) for the web client only."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:128
-# e6cc8b1699eb44219b9867d701e4e590
+# f2f85f81112e49edaffd84f401ce8289
 msgid "In Kolab 3.2 and later, for multi- parent domain deployments, translation of the authentication ID into the authorization ID (a process called canonification) for both the web client and IMAP itself, as well as group ACLs for IMAP based on roles or (simple) group membership."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:133
-# 72ff77b56a4546769b3a01857b064922
+# c64cbf5bb7a84dbdb0ed4314992a6aa2
 msgid "For this purpose, Kolab is configured to use a **service account**, usually ``uid=kolab-service,ou=Special Users`` in the primary domain's root dn."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:136
-# ac87bc1ac51c4f70b19e72fe2649a8a3
+# dbedc212712a42ecbd00af194ec3b885
 msgid "This service account is intended to have read access throughout all directory entries, across all directory trees, as it is used to read lists of domain name spaces locally hosted, and valid recipient and sender addresses in those domain name spaces."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:141
-# 4fa2440ef275425d80c9c137cf534898
+# 7667e3e2d7f24287b6e39730db24b195
 msgid "During setup, this account is configured to circumvent **size**, **search**, **lookthrough** and other administrative limitations configured on normal accounts, that protect your LDAP server's performance."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:148
-# b9b667cf9bd54b86b889257c07fa19c0
+# ab44b4623605419a84d7b24d1977749a
 msgid "**kolabd**"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:150
-# 6d0ad7fb7aaf42fd8e393bc536dabce6
+# 86d8ea90b8fe4e079ced0ad14e82afc9
 msgid "The Kolab daemon **kolabd** is responsible for the synchronization of changes in LDAP that are to be relected on the IMAP mail boxes and folders and access control."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:154
-# a56b79e6062d44a3b700b0dbdc73026d
+# a40d252151104931b2e5124bbc64cd35
 msgid "It uses either searches or replication mechanisms available in the LDAP server, depending on the LDAP server's capabilities."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:157
-# e2400d3823d0409da411bccb58ce0091
+# 3c0a1a559dc648c48d2d7eaa1808ee96
 msgid "For each of the mutations in LDAP, the daemon takes the appropriate actions against IMAP, such as;"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:160
-# 8ce3668ec23f4bd0ace201bc0b78c4b0
+# 36904647d9f840dfa31293e0d7897b3f
 msgid "Creating mailboxes for new users, shared folders and resources,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:161
-# 8519f612962e4600b7775877b921e753
+# 461519693b1046c4b158095b9d349c5b
 msgid "Renaming mailboxes for entries that have changed, when appropriate,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:162
-# 552e3129d7e2428bb366fad1e19975d9
+# 47551119818b4abb9211665f36af8395
 msgid "Deleting mailboxes for entries that have been removed,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:164
-# 209398bc70af476ab3258bad36273224
+# daf66ea5eb5641a39f3af1411b105826
 msgid "as well as communicates back any further changes to LDAP should they be needed -- for example, the enforcement of policies such as the recipient policy."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:168
 #: ../../source/architecture-and-design/ldap.rst:197
-# 79c10efbdfee4251b2b4a26a903a3820
-# 7a5f9ca2a8514f6c9db5e183c7b85bfb
+# 2d9ceae7b2c54b8c9bbf30bc84b321d3
+# 1341696be8e54d19b8dcf878dfd2fa9d
 msgid "See Also"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:169
-# 9251422af48c4cebad7c694aba33425f
+# 7f72bcfcf180415b8ceefb429c26a857
 msgid ":ref:`and_kolab-daemon`"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:174
-# fa488f41e6f547469b796b8636553381
+# 2ac9595278b04177a4f1c32302b91506
 msgid "**kolab-saslauthd**"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:176
-# 3c0b2504a5f94c9380430e4d92d26174
+# dac29a49b5d4483588b8cd830c8e1ed0
 msgid "The Kolab SASL Authentication Daemon **kolab-saslauthd** is responsible for verifying the user credentials supplied to the IMAP server and the :term:`MSA`, in turn using the following key steps:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:180
-# ad6503accc4f46e0bc41eb66a60e45b6
+# b46baab435d642619770ba47fec7d8b6
 msgid "The authentication realm as provided in the (user-supplied) login username, or the primary domain name space (the default realm),"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:183
-# 9edc8c955db940b086f4ee3fe885ec7f
+# 443dd8f50610443983b5434de90f779a
 msgid "The LDAP domain object that corresponds to the authentication realm,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:185
-# 33343abfb5c1402c8fc583a9e9ee7742
+# ec3621a663ab4199b2a107a81e460560
 msgid "The associated DIT root dn for the domain,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:187
-# 9f3ea3e4d3ae492a84f39d4700bd4f2b
+# 6ed936577f1a4af0941d0b7b16f6b588
 msgid "The user entry corresponding with the provided (user-supplied) login username,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:190
-# 4c203c814a04401185f371f3e5fbf242
+# e8a060372c1d4d69b3d6dcf81e18e742
 msgid "An attempt to bind with the user entry DN found is made, using the (user-supplied) login password."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:193
-# 42404f7bc8bb4dafa401496fae13a463
+# 4099ade9a0d9482bac6bf023865aff05
 msgid "Steps 2 and 4 are LDAP searches, that depending on the size of the deployment may take longer than would be considered good performance."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:0
-# d1301c6785424945bfaf867dc11aad56
+# 3e588fe5e788492c820742648fe8f9c6
 msgid "Todo"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:200
-# 96aedb88aa934d9b8ccad157544095e2
+# f72218bdca45422f92fb8c02061dfe67
 msgid "Administration Guide topic for LDAP deployments with single trees growing over 1.000 entries."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:204
-# 1cd3cb9dedde4dba8333e467936c4ed9
+# f949d19e5f0c45f9b32a5b10ae5d33f6
 msgid "The Difference Between Accounts and Users"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:206
-# 61a47f44071b46c0a52b18677d767a47
+# e1402d0c63f04a0d93867dcc5f8e6bfb
 msgid "It is important to note that there is a difference between a *user* and an *account* -- of the type that a cow is an animal, but an animal is not a cow."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:209
-# c5f0967e6e6d4f268398982f047905b3
+# 426f3f97f26244fea6e5d68cc65ac34d
 msgid "There is only one type of user, and that is a human being physically present in this time and space."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:212
-# 91946225675b45759a81805c7522e4ad
+# 35b6619105c640d98bb37d1ad7bf41e8
 msgid "While these users tend to have accounts (*user accounts*), other types of accounts include service accounts, administration accounts and system accounts."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:215
-# c1446e6da74a408d89dd48af4a42caa2
+# fc36cdb9f7784c15ad704e2b618de728
 msgid "A service account included with a default Kolab Groupware setup is **kolab-service** [#]_. This account enables *services* such as for example Postfix, to search LDAP for entries (recipients hosted by the local Kolab Groupware installation), without disclosing the contents of the entire LDAP tree to everyone (anonymously)."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:221
-# 4d18821480894e2eb6895b5f2560f022
+# 578f493450744f888a62696f5492995c
 msgid "An administration account that Kolab Groupware uses by default is **cyrus-admin**. This account is made a Cyrus IMAP administrator (see the ``admins`` setting in :manpage:`imapd.conf(5)`), and is used by Kolab daemons to maintain the mailboxes and other IMAP related policies."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:226
-# 451c789287b843fc9da51ff8a06c934b
+# 3e67563d11b245bd9402c0515a3cedec
 msgid "On the other hand, your Linux system likely holds accounts such as **root** and **nobody**. These would typically be considered **system accounts**. To make sure Kolab Groupware daemons and applications do not have unrestricted access to your entire system (or your data, for that matter), additional system accounts are created on your system."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:235
-# 7a23f15a069d49fc856f373e3bdaa043
+# 05ea21edbe854bff9b18cd0d8d6f10db
 msgid "Parent, Alias and Child Domain Namespaces"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:237
-# 895b4021c5014397a4f81797a16352e6
+# 34208d879c3148a6983999a22af81bfa
 msgid "All email environments make use of at least one :term:`domain name space`. Without it, only recipient addresses that are local could be exchanged messages with, but not the rest of the Internet. A local user ``doe`` must be qualified to the rest of the Internet as being user ``doe`` in a domain name space (such as ``example.org``) -- this is what makes an email address ``doe@example.org``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:243
-# 83534261e3a444c5b691e46288ceb50d
+# 4d3cbfe1f6a24ad689010b8f7443c072
 msgid "An organization -- anything ranging from just you to your family or a multi-national corporation -- for which Kolab Groupware is being setup, will have to choose a :term:`primary domain` for the deployment. The domain name space choosen will be used for the email addresses if its users."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:248
-# d7848afa381f49fbbc38b4c473c68a1c
+# 47db5ffdae234710bfb7aada7ced9e6b
 msgid "An organization such as the **Kolab Community** might, for example, setup Kolab for the primary domain ``kolab.org``. The Doe family though might setup Kolab with a primary domain of ``doe.nl``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:252
-# c9034ab1d46b40c18da125a28c6b8635
+# 49353886abf947e1b1e2b488aa7646ae
 msgid "Because domain name spaces typically only have one owner, it is recommended to use the domain components that make up the domain to also make up the LDAP root dn. The Kolab Community would therefore result in ``dc=example,dc=org``, and the Doe family would use ``dc=doe,dc=nl``. This is also the default during the Kolab setup."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:259
-# f9f51b8cf8eb482c9eec60bfc04a9b10
+# 2570fa1a93464eb9870b4dbb82415173
 msgid "Multi-Domain Deployments"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:261
-# 926bfc66968f4b11a794df4024547248
+# 051aac0054cb44c08953ca817becdd07
 msgid "There are two types of additional domains one might add to a Kolab Groupware deployment."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:264
-# 3edf547b196048249e21abcf94b6797f
+# 874d7a0b1b024f6584b5e00f0683dce2
 msgid "**parent domains**"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:266
-# 8014fbb6e6d34092b71dc824964114f5
+# a767ace081554c018b207f10f09e85ae
 msgid "Like mentioned before, these are domains with a separate, isolated LDAP directory trees. Adding a parent domain other than the primary domain establishes a true multi-domain deployment."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:272
-# 29555c32cd6a4140b322b4111088b694
+# eba8c29d2f594e2eb4c43f01aaef4307
 msgid "A default Kolab Groupware deployment is not set up to handle multiple parent domains out-of-the-box."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:275
-# ea366ecdebcd42848afe054513131460
+# 49fc67141d50462c90db42eb0794047e
 msgid "**alias domains** / **child domains**"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:277
-# f11812ff8ab747908e17544a1a44b688
+# b361f0882c2e47e8bd332ae15b368a56
 msgid "Alias domains are additional domains to use with existing parent domains."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:279
-# e7454f9c94df4ac689f6543985ce0236
+# 9f5f3ee9602246d3879a5a676a769573
 msgid "Kolab Groupware sets you up with 4 domain name spaces by default:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:281
-# 134916fa6f83401d95c8c3c643a2dd9c
+# cae24a50f7ea476795afb7d557f28c98
 msgid "As the :term:`primary domain name space` for the entire deployment, you supply a domain name space of your choosing during setup."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:284
-# 3a9afa1bf9664cfd8080091723b696ad
+# 4dd2b86ea4c244f7999cff6023dd88a5
 msgid "This domain name space defaults to the domain name space your system FQDN resides in."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:287
-# 06859840bb4e4081ac11c678ed7d3c2f
+# 0f05eaf579ed442080fbeaffb0f0c901
 msgid "For a system FQDN of ``kolab.example.org`` for example, the default domain name space for email would be ``example.org``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:290
-# 535c921730a14b72935fe777a6073791
+# fe81c39a632c44669cdde82b73ee8418
 msgid "Your systems' FQDN, in order to make sure fully qualified local email is indeed delivered locally."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:293
-# 87c0db36fa9d491c825bf26460b99f4e
+# 3e998e6dbaee40e591285c1f538777e0
 msgid "With the previous example in mind, this would be a domain name space of ``kolab.example.org``. Local POSIX users, including the **root** superuser, tend to receive email to addresses such as ``root@kolab.example.org``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:297
-# d26b76c8a45f432abf7c6443e754f65e
+# 298cc0ee939849eaa3fab281da671b16
 msgid "``localhost``, and"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:298
-# 98e2365c3f2f404b9c8843d67a24dec0
+# 127f839602b84d35b028123e685f265e
 msgid "``localhost.localdomain``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:300
-# 481ba0bf10e642bfaba071e52786e1d9
+# 16b2b7f53c764e4798d954623a913cb5
 msgid "The primary domain is also known as a so happens to also be called a :term:`parent domain name space`."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:303
-# 7cfaa75505684e91aaac79089b1a5626
+# de5350def1e24f3399f0dc7acb6f7d8b
 msgid "The :term:`parent domain name space` (of ``example.org``) is how we would like to refer to the domain (\"the organization\") as a whole, but additional domains may be available to its users, such as ``example.net``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:307
-# c5bd0eecd02e4fd7bbad1d77b154ba6b
+# 1580b45b039e4054a5134065899a3c99
 msgid "The ``example.net`` domain name space in this case is called an :term:`alias domain name space` or :term:`child domain name space` (depending on the nature of your setup)."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:311
-# 0de5e0d0238946c78baa7000f20c6a15
+# 5e3ba89d505c451ea06252837809a238
 msgid "It is important to note that in Kolab Groupware, each organization receives its own :term:`root dn`, meaning its own, separate LDAP directory tree. This allows Kolab Groupware to use multiple LDAP servers, and allows organizations to use features such as the Global Address Book without a compromise to security and privacy. As such, each :term:`parent domain name space` for each organization directly corresponds to a DIT root dn."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:318
-# cc3bab736fd0420cb3cf076c8a685121
+# 3ff6bbdb4be543c38c9a8a819601711f
 msgid "For mail sent to recipients in either domain name space (``example.org`` or ``example.net``), the same root dn (of ``dc=example,dc=org``) will need to be searched in order to determine whether the intended recipient is in fact a valid recipient, and what mailbox to use for delivery."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:323
-# 539014588ace451bbe4d013e4a8506d4
+# 670d824f8ef84e4ea0c777b3ffc110e9
 msgid "Users, distribution groups, resources and shared folders may be configured using either of the domain name spaces as the resident domain for their primary recipient address, for example ``john.doe@example.org`` and ``jane.doe@example.net``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:328
-# a85949b984c9478f8ea9f9844a946687
+# dfa3226ed057430a9ab0319a87d704be
 msgid "For additional information on LDAP, and your Kolab deployment, please see:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:330
-# 071ebce8adc940acb8f2b454a394e0dc
+# d5d4f8fa731f4ca0bc480675c153bc54
 msgid ":ref:`deployment_organizations-with-multiple-domain-namespaces`."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:331
-# b9ba2bbdb52544e0a65345c8b42ea072
+# 57593b204b2d4648bd51092834844062
 msgid ":ref:`admin_organizations-with-multiple-domain-namespaces`."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:336
-# 14d34aa1971341c990cbfd5b4fe02d63
+# 23112709915440469c596be56de77442
 msgid "Integration with 389 Directory Server"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:338
-# d104b73a783a45f4a7a8b4962cd890e7
+# 5083e390071841a4a8de273e73e7b207
 msgid "389 Directory Server is by far the preferred Kolab Groupware LDAP server, not in the least because it supports;"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:341
-# cbda9cec05bb44ee9d7312330c754153
+# ead4c2b459f2498eb16fa41c378d40df
 msgid "Multi-master replication with up to 4 masters [#]_,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:342
-# 7c593ff59b724856b5d62e18fd3d1cdc
+# 4a87f1d781fa4ff8bffa0d2c0bfe423c
 msgid "Effective Rights controls support [#]_,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:343
-# f47c283716914130898d952fc4e72686
+# e66e30663f234b9aa2aaeafc843a99d4
 msgid "Persistent Search controls support,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:344
-# 6c5173eb95484d70b6e9f2ff826a095f
+# a606c5d9bd3745b0aedac59e906b1f5d
 msgid "Dynamic configuration of databases, indexes, replicas and replication agreements,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:346
-# 680c7d2164684844bac6cb7118210243
+# dd00e83fd6994a3cbc8aceaec8212ec2
 msgid "Dynamic configuration and execution of tasks, such as consumer initialization and re-indexing."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:368
-# 7b306245999c440dbb1cc2c41add1ce0
+# a45ce1ad247941e5a91102bddd9cf6a8
 msgid "Further scaling could be achieved by putting read-only replicas in front of the LDAP write masters. Services such as :ref:`and_ldap_kolab-saslauthd` could make use of these LDAP read-only replicas, as well as MTA and MUA applications."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:407
-# 6143372f8138414aa9d55994c9bc3087
+# f28613f01dfd4d21a9b2caec36cd905b
 msgid "389 Directory Server and Multi-Domain"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:409
-# 22241824605a44f2b08a080b216bbc8b
+# 70f6575ab875451bbd2f27528bcf18ba
 msgid "389 Directory Server supports the real-time addition and configuration of new root dn databases."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:415
-# 2ff6e0f70cba4ceba07b71b608a604be
+# 409cadfb14b34c9b8b51b1599f9db06a
 msgid "Mapping a Domain Name Space to a Directory Tree Root DN"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:417
-# 34dcaa569d114c1d8eaab535d00d0bd7
+# ebf2bc2a34214549856c3543e4abac40
 msgid "A domain name space, which can be a parent or alias domain name space, corresponds with a directory tree that contains the users, groups, resources, roles and shared folders for that domain."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:421
-# 233c4d3f8937424a8da95d8d28129821
+# 76af6afd75944883979633bd71f78c7b
 msgid "A directory information tree's root dn can be established almost entirely arbitrarily, and as such a domain name space of ``example.org`` may actually (need to) correspond to a root dn of ``o=internal,o=example,c=de``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:425
-# 0a3bbabd5c6b42d18baf3a0988f131a8
+# 9d94ac2ca0bf4c289a34766e713b4635
 msgid "Kolab Groupware therefore uses the LDAP object classes ``domainRelatedObject`` and ``inetDomain``. With these object classes, the following attributes are available:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:429
-# f08e23be71a5494a98353675b94bfe6a
+# 8ce16b6f203043d8a5aaca0da58197a7
 msgid "``associatedDomain``, used as the container for domain name spaces,"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:430
-# 9bbc93f681894815bdece5283700b26f
+# 6404b43f472c4403bd8c14e081e44f9a
 msgid "``inetDomainBaseDn``, used as the container for the associated directory information tree root dn."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:433
-# 2b287873de7f440195657c2b4d852144
+# 71ab29ab25a04343a14fbc8ee8797f8c
 msgid "Applications must therefore query the configured :term:`domain_base_dn` for objects (filtered by value of the configured :term:`domain_name_attribute`) and look for the configured :term:`domain_result_attribute` on objects found."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:437
-# a09a25d18f5b43a68b762c281aa779b1
+# 6d39ced5d402476ca9d3cc9ec7087537
 msgid "Should the result attribute not be included with the LDAP object, as is the case for a default Kolab Groupware installation, then the standard root dn can be composed."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:441
-# be69f787b5c34571bf864f22a6432b44
+# c706ee470f854f2fa9d8ebf59010fe0d
 msgid "Since alias domain name spaces may be specified to a parent domain name space, applications must make sure that the first value of the :term:`domain_name_attribute` attribute is used to establish the parent domain name space."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:446
-# 818f7d5d2a7b43ebba2acd004929efa6
+# 1ce5aa15d0974bb196ed971c5272cdd4
 msgid "Using the parent domain name space, as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:448
-# cd8d9e6b17ec498dbb12ea816854b95a
+# dfc4611b95154a7897ca32f3d89deeae
 msgid "Explode the parent domain name space into its components as they are divided by dot (.) characters."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:451
-# 7951bd1c17ff477983bd8889d561c816
+# 061f1b385d6e4a688dcc582812691947
 msgid "For a parent domain name space of ``example.org``, this should give you a list with a component ``example``, and a component ``org``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:454
-# 825e9b9bc4ed4246b43b17a07cd42086
+# 8d0423f6510b454ca1846f99afc66bb8
 msgid "Implode the components using ``,dc=`` as the delimiter."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:456
-# 42e516eee3c04c13af4dd05bb16ef979
+# 4795f5c38a644b45a2f00edff3180287
 msgid "For an exploded domain name space of ``example.org``, this should turn the list resulting from the previous step ([``example``, ``org``]) into a string ``example,dc=org``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:460
-# 9247835f1ba64a388852cf2d7703bdd1
+# d84e9958f3b44031b22834266434e4bf
 msgid "Prepend the string ``dc=``."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:463
-# 1f1e1cc371c64d5c818b9a8da9ddd8af
+# 93c187bb135c40f590f0b38cc732b7bc
 msgid "Supported Features"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:465
-# 6e93cfd2972543a8ad7d547e7ebde34c
+# 2a6b52350f364a5b8e16955fdc1c2fa7
 msgid "Virtual List View (VLV)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:467
-# 2e4458155de6475eae25660ca1312780
+# 217886072bb04398a5d210f636b9e4bc
 msgid "Virtual List View control is an LDAP feature that allows a user to query the database virtually unprohibited by size, administrative or lookthrough limitations."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:471
-# d27f95e87ef84eb59741f35a224b34c0
+# da5859b4efd34b8a96f47ccde2331c88
 msgid "In 389 Directory Server, the configuration for VLV is stored as part of the LDBM database configuration in ``cn=ldbm database,cn=plugins,cn=config``. This makes the configuration for VLV available to discovery."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:475
-# 15479933f9fa46e496950b2fcbf4af32
+# 82f2b86901e84d4b861158a4613d4987
 msgid ":ref:`admin_ldap_configure-vlv`"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:479
-# f0af5267cd2248bfa023255da17229ae
+# 82e6bb446e194478b3328d68b65dcf1a
 msgid "The use of Virtual List View controls requires the use of Server-side Sorting."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:482
-# 26c2a9ac5ab94476aaf2a872f63a019c
+# 301055c2a7f04b2fa060b666a9d7231a
 msgid "Server-side Sorting (SSS)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:484
-# b35018c089974a44bb9c2442fb3db93e
+# 8a5ca82e4c0940e7aa23eef7529890c0
 msgid "Server-side Sorting control is an LDAP feature that allows a user to have the server sort the results of a query."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:487
-# 07841d81c4554ff4959bd118e7de2129
+# 79b338f7d1ec45e39801a2538f76f28e
 msgid ":ref:`admin_ldap_configure-sss`"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:490
-# f127509ab52f4330984e1892359b0e3b
+# b5aaf8d9091b4c509156d78d2ae29366
 msgid "Default Attribute Use"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:492
-# 6e3078e4ccd449e1869b175c9add423a
+# 02c592975f4d42c1b760147470ace55e
 msgid "Kolab object types are generally based off existing LDAP object classes and LDAP attributes."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:498
-# 79dcf43ad53b41cc8eef816c3af4b29e
+# 6700170a01ae491db5b652b65054c468
 msgid "A Default Kolab User"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:500
-# 9327c501185f4cd180d13e10a722d83a
+# 2d993664b0894adab37a736dee4cd3e1
 msgid "A Kolab user is an LDAP entry with the following object classes:"
 msgstr ""
 
@@ -568,41 +568,41 @@ msgstr ""
 #: ../../source/architecture-and-design/ldap.rst:623
 #: ../../source/architecture-and-design/ldap.rst:654
 #: ../../source/architecture-and-design/ldap.rst:682
-# 099a4351043749d39859e8ba35fa1d62
-# 128d2f8ff5b84b498667a13207cbd718
-# 4675ec6f2e10431685b2245172e704ae
-# 7440d7b2bf9a466a9fdf5f91dccaf1b0
-# 382a9e513b5e4d7e89809b5b244b16f1
+# 80be88803f8a4291bca262c375f80aca
+# b1a1491a7f9c4dc9ac21024863f97b2e
+# cef29c41fbad4a7b98fe0f82ca7c4dc1
+# f347d6c9f36746a9a172395c15e8391b
+# 6f2aa09dd3a04782afdd954411805d8d
 msgid "``top``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:503
-# e9fa1b477a504ee9a7049ed9650d1b4e
+# d809334529494a86a7f814057f006919
 msgid "``person``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:504
-# 6ac38c242ead41e793a00bb42e911b18
+# eec0403a338440dbb4d59d9e3dcf4f24
 msgid "``organizationalperson``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:505
-# e6bd57d39f164fb0a66f5a8291d10db3
+# a5d27215d947473da0861359dd6f8edc
 msgid "``inetorgperson``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:506
-# ff7090e4c7f24295959e7049b175e3ae
+# b9fc8b332c8042c092ede7ac28c89f48
 msgid "``mailrecipient``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:507
-# 5893078c00a14343a10c36e64d1e7f94
+# 31951934366b4670a7cad06d3bd4e8d3
 msgid "``kolabinetorgperson`` (from Kolab LDAP schema extensions)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:509
-# 7e5c2329959a4f4a871fc670aea3e0fc
+# a830c47386c94b588f3d38c9603be7f4
 msgid "and commonly at least the following attributes:"
 msgstr ""
 
@@ -610,138 +610,138 @@ msgstr ""
 #: ../../source/architecture-and-design/ldap.rst:582
 #: ../../source/architecture-and-design/ldap.rst:629
 #: ../../source/architecture-and-design/ldap.rst:660
-# 5eed16a1dc414501bc03e1c8691e152d
-# 66b64fa2769b41b293f632efa2bde654
-# bfb62754f77a4dac9c77b2dae26bc9a9
-# 726f9a262ed2466a8d8a0b94afb158b7
+# 5823e2b647ae4291bcde1699fa29c240
+# 5ddd0ef7f4f1411791a3e4c9d34501a9
+# 9f5022c1a5be420b906e7c16d79931d2
+# e8fc36446e1646e88d88c8bb03dbaf3b
 msgid "``mail``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:512
-# d0db8153ad8e40609f4307415533ea40
+# 63d748d61845480483ee739ce38bc406
 msgid "``displayName``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:513
-# a5813e19698f42219b2d7ac5244ab442
+# 7523ec9d7f164354860779e69640f221
 msgid "``preferredLanguage``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:514
-# ff0a49ebd45f49189b3263ac1d523127
+# 2f8544fea9ba43f8ae40369a0a4c3c09
 msgid "``sn``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:515
-# 1ee37dd215e04188b0dd0b44b5aa5650
+# fd3f58e1d2474469b9eaad471b983b19
 msgid "``cn``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:516
-# 6397b6588dcb4d719e2a678d1a4c0376
+# 967c583f9b5041d881b9c370c5578e6a
 msgid "``givenName``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:517
-# 3a1d724ca2eb479ebcf5291d95ecad3b
+# 1e2f071f03634f7687ac55e80c61d6c8
 msgid "``uid``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:518
-# d59d2d75e85d44f7a6cebfe33c047808
+# f2f9c49e27334945a3f5d9d985915745
 msgid "``mailHost``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:519
-# 5f66ceefb0fe460f951d606a9d64114d
+# 8a6f90e44cf84e94861b54d576c8d285
 msgid "``mailQuota``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:520
-# 235a214e46b548949df60f53dcee5f4b
+# ffe0225b9a0648bc95bbb2841b7f0735
 msgid "``userPassword``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:522
-# fde6851f0bc84b1aa863c6b58de562e0
+# 7829833140274139a6acad912800799c
 msgid "Additional attributes include:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:524
-# 2fe59565475b49158024d1216f3f2c59
+# 0e50079ebb56480e94ca248876056aab
 msgid "``initials``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:525
-# 250479fed9cd4223a53dc3ff59a94ae7
+# 28095ced1840464ca77501d160ee4644
 msgid "``o``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:526
-# d27e1d7da40d4b77b9e38e3195a81240
+# fdd225ca54454edcbee062587e1c1433
 msgid "``title``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:527
-# 8e6cb268c1c245a782b2028b961ae505
+# d95b5ee2abb947aa87c9062ee1d63845
 msgid "``street``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:528
-# 61b4c50277de43a4a10cdfe2d265f367
+# 8f3f047680934a0882eb33b76a51df5c
 msgid "``postalCode``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:529
-# fad9d41a12404f81987e450869c05921
+# 6a8a6576959648e39a486fe7307122ed
 msgid "``l``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:530
-# ee699dd35db14c3288ed0aa2f72723d0
+# eaec95ffce094fe8b64c759c50e61110
 msgid "``mobile``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:531
-# e6565146cd234dc3924e8d2f7dd746fd
+# d56b1cc3e89f4f6fb74d5ddac786865e
 msgid "``pager``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:532
-# 743631aaead44e2fb35c2b087e4ddbb2
+# 9fd08fb0823e492d9f92102acee509c4
 msgid "``alias``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:533
-# 6db90af9b0a54fdcaf5d45de81b5e33d
+# a9fab9c51237416caa733b2f2fc23279
 msgid "``mailAlternateAddress``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:534
-# cca2df22456040e3b58c0af728b27ee8
+# 425ecd396e874428ae269576d0428c4f
 msgid "``kolabInvitationPolicy`` (from Kolab LDAP schema extensions)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:535
-# 1eabb098d82b4a55a3fc8f1f942c702c
+# 38c34ad382b14270bd631f47bb727481
 msgid "``kolabDelegate`` (from Kolab LDAP schema extensions)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:536
 #: ../../source/architecture-and-design/ldap.rst:587
 #: ../../source/architecture-and-design/ldap.rst:634
-# 4f29d218b1324040905678aa27c38a01
-# 362fda27fc8a437cb944e533d2b855a6
-# 2a6131f2046944f8b1226106430bcdad
+# 8e404bf32ed4484fafb85fe16c7c2e88
+# 6cb476dfbd63431bad90c02f66679a18
+# 98f7c4e266964c7b8644ab283b27d9b0
 msgid "``kolabAllowSMTPSender`` (from Kolab LDAP schema extensions)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:537
 #: ../../source/architecture-and-design/ldap.rst:588
 #: ../../source/architecture-and-design/ldap.rst:635
-# c208cd1409c74cca82674149f6b0b21e
-# ad73d0fe00274b79a0267f8c7c3ab8a6
-# 719340c0197949608be6f992049184f2
+# e831d3c0685f41a5941d9e6b3b52ab17
+# f38ed9dc4d954108b50fe3e054c33f4c
+# 1b225e1fbe7b483a911d804108b66ce0
 msgid "``kolabAllowSMTPRecipient`` (from Kolab LDAP schema extensions)"
 msgstr ""
 
@@ -750,43 +750,43 @@ msgstr ""
 #: ../../source/architecture-and-design/ldap.rst:637
 #: ../../source/architecture-and-design/ldap.rst:664
 #: ../../source/architecture-and-design/ldap.rst:689
-# f5bdd153fa6b4b41a3de8fd81cad5414
-# 40d4362c851f42aa9bf3d4404aa25563
-# fa54480c24c642f19c01f3f57f3315a3
-# d7859a8d9c444ded90f4de8471e00ab2
-# 83d1854f6c2849389d272a9f3be7daa6
+# c1f6dd914ed140ed9c914f9a2662afe5
+# 0ea89da0a28d4f819acc6e647f981718
+# 370bd4bec9084727a85b6f25c2e0209c
+# 466591eac67b4411a27f1c58bb04808f
+# c2b984ca6d044fa29f9c5dd826d6b59e
 msgid "Example entry:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:564
-# 46c97ba0f6d945258bacf1d4b561af54
+# 54734dc3f2b645688b4a9a361d3ce8a1
 msgid "A Static Kolab Distribution Group"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:566
-# 196e03667a754c9d9e714c4d73f52aea
+# f7db2892f8f54613933d099395f95571
 msgid "A static distribution group is a group with one or more recipient addresses, for which inbound message traffic is distributed among the individual members of the group."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:570
-# 0daf7723681143d0b359b828e6e5edbb
+# c77d3ba03e0142f5827d8e9e3b979a38
 msgid "Members need to be added to and removed from the distribution group individually, contrary to a :ref:`and-ldap-kolab-dynamic-distribution-group`."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:574
-# a022d0f61508422595889b7976902e80
+# 504523d624ad44b4ac25eb760e817e61
 msgid "Object classes for a static distribution group:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:577
-# 512255c0b59648b8aa6e49f7d7942d1f
+# 6088abf4ccd5471eaab9a046fb14a5cd
 msgid "``groupofuniquenames``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:578
 #: ../../source/architecture-and-design/ldap.rst:625
-# 4b56088e7ca14546ba366f74a9d4ae3e
-# a1437b66799047ec9d3df26a6998ced5
+# 0246d01362f44e0dbaab99e7e49a093f
+# a334dac448244cc386c32a9833331088
 msgid "``kolabgroupofuniquenames`` (from Kolab LDAP schema extensions)"
 msgstr ""
 
@@ -794,148 +794,148 @@ msgstr ""
 #: ../../source/architecture-and-design/ldap.rst:627
 #: ../../source/architecture-and-design/ldap.rst:658
 #: ../../source/architecture-and-design/ldap.rst:685
-# ddf98e091e404343bee1bcf149e88914
-# f52f0c54335b42b0a3627840d2006e6d
-# 9627a715d353437e8cbac3dd1743fa74
-# a7e290e2708a4f54b12395e3615cd775
+# f81f983ad86341ea959e3145ae553b26
+# 5ee80a5eb7244dc0ae394c2da7af147f
+# ae643e6db3e14c7bab8f9d55b892e76c
+# ea122dd090e145d8abd9d37a31c154dd
 msgid "Attributes:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:583
-# 051d4dbb1889428585f09be4587fb735
+# 32c9579e43d248748b7943ac22de2980
 msgid "``uniquemember``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:585
 #: ../../source/architecture-and-design/ldap.rst:632
-# 049243e69dd441549b28f18cb329103f
-# 13baa5c5dc344437bc4054e76087db27
+# 15503aa767a84a52a4c2af6a4de0b95f
+# 3de20dfd4a7344a8b235306743596bda
 msgid "Optional additional attributes:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:606
-# a036021963734f6caa727429a3bf95d2
+# 2ffc4b8ed28c46ea992e8c44df6f5531
 msgid "A Dynamic Kolab Distribution Group"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:608
-# 9f0b55be6a4348398d4708c77eb1455a
+# d6bec88c3c13426e80d99dfb468a2489
 msgid "A dynamic distribution group is a group with one or more recipient addresses, that resolves to a set of individual members dynamically, through executing another search in LDAP."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:612
-# 7b29d35c19fe45b097f0d33f07c5be25
+# 79e88e9e8e6e4018a4dbbba35679e1e3
 msgid "This means, for example, a dynamic group does not need to be updated to include \"everyone in department $x\", if the fact somebody is in department $x can be determined using an LDAP attribute value or OU structure."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:619
-# bdf3e783696c400892988f41c3c9e284
+# 5a0a314dbf074f99822fc46871a034c0
 msgid ":ref:`and-ldap-kolab-static-distribution-group`."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:621
-# 668ccd05a4c14681bfd6cdc166834b70
+# ff46b14dc68a4af0be44d5e5b0a39289
 msgid "Object classes for a dynamic distribution group:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:624
-# bca4071b54114b46995e489b1b33dd88
+# 5035b048d9854c2591bdd1e4e7d05226
 msgid "``groupofurls``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:630
-# b6b816fbd3304b0cb5bcd5b2705f4bf9
+# d752c4db843f4c239e8fe062a65e94e6
 msgid "``memberurl``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:650
-# 659cedefb0644a34ac6371a22195930d
+# 684a2afef61842c6bb7e4659a7ae1c5d
 msgid "A Kolab Resource"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:652
 #: ../../source/architecture-and-design/ldap.rst:680
-# 13c31569a42b4e9b9efe54cd824aa44e
-# 3e075b7b4e834507b86b28c253c8d434
+# b413df0158b04855ae1a6ef62de6192a
+# 96ef9c43ec854d3786834a396d3bfcaa
 msgid "Object classes:"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:655
 #: ../../source/architecture-and-design/ldap.rst:683
-# 06f81e1399b046018b4c46f236573997
-# 048e51177a1141b7b54f69c060db6ee7
+# 60cbf641232c41ad8147edfed954dffa
+# 60a97b2680b748848c417cf2fc06112d
 msgid "``kolabSharedFolder`` (from Kolab LDAP schema extensions)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:656
-# 1cbd423d84ba4b479c04005e65eb524e
+# f9b3da19f71f40e290c5ba7da8d6fced
 msgid "``mailRecipient``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:661
-# 512ce773dd1b43e5a877f77ea0e5dbf4
+# f9a696c8d8a14790865b44f56930a970
 msgid "``kolabTargetFolder`` (from Kolab LDAP schema extensions)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:662
 #: ../../source/architecture-and-design/ldap.rst:687
-# a17819d1dc3b4dcc8d207cdc105d9e99
-# 3fa7094fd8524c8db2fc57f44f3dc6ec
+# c1b09ca6b3a241ef8e54c0b297811bb5
+# 509a78a8ebf64c39bdbe89e601b0f9dd
 msgid "``kolabFolderType`` (from Kolab LDAP schema extensions)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:678
-# 05b723f855804511aa084154789b74ec
+# 897fe09446c04ca3a4d3458e6df220ed
 msgid "A Kolab Shared Folder"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:702
-# 956109dbc18a489c984baae5e39fd664
+# 8d7abe0b53754056b077415c8a51dd29
 msgid "Primary Email Address (``mail``)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:706
-# 5fa8266efd574fe0b34335f74308a194
+# 4eb5e76ee2ad48ab93d4b265c69ed40f
 msgid "The primary email address may be subject to a recipient policy, which applies common rules to existing user information, to compose the primary email address."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:710
-# f23dc3be4a8a46c1a7385781c3dd0a07
+# 6a13995e3ebb46edab125d3ebc7878f7
 msgid "This recipient policy can be executed in one of three ways, see :ref:`admin_rcpt-policy`."
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:714
-# a1ad1bb95c15434e8c89fdad4f072591
+# 69d0c06bfba642bda58bbf90b6869097
 msgid "Secondary Email Address(es) (``alias``)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:717
-# 7fffbfdf87fc4836914681a608345f07
+# 60d9424102b146d697a831510f960a95
 msgid "External Email Address(es) (``mailAlternateAddress``)"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:722
-# 3bd07a0964444760b2c470bbcd2fac82
+# 10fcf3a1e4ec4ce0bcbe043f0ea3290b
 msgid "Integration with OpenLDAP"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:726
-# 77c3b185250447d0b565b4db2fca11a9
+# a04811b8dfaa4c8c85ec2fdc9c8a343f
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:727
-# 2e478c2fb3484dfda103e557fe4fda64
+# 84e55f89438b464c907bca3bcaa41f72
 msgid "This service account is located at ``uid=kolab-service,ou=Special Users,$root_dn``"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:728
-# 20f2bb17708445b29dd45cefc9450aee
+# 029f6a6dfe8e43f8a9100ad57d2fc7c4
 msgid "`Red Hat Directory Server 9.0 Administration Guide on Configuring Multi-Master Replication <https://access.redhat.com/site/documentation/en-US/Red_Hat_Directory_Server/9.0/html/Administration_Guide/Managing_Replication-Configuring_Multi_Master_Replication.html>`_"
 msgstr ""
 
 #: ../../source/architecture-and-design/ldap.rst:729
-# b12a4a35bcdf4bb6ac1280d33cde111e
+# 5d631b289a644b5ab21956f20e36a9c8
 msgid "`Red Hat Directory Server 9.0 Administration Guide on Retrieving Effective Rights <https://access.redhat.com/site/documentation/en-US/Red_Hat_Directory_Server/9.0/html/Administration_Guide/running-ldapsearch-with-controls.html#example-ger-control>`_"
 msgstr ""
 

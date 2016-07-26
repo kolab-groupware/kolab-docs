@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,127 +17,127 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/installation-guide/preparing-the-system.rst:92
-# 41746772b26644c0b2eafc53160d4951
+# 478b06c3ceb14e8b8954ec43d35cc67e
 msgid "Preparing the System"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:97
-# a0f5770e720e4d3587a1153bbd5f7c8d
+# 69f4ecab486343e48988c3b09c90851d
 msgid "Partitioning"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:99
-# 779de9e7ac9e40dc9e82db2fbe018aa0
+# 04fa9ee966194377b1083666b1587ea6
 msgid "When installing the Kolab server, we recommend using LVM when partitioning the system. The following directories could benefit from being on separate logical volumes, leaving about 10% of raw disk space in the volume group unallocated:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:104
-# 52ab50ba5d1841baaf5f1d52572ab77b
+# b5e9ab51681e45bea1391dbe6df62c98
 msgid ":file:`/var/lib/dirsrv/`"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:105
-# 11b1cf8e6fcd4e60a3527e391b120ca3
+# af96ed5b0be042f098f70cbb0e0abb7f
 msgid ":file:`/var/lib/mysql/`"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:106
-# 05761b3168474b0e92d3777d43f39495
+# fc8ae38501844eb8b589ae096344a3f0
 msgid ":file:`/var/lib/imap/`"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:107
-# 2778051014d94915a0b8d32fe5cb16c5
+# 726a2f52f6d04a5186036097dcba7640
 msgid ":file:`/var/spool/imap/`"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:111
-# 78209588ffbd43c9b4d154562c3118fb
+# 13d231568ace4295b7d808048d3c7488
 msgid "Partition and/or divide into logical volumes, configure the mount points and mount the filesystems prior to the installation of packages, as packages may deploy files into these directories."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:115
-# fec8588b1e0743858b6907500877485d
+# 3e11471ddd68463bbf69daff8246093c
 msgid "Should you decide to partition only after the packages have already been installed, or after the deployment has already been used, first mount the filesystems somewhere else and synchronize the contents from the original directories over to the new filesystem hierarchy. Please note services should be stopped before doing so, or only corrupt data will be transfered. Remove the original contents of the filesystem after having synchronized, then mount the filesystems under their target mount points."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:124
-# d539df6224dd43b28382242918151c30
+# b26080cc957e4ee0ac9bc41c25924cc3
 msgid "For large or multi-domain installations, we suggest moving :file:`/var/lib/imap/` and :file:`/var/spool/imap/` to :file:`/srv/imap/[$domain/]config/` and :file:`/srv/imap/[$domain/]default/` respectively."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:129
-# 1d442af1a50447159cc87f01a573e8e1
+# 1661d5aaca8b4be2ae0dcc4fcc4acb52
 msgid "In allowing :file:`/srv/imap/` to be one separate partition, backup using LVM snapshots is easier. Note that ``$domain`` in the aforementioned path is optional, and should only be used when multiple, but separate, isolated IMAP servers are to be started."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:136
-# 252c418790cf40d79bff84918f4bb84c
+# a1ac9381570c4663b55bae42ec7deeec
 msgid "When partitions are mounted under the aforementioned directories, they do not necessarily have the correct filesystem permissions any longer. The following is a list of default permissions."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:150
-# ea99f3fd6bb74094b136c7712fba2aa9
+# 1a59f65426464ec5a34d3ecebb399057
 msgid "SELinux"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:152
-# 1b07b7b737e34ea1a92a214849b4a709
+# bdbc721dfbba4a588a91861057697873
 msgid "Not all components of Kolab Groupware are currently completely compatible with running under SELinux enforcing the targeted policy."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:155
-# 562007c02e0a4aa7b7b35fee111cdd09
+# b71ff4aae0a349f3b594c9213ff7aa89
 msgid "Please consider configuring SELinux to be permissive. Please let us know what AVC denials occur so we can work on fixing the issue."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:160
-# a36b4c218a6c46a1a03551ea22e2bac8
+# f01950cafa7c405ca56d9b226fc5701b
 msgid "The Kolab Web Administration Panel and Cyrus IMAP against the Kolab SASL authentication daemon currently require SELinux **NOT** enforcing the targeted policy."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:164
-# 31638854421f454cacdfcf4e78221910
+# 609cd5004cdb4755af2e9faa73de755a
 msgid "To view the current mode SELinux operates in, execute the following command:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:171
-# 3fe954ae48e84d82bf2f0232da1f8a54
+# 4946ce7e394047ed8683c080269bcd54
 msgid "To temporarily disable SELinux's enforcement of the targeted policy (without rebooting the system), issue the following command:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:178
-# c22be059dcb0427394dddacd172da5cf
+# d0cf09bb2aff48d2af6163e8270185c7
 msgid "To disable SELinux's enforcement of the targeted policy in a manner persistent across system restarts, edit :file:`/etc/selinux/config` and set SELINUX to permissive rather than enforcing. Doing so also changes the ``Mode from config file:`` line in the output of :command:`sestatus`."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:186
-# 269299cc134c42b381ba01455117bac0
+# 4d7859df8f4843f5a87e8026b27d4363
 msgid "System Firewall"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:188
-# f92ec94840aa431cb04ac4445b25816b
+# 85542399746c4585af887756b2666570
 msgid "Kolab Groupware deliberately does not touch any firewall settings, perhaps wrongly assuming you know best. Before you continue, you should verify your firewall allows the standard ports used with Kolab Groupware. These ports include:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:194
-# 20142481264c4665a6e918c2a512184c
+# 3b42578774744aaeb8e31ed8efdd0b4e
 msgid "Port"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:194
-# 8441d27caa934dcd84fd7c097cea696f
+# 9862dd3f60c3454a8f002b9eea011dff
 msgid "Protocol"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:194
-# 6e885ae56e4742489c074d56a31a2c38
+# 31455680ea714426ba51460352106ab4
 msgid "Description"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:196
-# 2a6df213567847008b76203241b5bf07
+# 831120be47ef4bdb8dea785ac154a28c
 msgid "25"
 msgstr ""
 
@@ -154,254 +154,254 @@ msgstr ""
 #: ../../source/installation-guide/preparing-the-system.rst:216
 #: ../../source/installation-guide/preparing-the-system.rst:218
 #: ../../source/installation-guide/preparing-the-system.rst:220
-# 6d42ac276f0642a7b5cf5d7310f3fefb
-# 4fcb8cf84d3e4770a0e286dc6bffb36f
-# a2e669b556764014965fb387dfea0318
-# f575cd4ddbfd449f9f3b2465001187ba
-# 3f839accd67042d6b0c21e8186f1f366
-# 6887e149c9b247758dbc9486d4db4d26
-# 28045776275d409891d40742c9cd1c95
-# b340cb37a3a34b69a27024eac1ef69d6
-# 1de55669617a417996a0251c25c156d7
-# 7dcd1dc989e840ec9f599dde47af340d
-# 58b9fd6e87ff44ea816ef4429213436f
-# 2ae59a1024674a44b15aa60e18708cc2
-# 717e783e1a074241a12459fba8393022
+# 7aeacfd92172437ea4f622edadd80bc4
+# db4e528f855a45acaa3540010a9a3e87
+# 65a9191f4d604cc882eeb0e2452b6e20
+# 100a22f2e6544af58824a42917477dfc
+# f8a90216c80f4c30aae6b35124ab5b74
+# d1b362e551904f618ec16db1e1a81f8b
+# 0e3dff68c21d482eb87b500de7c0e85c
+# 8f4b9c0bf81642699f53e2b24d5345f9
+# a47ee2fd78214c8787c76a83e219beec
+# 2aac88ad82b8406f8799c972dc110a0a
+# 6b4493472db9485bbc3e13a294a5e8c9
+# f0d25c99333d491cbecbf5d96d3694e2
+# c7caad0b8ef741c38b78fb30fe175c1a
 msgid "tcp"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:196
-# 32bb3fd0c31d4c1596baf51759c5916a
+# fe63ff5252104f6aa67e55737c573fad
 msgid "Used to receive emails."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:198
-# 122668d3aabc4026bd85597987a40b1f
+# 22550b9497af49b9a24baa4588b7d8f9
 msgid "80"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:198
-# 7c139b0f05db44559a5bf0e4bcd6df73
+# 8e094a6c338742f98248542707014502
 msgid "Used for web interfaces."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:200
-# 55e0a819f61242d49c2ca7119ac4a843
+# ffeb046bb8e145dcbb19b952935de48a
 msgid "110"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:200
-# 40ec65175758499794a784fe91c75fc0
+# 19d8482d4a0f42d5a5fd4b50eae678e9
 msgid "Used for POP."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:202
-# ad399d0a14a944109f0175ea6328ca79
+# 99c040d1d20a4f1ea323be8e60441e17
 msgid "143"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:202
-# 1084c460ddcc47f9a1369ba4b1f1820e
+# 5d18e92b41ca4ca9a0dd07e8b3cfa45a
 msgid "Used for IMAP."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:204
-# f9cd9384a8ad4c4e80ca941401c84aa8
+# 51ef47f11faa48d8acc5be1c930910c9
 msgid "389"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:204
-# fd9ff269924548148387c19aa0ebc3a8
+# 66d7dedb646f4ee5a59c510c44e7fb32
 msgid "Used for LDAP directory services."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:206
-# 98a7f5a379654ed283eb25a5802b097b
+# 0b482dc7678942478cb1184515bb6f86
 msgid "443"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:206
-# 02ddd459bc53492bac705ef39f453600
+# ead670af334549e7b6ab25cd631d1242
 msgid "Used for secure web interfaces."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:208
-# 1be910898ecc4c5e8f3e0dad6aa00a9c
+# 637e2919122b48218ac5d7d62fc28032
 msgid "465"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:208
-# c2a3e5da93bb47679dd698d97514ce93
+# 04782ad7ee904373b730dd6e63cb530a
 msgid "Used for secure mail transmission."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:210
-# f209ccc651f44caebf455c2f98872ee9
+# 3749f5b5fd294520a3bced3c32ee4fa7
 msgid "587"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:210
-# 5e86315763474bd78ea2e2e8777d7c8c
+# 9fed19a2297643ae94ea1e17b3aaa361
 msgid "Used for secure mail submission."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:212
-# 171eec0314f6478399711a2047f508cc
+# 04203f37d7bf48da8e55c8f5fdcf1a81
 msgid "636"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:212
-# f639f437a1924b8cb7a3307fc5b65b0c
+# e76963633afe4c96b5567c10f276f1cb
 msgid "Used for secure LDAP directory services."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:214
-# e3388bbb345849e59e51c3bdc4046a6a
+# 5e987e43cddc433f9a25820920d98d36
 msgid "993"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:214
-# 4c18edb8967346d6bb7da3e84be5c881
+# bb7541c19c964b1588fb86eb3c32d977
 msgid "Used for secure IMAP."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:216
-# d19ea2c082b149d68583b0d82db71f88
+# bb1587ffcf5f41ec827f97303e0b0121
 msgid "995"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:216
-# 4b9913b0b70240b7ba5936944d5b449c
+# c4a9e8dbc19b4c6bb93ca8a27b4277f2
 msgid "Used for secure POP."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:218
-# 0b853d1878e442598e5759fe769467fe
+# b213db3ec523489d95d373100b536df8
 msgid "4190"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:218
-# 8a31c00e0562489d87ee1f619b4f6a40
+# 9491ee2dfe4c403aa09e3a236dede48c
 msgid "Used for Managesieve."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:220
-# e2dee7c450ee4de3b821a4746a11f8cc
+# d32c5c138a7a4da4ae65a5cbd23ce742
 msgid "8080"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:220
-# 0ffe202033ee4029b26bf20144dd6b5f
+# 2ee206635f4b4b3a8ee2bf6725835c64
 msgid "Used for Manticore."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:224
-# 21b08c17cadb48488f88142e2be8ddfe
+# 45d77c9f383446d6aa6d159a82b46a2d
 msgid "CentOS / RHEL 6"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:226
-# 1961915dad144f298a8bbdf36f7ddc67
+# 997fb7df68824ab88799fd8de0eb26f2
 msgid "Summarizing these changes into /etc/sysconfig/iptables, working off of an original, default installation of Enterprise Linux 6, this file would look as follows:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:259
-# dee4d55d26084379b669d1af95677716
+# ad757620356840f4a507e5f37413c1ae
 msgid "After changing /etc/sysconfig/iptables, execute a service restart:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:266
-# 3159bb8b089d4517a6938a1540c28c59
+# d45d2ac0ca114f699ca3ec604b930132
 msgid "CentOS / RHEL 7"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:268
-# a475b079edb5405186ff8b0a2434cff5
+# 7d3590f3f1a6460f9fc9bcac3ac6f324
 msgid "CentOS / RHEL 6 is using the ``firewalld`` to manage the kernel firewall. You've to make use of the ``firewall-cmd`` command to add new rules to open the required ports."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:272
-# 06ee1d0ab1994075be417d0ea0a46bab
+# 96742fe836b54ab8a9f44efa54f372c1
 msgid "This script will open the required ports/services and make this changes permanent and reboot-save."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:288
-# c4d552d6c4c84714832bec8e38c2cc49
+# da2c27d712fb4ae7ad557714a5dbd2d9
 msgid "System Users"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:290
-# 3fdb047aa4ec46b49f2938691c5daa03
+# 17d70e2c532946afa61f50f4a71f1833
 msgid "No user or group with IDs 412, 413 or 414 may exist on the system prior to the installation of Kolab."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:293
-# 9a8bb80e0a1e4fd5925ca2abc3e2589d
+# b5e2196452e249678327daffb6239d0b
 msgid "No user or group with the names kolab, kolab-n or kolab-r may exist on the system prior to the installation of Kolab."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:299
-# 30c874b50c3446f9952b030d57ef0f04
+# 44fa49e810cd40f1a15a8dca87115b7f
 msgid "The System Hostname and FQDN"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:301
-# c332e1b246694e2094c3a9c73f33346c
+# 39e7bff1cf3949948536e0d41cee553d
 msgid "The setup procedure of Kolab Groupware also requires that the Fully Qualified Domain Name (FQDN) for the system resolves back to the system. If the FQDN does not resolve back to the system itself, the Kolab Groupware server components will refer to the system by the configured or detected FQDN, but will fail to communicate with one another."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:309
-# b163a455a32a4ad48585990a8dd546cf
+# d1662ee3c6134d04a409852482cf4005
 msgid "Please see `Why Your System Should Have a Proper FQDN`_ for more information."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:312
-# aae8c3626cb24289a7479c2a727077f6
+# bdaa933dd3784040a3af2bed3be0044c
 msgid "Should the FQDN of the system (found with hostname -f) be, for example, ``kolab.example.org``, then ``kolab.example.org`` should resolve to the IP address configured on one of the network interfaces not the loopback interface, and the IP address configured on said network interface should have a reverse DNS entry resulting in at least ``kolab.example.org``."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:320
-# 26e453816ab74ac897c3bffcb7fcd0e9
+# 07f1c8f36869470eaebec3c3072befd5
 msgid "Example Network and DNS Configuration"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:322
-# 05f25a22b75148329f8794cf55986bb1
+# 14b6f642bf22450891b16dbe9d353f2e
 msgid "The following lists an example network and DNS configuration for a Kolab Groupware server."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:343
-# e4dc93443db74ea9959f4ac94857b7f8
+# f32d8366a40045de9203a593d740c6af
 msgid "The following depicts what services like LDAP and others will be using:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:350
-# 4d5b8938946a47978a1295d6d659054f
+# 45e1d584b92f40ed8fd106d631a9ea1b
 msgid "If you want to quickly fix your system's FQDN resolving back to your server, an entry in :file:`/etc/hosts` suffices for the time being:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:358
-# 8bd50fdd6670428e9a8b895c1893c835
+# 72efc5323ace45f89497f9399cb143e7
 msgid "LXC Containers"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:360
-# 65f21dd2ae0c43a4917517c7acb23153
+# 14f91615cde648e48d1b0f02dcaecf76
 msgid "LXC containers (\"chroots on steroids\") need ``/dev/shm/`` mounted read/write for user accounts."
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:363
-# dc2b0b8336fc49e3bb404bdb8ae8fb9f
+# e5a490e1ba9645d6bc37f75af07d89cc
 msgid "The permissions on /dev/shm/ need to be as follows:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:370
-# 67484887f6f94765b734cd82be42a8b4
+# 7a0ba5337efb42ce8391ee8d39fb9882
 msgid "To make sure the permissions are correct even after a reboot, make sure ``/etc/fstab`` contains a line similar to the following:"
 msgstr ""
 
 #: ../../source/installation-guide/preparing-the-system.rst:377
-# c980de8130014c57bb3705a5a59142e5
+# 905ba4f7e3cf4e1b9a175f53742d23ac
 msgid "Note that alongside ``/dev/shm`` problems, resolving hostnames (especially ``localhost`` to ``127.0.0.1``, or inversely, ``127.0.0.1`` to ``localhost``) have also been reported."
 msgstr ""
 

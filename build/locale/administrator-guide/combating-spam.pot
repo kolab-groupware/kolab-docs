@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,487 +17,487 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/combating-spam.rst:89
-# 851b8709ab7a416386a67cfd09e5ac19
+# 99b10ad2e05e4593a123969ae40b697e
 msgid "Combating Spam"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:91
-# f88663f905d74c5eaff3272c441db993
+# 247a17bcab4a4b62a1adbd8618fc9a71
 msgid "Kolab Groupware includes SpamAssassin, a fast, well-established anti-spam solution with a large community of supporters contributing not only to the code, but to rulesets as well."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:95
-# aa97641ab6034eb699f1675f692d8909
+# 70e20875407341e0a86f2d05a588d9d7
 msgid "Combating spam is always a tricky situation. On the organizational level, a strategy has to be formulated to combat spam in order to achieve the maximum flexibility and effectiveness for individual users, separate organizations, and the deployment as a whole."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:100
-# c3010e497abe46d79989cd6e1b04001f
+# 4c1981bc47de49a894076b5b3015843b
 msgid "A common deployment is to define deployment-wide user preferences and to use a single, deployment-wide set of rules for SpamAssassin to operate with -including Bayes database(s)."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:104
-# f4fcdc74890449e5b45f520bc17f4b9e
+# abced8be7c964861a5868e383096a910
 msgid "The problems start when individual users mark legitimate email as spam, most notably the company newsletter or correspondation they have opted in some time ago, but wish to no longer receive. Users tend to ignore the long-term effects of marking these message as spam, if at all they are aware of any, and just want such messages out of their way."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:110
-# 912a098b462c4a4cbdc656b9336ad184
+# 627acecf0021410cbbe0ff4886823b56
 msgid "Common examples of the sort of messages that are often marked as spam while being legitimate traffic include:"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:113
-# 971e03d03e724f5f97dcea9abdf03bcf
+# 08a1c64304004317b2d3444ebf557353
 msgid "Newsletters, where users, rather then unsubscribe, mark legitimate messages as spam,"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:116
-# 6c85ae6f6b384864a1b6469a713581ca
+# 846eb9602ddc48229dbb28b1e5a925d7
 msgid "Notifications from social networks such as from Google+, Facebook, Twitter, etc., where users, rather then adjust their notification preferences, mark legitimate messages as spam,"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:120
-# 01157a44a0ed4ce5b3eda43a99e7a6e7
+# 2169f6491f664b3f98337bcb98fc1ea4
 msgid "Notifications from forums and/or services,"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:122
-# 126e8d33ded24b23b8985f4175f9d430
+# b30c64f586674210a222570bf0556361
 msgid "If enough users mark these messages as spam, the system will start to recognize these messages as spam, and other users may be prevented from receiving the same or similar messages in their INBOX."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:126
-# 886f8dbcbcfd47c99ce4ed3a2191bdd5
+# 3b5b40d3be2d400fb5ff115a769fee3b
 msgid "Amavis, the default content filter performing anti-virus and anti-spam, wraps around SpamAssassin to achieve this flexibility."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:129
-# da0fc6220d3345779a030f477decffa8
+# 55c2c8d4adff4a509cd982582fa67403
 msgid "Separate Bayes database(s) can be created on a per-recipient and per-policy-bank SpamAssassin configuration files and SQL Bayes usernames."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:132
-# fbfd60c43b3743708911604c64cb1515
+# 4365a5028e0b4c56844390c3641c774c
 msgid "Without over-complicating things, a common scenario sufficiently serving the anti-spam effort, includes the following aspects;"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:135
-# 384de5a9cfd64f6a8eeb401a087a0c32
+# fc406f5952844edc8e0a157ef1a12b35
 msgid "A shared/Spam folder is created, with permissions for all users to lookup, read, and insert messages. It is the intention users move or copy messages they think are spam into this folder."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:141
-# 50622d367fa644828097e2518f3fac8e
+# 2b2a9f4c94744d4eaebcd4f46a38a101
 msgid "Note that, optionally, the permissions for users to maintain the 'seen' state of messages could not be granted, which in combination with sharedseen could provide a mechanism that would allow users to view which messages have been learned as spam in the past."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:147
-# 1f557ec5efad4b588a6d94b0e32daa20
+# 50471d9df95f41bd9baaef59b408544b
 msgid "Learning About New Spam"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:149
-# 99332299ddf744199e089a7b6f0d7272
+# 2458076879784998a8806f8d35ca5768
 msgid "Optionally, find all folders named \"Spam\" or \"Junk\"::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:156
-# f5d09b17dc574a959b6d383bb1651a83
+# 38fe7ce7ceb34435820fb6691cce2f18
 msgid "SpamAssassin will not learn about messages it has learned about before. There's no requirement of purging or deleting the messages that SpamAssassin has learned about already, and purging or deleting those messages only helps to speed up the learning process run."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:163
-# 67a83d186b284e19b8f749108cfb4d74
+# 7ae1d4e95760435e9f205cd2c6a6c3e7
 msgid "Do **NOT** delete the messages from the filesystem directly. Please refer to Section 6.6, “Expiring Messages from Spam/Ham (Shared) Folders” for ways to purge, expire and/or delete messages from spam folders in a sustainable way."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:169
-# 6141f684cac040b3b3d1eb437fed6bd6
+# 4ad8c1895e3e4ba9b489619537c61f3a
 msgid "Preseeding the Bayes Database"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:171
-# ed01e2f676594909bbc65683d2f87b57
+# 23cd96949c724c98a5e192179182703d
 msgid "As Bayes is only effective after it has learned about 200 messages, it is recommended to preseed the Bayes database with some high-quality ham and spam. Preseeding the Bayes database with some ham, and some spam, is done using the SpamAssassin Public Corpus. The public corpus consists of many messages qualified as ham and spam, collected from a variety of sources."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:177
-# 1d53be31f09341078341d058f167b711
+# 9bfbc20a14284081a470a326f0903259
 msgid "The SpamAssassin Public Corpus can be found at http://spamassassin.apache.org/publiccorpus/."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:180
-# 6939cb4bb9df4c7d9428c505d4376eec
+# c530c1bd9b4a4218a3dc3b01372e7d0c
 msgid "Preseeding the Bayes Database using SpamAssassin Public Corpus"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:182
-# 38400988bf794c859006e2b146f6cd60
+# ebb160235b3d4138b006113ef5c967ae
 msgid "Obtain the ham and spam archives::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:188
-# af9b9ef3cf0e4bafb959bb5c7805a20b
+# 78cfdf518cb44239972a04750e01bf45
 msgid "Extract the archives::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:192
-# eeedfa7098354975821267dea30dac48
+# bfed49cfb54144c7a2966e5fc2d9804e
 msgid "For all files in the ham directories, learn those messages as ham::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:196
-# 7cddcb64a48f48e0aaba7e6e653aae60
+# bfd4f6ee80324ded98cb5c98d1c65bfe
 msgid "For all files in the spam directories, learn those messages as spam::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:201
-# 5ebc5a82d77c47c4b057a0ab0e03ed79
+# 1138abea761b49db9c84b3784fc3488e
 msgid "Trapping Massive Amounts of Spam"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:203
-# 9a0bbdb41c8041d78e2d701aaa1d2713
+# 949c9912657347cca76270b7af6102e0
 msgid "To learn about spam quickly, allow the Cyrus IMAP postuser to post into a shared folder that will be included in the regular sa-learn run."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:207
-# f0fddd1226344111be2c76193577f33e
+# 7f50c504e69d4de3b80606c3e26bd3aa
 msgid "Setting a Trap for Spam"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:209
-# 0ce4ac2eba5c4f848ed8ba6b577847f6
+# 74c4d0fb37ce4f25810da965b77c7897
 msgid "Set up the Cyrus IMAP postuser, using the postuser setting in **imapd.conf(5)**."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:212
-# abedb0d3ee074d09b5e02fae0f531f81
+# 4c570bfa8ad1481da5f6c424e35b93e6
 msgid "If, for example, the postuser is set to *bb* (short for bulletin-board?), the mail to bb+shared/blah@example.org will be delivered to the shared/blah@example.org folder."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:218
-# 467fa1681a2e45a6864add0578608922
+# 4ddb525f1bd142bb98cc7bef6cb83839
 msgid "Take into account the use of unixhierarchysep in imapd.conf(5). If it is not enabled, the recipient address should be bb+shared.blah@example.org for the folder shared.blah@example.org."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:222
-# 467eba4e5d9342deb411950b2171e698
+# f27501ce86bc4d2c90c3073d104550f9
 msgid "Create a shared folder such as shared/Spam@example.org"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:224
-# 4bb615a4210845a0b71099fcd827d9f5
+# 0340e20434974002b927686b3a20bddd
 msgid "Set permissions::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:228
-# 7366122f7c854d93b9807347f4b1fea1
+# 2efd2dd13eae40fba36d908fe2d578a6
 msgid "Submit / subscribe to known spam aggregators (search Google for 'free email offers')"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:231
-# ceb20f55ded74e1a9723c9d7c716283d
+# 9966b4ed67114bb18f0631602c812342
 msgid "Optionally, set the luser_relay option in Postfix, to trap all messages sent to non-existent recipients."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:235
-# 4c4450f38cb046a591d8a36aa6f72c6b
+# 7990a92fcf0d4c4fa03dbb7ed97d0fec
 msgid "Tweaking Bayes' Scores"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:237
-# d6e9186a607b4e32bf3eae98010ca60d
+# 9dae7263672d45b5b69a3d62433c49be
 msgid "Bayes\\' score is dependent on the probability Bayes attaches of a message being spam. The rules used to match a message's probability of being spam are systematically prefixed with ``BAYES_``, followed by the percentage of likelihood of the message being spam."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:242
-# 5e5c9fccf69c41e6bc043b48c0202c5f
+# 411837a95ade40c0b83a0cc3c25abad1
 msgid "Because there is rarely a 100% certainty of a message being spam, the highest percentage is 99%. By default, the configuration attaches a 3.5 score to this probability. Depending on the configuration value for $sa_tag2_level_deflt supplied in the Amavis configuration file, 6.31 by default, it is unlikely spam will reach the cut-off point of actually being marked as spam solely on the basis of Bayes' probability score."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:249
-# 28f77692545547069f5977ce685802b7
+# a5a91786288c40edb12d29a5469ba786
 msgid "It is therefor recommended to increase the score attached to messages with a 99% probability of being spam to at least 6.308, if not simply 6.31. Using 6.308, you configure spam to be tagged not solely on the basis of Bayes' 99% probability score, but request that in addition the message is recognized to be in HTML (and HTML only), and perhaps uses a big font –or similar patterns with a very small 0.01 score."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:256
-# ae79f64a592649e18c9994a73e4881a1
+# 3b88efdf0e50458090ebf8d23d68abad
 msgid "Some spam has been submitted through systems listed at http://dnswl.org, a collaborative false positive protection mechanism, a default score of 1 is substracted from the total score. If this spam reaches you, consider increasing the score on BAYES_99 with another one point."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:262
-# 7690a5aa292b4936b4626647513f7aa2
+# 7084d293b00e4c55b2628b307e4d1ea2
 msgid "Adjusting the Score for BAYES_99"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:264
-# faac6b2125f74e95b2eeb520dabc4fa4
+# dfc8ded40bc149eabbe6c5698561cd92
 msgid "Edit /etc/mail/spamassassin/local.cf, and make sure the following line is present"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:271
-# c6667122248f4e939da830e1bbf47887
+# 7b5e73eb3e3d4e589a698c5661173e85
 msgid "Reload or restart the amavisd-new service::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:276
-# 26b84c42d77242faab78350bb52b0205
+# 0dd9610ea5c240f6856a77114c89ac4c
 msgid "Learning about Ham"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:278
-# 3d4de049ad264b6d9e3cef2d4155b681
+# f5cf8fef904a4af3a77e2d2598d02d78
 msgid "It is important to not just learn about spam, but learn about ham, legitimate email messages, as well. When not learning about ham, the anti-spam system will become heavily biased towards spam, and ultimately classify all email messages as such."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:283
-# 203570936c444c2ab043907e2c3378f3
+# 76355058555a4f65b0abcc7689d9a97b
 msgid "Learning about ham follows a slightly different doctrine then learning about spam. Most importantly, ham is not to be posted to a shared folder that everyone else can read the contents from. It is most commonly a \"Not Junk\" or \"Ham\" folder in one's personal namespace users are instructed to copy or move messages to, that have been classified as spam but are actually ham."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:289
-# d888b9cd257e45ad9ae998485f9135d7
+# 4e34caa3186a4476b4a0a2615287f86f
 msgid "It is recommended users are both instructed to use ham folders, as well as create them by default —regardless whether they are called \"Ham\" or \"Not Junk\" or equivalent localized version of such."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:293
-# 86e20292b736436b907e697bcfc7ee45
+# d647834eaa474b1f91a0e366d6787297
 msgid "Alternatively, you could learn about ham from people's INBOX folders."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:296
-# 68c80f0fa0774ed98543ace6c27c35b3
+# f2af811ceb534c6bb0371dac560db460
 msgid "Expiring Messages from Spam/Ham (Shared) Folders"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:298
-# 5ebbf90214474696b18e1d4fd83b6655
+# 982ce0a71ffa40e1a9b650e3eed44cfb
 msgid "When you share folders to which users can move or copy ham and/or spam messages, it is sensible to purge the contents of those folders regularly, or the folder size continues to increase indefinitely. Run the expiry after sa-learn has been run."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:305
-# ed990bce050844088bc57680106eff15
+# d6676c268a7a456f8724f62ce437c665
 msgid "Running ipurge to purge mail folder messages occurs independent from setting expunge_mode, and independent from the expire annotation as well."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:308
-# 625c2a87a32343efb76625a984dc2537
+# 0ab758422fcf4035ad9c186a2f578361
 msgid "Using the expire annotation is sufficient to purge the contents of the folder, as, with or without the expunge_mode setting having been set to delayed, rather then immediate, the Bayes database will only be updated with messages Bayes has not learned about before."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:313
-# 1035bbcde2ab4771b18392447383be08
+# 0f44da4832824287bd8b065eab46acf2
 msgid "To purge the contents of a mailfolder, run ipurge::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:320
-# 56900dbb5965476c924e0bc774284915
+# e14beb60087b42288605295afe957aae
 msgid "Updating the Spam Rules"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:322
-# 165fcd4f416f40fd817383fd923e69d4
+# 04d4ed5215764896bb3f3759c926162c
 msgid "As part of the SpamAssasin package, a utility is provided to update the rulesets from channels configured."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:325
-# 97ff53c20e5a4cd9b5b129eba1fa59b3
+# 4560eb0dd58842f0ac11ce81ff8a6f63
 msgid "For systems on which either of the SpamAssassin daemon or Amavis daemon is running, the software packages automatically install a nightly cronjob to ensure the rules are updated frequently."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:329
-# 7a48af5246f149b5b3c16cffba458582
+# 449d08a0f6bb4b73b06ee64b7bdc4adf
 msgid "The spam rulesets are updated using the sa-update command, supplying one or more --channel options specifying the names of the ruleset channels to update, and (optionally) one or more --gpgkey options specifying the Pretty Good Privacy keys to allow signatures on the rulesets to have been signed with."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:334
-# ba5fb515dc9446cd905361b5a07e7295
+# a3c95bf090694097b6a89f7ceb8de8b2
 msgid "The cronjob that is installed by default, executes sa-update for all channels defined in ``/etc/mail/spamassassin/channels.d/`` with one file per channel."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:338
-# e98d3443918b4750855a86466be2e13b
+# 101443f17a1c4e578d3be5eae6e30d19
 msgid "Bayes SQL Database for Distributed Systems"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:340
-# 83a3b5d69ff7459e915a8f677c96cb96
+# 23756484477f42689a6088868dc3dfc0
 msgid "If more then one system needs to make use of the Bayes database, consider using a network SQL Bayes database."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:344
-# ebde8de424304e5c8a709665ce99c1bd
+# dff8d6e2a0f44915843e2fa9556a682d
 msgid "Setting Up the Bayes Database"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:346
-# 44bfdbfcd84d464d9132cf227127bbc3
+# bbb1a29650c342cea023438bf5ca202d
 msgid "Create the database:"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:352
-# a074d5359c53445793ef46fa4222db9a
+# 70bd2d88cb404ec3a4716b977c5ca626
 msgid "Create a user and grant the appropriate privileges::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:357
-# f4e36511b9b846178aa72d85b41e3f88
+# 3c9a11619ab34c22af6b18b00e97c35d
 msgid "Reload the privileges:"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:363
-# dbc120b74ed24158926532263fa9114a
+# 6672fcd4a57e442f8cb48c1098cdc23d
 msgid "Download the latest Bayes Database SQL schema file from bayes_mysql.sql (when using MySQL):"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:370
-# b307229f985a4b39af7e9965d4e2fdea
+# 2a1106399f184084a67170d24e7b7ff0
 msgid "Insert this schema into the database::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:375
-# 7cf826cf4c524317b9864008159f4646
+# 91efcdc9dcc74fc890caa17850159d71
 msgid "Migrating Existing Bayes Database(s)"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:377
-# b4e99d4a7c704f29944d7d845dd83550
+# 3b1348dd96044d8bb52c6232ef5432cc
 msgid "First, export any existing Bayes databases, run the following command (on each server with a Bayes database)::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:382
-# d4917ee637ce4f78882903558f4bf66a
+# ddd786b0790148c180e48de6df5ce59b
 msgid "A recommended step, but completely optional, is to expire the current copy of the database::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:387
-# 49aedb252f724222a8563e45ecf684a6
+# e6da496b28ca4bf790c36cccb5c522ca
 msgid "Modify /etc/mail/spamassassin/local.cf to contain the following settings::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:395
-# 20d291bb6fd9498bbf9f617d4512102d
+# ae23a247c46c4d96891052a950835d7e
 msgid "Import the exported Bayes database(s)::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:400
-# 347d79305b214e79bc8b98750d1e00fc
+# 9435758dad7a4c20a65ce7d1951eb764
 msgid "Ensuring Availability of Messages' Spam Score"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:402
-# 75bef5aee6c84612af68d6cd4f8e2ae0
+# 38adf1a1c88d4476af55c5a1ef627aa2
 msgid "For the purpose of troubleshooting, or in deployments with clients that have spam filtering capabilities, it is sensible to always insert the spam headers into email messages, both to avoid clients scanning the message again, as well as troubleshooting why mail may or may not have been filtered."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:407
-# 5218f27ffa5c411d8cb9090587e19247
+# c1abe9afccdb4207b84bc713d36d60c7
 msgid "To always insert the spam score into the message headers, find the line in /etc/amavisd/amavisd.conf that starts with $sa_tag_level_deflt and replace it with::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:413
-# 152283e79a9546cd82c98148de010b23
+# e33fbf7d85424bfba01d891742fe6cc2
 msgid "While the score is available from the log files should the level of logging verbosity have been increased, in some scenarios it is necessary to include the spam score regardless of the traffic being inbound or outbound. An example is a mail gateway for an unknown number of, or regularly changing, or dynamic, or large list of domain name spaces with both inbound and outbound traffic, which needs to be protected senders as well as receivers from spam."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:420
-# 03344e91b72e4aae917d77bee97a6b7d
+# 03c90b88a05646a480dab11c0a7f162e
 msgid "Normally only inbound traffic is tagged –if at all–, by recognizing the recipient domain name space as local. The setting @local_domains or, in later versions of Amavis, @local_domains_acl is used."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:424
-# 384a2ab7ead54c959187d9e6f47ab839
+# 630924dc5b69491eb65ddcbc8fc719d9
 msgid "In a default Kolab Groupware installation, the recipients are looked up in LDAP, and if an entry is found, Amavisd will also classify the domain as local – regardless of any @local_domains and/or @local_domains_acl setting."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:429
-# 2d9d6ea602774b5f9b1e594e1e988d84
+# f8646cbba2db4f83abb6a15583b052fb
 msgid "Adding Spam Headers to All Messages"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:431
-# 4c2ab4efed28412db9b3b30b04e246ba
+# b4146172508a4d8dac460dfd8e48831b
 msgid "To recognize all domain name spaces as local, edit /etc/amavisd/amavisd.conf and make sure the following settings are not configured::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:438
-# 6f3f072ca9014612b98d63b1d35543a8
+# a984657c98d048ca864c563092c3a077
 msgid "Ensure that the following setting is configured like so::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:442
-# 9ecde6cbe05e4d16bebcb20696078ea7
+# 8aa0ad73a7974dc29110e272a212ec48
 msgid "Also disable the LDAP lookups, by removing the following settings::"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:448
-# 9c6f3968580242dc93b2c7879a306917
+# fb44fb0cceb54f25be3e0d2da87177fb
 msgid "Default Amavisd Behaviour"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:450
-# 4e3e6e0f1d9540d196e2ae4577a69363
+# 95b3f0447c5c46a291dc22af69a95892
 msgid "The default behaviour shown in a Kolab Groupware deployment depends on the default settings that come with the packages delivered mostly through native, distribution-specific software repositories. This chapter documents various aspects of the behaviour Kolab Groupware will show referring to the appropriate settings that will allow a system administrator to modify the behaviour."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:457
-# 8baf774d7493403cab4593c5b217e40a
+# 0839b140f51044399c5022308cca9dc5
 msgid "Adding Spam Information Headers"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:458
-# fa40ce1c07a4433384909ea3f5b755f7
+# 8034be0dd5194beab9aa27b8d019547d
 msgid "Amavisd, by default, adds spam information headers only to messages that;"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:460
-# a816abc8dc41468396a8f6c6d3a11b57
+# 4973f9242608478cbaccd86ad56e4e08
 msgid "Are intended for delivery to local recipients,"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:461
-# 5f4deb0a96a247308631b7b6c3afe7ee
+# 1cc0e1c728074f1689f34ceefea27f61
 msgid "Get a spam score over 2.0 from SpamAssassin."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:462
-# f69cf60d8f2e4729819db5395b613d5f
+# 824b6d554c2a4a3ea17cee7f73db8380
 msgid "The related setting is $sa_tag_level_deflt in /etc/amavisd/amavisd.conf."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:465
-# 2c0f89d3f39d4632ba2ac78dc309ef8b
+# 53ed59b3d00a465e9fff59a1bbdf80a4
 msgid "Spam Kill Level"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:466
-# 320aafffb7ad472cab9d92fedd31eee9
+# d2af3a60040249588f11a0ce54e8102e
 msgid "The spam kill level controls which score spam must have been marked with before Amavisd considers the message to not be delivered to the intended recipient(s)."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:469
-# c8170eee93884ed9b3cdd83e8cf36641
+# 2dd703673aa341919970107bdadf957b
 msgid "Depending on your platform, the default for this score is 6.31 or 6.9. When a message is marked with a spam score higher than or equal to this level, Amavisd will take \"evasive action\". See :ref:`admin_combat-spam_amavis-evasive-action` for more information on configuring evasive actions."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:477
-# 35b9c0c0dc334b60ae4b1272910ac057
+# 370f575f5f074d0787ebecf8ca3621ab
 msgid "Configuring Amavis Evasive Action"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:479
-# 80902ee511884c0eaa32f29f2e023423
+# 6fc09bfaec8d490c8740402c7b666c22
 msgid "You can control what \"evasive action\" Amavisd takes using the **$final_spam_destiny** and **$final_virus_destiny** settings in ``/etc/amavisd/amavisd.conf``. The default is usually to discard the message, but the following options are available:"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:484
-# b551f25091f24de0a9a31737695b0cc0
+# 5a7882852017488494161ca876809557
 msgid "D_PASS"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:486
-# 8243f666c52c4db39ebe2fb1eb40a94f
+# 9ef8318449af4111888f1b8b50967f08
 msgid "The message is accepted for delivery to the intended recipient(s), despite having been scored passed the kill or cutoff level, and regardless of bad content."
 msgstr ""
 
@@ -505,60 +505,60 @@ msgstr ""
 #: ../../source/administrator-guide/combating-spam.rst:500
 #: ../../source/administrator-guide/combating-spam.rst:510
 #: ../../source/administrator-guide/combating-spam.rst:521
-# 2df6b299e7a64dceb16c928db35344de
-# e8dd879dc6e140d896a5ac0a22089387
-# 4107327e16bb408ea858cef9ee154ce7
-# e527be2f07914bb9bed6cdb750c342fc
+# 34955ed17bb244efb56cde11cbcfbf93
+# b8f8eebc557a479ab6b55825ea8cbc94
+# b3449f81a2914689906c8bc81bf91622
+# d9a47111e44a42d9b87cfff45ce03520
 msgid "If a quarantine address has been configured, the quarantine address will receive a copy of the email. See Configuring Quarantine to learn how to configure the quarantine address."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:494
-# e54378322c4d45aaa4eabd475e508c53
+# 23b061e91d8f4898ae686726868bb5df
 msgid "D_BOUNCE"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:496
-# 3cd83d97b0f847299165f9d7ca51e7e7
+# 1ad5af6b4b7647c88eb4a7ca1b4a6f7b
 msgid "The message is not accepted for delivery to the intended recipient(s). A Delivery Status Notification stating delivery failure is sent out to the sender."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:504
-# 732f527efe4e4b31ab71678dd043682c
+# 2c5843d60ce84677a8a885c12023659b
 msgid "D_REJECT"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:506
-# 4b74aabd0a784c3e80de52b585302191
+# 88e3204df72b4a7c8e3507eb619c569d
 msgid "The message is rejected by Amavisd, and while Amavisd sends out a 550 SMTP response to the Mail Transfer Agent, said Mail Transfer Agent is responsible for sending out the Delivery Status Notification, if any."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:514
-# da0f839ee8c64389918ee12543a2ffc1
+# 6eab7352decc4bc9b0999a637cb7a0ba
 msgid "D_DISCARD"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:516
-# 20439c4a78c24041b2424e942f47fa1e
+# c3ba993bb16b48dd86f3f9bf75376545
 msgid "The message is simply discarded by Amavisd. The sending Mail Transfer Agent will receive a positive SMTP delivery response, and Amavisd sends out no Delivery Status Notification, nor does it forward the message for delivery to the intended recipients."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:526
-# b37edc46696349b7ba8c2a2c9eccfa5a
+# 97c691ffafcb41798d4ccf88d6192c77
 msgid "Configuring Quarantine"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:528
-# 4cf8c0d2a5264853b512615a872e28e0
+# b4f7d4b989894426a96e1a17f3480f77
 msgid "Two separate quarantine forwarding addresses can be configured. One is for messages labeled as spam, another for messages suspected to contain a virus."
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:531
-# e655f3fd3df84baeab9cf8f259f7df85
+# ec91e48c7e2b482385e872847c2a1b89
 msgid "A catchall address for spam can be configured by setting the **$spam_quarantine_to** setting to a valid recipient address in ``/etc/amavisd/amavisd.conf``"
 msgstr ""
 
 #: ../../source/administrator-guide/combating-spam.rst:535
-# 8decdfbfa2b54c30bdea25beafd98c32
+# 9240d9f873674744bd6ba4d1ae3c0007
 msgid "A catchall address for messages suspected of containing a virus can be configured by setting the **$virus_quarantine_to** setting to a valid recipient address in ``/etc/amavisd/amavisd.conf``."
 msgstr ""
 

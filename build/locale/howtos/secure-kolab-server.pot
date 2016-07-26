@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,395 +17,395 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/howtos/secure-kolab-server.rst:90
-# eff69d1a481b4649a88ab97902dc000a
+# bc923c3de49d4990a9f9b81f12b43305
 msgid "HOWTO: Secure all Kolab Services"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:92
-# 00921ba0fc1e47e4bbd3e8e420ec1cc5
+# ffd1c4f0f6104ae08baa9b102c7e6ec8
 msgid "This HOWTO is based on Centos 6 with some notes for Debian 7."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:94
-# c672e1b1d40a4e488626f7570d24fea4
+# 4cc0013b7091489d88a440d4be4c0472
 msgid "The configuration on Debian(-based distributions) is similar, but the base path for the certifcates storage is different, and Debian already has a group called ``ssl-cert`` to which the user accounts for applications like Cyrus IMAP or Postfix are added by default."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:99
-# 0240151e5f0b4b12bd7d73dc7bdfcd37
+# 46314b55015740609cf2887bd0d45449
 msgid "On CentOS, this group is called ``mail``."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:103
-# 839228d58368482ba1d6674e3a529106
+# f66b9eddca3c481ca19718f9239fc7cd
 msgid "This guide provides general information about how to enable ssl/tls and the majority of your kolab services. This guide is by no means 100% complete nor will it get's updated everytime ciphers or protocols get deprecated.If you want to know more get deeper knowledge about securing a particular service please consult the corresponding software documentation or other projects that take care about hardening your server."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:110
-# 5ddfd59ae67a475abb71a3de02161380
+# d0d7464f1a024493903e6851dd3c6ced
 msgid "Example:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:112
-# d8683266c56040028eb9170a905315f1
+# 95dafac9e87245d3ae026441e30d9324
 msgid "https://bettercrypto.org"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:115
-# 9d32db9d67d7460d8375d8c125043cfb
+# 7148c960f57b4adbbdadeaa7a7c33efb
 msgid "Prerequisites"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:117
-# b14a52fbefce4ea6a4edb8efb5741565
+# 01c12f93f3014dd29cb8005896e8d7d6
 msgid "Prepare your certificates! You'll need your certificate, your key, the CA and intermediate CA certificates. This tutorial is based on the StartCom SSL CA. Feel free to use any other Certificate Authority to your liking."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:121
-# ae04fb2785d74b219c767a24afcffebc
+# 099d8e4257514c0eb89e5a149d03249a
 msgid "In this case the certificate is a wildcard \\*.example.org certificate, which makes it easier to cover various hostnames (like ``smtp.example.org``, ``imap.example.org`` and ``webmail.example.org``)."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:125
-# f3533e6e1c5d490cbd8a0c17a89e158a
+# 7826c82a688c4485ae3dbdaa0fa733e3
 msgid "Copy your personal SSL certificates on your new Kolab server."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:127
-# a78ec660f1e34524a5739006b1f4601b
+# 134b9ebcc87044559664ffd5dee9f4f0
 msgid "On Debian the default location is :file:`/etc/ssl/` instead of :file:`/etc/pki/tls/`."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:135
-# 1fa6ad2d545b4f16b5889dd9657a24de
+# 861b54e3a1e44830851b82893ab438bb
 msgid "On Debian: Make sure the files have the correct permissions: * `/etc/ssl/private/example.org.key`: owner root, group ssl-cert and mode 0640 * `/etc/ssl/certs/example.org.crt`: owner root, group root and mode 0666"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:139
-# 9467887bb3a14c849eba5cb6cc4433d4
+# 59917d3806b4473f937e7e42ed102a41
 msgid "You should have obtained a CA certificate or CA certificate chain from your SSL certificate issuer."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:142
-# fe1c330a94e4476ea519780aa36b350c
+# 853041692a824fc893c61cb27bd7be26
 msgid "If you have not, obtain the root and chain certificates from your certification authority. Make sure the source of the certificate is verifiable and trusted."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:146
-# 3b899a193b854f6384e2347b7174ed46
+# 39409f0362f444c9818d54d7a7b3f43e
 msgid "For example:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:156
-# a8ce4d5ca4f9423594ed07bce8fb8aeb
+# 9722f95fb24a47ba8c97323105428987
 msgid "Lets build some bundle files we can use later"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:170
-# 64ec7d1fd54246ff9f6db589c2786e68
+# d0b4ddb3596343f18e5628f0b067b894
 msgid "Add an SSL group. Only members of this group should be able to access your private key, etc."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:173
-# ea76848b95d649c88983fb7a5059c8a6
+# ede48ca3638248b9906cf401f8f35ae7
 msgid "On Debian the usergroup is not needed."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:182
-# ae66ec52fd82427fb1d4b090bf0c6866
+# f53a990cc26d4e84a3552adfa2ee0a5a
 msgid "Add the CA to system's CA bundle."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:184
-# f216e77f09e94b8aaf7ee3355d45fcb0
+# 35e3e74fdf08404aaae7548d78945d11
 msgid "Other applications and scripts that want to communicate via SSL should point to the cabundle in case they want check if your own certificate is trusted."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:187
-# de1de9b1014741a8bf47008c9227bf34
+# ea2c83d420804d2cad7320a3fa355415
 msgid "For RedHat/Centos based systems:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:194
-# 0547cd5eaaf74174a89d0c2152d22adb
+# 94f5299684b14108ad54daa8ecff8176
 msgid "On Debian based systems you've a different location/command, but the rest is the same."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:203
-# 3aceb6036a13465d996025a3b8950d51
+# 116153102c894d02bbe3d876f563f810
 msgid "Applications"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:206
-# cafea2f9f1374c7ea38705c54df74c7a
+# 42ab26cc98894f7ca7c0c1e7c4e56c22
 msgid "Cyrus IMAPD"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:208
 #: ../../source/howtos/secure-kolab-server.rst:256
-# 5fbbe08fff884fe095ec7199eb839e5e
-# 2a8069e357974f34bc4367458517b96c
+# c9725cc1bfb74afd9a684604e8c7b9dd
+# 680f3f129193476f9b006b6f92dbafbf
 msgid "Configure SSL certificates"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:210
-# 72e70346801c462f99390e252d0736d4
+# 5384a3e436874cf1b1fa1bed2085fa4f
 msgid "**Cyris 2.5 (Kolab 3.2+):**"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:220
-# 5cb8e153d5e647c19104d7504d1a67aa
+# 7b58f50cbdfa4aaa810a2fa8f3b0b20f
 msgid "**Cyrus 2.4 (Kolab 3.0 + 3.1):**"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:230
-# 139fb6fc88e5430daede80d78fdb0b4a
+# 42c642fd0e7844c68b8ced464d680085
 msgid "On Debian: Change the paths according to the Debian file structure (replace `/etc/pki/tls` with `/etc/ssl`. Make sure that the user `cyrus` is part of the `ssl-certs` group."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:233
-# 817792efd1724be69130ca90ece74fdb
+# ec02190d57f54eb59c2411510ddf3e3f
 msgid "**Bonus:**"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:235
-# 19f08b75fe9a41f78252139fcabeed9a
+# e39767fb6cfc4bec8ac6ea1b2fce8790
 msgid "You can get bonus points to disable weak ciphers like so:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:245
 #: ../../source/howtos/secure-kolab-server.rst:331
 #: ../../source/howtos/secure-kolab-server.rst:393
-# 0a6ba1b84b11458d9a6dfdc7c423a22e
-# 01ea58cb8242408191302f24af65e6ea
-# 4467f0a0bdeb40bba5c327428e17b98b
+# 2e90383c3ef048f19ab0cef773e40653
+# ef9e0c5c9d174876bf9eb7c29cc7e685
+# acf157ffc12d44c5b79ba15d28a36a85
 msgid "Restart and verify"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:254
-# cd8dd3a30cec488aa745c9c5abdf833b
+# eed9f1953d7e4b52b812f416fec9224e
 msgid "Postfix"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:272
-# bd98572b4a19484c9dbf84ae085528d0
+# 6494276c77f94329b838d390e249989f
 msgid "On Debian: Change the paths according to the Debian file structure (replace `/etc/pki/tls` with `/etc/ssl`. Make sure that the user `postfix` is part of the `ssl-certs` group."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:275
-# ba35161e89314bf9bd8c11e6b4c71813
+# f48e12db85b44f6a892e2a4a665eb441
 msgid "Restart"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:283
-# 175d2b83bdc4474499e0fa91565e1b8c
+# edb3014d97fe440ba56aa46949981cf5
 msgid "Apache2"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:285
-# c80042522940418381e9464d7dcaaf1d
+# fd680dce69914a3e8d77253f101f563a
 msgid "Apache offers 2 modules that provide SSL support."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:287
-# 137a9d5f59094733babd7d649c081cb6
+# ba391152d59b47869c3d2535f89039c5
 msgid "The wildly used **mod_ssl** and **mod_nss**. Since **mod_nss** was already installed and loaded through some dependency I'll cover this."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:291
-# 1f86948b7a324d4fad3ac0c0f815ef35
+# e149bcb810004e978e86dd64a3290c9b
 msgid "mod_ssl"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:293
-# 9bb1d71e03eb473ba185203e9c229749
+# cbae7788929048439f25630998e36703
 msgid "This is the prefered way and it's easier to work with."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:295
-# 00a85ba94eb848749f93cfd906916719
+# ad9272f0b63e4ad28111aa7a5e4e0239
 msgid "Install **mod_ssl**"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:302
-# 1a18ea2712ec4408aaa23c705e68d065
+# c85806da977046649a7d8e6f6c49f932
 msgid "Set your ssl certificates"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:310
-# 42656f70789348d5ab2c82864a7e3cff
+# 1dea547283534d449f91b921e363e374
 msgid "Fine tune your ssl/tls ciphers and protocols"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:319
 #: ../../source/howtos/secure-kolab-server.rst:381
-# 90aca1c3b25a4d4e807dd104edf3b454
-# 04795069a45c4224b68408ee0b810283
+# c4cdf88ab9594713b11c961927d5aea1
+# 966acea5cb2148adb4237f5da37661c0
 msgid "Create a vhost for http (:80) to redirect everything to https"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:339
-# 7fa77dce1b9946e48921711a5ee9bb31
+# e660622ff5b8499fade3cd69368603d4
 msgid "mod_nss"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:341
-# cf73c3418ff74742a3ac6e32175469dc
+# a2a59dfb656b4d25a58b11ae5c99a958
 msgid "This is an alternative to **mod_ssl**."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:343
-# be7f3e3273e64005a0a5244dfb1db3e3
+# 3531ee7d48dd444198c5ad53fd6d6852
 msgid "Import your CA into NSS Cert Database for Apache"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:351
-# 7e056d899c4f42d9aac9d3e61ca7d677
+# f22ba5800b3648febf34fdcec3c7cbba
 msgid "Convert and import your personal certificate into NSS DB"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:365
-# 5d388899282d4aceb61670646adf4222
+# 40a004cc5b4149bd82350dde90f3d111
 msgid "You should now be able to see all the imported certificates"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:372
-# 5679ac016a64428aaebdfea39ec7371a
+# f1c31540d3ea4ff7bb8188ebd001610c
 msgid "Move mod_nss from port 8443 to 443 and configure the certificate that mod_nss should use."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:402
-# 89879b5155064f4985425b90541cb50f
+# 154ec995e87440d1aaa0ea56543658ef
 msgid "389 Directory Server"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:406
-# a7e5528b160e4e24b5cfd7a9a214388a
+# 01283ca7f3b34fed97f07c33b45fca6e
 msgid "Unless you want to make your LDAP Service available to other services on other servers you can safely skip this section. There's no need to enable SSL/TLS if you only use LDAP on ``localhost``."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:410
-# 11267fd17a2d4a4aa8faadeb873d90ba
+# e9473583a5a04f2eb8e44a2324337fa8
 msgid "If you've more question please refer the the documentation of the 389 directory server."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:413
-# 64ab1afd457c419081e7d02858752a9d
+# 118296981e7843dd9c7ed60633305067
 msgid "http://directory.fedoraproject.org/docs/389ds/howto/howto-ssl.html"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:415
-# 5ac93b8917124f9fb84d6ae9fe66cc18
+# dcb0a345d9454ecb860e0f63e770e89d
 msgid "Enable SSL/TLS"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:417
-# 4f7b655736924f589c14d77c3ce87f39
+# b796eb7f010a450984a37319a75f1c17
 msgid "First you must import your PEM File into the certutil certificate store (identical to Apache with **mod_nss**)"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:437
-# 849116cca33e4bec8921610999fc0b00
+# 62251867dbf24962929fc140ec7389df
 msgid "Enable SSL Support"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:439
-# ee814eae571e43e58a57608aad8d8f58
+# 527b9575cf514d14b7d158aa7893c95a
 msgid "Since all the configuration for 389ds is being done live, changing and adding SSL support will require some LDAP commands to modify the server configuration."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:481
-# 154ab9ae33ea4e2a91c9e079505841c0
+# 1f12d616cc9241f18a45dcf52a16b282
 msgid "Next, restart the LDAP service:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:488
-# f550d79952284aea962a6642be46869a
+# adb0dd75a919442c90ad2444dfe0f242
 msgid "You can test if your LDAP over SSL is configured correctly via the ``openssl s_client -connect localhost:636`` command, or just making a query using ``ldapsearch``:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:492
-# 42aed5c06b154cf684560856d78d2733
+# f294f2203e2d4b3482d88f468083b47e
 msgid "Test non-SSL connection"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:500
-# ad73157062714887b61d8fc6917946bc
+# 17f9f0eeecb947e4b0bdda94cdf93d54
 msgid "Test SSL connection"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:509
-# 53538bababd44fad86300c102fbb3576
+# 6f1f8160667a4a059cf60ae5e699b0f4
 msgid "Kolab Components"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:512
-# a6733338490a4de38688d0eacc774dbd
+# df475e74881848a19e7b8c224089e0ad
 msgid "kolab-cli"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:514
-# 677585bc2ecd4d90ae044538d45f7e36
+# 513925a916eb40d88015ca901f56afa2
 msgid "With the HTTP Service configured to force SSL communication you must add/update your kolab-cli API url."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:525
-# ee89b69a4533411b87fb77602fb82157
+# 5b522c97b4e6474e9ac32e3aa6651abf
 msgid "Roundcube/Plugins"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:527
-# 95dff55c83b242f089b82abe2e6cd1fe
+# 3574822d48914f2abfc3470850fd1b8f
 msgid "Set correct SSL parameters for HTTP_Request2. This will ensure the ``kolab_files`` plugin and Chwala can talk over HTTPS."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:531
-# c0fd4614d02e4a4c9a5880eb7e9f4646
+# 502f6040fbb143308fe6bb744888aaf5
 msgid "Change freebusy API url in the ``libkolab`` plugin configuration:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:537
-# d60d6cc0e8774bd488951efd7b4754ef
+# b800333adb5946a3b11cac8740232a02
 msgid "Change Chwala API url in the ``kolab_files`` plugin configuration:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:543
-# 9abc8fbbb49e400288adaee70ffd4c77
+# 26f083f39a78413b8d7ac9975eb3464b
 msgid "Lets remove the php-close tag line as a quick hack to make it easier for us to extend the :file:`/etc/roundcubemail/config.inc.php`:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:550
-# 17686bbaf7f64260b379e72a0ad1107d
+# 76c14e2d19254c51a07bcfc4284c5d15
 msgid "Tell the webclient the SSL iRony URLs for CalDAV and CardDAV:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:560
-# 582fa53448e04c828f5040e663388871
+# 36a521098c2e415b8b2b44dbcc7a2534
 msgid "Additionaly, you can redirect all http traffic to https:"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:569
-# 6b9717d9cba64c41bf0a7b3acb6254fc
+# 5d2aecf15c32493db312089e3ca6a693
 msgid "**Optional**: Switch to verified ssl connections"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:571
-# f772fa622f56467ea2415c1c59b76d5e
+# 22115ff2061b4b79bcb1bff740163221
 msgid "This will enable the ssl-verification for internal api calls between kolab php components (like roundcube <> chwala). If you care about this you're free to do so, but don't forget the parts of python/kolab.conf as well."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:576
-# 22bb2ae5cb8a45aaa39c56b9d099c777
+# f2683039638448eda05220a67eb59583
 msgid "Usually these calls are internal (on localhost) and therefore don't really need to to trust the ssl endpoint."
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:579
-# 6bc4dc76876046efb260af1eb649448d
+# 66c166728a834604b3d0f4ed6491948a
 msgid "Remove old-style SSL configuration parameters"
 msgstr ""
 
 #: ../../source/howtos/secure-kolab-server.rst:585
-# 5e3c5ecab6df4fc0b00e827aa541bf23
+# c26efad875124a049fb1c57538bb6941
 msgid "Enable SSL verification against our extended CA bundle."
 msgstr ""
 

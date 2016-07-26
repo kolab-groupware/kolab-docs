@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,587 +17,587 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/architecture-and-design/mta.rst:90
-# 50b4ef6fa06541cca0e08a1b10bf7888
+# 8c87b91d3565458d8da7abc59b49ee77
 msgid "Mail Exchangers for Kolab Groupware"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:92
-# a23ab2824c12488ba8077f4ad5462da4
+# 0c2b4dfa2f6846fba9880a7c1f9eda14
 msgid "Kolab Groupware integrates mail exchangers with the rest of the groupware environment, adding features such as;"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:95
-# 9e04ea61f0cc4286b4ab1a27deb10f12
+# 59b09baaa3be4df9b9990f0075678603
 msgid "Delegation (secretary functionality),"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:96
-# 13a1930755ff479a94346d33a1ba18e5
+# 27ffcf6f208a483b8537903112b0d40b
 msgid "Envelope sender address verification and authorization,"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:97
-# df25297b7af24f6496ad4308c12bef7b
+# 805dcdaafbbd40e8b206ee058ccbfee6
 msgid "Mandatory access control policy enforcement."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:99
-# 0fbf498ac79f4eb58016c22eda8be85b
+# cd85b63adde549f9931b1e9399e73c56
 msgid "These features ensure the integrity of messages."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:102
-# 1bc7158ff9b7433f9627d1ad30fff401
+# 317f8afb5eda4f63ab28e5d27c8eee10
 msgid "Overview"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:104
-# 880f48c54ce146f5bf8894b061872838
+# 2033870b93f046b98fa69db3ce5c086d
 msgid "The following diagram illustrates the implementation of a single Kolab Groupware mail exchanger with all features enabled."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:133
-# 4eb2490a43bf4caba47037a6e194c71c
+# a05f390f84ab458bb513f35aa14f4e85
 msgid "**Local Networks**"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:135
-# 39c814ec642a4557837f0362bdcafc6e
+# 1595cee5c0b84f169b7a287c9fa3b6e0
 msgid "The networks considered *Local Networks* are configured using the :ref:`and-mta-postfix-mynetworks` setting."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:138
-# a6713ca950fd40239ce00c08e6ff76d8
+# a9c4e2a0abb74e1a93a1a46c6f06dec2
 msgid "By default, this setting includes all locally attached subnets. The assumption is therefore, that only server systems are attached to the locally attached subnets, and not users."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:142
-# 0449de4e10d74acfae9b1d8787f26200
+# de845b2a6376457798fad7300a52f24d
 msgid "Systems in :ref:`and-mta-postfix-mynetworks` are permitted to use the mail exchanger as a relay host."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:145
-# 49fcf24a8c2e454a8e72db221ca92918
+# 7da2559c2bff4d2ba59e95fa53ccff19
 msgid "**Mandatory Access Policy Enforcement**"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:147
-# 1f8c97aa0e81431db32247be0b559506
+# e933510b0b56445681fe5975f641b767
 msgid "Both the MSA and MTA consult the **Kolab SMTP Access Policy** for mandatory access control enforcement."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:150
-# 6d531d158e524d928253eeb319ad4197
+# 76ab3ed86e654fd5af443ae5c2c82c43
 msgid "On the MSA level, the following policies are enforced:"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:152
-# 2035633ea154485ba615806057f39d2f
+# c9fbcfe3c1a54182ad716321586c95cc
 msgid "The user must be authenticated successfully."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:154
-# 55f8be4d46b345139855efc67c03f3f6
+# c0192809dc2e43dd92ff384fd8338ef8
 msgid "Actually authenticating the user is the responsibility of the Kolab SASL Authentication daemon, which authenticates the user against LDAP."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:157
-# 53ba2f061a3e4540971319e668508567
+# 3e26253b1e8047a0a886ddc5189f5b11
 msgid "The authenticated user must be authorized to use the envelope sender address specified in the message being submitted."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:160
-# 2f91a32b160742d784f54c0ddfa4651e
+# 5f3fbc46393c4375b697f0a594afb360
 msgid "A user is considered authorized to use the envelope sender address if either the following is true;"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:163
-# 84fd7e3963304fba9c67fd1a0b0ef830
+# a428671768194430a20189e3b612465f
 msgid "The user itself is also the final recipient for messages sent to the envelope sender address, such as would be the case with *mail* and *alias* attribute values, or"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:167
-# b03af54d55c3461da1e1f3813c53a2e7
+# 06bc6acc451f4cc7925f65dec670806b
 msgid "The user has been specifically authorized to send \"*on behalf of*\" the original owner of the envelope sender address."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:170
-# e676196a0a07472180ce0251ba071fdf
+# 770ba7e303c4427f8318904fa5d09766
 msgid "The user must not be disallowed to send messages to the recipients listed in the message being submitted."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:173
-# 7fd149f640f04cdea0febed27eb75d97
+# 62fcfe028f1b41a1b63452987bf48ca6
 msgid "For the envelope recipient addresses that are considered local recipients, each target recipient's access control policies are checked requiring the sender to not be disallowed to send to the intended recipient."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:178
-# a501783cb9ea47edbb7ed1f8e9ac3dbf
+# befeef5ad9c849fcade782baa0c06d8e
 msgid "**3rd Party Groupware**"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:180
-# 0cf4615fb1484831ad464b94e74d88f4
+# e864ac3b9acd44e48024166e73a127a3
 msgid "3rd Party Groupware solutions may be integrated into the Kolab Groupware environment up to and including the split of a single domain name space."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:183
-# cc50a5dd837644b2b6c98e93274523f9
+# 906bd88d794647718a897e33ee841247
 msgid "**Content-Filter**"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:185
-# f88c9b3b07144b378f1de719cbd276ca
+# ea23c9a92d8f42eeac0244316fe288ac
 msgid "Kolab Groupware includes a content filter under the name of :ref:`and_mta_wallace`."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:191
-# 630bd28f660646fcab9d3ac14467d19d
+# e59ce13a735046ef99d7cf062ec6de2f
 msgid "Postfix"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:196
-# 8cf3c99db43d47d0b6bc5cbec334362c
+# b50977fc0e204ecb8a4cdcbd7fcf7885
 msgid "mydestination"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:198
-# e18e380f27d84268996a30eb3a527bf2
+# 3aa8a53cc07741cbb18ee65fb45650e1
 msgid "Using an LDAP lookup table ``/etc/postfix/ldap/mydestination.cf``, Postfix is configured to query ``cn=kolab,cn=config`` for ``(associatedDomain=%s)`` entries, where ``%s`` is substituted for the domain part of envelope recipient address."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:203
-# c56f9ed2c9d84ed4b44973f61be45226
+# 3ab2de306a114999a68af52c288eccaa
 msgid "For domain name spaces that are found here, Kolab uses :ref:`and-mta-postfix-local_recipient_maps` to validate the full envelope recipient address."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:210
-# cd4985acab0a4fa89b054b4662b8d04c
+# b7fa224954334725be834ba18c8e2fa8
 msgid "mynetworks"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:215
-# d4341002484445e0b67b57d077cb47cb
+# 20773694e5c248318f59e6a73a88ab11
 msgid "relay_domains"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:220
-# 76dbe32b4e2f40de8e8f04be7bca7e4e
+# 91133e7e6daa4ffbb638c49f4296ec5f
 msgid "local_recipient_maps"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:222
-# 0db2d9a6a5bb4d55b462b708dcd55425
+# 7c2a57c2731f47c6a76f21bb3fc30455
 msgid "The Postfix setting ``local_recipient_maps``, of which the current configuration value can be retrieved with:"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:229
-# 9c202b75400041ab9e4a1702015545aa
+# 9bfb26f7e6e64287a52e31cd350461b1
 msgid "consists of a list of lookup tables, against which a recipient address is validated."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:232
-# bc4a924cebe44d7ba9177d743856531f
+# b9231a7e7be84ea8adce89c9a63ca70e
 msgid "Postfix queries each table, and stops processing when the lookup against a table returns a value -- ergo, the order of lookup tables used is important."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:235
-# 637fc5dc08ae464cb7961a2157d56668
+# f2c8c5bd284740679071298949724dc1
 msgid "Suppose a user \"John Doe <john.doe@example.org>\", a regular Kolab user, receives a message."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:238
-# fce95198c75c4df3bd39fe8e72d04585
+# 327e44c9313a4598a8656a825ae1561c
 msgid "First, Postfix would verify whether inbound messages for the domain name space of ``example.org`` are indeed to be delivered locally, using :ref:`and-mta-postfix-mydestination`, or need to be relayed (using :ref:`and-mta-postfix-relay_domains`)."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:243
-# 36e69b48a90245f687b96507e1bd0316
+# c4fc0469f9f2468487b492e9d4879c31
 msgid "For domain name spaces that are indeed to be delivered locally, Postfix iterates over the lookup tables configured in ``local_recipient_maps``. In a default Kolab groupware installation, this is the following list:"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:247
-# 20d97af4702a49ae89540ffe381f23ef
+# abc7c4047404433695cc1977244e9522
 msgid "Regular Kolab users, using filter ``(&(|(mail=%s)(alias=%s))(objectclass=kolabinetorgperson))``."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:250
-# 93fef0cd6b4f479b9039bb5186b7c9c0
+# 639fbcab2c3242b1a09e762e304001b5
 msgid "Mail recipients with forwarding address, using filter ``(&(|(mail=%s)(alias=%s))(objectclass=mailrecipient)(objectclass=inetorgperson)(mailforwardingaddress=*))``."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:253
-# e42d2b622880499d8362e0490d647bab
+# 1747edf6af5b45f3860fd07bad8729e1
 msgid "Shared folders with mail delivery enabled, using filter ``(&(|(mail=%s)(alias=%s))(objectclass=kolabsharedfolder)(kolabFolderType=mail))``."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:256
-# baa66528606144098ebe3916d608dbc1
+# 9d070565783444118e1a75254b97d9b1
 msgid "Static distribution groups, using filter ``(&(|(mail=%s)(alias=%s))(objectclass=kolabgroupofuniquenames))``."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:259
-# bc984800fa2d48959b159d9526c284cf
+# a507bfd281584180834224a7da8504c7
 msgid "Dynamic distribution groups, using filter ``(&(|(mail=%s)(alias=%s))(objectclass=kolabgroupofurls))``."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:262
-# 4d02b05d9dc9426eb34c83132e45c55e
+# fe8aacca0b8345979f1d8d6ef1ddcb42
 msgid "Because of the nature of these individual queries, and their handling being all the same, the filter can basically be concatenated into:"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:272
-# f4e0b096038d4e7483968d17d825d454
+# 5b3d0851d1b64c99a82a71a9be5cb036
 msgid "relay_recipient_maps"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:277
-# e7df839955254003afde7a6d6d919b90
+# b7fa85254de1467f9fc7da2d3232d08d
 msgid "Postfix & the Kolab SMTP Access Policy"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:279
-# 3d32e90141f1467ca8fd8d0ac6a4dc7d
+# cc28fbdbcb704ee1a32f3f956ba2d827
 msgid "The Kolab SMTP Access Policy is a policy service for Postfix that applies mandatory recipient and sender address access controls using the Postfix SMTPD Policy."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:283
-# c48dfdc587f24dbf95a0e0b682223cd1
+# 30d802a84459446e86442a9831e821b6
 msgid "It verifies envelope sender address used in the message against the authentication and authorization database."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:287
-# 79b9782c140245ab8da76cd705f27151
+# 0b85abafe813495e829871864b9f0ca7
 msgid "What the Kolab SMTP Access Policy is"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:289
-# f72213d484594f5085037e15a299f177
+# c3db620a0518408f8de123ce77e5d0f6
 msgid "The policy service is the implementation of a fine-grained mandatory access control system, that allows delegatees to be appointed authorization (by administrators, and delegators) to use the delegator's email address(es) as the envelope sender address for messages the delegatees send, and/or allows an administrator –or individual, if you'll permit this through custom ACI– to configure a user account to be restricted access to receive from and/or send to only individual addresses, groups, group members, domain name spaces, and groups of domain name spaces."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:298
-# deb42e8b4a36431cbd961acc9d1c8132
+# 407a5b9f30ee4268a611664fa5cf77ad
 msgid "As such, a corporate board or directors for example, may have a distribution group 'board@example.com' to which only the members of the board of directors are allowed to send messages, but no one else."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:302
-# 8d727aaa0fcf450e91a97cec3a718e56
+# bdc16ec859b4466484a55ff62baa3a53
 msgid "Note that this is slightly different from a mailing list such as implemented with Majordomo or Mailman. While these technologies could require approved, subscription-based submission of messages even though in a more enhanced fashion, the subscribers list to such a mailing list is not based on LDAP group membership, organizational unit orientation, roles, queries or otherwise related to regular user provisioning, human resources, organizational roles and identity management."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:310
-# ef622b62d08d447bacf47a4e5033d02f
+# 813670a1b32640f3977e1819e7193fe0
 msgid "Similarly, each of the board members may authorize assisting personal to respond to email using their own envelope sender address. Here's how that works:"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:314
-# e1d801bd873e4b538b0578cfe9951408
+# 94032d36ffab4b2f9956ad664150ab86
 msgid "John Doe, the Chief Executive Officer"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:316
-# 75ba38b4dae84407b978ac1239e24680
+# 439b146741fa44e1965cd9bb7d4e6ea9
 msgid "John has a lovely secretary called Lucy. John allows Lucy to read and write to John's Calendar, and opens up his INBOX folder to Lucy for read-only access."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:319
-# 73b4dab004d1485486d5747eef1ac3cb
+# be921672365640f3b1ee3715f518af0a
 msgid "John however, being a CEO and all that, tends to be unable to regularly read his email and take the time to respond. Internet is only free of charge half an hour a time, twice, at Schiphol. John would like Lucy to be able to respond on his behalf (especially to those invitations for random events a CEO has little interest in). John therefore authorizes Lucy to \"send on behalf of\". This is considered a Kolab Delegate -future enhancements notwithstanding."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:326
-# 4d456f5a16914a28ad1872a58bd17692
+# 64153d1188f449b8b9d4674a87aefd49
 msgid "In LDAP, this would look as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:339
-# a639db3e974f4e99b9c567d114b3f84f
+# 9a5a445956974b748135053ba1e2be99
 msgid "What the Kolab SMTP Access Policy is not"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:341
-# 2d88b9032e9c479289320428ef6842a9
+# a0f01645b650419ab3451c7e1c183f0a
 msgid "The Kolab SMTP Access Policy applies access control between senders and recipients on an individual, per-entity basis. It can be used to restrict an individual user from receiving from or sending to other recipients or senders, including entire domain name spaces, but it does not apply a global blacklist/whitelist mechanism."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:348
-# a439963ceace4c6baeae087205752915
+# 286c3bb630174c51a8fca24b47b54991
 msgid "When?"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:350
-# 931b98322f974a75942db8d9283fb9ec
+# 2ef9ac8b5bea4e3eb9d870d9f1e5d640
 msgid "The Kolab SMTP Access Policy needs to be executed in desired points in a mail-flow."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:353
-# e68f51e4a58c441da404421dbfe265f2
+# 33f8f3aefcfd4a14ae6df5cf3907ea86
 msgid "A typical deployment executes the Kolab SMTP Access Policy upon receiving messages, or in other words, in smtpd and submission. The submission part is the most illustrative of why the Kolab SMTP Access Policy works the way it does."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:358
-# b8ed2a8c03354b629742894526fbaecf
+# 642bd7c63a26420abb86d66c0d3d1c45
 msgid "Kolab SMTP Access Policy in Action During Submission"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:360
-# 681283dfa2f0444aa74152f0ed6e9465
+# 82ae95ec964d4b7dbc0f2639b189d529
 msgid "The submission of a new email by a user of Kolab Groupware has the following three interesting stages;"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:363
-# ceec6376fbf344efbd7b2805293121a1
+# d944aaf5d83246a598ed8d322455f996
 msgid "MAIL FROM"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:365
-# dbc546c29cce42f8ac6312a2cf4c630c
+# 385af607562b4365a9ec836f460ab222
 msgid "There is always one envelope sender address."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:367
-# bfdd9dca4a14435b9708a4243670a97d
+# dae1a447364b4e379e2c0a08f2e27afd
 msgid "RCPT TO"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:369
-# 316e2cf4f8534c7e9fc0868a198d721a
+# ab14f62b543944dda7120d1dc123a3f4
 msgid "There are one or more recipients for each message."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:371
-# d46f829df4b64236adb888e0ad8b5c5f
+# 614d9c3bbe92461988be98a8c217d1fa
 msgid "DATA"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:373
-# fffa30d6217b4adbb808bfaaa47e618a
+# 656a674352ee42b88d744ef900c02b90
 msgid "In the DATA SMTP protocol state, the envelope sender and all recipients are known. It is here that the Kolab SMTP Access Policy starts checking the policies that apply to the sender and recipients in one go."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:377
-# b8a78f4f6e5d4ff5be4ea7e75c5b1074
+# 48d8332dc9a3406abdcae99532365d23
 msgid "Postfix allows for more and different restrictions to be configured to check the policy, but these are the interesting ones."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:380
-# 814831f4f0e5446896f360ab921245ac
+# 9289f5af02d2408ba5640cfa3df59e7f
 msgid "Using the Postfix sender restrictions allows the Kolab SMTP Access Policy to verify certain information, and otherwise block the mail early on. Note that the first policy request occurs in protocol state RCPT, and thus also the first recipient for the message is being supplied in the policy request. For the purpose of verifying the sender's authorization to use the envelope sender address access however, this is of little interest."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:387
-# 2c7ae546573f4126939d2fd239cf9a39
+# dcbb41a308cf4a6b805b648a865254ec
 msgid "Is the sender authenticated?"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:388
-# 123faa5d413748a099ab8e593098f159
+# 3091aa337c3a4790a2d54d274662cdeb
 msgid "Is the authenticated sender allowed to use the envelope sender address?"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:389
-# 7a65497c7aae43d5aa8081e8cf883f4c
+# 3c9903bbc3cb40df9c821a3fbfd96b95
 msgid "Envelope sender addresses that a user is typically allowed to use include primary and secondary email addresses directly associated with the user's entity in the authentication and authorization database."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:392
-# 37a1a0711ba74ed194d34d0731d8343a
+# c25f47a1b1fb496bb5c528154fabcfeb
 msgid "Other address may include any of the email addresses the user has been made an authorized Kolab delegate for."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:395
-# e843a49fa6cf4a839978de6a1fcc4ca5
+# 6113ad87b30547e4b0f96e14dd665f5b
 msgid "In case these checks are successful the Kolab SMTP Access Policy either continues with \"checking\" the recipient - please see notes later on."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:398
-# 61aa077a43b445b78c78f877ccb65a8d
+# 4c3d7fd87c1745e69aebc0d06a60e54c
 msgid "If configured to not also check recipient (the default is to check recipients too) the Kolab SMTP Access Policy returns action DUNNO, which indicates to Postfix the policy service doesn't care about blocking nor accepting the message. Please see the notes later on for more information."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:403
-# ea465bee73e546b0937d146d941c25c4
+# 637747a33e82432fa99aa76115c9ba6d
 msgid "Using the Postfix recipient restrictions allows the Kolab SMTP Access Policy to aggregate all recipients to which the message is intended. The Kolab SMTP Access Policy has no interest in blocking at this stage, and will always return DUNNO."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:407
-# 1a7fb418a0cb4856971746c222998a9b
+# ffd29811465d437eb9a19ffcc77ef82c
 msgid "It is not until the very last policy request in the DATA protocol state, that Postfix allows the Kolab SMTP Access Policy to iterate over the information received so far, and let the Kolab SMTP Access Policy know the parts of the complete message submission that involves sender and one or more recipients is over."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:413
-# c55bfee87a2747fcae906459dfd6f5b6
+# fc5eb82b8ecf4e8982da8e3fb42606f2
 msgid "It is therefor crucially important that the Kolab SMTP Access Policy process spawned by Postfix only exits after a complete message policy request has finished (DATA protocol state, at which all possible MAIL FROM and RCPT TO must have been submitted by the client), and it has given Postfix back to ultimate policy request result."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:419
-# 4892df71d8ec4f4da674b17adba625e4
+# 6a8675ff02bc424f9196627b8a225ed4
 msgid "It is to this end, that the Kolab SMTP Access Policy reads policy requests, for as long as it can, until it reaches the DATA protocol state. Only then does the Kolab SMTP Access Policy actually check sender access policies and recipient access policies. During the RCPT TO protocol state, the policy service will return DUNNO using function ignore(_(\"No objections yet\"))."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:479
-# eae817de300d47c9855536eed3a0c000
+# 7271c492efef4044a0b8ea75b155786c
 msgid "Graph Legend"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:480
-# 445fe6b9dd5b4316ad72286420c228fb
+# 4fbd2d9456854c04803eef6f800dacf1
 msgid "Recipient Domain Check"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:482
-# 35104a8c97a34c9db61a2af27814801b
+# 194038128dd44179841508d710f07979
 msgid "The recipient domain check establishes whether the domain part of the envelope recipient email addresses is local, or remote."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:485
-# 363f65672c47461da04ebd3e5a60008b
+# b6ea081298594675b16412bb770119b4
 msgid "Domains considered local are those listed in :ref:`and-mta-postfix-mydestination` and those in :ref:`and-mta-postfix-relay_domains`."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:489
-# ee80d6fc2126484b9e67d8d6a3fcdf0d
+# 93e87a31181c49de806a3aa3535d93b0
 msgid "Recipient Address Check"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:491
-# 1972a01d68a14ec79fb48a5c52ead95f
+# 8bebe9ebcecd4ff6a4ad2cb0614656ba
 msgid "For envelope recipients in local domains, the address must be a valid address that can be found using :ref:`and-mta-postfix-local_recipient_maps` for domains in :ref:`and-mta-postfix-mydestination`, and/or :ref:`and-mta-postfix-relay_recipient_maps` for domains in :ref:`and-mta-postfix-relay_domains`."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:497
-# 5224c9f7e5674d6eb91db0682e122f54
+# 462b4c345b374052aaaa869f15f33ae3
 msgid "Sender Identity Check"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:499
-# a574e8f519f546fe8e59cb3ec54af168
+# 377ace078219490bbbfa8c0653ed5bb6
 msgid "Delegation Check"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:501
-# c81110ad72234d28a4a02f427bcb7f50
+# 0ae1485bf5a04c19ae817e3c4cf77b46
 msgid "Sender Recipient Access Policy Check"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:503
-# 568a7dcc1b2b4e42b89d403066e9b487
+# ff31b5b94e7f4977ad93ec1133231556
 msgid "Recipient Local Check"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:505
-# c34e8c3521e44fd0a3e77cba984cdc8e
+# ce734a8c039e4e03bc87af142128465c
 msgid "Recipient Sender Address Policy Check"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:510
-# 5014980696574b43b045d5f0b82a3719
+# 5bc77616069e44abb43dbb37be65baa7
 msgid "Wallace"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:512
-# a1b4fdf848d7471a95ff2b6ea3c4da6e
+# e00559bd0cc04c2f914757d6bbbc7eef
 msgid "Wallace is a Kolab Groupware content-filter, adding functionality to the environment including:"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:515
-# 1345b2e85de64ea7aa664fbe95652984
+# 95a5fbf635fa430fb6e98b1b21eb6769
 msgid "Enforcement of invitation policies,"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:516
-# 8796fd5101d9484391f81c47b0a70185
+# 81e10828b7f9414ab03c605a0fe0c9ac
 msgid "Resource scheduling,"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:517
-# 0f543064a85e41a4b016e3077cf903cd
+# 6ae8593c0c21440ebd6a1133f598f72c
 msgid "GnuPG-based encryption of inbound email to local recipients,"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:518
-# d5fd15883db94978a36be5e44e13270d
+# 327c2cea174541c9b909a550226d824e
 msgid "Appending of footers (plain text and html) and signatures,"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:519
-# 5a1e0ff1cacc4135a13eda8e21d2f1f1
+# feeae835b7e143a8afdc2e310a81970a
 msgid "Data-Loss Prevention (DLP),"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:520
-# 4ce3a8b1eeea43589007487272fc2e0d
+# af4603fb68ac498db4882b9f1f02eb6b
 msgid "(...)"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:522
-# f4f7f85a034a4b99860dea1f91354d8b
+# 0568f149bf3444118b16127bcf6ac2ec
 msgid "Wallace listens on port 10026 by default, and is provided with messages by Postfix. After handling the message, Wallace submits the message back to Postfix on port 10027 (by default)."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:529
-# 1b8d0daff4594ace9e444d148347156f
+# 8553f152f7fc46c191222b1477717329
 msgid "Enforcement of invitation policies"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:531
-# 65cfb816b6d143b5b33670c04cf0b2c1
+# 818eaeb5f059498b9506de5d76d7581a
 msgid "The invitationpolicy module of Wallace picks up incoming messages and identifies iTip invitations or replies which address a local user. Depending on the recipient's invitation policy settings or the global default, the iTip message is either automatically processed (e.g. accepting event invitations if available) or forwarded to the user's inbox or calendar for manual confirmation."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:537
-# 86fbdd00c02c405e96d4370a53397941
+# 5bfa4e6aa7574cb49048bfb1e4f6261e
 msgid "iTip messages can hold invitations to events or assignments to tasks. The invitation policy module processes both according to the individual settings. One can specify policies for either all invitations or specific for event or task objects."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:541
-# 6e7389b47bf24cdc8343af74224e69a9
+# ac8579594f8343feb2bbadb5dd657f82
 msgid "A user's invitation policy settings are stored in LDAP using the ``kolabInvitationPolicy`` attribute which can contain multiple values which are processed from top to bottom until one matches the situation."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:545
-# 5f0d2143f9c9400cb912528756011eaa
+# 453029722d12455dab6888b653d4a044
 msgid "Find a reference of possible values to compose the invitation policy set in the :ref:`Administrator Guide <admin_wallace-invitation-policy>`."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:550
-# bae21287aece49a78d556652604a5ee3
+# a84778d5d3114fb1948ab53b5449eb10
 msgid "Auto-updating all participant's calendars"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:552
-# 0488594d6b1248b2a563cbb290985cd4
+# 6c032a8abf68498ab432b7fa6ccdfa24
 msgid "Along with the auto-update policy, wallace can also update copies of the referenced event in all the participant's calendars. With the regular iTip workflow, an iTip REPLY will only inform the organizer about the participation status of an individual. With :ref:`auto-updating <admin_wallace-invitation-policy-autoupdate-others>` enabled, the server will also automatically update the status of the replying attendee in the personal calendar of all other listed participants."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:562
-# 46a0276bbc114d80b88c5dc06b15581d
+# 4c013f7aa44b444aa67587516ba045f4
 msgid "Resource scheduling"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:564
-# 36a0ce86fa644f4ab1a755096e2830cd
+# e0e15989a5c2407892ccd059dedf4c35
 msgid "The resource scheduling module of Wallace picks up incoming messages and identifies iTip invitations which address a resource. The invited resource's calendar is consulted and the invitation is either accepted or declined depending on the resource's availability for the requested time. Accepted invitations are added to the resource calendar and are considered \"booked\". The module automatically responds to the event organizer with an according iTip REPLY message."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:571
-# 05807ac8935747f380a98db4b138b359
+# 54841e19826c41ceb3802be155996a4e
 msgid "Optionally, the owner of the resource will be notified about new bookings."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:575
-# f8dc9f65e3dc4baca323d54598212fa8
+# bbc3b157902740b3aa3e0299557a0b13
 msgid "Resource collections and invitation delegation"
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:577
-# cd2a4d257cde4ff5910bcef01bc0aa89
+# a2b3e4e6e9f84760909287f360f3cc86
 msgid "Kolab has the concept of organizing mutliple resources of the same type in resource collections. Think of a set of projector devices which are available but usually one wants to book \"a beamer\". This would be a resource collection which receives an iTip invitation."
 msgstr ""
 
 #: ../../source/architecture-and-design/mta.rst:582
-# ceec689f019c4477a1593f4025b57f36
+# 1a8b5ed508c7473ab850c1ec88375632
 msgid "Such invitations will allocate a concrete member of the collection which is available for the requested time and delegate the invitation to the according resource. The delegation is reflected in the iTip replies sent to the organizer according to the iTip specification (`RFC 2446 <http://www.ietf.org/rfc/rfc2446.txt>`_) with the resource collection responding with ``PARTSTAT=DELEGATED`` and the allocated resource also responding to the organizer with ``PARTSTAT=ACCEPTED``."
 msgstr ""
 

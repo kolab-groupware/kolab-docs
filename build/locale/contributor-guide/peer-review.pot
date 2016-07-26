@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,222 +17,222 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/contributor-guide/peer-review.rst:92
-# 3f906508995a4260960547d82b1504a6
+# 9493f97ec4d2490eb57c506a0a30eea6
 msgid "Peer Review"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:94
-# 35f8817ea9884fe1b3e9e56571a2d1c9
+# 0142b3336dc14cc7bbace436d798c5ce
 msgid "Peer review is a process in which code changes are submitted to a staging environment, so that fellow developers have the opportunity to review the work before the code changes are submitted back to the source code management repository."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:99
-# 5d9996edf21341379351789a46f525cc
+# ac4fc60d4c194a369ef70771654cd190
 msgid "Peer view is assisted by `Differential`_. To use `Differential`_ effectively, you must install **arcanist** and set it up."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:104
-# d5fa587ea418434d9add5980581cb659
+# 71005e3a4f994c2a87a5aa9ff12cc828
 msgid ":ref:`contributor-guide-setup-your-development-environment`"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:106
-# 9b9eb69b4b164069a4c6d9fecf48373d
+# aa196b359b8c432eb795415dd31a0856
 msgid "For structured contributions, and for sprint participants, the use of `Differential`_ is obligatory, and further facilitates the process of :ref:`contributor-guide-test-driven-development`."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:110
-# 2855af8988b945cf88c6a698d8d88abb
+# 5231b22f347842459a79bf084fbc45f2
 msgid "Post-poning destabilizing changes stabilizes the day-to-day use of |Winterfell|, and allows multiple changesets to land at once (enabling a single feature to span multiple software projects)."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:115
-# 92bdf29489534a7683c13b5cd29b726c
+# 0ce326ddc23845818038c7ad86321a14
 msgid "The Process"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:117
-# 542f33bc48ec41deb2e22414ea8d5a6b
+# a8bffb66b1df42f09fa29f7aa262909e
 msgid "A task in a sprint should consist of a bite-size chunk of development work."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:119
-# 136efdb210a84c9489a243d1fca78f38
+# 42c76e99eda243ecb30fe1236b9130db
 msgid "When you start work on the task, you write the tests first (and those tests would fail, because they have not been backed by code changes)."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:122
-# ee09ff64bf72496abab624728f38a6d1
+# 72bd06dd706e498c86f68f53d80c0913
 msgid "You submit your differential at the earliest opportunity, however incomplete your coverage may be at that point. This ensures peers can participate in feedback cycles early, and shows progress being made as it is made."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:127
-# 62525f2c98df401eab5210dd9fca0c10
+# 42483a2d49e44957ab1daa1525064e37
 msgid "Creating a Differential for Review"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:129
-# 710e6d54f6274952b7c5831f0d8d81c3
+# 8a7d8f55aceb464ca7b8a1fb098486ba
 msgid "Your development takes place against the **master** branch, unless you find yourself running in circles, interrupted by a support request."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:132
-# de0a1c2099024b93b0160d7f94729cac
+# f43808a7d34f4fd493a6f4cdd693c925
 msgid "Thus, make sure you have **master** checked out, and for the sake of preventing superfluous merge and rebase exercises, ensure it's in sync with upstream:"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:141
-# ea302ed03bf74888b7b22dc1d202959c
+# f02b97ca6ec146699d5d8bfa0e43648a
 msgid "Provided a ticket, such as :task:`1037`, you should branch off the GIT repository;"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:149
-# 1dd2633cfae943969ac25eec817936d5
+# 879ef4b5755c4878bf01710c9245668d
 msgid "This will allow you to keep your changes out of a tracking working copy, and allows you to switch back over to other work without stacking the changes on top of one another."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:153
-# cdce7ad22cce450c86ebc2e5a66ce7b8
+# 6eb45fda1c1a4c6a87d0092ac680a51b
 msgid "Make your changes, and commit them in however many commits you think is reasonable."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:156
-# 1902e7762b024369a8765bee36e3f68d
+# 066233560748497c8ad558fe5a6d7d36
 msgid "Then, create the `Differential`_:"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:171
-# 231ea43afa31443988296d3d0626fa4d
+# 4ddf7dd7c52c409489306b016b428037
 msgid "You will now be requested to provide some information about your proposed changes."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:174
-# f5d0981121d64473b1cbc0f04ff0fb79
+# 32d8a1a15df54e7c92ef9f4c3930d4f6
 msgid "The first line of the differential submission is the title for the differential."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:177
-# 3ca4010812c74e788f791c0f603053be
+# 0224debccf394103a397400a090f2203
 msgid "The template offers a ``Summary:`` line, and you are to make that line include the phrase ``Resolves T1037``. This causes the differential to be associated with the ticket, and will cause the ticket to change status to resolved when the differential is accepted, merged and pushed back."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:182
-# f1a9a54b3df94ff58fac89265b12ab0d
+# dd9b46fe96174cac97fe3922d9f859e9
 msgid "Use the remainder of the space under ``Summary: Resolves T1037`` to spout any thoughts or comments."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:185
-# 2353655ac15e416da5c41e192234ece2
+# db724b0308a34f36ad91df4240140796
 msgid "In ``Test Plan:``, you list the steps needed to verify the work. This could be:"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:193
-# 57cf19a8c177467d931667b44ade1b5c
+# d43f5fd520334cc0b3c43a7f10809001
 msgid "In ``Reviewers:``, you list the development team associated with the project (such as :red:`PyKolab Developers` or :red:`Documentation Authors`). You are to use hashtags here, so they would be ``#pykolab_developers`` or ``#documentation_authors``. **arcanist** will validate the entries and prompt you if they do not exist."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:199
-# 794d89d69f3d46faabbfe908b645516d
+# 4031a5d82403405c8a045f81f9308582
 msgid "In ``Subscribers:``, you may either not list anyone, or list the username(s) of people you wish to be notified when the differential changes. Here too, **arcanist** validates the input."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:218
-# 4340d8ce29594bab87c48a2c3b71f439
+# dc1bd4727dee4c2d92bf3905ec6cb83b
 msgid "Review Process"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:220
-# 0f0bf623dd754b98acd77329711574e0
+# 7fc75497c1a54e7abc3135fa22843861
 msgid "A reviewer must ensure code changes are verifiable, and validate unit, functional and integration tests for the code changes before accepting the differential."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:224
-# c9ef54ea1d414eafaf7613d3c9213455
+# 3f7894c5eb834d1fa2c64bd27d4f77e9
 msgid "A reviewer will want these tests to be automated, or ends up spending a lot of time and effort on verifying the changes made."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:229
-# 40a11dbca173434c93ac02e847f6b482
+# e7e0d25681284dd8b469a69823752fac
 msgid "Exceptions to this rule should only be made in extreme cases, and require even more pairs of eyeballs."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:232
-# 27f1284ba3524a809663e4acc9f2a87f
+# d358b3408dbe4285a635632379a4ca90
 msgid "A reviewer must also verify there is a ticket associated with the differential, and that the ticket associated with the differential will be closed automatically, should the differential be accepted and merged."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:236
-# 3ebaf363bb2b41e1b4a2cddb2c2d0cc5
+# b604d48760e048d8aedee023a60b479c
 msgid "Accepting the differential does not mean the code changes are automatically merged, however. Acceptance of a differential outside of the merge window is therefore allowed."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:240
-# c1409d9e3d2f46eb973612686d6eb333
+# fc1dd3291ec94cf8928b9d12c54dce0b
 msgid "Your changes need to be reviewed by at least one other person, who is a software development project member."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:243
-# a163393bf94145b9bbd4d09d698e6845
+# d3fb105106dc4ff990001eeb0fe5504b
 msgid "In :ref:`contributor-guide-test-driven-development`, the submission of the differential associated with your review process aides in the staging of the code changes."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:247
-# 07d394665af04578ad00562cf21840b7
+# db3cfb19f6ca49ba80689748894af7cf
 msgid "The changes submitted should be reviewed on Thursday afternoons at the latest, at which point of the :red:`Release Managers` team can pick them up and merge the proposed changes with all the applicable branches."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:251
-# 987d2e1f2785447e8085b62a20085d8f
+# ad5b846760ba4f30b1face4f92eab2a9
 msgid "The combined code changes and test should make the lives of :red:`Release Managers` a lot easier -- the functionality of the backported changes should be available for automated verification."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:256
-# a731f3bdfa8048e294a27cab57f04134
+# d6817aa3e0ea415ca948b0c6021a9202
 msgid "Landing a Differential Revision"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:260
-# 388e9e84b769432d89c1d178df275718
+# 64e04edf74fd4fc09c32149ee8874b45
 msgid "This documentation applies to :red:`Release Managers` only."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:262
-# 23b58c279598463e9310e51fa3866ace
+# 929eb869418c480f92eca2e1520b5bd7
 msgid "Take the review column of the `current sprint`_."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:264
-# 7005ec45a59840449c0b8fc28c0111e4
+# 687f902197b649299da878979e4728aa
 msgid "Examine the tickets and their associated differentials."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:266
-# de2d14fd71fa4150a2126d5d32a5e9ed
+# 1a5ab654ffe5455f87f56dc15e6527ec
 msgid "Move the tickets and differentials that have code changes depending on code changes to other projects that have not yet made it on to the next sprint, however, attempt to not negatively impact the team's velocity in doing so;"
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:270
-# c6e492e3a5674d9a8e873d02018c5d32
+# df174322718c42a5bdf14ba49508440b
 msgid "You could close the current ticket in review and move it to the Done column, and create a ticket for the next sprint associated with your own team, at about 1-2 story points."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:274
-# 0bb7c0dfe5a34d8b80f21cd9ee52e2a8
+# 491630f18cde4ec6ba2a9c727b453ed0
 msgid "Merge the code changes in order of the differential numbers, in a best effort to merge stacked changes as easily as possible. Those that fail to be applied need to be merged manually, or otherwise reassigned to the developer in question for the next sprint (the task is rebase). Again, do not impact the team's velocity too much, and consider splitting the original development effort with the rebase/merge attempt."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:281
-# 3f09fdf8ecb54566bbae861fc3b65312
+# f535649093204c499d11de45c8f18c61
 msgid "Congratulate each developer on a job well done."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:283
-# 4e47deb37f09416799a4be317cf7ba2a
+# bb9e1119a7b84da5a1f0582f154c6ea2
 msgid "Ensure merged code is available in |Winterfell|."
 msgstr ""
 
 #: ../../source/contributor-guide/peer-review.rst:285
-# d0f23f2126584f0a9ad5e7e1935a344a
+# b4b6a48e10f24172853d2b10afeb4d86
 msgid "Congratulate yourself on a job well done."
 msgstr ""
 

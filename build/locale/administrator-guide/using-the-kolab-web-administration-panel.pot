@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,152 +17,152 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:92
-# 557ddd0109d74a1498408859cf8dee32
+# fd5194afeb6a4fda9f4eaa429db27b7c
 msgid "Using the Kolab Web Administration Panel"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:94
-# 6999c290a9964017adaf6d9f10f5fb28
+# d2ffe6e406dc4b0c867705031c0bbce8
 msgid "The :ref:`figure-overview` lists object types the user that is logged in is eligible to list -- that is, the user has at least read and search access on the container of the type of object."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:98
-# 1e3e83cb82b74a6ca54d46cc7d5b0e83
+# 5fe187295bc64748a1203a353b40f3a2
 msgid "For example, a user may have access to ``ou=People`` (the container for *Users*), but not ``cn=kolab,cn=config`` (for *Domains*)."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:101
-# 8e56b36bc50041778d507091e7a773ec
+# f84392bd23bb41e484ed1e16d94d9e20
 msgid "In such a case, the user would have a *Users* page to navigate to, but not a *Domains* page."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:104
-# 757f654beef84b5dadb7a9f2b60233d2
+# 351dbfe5f48544eabf9491d7aca4e04e
 msgid "This list can include:"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:106
-# 0fbc02c4929c468982ce21232c16d5f9
+# 7d4f3ead97154cc09d36935c6826db98
 msgid "Users"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:108
-# 450113d43a2e418fa210548bf0af7100
+# 5e27e375f2b146f487b765889817163f
 msgid "This part of the interface allows an administrator to add new users and edit, list and search existing users. This may include Kolab users, but also POSIX users, or even contacts."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:112
-# b226fcfda75b47ec9fc64a74aff31753
+# 5caf44822f294715ab50b58796102719
 msgid "Groups"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:114
-# 6bc7b5c66583435e95ca788f1a47289a
+# 27920d7982344039a14a736edf6fd891
 msgid "Groups are used for message distribution (called *distribution groups*), can be used as POSIX groups, and could be used to assign permissions in LDAP."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:118
-# e6c7afb9149d4ad5988805a704c1c39c
+# c9f692c7673842839df7cfedfb3efed2
 msgid "By default, group membership is not used to share information in IMAP such as calendars or other payload. The default configuration uses roles for IMAP group ACLs instead."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:122
-# ec6a564bfb5f4e14a7649fc9b7445666
+# 5d54c2c19a8b46f4b89bcd89d0cc0050
 msgid "Domains"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:124
-# eb6eea61b90a4f92b208b542491e192d
+# 32019c553c70460f87fb6508d1bead2c
 msgid "This section allows you to control what namespaces the server will receive email for, as well as whether that namespace is or is not a completely separate and isolated organizational hierarchy."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:128
-# 1135fc0bd266478cb4c5e50b441d8c56
+# 7c6c5bd03a4840499bea5a0255c5959a
 msgid "Roles"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:130
-# 143e1d125cb04947ae2e8fc4579c51c5
+# 49e486ba1dc942ffbab6e0a1ae637ef9
 msgid "Roles are used to assign permissions to Kolab users. A role already included in your installation is the one used for Kolab administration (the **kolab-admin** role)."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:134
-# 043361ce983448c69bcf16fb1969df1a
+# 71e084ec362d46cf971dc382e9d54c50
 msgid "Roles can be used as IMAP group ACLs, and adjust, restrict or liberate the use of plugins and/or settings in web services such as the Roundcube web client, iRony (CardDAV/CalDAV), Syncroton (ActiveSync) and Chwala (Files)."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:139
-# 773c17b7b9f1468daafa00a8ec1ec0e3
+# 110acda3e88242549766f4e3af595bbf
 msgid "Resources"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:141
-# 5597caa425194454a2696c4d1b49215d
+# 153597483afc40b2a8eff1c66a22504f
 msgid "Shared Folders"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:143
-# 1f749cdf5e4a4684aed8ccd1df66eadd
+# 76ed8667599a4534871de38d7ff3b77b
 msgid "This section allows the administration of shared folders,"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:145
-# 60821b2b56d64bbdad836df8d167f112
+# da65f325325349b180c86f11d0e9c23a
 msgid "Settings"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:147
-# 83eefbc6b26f4b11bbca46752d274e15
+# 61b8cf55bc5945cba7867cd1e238decc
 msgid "The **About** link is always there."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:150
-# 817e15f8d9b240acb1767cff4ff8fd52
+# 6f8a67b538964e25b5d79871048b2a4f
 msgid "The Kolab Web Administration Panel and its API"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:152
-# 72c368ec614f43ea98e2e33ea9827301
+# 59e4979d9b68484f81d827a90a6328e7
 msgid "The Kolab Web Administration Panel by default uses the :envvar:`$_SERVER[\"HTTP_HOST\"]` PHP variable to find its way back to its API."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:155
-# e69f80c06c6d4e5f8ba73f96cb2a3d75
+# 357f863b94794f04b23ae2da840668e5
 msgid "If you use your desktop browser to navigate to http://admin.example.org/, the Web Administration Panel will seek to address its API using http://admin.example.org/api/."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:159
-# a6acfb74c9e5428690103cfcd76eacdd
+# fd4843baf34c4fffa88f00b4d1f349e7
 msgid "``admin.example.org`` should thus resolve to the correct IP address, from the perspective of the Web Administration Panel server."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:167
-# 7090392e5c014dc29fb6fc694d496c4b
+# e531946c920a4f7296980de177b950a2
 msgid "Overview page of the Kolab Web Administration Panel"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:170
-# 5b72f2f2c95b4c42b82e2a9b8851a536
+# 59a4de48f8c2412a9dacfc21073e7294
 msgid "Users Administration"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:173
-# 626a5884ed114b768013b299d63435b5
+# 23739f853ca3498897506c43178ffea8
 msgid "Groups Administration"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:176
-# 03291195e4214108bb800cb8c5a40a0c
+# d99b966d458d4465bc9889d68275361f
 msgid "Domains Administration"
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:178
-# 3d0d4852559c455ab6f24983463609e0
+# 51f001ac2f75477d86b249bf87eb5f01
 msgid "The **Domains** page of the Kolab Web Administration Panel lists, on the left-hand side, :term:`parent domain name spaces`."
 msgstr ""
 
 #: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:186
-# fe2e5c120340401bb5b3458dda6ee99d
+# 643a952d955c452499eb3a0a9b39ad25
 msgid "The Domains"
 msgstr ""
 

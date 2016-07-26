@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,52 +17,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/installation-guide/kolab-3.4/debian-8-community-3.4.rst:92
-# a9ff11c9f8264a0b91117bcb519811a5
+# 8ef007b3256b4dbe8bbe32f7fe81861e
 msgid "Installation of Kolab 3.4 on Debian 8"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.4/debian-8-community-3.4.rst:94
-# fb5cbf47ffe2404d9f8034ff677354dd
+# 6f531873d55b4aa1b36c07a7cd941d8d
 msgid "Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.4/debian-8-community-3.4.rst:101
-# 798ab0da997f4ee4b09f579755912889
+# f781ed89a65b4f3cbd0168a917e3f0d9
 msgid "Import the GPG key used to sign the packages:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.4/debian-8-community-3.4.rst:111
-# 2bb5d51d5c124f1c8a0f264e6f29f30f
+# dac510836bc24a81bb4f0bf259b7caf2
 msgid "The key's fingerprint is: ``79D8 6A05 FDE6 C9FB 4E43  A6C5 830C 2BCF 446D 5A45``"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.4/debian-8-community-3.4.rst:117
-# adb7b78b26e044c5bf36185ffefbd1e0
+# eb879127edb44b21880d694a39001d0f
 msgid "To ensure the Kolab packages have priority over the Debian packages, such as must be the case for PHP as well as Cyrus IMAP, please make sure the APT preferences pin the obs.kolabsys.com origin as a preferred source."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.4/debian-8-community-3.4.rst:121
-# 8f64933890054aac88264147f3cb80ba
+# 605732596707479a9f08d8fff285ba89
 msgid "Put the following in ``/etc/apt/preferences.d/kolab``:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.4/debian-8-community-3.4.rst:129
-# 86536abf4aa245a7a2cfa30cec456bd7
+# bbb76550c1704316b3c3456fba37fdcb
 msgid "Update the repository metadata:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.4/debian-8-community-3.4.rst:135
-# 78e8b4dddcd24b289f9f993aacf0a10c
+# 54abdf8d4b6240a8a0e6478845c8abee
 msgid "Start the installation of the base package as follows:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.4/debian-8-community-3.4.rst:141
-# 6f3b959511534a61bffb39eb31e60f2f
+# c6ec0ebd120348abb79ec11bb05d65f3
 msgid "When asked to confirm you want to install the package and its dependencies, press Enter."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.4/debian-8-community-3.4.rst:143
-# bf50b25b2e4b41948609573f44e57439
+# 6ba5b533b6404e62bcb76b23be464c90
 msgid "Continue to :ref:`installation-guide-setup-kolab`."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,72 +17,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:90
-# f94f9fb74ec749638786c49cd7e811e6
+# cabc8d597d8946b8ba45e74d64e3aa65
 msgid "Installation on Debian"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:93
-# 510d060ac9294105860a928c2969ba64
+# f729406abf1a4833b60737cfc4e2fe5b
 msgid "Debian Wheezy"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:95
-# 3b15db11810e45c98357b5a3580916cb
+# 6ceb5ec588d54814ad708cd361f599b0
 msgid "Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:97
-# e2b7f25759f14467ab176908486c96d1
+# f81adb8993e44762aee5e9c7b0239a08
 msgid "For Debian Wheezy:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:104
-# 1e559ed78ab747b29808608dc3d93433
+# caf4d038a5e74686b935be920b8ccf94
 msgid "For Debian Jessie:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:108
-# d42513cfbc694f1bbdf95d55217caa79
+# aa25a97333424b6499e346a2803b5c40
 msgid "The packages for Debian Jessie are in an experimental stage, as is Jessie itself, and the packages are provided solely on popular demand."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:117
-# 21ec515888b645dbb315b1c2067c3de4
+# eded97d4404a471c926ebf0c00b67eab
 msgid "Import the GPG key used to sign the packages:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:127
-# 6b9e2c2c75304df1bd4d9b09c0ce3071
+# 586255861f2e49f68ee6eefdedfc7def
 msgid "The key's fingerprint is: ``79D8 6A05 FDE6 C9FB 4E43  A6C5 830C 2BCF 446D 5A45``"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:133
-# 509922f3c5b244ae8ed32fce011ab67e
+# 496025b283ad4ae9b6fac682f835df97
 msgid "To ensure the Kolab packages have priority over the Debian packages, such as must be the case for PHP as well as Cyrus IMAP, please make sure the APT preferences pin the obs.kolabsys.com origin as a preferred source."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:137
-# 785426d970d1479089246798db46263c
+# 76eeaebf89e141ec9f4ea549cb04ca02
 msgid "Put the following in ``/etc/apt/preferences.d/kolab``:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:145
-# fba43f04bae545d6abc9c72034db8a85
+# 2882c394714c4dccba633d28a8a903d7
 msgid "Update the repository metadata:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:151
-# 5aebe3702ae440779e487b5daaf5f714
+# 13799c6b41cc4c57b272e166d34d344d
 msgid "Start the installation of the base package as follows:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:157
-# e4b08ff7b026484ca57a61798d232708
+# 9b4ab9109c9842c4b075b5fe8be59496
 msgid "When asked to confirm you want to install the package and its dependencies, press Enter."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/debian.rst:159
-# efc7e5dadc5541f8a2bdc6f3460f110e
+# cd991273e17f451796fb073d754d2bfc
 msgid "Continue to :ref:`installation-guide-setup-kolab`."
 msgstr ""
 

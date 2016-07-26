@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,87 +17,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:90
-# 494bb52adb564e3ab85543f3a321e8a7
+# a800daaf76814ed384e983f60e91e2a6
 msgid "The CRAM-MD5 and DIGEST-MD5 SASL Authentication Mechanisms"
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:92
-# 9fac3c79e6814b8b9765f62a478a7b85
+# 4ba7027aff1d4e0fa09e1c50348d28d9
 msgid "These two credential exchange mechanisms depend on the tip of the iceberg being a shared secret, that both parties have available to them in plaintext, prior to the actual exchange of credentials."
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:96
-# a81f7b0354274ababcf07df1df2cb8c2
+# 1464e49e048e4587bb9f2124e1129bdc
 msgid "Starting at such tip, the mechanisms basically describe a methodology for the server and the client to each end up with an iceberg of the same dimensions, so that it can be compared, and matched."
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:100
-# 97171a3197be4877bd03599a86c28b8c
+# 26be35bdcdcf425db4f3c43366f01238
 msgid "The principle of storing a shared secret at any one location -- let alone at multiple individual, stand-alone locations -- that also harbors the attack surface of a service is a virtual no-go. Storing the shared secret in plaintext is one type of offence, and storing the shared secret in a reverse-cryptable fashion is another type of offence."
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:106
-# b97994d3838249a5bad5495ba4bd571d
+# 152d6961168c4dd8915891c872366010
 msgid "However, some networks may have, in the past, some long time ago, consciously or otherwise, decided that running a PKI was just slightly too inconvenient, and perhaps unprotected traffic would therefore need not exchange any user's credentials in humanly legible form. Enter secrecy for the wire, but obscurity for the client and the server both."
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:114
-# c597e966037748ffa63f0e2f8c13ffd7
+# 4e802daeb07c46afb6cc60e127e0fcc5
 msgid "It MUST be very clear by now, such CAN NOT sustain an environment with the continued support of Kolab."
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:117
-# 0d14fb057cd34cc5a57711197ef257b1
+# 5e52948b0c5e456581a6344c4d3f36ba
 msgid "If it is not yet all that clear though, please feel free to contact your friendly consultant at Kolab Systems AG."
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:120
-# c1f05d9b35784191996dad1577f308e4
+# 69b4ed86c79946dba1dc5a9996644cb8
 msgid "To migrate such environments, one might enable CRAM-MD5 and/or DIGEST-MD5 authentication credential exchange mechanisms. The assumption is that either you use :file:`/etc/sasldb2` and have the means to synchronize password changes over however many systems, or that you already use a plugin allowing you to centralize the storage so it can be reached by multiple systems, over the network. Re-apply whichever logic to your Kolab servers, and you should be fine and live happily ever after -- you get rid of plain text copies of users' passwords on your servers."
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:129
-# 4f980328cc424d44a41d79daeac43f93
+# 8f1729316c8d4773a96523fe2a84106f
 msgid "In :file:`/etc/imapd.conf`, ensure the following is set:"
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:135
-# 4444ce7980fb482f8ccb900d672ce61c
+# 72ad13a273e64f738820560ac923add4
 msgid "Add to :file:`/etc/imapd.conf`, if it doesn't already exist:"
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:141
-# 037b1cc99c3747ea8f03ee5335dac7ec
+# 03b620bb31434c2285d84d35aca4698c
 msgid "Ensure (albeit contrary to the aforementioned advice) you have the **cyrus-sasl-md5** package installed:"
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:147
-# eab60dbdee1d4f7aab724a6330d172e6
+# 70ca8b6b59e64023a5000b5689a82f77
 msgid "Entertain Postfix with a similar set of configuration items in :file:`/etc/sasl2/smtpd.conf`:"
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:155
-# d45b52a01f4645728aeb4d6403b79bc3
+# 6a6cbf0a2e21452ca38952e736cdfc24
 msgid "Restart services as you deem appropriate."
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:157
-# d5cd90b6280b4170a4f03dcd5c030804
+# 5aa90bf55e214de38573aec6f9f99e06
 msgid "Now you can test the functionality as follows:"
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:163
-# a5de61bb768d4806b40affad90cfbaf1
+# 43faf369f3e44d889bb9247c20b00edf
 msgid "Add this user with a different password, to the local sasldb:"
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:169
-# 8d685681601a41268f4e279c65427358
+# 41ea5d6a3a5a49dbab7b2d0085f855e5
 msgid "And run again:"
 msgstr ""
 
 #: ../../source/administrator-guide/md5-sasl-mechs.rst:175
-# f9c38eea27d244e7ba053ba730501b50
+# a6e27aa8be5c4fbfa80c59cddc4ee9fd
 msgid "Also run:"
 msgstr ""
 

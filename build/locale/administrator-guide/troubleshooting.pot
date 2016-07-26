@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,128 +17,128 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/troubleshooting.rst:89
-# 2f63010a2a304d6abadd05caa58ca125
+# d2689cd0d22c4577a91a95b57df930ce
 msgid "Troubleshooting for HTTP-based services"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:91
-# 8dcefdd9c0764fdd8a13a6d85ec5b9d4
+# 23c92b52aaa54b1c8d063d17de89ccc2
 msgid "A good first start to troubleshoot an issue with a HTTP-based service is to check your webserver's error log. For Apache this usually resides in :file:`/var/log/apache2/` or :file:`/var/log/httpd/`."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:94
-# 7a5129a2e5f0403b9c93d38137af8887
+# 9607ce3928ff49ee90bca344ef7ae7b3
 msgid "Often, you will be able to find some useful information about your problem which enables you to fix it yourself. Doing an internet search for the error message is also a good idea. If you do not find anything about your problem, you might ask on the `Kolab users mailing list <https://lists.kolab.org/mailman/listinfo/users>`_ about it. Please include the version number of the package that is causing the issue."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:100
-# 1971a616beae473792d780fe0a22cfbc
+# abad5e8753604d1b82dd9f1eae51feb3
 msgid "If you are sure that you have found something that needs fixing from Kolab's developers, you can as `file an issue <https://issues.kolab.org/enter_bug.cgi>`_ in the public tracker after checking that it has not been reported already."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:107
-# cf553083c09940cab3b6f4a14b34ef63
+# 1cc5656f57464fad93ba4e82d5a1ce13
 msgid "Enable General Error Logging"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:109
-# 12682350e7494de393babf42d737a5b7
+# 654712f5ef6a44678d80afd6ba2652bb
 msgid "Before you start to debug your problem, please make sure that you actually have error logging enabled."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:112
-# d65eee695890484e9dc6f5fafd7dbae5
+# 4b181d813f904766b017680c3e532b80
 msgid "You would edit the file :file:`/etc/roundcubemail/config.inc.php` and verify that the debug level is set correctly."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:119
-# 2544d09cc5c5463ebaca350038ff61d7
+# ccc1eb2c553e4740b1a609a13d9f9171
 msgid "The :command:`tail -f` command can be helpful in identifying the right message during incoming requests. It displays changes to the log file on the screen as the log messages come in."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:123
-# 6fc7f021ddd84d53ad0eec3735181f15
+# 38c7c994772245368f09512c54ec5655
 msgid "Kolab Webclient"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:125
 #: ../../source/administrator-guide/troubleshooting.rst:182
-# ab8c82ee254b421b9ac8004b13cb8cf7
-# 262457538c1c4e1ea6818d3785e705f7
+# 2aa52498b3d24b6c8f26dc56394aa29e
+# d0fc11af6d154ac094f367af65bdaec8
 msgid "After :ref:`enabling general error logging <troubleshooting_error-logging>`, you should already find some messages in your webserver's error log."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:128
-# 64c2fd8912984059b46102adbeab571f
+# 21234c2e959c449d9b7f919e5737230f
 msgid "Additionally, the following configuration options are available for specific debugging."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:149
-# 9123b848bb4e4ee38bffc17454f27743
+# d88e3aa0a51e4ac8a0c93e55deebe83f
 msgid "It is also possible to debug the Kolab Webclient for individual users only by creating a :file:`/var/log/roundcubemail/<username>/` folder and setting the following configuration parameter."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:156
 #: ../../source/administrator-guide/troubleshooting.rst:177
 #: ../../source/administrator-guide/troubleshooting.rst:200
-# f558e65e0a55454c9ac7d819d4cc39db
-# dbe58078c41746699f893fce092a23c8
-# 89b3e07f23e943fba48dcf17d121e22b
+# 6233c9f53c2441819c4d22ed8ab2bd6d
+# f6de576e0ad649bb93053ca622dd7438
+# 08660394d3294c78b6d99530881bdd04
 msgid "Please make sure that this location is writeable by your webserver."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:159
-# b90ca242ac2c48bebea8013934ad831c
+# 379b2e7ec78a48dd98d18f4d6ffd543c
 msgid "ActiveSync"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:161
-# 3e83cbd1c5664e2daab150fb5156fc83
+# 4a80281512c141abac11cf9abd7b575d
 msgid "For debugging ActiveSync issues, you would add the following to :file:`/etc/roundcubemail/config.inc.php`:"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:167
-# 4a3c41abad5343f9809f5f1a51085aed
+# 70a405b699fa4ab19c7a779150cc6c5e
 msgid "Useful messages should then appear in the :file:`/var/log/kolab-syncroton/console` file. If there is no such file, please make sure that your webserver actually has the rights to create this file."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:170
-# a0437e2cf3254d93812cbf1a14a921ec
+# b27c56573c544f91be1839449a25fbe1
 msgid "It is also possible to debug ActiveSync sessions of individual users only by creating a :file:`/var/log/syncroton/<username>/` folder and setting the following configuration parameter."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:180
-# 311ffc48e30a4ecdbda93ee94a2a03ab
+# cec34ce490c64b8e8373ba54671d5b1a
 msgid "iRony"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:185
-# 8bd97a19a4294101a9129b3cb38e8be3
+# 4ab5b30871c34ebb839826ff054a5ec6
 msgid "Additionally, you can enable the debug console that shows the internal function calls triggered by HTTP requests."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:191
-# 7387f1c139734f4492139eaac7bd55b1
+# 85a15a3601e6472787594274c9adb644
 msgid "This will write debug log messages to :file:`/var/log/iRony/console`."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:193
-# e8ad46be39ac4c17a8f521dce5c08796
+# ee03f4c93c4243e3b177c1ffe58c204f
 msgid "It is also possible to debug DAV sessions of individual users only by creating a :file:`/var/log/iRony/<username>/` folder and setting the following configuration parameter."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:202
-# e8073c29ca76404891f3146c7f39bd18
+# 98c206dab12e4f35bc7c84a3028e920c
 msgid "Sometimes it can be useful to track the full HTTP payload of DAV requests. In order to do this, add the following setting."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:209
-# c3924f5d923b40b88f03bf8b2756b884
+# 2d4a1ef15e77402e8ab3e4b0a359489a
 msgid "In order to enable full HTTP payload logging for single users only, you can change the configuration as such:"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:216
-# 5ca5e23f2f86462c8cd634e8e5b346ef
+# b1210b2b4f76424bb317e023655fa292
 msgid "Then create the file :file:`/var/log/iRony/<username>/httpraw` and make it writeable by the webserver user. The existence of this file will enable HTTP request/response logging for this user while it is disabled for all others."
 msgstr ""
 

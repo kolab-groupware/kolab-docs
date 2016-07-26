@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,177 +17,177 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:90
-# d1007992f6d44efcba1f720b858cb2a7
+# 13e81a23269b46ccb3b5dd4d5b2ef2b6
 msgid "Securing the Kolab Server"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:92
-# b0f23b1be57546d5b066e45dadfef23c
+# 1bf0e77ee02647f7abaa02676b008218
 msgid "This chapter outlines the recommendations for further securing your Kolab Groupware server."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:97
-# 6284fc8adff047c88b7488451d36b956
+# 37d85dff850d49b590c59a0410052b48
 msgid "Further securing your Kolab Groupware server may kick you off of mainstream supply channels for further updates possibly including security fixes."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:100
-# 58e297efa3204cedb2f14a8093ae3427
+# 9f04256cb28842b389e265f2f5ed9321
 msgid "Additionally, it may also not be helpful at all, and provide a false sense of security to you and your users."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:103
-# cbcf16a587794206a49df25f0b265171
+# 3f70e576b7db4e308a94a83fa14e131f
 msgid "Before considering to follow any of the following recommendations, carefully consider the implications of missing a security update because there is not enough time to subscribe, pay attention and follow up."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:108
-# 014896cf3f6649418303f18fd7648d89
+# 187b7cf96f4c4b9089d8dafdcf2a0dab
 msgid "Your Jurisdiction"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:110
-# 176491a80ca04421aa08bb2d7860c80b
+# ed8553ee09e246bfad5b1a4460b8aa58
 msgid "Unless you are yourself some or the other form of authority, no level of protection can protect you against the recognized authorities."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:113
-# f8dc16df90af4deab5ea5b08354da3f1
+# 2a34908da0b74235b8c1e9454f6649ea
 msgid "Our societies are, in principle, subject to the rule of law -- even if that same law allows the authorities to break the law but not break the law [#]_, and terrorize foreign and domestic populations [#]_, either with or without reasonable suspicion, with or without disclosure, and/or with or without meaningful judicial review."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:119
-# e4b6952d9f994d18ae8974fe7c0b200e
+# e44220eb41194ffbabac6a9ed04b548b
 msgid "Similar legislation may apply to your jurisdiction, but it is not just your own jurisdiction that matters."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:123
-# 1e5fa991d64746ac96982112e0b207cc
+# 3969d53631dc49ed91a4f229de5d8d38
 msgid "Privileged Information in Transit"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:125
-# 8675786f8d094385856ac2e34aaa502e
+# 59be1b1db2a04aa2b905104c39ac83ca
 msgid "Some authorities have passed laws that allow them to stop and search otherwise innocent people when in transit through certain areas, seizing materials they may have on them, and detaining the individual for questioning [#]_."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:129
-# c0a575acfdae4b3ea5df279ccfc24773
+# 1e7b35685c854f1eac4932389f3aee9d
 msgid "It is sometimes considered a criminal offence for such individual to not cooperate with the interview(er(s)). So, should a laptop or data carrier you have on you contain privileged information, you may be obliged to disclose your means of protecting that data, or be found uncooperative."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:134
-# f10046b7ef47497f80af3b8935af6070
+# 5d839eea8074477c8e70420ab955f0ed
 msgid "The case for system administrators goes further, as -- as a part of their profession -- they have access to information that is mostly private, sometimes sensitive, but otherwise still not their own."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:138
-# c2d9fe2bbec5452c9bb0ae8ef5af2fb2
+# 26f977a647934ae5ac4b3161ac0dc8ea
 msgid "You would want to prevent one of your system administrators being forced into the awkward disposition of needing to choose between logging into your systems to retrieve the data requested, and jail."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:143
-# 48727dc6981a47cf85e06db92c2180d0
+# 46e70aa6b1ab46f695dd2892c228aedd
 msgid "Using Forward Secrecy"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:145
-# 13382c40c0ef438da0742e362a29732b
+# b8062cc23cdb4268a16d79f8c7142afb
 msgid "Forward Secrecy, also known as :term:`Perfect Forward Secrecy` although never actually perfect, uses additional cryptographic measures to prevent a particular TLS session's key derived from a set of public and private keys is not compromised should one of the private keys be compromised in the future."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:150
-# b5177f0c53d44384bedd430922069b65
+# d0d14d2c583143099f9362742b596bd5
 msgid "The most commonly used ciphers are based on ephemeral Diffie-Hellman (EDH), allowing two parties to anonymously agree upon a shared secret for the session keys, over the not yet secured communication channel."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:154
-# c22bf93d03c14e98ab0d0f721cb62c23
+# 6854d68c8cf04859bc1fa5ee2318f961
 msgid "For a Kolab Groupware environment, Forward Secrecy can be enabled using newer versions of software packages than are otherwise available to mainstream Enterprise Linux distributions."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:158
-# eadf5445849d451984cd19c43491ddb8
+# ec959336ba2442c1bea4c0c329c921a0
 msgid ", but not **enforced** on all layers of communication;"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:161
-# fcac89c2c6924d4189959c902805907e
+# f95faef07790458081679d4e8fd1a481
 msgid "Communications over HTTPS can be secured, but some browsers do not have the required level of encryption capabilities."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:164
-# 120cd761c6234ed08c26e98ab64c89d6
+# 3d86666625d34b5788d14cbe5804cf0f
 msgid "Communications over IMAP+TLS can be secured, but again depending on the client encryption capabilities, this may or may not include Forward Secrecy."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:167
-# 17a5b44371834217bace1da7d3f99fc8
+# 9cad7fc0ebb94736ad78755edb691353
 msgid "Communications with the MTA/MSA can be secured, but is once more dependent on the client encryption capabilities for the inclusion of Forward Secrecy."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:170
-# c52c36042bcd4fd89f9161c1eddcf7a0
+# e89a233b0a674a1ab8556c5a0959e54f
 msgid "Most of your clients however will have the appropriate capabilities, except for Internet Explorer versions 6 and 8 on Windows XP."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:173
-# d5df7c82e0f04b6a81f68ea7807f872d
+# 6209bc55add84f45a53bce5af83e027d
 msgid "The real problematic area is in communications between your SMTP servers, and those of the rest of the world."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:176
-# 1e4baa5b3f824fedb5d2be41c44ec2e8
+# f0f3dcdd709d48dda210ccd7ed07e7f7
 msgid "In real life, not many parties purchase an SSL certificate issued by a trusted third party. Additionally, in recent months, it has come to light that most of those trusted third parties can only be trusted as much as the authorities of their domicile and in jurisdictions they operate in."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:181
-# 070c67e9c09041268c33a3e383fd2471
+# 00601936f0f6466f89996d95c97cbdf4
 msgid "As such, to accept TLS encryption offered using a self-signed or falsified SSL certificate under the assumption it actually secures anything is a misinformed conclusion. To only accept valid TLS encryption SSL"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:188
-# c919dd02d8d940d291bb4bf379d8cb73
+# c0e0cf08f5f4454e8b2f1890dde96da1
 msgid "OpenSSL 1.0.1 or newer"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:190
-# 130b3b1a0b9142d0a82315b58e827806
+# 3c8e05b19e7548fc9ede9370fb739a66
 msgid "When permitted, use the Non-USA version of OpenSSL"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:191
-# 3d7da4d3d36d411c96f6e26337efce03
+# 48a749456978496b84f40403e774f70a
 msgid "Enable Ecliptic Curve encryption"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:194
-# 54e3cd632c84449c803d840bb4e5da5e
+# 5c9ea88f4332446e800718a143c3215c
 msgid "Apache httpd 2.4"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:196
-# 0d66a5fd8e4841daa249af2b3bb6e707
+# 133a4b617ede4069b1a4963bf88077dd
 msgid "Apache httpd 2.4 needs to be compiled using :ref:`_admin-securing_kolab-openssl` as described."
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:210
-# 1e2eb32f42314dc4aa7b4003cc15082f
+# 1519698cf42542a2b6ba9a752fe02810
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:211
-# 55f303c45a2b4097961391c5e70c47cf
+# a2dfc967fd54442ebe86c0f6bb40e86e
 msgid "http://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:212
-# a00a0bfe04ee4787ac85909f70aa78a8
+# 784ad1c74de94317bc7142d3f14a3b3c
 msgid "http://www.theguardian.com/world/2013/aug/18/glenn-greenwald-guardian-partner-detained-heathrow"
 msgstr ""
 
 #: ../../source/administrator-guide/securing-the-kolab-server.rst:213
-# de3a64633eb1417cba48a1d1159fef6b
+# cb23a578f7864ff8ab5164ad6c9e0695
 msgid "http://www.independent.co.uk/life-style/gadgets-and-tech/uk-police-authorised-to-seize-mobile-data-at-the-border-without-reasonable-suspicion-8708920.html"
 msgstr ""
 

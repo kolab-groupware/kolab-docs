@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,67 +17,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:90
-# cff4eb7508de4090ac7a8f83904bfead
+# 3343bcbf0088494b94f31e5d978c0759
 msgid "Installation on Ubuntu"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:92
-# c358042d3b2b43c6ac7498a4ba315bf1
+# 326666694b8643778de818e99b56cc81
 msgid "Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:94
-# ea563a32538e40beb931d3d2cb516e1a
+# 71c837b38394414a8e8a9732ce5dba98
 msgid "For Ubuntu 12.04:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:101
-# 41dc15d5ddf5466ab191e1f43b0e79c4
+# 225c3bd836b44d01b4dbde0774cc6418
 msgid "For Ubuntu 13.10:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:108
-# 355ddf3d35ad47fbabc9ab5f7cf9bfc0
+# 07499401dedc489fa025b37fc61e52a4
 msgid "For Ubuntu 14.04:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:115
-# 022c109c0f224b06a11f26f8df792918
+# 2d0ed2bc69404889b3642405f7ead943
 msgid "Import the GPG key used to sign the packages:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:125
-# d893d9d6390d4f00a4c68d9b6ec82450
+# d132525bd3834f32b70518d6818ed9c9
 msgid "The key's fingerprint is: ``79D8 6A05 FDE6 C9FB 4E43  A6C5 830C 2BCF 446D 5A45``"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:131
-# 19b765a67b6241748292efaa7c0dfca0
+# 30443b3ec3a5403f9c3ae3348931da1b
 msgid "To ensure the Kolab packages have priority over the Ubuntu packages, such as must be the case for PHP as well as Cyrus IMAP, please make sure the APT preferences pin the obs.kolabsys.com origin as a preferred source."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:135
-# 37e520c62b314ce7bd10dd77ae16c509
+# 909d90d7f94e488da262f1b935d8c0cd
 msgid "Put the following in ``/etc/apt/preferences.d/kolab``:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:143
-# aac4c7ff2fc943969844cf4c2ae3115e
+# 63526074299f4aba97b364026de7164c
 msgid "Update the repository metadata:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:149
-# 603d0749d3da45eeb5cee24bb3a0c28a
+# e4b5f86edcc1411885384a92f30362b2
 msgid "Start the installation of the base package as follows:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:155
-# dff2fceb29be43239c797253c6426f30
+# 2e55cff7f07f463093c753fd90150dc8
 msgid "When asked to confirm you want to install the package and its dependencies, press Enter."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-3.3/ubuntu.rst:157
-# 70fcc2ef51d1456c86bfaa05d45358bc
+# 85235be4cc1c451f9786d2b68838b782
 msgid "Continue to :ref:`installation-guide-setup-kolab`."
 msgstr ""
 

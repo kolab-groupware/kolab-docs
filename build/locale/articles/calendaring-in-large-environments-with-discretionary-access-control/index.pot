@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 17:12+0200\n"
+"POT-Creation-Date: 2016-07-26 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,622 +17,622 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:90
-# 2bb2eb121bf144f4ad9425db5545a003
+# 193c912878eb42228804356d0adb1845
 msgid "Calendaring in (Large) Environments with Discretionary Access Control"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:92
-# 176217838e014a799a3166908534ed5a
+# d81d5b854eff4c1c84499660fca2f3cb
 msgid "In larger environments with possibly tens of thousands of users, exercising control over who has access to what calendar is a policy challenge, especially considering the fact that Kolab Groupware's access control is discretionary."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:97
-# d9440319c40146e09161e33d404cf658
+# a2c04962b7c140ce92c39f15282d1e6d
 msgid "It is not uncommon for new consumers of Kolab Groupware to need to adapt the Kolab Groupware solution to behave in a fashion that increases the user acceptance, for these consumers may have previously worked with another calendaring solution, and its users may have gotten used to how said calendaring solution behaves."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:103
-# 86f029385c2e4bc5b48387f7b4c91db8
+# 907f0b2260ad4bd4bb9967bb6f397066
 msgid "To illustrate, a previous calendaring solution may have;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:105
-# 95708c2db0df451483904a0e45cbd629
+# 290d6037973b46c9848934e37a21e071
 msgid "offered only one (flat) calendar per user,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:107
-# a877ae44f8f145efb4e66e4246c00697
+# 5f3eb57bad0a4e90969bd76d034f2baa
 msgid "based on :term:`mandatory access control`, or lack of any actual access control, allowed all users read- and/or write-access to all other user's calendars,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:111
-# e667bc13c00d408fb258aa8eea1add9d
+# 559876bc58b144ee94a5ec31f888d0c9
 msgid "This builds a scenario in which users may have gotten acquainted with a certain specific workflow, including;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:114
-# 251c95b2dc87455aa3c72c291098e002
+# 466b51e9eae043aca6ed63b99be6199f
 msgid "Meetings are not scheduled based on sending invitations around, let alone whether such invitations required a response [#]_,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:117
-# e2b4e3e251d445cea66b1fa6f25504b9
+# 6dc39955285b40e09d66e3b8a8076e11
 msgid "All details of all events in all calendars are visible to all users [#]_,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:120
-# e31f009775ac4ae08ce25d649396fba5
+# e0e5e3ebe8ca4333963d0d6abc766c0e
 msgid "A single copy of the event details exist, that is updated by other users, not on the basis of iTip responses, but on the basis of writing back a new version of the event to the calendar in which the event already existed [#]_,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:125
-# 3d523a81508e4a44bfa53052f2c61f9c
+# a8df15d2ca1c4454a3ffece9da19112c
 msgid "Availability information of other users is available based on the actual contents of a calendar -- with all details -- and not based on actual availability information (aka. Free/Busy) [#]_,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:129
-# c9156eae7b2d4f0b81cfd26c5279f5ae
+# c9788552fbf048eda986f19a01c7f54b
 msgid "It may have been the user interface application implementing the aspects of;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:132
-# 1f5e8d66b6a1497eab153b8a6960e137
+# a44a0dae035d47ccae44aee211c0520c
 msgid "A comprehensible view of an individual user's calendaring through filtering and/or selecting subsets of the available scheduling information,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:136
-# cefd1261bd0b4b35b31f5b9385adf86d
+# 13117f8c0fb54bfb9db80a086c73859f
 msgid "Filtering a user's view on items for display purposes, in a flawed attempt to implement access control, including the suppression of details of certain events, or the suppression of certain other people, in a flawed attempt to implement a form of invitation policy control."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:142
-# 75fb1098f6fa46bdbb8587f69df6becd
+# 8d58af9faa194f30b61bf710ec181aae
 msgid "Maintaining -- as much as possible -- the desired workflow of the users, in order to increase the user acceptance, using Kolab Groupware while it maintains :term:`discretionary access control` [#]_ builds the following challenges to overcome;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:147
-# 6f9feb7028d24b5d994aad9f932d9598
+# 7f73165a81f34f2589bda40c0fab961b
 msgid "The owner of a calendar can remove entries from the access control list, revoking access to that calendar to certain or all other users [#]_."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:151
-# 2e4a06052e8a434a964b22f29a8a0a92
+# 5f5e361aca744e01826ea276e633a24f
 msgid "Users can create new calendars that do not have the policy applied, and not apply the access rights the organization's policy prescribes."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:155
-# f56180c0b14c49bc816846764d4b834d
+# 6fbc5eb32fe9440fb33777c72910c41b
 msgid "Events that have a level of confidentiallity or that are private could be disclosed the details of unintentionally [#]_."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:158
-# 44d845e1ce65407fb5ed41e447179f31
+# 5d71108ce6224431b2a08ec791eb5dd6
 msgid "Should users have gotten used to be able to write to one another's calendar(s), a level of automation using invitation policies in Kolab Groupware may unintentionally save new events with a level of confidentiality or that are private, in a calendar that is shared."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:163
-# 4e5fb9ea89984fd5a3a7147cd3508373
+# e0f351cd8b0a453abd1e497b21ed9048
 msgid "These challenges can be addressed as follows:"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:165
-# 018f40d6c65f4fba88d34dd4372bd42b
+# df28805813c04feb84972e5dd2a49230
 msgid "Implement an invitation policy framework that allows for the automation of iTip message exchange processing, in full or in part."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:168
-# 2d71ad2322d342aea607a2ec18af39a4
+# b4066dd8c0ae408f96ad47b00575f61f
 msgid "Allow rules used in the automated processing to control to which user's calendar a processed event should be saved,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:171
-# 280d371549984d95a26e027614ccc86e
+# 01ccad80d7494ceab0eb124e08b154c9
 msgid "Make Kolab clients work based on the assumptions that;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:173
-# ba4d54ca41d844928ce88931a5c70b24
+# be703c28a5534cfeb915facacbc09a22
 msgid "Each user may have access to all other user's calendars [#]_,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:175
-# f069d97ed6d94c62a07a4dfa29316bc5
+# 483e2b4285344072a51f3960791286d9
 msgid "Each user likely does not have access to any other user's calendars, let alone all other user's calendars [#]_ -- both applicable to an individual user's calendars and the collective of user's calendars."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:180
-# 35e72478690a4e78b1e70554dfd4e1c9
+# 558cb6fde3d14dadbd4e78ff1f1c9cd3
 msgid "If the environment wants to offer its users the opportunity to quickly schedule meetings with other people, or simply check someone's availability, but maintain control over who maintains access to what information, the following is a suggested design for the resolution of this conundrum;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:186
-# a761f5a6551645ccb67397dd26493d57
+# 8ce522d75e1243af99cd0ece2d8fb85e
 msgid "With Kolab Groupware, in principle, no person other than the owner of a calendar has access to that calendar, unless the owner has explicitly delegated authority over that calendar, partly or in full -- shared calendars notwithstanding. Kolab Groupware uses a concept of multiple calendars to allow each calendar to have separate, different access control applied to them, such that a user could have the following calendars,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:194
-# 82d86241fa444eeb814537f86e5d32e1
+# f53a478b0e584716b7ae96d250b99f99
 msgid "**Personal**"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:196
-# bae92010ec0f47f888c12510a455fb1d
+# 74547de7cb674ed6a6c972069acf59b3
 msgid "A personal calendar, which may hold events such as Thursday evening's soccer practice and the Tuesday-morning dropping off of kids at school (and hence be at work a little later?)."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:200
-# f4ec8844a0d04050bf2545d7cc169c61
+# eb82f53b87524b3f834438e6ceb01931
 msgid "A human being might feel inclined to schedule these events in the groupware environment provided by their employer, but will then likely also feel inclined to not share the details with anyone else."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:204
-# b5dd94c24cc147cea5b250cdd77f6f1a
+# 27e905fe8e284e5eb2ed443bdf64c58b
 msgid "Therefore, such calendar would, typically, not be shared with anyone else."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:207
-# 784dcbc97b7c45d5ae4c41b23ad3f981
+# 1b73afa352b84414a7bb487bcb414473
 msgid "**Work**"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:209
-# 0625cc75ab224ba2993ffd220419dd8b
+# 696c0aa626e645dd92f0a841ce87e9ad
 msgid "One or more work calendars, which may hold your typical meetings and other work-related agenda items."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:212
-# 616e4efe32614b5c8aad4624af5fc235
+# e2c8698caba544ec9dfb0228a8571caa
 msgid "Such calendars are typically shared only with (some (direct)) colleagues, but some of them may not be shared at all (such as one of manager's calendars that holds appointments with details to be kept confidential)."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:217
-# c760c8d01c294e0db6017eb86e106616
+# 114ca35887ad4a6890db3e17357b9912
 msgid "While the division of calendars across multiple folders may not seem like a feature to be used all that extensively, to some people, please note that each individual calendar can separately be enabled or disabled alarms and/or mobile synchronization for. A user might block out his or her day off (Friday) in an extra work calendar, but opt not to synchronize this calendar to his or her mobile phone."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:224
-# da9be727bd9048fdaa936541d0f1a1ca
+# 90dd21b046e54a2ca53fcfb3c8995529
 msgid "Such calendars with specific, special intentions tend to also *not* be shared (although you could, there's little relevant information in them for other people to subscribe to)."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:228
-# 3696a7ef9cb949038982300a132d1afa
+# 6eba14000304431ab5daa49fecc18613
 msgid "It is therefore understood that any particular user of the groupware environment does **not** likely have direct (read-)access to all calendars bearing potentially relevant information of the subjects for whom scheduling information and/or availability is to be displayed."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:234
-# 1145a922e8fd4611b8f7eea4d524262a
+# aa6ec67ae2714d39ae0d81aab93dcfb9
 msgid "Scheduling a New Event"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:236
-# 8d1a2a5109424abb93e33226c321e769
+# ee609502716b4c23a4b81bef7d47811b
 msgid "When a user *Jane* wants to schedule a meeting with a user *John*, one of two action paths can be used;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:239
-# 14fb39b4940647cc9c62eadeb6becfb1
+# 7dfaa412124640f28f9d17996194eec7
 msgid "*Jane* opens the scheduling dialog, adds *John* as an attendee and subsequently assesses *John*'s availability using Free/Busy information."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:243
-# 275efba99ec848c990c43a96871b5e15
+# a5b27e479a014c658fc54014e8f78ac1
 msgid "*Jane* searches for *John*'s scheduling information, displays the scheduling information as part of her own calendar view, and finds a time slot where both parties are available."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:247
-# 8840905952794f25b58ecec50466f800
+# 8a847e6af4a347a3b74b3af96ea5bb4f
 msgid "It is understood that the first methodology is much more scalable, and much more accurate -- because Free/Busy information is the most complete set of information concerning a person's availability."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:251
-# 5ab47c9f43c1499d8cdfa375972fc3df
+# 286a607c7a554d03beafbf71a69b3564
 msgid "When not one, but fifteen people need to be invited, the scheduling dialog allows *Jane* to not have to choose a time slot first. This is illustrated in `Figure #1`_ and also `Figure #2`_."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:261
-# 0d8b33c261e04c9bb4f6e96bd271db31
+# 9acc91693e0e48ddb961723192e0984a
 msgid "**Figure #1**: *View of the initial scheduling dialog with many attendees*"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:270
-# 151df6f8ff304f7687490b1cbbff0b6b
+# 1d417397cf77437d94096f2453c94f09
 msgid "**Figure #2**: *View of availability information to find slots available*"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:274
-# 208de2b01ff34e5bb3168d3868dd9926
+# da821cb4e8bf42f1909073084c3b8420
 msgid "Quickly Checking Availability"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:276
-# d6e9eb2b06854d34bc138829a90deaae
+# c71a897ae14242c195bc7610c9af5fa9
 msgid "Under certain circumstances, a user may be inclined to (attempt to) open a user's calendar(s) as opposed to scheduling a new meeting with attendees."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:280
-# f293ef5036c84aa890fc78ca3bf4e22a
+# d3cca7cd906a4d8f8e8bac179daab9fb
 msgid "Making use of the search box, contacts can be searched and their agenda displayed quickly and efficiently."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:283
-# 3511e15df4254d56b3938a816d617d7a
+# ba8a4eeaec4d4cf59e3e5758c832f3f3
 msgid "After all, not all use-cases of opening up somebody else's calendar have to do with actually scheduling a new event -- such as answering the question, \"Is *Herta* in the office on Thursday morning?\"."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:287
-# 7848355db22343a1876d2e8185c7355d
+# d87adbea02fa4a8fb02f4a446bf770cc
 msgid "Referring back to the nature of :term:`discretionary access control`, and the variety of use-cases to use multiple calendar folders and sometimes not share any let alone all of them, quickly opening somebody's calendar must give the user the most complete view in two senses;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:293
-# 9c475ef4806a49e899b8d111fdddb52a
+# 9aa518817b93495ca9adcb5a35e54ba0
 msgid "Availability information as the most complete view on somebody's time allocation,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:296
-# 280e6af6974448c18fd0e313ed91faa9
+# 260789469eda49ba89f1f79f3b41551d
 msgid "Any calendar the user does have (read-)access to for any details of the events as supplemental information."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:299
-# 770e25a272434da1b1eb9d6efebfbc57
+# e4afb1ded37c4aaca493e5229e7cea0a
 msgid "In the following example, *Yvonne* has wanted to display *Herta*'s calendar."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:308
-# 9d559c0ccabb4db4b3dfa7ee792eccf6
+# a85a45ba37a74d4483213c998b682048
 msgid "**Figure #3**: *Quickly open another person's Calendar*"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:310
-# 5756c9d89ae847a4a505a1c7278cfdd4
+# 94560586f2f5489f802ebb59cfc99362
 msgid "As shown in `Figure #3`_, where in this case the user does not have access to any of the *Herta*'s calendars, the selection of a contact's entry found does not currently result in the availability information for said contact to be displayed as part of the current view, while availability information is in fact available (`Figure #4`_)."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:316
-# fffc15d59a51404399baec0c8917e6eb
+# 15c167472a3c4e3f99dadb7b9256d692
 msgid "To view the availability inforation dialog, an icon representing an eyeball is located near the right-hand side of the list item in the calendars list, but shown only when the mouse hovers over the list item."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:320
-# 6e7715a6c97742c49a37e5e58c9d3a7e
+# 83bdf367bd3b41f3bda93164c41bd7da
 msgid "The icons tooltip says *\"View only this calendar\"*, which does not accurately represent what it actually does -- both not in the current implementation nor in the target implementation."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:330
-# 57f3b9ad0b254dfca5a8a866f81f1bc9
+# efd356c0209f48d4927fe6812c47918d
 msgid "**Figure #4**: *Actual availability of another person*"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:332
-# 664046157c854859a52a44583d46399b
+# b8399df1545f4ec484cfd79b8f87573a
 msgid "In this scenario, *Yvonne* will initially be lead to believe that *Herta*'s calendar is empty for the week, which users will usually be able to conclude themselves is factually incorrect, but unless the dialog displaying availability information for *Herta* is opened, no information is made available. The information being one extra step away will deter users."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:339
-# 8f7fae8b3b1e4797a904ecaaa6042a0f
+# 7a3fe4ff4a844511a73e2daf470c6a1a
 msgid "While the availability information can only be viewed on a contact-by- contact basis (ie. one at a time), this does not allow *Yvonne* to schedule an event by looking at a combined calendar view of multiple contacts' availability information. The now iterative process of viewing people's availability one by one, rmembering what timeslots were available for individual people, endlessly clicking to open and close availability information views, will deter users."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:347
-# f97b4376e64e4733a1f092263857f046
+# f13401d111b6406685b13468fcdd011d
 msgid "Should *Yvonne* have had access to one or more of *Herta*'s calendars however, the information that is currently displayed is still incomplete (see `Figure #5`_) but since some events are displayed, it is **less** likely to lead the user to determine the information is incomplete, and is therefore even more misleading. As such, this implementation works counter-intuitive, and will deter users."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:360
-# c42a5efdf1424257b8cb80d71abf0657
+# d10707f9843849bba9cbb25ad1ac88f7
 msgid "**Figure #5**: *Misleading, incomplete information display when selecting contact with user having access to calendar(s)*"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:363
-# 539b76234c31434abf3ffa2f7b2f0e34
+# 44427c2c16e0470987c34616b5a767d9
 msgid "Note that in this scenario, *Herta* initially appears to have nothing scheduled for Thursday-morning, and *Yvonne* will not feel inclined to open up the special view that uses the more authoritative availability information, being mislead to believe the displayed contents are the events in *Herta*'s agenda."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:369
-# a7d44e4aa9944ee0bbecbdcf2d830dcb
+# f5626c1e27a44cc0807ded6723f79ef6
 msgid "At this point, *Yvonne* may feel ready to respond to the question about *Herta* being in the office on Thursday-morning -- perhaps falsely so."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:372
-# 052785e0436443cb864ea898a2b07eba
+# 8a45b27ff60446559e799b93e490ff5c
 msgid "*Yvonne* will have to realize that the information is likely incomplete, separately open the availability information view for *Herta*."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:375
-# 79e4c5cd9b0a4185867c07b2540ca4f4
+# 6d294aa0f716404d8fd9be06731cf717
 msgid "This will suffice for the original question about *Herta* being in the office on Thursday-morning, but will not suffice when attempting to determine who's available on what day and at what time."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:379
-# be473204a78f4669afac5d0141b757ff
+# eff65e9ba2674875ac1e5300692eb637
 msgid "Here too, while the availability information can only be viewed on a contact-by-contact basis (ie. one at a time), this does not allow *Yvonne* to schedule an event by looking at a combined calendar view of multiple contacts' availability information. In this scenario, some timeslots that are \"blocked\" in the availability information correspond with events that *Yvonne* can view the details for, since she has access to some of *Herta*'s calendars."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:387
-# c345a06af5854f9396874eea47738919
+# f91229b2860348e4b3f33adcb8f9052f
 msgid "`Figure #6`_ shows *Herta* is in fact not available on Thursday-morning, and further illustrates that both workflows depicted in `Figure #3`_ and `Figure #5`_ contain incomplete information, not allowing the user to find a free timeslot among multiple contact's all that easily."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:399
-# 8c2ee610a4244c78a4adecd7b623b00a
+# b788327e5abe4a4b81aebdd62fd2417f
 msgid "**Figure #6**: *Cluttered Calendar view despite not also including availability information*"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:402
-# 78fe2721f1224e198dd0439c3554b758
+# 8f728acc95e0405d8bb9e1f7d7e0c340
 msgid "When ultimately the actual scheduling dialog is now opened  [#]_, which *Yvonne* might do on the premises that *Herta* is available on Thursday-morning, *Yvonne* will only discover too late, that the availability information is fundamentally different from the contents of calendars displayed (`Figure #7`_, `Figure #8`_)."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:408
-# 20999e2198234c7d92a90c5bc94e22d7
+# a369608ba0fd4fb49d1953ee1d85a187
 msgid "*Yvonne* will conclude the original view on *Herta*'s calendar contained false or incomplete information but have no idea why, and feel it is a software bug. A call to the helpdesk or a general feeling of dissatisfaction with the groupware solution may be the result, and even after *Yvonne* has been explained the intricacies of the particular behaviour she is experiencing, there may be a ever lingering question of *\"But, why?\"*."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:416
-# c5c323aa059b403abc0a9fb2cc475633
+# 3ddd1a2e26b746f982ecd810f15cd432
 msgid "It has been argued that the integration of a contact's availability information in to the calendar view already available is likely to clutter the interface, but it must be acknowledged that similar clutter already occurs when only calendar contents are displayed (`Figure #7`_)."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:421
-# 9763a56ea1a64bf5aa8c9e5638fb08a1
+# 47afb130bcbf4871bfcadd81a277aa3d
 msgid "See `Figure #3`_ for the initial results should *Yvonne* not have access to any of *Herta*'s calendars, and `Figure #5`_ for the initial results should *Yvonne* have access to one of two of *Herta*'s calendars."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:425
-# ab0bfce62c0442afa59a754fb26ab0ac
+# 26ecf462a9a84feaaf0d04780076a415
 msgid "`Figure #5`_ will lead *Yvonne* to believe that *Herta* is available on Thursday-morning, only to discover that *Herta* is not when creating a new event for the timeslot (`Figure #8`_, `Figure #9`_)."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:435
-# d43c7123393a4c399189024896cc5323
+# c93bb9bf609e47ca8314a312a98cd735
 msgid "**Figure #7**: *Discover the attendee is busy after all (1)*"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:443
-# 8bfa6286a3d642319dccdafcb8a0bafd
+# 1dcecce46f6b42bf86714fc157cf6df0
 msgid "**Figure #8**: *Discover the attendee is busy after all (2)*"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:451
-# 4bdfb8d0e5214960936d3612bcb210f2
+# 6cdb5da4ad78482dad6797ed8d3b5f14
 msgid "**Figure #9**: *Cluttered Calendar view despite not also including availability information*"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:458
-# 6b2a9367a64a4c239865eb7b3d26fb0d
+# a0cea090c27146a0a20665dbaa882abe
 msgid "The Quick Display Feature"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:460
-# 17fd0b3e3af44cdca31ada8e0379d9b7
+# 827c28ecba094691899b98595ed1a237
 msgid "The *Quick Display Feature* is a feature that addresses scalability issues in the user interface, when large sets of calendars and/or availability information are available to an individual user."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:464
-# 86f794f6e6c04fba9bff74e4aa851192
+# e44c1f29a9014d309a5c3564007f0e04
 msgid "The former modus operandi for Kolab Groupware was based on the following aspects [with functionality projected on to the current web interface design and layout];"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:468
-# 715a0f10736e4fbf87eb029570b88c50
+# b767d4508d2542b0890feba0a696d5ba
 msgid "In version 2.3 of the Kolab Groupware solution, if the user had access to a calendar, this calendar would be listed in the lower left-hand list of calendars."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:472
-# 2de0e26e9b4542fca6092d451f8dd17f
+# 3c60f855860246a2b817eeb66eff082a
 msgid "This proved problematic when (icw. :term:`discretionary access control`) users started to give ``anyone`` read-access [#]_, and the calendar would solely therefore be included in the list of available calendars, with no possibility for the (consuming) user to remove the calendar in question from said list."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:479
-# 4bb632155d834894be876e89b41821c2
+# 101d3ef07a7d4c0e9e151de5de8df81e
 msgid "As of Kolab 3.0, a global setting controlled whether or not views on groupware content in the web client should use access rights or subscription status of folders to include in lists [#]_."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:483
-# 5c6ca560fc844ca587021bec8091578f
+# 0839af7074744a7195ad094a9a2443cd
 msgid "That is to say, with this setting enabled, if the user had access to a calendar folder, this folder must first be subscribed and would then be displayed in the lower left-hand list of calendars."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:487
-# 4b6c23dbeb5740368c11f902055a28b6
+# 604ce6d2563947bdb25ac4f484f832ba
 msgid "This proved to be problematic because users with access to many calendars have had to navigate to the folder management settings interface, subscribe a calendar folder, go back to the calendar view, and display the calendar's contents. The inverse series of actions removed the calendar from the list."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:493
-# 12ee1eff43e5402da8526a19a5cb4481
+# ae6e289f346445ee8dea04680135f04a
 msgid "In addition, the desktop client also maintained its list of calendars to synchronize (for off-line availability) based on the server-side subscriptions to folders. When a user unsubscribed a folder in the web client (in attempt to remove it from the list of calendars in the lower left-hand corner, which may have become cluttered), the calendar would therefore dissappear from the list of calendars in the desktop client."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:501
-# fa97d1b5cba14fb6a3932081c034aee7
+# e9b1e3cc77b646509bc9263f8e56ea47
 msgid "In all versions of Kolab prior to 3.3, each calendar in the lower left-hand list of calendars would have a checkbox, controlling whether or not the contents of said calendar are displayed as part of the current view."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:506
-# becc3dba2af346c8a7ec406679ad0d6b
+# dabbccee66b64494b654524b96f3cf31
 msgid "This naturally scales only for a limited number of calendars included in said list, but still only includes calendars the user actually has access to."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:510
-# 012a16fad3534a0e8fbcb621250b5175
+# 0021993c05b949cc91811d191777432c
 msgid "In addition, these implementations were subject to the problem outlined in [8]_, where no user could establish whether or not the set of information displayed was a complete set or a subset."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:514
-# e01aedb52db344e4b778de69e588e6c1
+# 529b9b7617954ffbbab2b9e69048f1bc
 msgid "The *Quick Display Feature* therefore implements the following logic to facilitate a user's workflow in large-scale environments;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:517
-# c398b4cf0b834f3da8967f067b65dfa8
+# a32f267cd2764eb2bc43e45d0423091e
 msgid "Only display calendars in the list that are subscribed IMAP folders, effectively establishing a list of persistent \"favorites\","
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:520
-# 574e5e73ec1a4eb78dbc093e636b65ea
+# 1dc4025e3e9f4d51ae3397cee742966c
 msgid "For managers, these could be the calendars of subordinates,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:522
-# a0189563b8384f7a99f6c6b8bf0e494a
+# d8f15647628e4afebc4d514f7ac72f3b
 msgid "For colleagues, these could be the calendars of close colleagues,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:525
-# c556ccb1c8094c85ae706d2744dd677b
+# aa17873c912d45de9f68ab92de835e7d
 msgid "and those that have been selected during previous searches."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:527
-# c2aac7d8dd4142839fe81e7c877b5246
+# ffeaef8d15cc4170afe83469e94e925e
 msgid "Introduce a search dialog that searches the address book for contact entries [#]_,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:530
-# 82465b52f7bd4cee997649bdcd3887b0
+# 5842bfb029b54d60a599fb9ebad5a98c
 msgid "Allow the display of availability information for these contacts [#]_,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:533
-# 0fc16257ac234d959d6c9e59fe783352
+# a03c83688d574053bbd0c40830606b21
 msgid "When a contact entry is selected for inclusion in to the current display, where applicable [#]_, determine whether access to any IMAP folders containing scheduling information exists, and if so;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:537
-# 9228bf35f7ea446282ab1279b7883feb
+# 6369f7418df64dbda8bac0fe8af5770f
 msgid "Display the event details for those timeslots in the availability information of the contact that match timeslots for events found, substituting the UI element that blocked the timeslot on the basis of availability information,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:542
-# da846b7053544a7f8a476ceff9701c6b
+# 9f5fa0f2850b4a728cb05e7c84143219
 msgid "If not, however, the Free/Busy information for the contact entry should be displayed."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:545
-# 0119dee75047452688c07d504ddace3b
+# 3cf2b2be14824539ab0bd60e2f831e75
 msgid "Subscribe the virtual folder temporarily -- for the duration of the session, or until the virtual folder is explicitly removed,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:548
-# bd03e6c62de240af9dd93261fb250693
+# e8300ef3b6304b7397dc11d0470477b9
 msgid "Allow the user to execute subsequent searches for additional contacts, so that an aggregate view can be created composed of the availability information of multiple users, perhaps (incidentally) also with some event details (for those timeslots that have a corresponding event in any folder the user has access to)."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:554
-# 85fa343601184b3ba2ef048fd5bc9599
+# 10b46bfd8ff14db694eeafba4eec40d9
 msgid "Where contacts correspond with IMAP folders available for subscription, allow the contact entry to be expanded in to its individual components;"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:558
-# 3c82ed8f2d1a4aeda14115294f5cae45
+# 4761801a7c294507b10abfe31e9903f6
 msgid "Availability information for the contact,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:560
-# 63902f706c4540108fbd5b0c68a24f48
+# 00ea55e85e5041e88242974faa7f6069
 msgid "Each calendar folder in a hierarchy."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:562
-# 420e15e53c7948e9998400c550880508
+# 79ccb434ec554381a9e6dec15a19a509
 msgid "so that individual folders can be subscribed separately from the contact's entry,"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:565
-# 1913150d73944388b8b8cec0b6700d8d
+# f5e5209bf2714f27a0ca93b7b3bc6d6b
 msgid "Where a user's calendars a user has access to have been selected (ie. the IMAP folders have been subscribed), continue to display the person selection entry not solely as a shortcut to enable display for all nested calendar folders, but also display complete information based on availability information."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:572
-# 1125160b66e149308b07908a7ee9982f
+# 82e8e400a35c4f5f8e7728392cf14019
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:575
-# fe88164685a846dab57c9dc0d21e3eb3
+# 039f99514bbe44c5a34a3ec307fa40e7
 msgid "Also called an RSVP -- Répondez S'il Vous Plaît."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:579
-# 87354e5afed144548697cbc1780dd98c
+# 195620d9b07e4e348f6263c1fc3f1e04
 msgid "This would include events that are classified as private or confidential, while admittedly it may have been the user interface retrieving a (fully detailed copy of) the data choosing to suppress certain details -- leading users to believe mistakenly, the details are not visible to them."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:587
-# ef6f7888fec54311865d5d8fcef8cfda
+# 72bb3cacf9be40eb8ae20ab0ea0a20bf
 msgid "Writing back to one authoritative copy of the event directly implies that all event's attendees are aware of eachother's participant status."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:593
-# 238bfa3fda314ac29c07b4ea38dc18cb
+# 250951ea5cbd4e8a95fea576e5cc6984
 msgid "Availability information or Free/Busy is a published state of availability, that is stripped of all details of events that are not the timeslots of said event."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:597
-# 2366280241b34b588142e996443b1e85
+# c4c5ab6bc346471aba2340e8167ef2bc
 msgid "Here too it may have been the user interface retrieving all details of all events but suppressing details, essentially faking an implementation of Free/Busy."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:603
-# a95ba40190bf410895b59d79dae0c5b7
+# d38a9e51fa384438b3ff46b2e503a179
 msgid "A certain set of settings can result in mandatory access control, by revoking certain rights on all IMAP folders, but the user would not be able to create any new folders."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:609
-# dd1868866d0f4152a342e6c0f4638153
+# d1f319fa6ba14304b8669d267d4c5780
 msgid "The right to control a folder's ACL is the (a)dmin right, which also implies the right to control one's own access. While the ``a`` right can be revoked on calendar folders, other rights control whether the user is allowed to create new folders -- which inherit the rights of the parent folder. Should the ``a`` right be revoked on a calendar folder, a user will create a new calendar folder outside of the existing (tree of) calendar folder(s), and/or delete and recreate, and/or relocate the calendar folder in question. See :ref:`admin_imap-access-rights-reference` for a full list of rights available in IMAP to-date."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:622
-# 27ebafaad7e049438a63a5f963c90726
+# e507c3a3efd2461e9c9b48c1a033596d
 msgid "Users may be better acquainted with the semantics of having access to eachother's calendars, and/or an organization's policies may be in the interest of transparency."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:628
-# a9d4634ca69942ed993b7c9f9835a841
+# aaaa61d6a1c542f29e394fa40417d604
 msgid "Since each user may have access to any or all of other user's calendars [8]_, in larger organizations this may lead a user to have access to tens of thousands of calendars. This presents a scalability problem in the user interface that is addressed with a :ref:`and-calendaring-quick-display` interface."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:636
-# 6e514710188740c4b93c08d9bf54c0d2
+# 62ec6b33bea74d52be3bd78d98b1f8d2
 msgid "Using Kolab Groupware, the only credentials used to view content are the individual user's credentials. As such, the user may have access to a number of calendars, but will never be able to determine whether or not those are **all** calendars. The user is therefore unable to determine whether the set of information pulled from the calendars the user does have access to is a complete set of information."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:646
-# 3332869d17f84f07ba7f008b63de54eb
+# 483ed34f7ba94588981ed47eca439f1d
 msgid "Note that both the button *\"New event\"* as well as clicking on an empty space in the calendar opens up this dialog. It is very common for users, however, to use the latter method, and poke directly at an open timeslot."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:653
-# e48b22cf93cc4fcd9e89f0f33940ab28
+# eea7c9f7f8ce4ffeae280f17c09e4759
 msgid "It is possible to not allow individual users to make use of the ``anyone`` access control subject identifier, but this does not address the underlying UI scalability issue -- under the eventuality clause, eventually someone will have access to too many folders."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:660
-# b69d4bc73e3448e4a6ade0d66dd967ed
+# 64f65bd5aa3f46c5abc608d9fcda8dc4
 msgid "This setting is :ref:`admin_roundcube-settings-plugin_libkolab_kolab_use_subscriptions`."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:664
-# da49c17890b348a5bcd57bc120c3aca5
+# ddc6edb11db946f6a804d7bc9045c847
 msgid "The dialog is specifically geared towards searching for contacts, as opposed to IMAP folders the user has access to, for the complete set of items retrievable includes the Free/Busy status of any contact -- both internally, as well as externally should the address book entry have the ``FBURL`` property set."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:670
-# 50a7894796f14ef19611b1e708b52071
+# 27808c004302477b8d62de7a5803efd2
 msgid "Searching for address book entries addresses both [8]_ as well as the need for users to schedule appointment with other parties."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:675
-# 22343ba17ba7452d8a44fff31f0df7a0
+# df827670593d430388e8a8c0deb6a59a
 msgid "The availability information may in fact be available external to the organization, and supplement a contact's information using the ``FBURL`` property in vCard/xCard."
 msgstr ""
 
 #: ../../source/articles/calendaring-in-large-environments-with-discretionary-access-control/index.rst:681
-# 008fc143bd3542819614c5535caf8054
+# c19cec2136e74ce8b6a6875816052c86
 msgid "Users in the same authorization realm -- when the groupware environment is homogeneous."
 msgstr ""
 
