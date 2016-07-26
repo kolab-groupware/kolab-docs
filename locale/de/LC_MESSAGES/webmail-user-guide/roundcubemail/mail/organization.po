@@ -2,7 +2,8 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
@@ -97,14 +98,15 @@ msgstr "**Papierkorb**"
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:120
 msgid ""
 "When you delete a message it is moved to this folder and not deleted "
-"immediately. Depending on the email server's settings, trashed messages will "
-"automatically be removed from this folder after a certain time. You can also "
-"empty the trash folder manually with the *Empty* command from the :ref:"
-"`Folder actions menu <mail-folders>`."
+"immediately. Depending on the email server's settings, trashed messages will"
+" automatically be removed from this folder after a certain time. You can "
+"also empty the trash folder manually with the *Empty* command from the "
+":ref:`Folder actions menu <mail-folders>`."
 msgstr ""
 "Wenn Sie eine Nachricht löschen, wird Sie in diesen Ordner verschoben und "
 "nicht sofort gelöscht. Sie können den Papierkorb auch manuell mit dem "
-"*Leeren*-Befehl aus dem :ref:`Ordner-Tätigkeiten-Menü <mail-folders>` leeren."
+"*Leeren*-Befehl aus dem :ref:`Ordner-Tätigkeiten-Menü <mail-folders>` "
+"leeren."
 
 # 0a7f5abc987b466b9301b20a3057e4c2
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:124
@@ -134,8 +136,8 @@ msgstr ""
 # f7d3d6c0f58049fb8e1ebc724cad6675
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:136
 msgid ""
-"If the target folder is a subfolder and not currently visible, just hold the "
-"mouse over the parent folder while dragging and it'll expand automatically "
+"If the target folder is a subfolder and not currently visible, just hold the"
+" mouse over the parent folder while dragging and it'll expand automatically "
 "after two seconds. Move the mouse (while dragging) over the folder list "
 "footer to let it scroll until the target folder moves into sight."
 msgstr ""
@@ -153,8 +155,8 @@ msgstr "Kopieren statt Verschieben"
 msgid ""
 "There's also the possibility to copy a message into another folder instead "
 "of moving it there. Holding down the Shift key on the keyboard while "
-"dropping one or multiple messages on the destination folder will open a menu "
-"where you can choose to either *Move* or *Copy* them."
+"dropping one or multiple messages on the destination folder will open a menu"
+" where you can choose to either *Move* or *Copy* them."
 msgstr ""
 "Es gibt auch die Möglichkeit, eine Nachricht in einen anderen Ordner zu "
 "kopieren statt sie dorthin zu verschieben. Wenn Sie die Umschalttaste der "
@@ -175,8 +177,8 @@ msgid ""
 "that menu and the message will be moved there. The message view screen will "
 "then load the next message in the list of the current folder."
 msgstr ""
-"Wenn Sie eine Nachricht Nachrichten-Vollansichts-Bildschirm lesen, sehen Sie "
-"ein Dropdownmenü namens *Verschieben nach...* in der Werkzeugleiste oben. "
+"Wenn Sie eine Nachricht Nachrichten-Vollansichts-Bildschirm lesen, sehen Sie"
+" ein Dropdownmenü namens *Verschieben nach...* in der Werkzeugleiste oben. "
 
 # 42c8e9df229040d2bb9c9c9c2e7819ae
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:176
@@ -189,17 +191,17 @@ msgid ""
 "The selected message(s) can be deleted from the current folder by clicking "
 "the *Delete* icon in the toolbar or by hitting the <Del> (or Backspace on "
 "Mac) key on your keybaord. This will by default move the message to the "
-"Trash folder and not delete it right away unless you do this for messages in "
-"the Trash folder. In order to immediately delete the message in first place, "
-"hold down the Shift key on your keyboard while clicking the *Delete* button "
-"or when pressing <Del>."
+"Trash folder and not delete it right away unless you do this for messages in"
+" the Trash folder. In order to immediately delete the message in first "
+"place, hold down the Shift key on your keyboard while clicking the *Delete* "
+"button or when pressing <Del>."
 msgstr ""
-"Die ausgewählten Nachrichten können aus dem aktuellen Ordner durch Anklicken "
-"des *Löschen*-Icons in der Werkzeugleiste oder durch Drücken der <Entf>-"
-"Taste (bzw. der Rücksetztaste beim Mac) auf Ihrer Tastatur gelöscht werden. "
-"Um die Nachricht sofort zu löschen, halten Sie die Umschalttaste auf Ihrer "
-"Tastatur beim Anklicken der *Löschen*-Schaltfläche bzw. beim Drücken von "
-"<Entf> gedrückt."
+"Die ausgewählten Nachrichten können aus dem aktuellen Ordner durch Anklicken"
+" des *Löschen*-Icons in der Werkzeugleiste oder durch Drücken der "
+"<Entf>-Taste (bzw. der Rücksetztaste beim Mac) auf Ihrer Tastatur gelöscht "
+"werden. Um die Nachricht sofort zu löschen, halten Sie die Umschalttaste auf"
+" Ihrer Tastatur beim Anklicken der *Löschen*-Schaltfläche bzw. beim Drücken "
+"von <Entf> gedrückt."
 
 # 31224acd6324489d808930661bc63ffc
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:184
@@ -215,22 +217,22 @@ msgstr ""
 # b0d0dd040dc641f1a9a2626092807d23
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:88
 msgid "Folders"
-msgstr ""
+msgstr "Ordner"
 
 # 0d945b2bd2694e5cb0ac980ed4050bbb
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:127
 msgid "Move"
-msgstr ""
+msgstr "Verschieben"
 
 # 0d945b2bd2694e5cb0ac980ed4050bbb
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:127
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 # 0d945b2bd2694e5cb0ac980ed4050bbb
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:127
 msgid "Drag & Drop"
-msgstr ""
+msgstr "Drag & Drop"
 
 # 5a8cf9a7e06b4c77982c4b6f2426b437
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:173
