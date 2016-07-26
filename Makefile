@@ -93,7 +93,7 @@ clean:
 	@rm -rf source/webmail-user-guide/roundcubemail-plugins-kolab/
 	@rm -rf source/*/_fancyfigures/
 
-html: submodules helpdocs
+html: submodules helpdocs gettext
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	find locale/ -type f -name "*.po" | while read file; do \
 		sed -i -e '/#, fuzzy/d' "$${file}" ; \
@@ -194,7 +194,7 @@ info: clean
 	make -C $(BUILDDIR)/texinfo info
 	@echo "makeinfo finished; the Info files are in $(BUILDDIR)/texinfo."
 
-gettext: clean helpdocs
+gettext: helpdocs
 	rm -rf $(SOURCEDIR)/webmail-user-guide/roundcubemail-core/
 	rm -rf $(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/
 	rm -rf $(SOURCEDIR)/webmail-user-guide/roundcubemail-plugins-kolab/
