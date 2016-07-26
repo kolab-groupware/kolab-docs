@@ -61,10 +61,10 @@ helpdocs: submodules
 		rm -rf "$(SOURCEDIR)/webmail-user-guide/roundcubemail/" ; \
 	fi
 	mkdir -p "$(SOURCEDIR)/webmail-user-guide/roundcubemail/" ; \
-	for dir in _static en_US/_static; do \
-		cp -a "$(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/$${dir}/*" \
-			"$(SOURCEDIR)/_static/." ; \
-	done ; \
+	cp -av "$(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/_static/" \
+			"$(SOURCEDIR)/webmail-user-guide/."
+	cp -av "$(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/en_US/_static/" \
+			"$(SOURCEDIR)/webmail-user-guide/roundcubemail/."
 	cd "$(SOURCEDIR)/webmail-user-guide/roundcubemail-helpdocs/en_US/" && \
 		for file in $$(find . -type f); do \
 			dir=$$(dirname $${file}) ; \
