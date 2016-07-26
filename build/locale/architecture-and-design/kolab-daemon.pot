@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,266 +17,266 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:92
-# fbf703bc71654bdab7712ea094ae211b
+# c7b7f89f40424d689acf6f244fa4be9d
 msgid "The Kolab Daemon"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:94
-# 6544d9209a5749f282dbd82ed6e85a11
+# ee638eb6bdf84b88aa26df7e576c5785
 msgid "The Kolab daemon **kolabd** (running as the *kolabd* service) is the Kolab Groupware component that synchronizes mutations made in LDAP against IMAP."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:97
-# 1f5a4be6e0f543b18f41c8835cd8f648
+# 2b72b8b015ec4782becef40e28b2acac
 msgid "The following mutations are taken in to account:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:99
-# c2a4c933293040ae9f4eaecbcca43f1c
+# f59bb8272c5543fabac5b554ff7e8143
 msgid ":ref:`and_kolab-daemon_kolab-user-creation`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:100
-# f65bdf911cb74266b9c3fddf36be5189
+# e25983af3ed34b978aaa10d5a5a4c909
 msgid ":ref:`and_kolab-daemon_kolab-user-modification`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:101
-# 59fa741c8bc64dd2aff79b6b2669b33a
+# 55d5bbb982964e8298f552de3e70b980
 msgid ":ref:`and_kolab-daemon_kolab-user-deletion`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:102
-# ff95490aa6484775835b557033444e75
+# b0b2b300007f45af9d08975e6c4b758e
 msgid ":ref:`and_kolab-daemon_kolab-group-deletion`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:103
-# 9edc53fbdcb14ef0a00c10bca1e50527
+# 9554d13e73754a159306396d07e0ba71
 msgid ":ref:`and_kolab-daemon_resource-creation`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:104
-# c790dc66bda54cc8af612cb1689bc904
+# 6c4816175abd40419109d299b8630bef
 msgid ":ref:`and_kolab-daemon_resource-modification`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:105
-# 1a67e65273a541d6b3913c9e2dfb99dd
+# 0f5bce600ac94d9dbb8be6dec9cfd694
 msgid ":ref:`and_kolab-daemon_resource-deletion`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:106
-# 6cc80fb47d6e43f18800df3729eddf45
+# 5ef691a12b3349faa6ef378927dec5c7
 msgid ":ref:`and_kolab-daemon_shared-folder-creation`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:107
-# bdcbafae12514937b170e0d22d711771
+# f17a3be85f31426d969b9bdc4d28ac77
 msgid ":ref:`and_kolab-daemon_shared-folder-modification`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:108
-# a76311be4ff34718b62a947b8bef70fd
+# 886cf5dafbf54153b70df191b86615ac
 msgid ":ref:`and_kolab-daemon_shared-folder-deletion`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:113
-# 8452194c9f1340e282eb7bd44236408b
+# fc534449cb384fafa2dd15c53f91faa9
 msgid "Kolab User Creation"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:115
-# 93201bf4a1f14c77993f13acdd9f2d95
+# f6537b517d844247bc6dbe614384b37e
 msgid "A *Kolab user* is created when a new LDAP object is created under the base dn configured for a parent domain, which is either;"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:118
-# 20f0bac74eea4a76b36c47ba03e546b0
+# a4e30abf94844f1fbebea0ebd63b0a57
 msgid "the configured ``kolab_user_base_dn`` in the domain-specific section of :manpage:`kolab.conf(5)`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:121
-# dbb70d8b097344e8ad11c52ff61cb963
+# 0dacc9477d9a494fbefb7da31320bdab
 msgid "the configured ``user_base_dn`` in the domain-specific section of :manpage:`kolab.conf(5)`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:124
-# 5dc3a04909f8428faa5e9a2d95b10f7b
+# 743b198b1d2f4daeaec351902d9fa746
 msgid "the configured ``base_dn`` in the domain-specific section of :manpage:`kolab.conf(5)`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:127
-# 5bb6614d23dc4464b7cdf760a7ea8de6
+# 206b31910e914af8b27a087f8d0b24b3
 msgid "the detected root dn for a domain."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:129
-# fe33334822244b11a2455235ee5c1ea4
+# d46a728feacf4ff0ad2ae637ebdefaea
 msgid "This is usually ``ou=People,$root_dn``, where *$root_dn* of course is the root dn for the directory tree that corresponds with the parent domain."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:132
-# 30b3e7aa5e5e47ee99ff4fdace4d5e09
+# 2f9f3f99f4704f18841543451b06495f
 msgid "*Kolab user* entries match the filter setting for Kolab users, either;"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:134
-# 0b47defef7b24e0793861c7edab4ce68
+# 1b1c853a7a0c41d191a7b2b0b78c8c67
 msgid "the configured ``kolab_user_filter`` setting in the domain-specific section of :manpage:`kolab.conf(5)`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:137
-# f7cae72b6c66489fa285a38011c94337
+# 3d45fbe60dcf44808ef3935384f7bc51
 msgid "the configured ``kolab_user_filter`` setting in the generic ``[ldap]`` section of :manpage:`kolab.conf(5)`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:140
-# fff23cb40b084322aec04b2ecc4440cd
+# 0532b5329c7147cea917eeee7d998536
 msgid "the configured ``user_filter`` setting in the domain-specific section of :manpage:`kolab.conf(5)`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:143
-# 1d8fc710e2e34d4598c5071e8ea957ff
+# b01c2388208b425a85b14f207e2c68a6
 msgid "the configured ``user_filter`` setting in the generic ``[ldap]`` section of :manpage:`kolab.conf(5)`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:146
-# c0b183627bfc4278a764e5831b1e9678
+# 4bbdfacf937b49e98d9238893ae4b07f
 msgid "usually ``(objectclass=kolabinetorgperson)``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:148
-# 863ece6496194e559c38641761da939b
+# 827f3acb940e45849df6fb99bff736b9
 msgid "For these new objects, the following actions need to take place;"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:150
-# 6254e9b8f759403c8cf8c27a602f6560
+# df9d89b690e64104a61790b8deb8cb86
 msgid "If configured, the recipient policy needs to be applied to the new entry,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:154
-# 9e8a2ccac703420c8a0a251b58e2dabf
+# c21b86de3a4d484a89ec7b04a30bcd18
 msgid "If the user object was created through the Web Administration Panel, and a recipient policy was configured, then the API the Web Administration Panel addresses has already applied the recipient policy."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:158
-# 3e60548fc2d54a7cad3cd7b118120ba2
+# 364e001caa1a48808c9f55bc2f41e798
 msgid "However, if the Web Administration Panel API was misconfigured, or the administrator creating the new user entry was allowed to override the default generated values, then the application of the recipient policy by the Kolab daemon will:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:163
-# 45fcd3a68ad1425d9234ec2abf7f6df6
+# c683264119ef414592e6e8ee872e7381
 msgid "Change the primary email address attribute value,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:165
-# 2c9cfd6aa3114bca82d9bf33eb966429
+# 4f0306a40a4a4163a246a52cac409542
 msgid "Add those secondary email address attribute values that the recipient policy mandates for compliance."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:168
-# 7da8956189054a7982c7d7881578595d
+# 17d00c75457348ec99c639dfbd6aa6d8
 msgid "If the recipient policy mandates any changes need to be made to the user object, such as the value for the ``mail`` and/or ``alias`` attributes, a callback to LDAP needs to be issued, creating another :ref:`and_kolab-daemon_kolab-user-modification` notification to the daemon,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:173
-# a14704084c5e4d29a844c05ee8790fbe
+# 0ff2cbec1d6d4b169fd2d244d6f7989d
 msgid "With the resulting set of attributes (modified if the recipient policy has had to, unmodified if not), a mailbox needs to be created for the new user,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:178
-# d1d6f873d87d4a9797a356d0e358a45e
+# 9071cadca01c4c948b0cfd638257bcf2
 msgid "For Cyrus IMAP Murder deployments, the Kolab daemon is normally configured to initially communicate with a Cyrus IMAP frontend server."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:181
-# fcdef6c6382c4031b67b0a2e96fe27d1
+# 271a65f5c88f4d659eb7bef8631b576b
 msgid "Unless the target mailbox server had already been supplied by LDAP, the Kolab daemon would create the mailbox using the connection to a Cyrus IMAP frontend, and await the mailbox entry to re-occur on said frontend."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:185
-# 3eae9422d019433a9f9ada8b2d6e2c0e
+# 5a58b5813eef4ee19af7bcef4eb564cb
 msgid "At this point in time, the Cyrus IMAP Murder mailbox list will have set the ``/shared/vendor/cmu/cyrus-imapd/server`` metadata value to the server address of the backend IMAP server the mailbox was created on."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:189
-# 22648e1b8ece4610ac909482a931a838
+# 944ba84874b047bf9dd03b673b0344fa
 msgid "The Kolab daemon will then set ``mailserver_attribute`` to this address."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:191
-# 68f02b4b80a24fd59d3002b96d790c13
+# eb4e251543664e168dbeab55daefc9a8
 msgid "Any configured additional default folders need to be created,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:195
-# 010d9a62124e4b21923ad3a7ea69f84d
+# e1ddd2816d2b4824a774a4975e583ccc
 msgid "Any configured additional quota(root), annotations and ACLs for each of the default folders will need to be reflected,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:198
-# 7d7bc0df009842bc8b56968042e85ef5
+# 4bae45ed45334f21907632e149fcb430
 msgid "The user needs to be subscribed to the initial set of folders created for, the account,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:201
-# 5480fcca8cef48c19ac1ee51a135ae92
+# 0a10067670894258b6a3eee938887bad
 msgid "If not supplied by LDAP already, any configured default quota needs to be applied to the IMAP mailbox as well as communicated back to the new user object, in case of which a callback to LDAP needs to be issued, which would cause another :ref:`and_kolab-daemon_kolab-user-modification` notification to the daemon to be issued."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:210
-# 305e17dbe0454842922a79d54146f8cd
+# 2c404df21f8c46e7865b005000649240
 msgid "Kolab User Modification"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:212
 #: ../../source/architecture-and-design/kolab-daemon.rst:219
 #: ../../source/architecture-and-design/kolab-daemon.rst:226
-# d26ce411502f49b7a6912a0edea102a1
-# e65d176962fb4d66b4bacdb8ef670464
-# 3ccc599b965d4c88a7c56fca1399f898
+# 40a9184403c843f9b26cea39f290773c
+# 1545e9d3977b4778847a4b97d80420c3
+# 65f1412f91a045959211264d335071bc
 msgid "acl cleanup"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:217
-# 4c13b55a1670420d820c9f6edf864385
+# 230aa53dce8d46669517577e22bc32c3
 msgid "Kolab User Deletion"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:224
-# 3358aa0add0c4e6a92bee58ed2c2de17
+# b8685cd5ef4e400ba846b1e42f666a88
 msgid "Group Deletion"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:231
-# f0a57958fbaf4b4daa21db0ea3531e73
+# c8159d3b68af4da794a5ebdbb4783c82
 msgid "Resource Creation"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:236
-# 47c19bd9103e4227810b4fcc79abba2d
+# 99b4158405384d9bb9d486838288b40e
 msgid "Resource Modification"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:241
-# e00ca8c32e194e8bb104ba51b9d3aaab
+# 9b6a334624da400890c654e318c89f4b
 msgid "Resource Deletion"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:246
-# 18c0af67689046aeb14a5c7f62056eae
+# b75fde92112c4a55bca3859563ca9787
 msgid "Shared Folder Creation"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:251
-# 34fb73eff5064a24ab173f11d99d39f7
+# bef76a0e5cb3438fa4716249e2a0117e
 msgid "Shared Folder Modification"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-daemon.rst:256
-# 26eae2e30aec4735846b89f1c03a0d06
+# a962b1517dfc45a6ac7659cdb0b4ceaa
 msgid "Shared Folder Deletion"
 msgstr ""
 

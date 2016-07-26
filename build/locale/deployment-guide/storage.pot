@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,782 +17,782 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/deployment-guide/storage.rst:88
-# 81b9e2cac47a49ceae547641d6ab143e
+# 43b30a66195d49f6b2625c7c17c0c635
 msgid "2"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:94
-# 9696ac8ab5b14552b7ac5938441efbd3
+# d996e750207d45b090bc741d3d9dc4f4
 msgid "Storage Considerations for Kolab"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:96
-# 55db072b0356442c991937c76c86ad0e
+# 283de72737294b43999933c7df4c948d
 msgid "Storage considerations are a complex matter as the various options provide or restrict one's ability to adjust the necessary parameters as the need arises. It is foremost a challenge to clearly articulate and prioritize the criteria for storage, and map the theory on to a practical implementation design."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:102
-# 73051049f8394bb5ab9ccd8e4b0e38f0
+# 94d9a77c31174f58b158f6c363c0f36a
 msgid "This article intends to provide information and outline details, and sometimes opinions and recommendations, but it is not a guide to providing you with the storage solution that you want or require."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:106
-# 159ee7c28e5742abb035b68fa444db83
+# 2bd90024be014b3d91612af00b4b6607
 msgid "Generally, the most important considerations for storage include;"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:108
-# f76c5c939f81413bb46ce842e989e3b8
+# 7047e2b5e07b4fd885ca2009af2457fe
 msgid ":ref:`deployment-storage-redundancy`,"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:110
-# 658ce43c7b9744e5b1723e6aff8b80d4
+# e1d35638934d4c15ac8a7eb1493edf22
 msgid "because nothing is as humiliating as losing all your data."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:112
-# caaf230609f843269119817736030362
+# 0c2defc3bf9d4958ad35bcd696a3b85a
 msgid ":ref:`deployment-storage-availability`,"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:114
-# 67060ddfc6414c8a9808137e9aad6cfe
+# 9d3ec093940f407eae364008858129bf
 msgid "because nothing is more stressful than none of your data being available."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:117
-# 26ccae7f0adb4ce7888e3fad21b7639d
+# 992535bb75b5425db48157d90c77f3e3
 msgid ":ref:`deployment-storage-performance`,"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:119
-# 69f5a267fa664db3a280845eb2e99935
+# 2abddd26d3d94f0680d599e1b149eb0b
 msgid "because nothing is as annoying as waiting, followed by some more waiting."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:122
-# 6651fd4855d4430a95e714f3b34c502f
+# dfa06c637b254973b2dfc399d19febad
 msgid ":ref:`deployment-storage-scalability`,"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:124
-# 1d7c337b10c04dd79542b4cc523e329b
+# b232ea62a2d84bcd91aabf46920fb2af
 msgid "because ``-ENOSPC`` is good only when it applies to your stomach."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:126
-# b042871935384d0f9807d0edbcc52970
+# 8b36ba9326a0444fb07939326837cf92
 msgid ":ref:`deployment-storage-capacity`,"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:128
-# a4422775513d43adb30a79afa41fc79e
+# d9351b72b45d409fa15bcdb25ba526c1
 msgid "because your data must be available, backed up and archived."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:130
-# 05ec0a4a726c4301b3b6a5dbf3c6322a
+# 580cc7eadaa84ae1b8a9f757dab72eb8
 msgid ":ref:`deployment-storage-cost`,"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:132
-# 3903104ec6d0489ba82bd59e75ca5403
+# 5f92f0aa6107403389d7989544398cec
 msgid "because you can't buy a beer or feed a family with an empty wallet."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:134
-# 465fb08280b6465cbbcf5d717ff439e0
+# e226183b208a49f599cabfc5132085b3
 msgid "Storage is not a part of Kolab Groupware, in that Kolab does not ship a particular storage solution as part of the product, and it has no particular requirements for storage either."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:138
-# 521f67155966445fbe43fece44533637
+# 375623529cfe4da89b34b27e64173bf7
 msgid "As such, your SAN, NAS, local disk, local array of disks or network share or even the flash drive of a Raspberry Pi could be used, although the following considerations are important:"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:142
-# 41cadc1edbf449838e8d997e4956bf98
+# 5513e83b17cd498193dd02c4dbbb6007
 msgid "The Kolab Groupware IMAP spool is I/O intensive (large volumes of data are read and get written)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:145
-# dfa14dd134c64198b4d966e30592f405
+# 6751b1ba50dd4df4998bb50dfa5e29bd
 msgid "The IMAP spool consists of many small files."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:147
-# e1fd2144e06241c9bfaacfbf42a270d9
+# 7919b61c74654d8da71e9180232112f2
 msgid "As such, we recommend you take into account;"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:149
-# f66a8d08ae634edf93ac84f34fafcefb
+# 1caf031d9e2d4874ad563f0d75a52fa8
 msgid "The available bandwidth between the IMAP server and the storage provider, if at all on the network,"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:152
-# 75baf778a4f74030b3e0340506947b21
+# e27692edafce4f789f8f28aa2d23ba26
 msgid "The (network) protocol overhead, if any, should file-level read and/or write locking be required or implied."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:155
-# 3e2c9160e769456eb3a98928606025db
+# 4f0e3381497a47feb898e4ea42d14e22
 msgid "Atomic file operations (TODO: Explain this)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:157
-# 5c4b46f194524cce958458eb95c8e5d2
+# 9cb12a952e2b49ef9e0df3dead82bdd0
 msgid "Parallel access (such as shared mailboxes or multi-client attendance) -- TODO: Explain this, too."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:161
-# 4b06b308b57c4917b669ddc9a2a7bd13
+# d42bc2d96aea41799708832dd75dec79
 msgid "General Notes on Storage"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:163
-# 4bf5de7b70c244fcaf45b9cf702b7d22
+# d2a7259146694b83816d4b92cdae8f9c
 msgid "The aforementioned considerations :ref:`deployment-storage-redundancy`, :ref:`deployment-storage-availability`, :ref:`deployment-storage-performance`, :ref:`deployment-storage-scalability`, :ref:`deployment-storage-capacity` and :ref:`deployment-storage-cost` are not all of them equally important -- not to all organizations, and not to all requirements when the priorities are set out against the implied cost of the ideal solution."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:171
-# a116fd0d91b745dc9910bd1f43f6bf2f
+# 8900344b5d004b3290e967737970bcb9
 msgid "They are also not mutually exclusive in that, for example, redundancy may partly address some of the availability concerns -- depending on the exact nature of the final deployment of course, and backup/recovery capabilities in turn may parly address redundancy requirements."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:176
-# 5468ba8adfca48ccb6eda30c81768ab1
+# 886954e7739e4e63970d2ab4f4d236b3
 msgid "What is deemed acceptable is another culprit -- often operational cost or familiarity of staff with a particular storage solution may get in the way of an otherwise appropriate storage solution."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:180
-# 52aa2fc88c8e492eabbf9dc0446a7692
+# 89d8cf1a1d8e432ca9297ec12e4ed884
 msgid "We believe that provided a sufficient amount of accurate information, however, you are able to make an informed choice, and that an informed choice is always better than an ill-informed one."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:187
-# 41427174830a4d1b857c26a9bf07af24
+# 735c51f466ea48049bb96e06cd583a43
 msgid "Redundancy"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:189
-# 1a0e2f0d900d4dbf976894cbd07c527e
+# 718494cb62e44f6bb4820a197cabbcd3
 msgid "Storage redundancy is achieved through replication of data. It is important to understand that, as a matter of design principle, redundancy does not in and by itself provide increased availability."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:193
-# 759408f453e74f9980c90c34bb5b092b
+# 55cd352fdf04485cb70ecc8017b45634
 msgid "How redundancy could increase availability depends on the exact implementation, and the various options for practical implementation each have their own set of implications for cases of failure and the need to, under certain circumstances, failover and/or recover."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:198
-# 139406a4a35b47d7bb2a7070643eea6e
+# da686d5e936f469789219f62045a5343
 msgid "How redundancy is achieved in an \"acceptable\" manner is another subject open to interpretation; it is sometimes deemed acceptable to create backups daily, and therefore potentially accept the loss of up to one day's worth of information from live spools -- which may or may not be recoverable through different means. More commonly however is to not settle for less than real-time replication of data."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:205
-# edf5e038d85a4addb8335e9c77ca4f57
+# fd3a793a43734f988144c2271a212e1f
 msgid "While storage ultimately amounts to disks, it is important to understand that a number of (virtual) devices, channels, links and interfaces exist between an application operating data on disk [#]_, and the physical sectors and blocks of storage on that disk. In a way, this number of layers can be compared with the `OSI model for networking`_ -- but it is not the same at all."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:212
-# d4d95cd561da4045ab43bc6f76e74788
+# c1c1c25d82994dac88a021f1d63bb188
 msgid "This section addresses the most commonly used levels at which replication can be applied."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:216
-# a7b17335df1c4de0912cb4d372999c84
+# 1a04d5c778fe47f99f5c17cf834c56ac
 msgid "Storage Volume Level Replication"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:218
-# 2b695883afef4d99aeecc221484c6ef5
+# 30a244c495bd40ab88b8131c7bbb4e3a
 msgid "When using the term :term:`storage volume level replication` we mean to indicate the replication of :term:`disk volumes` as a whole. A simplistic replication scenario of a data disk between two nodes could look as follows:"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:260
-# 50038e998f1c4b15baae64e2c3a8a8e2
+# e4429237218f4bb9a3f4b646d2b04738
 msgid "For a fully detailed picture of the internal structures, please see the `DRBD`_ website, the canonical experts on this level of replication."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:263
-# 6d4ea37f61a94a40af328a125e1b2546
+# 805a4862b5274476b952152c88ffb285
 msgid "At the time of this writing, the DRBD website has an excellent diagram on its front page, explaining why one master is active, and slaves are not:"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:270
-# dd3c76aa8a164d00bb4991e6f740d3c3
+# 6032498bcc92439594fd61b795370629
 msgid "As illustrated, normally, storage-level replication occurs in such fashion, that it can be compared with a distributed version of a RAID-1 array. This incurs limitations that need to be evaluated carefully."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:274
-# 7f47b78b94434af391f8b294f94d97ba
+# c7a8f29f89ef484aa8c8aef1a8e7bee1
 msgid "In a hardware RAID-1 array, storage is physically constrained to a single node, and pairs of replicated disks are treated as one. In a software RAID-1 array, it is the operating system's software RAID driver that can (must) address the individual disks, but makes the array appear as a single disk to all higher-level software. Here too, the disks are physically constrained to one physical node."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:281
-# 4298d6b05bea4840b1273082ab74e403
+# ea32e73c09cb408b8bcac1cd5105a8cc
 msgid "In both cases, a *single point of control* exists with full and exclusive access to the physical disk device(s), namely the interface for *all higher-level software* to interact with the storage."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:285
-# 629cf2e83fac4756bc74c457c4b3b0d4
+# 38cc4b7003e443c1a5fe8e077adae36e
 msgid "This is the underlying cause of the storage-level replication conundrum."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:287
-# 0b750a1327b94ae4a5da1e93af15687f
+# b8be87ecf9784bbe9da374934578c130
 msgid "To illustrate the conundrum, we use a software RAID-1 array. The individual disk volumes that make up the RAID-1 array are not hidden from the rest of the operating system, but more importantly, direct access to the underlying device is not prohibited. With an example pair ``sda2`` and ``sdb2``, nothing prevents you from executing ``mkfs.ext4`` on ``/dev/sdb2`` thereby corrupting the array -- other than perhaps not having the necessary administrative privileges."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:295
-# b7225607e285477cb061a7a6fbf0f85c
+# 779c8f1852b14f69873e7398bca37927
 msgid "To further illustrate, position one disk in the RAID-1 array on the other side of a network (such as is a `DRBD`_ topology, as illustrated). Since now two nodes participate in nurturing the mirrored volume, two points of control exist -- each node controls the access to its local disk device(s)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:301
-# 8aea13537d5f49f993fe82d386851e6f
+# c875705ab0c54887ad8aa399cb377ae0
 msgid "Participating nodes are **required** to successfully coordinate their I/O with one another, which on the level of entire storage volumes is a very impractical effort with high latency and enormous overhead, should more than one node be allowed, to access the replicated device [#]_."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:306
-# 95a8075eb09e49cda6faaba0a90d13bc
+# 694064b68ebc45e4a6181fcc86740303
 msgid "It is therefore understood that, using storage level replication;"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:308
-# 3ffd0272fe3c4818b158f7e5c88ad8c2
+# f505ac04c88c4ed181562a92383ff7a0
 msgid "Only one side of the mirrored volume can be active (master), and the other side must remain passive (slave),"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:311
-# accd8408b2bb440697b6207bdb612450
+# feb28f4f4aed45e0bebafe2e08f2cd96
 msgid "The active and passive nodes therefore have a cluster solution implemented to manage application's failover and management of the change in replication topology (a slave becomes the I/O master, the former master becomes the replication slave, and other slaves, if any, learn about the new master to replicate from),"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:317
-# bfaeeec3e790442aba6a85643b6cf4e2
+# 726494ebe5824a4190c50400dabf1485
 msgid "Failover implementations include the STONITH principle, ensuring no two nodes in parallel perform I/O on the same volume at any given time."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:323
-# bfdafe620d7c49209a65ac2582275b11
+# 7cc41340a5fd48d1993f252b12b3c8b5
 msgid "Storage-level replication does not protect against filesystem or payload corruption -- the replication happily mirrors the \"faulty\" bits as it is completely agnostic to the bits' relevance."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:329
-# 926d455e86834bc8bd92a1dae32fa791
+# 432b1cc552734cbb89b61930f06717ab
 msgid "For the reasons outlined in this section, storage volume level replication has only a limited number of Kolab Groupware deployment scenarios for which it would be recommended -- such as *Disaster Recovery Failover*."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:337
-# 635d5640a6764530946464b807726b1f
+# 5e0e9c8660eb452fb5568a4b8d560f8e
 msgid "Integrated Storage Protocol Level Replication"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:339
-# c53c34c474854ee391b055ae215d488a
+# 7dd4b5c798964faeba093bd1767907b0
 msgid "Integrated storage protocol level replication is a different approach to making storage volumes redundant, applying the replication on a different level."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:343
-# 915604edcdeb4c12adcf2a0a93678263
+# 00b4860ae7c84f18854641d437343955
 msgid "Integrated storage protocol level replication isn't necessarily limited to replication for the purposes of redundancy only, as it may already include parallel access controls, distribution across multiple storage nodes (each providing a part of the total storage volume available), enabling the use of cheap commodity hardware to provide the individual parts (called \"bricks\") that make up the larger volume."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:350
-# 8e5decbb4efd4083ad5eef667a057c82
+# 5b29153994714a49bb9397b4c3864ce2
 msgid "Additional features may include the use of a geographically oriented set of parameters for the calculation and assignment of replicated chunks of data (ie. \"brick replication topology\")."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:387
-# 0ce2b5fc649a477e983c5d626fb08f56
+# 4be7d4861029471b84f9a51c79a2a861
 msgid "Current implementations of this type of technology include `GlusterFS`_ and `Ceph`_. Put way too simplistically, both technologies apply very smart ways of storing individual objects, sometimes with additional facilities for certain object types. How they work exactly is far beyond the scope of this document."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:393
-# 0d511314050d4db48fd1269867a932ed
+# edb57142caec45eea24558c8d905d5d0
 msgid "Both technologies however are considered more efficient for fewer larger objects, than they are for more smaller objects. Both storage solutions also tend to be more efficient at addressing individual objects directly, rather than hierarchies of objects (for listing)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:398
-# 6c23b634d8d34b7f90a58d0b5db45277
+# fb14bcf4f80c4effba39e8d0e4bb5065
 msgid "This is meant to indicate that while both solutions scale up to millions of objects, they facilitate a particular **I/O pattern** better than the I/O pattern typically associated with a large volume of messages in IMAP spools. More frequent and very short-lived I/O against individual objects in a filesystem mounted directly causes a significant amount of overhead in negotiating the access to the objects across the storage cluster."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:406
-# ab88cb3515b74e65bd153898dcdb7ce9
+# 8fbced915dc546b1ad7502d9ec0d516a
 msgid "Both technologies are perfectly suitable for large clusters with relatively small filesystems (see `Filesystems: Smaller is Better`_) if they are mounted directly from the storage clients. They are particularly feasible if not too many parallel write operations to individual objects (files) are likely to occur (think, for example, of web application servers and (asset-)caching proxies)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:413
-# 03ac2d336ce441309447abf134d4e82b
+# 3da42b2e92db4ec4b0351e28844c1e5c
 msgid "Alternatively, fewer larger objects could be stored -- such as disk images for a virtualization environment. The I/O patterns internal to the virtual machine would remain the same, but the I/O pattern of the storage client (the hypervisor) is the equivalent of a single lock-and-open when the virtual machine starts."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:419
-# ba78f601d03b4fdc8a6ab27e3c69078e
+# 92ce865b45ce45228e379aac0eaef040
 msgid "It is therefore understood that, especially in deployments of a larger scale, one should not mount a GlusterFS or CephFS filesystem directly from within an IMAP server, as an individual IMAP mail spool consists of many very small objects each individually addressed frequently, and in short-lived I/O operations, and consider the use of these distributed filesystems for a different level of object storage, such as disk images for a virtualization environment:"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:482
-# 5e448fa9662b4567ac3556f7ca0a2484
+# 4d7326e2298d42cfbece8a814f3e9096
 msgid "In this illustration, *Hypervisor #1* and *Hypervisor #2* are storage clients, and replicated bricks hold the disk images of each guest."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:485
-# fd1a578a4f8148458fafef705991eb55
+# 212961b0fe1a4c04b53eb4aad52688ce
 msgid "Each hypervisor can, in parallel, perform I/O against each individual disk image, allowing (for example) both *Hypervisor #1* and *Hypervisor #2* to run guests with disk images for which *Brick #3* has been selected as the authoritative copy."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:493
-# a00528175b394bd08e3d58aa31ec859e
+# 2ee7d3795d034d498a1f37cf59b857c0
 msgid "Application Level Replication"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:495
-# 6e83963a586541d2b4238cbcc6c01beb
+# e825e01972944414b5753c17752d1d3d
 msgid "Yet another means to provide redundancy of data is to use application- level replication where available."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:498
-# 47a5d999fac749818e6fbb1b48f44b49
+# f364d1584d1447fbaeaa67765c636b6e
 msgid "Famous examples include database server replication, where one or more MySQL masters are used for write operations, and one or more MySQL slaves are used for read operations, and LDAP replication."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:502
-# 2444686fc52a4edba0e8fdff9be4bab3
+# 1f1c4ef8a93843e9b1a94be12ad532fb
 msgid "Cyrus IMAP can also replicate its mail spools to other systems, such that multiple backends hold the payload served to your users."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:506
-# 7d53190636044dcba809641fbeafcec0
+# 7e9f90ae6f4a40d297faeddf38254b8e
 msgid "Shared Storage (Generic)"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:508
-# d6b76f254aff490f94ac8d51ec87e4e0
+# ccc4c13d9783435fab2c5d1edf0875a6
 msgid "Contrary to popular belief, all shared storage -- NFS, iSCSI and FC alike -- are **not** storage devices. They are *network protocols* for which the application just so happens to be storage -- with perhaps the exception to the rule being Fiber-Channel not strictly cohering to the `OSI model for networking`_, although its own 5-layer model equates."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:514
-# 17591bc89a324748bf83fac5fe676913
+# 5c40361d4d5b4165841c0f474fec018c
 msgid "iSCSI and Fiber-Channel LUNs however are *mapped* to storage devices by your favorite operating system's drivers for each technology, or possibly by a hardware device (an :term:`HBA`, or in iSCSI, an *initiator*)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:519
-# b22bf7bfe0f04271b9d7d49090c3a5de
+# 79097e80b9224ff4b276c9464fbf60cf
 msgid "As such, use of these network protocols for which the purpose just so happens to be storage does **not** provide redundancy."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:522
-# e5f4f87ea5ff4604818fc7a8c6cc7a6e
+# 4b53c197f158465bb3b774ff9288f3bc
 msgid "It is imperitive this is understood and equally well applied in planning for storage infrastructure, or that your storage appliance vendor or consultancy partner is trusted in their judgement."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:527
-# 590356ca9c9f48478b4bafb0a6135d3e
+# 543a3938ae4b4dadb8cfefea71a0a83b
 msgid "Shared Storage (NFS)"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:529
-# 964e5a1e272640aeb579aeeae9e30963
+# 34e3c802417344859e201815beefde10
 msgid "Use of the Networked File System (NFS) in and by itself does **not** provide redundancy, although the underlying storage volume might be replicated."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:533
-# 62808b07684b4c119eaefed8b08fc1aa
+# 242ec6d42a684018a15e84b8006ba62f
 msgid "For a variety of reasons, the use of `NFS is considered harmful`_ and is therefore, and for other reasons,  most definitely not recommended for Kolab Groupware IMAP spool storage, or any other storage related to functional components of Kolab Groupware itself -- IMAP, LDAP, SQL, etc."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:538
-# ae5fed003afe4c43807aa0536d0fa2b7
+# 357d5bbbcad34057bc55f902e5868df6
 msgid "Most individual concerns can be addressed separately, and some should or must already be resolved to address other potentially problematic areas of a given infrastructure, regardless of the use of NFS."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:542
-# 0ec73a049979477eb92f287d3d88ecc3
+# 1fac46bba1194807a180709223abc49b
 msgid "A couple of concerns however only have *workarounds*, not solutions -- such as disabling locking -- and a number of concerns have no solution at all."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:546
-# 41a031661e1946cdbb0574a3651de79e
+# 9f9b782bf27f41f0a3e0124e1eeb7918
 msgid "One penalty to address is the inability for NFS mounted volumes to cache I/O, known as in-memory buffer caching."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:549
-# a6466e55e1264135a716cb803848ef0d
+# e9c8728c85d24b1c8aacd78f8c46e0a0
 msgid "A technology called `FS Cache`_ can facilitate eliminating round-trip- incurred network-latency, but is still a filesystem-backed solution (for which filesystem the local kernel applies buffer caching), requires yet another daemon, and introduces yet another layer of synchronisity to be maintained -- aside from `other limitations <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/fscachelimitnfs.html>`_."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:555
-# 3a2d7f10030542d18ea7f54ce8bd0f07
+# 436f0816f8d9419fadab9fa6652db8dd
 msgid "An NFS-backed storage volume can still be used for fewer, larger files, such as guest disk images."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:558
-# 1825f19aa3884dd387e4f69c9adc045c
+# dc9270ecc83b4e598ab5804ce8125304
 msgid "That said, it has been confirmed by `Dovecot Oy`_, a company supporting Dovecot, that multiple of their IMAP servers using the same NFS volume for all payload (mailboxes and messages) and **without** locking, is a supported deployment topology, but `Kolab Systems AG`_ does not, at the time of this writing, have real-life experience with an actual production environment of this sort."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:566
-# f23616e07eeb4c989bd7edc44c3d0735
+# 24d2d78d30e4404d8fb7ed48d436ca17
 msgid "Shared Storage (iSCSI or FC LUNs)"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:568
-# 87d82b8297a644fc8daaf4ddce006ec0
+# b91535692e33440385dba956af87ad53
 msgid "Both iSCSI LUNs and Fiber-Channel LUNs facilitate attaching a networked block storage device as if it were a local disk (creating devices similar to ``/dev/sd{a,b,c,d}`` etc.)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:572
-# 8a5ca8ac4723432b9a6074409dba4aaf
+# c34994e62acd47dfbf54d9deee012e59
 msgid "Since such a LUN is available over a \"network\" infrastructure, it may be shared between multiple nodes but when it is, nodes need to coordinate their I/O on some other level."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:576
-# 970cdf5fa34c463ca88b0821bf11e876
+# 7e78743668d540e881508f91494e7734
 msgid "With an example case of hypervisors, either `Cluster LVM`_ [#]_ or `GFS`_ [#]_ could be used to protect against corruption of the LUN."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:589
-# 6bede0d01d3748e2a89320b186ba392a
+# 7a85889c16bf4e589c027c45206ca109
 msgid "Availability"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:591
-# 386443c114594e199a87bf45d79983d1
+# 7b74de4830664440ae8a7f511fcc6646
 msgid "Availability of storage too can be achieved via multiple routes. In one of the aforementioned technologies, replicated bricks both available real-time and online, in a parallel read-write capacity, provided high- availability through redundancy (see :ref:`deployment-storage-integrated-storage-protocol-level-replication`)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:597
-# 52502badfc324da1bd7eaebf9b542640
+# 86797960ac1e4c4e8ba316b1d919ebb0
 msgid "An existing chunk of storage you might have is likely backed by a level of RAID, with redundancy through mirroring individual disk volumes and/or the inline calculation of parity, and perhaps also some spare disks to replace those that are kicked or fall out of line."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:602
-# dafbb47ef2af4e7e8f885e0771eb5679
+# 59c24120aaf54329acf18ed46166d2b5
 msgid "Further features might include battery-backed I/O controllers, redundant power supplies connected to different power groups, a further UPS and a diesel generator (you start up once a month, right?)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:606
-# b6fa24af3b864df6a5eb5dc07e428410
+# 9860e30fb4b94fff9e7bf3bea130b6ab
 msgid "The availability features of a data center are beyond the scope of this document, but when we speak of availability with regards to storage, we intend to speak of immediate, instant, online availability with automated failover (such as the RAID array) -- and more prominently, without interruption."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:613
-# 2f34a35f28a449ddb76bc252913eef20
+# b71171760e364475aa594eec3ab88dd1
 msgid "Multipath"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:615
-# 34b1aebde8624399ad982171c28a7ec6
+# 6a01c8502d8640aeb8a95e9d7cf18fdf
 msgid "Multipath is an enhancement technique in which multiple paths that are available to the storage can be balanced, shaped and failed over automatically. Imagine the following networking diagram:"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:653
-# 1d5f636b1a55483fb6b189c67448494e
+# 6fb13ba8b2f548c58ad8635d6ca1abcf
 msgid "The *null* situation is depicted in the previous wiring diagram. When multipath kicks in, primary vs. secondary paths will be chosen for each individual target (that is unique). However, the system maintains a list of potential paths, and continuously monitors all paths for their viability."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:659
-# e1b3210a34814690bf7ca513ae75677d
+# 2d335c6b091244818a9513896ab0c893
 msgid "In the example, for *Node* attaching to *iSCSI Target #1* results in up to 4 paths to *iSCSI Target #1* -- *4* paths, not *8*, because the networking of *Switch #1* and *Switch #2* is not considered a path with iSCSI -- *two nodes* and *two send targets each*."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:664
-# 0fec7797013542a3b102b75fcb819a2e
+# 87f7b82adbaf4423ac7ddb0a4d2c03b8
 msgid "Multipath chooses one path to the available storage:"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:703
-# 729ed377a92440afaceedbadc6000408
+# abce971fa67e4dd0a197a6cd38cfb33d
 msgid "Should one port, bridge, controller, switch or cable fail, then the I/O can fall back on to any of the remaining available paths."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:706
-# 24ba0f00bf284d14bc57f91292eee1ee
+# 54427b7d2f5b46d1be605fd9ea33de40
 msgid "As per the example, this might mean the following (with *Canister #2* failing):"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:749
-# d1c355a96a584705a2d440d421531c0b
+# ea369c92f87e469d88693d0587971782
 msgid "Performance"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:752
-# db91a8134091493fbd92c782eb7adf62
+# 3e824fa925c14c3c98349d8b940a4c36
 msgid "Storage Tiering"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:754
-# 213b1c9feefc41cfae9402d3d036e6eb
+# 8fae96d366d84e2591a3ef71723200a9
 msgid "Storage tiering includes the combination of different types of storage or storage volumes with different performance expectations within the infrastructure, so that a larger volume of slower, cheaper storage can be used for items that are not used that much, and/or are not that important for day-to-day operations, while a smaller volume of faster, more expensive storage can be used for items that are frequently accessed and have significant importance to everyday use."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:762
-# fdfe27ff4a844e9d9e69a6ecb16689af
+# a8517d22f3464cc1be4850930026bc9e
 msgid "The Kolab Groupware administrator guide has a section on using :ref:`admin-tweaking-cyrus-imapd-storage-tiering` to tweak Cyrus IMAP performance, to illustrate various opportunities to make optimal use of your storage."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:767
-# 426f18bdffc34507ad3485cf35833d69
+# 45c501ddd596450cb291a1e335042dd0
 msgid "As a general rule of thumb, you could divide :term:`operating system disks` and :term:`payload disks`; the operating system disk could hold your base installation of a node, including everything in the root (``/``) filesystem, while your payload disk(s) hold the files and directories that contain the system's service(s) payload (such as ``/var/lib/mysql/``, ``/var/spool/imap/``, ``/var/lib/imap/``, ``/var/lib/dirsrv/``, etc.)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:775
-# 0654b7956eab48939af80952d1dcbd07
+# e0e2862d7ad3484ba6391e01503a0f69
 msgid "Distributing what is and what is not frequently used may be a cumbersome task for administrators. Some storage vendor's appliances offer automated storage tiering, where some disks in the appliance are SSDs, while others are SATA or SAS HDDs, and the appliance itself tiers the storage."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:781
-# 7dae76b82f814efdac481d9d3751134e
+# 10702d7ac4124fb88cf9ac1b6951ea2d
 msgid "A similar solution is available to Linux nodes, through `dm-cache`_, provided they run a recent kernel."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:785
-# 62faa93e748a4abda02778a0136a1597
+# ff852b16771c4739aa3b7c07c101b120
 msgid "Disk Buffering"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:787
-# c6a82fd9ff384ccfa41063bdef6216fa
+# ea498ab42c054b7bbd8de720f7e53e98
 msgid "Reading from a disk is considered very, very slow when compared to accessing a node's (real) memory. While dependent on the particular I/O pattern of an application, it is not uncommon at all for an application to read the same part of a disk volume several times during a relatively short period of time."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:793
-# 7c11c044fc124be7950e71f337cec7a2
+# e2003401cf9f407a9af3cf5a55bea99d
 msgid "In Kolab Groupware, for example, while a user is logged in, a mail folder's :file:`cyrus.index` is read more frequently than it is written to -- such as when refreshing the folder view, when opening a message in the folder, when replying to a message, etc."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:798
-# 84535e6c52894089a5387addbadf33f3
+# a968206ca747465b8c444fb379c7ae1a
 msgid "It is important to appreciate the impact of `memory-based buffer cache`_ for this type of I/O on the overall performance of the environment."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:801
-# 0b655fdf5e5c4b1ca174b073d5b3c80e
+# a5dd823fa3cd4783ab3e44ccbe8ed437
 msgid "Should no (local) memory-based buffer cache be available, because for example you are using a network filesystem (NFS, GlusterFS, etc.), then it is extremely important to appreciate the consequences in terms of the performance expectations."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:807
-# 3fb48ec27c514da9bf1c7a73869e4e48
+# 3e7955c79b9b48589923d616ab998178
 msgid "Readahead"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:809
-# a71cd812af2541ed9d291d29368f1d7d
+# 484eaace88ae4405a010f34241fa3191
 msgid "Reading ahead is a feature in which -- in a future-predicting, anticipatory fashion -- a chunk of storage is read in addition to the chunk of storage actually being requested."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:813
-# 1815af54810747cb977bd8c09927b306
+# 2e0d18bbf320448eb787bdab58622126
 msgid "A common application of read-ahead is to record all files accessed during the boot process of a node, such that later boot sequences can read files from disk, and insert them in to the `memory-based buffer cache`_ ahead of software actually issuing the call to read the file. The file's contents can now be reproduced from the faster (real) memory rather then from the slow disk."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:820
-# 24407fcb24e242f7ba20f6b9376ecfb9
+# 54fb6ba7424a4f089372bf584ae899e8
 msgid "Readahead generally does not matter for small files, unless read operations work on a collective of aggregate message files. It does however matter for attached devices on infrastructural components such as hypervisors, where entire block devices (for the guest) are the files or block devices being read."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:826
-# c4a40f220af74fdfae3ee024f7ecc28c
+# a34e181f5d664e0eaf515c055b7c3da4
 msgid "The ideal setting for readahead depends on a variety of factors and can usually only be established by monitoring an environment and tweaking the setting (followed by some more monitoring)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:839
-# dd23ae8ca41a4b4899dbdd78512de963
+# 8d378818167446898bae8ac357460205
 msgid "Scalability"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:841
-# 6b99f90e48af4843a499c707e8fe4384
+# 6a1d4a25075f4cc3bb7bb312fba9fba5
 msgid "When originally planning for storage capacity, a few things are to be taken in to account. We'll point these out and address them later in this section."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:845
-# 5a9aa255b7d046c780ee407d40d6ee8e
+# b6cf31cb466a4ff087d2a09fd60dabdc
 msgid "Generically speaking, when storage capacity is planned for initially, a certain period of time is used to establish how much storage might be required (for that duration)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:849
-# af59ae7606414045b10a06b2821621e1
+# 196e80d1f9de49a48c8bf189c44d153f
 msgid "However, let's suppose regulatory provisions dictate a period of 10 years of business communications need to be preserved. How does one accurately predict the volume of communications over the next 10 years?"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:853
-# 258ee83c82fe4f66bada90d904774035
+# 1adfc68d9a85404f86c4558a361659a0
 msgid "Let's suppose your organization is in flux, expanding or contracting as businesses do at times, or budget cuts and unexpected extra tasks to your organization might incur. Or when the organization takes over or otherwise incorporates another."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:858
-# 73e5d8660d7a45bc99a9166cb0a9c718
+# a981806195c248d8b15858e3111c3a4d
 msgid "Today's storage coming with a certain price-tag, and tomorrow's with a different one, it can be an interesting exercise to plan for storage to grow organicly as needed, rather than make large investments to provide capacity that may only be used years from today, or not be used at all, or turn out to still not be sufficient."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:864
-# 50622bd815ef4d8fbfec04c51507ae09
+# ddc8ddc290164ab890457e41d3bf510d
 msgid "One may also consider planning for the future expansion of the storage solution chosen today, possibly including significant changes in requirements (larger mailboxes)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:869
-# af6c822a720f485091f8db564ad19d23
+# 91e3d0e9fd7a47258764b49dbe5bbaf4
 msgid "Data Retention"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:871
-# 9c351d5986574b458fe936da35b86824
+# ec085ebc75e7471e8266719a107d857e
 msgid "Kolab Groupware by default does not delete IMAP spool contents from the filesystem for a period of 69 days."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:874
-# 86b1abf34be4409fbd16a8f13b14d8b3
+# 842a28f9009f494ab2d945fd9296f172
 msgid "This means that when a 100 users each have 1 GB of quota, the actual data footprint might grow way beyond 100 GB on disk."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:877
-# 59ed390aa99649eba996d51875816209
+# 4534287d69c14705b689e5e90e6d6b72
 msgid "Depending on the nature of how you use Kolab Groupware, a reasonable expectation can be formulated and used for calculating the likely amount of disk space used in addition to the content that continues to count towards quota."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:882
-# 8b37116eece140ec92258dcca48d5969
+# 58da47eb1c034a1bae2778d414ea42f7
 msgid "For example, if a large amount of message traffic ends up in a shared folder that many users read messages from and respond to (such as might be the case for an info@example.org email address), then around triple the amount of traffic per month will continue to be stored on disk, plus what you decide is still current and not deleted by users (the \"live size\")."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:890
-# af6ae4af33144d27ae5cd5afae4b78e1
+# 5ed0f13cfd2247cca340ea46868df8a8
 msgid "Shared Folders"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:892
-# 7efa0a1938dc45f2ba99ff9ccb73a348
+# 27adb41b394f4cd1bb292aa0fb349ee2
 msgid "Shared folders (primarily those to which mail is delivered) do not, by default, have any quota on them. They are also not purged by default. As such, they could grow infinitely (until disks run out of space)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:896
-# 12e677466ffb46ef8d3f7ce8bf3b3dee
+# 0e89d1ab094b48cfb51081952f31ab1f
 msgid "A busy mailing list used for human communications, such as devel@lists.fedoraproject.org, can be expected to grow to as much as 1 GB of data foot print on disk over a period of 3 years -- at a message rate of < ~100 a day and without purging."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:901
-# f06d8692a3db4c33b1920f6dbd9ed442
+# c45a07cef0ae4e4783d34080e1a280b2
 msgid "A mailing list with automated messages generated from applications, such as bugs-list@kde.org, which is notified of all ticket changes for KDE's upstream Bugzilla, can be expected to grow to up to 3.5 GB over the same period -- at a message rate of ~300 per day and without purging."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:907
-# 6ef285d28e404c49b893180467d4bb37
+# 561f0ff037e844e9bbe6b4e782bee622
 msgid "User's Groupware Folders"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:909
-# d9c29f10d5b04a96bf9529879cd236d3
+# 70129864e358405290a528e667115bcd
 msgid "Users tend not to clean up their calendars, removing old appointments that have no bearing on today's views/operations any longer. Kolab Groupware does not (yet) provide means to purge these items. They do however count towards a user's quota."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:917
-# 4858c141ee174396b60e007a9f18b707
+# c32234843b7a4a62b335f8ce5d70f5bb
 msgid "Capacity"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:919
-# d5a08daf8c8a4fe98fbd0b4893cd6407
+# 6f4a314a02da4b41a7e1548ec75adf81
 msgid "Regardless of the volume of storage in total, this section relates to the volume of storage allocated to any one singular specific purpose in Kolab Groupware, and capacity planning in light of that (not the layer providing the storage)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:924
-# a114c7cca72c49bba34a83fc6d22c25e
+# c0e3d9c253f0484597dfae58a05c4d9d
 msgid "Archiving and e-Discovery notwithstanding, the largest chunks of data volume you are going to find in Kolab Groupware are the live IMAP spools."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:928
-# b8002293daff4f2cbcac5ea59e138507
+# 07b01a5c74ce46dea97fe4a61870322e
 msgid "Let each individual IMAP spool be considered a volume, or part of a volume if you feel inclined to share volumes across Cyrus IMAP backend instances. Regardless, you need a filesystem **somewhere** (even if the bricks building the volume are distributed) -- the recommended restrictions you should put forth to the individual chunks of storage lay therein."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:935
-# 218680aa04164d1885a2fc54c6b98228
+# f7fa081849ba4065b3b9b1c8fd5ac36c
 msgid "Saturating the argument to make a point, imagine, if you will, a million users with one gigabyte of data each. Just the original, minimal data footprint is now around and about one petabyte."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:939
-# 2c98566c863a40b687e7d692397c3f2d
+# 1775f4bde6f940e1ab535ad79c2aa2bc
 msgid "Performing a filesystem check (:command:`fsck.ext4` comes to mind) on a single one petabyte volume will be prohibitively expensive simply considering the duration of the command to complete execution, let alone successful execution, for your **million** users will not have access to their data while the command has not finished -- again, let alone it finished successfully."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:946
-# d7686197655447758ddc77be782ba530
+# 50061570fa9f4f538c1aabad9d553df4
 msgid "**Solely therefore** would you require a second copy of the groupware payload, now establishing a minimal data footprint to **two** petabyte."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:951
-# 29fe2aa0e36042f88df24ed83326403f
+# 6506945252034314b475da5af5b28b99
 msgid "Also note that the two replicas of one petabyte would, if the replication occurs at the storage volume level, run the risk of corrupting both replicas' filesystems."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:955
-# c8301cfc0e2642a7aa5f3783b51ac1be
+# c53f1ba90c0849ed8a23ad79a3c6b3cf
 msgid "Your requirements for data redundancy aside, filesystem checks needing to be performed at least regularly [#]_, if not for the level of likelihood they need to happen because actual recovery is required, should be restricted to a volume of data that enables the check to complete in a timely fashion, and possibly (when no data redundancy is implemented) even within a timeframe you feel comfortable you can hold off your users/customers while they have no access to their data [#]_."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:963
-# 2ea7b6b052014695a691a7ea6b985032
+# a1b18a8dbff44275906e4b5e5ce555d3
 msgid "For filesystem checks to need to happen regularly, is not to say that such filesystem checks require the node to be taken offline. Should you use Logical Volume Management (LVM) for example, and not allocate 100% of the volume group to the logical volume that holds the IMAP spool, than intermediate filesystem checks can be executed on a snapshot of said logical volume instead, and while the node remains online, to give you a generic impression of the filesystem's health. Given this information, you can schedule a service window should you feel the need to check the actual filesystem."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:973
-# 52cce3cdf34448afa077ef6d5e832815
+# 7c996c17871d4abd8c381606d6cfcb28
 msgid "A good article on filesystems, the corruption of data and their causes and mitigation strategies has been written up by `LWN`_, `The 2006 Linux Filesystem Workshop`_. This article also explains what it is a filesystem check actually does, and why it is usually configured to be ran after either a certain amount of delay or number of mounts."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:997
-# 3262cae281814ef4b27772b8caddf54f
+# 1def7ab37bcd49aa9bcdaf785ef23449
 msgid "Cost"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:1000
-# f330dfe1343845dbb67c2b13977c89bb
+# db13aa1215104814863474ac839e00c8
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:1003
-# de6ee2633a6644d3afc1312bd8e2a64b
+# 3a177fc70957497191fe3065a7f14bb1
 msgid "Applications may also operate on data not stored on disk at all, which is another common avenue potentially resulting in loss of data -- or *corruption*, which is merely a type of data-loss."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:1009
-# aeac2b0932cb489a9641e94c348221be
+# 39d4f8fa49bb41aa965c854758e81957
 msgid "With read operations, the other node(s) must be blocked from writing, and with write operations, the other node(s) must be blocked from reading and writing."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:1015
-# 099c4ff0ced346ad82c5bf486b47f017
+# 19d79bc3a83043259960d0e15ed499bf
 msgid "When using ClusterLVM, you would use logical volumes as disks for your guests."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:1020
-# 9a803530f79d4e49a98f5f3289662616
+# f33aa9df354345cc8fa152fdd15f3a84
 msgid "When using GFS, you would mount the GFS filesystem partition on each hypervisor and use disk image files."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:1025
-# 1f56ee34632840d2a225d13b014dc0f7
+# 6615d1f868224fc9bc56e95c84f754d7
 msgid "NFS is a set of protocols operating on the layers 5, 6 and 7 of the `OSI model for networking`_."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:1030
-# 3da4ca2e93f44641865b56ca8c4524a6
+# 271e8fd89a79450fbc4fececd76a0495
 msgid "Execute filesystem checks regularly to increase your level of confidence, that should emergency repairs need to be performed, you are able to recover swiftly."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:1034
-# 8a8fbb8b65f347949d80f041b7783bec
+# 9da1ae2fe3ca46ca830215d2fba4de85
 msgid "The :term:`MTBF` of a stable filesystem has most often been subject to the failure of the underlying disk, with the filesystem unable to recover (in time) from the underlying disk failing (partly)."
 msgstr ""
 
 #: ../../source/deployment-guide/storage.rst:1040
-# bba172bd0fe544cf86f8f66b971125f8
+# 5a9897b6c5ea4ca8998a07ab254f1d1a
 msgid "Online filesystem checks"
 msgstr ""
 

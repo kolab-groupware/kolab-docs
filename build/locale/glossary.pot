@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,389 +17,389 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/glossary.rst:90
-# 13521f164ea4476e8cb8e9c8088b1069
+# 0b505251f178439592e16785eaf174aa
 msgid "Glossary"
 msgstr ""
 
 #: ../../source/glossary.rst:93
-# f0353a77d0174d84abc38316a0449bba
+# 8e0cb7ccd9b04bee97b7312664544922
 msgid "alias domainalias domain name spacealias domain name spaces"
 msgstr ""
 
 #: ../../source/glossary.rst:98
-# 5cfb12d48afb4b1b955012299933cf5f
+# 0672a8c8b37f4dd1b604d7c7c47f7e8c
 msgid "The intended use of an alias domain name space is to be a largely transparent alias domain for users or recipients whom would otherwise have an email address in the :term:`parent domain name space` as well. In other words, what is a valid local part used with an ``@example.org`` (the parent domain name space) email address is also considered a valid local part when used with an ``@example.net`` (the alias domain name space) email address, for both sending and receiving email messages, and vice-versa."
 msgstr ""
 
 #: ../../source/glossary.rst:107
-# 8e27d6ea5ff049ca8904dedf2773b508
+# 3962b3f5df024c75a68705b662d06552
 msgid "Whether or not an alias domain name space is actually as transparent depends on the configuration of the :term:`result attribute`, and subsequently, therefore, also the :term:`primary email address` of individual recipient entries."
 msgstr ""
 
 #: ../../source/glossary.rst:114
 #: ../../source/glossary.rst:275
-# d82c42ed5177455b834f172ae0cf4315
-# 3dc1c4f73dba47459b75ffd27fa8f671
+# d927577546614152a261929a85e90d27
+# 8c81f1d459f541dda232576f11823aed
 msgid ":term:`child domain name space`"
 msgstr ""
 
 #: ../../source/glossary.rst:115
 #: ../../source/glossary.rst:192
 #: ../../source/glossary.rst:276
-# 926d1548b094498baef87f92d8f38da6
-# e0f5a289aa244cfeaee1c7ecd16e25d7
-# 977d85244dbb442583434791e38616da
+# a6c9d659ab2249f889c2f314b5eff00f
+# 82781d9220bb479fb94a8420e0d509f0
+# 1294b4d44bb643cca717dc93349ba3c0
 msgid ":term:`parent domain name space`"
 msgstr ""
 
 #: ../../source/glossary.rst:116
-# 9b69d7967c6c462e9617b02a5409fe70
+# 8263005b038a4c27bb06889dbbead134
 msgid "assets"
 msgstr ""
 
 #: ../../source/glossary.rst:119
-# 07f16fa1c68245eda214f8e24472704a
+# 5584916b7bad45f9849f17c2caac6d1c
 msgid "Assets are static contents (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:120
-# 93ed4a01ac1248bfa3b4be1f6c095cbf
+# 418930c7c9d048a3b2441d6440de061b
 msgid "authorization realm"
 msgstr ""
 
 #: ../../source/glossary.rst:123
-# 20878361685542298dfc2ec77439d03d
+# 1c61b203808e4ae8a58500dff3785390
 msgid "The authorization realm is the target user authorization ID's namespace."
 msgstr ""
 
 #: ../../source/glossary.rst:125
-# 929a4b34ad9946ba9c45120c1e4e073b
+# 8267dc100f084e3aa5a6f9588c653f65
 msgid "When, for example, a user *John Doe* logs in with username ``doe`` (the \"authentication ID\"), the original authorization realm (as specified in the original username) is ``null``."
 msgstr ""
 
 #: ../../source/glossary.rst:129
-# e15cf97372f94ad0a4dcf5924626e2e2
+# e060dd24e6f44cacbebfa9f3ee994ecb
 msgid "After user login name :term:`canonification` -- a process to translate an authentication ID in to an authorization ID -- the resulting authorization ID may have become ``john.doe@example.org``."
 msgstr ""
 
 #: ../../source/glossary.rst:133
-# 4607a9349ff54564b629c9391d5f54ef
+# 4452d77798cf4451904db876fdfca1dc
 msgid "The canonification process is important, because it will also be the authorization ID that is used to compose the mailbox path to the user's INBOX."
 msgstr ""
 
 #: ../../source/glossary.rst:137
-# aa46a7485e804178a78921bcdf845c08
+# 998e64bd8d894ac98563b93fb900604e
 msgid "Continuing our example user, the authorization ID having become ``john.doe@example.org`` will result in the session using ``user/john.doe@example.org`` as the INBOX."
 msgstr ""
 
 #: ../../source/glossary.rst:141
-# 8d5128809ca041d08b746e7d77b05be3
+# 5d0bed4b90ec45d5b70bcb3c6bb6300a
 msgid "The **authorization realm** at this point is one of ``example.org``. The user will not be able to access any mailboxes outside this authorization realm, meaning the user will be unable to access any mailboxes for which the mailbox path does not end in ``@example.org``."
 msgstr ""
 
 #: ../../source/glossary.rst:145
-# f9426fabe1044545990947de2f7532e0
+# 814580441c354c308ea463b5582a3661
 msgid "canonification"
 msgstr ""
 
 #: ../../source/glossary.rst:148
-# e8f7d899faec4d5db13a96b4bfd441d3
+# 5e2839fec33f4740b70a11d90a62d37e
 msgid "Canonification is the process of translating a login username in to the targeted value to use throughout the rest of the infrastructure."
 msgstr ""
 
 #: ../../source/glossary.rst:152
-# a01a6acab5474ed88b29d3cfd20e16f1
+# 171e28abf2544b72b6a6b3a31256e623
 msgid "Suppose, for example, a user *John Doe <doe@example.org>* has a :term:`primary email address` of *doe@example.org*, and a user ID of *doe*. Suppose therefore his mailbox is ``user/doe@example.org``, and his authorization ID is ``doe@example.org``."
 msgstr ""
 
 #: ../../source/glossary.rst:158
-# 43c8b7a12c8847f598723a9465ace7a0
+# 02293d222dc74981b7f8f86796f58329
 msgid "When John logs in however, he may also use one of his secondary recipient addresses, such as *john.doe@example.org* or *jdoe@example.org*."
 msgstr ""
 
 #: ../../source/glossary.rst:162
-# a8e25f96032b4d6f865ec1a87d3621ba
+# 87cbf45202f14ac1b3a80628617fbd09
 msgid "This login username needs to be translated to ``doe@example.org`` in order to obtain the correct INBOX, and allow applications to consistently retrieve profiles with user preferences."
 msgstr ""
 
 #: ../../source/glossary.rst:166
-# 4a40aca7e1964afaaf06a4902ce26320
+# a9ca57ce52914ca5b9313917f778a6f2
 msgid "child domainchild domain name spacechild domain name spaces"
 msgstr ""
 
 #: ../../source/glossary.rst:171
-# c1e1ab2017a546acb8a3c0a1e87768d4
+# 495c7bf34ccd4520acd62112e6e0b256
 msgid "A child domain name space is very similar to an alias domain name space, in that a child domain name space is **exactly the same**, but for one aspect: Hosted Kolab Groupware."
 msgstr ""
 
 #: ../../source/glossary.rst:175
-# 9006242c093b4388b4d90f098b8717aa
+# 36721b4eb3a542cfb70d684bad7dc6d1
 msgid "With Kolab Groupware, :term:`parent domain name spaces` are stored as individual LDAP objects, and so are they in Hosted Kolab Groupware deployments."
 msgstr ""
 
 #: ../../source/glossary.rst:179
-# aa10a92132554cbaaca0a8cd59fd2bab
+# 4cf45374eaab4c1296de2668ecf538bd
 msgid "In hosted environments, however, any :term:`alias domain name spaces` needs to be verified the ownership of (just like for the parent domain name space), before the alias domain name space is activated."
 msgstr ""
 
 #: ../../source/glossary.rst:183
-# 40578080ea2d4cdc8e4d534b0e1073b6
+# c85d533a86ad4a74bfbef7c5bab4f06a
 msgid "When using the LDAP attribute of ``inetDomainStatus`` to track the confirmation and activation status of ``domainRelatedObject`` entries, alias domain name spaces need to be stored in entirely different LDAP entries altogether, and are solely therefore referred to as **child domain name spaces**."
 msgstr ""
 
 #: ../../source/glossary.rst:191
 #: ../../source/glossary.rst:274
-# 7364c4cdb5a34f208306b067cce25d86
-# c95ded68584c4f93a4a5f33b0990abf5
+# 311a7698925f41da84b1c1623206b60d
+# 03804f2c910b42f2a08f9406173da236
 msgid ":term:`alias domain name space`"
 msgstr ""
 
 #: ../../source/glossary.rst:193
-# fada97a23b7344848a7253a01b95100e
+# 9c2e5203445045b8bbc57eb15949e2ef
 msgid "discretionary access control"
 msgstr ""
 
 #: ../../source/glossary.rst:196
-# e0e96bf8423c47f88741e6de5756d823
+# efea6e09d800410db8b2cc295780d43d
 msgid "`Discretionary access control`_ is a type of access control where a subject with certain permissions on a particular resource is at liberty to control the level of access any other subject have to the given resource."
 msgstr ""
 
 #: ../../source/glossary.rst:203
-# baec134abe614859a4c1f7c88e04c3cb
+# 0775f1e5f4044b5682c48fa1c10d628b
 msgid ":term:`mandatory access control`"
 msgstr ""
 
 #: ../../source/glossary.rst:204
-# 8479dc7714644a24a80419a90bb82717
+# c94bc2b6b3b54270a7f80debd1250076
 msgid "disk volumedisk volumes"
 msgstr ""
 
 #: ../../source/glossary.rst:208
-# b1063d6d74dc41e58741c9ef6dd4d8d9
+# 88a72c547d074de4be697b9ffbc9836c
 msgid "A disk volume is an entity that \"can contain a filesystem\". This may be a complete disk, a set of disks, a disk partition, a logical volume, a copy-on-write snapshot, a disk image (file), a fiber-channel or iSCSI LUN, or any other such volume."
 msgstr ""
 
 #: ../../source/glossary.rst:212
-# 02ae24bb9568495f8fab64403c350579
+# 7518b51fccc74ea28d8faf83221ff121
 msgid "DNdistinguished name"
 msgstr ""
 
 #: ../../source/glossary.rst:216
-# cd3eedf2b954416db0954e1408283403
+# 02a21be4c9b14b4dbac92ab077d16c6b
 msgid "The *distinguished name* is the LDAP terminology for the location of an object in a Directory Information Tree hierarchy."
 msgstr ""
 
 #: ../../source/glossary.rst:219
-# 9556d8fe6b33427ebf224b6ee428a85f
+# 861776cce05b49eaad79f61044ece8c9
 msgid "The LDAP object for a user *John Doe* might have a distinguished name of ``uid=doe,ou=People,dc=example,dc=org``."
 msgstr ""
 
 #: ../../source/glossary.rst:224
-# 8285c03fe7c04756ae86490288de15d6
+# 085a20b4dc054298a4692b5133fd9db3
 msgid ":term:`relative distinguished name`"
 msgstr ""
 
 #: ../../source/glossary.rst:225
-# 9bcf340d63be475fa58ffb65f723c0ad
+# 415763bc79624414813d8121a9d35a3c
 msgid "domain_filter"
 msgstr ""
 
 #: ../../source/glossary.rst:228
-# cbd7200de4084140b45096db124b1374
+# c4ffb2ca17464cfdb60eb84a0442e836
 msgid "The ``domain_filter`` (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:229
-# cb7f23f65ef3468dbe40fbcdbdd2a9cc
+# 1b4f78f0ad094d7d8f160697e9028a32
 msgid "domain name spacedomain name spaces"
 msgstr ""
 
 #: ../../source/glossary.rst:233
-# e7a93abeef4b45f58a47d37ac7dbf96e
+# 3f8969e79fd24dab846ace7ed2c51b76
 msgid "A domain name space is, among other things, the qualification of a recipient's local-part. It is the domain name appended to the local part of an email address, the two of them divided by an '@' character (sender specified routing notwithstanding)."
 msgstr ""
 
 #: ../../source/glossary.rst:238
-# e0a5599d32e94de293456f0721ea3fa0
+# 300ad13f2d0241f595056e77d0cbec83
 msgid "Without domain name spaces, user 'john' would only ever know about user 'jane' if -- pardon my French to those in the know -- if both 'john' and 'jane' considered eachother local. In other words, if both 'john' and 'jane' used the same physical *system environment*. As you may be aware, the Internet is composed of a quite a few thousands of such system environments."
 msgstr ""
 
 #: ../../source/glossary.rst:245
-# 165e8435907745c49c2893e82907cdc5
+# 62dfe2184cee4b0f9200d37b1ea6c49a
 msgid "What *qualifies* users 'john' and 'jane' to all other users on the Internet is a *name space*. The name space must be globally unique (literally \"globally\" -- but technically speaking more like \"universally unique\")."
 msgstr ""
 
 #: ../../source/glossary.rst:250
-# 13ed41ccd7ba43f1a7b3c0b09c59cfd1
+# 8afc75b67c724c098d54ed199ec70517
 msgid "The only name spaces available to Internet registrars and therefore service providers and therefore users, are called *domains* -- they are composed of a *top-level domain (name space)* such as .org and .com, and a name that a service provider would allow you to register with the Internet registrar (a NIC) - each domain is therefore at least one but possible more *domain name spaces*."
 msgstr ""
 
 #: ../../source/glossary.rst:257
-# 96ba5021b16740caa5a87db6bc369828
+# c4e15fb5754d45dd894321d83bdfa52c
 msgid "To further illustrate, you require an Internet registrar to obtain your own *domain name* -- unless you are an Internet registrar yourself, of course, though you still need one, but it just so happens you are one."
 msgstr ""
 
 #: ../../source/glossary.rst:261
-# 44f09f3e175847ab9c23cf8d516c1780
+# d9d91048d9384859b53d2d5e80778aa3
 msgid "Once you have registered a domain name (and, contrary to popular belief, you don't actually own it, ever) nothing prevents you from creating additional domain name spaces within the name space of that domain."
 msgstr ""
 
 #: ../../source/glossary.rst:265
-# bf6d4c84e1a54e949337cf7587de27c9
+# 1c4d946cc3484aeda47ffd121d625a90
 msgid "You could, for example, register ``example.org``, and create a domain name space of ``customer1.example.org`` and/or ``family2.example.org``."
 msgstr ""
 
 #: ../../source/glossary.rst:268
-# 8b536e270a65481cb8b58adb89c36892
+# 6560fb7ab1804bb089fc701609e73614
 msgid "In fact, every :term:`fully qualified domain name` is a domain name space in and of its own -- but it identifies on the individual system level as opposed to the environment level."
 msgstr ""
 
 #: ../../source/glossary.rst:277
-# 6ed9e14f2d06475e9dd796fefe614238
+# 9149ce07fe604d779a0d3367fb8fddd3
 msgid "domain_base_dn"
 msgstr ""
 
 #: ../../source/glossary.rst:280
-# 1252d70e69ce4e93b19e2fc7627c1bd5
+# 5f0085362d1c49f597d55ac8ae7566f9
 msgid "The domain base dn is the position in a Directory Information Tree's hierarchy at which to start searching for domain name spaces."
 msgstr ""
 
 #: ../../source/glossary.rst:285
-# d076c3440fe94fbf93f82ee0f15508f1
+# 53d4a098d33243219e52842be8e0196e
 msgid ":term:`domain_filter`"
 msgstr ""
 
 #: ../../source/glossary.rst:286
-# 1edef572c2474a90abe55eba27553af0
+# 83da7e37cc00497d910d71b2f9f7bcc8
 msgid ":term:`domain_name_attribute`"
 msgstr ""
 
 #: ../../source/glossary.rst:287
-# c716d937d89a4fb6b9ce4e38a179c3af
+# 6cb0e689a1314b90bceed53b675bfae3
 msgid ":term:`domain_result_attribute`"
 msgstr ""
 
 #: ../../source/glossary.rst:288
-# b991287f1968472d848cbf5b61909cd8
+# 073546f8b3d54182897fbb5a100863dd
 msgid ":term:`domain_scope`"
 msgstr ""
 
 #: ../../source/glossary.rst:289
-# d5ebf58fa7cc4392b0af380875a1fdc9
+# c220bcb1a0744ab68ec6f0620f0ef3c9
 msgid "domain_name_attribute"
 msgstr ""
 
 #: ../../source/glossary.rst:292
-# 1adef22644164738990428978fba4138
+# e6fc958a24a941eca4dd9a7dfd35c986
 msgid "The domain name attribute is the name of the attribute that holds the parent domain name space in LDAP."
 msgstr ""
 
 #: ../../source/glossary.rst:295
-# 7b76ba8536924302904913e548655597
+# 949e704a553345fc9af710962b3e242f
 msgid "By default, the domain name attribute is ``associateddomain``, for an object with object class ``domainrelatedobject``."
 msgstr ""
 
 #: ../../source/glossary.rst:298
-# 07494e28a5b644988d43794f2434d1ff
+# 092eaf7233ab4d4eb38ee27af1fdb26f
 msgid "The ``associateddomain`` attribute is specified as *multi-valued* in the LDAP schema, and as such may contain one or more values."
 msgstr ""
 
 #: ../../source/glossary.rst:301
-# 03f66856a8134a2590d8ab10bd0500ae
+# 013d59e5b9514b03a475fa1c510dfb27
 msgid "LDAP stores these in order, so that the first associateddomain attribute value is also the one that was the first to be added."
 msgstr ""
 
 #: ../../source/glossary.rst:304
-# 9be9a2aa3e544858bc4960df976d7ccc
+# 940dadb61daf4427bad4a4692688daf4
 msgid "If you had a domain name space of ``example.org``, the LDAP object might look as follows:"
 msgstr ""
 
 #: ../../source/glossary.rst:314
-# c1a8676efa6c4ee3933f42a08f986860
+# 5f07f149d846401993efbc6e50c0c3a1
 msgid "Then, when one or more :term:`alias domain name spaces` are added for ``example.org``, the object may look as follows:"
 msgstr ""
 
 #: ../../source/glossary.rst:325
-# e022871649474c67aa48d879e84cf848
+# bc999cc2793448c2a861ac878c464a68
 msgid "domain_result_attribute"
 msgstr ""
 
 #: ../../source/glossary.rst:328
-# e96f461a18894515adac9afd480ec2cd
+# dce1b00a9d7f4c44957db7d24d55aa7e
 msgid "The domain result attribute is used to allow the specification of a custom :term:`root dn` for the Directory Information Tree hierarchy associated with the domain name space."
 msgstr ""
 
 #: ../../source/glossary.rst:332
-# 70e61c5f7cd248a88b573cc1d691623b
+# 82b5d39fb4b44c0fac46bbd1c2fa76db
 msgid "In a default Kolab Groupware installation, when a domain of ``example.org`` is added to the environment, a standard translation routine is applied to the domain name space to define the associated Directory Information Tree hierarchy root, the :term:`root dn`."
 msgstr ""
 
 #: ../../source/glossary.rst:337
-# a86e65f747894bb4a7d182250734f669
+# 494f77bc12894619bcfd103942e5c96d
 msgid "This routine makes ``example.org`` become ``dc=example,dc=org``."
 msgstr ""
 
 #: ../../source/glossary.rst:339
-# df72a77c598a48788548288943cdee59
+# 551260e81766467fb61090275614d5ae
 msgid "Existing environments may already have LDAP available to their systems, which does not necessarily have a standard root dn for the domain. As such, an existing :term:`root dn` for domain ``example.org`` may have a dn of ``o=example,c=de``."
 msgstr ""
 
 #: ../../source/glossary.rst:352
-# 1bbe92221dac424b9a5b6fad777b1339
+# c5ee7fc44b53429c82ccd9d7fe04665c
 msgid "domain_scope"
 msgstr ""
 
 #: ../../source/glossary.rst:355
-# 5438653b4e2d4475be90c0a422da664c
+# ce844c55a0e04d6d84f8bfbd23973914
 msgid "The domain scope is the level of depth the searches for domain name spaces uses, and is one of ``base``, ``one`` or ``sub``."
 msgstr ""
 
 #: ../../source/glossary.rst:357
-# 8296458c76d54cde87aa832dba62daee
+# 676005dea38f49b587d95283b25fd5a8
 msgid "EPEL"
 msgstr ""
 
 #: ../../source/glossary.rst:360
-# 5306f871910245df8f0cc9e47fae9121
+# 2a101415774348ceb0f4749230e00652
 msgid "EPEL stands for Extra Packages for Enterprise Linux, and is a software repository maintained by the Fedora Project community."
 msgstr ""
 
 #: ../../source/glossary.rst:363
-# 749081e658f04cfbab1204e8113a1fca
+# 45c687098fd8442e95224d33bc57d41a
 msgid "It contains packages that are supplementary to a base RHEL subscription including the *optional* software repository, such as **amavisd-new** and **clamav**."
 msgstr ""
 
 #: ../../source/glossary.rst:366
-# 0daae3b57ff449098b0074f53a9c23dc
+# eb754152c4c848caa42064a05294189f
 msgid "event notifications"
 msgstr ""
 
 #: ../../source/glossary.rst:369
-# e4578d02eb8d4c93b81e9f8d30f17122
+# b9f13c3ef2744bcda61378a01dd9620c
 msgid "Event notifications (in Cyrus IMAP), lemonade architecture, (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:370
-# ba56c2181134486b83ffd4eeeeddef1d
+# 2f87a6ef36e443d3a01ce43bd9802619
 msgid "external email address"
 msgstr ""
 
 #: ../../source/glossary.rst:373
-# d56c853ed4d8480785c4c6d54969ea24
+# 27e153280ce5414ca4e4053c1ab8ad72
 msgid "An external email address is intended to be additional user information, and another means of contacting the user, not unlike a street and postal code may be additional, personal information for the user."
 msgstr ""
 
 #: ../../source/glossary.rst:379
-# 54308b9b68cc4b0c9d67ba96fad955c6
+# a553a0fbc65d470aae4d8315562d1515
 msgid ":ref:`and_ldap_use-of-mailalternateaddress`"
 msgstr ""
 
 #: ../../source/glossary.rst:380
 #: ../../source/glossary.rst:550
 #: ../../source/glossary.rst:626
-# a41b4d5e15bf4c80951fdd784baf3d71
-# 6f6302acfbb64e32bb2582aa2ae26371
-# 68128939b19e4b7bbae662d9a3ff13dc
+# 9d15e57a7ce949cc9c55e8a5438ac9c6
+# 3573b572fc714f6e862c0971d55d4778
+# 68f01cf6a3614dbc8243b705946ff71d
 msgid ":term:`forwarding email address`"
 msgstr ""
 
@@ -407,10 +407,10 @@ msgstr ""
 #: ../../source/glossary.rst:391
 #: ../../source/glossary.rst:564
 #: ../../source/glossary.rst:627
-# 44e3c242d2a74e66a9a9bfbf36d1ce50
-# d2d86f560ac7467f8afbefb41412239f
-# cef1c3bba2904119a65eee005b045927
-# 0c49125f9f3743deab29937e5cd328e3
+# 0d13129c33264493bc159f4fa864cecb
+# 42fd609d13484b619daa5b9b8d2eba02
+# 689833c666074df983ae5a2d44cd3e25
+# 838a3049bcf44902a044819fae73dc23
 msgid ":term:`primary email address`"
 msgstr ""
 
@@ -418,419 +418,419 @@ msgstr ""
 #: ../../source/glossary.rst:392
 #: ../../source/glossary.rst:551
 #: ../../source/glossary.rst:565
-# 9397364b9ac74a429fc4303d07c2e5a9
-# 019e33288fc745f1a2da9be6935228bc
-# 98e47531b12242408494e08133f7b59f
-# 48e1e2369d4849e793f6ace573994af7
+# 4a025aeb79cd41fb832040abccda72d8
+# 1572aabc7f264a38ae38011f9f545596
+# eb94c376da2b41e496af70a439ab19da
+# 26e96c43a2e245c9bce9784ed14b770d
 msgid ":term:`secondary email address`"
 msgstr ""
 
 #: ../../source/glossary.rst:383
-# c507ec9425f34927a024a6882ec863d4
+# 234ba261312847dea5b7f3f4e5bf8faf
 msgid "forwarding email address"
 msgstr ""
 
 #: ../../source/glossary.rst:386
-# 8e652383895e4caca17ecd43d8483ed0
+# ae8074a7f2bc46c7a0d4e98095e43ed5
 msgid "A forwarding email address (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:390
 #: ../../source/glossary.rst:549
 #: ../../source/glossary.rst:625
-# 8f1791d733114bcc840a19acf26e061f
-# dd98297b5789431b808a7e92487573f4
-# 5715cc2b4eb14075b9d446d042aa0b9b
+# 585125dcc509401c9da5fdf15c161a15
+# 90edc73d48ff4f4abab5228b886ca829
+# eee6ba8ec2e94045ab1df7b738c4386a
 msgid ":term:`external email address`"
 msgstr ""
 
 #: ../../source/glossary.rst:393
-# 1c0ee7ebbcbb4177a51fc2869cb54ef2
+# 75d2e004d21e424ab0fa6cbdb9354b21
 msgid "FQDNfully qualified domain name"
 msgstr ""
 
 #: ../../source/glossary.rst:397
-# 739083b6163e4968bb546212adedca1c
+# e9534c7dca1049d49ffb7b5dc97af8f1
 msgid "A Fully Qualified Domain Name is intended to refer to a single node (or \"operating system instance\", if you will) whether it be traditionally physical or virtual, in a manner that is globally (\"universally\") unique."
 msgstr ""
 
 #: ../../source/glossary.rst:402
-# f682eac9da344fa093ca33d98f444e43
+# aa8ceba15c56480bac656ba321e4656e
 msgid "As such, it SHOULD be composed of at least three (3) name space segments divided by a dot (.) character -- exluding the implicit top-level dot (.), even if a domain (system environment) is comprised of a single system."
 msgstr ""
 
 #: ../../source/glossary.rst:409
-# 9461c659f655463c83c7f07bd2bdf6aa
+# 8b0e265c09ab48798eed99747b816e05
 msgid "`Why Your System Should Have a Proper FQDN`_"
 msgstr ""
 
 #: ../../source/glossary.rst:410
-# 925d1e65a6a44a8487b2e6411528a120
+# fc1e154b0041487296d52ea2403de45c
 msgid "made-to-measure"
 msgstr ""
 
 #: ../../source/glossary.rst:413
-# 6003006f96b54b899263504fca39c045
+# 552cd1ee05934fcaa755627ba9c6d5c4
 msgid "A Made-to-Measure solution is designed to be altered and adjusted to better fit one's needs."
 msgstr ""
 
 #: ../../source/glossary.rst:416
-# d857b3b04805418e9a2103d7be2bf4b4
+# 9dcc8a75e58d4a6681491f90fb89faae
 msgid "This is in contrast with so-called Commercial-Off-the-Shelf solutions, which allow for too little modification in the solution itself, or none at all, and require one's needs to be flexible."
 msgstr ""
 
 #: ../../source/glossary.rst:419
-# fdc7de28a28b49978b92bb4c10b1b7d1
+# d8a2fe3814394bfcac795578dd629379
 msgid "management domain"
 msgstr ""
 
 #: ../../source/glossary.rst:422
-# edda3f9a3ed048618efac6925e4a21bc
+# 9c07c7f67458435e9dc945188d278d33
 msgid "A management domain is is a domain name space, usually also the :term:`primary domain name space` that is reserved for managers of a multi-domain deployment. Such managers may include support staff, who could use these LDAP credentials to log in to other services and servers (provided a POSIX account)."
 msgstr ""
 
 #: ../../source/glossary.rst:427
-# 778fdcccb77e423e9ad7c949c93f1493
+# 963dd4541fac4045a4c04c4ea2bd0da7
 msgid "mandatory access control"
 msgstr ""
 
 #: ../../source/glossary.rst:430
-# 593c0412252649a1baad92e2ea1f7265
+# c9d62cf92bd5471fa4fd8e4a82954ec2
 msgid "`Mandatory access control`_ is a type of access control where a set of (static) rules controlled (centrally) by a security policy administrator describe the level of access subjects to objects. As such, no subject controls the level of access of other subjects."
 msgstr ""
 
 #: ../../source/glossary.rst:438
-# 91ab97e02e3d478286395971bbc3a726
+# 7ec89dcc8d804866ac23a8c1771d64ff
 msgid ":term:`discretionary access control`"
 msgstr ""
 
 #: ../../source/glossary.rst:439
-# 6ed7a389922248a189903dfed29b6b09
+# db5b77c2b0814d5b99cb454194d163fa
 msgid "MBTF"
 msgstr ""
 
 #: ../../source/glossary.rst:442
-# 016cb17f84bd418ebe2f92081e9c3f89
+# db1bb69dff7b44b99967b6ec7137c2d1
 msgid "Mean time between Failure -- a statistical determination of the time between failures."
 msgstr ""
 
 #: ../../source/glossary.rst:444
-# d4d3ddb6493841ecb33e9b120a486bd2
+# 21325df57a2b41c3813fee11cd993d81
 msgid "msaMail Submission Agent"
 msgstr ""
 
 #: ../../source/glossary.rst:448
-# d11dba88f7154620aef5ffabbb33f4d3
+# 0933a251d3be4315a27ce513f676d0bc
 msgid "The Mail Submission Agent (*MSA*) (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:449
-# 756e3a30d3fd4b77a5b2bf0b0928cb15
+# aebc759bd5ec465abeb1ecfac68d7b6e
 msgid "mtaMail Transfer Agent"
 msgstr ""
 
 #: ../../source/glossary.rst:453
-# 299b2ad89f7c414d910acfff522e0a34
+# 8192528da6374345b4d3305b2fc16745
 msgid "The Mail Transfer Agent (*MTA*) (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:454
-# a4420d5000c3433fba017342b90d6d8d
+# 70b99aeb8d6446f2820b6b79d14940dc
 msgid "muaMail User Agent"
 msgstr ""
 
 #: ../../source/glossary.rst:458
-# fcb98af1890c4e9c88af3b624cccebc6
+# 2c95fbb0834741019725c1e905febc1b
 msgid "The Mail User Agent (*MUA*) (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:459
-# e855bb5349d14492808fb0fab3e1a52b
+# 08048fa8e836457f990a5f6f7ff995fa
 msgid "mydestination"
 msgstr ""
 
 #: ../../source/glossary.rst:462
-# e40b84efa97f47a294eb3215d281e66a
+# 6243441e8ba043b380a0dc510104dcb9
 msgid "``mydestination`` is a setting in Postfix, commonly used to refer to a list of :term:`domain name spaces` that the local :term:`MTA` is considered the final destination for."
 msgstr ""
 
 #: ../../source/glossary.rst:465
-# dee53e9c782847dea29b0219ecfc310f
+# df920f61a8b249c2b339a8a32265955b
 msgid "operating system disks"
 msgstr ""
 
 #: ../../source/glossary.rst:468
-# 4b18ff92de9f46fc84d453cf168c56e8
+# a13f77c5a8a9478e802b112bd3157276
 msgid "Storage used for the operating system installation."
 msgstr ""
 
 #: ../../source/glossary.rst:472
-# 4fb423d1613f4efdb0a8d9949b035771
+# e8414a00eef443edb69aa67293813415
 msgid ":term:`payload disks`"
 msgstr ""
 
 #: ../../source/glossary.rst:473
-# e1a9cc83a8c94c5f9be0d88aa99cca03
+# bc1a3939d3b34717a43070716854f849
 msgid "parent domainparent domain name spaceparent domain name spaces"
 msgstr ""
 
 #: ../../source/glossary.rst:478
-# bc52b871bce24bdbb73a5d96fe6a35e5
+# c47a7948cfea4880971115700e5df9cb
 msgid "A parent domain, or parent domain name space, is a domain entity that corresponds to an isolated directory tree. A parent domain may have additional aliases, all of which will need to resolve back to the directory tree associated with the parent domain."
 msgstr ""
 
 #: ../../source/glossary.rst:483
-# 8e6f49a654ce43aa86d1b26a7bb86b88
+# 5969de8d945b44e08c11cd4564374be8
 msgid "Kolab components such as the Kolab daemon, the Kolab SMTP Access Policy and the Kolab Web Administration Panel (or actually, its API) make sure that the primary email address (which becomes the :term:`authorization realm` when the default :term:`result attribute` configuration value of ``mail`` is maintained) is within the domain name spaces associated with the parent domain (i.e. an :term:`alias domain name space` or :term:`child domain name space`)."
 msgstr ""
 
 #: ../../source/glossary.rst:490
-# d4d88b636c2d4e949be7cd5841c4607d
+# fc202b0e1a0444b2918bd24935bb8ca6
 msgid "partitionpartitions"
 msgstr ""
 
 #: ../../source/glossary.rst:494
-# 2491b966baaf4f99b7f5c299a28d95cc
+# 1ca9efcf46214d958e0d0dcb224b7a15
 msgid "A partition in Cyrus IMAP (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:495
-# b3b35934ee644abd8b636ac31e984e1d
+# e6a296547b3749dd8d27fd3cd477b515
 msgid "pattern"
 msgstr ""
 
 #: ../../source/glossary.rst:498
-# d97cfaf0b552491eb9f2fb7363412d10
+# 1ee917004d9c4e15b0de86a61ab87c71
 msgid "A pattern for mailboxes can be specified using ``%`` and ``*`` wildcards."
 msgstr ""
 
 #: ../../source/glossary.rst:501
-# b4410964804f42a8a388f4f2ad2cc2dd
+# 9b65bc346f6f434a8319ade496a135b4
 msgid "The ``%`` wildcard matches mailboxes on a single level only, while the ``*`` wildcard matches mailboxes in all depth levels."
 msgstr ""
 
 #: ../../source/glossary.rst:504
-# 112bb82e159c4d24bdac4f12e624e07c
+# 21b5b597240f47598482dd811f679d02
 msgid "To list INBOX folders for users in the example.org domain, use:"
 msgstr ""
 
 #: ../../source/glossary.rst:510
-# 5da0d8f2ab0042de9cce4a71e59414ee
+# 37652fd2fcc84fee9eec5afa97cc707f
 msgid "but to list all user folders in the example.org domain:"
 msgstr ""
 
 #: ../../source/glossary.rst:515
-# f54b131d2324406eabc8c64c8353e04a
+# 6246cc2db2a74452859900476d19f5d4
 msgid "payload disks"
 msgstr ""
 
 #: ../../source/glossary.rst:518
-# 3f91dd258e8b4c49ab98b2ed4d01a06b
+# 44208ae843ea454a81524437de40ef1c
 msgid "Storage used for information."
 msgstr ""
 
 #: ../../source/glossary.rst:519
-# eab2d1f662324eae87077419be010878
+# 5770cb6f993446bd9063cbb86ab61331
 msgid "Perfect Forward Secrecy"
 msgstr ""
 
 #: ../../source/glossary.rst:522
-# 0aa5870706be48e49fbe61093a51ce37
+# f866bbb56caf4b629a738731174f89d3
 msgid "*Perfect Forward Secrecy* or PFS (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:523
-# fc408621d4df44d78ea8f64cca3c8fa8
+# 63c04203981b4647b7adc3f5d356938f
 msgid "policy enforcement point"
 msgstr ""
 
 #: ../../source/glossary.rst:526
-# df63deca3a4a4f9787d11164cf02a329
+# 65efcce4a5bf42c48ca9248e02d1a2a9
 msgid "A policy enforcement point is a point in an environment or infrastructure, that allows a policy to be enforced."
 msgstr ""
 
 #: ../../source/glossary.rst:529
-# 26108c8467964ee8af3b06a31993bbeb
+# 0ed0240e6d8e4183ae735919009871ab
 msgid "Such points include a patch-point (including virtualized networking), a communication boundary (gateway, firewall, sending node, receiving node, ...), and more."
 msgstr ""
 
 #: ../../source/glossary.rst:532
-# ba65942fb2104a3fa8d94f9ac664094a
+# 6a7b5658a4e34247aaeccc212be11506
 msgid "primary domainprimary domain name space"
 msgstr ""
 
 #: ../../source/glossary.rst:536
-# 3cd5e313834547019e60a3a8e9eeef85
+# 9de819e7b74142f1ba7afbfad7d7e65d
 msgid "A primary domain is the first :term:`parent domain name space` you set up when you first install Kolab Groupware."
 msgstr ""
 
 #: ../../source/glossary.rst:539
-# 45884e83e4ce4d72b428b3a06ae655b1
+# ebf5afa620ba4353a20ba0a91ec1375a
 msgid "In deployments that service multiple (parent) domain name spaces, the primary domain is usually also the :term:`management domain`."
 msgstr ""
 
 #: ../../source/glossary.rst:542
-# 606e181c09ae4d128d5d79c94d15839d
+# eefb6c5e63524e6aac63159049ed6c0a
 msgid "primary email address"
 msgstr ""
 
 #: ../../source/glossary.rst:545
-# 9a1c3724b6ed41e3a2ec6ef0fc0d4aa8
+# 132da60c05344db88de3d03e8df13038
 msgid "A primary email address (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:552
-# 483af3cf21fa48c3a2bc5edd84a5e141
+# 98b5fecafd3f4ddda5ff45768a10bc79
 msgid "primary hosted domain"
 msgstr ""
 
 #: ../../source/glossary.rst:555
-# ad54f83ab8614fbc878e15d6757285bd
+# 6c9a3f6bed29466b9bd740e0dbdc2f4a
 msgid "A primary hosted domain is (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:556
-# 8f7107a9de874bca82217e404e4b51b5
+# 9b7932b736944be2841d3c5f5ccdcb1d
 msgid "recipient email addressrecipient email addresses"
 msgstr ""
 
 #: ../../source/glossary.rst:560
-# c37693fa350646bc800231a1c23118bc
+# bb9a3b4a4f1a4b53932b95b58848c42a
 msgid "A recipient email address is (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:566
-# 552823c567be44039a29eb9d368976f8
+# 7a4825af64414014b19c99e838930f49
 msgid "recipient policy"
 msgstr ""
 
 #: ../../source/glossary.rst:569
-# 69e8fcf80eb84e6080964ca8669c6cec
+# 71e5d2350c054ae894c51b7fb42a5e4d
 msgid "The recipient policy (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:570
-# 407b6663d2b547f4826ca2b939380e16
+# 5a575f6490f24044b647bfb17e97431e
 msgid "relative distinguished name"
 msgstr ""
 
 #: ../../source/glossary.rst:573
-# db50307ccc234a2ba5e26b6006ff53c0
+# 04553655616a48a4920a5eb25c071910
 msgid "A relative distinguished name (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:574
-# f28271e6838942d78252c215f35ca677
+# 2cd0159c2cab4aefba04566bc8fb69b8
 msgid "relay_domains"
 msgstr ""
 
 #: ../../source/glossary.rst:577
-# 2b1dca78acd34120ab38c632cb536d30
+# d52364efee364a5fb6fc6e700fdb4629
 msgid "(...)"
 msgstr ""
 
 #: ../../source/glossary.rst:578
-# 5632fa2fd2b549eca6e1689445714b89
+# 22aeb1a0d3344cf2ac34ccafa301f29a
 msgid "result attribute"
 msgstr ""
 
 #: ../../source/glossary.rst:581
-# db683428bd3249549e99170ecc99050e
+# dffbc61944814a23822a498ca16f601c
 msgid "The result attribute is the name of the target attribute to use the value of, when translating a login username to the appropriate value (a process called :term:`canonification`)."
 msgstr ""
 
 #: ../../source/glossary.rst:587
-# 141aa8be1b70487aa44398d6173d34be
+# a9cf338e724a449086b05d1da9ff8ef3
 msgid ":term:`canonification`"
 msgstr ""
 
 #: ../../source/glossary.rst:588
-# 924d3903b91e430187a64896cf5806f1
+# 9f84b4d0baa5440094f6d38401e50b84
 msgid "root dn"
 msgstr ""
 
 #: ../../source/glossary.rst:591
-# 5a0ab9274b524981a6e4897560a07c56
+# dc267e5f1d4f4ae98326b3912f131e06
 msgid "A root dn describes the path to the root of a Directory Information Tree hierarchy."
 msgstr ""
 
 #: ../../source/glossary.rst:594
-# 4678c98b01f845ec8c2e49f594db52ac
+# cb57e5b2b90b4fea8a1ff78136065c91
 msgid "It is commonly associated with LDAP databases, in that all entries contained within one root dn are in databases that are separate from the databases used for another root dn."
 msgstr ""
 
 #: ../../source/glossary.rst:597
-# 114650e579064bba8922f72459652d28
+# ed864d311ba84d39b620b0437266e3c0
 msgid "sealed system"
 msgstr ""
 
 #: ../../source/glossary.rst:600
-# ca7d7563a2a84b199bf667d38804e937
+# a8261b3f496c442abf510f0fd3f59ddf
 msgid "A sealed system is a system where the users have access to the services offered by the system, but not the system itself. In other words, a Kolab Groupware user cannot normally login to a shell on the system and start poking around."
 msgstr ""
 
 #: ../../source/glossary.rst:604
-# d99efa3ee93746aea76e84417c0e2f1d
+# cc1fcf648dd342a49454ea5f20a53698
 msgid "search base dn"
 msgstr ""
 
 #: ../../source/glossary.rst:607
-# 666f7d662fde4bb7a878db8e12c39adf
+# 86028b0170e445559a7a37572ee59895
 msgid "The search base dn is the point in an LDAP hierarchy, at which to start searching."
 msgstr ""
 
 #: ../../source/glossary.rst:609
-# 5bb597b3012246be81fdbd2e8e910959
+# 84576546c5614c8888c453de19ffd8c3
 msgid "search scope"
 msgstr ""
 
 #: ../../source/glossary.rst:612
-# 73df00dc507a44858d649cf69aa4e0f6
+# f78be8270cb9428597ce93cda3c281d9
 msgid "An LDAP search is executed against a scope, such as *base* for the :term:`search base dn` entry itself only, *one* for all entries one level below the :term:`search base dn` only, if any, and *sub* for the entire hierarchy."
 msgstr ""
 
 #: ../../source/glossary.rst:616
-# 00e5abfb002a4b4cb0cfc6f4bf7bf3b7
+# 9e72a0ccbf994a65b5467f7b4a850cf3
 msgid "secondary email address"
 msgstr ""
 
 #: ../../source/glossary.rst:619
-# 95dedea893b34bc59de1395aef29f320
+# a902599a41a541189e093f4b9fb588cf
 msgid "A secondary email address is a recipient email address associated with an object, such as a user or a distribution group, but it is not the :term:`primary email address`."
 msgstr ""
 
 #: ../../source/glossary.rst:628
-# e2498333a5fd4e98941cba4c4966f944
+# f3de03964ba64434b5a3bbecd8504f1a
 msgid "staging environments"
 msgstr ""
 
 #: ../../source/glossary.rst:631
-# 5da08de08e2445fb8700fd580c80ed4d
+# e4371f83393c404b9bb4134a11a531aa
 msgid "Staging environments (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:632
-# 4a343525c0374487bd67bbacb03ccb15
+# 16185efb29bc4a9c93c395dce56bc648
 msgid "storage volume level replication"
 msgstr ""
 
 #: ../../source/glossary.rst:635
-# e0db5b1a967842edbf0162ff157a6a1f
+# 7ffba505044d40b488198e6d03d057a4
 msgid "Please see the generic section on :ref:`deployment-storage-redundancy`."
 msgstr ""
 
 #: ../../source/glossary.rst:637
-# 6691added77b4b16b4b22e1cca025fef
+# e11107b3ae26483780878b2c5d86d9d6
 msgid "working domain"
 msgstr ""
 
 #: ../../source/glossary.rst:640
-# 7fd879e704c0443c8db1ade1b0799d89
+# d78773c6a526477c8e49ff5f23c43b30
 msgid "The working domain is the currently selected domain name space to work against in the Kolab Web Administration Panel."
 msgstr ""
 
 #: ../../source/glossary.rst:643
-# a9c8ceb14b43443888af43d3488d3f30
+# 98f92d7db3c343b59750e323351c2f15
 msgid "A user logs in to the Web Administration Panel with an initial login username of ``john.doe@example.org``, but may have privileges to edit users in another parent domain name space such as ``company.com``. John would issue a ``system.select_domain`` and his session would then be associated with the ``company.com`` domain -- now his :term:`working domain`."
 msgstr ""
 

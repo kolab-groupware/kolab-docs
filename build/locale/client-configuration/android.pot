@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,100 +18,100 @@ msgstr ""
 
 #: ../../source/client-configuration/android.rst:92
 #: ../../source/client-configuration/android.rst:88
-# 6484d0364e5043f98e147be52227c9ae
-# 9dd69a2313fb478fb26c0914cf58a34d
+# b4efe92053234500a6cd8ee8a40e7640
+# 082c4ecbc6f54ee1b387b9b55b6d4b30
 msgid "Android"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:97
-# d2f408e52fa74efb9d0611d6c127a6a6
+# ebfa7566b3134135b2a77659882d23a7
 msgid "This page describes how you can access your data from your |service_name| account with your `Android <https://en.wikipedia.org/wiki/Android_%28operating_system%29>`__ mobile phone or tablet. Everything will be synchronized and keep the same state across all your devices."
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:103
-# 05eb7bc7dc264be6a2bd2ecec4b421c5
+# b6e91c420b7f40ef8ef64635441c0b56
 msgid "Please follow the instructions below closely and keep in mind that we have no influence over the specific app or Android version that you might be using."
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:110
-# 955c01afeb4a4f7b93cbe3f8df2e40fc
+# f747f1495dfd41329a26dd4a8aecb2a7
 msgid "K-9 Mail"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:112
-# 103ed7f0a40b48e3b11d1ceb9866c50c
+# 005b7c41a9134f4a9de7ccf00379a512
 msgid "We recommend to use the IMAP protocol for email. The standard email app on Android supports it, so do most other apps. However, we found that `K-9 Mail <https://play.google.com/store/apps/details?id=com.fsck.k9>`__ works best and therefore provide the instructions below for that. You can still use any other IMAP capable app like the default email application."
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:119
-# 0a1afae4fe6c45af8713848d505e9e7c
+# 55736a2fcfd3435eb1bbe358e3a16663
 msgid "In order to set up your K-9 Mail, just add a new account and provide your |service_name| email address as well as your password."
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:122
-# b15cf717bc224377a32b725b13804048
+# 6ce1545e7af047bc9c0f40ed982d8892
 msgid "It will disover all necessary settings automatically as shown in the screenshots below."
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:154
-# 3d814d5af6254bec9b9e52e65121a52d
+# d3de9f72f13540f1aa200b93fd1ea971
 msgid "Your account is now set up!"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:156
-# dc7a4c84a4584151a67e40ca5d7bc40f
+# 64f557a46240410dacdc9b1c9aecb3dd
 msgid "If the settings could **not** be discovered automatically for some reason, please choose *Manual Setup* and follow the instructions below."
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:159
-# b497438d018d42d58ee8248b06fba34c
+# 2c35ccfdc06b4a1bb74ffb4f470cbbc8
 msgid "Choose *IMAP* as account type."
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:161
 #: ../../source/client-configuration/android.rst:181
-# e6ac76cfd5ad4a37943b07defe1819b9
-# c7c840ecd6274e199da35864efbdc22c
+# 4480c848eca642f2b35bb89434d8085c
+# 045ad2cb507046b48f01bb34557b1a6c
 msgid "Username: Provide your primary and full email address here, e.g. |**useremail**|"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:164
-# 8d8da5cdeeaa4ce6b8f1456da012a934
+# 1b06ff967ed8405b8dcd4115532d57d1
 msgid "IMAP server: |**imap_host**|"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:166
-# 893a9d73634b4db3bf7899c8ddade962
+# d6801851fad54681b3b0f9c7e347cab2
 msgid "Security: |**imap_ssl**|"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:168
-# 81b886c70d5147518a5d1c11e17a8214
+# f922c5506fdc45048f941ea18960b345
 msgid "Authentication: **Normal pasword**"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:170
-# a1fe9438cc82492ab5a8c13bf89cdea7
+# 962ac2dea2f8458393890fb29c74033b
 msgid "Port: |**imap_port**|"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:172
-# 3e8ece7f0514490f81a6c696df55418a
+# 9f7563caf8a44a2cac753b700e159f8c
 msgid "Then press next and enter the following information for the outgoing server settings:"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:175
-# c10c4a3ca08941a58ff3448505c8ef83
+# ae9b97095bf04a7dbdb0151ce6fe9507
 msgid "SMTP server: |**smtp_host**|"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:177
-# e7c4b1e28e354b9194c00236ad03556d
+# 1d78dc46e44348db997954741e3a25aa
 msgid "Security: |**smtp_ssl**|"
 msgstr ""
 
 #: ../../source/client-configuration/android.rst:179
-# 62407fa9fc054ce9b87bc59fcd37203a
+# 9a82665e592643caaadd0ec3e591964a
 msgid "Port: |**smtp_port**|"
 msgstr ""
 

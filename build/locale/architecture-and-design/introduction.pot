@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,518 +17,518 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/architecture-and-design/introduction.rst:92
-# 4b4e786cb0774ff1b85f8652e377ed83
+# af3ae645b2c5452ea3a2056226549d07
 msgid "Introduction"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:94
-# 51d17d9ef46f451283ec5270edff64e2
+# 732653c867094a55aaa94baa03855244
 msgid "Kolab Groupware is a scalable, flexible and :term:`made-to-measure` collaboration suite and groupware solution, designed with security, privacy and integrity in mind."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:98
-# 12fea6774cde49e6b5d84788b76bf261
+# 395d7de333f34f5ea85fae8624e9f1a6
 msgid "Kolab Groupware is Free Software, uses other Free Software, and stores and accesses information using Open Standards."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:101
-# 163e9d26d0e54ff1a443572456912032
+# f67865c0b6034aabbddfd4f172058dfb
 msgid "The design of Kolab distinguishes the following functional components to make up the groupware environment:"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:104
-# 71d6ab559ba64d83ba74b1eeafd61f53
+# edf460bb0793475085a2eab3fd557b6c
 msgid "An :ref:`and_intro_authentication-and-authorization` database, preferrably centralized,"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:107
-# 77b55e2cff764b04a0b3109f5571eaab
+# 5f9a9872973f4a749f47b043d25246ce
 msgid "A :ref:`and_intro_mail-exchanger` for the exchange of messages."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:109
-# e9efe53469c34c19826f0ed11e66b3d3
+# 9cfbc8a84821473b95ec436e6f903890
 msgid "A :ref:`and_intro_data-storage-layer`."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:111
-# e93b2058fe9145e58eafd572ac9805ca
+# 2173db77bf8d4e2a975ac7aee2e89ef2
 msgid "One or more (additional) :ref:`and_intro_storage-layer-access-protocols`."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:114
-# ea2ecf4ecdd64f739c20ddac224a30ac
+# 016fee3bfeba4182a293a3b8346ca11c
 msgid "One or more :ref:`and_intro_desktop-clients`."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:116
-# 0a5eb61386ab47e4b95d9cd8a2d26b26
+# 4f8c77e7c1094a01a35fe1523bf0219f
 msgid "One or more :ref:`and_intro_mobile-clients`."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:118
-# d81eda39e1b447ce9f627df288e98b9d
+# a41e0997f6544b94805e3253fb56cd27
 msgid "One or more :ref:`and_intro_web-interfaces`."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:120
-# 4bd474ddae3246e3a78cedef02876556
+# 54b8637bfb2f47199c020acc3ed5495e
 msgid "Multiple means for users to collaborate, such as via;"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:122
-# bfaa54985daa485fa4bd10facf1181d0
+# b7540da1810c49f68a837fd2b76d4480
 msgid ":ref:`and_intro_instant_messaging`"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:124
-# bd56d34b50094e4281011cc3668bfa36
+# 7c6b5a8c796f43d38259b5df9fbd3dea
 msgid ":ref:`and_intro_voice`"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:126
-# 4759ef1da3b1430a8ec9d7e348c4f7fb
+# abc35ebb3e8c4d699631cc6797373202
 msgid ":ref:`and_intro_video`"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:128
-# 042c933b163e4296a9fd1ef18a1fa2be
+# 196dce5a95cd4fdbb2f75c851e3e166f
 msgid ":ref:`and_collaborative_document_editing`"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:130
-# 9deee397424a4f60a4bde4cebcf3d765
+# e1f8b04c6c8e4abf85bd08b2a4b735dd
 msgid "Furthermore, the Kolab Groupware environment offers functionality beyond the exchange of regular email messages, such as calendaring, maintaining address books, task management, journaling, and more."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:134
-# 0dadb3486b334e29bc062ccefbf5f7c9
+# bd780e2b2c894701b78c8afc76e2f950
 msgid "All of this must remain secure [#]_, scalable [#]_ and flexible [#]_. It must also use Open Standards for protocols and storage formats to provide the user the freedom to walk away with their data, respect the privacy of its users, meanwhile protect organizations' interests."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:139
-# 97b5116bd7ae4007935041d41d837120
+# 983225391a394e29b1c6a46283ffc577
 msgid "Welcome to Kolab Groupware!"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:144
-# d286c1a5105a45858e8252f81aaa7dca
+# 7be089544b1f463c99cf6b92c23a6e2b
 msgid "Authentication and Authorization"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:146
-# 3a7251756fa4494dafc350407ecc50a6
+# b3f0ce92f2c74fb4b3e18bf901d93e72
 msgid "Kolab Groupware uses LDAP for authentication and authorization of users, while it also includes user and group membership information."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:149
-# a229ec58ba8a47518bcd128e5478e13e
+# 3506289a04e0447e8d1e2da8388d4457
 msgid "The use of LDAP allows the structuring of information in such a way that it enables the delegation of authority over its entries, can prevent users from accessing certain attributes or entries, and allows the groupware solution to scale to over several millions of users -- ideal for groupware environments."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:155
-# a64303c3fbbf47778cd4828f7fa29579
+# 0388d2ae594b4681ba6dfb1999c1ca18
 msgid "Please note that at the very core of the Kolab Groupware design is that Kolab **consumes** information in LDAP, but does not ship its own version of LDAP. As such, any LDAP server implementation could be used, albeit Kolab Groupware supports those LDAP server implementations that ship either of the following supported controls, or alternatively falls back to regular searches -- which incur significant performance penalties and require significantly more resources:"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:163
-# 4bacb29638a445c4b64fec15c49a48de
+# a300248510b14437a9b55111e77e7993
 msgid "Persistent Search (`Draft 03`_)"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:164
-# 4e24446c6db14680893ffb9a516342fd
+# ba287022b27c4c079ffde9258a33bd95
 msgid "LDAP Content Synchronization (`RFC 4533`_)"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:165
-# 772b6cefbf644c43a3691076a1932ba7
+# d2f321c009074a299e1fb010a5984b2f
 msgid "Simple Paged Search Results (`RFC 2696`_)"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:166
-# d17fb95a1bba45b3abb6be912fb4f966
+# 398824e8840846299f5b0c36b8023a52
 msgid "Virtual List View Control (`Draft 09`_)"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:168
-# 9c6777ae52aa444287f1455dadaf1f59
+# eb21320fbde74c9eb6271fbef747fe65
 msgid "A default installation of Kolab Groupware includes LDAP schema extensions that provide additional functionality such as delegation and mandatory SMTP Access Policy enforcement, among other things, but Kolab does not strictly require these extensions be loaded."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:173
-# e28971d69e434e3f94561ed1724bc236
+# e26b5e028dc14d09b89b69eb9457f0c6
 msgid "It should also be noted that Kolab, in principle, runs on a :term:`sealed system`. That is to say that users that are Kolab users are usually **not** system users."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:179
-# 28862a8545aa480888275b4965208639
+# c3c0ab853a2e4564af8695588f9f75b7
 msgid "For more information on LDAP integration in Kolab Groupware, please refer to:"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:182
-# 68d665ed7a1d4a9aa3de2e3b6217b7e6
+# 5f5c283705214ea0a8ae7f46bea95482
 msgid ":ref:`and-kolab-groupware-and-ldap`"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:187
-# cceac19bf0944fa898be5ab6f935f572
+# beb8b22f554b4fa58b973026805fa22b
 msgid "Mail Exchanger"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:189
-# 81001fac4c2a4ff88e6447381417aa2e
+# 30eaf32319f1487cacef1e8ee5acc32b
 msgid "Integrated with the :ref:`and_intro_authentication-and-authorization` database, the mail exchanger in Kolab Groupware is in charge of exchanging messages between Kolab Groupware users, mailing lists and distribution groups, third party groupware environments and the internet."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:195
-# 003a79609bc64647a6bc0661148366cd
+# d34eb58427ec4f2490bb1c50a18737fa
 msgid "The mail exchanger component is also responsible for anti-spam and anti-virus measures, protecting your environment against ill-intended distractions."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:199
-# 5281ddbc66de4b53b6bcd5dd53203064
+# cf303946de144d82b01b1792eb206bf1
 msgid "Kolab Groupware integrates `Postfix`_ by default, and provides it with additional security and integrity checks, such as the :ref:`and_mta_kolab-smtp-access-policy`."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:203
-# be99bf2868be4870a1a131d3c2184e1d
+# bd3a316b24b2491282d8c6fc3e44015b
 msgid "Kolab's default configuration of the mail exchanger includes the use of lookup ables against the :ref:`and_intro_authentication-and-authorization` database."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:209
-# fc4bc1665f10447384a4f5cacb1455d5
+# 32c4b064d9894737b88fec30aaf8f14e
 msgid ":ref:`and_mta_postfix`"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:210
-# 818e0a549e0c466bb9d2ca135fc72d5c
+# 969eb71d25cb4020959a80006931db2e
 msgid ":ref:`and_mta_kolab-smtp-access-policy`"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:215
-# bd91b92b2a264425b76f82fe504ab684
+# dcf95bfbe45c4f5c8decc93e097ffda3
 msgid "Data Storage Layer & Primary Access Protocol"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:217
-# 579875ad54534f2fafa03be2c7ee3441
+# e07727d42c274d31ae4d224054d3fa5b
 msgid "A data storage layer for groupware environments must be fast, efficient, scalable and secure."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:220
-# 0808b97b186b43a09878c85143e40fb2
+# d687835ca37e4b199e5c6544473816ee
 msgid "A single system can only scale up as far as its local resources allow it to -- called vertical scaling -- not unlike physical matter, there can only be a finite amount of resources in one place at any given one point in time."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:225
-# 6b41e6ad7f474a0fab11e472843836fc
+# 6b65082465dc4b3b88a8b07a6b1025db
 msgid "It is therefore a pre-requisite the storage layer can be spread out over multiple individual systems, while maintaining a transparent access methodology for users - whom do not know what data is where, and even if they did, tend to forget about it."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:230
-# a1d2165d47f0418f956600fa68b8b6d6
+# f33d5581dbb94e3389863373263d4e00
 msgid "The data storage layer must also be accessible remotely. For this purpose, you require a well defined, widely implemented network protocol that can deliver fast synchronization of large amounts of data with its clients, understands the concepts of folders and folder hierarchies, access control, quota, and can handle parallel access."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:236
-# 16121016675f443e8437ce557019c3d5
+# bb3f48def3ec401a9c4399f5d5ecb242
 msgid "In Kolab Groupware, this data storage layer is the IMAP spool, accessible by any client software that speaks the IMAP protocol."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:239
-# 8e4118dca8f848ce81e8ab16caf029cb
+# e78ce29804184c11874cecf27ceaa906
 msgid "Kolab Groupware ships `Cyrus IMAP`_ by default, which, with its so-called murder topology, provides the aforementioned transparent access to IMAP spools spread out over multiple individual systems."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:243
-# c3bebc032ece45e69f6a43772851699a
+# 219ac9d9941c4fadb58ace772ea58bef
 msgid "This optional murder topology allows users of an environment to share groupware content amongst themselves, even though the content may reside on different backend systems."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:249
-# 4210df4f9e874d63a6652c64503e776f
+# 3d13055e8ea646a39c8c1a7316a7cbd8
 msgid ":ref:`deployment_imap_cyrus-imap-murder`"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:254
-# f512d76e4b8d4389a0dd5331dbc340ca
+# 07c8868b80744007a195f3e3fd2aa5db
 msgid "Desktop Clients"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:256
-# a44dacb4fe274dd49a43910dbc781f3f
+# 3a9ee395485a43549f2ca19ad63d3817
 msgid "Although the Kolab web client is powerful and fast, some users might want to use native Desktop clients. There is a variety of Desktop clients compatible with the Kolab Groupware solution. They include:"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:260
-# 03e0e0bc670f4fdab7bac71901e80ef4
+# 0b31470986084a6e9aa23e459e1a5a4a
 msgid "The Kolab Client `Kontact`_"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:262
-# 8b2b8ababe544cc2aa809082189490f5
+# 3163dbdef10d42a4adca09d7011dcbf7
 msgid "Available for Microsoft Windows, GNU/Linux and Apple Mac OS X"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:263
-# 343d94dcc6304f2781a02d8a0ce17f68
+# 596152918a9b4dddb22a60cf8a552fc2
 msgid "With full Off-line support"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:264
-# 9b227a868f0a45998f79d54912f781e1
+# c0be24d6141a4bd9b1ef8e8f1b1bbfb9
 msgid "Automatic Configuration"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:265
-# 2510a2e5cd5a421f904edee505aa8622
+# 43cc2810de474608b6af18ea1f9143c8
 msgid "Thousands of features"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:266
-# 4f8a61e528404b20871dbebeafd04b32
+# e442902c357b41c58506eb1c34387a87
 msgid "Mobile edition for touchscreen devices available"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:268
-# 10eadc5593754d26bfe8965dec248bea
+# 1d9f73c974f843529a1ed7a5369cc97c
 msgid "`Thunderbird <http://thunderbird.org>`_ with Lightning"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:270
-# 63ee5173ecb94113a54ea0e2e2b63830
+# 17398f5c7c32438fac742437df9207c3
 msgid "Available for Microsoft Windows, Apple Mac OS X and GNU/Linux"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:272
 #: ../../source/architecture-and-design/introduction.rst:320
-# 292206fca3aa4deb994a11baf972611d
-# 71d787b0f35d4cc3909a1aebeff3d84b
+# 0688e1cc6e7e47d0883e5f4a570d24e7
+# 2b2deecba8ef4b4ea7556bb11f58f60c
 msgid "3.1"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:274
-# e4e20ca2531e44478a12740058b10eca
+# 6bc4963414594728bb551432a17b003d
 msgid "Apple Mail, Address book and Apple Calendar (previously iCal)"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:276
-# 395a3bec4e074658a58296bfce17c119
+# 98890986dc544d95b9502b0d168e1f3e
 msgid "Microsoft Outlook"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:278
 #: ../../source/architecture-and-design/introduction.rst:316
-# 036f71fb5a22412287ea5f32c875cd68
-# 1430050a9bcb4bc08f541f2c395bfc34
+# fb58f2d6e0144f1d9e3ae9a388866d90
+# 11689bb4963544ab84f62e0e14fca805
 msgid "3.0"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:280
-# fe9c203e2d734021b28e6c2357d75b0e
+# ff4a10e7e44d444aa6c653411a4bddbf
 msgid "using the connector from `Bynari`_"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:282
-# 37faf78c2a3848d2a174852f42624976
+# 5eb7349a6e1b4c3788c1653acf4669c7
 msgid "3.1, Outlook 2013"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:284
 #: ../../source/architecture-and-design/introduction.rst:318
-# 11649b8608554e089871df4ed3a6e88e
-# 6cba7e21a9e34ea0aba4dbbfe5c4e57c
+# 5dfdf9ecf5e741e6812d28a3efab72b4
+# c09d87e6a7874060a2143b688fb17bc0
 msgid "ActiveSync"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:286
-# a192a6a96e674bc38c0584f0460d353e
+# 87a31ef8bcdf43aa82babf27a731dc1d
 msgid "Evolution"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:291
-# ecd13fa5f13946c3a7ba67f36650da8d
+# e4fae209d4904333b984e5d222a9aa7e
 msgid "Mobile Clients"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:293
-# e682b3091e5c4f4e9862649eb9fdae05
+# a71f0efb4528434f989fca0e60457b2c
 msgid "All ActiveSync capable devices can be used to connect to Kolab and retrieve groupware data. This includes Android and Apple as well as the latest Blackberry devices."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:297
-# b178ad9ef9f74da1a7191f8be85f14a0
+# bd924fd799844efba98a9f7654276733
 msgid "Special security features for mobile clients such as policy enforcement, credential separation and remote wipe can be implemented with Kolab using ActiveSync."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:301
-# e91d453b4192466986778999896f495b
+# 97a21ba0d2fb4012b54ea47ca97241b8
 msgid "If for some reason ActiveSync is not supported on the device, the CalDAV and CardDAV protocols can be used instead as a fall back."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:308
-# 02c7da6d7dd44330bab4865ab1a7876f
+# bc59ba17ff7b4e2cb5cdf9b48c2fb6c0
 msgid "Storage Layer Access Protocols"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:310
-# c420db16b1904506b3c3351254e9bfa8
+# fb745ef013e64c6a9f69c583cdc1af81
 msgid "The following protocols provide access to the groupware data in a Kolab Groupware environment:"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:313
-# d7852fddc0ef4f148baf738ec7299904
+# 460902c642d847c78533c45ba1d5690a
 msgid "POP3"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:314
-# 90eb4612f3174e1fb49dcdfb8d4cef3c
+# 9defe6974d9349c582e288c127b689ad
 msgid "IMAP4"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:322
-# 9300a85299164459af092f1864a21009
+# 00a5b387e2074fa1a9ffd940a5094927
 msgid "CalDAV"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:323
-# 8e32dd5b5eb7497a953c0b310fc0ad94
+# d336a5b4f5974600ac13cd69f1f17bbc
 msgid "CardDAV"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:324
-# bcd34ded7f904dc3a5fcd04f0cf7075f
+# 981ccc1ebe1041c7ab50dce3a33a7665
 msgid "WebDAV"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:329
-# 0970d4e272ec4c5d9a629befc8b08e60
+# f6120a1d62574cee8ffaff3f0379110e
 msgid "Web Interfaces"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:331
-# 439a6e3801a64bad9bb2a66764d33217
+# 4e8f7a93a88c47d3830f685664073e8f
 msgid ":ref:`and-kolab_wap_api`"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:332
-# 46942c632155447a97d4b79c21a04262
+# 483e9c5952f94f2ca4e5b3ada138d5c2
 msgid "Kolab Web Client"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:333
-# 18cb1b52bfe64e6e9438ce055743eb94
+# 4ccf97fcd7c045a0bd05fa81176162cf
 msgid "Hosted Kolab Customer Control Panel"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:334
-# 72374d02c68841f58a72e75ded9009bd
+# ee8041de56d442bb9b855b9294f3fa37
 msgid "Chwala File Management"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:335
-# 4face6dac51849e882d1a43748d82aea
+# fe49ad47f32e4af0ae98600148363a49
 msgid "Mobile Device Synchronization"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:340
-# caec582f25734cb585dbbe585e184f9c
+# 1b8bdf433da6434e906c0be3ae8f43b8
 msgid "Instant Messaging"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:345
-# b3412d5cb9a04541844e1d9acc722697
+# 60a82566f09b4c75a7fe59d181859511
 msgid "Voice (over IP) & Voice Conferencing"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:350
-# 64efb8a54322483fac8a0cac9416e8e4
+# a0db789ac753495d87bcf9881c9e4b39
 msgid "Video & Video Conferencing"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:355
-# c02fb27883664d738493d1fb70004f7b
+# 762555a98a3c41deb06793b7d3408f4b
 msgid "Collaborative Document Editing"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:360
-# 2973b28fc83c4a6c941ee073dffd9567
+# 3d5d60950c244c6b818298971b368b50
 msgid "Overview of Functional Components"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:362
-# d3c8f00623b74f68a767698317c182c3
+# a0439909620b4e67bb96b4b6b372946e
 msgid "The following diagram provides a high-level overview of functional components and their connections and interactions with one another. For a fully detailed picture, we'll need to zoom in to the level of functional components themselves, and their individual interactions with other functional components."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:399
-# 071b9e1e431e448ca9ddddae1e4b3857
+# 38c9b61651ba4ae3b18c7e1990ecbbaa
 msgid "Legend:"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:401
-# 89fddec7749b4658a1abdc7ff14ad571
+# db0d006528e344a8ab8ad8183a749431
 msgid "The Red circles indicate components provided exclusively as part of Kolab Groupware."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:404
-# 4d6aaac2d5e9428f8759371d2511ef79
+# cca06626f2fb4dfb9218f619288f5562
 msgid "Components in a Dark Green font color are server-side components."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:408
-# 569b0d71052a4fe7a0e6d2d57e74b73e
+# 6224914e7c324a23adfffcb704c59c0f
 msgid "The web client -- Roundcube, to which Kolab Systems contributes substantially -- provides Kolab Groupware capabilities in addition to the Roundcube core capabilities through plugins."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:414
-# ba1db38cd09348c9af11959a038d6a98
+# c020148fcde54262914ee31a84230f54
 msgid "Desktop clients that Kolab Systems actively contributes to and supports include `Kontact`_ (KDE PIM)."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:418
-# 2804d17e264949fbbe109e8826901547
+# 9201f0f61c714c1082a6bfcf2f07df45
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:419
-# 82bff65584f544eb98edeca8892338cb
+# 56c7bc5c79544dd4bebb608bbe190cfc
 msgid "**Security**"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:421
-# 5d0d23aba28a4a46bbc5b95ce3f6948b
+# 3fee9ede80294291ba44d9eade902d4b
 msgid "**Beware of snake-oil vendors**, whom may tempt you to choose for a model that encrypts data on the server using a fundamentally flawed model, sometimes called *\"the averting eyes promise\"*, more clearly explained on `this arstechnica.com article`."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:426
-# 3043200dde224576b2477e9ee8b99c8a
+# 1a4bb75e36294f17987850b3cc316325
 msgid "**Scalability**"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:428
-# 06efd21e4d694b2680e8dcc5da56892f
+# 11f3643142df4646a27a7382396075c1
 msgid "Both vertical as well as horizontal scalability are features of an elastic computing environment -- whether automatic (aka \"cloud\") or manual."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:432
-# 6e414f1d290a48f493fc34e44f562ef9
+# d07ad4fb0cfd425382a4eb4472892542
 msgid "The scaling of a deployed solution is best applied to each individual functional component separately, for the number of web servers your deployment needs at any given point does not directly correspond with the amount of mail exchangers your deployment needs (at that point or otherwise)."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:438
-# a5b7b4528fd547fdb0f8e82e8dcb6f46
+# c42c4cb6fc0d46b08534b9daeae4092e
 msgid "**Flexibility**"
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:440
-# 582684f46b804ee28bebf6a2271ebc85
+# 6af3f9c69ff74b049cf8566bd3234b3b
 msgid "While, contrary to popular belief, most environments could run the majority of their infrastructure on standard systems and with standard applications, in contradiction not even two such standard environments are alike."
 msgstr ""
 
 #: ../../source/architecture-and-design/introduction.rst:445
-# caa8a1e386724cd8b6d0f2d37c8493c5
+# d72dab36c0e546af9f3fabcc23e1ebe2
 msgid "A solution that is capable of adapting to the new environment is clearly much more flexible -- this does require a good understanding of the intended architecture of the solution, and a well-defined deployment use-case to adapt to."
 msgstr ""
 

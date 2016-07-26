@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,174 +17,174 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:90
-# d7f81a8d241c44f49e3233e93f81d761
+# d6eb8c26fecb446bb966fce3618210c5
 msgid "Upgrade Notes from Kolab 3.4 to 3.5"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:93
-# cc00138270f940229a00f458cacb2f42
+# 4d15d27b60584f64b3f621cfc424a7da
 msgid "This is work in progress! Kolab 3.5 has not been released yet..."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:96
-# 33b031113b564c7fb1e977f64aea2beb
+# 88b8fabf57bb450a8e53f048df768a32
 msgid "ChangeLog"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:98
-# 20697281fb9d417bb3d448394011cd26
+# 5d4f49901ee4425a9fe5d86cd04ecf2b
 msgid "**empty**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:100
-# 1fb4dbb836e0486199119596c63b9457
+# 84a37e29af84433180e8da820e836f29
 msgid "**Lots Of Bugfixes**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:103
-# c78c699dee104979877a4bc4f63c8abd
+# 7086f8ab843c4682a3ff23bce7f29bd9
 msgid "Updating the system"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:105
-# f88ae082c446470ea12aec44589eba41
+# 9e4fc14a5a594c6a9aaf2ef0af304ff6
 msgid "These update procecures are just an example. They don't differ too much from a basic installation."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:110
-# bf79ef1789ed40148b8bf68aa189d78d
+# a0bc7caab39f49bd988d8e1bd16dbbf9
 msgid "CentOS 6"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:112
 #: ../../source/upgrade-guide/kolab-3.5.rst:131
-# 8a1057a0f9c1454fa0d90f67c0d71ca8
-# 4baf43169c9a4025b53db4b7d6e94881
+# 8cae78b558b34467a006beba1d52e6f8
+# 2ff431a114054d8e9780212c440c1a02
 msgid "Update the repo to the new location"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:121
-# dd4d4d7f240b446093d85f146b3e5ef2
+# ed2a2198b8094ec7a2f7ff79656ed83e
 msgid "run the upgrade process"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:129
-# fd446ebc7232432dbd2d62bad7b10999
+# d4d7d88c5f09494b8b7c6ce7cac1b84d
 msgid "Debian 7"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:138
-# 574ca9742e2347f09436e3b8d0dd35f5
+# ddefa8b598794212bfdf490a9799105c
 msgid "If you've don't have set a correct apt-pinning or release keys, please check the Installation Guide."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:140
-# 25a3a8a9fef74c44b65a93ff4fea1035
+# 708ccc7a2a0d4026944d72790eedf485
 msgid "Update and Upgrade the system"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:149
-# 85c3151802374cd5a9082f7b0e7e695c
+# c7ffd9e581e64323b3e6fcc4e02b2956
 msgid "You'll get ask if you want to replace your configuration files! DON'T overwrite them! You'll lose your configuration and credentials and end up with a broken frontend."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:154
-# 5a47140bef0f44dd97079c0c6152c9e9
+# 56af53ee43904adcb26a2f67ceed8dc7
 msgid "Database"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:157
-# e58c62604a6a405984391bf618146c5f
+# d08f3e32c9094b89a904dbded204d86d
 msgid "mysql database: kolab"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:159
-# 740d5fe8c31a4c03abd13c5fc758a54c
+# 07d272c660ca41a0ab019aaca8c510a0
 msgid "The admin database got a few minor updates:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:161
-# 81e17ba1f9db46518aa148c1b52c7ec0
+# 012d8b0c85734e6187a7e76e96b1a86c
 msgid "You can find the full sql file here:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:163
-# e9a74851623d46bd9a9e934fd50a367c
+# cb7c0b7a0fe246adad93737cf55d711b
 msgid "XXX FIXME #.  web: http://git.kolab.org/kolab-wap/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.6 #.  locally: :file:`/usr/share/doc/kolab-webadmin/kolab_wap.sql`"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:169
-# 6da853ebe3774112828cad11080f5b9e
+# 31844aa87cbf4490832e1914a8562979
 msgid "Don't forget to make **backups** of your database before applying the changes!"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:173
-# 50cea7a38d0e4e7a8d227d869c1aa206
+# de6def30eb644f33865de9cad02a0f94
 msgid "The kolab-webadmin package doesn't provide auto updates or upgrade files for your database. Here's a summary of what has been changed."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:176
-# c8b2798ea1a84cfabd7790be4a0ca6bd
+# d98aaf64f3c14c578970699f451fc44f
 msgid "Field for mail.alias is not a list for Mail-enabled POSIX user in kolab-webadmin (#2219) https://issues.kolab.org/show_bug.cgi?id=2219 http://cgit.kolab.org/webadmin/commit/?id=47653cb71fc68c083ef2cc95a97790f64f0b590e http://cgit.kolab.org/webadmin/commit/?id=250f5938c1bd0cf021d01125e01eebe7e212ed0c http://cgit.kolab.org/webadmin/commit/?id=d8dc3e2f241d66fb36126416c44f8303df36ba41"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:183
-# 21bc83a1047c4870957d6e67e2f9c3b1
+# ca272494038346368db30515dafdbad7
 msgid "Warn when two Users have the same secondary mail address (#2983) https://issues.kolab.org/show_bug.cgi?id=2983 http://cgit.kolab.org/webadmin/commit/?id=e484198c037a919a42d9c5a52dec107def982d27"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:187
-# 0d0378c0f22246d6a80c1be1cc1c407a
+# 8aacdbf9d7ab4a6ab4a6d4b79ab5c864
 msgid "If you've made changes on the user types you might want to change the types manually in the settings section of kolab-webadmin (see below for details).  Otherwise you can refresh the user_types table:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:191
-# 039ab49f0b9c404082b328276fa4f9fa
+# 7ba865c6f33946028fbbe1cfb7dbfa2a
 msgid "You can find the sample php script here:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:193
-# c5942bee3b4741fab0302e44137eb78c
+# a0443acda8af42c680736749aace6c7b
 msgid "XXX FIXME #.  web: http://git.kolab.org/kolab-wap/tree/doc/kolab_wap.sql?id=kolab-webadmin-3.2.6 #.  locally: :file:`/usr/share/doc/kolab-webadmin/sample-insert-user_types.php.gz`"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:204
-# f072adb74a1248a9b318b85102320284
+# 6609019a2bcc455181d7a512ce51f42d
 msgid "Manually changing the user_types in the kolab-webadmin interface"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:206
-# bb4c3428fa3e4a9581f6615f06632cc9
+# b952c0888aa8447788859e0da1bb2c2a
 msgid "Log on to the kolab-webadmin interface using \"cn=Directory Manager\". Select \"Settings\" (Einstellungen) and select object type \"User\" (Benutzer). You need to apply the following changes to each of \"Kolab User\" and \"Mail enabled POSIX User\"."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:211
-# f9b260a6abec4397935dc0ce7368e468
+# 9cdd7e3a0e2a4244964f6ac999e0e160
 msgid "Switch to the tab \"attributes\", search the line \"alias\" and click the pencil symbol to edit. Apply the following changes:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:214
-# f50510c9279e40d9a4065ecc8b1f3593
+# cb77479193e74a2ab895a2f420d2202a
 msgid "field_type select \"list\""
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:215
-# ee646112d87c48609328282543fd245c
+# d8bbfa963d5440eeb74748de4fb112d8
 msgid "validate select \"extended\""
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:216
-# 2f3a08b6f98c433097e069f0604d34fc
+# d173f35fb52c4e02a6827c400c77619b
 msgid "tick \"optional\""
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:218
-# 066ac241f9214859b40ba93ab2f53425
+# 215cb7b3e6b3431f9dd87ebd8145baa7
 msgid "To save your changes press \"save\", scroll to the bottom of the page, and press \"send\"."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.5.rst:221
-# f465f8114835496facaba3a177dd322c
+# d317cf3758c848fe901153ed1ed1d871
 msgid "After the database update has been applied. Logout from the kolab-webadmin interface and login back in to load the new changes."
 msgstr ""
 

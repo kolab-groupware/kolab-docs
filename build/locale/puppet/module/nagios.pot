@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,72 +17,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/puppet/module/nagios.rst:92
-# d689268782744231993c531f6c68cb34
+# 92987bd78e99418a96fefcd2713be3df
 msgid "Puppet Module: ``nagios``"
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:94
-# 6779a5082f204b269f373c92026cf402
+# 7d3f658813bf4011859f6521c76306f3
 msgid "The Nagios module manages Nagios servers and clients, alongside plugins."
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:97
-# 2cd633b993294e6aa8dab8679673e2ea
+# db4143bf84424fe2a9a0c3ad78c1df95
 msgid "Module Classes"
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:99
-# 724c52e73eff4c9eb2004c122f1f6b67
+# 7ed37c3941c74f9eb1a2c33a4c1279ee
 msgid "``nagios::client::active``"
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:101
-# 272dc1f372e04fcb8738fffc569e774e
+# 85bed1fa3c4045988f2c261c56cdd19b
 msgid "Installs, configures and starts NSCA."
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:103
-# 78719461cdbf4c36905de34e7ae20320
+# 527bfc4e36ca4d3dad5bcc6c809fd32c
 msgid "``nagios::client::passive``"
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:105
-# a34f926d0b4745fc979a4eccaee686d8
+# cf538be468ad4cb3a2e5e09e19021830
 msgid "Installs, configures and starts NRPE and ensures all available plugins are installed."
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:108
-# 705cf169086444e896b6e171eac8f3f5
+# dea3e01a4c124eddb7b4a47e1d6b63d9
 msgid "This module sub-class also includes:"
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:122
-# 3740a5279c744357affcb89edd0952b8
+# c2bd5e1aaa2445249db648fe1d5adf9f
 msgid "``nagios::server``"
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:124
-# 4a3630dce2df490ab3a913875f71700f
+# 19306dfb8a1b49039c263c33e3c9dcac
 msgid "Installs, configures and starts the Nagios service."
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:126
-# 07718aa7e2e647769532d4ccbdd3f059
+# 341da0e691f442319dc2955314f5e77f
 msgid "At the configuration stage, this module sub-class also realizes exported resources Nagios_host and Nagios_service that are tagged with the NOC server's ``$domain``."
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:131
-# 5a27ec46cfd245ceb7b39bf7c84b1895
+# 3e65183cbf2f4a18b2afa2463863ffd5
 msgid "Module Definitions"
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:133
-# ca74208b5bae418c9fcc43fb7a0a7d67
+# 77f2675efce74a429bdca02df45837d6
 msgid "``nagios::plugin``"
 msgstr ""
 
 #: ../../source/puppet/module/nagios.rst:135
-# a8b7a73c18eb4991866de40407d7c728
+# e525f97eb0a9470ab40b933abeb50527
 msgid "Enable or disable a specific plugin. Intended to be used with plugins that are sourced from a central location."
 msgstr ""
 

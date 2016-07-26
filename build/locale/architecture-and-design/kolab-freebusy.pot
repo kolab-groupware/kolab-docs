@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,189 +17,189 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:92
-# 8c607df6e27b4c98a7e88695fdceb3bd
+# 1e0c39aace514b8bbde40d944d25cedd
 msgid "Kolab Freebusy Daemon"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:94
-# f4742ccac90543c8bf8d56a8415f502e
+# a9e33535b3984906a6a3cdc551f8c220
 msgid "The Kolab Freebusy Daemon **kolab-freebusyd** is the component that generates Freebusy data for users and resources."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:98
-# ebd490ab24644fc1b4c278ce352dee8c
+# e6b4d567e45b4ffeb974309a0c00d133
 msgid "**MORE DOCUMENTATION TO BE ADDED HERE**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:102
-# 7b0eb24110b942e489e8558b6393a2a4
+# c60d13bd4c3547c090ec39a2664acc1d
 msgid "Running kolab-freebusyd as cron job"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:104
 #: ../../source/architecture-and-design/kolab-freebusy.rst:110
-# e7e02daa837442ad9515bada44ca3895
-# 70641aa086f44d259698c052f60de38b
+# 15dfea8f74534c10945b45f6aa81f0fc
+# e618234ce6cd4bd98ff892a587971255
 msgid "Undocumented."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:108
-# 45e5e06bf7d747d19cc307bbf3e4b239
+# 2814b6c95e244143a21008d139887339
 msgid "Running kolab-freebusyd as daemon"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:117
-# 77ca88f9c3624df79e5937d8f6ac6cf9
+# 78f8ed325d04482190a7497cfb9e7ca9
 msgid "Kolab Freebusy Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:119
-# 22c949f52c4f476ea2228731ce3f139c
+# 4c455222715b4abb8cd786e277f6b859
 msgid "The Kolab Freebusy Service is a REST web service serving Freebusy data through HTTP(s) at ``/freebusy/``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:122
-# b3423d5a64b74412ae40bd1af716cf55
+# af5bb584b75e4ef3b37d1c9bf67da604
 msgid "Queries for freebusy information for a particular user or resource can sent as GET requests in the following form: ``/freebusy/<user-or-resource-email-address>.ifb``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:125
-# e3769f82b68248a9b2b21104c80186d2
+# 1c6295fb2da74ceca79434cc84cbe1c4
 msgid "Example URL:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:132
-# 856fc01ff25c4361a161d92b538440de
+# a2f5211aa3a94d82b94800f4f616e255
 msgid "The Kolab Freebusy Service can be configured in various ways to collect freebusy data from different subsystems or services and cache and deliver them to the public."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:139
-# 4a1500e19942431a91294a1c675fb35e
+# a09382d9831347dca2612c0e7a114e0f
 msgid "Directories and Sources"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:141
-# 07845d181b774d1b9ee8a95d5e76bfbf
+# deb6667ac205433cb4673ddb4f4f33ea
 msgid "The service provides different modules to first look up and validate the user or resource freebusy data is being requested and then fetching the actual data from a specific source and optionally convert it."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:145
-# 261aadb97e3243e788836622de8d53b2
+# da1ae0ced3e34822abb2db6fc4c31ef1
 msgid "A set of **Directories** is iterated with the current request until one can resolve the user and delivers freebusy data from the linked **Source**."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:148
-# 7b625d7c57e84c50820891e1b2d377b6
+# 51ad348042494b709eeeb909bc3b4da5
 msgid "Directories are defined as ``[directory \"<dirname>\"]`` blocks in the config.ini file of the web service and link to a specific source using an URI set for ``fbsource``. See :ref:`and_kolab-freebusy-configuration` for details."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:155
-# 4f69f4292995413c9bbb762fde79f400
+# 9693aaa974b748acafec88ce5cec1c92
 msgid "Directory Types"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:158
-# a2c06df019c94308b829174030ad3893
+# bf16b8ada63943ad9abef8d3d25838f8
 msgid "``static``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:160
-# 281f0d21a800451082d4a615ed4d7212
+# fe1d683aa2574dfc9b1319fef4b02252
 msgid "A simple directory implementation which just checks the given email address with a substring filter and either accepts or rejects the query."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:164
-# 2cd0c27c2e054783bc21b4e07085024d
+# fbe2f6ac587d4e349c27206b53e84aeb
 msgid "``ldap``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:166
-# ebb84217941d4cd2aff1396015aa087b
+# 60212d1537a041fb91844025be8548c3
 msgid "The LDAP directory resolves the given email address with a configurable query to an LDAP service and provides additional attributes for the matching entry which then can be passed to the linked **Service** to find the right data."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:172
-# b5553c7db5e3469cb04a7c9911905e8b
+# 2e42da07762c4c849a0bf2315c63de75
 msgid "Service Types"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:175
-# ba727230b3b646629905149c29fc2a54
+# 1641d72d02564bcc97c4490e64e9f09c
 msgid "``file``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:177
-# ba53afca0c29475b97901f31d04b6e67
+# 665281768cff46c5bd3eef39789eb4a9
 msgid "Provides a path for pre-generated freebusy data stored on the local filesystem. These files are usually generated by the :ref:`and_kolab-freebusyd` running as cron job."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:181
-# 2d704b14662d4f54ac5890c32fd677d7
+# d5de799e9a2d4651af2656c60e70edf1
 msgid "``http``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:183
-# b162451e3769450f84a70fa40ee7cf42
+# ef7de18428024baa8e517130bba29600
 msgid "Can fetch freebusy data from another service via HTTP(s)."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:186
-# 60fc6e87e1014ec9995a07c66aa1b758
+# b1f325b05bb44850a19bb60cc8142607
 msgid "``imap``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:188
-# e5cecf9549414e3192d6d35bce215d9d
+# 79cd333e681f4e038cc05741e09f7ab1
 msgid "Allows to directly read a user's calendar in IMAP and aggregate the stored event data into an anonymized freebusy block."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:193
-# c10bf2abddc14f46a7ee919a2269472d
+# c6f2a865d5e64601a5114333f24df960
 msgid "This is note recommended to be used in a productive environment because the web service directly accesses the IMAP backend with admin privileges (proxy authentication) which should be avoided in a publicly accessible web service."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:199
-# b47bcc202b75475abbb82bd2aada7d3c
+# 6961fab2ee144e7e82d66583b89a0662
 msgid "``fbdaemon``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:201
-# 7a85c0a021324f1d94522693c255ae69
+# 0b451d7cf4a8439e9cdc5fc564411b9c
 msgid "With :ref:`and_kolab-freebusyd` running in daemon mode, this source connects to the freebusyd and starts a job to aggregate and deliver freebusy data for a user or a resource."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:206
-# da34479fdf714941a97110eb82308834
+# 4883a6868a2441c6922365e35b6f0fcc
 msgid "``aggregate``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:208
-# 20205be7fdff44ec9b237359cd8a3e43
+# 2507949cb0d0433f991d6a1641c51016
 msgid "Aggregates Freebusy data from all members of a group into one data block that only shows slots as busy if they're unavailable for all members."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:213
-# bddf30553e804aab96b223ff376a0244
+# b130fcf1fecb4599b68fcbceb8d7c0bb
 msgid "Formatters"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:215
-# c908fcad5fd446e3912688da95c4e59b
+# 04f9086a109c49c284829323a77ba3ef
 msgid "When fetching data from a specific source, format conversions can be applied before delivering the data to the requesting client. For example the Kolab Freebusy Service can convert data from an Exchange 2010 service into the iCal Freebusy format."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:223
-# 61f2aa5709b24951acbb1ce74b9157e1
+# 3a6219259def42c48231f7a6744cb9f8
 msgid "Configuration Options"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:225
-# 3694b3100e4949d499ddb6a948083fb3
+# 857dc38279b94c88a370b53e34531c21
 msgid "The `config.ini.sample <https://git.kolab.org/diffusion/F/browse/master/config/config.ini.sample>`_ file provides an overview of possible configuration options with several examples."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-freebusy.rst:228
-# 337cbb88ebef4b7281a8e5e4d82f8e42
+# 0bbe3e65aa09430b859de1fa556c6da2
 msgid "The full documentation of the Kolab Freebusy Service configuration can be found in the :ref:`admin_kolab-freebusy-settings`."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,442 +17,442 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:90
-# 2cd184e2efe44c94ad88e676d69b2a4c
+# e5dfcde940f148939c768668cb3fbee7
 msgid "Tweaking 389 Directory Server"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:92
-# d9795c7ad5584e8e8a57d90fc7325954
+# 376c28372da9446dbee93b2dbce63e7d
 msgid "The 389 Directory Server is one of the most important parts of your Kolab deployment, as it is the sole authoritative source of all user, group, role, resource, shared folder and mail routing information and configuration."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:111
-# 906ed4eea3d2427387a72a7b20254f6d
+# 417cb13c27064d24a54edaebe44b5f9f
 msgid "Controlling Indexes and Indexing"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:113
-# dfa17f020f014b82910a4494aa33f373
+# e10a1f164f484559abf7d4935adcc93d
 msgid "Indexes are created for individual attributes, and may consist of one or more of the following three types:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:116
-# 1c277377c42342bb8eac40ffe86821d0
+# 5a1dc7c81e1049ada4fbc772741df8b7
 msgid "Presence"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:118
-# 6ec0021cd45d4163b14ac91bc18eeb46
+# fb1dcebfac6c4343a021056745bc215b
 msgid "A presence index for attributes services queries with a filter such as \"``(cn=*)``\"."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:121
-# d49306af58794a8ebad44545710285e7
+# 03a46b0194d84e6d9b5a05fd83a24783
 msgid "Equality"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:123
-# fc37e1c788a54479a67c13bd880ac085
+# 13c98566c09d492ebd4a5a5c6d70685a
 msgid "An equality index for an attribute services queries with a filter such as \"``(mail=john.doe@example.org)``\"."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:126
-# 137621745b0f4fbc911d0a32280bea8c
+# b1b4372de6a64fe8aa2cf28bb3fcd717
 msgid "Substring"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:128
-# be3ec7272ca648f4b128dde02d76dc02
+# 5e5f0c58d16343c5a32097f3673687c1
 msgid "A substring index for an attribute services queries with a filter such as \"``(mail=*joh*)``\"."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:131
-# db5a4aea4e7540fbb864aece45ee7893
+# d6c536ae65a14dd98f8ee1e374c39279
 msgid "Presence and substring indexes may be used with, for example, auto- completion, while equality indexes may be used in, for example, LDAP lookup tables for Postfix."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:135
-# 19cc514d0eb84e459fc1fab12aa240e5
+# 01569ec984f1456d82673e6466ad3963
 msgid "Listing the current indexes for a database could be done using a script such as:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:138
-# 6255b7d62ab044d485a6d894a0ccecf9
+# 6f56f2d48ded47859c835483770999fa
 msgid "https://git.kolab.org/kolab-scripts/plain/utils/list-attribute-indexes.sh"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:140
-# ad63cc1ce4f34a03bbdd2d5e75381a1f
+# 5958553e129c4f2e82c80feb358b6ad2
 msgid "Adding new attribute indexes for a database, and executing the task to create the index, could be done with a script such as:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:143
-# 0ebba86554fc4fd1bce8200e9bd5fd0e
+# d4b31f0e00584011b89229d6f3e4d5bd
 msgid "https://git.kolab.org/kolab-scripts/plain/utils/add-attribute-index.sh"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:146
-# 9ecf2a7eaa094d159d4336fdb93f4ac5
+# 4e566f42fc6545f58e9b8389184a070a
 msgid "Recommended Additional Indexes"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:148
-# a479d3d425204b1bb010296178beef04
+# c42ea8b647444a5e9834c22797330f26
 msgid "``alias``"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:150
-# b1f7675233f349369961696fe51de590
+# fb7da255f346480f91215849409ef4a1
 msgid "Kolab Groupware by default uses the ``alias`` attribute to store additional recipient email addresses for users. This attribute is not indexed by default."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:154
-# 728c1181f2e64b59994b6ee620d3aabd
+# 3e8d69307c1041d0bfcf99cff91e07cc
 msgid "``mailAlternateAddress``"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:156
-# d6545646ef094cc9bd5d330f34c6bd16
+# 7bbea151a5594d4689e981a285b65a02
 msgid "While the ``mailAlternateAddress`` is used, by default, as a container of any external email addresses for a user (such as a private or personal email address), you may find it is searched as part of auto-completion."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:161
-# 6b912f166fe54f0c8108aacf34137bbe
+# d590b50c995c4b3ca60efa64664a27f6
 msgid "Especially when using VLV/SSS, should the ``mailAlternateAddress`` attribute index be a substring index, but it only contains an equality index by default."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:168
-# 1295b1ee59024a4fb2cc9580239a5291
+# 87836927a3724c4283a55db647b72703
 msgid "Configuring Virtual List View Control"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:170
-# fc110bb0b2364a26ad27486485e8645d
+# 998f6a2d10e4480abb65b292bc19e9c8
 msgid "Virtual List View features in the LDAP server aid in listing pre-indexed and pre-sorted LDAP entries in a paginated fashion, and is a required configuration item for deployments with over 1.000 entries in their LDAP hierarchies [#]_, when also using an address book, auto-completion and/or the Web Administration Panel."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:176
-# 47993ff4631043208711f0a4f8734482
+# 7296b11be2f743af93822cc41002fb64
 msgid "On the side of the LDAP server, Virtual List Views consist of two separate configuration items:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:179
-# eb223c25063b44e58d0232d4a2c90239
+# 14139611d0564ef98423d61d0d3bce2f
 msgid "The search, with a base dn, scope and filter."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:181
-# 116c926850494a318346ec9793c48498
+# 9a860a97a4684192915dadee3ce09a42
 msgid "The index that includes the Server-Side Sorting parameters."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:183
-# 3f3d639b90024dc3ac46b0d09de52ce5
+# a701cf997f4547349fe3995ba6537409
 msgid "For an LDAP client to successfully use Virtual List View controls, it is crucially important that:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:186
-# 42edf9ce623045019ea3314533b6e705
+# 78d3d7b4ed064d478c03165b74941418
 msgid "The search base dn and scope match the configuration of the VLV search, and"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:189
-# 3239557ab05e485a9af73730c3c7123c
+# d47d86d721ff4bbf9b2bf52635ab88fc
 msgid "Any attributes searched in addition to the configured VLV search filter are appropriately indexed."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:192
-# bc81c7b9fc5249e7971c8efcb9d4e702
+# 007524c3a4ec453db38b95ae5c12e11a
 msgid "By default, the configuration of primarily the Kolab web client uses the following configuration parameters for browsing the LDAP address book:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:196
-# 802e1af2b69741ddb5ca0d21d3ab09f1
+# a4494786905943fa910d31d1302370c0
 msgid "For Individual Contact Entries"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:197
-# d4c084021f024d6386cf4f8835e43eb8
+# ac4bd3fb6fb94d11a525a60e1e6786de
 msgid "**Search Base DN**: *ou=People,$root_dn*"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:199
 #: ../../source/administrator-guide/tweaking-389ds.rst:236
-# 80409a31318248e881ddd1ae24199dd9
-# f09146edecd5492895b63ae70084c19d
+# e211408f0ee449da9765affb4a37927a
+# d9ebe2078d2a4a6aab4eac004197e5a9
 msgid "where *$root_dn* is the relevant root suffix, such as ``dc=example,dc=org``."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:202
 #: ../../source/administrator-guide/tweaking-389ds.rst:239
-# 244359acb6eb4eecb28b0b8affef9cf5
-# 525241e88e944f75957566aa5aaf3066
+# 4118eaef4e4642b3973659cdebea0bc8
+# 5d2f139d6a454b5fa3845ef68476da67
 msgid "**Search Scope**: *sub*"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:203
-# c603ac884836447a951a6673f70cc482
+# 0c2a4dce6ea3428abfd0dff6bdd0a3c0
 msgid "**Search Filter**: *(objectClass=inetOrgPerson)*"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:207
-# 3b29c00924dc4351aa35c5298419f11e
+# 407917d9a22945ecb5f3d403ec48fab3
 msgid "The search parameters for address book entries are deliberately **not** limited to only include other Kolab user entries."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:210
 #: ../../source/administrator-guide/tweaking-389ds.rst:248
-# 4ae215da5ffc491f9bc19a8f8764b2bd
-# f2f2347a89154e82bc7e4652adddb1f7
+# 38b5459de87148ffa47a1214ac3db828
+# cc4ecae5b5a64ff09ea4c5973bfb15f0
 msgid "The configuration for the LDAP address book also lists the order of attributes to use when sorting the entries:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:213
-# 44928efa109149889be8e739ae5473cc
+# f1c6cf6db23b474cb8e1adabf8529e22
 msgid "displayname,"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:214
-# eb2bea74d1b746c88d70bc56bdc94328
+# 660f44c378ea4645a5482d48c9eaf733
 msgid "sn,"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:215
-# e47862d644ca46a89f7dcba442b7e4e4
+# 84179a801f244beaaf0116a04b603659
 msgid "givenname,"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:216
 #: ../../source/administrator-guide/tweaking-389ds.rst:251
-# 3713a11a427c45189b8e9477b78a4977
-# 4482f0ba682d4ac39e2c7a6daf216345
+# 5af753bc16624023b98cbadf991d4c90
+# 1f9a92dc46224bd2bc71989017032d97
 msgid "cn"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:218
-# baf2eb30bb414083afa94d109cd1c3de
+# f6c98490aacf4e90b22ddecfbc03dd80
 msgid "This configures the LDAP server to first attempt sorting by ``displayname`` attribute value, then ``sn``, then ``givenname``, etc."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:221
-# ffc8242bf4f0450f930edc444f1e1e61
+# 6d0b04d51c4e4751bfdc3f517cb61b26
 msgid "When two entries hold the same value for an attribute used with sorting, the next attribute configured for sorting is used, if any."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:224
-# ea5c77e18a7d47c2bb59b8c50f98cdc4
+# 51c2499753764b52b7f073d89cecf55a
 msgid "When configuring the sorting attributes, only use combinations of meaningful attributes, and preferrably as few as possible at a time."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:227
-# 2b7ab12b83184275a5604a659abcd8f6
+# 12c5f96a70854750b91a986fc96e260e
 msgid "When, for example, you want one list to be sorted by user's names, and another list sorted by phone number, do not combine the two different lists in to one sorting configuration. Instead, use multiple values for the ``vlvSort`` attribute."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:233
-# be2085a9dcdb4cd6bde0ea860f7de2da
+# 22d3587cb7c24c50bc47ed11666deadb
 msgid "For Groups"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:234
-# 8915eb1874cd4bd8af47ee5d682222df
+# 248d4197852e43aea0071ef76413959b
 msgid "**Search Base DN**: *ou=Groups,$root_dn*"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:240
-# 4a5b9bf243d14e2e877d9c6380ec3d01
+# dcc6c6e2d6d341128c8e0f77355cea43
 msgid "**Search Filter**: *(|(objectClass=groupOfUniqueNames)(objectClass=groupOfUrls))*"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:244
-# d559b8d551e7466ab869228c9465aa2b
+# 31a362e19a8740b7928fe7cf70b81994
 msgid "For groups too, the search parameters for address book entries are deliberately **not** limited to only include other Kolab user entries."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:253
-# ee3bfe113810487585f0edfcedc3127f
+# ff452bedc55c4df1b86aaa307dbfb02d
 msgid "Creating the VLV and SSS configuration objects in an LDAP server may be achieved using the following example scripts, in order:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:256
-# 7e53eaf50d8f441f9787f0aae6a6cdff
+# 733e0adf686e428a8209a21380da7ce9
 msgid "Creating the VLV Search configuration in LDAP:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:258
-# 677c7c510a084845a14145f1fce848a8
+# ff20633210784317b0637f3b7a91e007
 msgid "https://git.kolab.org/kolab-scripts/plain/populate-ldap/10a-add-vlv-searches.sh"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:260
-# e1c141f75f3e46219c41162c9f7dc826
+# ad70d199cb1c40c38cff75dfbc043876
 msgid "Creating the VLV Indexes with Sorting configuration in LDAP:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:262
-# 1897f50109dd4fed8515ecccaa50951e
+# 3194ddcf60064ff4b4bb6d907a020336
 msgid "https://git.kolab.org/kolab-scripts/plain/populate-ldap/10b-add-vlv-indexes.sh"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:264
-# f80aec408b454706ba20b9e6b2be38c4
+# 0ec49edf30924ae2ae0661adbfcd94f9
 msgid "Subsquently, the index tasks should be executed:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:266
-# 66a888519a544462831a369f50082157
+# caf4f9f091a64a3f9fee2386e1bc06f9
 msgid "https://git.kolab.org/kolab-scripts/plain/populate-ldap/10c-run-vlv-index-tasks.sh"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:271
-# 07cafb769be2468c88fa2c22e9e0dc80
+# c03e741e9d4d438e8d936a2110d29dde
 msgid "Configuring Server-side Sorting Control"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:273
-# b282db93ad0845e0b43a08dfc3c5bc45
+# 9d45a2391ba549c1bce20cea1123f4f3
 msgid "Server-side Sorting control is a pre-requisite for Virtual List View control."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:276
-# 0cfdbc5e0ccb4ef290862000e467576c
+# c1c0f75abdfe49479c11a0856edc0835
 msgid "If you are using Virtual List View (see :ref:`admin_ldap_configure-vlv`), you are also already using Server-Side Sorting."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:283
-# a83425b3333e4a0395bd93c6aba70ac4
+# 87ab9776499d442da838a0b7acda681a
 msgid "Increasing the Maximum Number of File Descriptors"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:285
-# d3667ef187c8419bb13caf23dc03c66c
+# 2f5a9472a7e249c0ab79734dcbde2e7e
 msgid "A 389 Directory Server is configured to open at most 1024 so-called file descriptors, which include database pointers, logs, replicas, statistics and (client) network sockets."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:289
-# f3284d9a99654921bc95ad0a7a6b64bf
+# 91b47740594d4de4965429b444566b50
 msgid "Increase the default number of maximum open file descriptors from 1024."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:291
-# 0d50f5a3cb564375b92c87a800bd592e
+# 5a525131b4bc4b65a48e7c9f1cf6cec2
 msgid "To change the number to 8192:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:293
-# bc36a712179947888f92008fda0eab90
+# 2ce6d059937e4e20944b68e84be7f0a4
 msgid "Edit :file:`/etc/sysconfig/dirsrv`, adding a line:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:301
-# fcc2020ce5c34c658fbcd3ef450916e6
+# 828ba0089b7f42c483c405a9b141728f
 msgid "Note that your operating system may have other security limitations, and may have a system-wide limitation on the number of files as well. See :command:`sysctl fs.file-max` for your current limit."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:306
-# 33ae5b6f0ee64b12a2c4f9d3f4e6fa8a
+# 0fb2d61d118f4047bbbed8052e5a764f
 msgid "Stop the directory server:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:312
-# 5345d9b9fd574b059485dbc09f063888
+# cd279b7de4d141b4a686f21b5e74f5a5
 msgid "Edit :file:`/etc/dirsrv/slapd-*/dse.ldif` and replace the following line:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:319
-# 7057c0d9669146908bd7d8885d4614dd
+# 32b6c0170b54491eae64998c6fb546bc
 msgid "with:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:325
-# 5ff26c5258e24d80bfed3129ce0e3920
+# d8853e34d047440696197daa85554138
 msgid "Start the directory server back up:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:334
-# f82fed5a93894cf8984852d2871f5dcb
+# 450cbcaea54547659e3791858c33cb95
 msgid "Disabling the 7-bit Password Enforcement"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:336
-# eaa20c48710f4bd4b4479f2a785b3306
+# 787d10e444d0463aaf8a6cf7bef29293
 msgid "By default, 389 Directory Server has enabled a plugin to only allow passwords to consist of 7-bit characters."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:339
-# f19251da894f4d9da469c0322e717022
+# 83d36a2ceb4d4d1b969846674c74a521
 msgid "Older systems and software applications do not support the use of 8-bit characters (i.e., non-ASCII) in passwords, and to prevent compatibility issues, this plugin is enabled by default."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:343
-# 4d037fe4a0b3485384c62e0b72551e8b
+# 4fe4e102562345599dcab9b911887649
 msgid "To allow 8-bit characters, disable the **7-bit check** plugin:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:356
-# 34cccbc9830e46e992e32659d15d095f
+# f1fedb2d710e42c5a7b94c0eb54a773e
 msgid "A restart of the directory service is required for this change the become active:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:366
-# 0f83e750434c4776bffc56c8accff6f5
+# ab1dbf35aa614dab8aa386590e69d675
 msgid "Disabling the Access Logs"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:368
-# 24866b613b9e44a092f489364a3e1790
+# d9e3dab252794c8a9c6cf9516e21cda1
 msgid "Access logs are accounts of new connections, searches and other such information about who accesses what, where from, and when."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:371
-# 058a4cc323284808a960200f2cfa11f6
+# 57180c2b410b404fb4a54380da4ccb3e
 msgid "In larger environments, this log can grow very large, very quickly, and while disk space consumption is the lesser concern, the related disk I/O may be more relevant."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:375
-# 608df082fdc84689a21479c62e26c7b1
+# 84849aecc596485a9a2a99848b83d006
 msgid "Larger environments could choose to put :file:`/var/log/dirsrv/` on a separate disk (separate from :file:`/var/lib/dirsrv/`), possibly even in-memory *tmpfs*, or disable the access logs altogether."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:379
-# d33d2f8a62844c3886538175f4f918b0
+# dea0701bb2654649b71295594fbb6cf0
 msgid "To disable the access logs, run the following command:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:392
 #: ../../source/administrator-guide/tweaking-389ds.rst:422
-# 1cb10c70f4f348c5a17cf45c6322446b
-# a2401c29e7c74d9982006bc1eb0af462
+# d4ae60b4caf1442b8effc8d3852e78b8
+# 25b2fcb05f1e4adeaba5dc8307fcbd0b
 msgid "The directory server does not need to be restarted for this setting to take effect."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:398
-# 2ba2220fbd0246dfb3386f16032cd361
+# 28ccd8ae78894592bf121fae131d5e17
 msgid "Enabling the Audit Logs"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:400
-# 34caab5e9c774e02aadfb80416923fb4
+# 5cc683b48e4947c1871f9c4e6a4334fd
 msgid "Audit trails are important, especially when the access logs have been disabled."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:403
-# 2919bbb429fd40359aa376d1bbcc5784
+# b844f0d74d77413783e833b707a23f57
 msgid "Audit logs include diffs of LDAP entries being modified, along with a timestamp and the credentials used. As such, despite explicitly lacking the source of the modification, provided a set of differentiated bind credentials per service allowed to modify LDAP entries this can still be a complete audit trail."
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:409
-# 4db7631e469b4122ae28b87c1932bf0f
+# 8d0001222af64c11afeb4be64b7bd56e
 msgid "To enable the audit logs, run the following command:"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:426
-# c36c94fb120a4e0aba72b3bf5897fc74
+# 8d7acf81bd4d41969d13b77ad56f5ffe
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/administrator-guide/tweaking-389ds.rst:429
-# d4c85e2169474ef6b8ee384dd49d8619
+# ca43b428904442be99425821c7ec3854
 msgid "VLV/SSS is not strictly required, and one alternative is to disable the look-through, search and time limits for all users. Doing so however allows any user to unfairly load the LDAP server with the heavy operation of searching large numbers of entries."
 msgstr ""
 

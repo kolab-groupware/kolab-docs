@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,112 +17,112 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:90
-# 16717be2ae78484398b2798ef0081fc8
+# 4ff2203a2ad84db5b060ee81564764cd
 msgid ":command:`setup-kolab` Command-Line Reference"
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:92
-# 9d6a4f9d623a429d8d110e2c7bb76829
+# 81e143ef17e245c8b768590e68aceb8d
 msgid "The :command:`setup-kolab` command allows each component it configures for you, to be configured separately from the others. To view the list of components :command:`setup-kolab`, execute :command:`setup-kolab help`."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:110
-# 0a11d060e60c4ca0a68f1081dae484bb
+# f0cac709d4aa4eb793f7e211e3b057a6
 msgid "[root@kolab ~]# setup-kolab --help Usage: setup-kolab [options]"
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:141
-# 57beb713e8784472ab07d97041d52df5
+# c10811b96bb145b2aa533ef1c4fe8081
 msgid "Options:"
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:114
-# dab777df483244a1b46858892c20b49d
+# f100ca269a44497b9c77089a9c0308b2
 msgid "show this help message and exit"
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:126
-# 70f2916f4cf049e59d13a34ddf94493a
+# 52b91e3bbabb4081abb96ea05a846fb8
 msgid "Runtime Options:"
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:118
-# 8d05827587a94574942d9b572f1e0d7d
+# c8a7aef7daed45cf9e2971319831e4c4
 msgid "Configuration file to use"
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:120
-# d6ca750689954298b08b0e97eae37a42
+# 167e28fea995448e8c671456ea961acd
 msgid "Set the debugging verbosity. Maximum is 9, tracing protocols like LDAP, SQL and IMAP."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:122
-# 0f696e9fa9864c7f9e8ace3aad5d6f94
+# b425108c281e41e6b134a2cc24cab7f6
 msgid "Set the logging level. One of info, warn, error, critical or debug"
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:124
-# ecb353328aaa40f79f52d491e267775e
+# deb032e6908442dea6bf2e88db64f363
 msgid "Log file to use"
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:125
-# a63612d20b474cce82ad032327c6f7cf
+# d5a5610af13944ff853ce43a75713493
 msgid "Be quiet."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:126
-# 646350737e094caea5668fab8e21926c
+# cf79a04b7c734255a20f3e4bb4045e99
 msgid "Answer yes to all questions."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:134
-# 1dfe3b9f135447fba8fe7f0b986dbe0d
+# f11a2731b1cd4315b8b4b8424c1aa88b
 msgid "LDAP Options:"
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:129
-# 4e3bd24021f149a1b4d1e7851795c5a5
+# d6a43d85360549fa9fe7a69e60851eb3
 msgid "Specify FQDN (overriding defaults)."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:130
-# 4e2fe0e515fc4abca7d31e5d1ecad8f3
+# 4cd024917982458db752fd54ac94a4a0
 msgid "Allow anonymous binds (default: no)."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:131
-# 23f112d6feb64838ac78e4d7a88d6b68
+# 0024bc45e756450fb57e266d2c16b3ab
 msgid "Skip setting up the LDAP server."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:132
-# 9e406a3b75d543e9a295aa3093d6a4e0
+# 888b68c4c9274e8fb577288c027dd1a0
 msgid "Setup configuration for OpenLDAP compatibility."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:133
-# e3426430a25d4cf1b7b73b9d92e5d828
+# 353e60214fa6454ea4fa804cb3c8cef4
 msgid "Setup configuration for Active Directory compatibility."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:141
-# a5e952c131b0483196822c7a0cf8ef0e
+# 3e848957542347589379d91dcddf11fb
 msgid "PHP Options:"
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:138
-# ee3ebb384e584572af406bc07a2d1aef
+# 3e27d2b62e784dab8a0671a30375796b
 msgid "Specify the timezone for PHP."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:140
-# 5c8d6b40abcc40799a0029777fddcda3
+# 8f2167bb11f54a8c98762d2cef85abef
 msgid "Specify the path to the php.ini file used with the webserver."
 msgstr ""
 
 #: ../../source/administrator-guide/setup-kolab-cli-reference.rst:143
-# 6626c01a51ef4e0ba3d71c93c63b8055
+# e5d14ec5583b4c749c6e101c2a3e9b44
 msgid "PyKolab is a Kolab Systems product. For more information about Kolab or PyKolab, visit http://www.kolabsys.com"
 msgstr ""
 

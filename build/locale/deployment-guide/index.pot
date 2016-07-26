@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,522 +17,522 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/deployment-guide/index.rst:92
-# e28e7b45f1aa4ec1ae8d2f75656f9034
+# 130be6c6f31b476eb4fd3265fd698194
 msgid "Deployment Guide"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:95
-# a5d228f79038472f9ab37ce67a14818e
+# a0c3dfa5034e4c2b8e5bb6c94503abbf
 msgid "Standard Deployment Scenarios"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:111
-# 7c1dcc81cb7a4cf2bccc8598d53d672e
+# 1fe7930f877343339db685b8946b0fcf
 msgid "General Deployment Considerations"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:113
-# adc46977f3b2466b9e8f35fe5c18241f
+# 0f1124cfad7f4f41bd195607db6e0e5b
 msgid "It is important to appreciate the use-case or use-cases for which you wish to deploy Kolab, and map that to the appropriate deployment scenario."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:116
-# f71e531de54f4408a3fe6e08af235188
+# 5712ef493ab149ec9f8b1325dc83b67e
 msgid "After all, Kolab Groupware is Made To Measure, and supremely flexible. It is best deployed after you articulate what you seek to get out of it -- especially for businesses."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:121
-# b20434669a70456ebde8d50c4e266ad9
+# cf5cb6729b0747f497ed21bd5654e571
 msgid "Generic Statements"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:123
-# 35b6b2ef67a94131a965b84bcc8810de
+# 87c80edcdedf4236a25b56df4d211fb1
 msgid "Larger numbers of users make it more important to ensure service availability."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:126
-# 60f31a876e5d4a458dfebb7b8fd2eb8c
+# 38e7091734334ce3a94b29e4ae56efb5
 msgid "Larger numbers of users make load-balancing (and high-availability through load-balancing) more attractive, more efficient and more cost-effective."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:130
-# 6c597d5d378144e59000ac159094ee4e
+# 636e4ee6dc864cf0a3f3cc07b26a8503
 msgid "Contrary to popular belief, larger numbers of users make capacity planning more unpredictable, up to next to near impossible. Here, you require the ability to scale up and down as *turns out to be needed*, and not be locked into a certain scale with limited options to break out."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:136
-# 7ad615c737bc46c1918772116fbd6c1e
+# 6eee324bf8444913b50defae90957b4c
 msgid "Should running an extra couple of virtual machine be relatively cheap, then you are likely looking for :ref:`deployment_multi-server-for-each-service`."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:140
-# fea5d447c7af4f3bbea17d255645dc04
+# 9d4e97a31dec453ea2edeb367d56ca5a
 msgid "The larger the (potential) data footprint, the more important it becomes to consider your storage options."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:143
-# 64c994f7f2c94d0f9f4e846f2608b687
+# f45edbe5135844dea7f9e7fe78d9de4e
 msgid "The more flexibility you require in scaling;"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:145
-# 18cc445f1b144412849b55dcccafbaa4
+# 11701c55bbc74c6e8e44a7acc695be62
 msgid "the more likely you run idle over-capacity, or"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:147
-# b2989116b38c426a948e942d77f1930e
+# 1737ff213714493585bfe97851203c64
 msgid "under-performing services because of under-capacity, but"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:149
-# 816276f65b9c4955ae07a47b9d96e78b
+# 8a1eb2440bb04ede9ea206b67a334fb3
 msgid "the easier it is to answer either of the aforementioned problems."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:152
-# a7ef896ccad045f2ba3f263e6ba2923a
+# efb08225324049fe944b31629d26340d
 msgid "the more you need means to adapt quickly, preferably automated, by which we mean infrastructure services such as provisioning and configuration management services."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:157
-# 789553a109c547c38d68bead230d5135
+# 7171aeb3227b4c999f22ed5aa5da6a87
 msgid "A Couple of Users"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:159
-# b738849dbe3c434db8abcf9f8bf52dac
+# 7701ecc166a8402685260f7517b12357
 msgid "In terms of capacity, for a family server, SOHO situation or micro- entity, it is probably more than sufficient to run :doc:`localhost`."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:162
-# 4835d5b2a4a8404190cab14e3c205266
+# 5d700d16489246569f1a7bb946cc007d
 msgid "If the data is really important, and you do not have data redundancy built into the single server (through RAID, or regular backups that are easy to restore), such an environment might want to opt for a :doc:`redundant-server`."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:168
-# 7cf5674069894d98a1de85b7ea41288d
+# e210a6f925fe444caaa0892bb014d626
 msgid "Dozens of Users"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:170
-# 5b7636df5b984f11b0a0e11b5b9d7a82
+# 1681aa3b94de4e4891b674c1d7259912
 msgid "When a deployment seeks to serve groupware to dozens of users, :doc:`localhost` suffices unless the average user's usage pattern is extremely high."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:174
-# fecf2cdefb9744cf8ece43d5a55e5145
+# 737d262cc4734206bff78ed0024f7868
 msgid "A Free Software ISV with employees working remotely, from home, for example, very much relies on electronic communications. Operating in the Free Software community, it's communication patterns are ever increasing, with its employees subscribing to upstream communities' mailing lists, and the organization itself possibly providing services to its community. These would be considered *keyboard-bound users*."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:181
-# fd892e0b9db541248dcb1ddc1fb406d0
+# e59419e6fdfa4498abb5104fa1194793
 msgid "While servicing only a couple of dozen users, the number of messages exchanged easily exceeds thousands per day."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:184
-# 367ab08a3abe4efe8f6ca04d94cb1f7e
+# d0bcfe23735541ffb9339dcc988cfd83
 msgid "For such a deployment, you may consider a deployment scenario as depicted in :ref:`deployment_multi-server-with-combined-services`."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:187
-# 3fd5b750babc4c0988fd394dfa5d93b3
+# f1d4c466b91f4a82a4d9484b941ea90e
 msgid "In contrast, if your dozens of users are actually plumbers, carpenters, firemen, airline pilots or otherwise regularly distracted from the keyboard and monitor, :doc:`localhost` may suffice -- although your users may in this case be synchronizing their mobile devices, significantly increasing the usage pattern outside of their presence at the keyboard."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:194
-# d90b2b1201b441109e776fdd15cea6b4
+# 7873abcf32d047378d7e3c9ed8849d4c
 msgid "Scaling up from a single server deployment to a deployment with multiple servers is relatively straight-forward, but, depending on what service you choose to migrate off of the single host, possibly involves data migration, some down-time, and configuration changes. As such, such migrations require sufficient preparation and planning."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:200
-# ef7d71f6600849c7b040199ff9b5f6fe
+# ce38f0b1fb584297bc32f0f0bc24d380
 msgid "Suffice it to say that also, should you find the deployment type you choose initially underperforms, user acceptance of the solution may very well be negatively impacted -- sometimes beyond repair."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:0
-# 05fc141ba2c048e3a02f44bc119e1b4a
+# 78090995a13248ce817a189babaa47dd
 msgid "Todo"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:206
-# a92f6e232a23449c8618e7adb7b2571a
+# 64129df2e3b64b5ba78b21d00756bc0a
 msgid "Somewhere other than here, document the process of scaling up from one single server on to multiple servers."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:212
-# 526e0080c27443498853787528ec31ac
+# bd5acca0da9541038faae51e9726afc8
 msgid "Hundreds of Users"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:214
-# 78bf1c9d66df424fb513620b7e1f258c
+# 231db6647ca54e88b81225aa0716efe7
 msgid "Providing Kolab Groupware to hundreds of users is an environment of some scale. The starting point is likely :ref:`deployment_multi-server-with-combined-services`, however;"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:218
-# e5dddbd0462f47839999e87c60a6962b
+# 74440923a0fd44009dc0539b42ef6771
 msgid "You may already have centralized authentication and authorization,"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:220
-# 5d3aef00c7fa412bbb3046126b091fc4
+# bfd9da5e5be14f2c99036b0aafafce19
 msgid "You probably already have an existing infrastructure, possibly including a perimeter network."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:223
-# fabd659651a844da9d3fc0c6f0fdaf92
+# 519cc528bcb741f3ad440ade8ab1b6b1
 msgid "To illustrate why this is important:"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:225
-# d7aed0c5f1634485993584cdb7cbeba9
+# 18c8b35c3ca747468ae9a499c94d8457
 msgid "The Kolab web interfaces do not require a dedicated web server -- if you have one already, then you may want to consider installing the Kolab web interfaces on that, if not simply for the fact that public IP space is limited."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:230
-# 73bdc76eb9ef484bb1adcf10054a6424
+# 1b00e99c40854a78bc41da852fdf0eca
 msgid "Other considerations come into play deploying Kolab Groupware, and those are included in the following sections:"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:233
-# af66a9aa141a4ae887699b1f7f739b81
+# 66bbf29242134909b791a5af92204162
 msgid ":ref:`deployment-hundreds-redundancy`"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:234
-# 8741a473ad794631a20280ec67cd44ae
+# 9dc2a3b211df4bc9858193cb79adffcd
 msgid ":ref:`deployment-hundreds-high-availability`"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:235
-# 35a46f03a65e453c9d97f331b2d0bfe3
+# 87a566f7dfde44789ffd7819e61a6b9b
 msgid ":ref:`deployment-hundreds-load-balancing`"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:236
-# 1c0ad2cd165541fa88e0ccd3726f2590
+# 2aa0bd43c01e4d0fa5799acf74eafb40
 msgid ":ref:`deployment-hundreds-scalability`"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:241
-# f22d1c75f4224f39b0bdcd83de0265e9
+# 6d651936bdda477da10bd5ee5580692b
 msgid "Redundancy"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:243
-# 1938854e39db4ae59fc5a8df7692f9f4
+# 81aff298453c4792a232ec879d52802a
 msgid "Redundancy -- with regards to data -- is a matter to be considered separate from high-availability."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:246
-# 8740b9d8a5f6431f955d1182a326428a
+# 6839ea864e6a47df9c2cc5667ab1fcc5
 msgid "There are separate, distinct replication levels and scenarios one can consider, and storage devices types to be taken in to account."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:249
-# ea0b55daa2b14bb381b91788ff551dc4
+# 07cde6652612433a9319ef7412e0ab87
 msgid "Generally, the largest volume of data is in IMAP spools. These are also very I/O intensive -- much more so than CPU- or memory-intensive."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:252
-# 614894268d5e417fb9e97e3ec4a0ce35
+# c291798329ad443eae504e54422d24d6
 msgid ":ref:`deployment-storage-redundancy` in storage has it's own deployment guide section."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:258
-# d68c83b0a47449d9a57d508ab19ae330
+# 47700c0e81c7405b844c74e2995583f2
 msgid "High-Availability"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:260
-# 9ba3eb5326664a3da71d837f9d10909f
+# e99cd3666c4c41c9b5678f715dc0539f
 msgid "Nothing overloads a helpdesk more than hundreds of users calling in at very much the same point in time, because a service is unavailable (and might, as a domino effect, render other services unavailable)."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:264
-# 667bd30843d9495fab7df12b03c462de
+# 70ff9c0d1a84447e850495e2d81b78d7
 msgid "The larger your userbase, the more important it is to ensure services remain available -- even during planned service windows."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:267
-# c597ae4cc44547c49a64faab0819adf5
+# c3520ecfffb7404e8d3d66ed247e5a35
 msgid "A typical approach is to provide \"two of each\"."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:272
-# c0134d30eefe4d2d94b821756ce6909e
+# 579fccb8a6c4452f94682f03543841dc
 msgid "Load-Balancing"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:274
-# 8f870ff3a7a84fc4a46b4187eaeb0c64
+# a54e9cd1558d4288818ceaa42c03a172
 msgid "To use the term load-balancing is to describe the act of providing enough instances of each service to supply enough capacity to deal with the demand on said service. This is separate from the time-window of such demand, however -- the time-window demands scaling, scaling demands load-balancing."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:280
-# b583b0f9c20f4976bae425fcf35c1a2a
+# a478751101f34ec9b231a37de50c42d4
 msgid "Load-balacing is where Kolab Groupware shines, since any of the service components can be split up in such many roles as well. Therefore, each quantitively meaningful difference in demand for a given service in a particular role can be scaled up and down as is needed."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:288
-# f99d340126154e1daab5c5fda2f3f99d
+# cea1229c065348839ba9f11fd6059796
 msgid "Scalability"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:290
-# 1846d5e929244e7f9753e84852e7c558
+# ec234c0776f84878842ffd132c576ab4
 msgid "With a quota of 1GB, a total data footprint of 100GB - 900GB is still manageable, but should your users (be allowed to) have larger mailboxes and/or use the File Storage features in Kolab, you are more likely speaking to the tune of several terabytes (if not right from the start, you'll likely get there over time)."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:296
-# 06f40c80b8384d738aee87701ea2d563
+# b2f3748a374740f78412ae0b7818981e
 msgid "**This** is yet another area were scalability comes into play. One could start with a single Cyrus IMAP server, like so:"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:312
-# b38e89f1f32a424c958c9b127a86cc7d
+# 1c7bc82cef58404681f744bac645e426
 msgid "You will want to make sure your users' desktop applications, and the rest of the Kolab software uses a DNS entry to connect to IMAP (for example, ``imap.example.org``), so that it is easier for you to change what it is they actually end up connecting to."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:317
-# e991178d02c842bfa19842d654ed2fc5
+# 38ba4c299f8d453c9da4938f5dd7d8a8
 msgid "With several terabytes of data, *when* you get there, the desired scenario might look like:"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:342
-# 03116f0d4a7f46e8bc64daa55a3544ce
+# d2dc337c519b435b9cde123caf2c8563
 msgid "This is a simple change that can be prepared ahead of time, and implemented during a service window, if and/or when it is needed."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:347
-# 41d60fa9bf4f4933974297eafab47a9b
+# 09b6e38ad8234603a027692170525c16
 msgid "You have options with regards to the target topology of the Cyrus IMAP Murder. Please refer to :ref:`deployment_imap_cyrus-imap-murder`."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:352
-# e0ab5a3fbc8b46b382c1d5cf6114f6f1
+# dfd9d3b6e1d340318a04ef9c242ab313
 msgid "A Thousand Users"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:354
-# 5cedf29612384852a5664dc5f7b5e075
+# 35af4662fdee403882b13e1062775480
 msgid "The magical boundary of a thousand users depicts each individual user's usage pattern becomes unpredictable, as for one the number of mobile devices they synchronize are not necessarily under control any longer."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:358
-# 2c4b6580a7f9431288448ff5b9440866
+# 228f0889a2724bde8daba6efbba89d3d
 msgid "Generally, the same facets apply as they do for :ref:`deployment-guide-hundreds-of-users`, just with higher load, more storage, more stringent requirements, likely resulting in the need for :ref:`deployment_multi-server-for-each-service`, at least partly -- some services may still be combined."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:364
-# 82b0610d9160455da97d3f9e6aee98e6
+# 83ad46c9b13a45d081c90c68a62993bb
 msgid "Despite a number of users that is likely larger than the majority of Kolab installations, it is still well within the boundaries of normal operations, and should not require any specialist attention."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:368
-# f798a443bf994e17bd4c6b2b9869a6c3
+# 21828a6997264a2fa747597d84b96e15
 msgid "Yet, environments of this size and over will want to perform a Proof- of-Concept environment to familiarize themselves with the inner workings of Kolab Groupware, assess the viability of Kolab particulars for large numbers of users stuck with particular work-flows and their system administrator's ability to effectively maintain the infrastructure with this new technology (monitoring, alerting, trending, configuration management, reporting, etc.)."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:377
-# c95f6e7464f94c8ab3d74a6628ce6eaf
+# 35cc678bfc294b63a23509234147fd05
 msgid "Several Thousands of Users"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:379
-# 1c735f42e05349e7a274a45d36a0c7df
+# 1edfd1dcd6834f49a984fb9a674b8ce9
 msgid "The larger the enterprise (or: the larger the number of users), the more significant capacity planning becomes in relation to deploying Kolab."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:382
-# e765164a9113454987bd067fb22ce09f
+# ea23f4f2abb7430c8b0bcc74667c81fb
 msgid "We have mentioned before that provided a larger number of users, capacity planning becomes a more volatile subject and can be less accurately determined. However, with larger numbers of users, laws of averages come in to play, and the ability to scale with demand can be facilitated -- a margin of error becomes manageable."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:388
-# 4ca87a1960f74cf2b712ab13ce8b897b
+# a79bf6cc1dfc492b89dd875271404a28
 msgid "Several thousands of users are typically deployed using a :ref:`deployment_multi-server-for-each-service` scenario. Organizations are strongly encouraged to contact `Kolab Systems AG`_ for their services."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:394
-# 18b3b8d9cc494167b2d1e5813cdb10c0
+# 4b6a1f7455b5408abae8616948b34048
 msgid "Tens of Thousands of Users"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:396
-# 1ebf6898bf2a446d81e89b421a5e5f2d
+# ad556e9f4f3344638ef39108ddb9df10
 msgid "The differences between \"tens\" and \"hundreds\" of thousands of users are negligible with regards to the general deployment scenario."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:399
-# abd04346b088468583f3c8d3c72d97ea
+# cc1115429b0742cc912b0773540cc71c
 msgid "A clear distinction is often having spread various areas of responsibily for the infrastructure across multiple teams or departments, each of them eligible to resist change making their jobs more involved, and/or not all of them as familiar or comfortable with the introduction of new technology in their respective stacks."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:406
-# 5b0bfba6c157460eb7440be87a6163ed
+# f6580bbf017f4c829c32b25bfc0c2579
 msgid "Hundreds of Thousands of Users"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:408
-# 2717e96d68374ae9a78dd273b733fcbf
+# a29b1befcad44882905f88180bf96e3f
 msgid "When an enterprise with 350.000 employees plans for a Kolab deployment, it is unlikely all of the users will be migrated over the course of a single service window, and despite what other groupware vendors might tell you, it is near to impossible to accurately plan for the capacity required."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:414
-# 5ca53cd2904c4221bd563d7443b99ea2
+# 1bd095b6770046caac84074dacc2fd04
 msgid "It is also important to appreciate any existing infrastructure and network topology, and for Kolab to integrate into that environment."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:417
-# 1614e217ddf74cd2819fe39c896264c7
+# 7e455afd1997410488a54ee91c66dead
 msgid "Ranging from small and medium-sized business, large enterprise and service provider deployments, the number of users involved ranges from 50 to anywhere in the hundreds of thousands or millions."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:424
-# fe8d52ed52e64248b01584f516d659e1
+# e7c8f9a8f7974065ad6c5a8853addbda
 msgid "Organizations with Multiple Domain Namespaces"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:426
-# a79d196e60b94472a083b46551e2c609
+# ab82eda57a1b4c4d9709541b974cc1e7
 msgid "When the people throughout an organization use different email domains, but need to maintain the ability to share groupware data with everyone else in the organization, it is important to appreciate the effects of using the primary recipient email address (*mail*) of the user as the authorization ID (*result_attribute*)."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:432
-# 17a53fa12d914fd9bdffe2ec477ca282
+# 39d6be318b95426887dd017a3922b642
 msgid "This might be the case in a holding with multiple subsidiaries. To illustrate, an example holding corporation **Holding, Inc.**, with subsidiaries *Foo, Inc.* and *Bar, Inc.*:"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:445
-# fe11d1428c85459d88bec7d5dcba18f5
+# 4320b285d2254bdd9afce8212b465d5c
 msgid "This is not considered a case for ISPs or providers of Hosted Kolab, but may be applicable to **customers** of ISPs and **consumers** of Hosted Kolab. ISPs and Hosted Kolab providers should refer to dedicated sections:"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:450
-# 4d092e8163c0403c97da8db0e0035ec4
+# 330701628046418eb2887ff5b281e654
 msgid ":ref:`deployment_hosted-kolab`"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:452
-# b61ae994d1cd4316b766fb770f2a2b97
+# bdd57bcdeaf144d08f1bbdb447fd715a
 msgid "Let's suppose that:"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:454
-# 90ac3f827204464c9fd30838487619f7
+# 2996c75eec9347fa9b7043e189aa6b78
 msgid "People working for *Holding, Inc.* use email addresses ``@holding.inc``."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:457
-# 6396f5a1c4b441008240c8b274d4ade7
+# 8ba5a03b19bd418b8f5ecdb84567de1e
 msgid "People working for *Foo, Inc.* use email addresses ``@foo.inc``."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:459
-# c2b4f7f4012f4b2797afb3da9570d2b8
+# a3c84d525a3049fb966b4183207599a4
 msgid "People working for *Bar, Inc.* use email addresses ``@bar.inc``."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:461
-# 953be777528a4d898c612e90858249f9
+# 8ecaf278bf40454bb0125923c3bce0c2
 msgid "And:"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:463
-# 911b827017c94e428c1b01fc6d9662ec
+# 629b7b543d974feea8f98ceb4d18f463
 msgid "All people are contained within a single LDAP tree (for, perhaps, Human Resources is a department within the holding, providing services to the holding as well as its subsidiaries, like it is providing Kolab Groupware services in this example):"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:478
-# 3ae8bd14e1aa41d3af748f6aeff68bde
+# ff9766d1ca25414d80f93139d0e43dac
 msgid "In a default Kolab Groupware installation, the following mailboxes might be created:"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:481
-# 942b1d1a19e2452b919510342f738e79
+# 44054273610648b1acbce7d01d7d1bea
 msgid "user/john.doe@holding.inc"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:482
-# 9dd5633777574806836261e396c9f289
+# 8734af00e54b4871b41ac4ffe8f7ff69
 msgid "user/jim.smith@holding.inc"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:483
-# e76d6207814c458ba14b1aa1e5998fc6
+# 1cd0d8ddc9454bf3a9b4a012015ac6ec
 msgid "user/joe.average@foo.inc"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:484
-# bc018238dcb648fbae76b0e22a5e243b
+# 0203a323a26e48329fab42a753b557d1
 msgid "user/jane.roe@bar.inc"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:486
-# 3764935669224faea79e720f64ecbe38
+# b4f52eaf905e4050bf893151c9df8f16
 msgid "Because Cyrus IMAP uses the email domain as an authorization realm, and no cross-realm authorization is allowed, in this scenario, John, Joe and Jane cannot share mailboxes - though John and Jim can."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:490
-# 696666d0951141779793e5f58449967e
+# d77f2ccbfd104d6698ab2d3f3474a57c
 msgid "This may be the desired effect, and if it is, you can skip reading the rest of this topic."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:493
-# ce44601fae87410ca807062fbc63202e
+# 481168ae00d840f9bdb0a061498f51df
 msgid "If it is not the intended effect however, and you seek to allow all people to share groupware data with all other users, you must consider the following:"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:497
-# 768823835ac549cea16b80b4b9a94572
+# 72d113cba06d4982a0b1fb07c29f64b2
 msgid "Should all people be given a primary recipient email address of ``@holding.inc``, in an attempt to make all users end up in the same authorization realm, then they are implicitly allowed to send using that email address."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:502
-# c77a94250a764551bfddeb85e330c9c7
+# ed5cd96c7f4f4412a3644065282eaffe
 msgid "This in itself may not be desirable."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:504
-# c826d276444448de9eb216b26d94ca15
+# 2dc5fd4d2022446fb0f371e184219825
 msgid "To enable users to share groupware data while their primary recipient email addresses make them end up in different authorization realms, you should set the ``result_attribute`` setting in **kolab.conf(5)** to the name of an attribute that does not contain a realm identifier (i.e. something without an '@' in it), such as the ``uid`` attribute, which by default does not include a domain name space. This would create the following mailboxes (if the surname is used for the uid attribute):"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:512
-# 600653c1ee31410ca9bce76f92cbd401
+# f2fe784aad954b47a63630b983d33f38
 msgid "user/average"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:513
-# f049ac2ef6a64716aaaa8682569c4051
+# d176ddd2daa842468b2e80189a88754f
 msgid "user/doe"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:514
-# e545742a85984ba58370000839b4d3cd
+# a2b759c2fe994ee5a00ba01a7dae976b
 msgid "user/roe"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:515
-# 6aa5028785094f9d90915a754e16ede4
+# 908efd8b01a343618e8aa376cd135b8d
 msgid "user/smith"
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:517
-# 61e05465503f4d95a679e8ec8e5f1b1a
+# 43e9cee46cf1490888b376541d8e954e
 msgid "You may also consider setting ``virtdomains`` to ``off`` in **imapd.conf(5)**, although this implies only the null realm is ever going to be used."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:521
-# 6a772de20b0e4e99b806182e0cbfd1ea
+# 91923114a4294a969db87f3bfff456f4
 msgid "For larger deployments, we also recommend reading about :ref:`deployment_imap_cyrus-imap-murder`."
 msgstr ""
 
 #: ../../source/deployment-guide/index.rst:526
-# ab8064bb638741ad8dec23d15e9636c4
+# 493b4e9aca2649d68834d6ee4b6c8824
 msgid ":ref:`admin_organizations-with-multiple-domain-namespaces`."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,217 +17,217 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:92
-# 6efdcec74c1b4270b43007b8b6d394bd
+# 3778d328139b413f9e6d60da1014b90a
 msgid "What Goes in to a Document Root and What Does Not Belong There?"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:94
-# 182cefd16e314870a1d2e995b352d7b0
+# 30b63b7f884d420d8c400d2201fdb18c
 msgid "Security is a big issue and in this article, we explain how to prevent accidental disclosure of program code and system settings for web applications."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:98
-# 4f4661bfb75d42929120ca334fb9ee5c
+# 3224a8caa5ee499e88fce8be19b19be2
 msgid "A document root is normally the directory hierarchy that is published on the web. This is to say, that everything in the document root is published, and is therefore considered to be public -- unless of course it is locked down by other means, such as password protection."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:103
-# 9b97094eed97419f9fc3911992b01f90
+# a9b9f349e12549fe9a29649142cf3951
 msgid "Imagine for example a public website ``www.example.org``, running Drupal."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:106
-# 36d4f29f5ed54ad19bb4f5892c564d06
+# 3b55dacc805d491287002473d65eaa96
 msgid "Drupal is one of many web applications that comes in a tarball you extract the contents of, and you typically dump those contents inside the directory hierarchy of a document root. As such, Drupal is a good **example** to get started with, examining what exactly is put in to the document root (and would therefore be considered \"published\"), what information is in these files, who has access to them, why this could be considered bad, how to protect the deployment of such an application, and how to develop web applications in such a way that the level of protection on a server-side configuration level may not need to be as complex."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:118
-# 8a9fc637fcb84568ad0bf1709a7a6b67
+# 231b86ef558a4a0daa8c687e97d5c393
 msgid "Document Root Content Review (for a Drupal Site)"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:120
-# 7d792053efc04094863fc33561eb61de
+# 9a7ba8769ece4ce49c60cf15aed06121
 msgid "Imagine, if you will, the document root is :file:`/var/www/html/`, and you have put Drupal in :file:`/var/www/html/drupal-$x.$y/`."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:125
-# 2559d4b386014278a51d228cd216b620
+# 870f652bbcd3497d935720d26d4d224d
 msgid "We assume a default configuration of one's webserver, with Apache's *httpd* version series *2.4*, that comes with certain defaults such as ``AllowOverride None``, preventing any ``.htaccess`` file from modifying access levels and other settings."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:130
-# 56e0c6bd27784a4ebb3f5778b6d29438
+# 2aeaef159dd34c558fdb3c85faa1bfe0
 msgid "What you intend to publish may be limited to:"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:132
-# 24b30653085d45eeb133a60d58f3ef6b
+# d928865046d0463a9689ddf9b19a1684
 msgid ":file:`drupal-$x.$y/favicon.ico`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:133
-# 6c0dd86895b54b86a3febf7988395970
+# 79bbeaf6265443cb94886afb06962b95
 msgid ":file:`drupal-$x.$y/index.php`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:134
-# 3e5dc29ca6a04eb291b0254d4e017f1b
+# b8867bd7c72f407cae241d0a8934c99e
 msgid ":file:`drupal-$x.$y/misc/*.css`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:135
-# aa0f8fb037df40fd81bb850774ec68ca
+# ae01b3b7629c4128a3ec286e94fb3ad7
 msgid ":file:`drupal-$x.$y/misc/*.gif`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:136
-# 6f686266d5d645adae3b1f87ce410f79
+# c455496ef9ca45058a8ddc3c095ae82c
 msgid ":file:`drupal-$x.$y/misc/*.ico`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:137
-# cc066c0aac6742b39cbdf41033754c0f
+# 0bbface3eb5946fc84f9d635cfc393ef
 msgid ":file:`drupal-$x.$y/misc/*.js`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:138
-# 62ecc8466d734d019300cca15e8ca2f1
+# 9b6050a737374ea0a229c53d95ca1c6b
 msgid ":file:`drupal-$x.$y/misc/*.png`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:139
-# 720c03619ce643ac894c05c19468ae58
+# 7ceb37d47dcc4d8a8aff524d70f2fe91
 msgid ":file:`drupal-$x.$y/misc/farbtastic/`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:140
-# eeac0e7676e34772a0f3f0566abdd2ae
+# f4c25574ddd34c9bb11e814f41190a39
 msgid ":file:`drupal-$x.$y/misc/ui/`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:141
-# 4887ddf015d942399cc7c915f8b09cfd
+# 39b790f73ce44fbe9f334f4ec5b95d27
 msgid ":file:`drupal-$x.$y/modules/` (assets only)"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:142
-# 586a6a28a849495390225ed2fb697e42
+# 17e773dbc9bf4cf491cecb8bc7da212a
 msgid ":file:`drupal-$x.$y/xmlrpc.php`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:143
-# 80a9b1756688491c821aefb6b687bd95
+# 8664c0fa68f04154bdfd19729173de53
 msgid ":file:`drupal-$x.$y/themes/garland/*.css`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:144
-# ebbf90ff9db84f5897df0fd6a5776e4e
+# 3ed6a42d6387423ca48db9df2fa8cf0c
 msgid ":file:`drupal-$x.$y/themes/garland/color/*.css`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:145
-# cef8df05a824422f8ec076e31adb7542
+# 7f7643117d0041d7b65a8d436ba552b3
 msgid ":file:`drupal-$x.$y/themes/garland/color/*.png`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:146
-# 57ebeabdf10848448df82b0d1ac370ba
+# 652d256b8a3b4aa29a2100166ec3a6ee
 msgid ":file:`drupal-$x.$y/sites/all/modules/` (assets only)"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:147
-# 0b453fc5633a4aa4b3cbd6f907141cf9
+# 70ac78d1ba064b8a981b429b5a79ddd7
 msgid ":file:`drupal-$x.$y/sites/default/files/`"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:148
-# f9ee8c0dff5747139308695bd21ba945
+# 8730eab98b384944a10f95d60b5d1f47
 msgid ":file:`drupal-$x.$y/sites/default/modules/` (assets only)"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:150
-# 81cba0e3e12642379a19d8ff418a3062
+# f58465ecb60746a1a60c35d3ed6dcc97
 msgid "But what is actually considered \"published\" -- since it is in the document root, includes (among others), the following files:"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:153
-# 633bba29f88b423aaecb167762baffae
+# 825083fac036488a8179c3027924e6a8
 msgid "**drupal-$x.$y/modules/\\*/\\*.info**"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:155
-# b0116f2129a2437881b8fcaae6f2a7bb
+# 9dfa77441d424202b54b527b39cf7131
 msgid "Part of the Drupal core modules, these files contain the exact version number of Drupal modules, usually the same version number as the Drupal core."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:159
-# cea7dad2c89b4457aeb990a4421a14e2
+# 8511662ebd0a458291ce57a25d9dfbeb
 msgid "Should an attack vector exist against a particular Drupal version, which is not an uncommon occurence, then disclosing the version number aids attackers in narrowing their attempts to include only the ones the attacker considers valid."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:164
-# 58b8a16b86c846b3a90f52987a5235e9
+# 5868ef95558c48d68e9bf04b58fa8f17
 msgid "**drupal-$x.$y/modules/\\*/\\*.inc**,"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:166
-# 1a5d7e712373494ebe38c9e35311852f
+# ea8459be536c4afa803cf307b41f49a9
 msgid "**drupal-$x.$y/modules/\\*/\\*.module**"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:168
-# 60c1bdea0755406d9114c2dfeea663f6
+# 514826fba5374a3a94f9c617b24078bc
 msgid "Contain the program logic of a module, and would be served in plain- text unless access is specifically prevented."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:171
-# c1d5dfd67795401b8f7c57152853888c
+# e545d1fa9c3849ce825c6da748f03820
 msgid "Example: www.example.org/modules/openid/openid.info"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:187
-# d9d77f3bea0448fcb5c525a8bbf8a09c
+# fbd104399e2b4c8da52191f50ac73e9c
 msgid "In addition to the aforementioned files that are usually part of stock versions of Drupal core, modules and themes, most of which are likely publicly available elsewhere (not on your site), you may also load custom modules and themes, and/or patch certain aspects of the stock versions to make something work for your deployment. You will have even less desire to unintentionally publish this custom code."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:194
-# 60a92a52e9864e27b27fb61c08f40a9e
+# a0c20a03159b49fe90c766b14f5e12cb
 msgid "Furthermore, at a lower risk of disclosure but with a greater risk of compromising the site if not the server, Drupal by default retains the site's settings inside the document root -- at :file:`/var/www/html/drupal-$x.$y/sites/default/settings.php` in our example."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:200
-# 3d8add699bf9442d8ccf2e1739a295d6
+# cab224a1379445e0b2b7d32bd527994e
 msgid "This ``.php`` file is normally handled by the PHP module loaded in to the webserver, but if it is not -- through genuine misconfiguration of the web server software -- your database address, name and access credentials would be out in the open. Even if the database is not publicly accessible, the site administrator may have been configured with the same passphrase, and the settings disclose the database technology used -- such that the use of SQLite could be exploited in a DoS attack."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:210
-# 3a3429d23f0248dab797c7a001f1ef30
+# 905e49aec84e4ffea8c6c1048146de3d
 msgid "How to Protect a Document Root?"
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:212
-# 5d1a643e895e450298ee91d0787e9a24
+# 5ba4579d26e04f8688acae0c30f489fb
 msgid "Under the working assumption that everything in a document root is published, and with Apache's httpd 2.4 defaults including ``AllowOverride None``, your means of protection are limited to server-side configuration, most commonly limited to privileged system accounts (such as the ``root`` user)."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:220
-# dc80b1504c544ae5a144ba282db5c29a
+# 1ba85220a7634f0db6c9bed990524631
 msgid "Some web hosting technologies allow you to specify and tweak certain aspects of the web server configuration through an ``Include`` or an ``IncludeOptional`` statement that includes configuration from a location where you can write, and/or negate a default of ``AllowOverride None`` by specifying which aspects may be configured in a ``.htaccess`` file."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:227
-# 3d2e5ec39c834998be43844b3efe78e5
+# 8ca2e7fb29024a1199f90b34ab453387
 msgid "A common approach to preventing access to a set of files of which the exact name, path or location is unknown, or under circumstances where such list of files is dynamic, is to block everything by default and create a whilelist for content that is to be published, rather than block access to each known file individually."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:233
-# 632c5ebc4e6d4a308f9d1c6ac2aa4c4e
+# 41e7a8207cc449bdad6a427bf946b0fb
 msgid "An example whitelist configuration for a Drupal installation could look as follows in the :ref:`article-what-goes-in-to-a-document-root-and-what-does-not-belong-there-example-drupal-configuration`."
 msgstr ""
 
 #: ../../source/articles/what-goes-in-to-a-document-root-and-what-does-not-belong-there/index.rst:238
-# a3272a2672b0422d9510533fead62c73
+# 962bf3ce91ce4fc9990495a4989f5e90
 msgid "Kolab Groupware Software Components and DocumentRoots"
 msgstr ""
 

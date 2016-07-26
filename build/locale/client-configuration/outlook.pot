@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,132 +17,132 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/client-configuration/outlook.rst:92
-# 5f2986b1767a4c288a55a23cb5889166
+# 928eb0e8a8264e0b930d56ccef257f2f
 msgid "Microsoft Outlook"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:97
-# 174db893cf124d68b1089bd84f8d3b7a
+# 1d0a5750436c478ead85af51bc4c12e3
 msgid "There are many different ways to connect your Microsoft Outlook client to |service_name|. Not every way is the right way for you. Please read each of the following sections carefully and then decide which connection option you prefer. We currently recommend to use :ref:`ActiveSync <settings-clientconfig-outlook-as>` if you use Outlook 2013 or later. Otherwise, you might want to try :ref:`OutlookDAV <settings-clientconfig-outlook-dav>`."
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:107
-# 702a2759f4ce49b289f2b2be995d188b
+# e334b76bd0914ff7a962743de8dfbc90
 msgid "E-Mail Setup"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:109
-# 4d3d6cad7c064102926483de54b05511
+# 2442e10b315946d09339ff9dfd2907c5
 msgid "To set up an email-only account in Outlook follow these steps:"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:111
-# 351cb1a2d6cc4a2eac09373f0053e6e3
+# 6226ee4d7bd24533ba417f88fb7806d7
 msgid "Go to the menu and select *File* and click the *Add Account* button."
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:113
-# a51c3512e0e14588aea7b11c95c028c8
+# 7cec868ee6d446829b1e5eb73cce8f49
 msgid "Select the \"Manually configure server settings or additional server types\" option. Click *Next >*."
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:115
-# 3c4d4ee6021f4721b310c57eee105912
+# a19b3fa613e147128469cce7fd36120f
 msgid "Select \"Internet E-mail\" as service. Click *Next >*."
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:117
-# 1c758fed13684420b052a2b129c95b3d
+# e219828afccb49e691a3d2b86225b754
 msgid "Fill out the form fields with the foollowing data as depicted in the image below:"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:120
-# c9060357ac6e472fbf10274fa619d640
+# e94fa4549cef40449944fabf1cd263fb
 msgid "*Account Type:*"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:120
-# 02b91e2a057c41eea39581866d28dbbe
+# 707f20312b0d45f592b86e3e0515a824
 msgid "**IMAP**"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:123
-# 509893ad20e64fc5bafb4c8518361500
+# de4eae35b40b41eeb403f73582bf4a38
 msgid "*Incoming mail server:*"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:123
-# 718d8c1f37ee46208d5750355cfd9c48
+# 52124f9a2b0545cb918503c2603ab5f5
 msgid "|**imap_host**|"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:126
-# a18bee9b47e248af85c6f2d468637b6b
+# 9c592733cfc34586aac7a8f61d019ca6
 msgid "*Outgoing mail server (SMTP):*"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:126
-# d52f65efbab349e1a09f5b45f89b1fc0
+# 446b981728f645e7ba23fb7de0cd7eb2
 msgid "|**smtp_host**|"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:129
-# 3cb5af99e8dd4ea6b01aa78197d8c730
+# 9936aa5959d3485d93e57b3562fdec6c
 msgid "*User Name:*"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:129
-# 1e0d1f3256934c3fbecbb5a771a1d9bb
+# 8080a1fc68d948a89e0c9a2850543db9
 msgid "|**useremail**|"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:132
-# 9678eaed8edf4292b8ba95577bf14482
+# 46922f9357cd4ad290a86e7a218817a5
 msgid "*Password:*"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:132
-# 1377713a5e9942d3b77b2dc45fc86839
+# 48ff4a16a7484a399ebb0a5f80e81a92
 msgid "**<your-password>**"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:134
-# 09a8a1c226544663a31b8acd033c1550
+# 6fe4d353199443a8b6e4a6209dc3ac3c
 msgid "Click *More Settings...* and switch to the \"Outgoing Server\" tab."
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:136
-# 95872783a81c4f6a99512aaade96fb2d
+# 13799bceb2d64baf986de9fc4259ef10
 msgid "Check the \"My outgoing server (SMTP) requires authentication\" box. Click *OK*."
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:138
-# 419d897b32c648e9865df6395ccfee24
+# 6a1d4018eb8a4a95aa6d0fa9206c0de2
 msgid "Click *Next >* to check the settings and to finish the account setup."
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:321
-# 7965d714ba8a42499bee68b16e087de2
+# f77188f525134579bd9ec2185e9b4eab
 msgid "Outlook with Bynari Outlook Connector"
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:323
-# f4f9921de5d74076bdcc942701c72d7b
+# 0c05801f79eb4172a1be0e1b9fec50c1
 msgid "The `Bynari Outlook Connector <http://www.bynari.net/download/#Connector>`__ by `Bynari <http://www.bynari.net>`__ makes it possible for Outlook (2007-2013) to connect to |service_name| just like it does natively with Microsoft Exchange. It gives you a full Kolab groupware experience while you continue to use the client you might be used to."
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:330
-# 9f05678829a5467ab81097cf69a0a59b
+# 58508165fa114e03882ae82fe99e158b
 msgid "To get started, first `install Bynari Outlook Connector <http://www.bynari.net/download/#Connector>`__. It will provide you the steps to create a new profile for your Outlook Connector account. To modify the account settings, run Windows Control Panel and double click on *Mail*. You will see *Mail Setup* window, select *Show Profiles...* and will open a new windows of the Outlook profiles. Select your *Outlook Connector* profile and click on *Properties*. This will open *Outlook Connector* account settings. To modify your IMAP or SMTP settings, click on *More Settings...* button and you will see the *Connections* configuration for *IMAP* and *SMTP*."
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:341
-# bef041c953a24ebcb432f5e8f403abba
+# e2ab532885754eeca64ccce0afc6ff73
 msgid "Please make sure that you check the box for Kolab 3 server. The screenshots below provide all the values you need to fill in."
 msgstr ""
 
 #: ../../source/client-configuration/outlook.rst:88
-# 9eff852c79ca47fd86eb6ddeef1a01e8
+# 42c75b25f9864fe3a50877c21c9cf314
 msgid "Outlook"
 msgstr ""
 

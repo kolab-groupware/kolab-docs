@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,514 +17,514 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/deployment-guide/multi-server.rst:90
-# db7050145d3c4f5eb1776c5cfc4a0ed6
+# 0bf7aae4852c4cbc8989981fcd8501e2
 msgid "Kolab Deployment on Multiple Servers"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:92
-# e6da7c150a064b799f992873267d3a01
+# ae694aea664b44578b7e28098e477cb2
 msgid "This deployment scenario spreads components over multiple servers for the purpose of load-balancing, implicitly including a level of high-availability."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:95
-# 3ec5a23e72fb4c1e88241f782454fde4
+# db2a0bb0bcdd4486ae8ef776385cafe9
 msgid "Each functional component in Kolab Groupware can be scaled up, and scaled down, independent from the other components."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:98
-# 623739bc7313431e9982acdb1b628970
+# ef20fb1e0a7a407c943f226f94195119
 msgid "A single server deployment provides the following services:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:100
 #: ../../source/deployment-guide/multi-server.rst:199
-# fa200ed49907428a90b7cebf64f9b4af
-# ff29680abed449c98a92530db8d38085
+# 26217b58a93e4699b8a7993e067b7cf8
+# 6b9b502dd06a4312a2862734a46a3e56
 msgid "LDAP"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:101
-# fb97a337f38147ccb5e71b61a75501cb
+# 977c33b0ebd146abb035a9d0dac7a0e0
 msgid "MTA"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:102
-# 5f8e4bc85171497caef0a3dcaace0592
+# 528179a92b1047eda4768438a25344fd
 msgid "Storage"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:103
-# dc1405abb7a84b81af9174d7711ab3ab
+# 835cf4a5c84b418aada69456c392a862
 msgid "IMAP"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:104
-# 51a73b297b554ce694dcaa055eec648b
+# bfb173df81754817bacb80230b325853
 msgid "Web Client Interfaces"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:106
-# 36a06541392c4571a0af1663e6e6b4fe
+# 28ad5b3b0a61475eb568e93b7a62aabc
 msgid "These services can be spread out over multiple systems:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:119
-# 8c4769710a5745b1934d84de40a029af
+# c6b7398720f3455d825fffe83b963c2f
 msgid "Multiple Servers with Multiple Services Each"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:121
-# 89b23b02c99946ff9c05326c0b85e481
+# ffe05bc235f548f1b0670f1d41342b60
 msgid "Alternatively, some services can run on one server, while other services run on another:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:145
-# 5f97aaab2b154e86824fa01e2deadc43
+# 76558a316b26400fbc66b3f86f2af23e
 msgid "Multiple Servers for Each Service"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:147
-# f65a17b42539415a82599af68a98e4b2
+# dd3271ac6b3e429bb8477ef8f65013bd
 msgid "Services can also be spread out even more, and duplicated for extra processing power, load-balacing, redundancy and/or high-availability:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:194
-# 74c3c33daddc44f69be1c152fa96e0ec
+# 09ebbcf987844db6b04e34330ab66551
 msgid "While the :ref:`and_intro` chapter in the :ref:`and` document included a high-level overview of functional components, in this chapter we can zoom in a little and define the functional components by a role. Generically speaking this would include the following roles:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:201
 #: ../../source/deployment-guide/multi-server.rst:222
-# fd4673d9ca4647bfa194ea67087ead26
-# 9a86329dadf84c219b7333e5b57cee5e
+# 2e0bfcf1007c4ba59f2bd150abcfabf9
+# eba1c157d13446c2a2bd396cf8719784
 msgid "(write) master"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:202
 #: ../../source/deployment-guide/multi-server.rst:223
-# 1c8021a620724268805c791aacea0c75
-# 374918b84d0a45ffb0c1ebb3514504a0
+# 848a1db728004984afa63d1d336104c3
+# 7bb93d05dca34446bb883358409b16fe
 msgid "(read) slave"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:203
-# 6f3274b649cc4695a1d95ea02ed5221a
+# 41cbe794e6224d68b7dea5e12f77a957
 msgid "(read) proxy"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:207
-# ac5540485cfd40c1879ec9aebc9b0220
+# 10239f6bec62452d92cedd2b4d6d5d8d
 msgid ":ref:`deployment-multi-server-ldap-replication`"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:209
-# 661ef5fe5f0542e49f7d65b8fddc81a5
+# 41a8be3560eb45f1babc532faa6696ab
 msgid "Web services"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:211
-# f75a58eba6514cd6a44fcf5d12c0e6a9
+# f071ea4defee41d4b372fcd6f590c8de
 msgid "Application"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:212
-# 263bee5eee4f4cfc8b01ed5e3ce1956c
+# 1fb22c7a58254d1ab1f10c271e9b82ae
 msgid "Asset"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:213
-# b4f7eeeb1032448680dad41bb115b086
+# 0aeb402ea66c405d80238c140b58e196
 msgid "Proxy"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:217
-# 4408117438b3411b9b030e4157ec219a
+# 20a0f5c6b5ac40a5a43765b8aae0c30d
 msgid ":ref:`deployment-multi-server-web-services`"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:219
-# 376e2e2bbf83416ea9e4c4a0c03e9765
+# 3d819a95878e433b8932b564d5500ddf
 msgid "Data Storage Layer"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:220
-# 85cb53fedf09463daaadc4de79ce0d90
+# 7cce4f5ff86847248b5227284cc1b525
 msgid "Databases"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:225
-# 2cc4c52846df41db88e09a911aeab536
+# bb34aa720eb840c08bb8dbfa701ccffc
 msgid "Mail Exchangers"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:227
-# 705632b169994606a9cd713c2fdb9092
+# 5580111328f444b1aa833f9270828d4e
 msgid "Anti-Spam and Anti-Virus (AS/AV)"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:228
 #: ../../source/deployment-guide/multi-server.rst:742
-# b2000734db2b456d8c6922fc83659f95
-# 287d2175d1df445e8e8a0949c918ce6e
+# c06298f9268f4966aec600b2bc6118b4
+# 5594c30bf8f34ac68108fa860f6fd8bd
 msgid "Backend Mail Exchanger"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:229
-# f890a2174dfc444a8542c7813af5d1e2
+# 4f5d9dc5a615455198d8cf7cb9262e04
 msgid "External Mail Exchanger (inbound)"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:230
-# 183ce46afc8f42c4ba30cfcba029daf8
+# 2f0361de382f4156a2bc5e366357a93f
 msgid "External Mail Exchanger (outbound)"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:231
 #: ../../source/deployment-guide/multi-server.rst:761
-# 3515f8a1c9ad4d04bbcec7764d83931c
-# e50eebbb6cff4c59983a782752bc90d6
+# aacd13466d1440069e98cdc1cc29a326
+# 0c4c1ca80e4b4f1abf9fe964924ec7ca
 msgid "Internal Mail Exchanger"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:232
-# f2acfcc44fbc4a328f1d65cb5b22f6b2
+# de48b37c628042c58ddae1a0300d6b16
 msgid "Submission Mail Exchanger"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:236
-# 843110926e5e4498bba8ddb2d1b937c3
+# 9d6449d697c040c9a08bda03c7dcb980
 msgid ":ref:`deployment-multi-server-mail-exchangers`"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:238
-# add19d6525da469cbceb4d1237fc68c1
+# b5cfcc476d014282bcf8f3154d90ebca
 msgid "To illustrate how this could look like we put it into a diagram:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:653
-# c9d2118d92e44f4ca3b6c7b8c9d0aa31
+# 62f965acc43e41fea5eb08bbb9fc287e
 msgid "Scaling LDAP Servers"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:655
-# 888bb9c0bf524b70833d41c55ecd75db
+# 06a1397a79f740d1a08e5a4a6bc8846c
 msgid "In a minimally distributed deployment topology, all components speak to a single LDAP server."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:671
-# 4e30d51f45cc4cf2bfcefd1aaa375aba
+# 43e5ef7ffaf94f3a8d42954aec3fc9c1
 msgid "This can be extended by replicating LDAP with the introduction of one or more replication slaves dedicated to read-only operations:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:688
-# 1a2f12c328db46f596f5de60a4b69873
+# 7dbc91a3233146948b487b77a286cd31
 msgid "And extended yet even further by the introduction of (caching) proxies:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:706
-# 40e75b6d352a4537864cc58bfbd7a50c
+# f2da3b80d6734c258e8f0ec8b05de810
 msgid "Scaling Web Services"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:708
-# 909dd8dc14134c1a9616c9be7e125165
+# 23dfa4b44d7e40fc8398d73cd6604391
 msgid "A single web server can not handle the requests of too many users, and even if it could, it would not be high-available. When web services are distributed, especially where it concerns a single web application being distributed, things such as sessions and also some caches must be stored outside the web server node."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:714
-# b54cd76e54f14f729829ae095f7ed8e4
+# e37d19d87ad04dd89436693daf2b4fa1
 msgid "This is to prevent a loss of session validity when users turn (out) to hit another web server node for subsequent requests as part of their existing session, and should be taken in to account even when \"sticky\" load-balancing is employed."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:719
-# d0735e05dd37403ea2ca43c38f8856fb
+# c3e38f0e6a3946e4bb39e1fc77878229
 msgid "Since this session storage must be available to all web server nodes participating in serving an application, it makes sense to provide this session storage over the network."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:723
-# 31d5c575190e4629bdbd47329e8421a9
+# e1fab6e2b12d46c99f5c0dcc61decbaa
 msgid "To do so in a SQL database however tends to put an unfair burden on the SQL infrastructure, especially when replication is involved."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:726
-# 4e91a0a9cf9345ad9a47c9df6590ee24
+# 195eba5d540a4706872b145bf9cedd43
 msgid "You could simply use memcached for the session storage, but this moves the single point of failure just one step further -- namely should the memcached server, fail, sessions are lost."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:730
-# f380425db7164282a5a35274c8d8b1b7
+# cd43d09bf3f54d9c8000772f97461a84
 msgid "To reduce the number of sessions lost, or to increase storage capacity horizontally, one can supply multiple memcached servers to the session storage driver, which will be used as a pool -- the sessions would be spread throughout the pool. Loss of a single memcached server is then limits to only a subset of the sessions."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:736
-# a3e4813173284097816a495ca93b6294
+# afd82c4f59c44931b4e56f0a30f578ee
 msgid "A much improved scenario is assisted by replicated memcached. Pairs of memcached servers replicate with one another so that either can fail."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:740
-# f6a48420b9fe4b0984a656e1307281e9
+# 68e5cc65db334278bdd118b3908c60e7
 msgid "Role(s) for Mail Exchangers"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:744
-# b1b20c8b11ee4cd8b5ef82528cd20629
+# 6aad990290f34010a652f71777ed8a2c
 msgid "A backend mail exchanger is also a Cyrus IMAP backend."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:746
-# 3c5ee8ba9733439a8913c83ebdd523dd
+# b977d2ffa5f6499eb002bcdb269096fc
 msgid "Internal mail exchangers use LDAP to look up which Cyrus IMAP backend server system the user's mailbox or shared folder resides on. They then relay the message to the backend mail exchanger for final delivery, using SMTP."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:750
-# 00e22f3efd294e0292b746023c267242
+# bd04b18f3ccf4d0fbaddae041096c84e
 msgid "Kolab Groupware uses SMTP by default, while using networked LMTP is another option."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:0
-# 1b06191afe194d34ae450ed22fc62cf7
+# a009d8b66fd64fa2aa0b63c56aca2b6a
 msgid "Todo"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:755
-# e97866da990f4322a5835f27c48bcf83
+# 1ab73aec697f4d2b96a87efe514b3e16
 msgid "We probably need to explain why we choose to use SMTP rather than LMTP."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:757
-# 3c9c258e3d894dcfae3f6c92ae020397
+# 24b79a1fc5134d5f9f28af6d0ec166b5
 msgid "State something about pre-authorizing LMTP, it happening over the network, murder topologies and LMTP proxying, the use of LDAP holding the mailHost attribute, accounting, etc."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:763
-# f5875c4c1fb44d168c8576676ba24ee6
+# 7126b2f7f26347e1a1dde71437004456
 msgid "Responsible for internal routing of email, including;"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:765
-# 99301e0dc01a495988d3fe33abfe995e
+# 3e4e294af00e43d7877ef05090006141
 msgid "Relay outbound messages to the external mail exchanger(s),"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:766
-# 0fbea3692d0d45adbc87baaa2ef4d4b7
+# 4c36a4780abc4e2daac851e2daf296dc
 msgid "Relay inbound messages to the appropriate backend mail exchanger(s),"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:767
-# f3883a8e98d64129ab65cebef87c2076
+# 87ea3d6914274b3b9cdc70ecd4452185
 msgid "Relay messages to appropriate third party groupware or services,"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:768
-# 805275c745fe4bffaada7e58ad4ad3fd
+# e760c96fa847474a9777e0d97e1097ff
 msgid "Expansion of distribution groups into its individual member recipient addresses,"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:771
-# 61257ca3592f4d7490ce1a9f3dde3b37
+# e7f69b7f254640e5a23a7332b61eb42c
 msgid "Optionally responsible for the application of anti-virus."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:775
-# eb78d6bd76ff429098d9a079085afbe9
+# 892b4d0bf8674025bc93ae30a13c4a78
 msgid "It is probably the responsibility of the external mail exchanger(s) to scan for spam messages. The internal mail exchanger(s) receive mail from the internal network, and from the external mail exchanger(s)."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:780
-# 43f3c4402d33404bac41c027507d1ff0
+# 4a4aeada5c2646dd8be4c77a33ae184d
 msgid "External Mail Exchanger"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:782
-# 97c784d3a4b7427f9f3ca42e477213a2
+# ca8912067a7745cdb03680758afebdf0
 msgid "Responsible for external mail routing"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:785
-# d61f99c777b64c2cb302e3fd3c54f5ec
+# fb40e5e5f20645ab8da66e9623b15ac9
 msgid "Splitting External & Internal Mail Exchangers"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:787
-# 6d21c6c24dd94042bc00e5aa2d14a39e
+# d12431b2a0564aac9e08c4a9fc292408
 msgid "The following diagram illustrates the split of roles for mail exchangers, and their involvement in a deployment."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:799
-# c9415b2d89c4400382413e93c319db75
+# 74c1e42cdfce4e50835fb39ccc033444
 msgid "In this deployment scenario, each of the roles can be fulfilled by one or more servers. To illustrate, here's a diagram for a deployment scenario that expects to be hammered by probably illegitimate or unsollicited mail, and does not expect that much traffic internally:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:817
-# 5cc4bfb41dbf47fb84e566fe8027a11f
+# f3d12b8e85ec4a92b025a0897b3fb007
 msgid "Responsibilities of an External Mail Exchanger"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:819
-# dd1d6330e56444c283bafbe9e018b23c
+# fcfc78bf7086497fad84432061117490
 msgid "The responsibilities of an external mail exchanger typically include at least:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:821
-# dd9706b37db74de0a2fe82e2c38ff858
+# 64089cd043aa49f1b965f0f47ba00753
 msgid "Check whether the message is supposed to be delivered within the local environment - at least at the domain level."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:823
-# f8f78711bff5434c856d8c5e7b8108e7
+# 923a67b09067491bafdcc65d4d88568a
 msgid "Check whether the sender is trustworthy."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:824
-# 9fc838bafe2c492185efb7214abd3867
+# 4e88e1fa34a842d4a353fc15af3b3595
 msgid "Filtering for spam."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:825
-# b4eaddaff3774a05813d0ef03b914108
+# 70959a2c0cfd4df3a07db1454d3443d9
 msgid "Scanning for virusses."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:827
-# 867037aa9cf54a3a9c34e6fcf3d10492
+# dec6fa5f6cd14a6d9d0efeabeb6ecc0e
 msgid "In addition, the external mail exchanger may be made responsible for an initial check on whether the intended recipient is a valid local recipient. We recommend considering, however:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:831
-# 724ea0b12be34b33898b566f020676b8
+# 1601ee8253ee4a2f8d124583756092bc
 msgid "An external mail exchanger is typically positioned in a perimeter network."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:833
-# 340405f5408e4ff4ba9d4e29bfb08580
+# 254a4144000f42b2a2facac4d8ad536e
 msgid "Checking the validity of recipient addresses in the perimeter network implies a (fractional) copy of the LDAP directory tree is available to the external mail exchanger."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:837
-# ce1461b7661f4fc4b3a1c5db4f485e42
+# 5072c4469e284037b1a08c3eaf33e5fe
 msgid "Allowing nodes in a perimiter network to directly query internal LDAP servers is an attack vector, and you should thus consider creating a slave replica LDAP server in the perimeter network."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:841
-# 2e8e144d550e40638c032a842ee7f040
+# f4ef7225d4e3401e9cf6a3fe99c2accb
 msgid "You should consider making this replica a purposeful fractional replica, as to make available in the perimeter network the absolute least amount of information necessary for the external mail exchanger."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:845
-# 3491411fe9ea47159d759fb4ba6cc4a3
+# be13bdd8f9744b0cac79f0cab08f65f0
 msgid "Use different bind credentials on the external mail exchanger, and make sure no internal service accounts are replicated."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:848
-# 0ac9568f84b346509b29ca59535339e4
+# f3c25538acf34f3a918cf7205eac8b8a
 msgid "You should, subsequently, also consider removing unnecessary indexes from the LDAP databases, and reduce the indexes for recipient mail address attributes (*mail*, for example, has an index for presence, substring presence and equality, with the substring presence being unnecessary)."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:854
-# a2653f2e3951493aabd8fde2302901af
+# 63d3e6e9167f4cf48fe0de6ff9c28a2d
 msgid "Balancing Client Connections to Services"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:856
-# c8972d03e9274406b7cf4c46c1cd3b38
+# 5216b7aca3b94acf86267e6addcd6505
 msgid "Aside from a number of appliances to this purpose, one can implement load-balancing with implied high-availability if the Kolab Groupware functional components or roles are each installed on at least two systems."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:860
-# 971fa0d6b1d04be297130dd4c48ff424
+# 8490f7776959485181809c87a06e0a26
 msgid "Multiple functional components may be installed on a single system."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:864
-# 358a80d4605a49669e9ff81f469826fd
+# af979dc6c12d49bebae0791b93e03565
 msgid "Most appliances, like this solution based on keepalived, will need the clients connected on failover or failback to reconnect to the new system to which the service IP address in use is attached."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:868
-# bfd605d38b7a41c6aff81cd5debcf003
+# 365a999210a64b01932b076a4b7e2943
 msgid "Two LDAP servers are installed in multi-master replication mode:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:870
-# 557d4317716341ef8b561ed1051af4ac
+# 1b062b5125ba43609a5363cb63c2aac3
 msgid "Server #1 has a system IP address of **192.168.122.1**."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:871
-# 581999029ecf4c4e85bb85a9a65485c1
+# a0cb5ff238f34b35850c5671a20b0720
 msgid "Server #2 has a system IP address of **192.168.122.2**."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:873
-# 6f4daf96c538487fa63901a377bc1f9f
+# 35b6db82482041f6904ce615ebae43ef
 msgid "Both systems run **keepalived**."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:875
-# 95fbedc2d88d49438fb8a025f22e6da1
+# a7914fcfd57b480b8f9fa3926126cc6d
 msgid "Server #1 is the designated master for the **192.168.122.3** service IP address (with priority 200 over 100), and"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:877
-# b924ecdffece4a81a5fe8843b8dd0efd
+# 75a3ad60f93b4a24b624f92c72853aa7
 msgid "Server #2 is the designated master for the  **192.168.122.4** service IP address (with priority 200 over 100)."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:880
-# 47cd51c629864b1998a7a74e6b49bb5a
+# 5d13c666e554413fbab09949095cb567
 msgid "The **keepalived** service has been configured to check the health of the local system's LDAP service, and substract 101 from its priority should its health check fail."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:884
-# 45a96ecf4e224706bf92ab1c86e6b23f
+# ceac7caf86904db38f6b3bdce1358502
 msgid "In a normal situation, Server #1 holds the .3 service IP address, while Server #2 holds the .4 service IP address."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:887
-# 03f26e5d4f4642659d99b1afeab7ecdb
+# 6e119c48277b486997713bc7b31fbd90
 msgid "DNS for ``example.org`` has been configured to hold two IN A records for ``ldap.example.org``:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:890
-# 76596e59b30b434bac76cf5a37dd5ea4
+# 71f7e194f201481690b5fe6fbdb2e77b
 msgid "192.168.122.3"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:891
-# db9d032efd9343de8f87dc68fe3241ae
+# 53c61ad4ad5d4a4eb414eb55f0dcafef
 msgid "192.168.122.4"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:893
-# e18dfd46b378463781b68bee66f14c37
+# e325080a51f8410eb43e6638f244b541
 msgid "The client system requests the IN A for ``ldap.example.org``:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:903
-# 3457ad61acf24f8b98172a8e63629b11
+# 7208a067f4a24e26ab28b0402d83f189
 msgid "The client connects to one (semi-randomly selected) of the resulting IP addresses:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:913
-# 4e193e1caa2c47828d9b56191e2dec27
+# eef10f8fe9db43c5b8f03f621d4111b1
 msgid "Which server this connection ends up with depends on the health of Server #1 and #2."
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:916
-# 3b23af68872c43a58619df58d032127a
+# 3fa88f9b09764d429a0b33facd466dce
 msgid "In a normal situation:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:925
 #: ../../source/deployment-guide/multi-server.rst:943
-# 2b9efc2754844ec6bd0f228c79e14b17
-# eedd7325c1004a66a4f8240a4080a1c5
+# f18abeb275c14b6693f2eee67a69b5f0
+# e5bca9c184d34955859411a922484f21
 msgid "and:"
 msgstr ""
 
 #: ../../source/deployment-guide/multi-server.rst:934
-# e02fa00633a6410bb0438b3caffab7d3
+# 0e76d4eb002645a9a93dbdbb31f67c0c
 msgid "Should Server #1 fail (its local LDAP service health check(s)):"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,167 +17,167 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/architecture-and-design/bonnie-api.rst:92
-# 2817f215343e41fdacd96a7be18f388b
+# d53c2003afb54567b53788b019c5cea9
 msgid "Bonnie Client API"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:96
-# e9cdd474ff904fde82d7038275467d6f
+# 7d689d309ef0488e94a07f2d7eb018af
 msgid "Client-Server Communication"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:98
-# ef45708ed3a240ef863bd9350750e9f2
+# 856aa56a8c5f4d539d521c093fc086c9
 msgid "While initially the Bonnie API will serve as a read-only service to respond on concrete requests from clients to deliver object changelogs, the protocol should remain capable of allowing a bi-directional communication between the participating end-points."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:104
-# 5021f00511fe4d559f42245e5902c357
+# f02aca24290345a7806f780a9880c2f0
 msgid "Technology"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:106
-# 09225ec6d52a40fbb5891330808d9f10
+# ad6e0f58e84c42fd8ba23d9c952809b0
 msgid "The idea is to implement a stateless web service based on the JSON-RPC 2.0 Protocol [#]_ using HTTPS as the underlying protocol."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:109
-# 15993d3643ca4db48e1dcb1653ad613d
+# d3db185ae28448df9f0c55d88628240a
 msgid "In this document, RPC calls will be specified in the following manner:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:111
-# f4b1128905b6435b84016dbf7dd676e5
+# 180428b010ac4c7bbd3f338efeab6eba
 msgid "**Method**:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:117
-# dbc814c3ee204db2ba07723e8753b9d3
+# 462ec0be9bfc4047ad056f63ca1da811
 msgid "**Result**:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:123
-# cd6cbb3f01e142c38c922f435b451364
+# 7f6aaa619654469bbf1372c12bdfb689
 msgid "For method arguments and results, JSON-like formatting is used to indicate the data types."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:128
-# d1eb9668fa7c43ddb5308b336f01b2e6
+# 647808bb2fd147ed93e45e160fbe9613
 msgid "Client Authentication"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:130
-# 7dd8e12ad8974a0d97006839b15d6298
+# ae80dea12afe4d12b33886605d641eba
 msgid "A connecting client must first authenticate itself in order to be allowed for further interactions with the API. This is primarily meant to abort unauthorized access to the web service from unknown clients in an early stage of the communication. Client credentials consists of 3 parts:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:135
-# df017306327f4731914f90b3bacffa9d
+# c4aec312326d45ce88c9428ed436d477
 msgid "Client-ID"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:136
-# 3c69485006a64cc788790fc6c0ada45d
+# fb40cc799cd3469f9d5dda6def0e229a
 msgid "Password"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:137
-# 88254e41ac494daa89cd75e9221f8963
+# 2ccf61a9515d4ea09e70be0a8a4476db
 msgid "*Client Secret*"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:140
-# c897cba28177429f84a4294cf21aeec0
+# c92f433184dc449c8e5a0065b9522f2a
 msgid "HTTP Authentication"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:142
-# cefeb760703a4445b1c236682b682eb9
+# cb5ebbe3f8cb48d083c365adc7851e3e
 msgid "If the API requires HTTP authentication, every non-authenticated HTTP request shall be responded with a ``401 Authentication Required`` response which indicates that clients should send previously negotiated HTTP Basic authentication headers with subsequent requests."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:147
-# bbe51c5053834a36a2abafd8548db96f
+# b39daf0a276d41c9982aa19d7709d431
 msgid "The Client-ID and the password are sent via Basic HTTP authentication to identify the connecting client and to grant access on a transport layer (HTTP) level."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:153
-# fbc5af0a68104501b78d3a966bfd7933
+# 51137c451d314954a9e0604d569d7662
 msgid "User Authentication"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:155
-# dcd7bd5048944cc1b05ffe096fd49e42
+# d4ab74743e294b8e8e686dce385ef031
 msgid "Once the client is identified and authorized to use the Bonnie API, the actual human user accessing data through the API needs to be identified. This shall restrict access to stored data the requesting user is actually permitted to read based on privileges and/or organizational structures."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:160
-# ed52c06c37824e1cb1432b188f0a50cb
+# e0e047e2af014e1d974403393cbdbe96
 msgid "Although the API is meant to be a stateless service, certain means to restrict access are required because requests may (at least partially) be initiated by a user-facing client and therefore should be proof to manipulation."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:164
-# 9fdee044cc2640d5978f637e8776ceab
+# c79f70e53c084360982b30a25021c278
 msgid "With every request to an API method, the client shall supply the fully-qualified identifier of the requesting user together with a hashed value acting as a signature to prove the authenticity of the request. These values are provided as custom headers in the HTTP request to the API:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:174
-# 93b7ba4d3c6e42cc8c49837809e2f4ad
+# 118856311a3441b6b8f7aef432d95f4f
 msgid "The signature shall be composed as a HMAC (SHA-256) value from the user identifier and the full request payload using the *client secret* which is never transmitted through this API."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:177
-# c3de60879eec42a2bbdd432464b7edd3
+# 4c79d2e569c1464a84d1e45c7de8d928
 msgid "Generating Request Signatures"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:179
-# 733c34597251431b9ffd4d58393f1849
+# e26eac923b09432d973e38a30232eb36
 msgid "Compose the JSON string for the RPC call"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:181
-# 8b4055243e8348758f818b03d09fe5d1
+# c0c9ee794b3f48f38cc32e5489629e7a
 msgid "Concatenate the user identifier and the JSON string: ``data = user-identifier \":\" json-string``"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:184
-# a5e6e0af200845f0993b94ffa774992a
+# 71a58349fca44ed7a0da1cdd4c16457f
 msgid "Generate the hash value with the HMAC method using the SHA-256 algorithm and the ``client-secret`` value."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:186
-# 05a1a6949b2c4f94a5416159c0122acf
+# 406f690170ff4681852f2d17eca2ef38
 msgid "Send the hash value in the HTTP header ``X-Request-Sign`` together with the ``X-Request-User`` header before the actual JSON-RPC payload."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:189
-# 6a5664852d7f413e830c72ffcc39c746
+# c0c9410d742648b581eae578ef293da7
 msgid "Before processing the RPC command, the web service provider shall verify the request signature and in case the signature doesn't match the payload, reject the request with a JSON-RPC error code ``-32600`` indicating an *invalid request*."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:196
-# f8ad81cfc36548978ae4faae7060a4ae
+# d99ffd00955d465bbc8fc0fad7025d72
 msgid "Retrieving Object Changes"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:198
-# e1532ed11dd64403b032d3417490241d
+# e534f659570e4aa89ab23497c7c3ec3b
 msgid "The API exposes methods for every object type to get particular information about the history of a given groupware object. Method names have the following syntax:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:204
-# a761894fabee407ba202143167f926d1
+# b42745f7a5754319bfbe2bd2fdc19c25
 msgid "*Example*:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:212
-# 2e5da19a5cb347a0b68ed5ca334dae3b
+# 73baf4ab91dc45628f7e90934495b9c8
 msgid "Fetch created date and user"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:214
-# 623643713e5a48c6b00dd12166735134
+# 44262f51c3eb498dac0a9747a6ef00c5
 msgid "*Method*: ``<object>.created ( uid: \"<object-uid>\"[, folder: \"<IMAP-mailbox-identifier>\" ])``"
 msgstr ""
 
@@ -186,117 +186,117 @@ msgstr ""
 #: ../../source/architecture-and-design/bonnie-api.rst:266
 #: ../../source/architecture-and-design/bonnie-api.rst:326
 #: ../../source/architecture-and-design/bonnie-api.rst:345
-# 3d8eb6a9bba743a5a6a851fa071b0f2a
-# 77de259259474e1ab39b58541cb03143
-# 49be57fc20a44513959411495a9b4789
-# 55fc7a54161e4b6ba7d980f3e55f7ec8
-# 2780549af26749419bd91f800e442e7c
+# 453b0da043b947a9b040153647f1adb4
+# 12fb21f879644f54bfd53fdd8a6a5e10
+# 7ab56340b5104d9fb3a302077e578835
+# 0c502a710e3b452e9289d73ecb2098df
+# 6f2e62dfbe3e4e56a80ab02af1d8f9aa
 msgid "*Result*:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:227
-# 69297e48d3b841a7a0249ef198108bb1
+# fe49a709650c42fa843d9b6dec79c5e1
 msgid "If no ``mailbox`` argument is provided, the object is searched in the given user's folders with priority on personal namespace."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:229
 #: ../../source/architecture-and-design/bonnie-api.rst:259
 #: ../../source/architecture-and-design/bonnie-api.rst:283
-# fe3367fb44b144eb9a66a0b89aef674c
-# 145c2daa0d0146a3a84c6dad2f1d559f
-# 27cfaf00a54c45098049bdef823cbc42
+# c8fa5b20a87e437b97dea0815e5d278a
+# d420411a735746e784504cb4b9fc9df6
+# 534a2bde09544f468b123684e8097b17
 msgid "Date value is provided as ISO 8601 Date/Time including timezone information."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:231
 #: ../../source/architecture-and-design/bonnie-api.rst:362
-# a5805ad3384c4b4493766db4be1d2a58
-# 44d4e1f10db24e648304ac0a3f1be67a
+# a9e37d8448584cb0ad6b4f80a94be530
+# 3e102e87d79f459f864c4b6958122785
 msgid "*Example result*:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:243
-# 5637c3174400418b935e707b0e06234e
+# fd725b5fd6f740689e3ceb4bfd4aa31e
 msgid "Fetch last change information"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:245
-# d02a6247af5c4726bac22d56fe96b718
+# bfc8728e3e104fb6943975a573dcd727
 msgid "*Method*: ``<object>.lastmodified ( uid: \"<object-uid>\"[, folder: \"<IMAP-folder-path>\" ] )``"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:262
-# 6465e749afa14c028e6700c6984afb4c
+# f4c160ff93504c1b93cbbd9586d9ddd8
 msgid "Full Changelog"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:264
-# b874756f21d34103aa4f857c74f479bc
+# 0a00427b4e09484db4e36ca1693ff652
 msgid "*Method*: ``<object>.changelog ( uid: \"<object-uid>\"[, folder: \"<IMAP-folder-path>\" ] )``"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:285
-# 446bc281ff4e40f7908a497f0cfb0cca
+# 2f6dbefe1738440b935c71ede070d884
 msgid "The ``op`` (operation) property reflects the IMAP operation performed and can contain one of the following values: ``APPEND, MOVE, DELETE``."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:287
-# a7ae490e83da425d89691b2bb24ce408
+# 0c157891f9e54890ac605243175281a6
 msgid "*Example Result*:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:322
-# 0510c6968e394173aa5da89a351650e3
+# 0e8bdd1c7ebc48a7be1f36d8459b2edc
 msgid "Retrieving an Old Revision"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:324
-# 303ef460588647e4bdf1dc787c514a36
+# d22306371da8491c8b67bbf4821a407e
 msgid "*Method*: ``<object>.get ( uid: \"<object-uid>\", rev:\"<revision>\"[, folder: \"<IMAP-folder-path>\" ] )``"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:337
-# e50ce73b41ed4f28b1404817bb3ad09e
+# 2a8a0c5886744ed38c5400a9f6fcdbab
 msgid "Retrieving Diffs between two Object Revisions"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:339
-# 332a6a8d3f2645eaaee5cb0834085373
+# e5c7f6980dca4efdb6489e770ecfe661
 msgid "Generating and applying diffs in XML documents is not a trivial topic and if we'd decide to go down the full diff route, we should use existing tools to generate those diffs. But the benefit of a real XML diff is limited in terms of displaying changes to groupware objects because in order to generate a meaningful diff view, the semantics of the individual XML nodes within a certain groupware object are important and pure xml-level differences don't simplify the work of a client."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:341
-# 2bd5be0f8a8d45efba702202f4a50f14
+# b900ef8b9841422391cff7ff8cf4bff7
 msgid "Thus loading full version of different revisions is likely simpler for clients to derive changes than looking at a XML diff. But in order to optimize the exchanged payload, the API could provide a diff on interpreted \"properties\" of a groupware object:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:343
-# 5a072638c4314290b12c93bb947203da
+# dd45c2a14b304613b0ff8c67589d8ae2
 msgid "*Method*: ``<object>.diff ( uid: \"<object-uid>\", rev:\"<rev1>:<rev2>\"[, folder: \"<IMAP-folder-path>\" ] )``"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:400
-# da6bb1e226934ce6b05e6c1e28ba86a8
+# 7b721072f5ef4abd98d70eab5227e1a3
 msgid "Properties are top-level nodes from the Kolab XML Format 3.0 and property names used in the diff data match the ``property-*`` identifiers as described in the XML Format Specification [#]_."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:402
-# 822be8b12a214179a947ce1ab884bd7b
+# 28b5023443534655ba16f92a1dbd1190
 msgid "If a property is a struct, the ``new`` parameter only denotes the attributes which differ from the ``old`` value. If an attribute was removed, it shall be represented as an empty string."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:406
-# c7f6a50574cc4c59a4964f61bad172f8
+# 0c0d4d6964ff4fee977b222482584cd1
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:409
-# e9d72c70427e47aeb17642fde8029156
+# 2340a7142c62433ba9b6d682646ed0a7
 msgid "JSON-RPC 2.0 Specification: http://www.jsonrpc.org/specification"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie-api.rst:413
-# a02706f3cc7c401a8bd1906da366c7e0
+# 72891aaf0d9045eaa9dd4317b53e026e
 msgid "XML Format Specification http://wiki.kolab.org/User:Mollekopf/Drafts/KEP:17"
 msgstr ""
 

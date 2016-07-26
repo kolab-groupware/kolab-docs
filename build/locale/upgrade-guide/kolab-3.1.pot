@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,261 +17,261 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:90
-# d5ad6fe6aa554805b9fc4b410159b1ee
+# dd523c3d2cac4876a69ef7d2f72a3879
 msgid "Upgrading from Kolab 3.0"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:92
-# 2e26355b386647ffb4b56b3de06c1466
+# 95ebb6720bc64ac087068633ad3c6afd
 msgid "This chapter contains the upgrade notes for moving forward from Kolab 3.0 to Kolab 3.1."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:96
-# c21737c8d7c9418d87e401e35cd447aa
+# f34212aced8744cf83f9c5237308267b
 msgid "ChangeLog"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:98
-# 220f9d4f2b67442e9e653da07755dc67
+# 017d940b9966461888bb196b074542af
 msgid "Kolab 3.1 compared to Kolab 3.0 ships the following additional components:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:100
-# cc1f879595884835935639bd7075f045
+# 386dad16fd9b4e4c870b7cb2080fce23
 msgid "**iRony**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:102
-# 1baa1ac381974326b2aceb2cf96f91e5
+# 9800a2fd28ea43e9b3b182eb31e58527
 msgid "A DAV access provider for groupware, including WebDAV with help of the **chwala** API, and CardDAV and CalDAV."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:105
-# e578c53a1f6449b8a5b9aa3eba8f0089
+# ccbcc7fb0833482da730e4b6dba55289
 msgid "**chwala**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:107
-# b4e399c1a83e448383153ebf387be996
+# 2acfd5852ee348fcb3d659dbebfc2c78
 msgid "A properly designed and integrated file storage management layer, primarily for integration into other web applications through it's self-reliant UI component builder functions (JavaScript) obtaining information from its own API."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:112
-# b925af9b47fb4137a4dfce12fb54638f
+# 9818a8461dce4b35bd3d77415b0c8354
 msgid "``kolab_files`` for |roundcubemail-plugins-kolab|"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:114
-# 5a28f407fb3c42e8931523920fe1a51f
+# 99119581bba64b0a9f4b8dfac5c4b952
 msgid "One implementation of the integration of **chwala** into the Roundcube web client."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:117
-# 28edc294c6f64e3e989625297fb67dba
+# 63b70da3cba342e798d8d5aa258053da
 msgid "Further software updates address the following issues:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:119
-# 8de4fb5132764e158a046a706889638f
+# bc506526ea4b446bbe8154c3f201c260
 msgid "The Kolab Web Administration Panel has been enhanced to address duplicate surname issues, which in Kolab 3.0 would generate duplicate ``uid`` attributes."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:123
-# 0979d0efe7024e60925c442533d4fc69
+# 6f7f5a4a08124642a79be7e3894afd12
 msgid "The way the ``uid`` is composed can now be configured with the introduction of a ``policy_uid`` setting in the ``[kolab_wap]`` section of :manpage:`kolab.conf(5)`."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:127
-# 927ab209036a40a5bf51ffd255f682ee
+# f9a215d63a4f4be29320015182796f32
 msgid "The **postfix** MTA is now configured to strip the ``Received from:`` headers that could otherwise disclose a user's geographical location."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:130
-# 0e6a20a7078e4c8ab7795ccf060d3471
+# 4a8dc95feef940e5a0e222f763069b63
 msgid "The **postfix** MTA is now configured to reject inbound email traffic that already has headers set to indicate a spam message."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:133
-# 1e85778fd9e8456e9319a49151e9727d
+# 49be6e9fa7bf49fa958d8f649ecc4115
 msgid "The **postfix** MTA is now configured to strip additional ``Received from: localhost [127.0.0.1] headers`` from emails that pass through Amavis."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:136
-# 025ecb664f224cf082617fc4c18144b4
+# dca0bb02a031467a83d7f2f34c46e6b2
 msgid "A new annotation ``/vendor/kolab/displayname`` was introduced to provide a compatibility layer with CardDAV and CalDAV access layers, neither of which understand IMAP folder hierarchy."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:140
-# 3f1c58fdb6bf4b5c949efc8df90377fb
+# bcfc32ccc60948769cbedfccadb51755
 msgid "A new annotation ``/vendor/kolab/uniqueid`` was introducted to provide a compatibility layer with CardDAV and CalDAV access layers, neither of which would have otherwise allowed an IMAP folder to be renamed or relocated in the IMAP folder hierarchy."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:147
-# 52a7ca6634dc4f71993c41d7a29cec5d
+# 208efb02ad164ffeab899d75fdc80553
 msgid "This annotation is only used if ``/vendor/cmu/cyrus-imapd/uniqueid`` is not available. This Cyrus IMAP annotation became available in Cyrus IMAP 2.5."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:151
-# e79ea5b2949547a985af4a7db7f45884
+# 7a75f7cdd06949eab35e895933e40fe8
 msgid "The ``kolab_auth`` plugin for Roundcube was enhanced to allow the use of a placeholder ``%dc`` to be substituted by the root dn for a supplied domain name."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:155
-# f65a27e4177c4aa5ac6c087b06bf7d43
+# 08c375feb3fe45958224bc757c62801d
 msgid "This enhances the Hosted Kolab Groupware deployment capabilities significantly."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:158
-# 85482cd034ec4c948826a86d1f6a38dd
+# 432577df742a4b44a68b3410eea373f9
 msgid "The **kolab-webadmin** software was enhanced to allow input of *KB*, *MB* and *GB* input for ``mailQuota``."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:161
-# 19b947848b474b3287235b307ea4a390
+# 90ba0a984b76404ba942bfea17a269c1
 msgid "The **kolab-webadmin** software was enhanced to allow *Shared Folders* to be created through the web administration panel."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:164
-# d05dd44ffeaa4963831c35569150f3c6
+# 7c6cbface9a24b0cb41ce7415bcc37ad
 msgid "The **kolab-webadmin** software was enhanced to allow the configuration of *Dynamic Mail-enabled Distribution Groups*."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:168
-# 3d352b33a51a40679a4b282a5ba7e1b8
+# a9d658fc881740f7ac30944727c76f4d
 msgid "Updates to Cyrus IMAP"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:170
-# 2dad72540d884c399affd6296f7609b0
+# 3566725c8937433fa72e48197ec822a4
 msgid "Updates to the Cyrus IMAP configuration can be applied automatically, by executing:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:179
-# 9518bfe619d344f8a0a17d7fe0f66ed0
+# ece05c7a875b497cba1a1a70fa3fce74
 msgid "Executing the aforementioned command assumes you had not made any changes to :manpage:`cyrus.conf(5)` nor :manpage:`imapd.conf(5)`."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:182
-# 039c63c40d6544789e8a171a8ae97cac
+# f453241a7fc64df68dc5e1edb449e4aa
 msgid "If you had, either read the sections for :ref:`admin_upgrade-3.0_cyrus.conf` and :ref:`admin_upgrade-3.0_imapd.conf` or re-apply the changes you need after executing the aforementioned setup command."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:190
-# 0597e98f07664849b7ccc4ffde2b914d
+# 47f6c5f87fd048c4807a55dd6a8e9f78
 msgid ":manpage:`cyrus.conf(5)` (at :file:`/etc/cyrus.conf`)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:193
-# ca94ac035f8a460e8447bbc4a1bb02f5
+# abb4acbf42964f048fbb445ef2e980a7
 msgid "Underscores in START, SERVICES and EVENTS Item Names"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:195
-# 4951b4c85bfe4f0a98a736d0c24906f2
+# 303080506e73494e9fa7bb4439c48f7e
 msgid "The version of Cyrus IMAP shipped with Kolab 3.1 is incompatible with the use of underscore ('_') characters in the names for the START, SERVICES and EVENTS items."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:199
-# bac97ee06b1f41dd8d2c3db30b5fb5d3
+# bebe6f292be04b7fb461e3ae310d869c
 msgid "The EVENTS section in **cyrus.conf(5)** may have looked as follows:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:225
-# 74709fe39fec4e76a2282b59e59b3557
+# 147b68a62d134ccab6358a4d0159c568
 msgid "This will need to become:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:252
-# ca22140fbec14464bef1aab9353fa777
+# d7cfa2e516504169a39b54fb226ff4a2
 msgid "The Use of Squatter"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:254
-# 79377933666a4a43acc9f769b71fc3d1
+# d48564bb11b54abe9a16a784f62572c6
 msgid "Squatter is used to periodically create full-text indexes for messages in mailboxes."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:257
-# 3f86142f737747e8a8c84959343bd99d
+# 60f682e9232c4155ad266e9456957bcb
 msgid "At the time of this writing, however, headers that are relevant for Kolab Groupware data searches are not included in such indexes."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:260
-# d8de286ec0d147a4a50fccb164e7c048
+# 662fa557182644b291c42dd4ebaf0cb8
 msgid "To circumvent this problem, remove running squatter from the EVENTS section in :file:`/etc/cyrus.conf`."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:263
-# 8151155400084f48add186c2abe0b347
+# 3f702e3adeaf4134838c3424216a9ab5
 msgid "To prevent existing squatter indexes from getting in the way, remove all files named **cyrus.squat** from your IMAP spools:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:275
-# 3173e20b4d824a6aa31ec93c350f4e63
+# 61b86751f98c49d5a48475f6012f9f60
 msgid ":manpage:`imapd.conf(5)` (at :file:`/etc/imapd.conf`)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:277
-# 938752dae8b84bb29284649040b601fa
+# 83b882d59a0640c397260bb1639547f0
 msgid "A few additional settings are needed for Cyrus IMAP to feature message traffic directly into shared folders."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:280
-# 3b90d5e8d03048ed8853e3459268beaa
+# 84c2a686e134422183fe2014d2aed138
 msgid "If not already set, add the following setting to :file:`/etc/imapd.conf`:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:287
-# 374df5aa1e2f4dbc8d56155851ab9bf6
+# 6f708041e86b492b99f28867d28e64bb
 msgid "New Features in Cyrus IMAP"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:289
-# 6f3b5f1aa4fb4a88a6545a3a61ade087
+# a891ea1df8c240a29fe5ab2a08860bc7
 msgid "Event notifications. See the architecture and design document on Bonnie."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:290
-# 197330bbf07c40048b40c97c96d6cf37
+# a1c894aeb6d74f598412935b908abb0b
 msgid "Multi-master replication"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:293
-# 00678ba49e81403699d05e3bcafbe889
+# 8c0b5eaf8f85467abc8480fe4c4fe43e
 msgid "Removing old and Adding new Plugins for Roundcube"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:295
-# b211e596295549718d630b2d7bd3db9b
+# 00becb39c9504bbebddf56d2595e9bb3
 msgid "The following plugins are no longer included:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:297
-# 4f30f4a8f7e64074bdf079d7282fddf7
+# d0e94975f222458ab76bd9e6ad8ca2cf
 msgid "``kolab_core``"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:0
 #: ../../source/upgrade-guide/kolab-3.1.rst:0
-# 47ea09a244f04b028e8f5fc7346d1d03
-# 2e3ddbf34bcd4c9c91f680ebf32168ba
+# 633bf3bfd18d41fb9de74bf5b3051164
+# e4296e160b644933aa37c1c1c457d0ea
 msgid "Todo"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:301
 #: ../../source/upgrade-guide/kolab-3.1.rst:309
-# 6bd78ebff6aa40af82a15b0b29cfe600
-# 380ed0ec620540a5a150924ca532dc93
+# 45e8b872445347a58b5b2f7af1b1960a
+# 404951c7293d49bf90841719886883e1
 msgid "Is this list complete?"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:303
-# 541435b60e3641fab9e221228989d028
+# a0443eea15494e5199e8e9b3ad4d9b2b
 msgid "The following plugins are new:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-3.1.rst:305
-# dc92ef25a4af4ae7a3a0311dd5a41e34
+# 05cf578f17854b978951bab20091a6a6
 msgid "``kolab_files``"
 msgstr ""
 

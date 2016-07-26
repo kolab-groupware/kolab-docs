@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,262 +17,262 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/howtos/multi-domain.rst:92
-# 6e16682b07af49c1a29ef49031cec8df
+# d47672871cf2400eb10ed9f640d6e335
 msgid "HOWTO: Multi-Domain Support in Kolab"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:95
-# 6b5c7f6a843d4661ae54e8bb57cb1189
+# 20876873a6b24b5c98b6e4f7e57669fd
 msgid "Different Types of Multi-Domain Support"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:97
-# 287f6e3b671e43f69ace22b005401e60
+# c4e15fc7499d44d99a391c73eed81710
 msgid "Kolab Groupware supports two different ways of providing supporting the use of multiple domains. To choose your right way you must know the difference between **multi-domain** and **domain-aliasing** or **parent/child domains**."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:101
-# 74aff554b7dd4c8cbb33b5860de25984
+# ea5462c9c99944bd89d5c0346961ae1f
 msgid "If you want some more background knowledge about Kolab, Domains and LDAP please follow this introduction: :ref:`parent_alias_and_child_domain_namespaces`."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:105
-# f476c848db934e0eb3c74aadca1154c6
+# 209edc2f6cf54fd889184fe6ebab95ca
 msgid "Alias/Child Domains"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:107
-# e2d01ca28d49469f83f448fb7b1644d5
+# 123614d6930a4a4ba4286aaf921cf631
 msgid "You're responsible for several domains where you want to have multiple alias mail addresses assigned to you and/or your users. Everything happens within the same LDAP directory and usually you or your admins are taking care of managing the accounts."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:112
-# 3635db50e3054a72bca25a10f0fe9d25
+# 0378c0e4e09044e284dbf192aea77780
 msgid "A usual scenario would be:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:114
-# a6c112cd26a64bb3bffd04b5b78adbe2
+# c0f2cf73dae744f282465d93d5a68458
 msgid "You've a cool project/company domain like ``mydomain.com`` (which will be your *primary domain*) and you want to be able to receive/send emails for (other *child/alias domains*) ``mydomain.net``, ``mydomain.org`` and ``myproject.com`` as well."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:119
-# 5a627c58946c42159bc8d4d01328c850
+# 5738221cfbd342e08f33f2da5482ce4d
 msgid "You then can add mail addresses/aliases to your user account and everything ends up in the users single mailbox."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:122
-# 5713de2f10534194b7061ec8e675d71a
+# 79e7cb2790e842379e40ee5ab63adc1a
 msgid "Adding additional domains to your primary domain is fairely easy and doesn't require to modify any configuration file at all."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:125
-# 4e7b5c22caf342ce80aada5e1f5a76ff
+# c59c30226e6a4001b32589959e45856c
 msgid "Log Into the Kolab-Webadmin"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:126
-# 679b91ab86a34fd8ba617ba193546de5
+# 2aee82a12f75401cbbb97f3c09a1b25b
 msgid "Select \"Domains\" in the top navigation panel"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:127
-# 54d3df61ec154c7e86d7afc599cfe1bd
+# c1a06fba074645529971845493ecf822
 msgid "Select \"mydomain.org\" on the left domain list panel (the domain list should only contains one single domain)"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:129
-# 008e84e8451348c9aea562575fcac950
+# 38c76a83425d4503853f9ce9010ef41c
 msgid "In the section \"Domainname(s)\" click ``[+]`` somewhere in the domain listing and fill in your ``myotherdomain.org``"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:131
-# ee62a790d83a4e74bfc42354d3e2ba46
+# 46f45091cc9d49a1b90cebce01fcddb4
 msgid "Press save & use it."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:135
-# 4b5d4a0b06ee4c209212278943d70332
+# b2a05788724a45b58c9841e2401721a3
 msgid "Parent Domains/Multi-Domain"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:137
-# fe29687f6c114ca59ace87f161d2b4bd
+# 2bfd1ed8c5dd42ddab47292ba469b6fa
 msgid "You run seperated LDAP directories which have absolutely nothing in common. No shared mail addresses, no shared users. Think about 2 different companies (``microsoft.com`` and ``apple.com``) that want to use the same kolab infrastructure but having everything seperated, don't share anything at all and therefore manage their own accounts, mail addresses, folders, resources, etc. Every one of those seperated domains can have child/alias domains as well."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:144
-# 8ae861e7306d48c19616c130803bb9e7
+# e066c0ec22764e798f96d11248d652fa
 msgid "Here comes the multidomain howto into play which requires some background knowledge. Especially about postfix, ldap services, etc."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:147
-# 979d671b7f5d45ce937e75eb7761bf0d
+# 5f19ed90d2314df0a18f7684be7e56b7
 msgid "**PLEASE** do yourself a favor and read the next section :ref:`multidomain-before-you-start` and all their references to fully understand the scenario."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:154
-# dca9ee6d313744c8b8fb62a76d5a77a8
+# d2c872c4b25e4539abd07f6863f8c66a
 msgid "Before You Start"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:156
-# e311eb8d0947418eb64b54c6cea78e37
+# fc6c8cf19e234baba3500ee21a644d7a
 msgid "For environments that could possibly end up hosting a lot of domains, it is recommended to set up a **domain_base_dn** that is contained within a database, as opposed to the default *cn=kolab,cn=config*."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:160
-# f119954c48d14d5abe37b2a1dc553d48
+# 2961387152834fba94176727736b74a0
 msgid "For environments seeking to host system administrator account information and group membership in a centralized fashion, the use of a :term:`management domain` -- the use of the primary domain as a management domain -- is recommended. Note that such a management domain can hold an organizational unit to hold the domain name spaces hosted, such as ``ou=Domains,$root_dn``."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:166
-# d9fbc64e027b401ca66c9f387daea610
+# 1111a9d66f864bddb8bebb5c9090eaff
 msgid "Environments that seek to provide highly available (multi-master) replicated LDAP environments for many domains should realize the default maximum number of semaphore sets is 128."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:172
-# c50f374cab0049bc88bbf246c19e78cd
+# b2a9cee7e34e47be8278d0834e734f7f
 msgid "A description of a typical :ref:`deployment_hosted-kolab`"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:173
-# 7c3a8dc0b40f442dbe243318d321998b
+# 638e774b1ffd4d319d05dce679be3f4e
 msgid "Deployment considerations for :ref:`deployment_organizations-with-multiple-domain-namespaces`, as they impact functionality"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:176
-# 2dcfac1fd9514062ae345eb8c55fc17c
+# 8876df3760574417a87e2685897dbb75
 msgid ":ref:`admin_ldap_increasing-max-open-fds` so LDAP can continue to accept connections"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:178
-# d1c8fb71b7d04dafb7ea4c9117fd3846
+# a8a785c39dea4e1eae9002151c4462c3
 msgid ":ref:`admin_ldap_7bit-password-check` to not confuse too many users at once"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:180
-# 8d43d07f1b54485ca19a30bc778be8a7
+# 3f30c98ddc3f498e9edf22eecb2534b1
 msgid ":ref:`admin_ldap_configure-vlv` and :ref:`admin_ldap_configure-sss` for larger LDAP trees"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:184
-# 30de9c689b79492cabc113ce616395f0
+# 0a327bf7d9db45238278f44505c51ebd
 msgid "Amavisd Changes"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:186
-# 984a319f2848484b8e5b69c945d22ef9
+# 549fc4e80e904eb0b850425235cad24c
 msgid "Amavis wishes to determine whether the email passed to it (through it) is to be received by a local recipient. However, it does not support lookups against LDAP -- to see if domain name spaces are indeed locally hosted."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:190
-# cd0d7514b39a4e4491a20c8eddb87102
+# 92974d8d83ec4f9f8f457c4c5d7732c1
 msgid "Only for (inbound or internal) traffic -- to domain name spaces considered locally hosted -- will Amavisd add the ``X-Spam-*`` headers. As such, it is necessary to tell Amavis what the local domain name spaces are, in order to retain any spam headers."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:195
-# c49a00f8a9b34745bcc944bb1f5fa7fe
+# 27a728aae5544851b9806e1f08fb6122
 msgid "Edit ``/etc/amavisd/amavisd.conf``, setting ``@local_domains_maps``."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:197
-# 28f3806c27b346249d8e967355c23968
+# b72d128005cf47749c764c97d7d415db
 msgid "**For dynamic environments**, ..."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:199
-# 20ab69bd93794172a52e2c96ee12dde2
+# 795edfd2b6274f31b6ad2bb21f7cc082
 msgid "consider replacing the ``@local_domains_maps``, with a default of:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:205
-# a5e896456580405e805316f3a6b5fe0b
+# 7b10bfa1a4f04ab2b4a1163f099e1f82
 msgid "for the following wildcard expression:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:211
-# f4245ea6dffc48de91ffe20481f3beed
+# e562b020d8814dd3b5e2ab1a341e73b6
 msgid "This will simply match all domains, including outgoing traffic."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:213
-# 5a7f164993fb4b0c8008e0f98d70233c
+# 9feb0c28af3448d292e6f0d2bb2403bf
 msgid "**For (relatively) static environments,** ..."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:215
-# d87912fe44a046fc9dfb2388111dc351
+# 0ea28834892b4917b6188f24c1af2a1c
 msgid "you can maintain a list of domain name spaces in ``@local_domains_maps``, noted that you'll have to restart the **amavisd** service after each change."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:219
-# 3984a2dbeb2b4f58b6fe6c19d291a884
+# 752cdf18fa4e4c2c95a8161b75507f6c
 msgid "This would end up looking like:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:231
-# e30eda92ce064e35ae68dd9376f3da26
+# 99ea4e5d5c164a06b4b4ed2c3ff1d065
 msgid "You will need to add parent domain name spaces **as well as** alias domain name spaces to this list as separate items."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:234
-# c1643fa0a7534a158a3ac0203d94227e
+# eb327f2f2ecd453cb390c20bd5aeb61f
 msgid "Restart the service:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:241
-# f5cd846f0a8d473585624e0ff246042b
+# d6d5369fc535456b8bf1b3f953d649fc
 msgid "Cyrus IMAP Changes"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:243
-# 3e20955328b24b24af451e001feb2b3c
+# ac9a81d3ab104805b55e21a9d8c50155
 msgid "Cyrus IMAP has, by default, been configured to allow users to login with a ``uid``, ``mail`` or ``alias`` login username, translating that login username to the intended mailbox using a process called :term:`canonification`."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:247
-# 20f6d03faba3485ba1b6dfc5aa7651a2
+# 5202adbecd4c409492c80b387367fdb1
 msgid "For multi-domain deployments, additional configuration is added to make the process multi-domain aware (Kolab 3.2 and later), or avoid executing the process altogher (Kolab 3.1 and earlier)."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:251
-# 64c4d8b9107a4455a789c83122fa2693
+# 61366aa4a9b94cce810adc590862aa82
 msgid "Cyrus IMAP 2.5 (Kolab 3.2 and later)"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:253
-# 06c806b298394797b103b385fbe7a15a
+# e5e8d9fb68474ad5bbea49dfc0b87ead
 msgid "Cyrus IMAP 2.5 ships with a patch created by Kolab Systems, and submitted and accepted upstream, that allows the parent domain DIT root dn to be discovered."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:257
-# ba7e04c6b2464508b691c8930e61dbbb
+# 009753618e2e4def94da1845f9b32ea2
 msgid "Add the following settings to :manpage:`imapd.conf(5)` as needed, and restart the ``cyrus-imapd`` service:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:260
-# e1f64a12f2cf4bad9ac14e2f267eaa6f
+# d58239d6196344fd92fcc3f81fe57008
 msgid "**ldap_domain_base_dn** ``\"\"``"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:262
-# d7e43bffed1c4a00b172ff62f1efef5e
+# eae340aed1e348859ef4e32c0f27fc21
 msgid "The base dn to search for domain name spaces. In a default Kolab Groupware setup, the appropriate default is ``cn=kolab,cn=config`` -- however we do not ship Cyrus IMAP with that as a default configuration value."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:266
-# 751518e68f1d423a82ef87ac90b971a2
+# 142cb13a036343a7925c79c616e4322c
 msgid "If this configuration option is not set, ptloader will not perform any discovery."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:269
-# 0b4dd38a57ee4696a275b9c253dbe58e
+# a5981005c77847d890cd55feadc4b14b
 msgid "**ldap_domain_filter** ``(&(objectclass=domainrelatedobject)(associateddomain=%s))``"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:271
-# 3ba01682696349e491c0502c7d6e6a2f
+# 31d98f4a69f44d799c23e383cd7e31f4
 msgid "The filter to use when searching for a domain name space."
 msgstr ""
 
@@ -280,311 +280,311 @@ msgstr ""
 #: ../../source/howtos/multi-domain.rst:280
 #: ../../source/howtos/multi-domain.rst:287
 #: ../../source/howtos/multi-domain.rst:295
-# 9969f7f3e417439aaee64904b0122aee
-# da568b32168f47368ab48acef67340ff
-# 51c3f8eedf4a40eb8b9708b92a549475
-# 5432953e74514991ba31273ee2393d8d
+# 24a0fab6031b4687922848a4137de360
+# 2a6bdceffe244654a1760507b2fb6f51
+# 3f07f146cbeb4ee9a496e009e22e0b4b
+# ea8081570043468cae02dd78014a9e4a
 msgid "For default Kolab Groupware setups, the default configuration value works as intended."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:276
-# f31f79d788d1467cb94c7717f81cc6dd
+# d626f5446192447b9605a82861106c6d
 msgid "**ldap_domain_name_attribute** ``associatedDomain``"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:278
-# 58450f1ca7684b1693a47a08bab7a112
+# 55d0ad45478d425c9a02074d85953029
 msgid "The attribute to use when attempting to find the parent domain name space."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:283
-# 4c157a729d464c36bf52c8db016fd853
+# 922ec52ec5e74a49b8eee8384de49ae0
 msgid "**ldap_domain_scope** ``sub``"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:285
-# 3db196c9a7834462936eda403817c604
+# 03587d82837345a7a7f5d451b944e7ac
 msgid "The scope to use when searching. One of \"sub\", \"one\", \"base\"."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:290
-# 95084d4bed7748ccaeb87530be59df57
+# 1fa8c1a4c12c495d80851afe0e491022
 msgid "**ldap_domain_result_attribute** ``inetdomainbasedn``"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:292
-# 2738de0b3a6440a4b4d82fdca6e7dbae
+# 9a2e2078507645ebac409b4e5d38cea2
 msgid "The attribute name of which to use the value, if the attribute is at all present on entries found, that contains the domain name space DIT root dn."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:298
-# 5c476ff0f80b4ce68f2776e8e6ebd59e
+# f49facbb81ae4da5b456247aef0659ab
 msgid "Cyrus IMAP 2.4"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:300
-# 2393f358acc64f4dbe228fed758db29b
+# b61b3ea8ea504b9f8622bde6a35ad887
 msgid "The following changes are needed only for Kolab Groupware product streams that ship Cyrus IMAP 2.4. At the time of this writing, that includes Kolab 3.1 and earlier versions, and Kolab Enterprise 13 and earlier versions of the enterprise edition."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:305
-# cb9286fa4234478d8789cfc7ebbab347
+# 47f6966fe6f44625b78bea4fb36f2d49
 msgid "This is not (yet) available for multi-domain deployments."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:307
-# 1b0a15e180f34e6788470192f087847d
+# 151381a19a7840b98d0cb080802107a1
 msgid "Execute the following sequence to remove the canonification process:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:323
-# 8264fdd9f68e48c387ff8c53d2db1a78
+# 21012c32b5f24f12a5ae71c13e745c6a
 msgid "Postfix Changes"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:325
-# d8f77b5c2e6d4606add32624f5bb0649
+# 81592603d9604f1cbda94da4fbeb441d
 msgid "Postfix has originally been configured to use the primary domain's DIT root dn for LDAP lookups. So, for a system setup for ``example.org``, all LDAP lookup tables are configured to lookup entries in ``dc=example,dc=org``."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:329
-# 729f8a1221914f9fac531133457618f5
+# 1686af4c925c46f69acbc24667dc4fd4
 msgid "The relevant lookup tables have been written out to :file:`/etc/postfix/ldap/`, and added to the relevant Postfix configuration settings (in order of application):"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:333
-# 281f2eab14164e78a670eeaae0a1c040
+# e031d7df87db4205a95c8d74394542b2
 msgid "**mydestination**"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:335
-# 00759946611a4f80948baaff76172db7
+# 6db8bb451a7744f1a8df111ec0c6d371
 msgid "Check if the SMTP server is supposed to be receiving email for the recipient domain."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:338
-# 6e1ef679a9514d8492e456e247e8383b
+# 14013c13db04405ebba7fe0c38033fbc
 msgid "This map (Kolab default: ``ldap:/etc/postfix/ldap/mydestination.cf``) can remain largely unchanged, but we need two copies of it:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:341
-# 4a54151268784f49a08457e21abdf4c8
+# 8ba36f366c0b4b5ba95df0714c2e943e
 msgid "Copy :file:`/etc/postfix/ldap/mydestination.cf` twice:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:351
-# 73c31c7d183248d3be08c88dcd9f7db8
+# b274ce8402624df5816e4521ad565f81
 msgid "Edit :file:`/etc/postfix/ldap/hosted_duplet_mydestination.cf` and change the ``query_filter`` setting to:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:358
-# b89722a145f044108a184e2b34fec2d3
+# 8c412d08e9a3480e80837f2077a00222
 msgid "This map will be used to look up whether a domain name is a duplet of components (i.e. ``example.org``, but not ``example.org.uk``). This is needed for the templated search base we are going to use in other maps."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:362
-# ca38b71f6b884fbc8a5c3b7790654f08
+# 457011172edf49eabcadf541e4e0c6a8
 msgid "Edit :file:`/etc/postfix/ldap/hosted_triplet_mydestination.cf` and change the ``query_filter`` setting to:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:369
-# 6c06d901ecf2474e860412ab1c27ed37
+# 30f2d83e50bb4e2c86a38e4813fd2f5f
 msgid "This map will be used to look up whether a domain name is a triplet of components (i.e. ``example.org.uk``, but not ``example.org``). This is needed for the templated search base we are going to use in other maps."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:373
-# 05026c92f1d548739a803740084129eb
+# 00de6a34ad3a42d5b3273b029634b962
 msgid "**local_recipient_maps**"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:375
-# 08e3ff5afef44b16ba57e2157d69cdc4
+# 93a4220bf86b47dd91ce1ce5d013ac4a
 msgid "Check if the recipient is a valid local recipient."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:377
-# 6558820ae9484fa19f6d5519b38f30f5
+# 137f1a86ebe14ff88630ee7e35e5a285
 msgid "The original map is at :file:`/etc/postfix/ldap/local_recipient_maps.cf`."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:379
-# 7305a9525f694001809d4e354d9a9865
+# 7a30c4bb4a8d424fbdb6d02749007623
 msgid "Copy :file:`/etc/postfix/ldap/local_recipient_maps.cf` twice:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:389
-# 4ac758d40324419eb2eca591223ff7ef
+# 0a33113d9c4b44469a746197beb7e7ad
 msgid "Edit :file:`/etc/postfix/ldap/hosted_duplet_local_recipient_maps.cf`, and replace the following two settings:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:392
 #: ../../source/howtos/multi-domain.rst:403
-# 99aa17088399431c861bdd2d8feef728
-# 83024236ff99486a91e4d226ac162740
+# 1e85c5d7e0a0449cabb3dba8bb3d29cf
+# e0ec0bf61b4b49fc91bd37c175ed8f75
 msgid "**search_base**::"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:396
 #: ../../source/howtos/multi-domain.rst:407
-# 462e4b01316b45289d1ca63a43d33900
-# 3710a7c9647b476ba8fde2e0488a0b36
+# 29ec9f4111424631a5d6a28b61581b01
+# 36d127970cbc409080a797d7f46167ba
 msgid "**domain**::"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:400
-# ddc6b36ebd7a493592ed1d8bfb8b58f7
+# 377ead86a3c248b1952e190e800ffa62
 msgid "Edit :file:`/etc/postfix/ldap/hosted_triplet_local_recipient_maps.cf`, and replace the following two settings:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:411
-# 0568cf82092a40d29758d84bc9851248
+# 8e83ec65c10140049d9dbe6330a80644
 msgid "Adjust the Postfix **local_recipient_maps** setting to match the new lookup tables (line breaks for legibility):"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:420
-# 34598570252e45c0b7d743169d37cae9
+# 66af8c2276154ff984cc22904cef21f1
 msgid "**virtual_alias_maps**"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:422
-# f60b04240ca84935942c3dbca8d2b115
+# 076e907a522c4ad782f509ac68e9cc42
 msgid "Translate original recipient address in to one or more target recipient addresses."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:425
-# 9cec93af1cba4a6db840820cba996578
+# dd57d7771bbc42588f3c8437aef579b7
 msgid "This applies to, for example, a user john.doe@example.org with a secondary mail address of doe@example.org. **virtual_alias_maps** are responsible for making sure inbound traffic for doe@example.org ends up in the mailbox for john.doe@example.org."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:430
-# a0806bd735c54c46a9addf9c88d902a3
+# f270c470794f4035ba2a769309b5e048
 msgid "The **virtual_alias_maps** lookup tables are configured such that individual users, mail addresses to be forwarded elsewhere [#]_, mail-enabled distribution groups (static and dynamic), shared folders and possibly catchall addresses [#]_ are delivered to the correct mailbox(es)."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:435
-# e3f4924a9d334abd843ba39a2e2c692a
+# 1cbc3a6cb3824ddf9bf758762e9a8cff
 msgid "Copy the original virtual alias maps lookup tables twice, each:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:466
 #: ../../source/howtos/multi-domain.rst:519
-# 69e7699658fe442e928fa06423f42711
-# 5f5aa1e662774002beec362324776f44
+# eee1fdde1269447e93bfd1f6a5c39fb1
+# 3f8a6e1be7e2404b9f13e9f0c6dd56a9
 msgid "Adjust the Postfix **virtual_alias_maps** setting to match the new lookup tables (line breaks for legibility):"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:485
-# a56656a52e004e23ad859dae1582a05a
+# b2c1fb0e43404cad8d9ee276e29e9dc9
 msgid "**transport_maps**"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:487
-# 0ec909d4f6594c1085cabf41a08b3fc6
+# d4455fb8211d433d8c85ed9a358baced
 msgid "Use the outcome of **virtual_alias_maps** to determine the final delivery protocol and target."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:490
-# fd17e04719b6410986324dfa63a9066d
+# 8b8251e5eb5445a59d78bd69ae47c867
 msgid "For local mailboxes, and in a default Kolab Groupware setup, this tends to be :file:`lmtp:unix:/var/lib/imap/socket/lmtp`."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:493
-# 1f18773be80d4b3d89c6666f1236234c
+# a71173e0768a4fdca5de5374f0134b37
 msgid "Copy the original transport maps lookup table twice:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:503
-# fa4046d8a58240d3b5e0be6f16223ad4
+# 60ac068e81934851b2e2d8f5a8f1321a
 msgid "Replace the same settings **search_base** and **domain**:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:530
-# 032a091c0f9c4e36994d491038f706a0
+# 8a34c63f34de48ab823fde8c455f9ca5
 msgid "Note that ``hash:/etc/postfix/transport`` is used to map shared@ email addresses to the LMTP socket for local delivery, while the default option for **local_transport** remains ``local:$myhostname`` (meaning local delivery to :file:`/var/spool/mail/$user`)."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:539
-# 0b1bbad664d242b0a789313ba29fb5e2
+# 3adbf452d99e4921945e28fd01c4da6a
 msgid "For each parent domain that holds an alias domain name space, you are required to create a copy of each of the configured mydestination, local_recipient_maps, virtual_alias_maps and transport_maps lookup tables, and adjust its settings to match the parent domain name space and alias domain name spaces."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:544
-# 46f327b41009460ab39ba45327ad03a6
+# 8ae38408adb0410d85c23128229a3e77
 msgid "If you don't, a hosted_duplet lookup for ``example.org`` might succeed if the root dn for the organizations directory information tree is indeed ``dc=example,dc=org``, but a lookup for alias domain name spaces that also need to be looked up against ``dc=example,dc=org`` will fail -- a lookup for a recipient in an alias domain name space of ``example.com`` would end up as occurring against ``dc=example,dc=com``, which may or may not exist, but is most definitely not the same tree as ``dc=example,dc=org``."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:554
-# 5fdf93b05882410f9487f25570567f54
+# def08e997e5e4496a534878a2430cad7
 msgid "Please note that developments are underway to configure referrals for this type of setup."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:557
-# c9e74d9868bf44bbb329f39c70ae8118
+# 071782effe954348979dad48f892f34b
 msgid "A set of tables for a parent domain name space of ``example.org`` holding alias domain name spaces ``example.com`` and ``example.de`` for example would look as follows (three sample files included):"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:561
-# b19dcfa04b5f4faeb194ab8b4d4fd556
+# c1cab602ae664476bc433efb4194b05d
 msgid "``/etc/postfix/ldap/example.org/mydestination.cf``::"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:575
-# cf50648218bd49808c3cd247a156b5c6
+# 0cf15fb226e84d478252eb98ad6fd66a
 msgid "``/etc/postfix/ldap/example.org/local_recipient_maps.cf``::"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:591
-# 992e1c4b3c1149c89385fc4c8a1f433f
+# 8aace41d437b488aa1658cb7873c6de6
 msgid "``/etc/postfix/ldap/example.org/virtual_alias_maps.cf``::"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:607
-# 03a1d79f0bbf479baa747b3fde1d1ae8
+# b75dfd079342414fb60c6da02bb931c4
 msgid "**Shared Folders Transport Maps**"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:609
-# 3b006ba781844a1386fe4ef40c03d0dd
+# c2dc15c3cd894b2081f208117d48514a
 msgid "If you plan to use shared folders for hosted domains you currently have to add a transport rule for each parent domain (no alias/child domain) manually to :file:`/etc/postfix/transport` call :command:`postmap /etc/postfix/transport` afterwords and reload postfix."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:620
-# 0ca97c2067784c36b82f04747156d548
+# 62324e91c25b427386c5dc7ce24ed68e
 msgid "Currently there's no automated process or ldap equivalent configuration for it."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:623
-# fdcc683f0bad45d78d8474ba7beb7aed
+# 1b2e6c37865e4df1bbdbe4f343c6125c
 msgid "Roundcube Changes"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:625
-# e98538cb6926451a8357f355a9de8299
+# 04d2d118969e4281803053a9131ad310
 msgid "Roundcube too, by default, is configured to only operate against the primary domain."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:628
-# f26c9a263d8e46f490063fa2fab65269
+# c61d31364f8640998d7ec8a7ef674a47
 msgid "The settings most relevant to allowing authentication to succeed is in :file:`/etc/roundcubemail/kolab_auth.inc.php`. At or near line 11, the **base_dn** settings for the **kolab_auth_addressbook** needs to be configured such that it uses the ``%dc`` placeholder (that Roundcube will substitute for the correct root dn for the domain), using the added **domain_\\*** settings:"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:648
-# 19c4ed552d6f4e88a9ca6e87d939ee3f
+# c1827664348f43198dc3f7dfa0f77c7a
 msgid "You should perform the same for the **ldap_public** address book configuration in :file:`/etc/roundcubemail/config.inc.php`."
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:652
-# f29de7a70e29431bb61643def44dc56d
+# 22a328cc9dd24095908fd8410a966e23
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:655
-# 6e3812ae2e6b49678e4f86f4a3487e88
+# 737410cb7959487e851246f2ad5fe2e9
 msgid "mail forwarding"
 msgstr ""
 
 #: ../../source/howtos/multi-domain.rst:659
-# 5e1246771b184772896344ab1383fbfd
+# 8e3a1081f9aa475f979c11feca14843c
 msgid "catchall addresses"
 msgstr ""
 

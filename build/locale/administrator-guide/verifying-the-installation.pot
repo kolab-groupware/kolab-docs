@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,280 +17,280 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:90
-# e706305a1fda4111acbb8055bd6ba9f7
+# f7269c250a204b868017e9f514b03773
 msgid "Verifying the Installation & Troubleshooting"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:93
-# 4afbd70e22e441119372b30791d9f362
+# 94b210633d374b4a82ec6ff40c8d8432
 msgid "Authentication Failures"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:95
 #: ../../source/administrator-guide/verifying-the-installation.rst:143
-# ad4e1f334d584410b91e1a16c921d645
-# 6b3a0599bebd4febba14b180ce527bbb
+# e31ef03c6d6d4eb3a2f9a5c9b8414749
+# 2dc8d6c17cc440a68064616d4bdf348e
 msgid "Symptoms include:"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:97
-# 2fa05c36837a4741b03e3b3b267fc054
+# a57a99b073334aad8c6b7ddf082d0d86
 msgid "You are unable to login to Roundcube,"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:98
-# 1df089c5580f48fc941bb2a23c8b12d7
+# 9c94369830af475a8af99e424988b142
 msgid "Desktop client cannot connect to / authenticate against IMAP,"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:99
-# 5ca8c41bdc1040c19312c794a08fb7b2
+# 4a6defb8b3d641e393306937ab1ac40d
 msgid "You are unable to login to the web administration panel,"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:100
-# 3735ec281bbc406fb9aa8900d4a08e7b
+# 7a156480bbb74cfca7d1102c8e740aa3
 msgid "Mail cannot be sent and is not being received."
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:102
-# 05f606224a8f4213a1eb67c3c1abf347
+# 8f51a0ba17664652bd8a9a5dd6cdf42e
 msgid "and possibly others."
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:104
-# 6c816efb63e8434497214572b4bde478
+# fa8ecba6312749dab9c217bb45986aac
 msgid "Does the following command work?"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:110
-# 5ddd7255dddc4c6493117b61495715dd
+# f0f60e77af5c4198836db0404e6422df
 msgid "This should give you a list of mailboxes."
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:112
-# fedaa167daf04a00947f8a62ea7e1c8b
+# c23206a5f6734e488898f61e51fedb08
 msgid "Is the **kolab-saslauthd** service running?"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:120
-# 0aee93e56c494e149b3c98a0d6a312f8
+# f5cbd060d2b24c5f9df06c61769c83b7
 msgid "Some deployments with only a single parent domain name space may have elected to run the Cyrus SASL authentication daemon (the **saslauthd** service)."
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:124
-# b86185de1cce42188d0c20fb66eca275
+# cfb1bc2fb0784038a5115a59273b1a58
 msgid "Is it functional?"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:130
-# f908594dc7cb47e9a9b82e34ca55136e
+# 0cff6aa04fdb42b0bfbc23188b0dc1c6
 msgid "You can obtain the value from *<password>* from :file:`/etc/kolab/kolab.conf`, in the ``[cyrus-imap]`` section, setting ``admin_password``."
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:134
-# 3529619ff0b0433d9689ca202936edf1
+# 821d42315ce54e40814482b51cc6caba
 msgid "Is LDAP running?"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:141
-# dfad33ff58e54703b33f2fdc1ee8ffee
+# bd305194c22d426580374cb2218047e0
 msgid "IMAP Connections Reset or Timeout"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:145
-# 147a8ab33857415cbdc73f99468ddb6d
+# cdc44f32b8494709863799e63d1e843d
 msgid "A user, program or process seems to hang, and ultimately be disconnected,"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:146
-# fe6f5f8c8ec74579a8308c403c252ef8
+# 9a9850e00e244d67bb96b4ee45d6d303
 msgid ":command:`kolab list-mailbox-metadata user/john.doe@example.org` may hang, and ultimately disconnect or be disconnected."
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:149
-# 2ceff844ce0f4e06aa0494e10e8d2409
+# 227417ff04f4437ab469f09117fbf693
 msgid "Possible causes:"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:151
-# 64675bb2f4fb4b4688c54e86a24818a3
+# 79dfa4bbf02e4e359d9b50ac2a065f5c
 msgid "Too many Cyrus IMAP processes hold locks on the mailbox index database."
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:153
-# cc4ee1cdaec14783bf26dc565fab1818
+# 728a297e614b4d0a9a44fba18a0b08c2
 msgid "Troubleshooting steps:"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:155
-# 680c62a99fe44e829549e4f180fd0ec9
+# cc9a146b1ae747089517827dafec0672
 msgid "Determine the users' folder that may be held too many locks on:"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:162
-# 81d2eb76d3ea46a0adaef66d4351aa9e
+# 31daa4b1b3994c0a9097d6a5869c850b
 msgid "The folder that too many locks are being held on will result in an apparent freeze, with no timely response."
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:165
-# 4d6f28d0f87142b982a64ea69f04177d
+# 37bb21b7d5dc46ea9a4c1e81b7e82f53
 msgid "Tail :file:`/var/log/maillog` and grep for the relevant username:"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:171
-# 4c0b9986fc7d436494263f32f39262f4
+# 412e91d5b8284caabeb69d093373e912
 msgid "In a new terminal, issue the ``kolab list-mailbox-metadata`` command again, and example the output of the tail command issued to determine the process ID:"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:179
-# 0752b9bd471749648440716e9be7b6b9
+# d7f8666dd432400199cb4d9faabd01bb
 msgid "Use :command:`strace` to determine the state of this process:"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:187
-# 3a57a726af414b51913db7fff71288e1
+# 9399a42a24d243ff8deb65384e974343
 msgid "This command too will not yield any additional output."
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:189
-# a67dce31a2b84ceca1a51ff93b201acd
+# 40b81b671e3a4340a9764a2c8036e10c
 msgid "The PIDs of the processes holding an open file pointer to the mailbox tree can be found using the following command:"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:196
-# ce00e8c5e4764da58929c9ab33d252b3
+# dc354eead1c24b0784115e98b7104983
 msgid "At your discretion, opt to kill the processes that may be waiting for one another to release the lock:"
 msgstr ""
 
 #: ../../source/administrator-guide/verifying-the-installation.rst:206
-# 96b6c96f0c9c4e56b508f502736ada30
+# d64484ec2b36471cac0eb5ef27a44768
 msgid "The \"No such process\" output comes from attempts to kill processes that have meanwhile already been ended."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:2
-# 9b58507c272242fd8db59160c92de6b8
+# daf4ad48a64c4feb83326461d09260d5
 msgid "Troubleshooting for HTTP-based services"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:4
-# 9478ea068ed144d9a54a4eca036af260
+# 03644022ff964de8b7096ed559c37cbc
 msgid "A good first start to troubleshoot an issue with a HTTP-based service is to check your webserver's error log. For Apache this usually resides in :file:`/var/log/apache2/` or :file:`/var/log/httpd/`."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:7
-# fe65e98f7e004eeeaedde4e88eba13b1
+# 087099809d82422a823d53720e7e1af6
 msgid "Often, you will be able to find some useful information about your problem which enables you to fix it yourself. Doing an internet search for the error message is also a good idea. If you do not find anything about your problem, you might ask on the `Kolab users mailing list <https://lists.kolab.org/mailman/listinfo/users>`_ about it. Please include the version number of the package that is causing the issue."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:13
-# 1858e55bf92e41208c17d7eba685c491
+# 79ddc28953164e34ab384e423130e57d
 msgid "If you are sure that you have found something that needs fixing from Kolab's developers, you can as `file an issue <https://issues.kolab.org/enter_bug.cgi>`_ in the public tracker after checking that it has not been reported already."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:20
-# be429195dcad4442827004e3e3d2a226
+# b1a86fe19cc74b418451aebaa883616a
 msgid "Enable General Error Logging"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:22
-# 4d15658007fe443d919e4a46fd11d59c
+# ac04ba42ba044b24870230959ffed6eb
 msgid "Before you start to debug your problem, please make sure that you actually have error logging enabled."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:25
-# ceb302bb0c1c46e9aa5347aad60fbace
+# bf94cc448b2e4c7f97ee33a84fde72da
 msgid "You would edit the file :file:`/etc/roundcubemail/config.inc.php` and verify that the debug level is set correctly."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:32
-# 47bab385885141fbb9b2135421eb0145
+# 9cda5de7eddb412081223978d2c666aa
 msgid "The :command:`tail -f` command can be helpful in identifying the right message during incoming requests. It displays changes to the log file on the screen as the log messages come in."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:36
-# 9623cd875e654dc8bae7e84a04846542
+# d4f9daa5849a4e8e8d2da1141143272f
 msgid "Kolab Webclient"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:38
 #: ../../source/administrator-guide/troubleshooting.rst:95
-# 801691d41bcd40d09602dfe40a24e104
-# 0f507f48e80b498a9ffbc9fe0fcce6c4
+# e2981a0db51c4bc49e3ec2112844b2b1
+# ad3f5166f20549c88b19592670c5a3d5
 msgid "After :ref:`enabling general error logging <troubleshooting_error-logging>`, you should already find some messages in your webserver's error log."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:41
-# a786e4ae9f1c4253805d612feb219408
+# 6e3c9f1c993a4de8918aa1c6ab5c362e
 msgid "Additionally, the following configuration options are available for specific debugging."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:62
-# 810335d1aee340fa91e0b4ed14829b49
+# 3fad16bab6b3492a942d6680ca1d1255
 msgid "It is also possible to debug the Kolab Webclient for individual users only by creating a :file:`/var/log/roundcubemail/<username>/` folder and setting the following configuration parameter."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:69
 #: ../../source/administrator-guide/troubleshooting.rst:90
 #: ../../source/administrator-guide/troubleshooting.rst:113
-# d32526ceefef45a1a8fe062278c3574a
-# 8540d04983004bf0b251080f0451dcb4
-# 855e42a3c37540aaa7391d1fdb76031d
+# 7da29e4bd82e4f0b8e27128ed54e3b44
+# b53a4361783f45de85753e596487c49a
+# af7f9b0970d44b03b9982efc7bf24ddc
 msgid "Please make sure that this location is writeable by your webserver."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:72
-# 366fe01d65114b90942151f17d58d39f
+# d4cf1c95f3cc43df8e8af6ee0005ea67
 msgid "ActiveSync"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:74
-# 21534ed9c85a433d86c137d7c68dad1e
+# 9526c688ff2749a483781e7b23dc6408
 msgid "For debugging ActiveSync issues, you would add the following to :file:`/etc/roundcubemail/config.inc.php`:"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:80
-# 88b9fbc823954cc2b073519c7dd728a6
+# 6bd534b19b524f8d9e9ee31cc993dc59
 msgid "Useful messages should then appear in the :file:`/var/log/kolab-syncroton/console` file. If there is no such file, please make sure that your webserver actually has the rights to create this file."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:83
-# 001216645ffe4bffae7e51a469cace16
+# 059dba82658c4b568abcc43dd94e5927
 msgid "It is also possible to debug ActiveSync sessions of individual users only by creating a :file:`/var/log/syncroton/<username>/` folder and setting the following configuration parameter."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:93
-# 174f4e4ad0c44a11bd7e4eaa3988ec96
+# 1226a516857047f19f50cb95c4a95427
 msgid "iRony"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:98
-# 3afc14cffdb341f6853f6d3c81e0bbbb
+# e97ef1ab54524247b82fdbecb4c6ac50
 msgid "Additionally, you can enable the debug console that shows the internal function calls triggered by HTTP requests."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:104
-# b6a8d5a7788b4844bb3923e05c750de1
+# 1d6850e5712f4874a0e1cefda270b90a
 msgid "This will write debug log messages to :file:`/var/log/iRony/console`."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:106
-# c50db53a83cd470498f35a9a852951a3
+# c5628276c0cd4792abae8d003aa66a8b
 msgid "It is also possible to debug DAV sessions of individual users only by creating a :file:`/var/log/iRony/<username>/` folder and setting the following configuration parameter."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:115
-# 7a2c2dd4b324411089e5945e39a8bfa0
+# 5cce9b8d74b44e4db9dbbd12e648cfc9
 msgid "Sometimes it can be useful to track the full HTTP payload of DAV requests. In order to do this, add the following setting."
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:122
-# a80c483c74f94e1eb2c5e18505dbcd5c
+# 3f3edb9c06e142ff81eceee420d18dd6
 msgid "In order to enable full HTTP payload logging for single users only, you can change the configuration as such:"
 msgstr ""
 
 #: ../../source/administrator-guide/troubleshooting.rst:129
-# fc174fc66ec040538294a500a3e91fa2
+# 69f03b7ba85348e9a9395df79a253e83
 msgid "Then create the file :file:`/var/log/iRony/<username>/httpraw` and make it writeable by the webserver user. The existence of this file will enable HTTP request/response logging for this user while it is disabled for all others."
 msgstr ""
 

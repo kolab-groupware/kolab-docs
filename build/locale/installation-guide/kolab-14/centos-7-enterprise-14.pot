@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,82 +17,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:92
-# c46d029da92947b1bd178e02355fb790
+# 0b7fa37307e6412281fbb709fcb5b87f
 msgid "Installation of Kolab Enterprise 14 on CentOS 7"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:94
-# 5c12544f39f64b51bcf36256e1ff6e87
+# 0261768eb5884e0fb27722c44dd629d4
 msgid "The installation of Kolab Groupware on CentOS installs a number of additional packages, from the :term:`EPEL` software repository, and the repositories for the Kolab Enterprise edition, provided by `Kolab Systems AG`_."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:100
-# 9e8f65e153da403ab5649423b9e65c27
+# fc139c44c18443fda6232d145a2ccbee
 msgid "Installation Procedure"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:102
-# f91573f1ba2345d7b5d52516eee9a9f3
+# 81e8570aedb9453d845ad120881cdb2a
 msgid "Copy the client SSL certificate and key you have obtained from `Kolab Systems AG`_ as per the instructions listed on [#]_, summarized here for your convenience:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:106
-# 0a3e7ee7bb0545f1a411996a3a4cc5f1
+# d39b6b629d2b42d583a9b3f774e7e42e
 msgid "Remove the passphrase from the SSL certificate key:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:113
-# 1077783a10d84c0f8d629b29005d9416
+# 0aa3a57e5b4d4b2bb839db65356288e9
 msgid "Concatenate the certificate file and the new key file without passphrase:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:121
-# 928a623875414b36a5ad372d86aea437
+# 6dcfc4a520d64e80972a649f22399229
 msgid "Place the file :file:`mirror.kolabsys.com.ca.cert` in :file:`/etc/pki/tls/certs/`."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:124
-# 53edf7f8cf454790ad6b8cb80a850b91
+# 097c752c63be4ff88f90c6085d2ef220
 msgid "Place the file :file:`mirror.kolabsys.client.pem` in :file:`/etc/pki/tls/private/`, and correct the permissions:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:132
-# c86670433b514249a7ad741773ca4c88
+# 5b9e52818ab2435dbbd0c234a1994165
 msgid "Install the :term:`EPEL` repository:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:138
-# fed007d118184510b35d14f5319dbd25
+# b5c80a73c6374690b9fae83a1c797558
 msgid "Import this signature in to the RPM database:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:144
-# 763a8e58066e40bda169835f06813908
+# 99830f68c2bd4551833b9bd8a11b50c6
 msgid "Install the Kolab Enterprise repository configuration package:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:150
-# 5730cc78fc754f8388434b2ff6822560
+# 1fa26e5211de44e6b689a003ddad9ce6
 msgid "Install Kolab Enterprise:"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:156
-# 4088c95dd2be4fe69bcad7b435c3a8c0
+# a9295819ab664c0f815464c9b2d8b3ad
 msgid "Do not forget to also execute :command:`yum update`."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:158
-# b8bb4f394c7543a7a84049582ff040bf
+# 19ae7d32ed2d4f4aabf4344a70a745b7
 msgid "Continue to :ref:`installation-guide-setup-kolab`."
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:161
-# da8e85c0d2b64f9c885ca4dde4225e70
+# 1c09ac0d91c5496da66263869381b77e
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/installation-guide/kolab-14/centos-7-enterprise-14.rst:164
-# 679224b818824a60a2749404f2fa7e3a
+# 82e4294a3fc44d498bafdc27354cbe07
 msgid "https://support.kolabsys.com/Obtaining,_Renewing_and_Using_a_Client_SSL_Certificate#Using_a_Customer_or_Partner_Client_SSL_Certificate"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,57 +17,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/client-configuration/kontact.rst:91
-# b01696cc9a1c4852b55b36d7884b2326
+# 0f6b9b68f7cb4cd6a7ef39cd53e62f54
 msgid "Kontact"
 msgstr ""
 
 #: ../../source/client-configuration/kontact.rst:96
-# 22a3a6f9cc3d417daf7bf348a26df266
+# d1da25edbb344110a2b15b0cb0ff8759
 msgid "`Kontact <http://kontact.org>`__ is the original client for `Kolab <http://kolab.org>`__, the software which is used by |service_name|. It is fully `Free Software <https://fsfe.org/freesoftware>`__ and supports end-to-end encryption with `GnuPG <http://gnupg.org>`__ out of the box. It is available for GNU/Linux and Windows. Kolab Systems sponsors the `Windows installer <http://mirror.kolabsys.com/pub/upload/windows/K3-Kontact-Beta-latest.exe>`__ and maintains the Windows version."
 msgstr ""
 
 #: ../../source/client-configuration/kontact.rst:106
-# b754f6e34a464df3baa19f505cd08a2d
+# 991787de6fea4246b07016e4b889e496
 msgid "If you want to set up Kontact with your |service_name| account, please follow the instructions below."
 msgstr ""
 
 #: ../../source/client-configuration/kontact.rst:109
-# 735fc4db95f24af48f553672bbc38029
+# 6e0198b9fcbc4199bb2b2f812b8e0f02
 msgid "There is extensive documentation available for `Kontact <http://docs.kde.org/stable/en/kdepim/kontact/index.html>`__, its `Calendar <http://docs.kde.org/stable/en/kdepim/korganizer/index.html>`__ and its `Email <http://docs.kde.org/stable/en/kdepim/kmail/index.html>`__ program."
 msgstr ""
 
 #: ../../source/client-configuration/kontact.rst:118
-# ef3b91911ba34ac796f6c5acfa8a9542
+# 3a3eb02dacf44df49c20cdec47d01828
 msgid "Set up a Kolab Account"
 msgstr ""
 
 #: ../../source/client-configuration/kontact.rst:120
-# e9b93b3125384b07b3d14238139b93f1
+# 5e84973cda904195bf0143202b086744
 msgid "In order to add a new account to your Kontact, please open the Account Assistant and select *Kolab Groupware Server* as the account type. Fill out the Personal Settings while making sure that the Server Address is set to |**imap_host**| and the Kolab Version to *v3*."
 msgstr ""
 
 #: ../../source/client-configuration/kontact.rst:150
-# fc17c63882454a259a6ab4519c185e82
+# 057458b5a16041509a74c81d65ed2853
 msgid "IMAP Configuration"
 msgstr ""
 
 #: ../../source/client-configuration/kontact.rst:152
-# 2aa4cd0fc67d4d07b326a4a9b42a55ce
+# 8d2c3a32900446649b51990eef0c2c3a
 msgid "If you followed the above instructions using the Account Assistant, your IMAP account should already have been set up properly. However, you can verify your settings based on the screenshots below. In order to do so, please go to *Settings* in the menu bar and choose *Configure Kontact*. Then go to *Mail* and *Accounts*."
 msgstr ""
 
 #: ../../source/client-configuration/kontact.rst:158
-# cd62f564cf8a43dd86e295dab0cb59e1
+# 476a0747beb04ddaa7e8ac473d19d1f8
 msgid "Please make sure that the IMAP Server is |**imap_host**| and that it uses port |**imap_port**| with |**imap_ssl**| encryption. Please also use your full and primary |service_name| address such as |**useremail**| as a user name."
 msgstr ""
 
 #: ../../source/client-configuration/kontact.rst:190
-# 83bbcd017e1c4f44822ec4d9feacd331
+# 0fc20473913d4a24834ada9135304723
 msgid "SMTP Configuration"
 msgstr ""
 
 #: ../../source/client-configuration/kontact.rst:192
-# 6772b01ebb9d48409e4ed26faafb5605
+# 3a90e69a562347448416748a1e4b6001
 msgid "Unfortunately, the SMTP settings need to be corrected after account setup. In order to do so, please go to *Settings* in the menu bar and choose *Configure Kontact*. Then go to *Mail*, *Accounts* and then click on the *Sending* tab. The server should be |**smtp_host**| with port |**smtp_port**| and TLS encryption. Please use your full and primary |service_name| address such as |**useremail**| as a user name and also see the screenshots below."
 msgstr ""
 

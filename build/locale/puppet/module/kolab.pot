@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,243 +17,243 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/puppet/module/kolab.rst:88
-# 6ba9355697c64c79b0e433a267339dd9
+# 76e074dbac504e78bd68ee573962cc4a
 msgid "2"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:94
-# 0194504d270b4d34911614a74ff1dc3d
+# 96ec423f5dfe469b863decd7c2453fb9
 msgid "Puppet Module: ``kolab``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:96
-# 5753ed9de29148c8b112ed28cd21a829
+# bd2a7d19db9f4487ae17115e60891573
 msgid "The Kolab module for Puppet allows the continued management of a Kolab Groupware environment, by defining nodes as having a certain role within the Kolab Groupware environment."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:100
-# bc09ee5b25804cc68bbb3d677dd377a7
+# a81a34da4bb44c36bb7ad6f60f957959
 msgid "To configure the exact way an included ``kolab`` module class behaves, the ``kolab`` module uses multiple parameterized classes."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:105
-# df2a2ec768324e2fb2aeffcf1d783e13
+# 1aede7b2364043aa944a4378e1986728
 msgid ":ref:`puppet-module-kolab-why-multiple-parameterized-classes`"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:106
-# f24c0f6a637b4c3ab63e2089df69d197
+# fe6f42096bc84f8d829a1cef8e681b64
 msgid ":ref:`puppet-module-kolab-configuration-parameters`"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:107
-# 9cbbd40de625463cb53bf75aad277282
+# 40995db497f54d7a89d2e0d46201286e
 msgid ":ref:`puppet-module-kolab-using-the-kolab-module`"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:110
-# 8965404d829240c4b6adbe0b1dadae6b
+# d4803154b13d45aeb118bd7381c3d1d8
 msgid "Integration with Monitoring and Trending"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:112
-# 6a6c25acbe2f4c999ed2c9a689b2bba2
+# c6085f1b71924dad97e64183f1d9bfa2
 msgid "Each role defined for a node participating in providing Kolab Groupware services includes specific monitoring (with Nagios) and trending (with Munin) plugins."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:116
-# 5c8d0c4783d94809b90be7382c13e84a
+# 26f16495bb8d4baab234e1a55ff8e603
 msgid "For Nagios, exported resources are used to allow a NOC system to aggregate the associated resources and realize them."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:119
-# b99cb76a50344c60b513d20a1ae4eca5
+# 1a3fac219a1e4a4aadae1e8ed57abedb
 msgid "For Munin, the inclusion of the classes in this module allow the aggregation of graphs on the NOC server."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:125
-# a88266b5b22245c38c1b240dfcf97e76
+# 28c3632f1b144d9bbb1e8af510506c70
 msgid "Module Classes (or *Roles*)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:127
-# a9535baedb6d4d4dab2954af8dd48093
+# 95d7d34b322f422d8b9abafa8b5dafb5
 msgid "``kolab::imap``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:129
-# 64fadeeb03af4bb7a2d381688d301afe
+# ce8d8fe5e7e94d9f875088213e4d4bed
 msgid "A class defining virtual resources to be realized by individual sub-classes, and resources shared between all IMAP servers."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:132
-# 532a8e42dbc149c8a2fa1dd7d945b645
+# 8e549426fdc1400ebd8b0072aeb9fa4d
 msgid "Includes the following Munin plugins:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:134
-# 29dbf125def740c997901a00c582f95d
+# 58dff3cf0ab24b7b8bd1a07954129e1d
 msgid ":ref:`puppet-module-munin-plugin-cyrus-imapd`"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:135
-# 4a82ea9538d94874865912dba0c65113
+# a541547a0cef4b12b72a0cbfea3ec396
 msgid ":ref:`puppet-module-munin-plugin-cyrus-imapd-mbox`"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:136
-# 9944a1927f0d4825949922b5138b5de7
+# f5044377e09e46a99b896403284eb0f5
 msgid ":ref:`puppet-module-munin-plugin-cyrus-imapd-logins`"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:138
-# 560fe487fe234b39bf5761f35e17a7d1
+# b81da75e5cf04342a759aa26b4b0461a
 msgid "``kolab::imap::full``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:140
-# 67eb17e3dccd4fa8ace48099069ef672
+# 8c3c8273287048bcacf2c003cbe10b88
 msgid "A full, standalone Cyrus IMAP server. Inherits ``kolab::imap``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:142
-# a6bb2049232e4327a07a56cd08a4cf08
+# 3c41561ceb7e4f70ab7392ffbc8b32a3
 msgid "``kolab::imap::backend``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:144
-# a9b349f00ab0482c81decd11796dcf6f
+# bb64ba52b7d24ad28e8229d962a77307
 msgid "A Cyrus IMAP backend server, such that this server holds IMAP mailbox payload (technically, a backend can function as a frontend in a unified Cyrus IMAP Murder topology)."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:148
 #: ../../source/puppet/module/kolab.rst:154
 #: ../../source/puppet/module/kolab.rst:161
-# 33bec2ef5c144ec996f118d7c3a60705
-# e934d21efc254d3e87d46b6a26db9a9e
-# 62853e408b134be0b43b0606269ee721
+# 8c600e691c07472e9041eb153eb9d93c
+# bbd0efe295c3438fa7cea52b50127569
+# d17e11e38447430a8408bd1f88cadeb5
 msgid "Inherits ``kolab::imap``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:150
-# 49c8d07a748c41f6be30f450b933acaf
+# eb101a2f0ca446b1b80da9afadca6352
 msgid "``kolab::imap::frontend``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:152
-# 236f8a968266409aa965624101a0d4c0
+# 2c4f3b5a1f2e4747ab90dbbf22fc193f
 msgid "A Cyrus IMAP frontend in a discrete Cyrus IMAP Murder topology."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:156
-# d3956a72409244b9b80b4a553e12047c
+# 61dd53c2930b4d1ea3771753d0b2a74e
 msgid "``kolab::imap::mupdate``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:158
-# b1b84d1d515b46609fbc091ce55c9dbc
+# 8e351130bb544780a7a6a299bb27abca
 msgid "A Cyrus IMAP Master Update (mupdate) server in a discrete Cyrus IMAP Murder topology."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:163
-# c25231e68454460fa6cfb99b3dabe446
+# 64d4dcb4aa4f4d5e95f9e1516d423fea
 msgid "``kolab::ldap``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:165
-# a384d6bb53b7404dbfa424b2cf4269cd
+# 435014dc61b84293889e26347a504cea
 msgid "``kolab::mx``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:167
-# 6c4d691560c245dbb268877010943a3b
+# a1e68ef159544921bf7a28db2b1025d0
 msgid "A generic mail exchanger."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:169
-# 3acb03ba2603469f9f437a74d3f1e861
+# 2fbd2f59b3c9484091a13365d3dd157b
 msgid "``kolab::mx::amavisd``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:171
-# c10a8b5b92d94365a148f0f842518afd
+# c8d32066af284e14af0c7c7e445ae165
 msgid "Adds anti-spam and anti-virus to a mail exchanger."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:173
-# 83e4927662f74464a47e97c78637a3da
+# 645da70729c3459aac5ed795146dca6e
 msgid "``kolab::mx::external``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:175
-# 411bc9538cf74c5da41fa17ef5d0572b
+# a9ca15ba0e964d7890774491626ab35f
 msgid "An Internet-facing mail exchanger."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:177
-# e804d0b4b53a43a59a65b620e9ce43dd
+# 7b554a88004a4145833ee2951ccd9c78
 msgid "``kolab::mx::external::inbound``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:179
-# 0588a99918c24c018d52e3108eb0f9c5
+# 762593b466e84a1281cfc319910a1d49
 msgid "An Internet-facing mail exchanger for inbound traffic."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:181
-# 4e25b1a0a5324a65a5fb8e725cd698f7
+# cc03e4eb46d542ceb644b1607db246bc
 msgid "``kolab::mx::external::outbound``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:183
-# 8ce6f589571c42a6a45389c2f2657ee7
+# 892a01435b314605a4d182aba70aa151
 msgid "An Internet-facing mail exchanger for outbound traffic."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:185
-# 9d8261f1b7694997a65193b7911a5a61
+# 4ae2d4f4e0eb468d8d76c49d367c002e
 msgid "``kolab::mx::internal``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:187
-# 937273351b34452e981390c4a5eade07
+# 28d71b0df9534497b54845fb17a6f8c9
 msgid "An internal mail exchanger."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:189
-# 1056a369bbf24cf983c60be05d462747
+# 3bda88b69ab441fe8a4eb6ed5982c457
 msgid "``kolab::webserver``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:191
-# 43adcd627fd24f2280165a100d6e4da0
+# 294fa786296f4d9c894603b84d5ae1e8
 msgid "An webserver with all standard functionality included."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:193
-# b0186a3f7f0c440e9e09e17b0f0db8f4
+# 53f9c1fca3094a588397e8494aa3760c
 msgid "``kolab::webserver::activesync``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:195
 #: ../../source/puppet/module/kolab.rst:237
-# c5633284aec94fc5a206cc4b8d8f77c8
-# 5cb69344f9e74391af78b9cd5ea936f5
+# 9d52f3eaee7b41e8b302cce728660e0f
+# 031714694d5b4b568ccdee1871a03d31
 msgid "A webserver dedicated to providing ActiveSync for mobile device synchronization."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:198
-# 7d0c51f548ae469496d5f39311979ff5
+# 80d466416ea945bbac016bbe01382438
 msgid "Merely includes ``kolab::webserver::syncroton``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:200
-# 6b04734515a6444fa648b23711977e75
+# 9a37cfe9849d4064879ab2dd681d4ee0
 msgid "``kolab::webserver::chwala``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:202
-# ba4cc598819c488080f4122295040618
+# 126250e86a364fd6b9d24d8c3f032a9d
 msgid "A webserver dedicated to providing the Chwala file-cloud."
 msgstr ""
 
@@ -264,242 +264,242 @@ msgstr ""
 #: ../../source/puppet/module/kolab.rst:233
 #: ../../source/puppet/module/kolab.rst:240
 #: ../../source/puppet/module/kolab.rst:247
-# b91bab64c46d4d3abeddedf4096a5f99
-# f738cb8d620440589ae04693a944b6bc
-# 83caa754529e423287298b01290eb9ed
-# 9f97f7539a0b439884282f7339e3d7a7
-# 6953eb4040304f498afc3563d1dd477b
-# 439fc9f350da4f7a80dc19e6c8d1f5c3
-# b2b55cb265b04d0dafceb9c87b128895
+# b5e54e772a5b44e9b190c09c9f619ca7
+# f0a181eafe7a4ea7bb500cbbbf50bf58
+# 489d4bba170542e7a181c6ebd7258d83
+# 5db55b8115bd4fa29cbdc59452468546
+# db575af21d1044e38598181d1d23f202
+# 3407c31d2edb42c596a5fe1dc28f64b4
+# 476cdadab595498b88ee88d4f7d1b1de
 msgid "Inherits ``kolab::webserver::common``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:206
 #: ../../source/puppet/module/kolab.rst:260
-# d143ff9dcd2e49e6be61af728a7a93fa
-# 8cc3188c037a40df934986c386d16f10
+# 01899bcd38b74af6a03d2664d2026d3b
+# 08f409100feb44f1ba3bb72934a7c964
 msgid "``kolab::webserver::common``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:208
-# 5999723f1b2942f58a1a9e39c093fa81
+# 669c435bf0ac428a8370d56adf4e147b
 msgid "Commonly shared resources between ``kolab::webserver`` sub-classes."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:210
-# 129ff1d97ecc48d78eaee2d8e291ef7f
+# b844968f8404476a972634c10fedd9fc
 msgid "``kolab::webserver::freebusy``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:212
-# 3a8740a7664842a8a93dd57282f6357d
+# 7924497b2683448db4bd9bbcf6b704c9
 msgid "A webserver dedicated to providing Free/Busy scheduling information."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:216
-# 879b8dd653434b268754ca8af3176eb1
+# 74ac14392a6a48c091f65c8a339b75d0
 msgid "``kolab::webserver::hkccp``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:218
-# 15af68e872c04a6f8457adbac85c8012
+# e643404a18c64d2ca11b909160f2e66b
 msgid "A webserver dedicated to the Hosted Kolab Customer Control Panel."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:222
-# 9fa9f345a6054d06971c28ffec7e5ea7
+# 7660eb763ae0484eb6b01424fbeedcd9
 msgid "``kolab::webserver::irony``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:224
-# b1fc421619dc4efba4993c1da0a52e51
+# 8a90ad1cd8a247e191983bd4f606954e
 msgid "A webserver dediciated to providing CalDAV, CardDAV and WebDAV functionality."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:229
-# 0171effe33794bcebdbddd2767cee72a
+# 3566f78aa2014d9e9f4a147f85997ba1
 msgid "``kolab::webserver::roundcubemail``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:231
-# 9a7dc7c867994db887549130ec1e952d
+# 4e93620fa4a448abb8c3930193bec223
 msgid "A webserver dedicated to the Roundcube webmail interface."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:235
-# abfa85b3e6594ff3922cdccaa5b88acc
+# d43834b1c2f84fd4a20d6084780875f3
 msgid "``kolab::webserver::syncroton``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:242
-# 14d41eea86b845959c7da68584464cb4
+# 25345bb56809427ebacbda930d270295
 msgid "``kolab::webserver::webadmin``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:244
-# 82ddb647fd934eae849adc1062a9e679
+# 2373ace3df854defaea34ab385e31285
 msgid "A webserver dedicated to providing the Kolab Web Administration Panel user interface and API."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:249
-# 9e9259e5f8624a42a2d809833d476a35
+# 4a4e8ad22bf44406841d218b21d7afe5
 msgid "``kolab::webserver::webmail``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:251
-# 7d75d2168a144646ac96ebfbfa858858
+# 64510e5fb4924d6aab1bef177f8f625e
 msgid "A wrapper class to install both ``kolab::webserver::roundcubemail`` and ``kolab::webserver::chwala``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:254
-# 800b699e4d3e4ce3ae6318d0bbbb5b79
+# 047d105d95024b82906eb40fc1d23078
 msgid "``kolab::yum``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:256
-# 4ec00e55153247f1858b0f6f9ab6a94d
+# d53e2a09082342e3b862fd45d85a08a5
 msgid "A class to maintain the YUM repository configuration for staged environments."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:262
-# c008835051bc4d8b82ba89fc15c7006f
+# 89c6156562f549db9f4d5be41ba24895
 msgid "This class is shared between other ``kolab::webserver`` sub-classes, and provides the basis for a webserver configuration."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:265
-# 913a96747c8442ef8bc67ad9be425465
+# 9d5b61d5c060465db5570ba25e2d899c
 msgid "It includes *Class[\"webserver\"]* from :ref:`puppet-module-webserver`, and configures commonly used virtual resources so that each individual component can realize them, preventing collisions between duplicate definitions."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:271
-# 180e7c89694c4440af8b1f55597c882c
+# b59c29f46ac04e91a93cbbccb09be771
 msgid "Environment Stages and Package Version Locks"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:276
-# d1301bab648c496bafa338183d7d9d65
+# 530624450aa24a5887a17c4c76b680b0
 msgid "Configuration Parameters"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:279
-# bf52de4a58924a0f9d386fe8cd3d49fa
+# b817084b6a114928a3e22560bb7055b4
 msgid "``kolab::params``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:281
-# c047f3949626492c8c74558659cebdae
+# 529f2c9530a24629bed3d34b91fd35ad
 msgid "The ``kolab::params`` class is a class commonly shared between all nodes participating in servicing Kolab Groupware."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:284
-# 4d2377e91d3f4fb2b1609d47d4540804
+# 486b66a60058469492c092b61d47b5ba
 msgid "**imap_admin_login** (``cyrus-admin``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:286
-# 260e6e4668cb4d6a8abef9432ddc786c
+# 672332d60eba4e9faab38434e882da76
 msgid "The administrative login for Cyrus IMAP."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:0
 #: ../../source/puppet/module/kolab.rst:0
-# 6fc51a2021c2425eb392cc4b68e33c54
-# 17652625debd4aeb9ef9ff2016558a00
+# 2bcae667270d4780b3066fb77069bf69
+# c208989fd41b4870a3c14a67efc56acb
 msgid "Todo"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:290
-# 2f8fb0c7564e49dd86aead3a55bd53ba
+# fd6bcda924204b479befe213fe77d696
 msgid "A separate set of credentials should be supplied for wallace, freebusy, replication and proxy for the purposes of maintaining a more well-informed audit trail."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:294
-# 67dbf6e9c42b475ab2330f3c51d8f590
+# a9e3993c6e874ac2890b6d25c611c899
 msgid "**imap_admin_password** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:296
-# 98206bf6eb9546f38858d9a3a436c4c8
+# 38f4c922d8074667a6fc47c6f1a08349
 msgid "The password for the ``imap_admin_login``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:298
-# c642d3f7bfcc46ed96106abc08940579
+# bf0f4228ced4416a90ec4ece9c5c9a4b
 msgid "**imap_enable_notify** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:300
-# 0005bd2846a049839a9480ca3e6387ea
+# 3cf14947f7a6461e9aaa3e6cba7db5a2
 msgid "Enable the :manpage:`notifyd(8)` service."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:302
-# 12fae89bc68a4bc387ba3dd5d023c403
+# 896658c6048a4eb2a6e7e31d6c125607
 msgid "**imap_enable_pop** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:304
-# f186a1f13f374103a2f8abfa62666a8a
+# f2481541e2624f9195170858ab3fe0e7
 msgid "Enable the :manpage:`pop3d(8)` services."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:306
-# 3002681b7fa647d3a9403059222049ee
+# c09188f4935b4c86ae40f48b6c70e5b8
 msgid "**imap_enable_ptloader** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:308
-# 2159c6dbdfc941c69581302e2b4e6dad
+# 7aef70c628d249fbace25e3578d58807
 msgid "Enable the ptloader services."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:310
-# 3e60f0c928cd4d8c9ddd45009160856b
+# 8d61859fb6aa413aa2ad2064237fa178
 msgid "**imap_hostname** (``$fqdn``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:312
-# 3083ef4a539048d981547ee132bbc7da
+# 70265f942da54aacbac3882ea0341587
 msgid "The hostname to use to connect to IMAP."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:314
-# aa0e3e5da84549db975c3b71e94c995a
+# fb62e071363d4115806b8f649ef52312
 msgid "While this setting applies to many services including the Kolab daemon, Wallace and Roundcube webmail, should the IMAP server for each of these services need to be different, we recommend you use a split DNS horizon."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:319
-# 95303d3b12c74ecb990c1647de9430a4
+# ada260f97d684e00b714f31ee3265a85
 msgid "**imap_port** (``993``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:321
-# 646eb2e9f59a43b8b3a29bb8ceaf242c
+# 43c3922c87e64ed6bcc37011befeca8b
 msgid "The port to use when connecting to IMAP."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:323
-# 9bece212ffe8455b9cc01e0bb8cadc2c
+# 151898091f5543f09696adf80a9e7090
 msgid "**imap_scheme** (``imaps``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:325
-# ce87e93eef3a421891bf2c66fb127baf
+# 408773eda4d447748b3e0a8c1320c037
 msgid "The scheme to use. Using ``imaps`` translates to configuring a prefix of ``ssl://`` where appropriate, otherwise means ``tls://``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:328
-# efc235e9724e4814ab3a5a62de978fb8
+# 52050747faba4b3598817f148ac1793e
 msgid "**imap_storage_partitions** (``[ \"default\" ]``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:330
-# 71950bb519b940c29b90b18b761d2b2c
+# d437cf15a23d4a3184c30288b873256d
 msgid "Define one or more storage partitions."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:334
-# 6ab6f95ca9014a9c9f8ffae9c5983bcd
+# 28c4a835c73d431c904cfa7bbe6e4a63
 msgid "The inclusion of the \"default\" partition is mandatory."
 msgstr ""
 
@@ -507,692 +507,692 @@ msgstr ""
 #: ../../source/puppet/module/kolab.rst:355
 #: ../../source/puppet/module/kolab.rst:369
 #: ../../source/puppet/module/kolab.rst:390
-# 3c656442c78d4536bb6c81f9f387a54a
-# 329f27ecf3d444bf9bd8f636513072ef
-# d67c5c4289594e8d9940b7954413600d
-# d3fa88b4292343739687725155412b1c
+# ca5205dd755a4b12a186c96e832a7d0d
+# 73f14f0ee4074fcfaf4413da0de6c094
+# 5403014d8e354de197de8966c94ab039
+# f799b751db574358bbf54f4ae9982fcc
 msgid "Example usage::"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:342
-# cf82e871dc83448fae362f8ee725233d
+# ff822051d19b4239ac509a2f247e6979
 msgid "**imap_storage_meta_base_path** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:344
-# 1598e23a69a941398c6def1fd65f814a
+# ca9cdb92cc1249b09ab8b836f504817f
 msgid "Undefined by default, allows the separation of IMAP spool metadata and message payload."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:347
-# 22c6fbaf9b764dd2bc790b87051cb7cb
+# 32d6760752494800b76007386daaa201
 msgid "If defined, ``imap_storage_meta_base_path`` must be set to an absolute path that exists with 0750 permissions for the cyrus user and mail group."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:351
-# 1157e8f0d9c542c6ac0d29be3867c452
+# e3a295c4d0514676819579f554455750
 msgid "The ``kolab`` module (or actually, Puppet) cannot ensure the directory exists, unless there is a guarantee that the parent directory exists -- only :file:`/` is guaranteed."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:361
-# f0fd9f744dd846d5ab59c7e5a0a78a91
+# fa38ee2ce7b54d12ad0f46da33b40e83
 msgid "**imap_storage_spool_base_path** (``/var/spool/imap``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:363
-# f6ec46b15cfc4f75a9898b7dff1a04a2
+# 2b427e6b789c4215a2ad07b034759932
 msgid "Sets the root of the IMAP spool partitions."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:365
-# fe86d79b74f3422b9a0a6476c980a906
+# 2a93877f6cdf4493afd9b17d7ab65ae7
 msgid "Under the directory specified here, directories are created for each partition defined (with a mandated minimum list including ``default``)."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:375
-# 33b9e123962d40bdbb0ca51edd31b36c
+# 96c7603a91064e10a3da569995996341
 msgid "results in::"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:379
-# 939ddc14300e4a0ca007e5e9db3ce5bd
+# e9ce91ff70e04bffb9c2ff350b3047a4
 msgid "**imap_configdir** (``/var/lib/imap/``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:381
-# 5c91489b62df469aa5f9fb59fccbfaab
+# 477aaf0c892947039da36253a55e86c5
 msgid "The :manpage:`imapd.conf(5)` ``configdir`` setting."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:383
-# f3430a5c0eb840d2962a0b1cf1362e25
+# 2a2c60b517664e168058306ec210b8bd
 msgid "This directory normally contains databases among which ``mailboxes.db`` and ``annotations.db``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:386
-# 5745a006015c42cc900401537b630764
+# 8a2e56fe44494e6ea898cbc099cf7227
 msgid "Because of backup processes, it may be desirable to have the default spool partition and ``configdir`` located under the same directory hierarchy off of the same logical volume mount."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:397
-# 7e169c9d757d46fdb1f947f75c671f5f
+# bdd8cdb1ee88421893148f18026203e7
 msgid "**imap_duplicate_db_path** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:399
-# a02e4ff0393142ba88b8b9be0a5002e4
+# 5883402bc4f646f29f78cab38b5db59f
 msgid "The ``deliver.db`` database file used to determine whether new message arrivals are duplicates (to be suppressed) contains a few days worth of delivery information."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:403
-# 8791bd0ef2ab49e7bb4ebd30fb800b79
+# 438560e53b3145ec98a897acd264b5b7
 msgid "However, it is not critical for operations and may simply be discarded in case of a system reboot."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:406
-# 7a644ffcaea34b8c8185c6bc24ef3ec7
+# f8b21b553cd94fc3b3124ad93c0c635f
 msgid "If performance of message delivery is more important than the suppression of duplicates (which are a rather rare occurrence), then this file may be located under a directory hierarchy mounted off of ``tmpfs``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:411
-# b86bd0e24e4e4f4bb56fb005c814d64a
+# 7a7d3af9b4a84a62b669decb2fa9163a
 msgid "**imap_ptscache_db_path** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:413
-# 6a8945bdebaa45d991793bd2513b5dda
+# da9ae4f83bfc4edea89fc738046aa4bc
 msgid "The ``ptscache.db`` database file caches information related to LDAP queries performed to find target result attributes for the process of canonification, and additional authorization information such as a user's group memberships or roles."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:418
 #: ../../source/puppet/module/kolab.rst:446
-# c2b4998f584040f2857b4dde4443dafd
-# 97816768317f44fcae04dc8ba6cd1342
+# 4d8214c40e1842efb5cff12e3a97027c
+# b557943d8bf94d1f89fe2a6e360f9be4
 msgid "This database can be discarded when a node reboots, and might therefore also live in a directory hierarchy mounted off of ``tmpfs``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:422
-# 88ff7c14e5a340b4ae46dff912fe56b2
+# 800536d3f1ff47db9e441111f09bcaff
 msgid "**imap_sievedir** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:424
-# 3c518b8a30e0451593fea059438aec9d
+# 61a8987d9787452aa8317c74e48bceee
 msgid "Unless specifically required, keep this to a default value of ``${configdir}/sieve``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:427
-# e94c301e2e1a4507a8f2fb581e27348d
+# 3c1f37e2196447a18785293e96399b5c
 msgid "**imap_socket_path** (``/var/lib/imap/socket``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:429
-# ce14ab9c9c8c4a26b54cd5d9e62623a5
+# 891564e877844d41a627d78b411c2497
 msgid "The path to where socket files are stored."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:431
-# 129a2663ec2e49459e63d1e7c10ce045
+# 1ce80a0235c04c8980262f164cd4f771
 msgid "**imap_statuscache_db_path** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:433
-# ea753622e6a844428c984375cdb03417
+# b46904e836ca4b87b0aa57be472c5f4f
 msgid "The ``statuscache.db`` database file is undocumented."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:435
-# 851c0959f8d244c797192ce345a225ac
+# 8832282fa68849aa973cbc195790ddcd
 msgid "**imap_temp_path** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:437
-# 5bfe1c06781e4dffa83b1404019dd112
+# 167ba324e0b24c22ab69759dcfe2d40c
 msgid "The absolute path to a location Cyrus IMAP can use to store temporary files."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:440
-# 7cce860959524e8b9515f03a0b95da38
+# 9f8a32568cce4e17a0a47edcfdaf934d
 msgid "**imap_tlscache_db_path** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:442
-# cf69099755094281ac653d2a2b39322e
+# f8bd1a05f5d64fe68b9657686040982f
 msgid "The ``tls_sessions.db`` is a database file that maintains previously negotiated TLS sessions, allowing those sessions to be resumed at a later time."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:450
-# c85647a447c44fc084a59bd1cc5d2574
+# ef87931c86314603b527c8ee2c144580
 msgid "**kolab_version_name** (``kolab_14``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:452
-# 7e4a3c6ae8414c56986746a6c59051c0
+# 84de3a9859cf4eb59219d7a464f00e81
 msgid "The version name of the Kolab Groupware product stream to use."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:454
-# 2dcca3ad6eb34dd7883c5aa7a54156ff
+# 5c388fad6b2c4b72b2e97c8995db16f3
 msgid "Possible values include:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:456
-# 13724b09486447b585717a75eb438f36
+# ae0800fc44b346399c065ae6a1839459
 msgid "``kolab_14`` (the default)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:457
-# 8a445cb10ca64cd9a8571b38c9422225
+# ece8e037c5204795b299127b1df1aa80
 msgid "``kolab_13``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:458
-# 0a7185d7d23d4d7cae297c1ff28f8e15
+# 78d326cd01514a9087287cb5c7310773
 msgid "``kolab_3_3``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:460
-# 9565f5a458e441b5a2ea995ad5e5f0d4
+# b2f56417e8004ef29aac403d9d60dbdd
 msgid "**kolab_primary_domain** (``$domain``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:462
-# 19df9dda84494f3fa396fa952b213a86
+# 6f7d8c6a718748218afc89da8d058334
 msgid "The primary domain for the Kolab Groupware deployment."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:464
-# 228a568c18944c03b0b320a07c71b916
+# d7bd9566ef7f4421a92599bcf92fc900
 msgid "Corresponds to the ``primary_domain`` setting in the ``[kolab]`` section of :manpage:`kolab.conf(5)`."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:467
-# 7a7ba4c55d3843a6a5035d7d2a0509ad
+# 41fcd829918c4e648ce58a1c998934ce
 msgid "**kolab_default_locale** (``en_US``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:469
-# 81e9b25ea2f94c7baf566e98ce04cd9b
+# 4a17dcd211a04b8d9e79b7ff86a7258f
 msgid "The default locale for the environment."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:471
-# b2ca6563845f4fc8a242005ebe7d9d1c
+# 6950f0173586413da408f1e14c0fcefe
 msgid "Corresponds to the setting ``default_locale`` in the ``[kolab]`` section of :manpage:`kolab.conf(5)`."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:474
-# 73b434bdceab432284d84f923753098d
+# 1ea19cce5c8546099d2139c058d4b0bb
 msgid "**kolab_policy_uid** (``%(surname)s.lower()``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:476
-# 1b267523e0094b459c10b4bbb0ba9883
+# 802662fe8eae4a19b6f17be2e605bdf0
 msgid "The UID policy for Kolab."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:478
-# 648607878f95490d9016a65a7b7902f1
+# 1d9b11cd23a242be97d2267e05057d77
 msgid "Corresponds to the setting ``policy_uid`` in the ``[kolab]`` section of :manpage:`kolab.conf(5)`."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:481
-# 66c9ffc396ff42d6b10ee97e950a8ef7
+# ab4d63a9abf148f59def872b1216b37c
 msgid "**memcache_hosts** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:483
-# 18204cb464944e16b7b2045e03de7db8
+# b8467cad87e54d4fafe1b17b838a942a
 msgid "An array of hosts that serve **memcached** to be used for memcache- capable software applications unless specific memcached host addresses are defined for that service."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:487
-# 50893b05ea81426f9ec78b8beb62b4bc
+# 233023bfa02943b3a6e5c8458110e351
 msgid "**webclient_memcache_hosts** (``$kolab::params::memcache_hosts``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:489
-# a69d56a6628f4a3ea32b1ed23195a675
+# 1ef587c4566f422a960e1defa695d8a3
 msgid "An array of hosts that serve **memcached** to be used solely for the webmail client software."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:492
-# 93bdadc2999b42d3b32f4e55c11dd38c
+# 6400bb24864646fa989eb9a88491edc7
 msgid "**webadmin_memcache_hosts** (``$kolab::params::memcache_hosts``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:494
-# ff5909d679c24512ac3e2908fa41aa80
+# 6011cb10a44c4b359dd3f35aea63bc8b
 msgid "An array of hosts that serve **memcached** to be used solely for the webadmin client software."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:497
-# ce33a90d31f44a8692cc5b31e99589bb
+# d096c3b2c20a470099da52b36f90bf71
 msgid "**ldap_scheme** (``ldap``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:499
-# 7d4ba8e8ed5f4053a4ff900f54541a43
+# e3f01d77f8e047c3b714107fc27b2375
 msgid "The scheme name to use to connect to LDAP, where URIs are used."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:501
-# 4e166dde59bc4e01b4cb7da23c5e9aef
+# a4efef8450bc452a93f49a2aa7a74bed
 msgid "Can be either of ``ldap`` or ``ldaps``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:503
-# 245f0be22bdc49cd825d5543b2b1dbdc
+# fdf57ae347bb4e51b24e14abc7cc4589
 msgid "**ldap_hostname** (``$fqdn``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:505
-# 4a3dc7b754354466afc1aa6dff9d7ddc
+# 14928d3c451e4bbfa0d41be982d039e0
 msgid "The host address to use to connect to the LDAP service."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:507
-# 50b8ac273b404dc3b1f7298d30b4858d
+# fa9dfaa3249e47758e07d08831047551
 msgid "**ldap_port** (``389``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:509
-# f83500f24727443b88324605ff6b7bc1
+# 1e790d49dcce4b5a9a37479e845d5851
 msgid "The port to use to connect to the LDAP service."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:511
-# e30ea9bf93e84020943c543ebaa255a1
+# 0fb7e3ab708d416b8cd5830cbba37e0e
 msgid "**ldap_domain_base_dn** (``cn=kolab,cn=config``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:513
-# 953490c5ffb443a4bffa2e8df74f9f3b
+# 20c2bcc5dd04432aada11fdfb6155a6a
 msgid "The base dn for domain objects."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:515
-# 329c9afed9a442afb4716a5751ba5724
+# 742e2984d46647f6b11cde634dc83f38
 msgid "**roundcubemail_db_dsnw** (``mysqli://roundcube:password@localhost/roundcube``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:517
-# 7c615ec18ee54e79bb2a9343cb5b3867
+# 6ab95b691f3b4d4e87fb61b9e897c616
 msgid "**roundcubemail_db_dsnr** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:519
-# 6a258b62f7c648e08a4cf9ad5fe3b13f
+# 2bd6300ddfad445cba4ae576ad89a009
 msgid "**ldap_bind_dn** (``cn=Directory Manager``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:521
-# f538870a2c0644cd982f66e5527b21d0
+# 43b23144ae9142a5b296b97a3a03ef84
 msgid "The login for the administrative credentials to use when binding to LDAP."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:526
-# 8a2a9bc0f42d411a907e84e5ea4d3b66
+# af3d7e3363f84c5da2fce6636496fabf
 msgid "Note that you are encouraged to provide the Kolab Groupware environment with credentials lesser privileged than \"cn=Directory Manager\", but that certain functionality we have to make available in a standard deployment requires the use of these superuser credentials."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:532
-# 8fba41582e974954952cd0dc95b99c09
+# 1b6a72d4cf5f4caf8796e15f2cf2633d
 msgid "**ldap_bind_pw** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:534
-# 18c46a3833b249bd83c00e0a7534ddda
+# 4f4f7855038e4551b11dbb133afc4495
 msgid "The password for the administrative credentials used to bind to LDAP."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:537
-# 93dd3e2d95b64ddda27ba0ddd7a05345
+# 49b64a6ed4d344f29257b5473e95ac86
 msgid "**ldap_root_dn** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:539
-# e5d0913186fe4b51bf4af165b211a4ed
+# 35640a9c47e94225a16507e09c5791e6
 msgid "The root DN."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:541
-# 1eca87d305f344db8c759ab288f7fed5
+# e908e4ce81454150ba328369543563ad
 msgid "**ldap_service_bind_dn** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:543
-# 9e6c5bef824146ea93dd5c59d74d89fb
+# 23951978141b4f47b3fcd28c92dfc96e
 msgid "The bind DN for services, normally ``uid=kolab-service,ou=Special Users,${ldap_root_dn}``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:546
-# 65b171d36c4d480694ab1a25ac4d445d
+# 8f3c8cd523ee4860a15720791950140a
 msgid "**ldap_service_bind_pw** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:548
-# 58c9280176e5425ebb1b9590bd302bb6
+# ed3a4f915c91491a919c7a45bf20a921
 msgid "The bind password for services."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:550
-# 6944fd8b58c64d3bbc5249ec222dc559
+# aa24248d5901435eb67c157d530ffdd6
 msgid "**kolab_cache_sql_uri** (``mysql://kolab:Welcome2KolabSystems@localhost/kolab``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:552
-# d2c0721adc1f4695995fc3c4a0e7cc3d
+# df82efc2748e4afb95e6473c831b14f7
 msgid "The URI to a SQL location to use for caching."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:554
-# 88d4d6fc6f904571aae810039da82601
+# 01f908f5ccb64460a8b9966813db8abd
 msgid "**kolab_webadmin_sql_uri** (``mysql://kolab:Welcome2KolabSystems@localhost/kolab``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:556
-# fade91d6239a4dff82fb4c67a5c244c5
+# 5da09144d5824f0fada598be2c9b4428
 msgid "The URI to a SQL location to use for the web administration panel configuration."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:559
-# 9132ecdf64a44f3dadd5650832ef430f
+# acbaeaf38a944e67a41590c317bc4257
 msgid "**roundcubemail_des_key** (``rcmail-!24ByteDESkey*Str``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:561
-# 5ee8857efd444c9985ece9287fd9b09d
+# 4b1fc305e65841ea80b9111550bae0c4
 msgid "The DES key used by the Roundcube webmail program to encrypt session-related information."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:564
-# 2a9eee80c99040bab649253cdaf38c84
+# 37d75027b31b45af8eb75d7586812103
 msgid "**smtp_scheme** (``undef``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:566
-# d073b3d80c6e470c9dbe4810009f1624
+# f2e3bd5411424f2eac5bb904a426c0d8
 msgid "The scheme to use when connecting to SMTP."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:568
-# dba00d543ad64677b309a45b6465e82a
+# 8acad4427fea4e04be27a7a1413b8068
 msgid "**smtp_hostname** (``$fqdn``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:570
-# 1a22ec430b9544be8e04b81a8d78ba29
+# 84ec380b2d954a65aa9af886f028ba20
 msgid "The host address to use when connecting to SMTP."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:572
-# 0b58ee49d0124324a941db6035be6bbc
+# 980a793f6fca44e2bd1cd4c7ca54471b
 msgid "**smtp_port** (``587``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:574
-# 413e4f30a2be46c8a06561a06f5fa4b2
+# 8ca0a34ac6754faca7add1f29550261f
 msgid "The port to use when connecting to SMTP."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:577
-# 35e96c4935ef4710a7d8a3f0f098148f
+# 216c47e4884a45098ac597486bc3bb9e
 msgid "``kolab::params::imap``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:579
-# c0c7efa4856f4d67b25742d18f86699d
+# a73d349bf9b14050b89ef23b63d31ac6
 msgid "**imap_storage_partitions** (``$kolab::params::imap_storage_partitions``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:581
-# 24305acab0c84c8d9ba9388fbeea2fff
+# 3449fc13f41e4739a0086e1680e0e65b
 msgid "Override the IMAP storage partitions set using ``kolab::params``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:583
-# 70d4caefc48f474faff8ed3b08120fd1
+# b0d39ac92bcd408ab51e0e42a1d192de
 msgid "**imap_storage_meta_base_path** (``$kolab::params::imap_storage_meta_base_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:585
-# b0668d29f8b142789537cc556c366e81
+# cb102a3ef9cf442fb3e9b7823a72e7ad
 msgid "Override the IMAP metadata base path set using ``kolab::params``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:587
-# c8ee04cbb24048e092ecc74499b5a55f
+# b16b6026229c4100a6927e9bbe9c9cdd
 msgid "**imap_storage_spool_base_path** (``$kolab::params::imap_storage_spool_base_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:589
-# 6fb68bb23f3d48cb8b2ccf38787268e3
+# 2ce11b0de09448bdb019b0044c8f7bab
 msgid "Override the IMAP mail spool base path set using ``kolab::params``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:591
-# 1449cc719e0745628d0dc3c96037a609
+# 213ebb2c62c64a13bbb7cfc8e5bc6728
 msgid "**imap_configdir** (``$kolab::params::imap_configdir``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:593
-# 9a3010de0b3c422aaf535db45c49460a
+# f7fdc51a9f074baf90c8020c45affddc
 msgid "Override the ``configdirectory`` setting in :manpage:`imapd.conf(5)` set using ``kolab::params``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:598
-# 6e29f5d45fae44f196bbb321fb76f72f
+# 2532de80dc174202bf1406db51a0ba8f
 msgid "So far this has not yet worked in practice."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:600
-# 0fbbb692c7714390a09f6a585aa1570f
+# aba2f7bd4b0a4f1ebe1e771905fd4ab0
 msgid "**imap_duplicate_db_path** (``$kolab::params::imap_duplicate_db_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:602
-# a864fdda0225485c94388237597d77f3
+# 47928c4f2c1e4b13b2adfb250aa48c93
 msgid "Override the path to ``deliver.db`` set using ``kolab::params``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:604
-# 141c27eb466143d591191a03c90b98ee
+# c1cea4d88f9a4885804537c49e641d8e
 msgid "**imap_ptscache_db_path** (``$kolab::params::imap_ptscache_db_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:606
-# 05681b82d16b4a0f8f311a7ada580c27
+# 9b9d9d73f43341d0b5af46c312400abe
 msgid "Override the path to ``ptscache.db`` set using ``kolab::params``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:608
-# 57e1ca931dd24732ac6bf1bbc667a45a
+# f5b5d56e0cfc4984ae95a3a6f750aeec
 msgid "**imap_sievedir** (``$kolab::params::imap_sievedir``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:610
-# 1a3e6947f8f94f13ac8b4ba8fc83b8d2
+# 5b52a730506e46eba041052560100e1f
 msgid "Override the Sieve directory set using ``kolab::params``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:612
-# 035f43b209fa42b49d600472d60b8857
+# 6c3dc0d40a0243bbbec7ae7039940692
 msgid "**imap_socket_path** (``$kolab::params::imap_socket_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:614
-# 20421c423e1841e5b0fc2eaebdb67830
+# ef6524c86a8048d58f53cd6d0f23d585
 msgid "Override the directory used to store socket files set using ``kolab::params``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:617
-# aea0e230e3074625a86805cf0e4687af
+# e64e1fd80a974ad48ac2d1b83c16b449
 msgid "**imap_statuscache_db_path** (``$kolab::params::imap_statuscache_db_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:619
-# 4b634b3f561e422a84a1cbc301d2a43c
+# 8b1df35756774ef39f52814ccac932bd
 msgid "**imap_temp_path** (``$kolab::params::imap_temp_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:621
-# 1513891bb32b4c19ad9c59b772b3be15
+# a5f7d775a56f45e5ba23c0cd9d068593
 msgid "**imap_tlscache_db_path** (``$kolab::params::imap_tlscache_db_path``)"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:625
-# 2bd3af2b57494f8a8237eaddaa829bfd
+# f2d7d5c69dfd47908d6b0feb7d4e165a
 msgid "Add a setting ``imap_proc_path``."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:626
-# b4e07bacdec34ca2801e095707df18dc
+# ca09ab0ad29d4ced84731b7a3ec1db09
 msgid "Add a setting ``webadmin_api_memcache_hosts``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:627
-# 81ed420ec4fc4b2389c96898a65cd2fe
+# 2d3f73599db94c83bcef53b86347c568
 msgid "Add a setting ``hkccp_memcache_hosts``"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:632
-# 96799dc9eeba47d18418067421a15d70
+# fa74eaa5363f41c68865a37e4fa685f3
 msgid "Using the Kolab Module"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:634
-# 1c8d3ebe2f8b4b6398b635548d574bc7
+# c998855045734563925158f4a7af6b46
 msgid "We strongly encourage you wrap the individual ``kolab`` module classes with some of your own, in order to share certain configuration information between multiple nodes, but not share all information with all of them, and in order to allow divergence (in terms of development)."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:639
-# 3d82c5ea2d5c426db1468df27c203648
+# b45c78e359f94f3188b78b61452a2179
 msgid "In the simplest form, going with all defaults, the class structure you might want to use looks as follows:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:694
-# 1f472793face4e2bad621882167e2b86
+# 3077f99cfa234fff9f66412e79ab7393
 msgid "You might wonder why the green parts (yours) need to be so large, so lets look under the hood and apply some differentiation between IMAP frontends and backends."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:698
-# c9f269660f22455fa431ba42f1586b35
+# 60916b81286d446097711c79f9624b27
 msgid "Suppose that, for example, both types of IMAP servers require a different ``configdir`` setting in :manpage:`imapd.conf(5)`."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:701
-# a7489967cf6e41599a99d9e9842ac0a2
+# 37b7f51005df46f4bb839a46cf2db0ab
 msgid "The ``kolab::params`` class is already configured by the parameterized inclusion of ``example_org_kolab::common``, the class you use to share settings between all nodes related to Kolab Groupware services."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:705
-# 59eb897843534b0b9f0e17e69a57098d
+# 1f01792c9642414eae5836347224f109
 msgid "The frontend-, backend- and mupdate-specific classes would need to break the inheritance of the common class, and each instantiate ``kolab::params`` themselves, individually. Because your other functional components would still use the common class, this duplicates instantiating ``kolab::params`` times 4, for 3 environments each."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:711
-# 207d9a579e0f4b04833f3f26d4210e7b
+# 9022cd93d0874e868a70a73c8b4fa99e
 msgid "Therefore each ``example_org_kolab::imap`` sub-class is to instantiate a parameterized sub-class of ``kolab::params``, called ``kolab::params::imap``. This sub-class inherits ``kolab::params``, so that you still have to configure those settings only once, but allow you to configure some additional, IMAP-server specific settings."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:717
-# 6d45986d73a042998ac2c5344df47608
+# 65a78e0faf634be898a5f8ef76e258c5
 msgid "The same picture as before now looks a little bit more complex:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:775
-# ce0b04904a804df9955d53108d735379
+# de99bf21b467421d86d4c8836f977a36
 msgid "Add to this picture the following considerations:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:777
-# 8a9138fd17d54d4e910dacb91d9a4123
+# 61acb1fd3410480f8b82adadfa37bb8d
 msgid "A deployment does not necessarily consist of homogeneous operating systems and operating system versions."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:780
-# 6e5eb6319b92464786bc5b47447fbfb1
+# 84e46ba8183a44de825f6f62f1c7e1cd
 msgid "Some systems may run CentOS 6, others RHEL 6, and perhaps yet some others RHEL 7."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:783
-# e07bc16cfc384eab812d0bd46a106f9c
+# 3b3a836aacb04aae9c158078396d19ca
 msgid "Even if this is not the day-to-day, each deployment will transition, sooner or later, therefore creating a hybrid environment (or worse)."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:786
-# fb353a63ad234363af1b097b87fe50aa
+# 1ee97ceaaec34c5a83ecc4338518ff1e
 msgid "A deployment is not necessarily comprised of systems all running the exact same Kolab Enterprise version. Some systems may happily continue to run a functional component based on Kolab Enterprise 13, while perhaps the web- or IMAP servers have moved on to run Kolab Enterprise 14."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:792
-# 44575aec0a634fa0bf21b0b4564fbd8c
+# 035dd82ba2404661affcd8c31714cf1f
 msgid "Again even if this is not the day-to-day, each deployment will transition, sooner or later."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:795
-# a4681fb974c1488386db4fe92307ec13
+# 13971fd9df9748ad83e23676ccf7dd70
 msgid "The reproducibility of a system you have in production today, whether for the purposes of recovery or capacity increase, depends on your ability to not only produce a system, but have that system be maintained using the exact same package versions as the other systems in production."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:801
-# d4eb9a096e2a4dc6b37a05ec6c8ad3e1
+# e1d7049935ff4009b7b739fb8772b48c
 msgid "While Puppet is intended to describe the desired state of individual nodes, and the desired state of so many nodes across and even within deployments may differ so much, the picture of the internals of the ``kolab`` module look yet again a little different from the previous diagram:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:906
-# 0c8d2d4e8aa248ca8544179ce3cb4ad2
+# 32e10570a0b94539a11052f80c0a7510
 msgid "Example ``example_org_kolab`` Class"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:908
-# 1790aaafd0e94768a8b834af5d268bee
+# 571f640ae42f44c5972d83f82d846d3c
 msgid "In this example class, we re-iterate how it is built up, and why."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:910
-# 59d6d35c76204fb5b1fbba9c4ad23bf4
+# 8bd5c552a1a5464bbaaecc9e5c0eb5fd
 msgid "First, the bare bones of it all:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:926
-# 02960f4f099142a1a3ebe4f988a6bb3f
+# 7e572d90d9ba4b3ab5b40359fa4897cd
 msgid "Next, we populate some of the information (not all of the relevant information, for that see later on):"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:944
-# 955745aac7ae4dd5aa6b8e3e54d6bee9
+# e756b1a4ae0749d78c34246bc3c72654
 msgid "This gives us a base structure so that a node manifest might look as follows:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:953
-# 78196d1e8f114c32a4d5731df5f67191
+# 57adb6469a92451bbaa4f212c2c33f7b
 msgid "The structure allows us to distinguish certain parameter values between environments:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:990
-# 29f593564ddd40b0831e5518c03a1f61
+# fbac53a91ccb4138bb3c4cce87a0bdb2
 msgid "Or, alternatively:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:1011
-# 4c426bf0947f4377b25a889679638904
+# 360ad7231ff64aa4a54756f6e6912c3a
 msgid "However, there are reasons to do it the way it was done the first time around:"
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:1014
-# a3642b96bf464fbdb341be46c154b50f
+# 7a6caf9ab41a4fc995427601dd9371bd
 msgid "Instead of defining ``Class['kolab::params']``, include a class that comes from a file external to ``example_org_kolab`` class definition (and hide the actual value from prying eyes)."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:1018
-# 2f1db32f905b41de8be4519c4aaad21f
+# ed0e3c1824a44a939a708592f163b871
 msgid "Not all environment stages need to contain all values for all parameters."
 msgstr ""
 
 #: ../../source/puppet/module/kolab.rst:1021
-# 151d1bdab1844703a0706c5375da3b99
+# d58899e5986a44d6a7f925c2065d8468
 msgid "Sub-classing ``example_org_kolab`` further, to wrap individual more specific roles might give you something like this:"
 msgstr ""
 

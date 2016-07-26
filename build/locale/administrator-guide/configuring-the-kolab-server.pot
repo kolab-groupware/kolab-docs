@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,792 +17,792 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:92
-# 179913aea80d48cabb5073c2cd6848b8
+# 2a07ed51f93f41859bd4c354b4970107
 msgid "Configuring the Kolab Groupware Server"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:97
-# 81fb2d49c49244589c1e7e0b8709e606
+# dfb5bda307484c868dc00c5ed041b328
 msgid "Recipient Policy"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:99
-# 06bb92d94ee34c08a831fb7a02d9cbbd
+# 483b737954684eb4818eaa47e1f3e067
 msgid "Kolab Groupware features the automated application of user metadata, such as a user's given-, surname and user ID, to form :term:`recipient email addresses` for the user."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:103
-# 54aa4234758147c7b6895e2bf5aee533
+# dbedbf08d90f4970a24a01f73b82035e
 msgid "This is called the :term:`recipient policy`, and serves the following important purposes:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:106
-# 5aff94455cb74836aa32c58572438243
+# 8d33e309dc64402e98a81cadb08c0432
 msgid ":ref:`admin_rcpt-policy_naming-conventions` (should they exist) are applied automatically and consistently,"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:109
-# 5c7095998cf24600ab641bc2b5e5fe01
+# 0e304ddba7044955922e2982c532efd8
 msgid ":ref:`admin_rcpt-policy_locale-transliteration` of non-ASCII characters in names is applied to form valid email addresses,"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:112
-# 623edbf910f94a8191feb0e99c4adbbc
+# 14ccaaf49804489893f91b842452600b
 msgid ":ref:`admin_rcpt-policy_globally-unique-addresses` are automatically guaranteed."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:118
-# bc078591fd9f44f99ad3b5a54ede85d3
+# 3b7eff0c1b0e4cf7b52a45813e7228bc
 msgid "Naming Conventions"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:120
-# f569bd81f56e44e48a5f7a0cc1ec8f39
+# 01e18ac310f148599ea74b6cbaf0b4d0
 msgid "The recipient policy aids deployments in achieving a level of consistency throughout their recipient database by applying a naming convention, avoiding the need for Kolab Groupware administrators to need to understand and consistently apply naming convention rules."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:125
-# cfa74424b0774f8683e413da42f74828
+# f9919a7b97cc437e802c8399e965c3a3
 msgid "Consistency is important when considering global address book listings and searches in different contexts, and when anticipating what a valid recipient address for a given user may be -- noted that most email users do not have access to your global address book to verify a recipient address is valid, and it is likely that most communications will take place with those users."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:135
-# 1eafe90e6b3a41a8b366a7db95fb6206
+# 7f3d2e0e7d834aeaa4e5588617c0cf12
 msgid "Locale-specific Transliteration"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:137
-# aa4ec4a66c4b4082971cbea55ed793f5
+# 98e9686299ee48e3b3e48821dce7dbde
 msgid "Names can contain non-ASCII characters -- for example *Marie Möller* --, while recipient email addresses may not contain such characters (i.e. *marie.möller@example.org* is an invalid email address)."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:141
-# c6976a658ce54ec7a7751dd2f340e13b
+# 29ca48de34cc4179a38e04071af403b9
 msgid "Without locale specific transliteration, the email address would become *marie.moller@example.org*. This is considered inadequate, as many users will experience this inappropriate, inconsiderate and/or awkward -- it is the user's native tongue after all and transliteration is used in every-day life. Kolab Groupware should therefor also be able to apply the same transliteration rules specific to the user's native tongue."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:148
-# a63e3070b5654acda04828b587a6902b
+# efcb697b0a024316b1e44269cad26dbd
 msgid "With the (presumably correct) transliteration rules for German applied, the email address would become *marie.moeller@example.org*."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:151
-# ac82040ad6ad4e928dfa7a3937af2fbd
+# bb49c38a9b6242c7b7023dfcffc28cb1
 msgid "The recipient policy takes the value(s) of a number of attributes from an entry, and executes the recipient policy for primary and secondary recipient email addresses with help of the attribute names (referred to in the policy) and their values."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:156
-# adb66381b8e94c2f8eeb97080f49af3c
+# a9d21709485e4d7ca4d03df9cef0510e
 msgid "It will set the primary email address attribute to a singular value, though the LDAP schema allows multiple values for the default primary mail attribute mail."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:160
-# 01ec631213c24147898b4f60563acb79
+# 0391827eeeeb4e558d51b170b35be771
 msgid "The secondary email address attribute (alias by default) is set to the value(s) returned by the recipient policy as well."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:166
-# 7796ca0caee1434f92bf80498b8cd86a
+# afb56afc468d4cc6b760217158dedc57
 msgid "Globally Unique Recipient Email Addresses"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:168
-# 8da73c0dabda4a588e47c1daba2ffbca
+# bf82c24df1814d05a9f6a8c678c6b919
 msgid "Furthermore, the recipient policy allows these automatically recipient email addresses to be globally unique."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:171
-# 41df802751f84e8f9b0cbc17b3425d1c
+# 751e257e8b7f4fb5b60b5b5fec3acb3d
 msgid "The primary email address attribute value is, by default, used to determine a user's mailbox name. Further using the previous example, user *Marie Möller <marie.moeller@example.org>* would get a user mailbox of ``user/marie.moeller@example.org``."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:176
-# c4f8d1aa18eb4850a27004e6ee5815cf
+# 6bcb13668cd84d3aa302595dd470832f
 msgid "It is important to realize that, should a second user also receive a primary email address attribute value of *marie.moeller@example.org*, two important things would happen:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:180
-# c283613d3e144471a5159dd45a2cfcf3
+# 5f9ebbcda6c34992a56f5ebdd779d4e6
 msgid "Possibly only one of the two, but likely neither user would be able to authenticate,"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:183
-# f78bde1934d14f709f3ea3e98fdfcc41
+# 87ca7cfc473a4bc6924def23017030fb
 msgid "The user's mailbox and authorization ID would no longer uniquely correspond to either user."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:186
-# 3bc6c5bca01c4502ac2acf8aeaf5b81d
+# afc87646202c4a648048cd46f902113a
 msgid "Unless intentionally so, it is also important to avoid entries holding the same secondary email address attribute value(s)."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:189
-# 86ccc0d222e646a2ad11f1b4acb8f779
+# b2db7dfcac804ce78842ee40ff642055
 msgid "To this end, for each generated value of either primary or secondary mail address attributes, a check is performed and -- if the address is already in use -- an integer is appended and incremented if necessary."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:193
-# dc869ec76eee4d458cdc1716fb24d85a
+# 01634f9189254ec4995731e95b9024c0
 msgid "For three people named *Marie Möller* for example, this would end up as:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:195
-# 59072c89b0e24e2db63381e57fab03a1
+# 9ffece18217b4b6a848d207b055beb86
 msgid "``user/marie.moeller@example.org``"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:196
-# be3ff11a42d44ec5a58b3f92f1c591bf
+# f0d27003bab34e84b946304fe8460847
 msgid "``user/marie.moeller2@example.org``"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:197
-# 52a9666bd79348bbb484494f17e3277b
+# 27a72697287c47e79c3f75831cc9e0cf
 msgid "``user/marie.moeller3@example.org``"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:200
-# 603361a1e40f405cb86b1f5cd2c5801c
+# 992e87562d9b4f1cafb73a7418885867
 msgid "Components that Apply the Recipient Policy"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:202
-# aceebb5f8d6048e5950322238ee417ce
+# 5ceffc43cb984e79819fe2c3fa1ca2ca
 msgid "By default, the recipient policy is applied by two separate applications:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:205
-# 67ceef87dc6f4df5b880f8760a0cfecd
+# c25507b1f59e4f59b368f5a1f565e5da
 msgid "The optional Kolab Web Administration Panel, often used for inputting new users and editing existing ones, so that this interface reflects the results to be expected,"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:209
-# b9b82299c88043f69e3c9c7d64e812cf
+# 8dd19fc43de743519337621751d9be35
 msgid "The Kolab daemon (the **kolabd** service) is the primary component to apply the recipient policy."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:212
-# cad96f4e75b04a50b2176d244684503f
+# 58c4d9d61a6d456a9d0d0f5656544873
 msgid "Both components use the configuration settings ``primary_mail`` and ``secondary_mail`` as their policy configuration."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:215
-# 6ae1a8447b514dd39b0b6a189b75a72f
+# c4eac3260730409f95365f22882fc983
 msgid "To prevent the Kolab daemon from applying the recipient policy, add the following setting to :manpage:`kolab.conf(5)`:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:223
-# e3284ad8fcc349ba940a9ae9842391ba
+# cc895cd6cfab42e89fba63d430b5cf27
 msgid "Having added this setting, the Kolab Web Administration Panel could be re-configured so that the ``mail`` attribute for user entries becomes ``Generated`` instead of ``Generated (read-only)``."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:227
-# ef3d8ae697054e3eaafe1a3894a7e3d7
+# f6c11526c3304eebb83245aab02dfa5d
 msgid "These configuration items consist of a Python notation for string formatting, along with a limited number of string operations."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:230
-# f10180d8f66f4730af1f0455ded8d176
+# 562effaa052e4dae92cac1b0a2f34299
 msgid "The ``primary_mail`` setting contains a singular basestring to be used in simplistic string formatting, while the ``secondary_mail`` setting contains a numerically ordered list of singular basestrings to be used in string formatting, and additionally allow the opportunity to execute some additional string operations such as converstion to substrings and capitalization."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:238
-# 377fd33649714612b4d298826005dad3
+# 1cb03c4cde324f1cba56aaf887716155
 msgid "Application of the Default Recipient Policy Example"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:240
-# 8150094786c1404599b04902978212af
+# ecc159bb715941fa80330b48b8284ec1
 msgid "If an example.org user is created with given name John and surname Doe, the default recipient policy will set the primary email address to john.doe@example.org and the secondary email addresses to j.doe@example.org and doe@example.org."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:247
-# 6fd4386034ff4cb6b5dbf17b7975bd9f
+# 51ef9cd9a2c2454ab3364060977cb59e
 msgid "By default, the primary recipient email address is used as a globally unique identifier involving authentication (allowing login by email address), the user's mailbox name, mail delivery configuration, access control and the storage of user profiles."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:252
-# 0b6c2d21eb0c4cffa631921ea47cc44a
+# 643e8eaa6a764b46a4ea63f3af6d7864
 msgid "It is therefore very important that no two entries share a single primary recipient email address."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:255
-# 2073f7cdf9ab48328c0c333781ac2b42
+# 3bd2b7f5b0c64a2eaabbd7445c9b5a53
 msgid "The primary recipient email address for an ``example.org`` domain user with given name *Marie*, surname *Möller* and preferred language of *en_US* is (incidentally **wrongly**, see further down for the \"correct\" way) composed as follows:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:260
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:304
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:352
-# 31c3e5f07d5342a1a78c17b76ba67ab0
-# f8f6185e1ed541918c8e63c0648baca4
-# 12546e9d971b4f72b4181505fbfca598
+# 3e8a67252ad84952940aae3cf85ff361
+# b9c0ad409a4345bebad8599446be6081
+# fded975962044a3ab1426deadb9c427f
 msgid "The ``sn`` attribute is transliterated using the specified preferred language for the user, with the equivalent of:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:268
-# f275784f37e04d6587d1b41f8f2f5666
+# 6eef508cf6244cc78924276779ac571b
 msgid "and stored as the value to key ``surname`` (now \"Moller\")."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:270
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:314
-# 3c3907b8ca2a46b0a9a710f3f0ddd1d4
-# c86619f38e854bfa9b68c8c22df6a203
+# 3be0d7934d1d4c5a9f9bac70c03bbfc3
+# 9b089cf966eb42ada7ad7b1e8cd6b0de
 msgid "The recipient policy is obtained from the ``primary_mail`` setting."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:272
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:316
-# f5b67ae33e6341349930399d28798ce9
-# ac697f6ffbd84b9983220adcd1396357
+# dd434554f54a43899a792c6f47c2c407
+# 86351f0a0b3d4ad6911a4e3825f811fa
 msgid "By default, this setting is set to:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:281
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:325
-# 51a5cac2f2f449a8b0a7460108906e19
-# abb6555fe6184d91ab6cea7ec08b39e0
+# 7ef76fecc5364cfebcc47353c2303278
+# ff9f509cc2c04a38baf94942e115f5ed
 msgid "The attribute name for a user's surname (family name) is ``sn``. The use of ``surname`` in the configuration is to indicate that the transliterated version of the original (``sn``) should be used."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:286
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:330
-# 6bc419d86b064e218682f51ec55c88ea
-# e4f8d924933f41ffa084e7eea9e39e20
+# 1ab4b9bd10ac49639c1252434a48cd8b
+# 2d849fb4f7d34c39b4b5a4bc4c0881c4
 msgid "The equivalent of the following Python is then executed:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:297
-# 56f4b1b6be6147578cd8edda5d59f08c
+# 1eafb2b5e829426ea99e215edcbaf630
 msgid "This return value is checked against the existing user database for global uniqueness, and appended an integer to, which starts at 2, and is incremented by 1 for each recipient address that would not be globally unique."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:302
-# 10855379186a4b369a7e7e1a56441bd4
+# b686eec4ab1f4b5a9d143166ae155ab5
 msgid "The same routine applied with a preferred language of *de_DE* though:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:312
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:360
-# 51a6312f47274b7a9a02f85da8582cfe
-# cc5828a771d14fc093b53a54521bdadd
+# 4de9c575e82f4213b266175e4beb32be
+# d7186e3cfda341e6b18e1e9eade7f847
 msgid "and stored as the value to key ``surname`` (now \"Moeller\")."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:340
-# 667ff2995b1c4416b16192d5b83272b6
+# 0763c2f9eb5844ce9ba11744fa25b9b4
 msgid "This return value is checked against the existing user database for global uniqueness, and appended an integer to, which start at 2, and is incremented by 1 for each recipient address that would not be globally unique."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:346
-# 290da2f0deec40b5ac224922857d4fcb
+# f1f3948e16b14654a27959549f8db6ca
 msgid "Secondary Email Address Recipient Policy Example"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:348
-# a88c79e3e0f04f1eb0ca8927ba7b3d51
+# 5c1d030441c84e989ae9f7fcc57902f7
 msgid "The secondary recipient email address for an example.org user with given name *Marie*, surname *Möller* and preffered language *de_DE*, is composed as follows:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:362
-# af6bb270612a44d7a5c43053000b9af0
+# 7a8f25e90155447798235b5b0b81b7f7
 msgid "The recipient policy is obtained from the i``secondary_mail`` setting. By default, this configuration setting is set to:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:380
-# d65d9ffcc03545d2a11e5a2e305d86d3
+# 6b43713af64740d186c31fc6f78dc6bc
 msgid "As the configuration indicates, the attributes for the user that will be used are the given name, the surname and the uid."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:383
-# e704a27680b74103a950742946efe9d7
+# b98a3110af6e4e6f97813d2a42144dba
 msgid "Using Python's string formatting, the resulting primary recipient email address would become:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:394
-# 2bffae5fd33d4c29a13a9844601b69a9
+# 9c4d64635b5d403e990c3afa7df32919
 msgid "Any secondary email address that ends up being a duplicate of the established primary email address is removed,"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:397
-# 22eed1ae6c904b2fbf9e341b8a628404
+# 88cef9810b6d4fe2a579bcf10844b800
 msgid "The remainder addresses are checked against the existing user database for global uniqueness, and appended an integer to, which starts at 2, and is incremented by 1 for each recipient address that would not be globally unique."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:403
-# 5cd8d44c7f3d4e5d93737074dc5c186a
+# d6991bb85dff4020b931f24ce926191d
 msgid "Configuring the Recipient Policy"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:406
-# 2590a2848959460386d192495d200bc4
+# d8b7e022337345cba0d28f455750ab6a
 msgid "Setting Primary Recipient Email Address"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:408
-# 41b87af177e647b79a47b76f6adcadc6
+# 157dbb3dd12341b7b3ecf56889b4ce5a
 msgid "The primary recipient email address can be changed to reflect your naming convention through this procedure:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:411
-# 3c35f4e26ef84ba98ebbe47e07c56238
+# 0d91e07149944e1690228ec54729c504
 msgid "Edit :file:`/etc/kolab/kolab.conf` and replace the value of the ``primary_mail`` setting in the applicable domain section."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:414
-# e623af5a5cf646b2a02b381cef140493
+# 1ec27893987d4757b0d7b239cfbd51ac
 msgid "For example, set the policy to ``%(givenname)s@%(domain)s`` to get email addresses like ``john@example.org`` and ``jane@example.org``."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:417
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:448
-# d32716c6cd354f1ba84929f2a5cf5ecf
-# 91eb8c5e78d947a8a33e8c1961b674ca
+# ca11041c4afa4c999fef2b340e3ec6b8
+# e932a39f613749408eb4ecc09ce416b5
 msgid "Edit the user types for any user that matches the filter used by the kolab daemon to determine which users are kolab users. For example, \"Kolab Users\" and \"Mail-enabled POSIX users\" both include \"objectclass=kolabinetorgperson\" (the default ``kolab_user_filter``) and therefore the Kolab daemon would apply the recipient policy to these objects."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:424
-# 821fec12e4c04777a45382f2440f7af6
+# 1649128fdf564e8184c8b329bd553f27
 msgid "For each of these user_types, make sure that the auto_form_field configuration for the primary recipient email (``mail``) attribute include all attributes needed to compose the address."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:428
-# e81b9583353a4a64a218164993b50ea9
+# 4f4ed1c70be6474a906f7c55e1b0da2b
 msgid "If, for example, you seek to apply a recipient policy containing ``%(initials)s``, so that a user *John Frank Doe* may have an email address of ``john.f.doe@example.org``, the ``initials`` attribute will need to be added to the ``data`` list in the ``auto_form_field`` definition for the ``mail`` attribute."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:435
-# 495e508d9a3941e6865844c0a348ee87
+# a961dc18a97048a182bb0a1d861d78a2
 msgid "Setting the Secondary Recipient Email Address"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:437
-# a116f65e3b4a4d12aef28638636d278a
+# ec227e22a90c4fc798bf484916b862f7
 msgid "The secondary recipient email addresses can be changed to reflect your naming convention through this procedure:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:440
-# 7d607dc16b024c94a0dacce4b6390c8c
+# fcb6f6ec7bf54e93a6c486d7daf0f0ee
 msgid "Edit :file:`/etc/kolab/kolab.conf` and replace the value of the ``secondary_mail`` setting in the applicable domain section."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:443
-# c877c35a2bcf4c4c8fe8e43096d2f500
+# c4d85f9d3e0b4e52a8b212ca2a7dd93f
 msgid "For example, set a policy item to ``'{0}@{1}': \"format('%(givenname)s', '%(domain)s')\"`` to get email addresses like ``john@example.org`` and ``jane@example.org``."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:455
-# 9641e4c583af4b3e83e2cd07efb160a4
+# 83cb399ecf7440679dd4a1a3733cb9ed
 msgid "For each of these user_types, make sure that the auto_form_field configuration for the secondary recipient email (``alias``) attribute include all attributes needed to compose the addresses."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:460
-# 4d22d1db314f44e7980a778eca824943
+# 1940af13ed8141cebf4af520f2d7b3b0
 msgid "Controlling the Primary and Secondary Recipient Email Address Attributes"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:462
-# e0be550d2c2042439562d342ad4f9be1
+# a0083cbfe359400ca3a4e64417d85b67
 msgid "The attribute names that contain the primary and secondary recipient email addresses are controlled by the ``mail_attrs`` setting in the ``[$domain]`` section of :file:`/etc/kolab/kolab.conf`."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:466
-# 88d8f8920feb4619876b1c59585f0677
+# b94beb7faf8c4ff79d95c2481fe8d8e8
 msgid "Should no such section or setting exist, then the fallback in the ``[$auth_mechanism]`` section is used, where *$auth_mechanism* is the authentication mechanism configured using the ``auth_mechanism`` setting in the ``[kolab]`` section."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:473
-# 01762d356a754efdb71b6adc2af80c3a
+# 1689481ddf9e44aa9c6b857ded51d260
 msgid "Note that only 'ldap' is currently supported as an authentication mechanism."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:476
-# 37a96e6759ec4714a556d884fabed267
+# 83489c9a8fdc480b9cf1019dfe12e73b
 msgid "This setting is a comma- and/or comma-space separated list of attribute names."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:479
-# d133950832d94cd59dae1421f064b067
+# 771350305ebc40cd81d86bf4a82d7705
 msgid "By default, ``mail_attrs`` is set to ``mail, alias``."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:481
-# e11c0471b45f46b9be2bf8280c3c3169
+# 0a0f51467ad14597bd30e86356e08ddd
 msgid "The first item in the list will be used as the attribute to use for primary recipient email addresses."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:484
-# 623d249a0dd34690ad3ae97b29451281
+# b6a2e5fcbdd54698974b9712a1710a56
 msgid "The second item in the list will be used as the attribute to use for secondary recipient email addresses."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:487
-# 40398a9906de40239201602fe43ed3e7
+# 62b2164b69354318b78a2120bf7c8918
 msgid "No policy applies to any further values in this list, should they exist."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:490
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:495
-# d2f14c30364d49359637e54052717bb4
-# a5e50bac501c44dcb7fcfd979955367e
+# cf380db3fe5e4ca7bc6ba7415d454ae1
+# 038fbaa719ee478eaac4b2a39d0e02c3
 msgid "Disabling the Recipient Policy"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:492
-# 73a9caa57b114d71a8f5328fa4951fe0
+# d686abcc382b48fb95f22a88b5639b16
 msgid "The following procedure describes how to disable the recipient policy."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:497
-# f5c17fe0e7634a0b91e14938e855a877
+# a363f48d639a4864a49a993f6c3fcbe3
 msgid "Edit :file:`/etc/kolab/kolab.conf` and navigate to the section applicable for your domain (named ``[$domain]``)."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:500
-# b815ce890dbb466a8ac97d93563aa332
+# 9199c2b1d4d64525b502705b7af56aa9
 msgid "Remove the settings primary_mail and secondary_mail."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:502
-# a03790c93e3c4b3ba52b9bd0ce33867d
+# aa3f6b1f8271429c9b43010f16826022
 msgid "Restart the Kolab daemon:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:508
-# 737bbc967e934e5f99aefaa24341f00b
+# 37e01ca780f245db813e5ac9b7bf3ab6
 msgid "Copy :file:`/usr/share/doc/kolab-webadmin-*/sample-insert-user_types.php` to :file:`/usr/share/kolab-webadmin/`:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:517
-# 14d0adade0554e2a816016ad126a22cd
+# 7f2cbb4db3254b228bd60b892df7ad3b
 msgid "Open :file:`/usr/share/kolab-webadmin/sample-insert-user_types.php` in an editor of your choice."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:520
-# 3c0cb75bc3ca48ba9de40c941fc6eaa6
+# ea91a2ebb1ca4a1e877395af5fa33866
 msgid "Remove the values of ``$attributes['auto_form_fields']['mail']`` and ``$attributes['auto_form_fields']['alias']``."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:523
-# 324aa006352240ecbeba2e15cfe6c0d3
+# af4d82d02cfc4e80aee861b97e2eaf67
 msgid "The corresponding lines should look as follows:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:536
-# d307491beef0442a9cf72de806527939
+# d025a3e8a65943e8b894bb5b0d1ab379
 msgid "and:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:548
-# bb8151f0ca4b45c2861ed270d34ebe30
+# 8ee73b2a5af447d7a02d709e023a4811
 msgid "Edit the value of ``$attributes['form_fields']['alias']`` and add ``$attributes['form_fields']['alias']['type'] => \"list\"``:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:558
-# 7735cb5449894afb8160935403b4c79f
+# 5f532f31d9ef4b87b894a6ae9a54e1f5
 msgid "Add a new value ``$attributes['form_fields']['mail']`` with the following contents:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:563
-# f23048ba01774badb212d034779e09e8
+# 268f68d2c8cb494ca90839cae2488c29
 msgid "\"mail\" => Array("
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:562
-# c261f2618ab943db9fb64d3958444312
+# 2f4a0098ff544736bb1298ee86de0779
 msgid "\"optional\" => true"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:563
-# fbbe2632e1aa472c859f834bd7e50670
+# 0b11f079fb404fdc913c3f8763725860
 msgid "),"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:567
-# 1d0d0433695144d59d9dc708664498fb
+# 70e65ee017f24c52bb4b8640fe3b8979
 msgid "Remember to remove the aforementioned ``$attributes['auto_form_fields']`` and add or chance the ``$attributes['form_fields']` for all user types that have mail attributes."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:572
-# 721ec68c94d145e0aba1acacc8f8d031
+# ff7cfb8ea2484fd68d3d793bd05b2a03
 msgid "Exit the editor, saving your changes, and check the PHP syntax:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:579
-# 484559b459594496ac0c5113f1b4fa8e
+# ba7d4fa010ee41c596fc30facf2063cf
 msgid "Apply the changes to the database:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:587
-# 42afecdb6b2c4caabffe1e1ae74ee58e
+# 9e009394d11446c78d618d55e99766af
 msgid "You may have to log out and log back in of the Kolab Web Administration Panel for the changes to take effect."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:591
-# 37c1ec4257c248a7ba56fd5df3d2e190
+# 600529b53ec2426fa7d753e3216341a6
 msgid "Storage Tiering of the IMAP Spool"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:593
-# 0e0fe55f8a1d4c0b93a7be65917c403a
+# 710e3725f0234070824216e2f48d8171
 msgid "Using Cyrus IMAP partitions, a single IMAP server can hold multiple spools in which mailboxes reside."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:596
-# eee74f04ac214499bf52b7b6197dc90d
+# 17829482e1bb4cc9b3d990256537b1c4
 msgid "A deployment can choose to have, for example, the INBOX and additional folders on fast, expensive storage, while an Archive folder may need to reside on slow, cheap storage."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:600
-# bbd3df321ee845f6acd6bc06774104d7
+# f187041b6b6a41f59ef01341226a65ce
 msgid "The configuration in :manpage:`imapd.conf(5)` would look like:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:610
-# 0b8d7170b0e34621a1d29709a0d46053
+# 2e8bd0ba6a764031bcd816a243ae377e
 msgid "To have Archive folders for new users be created on the archive partition, use the ``autocreate_folders`` setting in :manpage:`kolab.conf(5)` and adjust:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:623
-# 47d342bad5c646a4b37f13fbf66893d6
+# e0ae49fdeaef4df89999496d2b5c6999
 msgid "to:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:636
-# 2f4807c691ad47849b6e652690dd8b0b
+# 7636423c127a41d29277781fa6324bf6
 msgid "Adding Domains"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:638
-# 7e2375a2903948328611add5cd982095
+# 7b8f5b94d25e487e90e6d1c7f8469be3
 msgid "Kolab Groupware allows a single-domain setup to easily become a multi-domain setup, by adding additional domain name spaces through the web administration panel."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:642
-# f280a2dcba1840b39f3521977ebbd6db
+# 0a8b6c37d1d24445a56c671ddc0c7833
 msgid "Two types of additional domain name spaces exist;"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:644
-# 75c63eb79ee8464cbf5b1a1278acba2d
+# a115ca35a32d4983ab84c784d6adc970
 msgid "An alias domain name space, that is an additional namespace for an existing domain name space."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:647
-# 8c787f749878442291a4005d2dacccf3
+# 986f781090db44089914f5bb9124d4b7
 msgid "This type of domain name space is useful for additional domain name spaces that should end up with the same organization or group of accounts that already exists."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:651
-# 386472df11284c889899d8793418ef68
+# 4db3056c726347a5a72727b781a655a3
 msgid "For example, a company with domain name space \"example.us\" as its primary domain may want to allow email addresses for the domain name space \"example.com\" (alias) to be used as well."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:655
-# fc1ec751d9a64eb2b8ddd2fa1684aec1
+# 8e2a2580ab3f4bfbb90a17b0817c6bff
 msgid "A new domain name space, that can be viewed as a new organization or group of accounts."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:658
-# 5500d9f12ef44a879a327b5ca576a87a
+# a1520d43c8ab4357a3c09bc6849073b3
 msgid "This type of domain name space creates a new, isolated space in which the accounts for the domain name space(s) are to exist. It is isolated in the sense that none of the accounts in the new domain name space will (typically) ever know about any of the accounts in any of the other isolated domain name spaces (unless you make it specifically so)."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:665
-# 497e563eba1640f0874c56342debcea2
+# d3d6c19643f74a5dbb8d9e22547836b0
 msgid "For example, a company \"redhat.com\" is definitively a different organization from \"sco.com\", and no information or accounts should leak across the boundaries of each respective realm."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:670
-# 31f6dff04f194711be9dc9f4651f27ab
+# c5f7f1c12e304e928e6879107df1223d
 msgid "Adding an Alias Domain Name Space"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:672
-# 11b7de64a61f4b4a9a2bfe33e79aa205
+# e49f58d548274b68979c2a26de66a266
 msgid "Login to the web administration panel as a global LDAP administrator (for example, as \"cn=Directory Manager\", but you may have delegated this authority)."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:676
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:701
-# 457c4d587c3e439393b73ca9795f925a
-# 02d5fe6d02944d809322472ae722d032
+# 479772d43a4b444ea77c17adedd6742d
+# f2d07001eed643e691954d231b35e1e2
 msgid "Navigate to \"Domains\"."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:678
-# 78807cfab91b4f6d99cc518cc42ac51e
+# 4216215de80b40a2ad594f9c222e2ef2
 msgid "From the left-hand pane -- the list of current parent domain name spaces --, select the domain to add an alias domain name space to."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:681
-# d6cefad8784440f99a91227f9c524af9
+# d35f0c124212433fa7c9b2ed6d7d60b6
 msgid "In the \"Domain name(s)\" field, click the \"[+]\" to append a form field to the list."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:684
-# 64013a6738fe4ec6bb85ec674d633379
+# 56aad8b76e244353825599c157ee6330
 msgid "Supply the new domain name space to add in the new form field appended to the list."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:687
-# 3e68953a8e874b37b3b6e4906629f8b1
+# cfe1277cc85c49c180ab25afa6771956
 msgid "Press \"[Submit]\"."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:690
-# fbaa799d920d42fa82da5d19cec57fd2
+# 09987456d721416d98bb838d5e38b543
 msgid "Adding a Parent Domain Name Space"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:692
-# 8be62f74554c4977a576c04816dafdaa
+# 85ea279cb748471f888d339e19344b4a
 msgid "When a new domain needs to be completely isolated from the existing domain, please be aware additional configuration is necessary in a variety of locations."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:695
-# c798dc4e5bb4458cb5ccf9ba1e6b91c3
+# 94d6aa888dd14ae1b54e7eb339a7b300
 msgid "See :ref:`admin_organizations-with-multiple-domain-namespaces` for more information on additional configuration considerations."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:698
-# 063cf3e672604c81aac15b71a43a337a
+# 6381818bf4c44396851e02705787e7f6
 msgid "Login to the web administration panel as the Directory Manager user (login username \"cn=Directory Manager\")."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:703
-# 163651dd52ed4a80bb369b9a875bafe9
+# 436c739b24b54326a8be31ac4f113c32
 msgid "The \"Add Domain\" form should be displayed."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:705
-# d502a0c593af4349ab3c3a882c0c70e4
+# 01cd0b2f66e44886bdc415e13cd40524
 msgid "Fill out the domain name space, for example: \"mynewdomain.org\"."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:707
-# b29d426802dc4d5ca31353769ef60633
+# 6f856d1977c546fe8cf8aaa88fe65a72
 msgid "Click the \"[Submit]\" button."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:709
-# cc3270de7b234ada99e722943f056dc1
+# 7589078647f441e896b84c85f2491eac
 msgid "The new domain has now been created in LDAP."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:714
-# f64c2e3d14a74f01bd92bdf7140e376d
+# 35f5972f9a1e4e4b87ea916da47171f7
 msgid "Configuration Considerations for Multiple Domain Namespaces"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:716
-# a3acb9872cee46a6868a0845912818c4
+# 5351ba21c722468da47c43140147c539
 msgid "Suppose the following diagram illustrates a number of domain names in a Kolab deployment for a single organization."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:756
-# 5b9fc179792a4d8c909289ba6725317a
+# caa66c5c68a64e388d96a50a8c75c5b7
 msgid "This deployment has been set up to serve ``holding.inc``, to which the additional alias domain name spaces ``foo.inc`` and ``bar.inc`` have been added later."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:760
-# 85f09ff3879a4cec9a2116dae650a5b2
+# 7176363493f949beaf2e0cc2ca1e6f14
 msgid "Holding corporation **Holding, Inc.** clearly uses three domain name spaces:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:762
-# 5af38735a9f24d6f8d47009322e83078
+# ca817d986b3b489291889cdcdbbcb9b3
 msgid "``holding.inc``"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:763
-# 693613824e2c44a0ae6ab363a752f7ab
+# 42c4b1b88f054aae94140b24d10a121f
 msgid "``foo.inc``"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:764
-# c03d47d405e2437682b6bd4f17fee2e6
+# 8ed6229db747416a82c2b93792cd8b26
 msgid "``bar.inc``"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:766
-# bee5f4f8f3ce40389dcaf661aaa5f4b4
+# 0c47d993253f4621a3d7ba10586cb549
 msgid "Using the Postfix LDAP lookup tables configured by default, all recipient addresses in these domain namespaces are validated against ``dc=holding,dc=inc``."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:770
-# f32ff3330a334cb59ea1c4fd3a042bf8
+# 6efcbeff8874475bbc52d04cc04f1373
 msgid "Now consider three different organizations use the same Kolab Groupware environment, such as might be the case with hosted, or in case **Holding, Inc.** wishes to maintain different, isolated trees for its subsidiaries."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:812
-# 6761ac643ea24e099d3f6b86aeb4b685
+# fd965628e4ea4a018f569705cb45f266
 msgid "While the LDAP lookup table for domain name spaces will succeed as expected, local recipient maps will not, as they have initially been configured to query the primary domain (and the primary domain only)."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:835
-# a35c09f35fd040168f9d04a8b7abdd56
+# b88e843349644b83b7245748a278a155
 msgid "This is intentional - the alternative scenario creates a potentially disruptive amount of overhead, and eliminates option value for customers."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:838
-# a7a106621bec47f094c9b276d5998165
+# 961787e538c542adb4751022d6d451d2
 msgid "If the number of parent domain name spaces hosted is relatively static, we recommend considering the use of configured lookup tables per parent domain name space."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:842
-# 400efda8f18644d1a868e6295026f9c1
+# 5c8cb0c463504650b7b3c9732e3176de
 msgid "If the number of parent domain name spaces hosted in relatively dynamic, we recommend the use of dynamic search bases."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:848
-# d5c0f45d66ef400d967d07f2dcdb55d1
+# 88180e141ae24990b4b0255de8fd33f0
 msgid "Should you choose to use a dynamic configuration value for search bases, please take on the following points:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:851
-# 7448b726c52b463582b52fc5f945c787
+# 575f0ded6f214acaabdb773ecb582199
 msgid "A search base template needs to be specified for all levels of domains and sub-domains."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:854
-# f197c52ee60445eabb1dbf4b2b306d5a
+# 3fafa50f13c84648ad0e9cb64c61c2dd
 msgid "The ``example.org`` domain name space can be resolved to ``dc=example,dc=org`` using a search base template of ``dc=%2,dc=%1``, but ``example.org.uk`` can not be resolved to ``dc=example,dc=org,dc=uk`` using that same template."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:859
-# a43a738c94e446e0921b58ff81e797dc
+# 23bd8cd1221d4db29a002c9ee2631cd1
 msgid "The search base template sets a standard format for root dns, that will therefore need to apply to all domains throughout the environment. If, for example, an organization **Plumbers, Inc.** wants you (the service provider) to synchronize their in-house LDAP tree with root dn ``o=plumbers,c=de``, you will need to provide an extra set of custom lookup tables."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:865
-# af4884a588a64116844f8e53debd02dd
+# 6b2007e33ec34b089e320f5831c58ee2
 msgid "To reduce overhead, the ``domain`` setting should include only relevant and applicable domains (for the search base template to work)."
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:868
-# 740c535d816a458791090eb44953616e
+# 3bec32f188b54b3abc6335c5cdd9475d
 msgid "With domains ``example.org.uk`` and ``example.org``, the triplet should be queried first, with ``domain`` being restricted to use a filter of:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:876
-# 982cdb22ad67404c89d1193ece11d9c6
+# 7583c52230b043a2a35aec3a91fe183e
 msgid "Example Templated Search Base"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:877
-# 0363c5a1aac44995942029056faf743a
+# 2fed1a11df4f493ca1b7e3330d2bf6aa
 msgid "The following depicts an example :file:`/etc/postfix/ldap/hosted_triplet_local_recipient_maps.cf`:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:896
-# a2f5cf294fc54e61b0308cf99b205089
+# 904077f3a76a43469fd7963bb0d31085
 msgid "The following depicts an example :file:`/etc/postfix/ldap/hosted_duplet_local_recipient_maps.cf`:"
 msgstr ""
 
 #: ../../source/administrator-guide/configuring-the-kolab-server.rst:916
-# 12e92afa811a4512a4215688e046eb46
+# b611b78fc5ac4adc868b04ac8ffefd87
 msgid "Example Postfix Configuration"
 msgstr ""
 

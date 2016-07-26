@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,528 +17,528 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/howtos/nginx-webserver.rst:90
-# e7eba7b9d10f46cfa94a6e13aa252775
+# ae3557e8eab24cf59c08813c9cdd94ce
 msgid "HOWTO: Use NGINX as the Web Server"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:92
-# 46c0d714561540389dbd327bfc6109da
+# 2b6686d5857441a9b1a50f66d78e7033
 msgid "This HOWTO consists of two separate approaches."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:95
-# 288d6c2e1b714b879ca3ea80de99e493
+# 623ea4f4f72b4ae6ac3ac9ad085dc77a
 msgid "Simple Installation"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:97
-# 2b1aa63c3d074b0a8908b5ddbc4642a3
+# 5c912f760b844b2c876d0fd9fd18c6e0
 msgid "The simple configuration is supposed to provide only the webclient. This simple setup only includes the webmail part (roundcubemail) and doesn't provide the full experience (file browser, freebusy, caldav/carddav, etc)."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:101
-# 521c425886eb4a01b1ac57827fc5d3ba
+# 3df278f8cc0c46a9887be446480904f5
 msgid "If you look for a more complete setup including webadmin, irony, etc. take a look on the complex setup."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:104
 #: ../../source/howtos/nginx-webserver.rst:194
-# 7dee4e7207414ac6a1c7372f39541207
-# d0989b2934f948fb9ae2a45be3950268
+# b48d63f0032a4e849360c19d704e496a
+# 5911ce2e1c5f4173a5ac47b443f542f9
 msgid "Install NGINX and PHP FPM:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:110
-# 0dfa882ed1f14f3cae885412c24038c6
+# 9e928c49ffd84b079a450ce6684f652f
 msgid "Configure **php-fpm** to listen on a local UNIX socket:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:118
 #: ../../source/howtos/nginx-webserver.rst:382
 #: ../../source/howtos/nginx-webserver.rst:602
-# ce1c75cffc224d56955c5ea08ec88efa
-# 1a03ed876a0f4514b1ab343261bc9f12
-# f72cfd36b21c4e89a38d43ff00d28442
+# 2186508137d042349dd57bcdd7ab382f
+# dafe9bb23fb64fe199521d007999a12a
+# 6758516390f346d0abab45ea824da9cc
 msgid "Replace the contents of :file:`/etc/nginx/conf.d/default.conf`:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:148
-# af48f9c826cc466aac14091113352391
+# 8a2f1b09964343998b313c32027907f4
 msgid "On debian based systems you might want to take a look at the configuration :file:`/etc/nginx/sites-enabled/default` and a the the default php-fpm socket: :file:`/var/run/php5-fpm.sock`"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:152
 #: ../../source/howtos/nginx-webserver.rst:999
-# 8ff710aa1ce04d05b9468deb60edce51
-# 34335b7ee5c946d19d4ee99411821d5b
+# 41f6dacca39b44c5ab60e54f14025341
+# c6e94546f2de461c9622fb3485b1bed5
 msgid "Start the **php-fpm** service and configure the service to start on boot:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:159
 #: ../../source/howtos/nginx-webserver.rst:1006
-# 778fe2467b20409fa473c10bb7f0bde0
-# 3c61bd6d07e64da9962e08250705ecb7
+# 0aa2b72c371e4cbcbb5277ef611deae2
+# 72d005d5cfe24f5c966797f7b420f7a7
 msgid "Start the **nginx** service and configure the service to start on boot:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:167
-# 89a04e18401349d680f478f6652e79d2
+# 5f87961693d24daab2f244d7d3c50958
 msgid "More Complex Installation"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:169
-# 4dc4fc32b208483ab35cb68a270a1cff
+# de89017a0e22485a989c5d1c4d851c14
 msgid "The following configuration is tested for Kolab 3.4 on CentOS6. It should also work under Debian and Ubuntu, provided you adjust paths and filenames according to their defaults."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:175
-# 86e672c185764e6cb2e9a874da6d0c27
+# ef5a825489a54fb48f91493d85e2de94
 msgid "To not create conflicts with the default apache configuration (which is installed due to dependencies) we should move the apache default port from 80 to 8080."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:184
-# a807c836c594440ca1dd184ec360e2d6
+# 32a4ab2b7cff4435af3324708f757a18
 msgid "In theory we don't need the apache daemon anymore. We can turn it off."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:192
-# 3c4e5146d60647cb932c9d8ee33bbbee
+# c4010768d88244eb8e6bbcb0ccb77354
 msgid "Preperation and PHP-FPM"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:200
-# e4a98a6a7c234adc9e27a0f4ffb5144f
+# af65ac65f5a948959ccdf652b20fbcc8
 msgid "Note that to get full WebDAV support, an additional module is needed for nginx. It's available from https://github.com/arut/nginx-dav-ext-module/, but requires a rebuild of nginx from source. Some clients work without it, others don't."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:207
-# 7acfbcf7803d4ae082af4df9fbba7bc3
+# 11e2f43d48f244b0a4704fab513b0c74
 msgid "On Debian just install the ``nginx-full`` package to get the full WebDAV support of nginx (adjust your configuration accordingly."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:210
-# c6ef4dfe76224de8bf7c717b62f66df6
+# d923cbb938644c60845338e48ef51a9a
 msgid "Disable the default **php-fpm** configuration (optional):"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:218
 #: ../../source/howtos/nginx-webserver.rst:325
-# 13bd19215a714e8580312f809c5e218d
-# 17b3ceebe78245919bd39d77c79317f5
+# 2d34eadd29db403fa827896b85e50bdd
+# d52bb21c00524c479424a9b6c3562f1b
 msgid "On Debian the pool configuration folder is located here: ``/etc/php5/fpm/pool.d/``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:221
-# 0cc9d24b677a4718a5562d18c72ebf8b
+# 9d937893eb594c0588f491521d0916d7
 msgid "Create the PHP FPM Pools [#fpm_pools]_:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:328
-# b2bdddfa770e43b9a69e041f50aab86c
+# 344459f82db8490d9cda72abaf1a2c57
 msgid "Also there's no explizit folder for php5-fpm socket folders. This is how you can take of it and make it reboot safe."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:331
-# caaf15272883488697dc0b3670b33e64
+# c5a66898a82f4236991139bdd4f9af0c
 msgid "Adjust the file: :file:`/etc/default/php5-fpm`"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:339
-# ac35f262de49405a9b3f69694045a462
+# ba4c18d2dfe446488ba8435a5b9eea74
 msgid "Now you can adjust all your socket files to:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:345
-# b0e71731665e4372b2d9920df5ee9a5c
+# 0035662789114c9784ab5655f1a1f4d0
 msgid "Or fix the files above with this quick command:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:351
-# 17cc21ba174e40e29ba4dcbd51b76111
+# 7808a1824cfe422582ab29e6d04daae2
 msgid "Backup your nginx configuration"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:358
-# 29eb33d30a7c433eb95f572952bd5b4d
+# 4c70a8ddd3ad44ef888c06f0cb6ad06f
 msgid "Single Domain Configuration"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:360
-# 2c296ebb035840ad8a1c579c52397bb0
+# aeed971f9a3e4a9eb003bc1c4dd65c8e
 msgid "If you've only one domain, one ssl certificate or for whatever reason get all the kolab services under one host/domainname this is your configuration. The iRony service will provide all 3 dav services on a single endpoint. ActiveSync devices can be pointed to the main url. They'll find them Microsoft Url automatically."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:367
 #: ../../source/howtos/nginx-webserver.rst:574
-# 4dd16781cc8549079a3d15d5c4eb0b3f
-# ca745c7a61f24703b402e9d4796788d5
+# 17642d02c4a44905839930282e8c805b
+# 9a50647f9637417e856b55b679e61088
 msgid "Application / Service"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:367
 #: ../../source/howtos/nginx-webserver.rst:574
-# b65af722a65d4f09926ba6bb832e3e6d
-# 98b35dfc2ccf497d9dfa6293bb04a72e
+# 935ec00601814e3e8512d1badd8e4ee0
+# c58824b094f14c7b91ad322436e2eac2
 msgid "URL"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:369
 #: ../../source/howtos/nginx-webserver.rst:576
-# b3bd8725578943a0b14f454c50549af4
-# 36587cf329794a17b0126e9fbcfec3bd
+# cd47255037344ca6ad259f6dbe442d17
+# 15fac20dce7f40ee84e40d8eab9cbdb5
 msgid "Roundcubemail"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:369
 #: ../../source/howtos/nginx-webserver.rst:379
 #: ../../source/howtos/nginx-webserver.rst:588
-# 86ba423d0413499083584685e90de873
-# 2915fbebdf34484fadbf3038f3a71b07
-# 4ad0838edb504096934b79435c3a606b
+# 15ad02c84bcf451eb06ea5234ebf7a74
+# 3286489aefd14f7ebfe3725413a4fa12
+# 9f24cb9392ef4fcf808c69fd9db4b9c8
 msgid "``https://kolab.example.org``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:371
-# 7227e3b68bb641fc8600146fd82d451e
+# 59bb517910004b4188a1d2cb719552d7
 msgid "CardDAV, CalDAV, WebDAV"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:371
-# 40515c313eea4266933f2c7dcf03c8dd
+# 5466c99d89d048a0ae55ce5dee64f60d
 msgid "``https://kolab.example.org/iRony``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:373
 #: ../../source/howtos/nginx-webserver.rst:584
-# bc9453faf3f147bd8edf41a7b63d2aa5
-# c83deebf2fec4e9fbc81f89b47443767
+# 63631500707a4e6f8dc14778f01060c4
+# 0e17c4b7cb0e456f892f8b07858e4455
 msgid "FreeBusy"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:373
-# 4041cfbed22245e1855f805cbca3f598
+# 33c07a3b4452405faf64ead55a4e0042
 msgid "``https://kolab.example.org/freebusy``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:375
 #: ../../source/howtos/nginx-webserver.rst:586
-# fa6bb55c76004485896f43db31903e5e
-# 35507367cd934fddbe9952f655bbefed
+# 7b377060e1ed442cba31fbc035b01883
+# 5f721b9409234437ab292b453dc87458
 msgid "Chwala API / WebUI"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:375
-# 4e71f5747cc14d2fba55e315f5499113
+# c6697c4b042346e082507be2b3c7f2d5
 msgid "``https://kolab.example.org/chwala``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:377
 #: ../../source/howtos/nginx-webserver.rst:588
-# 5336b764439345c3baadfa6394823e5a
-# f574732eb784445e8c1952a94c97e0bc
+# 76e56f1136214744bb7aae0376256098
+# 543c5e9551804749aed17f3441db57a5
 msgid "Kolab Web Admin Panel"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:377
-# 39532fd12a17433f892fd45372e1048e
+# 31827e3842cd40c782fd7967b0e72f2c
 msgid "``https://kolab.example.org/kolab-webadmin``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:379
 #: ../../source/howtos/nginx-webserver.rst:590
-# 71360818b86e45ec9322bd6c94e26b32
-# b83f4ac78bee41b5b81cc2cf210a81d2
+# ed2b119d752d4f37972b067292c872e2
+# 9ca66cab3cba48da9bd5eed70365520d
 msgid "ActiveSync Host"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:540
 #: ../../source/howtos/nginx-webserver.rst:939
-# 105552c6178b4d3ba9ff9e4e5879b80c
-# 0108d6ea9f76498688ea3c6a340a6430
+# cabcb73b759d48cb8727c9b975382593
+# a3ed9d3c5a9a44408626a20b0a527822
 msgid "On Debian you can use the site configuration found at"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:542
 #: ../../source/howtos/nginx-webserver.rst:941
-# 03d57dd92b7c40d09c50bf7ab25ae6f6
-# b15191c261584970857ac99fd72d41d3
+# 3a6d96f61dca4a5998d604f6caad3454
+# ec318c1df2384970a12be0c45a984e7c
 msgid "``/etc/nginx/sites-available/``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:543
 #: ../../source/howtos/nginx-webserver.rst:942
-# 039cc8bcf5ce4b63b95f957b50a18064
-# bdbd3299a1f74140893b47f520ded09a
+# 9709e07d1c36450a88aa8fc91745c45e
+# 6f8513af076f447c9c1ad97489f6392a
 msgid "``/etc/nginx/sites-enabled/``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:545
 #: ../../source/howtos/nginx-webserver.rst:945
-# 3b5f7353df4c488aa470ba7da2fc8154
-# 6da8e222d2d84038ba28636a53da6f64
+# aad96d7701c2413cb4a9629b43f4c1b9
+# ae27398561fa40ffa0e01293770394c2
 msgid "Adjust your kolab webadmin api url in the :file:`/etc/kolab/kolab.conf` configuration, otherwise webadmin or commandline tools will not work."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:555
-# e25cf988920c401bbd7b7ad2baa41f58
+# 4e1f3556e68049f5be5e76a45522f0de
 msgid "Multi Subdomain Configuration"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:557
-# 8ea767c958c247c8b95498177f43aa9f
+# 8502cff3c0fc488ab1fe29e6cdc1bfc6
 msgid "Sometimes it's nice to create seperate host/domainnames for every service that kolab offers. You can limit iRony to only provide a single dav-service on each url endpoint. The Chwala API should be located on the webmail domain to not create any cross-domain api call problems."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:562
-# 76c723b043084a04874a1541cdc10a4d
+# 51686d44e5aa486eb0420c93890a5bc6
 msgid "mtch the default configuration. If you like change your config files you also move those to their url. But usually people don't often need direct access to this url."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:568
-# f3156459f882487b8531eb5d168cfcc5
+# 8c408848275b4b449090ddf34e42be66
 msgid "It helps to have a wildcard ssl certificate or a certificate that includes all needed hostnames as *SubjectAltNames*."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:571
-# 4d4ff043e640439f94db13476abc72b8
+# e637d48329e1426e8226a038dd9a656b
 msgid "**URL Scheme**"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:576
-# 883ad079dd704e21a25f9b8897a034be
+# 4769d128ee9e4cb8a95703ac6917d224
 msgid "``https://webmail.example.org``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:578
-# 310f894ecd2f4415bebc8daaf955ba47
+# 019143605ad74a99af03e270efb723e4
 msgid "CardDAV"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:578
-# c3a7434e7e2d48699b2355037c564f56
+# a2e26033139d4af89aa6117c003bd360
 msgid "``https://carddav.example.org``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:580
-# 3b0842d99ab54a5786f06d60795a540d
+# 8ac27574f79944bf93f22209a4dcee72
 msgid "CalDAV"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:580
-# 50ced151026d4fe29a5e7292c2d0c04a
+# dcbd949e810c48a89a16d76d66619644
 msgid "``https://caldav.example.org``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:582
-# 34befbbb82db448d8992ff3719340916
+# 66d6f22feeec4c2cba192504f3236ba2
 msgid "WebDAV"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:582
-# 2e8e68c2864e417c880ca4c482769916
+# bee6d630ea654ffbbcc2ca41e7b608a4
 msgid "``https://webdav.example.org``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:584
-# c0843bba774a4682bd5b016c901fd60a
+# f9c782a840d245359b76de5c55c59df1
 msgid "``https://freebusy.example.org``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:586
-# 5d0fa608cc1e4845b7f8a40251f7295a
+# 780b8c039e764f9ea010f88eb9b8eecf
 msgid "``https://webmail.example.org/chwala``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:590
-# a4211caa589a4d12a6c9400657b8813c
+# df0c4644502b46258fb860e6029130d6
 msgid "``https://activesync.example.org``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:593
-# 114ed0d8ad774cb09b8d0846a795d2b4
+# 2458655ca74b493c9b196e90e998da3c
 msgid "You can also let the users use the serparte host/domain names for the non-web services."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:596
-# a643138120514168814333a9219cbf72
+# 561769b590eb4a7581d99e803a9b486b
 msgid "``imap.example.org``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:597
-# cfeea4d7b37d47a8a373a7eada2fa3af
+# 967ec820a01a4e6db2af3e1cc8dcc9c7
 msgid "``smtp.example.org``"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:598
-# 7c612dc64680480b86a9154aa0dba1f7
+# 00f2d8afd4084f56b294f32138cd2fd9
 msgid "etc."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:600
-# dcdb4397615242479fc19688184abfc3
+# 7e54993ff24c491e96d66c24472ad41b
 msgid "But this all depends on you and your communication with your end users."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:953
-# 553955d14e1049d6858e0e6527a7f75f
+# 1d5691e89a604f17ad294db1cfea4760
 msgid "Since Freebusy has moved to a different location we've to adjust the api endpoint in :file:`/etc/roundcubemail/libkolab.inc.php`"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:960
-# b6799932a3dc4b119114fe4a7f712ffd
+# c2e56e1115b443cb9285465bc6bec961
 msgid "iRony basedir has to be adjusted in :file:`/etc/iRony/dav.inc.php`"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:966
-# 78c89655beca4bc7aa8d2cea275ee4a8
+# 8bb6eeda5ae14ac49b2d14deffc3a864
 msgid "We can now set the absolute urls for the CalDAV/CardDAV integration"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:968
-# fca80484d44d46d19f2b479a1c6b88fd
+# 600d36a201b24ee9b80fdcf76a93e62e
 msgid ":file:`/etc/roundcubemail/calendar.inc.php`"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:974
-# 0b699e9ba9314b42bd82d80aaee21056
+# 7e2a26514cec4e21b7f3b2ff3e9284df
 msgid ":file:`/etc/roundcubemail/kolab_addressbook.inc.php`"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:981
-# c72afc53ad4343c883e7347e95617b06
+# e2e63955e9f64936b74cb89094b6af74
 msgid "Finalize / Common"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:983
-# 7308d5d36e864c5ab648bbc61f8f4bfc
+# 7bb0dcea9e7f40338d429c257d3a503b
 msgid "Since we run Roundcube in the base directory ``/`` of the server, we've to set the correct asset path"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:990
-# 5613bc8e277748218be5a7f8b84ba5dc
+# ac16d1bf54654448b3d7ef0a811c552b
 msgid "For configurations that use SSL, make sure to work around a known issue in PHP pear module HTTP_Request2, and include in :file:`/etc/roundcubemail/config.inc.php`:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1014
-# 8b134bbbe5034a47b703dc9543a23d41
+# f28172d71c644ec7885dde7e002e79c6
 msgid "Tips, tweaks and optimizations"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1017
-# 552f1a381a094cecbbf40b66905da5ba
+# e28bc0cf1ab74efa95405bb8b6cefd1e
 msgid "Tweaking ssl cipher settings"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1019
-# 0eb63d4e640b4288af37303f986552a8
+# 4773bb604bb94b38ba67c6e5709c2f80
 msgid "To ensure Perfect Forward Secrecy is enabled when possible"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1021
 #: ../../source/howtos/nginx-webserver.rst:1049
 #: ../../source/howtos/nginx-webserver.rst:1077
-# 58b98990e0e349bcb4d71b6f1c8df4fb
-# dd2b131f0f1942b888ff8ac23c691af7
-# 892fe68c5fa546bdbd95f3165926c02b
+# a7069cde4a274a4f8de96b08c85738db
+# 5a0b5440675d43998c4aa6a83efb1369
+# 118d21e78a3147e8bfb1e4e9a238126f
 msgid "Add the following into **http** section of :file:`/etc/nginx/nginx.conf`:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1037
 #: ../../source/howtos/nginx-webserver.rst:1058
 #: ../../source/howtos/nginx-webserver.rst:1099
-# ff388d6940d9474387141e11f4eecc36
-# 417b6e88833f4bcca6b2c2f1988c6f81
-# 876247e0183e46f3b95e96e0da96479d
+# 634f553264b240f78a413ad84047f5a0
+# 734d84a4b1f74c2992f738fccfb1a6a3
+# d25ee854da6e43039f2169db2a4a81ef
 msgid "Restart the **nginx** service:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1044
-# 3131f934623a4e24b497993ddeebce36
+# 70def708ef95427d97da8e0453021ea9
 msgid "Adding open file cache to nginx"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1046
-# ee905e3f25884816bd14dabf10be955d
+# 685087aee8a04037b37daa2085ba4194
 msgid "Open file cache will make nginx cache static files, that were accessed ``open_file_cache_min_uses`` times."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1065
-# 7a8926fa562c4c479c2be3ef05092c6c
+# f0947627f01b4bd6b2106c38e0f7aabf
 msgid "Adding fastcgi_cache to nginx"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1067
-# 0273d1e51cb94e19b2569624eb067227
+# 814f1c3c7e5c4e9abb0394036ccb467e
 msgid "Create and set ownership on the following directories:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1069
-# 6487d22b19bc4391a873643df0511ff9
+# a5c8886429584ef987a9b658a98d0fe7
 msgid ":file:`/var/lib/nginx/fastcgi/`"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1087
-# f5327abcb9744fbe992fe9722bcbc113
+# 5181631dd4c946288cb0d635784b0dfa
 msgid "Add the following outside **server** sections of :file:`/etc/nginx/conf.d/default.conf`:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1093
-# af246d7e8ef34ca1a1a33920e2a5732a
+# d41fa8b40b514505a61c2f4ef57d8e01
 msgid "Add the following into **ssl server** section of :file:`/etc/nginx/conf.d/default.conf`:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1106
-# b86d06c859264eeda880eb3c4252093a
+# 3c6fcb41fe0b42dea8850e4dc0c88f98
 msgid "Browse CalDAV/CardDAV/WebDAV with your browser"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1108
-# 2cc29dad18ef43aabe7c92f34fab637c
+# 5957ac091c6b4e1a9c854dbfd501ab24
 msgid "In the default configuration iRony only supports the default DAV commands. If you want to use GET to browse through your DAV instance to make sure everything is working, just uncomment the ``fastcgi_param DAVBROWSER 1`` option in the php section and point your browser to it."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1114
-# 06be768932a14900b47c6a76143ffe8f
+# a9392c037f53445281c141687a5da97e
 msgid "Splitting Kolab nginx config for use with multi-domain"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1116
-# 2a31538efa59471d95ea3e3551893ada
+# efba7bcb6b874b47a05e2d3d947da098
 msgid "You can put common Kolab config into separate file and include it into server configurations, if you need different settings for different domains in a multi-domain setup (eg. different ssl certificates)."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1121
-# 321c1df5585a481b9471be10f7889829
+# 1345659dcf694a8db4661fb15eda821f
 msgid "This way you wount have to keep up to date lines common to all Kolab servers in multitude of server configurations."
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1124
-# d8f511e12c494d4cbd7f6a831f30d1da
+# 969a0897e2844c41b16e06a5d7c99202
 msgid "Common Kolab config is between lines:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1132
-# 441bf52f381f483f8480646db629e3d4
+# 9bbe4ba13e8d40af9221d4af2d536bff
 msgid "move it into separate file (eg. :file:`/etc/nginx/kolab_common.conf`)"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1134
-# 542761593920440f8c0d07d7b717545b
+# 946c069795c547c2a7da4ec86e2db0ba
 msgid "Use ``include`` directive to include the new file into configuration:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1142
-# 6ee51b5499a8432f977c9e5688ec919f
+# e45af14f8c804ccfbf017fdc8a92f283
 msgid "So your server configuration file can look like similar to this:"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1174
-# 4e9f88b7a7ca44b39efe6f19b6f94252
+# 36e3f66015d145ba81d7a631b3f627d0
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/howtos/nginx-webserver.rst:1175
-# a2ad29cec8634c01b6fcd1f2c76bf1b6
+# e5900e2859e44fe9a6c98519b4230368
 msgid "Values for fpm servers are taken from a moderately loaded virtual server with 4x3.5GHz CPU and 4GB RAM, feel free to adjust them according to your setup."
 msgstr ""
 

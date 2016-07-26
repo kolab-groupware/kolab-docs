@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,441 +17,441 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/backup-and-restore.rst:90
-# 9a97ef783bac42ee84c3f666810540e1
+# c21e343097ce4e1d817897e585b43525
 msgid "Backup and Restore"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:93
-# d0bdfa85029c4171984473b08fd4becb
+# 62a7201a5c5c46aab4be19e6d2ff03e4
 msgid "389 Directory Server"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:96
 #: ../../source/administrator-guide/backup-and-restore.rst:224
 #: ../../source/administrator-guide/backup-and-restore.rst:373
-# e02e89a8bd9a44d18bcd3819e7d6c17e
-# 9eda456987274aaaa1ac0a11f147bad2
-# 30a11630daae4faa81c96782c3bcf690
+# 1815ad80d22e4cb192bb824c3948051e
+# 4544b99b80624a61bd7b835c090298c0
+# c513b27c90154888a586ba63105c1e3c
 msgid "Backup"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:98
-# 7e51435af9a54fdb86fa95241e8d62f8
+# 972f50d369ef4fe8b85197cc90c1a85b
 msgid "A backup procedure for 389 Directory Server consists of three separate steps:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:101
-# 45373a488859469b90a7e7ae3faa5f10
+# 308ad83548b845d3a0005b3a3c4c9cdf
 msgid "The exection of a pre-script to export the databases."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:103
-# a11d6b1b2c6a452dbc4a85f9d1fe4427
+# 8fdf50ce6258402fa7dae91901672e34
 msgid "The inclusion of the exported databases into the backup, along with the directory server configuration directory :file:`/etc/dirsrv/`."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:106
-# ecfa024830f64cfcbb91fa4aaa9a9f74
+# 73e69167e2ab4c008b581200d8b543cd
 msgid "Clean-up using a post-script."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:108
-# 266e625aec5f49a8ae9406ab18b4a362
+# 3341df8cc5c94267920e1186589a33c6
 msgid "A sample combined pre- and post-script that could be used:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:132
-# 4496d1370cd14edb90437afd26738c1e
+# f8d2c4683adc49d7a6b89ad0744ec74b
 msgid "This will result in a number of files in :file:`/tmp/`, one per database to be exact, that you will want to include in the backup."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:136
-# 2df6012682d54156a94569511957767f
+# 8ddea482654c4f1b99df0a29fe1e1350
 msgid "Database Restore"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:138
-# 522a1f10379648da9639955c5afa7b0b
+# 4c2b6ebef7e14ea19dc83fa48f517410
 msgid "For the following procedure to be executed, you must shut down the directory server service:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:145
-# 1956463527da4376a508a9b9dc9feb35
+# 4fe2d02455574308ab23f3363ce44cb5
 msgid "After the exported databases have been restored from backup, import the LDIFs back on to the database:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:155
-# 4e8596b472e141f2a01fb2072151c124
+# e75d1c0130b74056aeb3f336899f0ab3
 msgid "where:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:157
-# b4aa353dcb654e698aeeb50f7e7284de
+# 3584cc45f1f54df2b3f70b96e9da50a1
 msgid "*$instance_name*"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:159
-# 13fdc0028f1b42f1ade5d34bd706a8d4
+# f331d7cfa67b491593385bde1d965766
 msgid "is the name of an instance configured on this LDAP server."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:161
-# f5795f2afc4149bdbdcdf4c9662fceab
+# 12dd11d1ba53408d9b7d94038d8316e2
 msgid "*$database_name*"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:163
-# f6529242426b4ffdbe035087d5a05bc1
+# e778f6ceb2704cfe9f055b01852b6cd0
 msgid "is the name for the target database the restore should occur to."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:167
-# ea3cdbab824145ca8dd86d438244047b
+# 67f00ec331544e6c9c91f5b3f3bdd828
 msgid "The database for the restore should already exist. In the example situation of a migrating an LDAP tree from one LDAP server to another, first add the domain on the target server, so that the database is created, then stop the service, then restore to the created database."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:173
-# 9943a13ac4de4218bf4d73faaf0a0dbb
+# e9aee2022d33451c8bfc7bf6362d0cb7
 msgid "For example, restoring the previously exported root suffix \"dc=example,dc=org\" to a database named ``example_org`` on a system ``kolab.example.org``, run:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:186
-# 0b95540631784d06a6c8f59ff5c48fe7
+# 62ee6ff2eae54780b5a8703c870ed1d7
 msgid "The location of the LDIF file to restore from as well as the LDIF file to restore from itself must be accessible for the user account the directory server is configured to run under (usually the unprivileged **nobody** account)."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:192
-# 66e5dfc71d4245fc9ae5b95ae9a24f86
+# c63e3ef0b4d145fa9cbce63da417fbd9
 msgid "Cyrus IMAP"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:194
-# d3faaab26de04377a1828017f7dd6d25
+# 468ce12dba8040a68d0fc7c2a6b5b454
 msgid "If you stuck with the defaults, and you are not doing a migration or disaster recovery, you only need to restore from backup what was deleted more than 69 days ago."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:198
-# e528a78925354774bcfec67238890197
+# 5be9eac3809d435192b5ed4a2be8df7b
 msgid "Kolab Groupware specifies these defaults to enable you to make sure that whatever ends up in the IMAP spool at any given point in time can be guaranteed to be included in at least 1 full backup, even if you create a full backup only quarterly."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:203
-# 078014438620477cabb6408d638a4d30
+# a2141a773a634572bd6491afbe9f3e3a
 msgid "You may have altered this magic number to fit your backup strategy. The default is 3 months -- two potentially 31 days, one 30 days -- plus 1 week -- the margin of error when using \"first saturday night of the month\"."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:208
-# cf1a75ca87bf4ebe9881f7919b0e6069
+# 9fac84013dbc4311a1ff54befb68792a
 msgid "Assuming all full backups succeed, even if you cycle full backups monthly, you would need to keep 1 volume around per quarter to comply with regulations your environment may be subject to -- noted that you need to keep around the last full backup of any given quarter, and not the first of quarter #1 and the last of quarter #2."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:214
-# 790c9d45d15f49f280d729c40e6b0293
+# e3541494c023471fab378a2a9ed16b69
 msgid "Keep around full backups until you know they are eligible for purging -- you never know ahead of time whether the next full backup is going to be successful."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:218
-# e34fb32559984af288806147028de50d
+# 942e0a4401834586bede290e8ee39d90
 msgid "Your exact backup needs, regulatory and/or legal requirements, and an efficient and cost-effective strategy are considered consultancy that `Kolab Systems AG`_ and `Certified Partners`_ are more than happy to provide you with."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:226
-# 732de1a41b3643928b4230d2c6c62351
+# 3071339ac07c413f9e5e53549cb88014
 msgid "If you have read the :ref:`installation-guide-preparing-the-system-partitioning` section of the :ref:`installation-guide`, you can consider using LVM snapshots to backup the Cyrus IMAP config and spool directories."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:231
-# 04b8c65183fe4cc08e72c078e7a9742f
+# cf592e4a84494d5ab4450bc9274e2072
 msgid "Files and directories to include (or not include) in the backup of Cyrus IMAP include:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:234
-# d398750430094ba588b0a956759a155f
+# 28e7365c141f400d8aa54f9188a4acbd
 msgid ":file:`/var/spool/imap/`"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:236
-# 7553f4bb041647709a2336271c309281
+# dd5810eb4c9c489ba143cba785f7ed69
 msgid "You may want to exclude files named:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:238
-# 99ede316ed8c4f60a72f37b8dea352f2
+# 1077b900249144539745d3a965079976
 msgid ":file:`cyrus.squat`"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:239
-# 42647f1b30e4424cb7624c22beeb110a
+# 7a6a78c79e1d43da9f8138928240f6e1
 msgid ":file:`cyrus.cache.NEW`"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:240
-# 33d0e8feb95e49f49277a2131157aa01
+# 21e9ee0b73c941c1817c0e5082976eba
 msgid ":file:`cyrus.expunge.NEW`"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:241
-# 612f3805e9fb427c8d2a55537f12f771
+# d68aa1d886e04f58b37c9300f7db90f0
 msgid ":file:`cyrus.index.NEW`"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:243
-# e982f64fa5bb41549c6fe154ab8d2d03
+# 8ef4c63b05d346c7a2569b633eda29b8
 msgid "as well as directories named :file:`stage./` and :file:`sync./`"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:245
-# 993c545249e24c9dae4b537ec0671617
+# 519738ea83a84c6da3fc242ae80e55e6
 msgid ":file:`/var/lib/imap/`"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:247
-# 68005ccd3ef14fabaa5c8df58be33d19
+# 0822decda308436bb51b55ebef6c4c29
 msgid "You will want to exclude:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:249
-# 80b19d934cef4187969e850313a1d782
+# ab32721a8aaa4a41b106ae8ff86e6c78
 msgid ":file:`/var/lib/imap/socket/`"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:250
-# ffce30e140364c77b181f81066c3746b
+# 3f21d9bc8e31464d8bc5020c51c3d114
 msgid ":file:`\\*.lock\\*`"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:253
-# 63a1964dde45480086a594821125ef44
+# e96ab807423c43a69be68dece14867b4
 msgid "Restore"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:256
-# 2243b23bdbac4580b815ff227784a13b
+# 5060960eed024c6c9d111482ff44e2fa
 msgid "Restore Single Messages (unexpunge)"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:258
-# 17100336e7ff4b7497cc409b5278a48b
+# 451142f8f4414e3c8cde35e6a74e68dd
 msgid "To undelete a message it helps to have some of the following informations available under your fingertips. This will help you to speed up the search and ensure you're undeleting the correct message."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:262
-# 3c0cabf9ace543538ad5fd8164c0ae92
+# 3dfedae41d8e427d9ea32ebc686d9bca
 msgid "Sender (mail address)"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:263
-# bba3bbf3b6ef495bb6dc1e759a3b69d2
+# 116a2574b2c54896918fd9f74ace9b08
 msgid "Date Sent/Receive/Deleted"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:264
-# 95173b0806cd48f6af6e2313c13bc872
+# 2fe824469d4f400288bf84bf77c82859
 msgid "Folder where the email was stored!"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:265
-# 076222b18b5d461da8ca620cfb89300d
+# 63192a8fc8bf48c7909626a44e7afe50
 msgid "Message Subject"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:267
-# f5e53cd031704b44bbe3f7d6615149df
+# 4e29a0d801ad43f6aa3998ea28a32ddb
 msgid "With those information you can easily identify the message."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:269
-# d3c1c0ce19ce4d99abb16c849293804d
+# f19c2c3d75f54076b9190b1117fa8714
 msgid "You must know the exact folder name in which the message was located before it got deleted."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:272
-# ae197d0dfe234568a5782422a7c7bbef
+# 807da367ef5b4a0b8878fb5c22851f34
 msgid "You can find get a listing of the folders belonging the a user using the :command:`kolab` cli tools."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:284
-# 116c27aa16344c79aed019000ed081b0
+# 993ae60859614ffc8dc091ba2f25ba08
 msgid "Get a listing of all the deleted/expunged messages in a specific folder, search for the right message and write down the message UID."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:301
-# 9675f536f4dc4e7982d90c537a9447ae
+# 1815ae46aff14e88b9126f2dd12f2fe5
 msgid "Restore the message (single message)"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:310
-# 618f4bcc89644f828bef1812a171bf5d
+# c1748fd39dfe41ba951071924da7acc9
 msgid "(Alternative) Restore all message from this folder (double check before!)"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:319
-# 26e9f1f160bc4f5ebce270ddb17b10ce
+# fc9ce52a03784b6687fdc5d00d993b74
 msgid "When working and the storage layer it sometimes can be useful to reset the caches for a specific user. Kolab componants like iRony are heavy taking use of cache."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:330
-# b8ef684c484845b8a8e0f364c3b336a3
+# 99a6e6e5831f4f1f828dc509c6575e17
 msgid "Restore a Deleted Folder"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:332
-# 0115776a0e554a93a261c90d3bb3b0f5
+# f10d9cd8d7934f4b9ee5d9563b991c9e
 msgid "To restore a complete folder that got deleted you can make use of the :command:`kolab` cli tools."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:335
-# cd9379c5ce2d4d8d80b6394500c6b88d
+# a1ed4b73ddcc4395bf6ac22510ec7c0e
 msgid "Identify the folder that needs to get restored:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:344
-# 2e3f00c29fb34fa6883af0e8d8c1399b
+# 17634785aa604a499db6192feb374de8
 msgid "the 54EBC651 part is an hex-encoded unixtimestamp"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:351
-# 6aca3fb4c4034690a86ffbe7fa474922
+# 0a1ebfbc4190443895a9ecb98f00cc9a
 msgid "Undelete the whole folder"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:357
-# fe1e8d571c5f475c946971a9ce1345ee
+# 4c85a8513679489cba697651f14fe6a7
 msgid "If you encounter problems think about clearing the cache (see above)."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:361
-# 2b3235e9b3b94e4b9fe1fa34fad7632c
+# f6e77fcc2cee4b20b68aff94402e0283
 msgid "MySQL"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:364
-# 52cc6b94a74d47af9bc87c7896829cd8
+# 1a92f46df2f24e6e93d93ba14f35c0b1
 msgid "Databases and Tables You Care About"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:366
-# 34c98fd5918847d7b1869ff0d8fb44c4
+# e4e0240b9d1b41eb828ac843ccf3520f
 msgid "There's little purpose to backing up caches, so consider either:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:368
-# 79f8d319f84c4f8cbeadc53537046ae5
+# f6581f211e1e43c59c0866769983a219
 msgid "Backing them up under a significantly more volatile strategy, or"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:370
-# 84c94ccf5d654f2fad979717cf2189e4
+# ef5cd49de48a43a0b4d101e77ced5c48
 msgid "Not including them in the backup at all."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:375
-# b20f9eddf35f4fabbb0d4f031bb0c294
+# 2942520355c34668b600f11aa893c43d
 msgid "The backup of MySQL too consists of three steps:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:377
-# c87c96ce927243aa9dc9d46e6995194d
+# 6a0ba5ee2a0e43598fda9a6c47b492ae
 msgid "Making the data to backup available in a form the backup program understands,"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:380
-# 8cc6c6f5a67b40d4bb6d3b5d868e5cee
+# ead2ae79c34c45a09505fbad61425b11
 msgid "Including the data in the actual backup,"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:382
-# 48e875964caa40c2bb05fcab4937799e
+# cb694aa12a10463f9d2be54b2b32a5be
 msgid "Cleanup."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:384
-# 45a4b5575d084836b31e90120ded625c
+# 0cb4315da84b4fa5a4f5105320b0fe0b
 msgid "For the execution of a pre-script, and therefore what data to include in the backup, as well as the cleanup, a choice should be made between :ref:`admin-backup-mysql-lvm_snapshots` and :ref:`admin-backup-mysql-mysqldump`."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:392
-# 1366cd96b8b545d0977722727dfd1ff8
+# 86a99fe06b25405b8f7e39caa88c37ff
 msgid "Using :command:`mysqldump`"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:397
-# 763da07355a946bba921b83ccb41fe04
+# 661f545dfd7d4a83bca96cb4911231dd
 msgid "Using LVM Snapshots"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:399
-# b96266525f4c43abbf174f499ae5adb4
+# b1a379eff56a4a02be8d1f52c2017152
 msgid "The larger the MySQL database(s), the less likely you are going to backup MySQL using :command:`mysqldump`. With larger databases, for one, the contents of the database may change while you're exporting the database. Luckily, there's a ``--single-transaction`` option to :command:`mysqldump`, but again in the case of larger MySQL databases, this directly impacts production."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:406
-# d427b0f19c02435e8120c6e04a6ceb8d
+# 30106c20b77642049b89f842dbd69971
 msgid "Do **NOT** use this method if you can afford to run one or more read-only slaves. Use whichever method taking the read-only slave offline temporarily and then back up the data from it."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:410
-# 7b6a7066c5184c47a0687a3b36005f7c
+# 987148cb413642849ef364a4a20f6dec
 msgid "An alternative to backup MySQL with :command:`mysqldump` is to use LVM snapshots on a logical volume underneath MySQL:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:413
-# 99590e62d92b4a67b05694b09567d863
+# a88c6536e66545d0a1c490f5f3d75cfc
 msgid "Flush everything MySQL may have cached to disk,"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:414
-# 48280c2224eb4aa0811deb4f31016477
+# ed93827de6b3423c97d9b2c3eb2e1d8c
 msgid "Lock MySQL,"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:415
-# ab2847fddc1a4ac5916ffa019b27e7cf
+# 306de683888f4ef7a7b0e40aeb77f288
 msgid "Create an LVM snapshot,"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:416
-# 316baaa1894e4d8ebebe472b2cbacaca
+# 4d16c1a8b30343b1abaed524514eeaa6
 msgid "Unlock MySQL,"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:417
-# 727badb3f3bb4c1d8c2d7c6fb70aa889
+# 234fc1a41e864384917da528f8c14a45
 msgid "Sync the contents of the snapshot anywhere you like."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:419
-# c8a08c46011948c6b176fa846ae98723
+# ffa57bc407b8455da94614ca02838823
 msgid "The trick is in between step 2 and 4, as InnoDB automatically removes any standing locks at the end of the session. You MUST therefore hold on to the session while you create the LVM snapshot:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:438
-# 1761f3b12b3b45828504e074937b3a80
+# 2fca5f5ce9a2470fb8bcddb13bf51405
 msgid "Creating a subshell with the output of that subshell piped through MySQL keeps the session open while creating a snapshot of the logical volume, however:"
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:442
-# 0eb8152b302d4b0cb2e680e7a41132a3
+# a304f4c445814176bc7e7249ccc46b35
 msgid "The flushing of tables establishing a read lock is a command that returns immediately. As it requests a global read lock, that waits for all other read locks to expire before it actually goes about flushing tables and read locking them, this must not be used for database servers that have long-running queries (which a Kolab Groupware server has not)."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:449
-# 7fe888691e1b4822b4249f4dcdd7decf
+# 0dd868c5b08e4b03bd070ab0c39444b5
 msgid "Use the *$x* in \"*sleep $x*\" to establish the margin in between issuing the flush command to MySQL, and the snapshot being created."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:452
-# 78d8abe1077c48e9baa57fe2b89d3242
+# 009bfa1e209748a6a5ae48ac1ab000ec
 msgid "An increased number for *$x* would indicate slower storage and/or larger queries."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:457
-# 4e06737c59214b85bcbae10995b4410d
+# 232853e237134e98be3b42e32ca33d1d
 msgid "While this is actually tested, and it works, please note that you should still test for yourself -- using a restore."
 msgstr ""
 
 #: ../../source/administrator-guide/backup-and-restore.rst:460
-# d749417f699a4af399870e9aabbf59d5
+# 5ac647637a2143f99a6712e4d7850c21
 msgid "On decent database infrastructure with just Kolab Groupware making use of the environment, outside of office and/or peak hours, flushing, locking and snapshot creation can take as little as about **3ms**."
 msgstr ""
 

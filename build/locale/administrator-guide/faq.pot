@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,102 +17,102 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/administrator-guide/faq.rst:90
-# c3605d8f49f54a51b6fee6ce45dda363
+# aab8424b090042869e933f056fca405d
 msgid "Frequently Answered Questions"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:95
-# 22ddfdbddd2245e78c5f1697ba0c1a4b
+# b4b66c3525c04b1dbddf41d0468e6c37
 msgid "No \"Add User\" Button or Link"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:97
-# 752bfdd4df6a449281f8d17b709b3e35
+# 7f57d9be3db44999ae34bad671ebe583
 msgid "If this link is not there (you would also not have been presented with a form), you do not have permissions, you did not configure SELinux the way it was documented, firewall, DNS."
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:102
-# 5dfb3d54a28a40499a3026d248577c52
+# 2d30254b8ee747968869216c18e8361c
 msgid "Log Messages"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:106
-# 35048c7915884905869217ab67efbbce
+# 0126bfe65509452380ff82e4ba1dc1b2
 msgid ":ref:`admin_faq_email-blocked-spamhaus`"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:109
-# 25c3bbfc150448ff9289a1740e8124ce
+# 6c5bf5ffb15f4735b4e499395edb9c6f
 msgid "Unable to open /etc/sasldb2"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:112
-# 66a3857cce9341cb8ff9decca700e5d8
+# 76e5cab847da4afbb12a34ca717477ea
 msgid "No :file:`user_deny.db`"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:119
-# dadc68c00ff04590bdc88bed3d30a22a
+# b2f2472a8e82406ab146f8621a3a661e
 msgid "No authentication"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:125
-# cdd0da6548254b33833d65979ec66d06
+# efc2dc1119fc49dab7900ae676ac7afa
 msgid "Debug level information, can be ignored. You can reduce verbosity by setting ``debug: 0`` in :manpage:`imapd.conf(5)`, or by not including debug messages on the mail facility in syslog."
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:130
-# 16e2af054c3d4a1eb314af1379af780d
+# 8e2875a9deae4e5c8debd53469dc5e2b
 msgid "Unable to setsocketopt"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:136
-# 3a6453efcd7a4e7199e06a2c86f6c0c1
+# 86ca4b046202446d9ab0a2a0e267c006
 msgid "Informational message issued on startup. Not critical."
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:139
-# 9de5c6f1f36b44a1b60b3fc370a3e2dd
+# 4108f35ec8f04f93a09d1ec30fd5e43b
 msgid "Anti-Spam"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:142
-# 72ee08a5c94845ac9516c218b978d613
+# 23dc0b7b865342cc90fa9e21592e13bd
 msgid "No ``X-Spam`` Headers"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:147
-# 54cad6fe4caa4b23b75f8ec098ad78ee
+# 88ee9b778e0c4ef6824baa968661803a
 msgid "Email Blocked Using zen.spamhaus.org"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:149
-# fcb4254ae0f644419c4a4270dbb7f0e4
+# 62ec3cc071c146319793805a332bb46b
 msgid "You are seeing the following in :file:`/var/log/maillog` (line breaks added for legibility):"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:158
-# 5ecc915e30aa4a1a83171262099ee68d
+# fb4c75746ddd40d1aad7396dedf5e4d2
 msgid "This message indicates your SMTP server, receiving a message from the Internet, has refused the message."
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:161
-# cb481df54ce6460b88721a78d8e47993
+# 2650772143fd4e5888b5739e31e08077
 msgid "The sending host (at IP address 3.2.1.0) is blocked using a centralized, external service (spamhaus.org), that keeps track of hosts and networks on the Internet with a reputation of spamming."
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:165
-# 7d212893e28048aa969392d0402f7927
+# e544c14caaab46c080f722e1e098d28a
 msgid "For more information on this service, see http://www.spamhaus.org/zen/."
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:167
-# 4985846b36d0493f8eb74c5b94d2ae0d
+# 1f50ce5744474791ae8ff80fe37e41db
 msgid "You will want to continue performing these checks, but just in case you do not want to, the relevant setting in Postfix is:"
 msgstr ""
 
 #: ../../source/administrator-guide/faq.rst:174
-# 2c623b2d6138481e89b0b4deadb7eb8d
+# 9b9879163a29458a96b16e42290a84cf
 msgid "It is the responsibility of the sending host to notify the original sender the message was not delivered."
 msgstr ""
 

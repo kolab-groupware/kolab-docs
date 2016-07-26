@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 13:10+0200\n"
+"POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,102 +17,102 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/about/guam/configuration.rst:89
-# c0e6047035c1439892f42b5ce92d5a64
+# adcc005984674175bd06d2f6ff47ee9a
 msgid "Configuration"
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:91
-# 98063694afab41aea4ac602b66ff8958
+# 74073c8ac5744d819c4647a5f085f095
 msgid "The **Guam** configuration lives in :file:`rel/kolab_guam/releases/*/sys.config` when running from source directly, and in :file:`/etc/guam/sys.config` for installation from packages."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:95
-# 632b0ca1e74b49b8bb065fe179610d5f
+# 38a5bbe638c64f7a81abc4b1c90f0a34
 msgid "The configuration file consists of sections for each of the applications to configure, where it needs to be understood that **kolab_guam** is one such application, and **lager** for logging, and **sasl** for authentication, are two of the other sections."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:100
-# a9556524b34e4f5eb7d94334506d9e7c
+# 07f9c45f1b4f4beebfa109496b1289f2
 msgid "This documentation only involves the **kolab_guam** section, and we refer you to the documentation upstream for the others."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:103
-# 2dceec948fff4abca2fc4d1dae885e35
+# edd56c470f1648b98d9c01720a62a3af
 msgid "Since **Guam** is a reverse IMAP proxy, it needs to be configured against an IMAP server (the backend \"imap_servers\"), and it needs to be configured to receive client connections (the \"listeners\")."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:108
-# 65d6e3a0dfc5489a8dbb59cba36e5543
+# bd15d2e023824da7bb6d7b915d903617
 msgid "IMAP (backend) Server Configuration"
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:110
-# 26862b527ee24c4cb7246b1bf8d17159
+# d8f5042d96e049dfbeeccde222911066
 msgid "The default configuration for **imap_servers** looks as follows:"
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:134
-# 524f52981dc8463e927bf0b56d39e2ae
+# 57b75587b7be46158091d522e72883ac
 msgid "On line *4* and line *11* each start the configuration for a new backend server, named *imap* and *imaps* respectively."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:139
-# 13793f49dfbe467ab7e78b69823ff1bf
+# 2c0285b660a64d75b2cbeb2c06e27120
 msgid "Strictly speaking, only one backend is required. The default configuration only uses two to show how multiple backends could be configured. One could configure completely different backends (say, 'kolabnow.com' and 'myhome.dyndns.org' for example)."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:144
-# 3135f7af51da4a6692ce7f2fae88d150
+# 0823551b961140d0b380307b93aedd77
 msgid "The *imap* backend connects to host `127.0.0.1` on port `143` and is configured to use `STARTTLS`."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:147
-# cdb5c25f20f14c3891d36da151fc9cd3
+# 2c069bc7040d4629a83557b2ec9b66e5
 msgid "The *imaps* backend however connects to host `127.0.0.1` on port `993` and is configured to use implicit SSL/TLS."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:151
-# eee5241fbaef466d98a264f2813ecf03
+# 140eaf3219af4c2ca9be6174bf0b88b2
 msgid "Listener Configuration"
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:153
-# 4a848d7c3bd141dc8409b7065dba618c
+# 5f8baef5e3ca405d86771fefe66a20ca
 msgid "The following **listeners** are configured by default:"
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:196
-# 8ac9ca37d6a34079a24d243ef3780abb
+# 87dfcea3f42944278fab8d38f04748c8
 msgid "Again, each listener is provided with an identity (*imap* and *imaps* respectively), listens on a different port (*9143* and *9993* respectively), with subtly different configuration;"
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:200
-# 4e0d7eff64944c1c82b5598ac85245da
+# 8cfa3ccdd3c34cbd8afc1e4a06bdb196
 msgid "The *imap* listener on port *9143* is supposed to be used by clients that are configured to use `STARTTLS`,"
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:203
-# adadf468a875475cb5e1220eda18aa27
+# 7c316bf973d6447b9081cd845a39b9e8
 msgid "The *imaps* listener on port *9993* is supposed to be used by clients that are configured to use implicit SSL/TLS (hence the `{ implicit_tls, true }` on line *22*."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:207
-# eeb9bc9ab25844288023ddcf2bfa5e00
+# 9df334df37f44ab7acbba344e3dd996d
 msgid "The **imap_server** configuration for each of the listeners contains the name of the backend IMAP server configuration to use."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:212
-# b324a153f2744c44a998d524c4392acb
+# bb422aa4e7c3487ba33802af69af2e64
 msgid "Note that a plaintext, STARTTLS and implicit SSL/TLS **listener** can, each of them separately, use a plaintext, STARTTLS and/or implicit SSL/TLS backend IMAP server (configured in the **imap_servers** section)."
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:217
-# cee374c7de0847158df8605bd4b03aa9
+# f8da1d332a2a42b0a26416b9c10eff0f
 msgid "Configuration in a Kolab Groupware Setup"
 msgstr ""
 
 #: ../../source/about/guam/configuration.rst:219
-# 47593f83b55a49f29a5ae86ec97f878f
+# d24878fd1a0444c28961b6450db1d64e
 msgid "In a Kolab Groupware setup, **Guam** is configured with **listeners** on ports `143` and `993`, against an **imaps** IMAP server on `localhost` port `9993`."
 msgstr ""
 
