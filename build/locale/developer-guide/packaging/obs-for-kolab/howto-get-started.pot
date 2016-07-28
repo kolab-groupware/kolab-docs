@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,257 +17,257 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:92
-# 53e669d75ab349a29ebdc100fcd10e9b
+# 595679e9eb434fb6b31e42f9dfda8016
 msgid "Getting Started with the Kolab Groupware OBS"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:95
-# 117df29edb4c48c5aba2f0a9a98f70b4
+# a0ffddb4d1564920b3809f88b092d199
 msgid "Step 1: Register your Username with the Kolab OBS"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:97
-# dca8a3864e8f400f95ecad5ad204bbb0
+# b2addec21b124fa8abb9f070509c31ee
 msgid "Navigate to the following URL to register:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:99
-# c52ab713f92b4ed6b047d6187a9e5bf8
+# bdc73a65b56640bda0f1e96f18e5e87c
 msgid "https://obs.kolabsys.com/user/register_user"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:102
-# 638e352e5bce4ed3933b7d5bdaec87f9
+# 8d7c41c25ec840bb8e33d9060d0075ae
 msgid "Step 2: Install **osc**"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:104
-# 68f1b90c983945faae5505de7867041d
+# 8a95387d15754e89ba18c23054771c24
 msgid "The openSUSE build system is interacted with using a command-line utility called **osc**."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:107
-# bd4df4a219d04f38a077027a05d31d7a
+# 3f846e50dd9d488c82b97718702f188e
 msgid "To download **osc** for your platform, please visit:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:109
-# 8641639346374aaeb4e2f8c00a241999
+# a945941bc7b244d3bda051c031b1538d
 msgid "http://software.opensuse.org/download?package=osc&project=openSUSE%3ATools"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:111
-# b5eaafdf50fa4465948cb10a8f7ba1fe
+# 9174c056afab4ceeb5c1f044f5d48119
 msgid "Select your Linux distribution, and follow the instructions."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:115
-# a21ae6eebd864a71a34bd8d366d2f937
+# 01146813f37d42e48f530e0341f162bb
 msgid "The openSUSE Build System does not include updates to packages for the distributions it builds packages for. As such, sometimes the **osc** package might depend on, or be built, or have been built against old packages in a way that is incompatible with the current state of your system."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:120
-# 597f8b91a2ca444482e4f10d99a7dd7e
+# ddc275d857974252846383b8078304c2
 msgid "Initial configuration for the **osc** command-line utility would be created when you first run it, but the configuration defaults to using build.opensuse.org rather than obs.kolabsys.com."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:124
-# e675ba35e4d74247aacd3c1d1e7602c4
+# 7a7de25197fb49e9b4ed6c0593fc92f6
 msgid "Consider seeding your configuration by putting the following in :file:`~/.oscrc`, changing of course your username and password:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:137
-# 3145cdbd5ac84799af0225d71499c384
+# ae55f9b63fd04338b41dfc371d817469
 msgid "Step 3: Create your Home Project"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:139
-# dab2f900e46e45b680178249da9aca37
+# 1c134bc889804df2851325df61726f6e
 msgid "To be able to submit updates for review and approval, we recommend you first create your home project, which will function as the parent, and hold the repository configuration."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:143
-# 59526f2a274f41d6bb82ecc50a1e02ca
+# ecaa529349c94bfbbd7167e5e4218715
 msgid "The projects you will be creating in your home project are branches off of the targeted branch. So, for example, if you wish to submit an update for the **libkolab** package in **Kolab:3.1:Updates**, you will branch off the package **libkolab** from **Kolab:3.1:Updates**, and create a **libkolab** package in a new project **home:vanmeeuwen:branches:Kolab:3.1:Updates**."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:149
-# 0b69a68a33a04d02978e32306979785b
+# 5ef914787d1f4f2bb46c1847c805577c
 msgid "Taking the **home:vanmeeuwen** project as an example, pull the configuration of it to your own home project:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:159
-# a5b66469bc9a45db87df94277614f1af
+# 5ff5cf98aeab45c999f6cf2553cb8f7d
 msgid "Alternatively, use the following command:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:163
-# d97b8f4d8ff646be80e67ce47a816503
+# f056c2555647443481d54019550ad2dd
 msgid "Review the target repository names here, for between the time of this writing and you executing the command, some may no longer be available, and others may have been added."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:265
-# f14ed55cff004158b0f31cb3b0589438
+# ed5f4e312024480ba6617f179582bb16
 msgid "Step 4: Pick your Poison"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:267
-# 40d6626a7b1c475aa566bebb223b0765
+# 286346801b374ed9a0dfcca80d51ad3c
 msgid "At the time of this writing, the Kolab Groupware OBS maintains the following projects:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:270
-# ef16e81ab0cb4f59b5b1f83bacb7b205
+# ae61ab19097f4d67ad5c1ea9d4ccd378
 msgid "**Kolab Development**"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:272
-# 13f08f8a7f1f469c9452479c2e06a5a5
+# ce08b4789f6c47f4b5bdf0aad1cb53f1
 msgid "This repository contains the latest and greatest releases upstream, possibly including builds of software that is gravely unstable, does not work and break your system."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:276
-# cef93e66173b467fb7666040423ca094
+# 3f314ac26fa74855a482bad3354ffe71
 msgid "This repository is in the lead for future Kolab Groupware releases, and should be used by packagers and developers in non-production, development environments only, and only by those that are autonomous in supporting such environment."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:281
-# e5a2f197bbc64d86ae682a7e4a389dcc
+# f6bda93cd30c415a89ce98daf360c020
 msgid "**Kolab $x.$y Updates**"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:283
-# 330291ef1fd2487892179cea842a6632
+# 9cfcb050f7054b8dafee35e03b3c489c
 msgid "This project provides users of Kolab Groupware with updates to the base release of Kolab $x.$y, where $x and $y are the major and minor version number components of the current stable product stream and ones that are older (and largely unmaintained)."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:289
-# 56cd20d13785407da64e69ea5e063fa2
+# 717e40084d414dffbf49285d03fb963e
 msgid "Step 5: Branch off a Package"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:291
-# 9b966eabec524b81a9ebb2a6e0fe38e1
+# c94f31ab48234d93a99ab6dceef6ed2f
 msgid "Having chosen your target destination for the update your are going to be working on, branch off the appropriate package:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:321
-# 5c6bae020c1741b98184e3051fe3e5f1
+# 83b0e830d0ea4ea1b31c7890f82b8433
 msgid "This branch starts building immediately, for all the target platforms configured as part of the ``home:vanmeeuwen`` home project (for user vanmeeuwen)."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:326
-# 7a9ba1194402474ebf735e479b139a11
+# f65268efea634e37867505a19c5eceae
 msgid "Step 6: Update the Packaging & Testing the Changes"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:328
-# edf0aeb2a93c484aaa8f958683f9d320
+# 1b4b6093bd0d4bb9bb1eba9ef4b99287
 msgid "First off, you are going to make some changes most likely."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:335
-# 85aecd2da40d4c3a9bac0b51bb53e8f9
+# 28eec348b6234a23991fef02dbe21e6a
 msgid "Do not yet commit these unless you are certain the changes work. Instead, attempt a local build:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:342
-# 8bbe46a903444fce8ec28d9201ac6a09
+# b14472beaa1c4bfd9ca428f292bcdf68
 msgid "where:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:344
-# fd1de488aabe4a60a7c5f547cbc6a616
+# c2f47492106c461dbf4ca1980aae82ff
 msgid "**$target**"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:346
-# b5662c7f302345fe9e3b30adc1c60eba
+# 89bde0b7438e461295892d064b3f5f80
 msgid "is one of the target repository names, such as *Debian_6.0*, *CentOS_6*, etc."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:349
-# 5e8d255028f34b8dbd47b9b3246cf6b5
+# fb51f348ecf54422a520e713b858d29d
 msgid "**$spec**"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:351
-# f584d389702d4c0dac09628d9513fa71
+# 109e461744e3437fa2fba0a5a6fcea22
 msgid "is one of the local package specifications, i.e. either the :file:`.dsc` or :file:`.spec` of the package."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:355
-# 26a51b0bc0c64407bfc0c045b48a98b6
+# 288e0089751f4f68ada27d9628902a35
 msgid "Step 7: Make Sure the Package is Actually an Update"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:357
-# 6b0ad83d6caf410e8011ec98dc17af89
+# 5747c7ad492a4ae2bbdc43db3b35e837
 msgid "When you are satisfied with the results of your test build(s), bump the version numbers and release numbers as appropriate, in at least the following files:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:360
-# b59e6198c4674133ab5a0823ae767289
+# 0cd79abbf26d473b9c7a2b66c06c2e0d
 msgid "The :file:`.dsc` for the package, if applicable,"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:362
-# 83d2a733903f4202befc2cc44c04e4d0
+# 341f61905cf64fcc91639b15e51043c6
 msgid "The :file:`debian.changelog` for the package, if applicable,"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:364
-# 490d578047f24a5694b0009f1651152f
+# a06e2a1c7a86409ea23ce6c4cddca149
 msgid "The :file:`.spec` for the package, if applicable."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:367
-# 1cdd2f3c80d840289f6e21800a83e5b4
+# 54b17e7ed6bd4221b47dc4808cf9d90b
 msgid "Step 8: Commit the Changes"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:369
-# 9986100d9e4b4214ae10f8971ed06564
+# d3f2bafe4730418082223bcb465e83f2
 msgid "Once step 1 through 6 are completed, continue with commiting the changes back to the Kolab Groupware OBS:"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:376
-# 32f2279841714e7ab7c79186935ea422
+# 1ccd03f4e1314d5180744f5d91e319b0
 msgid "See additional **osc** command documentation for further aid in adding, removing and other such actions."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:381
-# 03ee2bc231494589b77560e06526cc4f
+# 36e16a1ccdc84820a04dd3ef077b4e7c
 msgid "This will start the authoritative builds on the Kolab Groupware OBS, and it will be those builds you are submitting in Step 8."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:384
-# 5a8be088099d42b6bef14f5ecfc5279e
+# ee0daaabae584b2a9b0c0b1bc73faf95
 msgid "Please make sure everything builds correctly on the Kolab Groupware OBS as well, and consider testing the updates before continuing with Step 8."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:388
-# 99102438ca0e467b8f8ba2baeae91a4e
+# 2197c17922e64b5cb62eeda746c412a9
 msgid "Step 9: Submit the Package Update Request"
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:392
-# d44f8194e0794079a93e217b267e2c8b
+# 6ecaebb4511746e285293e34624fad8e
 msgid "By doing so, you are requesting your updated package be made available to thousands of consumers globally."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:395
-# 04a2bbcdcd6f4659a40eb5f8250844c7
+# 60dc879869e44cb0b403f65db4fa74e5
 msgid "We would encourage you to execute some Quality Assurance both on the software as well as the packaging, before submitting update requests."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:398
-# f20188bc71ab421ab9e9c37dc8c97ff0
+# 786e9a252da743beaa35c34b3ee64e5b
 msgid "Package updates that supposedly fix one or more issues that do not have corresponding tickets in Bugzilla will be refused."
 msgstr ""
 
 #: ../../source/developer-guide/packaging/obs-for-kolab/howto-get-started.rst:405
-# 96d22243734a4efda83428aa0de71ee3
+# 99c76e0d63fc4d499f949adcad97c314
 msgid "Provide an appropriate message with the request, that aids the reviewer(s) in determining the feasibility and impact of accepting your update, such as including the ticket numbers of resolved issues."
 msgstr ""
 

@@ -3,6 +3,5 @@
 ``x_frame_options``
 ===================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+X-Frame-Options HTTP header value sent to prevent from Clickjacking.
+Possible values: sameorigin|deny. Set to false in order to disable sending them.

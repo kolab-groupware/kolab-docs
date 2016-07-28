@@ -3,6 +3,15 @@
 ``smtp_server``
 ===============
 
-.. include:: roundcube-settings/needs-work.txt
+SMTP server host (for sending mails).
+To use SSL/TLS connection, enter hostname with prefix ssl:// or tls://
 
-Sadly, this setting has not yet been documented.
+Supported replacement variables:
+
+%h - user's IMAP hostname
+%n - hostname ($_SERVER['SERVER_NAME'])
+%t - hostname without the first part
+%d - domain (http hostname $_SERVER['HTTP_HOST'] without the first part)
+%z - IMAP domain (IMAP hostname without the first part)
+
+For example %n = mail.domain.tld, %t = domain.tld

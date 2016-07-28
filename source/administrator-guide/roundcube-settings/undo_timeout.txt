@@ -3,6 +3,6 @@
 ``undo_timeout``
 ================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Specifies for how many seconds the Undo button will be available after object delete action. 
+Currently used with supporting address book sources.
+Setting it to 0, disables the feature.

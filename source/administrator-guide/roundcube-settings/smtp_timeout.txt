@@ -3,6 +3,5 @@
 ``smtp_timeout``
 ================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+SMTP connection timeout, in seconds. Default: 0 (use default_socket_timeout).
+Note: There's a known issue where using ssl connection with timeout > 0 causes connection errors (https://bugs.php.net/bug.php?id=54511)

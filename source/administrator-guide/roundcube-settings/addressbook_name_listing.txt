@@ -3,6 +3,8 @@
 ``addressbook_name_listing``
 ============================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+the way how contact names are displayed in the list
+- 0: display name
+- 1: (prefix) firstname middlename surname (suffix)
+- 2: (prefix) surname firstname middlename (suffix)
+- 3: (prefix) surname, firstname middlename (suffix)

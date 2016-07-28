@@ -3,6 +3,5 @@
 ``mail_header_delimiter``
 =========================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+This string is used as a delimiter for message headers when sending a message via mail() function. 
+Leave empty for auto-detection.

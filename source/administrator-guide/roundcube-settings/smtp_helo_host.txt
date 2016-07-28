@@ -3,6 +3,6 @@
 ``smtp_helo_host``
 ==================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+SMTP HELO host. 
+Hostname to give to the remote server for SMTP 'HELO' or 'EHLO' messages. 
+Leave this blank and you will get the server variable 'server_name' or localhost if that isn't defined.

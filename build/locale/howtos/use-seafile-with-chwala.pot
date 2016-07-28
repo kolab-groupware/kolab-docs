@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,122 +17,122 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:91
-# f7f9f5e10a974b0483b7942b777da9cb
+# 24d84957846f4605842979ec4dc16c10
 msgid "HOWTO: Use Seafile with Chwala"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:93
-# 359ce0bfd5fb4a3c962b9efe4125dabd
+# e273b93b09e6465eb67fa584cfe268fc
 msgid "`Seafile <http://seafile.com>`_ is GPL v3-licensed software designed to host files privately and securely on the Web, in a similar fashion as some popular proprietary solutions. As of Kolab version 3.4, Chwala (the file storage component of Kolab) can use Seafile as a backend to store files."
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:95
-# 664f3018ab984a64a33427ee0f7007cf
+# 2e4c454957d342a7a73a0a5ab480b754
 msgid "This document outlines the steps needed to interface Chwala with Seafile."
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:98
-# a07e9b68ff984e039099d49292af8520
+# 91c062feaa5048a59af32cc0a532af44
 msgid "Prequisites"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:100
-# 53c8938b262248aeab440d63f77b64f0
+# 3fd2990a9f3140aca20a430116a0cfdc
 msgid "Kolab Groupware, version 3.4 or later"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:101
-# 0848820c7a4846dbadef4ede17247b00
+# d4268bff1b8d433eb784282cb351048c
 msgid "Seafile version 4 or later, running on a top level domain (``files.example.com`` in this guide)"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:103
-# 64409ee4bb8f48b9ab3cc626dcf38018
+# 5053799dad604d6c87f888043acb5188
 msgid "In case the services reside on different hosts, the Seafile instance needs to be accessible via port 80/443 from the host running Kolab."
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:107
-# 671b09cffcb24ffb821564c7edd3c60c
+# 9aab20e6886c42fca6739fa19700020b
 msgid "Configuring Seafile to interface with LDAP"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:109
-# b7f87c62f2ad4fcb84e249cda2a4087a
+# 732d67dc6e0148d288082195516bd48a
 msgid "As a first step, Seafile needs to be able to authenticate against Kolab's LDAP database. Locate the ``ccnet.conf`` file in the ``ccnet`` subdirectory of your Seafile root installation (for example, ``/home/seafile/ccnet/ccnet.conf``), and add the following lines at the bottom:"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:123
-# 7bf06888611e4682805405d814722bff
+# 5795300d98944d60827a1b919b392e92
 msgid "Restart Seafile by issuing ``/path/to/seafile/seafile-server-latest/seafile.sh restart``."
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:126
-# 33ddbdc8f437402c9576d898ef633179
+# 77aae0ba034942b9b39b4004d0169a0d
 msgid "Configuring Roundcube to access Seafile"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:128
-# 960a8fb8071b4dd4949bd021ed4293bd
+# c61fe22e7dc2401abc47a654209ff611
 msgid "Once Seafile can authenticate against LDAP, integration can be configured with two different methods:"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:130
-# 6cf27178914c46b6b37acf87ab122f53
+# a18164074ea949ada8f1ba5e0553b3e9
 msgid "Using Seafile as the sole storage mechanism;"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:131
-# 3c426cdc9f2847bd80703fb895e19295
+# 1f9422505bc54df6b18b5df11fd5e466
 msgid "Using Seafile as an add-on to the existing storage."
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:133
-# c1b3e31ffc0741faa04022dff5d997ed
+# c7850d0efb3c4f64ade91d3dbca0bd23
 msgid "The first method has the advantage of being set by default for all users, but it depends on the Seafile instance being always accessible. The second still relies on Kolab core components and is easier to set up, but requires users to manually add their Seafile storage."
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:135
-# 0cb4ae7c45274e55bcc4bcdccf1b6303
+# cc2ffc3e82c0435c85fcc77cd185f67f
 msgid "In *both* cases, you will have to make **at least one login** to the Seafile instance for the integration to work."
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:138
-# 25cb59411780408a97b15f6cbbe22fcc
+# e6be03739b53492faa78b5268a2fa0c4
 msgid "Using Seafile as an exclusive storage mechanism"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:140
-# 8da49afdf3d0449cbf06fff50c12f028
+# a3b59927a32e4067986dd50db61835d8
 msgid "Edit ``/etc/roundcubemail/config.inc.php`` and add the following lines, adjusting them to match your setup:"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:153
-# 1590cc00ca7f44588bcfac7d6ef535fb
+# 3e64551979f9471c9710fcb8ecfd4112
 msgid "The next time you will try to access files in Roundcube, Kolab will attempt to authenticate with Seafile with the same username / password combination as your account and use Seafile as storage. In case of errors, change ``fileapi_seafile_debug`` to ``true`` and inspect Roundcube logs."
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:157
-# ff74adaa41b44bd18bd0004b1b1ca2db
+# 5929d7843f6d4c128aa4cf62e24ed1c0
 msgid "Using Seafile as an add-on to the existing Kolab storage"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:159
-# f18f2ec9cbdf4516898bf29b39df22a6
+# e817a69ac6b34533bfa543af4e72762f
 msgid "Edit ``/etc/roundcubemail/config.inc.php`` as above, adding these lines:"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:173
-# 765509a1029b4ab58679c4d66632a2e6
+# 47028d107796431496b077fe9681c6cb
 msgid "An additional step is required to access Seafile, that is, Chwala needs to be made aware of the additional storage. Access your Roundcube webmail and go to the Files component. Click on the gearbox icon and select *Add additional storage*. Fill in all the necessary details and click on OK. A new ``Seafile`` folder will be made available, pointing at your Seafile library."
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:176
-# 14b39c35c01543f0b2b601c26e359dcf
+# 28f4c9e3feea45dab99551a653c31c93
 msgid "Debugging"
 msgstr ""
 
 #: ../../source/howtos/use-seafile-with-chwala.rst:178
-# 5e686a94b78f47fcaead6863dff8b347
+# 82f2188af6a140f384694e88b2eee111
 msgid "In case of errors, set ``$config['fileapi_seafile_debug']`` to ``true`` and information on the Chwala-Seafile interactions will be recorded in ``/var/log/chwala/``."
 msgstr ""
 

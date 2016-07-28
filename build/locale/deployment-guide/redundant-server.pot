@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,92 +17,92 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/deployment-guide/redundant-server.rst:92
-# 901cce43e0e34240a09297c219a28c30
+# 053af9a9a6b34a6fb37e518c50ade788
 msgid "Kolab Deployment on Redundant Servers"
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:94
-# 2a98534105df45568f0eb31d8a996681
+# 52eba39159a541a5a68c86d05a2f1cc5
 msgid "This deployment provides high-availability to a Kolab Groupware deployment through redundancy of its underlying storage."
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:97
-# 97a5be80d07d4ff392507b3d229fa371
+# c8e2c1c11bd248a09520092c8caadcb6
 msgid "Please see either of the following sections for details on their semantics:"
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:100
-# d4f199010fb14f04a7d0f2b98c14524f
+# 201f2befc83843e0b677d22118c01365
 msgid ":ref:`deployment-redundant-drbd`"
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:101
-# 033f2c3422e64d98b5f902155a6adddb
+# 40f436e637244887bca566d7ea5a0864
 msgid ":ref:`deployment-redundant-shared-storage`"
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:102
-# 0d1f805148b943a4acc9c1d4bcce5bdb
+# 714b98bfbfd5451b97b672c1dbdb1b21
 msgid ":ref:`deployment-redundant-glusterfs`"
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:107
-# 9a3c158907eb4e66b0281099acc239f5
+# 4fda4e3218544b828e63faac3e91e649
 msgid "Using DRBD"
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:109
-# 55a396697df147f7a2230dd1ae15d21a
+# a9687a9c1a164a23af279dd02a4f211a
 msgid "When used solely for redundancy, `DRBD`_ replicates the disk of a single node to another node, implying the replica master is the active server, while the slave remains passive. That is to say, that the replica master **can**, while the replica slave **can not** access the data on the replicated volume."
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:140
-# 263b68d3b4004299813e84e7da7a43c9
+# d296743a6f854f04ae508fbe3aa281ad
 msgid "In this scenario, the master is the active server running all Kolab servers, while the slave is completely passive (it cannot write to the disk being replicated). A failover would ensure the master is not running any longer, and start the services on the slave -- which therefore becomes the master."
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:146
-# bb1bdeea192747d5af9266c2a6c3d078
+# b7ab916739c74b4fbb2ec92c2e111320
 msgid "In a more complex scenario, two separate volumes could be replicated in an cross-link scenario, allowing the resources of both nodes to be used in parallel, establishing a limited form of load-balancing."
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:184
-# d7d0cfaedba844beb11ec2d79147146b
+# b274a8fc139a426b96bb064353c10abf
 msgid "Using DRBD in a so-called *dual-primary* mode requires the use of a *shared filesystem* such as *Global File System* (GFS, not to be confused with GlusterFS)."
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:188
-# d7895f7833044894a83b8fca518c2b8d
+# a7d948eb15084ad788bbade888324b74
 msgid "Designing, installing, configuring and maintaining a DRBD cluster is beyond the scope of this document, and not commonly a solution the Kolab community supports."
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:192
-# 4941e40c13e948a8ba5cbcc0d0ad3555
+# 221b78338af74107983b18cc7785dfbc
 msgid "For more assistence, please consider contacting a local IT solutions provider, `Kolab Systems AG`_ or any its `Certified Partners`_."
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:198
-# be42ae0153c74ee99bf04e7fffb386c4
+# 8d41370e1bc44b89b8088a2655f34941
 msgid "Using Shared Storage"
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:200
-# 179e2515cb3241b6ac15d91286b85bf5
+# 865e746f7ba3411faae5bc9e1ce7d284
 msgid "Shared storage is usually external to node(s),"
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:203
-# fc6ca42555fe474091033099cb37c3b3
+# 4d4f54d58ea54af586aa2980e6ce85a1
 msgid "SAN"
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:206
-# 0dda1e9ef37f4255910c5f85f2b60660
+# b960690af3ee4732a1c1cc0e5e559c90
 msgid "NAS"
 msgstr ""
 
 #: ../../source/deployment-guide/redundant-server.rst:211
-# 55c1e4a6cc2247e78be1730bf08bb04c
+# 2666ad7ad102447080138ccb4cd7e522
 msgid "Using GlusterFS"
 msgstr ""
 

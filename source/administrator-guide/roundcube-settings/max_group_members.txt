@@ -3,6 +3,5 @@
 ``max_group_members``
 =====================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Maximum allowed number of members of an address group. Default: 0 (no limit).
+If 'max_recipients' is set this value should be less or equal.

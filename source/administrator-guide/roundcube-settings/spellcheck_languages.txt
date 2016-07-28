@@ -3,6 +3,6 @@
 ``spellcheck_languages``
 ========================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+These languages can be selected for spell checking.
+Configure as a PHP style hash array: array('en'=>'English', 'de'=>'Deutsch');
+Leave empty for default set of available language.

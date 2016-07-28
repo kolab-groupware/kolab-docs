@@ -3,6 +3,7 @@
 ``skin_logo``
 =============
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Replace the Roundcube logo with this image.
+Specify a URL relative to the document root of this Roundcube installation.
+An array can be used to specify different logos for specific template files, '*' for default logo.
+For example array("*" => "/images/roundcube_logo.png", "messageprint" => "/images/roundcube_logo_print.png")

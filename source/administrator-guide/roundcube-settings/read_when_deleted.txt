@@ -3,6 +3,5 @@
 ``read_when_deleted``
 =====================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Set true to Mark deleted messages as read as well as deleted.
+False means that a message's read status is not affected by marking it as deleted.

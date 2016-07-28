@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,494 +17,494 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/architecture-and-design/bonnie.rst:90
-# 8ceebb18084646daac908fdce8247ba3
+# 78357b40c4db41699af7e630e59bbfac
 msgid "Archival, Backup, Data-Loss Prevention and e-Discovery"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:92
-# 42911280fe574df6b08df62fd73bd450
+# 0daa071a848c4212bbbb57ae98fcaf30
 msgid "Different challenges could potentially be resolved by implementing a single solution, providing each of the functional aspects in an integrated fashion."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:96
-# 830dc0ccac3f488b997c4bc1ea39f2f7
+# bfc2c64c74c14186961753673f618a54
 msgid "A brief overview of the functional components:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:98
-# 25dcdc04a6814f3cad64b662f752cd55
+# 75bac36f026d46a0b35e5d17be7d042f
 msgid "**Archival**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:100
-# 0bbedb8291ad46e59b2d372132effc02
+# 2f062f0705cb43ee98164da31a1fc2c8
 msgid "Archival is the retention of business records, in a fashion that allows them to be used as evidence."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:103
-# 2439110794584fb38d293dfd2a51c53f
+# 0e00db802fc841f08473dc300b4913c1
 msgid "Many archival solutions only include actual communications that descend over an SMTP server that can keep the archival solution in the loop."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:107
-# da25cbbcb9a54c02a7cf14043a78316b
+# 731cd101d9344ff7b1c069d4d9477335
 msgid "**Backup**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:109
-# 224b6eae044c4518b60ebcbce4afe9f9
+# 2b069a0756b6471eae4c7a8d79837c0e
 msgid "Backup is the lesser part to the ability to restore, a frequently occuring, everyday event."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:112
-# 7fce948fca104f768e13a8851caaf847
+# af3e24e0495f44359ccc5158c99bb606
 msgid "It is often requested backup happens on a per-mailbox or even per-message level."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:115
-# 00665f9e402a4db2ac1d55269b6c0b1f
+# 5e6d83a249244de580a10ca323efb9df
 msgid "**Data-Loss Prevention**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:117
-# ab9d5bc315cb4ef8a4651b9c2a6bcb95
+# 16e313e8d144496091afca1642ddcd0e
 msgid "**e-Discovery**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:119
-# f873bf2b67d2481d96541155615e02d5
+# 5577bad7093e498282a25192a08c2468
 msgid "Maintenance of a changelog on object entries that can change state (email read/deleted), or are volatile (changes to an appointment)."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:123
-# 721bdcdc08984624b2e1250216fb8d2d
+# 8d908309c14f4e82a81fba4f421e4752
 msgid "Functional Requirements"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:125
-# 579622f0054a4e24b8357e0948fc01f3
+# c4cb2b69f6414473853943df28cc8424
 msgid "**Audit Trail**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:127
-# f9058df1a022437ca9144c5e01e7370c
+# af94238d9ab54ad0819841b4d4d06c28
 msgid "**Item Changelog**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:129
-# 0b2f58f603f449eaaef12f32e8480d9b
+# 2da3b99b42594dbe97aa4b77397e2202
 msgid "A per-item changelog, of whom changed what, to what item, and when."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:131
-# d6126ecedb604419958a2cee709421ed
+# a65760eca3d3404e90964fa2609affe2
 msgid "**Queue ID Chasing**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:133
-# 22a5946478544f4893548ec1955b9139
+# 83193910595540468bcd0ca993b3dd72
 msgid "Chase so-called Queue IDs for messages being exchanged with the outside world, and internally between systems throughout the deployment."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:138
-# 53d01cc402624fb0ba75ecaf8fba3511
+# 9444012c1ba34c4dbf41666f18e92d38
 msgid "Functional Design"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:141
-# 3bc1857e4af84b51811fa574ea8c1177
+# 898bf12da2f9492880fe8087e58fb8f5
 msgid "Functional Components"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:143
-# c3d4ff3d9e71429c9c65827bb9a42b63
+# e3511dc225a94b4c9d11151b7e399c4e
 msgid "**Dealer**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:145
-# 73edf1225cba4bc68edfd905f91cf5a5
+# 2db70095758f472680cd7691df0cabc4
 msgid "A dealer is a script executed once for each event notification, used to receive the initial event notification from Cyrus IMAP 2.5, and broadcast the event on to the message bus or queue."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:149
-# 03a2258dc5664253a59f11042140ecdc
+# 3e86b7fea188490e9b0cd075a6a1db80
 msgid "The dealer awaits confirmation of a broker having received the event notification."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:152
-# e6fd751e72894d7b9eb3bc5e09223216
+# 6589ec4c7328479394e398f109802ccc
 msgid "**Broker**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:154
-# b513cab6d0e7491dafd7c1377d565a24
+# 4f4fe083960f4a2bb5e2aad4cb05d253
 msgid "A broker retrieves the notifications from the message bus or queue, and acknowledges having received the event notification."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:157
-# 925f8f55b499474cb0b7f78746e9066e
+# ea384cb35fce457ca6ea2b78e0ec6bad
 msgid "The event notification is put in to a persistent queue, awaiting workers to become ready for handling the event notification."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:160
-# 9325498f911140478a42f6c6df53553e
+# e8a34dbabca64c54b8362d6a22e3e9a6
 msgid "**Worker**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:162
-# 71030cb95ed94ffebe7b3a7b650dd591
+# ee3501e782824c2396c40c679126911a
 msgid "The worker is where the processing happens -- one can have as many workers as necessary, or as few as required."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:165
-# 6faae0cec3d4405dacf81d0853c80664
+# 81bf0f218e1948e3a3690642d99bc56a
 msgid "The worker announces its presence to the broker, which subsequently assigns jobs to the worker [#]_."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:168
-# b1deb21fe75b4aefa6f40328f04cfe96
+# b94e7547313848b9821bedaa685bed8c
 msgid "The worker may require additional information to be obtained, such as the message payload [#]_."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:171
-# de1c758d99ed475a9788b79ca205e153
+# 76ddff3bd92841189f149af043bcce45
 msgid "**Collector**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:173
-# 5f0c30d08f7446279ed642b118fc7a22
+# 68302314e65e48338303aba685344876
 msgid "The collector daemon is an optional component subscribing to requests for additional information that can only reliably be obtained from a Cyrus IMAP backend spool directory."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:177
-# c34cb45bc0694adebc6256691baee264
+# f550f068e4004bb3bed0180c2a657734
 msgid "**System Log Centralization**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:179
-# d25eee22490c4b42b41f699ab718b02c
+# a8f508a9140d444da3c58f84c1dc5487
 msgid "The centralization of system log files such as :file:`/var/log/maillog` aids in tracing the exchange of messages as they descend across infrastructure, and helps in associating, for example, a Login event to an IMAP frontend with the corresponding web server session [#]_."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:186
-# ba7e4ebf5217419a9ac5eaf2e04a5919
+# 80ec88a3852643d485e7743028b44e60
 msgid "Operational Requirements"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:241
-# 24fd0294ca614cf39826a357771f6546
+# 0e72faeb6dd14e9d84d135cfe8a063b3
 msgid "Broker -- Worker Interaction"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:243
-# 4d89f01cf14344c9962254fe35be59f4
+# 9c790124a1be4c0e9e0c24429503c52f
 msgid "When the broker starts up, it creates three listener sockets:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:245
-# 454c560d08474640a5b52d6af24f34bb
+# 5376ca9f0fa74488ab23321c021abf3d
 msgid "A dealer router,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:247
-# a34a7d6942c64270bb4e884330b87e34
+# ab6ecd31402b454d9e8a6279b0e63a16
 msgid "used for incoming event notifications from IMAP servers passed through the Dealer component."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:249
-# e57a952f7c4048268868dd7dffeb9a0f
+# 04037fe6fea84174b38c9ad3d0238503
 msgid "A worker router,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:251
-# 5014cd5229f540b8b3db382b1cc54745
+# 6df634a3286d43aca7c99b25728bf2c3
 msgid "used to exchange job information and notification payload with workers."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:253
-# a0d637a71460417bacd30e499f109b53
+# 8ce1fc288fcf4a8886b22fbce6a8e9f1
 msgid "A control router,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:255
-# ce9a50aacc0a40cea2f4d933a171b08b
+# 8a61f5552ea7418aa9c30ebaf79223ef
 msgid "used to exchange worker and job state information."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:257
-# 1fe6d661ca874d3f81c48c64ff130e84
+# 2bf5b7527a244ff9bbc8444967fd89e9
 msgid "When the worker starts, it connects to both the control router and worker router."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:260
-# 987ff3f24e9f4380939db7137508ea72
+# 060062a1ed0b4654b435e9c78db740dc
 msgid "Using the controller channel, the worker let's the broker know it is ready to receive a job."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:276
-# 6b31e11d0858429b90801bd579d4bdbe
+# 8dce4c40492346e190b2e670232368fc
 msgid "The broker adds the worker to its list of workers."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:278
-# b98c5c4ee7be437abe12469aa997eade
+# 43d750a42b7b4810abc8b89c7bd4e50a
 msgid "The broker will continue to receive occasional messages from the worker to allow it to determine whether or not it is still available."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:282
-# 0164d94456fd4897a13924d89324eed1
+# 132c8e74918f4fd2b4bd57af89c5cd5f
 msgid "The broker, maintaining a queue of jobs to assign to workers, lets the worker know about a newly assigned job -- again using the controller channel."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:298
-# ab3b0cab7c114498ba43d8d43c34f2d6
+# 65454649cd9141b9bf59c0eed687a3c9
 msgid "The worker internally triggers the retrieval of the job using the worker channel."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:315
-# 23b793040e19483682ec893e19116e07
+# 8489423f21db4d5187e8d1cb49b3fdb6
 msgid "The worker is now in state BUSY and must respond within a set interval or the broker will set the job back in to PENDING state, and mark the worker as unavailable."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:322
-# 75888d931a764a008c10d7ec8a73277f
+# ca15d7d4e21b4b9d9bec67ac9bebb685
 msgid "Worker Design"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:324
-# bb751bdfa9254257b731a6f8cbcf5416
+# c264df8d71204271ba9c4e58c65296d8
 msgid "The worker is built out of plugins, that subscribe to an event type, where event types available are listed in :ref:`and-bonnie-event-notification-types`."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:328
-# e53f6fcf0861489385db0a15db845c51
+# be98a684acff4e6cb2d713d323dadf69
 msgid "Each event type individually may require handling -- for example, a logout event is associated with the corresponding login event."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:331
-# d5c72eb4d6f84c9186d0dd5bde00b653
+# 5291c854289b4904a3753a32b653b841
 msgid "The following components will be pluggable and configurable:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:333
-# 8e3d8447374640fb9842524cea314039
+# efdb6103bec248aab58f72d62749dc38
 msgid "subscribing to a message bus or queue, as ``inputs``, initially including only ``zmq``."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:336
-# cfc48395058f4252a8b94cb1a156d187
+# 1bea122d0c9d4d26b1081e231eaa70f1
 msgid "event handling, as ``handlers``, initially including only one handler per event notification and higher level processors ``changelog`` and ``freebusy`` to detect changes in groupwware objects."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:341
-# aef11c44943c485c8092626635fd77bb
+# f569d4af106a415a8cf20b70f3022b97
 msgid "result output, as ``output``, initially including only ``elasticsearch``."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:344
-# 79d456dd8e284a2e820778e6aff9abed
+# fa72f00e4f2f46b4a1de8b123935212a
 msgid "storage for transactions pending or aggregated meta information, as ``storage``, initialy including only ``elasticsearch``."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:347
-# 06a85a2cdbdf446687d73c3c5444f295
+# 6298609112344e379a6a601079e720cb
 msgid "Assuming an installation path of :file:`bonnie/worker/`, the following depicts its tree layout:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:365
-# 725b3018b6b648d38c8b4008067289ab
+# fac3563f32314f0db98c3e737b7324f3
 msgid "To take the changelog and freebusy handlers as an example, the following event notification types may need to be subscribed to."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:368
 #: ../../source/architecture-and-design/bonnie.rst:432
-# 418feaee490840f198e282664bfd8559
-# 3d4f0dcd9658413583c8b4fc8d503b09
+# 86967458040743a9a3a795884bf9b1b2
+# 0f8d8e81f51545299e8c443f835e3416
 msgid ":ref:`and-bonnie-event-mailboxcreate`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:370
-# 6ee5255202a148808ba1eb106afd531a
+# 3d15748a23ab40298995aa7c7c23678a
 msgid "A new mailbox that is an event folder may have been created."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:372
-# 2f9b589cfc3f49c89abd3b8b91ac7eb4
+# b8127ac279ce4a3aa7e7bfe87bcb02c6
 msgid "The initial event is handled by the base handler for the event notification type."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:375
-# 63c6e86001fd4d93b2766db644a9b237
+# 32d327ac3ad246fb8c3d3427c8fb1760
 msgid "Passing this event right through to the changelog handler would make it require obtaining the ``/shared/vendor/kolab/folder-type`` and/or ``/private/vendor/kolab/folder-type`` metadata value(s) in order to determine whether the folder indeed is an event folder."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:380
-# 24a7e7f76a174cb28128fb7586b67208
+# 6186c7e3ac224a6987026e22b4f36c55
 msgid "However, the setting of metadata is an event separate from the mailbox creation, and at the moment the handler receives the initial event notification, the metadata may not have been set yet."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:386
-# 9b32fb26d8164b14adc8fd409b7f3dae
+# 47dc018feb4f4e5bba8241314d0cbdd7
 msgid "At the time of this writing, no separate event notification for setting folder-level METADATA exists."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:389
 #: ../../source/architecture-and-design/bonnie.rst:433
-# fd771e985d74405eb925bc8bf0cc3c3b
-# 977c1a05714b4f77b46c4001d0c4ae21
+# 4c6b2cc09e5d4014a77b01f1ac8d09b6
+# 0e1a8442996541fc8f605255c3efbd2d
 msgid ":ref:`and-bonnie-event-mailboxdelete`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:391
-# 17074efcd79c45b4a66a066bc8c8782d
+# 1cc1991a08614435a83a9831f24a5207
 msgid "A mailbox that was an event folder may have been deleted."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:393
 #: ../../source/architecture-and-design/bonnie.rst:434
-# cc0ede4af0eb4f8b824a111dfe3a0692
-# fc4ef62e8d0f4bb1b9e8bf7c7a386262
+# 7e70a172df62450fb8388b9f3d346b17
+# 1316b1a2e73846d590ff63d3c171f892
 msgid ":ref:`and-bonnie-event-mailboxrename`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:395
-# 5c59186b843a4fe4bea116e527f1a941
+# 6099d843acd940758e48b36df3677258
 msgid "A mailbox that was an event folder may have been renamed."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:397
 #: ../../source/architecture-and-design/bonnie.rst:437
-# 16f2feb48e7c4ed190327181ad5b6b57
-# 969a57bbc36047d0914470db00bcd27c
+# 82d5bca628564b8e9ff2cb8a3dd3c143
+# 6b9c2505f3a24e4e8c67e6272b7f9e0d
 msgid ":ref:`and-bonnie-event-messageappend`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:399
-# dfd51cc64f2344b696a8a91684818a8c
+# d73494c02ab14735af4c69810b3647bb
 msgid "Only applicable to event folders, this depicts a new or updated version of an existing event has been appended."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:402
 #: ../../source/architecture-and-design/bonnie.rst:438
-# a4fdb633f982453aa9056b6ad5a7273c
-# 96cb8e8c4f48444dadfe1ee8ae0f7251
+# 1d3d3a6168d84e6fa63ddc4756f4a79b
+# fee1bc36746d41618efe0d4b3c8a868e
 msgid ":ref:`and-bonnie-event-messagecopy`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:404
-# c049d6ef4bdd494a82780ad0ae3f5536
+# b7b55f8f6c0c40ffbfd77e13c586c199
 msgid "One or more events may have been copied from an event folder into another event folder."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:407
 #: ../../source/architecture-and-design/bonnie.rst:441
-# 96a028fc7abb4a098c2ef49e9b1458eb
-# 9beca458a79c47a2a676c0d6d732488b
+# f17530cee849434f90812137813de45a
+# af266b2074344fa590b0c0ebc94cdcca
 msgid ":ref:`and-bonnie-event-messagemove`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:409
-# 54adbb850bcf4a77ba6521582de929e1
+# 7f9cd461cbcd4d5faa4745893a5131f6
 msgid "One or more events may have been moved from one event folder into another event folder."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:414
-# 7cb9a34eb7da4a6ebb72eb7c78475065
+# 005502c96623419c8484d1e71dad078e
 msgid "Plugins that are interested in the vendor/kolab/folder-type METADATA value(s) of a folder can reply with additional commands for the collector component which will put the current job back into the PENDING state and send it through the handler again once the requested information was added to the notification payload."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:424
-# e610ea2c08b143af926e77006dca0636
+# 7cfa88e623f64f37b565631dbed18a8e
 msgid "Event Notification Types"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:426
-# 1846d47f8e6f4e5f9110912db53f4daf
+# 68b69d858366482a90230e0db390886c
 msgid "Event types available include, in alphabetical order:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:428
-# 50846c82c998436f982bcb9ddcb490ec
+# 5ecf7a06744c4598b97c543b85fb591d
 msgid ":ref:`and-bonnie-event-flagsclear`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:429
-# 794f5720c5a2405ab92d1fc6b4303f63
+# e9357ef799eb4793ac01df2180e190a3
 msgid ":ref:`and-bonnie-event-flagsset`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:430
-# 16b2dd3b65854fa7bf64b02d9c763284
+# 7cad35bbeb6146729f7e8cd61ebc17b7
 msgid ":ref:`and-bonnie-event-login`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:431
-# a43ad6122bb047afade986d452e61b81
+# c16367d6e0184cfc8aa508caa006cbab
 msgid ":ref:`and-bonnie-event-logout`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:435
-# ed2e4ce14f194861b07d84023d36df5d
+# 2b64684cf0974cbd82ed5e827cd46d73
 msgid ":ref:`and-bonnie-event-mailboxsubscribe`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:436
-# 59142ac607774dd38086d369674fd000
+# 20df60de6f0a4dff9d7fa651e6df6255
 msgid ":ref:`and-bonnie-event-mailboxunsubscribe`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:439
-# 8300726f297f44088d5de02467530896
+# 458aaaa17937440f90b910e6726dce92
 msgid ":ref:`and-bonnie-event-messageexpire`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:440
-# e46563630edf41f298d7ed0de4d67de6
+# 4f9d6322907347f59da0b320025ff176
 msgid ":ref:`and-bonnie-event-messageexpunge`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:442
-# 4ea301e215f1469eb5d679bccb5ab5c3
+# 6c2d324ee0a74af4b6effed28477b5ab
 msgid ":ref:`and-bonnie-event-messagenew`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:443
-# 1087290d7f874968a82dbbb191a3e286
+# 0bee14d057fb4057ba2dbb8b582b413c
 msgid ":ref:`and-bonnie-event-messageread`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:444
-# d778e9a5e10042ad8b7553773b545559
+# 22a48720f4024f0db96c594dec4db5bd
 msgid ":ref:`and-bonnie-event-messagetrash`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:445
-# d08b63ed85544835a36dec13a70cc5a9
+# 37fa04f29044441ca0ca395812722fa2
 msgid ":ref:`and-bonnie-event-quotaexceeded`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:446
-# cb1653f9af554238ba3070a4e05d9a38
+# 634e0df25dec411190d24a904dee5737
 msgid ":ref:`and-bonnie-event-quotawithin`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:447
-# 74c3f174d1bc452a8ca5814107e94ef1
+# 2cc93a55d7df44b2ac2c8667505c2d5f
 msgid ":ref:`and-bonnie-event-quotachange`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:452
-# a5db14ecfca145d2be5e3bd7bd635e11
+# 1be9e2a8dc4740a982e5420fe86f5f50
 msgid "FlagsClear"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:454
-# 80f25d7cc1c6422fa0643fd00c26415c
+# df9176b662bd4831a9fac78e2aae2ded
 msgid "This event notification type indicates one or more messages have had its flags cleared."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:457
-# 9a6583da481849c1b1745c406feda1bd
+# ff6f96c34d324083870ab6e58e6e731b
 msgid "Flags having been cleared may include ``\\Seen``, but also ``\\Deleted``, and any custom other flag on an IMAP message."
 msgstr ""
 
@@ -512,17 +512,17 @@ msgstr ""
 #: ../../source/architecture-and-design/bonnie.rst:470
 #: ../../source/architecture-and-design/bonnie.rst:490
 #: ../../source/architecture-and-design/bonnie.rst:499
-# 2d427bd87bd44bd89b383425c0538eb7
-# 50c57321a8214de5a2cb0f94a89569e8
-# 89b203769d424b43a54acedcf233e544
-# 9f875100eca141dbaa887e4c0ef5a7c2
+# 5528eba19b7d4562b239ddaa944333af
+# 1e1a839514944df5a8db5c66c1ed54dd
+# a980b74c74974774b1e91d8b380065f7
+# d6b07c6fc64c420384b38924eb26f646
 msgid "Subscribe to this notification for:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:462
 #: ../../source/architecture-and-design/bonnie.rst:472
-# 4257e0ba2b974b3c998ee4ed6d12a6fe
-# 3e9a1bb338b54528aee3bede0bc6f307
+# 56f937a6b013481396b03ccedcc9284f
+# f82f70611c544f8b8c51bf5590f72157
 msgid "Backup/Restore"
 msgstr ""
 
@@ -530,505 +530,505 @@ msgstr ""
 #: ../../source/architecture-and-design/bonnie.rst:473
 #: ../../source/architecture-and-design/bonnie.rst:492
 #: ../../source/architecture-and-design/bonnie.rst:501
-# dea8b66608a043bfa30424ccec3d0c58
-# 5c72245c92144a58925e9ecc21a01c3e
-# d4b54d0e7960420abfacec84c62ab3a6
-# 5cabc52657ca4360abdb5663292d64cd
+# 29ad2581fabe4566a3fe4b9b581aa356
+# 11b415c6d97a412c9ea01e0856aa9d1b
+# a7a4c687dd1e46c09d2d7c03aaa70fc1
+# 60882e640c46495c83fac8ac27c85fbc
 msgid "e-Discovery"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:468
-# 3eac485b28bc44698423a9535fbea332
+# 2a218ed4dce144bda34ef9252b3b171d
 msgid "FlagsSet"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:478
-# b4d96df39e2b4486b70d4b0fdbb35e26
+# ff8709fe8d644c63892328dd20c67e22
 msgid "Login"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:480
-# dbba282113cd4997bec9575e9bbc1007
+# 64f628ec0d7b4cdab65081d293b65265
 msgid "Additional information to obtain for this event notification type:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:482
-# a71e35ee709f474a8e8054fa21d666e1
+# e68012f0d0d941779c640a981950d88d
 msgid "The persistent unique attribute for the user object."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:483
-# 96a701c8c2744fe9b6c4d3cb002876f7
+# d7a5f4ffe4f34c758f49b1d505f20ddb
 msgid "Additional LDAP object attributes."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:485
-# ab6ecd57daf041bfbf346b25b19ad92b
+# 6af843698e9646dea7013c94b4167282
 msgid "Information storage:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:487
-# baab96c301594c989ab7a09bb7228c9e
+# df4a968f25ea435a83d0ef85a524079c
 msgid "This event needs to be stored until it can be associated with a :ref:`and-bonnie-event-logout` event notification type."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:497
-# e8666f42203b4d1d95c8f471429c20df
+# 2102e567472945c99f21637a45aa66bf
 msgid "Logout"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:506
-# ae6e7e35bcdb4d2d99e186c392482b93
+# 300e7de64a05497f852ee0a5d5e0ab53
 msgid "MailboxCreate"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:508
-# 1c87b0d17b5c40fb8218c6c27667fc6e
+# 58c3cdb1cb7745849984de504cab1640
 msgid "Additional information to obtain"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:513
-# 321d6a65f30f458798adc0060a890a7f
+# a02e2869ab1f469fba9be9e32c31d930
 msgid "MailboxDelete"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:518
-# 86dce214b9254a0f94881262ae99075b
+# e936643d64f4419f822b498d64519f2e
 msgid "MailboxRename"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:523
-# 6b20071b7b354d24abfb1454aa537089
+# 1da16ded460749239d0daea843660b28
 msgid "MailboxSubscribe"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:528
-# 8f93484856074248899d3fb6a3ae4760
+# 65114b4eb50046d295ab5e23a7b3ec9e
 msgid "MailboxUnsubscribe"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:533
-# 8754df4522044025926d48b851b546f5
+# 2d588612d34345619794c2a96b484d6b
 msgid "MessageAppend"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:538
-# 0a2f5108aa6a4863ad8624cbd6079076
+# 6ac299548c304438ac7421a6ddf2c413
 msgid "MessageCopy"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:543
-# 00595d3e622345c59d557d80f2b6d560
+# 8db91cc054ba471c8c9022c91974e206
 msgid "MessageExpire"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:548
-# 59c8ea72b59b4561b5ea31085e34d147
+# d375ad0b4d8640529666187a94a1684c
 msgid "MessageExpunge"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:553
-# 90dc553137c84632a1e68adb3486177b
+# 8eefb26d3b454b5980b70e5fcfaa4035
 msgid "MessageMove"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:558
-# 0777046b9638436aa3b289ae45d684f3
+# e04a46385eb248dc86d2f4bcec11995f
 msgid "MessageNew"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:563
-# bfb0afa34cf742028fa5335269ff5c9a
+# b3ddc171f9a043828807499f245508bd
 msgid "MessageRead"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:568
-# b417c49427234ae5a1385c794cd99f1c
+# cf1e01dccba94046b482ac69f2ec9183
 msgid "MessageTrash"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:573
-# cca319e7fa054d988e789b61dc170c1e
+# 2a2d821daf5c4a509d424fca89736908
 msgid "QuotaExceeded"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:578
-# d8d2927b9fb74d6a80afaa8b783814a4
+# 46ec0938ff21423f8c047f8bd7dacaef
 msgid "QuotaWithin"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:583
-# ace5c8860da54541ac1a71e0ff6d19f9
+# bdaf7d6d79ab42e29ed2608cec35d516
 msgid "QuotaChange"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:586
-# 14953a59afd44dd6a03c4470cc599368
+# 43d398d91a7346dcbcdbb5322f016a05
 msgid "An Integrated Solution"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:588
-# c129103aef824ef7bb360174099f6684
+# 11cd8c49be6a4c1aa63acca4cd187ed5
 msgid "The following aspects of an environment need to be tracked;"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:590
-# ba26cabff7af4458bd733a81831c3a0d
+# da63e9ac0a094df1a0ac05a986b65447
 msgid "Logs such as ``/var/log/maillog``, which contain the information about exchange of messages between internal and external systems and software (Postfix/LMTP -> Cyrus IMAP)."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:594
-# 3df6200997d34921a57be9ecc28fdb66
+# afc27e6cbe0b4164bb5fceca543235d8
 msgid "Cyrus IMAP 2.5 Events broadcasted."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:631
-# eab674fbc73440df869f2a8a0e863c2c
+# dc3fbb97414a4bd7992f091e00cd4851
 msgid "In this picture, IMAP (using Cyrus IMAP 2.5) issues so-called :term:`event notifications` to a message bus, that can be picked up by the appropriate subscribers."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:635
-# e5de11b998b84123803d4070ac49f150
+# b24dfc2bbc324baca2b92f425077442d
 msgid "Note that the subscribers are different components to plug in and enable, or leave out -- not everyone has a need for Archival and e-Discovery capabilities."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:638
-# 896dd594839f4808b27d770f1a66ea4c
+# e742d97aa8ae4391b773c524e7eeb527
 msgid "As such, a component plugged in could announce its presence, and start working backwards as well as start collecting the relevant subsets of data in a retro- active manner."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:664
-# df401f12d5a34529a499d371a5d7fa63
+# c3ea7c2be8734d0abeed6a73805d47b8
 msgid "To allow scaling, the intermediate medium is likely a message bus such as ActiveMQ, AMQP, ZeroMQ, etc."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:667
-# ca69fef2f6e4460ea910ac09dcff10ad
+# 092c7c8f86424815906ca18c6e39ba4f
 msgid "Between Cyrus IMAP 2.5 and the message bus must be a thin application that is capable of:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:670
-# de389d1ddee34979ac053ec74f07c76b
+# 9e236df2fe9d42ee9b838224c118d857
 msgid "Retrieving the payload of the message(s) involved if necessary,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:671
-# f33fbf7e766d4e99b7ce0575bd05493d
+# 6113c5ce5dff4c3f914aac219431daac
 msgid "Submit the remainder to a message bus."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:673
-# 8154dad3f97c44eca905c63cf6fd7bb6
+# ad00c50003ff4af089610ebf000f108e
 msgid "This is because Cyrus IMAP 2.5:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:675
-# dbe17e2c939a4560af711977f555f27c
+# 2b8596c20cca4a6091c9871cdfa9b75d
 msgid "at the time of this writing, does not support submitting the event notifications to a message bus directly [#]_,"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:678
-# d1dbdcb53e6e4de38cb07f0e53a475e4
+# c275b12606f44266b2958d0ab5411b3c
 msgid "the size of the message payload is likely to exceed the maximum size of an event notification datagram [#]_."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:681
-# 592f124e99d64c55a98c40dfc439e227
+# 0e12cc37288549af8305ff3609aba138
 msgid "Processing of inbound messages must happen real-time or near-time, but should also be post-processed:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:684
-# 88254c1d6494416e8f98a6124dbffdb4
+# dd073e45acac42e0a4f08aae58ec1957
 msgid "e-Discovery requires post-processing to sufficiently associate the message in its context, and contains an audit trail."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:687
-# 0782f2434cd44362a6c632909ae8a693
+# d5e95508267044b1a75767e617649252
 msgid "Archival and Backup require payload, and may also use post-processing to facilitate Restore."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:691
-# c8cc969f0533462680728aab95f9801e
+# 3387d9477f2c4a75a4a5112ba2eceb4e
 msgid "Event Notifications"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:693
-# fa8b7e936bb3430f8d6838a707f91ccb
+# 48eb9635d59244a9a350cab9d25078ea
 msgid "The following events trigger notifications:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:728
-# e196aec0eacd443ba3646cfae2672350
+# 5a568765d0ce480ba380fff651f47b14
 msgid "In addition, Kolab Groupware makes available the following event notifications:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:738
-# a04b6465113e4e1ba857b8bba1379975
+# 24bd4731d1ab4fefb9c75ac76741b334
 msgid "This means the following event notifications are lacking:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:740
-# 1a09f7dab8f641918c2a41048786b0f2
+# bf6130b2e8484bda99bd5b1d8f8509bf
 msgid "METADATA change notification"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:742
-# c3b25c62995549ccb43aab59a3f58f73
+# 63c891946b9f43d99b50558b130aa9b4
 msgid "It is possible to run Cyrus IMAP 2.5 notifications in a blocking fashion, allowing the (post-)processing operation(s) to complete in full before the IMAP session is allowed to continue / confirms the modification/mutation."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:752
-# 9f62def535fb432187267aed1335a088
+# cbff1c4fad93487788d465ef1e495ee3
 msgid "Queries and Information Distribution"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:755
-# a310d07111504856a755e3c6d335395e
+# a26b2fa2b21b4fdba51562405019284d
 msgid "ZeroMQ"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:779
-# e3b95823d6d145f085fddd46c44653e1
+# ed31a2f6154a484abfc368f5b5b5c2cb
 msgid "Dealer <-> Broker <-> Worker Message Exchange"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:781
-# decca56c24f0485b935dc297bffa88b3
+# 142d2eb5b4ed432eb43d270889d78770
 msgid "Modelled after an article about tracking worker status at http://rfc.zeromq.org/spec:14"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:813
-# 7dd13efec95942b192d5f933f8949721
+# a8b46581dc7c4e62b601ba7a1faaed26
 msgid "**Dealer - Broker Concerns**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:815
-# a37b1793efde4c77a4166c0f380cf423
+# 03c3a4a796b24f549ad9573b9d47b444
 msgid "The dealer is queuing without a high-water mark and without a local swap defined. It is only after the broker is available this queue is flushed. This could introduce a loss of notifications."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:819
-# e4fbe8f2def9456784b0109739da56a5
+# ff9d08b8e69940a1897fb888c01e7e19
 msgid "The dealer is not awaiting confirmation in the sense that it will replay the submission if needed, such as after the dealer has been restarted. This too could introduce a loss of notifications."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:823
-# f184bb5302ad4ffab3911c4761c45f5e
+# db377c7036b849fda666e676f6f30482
 msgid "The dealer is certainly not awaiting confirmation from any worker that the notification had been submitted to for handling."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:826
-# 75fa78f27e4845b99f0d09983568945b
+# 56e918fc8ed7421a9f5450f8e0bda6cb
 msgid "The dealer is a sub-process of the cyrus-imapd service, and should this service be restarted, is not handling such signals to preserve state."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:829
-# b12f3ac991ad4bbe9477a23123fed27a
+# 2d928b7d00ba444198025003c4cec2bc
 msgid "**Broker Concerns**"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:831
-# e0ea136477e542c5857485d0fecf1174
+# 297713e39c4e49dfbd06cc96cd133b96
 msgid "The broker is keeping the job queue in memory for fast updates and responses."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:834
-# a7cb9fe3c6114e128016c14bc98460c3
+# 98efbe8a6cf74e1aab7917a61e6fd843
 msgid "The broker component shall periodically dump the job queue and registered worker and collector connections into a persistant storage layer which has yet to be defined."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:923
-# 317247c362ce414d8bdcfc81ee6ecc0e
+# dcb44f0eca48433bb9636db84d9f9d45
 msgid "Storage Layout and Schema"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:926
-# 6b7ac6dad72d46a8b65386fa4e3b60ea
+# 2b87c346c6ec497694ec444ca5ed989e
 msgid "Logging Event Notifications"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:928
-# c29c54b8932243c288e3a8de60531cfa
+# 991b96174c74463da32d8e3bdbb46ca0
 msgid "Logging event notification into the storage backend (currently elasticsearch) is inspired by logstash and writes to daily rotated indexes ``logstash-Y-m-d`` using document type ``logs``. The basic schema of an event notification contains the following attributes:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:949
-# 2195ebfb8e7f4fe4954b3e9dec5e110e
+# 04d72e4a95fe490181e7179bbeb4727b
 msgid "The very minimal attributes required for an event notification entry are"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:951
-# 2c2ec4bfbb8443d9a422cdb008bd2d8b
+# 497aeb7707c54d589cc0d579afa34624
 msgid "``@timestamp``: The UTC time when the event was logged"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:952
-# 7c105d033697487eaf0bad3e7338aff1
+# 41fbc40e413a4121a7739b4c6f537ad7
 msgid "``@version``: Bonnie data API version"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:953
-# a1cc9f2650714b5f910a526edb2a512a
+# 6d3838a5bdef4e9e89094aefae511fa7
 msgid "``event``: The Cyrus IMAP event"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:954
-# 4f707474bb394b01bbe447bd9ee051f2
+# 8d9b7b4cd2e44631a4fb26dd685bb84d
 msgid "``service``: \"imap\" denoting that this logstash entry represents an IMAP event notification"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:955
-# 01e4c2c68a9045dba15a3e3b6f7057dd
+# 6c0d8c8dd2a541cfbcc223d1b41ab411
 msgid "``session_id``: The Cyrus IMAP session identifier"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:956
-# 2b27eaab99244a8a9e064d5b76683eea
+# f3559b10578b4ae6b035e9ef922f149f
 msgid "``user``: The authenticated user who triggered the event"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:958
-# ed32af977455415f935e36f1d47778d9
+# 0618025caa0e4a428508c1886f92eebc
 msgid "Depending on the event type, additional attributes containg message IDs, message headers or payload, flag names or ACL. For message or mailbox based events the ``uri`` attribute is added and refers to the mailbox/folder the operation was executed on."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:962
-# 316d6002f3de46eebfd04a63a42c7afb
+# f6320c93b94749acb1a122eb7e308aab
 msgid "From the basic attributes, some relations to metadata (see :ref:`and-bonnie-storing-metadata`) are extracted and the logstash entry is extended with identifiers referring to user and folder metadata entries:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:966
-# 26b79ea5ad3c4b0180e5fabb2b2ebe0b
+# 357aa0afbb0242c0a9bd13fb897de21a
 msgid "``folder_uniqueid``: The gobally unique folder identifer of a mailbox folder from IMAP."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:968
-# 8ac599abcb3542e5971bd4d1ae076f86
+# 19208a9d2c344358801665e732bacab0
 msgid "``folder_id``: Links to a folder entry representing the current state of a mailbox folder at the time the event occurred. This includes folder name, metadata and access rights."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:971
-# ca365a4d224c43e6b86dcdab5914476b
+# be193bf1e08a49efaa9640e1d558b56e
 msgid "``user_id``: Unique identifier (from the LDAP ``nsuniqueid`` attribute) of the use who executed the logged operation in IMAP."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:978
-# 8017fb9fda704415a82c0caba0727de4
+# f5e9da8d668b41a0946b62eb22af17d0
 msgid "Storing Metadata"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:980
-# e8e76d3616d04f8da1d27de8bb40cc23
+# 284baf26a46a4ff79e9975e35cb501dc
 msgid "Metadata records are used to amend log data with more complete and persistent information of rather volatile attributes like username and mailbox URIs issued by Cyrus IMAP 2.5 notifications. For example, the same physical human being (jane.gi@example.org) could change email addresses for any of many unrelated causes (jane.doe@example.org) and IMAP folders can be renamed at any given time."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:987
-# 6141397423f7463abe785afc0b2aa8dc
+# 4632b431b28448ca97562ab18a90e2cf
 msgid "Users"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:989
-# d87fead697044703810368eaab4b5dd4
+# 85136805370048f19e7986be958ee467
 msgid "Stored in ``objects/user`` with the following schema:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1000
-# 8ffef21546dd4138a99eddabeb1ae9a4
+# 84231d6631da4978a2ecfba63461932f
 msgid "The ``nsuniqueid`` attribute from the LDAP is used as the primary key/id of user records."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1004
-# c390cee58c9b44b2970b4efa1f406558
+# 838c4b400aba41df81e78ee4ab0a95e4
 msgid "Folders"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1006
-# f3b0627977c54e1ba33055fbd6855767
+# 8725bedc387440ec9650a17a688287cb
 msgid "Stored in ``objects/folder`` with the following schema:"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1035
-# e22ceb7beb5b4b36a61cb4a80000fbbf
+# e946455fd4ff446dbe0a15011919aa7c
 msgid "The primary key/id of folder records is computed as a checksum of all attributes and metadata entries considered relevant for the \"state\" of a folder. This means that a new folder record is created when ACLs or folder type metadata is changed."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1040
-# 8f36fb96eebf42a2b156df66cf5ee6e0
+# 2035a5c3222b4ac5b9d5b028031b472b
 msgid "The keys of ``acl`` entries provided by the Collector module from IMAP data are translated into static user identifers."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1045
-# 7ba68cade28142388bb68ed28c48b731
+# c907f9a3efcd4b35ac26a126e873bf7d
 msgid "In order to compute the folder identifier, the complete set of folder information like metadata and acl has to be pulled from IMAP using a collector job on every single event notification. Once Cyrus IMAP supports notifications for metadata changes (`#3698 <https://issues.kolab.org/show_bug.cgi?id=3698>`_), this could be skipped and the folder metadata records can be updated on specific events only."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1055
-# 2b81f17a66d4447081919b8d7865f61a
+# c6391148e7744efd871fcb511f31d31c
 msgid "Object Relations"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1057
-# 6dadfefae7214bedb2f6557e69b831d1
+# 0df46bf5eea84a058c0cd2ae35ff2d27
 msgid "Although elasticsearch isn't a relational database, the Bonnie storage model implies a simple object relation model between logs and metadata."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1098
-# 680f180ae29a43f682dc1d6bd15d7888
+# 15214c00217d4f6bb4549a217600fbee
 msgid "Accessing the Collected Data"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1100
-# c488c1e89f84409bb0fdc50d9828c4b5
+# d2954683cff442d3adbb52aba373c746
 msgid "Some of the collected data, primarily changelogs of groupware objects, shall be made available to Kolab clients to display the history of a certain object or creation/last-modification information including the according usernames which is not stored in the Kolab data format itself."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1105
-# 5075f781ecab43698a5d3c388068143d
+# cb42e7cc12d84b609bbc97f587094ea4
 msgid "A dedicated web service provides access to the archived data through an API and thereby translates the raw information from the storage backend into more concrete groupware object related data."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1109
-# 99c57633717240cd84c67f036b7a5779
+# 61f4ace2ed6d41fbb0835586b2b58890
 msgid "See the :ref:`and-bonnie-client-api` for details."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1113
-# 54ab672965574d89bb514600f477134c
+# 7636f7085cba4ff690fff80cd7a74d36
 msgid "Footnotes"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1116
-# 818e004b261c49819b65f977f78d8a3e
+# 2217c1ee49f246a8bd87e618e33400a6
 msgid "The worker shall be a multi-threaded daemon (using multiprocessing.Pool), that is a pluggable application."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1121
-# 57cfea2fb67645ae8e4034ba5f8bca25
+# a375aafe6b5f4f6c8fb3c2bd913540f1
 msgid ":ref:`and-bonnie-worker-design`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1122
-# 9835f42feb02441a858f963837bd69c6
+# 1ea23fcd4f2845379f091ffb9096e7ee
 msgid ":ref:`and-bonnie-broker-worker-interaction`"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1126
-# 487de86608a54ccda25c089c1a362a37
+# b4d22c754ced4b488a7254d4570d16ef
 msgid "The worker shall determine based on functional features enabled, and existing data, whether or not it requires a copy of the original message payload."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1132
-# 63b36c7bae404ca4a445105a0a5e6fef
+# 1a5b90cce0a44a3f837352551b050745
 msgid "It is assumed we'll be working with RSyslog, Logstash and Elastic Search."
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1137
-# 5b3a991885e94dc898490799745f9d9a
+# 7e23a4f382794679bcfe1fd47bc98f5e
 msgid "http://git.cyrusimap.org/cyrus-imapd/tree/notifyd?id=8bdaeae3f891ba2a748ba91a4c324ee11346e292"
 msgstr ""
 
 #: ../../source/architecture-and-design/bonnie.rst:1141
-# a34ab3d7e30941ec8975c06ff9e18dae
+# 1500a789a132459091a49f65cd697c6f
 msgid "Needs further investigation, for the actual maximum size of a datagram may have ceased to be hard-coded. Yet, to submit a large message through the notification daemon while the notification target is eligible to pick up the message contents from the filesystem seems like duplication."
 msgstr ""
 

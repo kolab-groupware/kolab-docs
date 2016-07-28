@@ -3,6 +3,5 @@
 ``mdn_use_from``
 ================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+According to RFC2298, return receipt envelope sender address must be empty.
+If this option is true, Roundcube will use user's identity as envelope sender for MDN responses.

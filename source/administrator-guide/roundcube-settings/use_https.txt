@@ -3,6 +3,6 @@
 ``use_https``
 =============
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Tell PHP that it should work as under secure connection even if it doesn't recognize it as secure ($_SERVER['HTTPS'] is not set).
+e.g. when you're running Roundcube behind a https proxy.
+This option is mutually exclusive to 'force_https' and only either one of them should be set to true.

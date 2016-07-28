@@ -3,6 +3,6 @@
 ``force_https``
 ===============
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Enforce connections over https.
+With this option enabled, all non-secure connections will be redirected.
+Set the port for the ssl connection as value of this option if it differs from the default 443.

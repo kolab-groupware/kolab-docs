@@ -3,6 +3,5 @@
 ``autocomplete_threads``
 ========================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Number of parallel autocomplete requests.
+If there's more than one address book, n parallel (async) requests will be created, where each request will search in one address book. By default (0), all address books are searched in one request.

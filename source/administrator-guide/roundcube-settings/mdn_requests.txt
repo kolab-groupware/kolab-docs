@@ -3,6 +3,10 @@
 ``mdn_requests``
 ================
 
-.. include:: roundcube-settings/needs-work.txt
+Behavior if a received message requests a message delivery notification (read receipt):
 
-Sadly, this setting has not yet been documented.
+0 = ask the user
+1 = send automatically
+2 = ignore (never send or ask)
+3 = send automatically if sender is in addressbook, otherwise ask the user
+4 = send automatically if sender is in addressbook, otherwise ignore

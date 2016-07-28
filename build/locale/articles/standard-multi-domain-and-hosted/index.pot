@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,92 +17,92 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:92
-# fdc90086bc8e4c7ebe2fb85eb93f03b8
+# 27e32dd570ba48aa8ff96dc6b0ac0155
 msgid "Standard, Multi-Domain and Hosted Kolab"
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:94
-# 59495d9ccbb7457a847b77553b7d1c79
+# d6a87779d73241b59262384a4dcfdfd5
 msgid "Kolab Groupware is a flexible collaboration suite and in addition to its standard deployment, also supports both *multi-domain* and *hosted* deployments."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:98
-# b655e08f67c142f08677a066615b9667
+# 34f9af0fc0084dc18ab97a9aa908eb5f
 msgid "The difference between a standard Kolab Groupware environment, a multi-domain, and a hosted deployments is as follows:"
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:101
-# d90eeb97c98d44b19e7e8229952dd5d6
+# bcd5b9ca3dd74cb5917b3c2c18a98457
 msgid "**Standard**"
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:103
-# 8c5a3e07d6844f43948fb3c276407eaf
+# 5edd533c71644d498cd2f69fdedc166c
 msgid "A standard deployment of Kolab Groupware is designed to serve a single organization's collaboration needs."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:106
-# b48e9e7907364bb9899e7a60d9bd5099
+# 84aa04dcd4f540c69147359929d6b668
 msgid "This includes features such as Shared Folders and Resource Management, Invitation Policies and Delegation, and Recipient Policies and Distribution Groups."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:110
-# 2839f14575ee4046846ad878f6313b15
+# a92eea1795224a658be39fab4f4f7fbb
 msgid "A *standard* Kolab Groupware deployment also supports :term:`alias domain name spaces`, meaning that a setup for a domain name space of ``example.org`` can let its users have additional recipient email addresses in an alias domain name space of ``beispiel.de``, ``voorbeeld.nl`` and/or ``exemple.ch``."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:116
-# cb8ffd479def409bae8248d701a8f658
+# b3d0a73806a141e5b64d5d130473331f
 msgid "**Multi-Domain**"
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:118
-# 8bfbcf365f2f4fb2851108329ba0297c
+# 7c72fe81827541ffbf46c3accbc54f98
 msgid "A multi-domain deployment of Kolab Groupware is designed to serve multiple organizations' collaboration needs based on a single deployment of Kolab Groupware."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:122
-# aebbe49ae62f426681476714971f5e11
+# 884c9591a1eb4028b8c0a07c9da142d2
 msgid "This is to say that an organization such as **Business, Inc.** with a primary domain name space of ``business.co.uk`` can use the same infrastructure as an organization **Competitor, Ltd.** with a primary domain name space of ``competitor.de``."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:127
-# f922c0b4a8cb437c87105dcf0aa9cafe
+# 4d1ea89365c74cbe94e938aa541c211d
 msgid "Each of these organizations may, aside from their primary domain name space, hold one or more alias domain name spaces (rendering the primary domain name space a :term:`parent domain name space`)."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:131
-# d72b4453c514480abef05b51c176640d
+# 7c3abc884ca3476db73c4b0ef67c5a0b
 msgid "While the two organizations use the same deployment and the same infrastructure, information of neither organization may become available to the other organization -- accidentally nor otherwise."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:135
-# 205a9d669dea4af88134b886b980b989
+# acb36f464f0b40e6a561a7eea4e1f789
 msgid "**Multi-domain** deployments are designed specifically such that there is a clear boundary between the spaces in which the users of each organization collaborate."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:139
-# b03ee541baf4462389aaf9518f0293fe
+# fe77888dcdc041a98e7a3c4450eba9d7
 msgid "However, not all of the most recent features added to Kolab Groupware are immediately also available to multi-domain environments. Resource Management for example is one of such recent features. This is why a default setup is not already configured to be or become a multi-domain setup, and the HOWTO for multi-domain is community-contributed."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:146
-# a086cca9ffdf4f0fb511d137c005e355
+# 33277a21603a41dc9e8cd031ce83ff21
 msgid "**Hosted Kolab**"
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:148
-# 202972c2f2264f4dbb6f77f95cd3ec95
+# 665af72a3ef543d9a6270449cd01aae9
 msgid "A hosted Kolab Groupware deployment is very similar to a *multi-domain* deployment, but allows users (customers) to register accounts and domains themselves, and adds revenue to the deployment by invoicing the customers."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:153
-# 589eee27b73c4db4a74ae6b6dc6321a8
+# c21eea54746746b19135d237bc5913a8
 msgid "Allowing customers to create accounts brings with it a set of additional requirements, such as new users confirming either one of the identifying pieces of information (a phone number, an email address or even just a physical address), which in your jurisdiction you may or may not be required to request."
 msgstr ""
 
 #: ../../source/articles/standard-multi-domain-and-hosted/index.rst:159
-# ca0e220d80e74e4c9f8c5af45b34bf8a
+# 8f95542b60744acc8fc53ba08ee98e0d
 msgid "Furthermore, for customers that register a domain name space, you'll need to be able to confirm the customer's ownership of that domain name space."
 msgstr ""
 

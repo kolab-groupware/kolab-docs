@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,159 +17,159 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:90
-# 61fa9d4418a94f6eb22fb69da1f4828c
+# c598981d035249a8b56eeadfa9a27747
 msgid "Scale Puppet Environments"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:92
-# 226e8b95bdde4e6f98d337007f1c5d97
+# 5e40b342dcea44c39e8355e1a37f63d1
 msgid "In this HOWTO:"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:94
-# 667d5df752234b0ca49128f52d4b8df3
+# e38e251b0c0e4e95844c0f120d2040db
 msgid "Using Puppet with Git and GlusterFS"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:95
 #: ../../source/puppet/howto/scale-puppet-environments.rst:101
-# c6f4eeb029d347f1bd36569eb2d99506
-# 2d9a2e5aaa2c4fe193a4c007699a36ef
+# 367a962e9c13481b88b754c3a3d557c2
+# ee36dcaf5fb74ebe8fdfd556b70a6002
 msgid "Load-balancing Puppet Masters"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:96
-# 79137b3c819d43de884baa1db190f92d
+# a264bbe1b89042b98c26f2f48cd4215e
 msgid "Cascading Puppet Masters"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:97
-# 43fa9b7e83fd493ba7dd14bd4a657605
+# 26451f825fb94188ac71515573a3ce3f
 msgid "Separating the Dashboard UI interface"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:98
-# de971430b7864c209a2325cd694c0512
+# 23fe1793b6284934bc422782d0cf0a22
 msgid "Separating the Reporting"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:103
-# 5231af58807748459d0fea1cc7d589e7
+# a0ddafbbe5ce4d54be0f9cbf8e1ab120
 msgid "Initially, one Puppet master may suffice for environment, though the Puppet master may become very busy serving:"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:106
-# 05b60341aeb649f0bfbec12c42e811a3
+# b89a11d30d6d4cf88e2c8e4061b888fc
 msgid "The Puppet master catalog server,"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:107
-# 349afba224f44ee986ad0248ecb09901
+# 45dd76461fcb41d8af592ba256dbfd29
 msgid "The Puppet certificate authority,"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:108
-# 6e9f98c2994c41bc953ea9e5454e33dc
+# 1c98f45dd8f342809d36117b53cd4ccd
 msgid "Git repositories (two per domain, one per module),"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:109
-# 4f7d6a5744e94affb215e7f8861bf26b
+# 33d8578ce2b5466dbe2cb7c3fe4d373a
 msgid "The Puppet reporting URL (puppet-dashboard),"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:110
-# 1d336d558fa64833aafd706b9f626b07
+# 0e5a4b29bf954ea6bcd6c3a68b8aa4d2
 msgid "The Puppet database (puppetdb),"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:111
-# 7a4fce4b9eb14d459341b5d2ea40b4ee
+# fb16f4c2308b4372865c26782ae51803
 msgid "MySQL for the Puppet dashboard,"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:112
-# 49e3a350ad4b4e19a4fd9e3ff2421fc6
+# 28f883c19ba740e3b41ed1931ba1ae8f
 msgid "The Puppet dashboard user interface (dynamic pages),"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:113
-# df98de297e5344a0996c51ba9cb0502c
+# ce3118f3183447cbbd9b8bb99334e636
 msgid "The Puppet dashboard user interface (static contents)"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:116
-# 9487a24bde1949daacfa904ff6e5a3ec
+# 11529b6bb0da4f70a369c31ae02ad3c8
 msgid "Double the Puppet Masters"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:118
-# ede4b148ce1345649b0481c2c77d1ae4
+# 48c7e5be4cc64a249f7759bcfe02e81b
 msgid "In a simplified overview, the connection model between the components that make up a Puppet environment, looks as follows:"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:145
-# 7451a731503c4035a0dbe05114512bb2
+# 68b21395451644bab17bd7deb0fb4568
 msgid "A simple extension to this environment is to supply multiple Puppet masters."
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:148
-# 49fcbf9e4eb94e579c03336607a40a6b
+# 1e6a6ac07e72483d86da7afa00b75887
 msgid "A pre-requisite becomes to either;"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:150
-# bbba5753dd584b6e97f5506077c53115
+# 449a31be9fe04750bb3ed7b62ef24c41
 msgid "Split the Puppet certificate authority,"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:152
-# 3e6701e667b7445baffc15206be60753
+# c8aadf994ce34bf2b223822956513f3f
 msgid "Share (at least) :file:`/var/lib/puppet/ssl/` between Puppet masters."
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:155
-# 30beaf2b1b7541a5a7f941d25c748808
+# 2fad27a48bbe4678afd90310d830e3d4
 msgid "Note, however, it is recommended to not only share :file:`/var/lib/puppet/ssl/`, but other directories as well. One example is :file:`/var/lib/puppet/environments/`, which is were your environments are served from, and another example is :file:`/var/lib/puppet/files/`, the location of your private and/or sensitive files."
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:162
-# 7e16e3efae774a3cb81242c4b16d94ab
+# 005d85aaf98d4d37ba48b10af0c8fe68
 msgid "Not sharing :file:`/var/lib/puppet/ssl/` requires you to separate the Puppet certificate authority, for otherwise certificates will fail to validate and agents have a semi-random chance of hitting the certificate authority that does trust the agent's client certificate."
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:167
-# 90dc79d8f0e94d048403553644900da4
+# afd855bf94644a1f9caca67c465212ad
 msgid "Failing to share the additional directories -- in addition to :file:`/var/lib/puppet/ssl/` -- creates a scenario in which an agent hitting one Puppet master then another receives two different catalogs (and depending on your environment settings may apply changes effectively going back and forth between two versions of its desired state)."
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:174
-# 94cd701ff7164c2d87d59aea86ff3e59
+# 2e08f30b5fac4398a4ff3a22bd5063bb
 msgid "It is perfectly possible to balance traffic between multiple Puppet masters without using proper load-balancing techniques; A ``puppet`` IN A DNS RR could hold the IP addresses of the extra Puppet masters in addition to the original one."
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:181
-# 7a38f718dd9f45d4a50a48a402d87b2a
+# a6ba9a99b7384ab6b2a5b5d7289a3dba
 msgid "Note however such environment does not introduce high-availability through load-balancing."
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:184
-# f7922f3ce1b74a40b92e41f004785b82
+# ac99d70c4f4c464a80238438995b1f12
 msgid "If a Puppet master becomes unavailable, agents will still be attempting to connect to it."
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:194
-# 6c503c07d9de4baf937f830f1bfd88aa
+# f65c18d1059546218264e253c190e820
 msgid "The environment would look as follows (new components in green):"
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:235
-# a84d85418b1b4a4283b9f20119cb89c1
+# 2c1f8aced88645ccb4082f00bd70a7b3
 msgid "For true scalability, each component needs be separated from each other component, scale up (or down) by itself, and remain available."
 msgstr ""
 
 #: ../../source/puppet/howto/scale-puppet-environments.rst:238
-# 63bbd863ed604dd893f761c96d517599
+# 86612874aede4320bb3b0ac9c68e8fb7
 msgid "Further, it is recommended to back up the Puppet DB with PostgreSQL for larger environments (>= 100 nodes)."
 msgstr ""
 

@@ -3,6 +3,13 @@
 ``mail_domain``
 ===============
 
-.. include:: roundcube-settings/needs-work.txt
+This domain will be used to form e-mail addresses of new users
+Specify an array with 'host' => 'domain' values to support multiple hosts
+Supported replacement variables:
 
-Sadly, this setting has not yet been documented.
+- %h - user's IMAP hostname
+- %n - http hostname ($_SERVER['SERVER_NAME'])
+- %d - domain (http hostname without the first part)
+- %z - IMAP domain (IMAP hostname without the first part)
+
+For example %n = mail.domain.tld, %t = domain.tld

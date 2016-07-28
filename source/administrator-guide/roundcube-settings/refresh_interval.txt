@@ -3,6 +3,6 @@
 ``refresh_interval``
 ====================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Default interval for auto-refresh requests (in seconds)
+These are requests for system state updates e.g. checking for new messages, etc.
+Setting it to 0 disables the feature.

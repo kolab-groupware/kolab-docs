@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,98 +18,98 @@ msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:93
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:88
-# 65e4115dc9df4e669b88f27c0910209d
-# 8b9484324ff9453ab3ca43ff7dd57432
+# dd9a25d05b604e0382ef23a8699d1bdd
+# d17eb923af8b464f9ce8809aa357cc91
 msgid "Filters"
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:95
-# 2dd13766d3434d48a1c194308338b83d
+# 6ea57922669d4cde9b2665e9a1fa84c9
 msgid "Incoming mail is automatically processed by the server and handled/organized according to defined criteria. For example you can tell the server to move the message to specified folder, redirect it to another account, send a reply, discard, delete, etc."
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:99
-# 93d1e4c4c9604e0c856d937d31c071d9
+# 1db8c6c2fd434597b9d0e20fb79d2285
 msgid "Filtering is based on `Sieve <https://www.rfc-editor.org/info/rfc5228>`_ language, which means that under the hood all filters are stored as a Sieve script on the server. This interface allows you to define rules in easy way without the need to know the language."
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:103
-# b67460281c98460faa2998a050bbf26d
+# a5e7b93c96d84b579646469c15e9e856
 msgid "Each filter definition has a name and set of rules and actions. Usually the number of definitions is unlimited and they can be grouped into sets (scripts) for convenience."
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:109
-# 08df8c3f6d584c69b97faec7f8e2754f
+# fb1d3707cf1649d9af0785bf4999e2b3
 msgid "Filter sets"
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:111
-# 7ef496d712ce4a95a12a2c70cab2e287
+# 4a66f3961bf04e4987a158785153815a
 msgid "Filter definitions can be grouped into sets. These can be activated or disactivated. Depending on server configuration there can be none, one or more active sets at the same time. They need to have a unique name."
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:115
-# 2f0ba9e692ac45b8a59da02fdf341dd3
+# 0ecf4a37c490409fb499e2abcc22f39d
 msgid "New sets can be created as empty or as a copy of an existing set. It is also possible to import them from a text file containing Sieve script. Sets in form of a script can be also downloaded e.g. for backup or migration purposes."
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:121
-# 7585103fd73f406f8c7037cd6e3cba51
+# 931bc3436e3f4fb687a669c565d5bf8e
 msgid "Filter definition"
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:123
-# 532e23c01a354292a95ea47a9c6ab57e
+# 30a454b4a3cf4453b383fe6f62c9fcdd
 msgid "Every filter can be active or inactive, which is convenient if you want to disable some actions temporarily."
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:126
-# dc9761655b734dd0af5af1d97418f7b6
+# 21523d661a8342fcae7fb9badc723df8
 msgid "Because filters are executed in specified order (from top to bottom as you see them on the list) you can use drag-and-drop technique to rearange filters on the list."
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:129
-# 7cfcb718ffd344e2bd2926d96bf7e60b
+# b91bc46987354c38841146ed4e13d0aa
 msgid "Every filter definition contains at least one rule and one action. Depending on server capabilities a rule can be based e.g. on message headers, body, date or size."
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:132
-# 2b74a3fe9ae24cf2b7db5f714f1271ba
+# f88cd5d15f7046b3bc98b55926d34ba5
 msgid "A set of actions also depends on server capabilities. Most servers support:"
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:134
-# 430ab1cb06574d108908a2c282e29728
+# a0626e589f094e7b8c4645c95e223244
 msgid "moving/copying messages to specified folder"
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:135
-# 44f0df3f104143eb8a074324100ce6ce
+# f823c77ea7014e1190b9d0813edb57c4
 msgid "redirecting/copying messages to another account"
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:136
-# 9cd01b3374014398b66c0fe4ca22b085
+# b34b0e58197f48c2b1c068535cdc400f
 msgid "discarding messages with specified error message"
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:137
-# 40d8ff3c44364773a64a25ebe84b1d45
+# 5bfb5574be1842369472a6b1e9208947
 msgid "replying (vacation)"
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:138
-# a9297b46c029465dbe351f4ede8b5a62
+# 16309207a8174000a408985e5186c2dc
 msgid "deleting (ignoring) messages"
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:139
-# cc16c8c42d1d484fa46928e58ae6be82
+# 22670dc921dc433aaf5bf3e4b0496456
 msgid "setting flags (e.g. marking as Read)"
 msgstr ""
 
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-filters.rst:141
-# 0e756aec9f124bdf9fb1322dacd7dbdc
+# 86b77561b6424f6f8c714e5b635b0ec6
 msgid "Note: Some actions stop filtering process, some do not. Use *Stop evaluating rules* and *Keep message in Inbox* actions to have more control on this."
 msgstr ""
 

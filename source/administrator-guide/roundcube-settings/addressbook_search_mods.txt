@@ -3,6 +3,5 @@
 ``addressbook_search_mods``
 ===========================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Defaults of the addressbook search field configuration.
+Example: array('name'=>1, 'firstname'=>1, 'surname'=>1, 'email'=>1, '*'=>1);

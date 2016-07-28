@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,425 +17,425 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:92
-# d14d4cad7df94141a5643fc39b85aaf6
+# e288227b921e49b4b364029c1c78947e
 msgid "Kolab Web Administration Panel and API"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:94
-# bd7c1a85c0e44d11905edeb3ea534996
+# b0ef14d11f264bf58204dd6e281c4b88
 msgid "The web administration panel comes with an API in order to allow different, third-party interfaces, as well as the Kolab tool-chain to Kolab Groupware, to execute tasks of an administrative nature."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:98
-# 0a0733a485a74f408b559e0748452d4c
+# 8815358c74d7440598b793fa80bc9455
 msgid "The API uses JSON to exchange information with the API client."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:100
-# 22371fb98f454d3d8f27e7a5709752cc
+# f869c843d0154d55b3785d6e7ddbd5fd
 msgid "The calls to the Web API are made to a service handler, for its methods handle the request. A call therefore looks as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:103
-# 53ba1633209e4b3d8c4df4649a5ee364
+# 4513971f30bd42e6ad48ceb30f01046e
 msgid "**<service>.<method>**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:105
-# 49251bdfa0a6408ebe8c168bac5fc7b4
+# 58ef115b2f77400abe23ae36d40d50ab
 msgid "which is a location beneath the base URL for the API."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:107
-# 7d7aa89bb8564cb7b800dbc35e21ac0a
+# 438bbe2263b44794b49ddae791804458
 msgid "Suppose https://kolab-admin.example.org/api/ is the API base URL, then a call to service method **system.authenticate** would be a POST HTTP/1.1 request to https://kolab-admin.example.org/api/system.authenticate."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:112
-# 847fe4565b574e9299ef8c24b672b827
+# d4d4473265804776806b0a880986e51b
 msgid "Example for an API call from PHP"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:148
-# c910b81b844442bf9e00774b365538df
+# 530fc91b164a46c4bff6bc1537002d51
 msgid "Example for an API call from Python"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:169
-# a4be1a68cada4b0c9c57eaa36e825c65
+# 1bd2e1313b6d4f148d1e95d61fb5d749
 msgid "HTTP Method Convention"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:171
-# ff4af38fe0924314beb76928b098c5b5
+# 2bbebf82a2214a44ab509d9d016c3f43
 msgid "Two HTTP methods are used: GET and POST. The GET method is generally(!) used for read-only operations, to obtain information, whereas the POST method is used for write operations (modification of objects or session state)."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:176
-# 9f460de182394085bc4ce0e39f5cdb8d
+# e0f491b364ec44819ae12c845bf7414f
 msgid "For GET requests, the parameters (the payload) are appended to the URI requested, https://kolab-admin.example.org/api/domain.info?domain=example.org."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:182
-# a0a56d46951e4146bf571e41d98355a1
+# 10a0ea2266df4dbfbab60757dbbe8365
 msgid "This restricts GET requests to specifying key-value pairs of payload information only, even though a GET parameter key can be specified more then once, creating a list of values."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:186
-# 7f30ccb56817438984f9f1bdb5fca3f5
+# 99dd5e7bb05846e9b8aee044abf4d050
 msgid "Some read-only operations, such as user.find_by_attributes require the request to pass along multiple attributes with, potentially, multiple search parameters. These types read-only requests are the exception to the rule of using GET for read-only requests, and use POST instead."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:191
-# 184878d4b37f42689d03f9b2c4077524
+# fb02a21c297a4b46891b3d60a4902b29
 msgid "For POST requests, the payload is a JSON-encoded dictionary (array) of parameter keys and values. Only strings are allowed as keys. Values for the payload may contain lists, strings, dictionaries (arrays), integers, floats, etc."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:197
-# 56adfc630aaa4fdea240abe01b2d5414
+# 131af8bee9fb44f780e49f7ff214fb78
 msgid "Service and Method Naming Convention"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:199
-# b9b94f83d69d4bdcabfc26e2480c8071
+# 998262550c9f483099f9b54af1e7211f
 msgid "In another rule-of-thumb we outline the naming convention for services and methods."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:202
-# e2a5428c45d144768f1b8912b4a1976f
+# d211987e9ae74f28a1c7801bcaf71c5e
 msgid "Service names consist of an object name either in singular or plural form. The singular form depicts actions are placed against a single instance of an object, such as **object.add**, or when at most one result entry is expected, such as **object.find**."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:207
-# 069ab964d24b4967bd25fb506ad887b9
+# 3c714e982cfb494883d3ce08c70f99ba
 msgid "The plural form depicts actions that are placed against multiple instances of an object, such as **objects.list** or **objects.search**, and expect zero or more result entries to be returned."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:211
-# d570d4bbef2c4061b193dccb03123178
+# 0b22626c6f3d4221a8f1d27970d4dd3e
 msgid "Method names often imply an action is placed against one or more objects in one request. Certain actions may be confusing though. For these we have the following rules;"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:215
-# 58afcee501a140a9a32c1ffa9bbb96cb
+# b8fde220b1e84911b8d79f854792e9a0
 msgid "**Finding an object**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:217
-# 797dbdfacc744a159d83b84bc402df52
+# 2d663c9e6db74b519cfc00d87663fff0
 msgid "The method find is always executed against the service with the singular form of the object name. The target of calling a find method is to obtain exactly zero or one instance of an object. The method should fail if the result set contains any number of objects not zero or one."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:223
-# dfc6b42277b341a088db93505a7733d4
+# fd0ecfb38bbe4bd0b4d6572a7c41c72f
 msgid "Example finding user *John Doe <john.doe@example.org>*:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:230
-# 136953d3452c470fb6b284e7274aa9c3
+# 3b1cb51fed7b424ab0ab3dcb1d3a42c2
 msgid "**Searching for objects**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:232
-# f1fcf9c6c5d24d28ae2b45c3ad593df0
+# 2328923461084a62aeb3b5643fe8f421
 msgid "The method search is always executed against the service with the plural form of the object name. The target of calling a search method is to obtain all matches, if any. The method should return any result set containing zero or more results."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:237
-# 6158948656ed4961894bed2778eb47d6
+# 7b5433d1f00044abb1049f9eb680c094
 msgid "Example searching for user *John Doe <john.doe@example.org>*:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:244
-# af5adf108b094ec09ef63e7e1f5a2ee8
+# 222a8a212fec4e4fb59785fb6be89d88
 msgid "**Listing objects**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:246
-# 9f5a79d5849348ce9b6893c1ebc5e076
+# 2c481bd33d734106bbe591ef7f417185
 msgid "A list result set contains the following components:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:248
-# 9877e2d35c234252976e6a48438213d2
+# 3ee3690c67994abaa9bf11cc86c1bdf5
 msgid "status"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:250
-# d5eb270a4cd945e6a793f1e977f0dac5
+# ef99ca7b8b5d471687a51fe91fb8ea44
 msgid "result"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:252
-# ed30fc3f99224974beee125a1fdc68ed
+# 532cec7a6ec54c8aa4afe2a4d805946b
 msgid "**count** (integer)"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:254
-# 4778f8a5a6c64833820c82ac69259054
+# 68cb9b66a2cb41eb93e2ba9f8c10f37c
 msgid "**list** (dictionary)"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:256
 #: ../../source/architecture-and-design/kolab-wap-api.rst:260
-# 02c720839f2a4a68ab3bbc7c504c11bb
-# 3ef2d0e563dd471ea6af433bfe73d785
+# 5f1adcbae1874e2ba012a8183b2ef514
+# f5c585d71c18481d86ecf16b85f9ac94
 msgid "entry id"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:258
 #: ../../source/architecture-and-design/kolab-wap-api.rst:262
-# c4f018ec9f5e470894998e02d9886b05
-# 464c9dfb2ef4403b8cd147b8b9ddd007
+# 85bcaed6c4254aa7a070c255e03f9842
+# 44e08a78b40a4a11b32653ba0af4912c
 msgid "additional entry attributes"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:264
-# a78d72702f6d474ebfeedbf837cba884
+# bb960103d02243dbb1aea04340a7b1cf
 msgid "Example listing domains:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:290
-# 6b2f16f3fbc14f80be9763df7ddf433b
+# f544201cd5fb40a9a415b6ad82b8eb18
 msgid "Standard Response Layout"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:292
-# 6d5017be5ad648019c48888c4ad2ddaf
+# 61109532b7114fe1aa702fc394d55df2
 msgid "The standard response layout offers a location for the request status, an error code and the corresponding message, or a result."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:295
-# 41226084cd5a4b8d934c69a633402c57
+# a04ef5d195e44a5e8d931f500e5c1ea9
 msgid "The status is the first item in the JSON object. It has two possible values: OK or ERROR. Depending on the status of the request, the rest of the JSON output contains a result (OK) or the error details (ERROR)."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:299
-# b7e44b9872a94d3393d02a672e20545c
+# ecf0214851104c73bf2270a1a7ebe291
 msgid "The response to a successful request looks as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:308
-# 15297e753b154c1eaa4269493196f6be
+# 2df3edea98d6498684c1dc74abbb1f17
 msgid "The response to a successful request that is expected to return zero or one items, such as find methods, includes a result layout as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:320
-# eb42a3bdae6d422c8030e390674263f6
+# 20e37bede96b4878a2d0239607851b3c
 msgid "The reponse to a successful request that is expected to return a list of zero, one or more items, such as list and search methods, includes a result layout as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:336
-# 14da3dc5529c4eb587ba4f72f8ecb908
+# 79ce744eff544bf6b54e8cc2fd09b98d
 msgid "A failed result however looks like:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:347
-# 2322b239af784b6fbea4702b0328f247
+# 767fda558b80412ebf48c16d7799b748
 msgid "Service Handlers"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:349
-# 8cb55cada74649788c952d1c25119385
+# e1080f262204476ba5e559f0368dc2c1
 msgid "The following service handlers are available:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:351
 #: ../../source/architecture-and-design/kolab-wap-api.rst:908
-# 5c646da6f1ea4b3b9129cb07295625b9
-# 58d3a6fb730b46eaa8c8029d16876650
+# f2a6ed1bbd98402abf08b4c8e66991f9
+# 39d5d2c5bdb44de0851627655dccf1ee
 msgid "**domain**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:353
-# 6297a380fc414695a6ba5cf95353bd31
+# c7be7430f9284996b1c558dc32df368d
 msgid "Domain operations, such as obtaining information about them, or adding, editing and deleting a domain."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:356
-# 49c2bd17123d42a595b571d889d77713
+# 86237de255254bce8d34f28588255068
 msgid "**domains**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:358
-# 06f661a527d84a89bb15d3ed31fba0c5
+# 6d823276d0bf430784b84979a4e38f05
 msgid "Operations against multiple domains, such as listing or searching."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:360
-# 84c3b6b630254ac7b11ca9ee3886a5df
+# 216412d60129406094a22a17a8282b2a
 msgid "**form_value**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:362
-# 531d365f86a84c8a9cc404592560a2a4
+# 9aaeef64012b4b678be851b355342ac2
 msgid "The service handler for form values. Can be used to generate form values (such as passwords for new users), and compose form values for form fields for which the value is to be composed using existing field values from other form fields -- for example the ``mail`` attribute value using a :ref:`admin_rcpt-policy`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:368
-# ff4be6f1a4a34534bb4241670ae606d9
+# 3c705497ddac4455aeb89a6ca07df701
 msgid "It is also used to validate form input."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:370
-# f4916d30d0904cbbb16d3ce28f51c3c7
+# d4980acd4eec41acb8b2ece3d341f72a
 msgid "**group**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:372
-# fba5b539ae1a48f28f37dfb6ba424170
+# 75d3c8a6a06b4736955842a32e2c88b5
 msgid "Add, modify, delete or obtain information about a group object."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:374
-# e6d4c2c5ddd2475bb7c8a50958a8caa6
+# bb8b60ed8b2d40219a7702b416bbabdd
 msgid "**groups**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:376
-# e6ba64a522284aa3a4876a2768a53895
+# 2adf0ce794c94c51bdda1d4148bb5d6c
 msgid "List or search group objects."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:378
-# df34e9cd8a194f5d97cbace921ff5fb9
+# 5410ac803b3d458495ee2a7c6514f9d0
 msgid "**group_types**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:380
-# 23c4d4ca67c3477c9fb2a74e4b65e79d
+# da882dfad3324b46917eb1f77e2114f1
 msgid "The service handler that provides information about group types."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:382
-# e795a615c8af439eb0935c4aa559647b
+# a840d24e144f4d63870382749251e6e3
 msgid "**resource**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:384
-# 556ef8a0c3444fda92ed74c3be613d30
+# f2858ae3982c4c469ba7ce531a312c44
 msgid "Add, modify, delete or obtain information about a resource object."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:386
-# 856674ea5fcd4e4db504aebeac8b36cf
+# 7a89d3a74c1a4c7a9c1e0410e9edb45b
 msgid "**resources**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:388
-# 203299d621444b75a268a8c3719c082c
+# aa0006559da1418f9b6a0717f1b56490
 msgid "List or search resource objects."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:390
-# 04ca9b7a220c4385982fbb2fbd6d4a6e
+# 252eec3374dd4870b53ec8d3e396a935
 msgid "**resource_types**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:392
-# a1d4d5d280824aeea3d8c53cde09249e
+# 67f5a1ba9cc7489bbc95045f93a1bb54
 msgid "The service handler that provides information about resource types."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:394
-# 06d6980cbc07409794e3011f2579383b
+# 4625fa9675a44913868d8faa62d84f41
 msgid "**role**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:396
-# 5a490899fbf34a5d815006a101eda006
+# a77efb1be10f4b2d8177d91a3623744b
 msgid "Add, modify, delete or obtain information about a role object."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:398
-# b64383b5bcd64cda913b5c7e77d69c22
+# 149ea3c0cb3844dba5797c89a3b5c0e3
 msgid "**roles**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:400
-# a32dd9e4c67145dca01824b62da0fe44
+# 7125947965bc4206bcad07c67274e0e8
 msgid "List or search role objects."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:402
-# 1987e5f1490847c4bcb86e2468a70e84
+# 03a39225466b454dbbf3afa73c85f43f
 msgid "**role_types**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:404
-# 748eedc1b2cd407dac8e020d87d7744d
+# aea04c907678498f974388dd9f3c3334
 msgid "The service handler that provides information about role types."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:406
-# 7b16f2228f06483a9eefe51a1094cb8a
+# 18f9e01dc690487ab28c308de8c488bf
 msgid "**system**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:408
-# 9657aeff471841ba9c2a9b95b4339707
+# 21a8eda491ea42d69f5978f10e8d30ef
 msgid "The main service handler for modifying session state."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:410
 #: ../../source/architecture-and-design/kolab-wap-api.rst:898
-# b858f9fbeccf46d48ea1454b3179f874
-# 7c1141bb8ce64539a83cae62551d7492
+# d0c4a790dfeb49d3be92d4d02d45c288
+# 0935e2ce7fad45ffbc1dbdb466fb9622
 msgid "**user**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:412
-# 7ca4c20dc06542abbae7a47c080c13b6
+# 225ccbaed4aa473bbd69cc0941004d91
 msgid "Add, modify, delete or obtain information about a user object."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:414
-# 7379b97436fd477f8cbda04bbe5b441e
+# 489818ff0cbe4e8d9117a1b1852a8c8d
 msgid "**users**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:416
-# 4c46c97b24604ed5b5f569e9ab13cc76
+# a94cde9dedfe454a98b2f315eb0ad174
 msgid "List or search user objects."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:418
-# 20a0b8c3ee0f40488647759c4cbb19a2
+# 22d0213ceb394b25ba2fd5781ae95361
 msgid "**user_types**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:420
-# b01e855b43844f02a44bf22c49fe79ef
+# 6a68d142e8ca4496a58e43defd33f3a5
 msgid "The service handler that provides information about user types."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:423
-# 62f48652a47e432382b743b58031e623
+# c0191d67cd4c4b4db8a5c12851d4bc37
 msgid "The ``domain`` Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:425
-# beeafb54a625435e8adc26e9b624e5ac
+# fa54b381a8d24f97ba498a2ad10b1b03
 msgid "The ``domain`` service makes available actions against a single parent domain entity, for example 'add' or 'delete'."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:429
-# db543f69e0fb4b04902b7367cdde9341
+# d67244f030ab46d7a2aa5414aaf81f4d
 msgid "``domain.add`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:431
-# 147d63db87194a32b36bfd05550b364b
+# c546b7cd18f544c49e46a72884507d78
 msgid "Depending on the technology used, quite the variety of things may need to happen when adding a domain to a Kolab Groupware deployment. This is therefore made the responsbility of the API rather than the client."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:439
-# 593812683bad4e81bb050df695357e37
+# 36765591235a4d89980254fe75f1eaf6
 msgid "The ``type_id`` for the domain. At the time of this writing, only one type ID is available, namely that of a parent domain."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:444
-# 6ea0211af9f24cae893ce2490bc0a268
+# 2b3d070270d1497dbe2cdfbfe9a948cd
 msgid "The domain name is a mandatory parameter to the ``domain.add`` call. Note that it is the ``domain_types.list`` API call that describes what the attribute name for the domain name (the value) should be."
 msgstr ""
 
@@ -446,18 +446,18 @@ msgstr ""
 #: ../../source/architecture-and-design/kolab-wap-api.rst:854
 #: ../../source/architecture-and-design/kolab-wap-api.rst:938
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1022
-# 28954465fbd9488389026f6f9e023130
-# 539b31a6be7b42369549f8166ef00961
-# af3c9232a5174aa3b3dc81000d1bec1b
-# 3b6c332e8fce4279836598218e177a55
-# d625bcb877234adb8f653943d46e597d
-# da581a8027e246f2a7b27cd9e2d3501d
-# 3a409c5a2fcb42639621cfbc1f096a2f
+# 7c695883f53543bda8556e681002df73
+# 02eaa9dd952f4014923b4732b4609c7d
+# 3b4fd560bd944a7c84743567bbae0502
+# 78565e64696f4a8995c0c1a0028143ac
+# cfb723d036ba456c9444a5aa67a47b44
+# 5450aed42d064ff5897b6e84432c6682
+# f07e23d9f1cc4195818f982c6d61d560
 msgid "Example Usage"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:450
-# 220f4bea8ac04755aaaaf52d99a92b51
+# 0789e8393e674fff95634d67c0a0c162
 msgid "To add a domain ``example.org``, use the following logic."
 msgstr ""
 
@@ -466,1082 +466,1082 @@ msgstr ""
 #: ../../source/architecture-and-design/kolab-wap-api.rst:649
 #: ../../source/architecture-and-design/kolab-wap-api.rst:669
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1067
-# 13de65fe8fe342d6b68629dfcee503f0
-# ff98556026d24cbda2bccfc8a8c04b6c
-# 2db7d6358b1249faad0fa857f6938e95
-# 6d9b4b72045f4cc3b71ed7f0cb290b40
-# 2a24d0a859b24a289acb8b8d6ac87f9c
+# 39e5ffad5927419c8cdaa36a8691680e
+# e4a08d1a89af4fa59d0a4b17240a58b4
+# df192fe072824c3ba8732b5009a749f4
+# fadb4f198e434b3ca2ec19ef173ed713
+# f12360ffd06142159ecd85d6a433da9c
 msgid "Login to the API, using the :ref:`and-kolab-wap-api-system-authenticate-method`. An example login procedure is included in that section."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:456
-# 1f63b365268641f8871dcb22f79a565e
+# 1e7f64852c214ca288d7df41938425b2
 msgid "Obtain the list of different domain types, using the process outlined the example usage section of :ref:`and-kolab-wap-api-domain_types-list-method`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:459
-# 00f67e7c38124e299f71980208667511
+# 386e7456d8254857bf92f6960f7a7824
 msgid "A subsequent call may therefore look like:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:476
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1047
-# a0998a13c5c44bdcbad518c30a1a8d09
-# d7be4c5fe7084bbf9ae1194153271aa5
+# 78f908316ff1426db4c1dfd2c9a5cfb7
+# d5a76665f13346f599fd18d265b846ad
 msgid "Server-side Implementation Details"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:478
-# 46f90d2faf144b4e806ae4d7c9b92ef3
+# 21f17b597165485588f94b11d2e283bd
 msgid "On the server-side, when a domain is added, an entry is added to the default authentication and authorization database, as configured through the setting ``auth_mechanism`` in the ``[kolab]`` section of :manpage:`kolab.conf(5)`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:482
-# 25d1ac476d834077a9427b6d6b36cb5e
+# 76a31b091224465da4575f049a272bb4
 msgid "The authentication database technology referred to has the necessary settings to determine how a new domain can be added. The related settings for LDAP are ``domain_base_dn``, ``domain_scope``, ``domain_filter``, ``domain_name_attribute`` (used for the RDN to compose the DN)."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:487
-# b899efa46c8b452f852cf9e155b8cca8
+# 82e27ca3dda34c34a2a61cbbc234380d
 msgid "After checking the domain does not already exist (using administrative credentials), the domain is added using the credentials for the logged in user."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:490
-# 8106847a8b5945e7a18554efe030b06e
+# 9652d1e2085e4d05a5a496fd456f5125
 msgid "This is an access control verification step only; the logged in user must have 'add' rights on the Domain Base DN."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:493
-# 656dfc5e1fd8494bb316af7b06dcb688
+# 54252df40d5e482ca6ff24f0171c1fd6
 msgid "Additional steps when adding a (primary) domain name space is to create the databases and populate the root dn."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:521
-# 14222b11600a4e16a9e64f3792707a49
+# f3fa85dc32424411980272a7b9244c40
 msgid "``domain.delete`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:524
-# c23bcb05cf2f4c3e8edad8e55eeb6a63
+# c3c15cb415b543dc8a93577fb5f34ecb
 msgid "``domain.edit`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:527
-# b30ef1ef8432408ab52ac365c6d171a5
+# b7fd117441c747b3a48b92d589bf8c6e
 msgid "``domain.info`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:530
-# b7bc869da73a4f75b8a0a3e7cd6602a8
+# 4eb176f910ee4e5a85441a407558ff2b
 msgid "The ``domains`` Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:533
-# 6a816217d9ad4c349b05d2b89d82942a
+# 80eb8d85d03a4a6b97d4d2a02bb66bfb
 msgid "``domains.list`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:536
-# 9d4e116ed5414c3280b8c9f1bf305ec7
+# dc093f8ed69c4c76bff11764cd434c84
 msgid "The ``domain_types`` Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:541
-# d17e0a992b644d3d852bb116f3063913
+# c7299a11ef2b4738a7c69c5398fbc56b
 msgid "``domain_types.list`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:543
-# 78d1dc0297344f2ba6c7d198698ccee2
+# eea07f7dbe1d4988b9d4532008dac33d
 msgid "List the types of domain objects that the API accepts."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:551
-# 68a53527bdb54225a46a961dd7d67407
+# 7aa7f1432c0b4ae3b7c74af1e00f488f
 msgid "List the type definitions for the object ``domain``, using :ref:`and-kolab-wap-api-domain_types-list-method`:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:560
-# c7c851394c0e415fa2d78325cfede3b4
+# 541f6896bf0f407d87de91953a106e17
 msgid "The raw results may look like:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:605
-# afa9a610af5649fc8f50fd743b8e99c5
+# 1871f868683d4c6e8084ac8ecfd21be6
 msgid "The part of particular interest is the ``attributes`` section. For a detailed review of its structure, see :ref:`and-kolab-wap-api-attributes-value-format`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:609
-# 7f96ac946b1f45f1b49418f3fd58fd65
+# bc7856dfa75643d9acd49817e851a7dc
 msgid "In this example, the ``domain_types.list`` gives us one type definition, and tells us that at least one ``associateddomain`` attribute value is required, since it does not include ``optional: true``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:615
-# c6b4e7d37b9343f2af7a443321ad8629
+# 47741db791da49069bec867043cb2a57
 msgid "The ``form_value`` Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:618
-# bc94c39198674b4fb63b3fc66d850373
+# 3e9dfdf269eb4079a002db08fa105959
 msgid "``form_value.generate`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:620
-# 9bc9a8bf7d6f4601881c74492a67f0e4
+# fc0a10f05fcf4bf4a64cfc0b621285d0
 msgid "This API call allows access to routines that generate attribute values. It accepts data containing the names and values of other attribute values as input, which can be used to generate the new attribute value requested."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:624
-# 80c9a3fa93ef437fba6de28c6c57f01e
+# 183f0a4e507e4fb7be5652466d029bae
 msgid "The form_value.generate API call accepts the following parameters:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:626
-# b23fd712cd7141dab5f1ee2556bfd885
+# a846f320c8d143ad9d25f23b9461aadb
 msgid "**attribute**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:628
-# c9847ded8182466ab2f2ad380240d8fc
+# 07741ba2f7454a81a15988fbc81c89bb
 msgid "The name of the attribute to generate the new value for."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:630
-# de986508a3ae4373b5489525d35b9d98
+# 6384b594fca94ab1a10df407e69ea4c8
 msgid "**data**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:632
-# 241e1b9f9653406881ba46d3936e1fc5
+# cbc8832ffc9b4920b53930e40adbf1db
 msgid "An array with key-value pairs containing the attribute name (key) and attribute value (value) to use to generate the new value for the attribute supplied in attribute."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:636
-# 319fdb29a9d941b0bbbc330827dd0004
+# d0391c09d2ed4797830dca7c427a2ffa
 msgid "This parameter is required for certain attributes, such as the ``cn``, but not for other attributes, such as ``userPassword``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:639
-# c718e7df80ed46b188c8701445a36c3f
+# 8ee940280d8d494badd7dde630e00b95
 msgid "**object_type**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:641
-# 4b9e49fc4d8e441c879cc1cf9e95c9cd
+# 1e6bfdc9110c43ab9f1916eec36268dc
 msgid "The object type name to generate the value for."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:643
 #: ../../source/architecture-and-design/kolab-wap-api.rst:753
-# ed7930483ab848ffa5b0f4787d2459c9
-# 8f9e97dfa30241ee991f4a9027ab4790
+# 2b3d2f17625442aeb6fe044806be412d
+# ca226864390d4c5e9280d27e8ef01ebb
 msgid "**type_id**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:645
-# 5453a827ddb64bb9ad2c58508c7e5cb3
+# 049bd8447e9d4b5b93fe00330834958d
 msgid "The object type ID to allow for different policies to be applied."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:648
-# b65a37df9bd34cf8ad66bb360b16af6a
+# 9428b3fadb444b6aa16581fe3cc8b31d
 msgid "Example Usage #1: Generate a User Password"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:653
 #: ../../source/architecture-and-design/kolab-wap-api.rst:673
-# 48b2a68205314945aaed5fdd44c71ccf
-# 09804b7829e940268a3041e1fa7e4189
+# 67c4fb70bd4741a39c5238b11b6206cb
+# 9aa24cf8905c49b48d86c89f30016a3a
 msgid "Issue a call against ``form_value.generate``:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:668
-# c13ce458ce7c4d15a122eaf660207249
+# 484289e2e98f4b3babdc519b1e9c120f
 msgid "Example Usage #2: Generate Attribute Values for a Kolab User"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:712
-# 85567579253a49dcb241d759b4c4abdf
+# 6e66169c07c74533a1c9c87a7fa20ec3
 msgid "The ``attributes`` in this example come from the user type definition for ``user_type_id`` 1, and correspond with the field names listed in ``auto_form_fields``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:716
-# d7f6ce69bbeb4e77aa81dbc4b7942f57
+# 78ba2cbf9a4e482da2c0d5772b48d161
 msgid "The ``data`` that is listed in each attribute definition in ``auto_form_fields`` is submitted alongside the list of attributes."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:721
-# 7d5cd8a5210542b1bc62f9444be2d63f
+# 244791fa6bc449a8baa491e6a9d68d0e
 msgid ":ref:`and-kolab-wap-api-attributes-value-format`"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:724
-# e61d6e101fa14f9eb828b3598f79be64
+# 192ef59d28c94a6d897efbc5729429f6
 msgid "``form_value.list_options`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:726
-# 3c64db1991a24405a271bd91c73b7468
+# 8b4a054b082f479ab811cdcf448196ac
 msgid "List options for particular form fields."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:729
-# 634d20f141a7469d9c7cb327a11c32c1
+# 152022fab044440e9c4fbfdd4d89762e
 msgid "``form_value.validate`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:732
-# 9c01c644757e4a17814a8e335cb33fbb
+# 24d246704cbc472ea53595234f3ddc0a
 msgid "The ``group`` Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:735
-# fadc242d4038417892f0cc6b468d65a2
+# fbb316fb89e74942ae63d10c8215a973
 msgid "``group.add`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:737
-# d7a204fe9b344093ba70227e8e5fe07f
+# 95131f55a2d64b23974fec95078c1ad8
 msgid "This API call adds a new group."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:739
-# f6de2fc3a09c49ada07f8a850f4ac207
+# 89bfb1a7d35a43d2ace38d312e67781f
 msgid "The group.add API call accepts the following parameters:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:741
-# 2593a6dd088d40c7ac27035b29716fa7
+# f130537ef38d4bfab960a96c7c347e31
 msgid "**cn**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:743
-# f41db890f6be487cbff6385d6a1693e5
+# 5438f371195c42e1bab4328ea9f5a576
 msgid "The Common Name of the group"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:745
-# cf682d1b417e4393a70c2a595f619269
+# 951873b962494fa5b2527f353eb23aaf
 msgid "**ou**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:747
-# 01f2c0b181ed4b0ca65b79ec6485ce95
+# 27cedd2f26eb44838d4903e4a1dc179e
 msgid "The Organizational Unit of the group"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:749
-# f2783f3ca80741fd9fdfb721edb5bf72
+# 74d3fe120b734fe3b8f6c643be501749
 msgid "**objectClass**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:751
-# a93b50e846dc4d758d7a6f96c9624289
+# fae00538f0f345e385b5266f3727011a
 msgid "The object classes for the group"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:755
-# 916ad12dbad0437fbe5cd1b37c297aef
+# 8dde4916cfcc4b1698976d5be58fedfb
 msgid "The type for this group: Kolab Distribution Group (Static) is 1, Kolab Distribution Group (Dynamic) is 2. See table group_types in WAP database."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:757
-# b4780e7a097b466bba24c60dc6191d19
+# 548168778a3e48d3851d4ace2db0e586
 msgid "**mail**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:759
-# 8765f96888f840f9adeda2d1019b8f19
+# f84102690c824670b496a1ebbd2ab2f7
 msgid "The E-Mail address for this group"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:761
-# b35af53e1a08462d87fd33e5622a2c46
+# 7b25f5163210465a8aead15ba3fa632e
 msgid "**uniqueMember**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:763
-# ce48544f225140fda528b00656354028
+# 1ef56a7d659744b193c00d2c9ea2d5c5
 msgid "The accounts that should be part of this group"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:767
 #: ../../source/architecture-and-design/kolab-wap-api.rst:799
-# d941eef5d9154eb381fb8780130b1b09
-# 6c2dec2da6eb4863a9bbb2ec7c3ac1b3
+# a31f4b1485f84d66a5fbea209bc6100f
+# cd408d2a790846dda15468b58ceba660
 msgid "Login to the API, using the wap_client (see example above)"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:769
-# faec9a9c947547fcac5e44bbda4ccdc7
+# e25a139d37ca49e5b33f51e33cf1ecab
 msgid "Issue a call against ``group.add``:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:781
-# 1fbc785f5c624a888b5354ea3d2a51b7
+# f908123daff24436aa5b911a3b505d00
 msgid "``group.delete`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:784
-# 8b89554f144e418e971013c2e30310f3
+# 058402fcdd3a457f9101140a6184c9cd
 msgid "``group.edit`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:787
-# 33cf4dfce3344e638e194ea5a8c8917f
+# 0ed6dffe587845f2823dc48974370421
 msgid "``group.info`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:789
-# 37b7aed6c5314610ad02ec5c857da10a
+# 57a01cebf8f948dba2e46811594b9848
 msgid "This API call returns information about a group."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:791
-# e54e0a2b804747b09e360d4146a2f99b
+# 8ec920fab6e34b01a765fe55582deae2
 msgid "The group.info API call accepts the following parameter:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:793
-# b755cd9f7e2a4a6e85b3f118214a32ec
+# 23f192f05c6448219b29deed2057794c
 msgid "**dn**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:795
-# 0614b738d75340179c38470936ea9299
+# 90b8031c54fe4de9a6408d6dc56ca9fa
 msgid "The Distinguished Name of the group"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:801
-# 21c7e9dc67574d9ca82e0f18acd72f78
+# 4d012ce6299a44c6a7c7f1c60a91fec5
 msgid "Issue a call against ``group.info``:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:806
-# c21c5f44718149b3980a6734ba985ddb
+# 12295ae4eb7d49d79cd6a6711687d104
 msgid "``group.members_list`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:808
-# fbc664e484b44cc6887191c2a65798b7
+# 273d84352eb740d1bf8c5fb79c7c6be8
 msgid "The ``group.members_list`` service method lists the members of a group."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:811
-# 0858fac7831e4af1a6bd50156d954eea
+# 6d42a80dcb944f4491976c5609073c50
 msgid "The ``groups`` Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:814
-# c876fa1cb23848cf827a250cf06cb4bd
+# 1dddf13a19fc4f25a3ae838b1e772ecc
 msgid "``groups.list`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:817
-# 03fa79dd8e924fbf8641bd506b7f2828
+# 8ccafaec82de42af91a7e911b9ee9de4
 msgid "The ``system`` Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:822
-# 55fa7d5eaa984331a99489abd2c25a06
+# 459696486ad3495c809edcc99dede529
 msgid "``system.authenticate`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:824
-# 1127c54ac920498e8c7166bee85a74c2
+# 3d52078dc71d4789b21fb49d644d0fe3
 msgid "Successful authentication is a prerequisite in order to be able to execute any other action against the system. Upon success, the ``system.authenticate`` API call returns a session token that MUST be supplied with all subsequent requests for the session, through the HTTP header ``X-Session-Token``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:833
-# 30eca616c39e4b49bf54988148b3bd43
+# 9ae3ee28d336480fbda1f9c83ce2d931
 msgid "The username to use when authenticating."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:835
-# f78e7dd6e3ef4fc0bd95ade673d77d35
+# c91d228dbdaa458cbcb9a51826140bb9
 msgid "Note that this should be fully qualified, with the following exceptions:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:837
-# 90a9bbfc012a4023b6f5bfdd79806e79
+# 3d4426fa35a54c6cb8206e9922d61ab0
 msgid "The ``cn=Directory Manager`` server administrator account does not belong to any particular domain name space."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:840
-# 09162a28db424dfb87222f2b4ca75516
+# 0245ad3902174e439d6b795af69d631c
 msgid "Users may authenticate against the :term:`primary domain` without specifying the primary domain qualification suffix."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:845
-# 178b377a94444d9487f9311790811b0d
+# 3ee0d76ff75245c7bc5cdf1072cd085b
 msgid "The password."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:849
-# 8aeb37b2127744af97f77270a684c67b
+# e1a8399c3c1944afaeb1a6f3720c04e6
 msgid "For global administrator accounts that have rights to read multiple domain name space Directory Information Tree hierarchies, optionally specify the domain to select as the :term:`working domain`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:855
-# cacaca9da00a4a1cb54c4190f5753265
+# a2b901e0413f46c9a68ef21d97963452
 msgid "The following is a detailed, low-level, step-by-step description of executing a call against the ``system.authenticate`` service method, in Python."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:881
-# 51e6dd76a6f649fa9efe872ec71d9c47
+# 9946012bba1d4204916eb40e52528386
 msgid "This is a result that is already interpreted partially, and the raw response looks as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:896
-# af1987ff42824d678fae4a23310001bd
+# 2c6bf6e83f314b2dbec0ca13b1bcf530
 msgid "The result in this response consists of the following components:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:900
-# 471ae06bb2cf4db5aee25b07f196309f
+# d791f8a3bc0a4f528e39492575e3b5f3
 msgid "The login name for the user authenticated."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:902
-# ef06dfe46b3c43d183032a6caee9f18b
+# 79a449b795e1415cbc9fc269fb54a37d
 msgid "**userid**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:904
-# 4f70cf1e2cfc471f905c430f3857fcdf
+# 27249e73077f4c0c9d875b3824628bf3
 msgid "The ID for the user authenticated, usually a persistent unique attribute associated with the entry in LDAP, except for global server administrators such as ``cn=Directory Manager``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:910
-# 67d05cb9eac84309bb4f58045fc4ef74
+# cb58df06328b47d68a0092ebd367ee82
 msgid "The current working domain. When no domain had been specified during login, this will default to the configured :term:`primary domain` -- in this case ``example.org``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:914
-# df9d5069fb4d441e9f558ea20b55ba1c
+# a9b63f306a504f719264d37fb0ff321e
 msgid "**session_token**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:916
-# f582fa3b030f425e89ac16b102805615
+# 8fc728bc0a31456dbede72768dd2306d
 msgid "A token uniquely identifying the session. This token should be used for subsequent API calls to associate them with this session."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:919
-# 176aa7f886564ae88d3f45e309a1e8a1
+# e9abc0bbd99047c3a6f155c111cfa2c3
 msgid "To this end, save a dictionary to pass on to subsequent requests."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:923
-# bc20a0e9ded746f9af428ed2cc62fa70
+# 4fc2cf15fb8644a5ba13d70d8c311114
 msgid "To assist in authenticating, the ``pykolab.wap_client`` also includes a function ``authenticate(username=None, password=None, domain=None)``, for which options that are not specified explicitly are pulled from :manpage:`kolab.conf(5)`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:930
-# 069e8526c9e64b2ebd972e1b657f8281
+# 36f13ee87d114fce8371867dadb26896
 msgid "``system.capabilities`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:932
-# fe8251c5ac5046b8912b2618195bc847
+# 06e4b1c5d12d42ca8bcfd1ca83ad8fab
 msgid "For all service handlers registered, a method ``capabilities`` can be executed listing the methods available and access to them for the currently logged in user. The ``system.capabilities`` API call lists all of the registered service handlers' methods and access for all domains."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1017
-# 30402f92f5d44552b8cf22c5f6393e68
+# 4272c0de5cf7462dadffa34c7d10e299
 msgid "``system.get_domain`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1019
-# 9674d3bcd8f446759123abbaf81a4e01
+# 72da61e1def94a32adbe78ab55594fc3
 msgid "The get_domain method returns the currently selected working domain."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1033
-# c161b8d9309e43a4aaddabb48e9d15c8
+# 830fb177809c40e88fa154ccd059f791
 msgid "``system.quit`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1035
-# f2be899a7dce483fbaa9155ba28700de
+# 0cc6e247784c469fab2fee4f9afb8b10
 msgid "The quit method ends the session and terminates its validity permanently."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1038
-# a3c07dfca59542498074b0fd399027cf
+# 6f45b19743c84772b2c9e65f5b7949a7
 msgid "``system.select_domain`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1040
-# 89093f2293b84cdaa94c04602d65143e
+# 0b02dd8e29464a66b23d36d22163be0e
 msgid "Select the domain supplied as the current working domain. By default, users are logged in and have access to what they are authorized for in their own domain name space only. Certain users, such as ``cn=Directory Manager``, have access to all domains. This API call allows such users to select the domain name space they are currently working on."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1049
-# 7b894a7595944d6ea8da4e6c206055df
+# 01236e7f279c4cae9b525064efe4917a
 msgid "On the server-side, when ``system.select_domain`` is called successfully, the selected domain is stored in ``$_SESSION['user']->current_domain``. This is a private property, however, and the rest of the code is to use the public function ``$_SESSION['user']->get_domain()``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1055
-# c7256523971f4cf88efb380eb1798cdc
+# 366dfe8e72fd479aa2b8210374cba714
 msgid "The ``user`` Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1058
-# 8c1190732aba4d6ebb68c52985851e3b
+# c1d31f23889c4201808bbc0618131d4c
 msgid "``user.add`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1060
-# 179471d110a94091b6e6bddea0441061
+# 6307c9a841394b81ad3905ea3f4f94ae
 msgid "Add a user account."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1063
-# e7e6aca001854571b42822d32850f708
+# 632241522c194e2f89d696592f7cf259
 msgid "Example Usage #1: Adding a Kolab User"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1064
-# ffddfe64565549a28b85ec27a907fe8a
+# 380e77e6d18e47628a94ec59899ae20f
 msgid "A Kolab User (a groupware account) is, in a default installation, user type ID number 1."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1071
-# ea26ff6cb27047fc984d909c2d015f2f
+# 037b41284c6c4522977af334176716dc
 msgid "Obtain the list of different user types, using the process outlined the example usage section of :ref:`and-kolab-wap-api-user_types-list-method`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1074
-# d447defe5eb44f308b9829c68e7bb188
+# c605bdb82e4b4c449be38ba440408a86
 msgid "In this example, we will be using user type ID 1, for a \"Kolab User\". Its type definition looks as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1206
-# 0f4dba0aaeb0472ab12333e43167d9e8
+# 083f2c829f60475095a160e62d7c825e
 msgid "It is worth highlighting that only the following input is actually required:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1208
-# 3c4ba790d2504b6fa2aa7d02cf9faacf
+# 902e758f5cc442058b3bccf9be9f6a43
 msgid "``givenName``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1209
-# e0fa177640104271b334f478a6c8d71e
+# 93f03bcd96344cf0be7283f0f5a54b5a
 msgid "``sn``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1211
-# e298de2cee774d8ba56738b362e5bf05
+# ebe3e85de9dc4aa1a5d89853666196d9
 msgid "All other values that are required, either by configured policy or by the LDAP schema, can be generated using this information (including ``uid`` and ``mail``)."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1215
-# ed0e18781e514d07903315c6b8ef2bfa
+# 2427c0e1c2054859bcc5704532086dc5
 msgid "Most commonly, however, you will want to also set:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1217
-# 39543082296e45818c253ba4e5325039
+# 4e0892354f7a4ebdaa119f1377cbec0b
 msgid "``userPassword``,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1218
-# cdeb1f63b6584b2787b3a4c7601e9682
+# 4f66997975ad4cd4bd41fe220b20050c
 msgid "``preferredLanguage``"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1220
-# dcd9356e8ff9401285de83413c49fe5a
+# 612ff84420e94508bf63c462beab41e7
 msgid "Furthermore, some attributes that are generated may require additional form field input for the generating to properly function -- such as the ASCII-only ``uid`` attribute, where the input may contain utf-8 characters, and transliteration needs to be applied using the ``preferredlanguage``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1225
-# 1f5552db7e60408d928540ecf739d950
+# 3e5803a800324d599cf22c0ad90d9b64
 msgid "Long story short, issue a call against the API ``user.add`` method with missing input data:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1247
-# b15e4447f8934f1d8a5c2cc7fca0367f
+# 493156607bbd45ee91f113fa9d44bb1c
 msgid "Complete the information required:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1270
-# 1ba1c6e342ce48db8e8cde1e1ff3bb84
+# 55237b5524a74f588fa5f039bd4bbd1f
 msgid "To retrieve the resulting user information, including generated values for attribute values and possibly policies that are being applied by LDAP or by another process, use :ref:`and-kolab-wap-api-user-info-method` against the ``id`` in the response."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1276
-# f20de5847ed443bcb485338e2f65ddac
+# b2f373cd030147d4b3bb61387db03072
 msgid "``user.delete`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1278
-# 515fa9277c10429b8b045ef1414793a0
+# 39a8dac3a496456d91046259567cc1c2
 msgid "The ``user.delete`` method takes exactly one parameter, and that is the ID of the user object."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1281
-# 6402522bb38c45f1a4659c6e1293d187
+# acfb7f4ce06e4876a45307e909aefba3
 msgid "This ID can be either of two items:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1283
-# bfd1027067c744e5a9c79dc1ee42db7c
+# 871901dc66ec43d980c747e2c2d0cbdd
 msgid "The persistent unique ID associated with the LDAP object regardless of its current position in the Directory Information Tree hierarchy,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1286
-# 910964b896d5489eb35321d040e3fe3b
+# 94eaf73adf6c466d8ba8aaff300f66e6
 msgid "The current position in the Directory Information Tree hierarchy, otherwise known as the :term:`distinguished name`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1289
-# d2297132d2bd475284963260c0dbfae7
+# bfa7e2418f2e409b8930d0be73c6ff2a
 msgid "You can select a user by:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1291
-# 639c3055a30544259f10491489ab5a27
+# e8cbb9a0d562491bbb0d309eac2e9e20
 msgid "Selecting the user from a list obtained using the :ref:`and-kolab-wap-api-users-list-method`,"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1293
-# 10995808f24741f983130bb8a5e59bfd
+# 3928a2aa9f14448291e954ba383779ed
 msgid "Finding exactly one user object (in order to be able to bail out if there are multiple search results) using the :ref:`and-kolab-wap-api-user-find-method`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1312
-# 61fc6bb4cfd9467486b81eb9528a66dc
+# 3ff69e047e934b53a5634cfea9ce178c
 msgid "``user.edit`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1315
-# b0e948a90e8b4461bc719125103ee390
+# 94d4bccf4da34f7288089cdcaecf3a52
 msgid "``user.enable`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1320
-# 8ff88a47f15f411b938b0fac12ff1491
+# eb37ccefd6d3427bae3ec49043665ff1
 msgid "``user.find`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1322
-# 1f7815fbb2e94c99b9bed732830dc323
+# ede0d1f7d3e6496495c199c00f1afbaa
 msgid "Find exactly one user object, or none at all, but no more than one."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1324
-# eb46f22338704d6eaf17bc59598b5a31
+# 168cd534457e4fceb38e4a618b934b21
 msgid "This method takes search criteria that help you narrow down what entry you are looking for."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1327
-# 47364620f6fe449d9e090a4de6224695
+# 5453e71d135749a38dfd05d2c6e7b794
 msgid "A successful search for a user would look as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1380
-# 9fc76f4a20dd4a27829a598484f68eca
+# fb7bc8ff0b3049b78a5b23f3cc762b79
 msgid "Should, however, multiple LDAP entries have an attribute value for ``givenname`` of \"John\", and ``sn`` of \"Doe\":"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1387
-# 5e9e70c394d94e3584f599470bc1b6b2
+# d879926a296c49fb92b08cfe94df562b
 msgid "When zero, one or more results are expected, use the :ref:`and-kolab-wap-api-users-search-method`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1393
-# bf0c4d5c42bc4c24abb800babd9b5b34
+# 573f59bf7b5e45b6804ba0c2a302b9e0
 msgid "``user.info`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1402
-# e5040be11493438c92695f8b0bec4b28
+# fe7050a112c141ba859e4a510114eeae
 msgid "or using instead:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1421
-# d7d3a57cb84048e7ab24916df8aade14
+# 79daa0787796434e93f9437a64cfae79
 msgid "``user.search`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1424
-# 58701955a95d43ecb719d91421c07994
+# b36177707a57425c9a8e4e410c76be57
 msgid "The ``user_types`` Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1426
-# c90b511f6cb9495d85bbb5459b9b2e54
+# 7bdd300eb869407a96a17d204f8ab90a
 msgid "The user_types service ..."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1431
-# 8a6f9e07559443e68b2b50498ae17f03
+# 13dce8c74dd346db984613a3e68e8e57
 msgid "``user_types.list`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1434
-# 80942dd6081944ebb10ee7bb10dad008
+# 41b9f7039ca64eea8115fa00d09a66c5
 msgid "Storage Format for an Object Type"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1436
-# baf4c14a5ecb4a55ab625ef4b8e841fd
+# 83b39eeec4fa4fabbeb8c4b73c7a101e
 msgid "The object type definitions are backed by database entries, containing the following attributes per object type:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1439
-# 239be96eecd84070bbfa409a582109f7
+# ed77e8fc911a41458a1075a603568cb5
 msgid "**id**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1441
-# ffc622456bc84a9e951e1ae1ce92a26d
+# c74e6566079a4712b46551dd19cf0e4d
 msgid "Of type INT, this attribute is automatically assigned by the database backend, unless specifically supplied on insert."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1444
-# 38c7b2f6adb54f389e766fae94fe14b2
+# 96e9bd7cb1234f8da0cd34b467db397b
 msgid "**key**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1446
-# 1f92fda88a9746fd9a989ad26e0cfb3a
+# 8c2f32efce5a40d2862e6eb4d77a2b77
 msgid "Of type VARCHAR(16), the key attribute is to hold a machine readable name."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1448
-# 1087fea336e144ff9334a5e047f7bf47
+# 93dbfd2a4d2d414db138bfc31573f1e3
 msgid "**name**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1450
-# c4fb8f8deb8f49c49e1bc65d5495af2e
+# 9032392f815b4eb4aa5929227b5c77b5
 msgid "Of type VARCHAR(128), the name attribute is to be the human-readable name for the object type."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1453
-# 18940344b5c84d8ba6a6422f832e087c
+# 2e5fdc35223c46bda4b71862b3c295db
 msgid "**description**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1455
-# 4935eaaec668487096ca1e6428fbfe10
+# 6d714075c59d4f10b707e54a85427cd1
 msgid "Of type VARCHAR(256), the description attribute holds the description for the object type."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1458
-# 5ff4a2eef4ad47d99e3b23c949fd82c7
+# 56ced0ea0acc4e15a32e4763e4775c65
 msgid "**attributes**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1460
-# 647d846e0c24497c8a4b99f74b3a17d8
+# b9e6c7cb093e4dc5bfb23a460c30efa0
 msgid "Of type TEXT, the attributes contains a serialized JSON object with the information needed for the API and client interface to build queries and forms for the object type."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1467
-# 4cecd45d60824bb8b0f9ec2bf28fe759
+# 9119e375dbbe4d9ba847da9fca586cfd
 msgid "The ``attributes`` Attribute Value Format"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1469
-# 3b80638be26e4159b98bdcd0295c3a8f
+# 73d107e69e0c4928b432b0d2d29bef4b
 msgid "The structure of the ``attributes`` attribute value to an object type definition is as follows."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1492
-# 41109223eeae4d3081e6eeacf2ded20f
+# b4186538170344a580cbf194d369ccae
 msgid "The ``attributes`` attribute to an object type definition entry holds an array with any or all of the following ``<form_field_type>`` keys:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1495
-# 492d59d884ff4a8f851aa4dd0bee085d
+# 0787fc9d92c041b58ee9e6aec72f6430
 msgid "**auto_form_fields**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1497
-# 090dc30aa0eb4c32850cabd753c7a13c
+# b6b45ba477fa41e58825292f26b16712
 msgid "The ``auto_form_fields`` key holds a list of form field names -- that correspond with the object's attribute names -- for which the value is to be generated automatically, using an API call to the ``form_value.generate`` service method."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1502
-# 531029daf9dd481a8d31ae57c330b42a
+# a48d2ea82d9347d98404aaaf188b0963
 msgid "The key for each key-value pair indicates the form field name (see above as ``form_field_name``) for which the value is to be generated automatically."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1505
-# 6a54720ba1df4f8f87807d98880829ac
+# 8abb854c11274a7b8e9af3b63596d5b2
 msgid "Each of the keys corresponds with an object attribute name, such as ``uid`` or ``displayname``, and its value is an array containing the names of the form fields of which the value is to be submitted as part of the ``form_value.generate`` API call."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:0
-# 035a380da92f4cdab3a74490561907c6
+# c3383c4b442840fd9803ee122884edf7
 msgid "Example #1: Composing a User's ``displayName`` Attribute Value"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1512
-# b57ef865aa1c4446b2c94fed12d8ca82
+# 3fb3d238615f43f7850495a630ecc748
 msgid "Provided the user type's ``auto_form_fields`` contains an array key of ``displayname``, the array value for this key could look as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1530
-# 1d7a2a64742848bb9089bb451c10b682
+# 21913d13596e42429a8fac7aac484cb3
 msgid "This indicates to the client application that the value for a form field named ``displayname`` is to be automatically generated using other information provided in the form."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1534
-# 3c22620bb27e40628d1413d90a333967
+# 38031bf5984a434ba1f7f6bcd3ed5663
 msgid "In order to generate the value for the ``displayname`` form field, it is indicated that, using the ``data`` list, the values of form fields ``givenname`` and ``sn`` should be used."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1538
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1585
-# b1553e503b484abea71fbe1112572af1
-# 4c34682c4526428ba67ed51277550827
+# 29e7199958604eafb13bc89ae99fd57a
+# a0ec4bae0b554f20a36ba85ff0489f50
 msgid "In a webclient, this would means attaching a JavaScript ``onchange()`` event to the form elements for the ``givenname`` and ``sn`` attributes, so that when the user changes the value for either of these form fields, such event can be handled."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1543
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1590
-# 81980eb09ff74dc0914ee2c8ceb6a926
-# 9aa73487563546a583e27494a79c44eb
+# 75267fd1114a456fb26d05605740b485
+# 7f56aa277caf4784ba7e1bb878eafa34
 msgid "This ``onchange()`` event should submit a call to ``form_value.generate``, with the form field values for the ``givenname`` and ``sn`` form fields included in the submission."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1547
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1594
-# 57800b8fb392411b96d8e8d230c37ebf
-# e887f38f9d7444b494b8a755044e80a5
+# 51901840bad346d3a18255f7913107b1
+# 27a4749d7950492c940f28a7b8191209
 msgid "The result of the ``form_value.generate`` call will include a new value for the ``displayname`` form field."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:0
-# 7199927eba754827b99c7d2bb477211a
+# 61605481e19847fe992bc43d8f6bff61
 msgid "Example #2: Composing a User's ``uid`` Attribute Value"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1552
-# 35eb7c6c2fae483787b0655db85d1c7c
+# 50a2deebff9243a38b8d3ac9a9dad016
 msgid "Provided the user type's ``auto_form_fields`` contains an array key of ``uid``, the array value for this key could look as follows:"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1571
-# bb17b9a920f5414da8a5674c9e3f2ded
+# e42638208bea4d1792c1109a39711232
 msgid "This indicates to the client application that the value for a form field named ``uid`` is to be automatically generated using other information provided in the form."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1575
-# 0c28be6d8bab4632881f50b4c7ed29f5
+# 434e0cb59e3b436fa67da6f85ca0451a
 msgid "In order to generate the value for the ``uid`` form field, it is indicated that, using the ``data`` list, the values of form fields ``givenname``, ``preferredlanguage`` and ``sn`` should be used."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1579
-# f9d174d3eb4846a08a6cf639538c425f
+# d1606403b0e54613b3547aceea7316ed
 msgid "The use of ``preferredlanguage`` is important, as ``uid`` attributes do not allow non-ASCII characters, but many user's names contain non-ASCII characters. The process of substituting non-ASCII characters to the ASCII representation is called transliteration. The recipient policy documentation illustrates the process of :ref:`admin_rcpt-policy_locale-transliteration`."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1597
-# 4bfe208deb9e41d4b3ac00c647c6a322
+# 596e02f1ed1b4427818b38140107f416
 msgid "**form_fields**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1599
-# 4d5bbab696d84ce49c23fad44acc02c1
+# f385a62163b443629d74198fce38c1eb
 msgid "The form_fields key holds an array of form fields that require user input."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1601
-# d8175142fa6443618b5e1716fdf60468
+# e3d2e1054bf74629adafe0c0ceb48f33
 msgid "The key name for each key => value pair indicates the form field name for which the value is to be supplied by the user."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1604
-# 7e04bb54214d4ba682891e8fe5b2ef46
+# 6fa3c2f5d00a4193af77fbb2e4790fd3
 msgid "Because some attributes can be multi-valued, or have a limited list of options, each defined form field in form_fields can hold an array with additional key-value pairs illustrating the type of form field that should be used, and what format to expect the result value in."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1609
-# 46936b1e4be04212bd40c35c599df6e4
+# 1e6811f669c74ceab7f4f94d9e1f52d6
 msgid "Additional Information in form_fields"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1611
-# 96c933667ede4033b4ccf87314b08ff3
+# 62ede8928c10426f914c0f41d736ea75
 msgid "**autocomplete**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1613
-# 45229ccf67e548f488b6971606609555
+# 3c04b48b946d4d3db0ee1626530e0660
 msgid "A form field of type list can be made to use automatic completion of entries the user starts typing in."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1616
-# d848976720974403a607dd84f357c564
+# 055e33631263484cade23c7433e0dc0b
 msgid "Examples of autocompletion for list form fields include ``uniqueMember`` (members for groups) and ``nsRoleDN`` (roles for a user)."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1620
-# 53b529aa48a94445852216ae81cfd4df
+# ae0b8b568c4a499c877383a312334013
 msgid "**maxlength**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1622
-# 9144f6a70ffb4e56b6af1042223c86cb
+# ef61c65f436e4871b229d207e042bf2f
 msgid "For a form field of type text or type list, this value holds the maximum length for a given item."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1625
-# f944b5ec01764cc082a306a14437b1e9
+# 73655dc29f6c4412b5b3a65aeb72b121
 msgid "**type**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1627
-# c1fea701428140ba98d4cf7e7c0edcd4
+# 74a731cbd34d405883e428e22a49d2d3
 msgid "The type is to indicate the type of form field. Options include;"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1629
-# fcfff1a893eb454ab14437f384393fe4
+# bab9a2c59bcf4e418fe7f4e24510e187
 msgid "**text**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1631
-# 09e06c97fdf34cc19e0d68d305f2b446
+# 86aa4d93f5fd4a3e94ff523e08926959
 msgid "This is a regular input field of type text, and the default type of a form field."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1634
-# 62e4e040426f45749dd072a6b774b580
+# 7c82991af9d74bf79d2a81fa2f88649d
 msgid "Additional parameters for a text form field include maxlength."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1636
-# ccc67986248f4e6da9fec18e970dee28
+# 1c590f81816f458f926cbc0f8dfb756b
 msgid "**list**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1638
-# dafdaf370d4840ceb71c6af43c5e9e37
+# 45552589aac5461fa8ad467fffdb4b8f
 msgid "A form field of type list is expecting a list of text input values."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1640
-# 756bdd43337040af917be4bee3123f20
+# d814b3bec97143dcaa3ea92aca48b0fd
 msgid "A client web interface could choose to display a textarea with the instructions to supply one item per line, or more advanced (better) equivalents, such as an add/delete widget."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1644
-# bf37b890540e42cebaf10f9cc075b340
+# e7ed0e7734154d919bf13164737dbcb3
 msgid "A client command-line interface could choose to prompt for input values until an empty value is supplied."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1647
-# 3a78222e9b6647158e79d836bc80d925
+# 7da90853612847dc8525a37de5079db1
 msgid "Additional parameters for a list form field include maxlength, which holds the maximum length of each text value in the list."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1652
-# 0e57ddf347784001a177f8ca243f8ecf
+# 8effa20c5b824df19722c2de4e97cbc6
 msgid "You can only use this form field type for attributes that allow multiple values -- otherwise use type **text**."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1655
-# 8f5bf49107e3432681494905b073486c
+# 870749998a5748fd930d9e5fce639425
 msgid "**multiselect**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1657
-# 430775e282a7457f888c2e6cc255d1c7
+# 3642a91e47414b5ca503b95430dc0141
 msgid "This form field is a select list, where multiple options may be selected (as opposed to a select list, where only one option may be selected)."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1661
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1680
-# c0f7dce4c45d4b7892ff4dc4abf1b765
-# f331c69c63264f3c84060ac50ec0704e
+# c29a16be297748c2b1dad823e5bc127e
+# fa6b0ef71085477fad8c772ce2d64d28
 msgid "If the values are not specified already, using the **values** key to the attribute specification, a client interface MUST consult the ``form_value.list_options`` API call for option values, as this is also the list that input values are checked against."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1668
-# a4cfcf23d6fc4574b4787a2aec271da8
+# 348b40783d074726bde030f4a8ca87b8
 msgid "You can only use this form field type for attributes that allow multiple values -- otherwise use type **select**."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1673
-# 9a15a3c50aac4e4faa5b80dc3df87b2e
+# d53ddbd696484c3e82a6f58b2f31c893
 msgid ":ref:`and-kolab-wap-api-form_value-list_options`"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1675
-# 730b7e01e8834da9849e5c53603afb34
+# 7645b567d88d402b92724ddbbd0bbbbe
 msgid "**select**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1677
-# 128143e5b43b4685996592057c0a4a3a
+# f3cffef956ae4675ac71fa2f31ed7f24
 msgid "This form field is a selection list, of which one option may be selected."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1685
-# 879abd2bfdd7493cb63dd669c420b384
+# b28f11b15c584d2bb05fe1cbb2864416
 msgid "**value_source**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1687
-# 2b17a0c170e84ebda771a6b3c6c57377
+# e9664ba50a374cf39eddf08d5b2a6bab
 msgid "The source of values for a list, multiselect or select type."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1689
-# e281d0a573ae4fa8b5b76b813e4f4ecd
+# 82cf75cc30eb4613bdde42c17f94cd03
 msgid "**values**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1691
-# ec2aa22e93d64230b8865551ec8233ef
+# 9f0986667c8b454090375f602db3d0a8
 msgid "A static, pre-defined list of values for a list, multiselect or select type."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1693
-# e3e26930817d42a0b1ed1de85df13731
+# dd12272093854dffaa70935ac5aee259
 msgid "**fields**"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1695
-# a6bca3b7289b4992827b71097ae03c28
+# f4da2ce302aa43d9be2b322830da6641
 msgid "The fields key holds an array of form fields and values for said form fields, that are static."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1698
-# 1ff6cf95f52c41e5b202b46e61a269ea
+# ba171a4145a8464391319b64c4b7c118
 msgid "One example of such form fields is ``objectclass``."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1701
-# 44af90c29a2a47c68371fccc95c6ea5c
+# de7ccbccfabf4131a5b4377c102e8c62
 msgid "The ``users`` Service"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1703
-# 3207ac1e3fae480a89a8dcafb9e7c7bf
+# b9a9b308239a497499a8c89424f25954
 msgid "The users service ..."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1706
-# a886afb81be6401391e340ce46e9872b
+# b489765efdcb4b269b2563b2d704c849
 msgid "``users.list`` Method"
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1708
-# e2b2af3ed18841fc9a1b83d159df7e95
+# 77afc85786f342a9982fff29a3c85063
 msgid "Use ``users.list`` to display paginated lists of users."
 msgstr ""
 
 #: ../../source/architecture-and-design/kolab-wap-api.rst:1734
-# 2bb6b068e3414fbea0aa3718b9c4dca6
+# 6c939e111f084fac9d626981e1c58cc0
 msgid "``users.search`` Method"
 msgstr ""
 

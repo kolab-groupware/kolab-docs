@@ -3,6 +3,4 @@
 ``temp_dir``
 ============
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Use this folder to store temp files. Must be writeable for the user who runs PHP process (Apache user if mod_php is being used).

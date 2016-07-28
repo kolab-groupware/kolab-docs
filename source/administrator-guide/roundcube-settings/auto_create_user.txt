@@ -3,6 +3,6 @@
 ``auto_create_user``
 ====================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Automatically create a new Roundcube user when log-in the first time.
+A new user will be created once the IMAP login succeeds.
+Set to false if only registered users can use this service

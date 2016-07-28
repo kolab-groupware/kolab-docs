@@ -3,6 +3,14 @@
 ``smtp_conn_options``
 =====================
 
-.. include:: roundcube-settings/needs-work.txt
+SMTP socket context options. See http://php.net/manual/en/context.ssl.php. 
+The example below enables server certificate validation, and
+requires 'smtp_timeout' to be non zero.
 
-Sadly, this setting has not yet been documented.
+$config['smtp_conn_options'] = array(
+              'ssl'         => array(
+             'verify_peer'  => true,
+             'verify_depth' => 3,
+             'cafile'       => '/etc/openssl/certs/ca.crt',
+  ),
+);

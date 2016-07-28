@@ -3,6 +3,5 @@
 ``log_dir``
 ===========
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Activate this option if logs should be written to per-user directories.
+Data will only be logged if a directry <log_dir>/<username>/ exists and is writable.

@@ -3,6 +3,9 @@
 ``htmleditor``
 ==============
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Compose html formatted messages by default
+0 - never,
+1 - always,
+2 - on reply to HTML message,
+3 - on forward or reply to HTML message
+4 - always, except when replying to plain text message

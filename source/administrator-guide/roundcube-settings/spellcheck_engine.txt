@@ -3,6 +3,11 @@
 ``spellcheck_engine``
 =====================
 
-.. include:: roundcube-settings/needs-work.txt
+Set the spell checking engine. Possible values:
 
-Sadly, this setting has not yet been documented.
+- 'googie'  - the default (also used for connecting to Nox Spell Server, see 'spellcheck_uri' setting)
+- 'pspell'  - requires the PHP Pspell module and aspell installed
+- 'enchant' - requires the PHP Enchant module
+- 'atd'     - install your own After the Deadline server or check with the people at http://www.afterthedeadline.com before using their API
+
+Since Google shut down their public spell checking service, the default settings connect to http://spell.roundcube.net which is a hosted service provided by Roundcube. You can connect to any other googie-compliant service by setting 'spellcheck_uri' accordingly.

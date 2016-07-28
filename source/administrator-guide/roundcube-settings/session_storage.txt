@@ -3,6 +3,12 @@
 ``session_storage``
 ===================
 
-.. include:: roundcube-settings/needs-work.txt
+Backend to use for session storage. Can either be 'db' (default), 'redis', 'memcache', or 'php'
 
-Sadly, this setting has not yet been documented.
+If set to 'memcache', a list of servers need to be specified in 'memcache_hosts'.
+Make sure the Memcache extension (http://pecl.php.net/package/memcache) version >= 2.0.0 is installed.
+
+If set to 'redis', a server needs to be specified in 'redis_hosts'
+Make sure the Redis extension (http://pecl.php.net/package/redis) version >= 2.0.0 is installed.
+
+Setting this value to 'php' will use the default session save handler configured in PHP.

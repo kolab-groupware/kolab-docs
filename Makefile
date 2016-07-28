@@ -95,14 +95,6 @@ clean:
 
 html: clean submodules helpdocs
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	find locale/ -type f -name "*.po" | while read file; do \
-		sed -i -e '/#, fuzzy/d' "$${file}" ; \
-	done
-	find locale -type f -name "*.po" | while read file; do \
-		msguniq "$${file}" -u --use-first -o "$$(echo $${file} | sed -r -e 's/\.po$$/\.po-uniq/g')" && \
-			mv "$$(echo $${file} | sed -r -e 's/\.po$$/\.po-uniq/g')" $${file} && \
-			msgfmt $${file} -o "$$(echo $${file} | sed -r -e 's/\.po$$/\.mo/g')" ; \
-	done
 	for lang in $(HELPDOCS_LOCALES); do \
 		$(SPHINXBUILD) -b html -D language=$${lang} $(ALLSPHINXOPTS) $(BUILDDIR)/html/$${lang} ; \
 	done

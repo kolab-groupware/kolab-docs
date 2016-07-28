@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,300 +17,300 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:90
-# 30876b9d51264f1caa040d6ad5a01cd0
+# 312c3b777e084529a08ad9a81ccd78da
 msgid "HOWTO: Use GlusterFS for IMAP Spools"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:92
-# 94b57d95a421445497dc542155793231
+# d519ec2d8d0e46469b7d67a45c49b1ab
 msgid "GlusterFS is a distributed filesystem with built-in redundancy and self-healing features, that allows individual storage volumes to be aggregated into larger storage volumes."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:96
-# b3ae9d2b6c8f4090bf24a935dd116911
+# fcff97bef79542638750a2d5efb9f0f3
 msgid "This HOWTO sets up a single Kolab server using an IMAP spool mounted over GlusterFS, as illustrated in :ref:`howto-glusterfs-replicated_volume`."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:99
-# 7889682627be4075a12439814fe421ea
+# 731c4ab6b8544e3f84cab828327ef2cb
 msgid "To illustrate the GlusterFS volume scaling, we expand this original GlusterFS volume in :ref:`howto-glusterfs-distributed_replicated_volume`."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:102
-# 3a022343aa704c609a700bc9de63f9a9
+# 5b582b60facc47c9ab795acdd0f97a85
 msgid "The initial setup consists of the following systems:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:104
-# e1ce934edd88427b99c0d2b51a499890
+# f7b468732e5141fc87fdc40db3d6461b
 msgid "System ``gfs1.example.org`` with a second disk volume *vdb* of *10GB* and IP address 192.168.122.11."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:106
-# 1a6981d14cca4e07aa24c1bd0ab05772
+# 7ac738cb53f0463fa06d87c1105c72a5
 msgid "System ``gfs2.example.org`` with a second disk volume *vdb* of *10GB* and IP address 192.168.122.12."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:108
-# 4368694af34b4f6cb94d4dd5aaa5708b
+# 5d7f029bc6c044919e5a9a824849e83f
 msgid "System ``kolab.example.org``."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:110
-# 20643065758142b4a7f9e3a10f35003d
+# 88db021f56554d6194b6f2778ea3c3f4
 msgid "The ``IN A`` address for ``gfs.example.org`` is made to resolve to the .11 **and** .12 IP addresses."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:116
-# 3f5f25ea919d475db9639ed23f669abd
+# 36500e66fbb742deb954566d733b18e4
 msgid "GlusterFS Replicated Volume"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:118
-# 687a93d560a54126a365952013f65f2f
+# d98c0826183f426fb3679f809ad99814
 msgid "The initial setup looks as follows:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:137
-# ccdc0cf332ab48a3ba0e6a8684d714b5
+# be41f8e6c7344d7cad46aaa75875a022
 msgid "In this scenario, the Kolab server uses a GlusterFS volume mount for its IMAP spool, that is redundant as both bricks contain the same data."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:140
-# 8d0d323a9d5245c5a5ad2c95275ea9d4
+# 52b514514b854446b37b4f342e7d3e0f
 msgid "Partition ``/dev/vdb`` on ``gfs1`` and ``gfs2`` as follows:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:156
-# 6372fc4a22764eab82d2c778cc93b917
+# 4705a4f375ea497a921e9d437f293abd
 msgid "Create a physical volume, then a volume group, then a logical volume on both ``gfs1`` and ``gfs2``:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:167
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:294
-# a088db0c7c2a446fb5073d69391954a2
-# f4189f7251b04602b8df1e951c9cfafd
+# c34cc006b1ff4a61a69e75fb7f2b4095
+# 5fa52f71035a4da7b6c66f77e184b884
 msgid "The logical volume ``lv_brick`` leaves 10% of the volume group unused for two purposes:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:170
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:297
-# 63f3349705094e898713871fd1cb8bda
-# c97b5c28e91441a5b0de1881d778a90c
+# 02d2a21a959e42ffb6032d4d8ffc82f3
+# 94c905280ca243159e47bb3f432a9e6e
 msgid "Filesystem checks can be performed on a logical volume snapshot, without interrupting the storage availability, and"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:173
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:300
-# 1f6c56a9d0df4e40a62fca0292bc2087
-# c6ea4976c60740b69161acba4dde1d50
+# cced7a1ad5c74c8c8841db5d6e7f23b1
+# f832de8dfbfa4856a8ed580b0c73634d
 msgid "Backups can be made using logical volume snapshots without interrupting storage availability."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:176
-# a9ff964748924e4194b3cf93cd806b99
+# 9f87c4a782fc4e5590774b69581c7cdc
 msgid "On both ``gfs1`` and ``gfs2``, create a filesystem on the new logical volume:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:183
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:310
-# fb333f3c4b324d27865683f1f9af3818
-# 82447264f67043138f2487971c0b1d94
+# 0e9e187a1a4b4181aa7c21fdaa3c9160
+# a2925e7e18074d3e97327077ccaa375c
 msgid "Create a mount point for the filesystem:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:189
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:316
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:420
-# 62cbb125b36843aab87df70f2dd4b0b3
-# b4e4fa08134047e69259de063d016a32
-# 1f0c1d686af24ff496178f70efee79be
+# 9a07a854502a462db4bda3aa6d0cdaab
+# 0c130cea2bce4f83afea1c53da74f49e
+# f5dbe17008184f0188df12441aeb04fc
 msgid "Configure the mount to be made on system startup and mount:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:197
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:324
-# 747c6af4b6c1485598b0d57be125921a
-# 580b83bf35ef4b4ba7cbaae1b6362496
+# ce600d745e114f9ba8df7a0d3ff5dca5
+# 1f1ef65013ab44b2997e72085c9ee4d5
 msgid "Create the directory to be exported as a brick:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:205
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:332
-# f78ba55cc0814cc1bc007002dc13940d
-# f4b6f3867d0841978db938cc22b5140d
+# f77044b5dbc844f1b0e8c54bec6e5eee
+# 64abd387a2484f9bbd3a4145124f9c82
 msgid "Do not use the filesystem root directory ``/srv/gfs/`` as the brick to export, for its ``lost+found/`` directory will be rendered corrupt and useless."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:209
-# 225c1ee6cbc0473d9aa04d5c7d72d674
+# 54cfdaeb873242e1b488e51649f6f69b
 msgid "Install the ``glusterfs``, ``glusterfs-fuse`` and ``glusterfs-server`` packages on ``gfs1`` and ``gfs2``:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:216
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:343
-# a557b6a96e9b4e859001d8604e1c6ff9
-# 0524fdd3b3704429abea9d2e9c625815
+# 88841a7ec1764b1b822c1a850da05946
+# 11d5b2f7c49143418423fcac706af6bb
 msgid "Start the **glusterd** service and configure it to start when the system boots:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:224
-# 6d50140bcca745578fba8ed777a503b0
+# c64924ee3bb9420486efcef2adb4711f
 msgid "Use ``gfs1`` and probe the other GlusterFS node:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:230
-# 733054b1381a41eb84174ff6a2d2c286
+# 45375d6ad0ce48898b3ab55c823b9cfd
 msgid "Create the GlusterFS volume to provide to ``kolab.example.org``:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:237
-# 0b9988895e8747059e36b0ba8f3baaa2
+# 1c9f2954d94948789089d42b85f1131d
 msgid "Start the new volume:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:243
-# b3a57b06e161486ca09b5e64019ea9bf
+# 02b98d78ca1c48fdb68119d64f59c0bc
 msgid "Continue with :ref:`howto-glusterfs-configuring_the_glusterfs_client`."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:248
-# 7f35c91149244c3a8cedac99c9575ea9
+# 57e254b4ad9c4a789e58cc949a8c9e03
 msgid "GlusterFS Distributed Replicated Volume"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:250
-# eec194a70e4949e5a6caf35ebf130dce
+# 7b9df81de32646c19e0bf81517255480
 msgid "This part of the HOWTO assumes we are expanding a :ref:`howto-glusterfs-replicated_volume` and you already have followed :ref:`howto-glusterfs-configuring_the_glusterfs_client`."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:254
-# cddc2267604b4a8c9949eda0244d5212
+# 3dc0d7f49a2444a7a3b30a51928c243e
 msgid "We'll be expanding the GlusterFS storage volume from *10GB* to *20GB*, by configuring the GlusterFS volume to become a distributed volume (on top of being replicated)."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:258
-# 2c8d7d8d14ab4a329eb9e46b27a42f99
+# 186a0cc676d542c49ce6af14c5c8c75b
 msgid "The number of nodes required for this is **4** -- distributing files over two bricks, each of which replicate with a replica brick. We will therefore add nodes:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:262
-# e6a9a4360ce84642a2ca41e3186cac4a
+# 5bb5d87a9498457c8645b18f16d9256f
 msgid "System ``gfs3.example.org`` with a second disk volume *vdb* of *10GB* and IP address 192.168.122.13."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:264
-# eba52e22301d4e30a086f8a21ca1eac3
+# e41025e7235848a8aaba2157fa167558
 msgid "System ``gfs4.example.org`` with a second disk volume *vdb* of *10GB* and IP address 192.168.122.14."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:267
-# 0f11f664d5c24a2785711b0476966122
+# f4347afc58b1452ea62fb9c26b1a88ea
 msgid "Partition ``/dev/vdb`` on ``gfs3`` and ``gfs4`` as follows:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:283
-# 1144a75591214915ab022389c363b1a1
+# cbaf79cf39e84ab8adf22aa8e66ea474
 msgid "Create a physical volume, then a volume group, then a logical volume on both ``gfs3`` and ``gfs4``:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:303
-# ae40e3add6b4420e8a264b4e4713d1c6
+# 68640e6d3dbf4e4e9d69640bb3f1a897
 msgid "On both ``gfs3`` and ``gfs4``, create a filesystem on the new logical volume:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:336
-# 5c3fbd3e4ca84184b48169990cd20b55
+# 16b9e4b66d914075b1b4b76217e1dd22
 msgid "Install the ``glusterfs``, ``glusterfs-fuse`` and ``glusterfs-server`` packages on ``gfs3`` and ``gfs4``:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:351
-# 613060f3e00b42fe84ec2e5bfb91b8cf
+# b8a8ce7b468743f0aff256c58389046c
 msgid "Use ``gfs1`` and probe the new GlusterFS nodes:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:358
-# 962eeeb9f00247fd8dc258f641c264a6
+# 01f6592b8963407280adc4b36787bd70
 msgid "Add the new bricks to the existing volume:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:365
-# 6b0e45d0154f46fa86f2f3cdfe13650d
+# 27d297aed2a344b7b707e72fd35f1102
 msgid "Rebalance the bricks (use ``gfs1`` or ``gfs2``):"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:372
-# f3aaa6c376e04cacb7a12fdb27dfe2b5
+# 4c8a267ee7b84b1c8123d5d6e44effba
 msgid "When the rebalancing of the volume has been completed, remounting the volume on the GlusterFS client(s) makes it appreciate the change in storage volume."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:409
-# bf43e0f3f3c845799f05b3065bb9d1b3
+# 544c7f794d044dcebcaa55ad16a1e58f
 msgid "Configuring the GlusterFS Client"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:411
-# 547191ece5cf4490a8b6e166c2bb8632
+# 3fcc3df878934fb7a4add294a9156a52
 msgid "Using ``kolab.example.org``, this procedure configures the GlusterFS client to mount the ``imap0`` volume."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:414
-# d51d6db5501e47b1969406cce40cf90e
+# 3d619406b0de44ebb110748604840cde
 msgid "Install the ``glusterfs`` and ``glusterfs-fuse`` packages:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:427
-# fd07fed2ea0d4eeb80465f4d6b551ffd
+# ac365b19588f499b9d8e540885c8785e
 msgid "Change the directory ownership back to its original owner and group:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:435
-# 3d411fae9a454349a0e152e06a17953a
+# 0cf2110f635845d49dbb0170d886c531
 msgid "FAQ"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:438
-# 788c8da98540476bb3d378956d06ee29
+# 489507e0d89e4996bec9ea89b1205f8e
 msgid "What happens when a GlusterFS node fails?"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:440
-# 6342c0c560d245eea0ce426335ba3fd0
+# 3c9b6c2f887c4243a8b3f2ea2bd884d2
 msgid "In a replica *n* volume, *n*-1 nodes can fail. For each individual brick, at least one replica must stay alive."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:443
-# 7a0375c08ea4453091b569f9d2596946
+# 46ab903f475a45d59c141733611063b9
 msgid "In situations where you might expect or are required take into account the failure of multiple nodes (that are replicas) simultaneously, such as might be the case when using old desktop PCs for your storage, you should increase the number of replicas."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:448
-# 8c572b76fe7c428ba656df661d96707e
+# 94208bd3fcce4b70a6dbd8b8bd5ae17b
 msgid "There is a significant initial performance hit for the GlusterFS client, as it merely starts to realize one of the volume's bricks is no longer available."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:451
-# d2f725c65c8749cd82adfe52addf847e
+# ff63fa6f934b405c987cde9974386ded
 msgid "The write performance should not be impacted significantly, but the read performance is -- not unlike with RAID 1 replicated disk volume."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:454
-# 40e34f5ced854ec2a183f42b688bb45e
+# bd244ab7c6b3445293262c7c596c5c92
 msgid "You can find peers that are unavailable as being disconnected:"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:473
-# 2f03e9e6497a43b3921223aabf353635
+# cd1d8138a30348acaaa477c041d5a1b9
 msgid "When the node comes back online, it will automatically repair itself before it is deemed connected. During the downtime, and during the repair, it is crucially important the other replica(s) does not fail as well."
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:478
-# b34a3b07c6db4f09887bb3ce0b13df84
+# f82e84f4d49b4880a07b7152283b05da
 msgid "Replica *x*, Distribute *y* - how much storage, how many nodes?"
 msgstr ""
 
 #: ../../source/howtos/deploy-kolab-with-glusterfs-for-imap.rst:480
-# ef9babb7489d414abe9ddf886304b302
+# c1938cff5cfb48bfb108a38b633080c4
 msgid "The total storage volume available is impacted most significantly by the number of replicas -- the distribution is a JBOD aggregation of volumes."
 msgstr ""
 

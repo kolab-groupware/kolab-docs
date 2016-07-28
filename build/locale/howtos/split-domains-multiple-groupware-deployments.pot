@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,72 +17,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:90
-# 94350d151b6b47a989c755b6dd6d8d54
+# 704f4c2322704b0d8136c7128c47db3e
 msgid "HOWTO: Split Domains Over Multiple Groupware Deployments"
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:92
-# ada5a5e096964cb9b3ce7889e4fb8ddf
+# 9a4f63d82ed54a309a4a3f16eba3f222
 msgid "This HOWTO addresses using Kolab Groupware in situations where multiple groupware environments exist."
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:95
-# 7cd64d7f0c294fa0988b7a0a07055611
+# 1cbec2852bda409fb650f00ff3dcdf2b
 msgid "Such an environment can be heterogeneous, meaning different groupware technology could be used in the environment."
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:98
-# 3789ae9d795f44388b560142f3294a00
+# 3b2ec14704db4ce29c85abc2d0023d27
 msgid "In the scenario in this HOWTO, we'll have:"
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:100
-# bbb6b020b1ae48818a9d29da1a1c9d43
+# 24a7264b70664566a99c6a9c53cf29aa
 msgid "A :term:`parent domain` of ``example.org``,"
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:101
-# 2c6689e066f6434385f96b4f0fbe6ef5
+# 38ee3b8745ce4ba5be4d6e847791f119
 msgid "A user ``john.doe@example.org`` using Kolab Groupware,"
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:102
-# 08ccca37085347ffa00543815f013218
+# 9b51f53c695a46b9b4b127d1ad2d769b
 msgid "A user ``joe.sixpack@example.org`` using Microsoft Exchange,"
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:103
-# da0453ab7482426f8be805a1e9143c9c
+# c9725f41aede466d9b418a257d90c7a0
 msgid "A user ``min.imum@example.org`` using Novell Groupwise,"
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:104
-# 3785d28696b44eeaac12dba5544b3549
+# b406eabf7dfc46f4a598f41f31159ed5
 msgid "A user ``lucy.meier@example.org`` using IBM Lotus Notes."
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:107
-# a4e317f2c41d47afbe9f2117e660db4e
+# f55d8250ac3b4064be334066d289cafa
 msgid "The Smart Host"
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:109
-# a349ed557add46b8b070a438e55076c8
+# f1c7be923b5e445db55f03bd191af39d
 msgid "Use one or more smart hosts to route traffic."
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:111
-# a3d92d15a994484fa6d2a8c2dfd11d89
+# c23fd51fe5574f2dab780b3aef06a6f6
 msgid "Multiple smarthosts are only added for capacity -- they must all have the same configuration to determine which recipient address is to be routed where."
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:115
-# c5c2f11fcf5d41b585e7835bb15e6ba0
+# 96b85a0d1a024bc2a33106d5fd5af6a7
 msgid "Web Administration Panel"
 msgstr ""
 
 #: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:118
-# 037f0cf72bdd445893f4578402a9219e
+# 2da84fd1c172488287f8f98c755641eb
 msgid "Mail Delivery to Shared Folders"
 msgstr ""
 

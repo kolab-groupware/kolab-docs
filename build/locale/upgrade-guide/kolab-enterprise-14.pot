@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2016-07-28 12:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,411 +17,411 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:90
-# f4f19fcefacd45408b1f0d330226dc54
+# 6c9a7c6600384a17bd83d23cca03e8f4
 msgid "Upgrade Guide from Kolab Enterprise 13 to 14"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:92
-# 09655e6e0893425b94b2ab48dc2c3b62
+# 25a022715c5d4149b7bfb0ec60a91a25
 msgid "This document guides you through the process of upgrading Kolab Enterprise 13 to Kolab Enterprise 14. We recommend to try this upgrade on a test system before upgrading your production installation to ensure that everything will work smoothly with your specific setup."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:97
-# 2f2f68c90781467294c60ea23bad1e64
+# ebf3e7168dea43048e1aaf407384f637
 msgid "ChangeLog"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:99
-# 3bdade49ef4848e299954b09c1f36d79
+# edb7f718e79443b5968ed4befb152efb
 msgid "Kolab Enterprise 14 compared to Kolab Enterprise 14 ships the following additional components:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:101
-# 32f0e753f7ca4fe4bdd29ad006fac170
+# 845f0a2bcb404f91bf05ccaa868c52c5
 msgid "**Birthday Calender**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:103
-# f4aaff22819a4c378a16c27110ad8aee
+# 287c54af47aa489d9df7f7391e6ccead
 msgid "Users may opt to show the birthdays of their contacts in the Kolab Web Application."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:105
-# f1eebd83eeae47fca2c9f0d345bbef8f
+# ae8aee6e1039406092b72bca726de3b8
 msgid "**Web Application Paths**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:107
-# b3cfda7079c74d3eb71669049789a752
+# 67b9a3789f664f2c9d4332d8c255a55a
 msgid "The folder structure has changed. The web application has moved its public web content into a *public_html/* folder. While it tries to be backwards compatible, you might want to check your virtual host configuration to match the new paths."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:111
-# 0ab856ef9dae4136afaf9a0978c8294e
+# b4170007f1bf4b378057e80b6d325539
 msgid "**E-Mail Tagging**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:113
-# 9a1a5219ce674c22a98d4f25c7763331
+# 287388f3ffad41b99083bedd5a44c91b
 msgid "The roundcube plugin *kolab_tags* supports tanging of e-mails"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:115
-# 0a88c78108e5434ab2a947c0bd5e28ba
+# abab3a037dbc43539a1ef6911d568714
 msgid "**Notes**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:117
-# 817ed09a54e8453fa68d8d8606a4e1f4
+# 5c862970c22c41a092af672fd9e8c533
 msgid "The roundcube plugin *kolab_notes* supports writing and sharing notes. Via syncroton these notes can be synchronised via the ActiveSync protocol."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:120
-# 1a20cc720e6545e7bf87b203d42507fe
+# 176eefc9f9c44d3c88299c68dd8a3bb0
 msgid "You can also create shared Notes folders for groups."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:122
-# 61170f6304044af18af5fe46f17ea077
+# 94e223b445a148eb99c3d90f024a7891
 msgid "**Resource Management**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:124
-# d52d70554f6e4cda8de404635f4185ed
+# 9650949e090f4d2887c00835d9afb1b6
 msgid "While managing resources was already included in the Kolab Webadmin GUI, the roundcube received a new component to search, check and book resources. This part makes use of freebusy information to actually show the available resources."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:129
-# 822042eb05404fd2a7dcc428893cecf3
+# 5a3c5405131143b6b4bee0116dbbe75c
 msgid "**Freebusy**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:131
-# c396b8b579dd477da00f47a16951adb5
+# 659c837818cb4bc894106ab4bca15520
 msgid "The freebusy web daemon now supports caching of freebusy informations and resources. You might want to update/replace your configuration to support resources, etc."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:135
-# 77550aeab7e8412985c26c990dcccbea
+# ddfaee65fffc447aaf28b57662bcbf60
 msgid "**Wallace**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:137
-# 70cd1d1422e849ee86d89153ebfe74e3
+# 820a7d651bd34485a5dabae157de13f4
 msgid "The wallace daemon now includes modules for checking iTip invitations and resource booking requests automatically. Wallace is now enabled by default in new installations. If you want to make use of it, you must integrate it in the postfix mail flow."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:142
-# 79fe80c5426944789bcbb207daf3ec4a
+# c80b962d167b436fbeba3446e26f8a4a
 msgid "**IMAP ACL editor (kolab-webadmin)**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:144
-# 75e2265290b041128506122ab3139d5e
+# a0225cb856b947399bbfc8254233746d
 msgid "You can now create share folders within the kolab-webadmin and manage and enforce initial access control lists for those folders."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:147
-# 2acb2d2744ed4fe1a3891caa1528630d
+# 479c2b4cb214432ba9ceffc5c5699d5d
 msgid "**Organizatioal Unit Editor (kolab-webadmin)**"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:149
-# 4b0c429e00d440adb30863e04056bd01
+# 1d92267b6c6e48b98bc20305d9dd6125
 msgid "Those installations that make use of bigger LDAP Directories or manage corporate address books within LDAP can now make use of the OU Editor instead of relying on external LDAP Editors. The ou management includes an ACL Editor for LDAP targets."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:155
-# b2e9e4aeae174ec1adf9b876fd1ec28c
+# 6351bb391e1b400387f1055abf690f61
 msgid "Updating Kolab Enterprise"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:157
-# cb20f43bec4f404ba809d22006b39650
+# 0e340f936920443e9f7e7c34f0c54fe5
 msgid "These procedures are meant as an example to show you how an upgrade could work. They don't differ too much from a basic installation."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:161
-# 9e5a3a415e724cf19e2fc3abe90b21fc
+# 48e3b38d07394110aa67a85a92f97946
 msgid "RHEL 6 & CentOS 6"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:163
-# 3f27d61bff0b4eeea66e2d56ff747831
+# aeccacc51cf44ee186ce579b08d435d0
 msgid "Update the Kolab Enterprise repository to the new location:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:172
-# 81d40735a6b3473fb50b880e191dbe93
+# 8a7f2ca888944ce5b229fd93bd0d85ff
 msgid "Run the upgrade process:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:180
-# 35d1de2dddb74edc9c11bb77bc702aa1
+# 9253905ca03a4e619893a7e094398a32
 msgid "Updating Configuration Files"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:183
-# a1fb68338d324c518dc45750b7a7878b
+# 524f8e6ccb36485e8004ea7711ec4b99
 msgid "/etc/kolab/kolab.conf"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:185
-# fe321ff46fc94413995bf99460ad0ce6
+# e6fae7ca144d41b4b04f5581b66a3879
 msgid "These values have been updated. Please change them in your configuration depending on your installation and needs:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:205
-# c476497f31b944ff83ce2f1168740743
+# 06977c926504402d864698a7d870e366
 msgid "If you're planning to make use of wallace please make sure wallace is enabled to start using :command:`chkconfig` on RHEL/Centos."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:208
-# de82e74385ae4124a2ff20c2bfd82d43
+# 56e060a8cdd24e1d8f29317614859a31
 msgid "Restart the services"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:216
-# ebe8825bfd714565992b09994088772b
+# 748f5b324c3d43f3b3a023113c8000fe
 msgid "/etc/kolab-freebusy/config.ini"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:218
-# c2d2d938da324158b70f259bc98a8bd4
+# 878c247c94394c849ca14a277f884eb3
 msgid "Instead of editing the configuration by hand, it can be easier to just recreate the configuration using the setup-kolab tool if you have not a specific configuration."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:221
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:296
-# 818b777efad248c3969cf81486f5f376
-# 99752d804b8e4d6d90e9ed6536b41212
+# ce31f001832f4f9ea970a50b512287d7
+# 2b7d73a54f3346e4aede5688992fcac8
 msgid "For Redhat/CentOS"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:227
-# fbce9b9ee4ea4f3a829cefebffe34bff
+# 31edab25307e4315a2e8f3943f2b0071
 msgid "Recreatae the configuation:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:234
-# c403c8e1aa4f41da8ea0daa399243c59
+# aad3145922974341b2d53f6b133aec32
 msgid "/etc/roundcubemail/config.inc.php"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:236
-# e7dbe3be128d4799a455497f4b73a79f
+# ef6f24d2fc45460dab4a39b8fcfb6c2a
 msgid "Change the plugin load order the following way:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:238
-# ecb17d498df148b19029d6c76382fba0
+# ddbe3605ef30439c8dc06b0f6f25cc5a
 msgid "move *kolab_auth* to the top position"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:239
-# c4c97209f2844c448b40887e9fa3b81c
+# 13cbcb71d3ac40b89bb2f53b91cdaf6e
 msgid "move *kolab_config* after *kolab_addressbook*"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:240
-# 07eb3159fff64d81b81c2286207e3b81
+# 096ea02a1637406d8e86cf29b0d3cf3f
 msgid "add *kolab_notes* after *kolab_folders*"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:241
-# 604ca6d661a143a79d9226b90d19d6b7
+# d10da12fbe0f42d098d1a92e7c296090
 msgid "add *kolab_tags* after *kolab_notes*"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:243
-# c81948cfbc734035a0745ba752ca3f41
+# 62c44a5c5cd0411f85218aec69682ad8
 msgid "If you want to make use of the new secure URLs feature, add 2 more $config entries"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:250
-# 9a608696ff5c460cb1a7926a4899e318
+# a3a8ba5f0e6a4068b81ec6166b68972d
 msgid "And adjust the asset path to where your webserver makes the assets available."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:254
-# 2fda726653c14c2dae07617adf02b04c
+# 29d371a5349a4de082b6ffacfab6b163
 msgid "Keep in mind that some of those configuration changes are requiring an updated apache configuration. Kolab Enterprise 14 introduced a seperate public_html/ folder to seperate webroot and application files. Keep this in mind if you've customized your webserver configuration and adjust it accordingly. Please pay special attention to the rewrite rules in place."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:262
-# 3b26b9ca88524970946f2d7feef48efa
+# 47be973838524e9ba2ce40ce496db7a5
 msgid "/etc/roundcubemail/password.inc.php"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:264
-# fe31748f90194290aaa83c7abbb0895b
+# d131653b107a45c6b77e417c1c291fa9
 msgid "Change the password driver from **ldap** to **ldap_simple**."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:272
-# 843c67099e0749c599e24b07a5c4fadf
+# a2c64c8fc4ec4f3f86bdf9e6a2bc09a3
 msgid "/etc/roundcubemail/kolab_files.inc.php"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:274
-# 5e265a0a10c749baa7e9656fb852155c
+# 92ad38c0b14b487a8db9e95d91584205
 msgid "Update the kolab_files_url to /chwala/ to be protocol independent."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:281
-# f29c04a0a2bb4d34ac8745f864eb3b3f
+# f91d8d9689234743b99e71b010d00e66
 msgid "/etc/roundcubemail/managesieve.inc.php"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:283
-# f2dd206e573d4ca084618c842f4229bb
+# 5f429151a4154006b9968d3390d4ad07
 msgid "If you want to include the dedicated vacation settings, please add this setting:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:290
-# 1f4c82d9831748be96787376394ee65e
+# 18533d05510e41e187d741aa3aa13ff8
 msgid "/etc/iRony/dav.inc.php"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:292
-# 2ca2a968c75a4151b73f83f9f21f5b5e
+# 4c824e55380f4723b5eb8808ff606ce1
 msgid "The iRony configuration doesn't have anything special configurations. You might want to consider just to take the new default config file or change it based on the differences between the previous version."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:304
-# 90a631b192514ddf94a95e22567afb80
+# 81a84ee4fcbc4da491d6b069028fe638
 msgid "You can now expose the global address list via CalDAV by defining $config['kolabdav_ldap_directory'] for your installation. The URL for users to access this address book is https://<kolab-server>/iRony/addressbooks/<user-email>/ldap-directory while specifics depend on your web server configuration."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:311
-# a14c17aa6ece4cd08a828a98f7a90294
+# 920744a8d15d47688894267c38de46ec
 msgid "/etc/postfix/ldap/virtual_alias_maps_sharedfolders.cf"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:313
-# 3662101baff94dcfb991225082c9216d
+# d46636f5eec749539cee5c5e3d370d5a
 msgid "To fix the handling of resource invitations you've to adjust your existing virtual alias maps, otherwise you end up with non-delivery-reports."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:316
-# d5433d8c8e3b4927a0d95ed1500be073
+# bd85ae13ee2b421e9b81f4a1ad3a6f76
 msgid "Please update your filter with this new default configuration:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:322
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:345
-# 372f625df7aa4e32a2612dacada40c27
-# e71aa765bfea45f2b0e67143523d2328
+# f2b4c11edd0d478e90ee633e88506ade
+# 7e4abb1e8a0e4f478f5f97551fc6008d
 msgid "Restart the postfix daemon"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:329
-# 557179e3688743b7b3ef7b778e82760d
+# ec9e968018dd45a2b5c02520ff13fe2d
 msgid "/etc/postfix/master.cf"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:331
-# 6888ccd50ada4c8a9b22c5a351f8b3fc
+# 735ac764c2fb436d9a1b660b4c189d59
 msgid "Here, you can optionally enable wallace if you want it to handle resource booking and invitations automatically. This will put wallace as the next content-filter after the mail has been returned from amavis to postfix. If you're don't want to make use of iTip processing or resource management you can skip this section."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:351
-# b111c5cf65284a088fcc979ce857c8c3
+# 9635e58efce448519320aec8ac961500
 msgid "The mail flow will be the following:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:353
-# cba17e64271d4c96a00b82be60389a7a
+# 99da10c629364bbc977ca20bb3baae3e
 msgid "postfix receives mail (running on port :25 and port :587)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:354
-# 36e2b090608c43948b8643c44ca79ff8
+# 6656827da76e43da801553e25cb4e743
 msgid "postfix sends mail to amavisd (running on port 127.0.0.1:10024)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:355
-# 400e7e261fde44e2941ebe0fa6309091
+# d449c0b1a4a445e4a741f82068d5e558
 msgid "amavisd checks mail"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:356
-# f2f7d52c5ff5441bbd4d8eb591b29315
+# 195165c1d3d446d49b02ebc9c8aed08d
 msgid "amavisd sends mail to postfix (running on port 127.0.0.1:10025)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:357
-# ef9cbb119ea24f7487e2d41fa3e0b947
+# 6c23332d54384143a5e304256fb744df
 msgid "postfix sends mail to wallace (running on port 127.0.0.1:10026)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:358
-# 35c2819aa00d4991a2177fb9f47daf19
+# ffa625f4fcc94419a97345cf43cfc9f3
 msgid "wallace checks the message for itip, resources, etc"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:359
-# 4e9ece04857f4d84a72007c6389160f4
+# d3bd6f294a124935a88fb297ab2fe891
 msgid "wallace sens mail to postfix (running on port 127.0.0.1:10026)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:360
-# 3bc717086b164d1ab4bc0686f676a5b3
+# 2bbf4f9302b448eaa420791f2b65f943
 msgid "postfix will start delivering the mail (external or internal)"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:364
-# fc540cfb59fd45ffa8ae29eb25d2dbd7
+# 1d509096a81d4c1c9464c1d9a84c878b
 msgid "mysql database: kolab"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:366
-# 8010029632c447eb8444ce49f3394fd6
+# 9be87286caee4c59a7d047faad8beaae
 msgid "A couple new features are relying new tables (organizational units). The shared folder have been extended to make use of the **acl** editor."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:369
-# 55f9d79644384b47aed198d6ec420702
+# 03e00eb30e0f4dbb9d8bcfd06e68701e
 msgid "You can find the full sql file here:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:371
-# 96f3df777ae84d42b092cdbbed161fe9
+# f8cb7d0f393248aa974123eceef2430f
 msgid "web: https://git.kolab.org/diffusion/WAP/browse/master/doc/kolab_wap.sql;kolab-webadmin-3.2.1"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:372
-# 37e311cba27843c1a1a425897ef585a6
+# e5d81aba885b4ad5aa836af92976eab9
 msgid "locally: :file:`/usr/share/doc/kolab-webadmin/kolab_wap.sql`"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:374
-# 792318cbbed34cc9958e2236aeba6605
+# cd7edbb05048444782830499dd50dc9f
 msgid "To not mess with your existing configuration, the kolab-webadmin package doesn't provide auto updates or upgrade files for your database. Here's a summary of what has been changed."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:378
-# dcb65ae551dc4aa1b3db4aa8284582fd
+# bfc31e3f82ea44b8911c28456b41aa78
 msgid "If you've made changes on the shared folder types you might want to change the types manually in the settings section of kolab-webadmin."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:381
-# 647e81aeab4a47348a95d7299f3f8e53
+# d34daca140b1448d9295ae5b92544632
 msgid "Open the mysql cli:"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:387
-# 397df5422dd54c30b14cdc75aa2e96ed
+# 71ae68610a7049d7bcedd6688e9dd51b
 msgid "and apply the following changes: The tables will be deleted and recreated. Don't forget: if you've made changes to shared folder types, please update them manually!"
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:450
-# 586f104856124664894b8d82d811c0fc
+# c96b85eaabda45e98f6f406685a91cfe
 msgid "After the database update has been applied. Logout from the kolab-webadmin interface and login back in to load the new changes."
 msgstr ""
 
 #: ../../source/upgrade-guide/kolab-enterprise-14.rst:453
-# f863d6192654488097c258978bee9696
+# 00e0d5cf51194e85b4ef111a94b535c6
 msgid "Congratulations, your Kolab Enterprise 13 installation should now be upgraded sucessfully. If you encounter any problems during the upgrade, please `file a support ticket <https://kolabenterprise.com/support>`__."
 msgstr ""
 

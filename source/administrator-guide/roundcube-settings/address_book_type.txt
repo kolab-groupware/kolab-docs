@@ -3,6 +3,11 @@
 ``address_book_type``
 =====================
 
-.. include:: roundcube-settings/needs-work.txt
+This indicates which type of address book to use. Possible choises:
+'sql' (default), 'ldap' and ''.
 
-Sadly, this setting has not yet been documented.
+If set to 'ldap' then it will look at using the first writable LDAP
+address book as the primary address book and it will not display the
+SQL address book in the 'Address Book' view.
+If set to '' then no address book will be displayed or only the
+addressbook which is created by a plugin (like CardDAV).

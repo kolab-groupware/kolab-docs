@@ -3,6 +3,10 @@
 ``addressbook_search_mode``
 ===========================
 
-.. include:: roundcube-settings/needs-work.txt
+Matching mode for addressbook search (including autocompletion)
 
-Sadly, this setting has not yet been documented.
+- 0 - partial (*abc*), default
+- 1 - strict (abc)
+- 2 - prefix (abc*)
+
+Note: For LDAP sources fuzzy_search must be enabled to use 'partial' or 'prefix' mode.

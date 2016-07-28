@@ -3,6 +3,5 @@
 ``upload_progress``
 ===================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Enables files upload indicator. Requires APC installed and enabled apc.rfc1867 option.
+By default refresh time is set to 1 second. You can set this value to true or any integer value indicating number of seconds.

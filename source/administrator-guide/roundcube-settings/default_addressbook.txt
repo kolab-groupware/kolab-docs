@@ -3,6 +3,6 @@
 ``default_addressbook``
 =======================
 
-.. include:: roundcube-settings/needs-work.txt
-
-Sadly, this setting has not yet been documented.
+Defines address book (internal index) to which new contacts will be added.
+By default it is the first writeable addressbook.
+Note: Use '0' for built-in address book.

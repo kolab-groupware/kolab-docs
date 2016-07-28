@@ -1,4 +1,5 @@
 Configuration
+=============
 
 The **Guam** configuration lives in
 :file:`rel/kolab_guam/releases/*/sys.config` when running from source

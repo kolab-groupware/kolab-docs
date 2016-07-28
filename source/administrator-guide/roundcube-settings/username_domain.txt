@@ -3,6 +3,15 @@
 ``username_domain``
 ===================
 
-.. include:: roundcube-settings/needs-work.txt
+Automatically add this domain to user names for login
+Only for IMAP servers that require full e-mail addresses for login
+Specify an array with 'host' => 'domain' values to support multiple hosts
+Supported replacement variables:
 
-Sadly, this setting has not yet been documented.
+- %h - user's IMAP hostname
+- %n - hostname ($_SERVER['SERVER_NAME'])
+- %t - hostname without the first part
+- %d - domain (http hostname $_SERVER['HTTP_HOST'] without the first part)
+- %z - IMAP domain (IMAP hostname without the first part)
+
+For example %n = mail.domain.tld, %t = domain.tld

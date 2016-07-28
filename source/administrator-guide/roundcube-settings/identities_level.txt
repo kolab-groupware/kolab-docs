@@ -3,6 +3,10 @@
 ``identities_level``
 ====================
 
-.. include:: roundcube-settings/needs-work.txt
+Set identities access level:
 
-Sadly, this setting has not yet been documented.
+0 - many identities with possibility to edit all params
+1 - many identities with possibility to edit all params but not email address
+2 - one identity with possibility to edit all params
+3 - one identity with possibility to edit all params but not email address
+4 - one identity with possibility to edit only signature
