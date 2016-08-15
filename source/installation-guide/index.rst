@@ -57,12 +57,18 @@ blog article, and follow the instructions.
 
     winterfell/index
 
-.. rubric:: Older versions of Kolab Groupware
+.. rubric:: Latest Kolab Enterprise Version
 
 .. toctree::
     :maxdepth: 1
 
     kolab-14/index
+
+.. rubric:: Older versions of Kolab Enterprise
+
+.. toctree::
+    :maxdepth: 1
+
     kolab-13/index
 
 Installing the Kolab Desktop Client
