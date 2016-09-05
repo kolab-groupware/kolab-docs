@@ -254,6 +254,12 @@ These attributes are used to determine whether events from shared calendars
 affect the user's availability. Email addresses from all these attributes
 are matched against the list of event attendees.
 
+``format``
+----------
+
+The format for the Free/Busy information source, if applicable. Valid options
+include only ``exchange2010``.
+
 ``fbsource``
 ------------
 
@@ -354,7 +360,6 @@ sources specified in ``directories`` and finally aggregated.
 
     *   Architecture & Design, Kolab Freebusy Service, :ref:`and_kolab-freebusy-directory-types`
 
-
 ``cacheto``
 -----------
 
@@ -400,7 +405,6 @@ Sample Directory for Kolab Users
     lc_attributes = mail
     fbsource = file:/var/lib/kolab-freebusy/%mail.ifb
 
-
 Sample Directory for Resources
 ------------------------------
 
@@ -419,7 +423,6 @@ Sample Directory for Resources
     cacheto = /var/cache/kolab-freebusy/%mail.ifb
     expires = 10m
     loglevel = 100  ; Debug
-
 
 Sample Directory for Resource Collections
 -----------------------------------------
