@@ -25,6 +25,7 @@ This section controls the authentication with the following options:
 
 ``type``
 ^^^^^^^^
+
 Either one of 'static' or 'ldap'.
 
 'static' provides a simple authentication with a static username/password pair.
@@ -34,20 +35,24 @@ Only users who can authenticate on LDAP will be granted access to the service.
 
 ``username``
 ^^^^^^^^^^^^
+
 Static username used with type 'static'.
 
 ``password``
 ^^^^^^^^^^^^
+
 Static password used with type 'static'.
 
 ``host``
 ^^^^^^^^
+
 Fully qualified URI to the LDAP server, including protocol and port.
 
 Example: ``ldap://localhost:389``
 
 ``bind_dn``
 ^^^^^^^^^^^
+
 DN for binding to the LDAP service. Should be an unprivileged
 user with read-only access.
 
@@ -55,10 +60,12 @@ Example: ``uid=kolab-service,ou=Special Users,dc=example,dc=org``
 
 ``bind_pw``
 ^^^^^^^^^^^
-Password for binding to the LDAP service. 
+
+Password for binding to the LDAP service.
 
 ``filter``
 ^^^^^^^^^^
+
 Optional. Filter used to first resolve the username against LDAP.
 ``%s`` is replaced by the username.
 
@@ -97,18 +104,22 @@ Logging configuration.
 
 ``driver``
 ^^^^^^^^^^
+
 Supported drivers are 'file' and 'syslog'
 
 ``path``
 ^^^^^^^^
+
 Local filesystem path to a directory where log files will be created.
 
 ``name``
 ^^^^^^^^
+
 Filename or syslog identifier.
 
 ``level``
 ^^^^^^^^^
+
 The general log level. Possible values are:
 
 * 100 = Debug
@@ -116,7 +127,6 @@ The general log level. Possible values are:
 * 300 = Warn
 * 400 = Error
 * 500 = Critical
-
 
 .. _admin_kolab-freebusy-settings-directories:
 
@@ -150,10 +160,9 @@ the linked source. This type uses the following configuration options:
 * filter
 * primary_domain
 * attributes
-* attributes_lc (optional)
+* lc_attributes (optional)
 * domain_filter (optional)
 * domain_base_dn (optional)
-
 
 ``filter``
 ----------
@@ -163,14 +172,12 @@ Optional. String denoting a regular expression matched against the user name.
 See `PHP PCRE Manual <http://php.net/manual/en/reference.pcre.pattern.syntax.php>`_
 for the allowed regex syntax.
 
-
 ``host``
 --------
 
 Fully qualified URI to the LDAP server, including protocol and port.
 
 Example: ``ldap://localhost:389``
-
 
 ``bind_dn``
 -----------
@@ -180,12 +187,10 @@ user with read-only access.
 
 Example: ``uid=kolab-service,ou=Special Users,dc=example,dc=org``
 
-
 ``bind_pw``
 -----------
 
-Password for binding to the LDAP service. 
-
+Password for binding to the LDAP service.
 
 ``filter``
 ----------
@@ -195,7 +200,6 @@ Filter used to find the given user in LDAP. ``%s`` is replaced by the full user 
 
 Example: ``"(&(objectClass=kolabInetOrgPerson)(|(uid=%u)(mail=%s)(alias=%s)))"``
 
-
 ``base_dn``
 -----------
 
@@ -204,12 +208,10 @@ the user name domain.
 
 Example: ``"ou=People,%dc"``
 
-
 ``primary_domain``
 ------------------
 
 Fall-back domain name used for queries without fully qualified email addresses.
-
 
 ``attributes``
 --------------
@@ -219,22 +221,20 @@ These will then replace placeholders in the ``fbsource`` URI.
 
 Example: ``mail, sn``
 
-
 ``lc_attributes``
 -----------------
 
-List of entry attributes which are read form LDAP and are converted into lower-case
-characters.
+List of entry attributes which are read form LDAP and are converted into lower-
+case characters.
 
 
 ``domain_filter``
 -----------------
 
-Filter used to resolve the root DN (``%dc``) for the the given user name domain.
-``%s`` is replaced by the domain part of the user name.
+Filter used to resolve the root DN (``%dc``) for the the given user name
+domain. ``%s`` is replaced by the domain part of the user name.
 
 Example: ``"(&(objectclass=domainrelatedobject)(associateddomain=%s))"``
-
 
 ``domain_base_dn``
 ------------------
@@ -242,7 +242,6 @@ Example: ``"(&(objectclass=domainrelatedobject)(associateddomain=%s))"``
 Base DN used for resolving the domain root DN with LDAP
 
 Example: ``"cn=kolab,cn=config"``
-
 
 ``mail_attributes``
 -------------------
@@ -254,7 +253,6 @@ Only used in conjunction with an 'imap' source.
 These attributes are used to determine whether events from shared calendars
 affect the user's availability. Email addresses from all these attributes
 are matched against the list of event attendees.
-
 
 ``fbsource``
 ------------
@@ -273,9 +271,8 @@ The follwing source types are supported:
 .. code-block:: ini
 
     fbsource = file:/var/lib/kolab-freebusy/%mail.ifb
-    
-``%mail`` is a placeholder for the ``mail`` attribute from LDAP.
 
+``%mail`` is a placeholder for the ``mail`` attribute from LDAP.
 
 ``http(s)``
 ^^^^^^^^^^^
@@ -290,7 +287,7 @@ The follwing source types are supported:
 ^^^^^^^^
 
 .. code-block:: ini
-    
+
     ;; read data from a users calendars (all) using IMAP proxy authentication
     fbsource = "imap://%mail:<admin-pass>@localhost/?proxy_auth=cyrus-admin"
 
@@ -304,7 +301,6 @@ admin username (parameter value) and the admin password.
 
 The ``acl`` URL parameter will set the defined ACLs to the target IMAP folder
 in order to let the admin user read its contents.
-
 
 ``fbdaemon``
 ^^^^^^^^^^^^
@@ -325,7 +321,6 @@ this user has access to.
 
 The ``folder`` parameter instructs the daemon to collect event data from the given
 IMAP mailbox.
-
 
 ``aggregate``
 ^^^^^^^^^^^^^
@@ -355,7 +350,6 @@ that need to be resolved into valid user names/email addresses to then aggregate
 Once the members of a collection are resolved, freebusy data for each of them is fetched from the
 sources specified in ``directories`` and finally aggregated.
 
-
 .. seealso::
 
     *   Architecture & Design, Kolab Freebusy Service, :ref:`and_kolab-freebusy-directory-types`
@@ -368,7 +362,6 @@ An absolute path to the local file system where freebusy data collected from the
 fbsource is cached for future requests. Can contain placeholders for LDAP attributes or
 ``%s`` for the requested user name.
 
-
 ``expires``
 -----------
 
@@ -377,13 +370,11 @@ Defines the cache expiration time. Can contain numeric values with a unit indica
 
 Example: ``10m`` for 10 minutes
 
-
 ``loglevel``
 ------------
 
 Log level for this directory. See :ref:`admin_kolab-freebusy-settings-log`
 for possible values.
-
 
 .. _admin_kolab-freebusy-settings-examples:
 
@@ -392,7 +383,6 @@ Examples
 
 The `config.ini.sample <https://git.kolab.org/diffusion/F/browse/master/config/config.ini.sample>`_
 file provides a full overview of possible configuration options.
-
 
 Sample Directory for Kolab Users
 --------------------------------
