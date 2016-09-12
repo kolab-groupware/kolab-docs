@@ -98,6 +98,15 @@ html: clean submodules helpdocs
 	for lang in $(HELPDOCS_LOCALES); do \
 		$(SPHINXBUILD) -b html -D language=$${lang} $(ALLSPHINXOPTS) $(BUILDDIR)/html/$${lang} ; \
 	done
+	grep -E '>\([0-9]+\) ' \
+		build/html/de/webmail-user-guide/roundcubemail/overview.html | \
+			sed -r -e 's/^.*>(\([0-9]+\)) ([a-zA-Z ]+)<.*$$/\1 \2/g' | \
+			while read msgid; do \
+				msgstr=$$(grep -A 1 "$${msgid}" locale/de/LC_MESSAGES/webmail-user-guide/roundcubemail/overview.po | \
+					tail -n 1 | \
+					sed -r -e 's/^msgstr "(.*)"$$/\1/g'); \
+				sed -i -e "s/$${msgid}/$${msgstr}/g" build/html/de/webmail-user-guide/roundcubemail/overview.html ; \
+			done
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
