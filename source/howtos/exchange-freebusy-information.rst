@@ -28,7 +28,7 @@ Configuring Microsoft Exchange
     information. No rule or configuration can be applied to let the server
     automatically update the Free/Busy information of Microsoft Exchange
     users (on the basis of their then current calendar contents), therefore
-    possibly, at times, rendering a gross misrepresentation of a user's
+    possibly, at times, rendering a misrepresentation of a user's
     availability information.
 
 .. NOTE::
@@ -38,7 +38,7 @@ Configuring Microsoft Exchange
     Directory is not strictly required **for Kolab**, so long as the Kolab
     server can use the internal URL.
 
-*   Enable Caldaring Publishing on the CAS servers:
+*   Enable Calendaring Publishing on the CAS servers:
 
     .. parsed-literal::
 
@@ -46,7 +46,7 @@ Configuring Microsoft Exchange
 
 *   Set a Sharing Policy for the domain to **Anonymous** and the "action(s)
     that apply to the entered federated domain" to: "Calendar Sharing with
-    free/busy information only". Good luck.
+    free/busy information only".
 
 Configuring Kolab Free/Busy
 ===========================
@@ -61,7 +61,7 @@ Configuring Kolab Free/Busy
 
     Depending on the version of Exchange, and the ability to publish Free/Busy
     information to anonymous users, or only authenticated users, and the level
-    of interoperability entertained by your Exchange deployment, any of the
+    of interoperability entertained by your Exchange deployment, one of the
     following directory examples may work for you:
 
     **With ICS Free/Busy Publishing:**
