@@ -61,6 +61,33 @@ This command adds a new domain name space to Kolab Groupware.
 ..
 .. Not yet implemented.
 
+.. _admin_cli_add-user-subscription:
+
+add-user-subscription
+---------------------
+
+Subscribes a user to a folder.
+
+.. rubric:: Synopsis
+
+.. parsed-literal::
+
+    kolab add-user-subscription <user> <pattern>
+
+.. rubric:: Command-Line Options
+
+.. option:: user
+
+    Subscribe the specified user.
+
+    .. NOTE::
+
+        The user will be subscribed only if the user also has rights to the folder.
+
+.. option:: pattern
+
+    Subscribe the user specified to mailboxes matching the specified :term:`pattern`.
+
 cm
 --
 
@@ -134,7 +161,7 @@ Create a new default calendar folder for user John Doe.
 
 .. seealso::
 
-    *   :ref:`admin_cli_subscribe-user`
+    *   :ref:`admin_cli_add-user-subscription`
 
 dam
 ---
@@ -313,8 +340,39 @@ list-user-subscriptions
 
     List folders the user is not subscribed to, instead of subscribed folders.
 
+.. _admin_cli_rename-mailbox:
+
 rename-mailbox
 --------------
+
+Renames a mailbox or sub-folder.
+
+.. rubric:: Synopsis
+
+.. parsed-literal::
+
+    kolab rename-mailbox <source> <target> [<partition>]
+
+.. rubric:: Command-Line Options
+
+.. program:: rename-mailbox
+
+.. option:: source
+
+    Source mailbox name.
+
+.. option:: target
+
+    Target mailbox name.
+
+.. option:: partition
+
+    Optional partition name.
+
+rm
+--
+
+Short-hand for :ref:`admin_cli_rename-mailbox`
 
 sam
 ---
@@ -423,35 +481,6 @@ set-mailbox-metadata
     Set the mailbox metadata logged in as the user, enabling the modification of
     the /private metadata namespace annotation values.
 
-.. _admin_cli_subscribe-user:
-
-subscribe-user
---------------
-
-.. rubric:: Synopsis
-
-.. parsed-literal::
-
-    kolab subscribe-user <user> <pattern>
-
-.. rubric:: Command-Line Options
-
-.. program:: subscribe-user
-
-.. option:: user
-
-    Subscribe the specified user.
-
-    .. NOTE::
-
-        The user will be subscribed only of the user also has rights to the
-        folder.
-
-.. option:: pattern
-
-    Subscribe the user specified to mailboxes matching the specified
-    :term:`pattern`.
-
 summarize-quota-allocation (sqa)
 --------------------------------
 
@@ -535,6 +564,33 @@ Transfer mailbox ``user/john.doe@example.org`` currently on IMAP server
 undelete-mailbox
 ----------------
 
+Recovers mailboxes previously deleted.
+
+.. rubric:: Synopsis
+
+.. parsed-literal::
+
+    kolab undelete-mailbox [options] <mailbox> [<target>]
+
+.. rubric:: Command-Line Options
+
+.. program:: undelete-mailbox
+
+.. option:: mailbox
+
+    Mailbox may be a string representing either of the following two options
+    - the fully qualified path of the deleted folder in its current location
+    (e.g. "DELETED/user/userid/hex[@domain]") or the original folder name, such as "user/userid[@domain]".
+
+.. option:: target
+
+    Target may be the target folder to "undelete" the deleted folder to.
+    If not specified, the original folder name is used.
+
+.. option:: --dry-run
+
+    Do not actually execute, but state what would have been executed.
+
 user-info
 ---------
 
@@ -560,11 +616,48 @@ corresponding user type.
 Sieve Operations
 ================
 
-list
-----
+sieve-list
+----------
 
-put
----
+Retrieves list of sieve scripts of a user.
 
-refresh
--------
+.. rubric:: Synopsis
+
+.. parsed-literal::
+
+    kolab sieve-list <email>
+
+sieve-put
+---------
+
+Put a sieve script to a user mailbox.
+
+.. rubric:: Synopsis
+
+.. parsed-literal::
+
+    kolab sieve-put <email> <file> <script_name>
+
+sieve-refresh
+-------------
+
+Refresh a user's managed and contributed sieve scripts. It will re-generate
+sieve scripts content according to LDAP attributes of the user record and KE#14
+in a way defined in ``sievemgmt`` plugin of kolab daemon.
+
+.. rubric:: Synopsis
+
+.. parsed-literal::
+
+    kolab sieve-refresh <email>
+
+sieve-test
+----------
+
+Syntactically checks sieve scripts of a user.
+
+.. rubric:: Synopsis
+
+.. parsed-literal::
+
+    kolab sieve-test <email>
