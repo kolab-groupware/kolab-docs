@@ -1,0 +1,18 @@
+``kolab_folders_configuration_default``
+``kolab_folders_event_default``
+``kolab_folders_contact_default``
+``kolab_folders_task_default``
+``kolab_folders_note_default``
+``kolab_folders_journal_default``
+``kolab_folders_file_default``
+``kolab_folders_freebusy_default``
+``kolab_folders_mail_inbox``
+``kolab_folders_mail_drafts``
+``kolab_folders_mail_sentitems``
+``kolab_folders_mail_wastebasket``
+``kolab_folders_mail_outbox``
+``kolab_folders_mail_junkemail``
+================================
+
+Default kolab-specific folders. Set values to non-empty strings to create default folders of apropriate type.
+If there is no such folder with specified type in user mailbox, it will be created. Note that mail folders will be also subscribed.

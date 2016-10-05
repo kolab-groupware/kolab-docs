@@ -1,0 +1,124 @@
+``managesieve_port``
+====================
+
+Managesieve server port. When empty the port will be determined automatically
+using getservbyname() function, with 4190 as a fallback.
+
+``managesieve_host``
+====================
+
+Managesieve server address, default is ``localhost``.
+Replacement variables supported in host name:
+``%h`` - user's IMAP hostname
+``%n`` - http hostname ($_SERVER['SERVER_NAME'])
+``%d`` - domain (http hostname without the first part)
+For example ``%n`` = mail.domain.tld, ``%d`` = domain.tld
+
+``managesieve_auth_type``
+=========================
+
+Authentication method. Can be ``CRAM-MD5``, ``DIGEST-MD5``, ``PLAIN``, ``LOGIN``, ``EXTERNAL`` or none.
+Optional, defaults to best method supported by the server.
+
+``managesieve_auth_cid``
+========================
+
+Optional managesieve authentication identifier to be used as authorization proxy.
+Authenticate as a different user but act on behalf of the logged in user.
+Works with ``PLAIN`` and ``DIGEST-MD5`` authentication.
+
+``managesieve_auth_pw``
+=======================
+
+Optional managesieve authentication password to be used for ``managesieve_auth_cid``.
+
+``managesieve_usetls``
+======================
+
+Use or not TLS for managesieve server connection. Note that tls:// prefix in managesieve_host is also supported
+
+``managesieve_conn_options``
+============================
+
+Connection socket context options. See http://php.net/manual/en/context.ssl.php
+The example below enables server certificate validation:
+
+.. code-block:: php
+
+    $config['managesieve_conn_options'] = array(
+        'ssl'         => array(
+            'verify_peer'  => true,
+            'verify_depth' => 3,
+            'cafile'       => '/etc/openssl/certs/ca.crt',
+        ),
+    );
+
+``managesieve_default``
+=======================
+
+Path to a file with default contents of filters script (e.g. default spam filter)
+
+``managesieve_script_name``
+===========================
+
+The name of the script which will be used when there's no user script. Default: ``managesieve``.
+
+``managesieve_mbox_encoding``
+=============================
+
+Sieve RFC says that we should use UTF-8 endcoding for mailbox names, but some implementations does not covert UTF-8 to modified UTF-7.
+Defaults to ``UTF-8``.
+
+``managesieve_disabled_extensions``
+===================================
+
+An array containing a list of disabled protocol extensions. This way you can limit managesieve features awailable to the user.
+
+``managesieve_debug``
+=====================
+
+Enables debugging of conversation with sieve server. Logs it into <log_dir>/sieve
+
+``managesieve_kolab_master``
+============================
+
+Enables features described in http://wiki.kolab.org/KEP:14. Disabled by default.
+
+``managesieve_filename_extension``
+==================================
+
+Script name extension used for scripts including. Dovecot uses '.sieve', Cyrus uses '.siv'. Doesn't matter if you have ``managesieve_kolab_master`` disabled.
+Default is ``.sieve``.
+
+``managesieve_filename_exceptions``
+===================================
+
+List of reserved script names (without extension). Scripts listed here will be not presented to the user.
+
+``managesieve_domains``
+=======================
+
+List of domains limiting destination emails in redirect action. If not empty, user will need to select domain from a list.
+
+``managesieve_vacation``
+========================
+
+Enables separate management interface for vacation responses (out-of-office).
+Possible values: 0 - no separate section (default), 1 - add Vacation section,  2 - add Vacation section, but hide Filters section.
+
+``managesieve_vacation_interval``
+=================================
+
+Default vacation interval (in days).
+Note: If server supports vacation-seconds extension it is possible to define interval in seconds here (as a string), e.g. ``3600s``.
+
+``managesieve_vacation_addresses_init``
+=======================================
+
+Some servers require vacation :addresses to be filled with all user addresses (aliases).
+This option enables automatic filling of these on initial vacation form creation.
+
+``managesieve_notify_methods``
+==============================
+
+List of supported methods of notify extension. Default: ``mailto``.

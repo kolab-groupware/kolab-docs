@@ -1,0 +1,18 @@
+``kolab_delegation_filter``
+===========================
+
+Delegation plugin uses LDAP addressbook defined in ``kolab_auth`` plugin. This option will overwrite defined LDAP filter.
+Default: ``(|(objectClass=kolabInetOrgPerson)(&(objectclass=kolabsharedfolder)(kolabFolderType=mail)))``.
+
+``kolab_delegation_delegate_field``
+===================================
+
+Delegates field (from fieldmap configuration) to get delegates list. Note: This is a field name, not LDAP attribute name.
+Default: ``kolabDelegate``.
+
+``kolab_delegation_purge_identities``
+=====================================
+
+Delegation plugin creates automatically identities for delegator's addresses. After the delegation is removed identities should be removed too.
+This option removes all user identities which do not match the user's primary or alias addresses and delegator's addresses.
+Default: ``false``.

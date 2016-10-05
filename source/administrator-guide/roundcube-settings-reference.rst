@@ -208,11 +208,6 @@ Log Settings
 .. include:: roundcube-settings/syslog_facility.txt
 .. include:: roundcube-settings/syslog_id.txt
 
-.. seealso::
-
-    *   :ref:`admin_roundcube-settings-plugin_kolab_activesync_activesync_debug`
-    *   :ref:`admin_roundcube-settings-plugin_kolab_activesync_activesync_user_log`
-
 --------------
 Other Settings
 --------------
@@ -365,8 +360,7 @@ The ``calendar`` Plugin
 The ``kolab_activesync`` Plugin
 ===============================
 
-.. include:: roundcube-settings/activesync_debug.txt
-.. include:: roundcube-settings/activesync_user_log.txt
+.. include:: roundcube-settings/kolab_activesync.txt
 
 .. _admin_roundcube-settings-plugin_kolab_auth:
 
@@ -380,25 +374,35 @@ The ``kolab_auth`` Plugin
 The ``kolab_addressbook`` Plugin
 ================================
 
+.. include:: roundcube-settings/kolab_addressbook.txt
+
 .. _admin_roundcube-settings-plugin_kolab_config:
 
 The ``kolab_config`` Plugin
 ===========================
+
+.. include:: roundcube-settings/kolab_config.txt
 
 .. _admin_roundcube-settings-plugin_kolab_delegation:
 
 The ``kolab_delegation`` Plugin
 ===============================
 
+.. include:: roundcube-settings/kolab_delegation.txt
+
 .. _admin_roundcube-settings-plugin_kolab_files:
 
 The ``kolab_files`` Plugin
 ==========================
 
+.. include:: roundcube-settings/kolab_files.txt
+
 .. _admin_roundcube-settings-plugin_kolab_folders:
 
 The ``kolab_folders`` Plugin
 ============================
+
+.. include:: roundcube-settings/kolab_folders.txt
 
 .. _admin_roundcube-settings-plugin_libkolab:
 
@@ -415,27 +419,32 @@ The ``libkolab`` Plugin
 The ``libcalendaring`` Plugin
 =============================
 
+.. include:: roundcube-settings/libcalendaring.txt
+
 .. _admin_roundcube-settings-plugin_managesieve:
 
 The ``managesieve`` Plugin
 ==========================
+
+.. include:: roundcube-settings/managesieve.txt
 
 .. _admin_roundcube-settings-plugin_password:
 
 The ``password`` Plugin
 =======================
 
+.. include:: roundcube-settings/password.txt
+
 .. _admin_roundcube-settings-plugin_redundant_attachments:
 
 The ``redundant_attachments`` Plugin
 ====================================
+
+.. include:: roundcube-settings/redundant_attachments.txt
 
 .. _admin_roundcube-settings-plugin_tasklist:
 
 The ``tasklist`` Plugin
 =======================
 
-.. _admin_roundcube-settings-plugin_threading_as_default:
-
-The ``threading_as_default`` Plugin
-===================================
+.. include:: roundcube-settings/tasklist.txt
