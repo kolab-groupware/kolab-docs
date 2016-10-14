@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Max Hellwig <max.hellwig@translating-energy.de>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,7 +48,7 @@ msgid ""
 "Lets you select the :ref:`calendar-view` which is visible by default when "
 "opening the calendar."
 msgstr ""
-"Hier können Sie die :ref:`Kalenderansicht\" auswählen, die standardmäßig "
+"Hier können Sie die :ref:`Kalenderansicht` auswählen, die standardmäßig "
 "sichtbar ist, wenn der Kalender geöffnet wird."
 
 # 215dc1e09f5446abbd405b2102b2bf9b
@@ -86,8 +87,8 @@ msgid ""
 "When opening the day or week view, the listing of events starts at this "
 "time. Of course all hours of a day are visible by scrolling further up."
 msgstr ""
-"Wenn Sie die Tages- oder Wochenansicht öffnen, beginnt die Auflistung der "
-"Termine mit dieser Zeit. "
+"Wenn Sie die Tages- oder Wochenansicht öffnen, beginnt die Auflistung der Termine mit dieser Zeit.\n"
+"Natürlich sind alle Stunden eines Tages sichtbar, wenn Sie weiter nach oben scrollen."
 
 # 17307f592bd044bf92ff8592de7cd8b7
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/settings.rst:124
@@ -99,15 +100,18 @@ msgstr "**Terminfarbe**"
 msgid ""
 "The coloring of the title of an event block (\"outline\") as well as the "
 "background color of the box (\"content\") in day and week views is "
-"influenced by the color of the calendar an event belongs to and/or the color "
-"of the category it is assigned to. This setting lets you control which "
+"influenced by the color of the calendar an event belongs to and/or the color"
+" of the category it is assigned to. This setting lets you control which "
 "source for coloring to use or if you even want a combined coloring that "
 "reflects both, the assignment of calendars and categories."
 msgstr ""
 "Die Farbe des Titels eines Terminblocks („Rahmen\"), sowie die "
 "Hintergrundfarbe eines Feldes („Inhalt\") in der Tages- und Wochenansicht "
 "wird von der Farbe des Kalenders, zu dem ein Termin gehört und/oder der "
-"Farbe der Kategorie, der er zugeordnet wird, beeinflusst. "
+"Farbe der Kategorie, der er zugeordnet wird, beeinflusst. Mit dieser "
+"Einstellung können Sie regeln, welche Quelle für die Farbe benutzt wird oder"
+" ob Sie überhaupt eine kombinierte Färbung, die die Zuordnung sowohl von "
+"Kalender als auch Kategorien reflektiert, wünschen."
 
 # 3b3287554ca1458c805046ea00169a72
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/settings.rst:127
@@ -160,20 +164,23 @@ msgid ""
 "assign colors to them. Use the color picker to change the color by clicking "
 "on the square color box in the categories list."
 msgstr ""
-"Mit diesem Block können Sie Kategorien verwalten, die in Ihrem Kalender "
-"genutzt werden und ihnen Farben zuweisen. "
+"Mit diesem Block können Sie Kategorien verwalten, die in Ihrem Kalender genutzt werden und ihnen Farben zuweisen.\n"
+"Benutzen Sie den Farbwähler, um die Farbe durch Klicken auf das eckige Farbfeld in der Kategorienliste zu ändern."
 
 # 413c4dbb7bf9432d97cace20f3d82099
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/settings.rst:143
 msgid ""
 "To add a new category, enter its unique name into the text box below the "
 "listing and then click the *Add category** button to add it. Note that you "
-"still need to click the *Save* button at the bottom of the preferences panel "
-"in order to finally register the new categories."
+"still need to click the *Save* button at the bottom of the preferences panel"
+" in order to finally register the new categories."
 msgstr ""
 "Um eine neue Kategorie hinzuzufügen, geben Sie einen einmaligen Name in das "
-"Textfeld unter der Liste ein und klicken Sie auf die *Kategorie hinzufügen**-"
-"Schaltfläche, um sie hinzuzufügen. "
+"Textfeld unter der Liste ein und klicken Sie auf die *Kategorie "
+"hinzufügen**-Schaltfläche, um sie hinzuzufügen. Bedenken Sie, dass Sie immer"
+" noch die *Speichern*-Schaltfläche am unteren Ende des Voreinstellungen-"
+"Steuerfelds anklicken müssen, um schließlich die neuen Kategorien zu "
+"registrieren."
 
 # dba95417c21d4c97b43dc3a983d4c90f
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/settings.rst:149
@@ -187,7 +194,7 @@ msgid ""
 "address book. This block controls how this is done."
 msgstr ""
 "Die Kalenderansicht kann auch Geburtstage von in Ihrem Adressbuch "
-"gespeicherten Kontakten darstellen. "
+"gespeicherten Kontakten darstellen. Dieser Block regelt, wie dies geschieht."
 
 # ab20ca0b2ac8407889fc42b7f9767771
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/settings.rst:155
@@ -208,7 +215,8 @@ msgstr "**Aus diesen Adressbüchern**"
 # b65013f097e24ab99d9b7cb8dfd569ab
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/settings.rst:158
 msgid ""
-"Choose from which address books you'd like to see birthdays in your calendar."
+"Choose from which address books you'd like to see birthdays in your "
+"calendar."
 msgstr ""
 "Wählen Sie, aus welchen Adressbüchern Sie Geburtstage in Ihrem Kalender "
 "sehen wollen."

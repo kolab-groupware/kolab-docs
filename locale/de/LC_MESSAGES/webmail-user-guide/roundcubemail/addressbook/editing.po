@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Max Hellwig <max.hellwig@translating-energy.de>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,8 +30,8 @@ msgid ""
 "button in the contact properties area on the right to start editing it."
 msgstr ""
 "Wählen Sie einen Kontakt aus der Kontaktliste und klicken Sie auf die "
-"*Kontakt bearbeiten*-Schaltfläche im Kontakteigenschaften-Bereich rechts, um "
-"mit der Bearbeitung zu beginnen."
+"*Kontakt bearbeiten*-Schaltfläche im Kontakteigenschaften-Bereich rechts, um"
+" mit der Bearbeitung zu beginnen."
 
 # da79336c05764ecfae869ca347763f75
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:98
@@ -44,8 +45,8 @@ msgstr ""
 # b49f02f5bfc64c8d9b1f73ea03d0fded
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:101
 msgid ""
-"The lower part shows the same groups of contact properties as the :ref:"
-"`addressbook-contact-details` structured with tabs and boxes."
+"The lower part shows the same groups of contact properties as the :ref"
+":`addressbook-contact-details` structured with tabs and boxes."
 msgstr ""
 "Der untere Teil zeigt Gruppen von Kontakteigenschaften als :ref:`Adressbuch-"
 "Kontaktdetails <addressbook-contact-details>`, die mit Reitern und Feldern "
@@ -55,12 +56,12 @@ msgstr ""
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:104
 msgid ""
 "Some properties have a type selector drop-down where you can select what "
-"type of email address (e.g. home or work) this is. Remove a contact property "
-"by either clearing the input field(s) or by clicking the *Delete* icon right "
-"next to it."
+"type of email address (e.g. home or work) this is. Remove a contact property"
+" by either clearing the input field(s) or by clicking the *Delete* icon "
+"right next to it."
 msgstr ""
-"Einige Eigenschaften haben einen Dropdownmenü, mit dem Sie wählen können um "
-"welche Art von E-Mail-Adresse (z. B. Privat oder Arbeit) es sich handelt. "
+"Einige Eigenschaften haben einen Dropdownmenü, mit dem Sie wählen können um welche Art von E-Mail-Adresse (z. B. Privat oder Arbeit) es sich handelt.\n"
+"Entfernen Sie eine Kontakteigenschaft entweder durch Leeren des/der Eingabefeld(er) oder durch Klicken auf den *Löschen*-Icon direkt daneben."
 
 # af40e6c894ad4be48b19fd9bdbe09e7b
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:108
@@ -69,8 +70,8 @@ msgid ""
 "below the form. Abort editing and discard your changes with the *Cancel* "
 "button."
 msgstr ""
-"Wenn Sie mit der Bearbeitung fertig sind, speichern Sie Ihre Änderungen "
-"durch Klicken auf die *Speichern*-Schaltfläche unter der Maske. "
+"Wenn Sie mit der Bearbeitung fertig sind, speichern Sie Ihre Änderungen durch Klicken auf die *Speichern*-Schaltfläche unter der Maske.\n"
+"Mit der *Abbrechen*-Schaltfläche brechen Sie die Bearbeitung ab und verwerfen Ihre Änderungen ."
 
 # c0a83b12714e4f46a03d83ec19304086
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:113
@@ -84,8 +85,8 @@ msgid ""
 "menu located below the form. The similar drop-down below the name fields in "
 "the header lets you add more name-related fields."
 msgstr ""
-"Um ein neues Eigenschaftenfeld hinzuzufügen, wählen Sie eines aus dem *Feld "
-"hinzufügen...*-Dropdownmenü unter der Maske. "
+"Um ein neues Eigenschaftenfeld hinzuzufügen, wählen Sie eines aus dem *Feld hinzufügen...*-Dropdownmenü unter der Maske.\n"
+"Mit einem ähnlichen Dropdownmenü unter den Namensfeldern in der Kopfzeile können Sie mehr namenbezogene Felder hinzufügen."
 
 # 3c90365c99344560b9545e6826cc1d42
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:118
@@ -105,8 +106,8 @@ msgstr "Kontaktfoto hochladen"
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:127
 msgid ""
 "Contacts have have a picture assigned which is also displayed in the email "
-"task of the application if the sender of the message is saved with a picture "
-"in one of your address books."
+"task of the application if the sender of the message is saved with a picture"
+" in one of your address books."
 msgstr ""
 "Kontakten ist ein Bild zugewiesen, dass auch im E-Mail-Task der Anwendung "
 "angezeigt wird, wenn der Absender der Nachricht mit einem Bild in einem "
@@ -116,17 +117,19 @@ msgstr ""
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:130
 msgid ""
 "To add or replace a contact picture, click the *Add* (or *Replace* if the "
-"contact already has a picture) button right below the picture placeholder in "
-"the edit form. Then select an image on your computer using the file picker "
+"contact already has a picture) button right below the picture placeholder in"
+" the edit form. Then select an image on your computer using the file picker "
 "dialog that appears. Once selected, the picture will be uploaded and shown "
 "immediately as a preview. Note that the new picture will be stored with the "
 "contact only after you saved the contact."
 msgstr ""
-"Um ein Kontaktbild hinzuzufügen oder ersetzen, klicken Sie auf *Hinzufügen*- "
-"(oder *Ersetzen*, wenn der Kontakt schon ein Bild hat)-Schaltfläche direkt "
-"unter dem Bildplatzhalter in der Bearbeiten-Maske. Bedenken Sie, dass das "
-"neue Bild nur mit dem Kontakt gespeichert wird, nachdem Sie den Kontakt "
-"gespeichert haben."
+"Um ein Kontaktbild hinzuzufügen oder ersetzen, klicken Sie auf *Hinzufügen*-"
+" (oder *Ersetzen*, wenn der Kontakt schon ein Bild hat)-Schaltfläche direkt "
+"unter dem Bildplatzhalter in der Bearbeiten-Maske. Wählen Sie dann mit dem "
+"erscheinenden Dateiauswahl-Dialog ein Bild von Ihrem Computer. Sobald es "
+"ausgewählt wurde, wird das Bild hochgeladen und sofort als Vorschau "
+"angezeigt. Bedenken Sie, dass das neue Bild nur mit dem Kontakt gespeichert "
+"wird, nachdem Sie den Kontakt gespeichert haben."
 
 # 31eca2fc4aac4748a808227af0915fee
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:135
@@ -135,8 +138,8 @@ msgid ""
 "*Delete* button right below the picture and save the contact to apply the "
 "changes."
 msgstr ""
-"Um das derzeitig dem Kontakt zugewiesene Bild zu entfernen, benutzen Sie die "
-"*Löschen*-Schaltfläche direkt unter Bild und speichern Sie den Kontakt, um "
+"Um das derzeitig dem Kontakt zugewiesene Bild zu entfernen, benutzen Sie die"
+" *Löschen*-Schaltfläche direkt unter Bild und speichern Sie den Kontakt, um "
 "die Änderungen wirksam zu machen."
 
 # 7a97e6565f8b4d41adbc9179461abd99
@@ -148,15 +151,13 @@ msgstr "Neuen Kontakt erstellen"
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:144
 msgid ""
 "A new contact can be added to the currently selected address directly by "
-"clicking the *Create new contact* button (+) in the footer of the :ref:"
-"`addressbook-contacts-list`. The form to add names and properties is the "
+"clicking the *Create new contact* button (+) in the footer of the :ref"
+":`addressbook-contacts-list`. The form to add names and properties is the "
 "same as for editing. Finally create the new contact by clicking the *Save* "
 "button below the form."
 msgstr ""
-"Ein neuer Kontakt kann der derzeitig ausgewählten Adresse hinzugefügt durch "
-"Klicken auf die *Neuen Kontakt erstellen*-Schaltfläche in der Fußzeile der :"
-"ref:„Adressbuch-Kontakte-Liste <addressbook-contacts-list>` hinzugefügt "
-"werden. "
+"Ein neuer Kontakt kann der derzeitig ausgewählten Adresse hinzugefügt durch Klicken auf die *Neuen Kontakt erstellen*-Schaltfläche (+) in der Fußzeile der :ref:`Adressbuch-Kontakte-Liste <addressbook-contacts-list>\\` hinzugefügt werden.\n"
+"Zu guter Letzt erstellen Sie den neuen Kontakt durch Klicken auf die *Speichern*-Schaltfläche unter der Maske."
 
 # 079609c0359749e7aa5f3bde58657cc0
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/editing.rst:88

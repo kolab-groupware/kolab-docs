@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-07 14:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:93
+msgid "Filters"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:95
+msgid ""
+"Incoming mail is automatically processed by the server and "
+"handled/organized according to defined criteria. For example you can tell"
+" the server to move the message to specified folder, redirect it to "
+"another account, send a reply, discard, delete, etc."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:99
+msgid ""
+"Filtering is based on `Sieve <https://www.rfc-editor.org/info/rfc5228>`_ "
+"language, which means that under the hood all filters are stored as a "
+"Sieve script on the server. This interface allows you to define rules in "
+"easy way without the need to know the language."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:103
+msgid ""
+"Each filter definition has a name and set of rules and actions. Usually "
+"the number of definitions is unlimited and they can be grouped into sets "
+"(scripts) for convenience."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:109
+msgid "Filter sets"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:111
+msgid ""
+"Filter definitions can be grouped into sets. These can be activated or "
+"disactivated. Depending on server configuration there can be none, one or"
+" more active sets at the same time. They need to have a unique name."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:115
+msgid ""
+"New sets can be created as empty or as a copy of an existing set. It is "
+"also possible to import them from a text file containing Sieve script. "
+"Sets in form of a script can be also downloaded e.g. for backup or "
+"migration purposes."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:121
+msgid "Filter definition"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:123
+msgid ""
+"Every filter can be active or inactive, which is convenient if you want "
+"to disable some actions temporarily."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:126
+msgid ""
+"Because filters are executed in specified order (from top to bottom as "
+"you see them on the list) you can use drag-and-drop technique to rearange"
+" filters on the list."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:129
+msgid ""
+"Every filter definition contains at least one rule and one action. "
+"Depending on server capabilities a rule can be based e.g. on message "
+"headers, body, date or size."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:132
+msgid ""
+"A set of actions also depends on server capabilities. Most servers "
+"support:"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:134
+msgid "moving/copying messages to specified folder"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:135
+msgid "redirecting/copying messages to another account"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:136
+msgid "discarding messages with specified error message"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:137
+msgid "replying (vacation)"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:138
+msgid "deleting (ignoring) messages"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:139
+msgid "setting flags (e.g. marking as Read)"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail-plugins/public_html/plugins/managesieve/helpdocs/en_US/settings-filters.rst:141
+msgid ""
+"Note: Some actions stop filtering process, some do not. Use *Stop "
+"evaluating rules* and *Keep message in Inbox* actions to have more "
+"control on this."
+msgstr ""
+

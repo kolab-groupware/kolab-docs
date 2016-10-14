@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Max Hellwig <max.hellwig@translating-energy.de>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,7 +75,8 @@ msgid ""
 msgstr ""
 "Mit dem Textfeld in der Mitte des Werkzeugleisten-Bereichs können Sie sehr "
 "schnell neue Aufgaben durch einfaches Eingeben eines Titels und Drücken von "
-"<Eingabe> auf der Tastatur hinzufügen. "
+"<Eingabe> auf der Tastatur hinzufügen. Aufgaben werden in der derzeitig "
+"ausgewählten Liste erstellt."
 
 # 2bc4af31f5b048dbb753041f4b4ecc86
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:110
@@ -99,12 +101,12 @@ msgstr "Der Bearbeiten-Dialog"
 # b62d94860f634a44b8581e423de5bccc
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:122
 msgid ""
-"When clicking a task item in list a dialog showing its details is displayed. "
-"Clicking the Edit button in that dialog opens the form to edit all "
+"When clicking a task item in list a dialog showing its details is displayed."
+" Clicking the Edit button in that dialog opens the form to edit all "
 "properties of the selected task."
 msgstr ""
-"Wenn man ein Aufgabenobjekt in der Liste anklickt, wird ein Dialog mit ihren "
-"Details angezeigt. "
+"Wenn man ein Aufgabenobjekt in der Liste anklickt, wird ein Dialog mit ihren Details angezeigt.\n"
+"Wenn in diesem Dialog die Bearbeiten-Schaltfläche angeklickt wird, öffnet sich eine Maske zum Bearbeiten aller Eigenschaften der ausgewählten Aufgabe."
 
 # efa4e93d41d14ea4b81c54390adf3f9d
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:125
@@ -127,22 +129,23 @@ msgid ""
 "Here’s a description of all the possible values:"
 msgstr ""
 "Dieser allgemeine Abschnitt hat Textfelder und Optionsschaltflächen für "
-"verschiedene Eigenschaften. "
+"verschiedene Eigenschaften. Hier ist eine Beschreibung aller möglichen "
+"Werte:"
 
 # 02cca625a54247d1804659f8ee9809c8
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:131
 msgid ""
 "``Title``: The title of the task. This is what you will see in the list."
-msgstr "„Titel\": Titel der Aufgabe; "
+msgstr "`Titel\\`: Titel der Aufgabe; dies sehen Sie in der Liste."
 
 # 86459edfb41c4a2193ff1c1312c54889
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:132
 msgid ""
-"``Description``: Any text that describes the task. Links and email addresses "
-"will be become clickable."
+"``Description``: Any text that describes the task. Links and email addresses"
+" will be become clickable."
 msgstr ""
-"„Beschreibung\": Text, der die Aufgabe beschreibt; Links und E-Mail Adressen "
-"werden anklickbar."
+"„Beschreibung\": Text, der die Aufgabe beschreibt; Links und E-Mail Adressen"
+" werden anklickbar."
 
 # 4f9f0a0b3e9745ebb1487900485dac1f
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:133
@@ -171,34 +174,40 @@ msgstr ""
 # e7d7a851d4a747fc999285ced5b34088
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:136
 msgid ""
-"``Reminder``: Will pop up with a notification at a the specified time before "
-"the task is due. It is possible to select 'Message' (default) or 'Sound'. "
+"``Reminder``: Will pop up with a notification at a the specified time before"
+" the task is due. It is possible to select 'Message' (default) or 'Sound'. "
 "When 'Sound' is selected, a sound will be played at the selected time. This "
 "setting requires the host to be able to play sounds."
 msgstr ""
 "„Erinnerung\": Wird zur vorbestimmten Zeit bevor die Aufgabe fällig ist mit "
-"einer Benachrichtigung erscheinen. Diese Einstellung erfordert, dass der "
-"Host in der Lage ist, Klänge abzuspielen."
+"einer Benachrichtigung erscheinen. Es ist möglich ‚Nachricht' "
+"(standardmäßig) oder ‚Klang' auszuwählen. Wenn Klang ausgewählt ist, wird "
+"zur gewählten Zeit ein Klang abgespielt. Diese Einstellung erfordert, dass "
+"der Host in der Lage ist, Klänge abzuspielen."
 
 # 599e93e2572e4f96afd3afe7dc1a071c
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:137
 msgid ""
-"``Complete``: The completeness state of a task in percent. Use the slider or "
-"enter a number."
-msgstr "„Vollständig\": Vollständigkeit der Aufgabe in Prozent "
+"``Complete``: The completeness state of a task in percent. Use the slider or"
+" enter a number."
+msgstr ""
+"„Vollständig\": Vollständigkeit der Aufgabe in Prozent; benutzen Sie den "
+"Schieber oder geben Sie eine Zahl ein."
 
 # 20a954d3d6a1419c8339f5d76d6c7a44
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:138
 msgid ""
-"``Tasklist``: The list the task is saved in. Change it to move an event from "
-"one list to another."
-msgstr "„Aufgabenliste\": Die Liste, in der die Aufgabe gespeichert ist; "
+"``Tasklist``: The list the task is saved in. Change it to move an event from"
+" one list to another."
+msgstr ""
+"„Aufgabenliste\": Die Liste, in der die Aufgabe gespeichert ist; ändern Sie "
+"sie, um ein Termin von einer Liste in eine andere zu verschieben. "
 
 # 0e9e7ed79b2b4275bdcc0b753c2b84ff
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:146
 msgid ""
-"For periodically recurring task series, this tab has the settings how a task "
-"is repeated over time."
+"For periodically recurring task series, this tab has the settings how a task"
+" is repeated over time."
 msgstr ""
 "Bei einer Serie regelmäßig wiederkehrender Aufgaben, hält dieser Reiter die "
 "Einstellungen, wie eine Aufgabe sich über eine Zeit hinweg wiederholt."
@@ -213,8 +222,8 @@ msgstr ""
 # f19931b12b7f4347bd9ac52dcd14513a
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:150
 msgid ""
-"``Every``: How often the frequency will be relevant. For example, for a task "
-"that takes place every other week choose Weekly and then 2."
+"``Every``: How often the frequency will be relevant. For example, for a task"
+" that takes place every other week choose Weekly and then 2."
 msgstr ""
 "„Jede(n)\": Die Art des Intervalls; z. B. wählen Sie bei einem Termin, das "
 "jede zweite Woche stattfindet Wöchentlich und dann 2. "
@@ -228,7 +237,10 @@ msgid ""
 "times or until a specific date."
 msgstr ""
 "Wenn Sie ein wöchentliches oder monatliches Intervall wählen, können Sie "
-"wählen, an welchen Tagen in der Woche oder im Monat eine Aufgabe vorkommt. "
+"wählen, an welchen Tagen in der Woche oder im Monat eine Aufgabe vorkommt. *"
+" ``Bis``: bestimmt die Dauer der Wiederholung. Die Wiederholung kann "
+"entweder für immer, für eine mitgezählte Anzahl von Malen oder bis zu einem "
+"bestimmten Datum laufen."
 
 # 84bec32645974090be0984d41a8b8e7c
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:154
@@ -238,8 +250,8 @@ msgstr "**Zuordnungen**"
 # 035d899a91ec4e9e9c10ec45098c899f
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:156
 msgid ""
-"One, or a list of, users can be assigned to the task. The list is managed in "
-"this tab."
+"One, or a list of, users can be assigned to the task. The list is managed in"
+" this tab."
 msgstr ""
 "Ein Benutzer oder eine Liste von Benutzern können einer Aufgabe zugeordnet "
 "werden. "
@@ -262,8 +274,8 @@ msgid ""
 "will show a dropdown list of relevant users. Then clieck the 'Add Assignee' "
 "button."
 msgstr ""
-"„Beauftragte hinzufügen\": Tippen Sie drei Buchstaben des Benutzernamens und "
-"das Suchfeld wird eine Aufklappliste passender Benutzer zeigen. "
+"`Beauftragte hinzufügen\\`: Tippen Sie drei Buchstaben des Benutzernamens und das Suchfeld wird eine Aufklappliste passender Benutzer zeigen.\n"
+"Klicken Sie dann auf die ‚Beauftragte hinzufügen'-Schaltfläche."
 
 # 221a6f5acb3b409db628aea0a66c1080
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:160
@@ -272,8 +284,8 @@ msgid ""
 "email notificatino is sent out. This field is giving the opportunity to add "
 "extra test to this mail notification."
 msgstr ""
-"„Einladungs-/Benachrichtigungskommentar\": Wird ein Benutzer einer Aufgabe "
-"zugewiesen, wird eine E-Mail-Benachrichtigung versendet. "
+"`Einladungs-/Benachrichtigungskommentar\\`: Wird ein Benutzer einer Aufgabe zugewiesen, wird eine E-Mail-Benachrichtigung versendet.\n"
+"Dieses Feld gibt einem die Möglichkeit, der E-Mail-Benachrichtigung zusätzlichen Text hinzuzufügen."
 
 # e25eb5ec667a49188b88335a9977a1fc
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:162
@@ -285,22 +297,26 @@ msgstr "**Anhänge**"
 msgid ""
 "Sometimes a description text isn't enough to collect information for a "
 "specific task. Switch to this tab to attach files to the current task or to "
-"remove them again. Adding files works pretty much the same as :ref:"
-"`attaching them to email messages <mail-compose-attachments>`: first select "
-"a file from your local disk and click *Upload* in order to attach it."
+"remove them again. Adding files works pretty much the same as "
+":ref:`attaching them to email messages <mail-compose-attachments>`: first "
+"select a file from your local disk and click *Upload* in order to attach it."
 msgstr ""
 "Manchmal ist ein beschreibender Text nicht genug, um Informationen zu einer "
-"bestimmten Aufgabe zu sammeln.  Wählen Sie zuerst eine Datei von Ihrer "
-"Festplatte aus und klicken Sie auf *Upload*, um sie anzuhängen. "
+"bestimmten Aufgabe zu sammeln. Wechseln Sie zu diesem Reiter, um Dateien an "
+"die aktuelle Aufgabe anzuhängen oder wieder von ihr zu entfernen. Dateien "
+"hinzufügen funktioniert ziemlich genau, wie :ref:`sie an E-Mail-Nachrichten "
+"anzuhängen <Mail-verfassen-Anhänge>`:  Wählen Sie zuerst eine Datei von "
+"Ihrer Festplatte aus und klicken Sie auf *Upload*, um sie anzuhängen. "
 
 # 0cd85391b9b647cb968324603aea2aab
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:169
 msgid ""
-"Don't forget to finally save the changes by clicking *Save* in the task edit "
-"dialog. Switching back and forth between the tabs will not yet save the data."
+"Don't forget to finally save the changes by clicking *Save* in the task edit"
+" dialog. Switching back and forth between the tabs will not yet save the "
+"data."
 msgstr ""
-"Vergessen Sie nicht, abschließend die Änderungen zu speichern, indem Sie "
-"*Speichern* im Aufgabe-bearbeiten-Dialog anklicken.  "
+"Vergessen Sie nicht, abschließend die Änderungen zu speichern, indem Sie *Speichern* im Aufgabe-bearbeiten-Dialog anklicken.\n"
+"Auch wenn man zwischen den Reitern hin- und herwechselt, speichert dies noch nicht die Daten."
 
 # ecf783aa51af45ffb7b88bfe02b55a1a
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:176
@@ -325,8 +341,9 @@ msgid ""
 "on the keyboard to select one and press <Enter> to select."
 msgstr ""
 "Hängen Sie ein Tag durch Drücken von <Eingabe> an und fahren Sie mit dem "
-"Tippen fort, um mehr hinzuzufügen. Benutzen Sie die Pfeiltasten der Tastatur "
-"um eins auszuwählen und drücken Sie <Eingabe>, um es auswählen."
+"Tippen fort, um mehr hinzuzufügen. Während des Tippens werden schon benutzte"
+" Tags vorgeschlagen. Benutzen Sie die Pfeiltasten der Tastatur um eins "
+"auszuwählen und drücken Sie <Eingabe>, um es auswählen."
 
 # ba62637a8d6d4121aad4beac2df5c3e7
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:186
@@ -363,9 +380,10 @@ msgid ""
 "a small calendar widget will help you to quickly select a date."
 msgstr ""
 "Weisen Sie Fälligkeitdaten Ihren Aufgaben zu, um Ihre Fristen nicht zu "
-"verpassen und um Erinnerungs-Benachrichtigungen für sie zu aktivieren. \n"
-"Wenn Sie das Eingabefeld ausfüllen, hilft Ihnen ein kleines Kalenderwidget, "
-"schnell ein Datum auszuwählen."
+"verpassen und um Erinnerungs-Benachrichtigungen für sie zu aktivieren. Die "
+"Fälligkeitsdaten mit Zeit können in den :ref:`Bearbeiten-Dialog <tasklist-"
+"edit-task>` eingegeben werden. Wenn Sie das Eingabefeld ausfüllen, hilft "
+"Ihnen ein kleines Kalenderwidget, schnell ein Datum auszuwählen."
 
 # 84f5b1ec0797427d8f07241c6955232b
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:203
@@ -376,8 +394,10 @@ msgid ""
 "change will be saved immediately."
 msgstr ""
 "Fälligkeitsdaten können auch ohne den Bearbeiten-Dialog direkt in der "
-"Listenansicht eingegeben bzw. geändert werden. Die Änderung wird sofort "
-"gespeichert."
+"Listenansicht eingegeben bzw. geändert werden. Klicken Sie auf das "
+"Fälligkeitsdatum oder den „kein Datum\"-Bereich am rechten Ende der "
+"Aufgabenleiste und wählen Sie ein Datum aus dem Kalenderwidget. Die Änderung"
+" wird sofort gespeichert."
 
 # 630b5a9fce6d478aadd032eb59ba556a
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:211
@@ -391,9 +411,8 @@ msgid ""
 "value for a task's completeness. Until a task isn't fully completed, the "
 "percentage is displayed as a think horizontal line in the list view."
 msgstr ""
-"Im :ref:`Aufgabe bearbeiten <tasklist-edit-task>`-Abschnitt haben wir "
-"gelernt, wie man einen Prozentwert für die Vollständigkeit einer Aufgabe "
-"setzt. "
+"Im :ref:`Aufgabe bearbeiten <tasklist-edit-task>\\`-Abschnitt haben wir gelernt, wie man einen Prozentwert für die Vollständigkeit einer Aufgabe setzt.\n"
+"Bis eine Aufgabe nicht vollständig abgeschlossen ist, wird der Prozentsatz als dicke, horizontale Linie in der Listenansicht angezeigt."
 
 # 62f1b7617517440a9ac6c24d0de7286a
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:217
@@ -405,8 +424,12 @@ msgid ""
 "the box to bring it back to the normal list."
 msgstr ""
 "Um eine Aufgabe als abgeschlossen zu markieren, klicken Sie einfach das "
-"Kontrollkästchen in der Listenansicht an. \n"
-"Entfernen Sie das Häkchen, um sie zurück in die normale Liste zu bringen."
+"Kontrollkästchen in der Listenansicht an. Die Aufgabe ist jetzt grau "
+"überlegt und an das Ende der Liste verschoben. Nach einiger Zeit bzw. wenn "
+"die Liste aktualisiert wird, werden abgeschlossene Aufgaben aus der Ansicht "
+"entfernt. Sie können sie immernoch mit dem *Abgeschlossen*-Schnellfilter "
+"finden. Entfernen Sie das Häkchen, um sie zurück in die normale Liste zu "
+"bringen."
 
 # b22d73751d5d4af0a30c8e7c21e38f06
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:224
@@ -470,7 +493,9 @@ msgid ""
 "possible drop target is highlighted when moving over it."
 msgstr ""
 "Die hierarchische Verschachtelung der Aufgaben und Unteraufgaben können "
-"jederzeit geändert werden. Beim Ziehen werden mögliche Ablageziele "
+"jederzeit geändert werden. Ziehen Sie einfach eine Aufgabe mit der Maus auf "
+"eine andere, um sie zu einer Unteraufgabe zu machen. Dies funktioniert "
+"genauso gut für ganze Unterbäume. Beim Ziehen werden mögliche Ablageziele "
 "hervorgehoben, wenn Sie sie darüberbewegen."
 
 # 58678e5eb21b440fbfff6b5f04391c00
@@ -489,9 +514,9 @@ msgid ""
 "list in the box on the left moves it (and all child tasks) to that "
 "particular list."
 msgstr ""
-"Wenn Sie eine Aufgabe auf eine Aufgabenliste im Feld links ablegen, wird sie "
-"(und ihre Unteraufgaben) in diese Liste verschoben, falls Sie Ihre Aufgaben "
-"in verschiedenen Listen organisieren."
+"Wenn Sie eine Aufgabe auf eine Aufgabenliste im Feld links ablegen, wird sie"
+" (und ihre Unteraufgaben) in diese Liste verschoben, falls Sie Ihre Aufgaben"
+" in verschiedenen Listen organisieren."
 
 # 699335a60cfd4c789e1784bb52b6f310
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:261
@@ -501,15 +526,18 @@ msgstr "Benachrichtigungen erhalten"
 # 50897aa10ca04b168de9d6d7621b03dd
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:263
 msgid ""
-"While logged in to the webmail, reminders about soon-to-be due tasks will be "
-"displayed with pop-up boxes at the specified time before the task is due. "
+"While logged in to the webmail, reminders about soon-to-be due tasks will be"
+" displayed with pop-up boxes at the specified time before the task is due. "
 "You can specify if you want to see reminders for every task list "
 "individually. Enable or disable reminders in :ref:`Task List Settings "
 "<tasklist-edit-list>` from the :ref:`tasklist-lists`."
 msgstr ""
 "Wenn Sie beim Webmail-Dienst eingeloggt sind, werden Erinnerungen an bald "
 "fällige Aufgaben mit Überlagerungsfenstern zur festgelegten Zeit, bevor die "
-"Aufgabe fällig ist, angezeigt. "
+"Aufgabe fällig ist, angezeigt. Sie können festlegen, ob Sie Erinnerungen für"
+" jede Aufgabenliste einzeln sehen wollen. Aktivieren oder deaktivieren Sie "
+"Erinnerungen in den :ref:`Aufgabenlisten-Einstellungen <tasklist-edit-list>`"
+" der :ref:`Aufgabenlistenlisten <tasklist-lists>`."
 
 # 9a44463e34104973b8fe4256992f3146
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:267
@@ -531,8 +559,9 @@ msgid ""
 "Usually finished tasks are marked as complete. But there are still "
 "situations where you might want to actually delete a task."
 msgstr ""
-"Normalerweise sind fertige Aufgaben als abgeschlossen markiert. Aber es gibt "
-"immer noch Situationen, in denen Sie tatsächlich eine Aufgabe löschen wollen."
+"Normalerweise sind fertige Aufgaben als abgeschlossen markiert. Aber es gibt"
+" immer noch Situationen, in denen Sie tatsächlich eine Aufgabe löschen "
+"wollen."
 
 # 2471eeca20be47cea0f0ab98225dd4cc
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:277

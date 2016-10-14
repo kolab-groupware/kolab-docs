@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Mads <mads@batmads.com>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,14 +21,14 @@ msgstr ""
 # c9ba3f70667340f392e92532740202b3
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:88
 msgid ""
-"The content area of the address book screen is divided into three areas: :"
-"ref:`addressbook-groups`, :ref:`addressbook-contacts-list` and the :ref:"
-"`addressbook-contact-details`."
+"The content area of the address book screen is divided into three areas: "
+":ref:`addressbook-groups`, :ref:`addressbook-contacts-list` and the :ref"
+":`addressbook-contact-details`."
 msgstr ""
-"Der Arbeits-Bereich des Adressbuch-Bildschirms ist in drei Bereiche "
-"geteilt: :ref:`Adressbuchgruppen <addressbook-groups>`, :ref:`Adressbuch-"
-"Kontaktliste <addressbook-contacts-list>` und :ref:`Adressbuch-"
-"Kontaktdetails <addressbook-contact-details>`."
+"Der Content-Bereich des Adressbuch-Bildschirms ist in drei Bereiche geteilt:"
+" :ref:`Adressbuchgruppen <addressbook-groups>\\`, : ref:`Adressbuch-"
+"Kontaktliste <addressbook-contacts-list>\\` und :ref:`Adressbuch-"
+"Kontaktdetails <addressbook-contact-details>\\`."
 
 # 5d77a043360b4119b6c5fae01d035da1
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:96
@@ -42,11 +43,8 @@ msgid ""
 "installed plugins you might see multiple directories but there's at least "
 "one directory which contains your personal contacts."
 msgstr ""
-"Das Feld ganz links zeigt eine Liste von Adressverzeichnissen und "
-"Kontaktgruppen innerhalb jedes Verzeichnisses. \n"
-"Je nach Ihrer Serverkonfiguration und installierten Plugins sehen Sie "
-"mehrere Verzeichnisse, aber es gibt mindestens ein Verzeichnis, das Ihre "
-"persönlichen Kontakte enthält."
+"Das Feld ganz links zeigt eine Liste von Adressverzeichnissen und Kontaktgruppen innerhalb jedes Verzeichnisses.\n"
+"Je nach Ihrer Serverkonfiguration und installierten Plugins sehen Sie mehrere Verzeichnisse, aber es gibt mindestens ein Verzeichnis, das Ihre persönlichen Kontakte enthält."
 
 # 4f2f2be5a7724413b6996f3bb32719ff
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:102
@@ -57,8 +55,12 @@ msgid ""
 "compose-recipeints>` list when you start typing in the recipient field. A "
 "contact can be assigned to multiple groups."
 msgstr ""
-"Kontaktgruppen sind praktisch, um Ihre Kontakte zu organisieren. Ein Kontakt "
-"kann mehreren Gruppen zugewiesen werden."
+"Kontaktgruppen sind praktisch, um Ihre Kontakte zu organisieren. Sie können "
+"auch ausgewählt werden, wenn Sie eine E-Mail-Nachricht verfassen und tragen "
+"alle Mitglieder als Empfängerinnen ein. Gruppen erscheinen auch in der : "
+"ref:`Autovervollständigung <mail-compose-recipeints>`-Liste, wenn Sie "
+"beginnen, in das Empfängerfeld zu tippen. Ein Kontakt kann mehreren Gruppen "
+"zugewiesen werden."
 
 # dcbfbeb6a0c74f99bc6cdf76e9c907b1
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:106
@@ -67,8 +69,8 @@ msgid ""
 "the list on the right. The currently selected directory or group is "
 "highlighted in the list."
 msgstr ""
-"Klicken Sie auf ein Verzeichnis oder eine Gruppe aus der Liste, um die in "
-"der Liste enthaltenen Kontakte rechts anzuzeigen. "
+"Klicken Sie auf ein Verzeichnis oder eine Gruppe aus der Liste, um die in der Liste enthaltenen Kontakte rechts anzuzeigen.\n"
+"Das derzeitig ausgewählte Verzeichnis oder Gruppe ist in der Liste hervorgehoben."
 
 # fbe7338f5ea444399ce7b862c26d00be
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:111
@@ -79,14 +81,12 @@ msgstr "Eine Kontaktgruppe erstellen"
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:113
 msgid ""
 "In order to create a new contact group, first select the directory you want "
-"the group being created in. Then use the + icon on the groups list footer to "
-"get you an input field for the group name. Enter a unique name for the new "
+"the group being created in. Then use the + icon on the groups list footer to"
+" get you an input field for the group name. Enter a unique name for the new "
 "group and hit <Enter> to finally create it."
 msgstr ""
-"Um eine neue Kontaktgruppe zu erstellen, wählen Sie zuerst das Verzeichnis, "
-"in dem die Gruppe erstellt werden soll. Geben Sie einen einmaligen Namen für "
-"die neue Gruppe ein und drücken Sie <Eingabe>, um es zu guter Letzt zu "
-"erstellen."
+"Um eine neue Kontaktgruppe zu erstellen, wählen Sie zuerst das Verzeichnis, in dem die Gruppe erstellt werden soll.\n"
+"Geben Sie einen einmaligen Namen für die neue Gruppe ein und drücken Sie <Eingabe>, um es zu guter Letzt zu erstellen."
 
 # 94f8030459164336a4e95af389877ba1
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:117
@@ -109,13 +109,14 @@ msgid ""
 "mouse. Select one or multiple contacts in the list and drop them onto the "
 "desired group. It's a simple as that."
 msgstr ""
-"Kontakte können Gruppen durch Drag & Drop zugewiesen werden. So einfach ist "
-"das."
+"Kontakte können Gruppen durch Drag & Drop zugewiesen werden. Wählen Sie "
+"einen oder mehrere Kontakte aus der Liste und ziehen Sie sie auf die "
+"erwünschte Gruppe. So einfach ist das."
 
 # ee2f8dc137a54b91b02f877bb98b73c2
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:130
 msgid "Remove Contacts from a Group"
-msgstr "Entfernen von Kontakte aus einer Gruppe"
+msgstr "Entfernen von Kontakten aus einer Gruppe"
 
 # 887eca4360bc4fa69c2e78e967973444
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:132
@@ -140,8 +141,8 @@ msgid ""
 "Click the *Remove selected contacts from group* button in the contact list "
 "footer"
 msgstr ""
-"Klicken Sie auf die *Ausgewählte Kontakte aus Gruppe entfernen*-Schaltfläche "
-"in der Kontaktlisten-Fußzeile. "
+"Klicken Sie auf die *Ausgewählte Kontakte aus Gruppe entfernen*-Schaltfläche"
+" in der Kontaktlisten-Fußzeile. "
 
 # 73edc49d3806413287e030ce54cf3778
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:138
@@ -151,13 +152,13 @@ msgstr "Einzelmodus:"
 # b7097d37a54b489da362ebacf1a764ba
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:140
 msgid "Select a contact in the contacts list"
-msgstr "Wählen Sie einen Kontakt aus der Kontakte. "
+msgstr "Wählen Sie einen Kontakt aus der Kontaktliste. "
 
 # 2f2f63a1c6314ffe9b6d24d227cf58c0
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:141
 msgid ""
-"Switch to the *Groups* tab in the :ref:`addressbook-contact-details` area on "
-"the right"
+"Switch to the *Groups* tab in the :ref:`addressbook-contact-details` area on"
+" the right"
 msgstr ""
 "Wechseln Sie zum *Gruppen*-Reiter im :ref:`Adressbuch-Kontaktdetails "
 "<addressbook-contact-details>` Bereich rechts. "
@@ -209,7 +210,8 @@ msgid ""
 "assigned to that group will NOT be deleted."
 msgstr ""
 "Löscht die in der Liste darüber ausgewählte Gruppe. Es sollte bemerkt "
-"werden, dass Kontakte, die der Gruppe zugewiesen sind, NICHT gelöscht werden."
+"werden, dass Kontakte, die der Gruppe zugewiesen sind, NICHT gelöscht "
+"werden."
 
 # ac37aff4c88a4c1ab918e3a572cd42eb
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:157
@@ -250,22 +252,25 @@ msgstr "Kontaktliste"
 msgid ""
 "The contacts of the selected address directory or group are presented in "
 "this list with their names. The total number of contacts in the particular "
-"directory or group is stated right below the list as well as the set that is "
-"currently displayed. Use the arrow buttons in the list header to navigate "
+"directory or group is stated right below the list as well as the set that is"
+" currently displayed. Use the arrow buttons in the list header to navigate "
 "through the pages."
 msgstr ""
 "Die Kontakte aus dem ausgewählten Adressverzeichnis oder -gruppe sind in "
-"dieser Liste mit Ihren Namen dargestellt.Benutzen Sie die Pfeiltasten in der "
-"Kopfzeile der Liste, um durch die Seiten zu navigieren."
+"dieser Liste mit Ihren Namen dargestellt. Die Gesamtanzahl von Kontakten in "
+"diesem Verzeichnis oder Gruppe ist genau darunter angegeben, genau wie das "
+"derzeit angezeigte Set. Benutzen Sie die Pfeiltasten in der Kopfzeile der "
+"Liste, um durch die Seiten zu navigieren."
 
 # 523cad3ed37f4209821ef56a91821b12
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:173
 msgid ""
-"you can change the way and order the contacts are listed here in the :ref:"
-"`Address Book <settings-prefs-addressbook>` section of the user preferences."
+"you can change the way and order the contacts are listed here in the "
+":ref:`Address Book <settings-prefs-addressbook>` section of the user "
+"preferences."
 msgstr ""
-"Sie können Art und Reihenfolge, wie die Kontakte hier aufgelistet, im :ref:"
-"„Adressbuch <settings-prefs-addressbook>`-Abschnitt der Benutzer-"
+"Sie können Art und Reihenfolge, wie die Kontakte hier aufgelistet, im "
+":ref:„Adressbuch <settings-prefs-addressbook>`-Abschnitt der Benutzer-"
 "Voreinstellungen ändern."
 
 # f351fd03a207492ead3e7636be63e088
@@ -276,8 +281,8 @@ msgstr "Kontaktlisten-Tätigkeiten"
 # 87639cdb1fb34f2d9b4067eb2da236f4
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:181
 msgid ""
-"The footer of the contacts list provides buttons that operate on the list or "
-"the current selection of contacts relatively:"
+"The footer of the contacts list provides buttons that operate on the list or"
+" the current selection of contacts relatively:"
 msgstr ""
 "Die Fußzeile der Kontaktliste hat Schaltflächen, mit denen die Liste oder "
 "aktuelle Kontaktauswahl relativ bedient werden können:"
@@ -290,8 +295,8 @@ msgstr "**Neuen Kontakt erstellen (+)**"
 # 2ec7300a96ba4939a8f0256de7d5dd03
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:184
 msgid ""
-"Opens the form to :ref:`add a new contact <addressbook-contact-edit>` to the "
-"selected directory."
+"Opens the form to :ref:`add a new contact <addressbook-contact-edit>` to the"
+" selected directory."
 msgstr ""
 "Öffnet die Maske, um dem ausgewählten Verzeichnis einen :ref:`Neuen Kontakt "
 "<addressbook-contact-edit>` hinzuzufügen."
@@ -326,16 +331,18 @@ msgstr "Ausgewählten Kontakten eine E-Mail senden"
 # 1c5efb1b267e4852a5466c1547b20000
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:196
 msgid ""
-"The address book is not only to manage your contacts but you can also search "
-"and select contacts you want to write a new email message to. The *Compose* "
-"icon on the toolbar above is activated as soon as you selected at least one "
-"contact or a contact group. Click it to open the compose screen with the "
+"The address book is not only to manage your contacts but you can also search"
+" and select contacts you want to write a new email message to. The *Compose*"
+" icon on the toolbar above is activated as soon as you selected at least one"
+" contact or a contact group. Click it to open the compose screen with the "
 "selected contacts filled in as recipients."
 msgstr ""
 "Das Adressbuch ist nicht nur zum verwalten von Kontakten, sondern auch zum "
 "Suchen und Auswählen von Kontakten, denen sie eine neue E-Mail-Nachricht "
-"schreiben wollen.Klicken Sie ihn an, um den Verfassen-Bildschirm mit den "
-"ausgewählten Kontakten, die Sie als Empfängerin ausgewählt haben, zu öffnen."
+"schreiben wollen. Der *Verfassen*-Icon in der Werkzeugleiste darüber wird "
+"aktiviert, sobald Sie mindestens einen Kontakt oder Kontaktgruppe ausgewählt"
+" haben. Klicken Sie ihn an, um den Verfassen-Bildschirm mit den ausgewählten"
+" Kontakten, die Sie als Empfängerin ausgewählt haben, zu öffnen."
 
 # 4464c0087338400b843cbd94921da05c
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:200
@@ -356,16 +363,17 @@ msgstr "Kontakte kopieren"
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:207
 msgid ""
 "Contacts can be copied from one directory to another in a similar way as "
-"assigning them to groups. Simply drag one or multiple selected contacts with "
-"the mouse and drop them onto the target directory. Please note that some "
+"assigning them to groups. Simply drag one or multiple selected contacts with"
+" the mouse and drop them onto the target directory. Please note that some "
 "properties might be saved into other fields or not be copied at all if the "
 "address directories have different schemas."
 msgstr ""
 "Kontakte können auf ähnliche Weise von einem Verzeichnis zu einem anderen "
-"kopiert werden, wie sie Gruppen zugewiesen werden. Bitte bedenken Sie, dass "
-"einige Eigenschaften in andere Felder gespeichert oder überhaupt nicht "
-"kopiert werden könnten, wenn die Adressverzeichnisse verschiedene Schemata "
-"haben."
+"kopiert werden, wie sie Gruppen zugewiesen werden. Ziehen Sie einfach einen "
+"oder mehrere ausgewählte Kontakte mit der Maus in das Zielverzeichnis. Bitte"
+" bedenken Sie, dass einige Eigenschaften in andere Felder gespeichert oder "
+"überhaupt nicht kopiert werden könnten, wenn die Adressverzeichnisse "
+"verschiedene Schemata haben."
 
 # cd283d75072b480eaf127a24a06ad363
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:216
@@ -376,14 +384,12 @@ msgstr "Kontaktdetails"
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:218
 msgid ""
 "The full details of a contact are displayed in the rightmost box of the "
-"address book screen. Select a single contact in the list in order to see the "
-"details here. Contact properties are structured with tabs and boxes grouping "
-"similar properties like phone numbers, postal or email addresses."
+"address book screen. Select a single contact in the list in order to see the"
+" details here. Contact properties are structured with tabs and boxes "
+"grouping similar properties like phone numbers, postal or email addresses."
 msgstr ""
-"Die vollständigen Details eines Kontakts werden in dem Feld auf dem "
-"Adressbuch-Bildschirm ganz rechts angezeigt. \n"
-"Kontakteigenschaften sind mit Reitern und Feldern strukturiert, die ähnliche "
-"Eigenschaften wie Telefonnummern oder E-Mail- oder Postadressen gruppieren."
+"Die vollständigen Details eines Kontakts werden in dem Feld auf dem Adressbuch-Bildschirm ganz rechts angezeigt. \n"
+"Kontakteigenschaften sind mit Reitern und Feldern strukturiert, die ähnliche Eigenschaften wie Telefonnummern oder E-Mail- oder Postadressen gruppieren."
 
 # b2708c379c21446397bddd03f0e89091
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:222
@@ -402,12 +408,12 @@ msgstr "Gruppen"
 # 6367a2cefd3b4e8da8628bd1f9c495ab
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:92
 msgid "Direcotries"
-msgstr "Ordner"
+msgstr "Verzeichnisse"
 
 # 349446e833e54b41b8910e0f18c6329c
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:120
 msgid "Assign Groups"
-msgstr "Gruppen Zuweisen"
+msgstr "Gruppen zuweisen"
 
 # 349446e833e54b41b8910e0f18c6329c
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:120
@@ -417,14 +423,14 @@ msgstr "Drag & Drop"
 # f21e0fc74edd4f17955f08d6fbded43d
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:163
 msgid "Contacts"
-msgstr "Kontaktliste"
+msgstr "Kontakte"
 
 # 293a91ef60e54178a89c102760c4007c
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:176
 msgid "Delete Contact"
-msgstr "**Ausgewählte Kontakte löschen**"
+msgstr "Kontakt löschen"
 
 # e9a90b4a414e4a5495b68348c2555de0
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/addressbookview.rst:212
 msgid "Preview"
-msgstr "Vorschaufeld"
+msgstr "Vorschau"

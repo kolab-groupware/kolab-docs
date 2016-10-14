@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Georg Greve <greve@kolabsys.com>, 2016\n"
+"Last-Translator: Max Hellwig <max.hellwig@translating-energy.de>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,9 +32,8 @@ msgid ""
 "control the behavior and the UI of the webmail application. The numerous "
 "settings are grouped by the following sections:"
 msgstr ""
-"Mit den Benutzer-Voreinstellungen können Sie verschiedene Optionen und "
-"Einstellungen anpassen, die das Verhalten und die Benutzeroberfläche der "
-"Web-Anwendung steuern. "
+"Mit den Benutzer-Voreinstellungen können Sie verschiedene Optionen und Einstellungen anpassen, die das Verhalten und die Benutzeroberfläche des Webmail-Dienstes steuern.\n"
+"Die zahlreichen Einstellungen sind in die folgenden Abschnitte gruppiert:"
 
 # 7ad679ccf3554006955d7a465db5dadf
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:98
@@ -63,9 +62,9 @@ msgid ""
 "When accessing the application, the language is automatically chosen from "
 "your computer's operating system language."
 msgstr ""
-"Der Webmail-Dienst ist in zahlreichen Sprachen verfügbar. Wenn Sie auf den "
-"Dienst zugreifen, wird die Sprache automatisch gemäss der Voreinstellung des"
-" Betriebssystem Ihres Computer ausgewählt."
+"Der Webmail-Dienst ist in zahlreichen Sprachen verfügbar. Sie können sie "
+"hier wechseln, wenn Sie möchten. Wenn Sie auf den Dienst zugreifen, wird die"
+" Sprache automatisch aus dem Betriebssystem Ihres Computer ausgewählt."
 
 # 8cd71ca1007f487f9350133a7725dc1d
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:112
@@ -80,8 +79,8 @@ msgid ""
 "use your computer's time zone settings or select a specific time zone from "
 "the list."
 msgstr ""
-"Daten, die irgendwo angezeigt werden (z. B. wenn eine Nachricht versendet "
-"wird), werden automatisch in Ihre örtliche Zeitzone übertragen. "
+"Daten, die irgendwo angezeigt werden (z. B. wenn eine Nachricht versendet wird), werden automatisch in Ihre örtliche Zeitzone übertragen.\n"
+"Setzen Sie dies auf *Auto*, um das System die Zeitzoneneinstellungen Ihres Computers benutzen zu lassen oder wählen Sie eine bestimmte Zeitzone aus der Liste."
 
 # 21a81aeefa454074b2d2575fc8d8f06c
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:115
@@ -159,11 +158,12 @@ msgid ""
 "anther tab in your current window. If enabled, all windows opened by the "
 "webmail application obey the settings of your browser."
 msgstr ""
-"Wenn die Anwendung Nachrichten oder die Verfassen-Maske in einem neuen "
-"Fenster öffnet, kann dies entweder ein eigenes Fenster kleinerer Größe und "
-"ohne Werkzeugleisten-Schaltflächen sein, oder, wenn diese Option aktiviert "
-"ist, ein normales Browserfenster oder sogar nur ein weiteres Tab in Ihrem "
-"aktuellen Fenster. "
+"Wenn Roundcube Nachrichten oder die Verfassen-Maske in einem neuen Fenster "
+"öffnet, kann dies entweder ein eigenes Fenster kleinerer Größe und ohne "
+"Werkzeugleisten-Schaltflächen sein oder, wenn diese Option aktiviert ist, "
+"ein normales Browserfenster oder sogar nur ein weiteres Tab in Ihrem "
+"aktuellen Fenster. Wenn dies aktiviert ist, folgen alle Fenster, die vom "
+"Webmail-Dienst geöffnet werden, den Einstellungen Ihres Browsers."
 
 # 74049af58127461c8a1bd729bda1cd7d
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:137
@@ -252,8 +252,8 @@ msgid ""
 "\"page\"). Increasing this number may result in longer loading times when "
 "opening a mailbox folder."
 msgstr ""
-"Die Nachrichtenliste zeigt diese Anzahl Nachrichten (bzw. eine „Seite\") "
-"gleichzeitig an. "
+"Die Nachrichtenliste zeigt diese Anzahl Nachrichten (bzw. eine „Seite\\\") gleichzeitig an.\n"
+"Wenn die se Zahl erhöht wird, könnte die zu längeren Ladezeiten beim Öffnen eines E-Mail-Eingangsordners führen."
 
 # c84fd377e4fc432d9c431238b072b084
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:164
@@ -303,7 +303,8 @@ msgid ""
 "When disabled, formatted emails will be converted to plain text."
 msgstr ""
 "Setzen Sie bei dieser Option ein Häkchen, um formatierte Nachrichten "
-"darzustellen, wie es die Absenderin vorhatte. "
+"darzustellen, wie es die Absenderin vorhatte. Wenn sie deaktiviert ist, "
+"werden formatierte E-Mails in normalen Text umgewandelt."
 
 # 998777c8744a43b0ae72678e2ab21084
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:182
@@ -319,9 +320,11 @@ msgid ""
 " to verify that your email address works and you may receive more spam."
 msgstr ""
 "Formatierte (HTML-) Nachrichten können Verweise auf Bilder enthalten, die "
-"von einem Remoteserver geladen werden müssen. Diese Technik wird häufig von "
-"Spammern benutzt, um zu bestätigen, dass Ihre E-Mail-Adresse funktioniert "
-"und Sie könnten mehr Spam erhalten."
+"von einem Remoteserver geladen werden müssen. Dies kann Ihre Privatsphäre "
+"verletzen und der Absenderin zu erkennen geben, dass Sie die Nachricht "
+"geöffnet haben. Diese Technik wird häufig von Spammern benutzt, um zu "
+"bestätigen, dass Ihre E-Mail-Adresse funktioniert und Sie könnten mehr Spam "
+"erhalten."
 
 # 642c3483ce0f45ec82c21c4eacea8058
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:185
@@ -375,8 +378,10 @@ msgid ""
 "email correspondents use."
 msgstr ""
 "Einige E-Mail-Systeme legen keinen Zeichensatz fest, wenn sie Nachrichten "
-"versenden. Wählen Sie den Zeichensatz / die Sprache, den die meisten Ihrer E"
-"-Mail-Partner benutzen."
+"versenden. In solchen, seltenen Fälle muss der Adressat (Ihr Webmail-Dienst)"
+" raten, wie er die Sonderzeichen (z. B. éäç) anzeigt und benutzt daher diese"
+" Einstellung. Wählen Sie den Zeichensatz / die Sprache, den die meisten "
+"Ihrer E-Mail-Partner benutzen."
 
 # 37198073e586454a8eda007eec6d6ae6
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:204
@@ -411,8 +416,9 @@ msgid ""
 "can be :ref:`toggled <mail-compose-html>` at any time while composing."
 msgstr ""
 "Setzen Sie bei dieser Option ein Häkchen, um den Rich-Text (HTML)-Editor zu "
-"aktivieren, wenn Sie eine neue Nachricht verfassen. Sie kann jederzeit "
-":ref:`umgeschaltet <mail-compose-html>` werden, während Sie eine Nachricht "
+"aktivieren, wenn Sie eine neue Nachricht verfassen. Das ist nur die "
+"Standardeinstellung für das Verfassen von HTML-Nachricht. Sie kann jederzeit"
+" :ref:`umgeschaltet <mail-compose-html>` werden, während Sie eine Nachricht "
 "verfassen."
 
 # eb5dd9e9e3f04ee0856407b0bcdb1b37
@@ -427,7 +433,8 @@ msgid ""
 "ever few minutes. Select the interval or disable the automatic saving here."
 msgstr ""
 "Während Sie eine neue Nachricht schreiben, wird alle paar Minuten eine Kopie"
-" im Entwürfe-Ordner gespeichert. "
+" im Entwürfe-Ordner gespeichert. Wählen Sie das Intervall oder deaktivieren "
+"Sie hier die automatische Speicherung. "
 
 # 27226906a26f4c319cfac1cc98560089
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:220
@@ -581,7 +588,8 @@ msgid ""
 "complaints about garbled attachment names."
 msgstr ""
 "Manchmal haben Empfänger Ihrer E-Mail-Nachrichten Schwierigkeiten, die Namen"
-" der angehängten Dateien richtig zu sehen. "
+" der angehängten Dateien richtig zu sehen. Passen Sie diese Einstellung an, "
+"falls Sie Beschwerden über entstellte Namen von Anhängen erhalten."
 
 # 3d0ef9e787374a67852137bb0ff59eca
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:261
@@ -595,8 +603,8 @@ msgid ""
 "the amount of data to be sent. Activate this option in case people cannot "
 "properly read message you send out."
 msgstr ""
-"Dies aktiviert das Versenden von Nachrichtentexten auf „sichere\" Weise, "
-"erhöht aber die zu versendende Datenmenge ein wenig. "
+"Dies aktiviert das Versenden von Nachrichtentexten auf `sichere\\` Weise, erhöht aber die zu versendende Datenmenge ein wenig.\n"
+"Aktivieren Sie diese Option, falls die Nachrichten, die Sie versenden, nicht gelesen werden können."
 
 # 65a135ff2beb433198d8df4df1638c4d
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:266
@@ -666,7 +674,9 @@ msgid ""
 msgstr ""
 "Wenn diese Option mit einem Häkchen versehen ist, erscheint jeder Kontakt "
 "nur einmal in der Autovervollständigungs-Liste, die erscheint, wenn Sie "
-"beginnen, in das Empfängerfeld zu tippen. "
+"beginnen, in das Empfängerfeld zu tippen. Die erste E-Mail-Adresse des "
+"ausgewählten Kontakts wird dann eingefügt. Wenn dies deaktiviert ist, werden"
+" alle E-Mail-Adressen eines passenden Kontakts zur Auswahl angezeigt."
 
 # a79c2716ee8f46a688dc230d73701839
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:289
@@ -681,8 +691,8 @@ msgid ""
 "choose which folders are used to store *Drafts*, *Sent* or deleted messages "
 "(*Trash*)."
 msgstr ""
-"Einige Ordner haben :ref:`besondere Zwecke <mail-organize-special-folders>` "
-"und werden von Systemprozessen genutzt, um Nachrichten zu speichern. "
+"Einige Ordner haben :ref:`besondere Zwecke <mail-organize-special-folders>\\` und werden von Systemprozessen genutzt, um Nachrichten zu speichern.\n"
+"Diese Maske lässt Sie wählen, welche Ordner benutzt werden, um *Entwürfe*, *Gesendet*e bzw. gelöschte Nachrichten (*Papierkorb*) zu speichern."
 
 # e73761c4d74d4863afc1feb34dfd5ff9
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:296
@@ -787,7 +797,8 @@ msgid ""
 "deleting them. Skip that step by enabling this option."
 msgstr ""
 "Nachrichten im *Spam*-Ordner werden auch zuerst in den *Papierkorb* "
-"verschoben, wenn sie gelöscht werden. "
+"verschoben, wenn sie gelöscht werden. Überspringen Sie diesen Schritt, indem"
+" Sie diese Option aktivieren."
 
 # 0d63bad101f2494d82861f1cb28278bb
 #: ../../source/webmail-user-guide/roundcubemail/settings/preferences.rst:337

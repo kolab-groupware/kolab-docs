@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Max Hellwig <max.hellwig@translating-energy.de>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 # 3b0496494c274e3896bd492a4b850a69
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/invitations.rst:92
 msgid "Handle Event Invitations"
-msgstr "Umgang mit Einladungen zu einem Termin "
+msgstr "Umgang mit Ereigniseinladungen "
 
 # 4e60c5e31ce14d48b53f6f371448adf8
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/invitations.rst:94
@@ -31,13 +32,14 @@ msgid ""
 "accept or decline an event invitation."
 msgstr ""
 "Im Kapitel :ref:`Kalenderereignis-Teilnehmer <calendar-event-participants>` "
-"haben wir gelernt, wie man Andere zu einem Termin einlädt. So kann man ein "
-"eine Einladungen zu einem Termin direkt annehmen oder ablehnen."
+"haben wir gelernt, wie man Andere zu einem Termin einlädt. Dies versendet "
+"Einladungs-Mails mit angehängten Termindaten an alle Teilnehmer. So kann man"
+" ein eine Termineinladung direkt annehmen oder ablehnen."
 
 # 547fcfc079bf4543bdf9e125c94224b2
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/invitations.rst:101
 msgid "Receive Event Invitations"
-msgstr "Einladungen zu einem Termin erhalten"
+msgstr "Termineinladungen erhalten"
 
 # 1497bb07b7d44f90bcd4c9e5b000f957
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/invitations.rst:103
@@ -64,9 +66,9 @@ msgid ""
 msgstr ""
 "Sie können die Einladung direkt im oben gezeigten Kasten annehmen oder "
 "ablehnen, indem Sie die entsprechende Schaltfläche anklicken. Eine "
-"automatische Antwort an den Organisator des Termines gesendet, die sie "
-"über Ihre Entscheidung informiert und sie Ihren Teilnahmestatus in ihrem "
-"Kalender updaten lässt."
+"automatische Antwort an den Organisator des Termines gesendet, die sie über "
+"Ihre Entscheidung informiert und sie Ihren Teilnahmestatus in ihrem Kalender"
+" updaten lässt."
 
 # d8753d15c2694001b788c748e731c55a
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/invitations.rst:115
@@ -77,14 +79,16 @@ msgid ""
 msgstr ""
 "Wenn Sie annehmen, indem Sie entweder *Akzeptieren* oder *Vielleicht* "
 "anklicken, wird auch eine Kopie des Termines in Ihren persönlich Kalender "
-"kopiert. "
+"kopiert. Mit der Optionsschaltfläche direkt rechts neben Schaltflächen "
+"können Sie den Richtigen wählen."
 
 # bfed2dd6b10b415ea6ed9eac454394fd
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/invitations.rst:119
 msgid ""
 "The copy in your calendar now knows about the invitation and its original "
 "sender. If you now delete it from your calendar, you'll be asked whether "
-"this should send a declination message to the person who organizes the event."
+"this should send a declination message to the person who organizes the "
+"event."
 msgstr ""
 "Die Kopie in Ihrem Kalender weiß jetzt über die Einladung und ihre "
 "ursprüngliche Absenderin Bescheid. Wenn Sie es jetzt aus Ihrem Kalender "
@@ -94,8 +98,8 @@ msgstr ""
 # 63b9b4061f604397bc36f41d424bc9cd
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/invitations.rst:123
 msgid ""
-"After acceping or declining, the email message containing the invitation can "
-"be deleted."
+"After acceping or declining, the email message containing the invitation can"
+" be deleted."
 msgstr ""
 "Nach dem Annehmen oder Ablehnen kann die E-Mail-Nachricht mit der Einladung "
 "gelöscht werden."
@@ -108,8 +112,8 @@ msgstr "Einladungsantworten-Prozess "
 # fa84462c0127489eb9cbca46da34af0d
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/invitations.rst:129
 msgid ""
-"As an organizer who has invited others to an event, you'll receive responses "
-"to the automatically sent invitations when the attendees either accept or "
+"As an organizer who has invited others to an event, you'll receive responses"
+" to the automatically sent invitations when the attendees either accept or "
 "decline them."
 msgstr ""
 "Als Organisator, der Andere zu einem Termin eingeladen hat, erhalten Sie "
@@ -128,8 +132,8 @@ msgstr ""
 # 9fb448b4b81b4f1c90978e2ccbf1fda8
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/invitations.rst:137
 msgid ""
-"By clicking the *Update the participant's status* button, the original event "
-"in your calendar will be updated with the RSVP status from the person who "
+"By clicking the *Update the participant's status* button, the original event"
+" in your calendar will be updated with the RSVP status from the person who "
 "responded here."
 msgstr ""
 "Durch Klicken auf die *Teilnahmestatus updaten*-Schaltfläche wird das "
@@ -142,8 +146,8 @@ msgid ""
 "When you now look at the event details in the calendar view, the status "
 "icons next to each participant now displays the new status."
 msgstr ""
-"Wenn Sie jetzt die Details der Einladung in der Kalenderansicht ansehen, zeigen "
-"die Statusicons neben jedem Teilnehmer den neuen Status an."
+"Wenn Sie jetzt die Details der Einladung in der Kalenderansicht ansehen, "
+"zeigen die Statusicons neben jedem Teilnehmer den neuen Status an."
 
 # 4343386a2a0c4fea88bc5a2716e2d730
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/calendar/invitations.rst:88

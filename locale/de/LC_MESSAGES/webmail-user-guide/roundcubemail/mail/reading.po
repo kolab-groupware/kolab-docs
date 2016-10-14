@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Max Hellwig <max.hellwig@translating-energy.de>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -96,8 +97,8 @@ msgid ""
 "next or previous message on the folder. If there's no next or previous "
 "message, the buttons will be disabled."
 msgstr ""
-"Benutzen Sie die Pfeiltasten auf der rechten Seite des Kopfzeilenfeldes, um "
-"zur nächsten oder vorherigen Nachricht im Ordner zu wechseln. "
+"Benutzen Sie die Pfeiltasten auf der rechten Seite des Kopfzeilenfeldes, um zur nächsten oder vorherigen Nachricht im Ordner zu wechseln.\n"
+"Wenn es keine nächste oder vorherige Nachricht gibt, werden die Schaltflächen deaktiviert."
 
 # ec5fe01c82644bc69b73ecd5a0786b0a
 #: ../../source/webmail-user-guide/roundcubemail/mail/reading.rst:130
@@ -113,10 +114,8 @@ msgid ""
 "saved twice if a contact with that email address already exists in the "
 "address book."
 msgstr ""
-"Jede E-Mail-Adresse, auf die die aktuelle Nachricht Bezug nimmt, entweder "
-"als Absenderin oder Empfängerin, kann im Adressbuch mit einem einfachen "
-"Klick auf den *Kontakt hinzufügen* |icon-addcontact|-Icon direkt daneben "
-"gespeichert werden. "
+"Jede E-Mail-Adresse, auf die die aktuelle Nachricht Bezug nimmt, entweder als Absenderin oder Empfängerin, kann im Adressbuch mit einem einfachen Klick auf den *Kontakt hinzufügen* |icon-addcontact|-Icon direkt daneben gespeichert werden.\n"
+"Natürlich wird Sie nicht doppelt gespeichert, wenn sich schon ein Kontakt mit dieser E-Mail-Adresse im Adressbuch befindet."
 
 # 04bd90ca769f49d0a1d5fe3b369e0386
 #: ../../source/webmail-user-guide/roundcubemail/mail/reading.rst:143
@@ -126,15 +125,18 @@ msgstr "Anhänge  betrachten oder herunterladen"
 # 2131fbaa13f548089e406d906d8e2bd5
 #: ../../source/webmail-user-guide/roundcubemail/mail/reading.rst:145
 msgid ""
-"If the opened message has any files attached, these are listed on the right, "
-"next to the message text. Click on the file name to open or download it. If "
-"the file can be displayed directly in the web browser, a preview window will "
-"be opened showing the attachment. This will happen for images, text files "
-"and PDFs if your browser indicates being able to display them."
+"If the opened message has any files attached, these are listed on the right,"
+" next to the message text. Click on the file name to open or download it. If"
+" the file can be displayed directly in the web browser, a preview window "
+"will be opened showing the attachment. This will happen for images, text "
+"files and PDFs if your browser indicates being able to display them."
 msgstr ""
 "Wenn der geöffneten Nachricht irgendwelche Dateien angehängt sind, werden "
-"diese rechts neben dem Nachrichtentext aufgelistet. Dies ist der Fall bei "
-"Bildern, Textdateien und PDFs, wenn Ihr Browser diese darstellen kann."
+"diese rechts neben dem Nachrichtentext aufgelistet. Klicken Sie auf den "
+"Dateiname, um sie zu öffnen bzw. herunterzuladen. Wenn die Datei direkt im "
+"Browser angezeigt werden kann, öffnet sich ein Vorschaufenster, das den "
+"Anhang zeigt. Dies ist der Fall bei Bildern, Textdateien und PDFs, wenn Ihr "
+"Browser diese darstellen kann."
 
 # 28034e01250643238157f7ebb1bdb119
 #: ../../source/webmail-user-guide/roundcubemail/mail/reading.rst:150
@@ -144,9 +146,8 @@ msgid ""
 "doesn't happen, check the default \"Downloads\" folder on your computer for "
 "the attachment file."
 msgstr ""
-"Anderenfalls wird das Klicken auf den Dateiname, den Download einleiten und "
-"höchstwahrscheinlich wird ein Dialog erscheinen, in dem Sie aufgefordert "
-"werden, einen Speicherort für Datei zu wählen. "
+"Anderenfalls wird das Klicken auf den Dateiname, den Download einleiten und höchstwahrscheinlich wird ein Dialog erscheinen, in dem Sie aufgefordert werden, einen Speicherort für Datei zu wählen.\n"
+"Wenn die nicht geschieht, überprüfen Sie den Standard-\\\"Download\\\"-Ordner Ihres Computers auf die angehängte Datei."
 
 # 9d8f22771f50496bb6ccbb0ae1cc596f
 #: ../../source/webmail-user-guide/roundcubemail/mail/reading.rst:155
@@ -181,9 +182,8 @@ msgid ""
 "either open the image in full size (*Show*) or *Download* it to your "
 "computer's hard drive."
 msgstr ""
-"Wenn es in den :ref:`Voreinstellungen <settings-prefs-mailview>` aktiviert "
-"ist, werden an die Nachricht angehängte Bilder als Vorschau (bzw. „Thumbnails"
-"\") direkt unter dem Nachrichtentext aufgelistet. "
+"Wenn es in den :ref:`Voreinstellungen <settings-prefs-mailview>\\` aktiviert ist, werden an die Nachricht angehängte Bilder als Vorschau (bzw. „Thumbnails\\\") direkt unter dem Nachrichtentext aufgelistet.\n"
+"Direkt neben jedem Bild gibt es Links, mit denen Sie entweder das Bild in voller Größe öffnen (*Anzeigen*) oder es auf die Festplatte Ihres Computers *Herunterladen* können."
 
 # 2f6834a14e834627abda9aeaa5b4f546
 #: ../../source/webmail-user-guide/roundcubemail/mail/reading.rst:88

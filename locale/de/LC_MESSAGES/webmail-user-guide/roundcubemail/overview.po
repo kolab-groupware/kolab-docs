@@ -2,7 +2,8 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
@@ -44,18 +45,22 @@ msgstr "(1) Anwendungen"
 # 8dd595700ebf4bf68ee1044258ef5b05
 #: ../../source/webmail-user-guide/roundcubemail/overview.rst:108
 msgid ""
-"The webmail application provides different main tasks such as Email, Address "
-"Book, Settings, etc. Use this list to switch from one task to another. That "
-"will reload the screen with a specific view for the selected task. Instead "
+"The webmail application provides different main tasks such as Email, Address"
+" Book, Settings, etc. Use this list to switch from one task to another. That"
+" will reload the screen with a specific view for the selected task. Instead "
 "of switching back and forth, task screens can be opened in individual "
 "browser windows or tabs. Right-click on a task icon in the list and then "
-"choose \"Open Link in New Tab/Window\" from the browser's context menu to do "
-"so."
+"choose \"Open Link in New Tab/Window\" from the browser's context menu to do"
+" so."
 msgstr ""
 "Der Webmail-Dienst bietet verschiedene Hauptanwendungen wie E-Mail, "
-"Adressbuch, Einstellungen usw. Rechtsklicken Sie ein Anwendungs-Icon in der "
-"Liste und wählen Sie dann \"Link in neuem Tab/Fenster öffnen\" aus dem "
-"Kontextmenü des Browsers."
+"Adressbuch, Einstellungen usw. Benutzen Sie diese Liste, um von einer "
+"Aufgabe zu einer anderen zu wechseln. Eine neue Ansicht für die ausgewählte "
+"Anwendung wird geladen. Statt hin und her zu schalten, können "
+"Anwendungsansichten einzeln in Browserfenstern oder -reitern geöffnet "
+"werden. Hierzu Rechtsklicken Sie ein Anwendungs-Icon in der List und wählen "
+"Sie dann \"Link in neuem Tab/Fenster öffnen\" aus dem Kontextmenü des "
+"Browsers."
 
 # aa060cbf452b434b8083e3269f6d2c7f
 #: ../../source/webmail-user-guide/roundcubemail/overview.rst:114
@@ -63,8 +68,8 @@ msgid ""
 "Beside the main tasks, the button to terminate the current session "
 "(*Logout*) is also located here."
 msgstr ""
-"Neben den Hauptanwendungen gibt es hier auch die Schaltfläche, um die "
-"aktuelle Sitzung zu beenden (*Ausloggen*)."
+"Neben den Hauptanwendungen gibt es hier auch die Schaltfläche (Abmelden), um"
+" die aktuelle Sitzung zu beenden."
 
 # 802f9a1d79d14bb6b121fc646ac4e5c2
 #: ../../source/webmail-user-guide/roundcubemail/overview.rst:121
@@ -76,12 +81,14 @@ msgstr "(2) Statusanzeige"
 msgid ""
 "This area of the screen is dedicated to display status notifications (e.g. "
 "confirmations, warnings, errors) about the success or failure of the "
-"operations you just executed in the application. While the app is working or "
-"loading data, a notification is displayed here as well."
+"operations you just executed in the application. While the app is working or"
+" loading data, a notification is displayed here as well."
 msgstr ""
-"Dieser Bereich des Bildschirms stellt Statusbenachrichtigungen (z. B. "
+"Dieser Bereich des Bildschirms stellt Statusbenachrichtigungen (z.B. "
 "Bestätigungen, Warnungen, Fehler) über den Erfolg oder das Scheitern der "
-"Arbeitsabläufe dar, die Sie gerade in dem Dienst ausgeführt haben. "
+"Arbeitsabläufe dar, die Sie gerade in der Anwendung ausgeführt haben. "
+"Während die Anwendung arbeitet oder Daten lädt, wird hier auch eine "
+"Benachrichtigung angezeigt. "
 
 # e060a10df7e843228f6c6fa80b531993
 #: ../../source/webmail-user-guide/roundcubemail/overview.rst:130
@@ -94,18 +101,23 @@ msgid ""
 "The main toolbar is always located above the content area and allow you to "
 "perform different actions, depending on what is being shown or selected in "
 "the content part of the window. If buttons are grayed out, the according "
-"action is not available for the current selection. If a toolbar icon shows a "
-"small arrow on its right side, clicking that arrow will present you "
+"action is not available for the current selection. If a toolbar icon shows a"
+" small arrow on its right side, clicking that arrow will present you "
 "variations of the action to be executed."
 msgstr ""
 "Die Hauptwerkzeugleiste befindet sich immer über dem Arbeits-Bereich und "
 "lässt Sie in Abhängigkeit von dem, was im Content-Teil des Fensters "
-"angezeigt oder ausgewählt wird, verschiedene Tätigkeiten verrichten. "
+"angezeigt oder ausgewählt wird, verschiedene Tätigkeiten verrichten. Wenn "
+"Schaltflächen grau überlegt sind, ist die entsprechende Tätigkeit für die "
+"aktuelle Auswahl nicht verfügbar. Wenn ein Werkzeugleistenicon einen kleinen"
+" Pfeil an seiner rechten Seite aufweist, werden Ihnen durch Anklicken dieses"
+" Pfeils Variationen der ausführbaren Tätigkeit angezeigt. "
 
 # d6c3aa60dccd4eae8354bcab3f199150
 #: ../../source/webmail-user-guide/roundcubemail/overview.rst:136
 msgid ""
-"Additional actions can be found by clicking the *More* button (if available)."
+"Additional actions can be found by clicking the *More* button (if "
+"available)."
 msgstr ""
 "Zusätzliche Tätigkeiten können durch Klicken auf die *Mehr*-Schaltfläche "
 "(wenn verfügbar) gefunden werden."
@@ -123,7 +135,8 @@ msgid ""
 "gear icon usually opens a menu with additional actions."
 msgstr ""
 "Die Icons im Fußzeilenbereich einer Liste bieten Tätigkeiten an, die die "
-"Liste darüber bzw. die derzeitig ausgewählte Liste beeinflussen. "
+"Liste darüber bzw. das derzeitig ausgewählte Element der Liste beeinflussen."
+" Das Zahnradicon öffnet normalerweise ein Menü mit zusätzlichen Tätigkeiten."
 
 # ef70554e8a67419182c8d7c52836ff59
 #: ../../source/webmail-user-guide/roundcubemail/overview.rst:150
@@ -139,9 +152,12 @@ msgid ""
 "keyboard to start searching. To reset the search, click the clear icon on "
 "the right border of the search box."
 msgstr ""
-"Wenn die derzeit ausgewählt Anwendung das Suchen nach Daten (z. B. nach E-"
-"Mail-Nachrichten oder Kontakten) ermöglicht, gibt es ein Suchfeld in der "
-"rechten oberen Ecke über dem Haupt-Arbeits-Bereich. "
+".Wenn die derzeit ausgewählt Anwendung das Suchen nach Daten (z. B. nach E"
+"-Mail-Nachrichten oder Kontakten) ermöglicht, gibt es ein Suchfeld in der "
+"rechten oberen Ecke über dem Hauptarbeitsbereich. Geben Sie einen "
+"Suchbegriff ein und drücken Sie auf der Tastatur <Eingabe>, um zu suchen zu "
+"beginnen. Um die Suche zurückzusetzen, klicken Sie auf das Leeren-Icon am "
+"rechten Rand des Suchfelds."
 
 # 27c95aa09ef947cfadd03312087c0687
 #: ../../source/webmail-user-guide/roundcubemail/overview.rst:155
@@ -163,8 +179,9 @@ msgid ""
 "Some boxes filling the main content area of the screen can be resized. Find "
 "the resize handle |splitter| between two boxes and drag it with the mouse."
 msgstr ""
-"Einige Felder im Haupt-Arbeits-Bereich des Bildschirms können in ihrer Größe "
-"angepasst werden. "
+"Einige Felder im Haupt-Arbeits-Bereich des Bildschirms können in ihrer Größe"
+" angepasst werden. Finden Sie den Größe-Anpassen-Griff |splitter| zwischen "
+"zwei Feldern und ziehen Sie ihn mit der Maus."
 
 # 9b25a6d005ea4cb083f5ebbfe12a0922
 #: ../../source/webmail-user-guide/roundcubemail/overview.rst:170
@@ -175,16 +192,17 @@ msgstr "Sitzung beenden"
 #: ../../source/webmail-user-guide/roundcubemail/overview.rst:171
 msgid ""
 "Once your work is done on the webmail application, it's important that you "
-"properly terminate the current session by clicking the *Logout* icon in (1). "
-"This will make sure that no other person accessing your computer can read or "
-"delete your emails or send them on your behalf. Simply closing the browser "
-"window is not enough to log-out!"
+"properly terminate the current session by clicking the *Logout* icon in (1)."
+" This will make sure that no other person accessing your computer can read "
+"or delete your emails or send them on your behalf. Simply closing the "
+"browser window is not enough to log-out!"
 msgstr ""
-"Wenn die Arbeit in der Web-Anwendung abgeschlossen ist, ist es wichtig die "
-"Sitzung korrekt zu beenden indem die Abmelden-Schaltfläche (1) angewählt "
-"wird. So kann keine andere Person mit Zugriff auf diesen Computer E-Mail in "
-"Ihrem Namen lesen, schreiben oder löschen. Es reicht nicht, einfach das "
-"Browserfenster zu schließen, um sich auszuloggen!"
+"Sobald Ihre Arbeit im Webmail-Dienst beendet ist, sollten Sie unbedingt die "
+"aktuelle Sitzung korrekt beenden, indem Sie auf das *Abmelden*-Icon aus (1) "
+"klicken. So wird sichergestellt, dass niemand anders, der Zugriff auf Ihren "
+"Computer hat, Ihre E-Mails lesen oder löschen kann, oder welche in Ihrem "
+"Namen versenden kann. Es reicht nicht, einfach das Browserfenster zu "
+"schließen, um sich auszuloggen!"
 
 # a48b6cb9f7d74e2aa9c9924ba159de73
 #: ../../source/webmail-user-guide/roundcubemail/overview.rst:104

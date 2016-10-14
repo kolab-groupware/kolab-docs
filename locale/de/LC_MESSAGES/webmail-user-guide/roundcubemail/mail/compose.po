@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Max Hellwig <max.hellwig@translating-energy.de>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,8 +35,8 @@ msgid ""
 "Depending on your settings it opens in the current browser tab or in a new "
 "window."
 msgstr ""
-"Wenn Sie auf den *Verfassen*-Werkzeugleistenicon klicken, öffnet sich der "
-"Nachricht verfassen-Bildschirm. "
+"Wenn Sie auf den *Verfassen*-Werkzeugleistenicon klicken, öffnet sich der Nachricht verfassen-Bildschirm.\n"
+"Je nach Ihren Einstellungen, öffnet er sich im aktuellen Browsertab oder in einem neuen Fenster."
 
 # 741738154e5444128fb93462c81edb67
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:102
@@ -44,9 +45,9 @@ msgid ""
 "type in a subject and the message text and click the *Send* button in the "
 "toolbar when you're ready to send the message."
 msgstr ""
-"Geben Sie mindestens eine Empfängeradresse ein oder wählen Sie diese aus dem "
-"Adressbuch, geben Sie einen Betreff und den Nachrichtentext ein und klicken "
-"Sie auf die *Senden*-Schaltfläche in der Werkzeugleiste, wenn Sie bereit "
+"Geben Sie mindestens eine Empfängeradresse ein oder wählen Sie diese aus dem"
+" Adressbuch, geben Sie einen Betreff und den Nachrichtentext ein und klicken"
+" Sie auf die *Senden*-Schaltfläche in der Werkzeugleiste, wenn Sie bereit "
 "sind, die Nachricht abzuschicken."
 
 # 43da0042a244438ca2d14c97921fdd4c
@@ -57,8 +58,8 @@ msgid ""
 "in the *Drafts* folder and can be double-clicked there in order to resume "
 "composition."
 msgstr ""
-"Speichern Sie sie als *Entwurf* (Werkzeugleistenicon), wenn die Nachricht "
-"noch nicht vollständig ist und Sie sie zu späterer Zeit abschicken wollen. "
+"Speichern Sie sie als *Entwurf* (Werkzeugleistenicon), wenn die Nachricht noch nicht vollständig ist und Sie sie zu späterer Zeit abschicken wollen.\n"
+"Die E-Mail wird im *Entwürfe*-Ordner gespeichert und kann dort mit einem Doppelklick geöffnet werden, um mit dem verfassen fortzufahren."
 
 # f2caf36ad21b443aaa3925bb4557e46a
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:110
@@ -70,8 +71,10 @@ msgid ""
 "interval in the :ref:`User Preferences <settings-prefs-compose>`."
 msgstr ""
 "Während dem Verfassen einer Nachricht werden regelmäßig Kopien im Entwürfe-"
-"Ordner gespeichert, um zu vermeiden, dass sie aus Versehen verloren geht. \n"
-"Sie können das automatische Speicherintervall in den :ref:`Benutzer-"
+"Ordner gespeichert, um zu vermeiden, dass sie aus Versehen verloren geht. "
+"Falls eine Sitzung unerwartet beendet wird oder Ihr Computer oder Browser "
+"abstürzt, finden Sie eine Kopie der Nachricht im *Entwürfe*-Ordner. Sie "
+"können das automatische Speicherintervall in den :ref:`Benutzer-"
 "Voreinstellungen <settings-prefs-compose>` einstellen."
 
 # d213f64d7c56407b9a677d6997929cac
@@ -83,25 +86,23 @@ msgstr "Auf eine Nachricht antworten"
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:121
 msgid ""
 "If you want to respond on a received message, click the *Reply* or the "
-"*Reply all* button in the toolbar or the equivalent buttons in the :ref:"
-"`Preview Pane <mail-preview-pane>`. This will also open the compose screen "
-"but with a quote of the message you're replying to and with the recipient(s) "
-"pre-filled."
+"*Reply all* button in the toolbar or the equivalent buttons in the "
+":ref:`Preview Pane <mail-preview-pane>`. This will also open the compose "
+"screen but with a quote of the message you're replying to and with the "
+"recipient(s) pre-filled."
 msgstr ""
-"Wenn sie auf eine erhaltene Nachricht antworten wollen, klicken Sie auf die "
-"*Antworten*- oder *Allen antworten*-Schaltfläche in der Werkzeugleiste oder "
-"auf die entsprechenden Schaltflächen im :ref:`Vorschaufeld <mail-preview-"
-"pane>`. "
+"Wenn sie auf eine erhaltene Nachricht antworten wollen, klicken Sie auf die *Antworten*- oder *Allen antworten*-Schaltfläche in der Werkzeugleiste oder auf die entsprechenden Schaltflächen im :ref:`Vorschaufeld <mail-preview-pane>`.\n"
+"Dies wird auch den Verfassen-Bildschirm öffnen, aber außerdem die Nachricht, auf die Sie antworten, zitieren und die Empfängerin(nen) voreintragen."
 
 # 826c2f91ca8542b18afd8524b1bf91b3
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:125
 msgid ""
-"While *Reply* will copy the sender address into *To* field, *Reply all* will "
-"add all recipients of the original message to the *To* and *Cc* fields."
+"While *Reply* will copy the sender address into *To* field, *Reply all* will"
+" add all recipients of the original message to the *To* and *Cc* fields."
 msgstr ""
 "Während *Antworten* die Absenderadresse ins *An*-Feld kopiert, fügt *Allen "
-"antworten* alle Empfängerinnen der ursprünglichen Nachricht in den *An*- und "
-"*Cc*-Feldern ein."
+"antworten* alle Empfängerinnen der ursprünglichen Nachricht in den *An*- und"
+" *Cc*-Feldern ein."
 
 # a8a58569d4c54e18a7669f86d6ee7aca
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:132
@@ -113,13 +114,14 @@ msgstr "Nachrichten weiterleiten"
 msgid ""
 "Messages can also be forwarded to somebody by clicking the *Forward* button "
 "in the toolbar. The compose screen will contain the message text and all "
-"attachments already added. You can still add more attachments or remove some "
-"you don't want to forward."
+"attachments already added. You can still add more attachments or remove some"
+" you don't want to forward."
 msgstr ""
-"Nachrichten können auch an jemanden weitergeleitet werden, indem man auf die "
-"*Weiterleiten*-Schaltfläche in der Werkzeugleiste klickt. Sie können "
-"immernoch mehr Anhänge hinzufügen oder einige entfernen, die Sie nicht "
-"weiterleiten wollen."
+"Nachrichten können auch an jemanden weitergeleitet werden, indem man auf die"
+" *Weiterleiten*-Schaltfläche in der Werkzeugleiste klickt. Der Verfassen-"
+"Bildschirm enthält dann den Nachrichtentext und alle Anhänge, die schon "
+"hinzugefügt wurden. Sie können immernoch mehr Anhänge hinzufügen oder einige"
+" entfernen, die Sie nicht weiterleiten wollen."
 
 # bab26876be1d49d5872a0ebaae99b844
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:138
@@ -136,16 +138,17 @@ msgstr "**Direktes Weiterleiten**"
 # da59626fc1c34f598a78b5c6a2ee493d
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:141
 msgid ""
-"In this (default) mode, the content of the original message is copied to the "
-"message text editor and can be altered or deleted. Also attachments of the "
+"In this (default) mode, the content of the original message is copied to the"
+" message text editor and can be altered or deleted. Also attachments of the "
 "original message are copied to the new message and can be removed "
 "individually. Attention: this mode can truncate or re-format HTML formatted "
 "messages."
 msgstr ""
 "In diesem (standardmäßigen) Modus wird der Inhalt der ursprünglichen "
 "Nachricht in den Nachrichtentext-Editor kopiert und kann geändert oder "
-"gelöscht werden. Achtung: Dieser Modus kann HTML-formatierte Nachrichten "
-"beschneiden oder neu formatieren."
+"gelöscht werden. Auch Anhänge der ursprünglichen Nachricht werden in die "
+"neue Nachricht kopiert und können einzeln entfernt werden. Achtung: Dieser "
+"Modus kann HTML-formatierte Nachrichten beschneiden oder neu formatieren."
 
 # 56d709cdaddf449d95d29f40a09daa7d
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:148
@@ -159,8 +162,8 @@ msgid ""
 "forwarding message. This will preserve the message with all its formatting "
 "and attachments and doesn't allow you to alter anything."
 msgstr ""
-"Mit dieser Option wird die ursprüngliche Nachricht an die weiterzuleitende "
-"Nachricht angehängt. "
+"Mit dieser Option wird die ursprüngliche Nachricht an die weiterzuleitende Nachricht angehängt.\n"
+"Dies erhält die Nachricht mit allen ihren Formatierungen und Anhängen und lässt Sie nichts ändern."
 
 # 4b3eff0147f446a496e47da4af8892f2
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:154
@@ -172,12 +175,13 @@ msgstr "Empfängerinnen aus Adressbüchern auswählen"
 msgid ""
 "The recipients of the composed message can be freely entered into the *To* "
 "or *Cc* fields in the header section of the compose screen. Separate "
-"multiple addresses with a coma (,). Make sure you enter full and valid email "
-"addresses."
+"multiple addresses with a coma (,). Make sure you enter full and valid email"
+" addresses."
 msgstr ""
 "Die Empfängerinnen der verfassten Nachricht können frei in die *An*- oder "
 "*Cc*-Felder im Kopfzeilenabschnitt des Verfassen-Bildschirms eingegeben "
-"werden. "
+"werden. Trennen Sie mehrere Adressen mit einem Komma (,). Stellen Sie "
+"sicher, dass Sie vollständige und gültige E-Mail-Adressen eintragen."
 
 # d733236b16aa48af81c31b9248bce387
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:162
@@ -187,13 +191,13 @@ msgstr "Adressbuch-Autovervollständigung"
 # e2ba506770bf4ddb827a4c3c4a7c8681
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:164
 msgid ""
-"While typing a recipient address, the app continuously searched your address "
-"book and suggests matching entries right below the input field. Use the "
+"While typing a recipient address, the app continuously searched your address"
+" book and suggests matching entries right below the input field. Use the "
 "cursor keys (up/down) on the keyboard to select one and then hit <Enter> or "
 "<Tab> to copy the highlighted address into the recipient field."
 msgstr ""
-"Während Sie eine Empfängeradresse eingeben, sucht die App stetig in Ihrem "
-"Adressbuch und schlägt passende Einträge direkt unter dem Eingabefeld vor. "
+"Während Sie eine Empfängeradresse eingeben, sucht die App stetig in Ihrem Adressbuch und schlägt passende Einträge direkt unter dem Eingabefeld vor.\n"
+"Benutzen Sie die Pfeiltasten (hoch/runter) der Tastatur, um eine Adresse auszuwählen und drücken Sie dann <Eingabe> oder <Tab>, um hervorgehobene Adressen in das Empfängerfeld zu kopieren."
 
 # 662bbb84bc4c4a13b7406f8fb9dcd0d5
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:168
@@ -204,28 +208,24 @@ msgstr "Benutzung des Adressbuch-Widgets"
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:170
 msgid ""
 "If you prefer to select recipients from a list of contacts, use the address "
-"book widget on the left side to look them up. First, select the address book "
-"to browse on the upper part of the widget and see the contacts listed below. "
-"Only a limited number of contacts is displayed at a time so use the arrow "
-"buttons in the widget header to jump to the next page of contacts."
+"book widget on the left side to look them up. First, select the address book"
+" to browse on the upper part of the widget and see the contacts listed "
+"below. Only a limited number of contacts is displayed at a time so use the "
+"arrow buttons in the widget header to jump to the next page of contacts."
 msgstr ""
-"Wenn Sie lieber Empfängerinnen aus einer Liste von Kontakten auswählen, "
-"benutzen Sie das Adressbuch-Widget an der linken Seite, um sie "
-"nachzuschlagen. Nur eine beschränkte Anzahl von Kontakten wird gleichzeitig "
-"angezeigt. Benutzen Sie die Pfeiltasten in der Kopfzeile des Widgets, um zur "
-"nächsten Seite von Kontakten zu wechseln."
+"Wenn Sie lieber Empfängerinnen aus einer Liste von Kontakten auswählen, benutzen Sie das Adressbuch-Widget an der linken Seite, um sie nachzuschlagen.\n"
+"Nur eine beschränkte Anzahl von Kontakten wird gleichzeitig angezeigt. Benutzen Sie die Pfeiltasten in der Kopfzeile des Widgets, um zur nächsten Seite von Kontakten zu wechseln."
 
 # dc37240cbf1445b0988e8c789bf5b6e0
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:174
 msgid ""
 "Select one or more contacts in the list and then click either one of the "
 "buttons below (*To+*, *Cc+*, *Bcc+*) in order to copy the selected contacts "
-"to the according recipient field. Double-click a contact in the list to have "
-"it added to the *To* field immediately."
+"to the according recipient field. Double-click a contact in the list to have"
+" it added to the *To* field immediately."
 msgstr ""
-"Wählen Sie einen oder mehrere Kontakte aus der Liste und klicken Sie dann "
-"entweder auf eine der Schaltflächen darunter (*An*, *Cc+*, *Bcc+*), um die "
-"ausgewählten Kontakte in das entsprechende Empfängerfeld zu kopieren. "
+"Wählen Sie einen oder mehrere Kontakte aus der Liste und klicken Sie dann entweder auf eine der Schaltflächen darunter (*An*, *Cc+*, *Bcc+*), um die ausgewählten Kontakte in das entsprechende Empfängerfeld zu kopieren.\n"
+"Doppelklicken Sie einen Kontakt in der Liste, um ihn sofort dem *An*-Feld hinzuzufügen."
 
 # bddbeb7da74d4a68923681ac487853a5
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:182
@@ -237,13 +237,12 @@ msgstr "Anhänge hinzufügen"
 msgid ""
 "In order to attach files to the message, click the *Attach* button in the "
 "toolbar and then select the file on your computer using the file picker "
-"dialog that opens. Attachments to be sent with the message are listed on the "
-"right and can be removed again by clicking the *Delete* icon of the "
+"dialog that opens. Attachments to be sent with the message are listed on the"
+" right and can be removed again by clicking the *Delete* icon of the "
 "according file."
 msgstr ""
-"Um Dateien an die Nachricht anzuhängen, klicken Sie auf die *Anhängen*-"
-"Schaltfläche in der Werkzeugleiste und wählen Sie dann mit dem Dateiauswahl-"
-"Dialog, der sich öffnet, die Datei von Ihrem Computer aus. "
+"Um Dateien an die Nachricht anzuhängen, klicken Sie auf die *Anhängen*-Schaltfläche in der Werkzeugleiste und wählen Sie dann mit dem Dateiauswahl-Dialog, der sich öffnet, die Datei von Ihrem Computer aus.\n"
+"Anhänge, die mit der Nachricht verschickt werden können, sind rechts aufgelistet und können durch Klicken auf das *Löschen*-Icon der entsprechenden Datei entfernt werden."
 
 # f3e5289b853f4c40a3f02f8010f59d8e
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:192
@@ -283,9 +282,8 @@ msgid ""
 "Expand the :ref:`Sending Options <mail-compose-options>` by clicking the "
 "down-arrow on the left border of the message headers block."
 msgstr ""
-"Sie können den Verfassen-Modus mit der *Editortyp*-Optionsschaltfläche, die "
-"in der Optionsleiste verborgen ist, zwischen einfach und Rich-Text (HTML) "
-"umschalten. "
+"Sie können den Verfassen-Modus mit der *Editortyp*-Optionsschaltfläche, die in der Optionsleiste verborgen ist, zwischen einfach und Rich-Text (HTML) umschalten.\n"
+"Erweitern Sie :ref:`Sendeoptionen <mail-compose-options>\\`, indem Sie den Herunter-Pfeil am linken Rand des Nachricht-Kopfzeilenblocks anklicken."
 
 # 1f0a4926b875409ab7b53edc084dfd32
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:212
@@ -298,13 +296,14 @@ msgid ""
 "When in HTML editor mode, you can embed images right into the message text. "
 "And here's how to do that:"
 msgstr ""
-"Wenn Sie sich im HTML-Editor-Modus befinden, können Sie Bilder direkt in den "
-"Nachrichtentext einbinden. "
+"Wenn Sie sich im HTML-Editor-Modus befinden, können Sie Bilder direkt in den"
+" Nachrichtentext einbinden. Und so geht's:"
 
 # 00d5c77edc444d8e8652a4bdcbe19fb9
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:216
 msgid ""
-"Add the image as :ref:`attachment <mail-compose-attachments>` to the message."
+"Add the image as :ref:`attachment <mail-compose-attachments>` to the "
+"message."
 msgstr ""
 "Fügen Sie das Bild als :ref:`Anhang <mail-compose-attachments>` an die "
 "Nachricht an."
@@ -351,14 +350,13 @@ msgstr ""
 # 0501b8b8d86b4d47b1f960c54ceed40b
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:232
 msgid ""
-"The *Responses* button in the compose screen toolbar holds your personal set "
-"of \"canned responses\" which can be inserted into the message body by a "
+"The *Responses* button in the compose screen toolbar holds your personal set"
+" of \"canned responses\" which can be inserted into the message body by a "
 "single click. Note: these are only text snippets that can be inserted "
 "anywhere and **not message templates** with subject, text or attachments."
 msgstr ""
-"Die *Antworten*-Schaltfläche in der Werkzeugleiste des Verfassen-Bildschirms "
-"enthält Ihren persönlichen Satz an vorgespeicherten Antworten, die mit einem "
-"einzelnen Klick in den Textkörper der Nachricht eingefügt werden können. "
+"Die *Antworten*-Schaltfläche in der Werkzeugleiste des Verfassen-Bildschirms enthält Ihren persönlichen Satz an vorgespeicherten Antworten, die mit einem einzelnen Klick in den Textkörper der Nachricht eingefügt werden können.\n"
+"Hinweis: Dies sind nur Textschnipsel, die irgendwo eingefügt werden können und **keine Nachrichtenvorlagen** mit Betreff, Text oder Anhängen."
 
 # af5c6c1aab0345a8b7d89e0ea54ef368
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:237
@@ -371,13 +369,15 @@ msgid ""
 "Clicking the *Responses* button opens a menu that lists all the saved "
 "boilerplate texts by name. Simply click on one and the saved text will be "
 "inserted into the message at the position of the cursor, exactly where you "
-"stopped typing. If you selected some part of the message text with the mouse "
-"before, the saved response text will replace the selection."
+"stopped typing. If you selected some part of the message text with the mouse"
+" before, the saved response text will replace the selection."
 msgstr ""
 "Klicken auf die *Antworten*-Schaltfläche öffnet ein Menü, in dem alle "
-"gespeicherten Textbausteine nach Namen gespeichert sind. Wenn Sie vorher "
-"einen Teil des Nachrichtentexts mit der Maus ausgewählt haben, ersetzt der "
-"gespeicherte Antworttext die Auswahl."
+"gespeicherten Textbausteine nach Namen gespeichert sind. Klicken Sie einfach"
+" auf einen und der gespeicherte Text wird an der Cursorposition genau dort "
+"in die Nachricht eingefügt, wo Sie mit dem Tippen aufgehört haben. Wenn Sie "
+"vorher einen Teil des Nachrichtentexts mit der Maus ausgewählt haben, "
+"ersetzt der gespeicherte Antworttext die Auswahl."
 
 # 1d3111bd097a4bfc8eaad34f3d932c43
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:245
@@ -390,14 +390,19 @@ msgid ""
 "When typing the same text for the second time already you might want to "
 "store it for future email writing. In order to save a new response, first "
 "select the section of the message text that should be saved with the mouse "
-"and click *Create new response* from the menu behind the *Responses* button. "
-"This will open a dialog where you can review the text before saving. Give "
+"and click *Create new response* from the menu behind the *Responses* button."
+" This will open a dialog where you can review the text before saving. Give "
 "the new response a snappy name and click *Save*. It's now added to the list "
 "of snippets to be inserted."
 msgstr ""
 "Wenn Sie den selben Text schon zum zweiten Mal eingeben, könnte es sein, "
-"dass Sie ihn für zukünftige E-Mails speichern wollen. Sie wurde der Liste "
-"von Schnipseln hinzugefügt und kann eingefügt werden."
+"dass Sie ihn für zukünftige E-Mails speichern wollen. Um eine neue Antwort "
+"zu speichern, wählen Sie zuerst mit der Maus den Abschnitt des "
+"Nachrichtentexts, der gespeichert werden soll, und klicken Sie auf *Neue "
+"Antwort erstellen* im Menü hinter der *Antworten*-Schaltfläche. Dies öffnet "
+"einen Dialog, in dem Sie den Text vor dem Speichern durchsehen wollen. Geben"
+" Sie der neuen Antwort einen flotten Namen und klicken Sie auf *Speichern*. "
+"Sie wurde der Liste von Schnipseln hinzugefügt und kann eingefügt werden."
 
 # 487c168c71cd41ae9973ebb204037dcc
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:255
@@ -449,7 +454,9 @@ msgstr "**Priorität**"
 msgid ""
 "The priority flag of the message to be send. This will be displayed in the "
 "recipient's mailbox."
-msgstr "Prioritätsmarkierung der zu versendenden Nachricht; "
+msgstr ""
+"Prioritätsmarkierung der zu versendenden Nachricht;\n"
+"wird im E-Mail-Eingang der Empfängerin angezeigt werden."
 
 # 5a24219f597e4a24adb3f80f36c4e837
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:282
@@ -463,8 +470,8 @@ msgid ""
 "message. This will be sent by the recipient's email program if she confirms "
 "it."
 msgstr ""
-"Bitten Sie die Empfängerin, eine Empfangsbestätigung zurückzuschicken, wenn "
-"er die Nachricht öffnet. "
+"Bitten Sie die Empfängerin, eine Empfangsbestätigung zurückzuschicken, wenn er die Nachricht öffnet.\n"
+"Diese wird vom E-Mail-Programm der Empfängerin versendet, wenn sie es bestätigt."
 
 # d2299e5b41a24451a2b752366db31178
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:286
@@ -478,9 +485,8 @@ msgid ""
 "send by the email server upon message delivery. Please note that this "
 "doesn't confirm that the actual recipient has received the message."
 msgstr ""
-"Bitten Sie um eine Benachrichtigungsnachricht, wenn die Nachricht zugestellt "
-"wurde. Bitte bedenken Sie, dass dies nicht bedeutet, dass die tatsächliche "
-"Empfängerin die Nachricht erhalten hat."
+"Bitten Sie um eine Benachrichtigungsnachricht, wenn die Nachricht zugestellt wurde.\n"
+"Bitte bedenken Sie, dass dies nicht bedeutet, dass die tatsächliche Empfängerin die Nachricht erhalten hat."
 
 # 9242476df8864cb39b5e6620f544a3a2
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:289
@@ -490,12 +496,13 @@ msgstr "**Gesendete Nachricht speichern unter**"
 # da6bd26ba6e146eb8eff1fc846e46209
 #: ../../source/webmail-user-guide/roundcubemail/mail/compose.rst:289
 msgid ""
-"Select the folder where to save a copy of the message after sending it. This "
-"defaults to the *Sent* folder and can be changed here. Select *don't save* "
+"Select the folder where to save a copy of the message after sending it. This"
+" defaults to the *Sent* folder and can be changed here. Select *don't save* "
 "to just send the message without saving a copy."
 msgstr ""
 "Wählen Sie den Ordner, in dem eine Kopie der Nachricht nach dem Senden "
-"gespeichert werden soll. Wählen Sie *nicht speichern*, um die Nachricht "
+"gespeichert werden soll. Dies ist standardmäßig der *Gesendet*-Ordner und "
+"kann hier geändert werden. Wählen Sie *nicht speichern*, um die Nachricht "
 "abzuschicken, ohne eine Kopie zu speichern."
 
 # e090482562984da3a2526bb4c099ae59

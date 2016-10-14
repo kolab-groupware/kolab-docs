@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Mads <mads@batmads.com>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,8 +51,8 @@ msgid ""
 "and provides a simple way to manage vacation responses."
 msgstr ""
 "Diese Schnittstelle ist Teil der :ref:`Sieve-Filtereinstellungen <settings-"
-"managesieve-filters>`-Funktion und bietet eine einfache Möglichkeit, Urlaubs-"
-"Antworten zu verwalten."
+"managesieve-filters>`-Funktion und bietet eine einfache Möglichkeit, "
+"Urlaubs-Antworten zu verwalten."
 
 # d772cba194e742019880c4087b49dffd
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:106
@@ -118,9 +119,9 @@ msgid ""
 "is convenient to disable the vacation rule when it's not needed and enable "
 "again another time."
 msgstr ""
-"Dieses Feld aktiviert die Regel. Wenn Sie immer denselben Antwort-Textkörper "
-"benutzen, ist es praktisch die Urlaubsregel zu deaktivieren, wenn sie nicht "
-"benötigt wird und zu anderer Zeit wieder zu aktivieren."
+"Dieses Feld aktiviert die Regel. Wenn Sie immer denselben Antwort-Textkörper"
+" benutzen, ist es praktisch die Urlaubsregel zu deaktivieren, wenn sie nicht"
+" benötigt wird und zu anderer Zeit wieder zu aktivieren."
 
 # 64926f38691645118503a5f74565f70c
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:128
@@ -153,7 +154,8 @@ msgid ""
 "addresses."
 msgstr ""
 "Normalerweise wird die Urlaubsantwort versendet, wenn die Empfängeradresse "
-"der ankommenden Nachricht eine der dem Server bekannten Adressen ist. "
+"der ankommenden Nachricht eine der dem Server bekannten Adressen ist. Hier "
+"können Sie mehr Adressen hinzufügen."
 
 # 7f02e17fbec64acdad52db6d013ccbca
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:141
@@ -169,7 +171,9 @@ msgid ""
 "once a day."
 msgstr ""
 "Dieser Parameter legt fest, wie oft die Antwort an die Absenderin versendet "
-"wird. Standardmäßig wird die Antwort einmal am Tag versendet."
+"wird. Wenn Sie viele Nachrichten derselben Absenderin innerhalb kurzer Zeit "
+"erhalten, wollen Sie normalerweise nicht allen antworten. Standardmäßig wird"
+" die Antwort einmal am Tag versendet."
 
 # 9bb5f865b1a54a6c9217b0c888b85ed0
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/managesieve/settings-vacation.rst:144
@@ -184,5 +188,6 @@ msgid ""
 "another person)."
 msgstr ""
 "Dieses Feld legt eine bei ankommenden Nachrichten vorzunehmende Tätigkeit "
-"fest. Sie können sie verwerfen, behalten oder an ein anderes Konto umleiten/"
-"kopieren (damit sie von einer anderen Person bearbeitet werden können)."
+"fest. Sie können sie verwerfen, behalten oder an ein anderes Konto "
+"umleiten/kopieren (damit sie von einer anderen Person bearbeitet werden "
+"können)."

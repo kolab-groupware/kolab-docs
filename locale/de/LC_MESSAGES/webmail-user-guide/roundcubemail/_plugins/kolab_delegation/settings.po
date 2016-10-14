@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Max Hellwig <max.hellwig@translating-energy.de>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,25 +26,25 @@ msgstr "Delegieren"
 # 0ff55b5ca3ee4557aeb148dc593fb41a
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/kolab_delegation/settings.rst:94
 msgid ""
-"This is the place where you can give another person (in your organization) a "
-"responsibility for your mailboxes, calendars or task lists. Delegated person "
-"will have access to selected folders (write or read-only) and will have "
-"possibility to act in your behalf, e.g. reply to email, create events/tasks, "
-"handle invitations."
+"This is the place where you can give another person (in your organization) a"
+" responsibility for your mailboxes, calendars or task lists. Delegated "
+"person will have access to selected folders (write or read-only) and will "
+"have possibility to act in your behalf, e.g. reply to email, create "
+"events/tasks, handle invitations."
 msgstr ""
 "An dieser Stelle können Sie einer anderen Person (innerhalb Ihrer "
 "Organisation) die Verantwortung für Ihre Eingangs-, Kalender- oder "
 "Aufgabenlisten abgeben. Der Delegierte hat Zugang zu ausgewählten Ordnern "
 "(schreibgeschützt oder nicht) und hat die Möglichkeit in Ihrem Namen zu "
-"handeln, z. B. E-Mails beantworten, Termine/Aufgaben erstellen, "
-"Einladungen handhaben."
+"handeln, z. B. E-Mails beantworten, Termine/Aufgaben erstellen, Einladungen "
+"handhaben."
 
 # 0569b1ea2dbc463ba99cdaa0b988a116
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/kolab_delegation/settings.rst:99
 msgid ""
 "To add a new user delegation use \"Add delegate\" button, type user name in "
-"the form on the right (wait for auto-completion and select the user from the "
-"list) and select folders to share."
+"the form on the right (wait for auto-completion and select the user from the"
+" list) and select folders to share."
 msgstr ""
 "Um eine neue Benutzer-Delegierung hinzuzufügen, benutzen Sie die "
 "„Delegierten hinzufügen\"-Schaltfläche, tippen Sie den Benutzernamen in die "
@@ -55,8 +56,8 @@ msgstr ""
 msgid ""
 "You can modify access rights at any time, remember to use *Save* button."
 msgstr ""
-"Sie können den Zugriff jederzeit ändern, denken Sie daran die *Speichern*-"
-"Schaltfläche zu benutzen."
+"Sie können den Zugriff jederzeit ändern, denken Sie daran die "
+"*Speichern*-Schaltfläche zu benutzen."
 
 # 147c461c349f40048f7686b4467c33eb
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/kolab_delegation/settings.rst:104
@@ -66,7 +67,9 @@ msgid ""
 "delegation but keep folder permissions for this person."
 msgstr ""
 "Wenn Sie eine Delegierung entfernen, werden Sie gefragt, ob Sie auch die "
-"Zugriffsrechte auf Ordner entfernen wollen, die vorher gewährt wurden. "
+"Zugriffsrechte auf Ordner entfernen wollen, die vorher gewährt wurden. Sie "
+"können also eine Delegierung entfernen, aber Ordnerfreigaben für diese "
+"Person behalten."
 
 # 59e37cfffec84b2a949331f03b386165
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/kolab_delegation/settings.rst:109
@@ -83,5 +86,7 @@ msgid ""
 "(depending on server configuration)."
 msgstr ""
 "Um korrekt zu funktionieren, erfordert das Delegierungs-Feature, dass der "
-"delegierte Benutzer sich neu anmeldet. Sie werden entfernt, wenn der "
-"Delegierende die Delegierung entfernt (abhängig von der Serverkonfiguration)."
+"delegierte Benutzer sich neu anmeldet. Bei diesem Verfahren werden neue "
+"Identitäten im delegierten Benutzerkonto erstellt. Sie werden entfernt, wenn"
+" der Delegierende die Delegierung entfernt (abhängig von der "
+"Serverkonfiguration)."

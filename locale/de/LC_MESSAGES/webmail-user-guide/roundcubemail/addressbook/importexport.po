@@ -2,14 +2,15 @@
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>, 2016\n"
+"Last-Translator: Max Hellwig <max.hellwig@translating-energy.de>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,12 +32,13 @@ msgstr "Kontakte importieren"
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/importexport.rst:98
 msgid ""
 "Contacts can be imported into the Roundcube address books from `vCard "
-"<http://en.wikipedia.org/wiki/VCard>`_ and `CSV <http://en.wikipedia.org/"
-"wiki/Comma-separated_values>`_ files."
+"<http://en.wikipedia.org/wiki/VCard>`_ and `CSV "
+"<http://en.wikipedia.org/wiki/Comma-separated_values>`_ files."
 msgstr ""
-"Kontakte können in die Roundcube-Adressbücher von `vCard <https://de."
-"wikipedia.org/wiki/VCard>\" _ und `CSV <https://de.wikipedia.org/wiki/CSV_"
-"%28Dateiformat%29>`_ Dateien importiert werden."
+"Kontakte können in die Roundcube-Adressbücher von `vCard "
+"<https://de.wikipedia.org/wiki/VCard>\" _ und `CSV "
+"<https://de.wikipedia.org/wiki/CSV_%28Dateiformat%29>`_ Dateien importiert "
+"werden."
 
 # f04b4fa0e548439db444abb6ff28e542
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/importexport.rst:101
@@ -53,8 +55,8 @@ msgid ""
 "Then select the file to import from your computer's hard drive. Make sure "
 "it's either .vcf or .csv file."
 msgstr ""
-"Wählen Sie dann die von der Festplatte Ihres Computers zu importierende "
-"Datei aus. "
+"Wählen Sie dann die von der Festplatte Ihres Computers zu importierende Datei aus.\n"
+"Stellen Sie sicher, dass es entweder eine .vcf oder .csv Datei ist."
 
 # 5786046e8a4e40f8a444e552c0358056
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/importexport.rst:103
@@ -63,8 +65,10 @@ msgid ""
 "let's you delete all contacts from the selected address book before "
 "importing. Be careful with this, the deletion cannot be undone!"
 msgstr ""
-"Wählen Sie das Adressbuch, in das die Kontakte importiert werden sollen. "
-"Seien Sie damit vorsichtig, das Löschen kann nicht rückgängig gemacht werden!"
+"Wählen Sie das Adressbuch, in das die Kontakte importiert werden sollen. Mit"
+" dem Kontrollkästchen können Sie alle Kontakte aus dem ausgewählten "
+"Adressbuch löschen, bevor sie es importieren. Seien Sie damit vorsichtig, "
+"das Löschen kann nicht rückgängig gemacht werden!"
 
 # b020aeda505e4e59874c6d6585c5ed84
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/importexport.rst:106
@@ -76,9 +80,11 @@ msgstr ""
 # 6e5819da7312461abb358d505d973353
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/importexport.rst:108
 msgid ""
-"The next screen will display the results of the import process. Click *Done* "
-"to get back to the address book view and see the imported contacts."
-msgstr "Der nächste Bildschirm zeigt die Ergebnisse des Imports an. "
+"The next screen will display the results of the import process. Click *Done*"
+" to get back to the address book view and see the imported contacts."
+msgstr ""
+"Der nächste Bildschirm zeigt die Ergebnisse des Imports an.\n"
+"Klicken Sie auf *Fertig*, um zur Adressbuchansicht zurückzukehren und die importierten Kontakte anzusehen."
 
 # 319e5c515df44b678bb3195596b3efb8
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/importexport.rst:116
@@ -88,11 +94,11 @@ msgstr "Kontakte exportieren"
 # 307a5e3981be4b2fa989f6917f880d68
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/importexport.rst:118
 msgid ""
-"Contacts from Roundcube address books are exported in the `vCard <http://en."
-"wikipedia.org/wiki/VCard>`_ format only."
+"Contacts from Roundcube address books are exported in the `vCard "
+"<http://en.wikipedia.org/wiki/VCard>`_ format only."
 msgstr ""
-"Kontakte aus den Roundcube-Adressbüchern werden nur im `vCard < https://de."
-"wikipedia.org/wiki/VCard>\"_ Format exportiert."
+"Kontakte aus den Roundcube-Adressbüchern werden nur im `vCard < "
+"https://de.wikipedia.org/wiki/VCard>\"_ Format exportiert."
 
 # 20d7a249e16d4452abd43c760af8668d
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/importexport.rst:120
@@ -109,9 +115,9 @@ msgstr ""
 # a711853fa87f4487b677fa3891911976
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/importexport.rst:122
 msgid ""
-"Choose where to save the exported .vcf file if prompted, otherwise check the "
-"\"Downloads\" folder on your computer for a file named \"roundcube_contacts."
-"vcf\"."
+"Choose where to save the exported .vcf file if prompted, otherwise check the"
+" \"Downloads\" folder on your computer for a file named "
+"\"roundcube_contacts.vcf\"."
 msgstr ""
 "Wählen Sie, wo die exportierte .vcf Datei gespeichert werden soll, wenn Sie "
 "dazu aufgefordert werden, anderenfalls sehen Sie im Downloadordner Ihres "
@@ -132,8 +138,8 @@ msgstr "**Alle exportieren**"
 # 7b16e3dc410344bd9db52c28857ae927
 #: ../../source/webmail-user-guide/roundcubemail/addressbook/importexport.rst:128
 msgid ""
-"That's the default action of the button and will pack all contacts currently "
-"listed into the vcard file."
+"That's the default action of the button and will pack all contacts currently"
+" listed into the vcard file."
 msgstr ""
 "Dies ist die standardmäßige Tätigkeit der Schaltfläche und speichert alle "
 "derzeitig aufgelisteten Kontakte in die vCard Datei."
