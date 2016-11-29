@@ -25,7 +25,7 @@ msgid ""
 ":`mail-messages-list` and the :ref:`Preview Pane <mail-preview-pane>` which "
 "can be toggled."
 msgstr ""
-"Der Arbeits-Bereich auf dem Bildschirm ist in drei Bereiche geteilt: :ref"
+"Der Arbeitsbereich auf dem Bildschirm ist in drei Bereiche geteilt: :ref"
 ":`Mail-Ordner <mail-folders>`, :ref:`Mail-Nachrichtenliste <mail-messages-"
 "list>` und :ref:`Vorschaufeld <mail-preview-pane>`, zwischen denen "
 "umhergeschaltet werden kann."
@@ -50,7 +50,7 @@ msgstr ""
 "angezeigt werden, und die Gesamtanzahl der Nachrichten in diesem Ordner ist "
 "direkt unter der Liste angegeben. Entsprechend Ihre Einstellungen zeigt "
 "diese Liste nur eine beschränkte Anzahl von Nachrichten gleichzeitig an. Mit"
-" den Zulassen-Schaltflächen unter der Liste können Sie durch mehrere "
+" den Navigations-Schaltflächen unter der Liste können Sie durch mehrere "
 "„Seiten\" blättern."
 
 # 6b668cfb3c0d4df1b0c23bc855143f63
@@ -61,8 +61,8 @@ msgid ""
 " the *Refresh* button in the email view toolbar."
 msgstr ""
 "Die Anwendung prüft in regelmäßigen Abständen auf neue Nachrichten und "
-"aktualisiert die Anzeige wenn neue E-Mails angekommen sind. Sie können dies "
-"auch manuell erzwingen, indem Sie auf die *Aktualisieren* Schaltfläche in "
+"aktualisiert die Anzeige, wenn neue E-Mails angekommen sind. Sie können dies"
+" auch manuell erzwingen, indem Sie auf die *Aktualisieren* Schaltfläche in "
 "der E-Mail-Ansicht-Werkzeugleiste klicken."
 
 # 8b4d8b23b6414d089ac4a27b5d30342b
@@ -123,7 +123,7 @@ msgid ""
 "Furthermore there's the *Mark* menu in the toolbar that allows you to flag "
 "all selected messages with one click."
 msgstr ""
-"Wenn die Markierungsspalte sichtbar ist (s. :ref:`Maillistenspalten <mail-list-columns>\\`), können Sie eine Nachricht markieren/demarkieren, indem Sie auf die Markierungsspalte der Nachrichtenzeile klicken.\n"
+"Wenn die Markierungsspalte sichtbar ist (s. :ref:`Maillistenspalten <mail-list-columns>`), können Sie eine Nachricht markieren/demarkieren, indem Sie auf die Markierungsspalte der Nachrichtenzeile klicken.\n"
 "Außerdem gibt es ein *Markieren*-Menü in der Werkzeugleiste, mit dem Sie alle ausgewählten Nachrichten mit einem Klick markieren können."
 
 # 09dfc00f1f6d4eec8f078622b26865a6
@@ -147,7 +147,7 @@ msgstr ""
 # b9bb5ac55a034d679e6d5e770ad341c1
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:140
 msgid "Threaded message listing"
-msgstr "Nachrichten als Fäden darstellen"
+msgstr "Nachrichten als Konversation darstellen."
 
 # 3fe03bb7aa5b43a482e7849179b149b7
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:141
@@ -159,12 +159,12 @@ msgid ""
 "expanded using the arrow icons in the leftmost column of the message list."
 msgstr ""
 "Statt Nachrichten nach Datum oder Betreff zu sortieren, können "
-"Unterhaltungen, die aus mehreren Nachrichten bestehen, als Threads gruppiert"
-" werden. Benutzen Sie die Umschalt-Schaltflächen links in der Fußzeile der "
-"Nachrichtenliste, um zwischen *Listen*- oder *Thread*-Ansicht hin- und "
-"herzuschalten. Im Threadmodus können Gruppen von Nachrichten mit den "
-"Pfeilicons in der Spalte am linken Rand der Nachrichtenliste auf- oder "
-"zugeklappt werden."
+"Unterhaltungen, die aus mehreren Nachrichten bestehen, als Konversation "
+"gruppiert werden. Benutzen Sie die Umschalt-Schaltflächen links in der "
+"Fußzeile der Nachrichtenliste, um zwischen *Listen*- oder "
+"*Konversationsansicht* hin- und herzuschalten. In der Konversationsansicht "
+"können Gruppen von Nachrichten mit den Pfeilicons in der Spalte am linken "
+"Rand der Nachrichtenliste auf- oder zugeklappt werden."
 
 # 1670700ee22e4c54a020f8bf226ec7c6
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:152
@@ -230,13 +230,15 @@ msgid ""
 "located in the message footer. The menu allows you to select all unread or "
 "flagged messages at once or to invert or reset the current selection."
 msgstr ""
-"Es sind auch Auswahlhelfer im *Auswählen*-Dropdownmenü der Nachrichten-Fußzeile verborgen.\n"
-"Mit diesem Menü können Sie alle ungelesenen oder markierten Nachrichten auf einmal auswählen oder die aktuelle Auswahl umkehren oder zurücksetzen."
+"Es sind auch Auswahlhelfer im *Auswahl*-Dropdownmenü der Nachrichten-"
+"Fußzeile verborgen. Mit diesem Menü können Sie alle ungelesenen oder "
+"markierten Nachrichten auf einmal auswählen oder die aktuelle Auswahl "
+"umkehren oder zurücksetzen."
 
 # ccb0595f3f674c2db2c08b90eff728d6
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:179
 msgid "Mailbox folders"
-msgstr "Eingangsordner"
+msgstr "Postfachordner"
 
 # 18f7fe7a5b8447eab46487065cb73ac5
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:180
@@ -245,10 +247,10 @@ msgid ""
 " Folders can be used to file email messages by topic, sender or whatever you"
 " choose for organization."
 msgstr ""
-"Auf der linken Seite sehen Sie eine hierarchische Liste aller Ordner in "
-"Ihrem E-Mail-Eingang. Ordner können benutzt werden, um E-Mail-Nachrichten "
-"nach Thema, Absender oder was auch immer Sie zum Organisieren wählen, "
-"archiviert werden."
+"Auf der linken Seite sehen Sie eine hierarchische Liste aller E-Mail Ordner "
+"in Ihrem Postfach. Ordner können benutzt werden, um E-Mail-Nachrichten nach "
+"Thema, Absender oder was auch immer Sie zum Organisieren wählen, zu "
+"archivieren."
 
 # e9c7680357d14ab1b26594efc28364ed
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:184
@@ -281,8 +283,9 @@ msgid ""
 "Click a folder in the list to show the contained messages in the message "
 "list on the right. The currently selected folder is highlighted in the list."
 msgstr ""
-"Klicken Sie auf ein Verzeichnis oder eine Gruppe aus der Liste, um die in der Liste enthaltenen Kontakte rechts anzuzeigen.\n"
-"Das derzeitig ausgewählte Verzeichnis oder Gruppe ist in der Liste hervorgehoben."
+"Klicken Sie auf einen Ordner in der Liste, um die darin enthaltenen "
+"Nachrichten in der Nachrichtenliste auf der rechten Seite anzuzeigen. Der "
+"ausgewählte Ordner ist in der Liste hervorgehoben."
 
 # 0f7319d41cba45bfb473973f6f7e37d4
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:193
@@ -291,7 +294,7 @@ msgid ""
 " be clocked to expand or collapse the folder tree."
 msgstr ""
 "Ordner mit verborgenen Unterordnern sind mit einem kleinen [+]-Icon "
-"versehen, der angeklickt werden kann, um den Ordnerbaum auf- oder "
+"versehen, das angeklickt werden kann, um den Ordnerbaum auf- oder "
 "zuzuklappen."
 
 # 01f73dd947a64fd9a7684169c6bf0805
@@ -312,7 +315,7 @@ msgstr ""
 # 30b219e877ec492b83fb2b6e62dacaf7
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:204
 msgid "**Compact**"
-msgstr "**Komprimieren**"
+msgstr "**Packen**"
 
 # 2a2754502fe7472ca2b44eb928a4f9b7
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:204
@@ -352,7 +355,7 @@ msgid ""
 "when you can manage the mailbox folders. This is where you can create, "
 "delete, rename or re-organize your email folders."
 msgstr ""
-"Unter diesem Menüpunkt finden Sie den :ref:`Einstellungen <settings-"
+"Unter diesem Menüpunkt finden Sie die :ref:`Einstellungen <settings-"
 "folders>`, wo Sie die E-Mail-Ordner verwalten können. Hier können Sie Ihre E"
 "-Mail-Ordner erstellen, löschen, oder neu organisieren."
 
@@ -369,13 +372,16 @@ msgid ""
 "disk space. Move the mouse pointer over the percentage display to see the "
 "real numbers of your quota usage."
 msgstr ""
-"Wenn Ihr E-Mail-Eingang auf eine Maximalgröße beschränkt ist, führt die Quotenanzeige in der Fußzeile der Ordnerliste die aktuelle Verwendung verfügbaren Speicherplatzes an.\n"
-"Bewegen Sie den Mauszeiger über die Prozentangabe, um die korrekten Zahlen Ihrer Quote einzusehen."
+"Wenn Ihr E-Mail-Postfach auf eine Maximalgröße beschränkt ist, zeigt die "
+"Speicherplatzanzeige in der Fußzeile der Ordnerliste den aktuellen Verbrauch"
+" des verfügbaren Speicherplatzes an. Bewegen Sie den Mauszeiger über die "
+"Prozentangabe, um die genauen Zahlen Ihres Spreicherplatzverbrauchs zu "
+"sehen."
 
 # eeb175ed948248a496b56be16210226c
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:230
 msgid "Preview Pane"
-msgstr "Vorschaufeld"
+msgstr "Vorschaubereich"
 
 # 29c167ceef274a929472c97e9d2e38a5
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:231
@@ -386,10 +392,10 @@ msgid ""
 "will hide the preview pane."
 msgstr ""
 "Wenn aktiviert, zeigt der Vorschaubereich unter der Nachrichtenliste die "
-"derzeitig ausgewählte Nachricht in der Haupt-E-Mail-Ansicht an. Um es zu "
-"öffnen, klicken Sie auf das Umschalticon |previewtoggle| in der "
-"Nachrichtenliste-Fußzeile. Wenn Sie den selben Icon noch einmal anklicken, "
-"wird der Vorschaubereich verborgen."
+"derzeitig ausgewählte Nachricht in der Haupt-E-Mail-Ansicht an. Um den "
+"Vorschaubereich zu öffnen, klicken Sie auf das Umschaltsymbol in der "
+"Fußzeile der Nachrichtenliste. Wenn Sie das Symbol erneut anklicken, wird "
+"der Vorschaubereich wieder verborgen."
 
 # 064d0e0820274d5d940a51b0923a2c10
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:238
@@ -428,9 +434,9 @@ msgid ""
 "at the left of the header."
 msgstr ""
 "Der Vorschaubereich soll Ihnen eine Schnellansicht der Nachricht geben. "
-"Daher werden nur wichtige Nachrichtenfelder wie Absenderin und Datum sofort "
-"angezeigt. Die Kopfzeile kann in der Vorschau durch Anklicken des Herunter-"
-"Pfeils auf der linken Seite der Kopfzeile erweitert werden."
+"Daher werden nur wichtige Nachrichtenfelder wie Absenderi und Datum "
+"angezeigt. Die Kopfzeile kann in der Vorschau durch anklicken des nach unten"
+" zeigenden Pfeil auf der linken Seite der Kopfzeile erweitert werden."
 
 # 6c71f19610c1415e801acac57976cff8
 #: ../../source/webmail-user-guide/roundcubemail/mail/mailview.rst:92

@@ -136,7 +136,7 @@ msgstr ""
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:131
 msgid ""
 "``Title``: The title of the task. This is what you will see in the list."
-msgstr "`Titel\\`: Titel der Aufgabe; dies sehen Sie in der Liste."
+msgstr "\"Titel\": Titel der Aufgabe; diesen sehen Sie in der Aufgabenliste."
 
 # 86459edfb41c4a2193ff1c1312c54889
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:132
@@ -153,14 +153,14 @@ msgid ""
 "``Tags``: A list of tags assigned to this task. Add one by typing to the "
 "text box and hit <Enter>."
 msgstr ""
-"„Tags\": Eine Liste von Tags, die der Aufgabe zugewiesen sind; fügen Sie "
-"durch Tippen ins Textfeld und Drücken von <Eingabe> eins hinzu."
+"„Schlagworte”: Eine Liste von Schlagworten, die der Aufgabe zugewiesen sind;"
+" fügen Sie durch Tippen ins Textfeld und Drücken von <Eingabe> eins hinzu."
 
 # 5355d72205ea430faf6aff261b27b4b6
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:134
 msgid "``Start``: The date/time, the task is supposed to be worked on."
 msgstr ""
-"„Anfang\": das Datum und die Zeit, zu der die Aufgabe bearbeitet werden soll"
+"„Beginn”: das Datum und die Zeit, zu der die Aufgabe bearbeitet werden soll."
 
 # f378cfcc36c944b2a1e27440d5cd1405
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:135
@@ -168,8 +168,8 @@ msgid ""
 "``Due``: The date/time this job is due. Define a time when setting a "
 "reminder for this task."
 msgstr ""
-"„Fälligkeit\": das Datum und die Zeit, zu der die Aufgabe fällig ist; legen "
-"Sie eine Zeit fest, wenn sie eine Erinnerung für diese Aufgabe einstellen."
+"„Fällig\": das Datum und die Zeit, zu der die Aufgabe fällig ist; legen Sie "
+"eine Zeit fest, wenn sie eine Erinnerung für diese Aufgabe einstellen."
 
 # e7d7a851d4a747fc999285ced5b34088
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:136
@@ -179,11 +179,11 @@ msgid ""
 "When 'Sound' is selected, a sound will be played at the selected time. This "
 "setting requires the host to be able to play sounds."
 msgstr ""
-"„Erinnerung\": Wird zur vorbestimmten Zeit bevor die Aufgabe fällig ist mit "
-"einer Benachrichtigung erscheinen. Es ist möglich ‚Nachricht' "
-"(standardmäßig) oder ‚Klang' auszuwählen. Wenn Klang ausgewählt ist, wird "
-"zur gewählten Zeit ein Klang abgespielt. Diese Einstellung erfordert, dass "
-"der Host in der Lage ist, Klänge abzuspielen."
+"„Erinnerung”: Eine Benachrichtigung wird zu einer vorbestimmten Zeit bevor "
+"eine Aufgabe fällig ist erscheinen. Es ist möglich ‚Nachricht’ "
+"(standardmäßig) oder ‚Audio’ auszuwählen. Wenn Audio ausgewählt ist, wird "
+"zur gewählten Zeit ein Ton abgespielt. Diese Einstellung erfordert, dass der"
+" Computer in der Lage ist, Audiodateien abzuspielen."
 
 # 599e93e2572e4f96afd3afe7dc1a071c
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:137
@@ -191,7 +191,7 @@ msgid ""
 "``Complete``: The completeness state of a task in percent. Use the slider or"
 " enter a number."
 msgstr ""
-"„Vollständig\": Vollständigkeit der Aufgabe in Prozent; benutzen Sie den "
+"„Abgeschlossen”: Abgeschlossenheit der Aufgabe in Prozent; benutzen Sie den "
 "Schieber oder geben Sie eine Zahl ein."
 
 # 20a954d3d6a1419c8339f5d76d6c7a44
@@ -245,7 +245,7 @@ msgstr ""
 # 84bec32645974090be0984d41a8b8e7c
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:154
 msgid "**Assignments**"
-msgstr "**Zuordnungen**"
+msgstr "**Zuweisungen**"
 
 # 035d899a91ec4e9e9c10ec45098c899f
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:156
@@ -253,7 +253,7 @@ msgid ""
 "One, or a list of, users can be assigned to the task. The list is managed in"
 " this tab."
 msgstr ""
-"Ein Benutzer oder eine Liste von Benutzern können einer Aufgabe zugeordnet "
+"Ein Benutzer oder eine Liste von Benutzern können einer Aufgabe zugewiesen "
 "werden. "
 
 # 2833d4ebfa1f42c6949cc596494d3ec0
@@ -274,8 +274,8 @@ msgid ""
 "will show a dropdown list of relevant users. Then clieck the 'Add Assignee' "
 "button."
 msgstr ""
-"`Beauftragte hinzufügen\\`: Tippen Sie drei Buchstaben des Benutzernamens und das Suchfeld wird eine Aufklappliste passender Benutzer zeigen.\n"
-"Klicken Sie dann auf die ‚Beauftragte hinzufügen'-Schaltfläche."
+"`Beauftragten hinzufügen\\`: Tippen Sie drei Buchstaben des Benutzernamens und das Suchfeld wird eine Aufklappliste passender Benutzer zeigen.\n"
+"Klicken Sie dann auf die ‚Beauftragten hinzufügen'-Schaltfläche."
 
 # 221a6f5acb3b409db628aea0a66c1080
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:160
@@ -301,12 +301,13 @@ msgid ""
 ":ref:`attaching them to email messages <mail-compose-attachments>`: first "
 "select a file from your local disk and click *Upload* in order to attach it."
 msgstr ""
-"Manchmal ist ein beschreibender Text nicht genug, um Informationen zu einer "
-"bestimmten Aufgabe zu sammeln. Wechseln Sie zu diesem Reiter, um Dateien an "
-"die aktuelle Aufgabe anzuhängen oder wieder von ihr zu entfernen. Dateien "
-"hinzufügen funktioniert ziemlich genau, wie :ref:`sie an E-Mail-Nachrichten "
-"anzuhängen <Mail-verfassen-Anhänge>`:  Wählen Sie zuerst eine Datei von "
-"Ihrer Festplatte aus und klicken Sie auf *Upload*, um sie anzuhängen. "
+"Manchmal ist ein beschreibender Text nicht genug, um alle Informationen zu "
+"einem bestimmten Termin zu erfassen. Wechseln Sie zu diesem Reiter, um "
+"Dateien zu die aktuelle Aufgabe anzuhängen oder wieder von dieser zu "
+"entfernen. Dateien hinzufügen funktioniert ziemlich genau, wie sie an E"
+"-Mail-Nachrichten anzuhängen: Wählen Sie zuerst eine Datei von Ihrer "
+"Festplatte aus und klicken Sie auf Hochladen, um die Datei der Aufgabe "
+"anzuhängen."
 
 # 0cd85391b9b647cb968324603aea2aab
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:169
@@ -321,7 +322,7 @@ msgstr ""
 # ecf783aa51af45ffb7b88bfe02b55a1a
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:176
 msgid "Assign Tags"
-msgstr "Tags zuweisen"
+msgstr "Schlagworte zuweisen"
 
 # 8b396d42916641e0b10abb1451048652
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:178
@@ -329,9 +330,9 @@ msgid ""
 "Tags help you organize your tasks in the list view. Open the :ref:`Edit "
 "Dialog <tasklist-edit-task>` and enter tags into the according text box:"
 msgstr ""
-"Tags helfen Ihnen, Ihre Aufgaben in der Listenansicht zu organisieren. "
-"Öffnen Sie den :ref:`Bearbeiten-Dialog <tasklist-edit-task>` und geben Sie "
-"Tags ins entsprechende Textfeld ein:"
+"Schlagworte helfen Ihnen, Ihre Aufgaben in der Listenansicht zu "
+"organisieren. Öffnen Sie den Bearbeiten-Dialog und geben Sie Schlagworte ins"
+" entsprechende Textfeld ein:"
 
 # 3ad8d3bb5fa94eaeb10e72be4c053ef0
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:183
@@ -340,20 +341,19 @@ msgid ""
 "typing, a suggestion of already used tags will be shown. Use the arrow keys "
 "on the keyboard to select one and press <Enter> to select."
 msgstr ""
-"Hängen Sie ein Tag durch Drücken von <Eingabe> an und fahren Sie mit dem "
-"Tippen fort, um mehr hinzuzufügen. Während des Tippens werden schon benutzte"
-" Tags vorgeschlagen. Benutzen Sie die Pfeiltasten der Tastatur um eins "
-"auszuwählen und drücken Sie <Eingabe>, um es auswählen."
+"Hängen Sie ein Schlagwort durch Drücken von <Eingabe> an und fahren Sie mit dem Tippen fort, um mehrere hinzuzufügen. Während des Tippens werden schon benutzte Schlagworte vorgeschlagen. Benutzen Sie die Pfeiltasten der Tastatur um eins auszuwählen und drücken Sie <Eingabe>, um es zu übernehmen.\n"
+"\n"
+"Entfernen Sie Schlagworte mit einem Klick auf das Entfernen-Icon."
 
 # ba62637a8d6d4121aad4beac2df5c3e7
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:186
 msgid "Remove tags with a click on the *Remove* icon."
-msgstr "Entfernen Sie Tags mit einem Klick auf das *Entfernen*-Icon."
+msgstr "Entfernen Sie Schlagworte mit einem Klick auf das *Entfernen*-Icon."
 
 # 0b8c7b4c30e44c7089cc4eccfc8ea215
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:188
 msgid "**Drag & Drop Tags**"
-msgstr "**Drag & Drop von Tags**"
+msgstr "Drag & Drop von Schlagwörtern"
 
 # d425912246e146bb9fea626b75417094
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:190
@@ -362,9 +362,9 @@ msgid ""
 "tasks directly in the list view by simply dragging the tag from the box and "
 "drop it on a task bar."
 msgstr ""
-"Bestehende Tags aus dem Tagfeld links können auch Aufgaben direkt in der "
-"Listenansicht zugeordnet werden, indem Sie einfach das Tag aus dem Feld auf "
-"die Aufgabenleiste ziehen."
+"Bestehende Schlagwörter aus dem Schlagwortfeld links können auch Aufgaben "
+"direkt in der Listenansicht zugeordnet werden, indem Sie einfach das "
+"Schlagwort aus dem Feld auf die Aufgabenleiste ziehen."
 
 # b705241a05f14551ad6e2e5f0ef0af25
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:197
@@ -411,7 +411,7 @@ msgid ""
 "value for a task's completeness. Until a task isn't fully completed, the "
 "percentage is displayed as a think horizontal line in the list view."
 msgstr ""
-"Im :ref:`Aufgabe bearbeiten <tasklist-edit-task>\\`-Abschnitt haben wir gelernt, wie man einen Prozentwert für die Vollständigkeit einer Aufgabe setzt.\n"
+"Im :ref:`Aufgabe bearbeiten <tasklist-edit-task>\\`-Abschnitt haben wir gelernt, wie man einen Prozentwert für die Abgeschlossenheit einer Aufgabe setzt.\n"
 "Bis eine Aufgabe nicht vollständig abgeschlossen ist, wird der Prozentsatz als dicke, horizontale Linie in der Listenansicht angezeigt."
 
 # 62f1b7617517440a9ac6c24d0de7286a
@@ -442,13 +442,13 @@ msgid ""
 "For bigger jobs or entire projects, tasks can be divided into subtasks and "
 "organized hierarchically to visualize dependencies."
 msgstr ""
-"Bei größeren Aufgaben bzw. ganzen Projekten, können Aufgaben in "
-"Unteraufgaben aufgeteilt und hierarchisch organisiert werden."
+"Bei größeren Aufgaben bzw. ganzen Projekten, können Aufgaben in Teilaufgaben"
+" aufgeteilt und hierarchisch organisiert werden."
 
 # 021900140da14dbaa295a3cedc0630b3
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:230
 msgid "Create a Subtask"
-msgstr "Unteraufgabe Erstellen"
+msgstr "Teilaufgabe Erstellen"
 
 # 86c90d528efd4477a31a7b553d101fbe
 # 2f82a6184ac54255b60e99ca26dcb436
@@ -464,14 +464,14 @@ msgstr ""
 # 1df9ca3404ab4d7bbdb5ee40b992eb86
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:237
 msgid "Select *Add subtask*"
-msgstr "Wählen Sie *Unteraufgabe hinzufügen*. "
+msgstr "Wählen Sie *Teilaufgabe hinzufügen*. "
 
 # 293f381a7d1b41a59eede73dcd32973c
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:238
 msgid ""
 "Enter the subtask properties in the :ref:`Edit Dialog <tasklist-edit-task>`"
 msgstr ""
-"Geben Sie die Unteraufgaben-Eigenschaften in den :ref:`Bearbeiten-Dialog "
+"Geben Sie die Teilaufgaben-Eigenschaften in den :ref:`Bearbeiten-Dialog "
 "<tasklist-edit-task>` ein."
 
 # 2e0e491fbc7b4d6ea166fa8eb559d1a2
@@ -492,9 +492,9 @@ msgid ""
 "subtask. This works for entire subtrees equally well. While dragging, a "
 "possible drop target is highlighted when moving over it."
 msgstr ""
-"Die hierarchische Verschachtelung der Aufgaben und Unteraufgaben können "
+"Die hierarchische Verschachtelung der Aufgaben und Teilaufgaben können "
 "jederzeit geändert werden. Ziehen Sie einfach eine Aufgabe mit der Maus auf "
-"eine andere, um sie zu einer Unteraufgabe zu machen. Dies funktioniert "
+"eine andere, um sie zu einer Teilaufgabe zu machen. Dies funktioniert "
 "genauso gut für ganze Unterbäume. Beim Ziehen werden mögliche Ablageziele "
 "hervorgehoben, wenn Sie sie darüberbewegen."
 
@@ -515,8 +515,8 @@ msgid ""
 "particular list."
 msgstr ""
 "Wenn Sie eine Aufgabe auf eine Aufgabenliste im Feld links ablegen, wird sie"
-" (und ihre Unteraufgaben) in diese Liste verschoben, falls Sie Ihre Aufgaben"
-" in verschiedenen Listen organisieren."
+" (und ihre Teilaufgaben) in diese Liste verschoben, falls Sie Ihre Aufgaben "
+"in verschiedenen Listen organisieren."
 
 # 699335a60cfd4c789e1784bb52b6f310
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:261

@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-26 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Max Hellwig <max.hellwig@translating-energy.de>, 2016\n"
+"Last-Translator: Mads <mads@batmads.com>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,9 +30,9 @@ msgid ""
 ":ref:`Tasks <tasklist-tasks>` itself, the :ref:`Tags <taskslist-tags>` and "
 "the :ref:`Tasklist Selector <tasklist-lists>`."
 msgstr ""
-"Der Content-Bereich des Aufgaben-Bildschirms ist in drei Bereiche geteilt: "
-"die :ref:`Aufgaben <tasklist-tasks>\\` selbst, die :ref:`Tags <taskslist-"
-"tags>\\` und der :ref:`Aufgabenlistenwähler <tasklist-lists>\\`."
+"Der Arbeitsbereich des Aufgaben-Bildschirms ist in drei Bereiche geteilt: "
+"die :ref:`Aufgaben <tasklist-tasks>\\` selbst, die :ref:`Schlagworte "
+"<taskslist-tags>\\` und der :ref:`Aufgabenlistenwähler <tasklist-lists>\\`."
 
 # db9a15c65b234df1a86d4ce12714d290
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/overview.rst:100
@@ -46,10 +46,10 @@ msgid ""
 "of active lists, filters and tags. The listed tasks are sorted by due date "
 "(ascending) and completed ones move to the bottom."
 msgstr ""
-"Der Hauptinhalt listet die Aufgabepunkte auf, die zur aktuellen Auswahl von "
-"aktiven Listen, Filtern und Tags passen.  Die aufgelisteten Aufgaben sind "
-"nach Fälligkeitsdatum (aufsteigend) sortiert und die abgeschlossenen werden "
-"ans Ende verschoben."
+"Der Hauptinhalt listet die Aufgabenobjekte auf, die zur aktuellen Auswahl "
+"von aktiven Listen, Filtern und Schlagworten passen.  Die aufgelisteten "
+"Aufgaben sind nach Fälligkeitsdatum (aufsteigend) sortiert und die "
+"abgeschlossenen werden ans Ende verschoben."
 
 # d3951399f671402b9150b61e6b6ec723
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/overview.rst:109
@@ -59,7 +59,7 @@ msgid ""
 "subordinated tasks and expands or collapses the tree upon click."
 msgstr ""
 "Aufgaben können hierarchisch organisiert werden und die Liste wird als "
-"Baumstruktur dargestellt. Ein kleiner Pfeilicon auf der linken Seite einer "
+"Baumstruktur dargestellt. Ein kleiner Pfeil auf der linken Seite einer "
 "Aufgabenleiste zeigt untergeordnete Aufgaben an und klappt den Baum beim "
 "anklicken auf oder zu."
 
@@ -72,8 +72,8 @@ msgid ""
 msgstr ""
 "Einige grundlegende Bearbeitungsmöglichkeiten wie Markieren, Zuweisen von "
 "Fälligkeitsdaten sowie Abschließen von Aufgaben können direkt in der Liste "
-"durch Klicken auf das Kontrollkästchen, Icon oder Datums-Wähler erledigt "
-"werden."
+"durch Klicken auf das Kontrollkästchen, die Markierung oder Datums-Wähler "
+"erledigt werden."
 
 # 369a48ccfe454d53b5ebf24ddbe9f1e6
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/overview.rst:116
@@ -82,8 +82,8 @@ msgid ""
 "box. Hit <Esc> on the keyboard or click the close icon to hide it again."
 msgstr ""
 "Ein einzelner Klick irgendwo sonst auf die Aufgabenleiste zeigt Details in "
-"einem Dialogfeld an. Drücken Sie <Esc> auf der Tastatur oder klicken Sie auf"
-" das Schließen-Icon, um es wieder zu verbergen."
+"einem Dialogfenster an. Drücken Sie <Esc> auf der Tastatur oder klicken Sie "
+"auf das Schließen-Icon, um es wieder zu verbergen."
 
 # 06b678f325aa4771bfa4dd64ce1865a4
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/overview.rst:119
@@ -115,7 +115,7 @@ msgstr ""
 # 8c1b48c05fdb4d7382e9e6da9bf6eb0c
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/overview.rst:134
 msgid "Tags"
-msgstr "Tags"
+msgstr "Schlagworte"
 
 # 2227c5b2779d48c7ae13a1d8a1edb10f
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/overview.rst:136
@@ -125,11 +125,11 @@ msgid ""
 "show all. Hold down the <Shift> key on the the keyboard to select mutliple "
 "tags and further reduce the selection."
 msgstr ""
-"Die Tagliste links ist eine weiter Möglichkeit, eine Auswahl von Aufgaben "
-"darzustellen. Klicken Sie auf ein Tag, um nur Aufgaben, denen dieses Tag "
-"zugeordnet ist, darzustellen. Klicken Sie es erneut an, um alles zu zeigen. "
-"Halten die <Umschalt>-Taste der Tastatur gedrückt, um mehrere Tags "
-"auszuwählen und die Auswahl weiter zu verringern."
+"Die Schlagwortliste links ist eine weiter Möglichkeit, eine Auswahl von "
+"Aufgaben darzustellen. Klicken Sie auf ein Schlagwort, um nur Aufgaben, "
+"denen dieses Schlagwort zugeordnet ist, darzustellen. Klicken Sie es erneut "
+"an, um alles zu zeigen. Halten die <Umschalt>-Taste der Tastatur gedrückt, "
+"um mehrere Schlagworte auszuwählen und die Auswahl weiter zu verringern."
 
 # 3f33d6a530474a5b8de84b81b34988d6
 # fca636b4ab924b9aa9b966a82c529d2a
@@ -169,8 +169,11 @@ msgid ""
 "Enter the search term into the box and press <Enter> on your keyboard to "
 "start the search."
 msgstr ""
-"Über das Suchfeld über der Kalenderansicht bekommen Sie schnell eine Liste mit Terminen, die dem eingegebenen Schlüsselwort entweder im Titel oder dem Beschreibungstext entsprechen.\n"
-"Geben Sie den Suchbegriff in das Feld ein und drücken Sie <Eingabe> auf Ihrer Tastatur, um zu suchen zu beginnen."
+"Über das Suchfeld über der Aufgabenansicht bekommen Sie schnell eine Liste mit Aufgaben, die dem eingegebenen Schlüsselwort entweder im Titel oder dem Beschreibungstext entsprechen. Geben Sie den Suchbegriff in das Feld ein und drücken Sie <Eingabe> auf Ihrer Tastatur, um zu suchen zu beginnen.\n"
+"\n"
+"Nach dem Suchen können Sie immernoch die Filter und Schlagworte wie oben erklärt benutzen, um einige Suchergebnisse zu verbergen.\n"
+"\n"
+"Setzen Sie die Suche durch Klicken auf das Suche zurücksetzen-Icon am rechten Rand des Suchfelds zurück."
 
 # 29edb40176874fc4a8767cdaa2a748f5
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/overview.rst:157
@@ -178,8 +181,8 @@ msgid ""
 "After searching, you can still use the filters and tags as explained above "
 "to hide some results."
 msgstr ""
-"Nach dem Suchen können Sie immernoch die Filter und Tags wie oben erklärt "
-"benutzen, um einige Suchergebnisse zu verbergen."
+"Nach dem Suchen können Sie immernoch die Filter und Schlagworte wie oben "
+"erklärt benutzen, um einige Suchergebnisse zu verbergen."
 
 # 9e0c4d33746547519321a5213c6b1b24
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/overview.rst:159
@@ -287,7 +290,8 @@ msgid ""
 "deleted. Caution: This action cannot be undone!"
 msgstr ""
 "Nach einem Bestätigungsdialog wird die ausgewählte Liste mit allen Ihren "
-"Aufgaben gelöscht. "
+"Aufgaben gelöscht. Achtung: Diese Aktion kann nicht rückgängig gemacht "
+"werden."
 
 # 0e5161fad032416bb3b7a9130ca968e6
 #: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/overview.rst:96
