@@ -81,7 +81,9 @@ The following **listeners** are configured by default:
                             },
                             {
                                 tls_config, [
-                                    { certfile, "/etc/pki/tls/private/localhost.pem" }
+                                    { certfile, "/etc/pki/tls/private/localhost.pem" },
+                                    { cacertfile, "/etc/pki/tls/private/localhost.ca.pem" },
+                                    { keyfile, "/etc/pki/tls/private/localhost.key" }
                                 ]
                             }
                         ]
@@ -98,7 +100,9 @@ The following **listeners** are configured by default:
                             },
                             {
                                 tls_config, [
-                                    { certfile, "/etc/pki/tls/private/localhost.pem" }
+                                    { certfile, "/etc/pki/tls/private/localhost.pem" },
+                                    { cacertfile, "/etc/pki/tls/private/localhost.ca.pem" },
+                                    { keyfile, "/etc/pki/tls/private/localhost.key" }
                                 ]
                             }
                         ]
