@@ -83,6 +83,10 @@ helpdocs: submodules
 			plugin=$$(basename $$(dirname $${docs})) ; \
 			cp -av $${docs}/en_US/ $${plugin} ; \
 		done
+	sed -i \
+		-e 's/|previewtoggle| //g' \
+		-e 's/|button-extwin| //g' \
+		source/webmail-user-guide/roundcubemail/mail/mailview.rst
 
 locales: gettext helplocales
 
