@@ -63,6 +63,7 @@ Upgrade Procedure
 
             # :command:`rpm -qv cyrus-imapd`
 
+#.  Drop the ``policy_result`` table from MySQL.
 
 
 Updating the Configuration
