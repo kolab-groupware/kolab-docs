@@ -4,9 +4,14 @@
 Installation of Kolab 16 on CentOS 7
 ====================================
 
-The installation of Kolab Groupware on CentOS installs
-a number of additional packages, from the :term:`EPEL` software
-repository.
+.. WARNING::
+
+    This document sets you up with the version of Kolab that is maintained by
+    the community. Customers of `Kolab Systems AG`_ join us
+    :ref:`here <installation-guide-centos-7-enterprise-16>`.
+
+The installation of Kolab Groupware on CentOS installs a number of additional
+packages, from the :term:`EPEL` software repository.
 
 Installation Procedure
 ======================
