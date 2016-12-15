@@ -8,11 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab Documentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-07 13:58+0200\n"
+"POT-Creation-Date: 2016-12-15 08:38+0100\n"
 "PO-Revision-Date: 2014-11-28 00:34+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (France) (http://www.transifex.com/projects/p/kolab-"
-"documentation/language/fr_FR/)\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p"
+"/kolab-documentation/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,26 +23,35 @@ msgid "Glossary"
 msgstr ""
 
 #: ../../source/glossary.rst:93
-msgid "alias domainalias domain name spacealias domain name spaces"
+msgid "alias domain"
+msgstr ""
+
+#: ../../source/glossary.rst:94
+msgid "alias domain name space"
+msgstr ""
+
+#: ../../source/glossary.rst:95
+msgid "alias domain name spaces"
 msgstr ""
 
 #: ../../source/glossary.rst:98
 msgid ""
 "The intended use of an alias domain name space is to be a largely "
-"transparent alias domain for users or recipients whom would otherwise have "
-"an email address in the :term:`parent domain name space` as well. In other "
-"words, what is a valid local part used with an ``@example.org`` (the parent "
-"domain name space) email address is also considered a valid local part when "
-"used with an ``@example.net`` (the alias domain name space) email address, "
-"for both sending and receiving email messages, and vice-versa."
+"transparent alias domain for users or recipients whom would otherwise "
+"have an email address in the :term:`parent domain name space` as well. In"
+" other words, what is a valid local part used with an ``@example.org`` "
+"(the parent domain name space) email address is also considered a valid "
+"local part when used with an ``@example.net`` (the alias domain name "
+"space) email address, for both sending and receiving email messages, and "
+"vice-versa."
 msgstr ""
 
 #: ../../source/glossary.rst:107
 msgid ""
-"Whether or not an alias domain name space is actually as transparent depends "
-"on the configuration of the :term:`result attribute`, and subsequently, "
-"therefore, also the :term:`primary email address` of individual recipient "
-"entries."
+"Whether or not an alias domain name space is actually as transparent "
+"depends on the configuration of the :term:`result attribute`, and "
+"subsequently, therefore, also the :term:`primary email address` of "
+"individual recipient entries."
 msgstr ""
 
 #: ../../source/glossary.rst:114 ../../source/glossary.rst:275
@@ -67,22 +76,21 @@ msgid "authorization realm"
 msgstr ""
 
 #: ../../source/glossary.rst:123
-msgid ""
-"The authorization realm is the target user authorization ID's namespace."
+msgid "The authorization realm is the target user authorization ID's namespace."
 msgstr ""
 
 #: ../../source/glossary.rst:125
 msgid ""
 "When, for example, a user *John Doe* logs in with username ``doe`` (the "
-"\"authentication ID\"), the original authorization realm (as specified in "
-"the original username) is ``null``."
+"\"authentication ID\"), the original authorization realm (as specified in"
+" the original username) is ``null``."
 msgstr ""
 
 #: ../../source/glossary.rst:129
 msgid ""
-"After user login name :term:`canonification` -- a process to translate an "
-"authentication ID in to an authorization ID -- the resulting authorization "
-"ID may have become ``john.doe@example.org``."
+"After user login name :term:`canonification` -- a process to translate an"
+" authentication ID in to an authorization ID -- the resulting "
+"authorization ID may have become ``john.doe@example.org``."
 msgstr ""
 
 #: ../../source/glossary.rst:133
@@ -94,17 +102,17 @@ msgstr ""
 
 #: ../../source/glossary.rst:137
 msgid ""
-"Continuing our example user, the authorization ID having become ``john."
-"doe@example.org`` will result in the session using ``user/john.doe@example."
-"org`` as the INBOX."
+"Continuing our example user, the authorization ID having become "
+"``john.doe@example.org`` will result in the session using "
+"``user/john.doe@example.org`` as the INBOX."
 msgstr ""
 
 #: ../../source/glossary.rst:141
 msgid ""
 "The **authorization realm** at this point is one of ``example.org``. The "
 "user will not be able to access any mailboxes outside this authorization "
-"realm, meaning the user will be unable to access any mailboxes for which the "
-"mailbox path does not end in ``@example.org``."
+"realm, meaning the user will be unable to access any mailboxes for which "
+"the mailbox path does not end in ``@example.org``."
 msgstr ""
 
 #: ../../source/glossary.rst:145
@@ -119,34 +127,42 @@ msgstr ""
 
 #: ../../source/glossary.rst:152
 msgid ""
-"Suppose, for example, a user *John Doe <doe@example.org>* has a :term:"
-"`primary email address` of *doe@example.org*, and a user ID of *doe*. "
-"Suppose therefore his mailbox is ``user/doe@example.org``, and his "
-"authorization ID is ``doe@example.org``."
+"Suppose, for example, a user *John Doe <doe@example.org>* has a "
+":term:`primary email address` of *doe@example.org*, and a user ID of "
+"*doe*. Suppose therefore his mailbox is ``user/doe@example.org``, and his"
+" authorization ID is ``doe@example.org``."
 msgstr ""
 
 #: ../../source/glossary.rst:158
 msgid ""
-"When John logs in however, he may also use one of his secondary recipient "
-"addresses, such as *john.doe@example.org* or *jdoe@example.org*."
+"When John logs in however, he may also use one of his secondary recipient"
+" addresses, such as *john.doe@example.org* or *jdoe@example.org*."
 msgstr ""
 
 #: ../../source/glossary.rst:162
 msgid ""
-"This login username needs to be translated to ``doe@example.org`` in order "
-"to obtain the correct INBOX, and allow applications to consistently retrieve "
-"profiles with user preferences."
+"This login username needs to be translated to ``doe@example.org`` in "
+"order to obtain the correct INBOX, and allow applications to consistently"
+" retrieve profiles with user preferences."
 msgstr ""
 
 #: ../../source/glossary.rst:166
-msgid "child domainchild domain name spacechild domain name spaces"
+msgid "child domain"
+msgstr ""
+
+#: ../../source/glossary.rst:167
+msgid "child domain name space"
+msgstr ""
+
+#: ../../source/glossary.rst:168
+msgid "child domain name spaces"
 msgstr ""
 
 #: ../../source/glossary.rst:171
 msgid ""
-"A child domain name space is very similar to an alias domain name space, in "
-"that a child domain name space is **exactly the same**, but for one aspect: "
-"Hosted Kolab Groupware."
+"A child domain name space is very similar to an alias domain name space, "
+"in that a child domain name space is **exactly the same**, but for one "
+"aspect: Hosted Kolab Groupware."
 msgstr ""
 
 #: ../../source/glossary.rst:175
@@ -158,18 +174,18 @@ msgstr ""
 
 #: ../../source/glossary.rst:179
 msgid ""
-"In hosted environments, however, any :term:`alias domain name spaces` needs "
-"to be verified the ownership of (just like for the parent domain name "
-"space), before the alias domain name space is activated."
+"In hosted environments, however, any :term:`alias domain name spaces` "
+"needs to be verified the ownership of (just like for the parent domain "
+"name space), before the alias domain name space is activated."
 msgstr ""
 
 #: ../../source/glossary.rst:183
 msgid ""
 "When using the LDAP attribute of ``inetDomainStatus`` to track the "
-"confirmation and activation status of ``domainRelatedObject`` entries, alias "
-"domain name spaces need to be stored in entirely different LDAP entries "
-"altogether, and are solely therefore referred to as **child domain name "
-"spaces**."
+"confirmation and activation status of ``domainRelatedObject`` entries, "
+"alias domain name spaces need to be stored in entirely different LDAP "
+"entries altogether, and are solely therefore referred to as **child "
+"domain name spaces**."
 msgstr ""
 
 #: ../../source/glossary.rst:191 ../../source/glossary.rst:274
@@ -182,9 +198,10 @@ msgstr ""
 
 #: ../../source/glossary.rst:196
 msgid ""
-"`Discretionary access control`_ is a type of access control where a subject "
-"with certain permissions on a particular resource is at liberty to control "
-"the level of access any other subject have to the given resource."
+"`Discretionary access control`_ is a type of access control where a "
+"subject with certain permissions on a particular resource is at liberty "
+"to control the level of access any other subject have to the given "
+"resource."
 msgstr ""
 
 #: ../../source/glossary.rst:203
@@ -192,19 +209,27 @@ msgid ":term:`mandatory access control`"
 msgstr ""
 
 #: ../../source/glossary.rst:204
-msgid "disk volumedisk volumes"
+msgid "disk volume"
+msgstr ""
+
+#: ../../source/glossary.rst:205
+msgid "disk volumes"
 msgstr ""
 
 #: ../../source/glossary.rst:208
 msgid ""
-"A disk volume is an entity that \"can contain a filesystem\". This may be a "
-"complete disk, a set of disks, a disk partition, a logical volume, a copy-on-"
-"write snapshot, a disk image (file), a fiber-channel or iSCSI LUN, or any "
-"other such volume."
+"A disk volume is an entity that \"can contain a filesystem\". This may be"
+" a complete disk, a set of disks, a disk partition, a logical volume, a "
+"copy-on-write snapshot, a disk image (file), a fiber-channel or iSCSI "
+"LUN, or any other such volume."
 msgstr ""
 
 #: ../../source/glossary.rst:212
-msgid "DNdistinguished name"
+msgid "DN"
+msgstr ""
+
+#: ../../source/glossary.rst:213
+msgid "distinguished name"
 msgstr ""
 
 #: ../../source/glossary.rst:216
@@ -232,14 +257,18 @@ msgid "The ``domain_filter`` (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:229
-msgid "domain name spacedomain name spaces"
+msgid "domain name space"
+msgstr ""
+
+#: ../../source/glossary.rst:230
+msgid "domain name spaces"
 msgstr ""
 
 #: ../../source/glossary.rst:233
 msgid ""
 "A domain name space is, among other things, the qualification of a "
-"recipient's local-part. It is the domain name appended to the local part of "
-"an email address, the two of them divided by an '@' character (sender "
+"recipient's local-part. It is the domain name appended to the local part "
+"of an email address, the two of them divided by an '@' character (sender "
 "specified routing notwithstanding)."
 msgstr ""
 
@@ -247,53 +276,55 @@ msgstr ""
 msgid ""
 "Without domain name spaces, user 'john' would only ever know about user "
 "'jane' if -- pardon my French to those in the know -- if both 'john' and "
-"'jane' considered eachother local. In other words, if both 'john' and 'jane' "
-"used the same physical *system environment*. As you may be aware, the "
-"Internet is composed of a quite a few thousands of such system environments."
+"'jane' considered eachother local. In other words, if both 'john' and "
+"'jane' used the same physical *system environment*. As you may be aware, "
+"the Internet is composed of a quite a few thousands of such system "
+"environments."
 msgstr ""
 
 #: ../../source/glossary.rst:245
 msgid ""
-"What *qualifies* users 'john' and 'jane' to all other users on the Internet "
-"is a *name space*. The name space must be globally unique (literally "
-"\"globally\" -- but technically speaking more like \"universally unique\")."
+"What *qualifies* users 'john' and 'jane' to all other users on the "
+"Internet is a *name space*. The name space must be globally unique "
+"(literally \"globally\" -- but technically speaking more like "
+"\"universally unique\")."
 msgstr ""
 
 #: ../../source/glossary.rst:250
 msgid ""
-"The only name spaces available to Internet registrars and therefore service "
-"providers and therefore users, are called *domains* -- they are composed of "
-"a *top-level domain (name space)* such as .org and .com, and a name that a "
-"service provider would allow you to register with the Internet registrar (a "
-"NIC) - each domain is therefore at least one but possible more *domain name "
-"spaces*."
+"The only name spaces available to Internet registrars and therefore "
+"service providers and therefore users, are called *domains* -- they are "
+"composed of a *top-level domain (name space)* such as .org and .com, and "
+"a name that a service provider would allow you to register with the "
+"Internet registrar (a NIC) - each domain is therefore at least one but "
+"possible more *domain name spaces*."
 msgstr ""
 
 #: ../../source/glossary.rst:257
 msgid ""
-"To further illustrate, you require an Internet registrar to obtain your own "
-"*domain name* -- unless you are an Internet registrar yourself, of course, "
-"though you still need one, but it just so happens you are one."
+"To further illustrate, you require an Internet registrar to obtain your "
+"own *domain name* -- unless you are an Internet registrar yourself, of "
+"course, though you still need one, but it just so happens you are one."
 msgstr ""
 
 #: ../../source/glossary.rst:261
 msgid ""
-"Once you have registered a domain name (and, contrary to popular belief, you "
-"don't actually own it, ever) nothing prevents you from creating additional "
-"domain name spaces within the name space of that domain."
+"Once you have registered a domain name (and, contrary to popular belief, "
+"you don't actually own it, ever) nothing prevents you from creating "
+"additional domain name spaces within the name space of that domain."
 msgstr ""
 
 #: ../../source/glossary.rst:265
 msgid ""
-"You could, for example, register ``example.org``, and create a domain name "
-"space of ``customer1.example.org`` and/or ``family2.example.org``."
+"You could, for example, register ``example.org``, and create a domain "
+"name space of ``customer1.example.org`` and/or ``family2.example.org``."
 msgstr ""
 
 #: ../../source/glossary.rst:268
 msgid ""
-"In fact, every :term:`fully qualified domain name` is a domain name space in "
-"and of its own -- but it identifies on the individual system level as "
-"opposed to the environment level."
+"In fact, every :term:`fully qualified domain name` is a domain name space"
+" in and of its own -- but it identifies on the individual system level as"
+" opposed to the environment level."
 msgstr ""
 
 #: ../../source/glossary.rst:277
@@ -328,14 +359,14 @@ msgstr ""
 
 #: ../../source/glossary.rst:292
 msgid ""
-"The domain name attribute is the name of the attribute that holds the parent "
-"domain name space in LDAP."
+"The domain name attribute is the name of the attribute that holds the "
+"parent domain name space in LDAP."
 msgstr ""
 
 #: ../../source/glossary.rst:295
 msgid ""
-"By default, the domain name attribute is ``associateddomain``, for an object "
-"with object class ``domainrelatedobject``."
+"By default, the domain name attribute is ``associateddomain``, for an "
+"object with object class ``domainrelatedobject``."
 msgstr ""
 
 #: ../../source/glossary.rst:298
@@ -368,17 +399,17 @@ msgstr ""
 
 #: ../../source/glossary.rst:328
 msgid ""
-"The domain result attribute is used to allow the specification of a custom :"
-"term:`root dn` for the Directory Information Tree hierarchy associated with "
-"the domain name space."
+"The domain result attribute is used to allow the specification of a "
+"custom :term:`root dn` for the Directory Information Tree hierarchy "
+"associated with the domain name space."
 msgstr ""
 
 #: ../../source/glossary.rst:332
 msgid ""
-"In a default Kolab Groupware installation, when a domain of ``example.org`` "
-"is added to the environment, a standard translation routine is applied to "
-"the domain name space to define the associated Directory Information Tree "
-"hierarchy root, the :term:`root dn`."
+"In a default Kolab Groupware installation, when a domain of "
+"``example.org`` is added to the environment, a standard translation "
+"routine is applied to the domain name space to define the associated "
+"Directory Information Tree hierarchy root, the :term:`root dn`."
 msgstr ""
 
 #: ../../source/glossary.rst:337
@@ -388,9 +419,9 @@ msgstr ""
 #: ../../source/glossary.rst:339
 msgid ""
 "Existing environments may already have LDAP available to their systems, "
-"which does not necessarily have a standard root dn for the domain. As such, "
-"an existing :term:`root dn` for domain ``example.org`` may have a dn of "
-"``o=example,c=de``."
+"which does not necessarily have a standard root dn for the domain. As "
+"such, an existing :term:`root dn` for domain ``example.org`` may have a "
+"dn of ``o=example,c=de``."
 msgstr ""
 
 #: ../../source/glossary.rst:352
@@ -399,8 +430,8 @@ msgstr ""
 
 #: ../../source/glossary.rst:355
 msgid ""
-"The domain scope is the level of depth the searches for domain name spaces "
-"uses, and is one of ``base``, ``one`` or ``sub``."
+"The domain scope is the level of depth the searches for domain name "
+"spaces uses, and is one of ``base``, ``one`` or ``sub``."
 msgstr ""
 
 #: ../../source/glossary.rst:357
@@ -416,8 +447,8 @@ msgstr ""
 #: ../../source/glossary.rst:363
 msgid ""
 "It contains packages that are supplementary to a base RHEL subscription "
-"including the *optional* software repository, such as **amavisd-new** and "
-"**clamav**."
+"including the *optional* software repository, such as **amavisd-new** and"
+" **clamav**."
 msgstr ""
 
 #: ../../source/glossary.rst:366
@@ -434,9 +465,9 @@ msgstr ""
 
 #: ../../source/glossary.rst:373
 msgid ""
-"An external email address is intended to be additional user information, and "
-"another means of contacting the user, not unlike a street and postal code "
-"may be additional, personal information for the user."
+"An external email address is intended to be additional user information, "
+"and another means of contacting the user, not unlike a street and postal "
+"code may be additional, personal information for the user."
 msgstr ""
 
 #: ../../source/glossary.rst:379
@@ -472,21 +503,27 @@ msgid ":term:`external email address`"
 msgstr ""
 
 #: ../../source/glossary.rst:393
-msgid "FQDNfully qualified domain name"
+msgid "FQDN"
+msgstr ""
+
+#: ../../source/glossary.rst:394
+msgid "fully qualified domain name"
 msgstr ""
 
 #: ../../source/glossary.rst:397
 msgid ""
 "A Fully Qualified Domain Name is intended to refer to a single node (or "
 "\"operating system instance\", if you will) whether it be traditionally "
-"physical or virtual, in a manner that is globally (\"universally\") unique."
+"physical or virtual, in a manner that is globally (\"universally\") "
+"unique."
 msgstr ""
 
 #: ../../source/glossary.rst:402
 msgid ""
 "As such, it SHOULD be composed of at least three (3) name space segments "
-"divided by a dot (.) character -- exluding the implicit top-level dot (.), "
-"even if a domain (system environment) is comprised of a single system."
+"divided by a dot (.) character -- exluding the implicit top-level dot "
+"(.), even if a domain (system environment) is comprised of a single "
+"system."
 msgstr ""
 
 #: ../../source/glossary.rst:409
@@ -499,15 +536,15 @@ msgstr ""
 
 #: ../../source/glossary.rst:413
 msgid ""
-"A Made-to-Measure solution is designed to be altered and adjusted to better "
-"fit one's needs."
+"A Made-to-Measure solution is designed to be altered and adjusted to "
+"better fit one's needs."
 msgstr ""
 
 #: ../../source/glossary.rst:416
 msgid ""
-"This is in contrast with so-called Commercial-Off-the-Shelf solutions, which "
-"allow for too little modification in the solution itself, or none at all, "
-"and require one's needs to be flexible."
+"This is in contrast with so-called Commercial-Off-the-Shelf solutions, "
+"which allow for too little modification in the solution itself, or none "
+"at all, and require one's needs to be flexible."
 msgstr ""
 
 #: ../../source/glossary.rst:419
@@ -516,11 +553,11 @@ msgstr ""
 
 #: ../../source/glossary.rst:422
 msgid ""
-"A management domain is is a domain name space, usually also the :term:"
-"`primary domain name space` that is reserved for managers of a multi-domain "
-"deployment. Such managers may include support staff, who could use these "
-"LDAP credentials to log in to other services and servers (provided a POSIX "
-"account)."
+"A management domain is is a domain name space, usually also the "
+":term:`primary domain name space` that is reserved for managers of a "
+"multi-domain deployment. Such managers may include support staff, who "
+"could use these LDAP credentials to log in to other services and servers "
+"(provided a POSIX account)."
 msgstr ""
 
 #: ../../source/glossary.rst:427
@@ -545,12 +582,16 @@ msgstr ""
 
 #: ../../source/glossary.rst:442
 msgid ""
-"Mean time between Failure -- a statistical determination of the time between "
-"failures."
+"Mean time between Failure -- a statistical determination of the time "
+"between failures."
 msgstr ""
 
 #: ../../source/glossary.rst:444
-msgid "msaMail Submission Agent"
+msgid "msa"
+msgstr ""
+
+#: ../../source/glossary.rst:445
+msgid "Mail Submission Agent"
 msgstr ""
 
 #: ../../source/glossary.rst:448
@@ -558,7 +599,11 @@ msgid "The Mail Submission Agent (*MSA*) (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:449
-msgid "mtaMail Transfer Agent"
+msgid "mta"
+msgstr ""
+
+#: ../../source/glossary.rst:450
+msgid "Mail Transfer Agent"
 msgstr ""
 
 #: ../../source/glossary.rst:453
@@ -566,7 +611,11 @@ msgid "The Mail Transfer Agent (*MTA*) (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:454
-msgid "muaMail User Agent"
+msgid "mua"
+msgstr ""
+
+#: ../../source/glossary.rst:455
+msgid "Mail User Agent"
 msgstr ""
 
 #: ../../source/glossary.rst:458
@@ -579,9 +628,9 @@ msgstr ""
 
 #: ../../source/glossary.rst:462
 msgid ""
-"``mydestination`` is a setting in Postfix, commonly used to refer to a list "
-"of :term:`domain name spaces` that the local :term:`MTA` is considered the "
-"final destination for."
+"``mydestination`` is a setting in Postfix, commonly used to refer to a "
+"list of :term:`domain name spaces` that the local :term:`MTA` is "
+"considered the final destination for."
 msgstr ""
 
 #: ../../source/glossary.rst:465
@@ -597,30 +646,42 @@ msgid ":term:`payload disks`"
 msgstr ""
 
 #: ../../source/glossary.rst:473
-msgid "parent domainparent domain name spaceparent domain name spaces"
+msgid "parent domain"
+msgstr ""
+
+#: ../../source/glossary.rst:474
+msgid "parent domain name space"
+msgstr ""
+
+#: ../../source/glossary.rst:475
+msgid "parent domain name spaces"
 msgstr ""
 
 #: ../../source/glossary.rst:478
 msgid ""
 "A parent domain, or parent domain name space, is a domain entity that "
 "corresponds to an isolated directory tree. A parent domain may have "
-"additional aliases, all of which will need to resolve back to the directory "
-"tree associated with the parent domain."
+"additional aliases, all of which will need to resolve back to the "
+"directory tree associated with the parent domain."
 msgstr ""
 
 #: ../../source/glossary.rst:483
 msgid ""
-"Kolab components such as the Kolab daemon, the Kolab SMTP Access Policy and "
-"the Kolab Web Administration Panel (or actually, its API) make sure that the "
-"primary email address (which becomes the :term:`authorization realm` when "
-"the default :term:`result attribute` configuration value of ``mail`` is "
-"maintained) is within the domain name spaces associated with the parent "
-"domain (i.e. an :term:`alias domain name space` or :term:`child domain name "
-"space`)."
+"Kolab components such as the Kolab daemon, the Kolab SMTP Access Policy "
+"and the Kolab Web Administration Panel (or actually, its API) make sure "
+"that the primary email address (which becomes the :term:`authorization "
+"realm` when the default :term:`result attribute` configuration value of "
+"``mail`` is maintained) is within the domain name spaces associated with "
+"the parent domain (i.e. an :term:`alias domain name space` or "
+":term:`child domain name space`)."
 msgstr ""
 
 #: ../../source/glossary.rst:490
-msgid "partitionpartitions"
+msgid "partition"
+msgstr ""
+
+#: ../../source/glossary.rst:491
+msgid "partitions"
 msgstr ""
 
 #: ../../source/glossary.rst:494
@@ -632,14 +693,13 @@ msgid "pattern"
 msgstr ""
 
 #: ../../source/glossary.rst:498
-msgid ""
-"A pattern for mailboxes can be specified using ``%`` and ``*`` wildcards."
+msgid "A pattern for mailboxes can be specified using ``%`` and ``*`` wildcards."
 msgstr ""
 
 #: ../../source/glossary.rst:501
 msgid ""
-"The ``%`` wildcard matches mailboxes on a single level only, while the ``*`` "
-"wildcard matches mailboxes in all depth levels."
+"The ``%`` wildcard matches mailboxes on a single level only, while the "
+"``*`` wildcard matches mailboxes in all depth levels."
 msgstr ""
 
 #: ../../source/glossary.rst:504
@@ -672,25 +732,29 @@ msgstr ""
 
 #: ../../source/glossary.rst:526
 msgid ""
-"A policy enforcement point is a point in an environment or infrastructure, "
-"that allows a policy to be enforced."
+"A policy enforcement point is a point in an environment or "
+"infrastructure, that allows a policy to be enforced."
 msgstr ""
 
 #: ../../source/glossary.rst:529
 msgid ""
 "Such points include a patch-point (including virtualized networking), a "
-"communication boundary (gateway, firewall, sending node, receiving "
-"node, ...), and more."
+"communication boundary (gateway, firewall, sending node, receiving node, "
+"...), and more."
 msgstr ""
 
 #: ../../source/glossary.rst:532
-msgid "primary domainprimary domain name space"
+msgid "primary domain"
+msgstr ""
+
+#: ../../source/glossary.rst:533
+msgid "primary domain name space"
 msgstr ""
 
 #: ../../source/glossary.rst:536
 msgid ""
-"A primary domain is the first :term:`parent domain name space` you set up "
-"when you first install Kolab Groupware."
+"A primary domain is the first :term:`parent domain name space` you set up"
+" when you first install Kolab Groupware."
 msgstr ""
 
 #: ../../source/glossary.rst:539
@@ -716,7 +780,11 @@ msgid "A primary hosted domain is (...)"
 msgstr ""
 
 #: ../../source/glossary.rst:556
-msgid "recipient email addressrecipient email addresses"
+msgid "recipient email address"
+msgstr ""
+
+#: ../../source/glossary.rst:557
+msgid "recipient email addresses"
 msgstr ""
 
 #: ../../source/glossary.rst:560
@@ -753,9 +821,9 @@ msgstr ""
 
 #: ../../source/glossary.rst:581
 msgid ""
-"The result attribute is the name of the target attribute to use the value "
-"of, when translating a login username to the appropriate value (a process "
-"called :term:`canonification`)."
+"The result attribute is the name of the target attribute to use the value"
+" of, when translating a login username to the appropriate value (a "
+"process called :term:`canonification`)."
 msgstr ""
 
 #: ../../source/glossary.rst:587
@@ -774,9 +842,9 @@ msgstr ""
 
 #: ../../source/glossary.rst:594
 msgid ""
-"It is commonly associated with LDAP databases, in that all entries contained "
-"within one root dn are in databases that are separate from the databases "
-"used for another root dn."
+"It is commonly associated with LDAP databases, in that all entries "
+"contained within one root dn are in databases that are separate from the "
+"databases used for another root dn."
 msgstr ""
 
 #: ../../source/glossary.rst:597
@@ -786,8 +854,8 @@ msgstr ""
 #: ../../source/glossary.rst:600
 msgid ""
 "A sealed system is a system where the users have access to the services "
-"offered by the system, but not the system itself. In other words, a Kolab "
-"Groupware user cannot normally login to a shell on the system and start "
+"offered by the system, but not the system itself. In other words, a Kolab"
+" Groupware user cannot normally login to a shell on the system and start "
 "poking around."
 msgstr ""
 
@@ -807,9 +875,10 @@ msgstr ""
 
 #: ../../source/glossary.rst:612
 msgid ""
-"An LDAP search is executed against a scope, such as *base* for the :term:"
-"`search base dn` entry itself only, *one* for all entries one level below "
-"the :term:`search base dn` only, if any, and *sub* for the entire hierarchy."
+"An LDAP search is executed against a scope, such as *base* for the "
+":term:`search base dn` entry itself only, *one* for all entries one level"
+" below the :term:`search base dn` only, if any, and *sub* for the entire "
+"hierarchy."
 msgstr ""
 
 #: ../../source/glossary.rst:616
@@ -818,9 +887,9 @@ msgstr ""
 
 #: ../../source/glossary.rst:619
 msgid ""
-"A secondary email address is a recipient email address associated with an "
-"object, such as a user or a distribution group, but it is not the :term:"
-"`primary email address`."
+"A secondary email address is a recipient email address associated with an"
+" object, such as a user or a distribution group, but it is not the "
+":term:`primary email address`."
 msgstr ""
 
 #: ../../source/glossary.rst:628
@@ -852,8 +921,49 @@ msgstr ""
 #: ../../source/glossary.rst:643
 msgid ""
 "A user logs in to the Web Administration Panel with an initial login "
-"username of ``john.doe@example.org``, but may have privileges to edit users "
-"in another parent domain name space such as ``company.com``. John would "
-"issue a ``system.select_domain`` and his session would then be associated "
-"with the ``company.com`` domain -- now his :term:`working domain`."
+"username of ``john.doe@example.org``, but may have privileges to edit "
+"users in another parent domain name space such as ``company.com``. John "
+"would issue a ``system.select_domain`` and his session would then be "
+"associated with the ``company.com`` domain -- now his :term:`working "
+"domain`."
 msgstr ""
+
+#~ msgid "alias domainalias domain name spacealias domain name spaces"
+#~ msgstr ""
+
+#~ msgid "child domainchild domain name spacechild domain name spaces"
+#~ msgstr ""
+
+#~ msgid "disk volumedisk volumes"
+#~ msgstr ""
+
+#~ msgid "DNdistinguished name"
+#~ msgstr ""
+
+#~ msgid "domain name spacedomain name spaces"
+#~ msgstr ""
+
+#~ msgid "FQDNfully qualified domain name"
+#~ msgstr ""
+
+#~ msgid "msaMail Submission Agent"
+#~ msgstr ""
+
+#~ msgid "mtaMail Transfer Agent"
+#~ msgstr ""
+
+#~ msgid "muaMail User Agent"
+#~ msgstr ""
+
+#~ msgid "parent domainparent domain name spaceparent domain name spaces"
+#~ msgstr ""
+
+#~ msgid "partitionpartitions"
+#~ msgstr ""
+
+#~ msgid "primary domainprimary domain name space"
+#~ msgstr ""
+
+#~ msgid "recipient email addressrecipient email addresses"
+#~ msgstr ""
+

@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2016, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-15 08:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/howtos/exchange-freebusy-information.rst:90
+msgid "HOWTO: Exchange Free/Busy Information between Kolab and Microsoft Exchange"
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:92
+msgid ""
+"This HOWTO is useful for deployment scenarios that meet the following "
+"specifications:"
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:95
+msgid ""
+"Kolab Groupware users are Contacts in Microsoft Active Directory, and "
+"Microsoft Exchange users are Contacts in Kolab Groupware (LDAP)."
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:98
+msgid ""
+"The domain name space(s) used between the two environments overlap and "
+"share at least one domain name space among all users."
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:101
+msgid "Internet Calendar Publishing is enabled for Microsoft Exchange users."
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:103
+msgid "The global search path for Contact's Free/Busy information is set to:"
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:110
+msgid "Configuring Microsoft Exchange"
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:114
+msgid ""
+"In Microsoft Exchange, it is the client that publishes its Free/Busy "
+"information. No rule or configuration can be applied to let the server "
+"automatically update the Free/Busy information of Microsoft Exchange "
+"users (on the basis of their then current calendar contents), therefore "
+"possibly, at times, rendering a misrepresentation of a user's "
+"availability information."
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:123
+msgid ""
+"While it is commonly referred to as a requirement, and perhaps "
+"recommended, the configuration of an external URL on the Outlook Web "
+"Access Virtual Directory is not strictly required **for Kolab**, so long "
+"as the Kolab server can use the internal URL."
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:128
+msgid "Enable Calendaring Publishing on the CAS servers:"
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:134
+msgid ""
+"Set a Sharing Policy for the domain to **Anonymous** and the \"action(s) "
+"that apply to the entered federated domain\" to: \"Calendar Sharing with "
+"free/busy information only\"."
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:139
+msgid "Configuring Kolab Free/Busy"
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:141
+msgid ""
+"Create a service user account for Kolab to use to bind to the Microsoft "
+"Active Directory LDAP service, in the Microsoft Active Directory. This "
+"account should be awarded sufficient privileges to search for and find "
+"all object entries for Microsoft Exchange user accounts."
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:146
+msgid ""
+"Edit :file:`/etc/kolab-freebusy/config.ini`, and add a directory "
+"definition for Microsoft Exchange."
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:149
+msgid ""
+"Depending on the version of Exchange, and the ability to publish "
+"Free/Busy information to anonymous users, or only authenticated users, "
+"and the level of interoperability entertained by your Exchange "
+"deployment, one of the following directory examples may work for you:"
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:154
+msgid "**With ICS Free/Busy Publishing:**"
+msgstr ""
+
+#: ../../source/howtos/exchange-freebusy-information.rst:168
+msgid "**With proprietary Exchange format XML publishing:**"
+msgstr ""
+
