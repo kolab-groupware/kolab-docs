@@ -417,8 +417,8 @@ rst_prolog += """
 .. |K16| replace:: :orange:`Kolab 16`
 .. |KE14| replace:: :orange:`Kolab Enterprise 14`
 .. |KE13| replace:: :orange:`Kolab Enterprise 13`
-.. |ReleaseProduction| replace:: :orange:`Kolab 16`
-.. |ReleaseCurrent| replace:: :orange:`Kolab 16`
+.. |ReleaseProduction| replace:: :orange:`Kolab 16.1`
+.. |ReleaseCurrent| replace:: :orange:`Kolab 16.1`
 """
 
 #
