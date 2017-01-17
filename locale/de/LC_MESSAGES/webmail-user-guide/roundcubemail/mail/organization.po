@@ -1,29 +1,26 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2010-2016, Kolab Systems AG
 # This file is distributed under the same license as the Kolab package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab 16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 15:15+0200\n"
+"POT-Creation-Date: 2017-01-17 17:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Mads <mads@batmads.com>, 2016\n"
 "Language-Team: German (https://www.transifex.com/kolab/teams/13240/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.3.4\n"
 
-# 4d32c136fb70488e9615f5b0833392f8
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:93
 msgid "Organizing your Email Messages"
 msgstr "Organisieren Ihrer E-Mail-Nachrichten"
 
-# 2ebc95fe321e42d9b3e98724b9abc5ef
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:95
 msgid ""
 "The :ref:`folder list <mail-folders>` in the email view lists all folder "
@@ -33,87 +30,78 @@ msgid ""
 msgstr ""
 "Die :ref:`Ordnerliste <mail-folders>` in der E-Mail-Ansicht listet alle "
 "Ordner auf, die benutzt werden können, um E-Mails provisorisch bzw. "
-"dauerhaft abzulegen. Sie können die Ordner im :ref:`Einstellungen-Abschnitt "
-"<settings-folders>` verwalten und die Hierarchie des Ordnerbaums frei "
-"wählen."
+"dauerhaft abzulegen. Sie können die Ordner im :ref:`Einstellungen-"
+"Abschnitt <settings-folders>` verwalten und die Hierarchie des "
+"Ordnerbaums frei wählen."
 
-# 0653510be79d4ea8ba2c5d27c760ffd8
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:103
 msgid "Special System Folders"
 msgstr "Besondere Systemordner"
 
-# ade9918c8a394f7ab28e10df4b627eeb
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:105
 msgid ""
 "Some of the folders have a special meaning and are used by the system to "
-"place messages in. These special folders are indicated with an individual "
-"icon in the list and usually cannot be deleted or renamed."
+"place messages in. These special folders are indicated with an individual"
+" icon in the list and usually cannot be deleted or renamed."
 msgstr ""
-"Einige Ordner haben besondere Bedeutung und werden vom System genutzt, um Nachrichten abzulegen.\n"
-"Diese Spezialordner werden mit individuellen Icons in der Liste angezeigt und können normalerweise nicht gelöscht oder umbenannt werden."
+"Einige Ordner haben besondere Bedeutung und werden vom System genutzt, um"
+" Nachrichten abzulegen.\n"
+"Diese Spezialordner werden mit individuellen Icons in der Liste angezeigt"
+" und können normalerweise nicht gelöscht oder umbenannt werden."
 
-# 846ae965957242b2912c8ac9d364cb89
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:109
 msgid "**Inbox**"
 msgstr "**Posteingang**"
 
-# 919d611995734c4bb19b21a981114654
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:109
 msgid "This is where new messages arrive."
 msgstr "Neue Nachrichten kommen hier an."
 
-# a4c56e13034048b89a4fc979b1f062b4
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:113
 msgid "**Drafts**"
 msgstr "**Entwürfe**"
 
-# c0224a1e349c4c0994329aedab97eef2
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:112
 msgid ""
-"When :ref:`composing messages <mail-compose>` you can save them temporarily "
-"as draft. Such messages are stored in this folder an can be picked up for "
-"editing here."
+"When :ref:`composing messages <mail-compose>` you can save them "
+"temporarily as draft. Such messages are stored in this folder an can be "
+"picked up for editing here."
 msgstr ""
 "Wenn Sie :ref:`Nachrichten verfassen <mail-compose>` können Sie sie "
 "vorübergehend als Entwurf speichern. Solche Nachrichten werden in diesem "
 "Ordner gespeichert und können hier zum Bearbeiten aufgegriffen werden."
 
-# f788df51981a4eb7b58fe01e0b1112f2
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:117
 msgid "**Sent**"
 msgstr "**Gesendet**"
 
-# 64d098c9852b45038b585b226d8026cb
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:116
 msgid ""
-"Unless configured otherwise, a copy of each message you compose and send to "
-"others will be saved to this folder."
+"Unless configured otherwise, a copy of each message you compose and send "
+"to others will be saved to this folder."
 msgstr ""
 "Wenn nicht anders eingestellt, wird eine Kopie jeder Nachricht, die Sie "
 "verfassen und versenden, in diesem Ordner gespeichert."
 
-# be954384b13b429db72bfb3ff4ce41a9
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:122
 msgid "**Trash**"
 msgstr "**Gelöscht**"
 
-# a3048fc9d5884f27bd01fc8801cd918b
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:120
 msgid ""
 "When you delete a message it is moved to this folder and not deleted "
-"immediately. Depending on the email server's settings, trashed messages will"
-" automatically be removed from this folder after a certain time. You can "
-"also empty the trash folder manually with the *Empty* command from the "
-":ref:`Folder actions menu <mail-folders>`."
+"immediately. Depending on the email server's settings, trashed messages "
+"will automatically be removed from this folder after a certain time. You "
+"can also empty the trash folder manually with the *Empty* command from "
+"the :ref:`Folder actions menu <mail-folders>`."
 msgstr ""
-"Wenn Sie eine Nachricht löschen, wird sie in diesen Ordner verschoben und "
-"nicht sofort gelöscht. Je nach den Einstellungen des E-Mail-Servers, werden "
-"Nachrichten automatisch nach einer bestimmten Zeit aus diesem Ordner "
-"entfernt. Sie können den Gelöscht Ordner auch manuell mit dem "
+"Wenn Sie eine Nachricht löschen, wird sie in diesen Ordner verschoben und"
+" nicht sofort gelöscht. Je nach den Einstellungen des E-Mail-Servers, "
+"werden Nachrichten automatisch nach einer bestimmten Zeit aus diesem "
+"Ordner entfernt. Sie können den Gelöscht Ordner auch manuell mit dem "
 "*Leeren*-Befehl aus dem :ref:`Ordner-Tätigkeiten-Menü <mail-folders>` "
 "leeren."
 
-# 42a3ad34aacb4b8f94410c2b841be817
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:124
 msgid ""
 "The assignment of special folders can be changed in :ref:`Preferences > "
@@ -122,129 +110,123 @@ msgstr ""
 "Die Zuordnung von Spezialordnern kann unter :ref:`Voreinstellungen > "
 "Spezialordner <settings-prefs-folders>` geändert werden."
 
-# 6bdc1d48f61b416f8261add47d832474
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:131
 msgid "How to Move Messages to Folders"
 msgstr "Wie man Nachrichten in Ordner verschiebt"
 
-# 6d4c12b6c2244944b1309eafcacbde30
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:133
 msgid ""
-"Filing messages to specific folders is as simple as dragging a message from "
-"the list with the mouse and dropping it on the folder you want it moved to. "
-"That also works with :ref:`multiple messages selected <mail-list-select>`."
+"Filing messages to specific folders is as simple as dragging a message "
+"from the list with the mouse and dropping it on the folder you want it "
+"moved to. That also works with :ref:`multiple messages selected <mail-"
+"list-select>`."
 msgstr ""
 "Um Nachrichten in einen bestimmten Ordner abzulegen, ziehen Sie die "
-"Nachricht einfach mit der Maus von der Liste auf den Ordner, in den Sie sie "
-"verschieben wollen. Das funktioniert auch wenn :ref:`mehrere Nachrichten "
-"ausgewählt <mail-list-select>` sind."
+"Nachricht einfach mit der Maus von der Liste auf den Ordner, in den Sie "
+"sie verschieben wollen. Das funktioniert auch wenn :ref:`mehrere "
+"Nachrichten ausgewählt <mail-list-select>` sind."
 
-# 341e9bbea5384fa5b7752add26ae8518
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:136
 msgid ""
-"If the target folder is a subfolder and not currently visible, just hold the"
-" mouse over the parent folder while dragging and it'll expand automatically "
-"after two seconds. Move the mouse (while dragging) over the folder list "
-"footer to let it scroll until the target folder moves into sight."
+"If the target folder is a subfolder and not currently visible, just hold "
+"the mouse over the parent folder while dragging and it'll expand "
+"automatically after two seconds. Move the mouse (while dragging) over the"
+" folder list footer to let it scroll until the target folder moves into "
+"sight."
 msgstr ""
-"Wenn der Zielordner ein Unterordner ist und derzeit nicht sichtbar, halten Sie einfach die Maus auf den übergeordneten Ordner während Sie die Datei ziehen und nach zwei Sekunden erweitert er sich automatisch.\n"
-"Bewegen Sie die Maus (beim Ziehen) über die Ordnerlisten-Fußzeile, damit diese scrollt bis der Zielordner in Sicht ist."
+"Wenn der Zielordner ein Unterordner ist und derzeit nicht sichtbar, "
+"halten Sie einfach die Maus auf den übergeordneten Ordner während Sie die"
+" Datei ziehen und nach zwei Sekunden erweitert er sich automatisch.\n"
+"Bewegen Sie die Maus (beim Ziehen) über die Ordnerlisten-Fußzeile, damit "
+"diese scrollt bis der Zielordner in Sicht ist."
 
-# f854b9bb55434ffcb254185b07cdc3aa
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:141
 msgid "Copy instead of moving"
 msgstr "Kopieren statt Verschieben"
 
-# 171b87a7a110492784506ede0ed1c6a2
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:143
 msgid ""
-"There's also the possibility to copy a message into another folder instead "
-"of moving it there. Holding down the Shift key on the keyboard while "
-"dropping one or multiple messages on the destination folder will open a menu"
-" where you can choose to either *Move* or *Copy* them."
+"There's also the possibility to copy a message into another folder "
+"instead of moving it there. Holding down the Shift key on the keyboard "
+"while dropping one or multiple messages on the destination folder will "
+"open a menu where you can choose to either *Move* or *Copy* them."
 msgstr ""
 "Es gibt auch die Möglichkeit, eine Nachricht in einen anderen Ordner zu "
-"kopieren statt sie dorthin zu verschieben. Wenn Sie die Umschalttaste der "
-"Tastatur beim Ziehen einer oder mehrerer Nachrichten in den Zielordner "
-"gedrückt halten, öffnet sich ein Menü, in dem Sie wählen können, ob Sie die "
-"Dateien entweder *Verschieben* oder *Kopieren* wollen."
+"kopieren statt sie dorthin zu verschieben. Wenn Sie die Umschalttaste der"
+" Tastatur beim Ziehen einer oder mehrerer Nachrichten in den Zielordner "
+"gedrückt halten, öffnet sich ein Menü, in dem Sie wählen können, ob Sie "
+"die Dateien entweder *Verschieben* oder *Kopieren* wollen."
 
-# b4ef2b33921143b284a8c419ec1dfffe
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:148
 msgid "Moving from the Message View Screen"
 msgstr "Vom Nachrichtenansicht-Bildschirm aus verschieben"
 
-# 1e03781c9d1f4966b5d21a51e361cccd
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:150
 msgid ""
-"When reading a message in the full message view screen, you'll find a drop-"
-"down menu labelled *Move to...* in the toolbar on top. Select a folder from "
-"that menu and the message will be moved there. The message view screen will "
-"then load the next message in the list of the current folder."
+"When reading a message in the full message view screen, you'll find a "
+"drop-down menu labelled *Move to...* in the toolbar on top. Select a "
+"folder from that menu and the message will be moved there. The message "
+"view screen will then load the next message in the list of the current "
+"folder."
 msgstr ""
-"Wenn Sie eine Nachricht im Nachrichten-Vollansichts-Bildschirm lesen, sehen "
-"Sie ein Dropdownmenü namens *Verschieben nach...* in der Werkzeugleiste "
-"oben. Wählen Sie einen Ordner aus diesem Menü und die Nachricht wird dorthin"
-" verschoben werden. Der Nachrichtenansicht-Bildschirm lädt dann die nächste "
-"Nachricht in der Liste des aktuellen Ordners."
+"Wenn Sie eine Nachricht im Nachrichten-Vollansichts-Bildschirm lesen, "
+"sehen Sie ein Dropdownmenü namens *Verschieben nach...* in der "
+"Werkzeugleiste oben. Wählen Sie einen Ordner aus diesem Menü und die "
+"Nachricht wird dorthin verschoben werden. Der Nachrichtenansicht-"
+"Bildschirm lädt dann die nächste Nachricht in der Liste des aktuellen "
+"Ordners."
 
-# 6a011d89ba03460eb887137c08daaa71
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:176
 msgid "Delete Messages"
 msgstr "Nachrichten löschen"
 
-# be6740d56e9241ed93dcdb11e9b21751
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:178
 msgid ""
-"The selected message(s) can be deleted from the current folder by clicking "
-"the *Delete* icon in the toolbar or by hitting the <Del> (or Backspace on "
-"Mac) key on your keybaord. This will by default move the message to the "
-"Trash folder and not delete it right away unless you do this for messages in"
-" the Trash folder. In order to immediately delete the message in first "
-"place, hold down the Shift key on your keyboard while clicking the *Delete* "
-"button or when pressing <Del>."
+"The selected message(s) can be deleted from the current folder by "
+"clicking the *Delete* icon in the toolbar or by hitting the <Del> (or "
+"Backspace on Mac) key on your keybaord. This will by default move the "
+"message to the Trash folder and not delete it right away unless you do "
+"this for messages in the Trash folder. In order to immediately delete the"
+" message in first place, hold down the Shift key on your keyboard while "
+"clicking the *Delete* button or when pressing <Del>."
 msgstr ""
-"Die ausgewählten Nachrichten können aus dem aktuellen Ordner durch Anklicken"
-" des *Löschen*-Icons in der Werkzeugleiste oder durch Drücken der "
-"<Entf>-Taste (bzw. der Rücksetztaste beim Mac) auf Ihrer Tastatur gelöscht "
-"werden. Dies wird standardmäßig die Nachricht in den Gelöscht Ordner "
-"verschieben und sie nicht sofort löschen, es sei denn, Sie machen das für "
-"Nachrichten im Gelöscht Ordner. Um die Nachricht sofort zu löschen, halten "
-"Sie die Umschalttaste auf Ihrer Tastatur beim Anklicken der "
-"*Löschen*-Schaltfläche bzw. beim Drücken von <Entf> gedrückt."
+"Die ausgewählten Nachrichten können aus dem aktuellen Ordner durch "
+"Anklicken des *Löschen*-Icons in der Werkzeugleiste oder durch Drücken "
+"der <Entf>-Taste (bzw. der Rücksetztaste beim Mac) auf Ihrer Tastatur "
+"gelöscht werden. Dies wird standardmäßig die Nachricht in den Gelöscht "
+"Ordner verschieben und sie nicht sofort löschen, es sei denn, Sie machen "
+"das für Nachrichten im Gelöscht Ordner. Um die Nachricht sofort zu "
+"löschen, halten Sie die Umschalttaste auf Ihrer Tastatur beim Anklicken "
+"der *Löschen*-Schaltfläche bzw. beim Drücken von <Entf> gedrückt."
 
-# bc3bcadb133b4d298633d1c69764abbf
 #: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:184
 msgid ""
 "There's a preference in :ref:`Settings > Preferences > Server Settings "
-"<settings-prefs-server>` where the default behavior of message deletion can "
-"be changed."
+"<settings-prefs-server>` where the default behavior of message deletion "
+"can be changed."
 msgstr ""
-"Es gibt unter :ref:`Einstellungen > Voreinstellungen > Server-Einstellungen "
-"<settings-prefs-server>` eine Voreinstellung, wo das standardmäßige "
-"Verhalten beim Löschen von Nachrichten geändert werden kann."
+"Es gibt unter :ref:`Einstellungen > Voreinstellungen > Server-"
+"Einstellungen <settings-prefs-server>` eine Voreinstellung, wo das "
+"standardmäßige Verhalten beim Löschen von Nachrichten geändert werden "
+"kann."
 
 # 1a65731243d14bb289f17061a62617ba
-#: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:88
-msgid "Folders"
-msgstr "Ordner"
+#~ msgid "Folders"
+#~ msgstr "Ordner"
 
 # 0b72df91bf9d4931ab8fe90d5cf8f318
-#: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:127
-msgid "Move"
-msgstr "Verschieben"
+#~ msgid "Move"
+#~ msgstr "Verschieben"
 
 # 0b72df91bf9d4931ab8fe90d5cf8f318
-#: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:127
-msgid "Copy"
-msgstr "Kopieren"
+#~ msgid "Copy"
+#~ msgstr "Kopieren"
 
 # 0b72df91bf9d4931ab8fe90d5cf8f318
-#: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:127
-msgid "Drag & Drop"
-msgstr "Drag & Drop"
+#~ msgid "Drag & Drop"
+#~ msgstr "Drag & Drop"
 
 # 634ffa3661da43cdafd0b9e691c719b9
-#: ../../source/webmail-user-guide/roundcubemail/mail/organization.rst:173
-msgid "Delete Message"
-msgstr "Nachrichten löschen"
+#~ msgid "Delete Message"
+#~ msgstr "Nachrichten löschen"
+
