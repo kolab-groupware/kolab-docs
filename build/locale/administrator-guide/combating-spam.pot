@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/combating-spam.rst:89
+msgid "Combating Spam"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:91
+msgid "Kolab Groupware includes SpamAssassin, a fast, well-established anti-spam solution with a large community of supporters contributing not only to the code, but to rulesets as well."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:95
+msgid "Combating spam is always a tricky situation. On the organizational level, a strategy has to be formulated to combat spam in order to achieve the maximum flexibility and effectiveness for individual users, separate organizations, and the deployment as a whole."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:100
+msgid "A common deployment is to define deployment-wide user preferences and to use a single, deployment-wide set of rules for SpamAssassin to operate with -including Bayes database(s)."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:104
+msgid "The problems start when individual users mark legitimate email as spam, most notably the company newsletter or correspondation they have opted in some time ago, but wish to no longer receive. Users tend to ignore the long-term effects of marking these message as spam, if at all they are aware of any, and just want such messages out of their way."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:110
+msgid "Common examples of the sort of messages that are often marked as spam while being legitimate traffic include:"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:113
+msgid "Newsletters, where users, rather then unsubscribe, mark legitimate messages as spam,"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:116
+msgid "Notifications from social networks such as from Google+, Facebook, Twitter, etc., where users, rather then adjust their notification preferences, mark legitimate messages as spam,"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:120
+msgid "Notifications from forums and/or services,"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:122
+msgid "If enough users mark these messages as spam, the system will start to recognize these messages as spam, and other users may be prevented from receiving the same or similar messages in their INBOX."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:126
+msgid "Amavis, the default content filter performing anti-virus and anti-spam, wraps around SpamAssassin to achieve this flexibility."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:129
+msgid "Separate Bayes database(s) can be created on a per-recipient and per-policy-bank SpamAssassin configuration files and SQL Bayes usernames."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:132
+msgid "Without over-complicating things, a common scenario sufficiently serving the anti-spam effort, includes the following aspects;"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:135
+msgid "A shared/Spam folder is created, with permissions for all users to lookup, read, and insert messages. It is the intention users move or copy messages they think are spam into this folder."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:141
+msgid "Note that, optionally, the permissions for users to maintain the 'seen' state of messages could not be granted, which in combination with sharedseen could provide a mechanism that would allow users to view which messages have been learned as spam in the past."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:147
+msgid "Learning About New Spam"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:149
+msgid "Optionally, find all folders named \"Spam\" or \"Junk\"::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:156
+msgid "SpamAssassin will not learn about messages it has learned about before. There's no requirement of purging or deleting the messages that SpamAssassin has learned about already, and purging or deleting those messages only helps to speed up the learning process run."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:163
+msgid "Do **NOT** delete the messages from the filesystem directly. Please refer to Section 6.6, “Expiring Messages from Spam/Ham (Shared) Folders” for ways to purge, expire and/or delete messages from spam folders in a sustainable way."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:169
+msgid "Preseeding the Bayes Database"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:171
+msgid "As Bayes is only effective after it has learned about 200 messages, it is recommended to preseed the Bayes database with some high-quality ham and spam. Preseeding the Bayes database with some ham, and some spam, is done using the SpamAssassin Public Corpus. The public corpus consists of many messages qualified as ham and spam, collected from a variety of sources."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:177
+msgid "The SpamAssassin Public Corpus can be found at http://spamassassin.apache.org/publiccorpus/."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:180
+msgid "Preseeding the Bayes Database using SpamAssassin Public Corpus"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:182
+msgid "Obtain the ham and spam archives::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:188
+msgid "Extract the archives::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:192
+msgid "For all files in the ham directories, learn those messages as ham::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:196
+msgid "For all files in the spam directories, learn those messages as spam::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:201
+msgid "Trapping Massive Amounts of Spam"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:203
+msgid "To learn about spam quickly, allow the Cyrus IMAP postuser to post into a shared folder that will be included in the regular sa-learn run."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:207
+msgid "Setting a Trap for Spam"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:209
+msgid "Set up the Cyrus IMAP postuser, using the postuser setting in **imapd.conf(5)**."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:212
+msgid "If, for example, the postuser is set to *bb* (short for bulletin-board?), the mail to bb+shared/blah@example.org will be delivered to the shared/blah@example.org folder."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:218
+msgid "Take into account the use of unixhierarchysep in imapd.conf(5). If it is not enabled, the recipient address should be bb+shared.blah@example.org for the folder shared.blah@example.org."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:222
+msgid "Create a shared folder such as shared/Spam@example.org"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:224
+msgid "Set permissions::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:228
+msgid "Submit / subscribe to known spam aggregators (search Google for 'free email offers')"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:231
+msgid "Optionally, set the luser_relay option in Postfix, to trap all messages sent to non-existent recipients."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:235
+msgid "Tweaking Bayes' Scores"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:237
+msgid "Bayes\\' score is dependent on the probability Bayes attaches of a message being spam. The rules used to match a message's probability of being spam are systematically prefixed with ``BAYES_``, followed by the percentage of likelihood of the message being spam."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:242
+msgid "Because there is rarely a 100% certainty of a message being spam, the highest percentage is 99%. By default, the configuration attaches a 3.5 score to this probability. Depending on the configuration value for $sa_tag2_level_deflt supplied in the Amavis configuration file, 6.31 by default, it is unlikely spam will reach the cut-off point of actually being marked as spam solely on the basis of Bayes' probability score."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:249
+msgid "It is therefor recommended to increase the score attached to messages with a 99% probability of being spam to at least 6.308, if not simply 6.31. Using 6.308, you configure spam to be tagged not solely on the basis of Bayes' 99% probability score, but request that in addition the message is recognized to be in HTML (and HTML only), and perhaps uses a big font –or similar patterns with a very small 0.01 score."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:256
+msgid "Some spam has been submitted through systems listed at http://dnswl.org, a collaborative false positive protection mechanism, a default score of 1 is substracted from the total score. If this spam reaches you, consider increasing the score on BAYES_99 with another one point."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:262
+msgid "Adjusting the Score for BAYES_99"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:264
+msgid "Edit /etc/mail/spamassassin/local.cf, and make sure the following line is present"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:271
+msgid "Reload or restart the amavisd-new service::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:276
+msgid "Learning about Ham"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:278
+msgid "It is important to not just learn about spam, but learn about ham, legitimate email messages, as well. When not learning about ham, the anti-spam system will become heavily biased towards spam, and ultimately classify all email messages as such."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:283
+msgid "Learning about ham follows a slightly different doctrine then learning about spam. Most importantly, ham is not to be posted to a shared folder that everyone else can read the contents from. It is most commonly a \"Not Junk\" or \"Ham\" folder in one's personal namespace users are instructed to copy or move messages to, that have been classified as spam but are actually ham."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:289
+msgid "It is recommended users are both instructed to use ham folders, as well as create them by default —regardless whether they are called \"Ham\" or \"Not Junk\" or equivalent localized version of such."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:293
+msgid "Alternatively, you could learn about ham from people's INBOX folders."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:296
+msgid "Expiring Messages from Spam/Ham (Shared) Folders"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:298
+msgid "When you share folders to which users can move or copy ham and/or spam messages, it is sensible to purge the contents of those folders regularly, or the folder size continues to increase indefinitely. Run the expiry after sa-learn has been run."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:305
+msgid "Running ipurge to purge mail folder messages occurs independent from setting expunge_mode, and independent from the expire annotation as well."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:308
+msgid "Using the expire annotation is sufficient to purge the contents of the folder, as, with or without the expunge_mode setting having been set to delayed, rather then immediate, the Bayes database will only be updated with messages Bayes has not learned about before."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:313
+msgid "To purge the contents of a mailfolder, run ipurge::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:320
+msgid "Updating the Spam Rules"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:322
+msgid "As part of the SpamAssasin package, a utility is provided to update the rulesets from channels configured."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:325
+msgid "For systems on which either of the SpamAssassin daemon or Amavis daemon is running, the software packages automatically install a nightly cronjob to ensure the rules are updated frequently."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:329
+msgid "The spam rulesets are updated using the sa-update command, supplying one or more --channel options specifying the names of the ruleset channels to update, and (optionally) one or more --gpgkey options specifying the Pretty Good Privacy keys to allow signatures on the rulesets to have been signed with."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:334
+msgid "The cronjob that is installed by default, executes sa-update for all channels defined in ``/etc/mail/spamassassin/channels.d/`` with one file per channel."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:338
+msgid "Bayes SQL Database for Distributed Systems"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:340
+msgid "If more then one system needs to make use of the Bayes database, consider using a network SQL Bayes database."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:344
+msgid "Setting Up the Bayes Database"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:346
+msgid "Create the database:"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:352
+msgid "Create a user and grant the appropriate privileges::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:357
+msgid "Reload the privileges:"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:363
+msgid "Download the latest Bayes Database SQL schema file from bayes_mysql.sql (when using MySQL):"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:370
+msgid "Insert this schema into the database::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:375
+msgid "Migrating Existing Bayes Database(s)"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:377
+msgid "First, export any existing Bayes databases, run the following command (on each server with a Bayes database)::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:382
+msgid "A recommended step, but completely optional, is to expire the current copy of the database::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:387
+msgid "Modify /etc/mail/spamassassin/local.cf to contain the following settings::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:395
+msgid "Import the exported Bayes database(s)::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:400
+msgid "Ensuring Availability of Messages' Spam Score"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:402
+msgid "For the purpose of troubleshooting, or in deployments with clients that have spam filtering capabilities, it is sensible to always insert the spam headers into email messages, both to avoid clients scanning the message again, as well as troubleshooting why mail may or may not have been filtered."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:407
+msgid "To always insert the spam score into the message headers, find the line in /etc/amavisd/amavisd.conf that starts with $sa_tag_level_deflt and replace it with::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:413
+msgid "While the score is available from the log files should the level of logging verbosity have been increased, in some scenarios it is necessary to include the spam score regardless of the traffic being inbound or outbound. An example is a mail gateway for an unknown number of, or regularly changing, or dynamic, or large list of domain name spaces with both inbound and outbound traffic, which needs to be protected senders as well as receivers from spam."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:420
+msgid "Normally only inbound traffic is tagged –if at all–, by recognizing the recipient domain name space as local. The setting @local_domains or, in later versions of Amavis, @local_domains_acl is used."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:424
+msgid "In a default Kolab Groupware installation, the recipients are looked up in LDAP, and if an entry is found, Amavisd will also classify the domain as local – regardless of any @local_domains and/or @local_domains_acl setting."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:429
+msgid "Adding Spam Headers to All Messages"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:431
+msgid "To recognize all domain name spaces as local, edit /etc/amavisd/amavisd.conf and make sure the following settings are not configured::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:438
+msgid "Ensure that the following setting is configured like so::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:442
+msgid "Also disable the LDAP lookups, by removing the following settings::"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:448
+msgid "Default Amavisd Behaviour"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:450
+msgid "The default behaviour shown in a Kolab Groupware deployment depends on the default settings that come with the packages delivered mostly through native, distribution-specific software repositories. This chapter documents various aspects of the behaviour Kolab Groupware will show referring to the appropriate settings that will allow a system administrator to modify the behaviour."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:457
+msgid "Adding Spam Information Headers"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:458
+msgid "Amavisd, by default, adds spam information headers only to messages that;"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:460
+msgid "Are intended for delivery to local recipients,"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:461
+msgid "Get a spam score over 2.0 from SpamAssassin."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:462
+msgid "The related setting is $sa_tag_level_deflt in /etc/amavisd/amavisd.conf."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:465
+msgid "Spam Kill Level"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:466
+msgid "The spam kill level controls which score spam must have been marked with before Amavisd considers the message to not be delivered to the intended recipient(s)."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:469
+msgid "Depending on your platform, the default for this score is 6.31 or 6.9. When a message is marked with a spam score higher than or equal to this level, Amavisd will take \"evasive action\". See :ref:`admin_combat-spam_amavis-evasive-action` for more information on configuring evasive actions."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:477
+msgid "Configuring Amavis Evasive Action"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:479
+msgid "You can control what \"evasive action\" Amavisd takes using the **$final_spam_destiny** and **$final_virus_destiny** settings in ``/etc/amavisd/amavisd.conf``. The default is usually to discard the message, but the following options are available:"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:484
+msgid "D_PASS"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:486
+msgid "The message is accepted for delivery to the intended recipient(s), despite having been scored passed the kill or cutoff level, and regardless of bad content."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:490
+#: ../../source/administrator-guide/combating-spam.rst:500
+#: ../../source/administrator-guide/combating-spam.rst:510
+#: ../../source/administrator-guide/combating-spam.rst:521
+msgid "If a quarantine address has been configured, the quarantine address will receive a copy of the email. See Configuring Quarantine to learn how to configure the quarantine address."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:494
+msgid "D_BOUNCE"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:496
+msgid "The message is not accepted for delivery to the intended recipient(s). A Delivery Status Notification stating delivery failure is sent out to the sender."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:504
+msgid "D_REJECT"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:506
+msgid "The message is rejected by Amavisd, and while Amavisd sends out a 550 SMTP response to the Mail Transfer Agent, said Mail Transfer Agent is responsible for sending out the Delivery Status Notification, if any."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:514
+msgid "D_DISCARD"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:516
+msgid "The message is simply discarded by Amavisd. The sending Mail Transfer Agent will receive a positive SMTP delivery response, and Amavisd sends out no Delivery Status Notification, nor does it forward the message for delivery to the intended recipients."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:526
+msgid "Configuring Quarantine"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:528
+msgid "Two separate quarantine forwarding addresses can be configured. One is for messages labeled as spam, another for messages suspected to contain a virus."
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:531
+msgid "A catchall address for spam can be configured by setting the **$spam_quarantine_to** setting to a valid recipient address in ``/etc/amavisd/amavisd.conf``"
+msgstr ""
+
+#: ../../source/administrator-guide/combating-spam.rst:535
+msgid "A catchall address for messages suspected of containing a virus can be configured by setting the **$virus_quarantine_to** setting to a valid recipient address in ``/etc/amavisd/amavisd.conf``."
+msgstr ""
+

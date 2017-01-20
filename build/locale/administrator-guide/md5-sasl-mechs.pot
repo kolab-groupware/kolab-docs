@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:90
+msgid "The CRAM-MD5 and DIGEST-MD5 SASL Authentication Mechanisms"
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:92
+msgid "These two credential exchange mechanisms depend on the tip of the iceberg being a shared secret, that both parties have available to them in plaintext, prior to the actual exchange of credentials."
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:96
+msgid "Starting at such tip, the mechanisms basically describe a methodology for the server and the client to each end up with an iceberg of the same dimensions, so that it can be compared, and matched."
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:100
+msgid "The principle of storing a shared secret at any one location -- let alone at multiple individual, stand-alone locations -- that also harbors the attack surface of a service is a virtual no-go. Storing the shared secret in plaintext is one type of offence, and storing the shared secret in a reverse-cryptable fashion is another type of offence."
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:106
+msgid "However, some networks may have, in the past, some long time ago, consciously or otherwise, decided that running a PKI was just slightly too inconvenient, and perhaps unprotected traffic would therefore need not exchange any user's credentials in humanly legible form. Enter secrecy for the wire, but obscurity for the client and the server both."
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:114
+msgid "It MUST be very clear by now, such CAN NOT sustain an environment with the continued support of Kolab."
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:117
+msgid "If it is not yet all that clear though, please feel free to contact your friendly consultant at Kolab Systems AG."
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:120
+msgid "To migrate such environments, one might enable CRAM-MD5 and/or DIGEST-MD5 authentication credential exchange mechanisms. The assumption is that either you use :file:`/etc/sasldb2` and have the means to synchronize password changes over however many systems, or that you already use a plugin allowing you to centralize the storage so it can be reached by multiple systems, over the network. Re-apply whichever logic to your Kolab servers, and you should be fine and live happily ever after -- you get rid of plain text copies of users' passwords on your servers."
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:129
+msgid "In :file:`/etc/imapd.conf`, ensure the following is set:"
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:135
+msgid "Add to :file:`/etc/imapd.conf`, if it doesn't already exist:"
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:141
+msgid "Ensure (albeit contrary to the aforementioned advice) you have the **cyrus-sasl-md5** package installed:"
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:147
+msgid "Entertain Postfix with a similar set of configuration items in :file:`/etc/sasl2/smtpd.conf`:"
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:155
+msgid "Restart services as you deem appropriate."
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:157
+msgid "Now you can test the functionality as follows:"
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:163
+msgid "Add this user with a different password, to the local sasldb:"
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:169
+msgid "And run again:"
+msgstr ""
+
+#: ../../source/administrator-guide/md5-sasl-mechs.rst:175
+msgid "Also run:"
+msgstr ""
+

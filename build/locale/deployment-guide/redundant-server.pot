@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/deployment-guide/redundant-server.rst:92
+msgid "Kolab Deployment on Redundant Servers"
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:94
+msgid "This deployment provides high-availability to a Kolab Groupware deployment through redundancy of its underlying storage."
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:97
+msgid "Please see either of the following sections for details on their semantics:"
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:100
+msgid ":ref:`deployment-redundant-drbd`"
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:101
+msgid ":ref:`deployment-redundant-shared-storage`"
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:102
+msgid ":ref:`deployment-redundant-glusterfs`"
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:107
+msgid "Using DRBD"
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:109
+msgid "When used solely for redundancy, `DRBD`_ replicates the disk of a single node to another node, implying the replica master is the active server, while the slave remains passive. That is to say, that the replica master **can**, while the replica slave **can not** access the data on the replicated volume."
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:140
+msgid "In this scenario, the master is the active server running all Kolab servers, while the slave is completely passive (it cannot write to the disk being replicated). A failover would ensure the master is not running any longer, and start the services on the slave -- which therefore becomes the master."
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:146
+msgid "In a more complex scenario, two separate volumes could be replicated in an cross-link scenario, allowing the resources of both nodes to be used in parallel, establishing a limited form of load-balancing."
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:184
+msgid "Using DRBD in a so-called *dual-primary* mode requires the use of a *shared filesystem* such as *Global File System* (GFS, not to be confused with GlusterFS)."
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:188
+msgid "Designing, installing, configuring and maintaining a DRBD cluster is beyond the scope of this document, and not commonly a solution the Kolab community supports."
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:192
+msgid "For more assistence, please consider contacting a local IT solutions provider, `Kolab Systems AG`_ or any its `Certified Partners`_."
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:198
+msgid "Using Shared Storage"
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:200
+msgid "Shared storage is usually external to node(s),"
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:203
+msgid "SAN"
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:206
+msgid "NAS"
+msgstr ""
+
+#: ../../source/deployment-guide/redundant-server.rst:211
+msgid "Using GlusterFS"
+msgstr ""
+

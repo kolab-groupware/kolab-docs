@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:91
+msgid "Managing Tasks"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:93
+msgid "All the described functions to manage your tasks are accessible from the main task view."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:97
+msgid "Create new Tasks"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:103
+msgid "**The New Task Dialog**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:100
+msgid "Click the *New task* button in the toolbar to get an empty dialog where you enter the tasks properties like title, description, start/due dates and reminder settings."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:103
+msgid "Click *Save* to finally add it to the selected task list."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:112
+msgid "**Quick Entry**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:106
+msgid "The text box in the centre of the toolbar area lets you add new tasks very fast by simply entering a title and then press <Enter> on the keyboard. Tasks will be created in the currently selected list."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:110
+msgid "Begin the quick entry with a date or time description like \"Tomorrow\" or \"Monday at 16:00\" to directly assign a due date to the task."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:117
+msgid "Edit Tasks"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:120
+msgid "The Edit Dialog"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:122
+msgid "When clicking a task item in list a dialog showing its details is displayed. Clicking the Edit button in that dialog opens the form to edit all properties of the selected task."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:125
+msgid "The edit form is divided into different section which can be switched using the tabs on top of the dialog:"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:127
+msgid "**Summary**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:129
+msgid "This general section has text fields and selectors for various properties. Here’s a description of all the possible values:"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:131
+msgid "``Title``: The title of the task. This is what you will see in the list."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:132
+msgid "``Description``: Any text that describes the task. Links and email addresses will be become clickable."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:133
+msgid "``Tags``: A list of tags assigned to this task. Add one by typing to the text box and hit <Enter>."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:134
+msgid "``Start``: The date/time, the task is supposed to be worked on."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:135
+msgid "``Due``: The date/time this job is due. Define a time when setting a reminder for this task."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:136
+msgid "``Reminder``: Will pop up with a notification at a the specified time before the task is due. It is possible to select 'Message' (default) or 'Sound'. When 'Sound' is selected, a sound will be played at the selected time. This setting requires the host to be able to play sounds."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:137
+msgid "``Complete``: The completeness state of a task in percent. Use the slider or enter a number."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:138
+msgid "``Tasklist``: The list the task is saved in. Change it to move an event from one list to another."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:140
+msgid "**Recurrence**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:142
+msgid "For periodically recurring task series, this tab has the settings how a task is repeated over time."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:145
+msgid "``Repeat``: Start with selecting a repetition interval (e.g. monthly)"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:146
+msgid "``Every``: How often the frequency will be relevant. For example, for a task that takes place every other week choose Weekly and then 2."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:147
+msgid "If you choose a frequency of weekly or monthly you can select which days of the week or month the task will occur. * ``Until``: Determines the duration of the repetition. The recurrence can either run forever, for a number of times or until a specific date."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:150
+msgid "**Assignments**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:152
+msgid "One, or a list of, users can be assigned to the task. The list is managed in this tab."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:154
+msgid "``Organizer``: The user organizing (creating) the task. This is set to the default identity of the logged in user, but a diferent identity for this user can be selected."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:155
+msgid "``Add Assignee``: Type three letters of the username, and the search box will show a dropdown list of relevant users. Then clieck the 'Add Assignee' button."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:156
+msgid "``Invitation/notification comment``: When a user is assigned to a task, an email notification is sent out. This field is giving the opportunity to add extra text to this mail notification."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:158
+msgid "**Attachments**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:160
+msgid "Sometimes a description text isn't enough to collect information for a specific task. Switch to this tab to attach files to the current task or to remove them again. Adding files works pretty much the same as :ref:`attaching them to email messages <mail-compose-attachments>`: first select a file from your local disk and click *Upload* in order to attach it."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:165
+msgid "Don't forget to finally save the changes by clicking *Save* in the task edit dialog. Switching back and forth between the tabs will not yet save the data."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:172
+msgid "Assign Tags"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:174
+msgid "Tags help you organize your tasks in the list view. Open the :ref:`Edit Dialog <tasklist-edit-task>` and enter tags into the according text box:"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:179
+msgid "Append a tag by hitting <Enter> and continue typing to add more. While typing, a suggestion of already used tags will be shown. Use the arrow keys on the keyboard to select one and press <Enter> to select."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:182
+msgid "Remove tags with a click on the *Remove* icon."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:184
+msgid "**Drag & Drop Tags**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:186
+msgid "Existing tags listed in the tags box on the left can also be assigned to tasks directly in the list view by simply dragging the tag from the box and drop it on a task bar."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:193
+msgid "Set Due Dates"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:195
+msgid "Assign due dates to your tasks to not miss your deadlines and to enable reminder notifications for them. The due dates with time can be entered in the :ref:`Edit Dialog <tasklist-edit-task>`. When entering the input field, a small calendar widget will help you to quickly select a date."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:199
+msgid "Due dates can also be entered or changed directly in the list view without going to the edit dialog. Click the due date or the \"no date\" area on the right end of a task bar and select a date from the calendar widget. The change will be saved immediately."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:207
+msgid "Mark Tasks as Complete"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:209
+msgid "In the :ref:`tasklist-edit-task` section we learned how to set a percentage value for a task's completeness. Until a task isn't fully completed, the percentage is displayed as a think horizontal line in the list view."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:213
+msgid "In order to mark a task as complete, simply click the checkbox in the list view. The task is now grayed out and moved to the bottom of the list. After some time or when refreshing the list, completed tasks will be removed from the view. You can still find them with the *Complete* quick filter. Uncheck the box to bring it back to the normal list."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:220
+msgid "Organize Tasks in Groups"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:222
+msgid "For bigger jobs or entire projects, tasks can be divided into subtasks and organized hierarchically to visualize dependencies."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:226
+msgid "Create a Subtask"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:232
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:272
+msgid "Open the options menu of a task from the arrow icon on the far right of the task bar."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:233
+msgid "Select *Add subtask*"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:234
+msgid "Enter the subtask properties in the :ref:`Edit Dialog <tasklist-edit-task>`"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:235
+msgid "Press *Save* to insert it"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:241
+msgid "Re-organize Groups"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:243
+msgid "The hierarchical nesting of tasks and subtasks can be changed at any time. Simple grab a task with the mouse and drop onto another one to make it a subtask. This works for entire subtrees equally well. While dragging, a possible drop target is highlighted when moving over it."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:247
+msgid "Drop a task onto the small bar on top of the tasks list to make it a main task again."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:249
+msgid "If you organize your tasks in different lists, dropping a task onto a task list in the box on the left moves it (and all child tasks) to that particular list."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:257
+msgid "Get Notifications"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:259
+msgid "While logged in to the webmail, reminders about soon-to-be due tasks will be displayed with pop-up boxes at the specified time before the task is due. You can specify if you want to see reminders for every task list individually. Enable or disable reminders in :ref:`Task List Settings <tasklist-edit-list>` from the :ref:`tasklist-lists`."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:263
+msgid "Read how to :ref:`Dismiss or Snooze Reminders <calendar-event-alarms>` in the calendar section."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:267
+msgid "Delete Tasks"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:269
+msgid "Usually finished tasks are marked as complete. But there are still situations where you might want to actually delete a task."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:273
+msgid "Select *Delete*."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/_plugins/tasklist/manage.rst:274
+msgid "Click *Delete* again in the confirmation dialog."
+msgstr ""
+

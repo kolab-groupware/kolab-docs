@@ -1,0 +1,706 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:90
+msgid "Hosted Kolab Customer Control Panel"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:93
+msgid "Signup, Confirm, Payment"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:95
+msgid "The following diagram is a basic overview of the process for a type of account that is known as an account for an \"Individual User\"."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:124
+msgid "The following diagram is a basic overview of the process for a type of account that is known as a \"Group Manager Account\", where customers register their own domain name space(s) and create accounts in that domain."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:151
+msgid "Important Notes"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:153
+msgid "The confirmation of the domain ownership activates the domain."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:154
+msgid "Accounts created in the domain are active immediately, all options included."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:157
+msgid "This facilitates the migration of user data."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:161
+msgid "The invoices for group manager accounts is created as part of a batch process executed on the backend."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:164
+msgid "This allows a group manager to first add one or more mailboxes and subscriptions to their account, before an invoice is generated."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:168
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:170
+msgid "The main object in the HKCCP configuration are the *account types*."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:172
+msgid "They include the following settings:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:174
+msgid "**user_type_id** [int]"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:176
+msgid "The ``user_type_id`` is to correspond with a type ID obtained using a ``user_types.list`` WAP API call."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:179
+msgid "The user type that corresponds with the configured ID defines (in part) what the form for signup will look like."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:184
+msgid "Form fields marked as optional in the user type definition are skipped."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:187
+msgid "Some form fields are forcefully skipped, and/or re-inserted (such as ``mailquota``), possibly using a different name for the form field (``quota`` for ``mailquota``, for example)."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:191
+msgid "For an account type \"user account\" to register for an email address in the primary hosted domain for example, the user type is set to '5', which results in the following fields being requested input for:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:195
+msgid "First Name (``givenname``)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:196
+msgid "Family Name (``sn``)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:197
+msgid "Country (``c``)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:198
+msgid "Existing Email Address (``mailalternateaddress``)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:199
+msgid "\"Password\" and \"Confirm Password\" (``userPassword``)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:200
+msgid "Desired Email Address (``uid`` and ``mail``)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:202
+msgid "This form field is morphed through setting the ``email`` configuration item for the account type to ``true``."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:205
+msgid "**name** [string]"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:207
+msgid "The label used in localization for the name of the account type."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:209
+msgid "**description** [string]"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:211
+msgid "The label used in localization for the description of the account type."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:213
+msgid "**email** [boolean]"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:215
+msgid "Setting ``email`` to ``true`` indicates this user type is to register for an email address."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:218
+msgid "The form will morph the ``uid`` field into a ``uid`` form field and an appended select list of available domains. Upon submission of the form, the ``uid`` attribute value is extracted directly from the corresponding form field, and the ``mail`` attribute value is composed from the ``uid`` and the selected domain name space."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:224
+msgid "**signup** [boolean]"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:226
+msgid "Setting ``signup`` to ``true`` makes this account type available to the signup form."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:229
+msgid "**minlength** [int]"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:231
+msgid "**workflow** [list of strings]"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:233
+msgid "**suspended_role** [string]"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:236
+msgid "Example Configuration of Account Types"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:287
+msgid "Cost Factors"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:289
+msgid "Cost factors included in an invoice, on per item basis include:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:291
+msgid "**Account(s)**"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:293
+msgid "**Per Account Options** (subscriptions)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:295
+msgid "Account options and subscriptions take two different forms: The option is either a boolean (on / off), or an integer (quantity / volume)."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:298
+msgid "The subscriptions should hold;"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:300
+msgid "a start date (start charging for it),"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:301
+msgid "an end date (stop charging),"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:302
+msgid "an expiry date (paid for up to this day)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:304
+msgid "Using this information, the following calculations can be made:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:306
+msgid "What was the list price of items in the previous payment period?"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:307
+msgid "What is the list price of items in the current payment period?"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:308
+msgid "What items changed and when (for value increases and accreditation)?"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:310
+msgid "**Setup Costs**"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:312
+msgid "**Rebates**"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:314
+msgid "Rebates are of a one-time only nature, and apply to either any current **new** invoice, or the **next new** invoice."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:317
+msgid "**Discounts**"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:319
+msgid "Various types of discounts apply all over the place."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:322
+msgid "Invoice Calculations"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:324
+msgid "An invoice is calculated over;"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:326
+msgid "The start of the current payment period,"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:328
+msgid "This is derived from;"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:330
+msgid "the end date of the previous **paid** invoice, plus 1 day, or"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:331
+msgid "the payment date of the first invoice, or"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:332
+msgid "today"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:334
+msgid "The list price of individual subscription items for the account(s),"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:336
+msgid "Where account(s) is to be regarded to as:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:338
+msgid "One billing account that may have subscriptions or its own, and"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:339
+msgid "Zero, one or more user accounts that each may have subscriptions."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:341
+msgid "A query might look as follows:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:364
+msgid "Account Discounts"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:366
+msgid "Account discounts are considered *price rates* or *rated reductions*. They are to be executed against the original total sum of an invoice."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:369
+msgid "There's three ways of using the account discount in applied math:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:386
+msgid "Alternatively, if price rates and discounts are to be expressed in percentages:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:403
+msgid "An example invoice might therefore list::"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:419
+msgid "Contractual Term Length Discounts"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:421
+msgid "A contractual term's length is used to allow the user to commit to longer periods of time, separate from the payment period."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:424
+msgid "As such, a customer could choose to commit to a contract for a minimum period of a year, but choose for monthly invoicing for increased flexibility."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:427
+msgid "A scenario where such is primarily applicable and useful is, for example, a group manager account for a business where employees get hired and fired."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:430
+msgid "For an account's options, **setup costs** may be incurred, per contractual term."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:432
+msgid "An account's options are choosen during initial signup, as are the contractual term length and payment plan."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:435
+msgid "For a **group manager** account, the required *option* to register one or more domain name spaces to manage is the factor that causes the first domain name space registered to incur the setup costs."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:441
+msgid "The setup costs should probably be incurred on the *domain account* the user registered."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:444
+msgid "For an **individual user** account, it is the required *option* of a user account that incurs the setup costs."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:447
+msgid "Setup costs can be mapped to contractual term lengths like so, for example:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:450
+msgid "Contract Term"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:450
+msgid "Setup Costs"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:452
+msgid "1 Month"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:452
+msgid "100 CHF"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:453
+msgid "3 Months"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:453
+msgid "75 CHF"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:454
+msgid "1 Year"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:454
+msgid "50 CHF"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:455
+msgid "2 Years"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:455
+msgid "0 CHF"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:458
+msgid "In this scenario, an example invoice for an annual contractual term with a **monthly** payment plan might therefore list:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:471
+msgid "Another example invoice for an annual contractual term with a **yearly** payment plan might therefore list:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:485
+msgid "Advance Payment Discounts"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:487
+msgid "For advance payments made, a reduction in price is calculated. This may be anywhere between 0% and 100% in price reduction, and is likely increased as the advance payment increases."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:491
+msgid "Advance payment discounts are currently set to be:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:493
+msgid "**1%** for quarterly payments,"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:494
+msgid "**3%** for yearly payments."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:496
+msgid "An example invoice for an annual contractual term with a **yearly** payment plan might therefore list:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:513
+msgid "Billing Account Permutations"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:515
+msgid "This section outlines the mutations possible for new accounts, and existing accounts, that spawn the need for new invoices, different invoices (superseeding existing ones) and accreditation."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:520
+msgid "General Considerations"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:522
+msgid "A billing account corresponds to one or more Kolab User accounts. Billing accounts are the origin for account invoice calculations, and thus where the iteration over indvidual items and each item's options originates."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:526
+msgid "For individual users, this may currently amount to:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:535
+msgid "But in the foreseeable future may amount to:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:548
+msgid "For group manager accounts, this may currently amount to:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:562
+msgid "Addition of Options and Subscriptions, Positive Change of Values"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:564
+msgid "This scenario applies to a billing account increasing its service use."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:566
+msgid "The following options could be increased for user accounts:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:568
+msgid "Increase of Quota"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:569
+msgid "Enabling ActiveSync"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:571
+msgid "For group manager accounts, the following options could be increased:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:573
+msgid "Increase of Quota for a domain user account"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:574
+msgid "Enabling ActiveSync for a domain user account"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:575
+msgid "Adding a domain user account"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:576
+msgid "Registering additional domain name spaces"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:578
+msgid "A new invoice should be created for the increased value of the option(s) changed, if the total value of the invoice is greather than or equal to $x CHF."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:581
+msgid "The new invoice shall include;"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:583
+msgid "The increased price for the account against a new payment period starting on the date the option was originally increased,"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:586
+#: ../../source/architecture-and-design/kolab-hkccp.rst:682
+msgid "A deduction of the amount already paid in, calculated on a daily basis, times the number of days remaining on the original payment period, accredited against the new price,"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:590
+#: ../../source/architecture-and-design/kolab-hkccp.rst:686
+msgid "The total for the new invoice."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:593
+msgid "Increase of Quota (User Account, Monthly Payment)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:595
+msgid "The math computes as follows:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:616
+msgid "Which, in an example situation of a 1GB increase to 2GB for a base account (the minimal possible increase), 14 days in to the current payment period, is:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:628
+msgid "Which, in an example situation of a 1GB increase to 4GB for a base account, 14 days in to the current payment period, is:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:641
+msgid "Increase of Quota (User Account, Quarterly Payment)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:643
+msgid "The base logic applies to this payment plan as well."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:645
+msgid "As an example, the same user account increases quota from 1 GB to 2 GB 14 days in to the current payment period:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:657
+msgid "Doing the basic reasoning rather than the more accurate math leads us to, in an example situation an original 1GB user account being increased to 2GB quota 14 days after a payment period has started:"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:661
+msgid "14 days are (approximately) 1/6th of the original 3 months time period"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:662
+msgid "5 CHF out of 30 CHF paid is therefore \"used up\", and"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:663
+msgid "14 times the daily price does result in 4.59999."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:665
+msgid "Additionally, we know that approximately 25 CHF needs to be accredited. The original price on an invoice for the new options would amount to 36 CHF - the new invoice would be an approximate 11 CHF."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:670
+msgid "Removal of Options and Subscriptions, Negative Change of Values"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:672
+msgid "This scenario applies to a billing account decreasing its service use."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:674
+msgid "This will result in a lower invoice value for the next payment period, and will need accredited underutilized service use alread paid for."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:677
+msgid "The new invoice, to be generated for the next payment interval, shall include;"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:679
+msgid "The new price for the account against against the new payment period starting on the date of the next payment period,"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:697
+msgid "Example scenario: User from 2GB to 1GB 14 days in to monthly payment period"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:708
+msgid "original price: 12 CHF new price: 10 CHF"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:711
+msgid "i would expect to get back about 1 CHF (half of the cost of the additional unit of storage at 2 CHF)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:713
+#: ../../source/architecture-and-design/kolab-hkccp.rst:739
+msgid "daily price i've paid: ( account price + ( old units - free units ) * unit price ) / 30.4375"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:715
+msgid "daily price i've paid: ( 10 + ( 2 - 1 ) * 2 ) / 30.4375 = 0.39 CHF = (old daily price)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:717
+#: ../../source/architecture-and-design/kolab-hkccp.rst:743
+msgid "new daily price: ( 10 + ( 1 - 1 ) * 2 ) / 30.4375 = 0.33 CHF"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:719
+msgid "i need to be accredited: (30.4375 - 14) * old daily price - (30.4375 - 14) * new daily price"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:721
+msgid "this would be: (30.4375 - 14) * ( 10 + ( 2 - 1 ) * 2 ) / 30.4375 - (30.4375 - 14) * ( 10 + ( 1 - 1 ) * 2 ) / 30.4375 = 1.08 CHF"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:723
+msgid "Example scenario: User from 10GB to 1GB, 183 days in to yearly payment period."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:734
+msgid "original price: 336 CHF new price: 120 CHF"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:737
+msgid "i would expect to get back about 6 times 9 times 2 = 108 CHF"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:741
+msgid "daily price i've paid: ( 10 + ( 10 - 1 ) * 2 ) / 30.4375 = 0.92 CHF = (old daily price)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:745
+msgid "i need to be accredited: (30.4375 * months - days) * old daily price - (30.4375 * months - days) * new daily price"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:747
+msgid "this would be: (30.4375 * 12 - 183) * ( 10 + ( 10 - 1 ) * 2 ) / 30.4375 - (30.4375 * 12 - 183) * ( 10 + ( 1 - 1 ) * 2 ) / 30.4375 = 107.78 CHF"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:757
+msgid "**a**)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:759
+msgid "Start of payment period. Generate invoice according to current subscriptions, etc."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:762
+msgid "**b**)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:764
+msgid "Change of options."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:766
+msgid "Re-generate invoice for Aug 1st - Aug 8th on the old subscriptions, and Aug 9th - end of payment period."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:771
+msgid "New invoice is actually generated only for cumulative values over the threshold."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:774
+msgid "Otherwise, the accreditation awaits the invoice for the next payment period, or the additional cost awaits the invoice for the next payment period."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:778
+msgid "**c**)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:780
+msgid "Payment of invoice 1."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:782
+msgid "**d**)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:784
+msgid "End of payment period 1."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:786
+msgid "**e**)"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:788
+msgid "Start of payment period 2."
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:820
+msgid "Alterations to Account Discount rate"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:824
+msgid "Footnotes"
+msgstr ""
+
+#: ../../source/architecture-and-design/kolab-hkccp.rst:825
+msgid "This is an example situation."
+msgstr ""
+

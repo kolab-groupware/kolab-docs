@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:93
+msgid "Sender Identities"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:95
+msgid "The settings here control the name(s) and email address(es) stated as sender when you send out email messages. Depending on the server configuration, you can define multiple sender identities or only adjust the name and other control fields."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:101
+msgid "Settings"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:103
+msgid "This first block contains general properties for the selected sender identity:"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:106
+msgid "**Display name**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:106
+msgid "The full name displayed in the recipient's email program upon receiving your message"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:111
+msgid "**Email**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:109
+msgid "The email address stated as sender of email messages you send with this identity. Please enter a valid email address that is handled by your Roundcube email account. Otherwise message sending might fail because of an invalid sender address."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:113
+msgid "The Email field might not be visible or editable. This is no malfunction but a restriction set by the server administrator to prevent users from sending email with faked sender addresses."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:119
+msgid "**Organization**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:118
+msgid "Some email programs display the organization field when receiving messages from you with this filled out."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:123
+msgid "**Reply-to**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:122
+msgid "Enter an email address that differs from the identity's email address here in order to force recipients to send answers to that address instead of the sender email address."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:127
+msgid "**Bcc**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:126
+msgid "Specify an email address here that will receive blind copies of every message you send with this identity."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:132
+msgid "**Set default**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:130
+msgid "Check this box to make the current identity the default selection when writing new messages. You can still chose another sender identity while composing a message, though."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:137
+msgid "Signature"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:139
+msgid "Every sender identity can have its own signature text which will be appended to the message text when you start writing a new email message. Visit :ref:`Settings > Preferences > Composing Messages <settings-prefs-compose>` to configure when and how signatures are inserted."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:144
+msgid "**Signature**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:144
+msgid "Enter the signature text here."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:148
+msgid "**HTML signature**"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:147
+msgid "Check this option if you mainly send formatted (HTML) messages and to enable formatting of your signature. The text box above will then show a toolbar to adjust formatting."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:153
+msgid "Adding Images to a Signature"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:155
+msgid "HTML formatted signatures also allow to embed images which are sent with outgoing messages. To add an image to your signature, first check the *HTML signature* box. Then find an image file on your computer and drag & drop it into the signature box. The image can be moved around or resized within the editor box using the mouse."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:162
+msgid "Instead of dragging an image file into the editor, you can also paste an image from your clipboard after copying it from another application or browser window."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:165
+msgid "Open the image in an image viewer or browser window, then press *Ctrl+C* to copy it, click into the signature text box at the position where you want the image to appear and press *Ctrl+V* to insert it from the clipboard."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:171
+msgid "Managing Multiple Sender Identities"
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:173
+msgid "Unless restricted by the server administrator, the identity list has control buttons for adding and deleting sender identities. If present, click the + icon in the identity list footer to create a new identity. Fill out the form and click *Save* to create it. The new identity is now added to the list and can be edited or deleted from there."
+msgstr ""
+
+#: ../../source/webmail-user-guide/roundcubemail/settings/identities.rst:178
+msgid "The *Delete* button also located in the identities list footer will delete the currently selected identity after displaying a confirmation dialog."
+msgstr ""
+

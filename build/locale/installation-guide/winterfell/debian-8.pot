@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/installation-guide/winterfell/debian-8.rst:92
+msgid "Installation of Kolab Winterfell on Debian 8"
+msgstr ""
+
+#: ../../source/installation-guide/winterfell/debian-8.rst:96
+msgid "Kolab Winterfell eats babies, for breakfast. There is potential data-loss included."
+msgstr ""
+
+#: ../../source/installation-guide/winterfell/debian-8.rst:98
+msgid "Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:"
+msgstr ""
+
+#: ../../source/installation-guide/winterfell/debian-8.rst:105
+msgid "Import the GPG key used to sign the packages:"
+msgstr ""
+
+#: ../../source/installation-guide/winterfell/debian-8.rst:111
+msgid "To ensure the Kolab packages have priority over the Debian packages, such as must be the case for PHP as well as Cyrus IMAP, please make sure the APT preferences pin the obs.kolabsys.com origin as a preferred source."
+msgstr ""
+
+#: ../../source/installation-guide/winterfell/debian-8.rst:115
+msgid "Put the following in ``/etc/apt/preferences.d/kolab``:"
+msgstr ""
+
+#: ../../source/installation-guide/winterfell/debian-8.rst:123
+msgid "Update the repository metadata:"
+msgstr ""
+
+#: ../../source/installation-guide/winterfell/debian-8.rst:129
+msgid "Start the installation of the base package as follows:"
+msgstr ""
+
+#: ../../source/installation-guide/winterfell/debian-8.rst:135
+msgid "Continue to :ref:`installation-guide-setup-kolab`."
+msgstr ""
+

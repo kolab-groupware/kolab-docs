@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/deployment-guide/localhost.rst:91
+msgid "A Single Server Kolab Deployment"
+msgstr ""
+
+#: ../../source/deployment-guide/localhost.rst:93
+msgid "This is the default installation for a Kolab Groupware server, when the ``setup-kolab`` bootstrap utility is run."
+msgstr ""
+
+#: ../../source/deployment-guide/localhost.rst:96
+msgid "A single server runs all services related to Kolab, including the LDAP, SMTP, IMAP, HTTP and MySQL servers."
+msgstr ""
+
+#: ../../source/deployment-guide/localhost.rst:99
+msgid "Since this deployment is not highly-available, and can only be scaled up vertically (i.e. by giving the system more resources), this is typically a small deployment for a limited number of users."
+msgstr ""
+
+#: ../../source/deployment-guide/localhost.rst:103
+msgid "Should you be looking to provide your environment with a level of redundancy, please see :ref:`deployment-redundant-servers`."
+msgstr ""
+

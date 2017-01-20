@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:90
+msgid "Upgrading from Kolab 2.3"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:92
+msgid "As Kolab Groupware used to be distributed as an OpenPKG stack, with different locations for files, the upgrade of a Kolab 2 server to a Kolab 3 server is a largely manual process."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:96
+msgid "The Kolab 3 server used here has been set up for the same domain name space as the Kolab 2 server. No users have been created on the Kolab 3 server. kolab2.example.org refers to the Kolab 2 server, kolab3.example.org refers to the Kolab 3 server."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:99
+msgid "Preparations"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:100
+msgid "During the migration, the Kolab 2 server cannot be allowed to;"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:102
+msgid "Receive new email."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:103
+msgid "Let users post/submit new data."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:105
+msgid "The easiest way to prevent any of this happening is to shut down all Kolab Groupware related services on kolab2.example.org:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:111
+msgid "Create a backup of the data from kolab2.example.org."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:112
+msgid "Shut down the Cyrus IMAP service on kolab3.example.org:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:118
+msgid "Shut down the Kolab daemon on kolab3.example.org:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:124
+msgid "Update the settings related to the recipient policy in /etc/kolab/kolab.conf. The following settings are important:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:126
+msgid "The primary_mail setting in the [$domain] section."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:127
+msgid "The policy MUST[2] either match the former convention used, if any, or not be enabled at all. See Example 1.1, “Example Migration of example.org” for an example and some more gotchas."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:131
+msgid "In case the recipient policy is not to be applied, consider updating the user_types as per the instructions in Section 5.1, “Editing user_types”. The secondary_mail setting in the [$domain] section."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:134
+msgid "This part of the policy does not apply should the primary_mail setting already have been disabled."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:137
+msgid "Example Migration of example.org"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:138
+msgid "Our first example has had a running Kolab 2.3 on OpenPKG server, with a general email address convention of \"surname\"@example.org."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:140
+msgid "By default, a Kolab 3.0 Groupware server will apply a recipient policy for the mail attribute value of \"givenname\".\"surname\"@example.org. The recipient policy must therefore be adjusted."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:142
+msgid "In the [example.org] section in /etc/kolab/kolab.conf, the primary_mail setting must be adjusted to match the \"surname\"@example.org convention:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:151
+msgid "Now, users that are created will get a mail attribute value of \"surname\"@example.org assigned."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:153
+msgid "First adding user John Doe will give him a mail attribute value of doe@example.org, but should you have a Jane Doe as well, she would get doe2@example.org. It is therefore important to add users in order."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:156
+msgid "Migration of LDAP"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:158
+msgid "This section has not been authored yet."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:161
+msgid "Migration and Upgrade of Data"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:164
+msgid "Migrate the Data Through Copying"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:166
+msgid "Login to kolab3.example.org to execute the steps in this procedure."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:168
+msgid "Copy mailboxes.db and annotations.db. These files are located in /kolab/var/imapd/ on your Kolab 2 server."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:179
+msgid "If cyrus can't start with these files with a message like the following, you need to convert the files instead of copying."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:188
+msgid "Use the following commands to convert the files from Berkeley DB to skiplist:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:195
+msgid "After the conversion, copy the files to the new kolab3 server:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:204
+msgid "Migrate the mail spool:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:213
+msgid "Migrate the seen and subscription databases:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:226
+msgid "Ensure the filesystem permissions are correct:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:232
+msgid "Ensure only the cyrus user can read and write, and the mail group can read the contents of either directory tree:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:242
+msgid "If your find doesn't have the -print0 option or your xargs command doesn't know -0, you can use the much slower commands below:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:249
+msgid "As the seen databases are particularly hard for Cyrus IMAP 2.4 to upgrade real-time, convert the seen databases with, for example:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:263
+msgid "Stop the Kolab daemon:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:269
+msgid "Start the Cyrus IMAP service on kolab3.example.org:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:276
+msgid "Users should not yet be allowed to interact with the system at this point. We suggest closing access to the system through the firewall."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:278
+msgid "Prepare some environment variables"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:280
+msgid "We need the cyrus-admin user and associated password for the following steps, so we put them in environment variables:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:289
+msgid "Upgrade the Format"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:291
+msgid "Use the Cyrus IMAP administrator account to select all mailboxes, to make sure the format upgrade is not taking place while the user is attempting to login / select a mailbox."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:293
+msgid "Average sized mailboxes (those restricted with a reasonable quota such as 2GB) can take about 2 minutes to upgrade. A single folder can upgrade as fast as 5 seconds. Mailboxes that contain a lot of messages (such as a shared lists folder that also functions as an archive) can take up to 2-4 minutes to upgrade (approximately 40.000 messages)."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:297
+msgid "Optionally, if errors are expected enable full so-called telemetry logging so that issues can be backtracked. On the IMAP server, issue the following commands:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:315
+msgid "or, alternatively;"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:347
+msgid "On your console display, you will see some errors stating NO Permission Denied. These errors you can ignore. You'll see messages such as the following appear in ``/var/log/maillog``:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:355
+msgid "The annotations database may not have been upgraded correctly, causing some annotations to miss the first 4 characters of their value. The easiest way to fix the issue, that is known to work, is to get the annotation values as they were on the old (Kolab 2) IMAP server, and set them on the new (Kolab 3) IMAP server."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:402
+msgid "Fix'em:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:451
+msgid "Upgrade all messages from Kolab Format version 2 to Kolab Format version 3 using kolab-formatupgrade. This command is run in two parts. The first will upgrade all mailbox contents in the personal namespace:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:467
+msgid "The second part upgrades the contents of shared folders. Shared folders have no designated owners, and we can therefore not login as a designated user to upgrade the format."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-2.3.rst:469
+msgid "As the user cyrus-admin normally does not have the necessary privileges to insert new messages into mail folders, so we're going to have to give out the rights first. We'll delete them again afterwards."
+msgstr ""
+

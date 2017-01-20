@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/upgrade-guide/kolab-16.rst:90
+msgid "Upgrade Notes from Kolab 3.4 to 16"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:92
+msgid "The purpose of this document is, to describe the procedure of upgrading a Kolab Goupware installation from a default installed Kolab 3.4 (last \"community verison\") to Kolab 16."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:96
+msgid "Upgrade Procedure"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:98
+msgid "Install the Kolab Groupware repository configuration:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:105
+msgid "Remove the existing Kolab 3.4 repositories:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:112
+msgid "Make sure that the packages from the Kolab repositories have a higher priority than eg. the :term:`EPEL` packages:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:119
+msgid "Replace php-mysql with php-mysqlnd:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:130
+msgid "Update all:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:137
+msgid "During the cleanup, you might see the message:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:147
+msgid "This is a warning, and the Cyrus-imapd package will be updated. This can be checked after the update with the command:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:153
+msgid "Drop the ``policy_result`` table from MySQL."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:157
+msgid "Updating the Configuration"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:159
+msgid "After upgrading the packages to Kolab 16 repository, the configuration needs to be updated."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:161
+msgid "Configure the new module \"Guam\":"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:167
+msgid "Configure the new module \"Manticore\":"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:175
+msgid "If the Kolab 3.4 installation was a standard installation with no changes to the defaults, then the following 2 commands can be run at no risk (The correct password for the current roundcube database user is still needed for verification)."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:177
+msgid "However, if changes were made to the defaults, the original configuration should be copied off for later compare with the newly written configuration."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:179
+msgid "Update the roundcube configuration:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:183
+msgid "As setup-kolab is unable to write to the already existing mysql database, an error message will show:"
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:190
+msgid "The new and updated config file will however be written and restart the appropriate services."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:192
+msgid "The correct password for the current roundcube database user is still needed for verification."
+msgstr ""
+
+#: ../../source/upgrade-guide/kolab-16.rst:200
+msgid "Update the imap configuration:"
+msgstr ""
+

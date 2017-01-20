@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:90
+msgid ":command:`kolab-formatupgrade` Command-Line Reference"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:92
+msgid "The :command:`kolab-formatupgrade` command allows one to upgrade kolab objects from format version 2 to version 3. It additionaly provides utilites to detect and fix defective kolab objects."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:97
+msgid "[root@kolab ~]# kolab-formatupgrade --help Usage: kolab-formatupgrade [options] [server/file]"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:116
+msgid "Options:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:101
+msgid "Read mime from stdin or file"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:102
+msgid "Username for IMAP Account"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:103
+msgid "-y, --proxyauth <loginname> Username to be used for authentication together with password (optional, works with PLAIN/SASL authentication) -p, --password <password> Password for IMAP Account -P, --port <port>         Port to be used on IMAP Server [143] -e, --encrypt <mode>      Encryption mode to be used (NONE, TLS, SSL) [TLS] -f, --folder <folder>     Upgrade only the specified folder -t, --type <type>         force the type (EVENT, TODO, JOURNAL, CONTACT). Applies only when upgrading a single file or a specific folder. -a, --auth <mode>         Authentication mode to be used (PLAIN, LOGIN, CRAMMD5, DIGESTMD5, NTLM, GSSAPI, ANONYMOUS, CLEARTEXT) [PLAIN] --fix-utc-incidences      Converts all incidences from UTC to floating time. --fix-utc-incidences-offset <offset> Uses a UTC offset to convert the times. If not provided the local timezone get's used instead. The offset is in seconds. [0] --fix-utc-incidences-timezone <timezone> Uses the specified timezone to convert the times. If not provided the local timezone gets used instead. Timezones are read from zone.tab --validate                Validate all kolab-objects and mails, and delete the ones that are invalid. --delete                  Delete invalid objects from the server. Applies to validate mode. --shared                  Validate shared folders (This requires login with an admin account). Applies to validate mode. --save-to <folder>        Store invalid objects under the given path. Applies to validate mode."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:119
+msgid "Arguments:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:119
+msgid "server/file               IMAP Server/File"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:122
+msgid "Usage for upgrading the version"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:124
+msgid "An example command-line to upgrade all folders of a user would look as follows:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:126
+msgid "$ kolab-formatupgrade --u <USERNAME> -p <PASSWORD> -P 993 -e SSL <SERVER-ADDRESS>"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:128
+msgid "Note that this will rewrite all kolab-objects. If this is executed on a folder already converted to version 3 it will simply rewrite all objects unchanged (but still result in entirely new MIME messages)."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:131
+msgid "Usage for converting UTC date-times to local time"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:133
+msgid "To convert UTC date-times found in the incidences to floating time (as commonly used in kolab format version 2);"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:135
+msgid "$ kolab-formatupgrade --u <USERNAME> -p <PASSWORD> -P 993 -e SSL <SERVER-ADDRESS> --fix-utc-incidences"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:137
+msgid "To additionaly specify which source timezone to interpret the UTC time as use the fix-utc-incidences-offset or fix-utc-incidences-timezone options. By default the local timezone will be used. This is useful in case one is running kolab-formatupgrade from a machine with a different local timezone than the machine with which the kolab object had been originally created."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:141
+msgid "Usage for Validation"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:143
+msgid "Should a folder contain invalid kolab objects this can create synchronization issues for kolab clients. Such a situation may arise due to, for example, the usage of third-party tools that inject messages into the store directly. To detect and remove such objects the kolab-formatupgrade validation functionality can be used."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:147
+msgid "An example command-line to scan the folders of a user would look as follows:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:149
+msgid "$ kolab-formatupgrade --validate --save-to /path/to/folder -u <USERNAME> -p <PASSWORD> -P 993 -e SSL <SERVER-ADDRESS>"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:151
+msgid "To not require the user's password, and instead use proxy authentication (recommended), use the following:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:153
+msgid "$ kolab-formatupgrade --validate --save-to /path/to/folder --proxyauth cyrus-admin -u <USER> -p <PASSWORD> -P 993 -e SSL kolab"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:155
+msgid "where <PASSWORD> is the password for the `cyrus-admin` user, and not the user specified as `-u <USER>`."
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:157
+msgid "To scan and validate shared folder hierarchies, use `-u cyrus-admin` with the cyrus-admin password, and the option `--shared`:"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:159
+msgid "$ kolab-formatupgrade --validate --save-to /path/to/folder --shared -u cyrus-admin -p <PASSWORD> -P 993 -e SSL kolab"
+msgstr ""
+
+#: ../../source/administrator-guide/kolab-formatupgrade-cli-reference.rst:161
+msgid "Please note that the default examples here do not alter the contents of the mailbox(es) in question. To purge contents deemed invalid from the mailboxes scanned, add `--delete`. When used in combination with `--save-to /path/to/folder`, the objects deemed invalid will be saved off in to the hierarchy specified (`/path/to/folder`)."
+msgstr ""
+

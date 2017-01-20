@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/howtos/logstash-and-elasticsearch.rst:91
+msgid "Logstash & Elasticsearch"
+msgstr ""
+
+#: ../../source/howtos/logstash-and-elasticsearch.rst:93
+msgid "It is expensive to, in distributed deployment topologies, analyze logs since they too are distributed."
+msgstr ""
+
+#: ../../source/howtos/logstash-and-elasticsearch.rst:96
+msgid "Even in an environment where session persistence is used (i.e. one user's request has a greater likelihood to end up on the same application server, as the previous or next request from that same user), collecting logs from across distributed systems is essential -- one user may have multiple devices, and may simply therefore be hitting multiple application servers."
+msgstr ""
+
+#: ../../source/howtos/logstash-and-elasticsearch.rst:103
+msgid "Furthermore, self-referring applications (such as the ``kolab_files`` plugin referring back to ``webmail.example.org/chwala``) can cause a single user to hit any or all application servers."
+msgstr ""
+
+#: ../../source/howtos/logstash-and-elasticsearch.rst:109
+msgid "Goals"
+msgstr ""
+
+#: ../../source/howtos/logstash-and-elasticsearch.rst:111
+msgid "Provide a light-weight means to forward the logs from the local application server for central analysis."
+msgstr ""
+

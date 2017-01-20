@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/architecture-and-design/ldap-intro.rst:92
+msgid "Introduction to LDAP"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:94
+msgid "When using a single system for your environment, user account and group membership information can be retained using a local database such as ``/etc/passwd`` (and friends), but for added functionality, such as a global address book of all users, software applications that are your groupware client (:term:`MUA`) need something they can talk to."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:100
+msgid "Kolab Groupware uses, by default, the Light-weight Directory Access Protocol (LDAP), which is a widely adopted, mature Open Standard."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:103
+msgid "Information about users, groups, and possibly much more, is contained within a hierarchical tree of objects, known as a Directory Information Tree (DIT). In this way, a DIT is built as a tree -- starting at the root, branches articulate the structure of the tree, and ultimately hold many leaves."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:108
+msgid "A DIT is composed of strictly defined objects, each of which has one or more [#]_ *types* or *classes*, and each *class* may allow one or more *attributes* to be associated with the object."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:112
+msgid "Relating back to the example of an actual tree, these types or classes are used to an object represent a branch, leaf, bird, nest, fruit, etc."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:115
+msgid "A directory information tree is usually represented as follows:"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:129
+msgid "This is an example, and **NOT** how you should structure your tree."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:131
+msgid "The exact same diagram though, flipped up side down, much better represents an actual tree:"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:145
+msgid "The structuring of a tree is useful for a variety of purposes, some of which may be useful to you, while others are likely not."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:148
+msgid "A few standard scenarios that could be serviced more optimally when the tree is structured include:"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:151
+msgid "The use of branch offices in different locations,"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:152
+msgid "The use of different departments in an organization,"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:153
+msgid "To prevent access of all (other) users to certain users contained in a branch of the tree, such as mobile phone numbers for board members,"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:155
+msgid "To apply policies to certain individuals, such as implicit mobile synchronization authorization for road warriors,"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:157
+msgid "To delegate authority over a certain branch of the tree, such as an ``ou=Contacts`` branch for *Sales & Marketing* department personnel to maintain large sets of contacts."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:162
+msgid "Distinguished Names and Relativity"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:164
+msgid "To uniquely identify an entry, one uses a so-called :term:`distinguished name` (DN) to essentially describe the location of the object, which must be unique, because not unlike in real life, only one object can be in a given place at a particular time."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:169
+msgid "For *Joe* in *Procurement* for example, such a distinguished name would be:"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:175
+msgid "Like with the tendency to represent a DIT upside down, to establish the path one would use to climb a tree and navigate to a particular leaf, you need to read the components that make up this DN from the right, to the left."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:179
+msgid "You may have noticed that the names of each component are prefixed with something -- such as the branches are prefixed with *ou=* before we get to their name."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:183
+msgid "The *ou* is one of the attributes associated with the object, and is designated the *relative DN naming attribute*, or \"naming attribute\" used in establishing the \"relative DN\" (RDN)."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:187
+msgid "It usually suffices to refer to these attributes as \"naming attributes\", as the first value stored in it (if the attribute is or can multi-valued) is used for the RDN, and any other values are considered aliases."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:191
+msgid "It is worthwhile considering that the RDN tends to be composed of naming attributes that only have values that are considered globally unique (i.e. no two objects with the same attribute set to the same value exist anywhere in the tree), so that a *child object* can be associated with a different *parent object* with relative ease."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:197
+msgid "Suppose, for example, a user *John* works in *Recruitment*, and another user *John* works in *Personnel*. If the RDNs used for both LDAP entries were *uid=John*, the one John would collide with the other John, should either John move from the one department to the other department within *Human Resources*."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:202
+msgid "The *choice* of a naming attribute has implications on the *values* you can use, the *configuration* of a variety of applications and systems you might use, the *administration* of your environment and as such are considered to be of on an *architectural level*, to be taken care of when *designing* your environment, as changes tend to become **prohibitively expensive** once implemented in production."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:210
+msgid "Searching and Listing Objects"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:212
+msgid "To seek out a particular object or a list of objects of a particular type, one uses a *base dn* to search against, a *filter* to search with, and a *scope* to determine the depth of nested object levels to descend into, starting from the *base dn*."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:217
+msgid "The users, groups and other groupware objects stored in these databases have email addresses (to enable the exchange of messages), and email addresses have :term:`domain name spaces` (the part after the ``@`` in email addresses)."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:221
+msgid "As such, a root dn -- the directory tree for an organization -- is most commonly associated with at least one :term:`domain name space`."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:224
+msgid "Searching and listing operations are executed for a variety of purposes, and in different contexts."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:227
+msgid "These include, for example:"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:229
+msgid "Navigating an LDAP address book,"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:231
+msgid "Authentication and authorization,"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:233
+msgid "Automatic completion of names and/or addresses (being) specified in a To/Cc/Bcc field of a mail user agent (MUA),"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:236
+msgid "Recipient address resolution, for the delivery of inbound email messages to be delivered to the correct individual mailbox(es),"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:239
+msgid "and many more."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:242
+msgid "Authentication"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:244
+msgid "Authentication against LDAP is done through a so-called *bind operation*. The LDAP client specifies the *bind dn* (yes, *distinguished name* again) and the *bind password*."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:248
+msgid "Users, however, tend not to remember the distinguished name of their LDAP entry. The authentication process in individual applications is therefore often *assisted* within the application."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:252
+msgid "A POSIX system for example uses, by default, the ``uid`` attribute for the username to be used in authentication, and expects to be able to search for the specified username (the filter would be ``(&(objectclass=posixaccount)(uid=%s))``), retrieve the entry DN for the result found, and perform a bind operation with that DN."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:258
+msgid "Kolab Groupware applications by default allow the user to login using either of the following:"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:261
+msgid "The ``uid`` attribute value (often something like ``doe`` or ``doe2`` for a user John Doe),"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:264
+msgid "The ``mail`` attribute value, either fully specified (``john.doe@example.org``) or the localpart only (``john.doe``),"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:267
+msgid "Any ``alias`` attribute value, either fully specified (``jdoe@example.org``) or the localpart only (``jdoe``)."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:270
+msgid "The filter for such an event would be ``(&(objectClass=kolabInetOrgPerson)(|(uid=%U)(mail=%U@%d)(mail=%u)(alias=%U@%d)(alias=%u)))``, where:"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:274
+msgid "**%d**"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:276
+msgid "is the login username domain part, or if not specified, the configured default domain for the application or instance thereof,"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:279
+msgid "**%U**"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:281
+msgid "is the login username local part,"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:283
+msgid "**%u**"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:285
+msgid "is the full login username."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:287
+msgid "This is an extremely liberal authentication filter, and it should be noted that the attribute values should all be globally unique."
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:313
+msgid "Footnotes"
+msgstr ""
+
+#: ../../source/architecture-and-design/ldap-intro.rst:316
+msgid "Actually, **two** or more, as the *top* objectclass is to be included in the count."
+msgstr ""
+

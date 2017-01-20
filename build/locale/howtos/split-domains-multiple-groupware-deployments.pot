@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:90
+msgid "HOWTO: Split Domains Over Multiple Groupware Deployments"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:92
+msgid "This HOWTO addresses using Kolab Groupware in situations where multiple groupware environments exist."
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:95
+msgid "Such an environment can be heterogeneous, meaning different groupware technology could be used in the environment."
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:98
+msgid "In the scenario in this HOWTO, we'll have:"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:100
+msgid "A :term:`parent domain` of ``example.org``,"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:101
+msgid "A user ``john.doe@example.org`` using Kolab Groupware,"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:102
+msgid "A user ``joe.sixpack@example.org`` using Microsoft Exchange,"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:103
+msgid "A user ``min.imum@example.org`` using Novell Groupwise,"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:104
+msgid "A user ``lucy.meier@example.org`` using IBM Lotus Notes."
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:107
+msgid "The Smart Host"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:109
+msgid "Use one or more smart hosts to route traffic."
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:111
+msgid "Multiple smarthosts are only added for capacity -- they must all have the same configuration to determine which recipient address is to be routed where."
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:115
+msgid "Web Administration Panel"
+msgstr ""
+
+#: ../../source/howtos/split-domains-multiple-groupware-deployments.rst:118
+msgid "Mail Delivery to Shared Folders"
+msgstr ""
+

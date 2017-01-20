@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/about/guam/troubleshooting.rst:89
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:94
+msgid "Getting Debug Output"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:96
+msgid "The debug level of Guam can be adjusted by editing Guam's configuration file. Specifically, there is a lager block that looks like this:"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:112
+msgid "This controls the logging behavior of Guam. The lager_*_backend entries define where and what level of logging is output. The level tuples (e.g. ``{ level, error }``) define the logging level for a specific output (a file, the console, syslog, etc.) When troubleshooting, it is best to set these to debug, while the defaults are generally set to info and/or error only."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:120
+msgid ":ref:`about-guam-configuration`"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:122
+msgid "You can adjust the logging level of a running system by attaching to Guam with an erlang shell:"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:129
+msgid "The default value for sname is found in the vm.args file that comes with guam."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:131
+msgid "At this point you can see which handlers are active with:"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:137
+msgid "You can add handlers (e.g. for debug output) with:"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:144
+msgid "which will create a :file:`debug.log` file in the local directory erl was started from."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:147
+msgid "Handlers may be removed (such as when finished with debugging) with a call to ``gen_event:delete_handler``, such as:"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:155
+msgid "Alternatively, one can simply change the configuration in the config file and restart Guam."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:158
+msgid "Once debug output is being produced, it becomes quite a bit easier to track client connections, drops, etc."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:162
+msgid "Live Monitoring"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:164
+msgid "After connecting to a runnign Guam session (e.g. using the ``erl`` command from :ref:`about-guam-troubleshooting-getting-debug-output` above), a graphical monitor of the Guam system can be invoked with:"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:172
+msgid "This tool can be run remotely by starting erl on a system with a window manager, which many servers do not have running, and gives access to system setup, resource usage, load charts, running Erlang processes, and trace access."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:176
+msgid "The process tree should show the **kolab_guam** application with its tree of listeners rooted to the **kolab_guam_sup** process, and each listener with a span of child processes which are the actual connection handler pool processes."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:180
+msgid "The observer is a quick an easy way to get an overview of the system in operation the server) and"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:184
+msgid "Crashes"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:186
+msgid "Guam is written in Erlang, and in Erlang errors are handled by letting the task that experienced the error to \"crash\". Most other langauges/runtimes do not have this concept, instead relying on exceptions to handle fatal errors. Crashes are, however, completely normal in Erlang applications and are as important a mechanism to maintaining a properly functioning system are exceptions are in other languages. Do not fear the crash!"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:193
+msgid "So if you see \"crashes\", but Guam is continuing to operate correctly, then the crash is almost certainly due to a valid error condition in which the correct response is to stop the current object/task that is running."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:197
+msgid "This may occur, for instance, if the IMAP server connection is lost or can not be established. In that case, the IMAP connection task will crash, and that will in turn bubble up to the client connection being maintain by Guam which will itself stop (and clean up after itself)."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:202
+msgid "However, when unexpected problems occur, there may also be crashes. They will be kept in the :file:`crash.log` and will show both the exact reason for the crash along with a stack trace through the code that led up to the crash."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:206
+msgid "Including those crash reports in bug reports is extremely important, as they contain vital troubleshooting data. You may also read through the stack traces yourself during troubleshooting sessions to see where problems are occuring, as the code has been written with easy to understand naming conventions for functions and variables."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:213
+msgid "IMAP Services"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:215
+msgid "As its most basic functonality, Guam acts as a proxy service between the IMAP client and the IMAP server. If connections are not being made (turning on debug output as outlined above can help identify these sorts of issues), check the application configuration."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:220
+msgid "Common sources of errors:"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:222
+msgid "the Guam listener is listening on the wrong port/host/interface"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:223
+msgid "the Guam listener is connecting to the wrong ``imap_server`` configuration"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:224
+msgid "the imap_server configuration is incorrect"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:225
+msgid "the TLS settings on the listener are incorrect"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:227
+msgid "To test each, use a tool such as imtest (a command line tool that \"speaks\" IMAP) to connect to the imap_server from the machine Guam is running on, using the ports, hostname and TLS settings in the imap_server configuration."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:231
+msgid "If the IMAP server picks up as expected, including TLS settings, then this is not the source of the issue. Next, use **imtest** to connect to the Guam listener's port, hostname and TLS setting(s) from a different machine that can reach the system Guam is running on, such as a laptop on the same network."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:236
+msgid "Simple connect testing with **imtest** will quickly show the problematic configuration. If Guam is not connecting and the configuration is indeed correct, please file a bug report noting the configuration options in both the ``imap_server`` and ``listener`` configuration, along with other relevant information (e.g. does it accept connections for a while then stop doing so, and start accepting again on restart?)."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:244
+msgid "Rules"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:246
+msgid "Individual rules operate separately from each other, though they may be chained. If a rule set is not behaving as expected, first try to run a Guam listener with each individual rule in the chain on its own and validate that each rule on its own is performing as expected."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:251
+msgid "If this resolves the issue to a specific rule, then next check the confguration for the rule in the Guam config file to ensure the rule is properly configured. If it is, then it is appropriate to file a bug report describing the issue along with sample configuration."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:256
+msgid "If each rule works on its own, start combining the rules in a chain, adding one rule at a time until the problem manifests. A bug should then be filed noting the specific rule chain, configuration and problem behavior."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:260
+msgid "Specific rules are covered individually below."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:263
+msgid "Rule: ``filter_groupware``"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:265
+msgid "The ``filter_groupware`` rule attempts to remove all folders containing groupware data (calendars, contacts, notes, todos, etc.) from folder list commands. It does not prevent access to those folders, it simply prevents advertising them to IMAP clients."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:270
+msgid "If this is not working, first check Guam's configuration, ensuring that exactly one \"rules\" block exists in the listener block defining the port being connected to. Pay specific attention to the host/port settings (to ensure this is indeed the listener that is misbehaving), and check for a rules block similar to:"
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:280
+msgid "To see the groupware folders (which Kolab-aware clients generally need to), the client must advertise itself as a Kolab client with an IMAP ID command prior to performing a LIST command that results in a folder list. This ID must include a \"user agent\" string containing the substring \"/Kolab\". Example would be: \"Kontact/Kolab\". So if folders are being filtered for a client when it should not be, first check what the client in question advertises itself as."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:287
+msgid "If folders are not being filtered, check that the ``/shared/vendor/kolab/folder-type`` metadata key is set on the folders in question. If it is not, then Guam will not filter them out."
+msgstr ""
+
+#: ../../source/about/guam/troubleshooting.rst:291
+msgid "If no issues are found with configuration or client, please file a bug report noting the issue."
+msgstr ""
+

@@ -1,0 +1,3876 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:92
+msgid "Roundcube Settings Reference Guide"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:94
+msgid "Roundcube is configured using a default settings file, a settings file for site-specific configuration, host-specific configuration files, and configuration files specific to plugins."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:98
+msgid "The configuration inheritance model looks as follows:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:100
+msgid "``config/defaults.inc.php``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:102
+msgid "This configuration file ships the default settings for Roundcube."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:106
+msgid "On the expanded sources (from tarball releases), this file is at :file:`your/install/path/config/defaults.inc.php`. On packaged distributions however, this path is a symbolic link to :file:`/etc/roundcubemail/defaults.inc.php`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:111
+msgid "``config/config.inc.php``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:113
+msgid "Site-specific global settings are in this configuration file."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:117
+msgid "On the expanded sources (from tarball releases), this file starts out as :file:`your/install/path/config/config.inc.php.dist`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:121
+msgid "You would rename this original ``.dist`` file to :file:`your/install/path/config/config.inc.php`, but on packaged distributions, this is already done by the packaging. Similar to ``defaults.inc.php``, this configuration file also lives in :file:`/etc/roundcubemail/`, at :file:`/etc/roundcubemail/config.inc.php` to be precise, and a symbolic link is created from to original file location to this location."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:130
+msgid "``config/<site>.inc.php``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:132
+msgid "``<site>`` being a placeholder for an arbitrary site name, Roundcube allows the inclusion of additional configuration using the :ref:`admin_roundcube-settings_include_host_config` setting."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:136
+msgid "This is, however, NOT the recommended solution."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:138
+msgid "``plugins/<plugin_name>/config.inc.php``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:140
+msgid "Each plugin that requires configuration ships a :file:`config.inc.php.dist`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:143
+msgid "As you may have suspected, these configuration files too are created symbolic links for, to :file:`/etc/roundcubemail/<plugin_name>.inc.php`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:147
+msgid "Since the configuration files are PHP code that is being executed while the configuration loads, one might add include statements such that configured condititions load additional configuration files on top of the aforementioned four (types)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:152
+msgid "For example, :file:`/etc/roundcubemail/config.inc.php` might have a segment to establish defaults at the start, then include a site specific configuration file:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:163
+msgid "and then re-apply mandatory defaults:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:184
+msgid "Database Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:188
+msgid ":ref:`admin_roundcube-settings_database-configuration-hints`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnr.txt:4
+msgid "``db_dsnr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnr.txt:6
+msgid "The database URI read-only operations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnr.txt:8
+msgid "Read operations are executed against this URI, but -- by default -- only if there is no penalty requiring Roundcube to reconnect or separately connect to this DSN after one or more write operations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnr.txt:12
+msgid "In a replicated database environment, the write vs. read operations might be balanced unfairly -- see :ref:`admin_roundcube-settings_db_dsnw_noread`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw.txt:4
+msgid "``db_dsnw``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw.txt:6
+msgid "The write DSN to the database."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw.txt:8
+msgid "If specified exclusively, meaning :ref:`admin_roundcube-settings_db_dsnr` is an empty value, or the same value, the write DSN becomes the database URI for both write and read operations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:4
+msgid "``db_dsnw_noread``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:6
+msgid "Only applicable if :ref:`admin_roundcube-settings_db_dsnr` is set to a non-empty value not equal to :ref:`admin_roundcube-settings_db_dsnw`, this setting adjusts the default behaviour of Roundcube with regards to database read operations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:11
+msgid "By default, when Roundcube writes out to a database, subsequent read operations are executed over the same database connection."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:14
+msgid "This may not be desirable in a replicated database environment, for most page hits (by far) include one or more write operations against the database -- such as an update to the session -- resulting in write vs. read operations being unfairly balanced between the write master(s) and read-only slave(s)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:20
+msgid "Set ``db_dsnw_noread`` to ``true`` to ensure all read operations are executed against read slave(s) rather then write master(s), despite the potential overhead in needing to create a new database connection, and regardless of the read slave(s) potentially lagging in replication."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:27
+msgid "Setting ``db_dsnw_noread`` to ``true`` implies you have your database replication sorted out, and monitored continuously."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_dsnw_noread.txt:30
+msgid "There is great benefit in enabling this setting when you have multiple read slaves with optimal query cache settings, versus limited numbers of write masters."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_persistent.txt:4
+msgid "``db_persistent``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_persistent.txt:6
+msgid "Whether or not ``pconnect()`` or simply ``connect()`` capabilities should be used if at all available."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_persistent.txt:9
+msgid "Persistent connections, as the name suggests, are not closed when the processing of a request ends. When using persistent connections, you're trusting the verification routines that PHP applies to make sure a connection that was around already, and is being re-used, is not suddenly privileged more or less than it should be, and is the right database server and database."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_persistent.txt:15
+msgid "You enable persistent connections to reduce the overhead of needing to build new database connections on every request."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_persistent.txt:20
+msgid "http://www.php.net/manual/en/features.persistent-connections.php"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_prefix.txt:4
+msgid "``db_prefix``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_prefix.txt:6
+msgid "Prefix Roundcube's table names with the prefix configured here."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_prefix.txt:8
+msgid "When, for example, only a single database is available to you, should multiple applications you wish to run both have a table named ``users``, than specify a ``db_prefix`` to make sure the Roundcube table for users can be created next to an existing table ``users``, and avoid the conflict in the schema definitions for the tables."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_prefix.txt:15
+msgid "Example Configuration"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_table_dsn.txt:4
+msgid "``db_table_dsn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:0
+msgid "This section needs you!"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+#: ../../source/administrator-guide/roundcube-settings/needs-work.txt:4
+msgid "This section of the documentation is a work in progress, and could use your help."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/db_table_dsn.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_other.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_personal.txt:8
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_shared.txt:8
+#: ../../source/administrator-guide/roundcube-settings/session_name.txt:8
+#: ../../source/administrator-guide/roundcube-settings/language.txt:8
+#: ../../source/administrator-guide/roundcube-settings/line_length.txt:8
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_pw.txt:8
+msgid "Sadly, this setting has not yet been documented."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:200
+msgid "For more database related settings, see also:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:202
+msgid ":ref:`admin_roundcube-settings_imap_cache`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:203
+msgid ":ref:`admin_roundcube-settings_ldap_cache`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:204
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:32
+msgid ":ref:`admin_roundcube-settings_messages_cache`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:205
+msgid ":ref:`admin_roundcube-settings_session_storage`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:209
+msgid "IMAP Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:4
+msgid "``imap_cache``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:6
+msgid "Cache generic IMAP metadata, such as lists of mailboxes, and the last known status of each mailbox in that list."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:9
+msgid "The default for Roundcube is set to ``null``, meaning not cache anything. In Kolab Groupware, the default is ``db`` (see below)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:12
+msgid "In many deployments, disk I/O on the IMAP server is a major concern and possibly a bottleneck, so it is recommended to turn on caching."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:15
+msgid "If caching is not enabled, Roundcube will address IMAP directly every time it needs metadata about IMAP folders."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:18
+msgid "Valid values include one of:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:20
+msgid "**db**"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:22
+msgid "Store IMAP caches in the database configured with :ref:`admin_roundcube-settings_db_dsnw`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:25
+msgid "In Kolab Groupware, this is made the default, as it does not introduce any additional requirements to the environment."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:28
+msgid "Using the database for IMAP caches however does introduce a little bit of overhead, for connections need to be made, authenticated, databases selected, connections authorized, queries be executed, authorized and awaited the answer for. That said, IMAP caches make little use of the relational capabilities of such database."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:34
+msgid "**apc**"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:36
+msgid "Store IMAP caches in the *Alternative PHP Cache* (or \"APC) -- the memory segment(s) for PHP originally intended to store already binary compiled PHP code, so that PHP does not need to read from disk, interpret, compile and execute the PHP code every time a user hits a page."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:44
+msgid "It is recommended to use APC for caching binary compiled PHP code, but it is **not recommended** to use APC for IMAP caches."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:47
+msgid "**memcache**"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:49
+msgid "Store the IMAP caches in memcache, configured using :ref:`admin_roundcube-settings_memcache_hosts`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:52
+msgid "Memcache introduces far less overhead compared to a relational database, and does not require authentication and authorization."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache.txt:55
+msgid "For larger deployments, this is the recommended setting. However, you would need to configure memcache hosts, and making those highly available is possible with replicated memcached daemons available and supported only as part of Kolab Enterprise 13 and later enterprise editions."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache_ttl.txt:4
+msgid "``imap_cache_ttl``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache_ttl.txt:6
+msgid "The Time To Live (TTL) for the IMAP caches -- the time it should be considered valid, or expunged from the current caches at the first opportunity."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache_ttl.txt:9
+msgid "Really applicable when used alongside a caching technology that allows the retention to be specified upon entry, and purges caches automatically."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache_ttl.txt:12
+msgid "This setting controls, for example, how long folder lists are retained in cache."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_cache_ttl.txt:14
+msgid "With the folder list being cached, should the user create a folder and subscribe the folder (using a different client), than the web client session will have to wait for as long as the :ref:`admin_roundcube-settings_imap_cache` is within its defined TTL before it is made visible automatically, or, alternatively, the user might look in his Settings > Folders to bypass caches and refresh the folder list."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:4
+msgid "``messages_cache``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:6
+msgid "Controls whether or not to cache messages."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:8
+msgid "Valid configuration values are limited to ``db`` only, for message caching makes extensive use of the relational capabilities of the database."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:11
+msgid "Store cached messages in the database configured with :ref:`admin_roundcube-settings_db_dsnw`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:16
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:33
+msgid ":ref:`admin_roundcube-settings_messages_cache_threshold`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:17
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:34
+msgid ":ref:`admin_roundcube-settings_messages_cache_ttl`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache.txt:18
+#: ../../source/administrator-guide/roundcube-settings/kolab_cache.txt:14
+msgid ":ref:`admin_roundcube-settings-plugin_libkolab_kolab_messages_cache_bypass`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_threshold.txt:4
+msgid "``messages_cache_threshold``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_threshold.txt:6
+msgid "Messages with a size over the configured threshold are not cached."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_threshold.txt:8
+msgid "This allows an administrator to make sure no cheap 30 MB videos of cats wearing a custome end up in the expensive database."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:4
+msgid "``messages_cache_ttl``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:6
+msgid "Messages are usually displayed ordered by date (of submission or arrival), with the most recent few first."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:9
+msgid "In effect, this tends to result in a view that does underappreciate older messages -- they are not regularly displayed in the user's mail (list) views."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:12
+msgid "Since these messages are only retrieved occasionally, it makes sense to not spend too much cache capacity on these messages."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:15
+msgid "Set ``messages_cache_ttl`` to the maximum amount of time that may have passed since the message became available, during which caching is still considered appropriate."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:21
+msgid "A rule of thumb for establishing the appropriate TTL for the messages cache would be to cache 2 times a single :ref:`admin_roundcube-settings_mail_pagesize` for any one mail folder (using the default, that would amount to 80 messages)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:27
+msgid "Example: Low-turnover Sites"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:28
+msgid "Example settings with only a few mails per week per mail folder, and not too many users."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:36
+msgid "Example: High-turnover Sites"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/messages_cache_ttl.txt:43
+msgid "The ``messages_cache_ttl`` does not impact the :ref:`admin_roundcube-settings-plugin_libkolab_kolab_cache`, but may impact the applicability of :ref:`admin_roundcube-settings-plugin_libkolab_kolab_messages_cache_bypass` being set to ``0``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:4
+msgid "``memcache_hosts``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:6
+msgid "Configure a list of memcached hosts to use for caches and/or storage."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:8
+msgid "Usually, it is sufficient to use one memcached host address in this list, and this one memcached host address might be a load-balanced, high-availability replicated memcached cluster."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:12
+msgid "Replicated memcached is available and supported only as part of Kolab Enterprise 13, and later, however."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:15
+msgid "Use multiple addresses in case the size of all information stored exceeds the capacity of one (replicated) memcached host."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:19
+msgid "Example Configuration for a Replicated Memcached Cluster"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/memcache_hosts.txt:27
+msgid "Example Configuration for Multiple Memcached Hosts"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_always.txt:4
+msgid "``delete_always``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_always.txt:6
+msgid "This setting controls whether mail should be deleted, even when moving the mail to the Trash folder fails."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_always.txt:11
+msgid "This setting has no effect in a default Kolab Groupware installation, which does not attempt to move the mail to the Trash folder in the first place."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_always.txt:17
+msgid ":ref:`admin_roundcube-settings_flag_for_deletion`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_always.txt:18
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:25
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:14
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:14
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:16
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:17
+msgid ":ref:`admin_roundcube-settings_trash_mbox`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_junk.txt:4
+msgid "``delete_junk``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/delete_junk.txt:6
+msgid "Delete messages marked as junk right-away, and do not move them to the Trash folder."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/logout_expunge.txt:4
+msgid "``logout_expunge``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/logout_expunge.txt:6
+msgid "Expunge a user's INBOX upon logout. To expunge a user's INBOX means to issue an *EXPUNGE* command to the IMAP server, deleting all messages from the mailbox that have previously been flagged as \\Deleted."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/logout_expunge.txt:12
+#: ../../source/administrator-guide/roundcube-settings/logout_purge.txt:10
+msgid "Note that this requires a successful logout, and does not kick in when the browser (tab) is simply closed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/logout_purge.txt:4
+msgid "``logout_purge``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/logout_purge.txt:6
+msgid "Purge the Trash folder upon successful logout."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:4
+msgid "``flag_for_deletion``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:6
+msgid "When a user deletes a message, should Roundcube flag the message as deleted in IMAP, or move the message to the Trash folder?"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:9
+msgid "The default in Kolab Groupware is to flag a message as deleted."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:13
+msgid ":ref:`admin_roundcube-settings_delete_always`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:14
+msgid ":ref:`admin_roundcube-settings_logout_expunge`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/flag_for_deletion.txt:15
+msgid ":ref:`admin_roundcube-settings_logout_purge`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:4
+msgid "``create_default_folders``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:6
+msgid "Whether or not Roundcube should create the default folders configured for the user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:9
+msgid "This includes, for example, the folders for sent items and the trash folder."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:14
+msgid "In a Kolab Groupware environment, a set of default folders is usually created by the Kolab daemon. Which folders are created is controlled through the ``autocreate_folders`` setting in :manpage:`kolab.conf(5)`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:21
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:11
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:13
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:13
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:13
+msgid ":ref:`admin_roundcube-settings_default_folders`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:22
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:11
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:14
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:14
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:14
+msgid ":ref:`admin_roundcube-settings_junk_mbox`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:23
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:12
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:12
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:16
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:15
+msgid ":ref:`admin_roundcube-settings_protect_default_folders`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/create_default_folders.txt:24
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:13
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:13
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:15
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:16
+#: ../../source/administrator-guide/roundcube-settings/reply_same_folder.txt:10
+msgid ":ref:`admin_roundcube-settings_sent_mbox`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:4
+msgid "``default_folders``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:6
+msgid "This setting is obsolete and should not be used."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_folders.txt:10
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:10
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:12
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:12
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:12
+msgid ":ref:`admin_roundcube-settings_create_default_folders`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:4
+msgid "``junk_mbox``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/junk_mbox.txt:6
+msgid "The name of the folder to use as the Junk folder."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:4
+msgid "``protect_default_folders``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/protect_default_folders.txt:6
+msgid "Protect the configured :ref:`admin_roundcube-settings_create_default_folders` from being unsubscribed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/check_all_folders.txt:4
+msgid "``check_all_folders``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/check_all_folders.txt:6
+msgid "If true all folders will be checked for recent messages."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:4
+msgid "``default_host``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:6
+msgid "The ``default_host`` setting configures the IMAP server address to connect to, and if omitted, allows the user to specify the IMAP server address."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:9
+msgid "A drop-down select list could be provided by configuring ``default_host`` as follows:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:20
+msgid "To show user-friendly, legible labels instead of server addresses, give each of the items in the list a value:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:31
+msgid "Neither of these options is used by Kolab Groupware. By default, the ``default_host`` is set to ``tls://localhost``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:34
+msgid "For environments with multiple parent or alias domains, and hosted environments, and co-located service providers, we recommend using the file inclusion method outlined at the very start of the :ref:`admin_roundcube-settings`, for the flexibility required in such environments is likely to exceed just the IMAP server address to use."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:40
+msgid "Furthermore, Kolab Groupware really likes the Cyrus IMAP Murder topology, where the IMAP server address used to connect to matters less."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_host.txt:45
+msgid "http://trac.roundcube.net/wiki/Howto_Config#IMAPserverconnection"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_port.txt:4
+msgid "``default_port``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_port.txt:6
+msgid "TCP port used for IMAP connections"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_cid.txt:4
+msgid "``imap_auth_cid``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_cid.txt:6
+msgid "Optional IMAP authentication identifier to be used as authorization proxy"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_pw.txt:4
+msgid "``imap_auth_pw``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_pw.txt:6
+msgid "Optional IMAP authentication password to be used for imap_auth_cid"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_type.txt:4
+msgid "``imap_auth_type``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_auth_type.txt:6
+msgid "IMAP AUTH type (DIGEST-MD5, CRAM-MD5, LOGIN, PLAIN or null to use best server supported)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_delimiter.txt:4
+msgid "``imap_delimiter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_delimiter.txt:6
+msgid "Set the delimiter to use in IMAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_delimiter.txt:8
+msgid "Be warned that the delimiter is a hierarchy element (i.e., for nested folders), and often has implications if configured incorrectly."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_delimiter.txt:11
+msgid "The default is not configured, so that the results of the IMAP command NAMESPACE are interpreted. This is the recommended setting, and we suggest you only fiddle with this setting should your IMAP server not support the NAMESPACE command."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_disabled_caps.txt:4
+msgid "``imap_disabled_caps``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_disabled_caps.txt:6
+msgid "Specify a list of capabilities to filter from the capabilities advertised by the server."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_disabled_caps.txt:9
+msgid "Useful if you do not have control over the server, so useless for Kolab Groupware deployments in production (but useful again in testing and development)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_disabled_caps.txt:13
+msgid "Examples of capabilities advertised by a server that you may want to disable include ESEARCH for UW-IMAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_disabled_caps.txt:16
+msgid "Default: ``Array()``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_caps.txt:4
+msgid "``imap_force_caps``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_caps.txt:6
+msgid "By default IMAP capabilities are readed after connection to IMAP server In some cases, e.g. when using IMAP proxy, there's a need to refresh the list after login. Set to True if you've got this case."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_lsub.txt:4
+msgid "``imap_force_lsub``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_lsub.txt:6
+msgid "Force the use of the LSUB command over the LIST-EXTENDED command to list folders."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_lsub.txt:9
+msgid "Some IMAP servers (including Dovecot 1.x) return wrong results when using LIST-EXTENDED."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_ns.txt:4
+msgid "``imap_force_ns``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_force_ns.txt:6
+msgid "Some server configurations (e.g. Courier) doesn't list folders in all namespaces Enable this option to force listing of folders in all namespaces"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_other.txt:4
+msgid "``imap_ns_other``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_personal.txt:4
+msgid "``imap_ns_personal``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_ns_shared.txt:4
+msgid "``imap_ns_shared``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_timeout.txt:4
+msgid "``imap_timeout``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_timeout.txt:6
+msgid "IMAP connection timeout, in seconds. Default: 0 (use default_socket_timeout)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/min_refresh_interval.txt:4
+msgid "``min_refresh_interval``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/min_refresh_interval.txt:6
+msgid "Minimal value of user's 'refresh_interval' setting (in seconds)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/no_save_sent_messages.txt:4
+msgid "``no_save_sent_messages``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/no_save_sent_messages.txt:6
+msgid "Disables saving sent messages in Sent folder (like gmail) (Default: false) Note: useful when SMTP server stores sent mail in user mailbox"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/quota_zero_as_unlimited.txt:4
+msgid "``quota_zero_as_unlimited``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/quota_zero_as_unlimited.txt:6
+msgid "if in your system 0 quota means no limit set this option to true"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/refresh_interval.txt:4
+msgid "``refresh_interval``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/refresh_interval.txt:6
+msgid "Default interval for auto-refresh requests (in seconds) These are requests for system state updates e.g. checking for new messages, etc. Setting it to 0 disables the feature."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:4
+msgid "``sent_mbox``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:6
+msgid "Store sent message is this mailbox. Leave blank if sent messages should not be stored. NOTE: Use folder names with namespace prefix (INBOX. on Courier-IMAP)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sent_mbox.txt:15
+msgid ":ref:`admin_roundcube-settings_reply_same_folder`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skip_deleted.txt:4
+msgid "``skip_deleted``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skip_deleted.txt:6
+msgid "Set true if deleted messages should not be displayed This will make the application run slower"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:4
+msgid "``trash_mbox``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/trash_mbox.txt:6
+msgid "Move messages to this folder when deleting them. Leave blank if they should be deleted directly. NOTE: Use folder names with namespace prefix (INBOX. on Courier-IMAP)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:251
+msgid "LDAP Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:4
+msgid "``ldap_public``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:6
+msgid "A list of so-called Global Address Books, or Global Address Lists, useful for auto-completion of addresses being typed in to the To, CC and BCC fields when composing an email, when using the ACL plugin, and for searches from mobile devices and desktop clients using ActiveSync (through Syncroton) and/or CardDAV (through iRony)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:12
+msgid "The first item configured here is the identifier of the address book. That being said, an example would look as follows:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:27
+msgid "While it is not very common to have multiple global address books, some organizations put one address book in the list of address books to use for auto-completion, and use another address book to store a copy of the local phone book -- you know, with residents and businesses in the area -- or address books of partner organizations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:33
+msgid "Using the :ref:`admin_roundcube-settings_autocomplete_addressbooks` setting, one address book can be used for auto-completion, while the other address book is available for searching in the web client, on mobile devices and using desktop clients using ActiveSync (through Syncroton) and/or CardDAV (through iRony)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:39
+msgid "A large amount of settings are available for the global address books. By default, Kolab Groupware configures the organization's address book to use a set of configuration options that is designed to provide an easy growth-path to beyond 1.000 entries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:45
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:588
+msgid "``name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:47
+msgid "The name of the address book as it is presented in Roundcube."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:49
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:33
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:32
+msgid "Example:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:61
+msgid "The label used here is not available for localization."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:66
+msgid "``hosts``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:68
+msgid "A list of LDAP server addresses to use to connect to."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:70
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:235
+msgid "Magic configuration values are available:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:72
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:17
+msgid "``%h``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:74
+msgid "The user's IMAP hostname."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:76
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:25
+msgid "``%n``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:78
+msgid "The value of ``$_SERVER['SERVER_NAME']``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:82
+msgid "The ``$_SERVER['SERVER_NAME']`` value is not the same as the ``$_SERVER['HTTP_HOST']`` value."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:85
+msgid "``$_SERVER['SERVER_NAME']`` is a server-side configuration item, ``$_SERVER['HTTP_HOST']`` is an item specified by the client."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:89
+msgid "``%t``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:91
+msgid "The value of ``$_SERVER['SERVER_NAME']`` but without the hostname -- ergo, this is the domain name space that ``$_SERVER['SERVER_NAME']`` resides in."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:95
+msgid "For a webserver virtualhost named ``webmail.example.org``, ``%t`` is ``example.org``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:98
+msgid "For a webserver virtualhost named ``webmail.someone.somewhere.tld``, ``%t`` is ``someone.somewhere.tld``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:104
+msgid "``port``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:106
+msgid "The port to use to connect to LDAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:110
+msgid "Note that the port number specified here is used for all server addresses configured in :ref:`admin_roundcube-settings_ldap_public_hosts`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:115
+msgid "``use_tls``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:117
+msgid "Whether or not to encrypt the connection. Useful with :ref:`admin_roundcube-settings_ldap_public_port` set to 389 (explicit SSL through STARTTLS), not so much with the port set to 636 (implicit SSL)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:123
+msgid "``ldap_version``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:125
+msgid "The LDAP protocol version to use. Set this to 3 or be prepared to be (unpleasantly) surprised."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:129
+msgid "``network_timeout``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:131
+msgid "The timeout."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:134
+msgid "``user_specific``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:136
+msgid "Whether or not to bind to LDAP with the user's credentials, as opposed to global credentials, allowing for organizations to hide or show parts of the Directory Information Tree hierarchy, and/or hide or show certain attributes of certain entries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:141
+msgid "Set this to ``true`` -- the default in Kolab Groupware -- and configure :ref:`admin_roundcube-settings_ldap_public_search_base_dn` and :ref:`admin_roundcube-settings_ldap_public_search_filter`, and if anonymous binding is not allowed -- the default in Kolab Groupware -- or anonymous searches are not allowed -- the default in Kolab Groupware -- also configure :ref:`admin_roundcube-settings_ldap_public_search_bind_dn` and :ref:`admin_roundcube-settings_ldap_public_search_bind_pw`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:152
+msgid "There is no setting for the search scope."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:157
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:530
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:598
+msgid "``base_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:159
+msgid "The base DN to use for searching entries to be presented in the global address book, such as ``ou=Employees,ou=People,dc=example,dc=org``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:162
+msgid "See :ref:`admin_roundcube-settings_ldap_public_group_filters` for more examples on what else this allows you to do."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:166
+msgid "``bind_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:168
+msgid "The bind dn to use for displaying the address book. Kolab Groupware sets this to ``%dn`` by default, to have the connection be bound with the user's credentials."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:173
+msgid "``bind_pass``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:175
+msgid "The password, which when ``bind_dn`` is set to ``%dn`` (the default), better be ``%p``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:181
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:502
+msgid "``config_root_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:183
+msgid "Use ``config_root_dn`` to search for VLV and SSS settings."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:188
+msgid "``domain_base_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:193
+msgid "``domain_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:198
+msgid "``domain_name_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:203
+msgid "``domain_result_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:208
+msgid "``search_base_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:210
+msgid "When searching for object entries that match the logged in user, start searching at this base DN."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:213
+msgid "Useful when you want to limit who can use the address book with their own credentials, versus 'anonymously', and/or when attribute values searched for are not globally unique."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:217
+msgid "One could set ``base_dn`` to ``ou=People,dc=example,dc=org``, while setting ``search_base_dn`` to ``ou=Management,ou=Employees,ou=People,dc=example,dc=org``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:221
+msgid "One could then set an ACL on ``ou=Employees,ou=People,dc=example,dc=org``, that does not permit the credentials configured in ``search_dn_default`` to read certain attributes of entries, such as ``street``, ``mobile``, and other such information that might be personal in nature."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:230
+msgid "``search_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:232
+msgid "When searching for object entries that match the logged in user, use the search filter configured with this setting."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:237
+msgid "``%fu``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:239
+msgid "The full username, usually also the user's primary email address, though possibly of the form ``<username>@<imaphostname>``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:242
+msgid "The full extent of possibilities (which depend on configuration and plugins interacting with the authentication process) is beyond the scope of this document, so suffice it to say that :ref:`admin_roundcube-settings-plugin_kolab_auth` applies a process called :term:`canonification` that makes ``%fu`` be substituted by the fully qualified primary recipient email address of the Kolab user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:250
+msgid "In Kolab Groupware, by default, the attribute value of ``mail`` is used."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:253
+msgid "This is also the user's mailbox name (``user/<mail>`` or ``user/john.doe@example.org`` for user ``john.doe@example.org``) and is globally unique."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:257
+msgid "Example: ``(&(objectclass=kolabinetorgperson)(mail=%fu))``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:259
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:21
+msgid "``%u``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:261
+msgid "The username local part, or \"everything before the '@'\"."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:263
+msgid "In ``john.doe@example.org``, this would become ``john.doe``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:265
+msgid "To allow users to log in with their ``uid`` attribute value, one could specify ``(&(objectclass=kolabinetorgperson)(uid=%u))``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:268
+msgid "``%d``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:270
+msgid "The domain name space of the username, or \"everything after the '@'\"."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:273
+msgid "In ``john.doe@example.org``, this would become ``example.org``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:275
+msgid "``%dc``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:277
+msgid "The root dn that corresponds with the domain name space used to login."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:280
+msgid "When ``john.doe@example.org`` logs in, the domain name space of ``example.org`` would typically correspond with a root dn of ``dc=example,dc=org`` -- if ``example.org`` is a :term:`parent domain name space` and no :term:`domain_result_attribute` is available for the ``domainrelatedobject`` entry."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:289
+msgid "Using ``%dc`` requires :ref:`admin_roundcube-settings_ldap_public_domain_base_dn`, :ref:`admin_roundcube-settings_ldap_public_domain_filter`, :ref:`admin_roundcube-settings_ldap_public_domain_name_attr`, and :ref:`admin_roundcube-settings_ldap_public_domain_result_attr`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:299
+msgid "``search_bind_dn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:301
+msgid "The bind dn to use when searching for object entries that match the user currently logged in."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:304
+msgid "This should be a privileged entity that is allowed to search throughout the tree configured in ``search_base_dn``, but has no privileges other than to read the relevant attributes of entries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:308
+msgid "By default, Kolab Groupware configures this setting to be the same setting used for Postfix lookup tables, namely ``uid=kolab-service,ou=Special Users,dc=example,dc=org``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:312
+msgid "This entry has specific search, time and lookthrough limitations configured, allowing it to search throughout the entire Directory Information Tree hierarchy."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:319
+msgid "``search_bind_pw``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:321
+msgid "The bind password to use alongside :ref:`admin_roundcube-settings_ldap_public_search_bind_dn`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:325
+msgid "``search_bind_attrib``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:327
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:332
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:421
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:426
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:466
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:512
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:517
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:522
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:527
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:532
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:537
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:542
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:547
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:552
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:557
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:562
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:567
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:572
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:577
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:590
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:595
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:600
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:605
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:610
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:71
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:77
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:83
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:89
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:95
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:101
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:107
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:113
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:119
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:125
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:131
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:137
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:30
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:36
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:42
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:48
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:54
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:60
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:66
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:72
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:78
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:84
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:90
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:96
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:102
+msgid "Undocumented."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:330
+msgid "``search_dn_default``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:335
+msgid "``auth_cid``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:337
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:342
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:359
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:364
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:369
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:374
+msgid "Not used in Kolab Groupware."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:340
+msgid "``auth_method``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:345
+msgid "``hidden``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:347
+msgid "A boolean, this configuration option allows you to hide this address book from the address book task view. Default: ``false``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:351
+msgid "``searchonly``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:353
+msgid "Renders the address book searchable only -- meaning, its contents cannot be browsed. Default: ``false``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:357
+msgid "``writable``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:362
+msgid "``LDAP_Object_Classes``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:367
+msgid "``LDAP_rdn``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:372
+msgid "``required_fields``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:377
+msgid "``search_fields``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:379
+msgid "A list of attribute names to search values for, when searching is executed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:381
+msgid "Default: ``displayName``, ``mail``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:385
+msgid "Only list attribute names for which the appropriate indexes have been created. In the context of searching, presence and equality indexes are insufficient."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:391
+msgid "The attribute ``alias`` is not included by default, because the attribute does not -- by default -- have an index created on it. See :ref:`admin_ldap_controlling_indexes_and_indexing` for information on indexes."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:397
+msgid "``fieldmap``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:399
+msgid "The fieldmap maps LDAP attribute names to Roundcube placeholder names."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:402
+msgid "Example"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:419
+msgid "``sub_fields``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:424
+msgid "``autovalues``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:429
+msgid "``sort``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:431
+msgid "A list of attribute names to sort entries by."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:433
+msgid "Kolab Groupware uses a default of ``displayname``, ``sn``, ``givenname``, ``cn``, in that order, which very much corresponds with the default Server-Side Sorting configuration we recommend you use when your Directory Information Tree is likely to contain over 1.000 entries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:440
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:483
+msgid "Administrator Guide, Tweaking LDAP, :ref:`admin_ldap_configure-sss`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:441
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:484
+msgid "Administrator Guide, Tweaking LDAP, :ref:`admin_ldap_configure-vlv`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:444
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:535
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:593
+msgid "``scope``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:446
+msgid "The :term:`search scope` to use when looking for address book entries, starting at the :ref:`admin_roundcube-settings_ldap_public_base_dn`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:450
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:540
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:603
+msgid "``filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:452
+msgid "The filter to use when searching for entries to display in the address book."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:454
+msgid "By default, Kolab Groupware sets this to ``(objectclass=inetorgperson)``, so that not only Kolab users (``(objectclass=kolabinetorgperson)``) are a part of the address book, but any non-Kolab users in LDAP, and any non-Groupware users (such as external contacts) are part of the address book too."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:461
+msgid ":ref:`admin_roundcube-settings_ldap_public_vlv`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:464
+msgid "``fuzzy_search``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:471
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:570
+msgid "``vlv``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:473
+msgid "``true`` or ``false`` (default), the ``vlv`` boolean configures Roundcube to use the server-side Virtual List View control, ideal for sorting, pagination and -- a particular feature of Kolab Groupware's ``Net/LDAP3`` -- responsive, fuzzy searching capabilities regardless of the size of the Directory Information Tree."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:478
+msgid "In order to automatically delect available VLV indexes, the option ``config_root_dn`` needs to be set as well."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:487
+msgid "``vlv_search``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:489
+msgid "DEPRECATED. Use Virtual List View functions for autocompletion searches. This option is obsolete when ``vlv`` is enabled."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:493
+msgid "``numsub_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:495
+msgid "With ``vlv`` enabled, we also use numSubOrdinates to query the total number of records. Set this filter to get all numSubOrdinates attributes for counting."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:498
+msgid "Only set this option if your php-ldap module doesn't support the ``ldap_parse_virtuallist_control()`` function which is part of an unofficial patch to php-ldap."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:504
+msgid "The base DN to be used for searching LDAP configuration sesstings such as VLV indexes. Set to ``cn=config`` as the default value for standard Kolab setups."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:507
+msgid "Without this option, no VLV will be used for LDAP queries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:510
+msgid "``sizelimit``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:515
+msgid "``timelimit``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:520
+msgid "``referrals``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:525
+msgid "``groups``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:545
+msgid "``object_classes``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:550
+msgid "``member_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:555
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:608
+msgid "``name_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:560
+msgid "``email_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:565
+msgid "``member_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:575
+msgid "``class_member_attr``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:582
+msgid "``group_filters``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_public.txt:584
+msgid "Group filters are used for advanced navigation of LDAP hierarchies, using the web client's address book pages."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_cache.txt:4
+msgid "``ldap_cache``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_cache.txt:6
+msgid "Type of LDAP cache. Supported values: 'db', 'apc' and 'memcache'."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_cache_ttl.txt:4
+msgid "``ldap_cache_ttl``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_cache_ttl.txt:6
+msgid "Lifetime of LDAP cache. Possible units: s, m, h, d, w"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_addressbooks.txt:4
+msgid "``autocomplete_addressbooks``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_addressbooks.txt:6
+msgid "Specify a list of address books to search for auto-completion."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_addressbooks.txt:8
+msgid "The list includes the names of address books as they are defined in :ref:`admin_roundcube-settings_ldap_public` -- i.e. we start that section by naming 'addressbook1' and 'addressbook2', and those are the names you use here."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_addressbooks.txt:14
+msgid "Names of Kolab address books do not need to be included in the list of address books to use for autocompletion."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_addressbooks.txt:19
+msgid ":ref:`admin_roundcube-settings-plugin_kolab_addressbook`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:261
+msgid "Session & Login Configuration"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:4
+msgid "``assets_path``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:6
+msgid "The ``assets_path`` setting controls where Roundcube (and also plugins) point the user's browser to to obtain static content such as skin markup files (Cascaded Style Sheets or CSS files) and JavaScript files, commonly referred to as :term:`assets`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:11
+msgid "In combination with :ref:`admin_roundcube-settings-use_secure_urls`, which enforces a dynamic base URL to Roundcube, this helps the browsers retain their cached assets and prevents page load times from increasing."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:15
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:22
+msgid "Available for Kolab Enterprise 13"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:18
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:25
+msgid "Available with Kolab 3.3"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/assets_path.txt:23
+msgid ":ref:`admin_roundcube-settings-use_secure_urls`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ip_check.txt:4
+msgid "``ip_check``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ip_check.txt:6
+msgid "Enforce a session may only come from one source IP address."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ip_check.txt:8
+msgid "Should a user be a roaming user -- for example, connect from one source IP address that is one Wifi network, and later connect from another source IP address that is another Wifi network -- then enabling the IP check using this setting will force the existing session to be invalidated, and require the user to login again."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ip_check.txt:14
+msgid "This is useful for paranoid tracking of user's session validity with as many parameters as possible, but also has major caveats."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ip_check.txt:17
+msgid "To have to login again is not user-friendly, and some networks employ load-balanced outgoing connections (with help of proxies) -- meaning that the user may appear to come from two or more separate source IP addresses, while in fact the user has not been roaming."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:4
+msgid "``login_autocomplete``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:6
+msgid "Enable or disable parts of the login form to allow for auto-completion."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:8
+msgid "This setting knows three distinct values:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:10
+msgid "``0``, meaning no parts of the login form should be remembered by the browser."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:13
+msgid "``1``, meaning the login username may be remembered."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:17
+msgid "Note that the login username is a regular form field, and as such it may be difficult for the user to opt-out of remembering the form field value."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:21
+msgid "``2``, meaning the login username and password may both be remembered."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:26
+msgid "This leaves the user to choose whether or not to store the password using the browser, but still implies the login username is remembered -- without too many options to opt-out of that."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:30
+msgid "As such, this setting should only be set to ``2``, if the users are known to only use private and personal computers."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_autocomplete.txt:33
+msgid "The default in Kolab Groupware is to indicate to the browser no form field values should be remembered (``0``)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_lc.txt:4
+msgid "``login_lc``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/login_lc.txt:6
+msgid "Should Roundcube lower-case the login username? A boolean, the default in Kolab Groupware is set to ``true`` -- exploiting case-sensitivity in email addresses, which are the default logins and result attributes, is prohibited."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_logins.txt:4
+msgid "``log_logins``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_logins.txt:6
+msgid "Log successful/failed logins to <log_dir>/userlogins or to syslog"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_session.txt:4
+msgid "``log_session``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_session.txt:6
+msgid "Log session authentication errors to <log_dir>/session or to syslog"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_auth_name.txt:4
+msgid "``session_auth_name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_auth_name.txt:6
+msgid "Session authentication cookie name. Default: 'roundcube_sessauth'"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_domain.txt:4
+msgid "``session_domain``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_domain.txt:6
+msgid "Session domain: .example.org"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_lifetime.txt:4
+msgid "``session_lifetime``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_lifetime.txt:6
+msgid "Session lifetime in minutes"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_name.txt:4
+msgid "``session_name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_path.txt:4
+msgid "``session_path``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_path.txt:6
+msgid "Session path. Defaults to PHP session.cookie_path setting."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_storage.txt:4
+msgid "``session_storage``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_storage.txt:6
+msgid "Backend to use for session storage. Can either be 'db' (default), 'redis', 'memcache', or 'php'"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_storage.txt:8
+msgid "If set to 'memcache', a list of servers need to be specified in 'memcache_hosts'. Make sure the Memcache extension (http://pecl.php.net/package/memcache) version >= 2.0.0 is installed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_storage.txt:11
+msgid "If set to 'redis', a server needs to be specified in 'redis_hosts' Make sure the Redis extension (http://pecl.php.net/package/redis) version >= 2.0.0 is installed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/session_storage.txt:14
+msgid "Setting this value to 'php' will use the default session save handler configured in PHP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/user_aliases.txt:4
+msgid "``user_aliases``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/user_aliases.txt:6
+msgid "Enables possibility to log in using email address from user identities"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_domain.txt:4
+msgid "``mail_domain``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_domain.txt:6
+msgid "This domain will be used to form e-mail addresses of new users Specify an array with 'host' => 'domain' values to support multiple hosts Supported replacement variables:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_domain.txt:10
+#: ../../source/administrator-guide/roundcube-settings/username_domain.txt:11
+msgid "%h - user's IMAP hostname"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_domain.txt:11
+msgid "%n - http hostname ($_SERVER['SERVER_NAME'])"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_domain.txt:12
+msgid "%d - domain (http hostname without the first part)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_domain.txt:13
+#: ../../source/administrator-guide/roundcube-settings/username_domain.txt:15
+msgid "%z - IMAP domain (IMAP hostname without the first part)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_domain.txt:15
+#: ../../source/administrator-guide/roundcube-settings/username_domain.txt:17
+#: ../../source/administrator-guide/roundcube-settings/smtp_server.txt:17
+msgid "For example %n = mail.domain.tld, %t = domain.tld"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/referer_check.txt:4
+msgid "``referer_check``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/referer_check.txt:6
+msgid "check referer of incoming requests"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:4
+msgid "``use_secure_urls``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:6
+msgid "Improve the system's security by enabling the use of secure URLs."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:8
+msgid "Using secure URLs is to say that once a user's session is authenticated, the session is directly correlated with a unique URL that is very hard to guess. This way, so-called Cross-Site Rquest Forgery attacks can be prevented."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:15
+msgid "Using this setting, which is enabled in Kolab by default, requires the use of a mod_rewrite ruleset such as the following:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_secure_urls.txt:30
+msgid ":ref:`admin_roundcube-settings-assets_path`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/username_domain_forced.txt:4
+msgid "``username_domain_forced``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/username_domain_forced.txt:6
+msgid "Force domain configured in username_domain to be used for login. Any domain in username will be replaced by username_domain."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/username_domain.txt:4
+msgid "``username_domain``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/username_domain.txt:6
+msgid "Automatically add this domain to user names for login Only for IMAP servers that require full e-mail addresses for login Specify an array with 'host' => 'domain' values to support multiple hosts Supported replacement variables:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/username_domain.txt:12
+msgid "%n - hostname ($_SERVER['SERVER_NAME'])"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/username_domain.txt:13
+msgid "%t - hostname without the first part"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/username_domain.txt:14
+msgid "%d - domain (http hostname $_SERVER['HTTP_HOST'] without the first part)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:284
+msgid "Log Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/debug_level.txt:4
+msgid "``debug_level``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/debug_level.txt:6
+msgid "System error reporting, sum of: 1 = log; 4 = show"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_debug.txt:4
+msgid "``imap_debug``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_debug.txt:6
+msgid "To debug, or not do debug IMAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_debug.txt:8
+msgid "When enabled, provides a near protocol level dump of events in the :file:`imap` file in the log directory specified by :ref:`admin_roundcube-settings_log_dir`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/imap_debug.txt:14
+msgid ":ref:`admin_roundcube-settings_per_user_logging`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_debug.txt:4
+msgid "``ldap_debug``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/ldap_debug.txt:6
+msgid "Log LDAP conversation to <log_dir>/ldap or to syslog."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_date_format.txt:4
+msgid "``log_date_format``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_date_format.txt:6
+msgid "date format for log entries (read http://php.net/manual/en/function.date.php for all format characters)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_dir.txt:4
+msgid "``log_dir``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_dir.txt:6
+msgid "Activate this option if logs should be written to per-user directories. Data will only be logged if a directry <log_dir>/<username>/ exists and is writable."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_driver.txt:4
+msgid "``log_driver``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/log_driver.txt:6
+msgid "log driver:  'syslog' or 'file'."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:4
+msgid "``per_user_logging``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:6
+msgid "Extremely useful for production sites with a lot of traffic, that want to debug a particular user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:9
+msgid "Normally, debugging is enabled on a global level -- this is not feasible for two reasons:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:12
+msgid "Your disk I/O for logging and incurred latency in processing requests goes through the proverbial roof (though more likely literally)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:15
+msgid "The way logging is implemented does not make a user session, or the log items related to a given user, very recognizable. An insurmountable heap of log messages would require analysis, and you could probably throw away 99.9% of the logs you collected."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:20
+msgid "This setting, when turned on, enables an administrator to make a user-specific directory writeable for the webserver user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:23
+msgid "If this option is enabled, and the directory for a particular exists, only then is all debugging turned on, and only for the relevant user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:27
+msgid "Example Usage"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:28
+msgid "User \"John Doe <john.doe@example.org>\" has a problem."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:30
+msgid "Enable ``per_user_logging``, and create the directory for the user:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:37
+msgid "Get a cup of coffee while John reproduces his problem."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:39
+msgid "Disable ``per_user_logging``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/per_user_logging.txt:43
+msgid "Do not \"just\" enable ``per_user_logging`` for the sake of it. The amount of stat() calls executed are, for busy sites, causing your production to run far from optimally."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_debug.txt:4
+msgid "``smtp_debug``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_debug.txt:6
+msgid "Log SMTP conversation to <log_dir>/smtp or to syslog."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sql_debug.txt:4
+msgid "``sql_debug``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sql_debug.txt:6
+msgid "Log SQL queries to <log_dir>/sql or to syslog."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/syslog_facility.txt:4
+msgid "``syslog_facility``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/syslog_facility.txt:6
+msgid "Syslog facility to use, if using the 'syslog' log driver. For possible values see installer or http://php.net/manual/en/function.openlog.php."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/syslog_id.txt:4
+msgid "``syslog_id``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/syslog_id.txt:6
+msgid "Syslog ident string to use, if using the 'syslog' log driver."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:300
+msgid "Other Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_name_listing.txt:4
+msgid "``addressbook_name_listing``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_name_listing.txt:6
+msgid "the way how contact names are displayed in the list - 0: display name - 1: (prefix) firstname middlename surname (suffix) - 2: (prefix) surname firstname middlename (suffix) - 3: (prefix) surname, firstname middlename (suffix)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_pagesize.txt:4
+msgid "``addressbook_pagesize``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_pagesize.txt:6
+msgid "Show up to X items in contacts list view."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mode.txt:4
+msgid "``addressbook_search_mode``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mode.txt:6
+msgid "Matching mode for addressbook search (including autocompletion)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mode.txt:8
+msgid "0 - partial (*abc*), default"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mode.txt:9
+msgid "1 - strict (abc)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mode.txt:10
+msgid "2 - prefix (abc*)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mode.txt:12
+msgid "Note: For LDAP sources fuzzy_search must be enabled to use 'partial' or 'prefix' mode."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mods.txt:4
+msgid "``addressbook_search_mods``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_search_mods.txt:6
+msgid "Defaults of the addressbook search field configuration. Example: array('name'=>1, 'firstname'=>1, 'surname'=>1, 'email'=>1, '*'=>1);"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_sort_col.txt:4
+msgid "``addressbook_sort_col``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/addressbook_sort_col.txt:6
+msgid "Sort contacts by this column (preferably either one of name, firstname, surname)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/address_book_type.txt:4
+msgid "``address_book_type``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/address_book_type.txt:6
+msgid "This indicates which type of address book to use. Possible choises: 'sql' (default), 'ldap' and ''."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/address_book_type.txt:9
+msgid "If set to 'ldap' then it will look at using the first writable LDAP address book as the primary address book and it will not display the SQL address book in the 'Address Book' view. If set to '' then no address book will be displayed or only the addressbook which is created by a plugin (like CardDAV)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/address_template.txt:4
+msgid "``address_template``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/address_template.txt:6
+msgid "Show address fields in this order. Available placeholders: {street}, {locality}, {zipcode}, {country}, {region}"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/advanced_prefs.txt:4
+msgid "``advanced_prefs``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/advanced_prefs.txt:6
+msgid "Define which settings should be listed under the 'advanced' block which is hidden by default"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_max.txt:4
+msgid "``autocomplete_max``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_max.txt:6
+msgid "Max. numer of entries in autocomplete popup. Default: 15."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_min_length.txt:4
+msgid "``autocomplete_min_length``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_min_length.txt:6
+msgid "The minimum number of characters required to be typed in an autocomplete field before address books will be searched. Most useful for LDAP directories that may need to do lengthy results building given overly-broad searches"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_single.txt:4
+msgid "``autocomplete_single``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_single.txt:6
+msgid "Default font for composed HTML message. Supported values: Andale Mono, Arial, Arial Black, Book Antiqua, Courier New, Georgia, Helvetica, Impact, Tahoma, Terminal, Times New Roman, Trebuchet MS, Verdana"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_threads.txt:4
+msgid "``autocomplete_threads``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autocomplete_threads.txt:6
+msgid "Number of parallel autocomplete requests. If there's more than one address book, n parallel (async) requests will be created, where each request will search in one address book. By default (0), all address books are searched in one request."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/auto_create_user.txt:4
+msgid "``auto_create_user``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/auto_create_user.txt:6
+msgid "Automatically create a new Roundcube user when log-in the first time. A new user will be created once the IMAP login succeeds. Set to false if only registered users can use this service"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autoexpand_threads.txt:4
+msgid "``autoexpand_threads``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/autoexpand_threads.txt:6
+msgid "0 - Do not expand threads 1 - Expand all threads automatically 2 - Expand only threads with unread messages"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/client_mimetypes.txt:4
+msgid "``client_mimetypes``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/client_mimetypes.txt:6
+msgid "Mimetypes supported by the browser. Attachments of these types will open in a preview window either a comma-separated list or an array: 'text/plain,text/html,text/xml,image/jpeg,image/gif,image/png,application/pdf'"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/compose_extwin.txt:4
+msgid "``compose_extwin``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/compose_extwin.txt:6
+msgid "Open message compose form in new window"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/compose_responses_static.txt:4
+msgid "``compose_responses_static``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/compose_responses_static.txt:6
+msgid "A static list of canned responses which are immutable for the user"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/contact_photo_size.txt:4
+msgid "``contact_photo_size``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/contact_photo_size.txt:6
+msgid "Maximum size of uploaded contact photos in pixels."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_formats.txt:4
+msgid "``date_formats``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_formats.txt:6
+msgid "Give this choice of date formats to the user to select from Note: do not use ambiguous formats like m/d/Y"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_format.txt:4
+msgid "``date_format``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_format.txt:6
+msgid "Use this format for date display (date or strftime format)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_long.txt:4
+msgid "``date_long``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_long.txt:6
+#: ../../source/administrator-guide/roundcube-settings/date_short.txt:6
+msgid "Use this format for detailed date/time formatting (derived from date_format and time_format)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/date_short.txt:4
+msgid "``date_short``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_addressbook.txt:4
+msgid "``default_addressbook``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_addressbook.txt:6
+msgid "Defines address book (internal index) to which new contacts will be added. By default it is the first writeable addressbook. Note: Use '0' for built-in address book."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_charset.txt:4
+msgid "``default_charset``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_charset.txt:6
+msgid "Use this charset as fallback for message decoding."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_font_size.txt:4
+msgid "``default_font_size``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_font_size.txt:6
+msgid "Default font size for composed HTML message. Supported sizes: 8pt, 10pt, 12pt, 14pt, 18pt, 24pt, 36pt."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_font.txt:4
+msgid "``default_font``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/default_font.txt:6
+msgid "Default font for composed HTML message. Supported values: Andale Mono, Arial, Arial Black, Book Antiqua, Courier New, Georgia, Helvetica, Impact, Tahoma, Terminal, Times New Roman, Trebuchet MS, Verdana."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/des_key.txt:4
+msgid "``des_key``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/des_key.txt:6
+msgid "This key is used for encrypting purposes, like storing of imap password in the session. For historical reasons it's called DES_key, but it's used with any configured cipher_method (see below)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/display_next.txt:4
+msgid "``display_next``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/display_next.txt:6
+msgid "If true, after message delete/move, the next message will be displayed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/display_version.txt:4
+msgid "``display_version``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/display_version.txt:6
+msgid "Display software version on login screen."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/dont_override.txt:4
+msgid "``dont_override``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/dont_override.txt:6
+msgid "Don't allow these settings to be overriden by the user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/draft_autosave.txt:4
+msgid "``draft_autosave``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/draft_autosave.txt:6
+msgid "Save compose message every 300 seconds (5min)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/drafts_mbox.txt:4
+msgid "``drafts_mbox``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/drafts_mbox.txt:6
+msgid "Store draft message is this mailbox. Leave blank if draft messages should not be stored. NOTE: Use folder names with namespace prefix (INBOX. on Courier-IMAP)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/dsn_default.txt:4
+msgid "``dsn_default``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/dsn_default.txt:6
+msgid "Delivery Status Notification checkbox default state. Note: This can be used only if smtp_server is non-empty."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/email_dns_check.txt:4
+msgid "``email_dns_check``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/email_dns_check.txt:6
+msgid "Enable DNS checking for e-mail address validation."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/enable_installer.txt:4
+msgid "``enable_installer``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/enable_installer.txt:6
+msgid "THIS OPTION WILL ALLOW THE INSTALLER TO RUN AND CAN EXPOSE SENSITIVE CONFIG DATA. ONLY ENABLE IT IF YOU'RE REALLY SURE WHAT YOU'RE DOING!"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/enable_spellcheck.txt:4
+msgid "``enable_spellcheck``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/enable_spellcheck.txt:6
+msgid "Make use of the built-in spell checker. It is based on GoogieSpell."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/force_7bit.txt:4
+msgid "``force_7bit``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/force_7bit.txt:6
+msgid "Use MIME encoding (quoted-printable) for 8bit characters in message body."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/force_https.txt:4
+msgid "``force_https``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/force_https.txt:6
+msgid "Enforce connections over https. With this option enabled, all non-secure connections will be redirected. Set the port for the ssl connection as value of this option if it differs from the default 443."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/forward_attachment.txt:4
+msgid "``forward_attachment``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/forward_attachment.txt:6
+msgid "Sets default mode of Forward feature to \"forward as attachment\""
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/generic_message_footer_html.txt:4
+msgid "``generic_message_footer_html``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/generic_message_footer_html.txt:6
+msgid "Path to a text file which will be added to each sent HTML message. Paths are relative to the Roundcube root folder."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/generic_message_footer.txt:4
+msgid "``generic_message_footer``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/generic_message_footer.txt:6
+msgid "Path to a text file which will be added to each sent message. Path is relative to the Roundcube root folder."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/htmleditor.txt:4
+msgid "``htmleditor``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/htmleditor.txt:6
+msgid "Compose html formatted messages by default 0 - never, 1 - always, 2 - on reply to HTML message, 3 - on forward or reply to HTML message 4 - always, except when replying to plain text message"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/http_received_header_encrypt.txt:4
+msgid "``http_received_header_encrypt``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/http_received_header_encrypt.txt:6
+msgid "Whether or not to encrypt the IP address and the host name. These could, in some circles, be considered as sensitive information; however, for the administrator, these could be invaluable help when tracking down issues."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/http_received_header.txt:4
+msgid "``http_received_header``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/http_received_header.txt:6
+msgid "Add a received header to outgoing mails containing the creators IP and hostname."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/identities_level.txt:4
+msgid "``identities_level``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/identities_level.txt:6
+msgid "Set identities access level:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/identities_level.txt:8
+msgid "0 - many identities with possibility to edit all params 1 - many identities with possibility to edit all params but not email address 2 - one identity with possibility to edit all params 3 - one identity with possibility to edit all params but not email address 4 - one identity with possibility to edit only signature"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/image_thumbnail_size.txt:4
+msgid "``image_thumbnail_size``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/image_thumbnail_size.txt:6
+msgid "Size of thumbnails from image attachments displayed below the message content. Note: whether images are displayed at all depends on the 'inline_images' option. Set to 0 to display images in full size."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/im_convert_path.txt:4
+msgid "``im_convert_path``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/im_convert_path.txt:6
+msgid "Path to imagemagick convert binary (if not set we'll use Imagick or GD extensions)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/im_identify_path.txt:4
+msgid "``im_identify_path``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/im_identify_path.txt:6
+msgid "Path to imagemagick identify binary (if not set we'll use Imagick or GD extensions)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/include_host_config.txt:4
+msgid "``include_host_config``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/include_host_config.txt:6
+msgid "Try to load host-specific configuration. See http://trac.roundcube.net/wiki/Howto_Config for more details."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/inline_images.txt:4
+msgid "``inline_images``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/inline_images.txt:6
+msgid "Display attached images below the message body."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/language.txt:4
+msgid "``language``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/line_length.txt:4
+msgid "``line_length``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/list_cols.txt:4
+msgid "``list_cols``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/list_cols.txt:6
+msgid "These cols are shown in the message list. Available cols are: subject, from, to, fromto, cc, replyto, date, size, status, flag, attachment, 'priority'"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_header_delimiter.txt:4
+msgid "``mail_header_delimiter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_header_delimiter.txt:6
+msgid "This string is used as a delimiter for message headers when sending a message via mail() function. Leave empty for auto-detection."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:4
+msgid "``mail_pagesize``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:6
+msgid "The ``mail_pagesize`` setting is a user preference default, meaning users can normally edit this preference in their settings."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:9
+msgid "The user's preferred ``mail_pagesize`` causes the mail view to list as many individual messages (list view) or as many threads (thread view) to be displayed in message lists."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:13
+msgid "To lock down the ``mail_pagesize`` to a value and not allow users to indicate and configure their own preference, use :ref:`admin_roundcube-settings_dont_override`:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:21
+msgid "To establish a maximum page size users may select, see :ref:`admin_roundcube-settings_max_pagesize`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:26
+msgid ":ref:`admin_roundcube-settings_dont_override`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mail_pagesize.txt:27
+msgid ":ref:`admin_roundcube-settings_max_pagesize`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/max_group_members.txt:4
+msgid "``max_group_members``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/max_group_members.txt:6
+msgid "Maximum allowed number of members of an address group. Default: 0 (no limit). If 'max_recipients' is set this value should be less or equal."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/max_pagesize.txt:4
+msgid "``max_pagesize``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/max_pagesize.txt:6
+msgid "Don't let users set pagesize to more than this value if set."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/max_recipients.txt:4
+msgid "``max_recipients``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/max_recipients.txt:6
+msgid "Maximum number of recipients per message. Default: 0 (no limit)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mdn_default.txt:4
+msgid "``mdn_default``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mdn_default.txt:6
+msgid "Return receipt checkbox default state"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mdn_requests.txt:4
+msgid "``mdn_requests``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mdn_requests.txt:6
+msgid "Behavior if a received message requests a message delivery notification (read receipt):"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mdn_requests.txt:8
+msgid "0 = ask the user 1 = send automatically 2 = ignore (never send or ask) 3 = send automatically if sender is in addressbook, otherwise ask the user 4 = send automatically if sender is in addressbook, otherwise ignore"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mdn_use_from.txt:4
+msgid "``mdn_use_from``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mdn_use_from.txt:6
+msgid "According to RFC2298, return receipt envelope sender address must be empty. If this option is true, Roundcube will use user's identity as envelope sender for MDN responses."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_extwin.txt:4
+msgid "``message_extwin``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_extwin.txt:6
+msgid "Open messages in a new window."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_show_email.txt:4
+msgid "``message_show_email``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_show_email.txt:6
+msgid "Enables display of email address with name instead of a name (and address in title)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_sort_col.txt:4
+msgid "``message_sort_col``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_sort_col.txt:6
+msgid "Default messages sort column. Use empty value for default server's sorting, or 'arrival', 'date', 'subject', 'from', 'to', 'fromto', 'size', 'cc'"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_sort_order.txt:4
+msgid "``message_sort_order``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/message_sort_order.txt:6
+msgid "Default messages sort order."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mime_magic.txt:4
+msgid "``mime_magic``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mime_magic.txt:6
+msgid "Path to a local mime magic database file for PHPs finfo extension. Set to null if the default path should be used."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mime_param_folding.txt:4
+msgid "``mime_param_folding``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mime_param_folding.txt:6
+msgid "Encoding of long/non-ascii attachment names:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mime_param_folding.txt:8
+msgid "0 - Full RFC 2231 compatible 1 - RFC 2047 for 'name' and RFC 2231 for 'filename' parameter (Thunderbird's default) 2 - Full 2047 compatible"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mime_types.txt:4
+msgid "``mime_types``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/mime_types.txt:6
+msgid "Absolute path to a local mime.types mapping table file. This is used to derive mime-types from the filename extension or vice versa. Such a file is usually part of the apache webserver. If you don't find a file named mime.types on your system, download it from http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password_charset.txt:4
+msgid "``password_charset``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password_charset.txt:6
+msgid "Password character set. If your authentication backend supports it, use \"UTF-8\". Otherwise, use the appropriate character set. Defaults to ISO-8859-1 for backward compatibility"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/plugins.txt:4
+msgid "``plugins``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/plugins.txt:6
+msgid "List of active plugins (in plugins/ directory)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/prefer_html.txt:4
+msgid "``prefer_html``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/prefer_html.txt:6
+msgid "Prefer displaying HTML messages."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/prettydate.txt:4
+msgid "``prettydate``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/prettydate.txt:6
+msgid "Show pretty dates as standard."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/preview_pane_mark_read.txt:4
+msgid "``preview_pane_mark_read``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/preview_pane_mark_read.txt:6
+#: ../../source/administrator-guide/roundcube-settings/preview_pane.txt:6
+msgid "Mark as read when viewed in preview pane (delay in seconds). Set to -1 if messages in preview pane should not be marked as read."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/preview_pane.txt:4
+msgid "``preview_pane``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/product_name.txt:4
+msgid "``product_name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/product_name.txt:6
+msgid "Name your service. This is displayed on the login screen and in the window title."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/read_when_deleted.txt:4
+msgid "``read_when_deleted``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/read_when_deleted.txt:6
+msgid "Set true to Mark deleted messages as read as well as deleted. False means that a message's read status is not affected by marking it as deleted."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/recipients_separator.txt:4
+msgid "``recipients_separator``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/recipients_separator.txt:6
+msgid "Use this char/string to separate recipients when composing a new message."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/reply_all_mode.txt:4
+msgid "``reply_all_mode``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/reply_all_mode.txt:6
+msgid "Default behavior of Reply-All button: 0 - Reply-All always 1 - Reply-List if mailing list is detected"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/reply_mode.txt:4
+msgid "``reply_mode``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/reply_mode.txt:6
+msgid "When replying: -1 - don't cite the original message 0  - place cursor below the original message 1  - place cursor above original message (top posting)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/reply_same_folder.txt:4
+msgid "``reply_same_folder``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/reply_same_folder.txt:6
+msgid "Place replies in the folder of the message being replied to."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/search_mods.txt:4
+msgid "``search_mods``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/search_mods.txt:6
+msgid "Defaults of the search field configuration. The array can contain a per-folder list of header fields which should be considered when searching. The entry with key '*' stands for all folders which do not have a specific list set. Please note that folder names should to be in sync with $config['*_mbox'] options."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/send_format_flowed.txt:4
+msgid "``send_format_flowed``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/send_format_flowed.txt:6
+msgid "Send plaintext messages as format=flowed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sendmail_delay.txt:4
+msgid "``sendmail_delay``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/sendmail_delay.txt:6
+msgid "How many seconds must pass between emails sent by a user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_images.txt:4
+msgid "``show_images``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_images.txt:6
+msgid "Display remote inline images:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_images.txt:8
+msgid "0 - Never, always ask 1 - Ask if sender is not in address book 2 - Always show inline images"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_real_foldernames.txt:4
+msgid "``show_real_foldernames``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_real_foldernames.txt:6
+msgid "Disable localization of the default folder names listed above."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_sig.txt:4
+msgid "``show_sig``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_sig.txt:6
+msgid "Show signature:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/show_sig.txt:8
+msgid "0 - Never 1 - Always 2 - New messages only 3 - Forwards and Replies only"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skin_include_php.txt:4
+msgid "``skin_include_php``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skin_include_php.txt:6
+msgid "Includes should be interpreted as PHP files"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skin_logo.txt:4
+msgid "``skin_logo``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skin_logo.txt:6
+msgid "Replace the Roundcube logo with this image. Specify a URL relative to the document root of this Roundcube installation. An array can be used to specify different logos for specific template files, '*' for default logo. For example array(\"*\" => \"/images/roundcube_logo.png\", \"messageprint\" => \"/images/roundcube_logo_print.png\")"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skin.txt:4
+msgid "``skin``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/skin.txt:6
+msgid "Skin name: Name of the folder relative to skins/"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_cid.txt:4
+msgid "``smtp_auth_cid``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_cid.txt:6
+msgid "Optional SMTP authentication identifier to be used as authorization proxy."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_pw.txt:4
+msgid "``smtp_auth_pw``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_type.txt:4
+msgid "``smtp_auth_type``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_auth_type.txt:6
+msgid "SMTP AUTH type (DIGEST-MD5, CRAM-MD5, LOGIN, PLAIN or empty to use best server supported)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_conn_options.txt:4
+msgid "``smtp_conn_options``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_conn_options.txt:6
+msgid "SMTP socket context options. See http://php.net/manual/en/context.ssl.php. The example below enables server certificate validation, and requires 'smtp_timeout' to be non zero."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_conn_options.txt:14
+msgid "$config['smtp_conn_options'] = array("
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_conn_options.txt:11
+msgid "'ssl'         => array("
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_conn_options.txt:12
+msgid "'verify_peer'  => true, 'verify_depth' => 3, 'cafile'       => '/etc/openssl/certs/ca.crt',"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_conn_options.txt:15
+msgid "),"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_conn_options.txt:16
+msgid ");"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_helo_host.txt:4
+msgid "``smtp_helo_host``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_helo_host.txt:6
+msgid "SMTP HELO host. Hostname to give to the remote server for SMTP 'HELO' or 'EHLO' messages. Leave this blank and you will get the server variable 'server_name' or localhost if that isn't defined."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_log.txt:4
+msgid "``smtp_log``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_log.txt:6
+msgid "Log sent messages to <log_dir>/sendmail or to syslog"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_pass.txt:4
+msgid "``smtp_pass``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_pass.txt:6
+msgid "SMTP password (if required). If you use %p as the password Roundcube will use the current user's password for login."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_port.txt:4
+msgid "``smtp_port``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_port.txt:6
+msgid "SMTP port (default is 25; use 587 for STARTTLS or 465 for the deprecated SSL over SMTP (aka SMTPS))"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_server.txt:4
+msgid "``smtp_server``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_server.txt:6
+msgid "SMTP server host (for sending mails). To use SSL/TLS connection, enter hostname with prefix ssl:// or tls://"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_server.txt:9
+msgid "Supported replacement variables:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_server.txt:11
+msgid "%h - user's IMAP hostname %n - hostname ($_SERVER['SERVER_NAME']) %t - hostname without the first part %d - domain (http hostname $_SERVER['HTTP_HOST'] without the first part) %z - IMAP domain (IMAP hostname without the first part)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_timeout.txt:4
+msgid "``smtp_timeout``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_timeout.txt:6
+msgid "SMTP connection timeout, in seconds. Default: 0 (use default_socket_timeout). Note: There's a known issue where using ssl connection with timeout > 0 causes connection errors (https://bugs.php.net/bug.php?id=54511)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_user.txt:4
+msgid "``smtp_user``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/smtp_user.txt:6
+msgid "SMTP username (if required). If you use %u as the username Roundcube will use the current username for login."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_before_send.txt:4
+msgid "``spellcheck_before_send``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_before_send.txt:6
+msgid "Enables spell checking before sending a message."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_dictionary.txt:4
+msgid "``spellcheck_dictionary``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_dictionary.txt:6
+msgid "Enables spellchecker exceptions dictionary. Setting it to 'shared' will make the dictionary shared by all users."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_engine.txt:4
+msgid "``spellcheck_engine``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_engine.txt:6
+msgid "Set the spell checking engine. Possible values:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_engine.txt:8
+msgid "'googie'  - the default (also used for connecting to Nox Spell Server, see 'spellcheck_uri' setting)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_engine.txt:9
+msgid "'pspell'  - requires the PHP Pspell module and aspell installed"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_engine.txt:10
+msgid "'enchant' - requires the PHP Enchant module"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_engine.txt:11
+msgid "'atd'     - install your own After the Deadline server or check with the people at http://www.afterthedeadline.com before using their API"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_engine.txt:13
+msgid "Since Google shut down their public spell checking service, the default settings connect to http://spell.roundcube.net which is a hosted service provided by Roundcube. You can connect to any other googie-compliant service by setting 'spellcheck_uri' accordingly."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_caps.txt:4
+msgid "``spellcheck_ignore_caps``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_caps.txt:6
+msgid "Makes that words with all letters capitalized will be ignored (e.g. GOOGLE)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_nums.txt:4
+msgid "``spellcheck_ignore_nums``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_nums.txt:6
+msgid "Makes that words with numbers will be ignored (e.g. g00gle)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_syms.txt:4
+msgid "``spellcheck_ignore_syms``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_ignore_syms.txt:6
+msgid "Makes that words with symbols will be ignored (e.g. g@@gle)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_languages.txt:4
+msgid "``spellcheck_languages``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_languages.txt:6
+msgid "These languages can be selected for spell checking. Configure as a PHP style hash array: array('en'=>'English', 'de'=>'Deutsch'); Leave empty for default set of available language."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_uri.txt:4
+msgid "``spellcheck_uri``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/spellcheck_uri.txt:6
+msgid "For locally installed Nox Spell Server or After the Deadline services, please specify the URI to call it. Get Nox Spell Server from http://orangoo.com/labs/?page_id=72 or the After the Deadline package from http://www.afterthedeadline.com. Leave empty to use the public API of service.afterthedeadline.com."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/standard_windows.txt:4
+msgid "``standard_windows``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/standard_windows.txt:6
+msgid "Enables using standard browser windows (that can be handled as tabs) instead of popup windows"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/strip_existing_sig.txt:4
+msgid "``strip_existing_sig``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/strip_existing_sig.txt:6
+msgid "When replying strip original signature from message."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/support_url.txt:4
+msgid "``support_url``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/support_url.txt:6
+msgid "provide an URL where a user can get support for this Roundcube installation. PLEASE DO NOT LINK TO THE ROUNDCUBE.NET WEBSITE HERE!"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/temp_dir_ttl.txt:4
+msgid "``temp_dir_ttl``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/temp_dir_ttl.txt:6
+msgid "Expire files in temp_dir after the set time (default: 48 hours). Possible units: s, m, h, d, w"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/temp_dir.txt:4
+msgid "``temp_dir``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/temp_dir.txt:6
+msgid "Use this folder to store temp files. Must be writeable for the user who runs PHP process (Apache user if mod_php is being used)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/time_formats.txt:4
+msgid "``time_formats``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/time_formats.txt:6
+msgid "Give this choice of time formats to the user to select from."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/time_format.txt:4
+msgid "``time_format``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/time_format.txt:6
+msgid "Use this format for time display (date or strftime format)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/timezone.txt:4
+msgid "``timezone``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/timezone.txt:6
+msgid "Use this timezone to display date/time. Valid timezone identifers are listed here: php.net/manual/en/timezones.php 'auto' will use the browser's timezone settings."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/undo_timeout.txt:4
+msgid "``undo_timeout``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/undo_timeout.txt:6
+msgid "Specifies for how many seconds the Undo button will be available after object delete action. Currently used with supporting address book sources. Setting it to 0, disables the feature."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/upload_progress.txt:4
+msgid "``upload_progress``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/upload_progress.txt:6
+msgid "Enables files upload indicator. Requires APC installed and enabled apc.rfc1867 option. By default refresh time is set to 1 second. You can set this value to true or any integer value indicating number of seconds."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_https.txt:4
+msgid "``use_https``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/use_https.txt:6
+msgid "Tell PHP that it should work as under secure connection even if it doesn't recognize it as secure ($_SERVER['HTTPS'] is not set). e.g. when you're running Roundcube behind a https proxy. This option is mutually exclusive to 'force_https' and only either one of them should be set to true."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/useragent.txt:4
+msgid "``useragent``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/useragent.txt:6
+msgid "Add this user-agent to message headers when sending."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/x_frame_options.txt:4
+msgid "``x_frame_options``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/x_frame_options.txt:6
+msgid "X-Frame-Options HTTP header value sent to prevent from Clickjacking. Possible values: sameorigin|deny. Set to false in order to disable sending them."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:426
+msgid "Plugin Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:431
+msgid "The ``acl`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:436
+msgid "The ``archive`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:441
+msgid "The ``calendar`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:2
+msgid "``calendar_driver``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:4
+msgid "Calendar backend type."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:6
+msgid "Possible values: 'kolab' or 'database'"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:10
+msgid "``calendar_caldav_url``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:12
+msgid "Base URL to build fully qualified URIs to access calendars via CALDAV. Primarily used in a Kolab environment where CalDAV access is provided by the iRony service."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:15
+msgid "The following replacement variables are supported:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:19
+msgid "Current HTTP host"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:23
+msgid "Current webmail user name"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:27
+msgid "Calendar name"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:29
+msgid "``%i``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:31
+msgid "Calendar UUID"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:40
+msgid "``calendar_contact_birthdays``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:42
+msgid "Boolean. Enables a read-only birthdays calendar from the user's address book(s)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:46
+msgid "``calendar_allow_invite_shared``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:48
+msgid "Boolean. Allows users to invite/edit attendees for events in shared folders which were created/organized by others."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:53
+msgid "``calendar_allow_itip_uninvited``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:55
+msgid "Boolean. Allow users to accecpt iTip invitations who are no explicitly listed as an attendee in the invitation message. This can be the case if invitations are sent to mailing lists or alias email addresses."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:61
+msgid "``calendar_default_view``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:63
+msgid "Default view shown when entering the calendar screen."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:65
+msgid "Possible values: 'agendaDay', 'agendaWeek', 'month', 'table'."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:69
+msgid "``calendar_default_alarm_type``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:75
+msgid "``calendar_default_alarm_offset``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:81
+msgid "``calendar_date_format_sets``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:87
+msgid "``calendar_event_coloring``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:93
+msgid "``calendar_agenda_range``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:99
+msgid "``calendar_first_day``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:105
+msgid "``calendar_first_hour``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:111
+msgid "``calendar_timeslots``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:117
+msgid "``calendar_time_indicator``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:123
+msgid "``calendar_work_start``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:129
+msgid "``calendar_work_end``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:135
+msgid "``calendar_itip_after_action``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:141
+msgid "``calendar_itip_smtp_server``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:143
+msgid "SMTP host to used for send iTip replies from the unauthenticated web view where external users can accept or decline invitations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:146
+msgid "Set to '' in order to use PHP's mail() function for email delivery. To override the SMTP port or connection method, provide a full URL like ``tls://somehost:587``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:151
+msgid "``calendar_itip_smtp_user``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:153
+msgid "SMTP username used to send unauthenticated itip replies."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:155
+msgid "Explicity set to '' for overriding the default configuration from ``smtp_user``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:159
+msgid "``calendar_itip_smtp_pass``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:161
+msgid "SMTP password used to send unauthenticated itip replies."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:163
+msgid "Explicity set to '' for overriding the default configuration from ``smtp_pass``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:167
+msgid "``kolab_invitation_calendars``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:169
+msgid "Boolean. Show virtual calendars with pending or declined event invitations."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:171
+msgid "This option only has an effect with the Kolab backend."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:175
+msgid "``calendar_resources_driver``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:177
+msgid "Driver to provide a directory for resource booking. Leave empty or commented out to disable resources support."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:180
+msgid "'ldap' is the only implementation and possible value yet."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:184
+msgid "``calendar_resources_directory``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:186
+msgid "LDAP directory configuration to find available resources for events."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:188
+msgid "Specify a full LDAP directory as described for :ref:`admin_roundcube-settings_ldap_public`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/calendar.txt:190
+msgid "Some special considerations apply for the LDAP filter and other properties:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:448
+msgid "The ``kolab_activesync`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_activesync.txt:2
+msgid "``activesync_setup_url``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_activesync.txt:4
+msgid "An URL of the page with Activesync clients configuration manual. Default: http://docs.kolab.org/client-configuration/;"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:455
+msgid "The ``kolab_auth`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:2
+msgid "``kolab_auth_addressbook``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:4
+msgid "The ID of the LDAP address book (which refers to a entry in ``ldap_public``) or a complete addressbook definition hash array."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:9
+msgid ":ref:`admin_roundcube-settings_ldap_public`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:13
+msgid "``kolab_auth_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:15
+msgid "This will overwrite filter property defined in the ``kolab_auth_addressbook``. Use the same placeholders as in the :ref:`admin_roundcube-settings_ldap_public_search_filter` property."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:21
+msgid "``kolab_auth_login``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:23
+msgid "Use this field (from the ``kolab_auth_addressbook`` ``fieldmap`` configuration) to get authentication ID for the logged in user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:28
+msgid "``kolab_auth_name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:34
+msgid "``kolab_auth_email``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:40
+msgid "``kolab_auth_organization``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:46
+msgid "``kolab_auth_admin_login``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:52
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:70
+msgid "``kolab_auth_admin_password``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:58
+msgid "``kolab_auth_auditlog``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:64
+msgid "``kolab_auth_role``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:76
+msgid "``kolab_auth_role_value``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:82
+msgid "``kolab_auth_group``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:88
+msgid "``kolab_auth_role_plugins``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:94
+msgid "``kolab_auth_role_settings``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_auth.txt:100
+msgid "``kolab_auth_ldap_addressbooks``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:462
+msgid "The ``kolab_addressbook`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_addressbook.txt:2
+msgid "``kolab_addressbook_prio``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_addressbook.txt:4
+msgid "This option allows to set addressbooks priority or to disable some of them. Disabled addressbooks will be not shown in the UI. Default: ``0``. Possible values: ``0`` - \"Global address book(s) first\". Use all address books, starting with the global (LDAP) ``1`` - \"Personal address book(s) first\". Use all address books, starting with the personal (Kolab) ``2`` - \"Global address book(s) only\". Use the global (LDAP) addressbook. Disable the personal. ``3`` - \"Personal address book(s) only\". Use the personal (Kolab) addressbook(s). Disable the global."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_addressbook.txt:12
+msgid "``kolab_addressbook_carddav_url``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_addressbook.txt:14
+msgid "Base URL to build fully qualified URIs to access address books via CardDAV. By default not set. The following replacement variables are supported: ``%h`` - Current HTTP host ``%u`` - Current webmail user name ``%n`` - Folder name ``%i`` - Folder UUID Example: ``$config['kolab_addressbook_carddav_url'] = 'http://%h/iRony/addressbooks/%u/%i';``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_addressbook.txt:23
+msgid "``kolab_addressbook_carddav_ldap``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_addressbook.txt:25
+msgid "Name of LDAP addressbook (a key in ``ldap_public`` configuration array) for which the CardDAV URI will be displayed if ``kolab_addressbook_carddav_url`` is set. Use it when iRony's ``kolabdav_ldap_directory`` is enabled. Note that ``kolab_addressbook_carddav_url`` must use ``%i`` and not ``%n``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_addressbook.txt:29
+msgid "There are limitations with volume and performance: - CardDAV does a full sync of the entire contact resource. For LDAP this means that all entries matching the base_dn/filter are synced to every client."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_addressbook.txt:31
+msgid "It's thus only recommended for small setups with a couple hundred LDAP entries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_addressbook.txt:32
+msgid "Other than that, the ldap-directory exposed in iRony is strictly read-only."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_addressbook.txt:33
+msgid "Although correctly stated in the CardDAV properties, some clients (e.g. the Thunderbird SoGO connector) ignore these properties and allow modifications which then result in sync errors because the server denies such updates."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:469
+msgid "The ``kolab_config`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_config.txt:1
+msgid "``kolab_config`` has no configuration options."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:476
+msgid "The ``kolab_delegation`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_delegation.txt:2
+msgid "``kolab_delegation_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_delegation.txt:4
+msgid "Delegation plugin uses LDAP addressbook defined in ``kolab_auth`` plugin. This option will overwrite defined LDAP filter. Default: ``(|(objectClass=kolabInetOrgPerson)(&(objectclass=kolabsharedfolder)(kolabFolderType=mail)))``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_delegation.txt:8
+msgid "``kolab_delegation_delegate_field``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_delegation.txt:10
+msgid "Delegates field (from fieldmap configuration) to get delegates list. Note: This is a field name, not LDAP attribute name. Default: ``kolabDelegate``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_delegation.txt:14
+msgid "``kolab_delegation_purge_identities``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_delegation.txt:16
+msgid "Delegation plugin creates automatically identities for delegator's addresses. After the delegation is removed identities should be removed too. This option removes all user identities which do not match the user's primary or alias addresses and delegator's addresses. Default: ``false``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:483
+msgid "The ``kolab_files`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_files.txt:2
+msgid "``kolab_files_url``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_files.txt:4
+msgid "An URL of kolab-chwala installation. Example: ``$config['kolab_files_url'] = 'https://localhost/kolab-chwala/public_html';``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_files.txt:7
+msgid "``kolab_files_list_cols``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_files.txt:9
+msgid "Default list of columns on files list. Available are: ``name``, ``size``, ``mtime``, ``type``. Example: ``$config['kolab_files_list_cols'] = array('name', 'mtime', 'size');``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_files.txt:13
+msgid "``kolab_files_sort_col``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_files.txt:15
+msgid "Name of the column to sort files list by. Default: `name``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_files.txt:18
+msgid "``kolab_files_sort_order``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_files.txt:20
+msgid "Order of the files list sort. Default: ``asc``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_files.txt:23
+msgid "``kolab_files_search_threads``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_files.txt:25
+msgid "Number of concurent requests for searching and collections listing. Default: ``1``. Increasing this number may improve performance of multi-folder searches, but also increase server load."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:490
+msgid "The ``kolab_folders`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_folders.txt:1
+msgid "``kolab_folders_configuration_default`` ``kolab_folders_event_default`` ``kolab_folders_contact_default`` ``kolab_folders_task_default`` ``kolab_folders_note_default`` ``kolab_folders_journal_default`` ``kolab_folders_file_default`` ``kolab_folders_freebusy_default`` ``kolab_folders_mail_inbox`` ``kolab_folders_mail_drafts`` ``kolab_folders_mail_sentitems`` ``kolab_folders_mail_wastebasket`` ``kolab_folders_mail_outbox`` ``kolab_folders_mail_junkemail`` ================================"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_folders.txt:17
+msgid "Default kolab-specific folders. Set values to non-empty strings to create default folders of apropriate type. If there is no such folder with specified type in user mailbox, it will be created. Note that mail folders will be also subscribed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:497
+msgid "The ``libkolab`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_cache.txt:4
+msgid "``kolab_cache``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_cache.txt:6
+msgid "This setting controls whether Kolab Groupware data and metadata is being cached."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_cache.txt:8
+msgid "Caching helps, especially since the data is stored in a relation database. The structure of how information is cached accelerates views such as \"this week\", or \"this month\" in the Calendar, and sorting and pagination for address books."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:4
+msgid "``kolab_messages_cache_bypass``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:8
+msgid "This option is only relevant when :ref:`admin_roundcube-settings-plugin_libkolab_kolab_cache` is enabled."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:11
+msgid "Three valid settings are available for ``kolab_messages_cache_bypass``:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:13
+msgid "Setting ``kolab_messages_cache_bypass`` to ``0`` does not bypass the messages cache at all."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:16
+msgid "Setting ``kolab_messages_cache_bypass`` to ``1`` bypasses only the message content (i.e. payload) of the core messages cache, but uses the index cache."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:19
+msgid "Setting ``kolab_messages_cache_bypass`` to ``2`` bypasses the core messages cache completely."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:24
+msgid "With :ref:`admin_roundcube-settings-plugin_libkolab_kolab_cache` enabled, a set of Kolab specific database tables already cache payload. For larger environments, it is certainly recommended to consider setting ``kolab_messages_cache_bypass`` to at least ``1``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_messages_cache_bypass.txt:31
+msgid ":ref:`admin_roundcube-settings-plugin_libkolab_kolab_cache`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_use_subscriptions.txt:4
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:18
+msgid "``kolab_use_subscriptions``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_use_subscriptions.txt:8
+msgid "When listing folders with groupware content available for display, should all folders to which the user has access be listed, or should only those folders to which the user is subscribed be included?"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_use_subscriptions.txt:12
+msgid "The value ``false`` means all folders to which the user has access will be included."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/kolab_use_subscriptions.txt:15
+msgid "The default for a Kolab Groupware deployment is ``true``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:2
+msgid "``kolab_format_version``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:4
+msgid "Specify format version to write Kolab objects. Defaults to '3.0' but can be set to '2.0' for using the old Kolab v2 format for storing groupware objects."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:9
+msgid "``kolab_freebusy_server``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:11
+msgid "Optional override of the base URL to read Free/Busy information of Kolab users from."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:14
+msgid "Defaults to ``https://<imap-server->/freebusy``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:20
+msgid "Lists only subscribed groupware folders in the web client (e.g. calendar view or address books)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:25
+msgid "``kolab_skip_namespace``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:27
+msgid "A list with any of 'personal','shared','other' namespaces to be excluded from groupware folder listing. With the new folder searching features in Kolab 3.3, this setting can be used to exclude shared folders from e.g. the 'other' namespace in regular folder listings and searches."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:40
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:77
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:91
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:104
+msgid ":ref:`admin_roundcube-settings-plugin_libkolab_kolab_users_directory`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:44
+msgid "``kolab_http_request``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:46
+msgid "Configuration options of HTTP requests sent from the server to external systems (e.g. for Free/Busy) data fetching. See `HTTP_Request2 Docs <http://pear.php.net/manual/en/package.http.http-request2.config.php>`_ or list of supported configuration options. Provide the options as hash array with key-value pairs."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:54
+msgid "``kolab_users_directory``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:56
+msgid "LDAP directory to find avilable users for folder sharing. This is used when searching for groupware folders shared by other users. The web client will perform an LDAP search with the given search term and resolve the matches to shared folders in the 'other' namespace."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:61
+msgid "Either contains an array with a full LDAP addressbook configuration or a string value which refers to an entry in :ref:`admin_roundcube-settings_ldap_public`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:64
+msgid "If not specified, the configuration from ``kolab_auth_addressbook`` will be used."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:68
+msgid "``kolab_users_filter``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:70
+msgid "Filter to be used for resolving user folders in LDAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:72
+msgid "Defaults to the ``kolab_auth_filter`` configuration option from the ``kolab_auth`` plugin."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:78
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:92
+msgid ":ref:`admin_roundcube-settings-plugin_kolab_auth`"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:82
+msgid "``kolab_users_id_attrib``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:84
+msgid "Which property of the LDAP user record to use for user folder mapping in IMAP."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:86
+msgid "Defaults to the ``kolab_auth_login`` configuration option from the ``kolab_auth`` plugin."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:96
+msgid "``kolab_users_search_attrib``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:98
+msgid "List of LDAP attributes to be used when searching users in folder search queries."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libkolab.txt:100
+msgid "Defaults to ``array('cn','mail','alias')``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:507
+msgid "The ``libcalendaring`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/libcalendaring.txt:1
+msgid "This plugin contains code shared by other plugins and itself does not have any configuration."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:514
+msgid "The ``managesieve`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:2
+msgid "``managesieve_port``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:4
+msgid "Managesieve server port. When empty the port will be determined automatically using getservbyname() function, with 4190 as a fallback."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:8
+msgid "``managesieve_host``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:10
+msgid "Managesieve server address, default is ``localhost``. Replacement variables supported in host name: ``%h`` - user's IMAP hostname ``%n`` - http hostname ($_SERVER['SERVER_NAME']) ``%d`` - domain (http hostname without the first part) For example ``%n`` = mail.domain.tld, ``%d`` = domain.tld"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:18
+msgid "``managesieve_auth_type``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:20
+msgid "Authentication method. Can be ``CRAM-MD5``, ``DIGEST-MD5``, ``PLAIN``, ``LOGIN``, ``EXTERNAL`` or none. Optional, defaults to best method supported by the server."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:24
+msgid "``managesieve_auth_cid``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:26
+msgid "Optional managesieve authentication identifier to be used as authorization proxy. Authenticate as a different user but act on behalf of the logged in user. Works with ``PLAIN`` and ``DIGEST-MD5`` authentication."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:31
+msgid "``managesieve_auth_pw``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:33
+msgid "Optional managesieve authentication password to be used for ``managesieve_auth_cid``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:36
+msgid "``managesieve_usetls``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:38
+msgid "Use or not TLS for managesieve server connection. Note that tls:// prefix in managesieve_host is also supported"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:41
+msgid "``managesieve_conn_options``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:43
+msgid "Connection socket context options. See http://php.net/manual/en/context.ssl.php The example below enables server certificate validation:"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:57
+msgid "``managesieve_default``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:59
+msgid "Path to a file with default contents of filters script (e.g. default spam filter)"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:62
+msgid "``managesieve_script_name``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:64
+msgid "The name of the script which will be used when there's no user script. Default: ``managesieve``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:67
+msgid "``managesieve_mbox_encoding``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:69
+msgid "Sieve RFC says that we should use UTF-8 endcoding for mailbox names, but some implementations does not covert UTF-8 to modified UTF-7. Defaults to ``UTF-8``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:73
+msgid "``managesieve_disabled_extensions``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:75
+msgid "An array containing a list of disabled protocol extensions. This way you can limit managesieve features awailable to the user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:78
+msgid "``managesieve_debug``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:80
+msgid "Enables debugging of conversation with sieve server. Logs it into <log_dir>/sieve"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:83
+msgid "``managesieve_kolab_master``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:85
+msgid "Enables features described in http://wiki.kolab.org/KEP:14. Disabled by default."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:88
+msgid "``managesieve_filename_extension``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:90
+msgid "Script name extension used for scripts including. Dovecot uses '.sieve', Cyrus uses '.siv'. Doesn't matter if you have ``managesieve_kolab_master`` disabled. Default is ``.sieve``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:94
+msgid "``managesieve_filename_exceptions``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:96
+msgid "List of reserved script names (without extension). Scripts listed here will be not presented to the user."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:99
+msgid "``managesieve_domains``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:101
+msgid "List of domains limiting destination emails in redirect action. If not empty, user will need to select domain from a list."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:104
+msgid "``managesieve_vacation``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:106
+msgid "Enables separate management interface for vacation responses (out-of-office). Possible values: 0 - no separate section (default), 1 - add Vacation section,  2 - add Vacation section, but hide Filters section."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:110
+msgid "``managesieve_vacation_interval``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:112
+msgid "Default vacation interval (in days). Note: If server supports vacation-seconds extension it is possible to define interval in seconds here (as a string), e.g. ``3600s``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:116
+msgid "``managesieve_vacation_addresses_init``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:118
+msgid "Some servers require vacation :addresses to be filled with all user addresses (aliases). This option enables automatic filling of these on initial vacation form creation."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:122
+msgid "``managesieve_notify_methods``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/managesieve.txt:124
+msgid "List of supported methods of notify extension. Default: ``mailto``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:521
+msgid "The ``password`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:2
+msgid "``password_driver``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:4
+msgid "A driver to use for password change. Default: `sql`."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:7
+msgid "``password_confirm_current``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:9
+msgid "Determine whether current password is required to change password. Default: true."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:12
+msgid "``password_minimum_length``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:14
+msgid "Require the new password to be a certain length. Set to blank to allow passwords of any length."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:17
+msgid "``password_require_nonalpha``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:19
+msgid "Require the new password to contain a letter and punctuation character. Change to false to remove this check."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:22
+msgid "``password_log``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:24
+msgid "Enables logging of password changes into logs/password file."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:27
+msgid "``password_login_exceptions``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:29
+msgid "Comma-separated list of login exceptions for which password change will be not available (no Password tab in Settings)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:32
+msgid "``password_hosts``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:34
+msgid "An array of hosts that support password changing. Default is NULL. Listed hosts will feature a Password option in Settings, others will not."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:38
+msgid "``password_force_save``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:40
+msgid "Enables saving the new password even if it matches the old password. Useful for upgrading the stored passwords after the encryption scheme has changed."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:43
+msgid "``password_force_new_user``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/password.txt:45
+msgid "Enables forcing new users to change their password at their first login."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:528
+msgid "The ``redundant_attachments`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/redundant_attachments.txt:2
+#: ../../source/administrator-guide/roundcube-settings/redundant_attachments.txt:9
+msgid "``redundant_attachments_cache_ttl``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/redundant_attachments.txt:4
+msgid "By default this plugin stores attachments in filesystem and copies them into sql database. In environments with replicated database it is possible to use memcache as a fallback when write-master is unavailable. This option enables this memcache use as a fallback store."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/redundant_attachments.txt:11
+msgid "Attachment data expires after specified TTL time in seconds (max. 2592000). Default is 12 hours."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings-reference.rst:535
+msgid "The ``tasklist`` Plugin"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/tasklist.txt:2
+msgid "``tasklist_driver``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/tasklist.txt:4
+msgid "Backend type (``database``, ``kolab``). Default is ``kolab``."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/tasklist.txt:7
+msgid "``tasklist_sort_col``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/tasklist.txt:9
+msgid "Default sorting order of tasks listing (``auto``, ``datetime``, ``startdatetime``, ``flagged``, ``complete``, ``changed``)."
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/tasklist.txt:12
+msgid "``tasklist_sort_order``"
+msgstr ""
+
+#: ../../source/administrator-guide/roundcube-settings/tasklist.txt:14
+msgid "Default sorting order for tasks listing (``asc`` or ``desc``). Default is ``asc``."
+msgstr ""
+

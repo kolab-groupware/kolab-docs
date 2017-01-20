@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:92
+msgid "Using the Kolab Web Administration Panel"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:94
+msgid "The :ref:`figure-overview` lists object types the user that is logged in is eligible to list -- that is, the user has at least read and search access on the container of the type of object."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:98
+msgid "For example, a user may have access to ``ou=People`` (the container for *Users*), but not ``cn=kolab,cn=config`` (for *Domains*)."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:101
+msgid "In such a case, the user would have a *Users* page to navigate to, but not a *Domains* page."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:104
+msgid "This list can include:"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:106
+msgid "Users"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:108
+msgid "This part of the interface allows an administrator to add new users and edit, list and search existing users. This may include Kolab users, but also POSIX users, or even contacts."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:112
+msgid "Groups"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:114
+msgid "Groups are used for message distribution (called *distribution groups*), can be used as POSIX groups, and could be used to assign permissions in LDAP."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:118
+msgid "By default, group membership is not used to share information in IMAP such as calendars or other payload. The default configuration uses roles for IMAP group ACLs instead."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:122
+msgid "Domains"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:124
+msgid "This section allows you to control what namespaces the server will receive email for, as well as whether that namespace is or is not a completely separate and isolated organizational hierarchy."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:128
+msgid "Roles"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:130
+msgid "Roles are used to assign permissions to Kolab users. A role already included in your installation is the one used for Kolab administration (the **kolab-admin** role)."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:134
+msgid "Roles can be used as IMAP group ACLs, and adjust, restrict or liberate the use of plugins and/or settings in web services such as the Roundcube web client, iRony (CardDAV/CalDAV), Syncroton (ActiveSync) and Chwala (Files)."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:139
+msgid "Resources"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:141
+msgid "Shared Folders"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:143
+msgid "This section allows the administration of shared folders,"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:145
+msgid "Settings"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:147
+msgid "The **About** link is always there."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:150
+msgid "The Kolab Web Administration Panel and its API"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:152
+msgid "The Kolab Web Administration Panel by default uses the :envvar:`$_SERVER[\"HTTP_HOST\"]` PHP variable to find its way back to its API."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:155
+msgid "If you use your desktop browser to navigate to http://admin.example.org/, the Web Administration Panel will seek to address its API using http://admin.example.org/api/."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:159
+msgid "``admin.example.org`` should thus resolve to the correct IP address, from the perspective of the Web Administration Panel server."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:167
+msgid "Overview page of the Kolab Web Administration Panel"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:170
+msgid "Users Administration"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:173
+msgid "Groups Administration"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:176
+msgid "Domains Administration"
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:178
+msgid "The **Domains** page of the Kolab Web Administration Panel lists, on the left-hand side, :term:`parent domain name spaces`."
+msgstr ""
+
+#: ../../source/administrator-guide/using-the-kolab-web-administration-panel.rst:186
+msgid "The Domains"
+msgstr ""
+

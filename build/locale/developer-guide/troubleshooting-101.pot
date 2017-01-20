@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/developer-guide/troubleshooting-101.rst:90
+msgid "Troubleshooting 101"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:92
+msgid "This is a generic troubleshooting guide for Kolab Groupware."
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:94
+msgid "The first step in troubleshooting is to attempt to get to a most complete description of the symptoms. See also the :ref:`troubleshooting-101-example-case-no-calendars`."
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:98
+msgid "The second step is to attempt to assess where a certain set of symptoms of an issue **might** be caused. Note that the list of components needs to be *inclusive*, rather than exclusive, so that you include all possible suspect components however unlikely you think they are the cause."
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:104
+msgid "Next, from the list of all components involved, you build an ordered list of suspects more likely to cause the problem, vs. those that are less likely, taking in to account that some of the suspects may be really easy to eliminate than others, that may be extremely difficult to eliminate."
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:113
+msgid "Example Case: \"No calendars in Roundcube\""
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:115
+msgid "While the symptoms might describe no calendars are available in Roundcube, this may just be the initial thought of a user, and therefore not necessarily amount to the full set of symptoms."
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:119
+msgid "First is to establish which components are involved:"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:121
+msgid "The client browser,"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:122
+#: ../../source/developer-guide/troubleshooting-101.rst:136
+msgid "The Roundcube webclient,"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:123
+#: ../../source/developer-guide/troubleshooting-101.rst:149
+msgid "Cyrus IMAP,"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:124
+#: ../../source/developer-guide/troubleshooting-101.rst:156
+msgid "The Kolab SASL Authentication daemon,"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:125
+#: ../../source/developer-guide/troubleshooting-101.rst:157
+msgid "LDAP"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:127
+msgid "When zooming in on each of those, we get to a more inclusive list of suspects:"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:130
+msgid "The client browser;"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:132
+msgid "However an unlikely suspect, naturally using ``lynx`` won't work. You will want to completely eliminate this suspect first, because it is (by far) the easiest."
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:138
+msgid "Its handling of configuration settings, such as using ``LSUB`` or ``LIST``, but also the list of plugins,"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:141
+msgid "Its IMAP caches in memcached, APC or the SQL database,"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:143
+msgid "Its compatibility with the server-side implementation of ANNOTATEMORE and/or METADATA,"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:146
+msgid "Its parsing of the results of ANNOTATEMORE and/or METADATA commands,"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:151
+msgid "Its compatibility with the client-side implementation of ANNOTATEMORE and/or METADATA,"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:154
+msgid "The functional implementation of ANNOTATEMORE and/or METADATA,"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:161
+msgid "Debugging Cyrus IMAP"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:163
+msgid "In :file:`/etc/cyrus.conf`, to each of the programs listed in the *START* and *SERVICE* sections, add the ``-D`` flag:"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:172
+msgid "becomes:"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:180
+msgid "In :file:`/etc/imapd.conf`, add the following settings:"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:188
+msgid "Install the ``-debuginfo`` package needed:"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:194
+msgid "Restart the Cyrus IMAP service:"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:201
+msgid "Debugging ``ctl_mboxlist {-m,-d}``"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:203
+msgid "Run:"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:209
+msgid "Start the program with either the ``-d`` or the ``-m`` parameter:"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:215
+msgid "GDB will insert a temporary breakpoint in the programs main() function."
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:218
+msgid "Continue the program:"
+msgstr ""
+
+#: ../../source/developer-guide/troubleshooting-101.rst:229
+msgid "Should the program have failed, get a backtrace:"
+msgstr ""
+

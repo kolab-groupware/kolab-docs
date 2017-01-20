@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/howtos/freeipa-integration.rst:90
+msgid "HOWTO: Kolab and FreeIPA Integration"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:92
+msgid "This HOWTO assumes a clean Enterprise Linux 6 system, and results in a quick demonstration Kolab Groupware integrated with FreeIPA."
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:95
+msgid "First, install the related packages in addition to Kolab itself:"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:101
+msgid "Second, run the **ipa-server-install** installation script:"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:107
+msgid "Change the following settings in :file:`/etc/kolab/kolab.conf`:"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:167
+msgid "Run :command:`setup-kolab imap`:"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:173
+msgid "Change the following settings in :file:`/etc/imapd.conf`:"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:182
+msgid ":command:`ipa service-add imap/kolab.example.org`"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:184
+msgid ":command:`ipa-getkeytab -s kolab.example.org -p imap/kolab.example.org -k /etc/cyrus.keytab`"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:185
+msgid ":command:`chown cyrus:mail /etc/cyrus.keytab`"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:186
+msgid ":command:`chmod 600 /etc/cyrus.keytab`"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:192
+msgid ":command:`service cyrus-imapd restart`"
+msgstr ""
+
+#: ../../source/howtos/freeipa-integration.rst:194
+msgid "Result:"
+msgstr ""
+

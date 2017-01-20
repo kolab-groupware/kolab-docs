@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:90
+msgid "What is the Recommended Distribution?"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:92
+msgid "When people first come around looking for Kolab, and they get in touch, we often receive questions along the lines of;"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:95
+msgid "*What distribution can you recommend for Kolab?*"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:97
+msgid "Our answer is always a sound;"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:99
+msgid "*Enterprise Linux 7.*"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:101
+msgid "In our book, this means CentOS or Red Hat Enterprise Linux."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:103
+msgid "This may sound like a very narrow recommendation, and Kolab has been, currently is, will soon, and will continue to be available to wide variety of future versions of many more (GNU/)Linux distributions."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:108
+msgid "Why it is the Recommended Distribution"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:110
+msgid "There are several reasons for an upstream project like Kolab to choose a reference implementation -- these are, to a larger or a lesser extent;"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:113
+msgid "It functions as the minimum bar for the product to work on, before development is considered principally feature-complete [#]_,"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:116
+msgid "It allows continued focus on the existing facilities of the chosen reference implementation, allowing for quick repetition of tasks such as deployment (for development, quality assurance, etc.),"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:120
+msgid "A reference implementation increases contributors' familiarity with the platform, which includes the versions of Python, PHP, MySQL, GCC, cmake, Qt, Postfix, Cyrus IMAP, OpenSSL, 389 Directory Server, httpd, and the many other languages, build requirements and components included with a Kolab Groupware deployment and its development,"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:127
+msgid "A common default implementation allows contributors to ultimately work (together) yet a little quicker, since all of them are looking at very much the same thing, at the same file paths, with the same default configuration, and all of them have gathered experience over time, and all of them can help one another,"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:133
+msgid "Packaging and release management can focus on achieving one thing first, before scarse time is spent on all things at the same time,"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:136
+msgid "Documentation can be unified around a single primary platform, with all others becoming exceptions to the rule. This includes but is not limited to;"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:140
+msgid "names of software packages,"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:141
+msgid "paths to configuration files,"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:142
+msgid "payload locations such as an IMAP spool or MariaDB database."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:144
+msgid "That said, this is naturally subject to lacking automated deployment and quality assurance -- which could then be extended and repeated on other platforms, or continuous integration with functional testing, but still a build error on a platform that is not the reference implementation could be considered a *bug* rather than a *release blocker*."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:150
+msgid "As to why Enterprise Linux specifically is the distribution of choice;"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:152
+msgid "The majority of Kolab Systems employees is, and has been for a long time, intimately familiar with the Fedora Project in participatory fashion, and at leadership levels."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:156
+msgid "The majority of system engineers employed by Kolab Systems is RHCE certified."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:159
+msgid "The support cycle for the distribution is a predictable decade."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:161
+msgid "With running Fedora on our workstations, we become intimately familiar with the next generation of Enterprise Linux even before its vendor, Red Hat, Inc., is aware of the scope of delivery of their next generation of Enterprise Linux."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:166
+msgid "There's both a freely accessible version of it (CentOS), and a proper version under support (Red Hat Enterprise Linux). Both the community at large, businesses and individuals included, as well as organizations meaning serious business have a choice without the two distributions causing head-ache."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:172
+msgid "The platform has a very predictable life-cycle."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:174
+msgid "The subscription model does not lock you in with a particular version."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:177
+msgid "The platform has a very predictable release cycle."
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:180
+msgid "Footnotes"
+msgstr ""
+
+#: ../../source/introduction/what-is-the-recommended-distribution.rst:183
+msgid "For a development cycle to be *feature-complete* is not to say the product is *bug-free* or *portable*."
+msgstr ""
+

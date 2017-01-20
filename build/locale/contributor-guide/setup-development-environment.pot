@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2017, Kolab Systems AG
+# This file is distributed under the same license as the Kolab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab 16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-20 10:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/contributor-guide/setup-development-environment.rst:92
+msgid "Setup Your Development Environment"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:94
+msgid "This guide sets you up a development workstation to contribute to Kolab Groupware development on `Phabricator`_."
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:97
+msgid ":ref:`contributor-guide-setup-tools`"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:102
+msgid "Install the Tools"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:104
+msgid "Ensure you have our Tools repository configured."
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:110
+msgid "For **Fedora 23**:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:116
+msgid "For **Fedora 22**:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:122
+#: ../../source/contributor-guide/setup-development-environment.rst:142
+msgid "For **Red Hat Enterprise Linux 7**:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:128
+msgid "Import the GPG public key the packages are signed with:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:134
+msgid "Install **arcanist**:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:136
+msgid "For **Fedora 22** and **Fedora 23**:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:148
+msgid "Hook up arcanist to Phabricator:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:155
+msgid "And follow the instructions."
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:160
+msgid "Recommended Configuration"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:162
+msgid "**SSH Configuration**"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:164
+msgid "Configure SSH to use the correct username and SSH identity when you use ``git.kolab.org``:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:174
+msgid "**BASH Completion**"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:176
+msgid "Say something about bash completion and how great it is."
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:178
+msgid "**GIT Prompt**"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:180
+msgid "Say something about the git prompt."
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:182
+msgid "**GIT Configuration**"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:184
+msgid "For each repository separately, or otherwise globally:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:193
+msgid "**~/.bashrc**"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:195
+msgid "A recommended snippet for `~/.bashrc` to assist you visually:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:221
+msgid "This makes your shell navigating in to a GIT repository appear as follows:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:223
+msgid ":command:`cd` in to a GIT repository:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:230
+msgid "This means a clean working copy."
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:232
+msgid "Create an untracked file:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:239
+msgid "THe `%` means untracked files exist in the directory hierarchy."
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:241
+msgid "Add the untracked file:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:248
+msgid "The `+` means tracked, uncommitted files exist in the directory hierarchy."
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:250
+msgid "Change a file:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:257
+msgid "The `*` means uncommitted changes to tracked files exist. The `+` still indicates a tracked file is not yet committed."
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:260
+msgid "Checkout another branch. In this example, it is specifically made dirty to show off:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:273
+msgid "This means we have 4 commits to our local working copy not yet in the remote tracked, and 65 commits in the remote tracked not yet in our local working copy."
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:277
+msgid "Attempt to rebase on top of the tracked remote:"
+msgstr ""
+
+#: ../../source/contributor-guide/setup-development-environment.rst:288
+msgid "You'll notice the `+` again stands for the tracked, not yet committed file :file:`something`."
+msgstr ""
+
