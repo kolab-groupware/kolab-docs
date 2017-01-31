@@ -217,3 +217,65 @@ The module requires the following additional config options:
     Absolute path to a text file holding the HTML formatted contents of the footer
     to be added to outgoing HTML messages.
 
+Debugging Wallace
+-----------------
+
+When running in default mode, Wallace (wallaced) is writing warning messages to the pykolab log (as it is a part of the pykolab structure). For debug purposes Walllace can be made to increase the amount of verbal data written to the logfile. Increasing the debug level is done by starting the Wallace demon with the debug switch, as shown hereunder;
+
+Manually via the console:
+
+Stop Wallace
+
+``CentOS7/RHEL7``
+
+.. code-block:: ini
+
+    systemctl stop wallace
+
+``CentOS6/RHEL6``
+
+.. code-block:: ini
+
+    service wallace stop
+
+Start Wallace "manually" with the debug switch
+
+.. code-block:: ini
+
+    /usr/sbin/wallaced -l debug -d 9
+
+This will bring debug output directly to the console, and it can be quite verbal. A different way to gain access to the debug information (in a less messy fashion) is to..
+
+Change the startup script to set the debug switch:
+
+Change the script ``/etc/sysconfig/wallace``
+
+.. code-block:: ini
+
+    # Set debug flag and level:
+    # FLAGS="--fork -l warning"
+    FLAGS="--fork -l debug --debug=9"
+
+Restart Wallace
+
+``CentOS7/RHEL7``
+
+.. code-block:: ini
+
+    systemctl restart wallace
+
+``CentOS6/RHEL6``
+
+.. code-block:: ini
+
+    service wallace restart
+
+As Wallace is a part of the pykolab framework, the debug information can be found in the pykolab log: ``/var/log/kolab/pykolab.log``
+
+To follow the debug messages added to the logfile live:
+
+.. code-block:: ini
+
+    tail -f /var/log/kolab/pykolab.log
+
+
