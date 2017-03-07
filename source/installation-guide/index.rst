@@ -87,8 +87,6 @@ work as expected, please consider contributing.
 .. toctree::
     :maxdepth: 1
 
-    kontact-fedora
-    kontact-centos
     kontact-windows
     kontact-ubuntu
 
