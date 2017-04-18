@@ -39,4 +39,4 @@ Installation on CentOS
 
         # :command:`yum install kolab-desktop-client`
 
-Continue to :ref:`_settings-clientconfig-kontact`.
+Continue to :ref:`settings-clientconfig-kontact`.

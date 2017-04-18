@@ -40,4 +40,4 @@ Installation on Ubuntu 14.04
 
         # :command:`kontact`
 
-Continue to :ref:`_settings-clientconfig-kontact`.
+Continue to :ref:`settings-clientconfig-kontact`.

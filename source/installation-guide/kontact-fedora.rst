@@ -52,4 +52,4 @@ Installation on Fedora
 
         # :command:`dnf install kolab-desktop-client --allowerasing --refresh`
 
-Continue to :ref:`_settings-clientconfig-kontact`.
+Continue to :ref:`settings-clientconfig-kontact`.
