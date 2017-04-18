@@ -89,4 +89,5 @@ work as expected, please consider contributing.
 
     kontact-windows
     kontact-ubuntu
+    kontact-fedora
 

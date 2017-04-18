@@ -2,21 +2,21 @@
 Installation on Fedora
 ======================
 
-1.  Install the Kontact repository configuration:
+1.  Install the Kontact repository configuration. Only use the Development repository for testing, never for production:
 
-    For Fedora 23 (Twenty Three):
-
-    .. parsed-literal::
-
-        # :command:`cd /etc/yum.repos.d/`
-        # :command:`wget https://obs.kolabsys.com/repositories/Kontact:/4.13/Fedora_23/Kontact:4.13.repo`
-
-    For Fedora 22 (Twenty Two):
+    For Fedora 25 (Twenty Five):
 
     .. parsed-literal::
 
         # :command:`cd /etc/yum.repos.d/`
-        # :command:`wget https://obs.kolabsys.com/repositories/Kontact:/4.13/Fedora_22/Kontact:4.13.repo`
+        # :command:`wget https://obs.kolabsys.com/repositories/Kontact:/4.13/Fedora_25/Kontact:4.13.repo`
+
+    For Fedora 25 (Twenty Five) Development:
+
+    .. parsed-literal::
+
+        # :command:`cd /etc/yum.repos.d/`
+        # :command:`wget https://obs.kolabsys.com/repositories/Kontact:/4.13:/Development/Fedora_25/Kontact:4.13:Development.repo`
 
 2.  Make sure that the Kolab Kontact repositories get a higher priority, eg.
     we need kdepimlibs to be installed from Kolab rather than from Fedora:
@@ -34,10 +34,10 @@ Installation on Fedora
 
         # :command:`rpm --import https://ssl.kolabsys.com/community.asc`
 
-4.  Install the Kolab Desktop Client
+4.  Install the Kolab Desktop Client (supply --allowerasing to allow the command to uninstall conflicting packages):
 
     .. parsed-literal::
 
-        # :command:`yum install kolab-desktop-client`
+        # :command:`dnf install kolab-desktop-client --allowerasing`
 
 Continue to :ref:`_settings-clientconfig-kontact`.
