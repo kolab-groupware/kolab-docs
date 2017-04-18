@@ -34,10 +34,22 @@ Installation on Fedora
 
         # :command:`rpm --import https://ssl.kolabsys.com/community.asc`
 
-4.  Install the Kolab Desktop Client (supply --allowerasing to allow the command to uninstall conflicting packages):
+4. Make sure there is no leftover configuration or data from previous akonadi installs.
+   Please note that this will delete all your locally cached data and configuration!
+   This step is not necessary if no other akonadi has been installed before,
+   it is however a necessary step if an upstream version of Kontact/Akonadi was running on the system previously:
 
     .. parsed-literal::
 
-        # :command:`dnf install kolab-desktop-client --allowerasing`
+        # :command:`rm -R ~/.kde/share/apps/akonadi_migration_agent`
+        # :command:`rm -R ~/.kde/share/config/akonadi*`
+        # :command:`rm -R ~/.local/share/akonadi`
+        # :command:`rm -R ~/.config/akonadi`
+
+5.  Install the Kolab Desktop Client (supply --allowerasing to allow the command to uninstall conflicting packages):
+
+    .. parsed-literal::
+
+        # :command:`dnf install kolab-desktop-client --allowerasing --refresh`
 
 Continue to :ref:`_settings-clientconfig-kontact`.
