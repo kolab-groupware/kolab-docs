@@ -34,10 +34,7 @@ Installation on Fedora
 
         # :command:`rpm --import https://ssl.kolabsys.com/community.asc`
 
-4. Make sure there is no leftover configuration or data from previous akonadi installs.
-   Please note that this will delete all your locally cached data and configuration!
-   This step is not necessary if no other akonadi has been installed before,
-   it is however a necessary step if an upstream version of Kontact/Akonadi was running on the system previously:
+4.  Make sure there is no leftover configuration or data from previous akonadi installs. Please note that this will delete all your locally cached data and configuration! This step is not necessary if no other akonadi has been installed before, it is however a necessary step if an upstream version of Kontact/Akonadi was running on the system previously:
 
     .. parsed-literal::
 
