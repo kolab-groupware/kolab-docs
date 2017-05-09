@@ -48,6 +48,7 @@ following platforms:
     centos-7
     rhel-7
     debian-8
+    ubuntu-16.04
 
 If your personal favorite is not listed, please read the
 "`Support Your Distribution, or else ... <https://kanarip.wordpress.com/2016/02/03/support-your-distribution-or-else/>`_"
