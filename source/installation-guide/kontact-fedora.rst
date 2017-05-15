@@ -49,4 +49,10 @@ Installation on Fedora
 
         # :command:`dnf install kolab-desktop-client --allowerasing --refresh`
 
+6.  To install additional spellchecking languages install the wanted hunspell-* packages:
+
+    .. parsed-literal::
+
+        # :command:`dnf install hunspell-de`
+
 Continue to :ref:`settings-clientconfig-kontact`.
