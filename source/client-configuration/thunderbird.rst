@@ -164,16 +164,17 @@ Click *Done* to re-test the configuration and finish the setup.
     Address Book Setup
     ^^^^^^^^^^^^^^^^^^
 
-    In order to use your |service_name| address books with Thunderbird, you 
-    need to first install the `SOGo Connector Thunderbird extension <http://www.sogo.nu/fr/downloads/frontends.html>`_,
-    if you do not have it already. Then click the *Address Book* button and 
-    in the *Address Book* window, go to the menu, choose *File > New > Remote 
-    Address Book*. On the next screen, please enter the following address:
+    In order to use your |service_name| address books with Thunderbird, you
+    need to first install the `SOGo Connector Thunderbird extension
+    <http://v2.sogo.nu/english/downloads/frontends.html>`_. if you do not have
+    it already. Then click the *Address Book* button and in the *Address Book*
+    window, go to the menu, choose *File > New > Remote Address Book*. On the
+    next screen, please enter the following address:
 
         |**carddav_uri_long**|/**Contacts**
 
-    In order to add other address books, please repeat this procedure for each 
-    address book. You can get the URL for the address books the same way as 
+    In order to add other address books, please repeat this procedure for each
+    address book. You can get the URL for the address books the same way as
     described above in the :ref:`settings-clientconfig-thunderbird-lightning`.
 
     .. container:: screenshots
