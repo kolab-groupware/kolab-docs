@@ -16,19 +16,19 @@ Before you install Kolab Groupware
 Current Release
 ===============
 
-The most recent version of Kolab is |ReleaseCurrent|. The community is working
-supercede this release by :orange:`Kolab 17` by the end of Q1 2017.
+The most recent version of Kolab is :orange:`winterfell`. The community is working
+to supercede this release by :orange:`Kolab 18` in Q1 2018.
 
 The current recommended version for supported production deployments is
 |ReleaseProduction|.
 
-The release of :orange:`Kolab 17` will occur in Q1 of 2017, at which point
+The release of :orange:`Kolab 18` will occur in Q1 of 2018, at which point
 |ReleaseProduction| will no longer be supported by the community, and
 `Kolab Systems AG`_ takes over long-term support for its customers.
 
-We expect that :orange:`Kolab 17` will be upgraded to "gold" status in Q2 2017,
+We expect that :orange:`Kolab 18` will be upgraded to "gold" status in Q2 2018,
 and become the release for production installations. Subscription-based
-support from `Kolab Systems AG`_ will also be available for :orange:`Kolab 17`.
+support from `Kolab Systems AG`_ will also be available for :orange:`Kolab 18`.
 
 For subscription-based support of Kolab installations, please visit
 `Kolab Enterprise <https://kolabenterprise.com/>`_,
