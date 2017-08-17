@@ -2,14 +2,7 @@
 Installation on Fedora
 ======================
 
-1.  Install the Kontact repository configuration. Only use the Development repository for testing, never for production:
-
-    For Fedora 25 (Twenty Five):
-
-    .. parsed-literal::
-
-        # :command:`cd /etc/yum.repos.d/`
-        # :command:`wget https://obs.kolabsys.com/repositories/Kontact:/4.13/Fedora_25/Kontact:4.13.repo`
+1.  Install the Kontact repository configuration:
 
     For Fedora 25 (Twenty Five) Development:
 
