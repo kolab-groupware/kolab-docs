@@ -4,12 +4,19 @@ Installation on Fedora
 
 1.  Install the Kontact repository configuration:
 
-    For Fedora 25 (Twenty Five) Development:
+    For Fedora 25 (Twenty Five):
 
     .. parsed-literal::
 
         # :command:`cd /etc/yum.repos.d/`
-        # :command:`wget https://obs.kolabsys.com/repositories/Kontact:/4.13:/Development/Fedora_25/Kontact:4.13:Development.repo`
+        # :command:`wget https://obs.kolabsys.com/repositories/Kontact:/4.13/Fedora_25/Kontact:4.13.repo`
+
+    For Fedora 26 (Twenty Six):
+
+    .. parsed-literal::
+
+        # :command:`cd /etc/yum.repos.d/`
+        # :command:`wget https://obs.kolabsys.com/repositories/Kontact:/4.13/Fedora_26/Kontact:4.13.repo`
 
 2.  Make sure that the Kolab Kontact repositories get a higher priority, eg.
     we need kdepimlibs to be installed from Kolab rather than from Fedora:
