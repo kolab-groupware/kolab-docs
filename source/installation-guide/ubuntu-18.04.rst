@@ -1,21 +1,24 @@
-.. _installation-guide-ubuntu-16.04:
+.. _installation-guide-ubuntu-18.04:
 
 ========================================
-Installation of Kolab 16 on Ubuntu 16.04
+Installation of Kolab 16 on Ubuntu 18.04
 ========================================
 
 .. WARNING::
 
     This document sets you up with the version of Kolab that is maintained by
-    the community. Customers of `Kolab Systems AG`_ join us
-    :ref:`here <https://kb.kolabenterprise.com/documentation/installation-of-kolab-16/installation-instructions-for-kolab-16-on-ubuntu-16-04>`.
+    the community.
+
+.. WARNING::
+
+    Compatibility with Ubuntu 18.04 LTS (Bionic) is currently experimental.
 
 1.  Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:
 
     .. parsed-literal::
 
-        deb http://obs.kolabsys.com/repositories/Kolab:/16/Ubuntu_16.04/ ./
-        deb-src http://obs.kolabsys.com/repositories/Kolab:/16/Ubuntu_16.04/ ./
+        deb http://obs.kolabsys.com/repositories/Kolab:/16/Ubuntu_18.04/ ./
+        deb-src http://obs.kolabsys.com/repositories/Kolab:/16/Ubuntu_18.04/ ./
 
 2.  Import the GPG key used to sign the packages:
 

@@ -8,7 +8,7 @@ Installation of Kolab 16 on Debian 8
 
     This document sets you up with the version of Kolab that is maintained by
     the community. Customers of `Kolab Systems AG`_ join us
-    :ref:`here <installation-guide-debian-8-enterprise-16>`.
+    :ref:`here <https://kb.kolabenterprise.com/documentation/installation-of-kolab-16/installation-instructions-for-kolab-16-on-debian-8>`.
 
 1.  Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:
 

@@ -16,23 +16,15 @@ Before you install Kolab Groupware
 Current Release
 ===============
 
-The most recent version of Kolab is :orange:`winterfell`. The community is working
-to supercede this release by :orange:`Kolab 18` in Q1 2018.
+The most recent version of Kolab is :orange:`Winterfell`. This version is a perpetual development
+work in progress, and is **NOT** considered anywhere near stable.
 
 The current recommended version for supported production deployments is
 |ReleaseProduction|.
 
-The release of :orange:`Kolab 18` will occur in Q1 of 2018, at which point
-|ReleaseProduction| will no longer be supported by the community, and
-`Kolab Systems AG`_ takes over long-term support for its customers.
-
-We expect that :orange:`Kolab 18` will be upgraded to "gold" status in Q2 2018,
-and become the release for production installations. Subscription-based
-support from `Kolab Systems AG`_ will also be available for :orange:`Kolab 18`.
-
 For subscription-based support of Kolab installations, please visit
-`Kolab Enterprise <https://kolabenterprise.com/>`_,
-which offers services for all sizes of business, government, NGO, and
+`the Kolab Enterprise Knowledge Base <https://kb.kolabenterprise.com/>`_,
+which offers product, services and support for all sizes of business, government, NGO, and
 educational organizations. You can read about the
 :ref:`advantages of a Kolab subscription <advantages-of-subscription>`.
 
@@ -48,7 +40,9 @@ following platforms:
     centos-7
     rhel-7
     debian-8
+    debian-9
     ubuntu-16.04
+    ubuntu-18.04
 
 If your personal favorite is not listed, please read the
 "`Support Your Distribution, or else ... <https://kanarip.wordpress.com/2016/02/03/support-your-distribution-or-else/>`_"
