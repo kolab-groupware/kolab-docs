@@ -8,7 +8,7 @@ Installation of Kolab 16 on Debian 9
 
     This document sets you up with the version of Kolab that is maintained by
     the community. Customers of `Kolab Systems AG`_ join us
-    :ref:`here <https://kb.kolabenterprise.com/documentation/installation-of-kolab-16/installation-instructions-for-kolab-16-on-debian-9>`.
+    `here <https://kb.kolabenterprise.com/documentation/installation-of-kolab-16/installation-instructions-for-kolab-16-on-debian-9>`_.
 
 1.  Add the following two lines to ``/etc/apt/sources.list.d/kolab.list``:
 
