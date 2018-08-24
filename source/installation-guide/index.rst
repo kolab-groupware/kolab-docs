@@ -20,7 +20,8 @@ The most recent version of Kolab is :orange:`Winterfell`. This version is a perp
 work in progress, and is **NOT** considered anywhere near stable.
 
 The current recommended version for supported production deployments is
-|ReleaseProduction|.
+|ReleaseProduction|. It follows a rolling release model and is continually
+supplied with updates and new features.
 
 For subscription-based support of Kolab installations, please visit
 `the Kolab Enterprise Knowledge Base <https://kb.kolabenterprise.com/>`_,
