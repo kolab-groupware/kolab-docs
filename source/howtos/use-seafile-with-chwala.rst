@@ -40,31 +40,12 @@ Configuring Roundcube to access Seafile
 
 Once Seafile can authenticate against LDAP, integration can be configured with two different methods:
 
-1. Using Seafile as the sole storage mechanism;
-2. Using Seafile as an add-on to the existing storage.
+1. Using Seafile as an add-on to the existing storage.
+2. Configure Seafile as pre-defined storage
 
-The first method has the advantage of being set by default for all users, but it depends on the Seafile instance being always accessible. The second still relies on Kolab core components and is easier to set up, but requires users to manually add their Seafile storage.
+The second method has the advantage of being set by default for all users, but it depends on the Seafile instance being always accessible. The first still relies on Kolab core components and is easier to set up, but requires users to manually add their Seafile storage.
 
 .. warning:: In *both* cases, you will have to make **at least one login** to the Seafile instance for the integration to work.
-
-Using Seafile as an exclusive storage mechanism
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Edit ``/etc/roundcubemail/config.inc.php`` and add the following lines, adjusting them to match your setup:
-
-.. parsed-literal::
-
-    # Seafile
-    $config['fileapi_backend'] = 'seafile';
-    $config['fileapi_seafile_host'] = "files.example.com";
-    $config['fileapi_seafile_ssl_verify_peer'] = false;
-    $config['fileapi_seafile_ssl_verify_host'] = false;
-    # Change the following basing on how much time you want data from Seafile cached
-    $config['fileapi_seafile_cache'] = '14d';
-    $config['fileapi_seafile_debug'] = false;
-
-The next time you will try to access files in Roundcube, Kolab will attempt to authenticate with Seafile with the same username / password combination as your account and use Seafile as storage. In case of errors, change ``fileapi_seafile_debug`` to ``true`` and inspect Roundcube logs.
-
 
 Using Seafile as an add-on to the existing Kolab storage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,9 +54,8 @@ Edit ``/etc/roundcubemail/config.inc.php`` as above, adding these lines:
 
 .. parsed-literal::
 
-    # Seafile
     $config['fileapi_backend'] = 'kolab';
-    $config['fileapi_drivers'] = array('seafile');
+    $config['fileapi_drivers'] = ['seafile'];
     $config['fileapi_seafile_host'] = "files.example.com";
     $config['fileapi_seafile_ssl_verify_peer'] = false;
     $config['fileapi_seafile_ssl_verify_host'] = false;
@@ -84,6 +64,48 @@ Edit ``/etc/roundcubemail/config.inc.php`` as above, adding these lines:
     $config['fileapi_seafile_debug'] = false;
 
 An additional step is required to access Seafile, that is, Chwala needs to be made aware of the additional storage. Access your Roundcube webmail and go to the Files component. Click on the gearbox icon and select *Add additional storage*. Fill in all the necessary details and click on OK. A new ``Seafile`` folder will be made available, pointing at your Seafile library.
+
+Configure Seafile as pre-defined storage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note:: In a previous version of this howto, it was sugested to change the ``fileapi_backend`` to ``seafilea``. This is no longer working and generates additional issues, like ignoring kolab's folder caching mechanics.
+
+If you want to pre-define/configure for all our users you can configure a list of pre-defined sources. This can be your sole seafile instances or multiple private and public sources. For mor informations please check out the available `configuration <https://git.kolab.org/diffusion/C/browse/master/config/config.inc.php.dist>`_ options.
+
+Edit ``/etc/roundcubemail/config.inc.php`` and add the following lines, adjusting them to match your setup:
+
+.. parsed-literal::
+
+    # kolab is the only supported backup
+    $config['fileapi_backend'] = 'kolab';
+
+    # disable optional storage addons
+    $config['fileapi_drivers'] = [];
+
+    # pre-define your seafile server
+    $config['fileapi_sources'] = array(
+        'Seafile' => array(
+            'driver' => 'seafile',
+            'host'   => 'files.example.com',
+            'username' => '%u',
+        )
+    );
+
+    # backend https calls
+    $config['fileapi_seafile_ssl_verify_peer'] = false;
+    $config['fileapi_seafile_ssl_verify_host'] = false;
+
+    # Change the following basing on how much time you want data from Seafile cached
+    $config['fileapi_seafile_cache'] = '14d';
+    $config['fileapi_seafile_debug'] = false;
+
+The next time you will try to access files in Roundcube, Kolab will attempt to authenticate with Seafile with the same username / password combination as your account and use Seafile as storage. In case of errors, change ``fileapi_seafile_debug`` to ``true`` and inspect Roundcube logs.
+
+If you want to disable the usage of Kolab's default storage, where your files are stored within the imap backend, you can disable it at all using the following option.
+.. parsed-literal::
+
+    # Disable the default imap based file-storage.
+    $config['fileapi_backend_storage_disabled'] = true;
 
 Debugging
 ---------
