@@ -42,6 +42,7 @@ following platforms:
     rhel-7
     debian-8
     debian-9
+    debian-10
     ubuntu-16.04
     ubuntu-18.04
 
