@@ -35,6 +35,8 @@ Administrator Guide
     tweaking-roundcube
 
     dav-autodiscovery
+    
+    kolab-behind-reverse-proxy
 
     imap-access-rights-reference
     kolab-freebusy-reference

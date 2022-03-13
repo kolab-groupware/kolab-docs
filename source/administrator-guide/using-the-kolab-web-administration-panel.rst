@@ -72,6 +72,14 @@ http://admin.example.org/api/.
 ``admin.example.org`` should thus resolve to the correct IP address, from the
 perspective of the Web Administration Panel server.
 
+Alternatively, you can override the api url in :manpage:`kolab.conf(5)` as
+follows:
+
+.. parsed-literal::
+
+   [kolab_wap]
+   api_url = http://example.com/kolab-webadmin/api
+
 .. _figure-overview:
 
 .. figure:: ../howtos/images/kolab-webadmin-objects.png

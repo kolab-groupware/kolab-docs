@@ -248,6 +248,7 @@ Other Settings
 .. include:: roundcube-settings/email_dns_check.txt
 .. include:: roundcube-settings/enable_installer.txt
 .. include:: roundcube-settings/enable_spellcheck.txt
+.. include:: roundcube-settings/file_api_url.txt
 .. include:: roundcube-settings/force_7bit.txt
 .. include:: roundcube-settings/force_https.txt
 .. include:: roundcube-settings/forward_attachment.txt
