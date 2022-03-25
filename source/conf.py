@@ -64,7 +64,7 @@ master_doc = 'index'
 project = u'Kolab'
 
 import datetime
-copyright = u'2010-%s, Kolab Systems AG' % (datetime.datetime.strftime(datetime.datetime.utcnow(), '%Y'))
+copyright = u'2010-%s, Apheleia IT AG' % (datetime.datetime.strftime(datetime.datetime.utcnow(), '%Y'))
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
