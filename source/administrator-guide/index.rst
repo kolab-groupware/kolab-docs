@@ -40,6 +40,7 @@ Administrator Guide
 
     imap-access-rights-reference
     kolab-freebusy-reference
+    kolab-activesync-reference
     roundcube-settings-reference
 
     ../glossary
