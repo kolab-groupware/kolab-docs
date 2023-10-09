@@ -349,9 +349,9 @@ for pathname in config_files:
         if hasattr(conf, 'extensions'):
             extensions += conf.extensions
         # TODO: merge other config options like rst_prolog, rst_epilog, etc.
-    except Exception, e:
-        print "Failed to open config file", pathname
-        print e
+    except Exception as e:
+        print("Failed to open config file", pathname)
+        print(e)
 
 # add default tags if no custom ones defined
 if not custom_tags:
